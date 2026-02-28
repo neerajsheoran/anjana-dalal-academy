@@ -32,11 +32,18 @@ export interface Question {
   explanation: string;
 }
 
-// Worksheet JSON structure (matches worksheet.json files)
-export interface WorksheetData {
+// Questions grouped by difficulty within a topic
+export interface TopicWorksheet {
+  topic: string;           // e.g. "What is Science?"
   easy: Question[];
   medium: Question[];
   hard: Question[];
+}
+
+// Worksheet JSON structure (matches worksheet.json files)
+// Top-level array of topics, each with its own easy/medium/hard questions
+export interface WorksheetData {
+  topics: TopicWorksheet[];
 }
 
 // Navigation helpers

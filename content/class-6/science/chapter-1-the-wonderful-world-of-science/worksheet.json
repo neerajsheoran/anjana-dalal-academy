@@ -1,0 +1,73 @@
+{
+  "topics": [
+    {
+      "topic": "What is Science?",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "What do scientists use to learn about the world?",
+          "options": ["Observation and experiments", "Only books", "Only guessing", "Magic"],
+          "answer": "Observation and experiments",
+          "explanation": "Scientists observe things carefully and do experiments to find out how the world works."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "Science helps us ask ______ and find answers.",
+          "answer": "questions",
+          "explanation": "Asking questions is the starting point of all science."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Give two examples from daily life where we use scientific thinking.",
+          "answer": "Checking why a plant is dying (observing yellow leaves, testing water/sunlight). Figuring out why food spoils faster in summer (temperature experiment).",
+          "explanation": "Scientific thinking means observing a problem, thinking of reasons, and testing them — we do this every day without realising it."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "short",
+          "question": "Why is it important to repeat an experiment more than once before drawing a conclusion?",
+          "answer": "One result could be by chance or have an error. Repeating makes sure the result is reliable and not a coincidence.",
+          "explanation": "Scientists repeat experiments to make sure their findings are consistent and trustworthy."
+        }
+      ]
+    },
+    {
+      "topic": "How Scientists Work",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "What is the first step a scientist usually takes?",
+          "options": ["Observation", "Writing a report", "Drawing a diagram", "Buying equipment"],
+          "answer": "Observation",
+          "explanation": "Observation — looking carefully at something — is always the first step in scientific inquiry."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "What is a hypothesis? Give one example.",
+          "answer": "A hypothesis is an educated guess that can be tested. Example: 'Plants grow taller when given more sunlight.'",
+          "explanation": "A hypothesis is not a random guess — it is based on what you already know and can be tested by an experiment."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "short",
+          "question": "Explain the difference between an observation and an inference.",
+          "answer": "An observation is what you directly see, hear, or measure. An inference is a conclusion you draw based on that observation. Example: Seeing smoke is an observation; concluding there is a fire is an inference.",
+          "explanation": "Scientists must be careful to separate what they actually observe from what they conclude from it."
+        }
+      ]
+    }
+  ]
+}
