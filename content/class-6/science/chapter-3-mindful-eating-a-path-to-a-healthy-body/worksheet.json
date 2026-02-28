@@ -1,0 +1,278 @@
+{
+  "topics": [
+    {
+      "topic": "What Do We Eat?",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "What are the useful substances in food that our body needs to work and grow called?",
+          "options": ["Minerals", "Nutrients", "Calories", "Fibres"],
+          "answer": "Nutrients",
+          "explanation": "Nutrients are the useful substances in food — like carbohydrates, proteins, fats, vitamins, and minerals — that our body needs to function, grow, and stay healthy."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "mcq",
+          "question": "Which of these is a traditional food of Karnataka?",
+          "options": ["Puttu", "Thepla", "Ragi mudde", "Dhokla"],
+          "answer": "Ragi mudde",
+          "explanation": "Ragi mudde is a traditional food of Karnataka, made from finger millet (ragi). Different states of India have their own traditional foods shaped by local crops, climate and culture."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "fill",
+          "question": "Different foods may look and taste different, but they all provide our body with ______ that it needs to stay healthy.",
+          "answer": "nutrients",
+          "explanation": "Despite the great diversity of Indian foods — from idli to roti to rice — they all provide nutrients. The variety ensures different nutrients are covered."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "India has incredible food diversity. Give two examples of different traditional foods from different parts of India and explain why this diversity is a strength.",
+          "answer": "Examples: Idli-sambar from Tamil Nadu, Rajma-chawal from North India, Puttu with kadala curry from Kerala, Thepla from Gujarat. This diversity is a strength because different foods provide different nutrients. Traditional foods are usually made from locally grown ingredients suited to the climate, which means they are nutritious, fresh, and sustainable. Different regional foods together cover a wide range of vitamins, minerals, and other nutrients.",
+          "explanation": "India's food diversity is not just cultural richness — it reflects generations of wisdom about using local ingredients in the best possible way. Traditional diets are often more nutritionally complete than modern processed foods."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "short",
+          "question": "A child eats only rice and dal every day and nothing else. Another child eats a variety of foods — rice, dal, vegetables, fruit, and sometimes eggs. Who is likely to be healthier and why? Connect your answer to nutrients.",
+          "answer": "The child eating a variety of foods is likely to be healthier. Rice provides carbohydrates for energy. Dal provides protein for growth and repair. But vegetables and fruits provide essential vitamins (like Vitamin A, C) and minerals (iron, calcium) that rice and dal cannot provide adequately on their own. Eggs add more protein and Vitamin D. A diet with only rice and dal may lead to deficiencies — for example, lack of Vitamin C could cause scurvy, and lack of iron could cause anaemia. Variety ensures all nutrients are covered.",
+          "explanation": "No single food provides all nutrients in the right amounts. A balanced diet requires a variety of food groups eaten regularly. Traditional Indian thali — with roti/rice, dal, sabzi, curd, salad — was designed this way instinctively, even before nutrition science existed."
+        }
+      ]
+    },
+    {
+      "topic": "Components of Food",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Which nutrient gives us the most energy for running and playing?",
+          "options": ["Vitamins", "Proteins", "Carbohydrates", "Minerals"],
+          "answer": "Carbohydrates",
+          "explanation": "Carbohydrates are the body's main and preferred source of energy. They are found in rice, roti, bread, potatoes, and other starchy foods."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "mcq",
+          "question": "Which nutrient builds and repairs the body — muscles, skin, and hair?",
+          "options": ["Carbohydrates", "Fats", "Proteins", "Roughage"],
+          "answer": "Proteins",
+          "explanation": "Proteins are the building blocks of the body. Muscles, skin, hair, nails and many important chemicals in the body are made of protein. Dal, eggs, milk, and pulses are good sources."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "fill",
+          "question": "Spinach (palak) and jaggery (gur) are good sources of ______, a mineral that helps make haemoglobin in blood.",
+          "answer": "iron",
+          "explanation": "Iron is essential for making haemoglobin in red blood cells. Haemoglobin carries oxygen to all parts of the body. Iron deficiency leads to anaemia."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "mcq",
+          "question": "Which vitamin helps us see properly in low light?",
+          "options": ["Vitamin C", "Vitamin A", "Vitamin D", "Vitamin B1"],
+          "answer": "Vitamin A",
+          "explanation": "Vitamin A is needed for good eyesight, especially in dim light. Deficiency of Vitamin A can cause night blindness. Carrots, spinach, mango, and eggs are good sources."
+        },
+        {
+          "id": "ch3-t2-e5",
+          "type": "mcq",
+          "question": "Which part of food cannot be digested but helps food move through the intestines?",
+          "options": ["Protein", "Fat", "Roughage", "Vitamins"],
+          "answer": "Roughage",
+          "explanation": "Roughage (dietary fibre) is the indigestible part of plant foods. It helps move food through the intestines and prevents constipation."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Name four vitamins and write one function and one food source for each.",
+          "answer": "1. Vitamin A — Good eyesight and healthy skin — Found in carrots, mango, spinach. 2. Vitamin B1 — Helps release energy from food — Found in whole grains, pulses. 3. Vitamin C — Heals wounds and fights infections — Found in amla, lemon, guava. 4. Vitamin D — Strong bones and teeth — Found in sunlight, eggs, fish, milk.",
+          "explanation": "Vitamins are needed in small quantities but play vital roles. Each vitamin has specific functions and specific food sources. A varied diet ensures we get all vitamins naturally."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "Why is water called the most essential nutrient? What does it do in our body?",
+          "answer": "Water is the most essential nutrient because we can only survive a few days without it, even though we can survive weeks without food. Water: 1. Carries nutrients throughout the body via blood. 2. Removes waste through urine and sweat. 3. Regulates body temperature. 4. Makes up about 70% of our body. All chemical reactions in the body take place in water.",
+          "explanation": "Water is involved in almost every process in the body. Even mild dehydration can cause headaches, poor concentration, and fatigue. Drinking enough water throughout the day is one of the simplest healthy habits."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "short",
+          "question": "A child avoids eating any fatty foods completely, thinking it will make them unhealthy. Is this a good idea? Explain using what you know about fats.",
+          "answer": "No, this is not a good idea. While eating too much fat is unhealthy, removing fat entirely is also harmful. Fats: 1. Provide energy — more than carbohydrates per gram. 2. Keep us warm by insulating the body. 3. Protect organs like the kidneys and heart. 4. Help the body absorb fat-soluble vitamins (A, D, E, K). 5. Our brain is largely made of fat. The key is to eat the right amount and the right type of fat — like ghee, nuts, and coconut oil in moderation — rather than eating no fat at all.",
+          "explanation": "Nutrition is about balance, not elimination. Every nutrient has a role. Problems arise from excess or deficiency, not from including all nutrients in sensible amounts. Blindly removing a food group based on incomplete information is a common nutrition mistake."
+        }
+      ]
+    },
+    {
+      "topic": "How to Test Food Components",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "What does it mean if a food turns blue-black when iodine solution is added?",
+          "options": ["It contains protein", "It contains fat", "It contains starch", "It contains vitamin C"],
+          "answer": "It contains starch",
+          "explanation": "The iodine test is used to detect starch. When iodine solution is added to a food containing starch, it turns blue-black. If there is no starch, the colour does not change."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "mcq",
+          "question": "In the fat test, you rub food on paper and hold it to light. What result tells you the food contains fat?",
+          "options": ["The paper tears", "A blue patch appears", "A translucent (oily) patch appears", "The paper becomes wet with water"],
+          "answer": "A translucent (oily) patch appears",
+          "explanation": "Fat leaves a translucent (see-through, greasy) patch on paper. If the paper becomes transparent at a spot and stays so after drying, fat is present."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "fill",
+          "question": "In the protein test, if the solution turns ______ after adding copper sulphate and caustic soda, protein is present.",
+          "answer": "violet",
+          "explanation": "The protein test (Biuret test) uses copper sulphate and sodium hydroxide. A violet or purple colour indicates the presence of protein."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "Riya tests boiled potato with iodine solution and it turns blue-black. She tests onion with iodine and there is no colour change. What can she conclude about each food?",
+          "answer": "Boiled potato turning blue-black with iodine means it contains starch (a carbohydrate). Onion not changing colour with iodine means it does not contain starch. Riya can conclude that potato is a starchy food and provides carbohydrates for energy, while onion does not have significant starch.",
+          "explanation": "The iodine test is a reliable indicator of starch. Potatoes are one of the richest starch sources. Onions contain sugars and other nutrients but not starch — that's why they don't react with iodine."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "short",
+          "question": "Why is the fat test done with paper rather than with a chemical? What is the advantage?",
+          "answer": "The fat test using paper is simple, quick, and safe — it requires no chemicals. Anyone can do it at home using just a piece of plain paper. Fat is insoluble in water but it seeps into paper and leaves a translucent patch. The advantage is accessibility — you don't need a laboratory or special equipment. It is a good example of a simple scientific test anyone can perform.",
+          "explanation": "Simple tests are valuable in science because they make testing accessible to everyone. The paper test is not as precise as a chemical analysis, but it is reliable enough to detect the presence or absence of fat in everyday food."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "short",
+          "question": "Arjun tests two foods — groundnut and apple — with the paper test. Groundnut leaves an oily patch; apple does not. He then tests both with iodine. Apple does not turn blue-black; groundnut does not turn blue-black either. What can Arjun conclude about each food's nutritional content? Why is it useful to run more than one test?",
+          "answer": "Arjun can conclude: Groundnut contains fat (oily patch on paper) but not starch (no colour change with iodine). Apple contains neither fat nor starch (no reactions in either test). However, this does not mean apple has no nutrients — it could contain vitamins, minerals, and natural sugars not detected by these tests. Running more than one test gives a more complete picture of a food's nutrients. A single test can only detect one nutrient. Multiple tests help avoid wrong conclusions about a food being 'nutritious' or 'not nutritious' based on only one test.",
+          "explanation": "Science requires looking at evidence from multiple sources before drawing conclusions. A food might fail one test but still be highly nutritious in another way. This is why nutritionists analyse foods for many components — not just one."
+        }
+      ]
+    },
+    {
+      "topic": "Balanced Diet and Millets",
+      "easy": [
+        {
+          "id": "ch3-t4-e1",
+          "type": "mcq",
+          "question": "Which of the following best describes a balanced diet?",
+          "options": ["Eating only vegetables", "A diet that provides all nutrients in the right amounts", "Eating the same food every day", "Eating only fruits and salads"],
+          "answer": "A diet that provides all nutrients in the right amounts",
+          "explanation": "A balanced diet includes all nutrients — carbohydrates, proteins, fats, vitamins, minerals, roughage, and water — in the right proportions for the body to function properly."
+        },
+        {
+          "id": "ch3-t4-e2",
+          "type": "mcq",
+          "question": "Which millet is known for having the highest calcium content of all cereals?",
+          "options": ["Jowar", "Bajra", "Ragi", "Maize"],
+          "answer": "Ragi",
+          "explanation": "Ragi (finger millet) has the highest calcium content of all cereals. It is often given to babies and elderly people to support strong bone development."
+        },
+        {
+          "id": "ch3-t4-e3",
+          "type": "fill",
+          "question": "The Indian government calls millets ______ because of their exceptional nutritional value.",
+          "answer": "Nutri-cereals",
+          "explanation": "The Indian government promotes millets as Nutri-cereals to encourage greater consumption. They are rich in protein, iron, calcium, and fibre, and require much less water to grow than rice or wheat."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t4-m1",
+          "type": "short",
+          "question": "What are millets? Name any three millets and write one nutritional benefit of each.",
+          "answer": "Millets are ancient grains grown in India for thousands of years. They are highly nutritious and need very little water to grow. 1. Jowar (Sorghum) — Rich in iron and calcium. 2. Bajra (Pearl millet) — High in protein and iron. 3. Ragi (Finger millet) — Highest calcium content of all cereals, good for bones.",
+          "explanation": "Millets were staple foods in many parts of India before rice and wheat became dominant. Their revival is important both nutritionally (they are often more nutritious than polished rice or white wheat) and environmentally (they need less water and are climate-resilient)."
+        },
+        {
+          "id": "ch3-t4-m2",
+          "type": "short",
+          "question": "Using the idea of a balanced meal, describe what a healthy Indian lunch plate should look like.",
+          "answer": "A healthy Indian lunch plate should have: Half the plate filled with vegetables and some fruit (for vitamins, minerals, roughage). A quarter with dal or rajma or eggs (for protein). A quarter with roti or rice (for carbohydrates and energy). A small amount of ghee or oil in cooking (for fat). Water or buttermilk (for hydration). This is actually the traditional Indian thali, which was nutritionally balanced long before nutrition science was formalised.",
+          "explanation": "The traditional Indian thali — with roti/rice, dal, sabzi, curd and salad — is a naturally balanced meal. Modern understanding of nutrition confirms what generations of Indian cooking practice had already figured out through experience."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t4-h1",
+          "type": "short",
+          "question": "Many people today eat a lot of processed foods (like chips, biscuits, instant noodles) and very little millets, pulses, or fresh vegetables. Using what you know about a balanced diet and millets, explain why this shift in food habits could be a health concern.",
+          "answer": "Processed foods are typically high in refined carbohydrates (white flour, sugar) and unhealthy fats, but low in protein, vitamins, minerals, and roughage. Eating them instead of millets, pulses, and vegetables means: 1. Less protein — muscles and body cannot repair properly. 2. Less fibre — digestion problems, constipation. 3. Less iron and calcium — risk of anaemia and weak bones. 4. Less vitamins — risk of deficiency diseases. Millets like ragi, bajra, and jowar are rich in calcium, iron, protein, and fibre — all of which processed food lacks. Traditional diets built around millets, dal, and seasonal vegetables were more balanced than modern diets built around ultra-processed foods.",
+          "explanation": "Lifestyle diseases like obesity, diabetes, and anaemia are increasing in India, partly because of the shift from traditional nutritious foods to processed ones. Understanding what our food actually contains — and what it lacks — helps us make better choices."
+        }
+      ]
+    },
+    {
+      "topic": "Food Miles",
+      "easy": [
+        {
+          "id": "ch3-t5-e1",
+          "type": "mcq",
+          "question": "What does 'food miles' mean?",
+          "options": ["The number of food items on a plate", "The distance food travels from farm to plate", "The calories in food", "How many people grow food"],
+          "answer": "The distance food travels from farm to plate",
+          "explanation": "Food miles is the distance food travels from where it is grown (the farm) to where it is eaten (your plate). High food miles means the food travelled a long distance."
+        },
+        {
+          "id": "ch3-t5-e2",
+          "type": "mcq",
+          "question": "Which of these is a benefit of buying food grown locally?",
+          "options": ["It is always cheaper", "It is fresher and has more nutrients", "It comes in better packaging", "It lasts longer in the fridge"],
+          "answer": "It is fresher and has more nutrients",
+          "explanation": "Local food is harvested when ripe and reaches the buyer quickly. Food that travels long distances is often picked before it is ripe, and loses some nutrients during storage and transportation."
+        },
+        {
+          "id": "ch3-t5-e3",
+          "type": "fill",
+          "question": "Transporting food in trucks, ships and aeroplanes uses fuel and releases ______, which contributes to climate change.",
+          "answer": "greenhouse gases",
+          "explanation": "The transport of food over long distances burns fossil fuels and releases greenhouse gases like CO2. Buying local food reduces this environmental impact."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t5-m1",
+          "type": "short",
+          "question": "Why do fruits sold in cities sometimes taste less sweet or flavourful than fruits bought directly from a farm? Connect your answer to food miles.",
+          "answer": "Fruits meant for long-distance transport are often picked before they are fully ripe so they don't spoil during the journey. They ripen artificially after picking. Naturally ripened fruits develop their full sweetness and flavour while still on the plant. Fruits with high food miles also lose some nutrients (especially Vitamin C) during the days or weeks they spend in storage and transport. That's why fruit from a local market or farm often tastes much better — it was allowed to ripen naturally and didn't travel far.",
+          "explanation": "Flavour and nutrition in fruits both peak at natural ripeness. Long supply chains break this connection between farm-ripe produce and the consumer. Understanding food miles helps explain many everyday food experiences."
+        },
+        {
+          "id": "ch3-t5-m2",
+          "type": "short",
+          "question": "How did traditional Indian eating habits naturally result in low food miles? Give two examples.",
+          "answer": "Traditional Indian food was almost entirely local — people ate what was grown in their region and was in season at that time. Examples: 1. In summer, people in Maharashtra ate mangoes grown locally in the Konkan region — not imported mangoes. 2. In winter, people in North India ate mustard greens (sarson) and radish grown in local fields — not imported greens. Food was preserved using traditional methods (pickling, drying) to last through seasons, rather than transported from far away. This meant very low food miles naturally, without anyone planning it.",
+          "explanation": "Traditional food systems were inherently sustainable because they were based on local seasonal eating. 'Eat what grows near you, in the season it grows' is a principle that modern nutrition and environmental science now strongly supports."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t5-h1",
+          "type": "short",
+          "question": "A supermarket sells apples from New Zealand and apples from Himachal Pradesh at the same price. From a nutrition, taste, and environment perspective, which would you choose and why? Use the concept of food miles in your answer.",
+          "answer": "From all three perspectives — nutrition, taste, and environment — the Himachal Pradesh apple is the better choice. Nutrition: Local apples can be harvested riper and retain more vitamins (especially Vitamin C, which reduces during long storage). Taste: Naturally ripened local apples taste better than those picked early for long-distance transport. Environment: New Zealand apples travel thousands of kilometres by ship and truck, releasing significant greenhouse gases. Himachal Pradesh apples travel a much shorter distance within India — far fewer food miles and much lower carbon footprint. The only reason to choose the New Zealand apple might be if it were a different variety not available locally — but for the same price and same type, local is clearly better on all counts.",
+          "explanation": "Food miles is not the only consideration — sometimes an imported food is the only source of a specific nutrient. But when locally grown options are available, they are almost always better nutritionally, for flavour, and for the environment. Making informed food choices is a form of mindful eating."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "topics": [
+    {
+      "topic": "Diversity in Plants and Animals Around Us",
+      "easy": [
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "What is biodiversity?",
+          "options": ["All the water on Earth", "The variety of all living things on Earth", "Only the animals in a forest", "The number of plants in a garden"],
+          "answer": "The variety of all living things on Earth",
+          "explanation": "Biodiversity means the variety of all living things — plants, animals, insects, birds, and tiny organisms — found on Earth."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "mcq",
+          "question": "Which of the following is one of the most biodiverse countries in the world?",
+          "options": ["Russia", "Canada", "India", "Australia"],
+          "answer": "India",
+          "explanation": "India is one of the most biodiverse countries in the world, with dense forests, cold deserts, tropical rainforests, and mangrove swamps — each home to different living things."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "fill",
+          "question": "The amazing variety of living things found on Earth is called ______.",
+          "answer": "biodiversity",
+          "explanation": "Biodiversity refers to all the different plants, animals, insects, birds, and organisms found on Earth."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "mcq",
+          "question": "Which of these is NOT a living thing?",
+          "options": ["Ant", "Mushroom", "Stone", "Fern"],
+          "answer": "Stone",
+          "explanation": "Stones are non-living things. Ants, mushrooms, and ferns are all living organisms and part of Earth's biodiversity."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "What is biodiversity? Why is India considered a biodiversity-rich country?",
+          "answer": "Biodiversity is the variety of all living things found on Earth. India is considered biodiversity-rich because it has many different types of habitats — dense forests in the Western Ghats, cold deserts in Ladakh, tropical rainforests in the Northeast, and mangrove swamps in the Sundarbans — each home to different kinds of plants and animals.",
+          "explanation": "Different habitats support different types of life. India's varied landscape across such a large country makes it one of the most biodiverse places on Earth."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "short",
+          "question": "Why is it important to protect biodiversity? Give two reasons.",
+          "answer": "1. Forests clean the air we breathe and bring rainfall. 2. Bees and butterflies pollinate crops — without them, fruits and vegetables cannot grow. Biodiversity keeps the natural balance that all life, including humans, depends on.",
+          "explanation": "Every plant and animal plays a role in the web of life. Losing one species can affect many others. Protecting biodiversity protects our food, water, and air."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t1-h1",
+          "type": "short",
+          "question": "Many people think that only rare or exotic animals matter for conservation. Do you agree? Use examples to explain why even 'ordinary' organisms like worms and bees are important.",
+          "answer": "This is incorrect. Even 'ordinary' organisms are vital. Earthworms break down dead organic matter and enrich the soil — without them, plants would not grow well. Bees and butterflies pollinate crops — without pollination, most fruits and vegetables cannot form. If bees disappeared, food production worldwide would collapse. Every organism, however small or 'ordinary', plays a role in maintaining the balance of nature.",
+          "explanation": "Conservation should not focus only on large or rare animals. The health of an ecosystem depends on the full web of life — from bacteria in the soil to the largest trees. Losing any part weakens the whole system."
+        }
+      ]
+    },
+    {
+      "topic": "How to Group Plants",
+      "easy": [
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "Which of these plants is a herb?",
+          "options": ["Mango", "Rose", "Tulsi", "Coconut"],
+          "answer": "Tulsi",
+          "explanation": "Tulsi (basil) is a herb — a small, soft-stemmed plant. Mango and coconut are trees, and rose is a shrub."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "mcq",
+          "question": "A plant that spreads along the ground rather than growing upright is called a —",
+          "options": ["Climber", "Shrub", "Creeper", "Tree"],
+          "answer": "Creeper",
+          "explanation": "Creepers are plants with weak stems that spread and creep along the ground. Examples include watermelon and pumpkin."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "fill",
+          "question": "The pattern of veins in a leaf is called ______.",
+          "answer": "venation",
+          "explanation": "Venation is the arrangement of veins in a leaf. There are two types — parallel venation and reticulate (net-like) venation."
+        },
+        {
+          "id": "ch2-t2-e4",
+          "type": "mcq",
+          "question": "Which of these plants has parallel venation?",
+          "options": ["Mango", "Tulsi", "Grass", "Rose"],
+          "answer": "Grass",
+          "explanation": "Grass has parallel venation — all veins run side by side. Mango, tulsi, and rose have reticulate (net-like) venation."
+        },
+        {
+          "id": "ch2-t2-e5",
+          "type": "mcq",
+          "question": "When you open a bean seed, it splits into two equal halves. This means the bean is a —",
+          "options": ["Monocot", "Dicot", "Fibrous plant", "Creeper"],
+          "answer": "Dicot",
+          "explanation": "Dicot seeds have two cotyledons (seed leaves) and split into two halves. Examples: bean, pea, mango, mustard."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "What is the difference between a climber and a creeper? Give one example of each.",
+          "answer": "A climber is a plant with a weak stem that climbs upward by clinging to walls, fences or other plants. Example: money plant. A creeper is a plant with a weak stem that spreads and creeps along the ground. Example: pumpkin or watermelon.",
+          "explanation": "Both climbers and creepers have weak stems and cannot stand on their own — but the direction they grow is different. Climbers go up; creepers spread on the ground."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "short",
+          "question": "What is the difference between taproot and fibrous root? Which type does a rice plant have?",
+          "answer": "A taproot has one main thick root growing deep into the soil with smaller roots branching off it. Examples: carrot, mustard. Fibrous roots have many thin roots of similar size spreading in all directions with no single main root. Examples: wheat, rice, grass. Rice has fibrous roots.",
+          "explanation": "Root type is one of the ways we classify plants. Taproots are good at reaching deep water sources; fibrous roots hold the soil well and prevent erosion."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t2-h1",
+          "type": "short",
+          "question": "A student notices that a wheat plant and a mango tree both have roots, stems, and leaves. But their leaves look very different and so do their roots. Explain why, using the terms venation, root type, and cotyledon.",
+          "answer": "Wheat and mango belong to different plant groups. Wheat is a monocot — its seed has one cotyledon, its leaves have parallel venation (veins running side by side), and it has fibrous roots (many thin roots of equal size). Mango is a dicot — its seed has two cotyledons, its leaves have reticulate venation (net-like pattern), and it has a taproot (one main thick root). These differences are not random — they reflect the fundamental type of plant each is.",
+          "explanation": "In most plants, venation type, root type, and seed type are connected. Monocots typically have parallel venation, fibrous roots, and one cotyledon. Dicots typically have reticulate venation, taproots, and two cotyledons. This makes it easier to classify plants by looking at just one of these features."
+        }
+      ]
+    },
+    {
+      "topic": "How to Group Animals",
+      "easy": [
+        {
+          "id": "ch2-t3-e1",
+          "type": "mcq",
+          "question": "Which of these animals moves by slithering?",
+          "options": ["Frog", "Butterfly", "Snake", "Fish"],
+          "answer": "Snake",
+          "explanation": "Snakes slither — they move by pushing their body along the ground on their belly. They have no legs."
+        },
+        {
+          "id": "ch2-t3-e2",
+          "type": "fill",
+          "question": "Animals that have a backbone are called ______.",
+          "answer": "vertebrates",
+          "explanation": "Vertebrates are animals with a backbone (spine). Examples include fish, frogs, birds, snakes, and humans."
+        },
+        {
+          "id": "ch2-t3-e3",
+          "type": "mcq",
+          "question": "Which of these is an invertebrate?",
+          "options": ["Sparrow", "Frog", "Earthworm", "Lizard"],
+          "answer": "Earthworm",
+          "explanation": "An earthworm has no backbone, so it is an invertebrate. Sparrows, frogs, and lizards all have backbones — they are vertebrates."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t3-m1",
+          "type": "short",
+          "question": "A duck can walk, swim, and fly. Does this make it difficult to classify? Explain.",
+          "answer": "A duck can walk, swim, and fly — it has multiple modes of movement. This shows that grouping animals by movement alone can be incomplete. Scientists use many features together (body structure, backbone, reproduction, etc.) to classify animals properly. The duck is still classified as a bird (vertebrate with wings and feathers) even though it can also swim.",
+          "explanation": "Classification in science is not always about one single feature. A complete picture uses multiple characteristics. A duck is primarily a bird, classified by its body structure, warm blood, and egg-laying, even though it shares some features with aquatic animals."
+        },
+        {
+          "id": "ch2-t3-m2",
+          "type": "short",
+          "question": "What is the difference between a vertebrate and an invertebrate? Give two examples of each.",
+          "answer": "Vertebrates have a backbone (spine) running along their body. Examples: fish, birds, humans, frogs. Invertebrates do not have a backbone. Examples: ants, butterflies, earthworms, jellyfish.",
+          "explanation": "Over 95% of all animal species on Earth are invertebrates. Vertebrates are fewer in number but include the largest animals like whales and elephants."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t3-h1",
+          "type": "short",
+          "question": "A frog lives both on land and in water. A duck can walk, swim, and fly. A flying fish can jump out of water and glide. What does this tell us about classifying animals into neat groups? Is classification still useful even if many animals don't fit perfectly?",
+          "answer": "These examples show that living things are so varied that they don't always fit into neat, fixed groups. However, classification is still very useful — it helps scientists organise, study, and communicate about millions of species. Even when an animal has features from multiple groups, we classify it based on its main features. A frog is classified as an amphibian because it lives both on land and water. Classification is a tool to make sense of diversity — it doesn't need to be perfect to be helpful.",
+          "explanation": "Scientists understand that classification systems are human-made tools to study nature. Nature itself doesn't follow strict rules — there are always exceptions. Good scientists update classification systems as they learn more. This flexibility is a strength of science, not a weakness."
+        }
+      ]
+    },
+    {
+      "topic": "Habitats and Adaptations",
+      "easy": [
+        {
+          "id": "ch2-t4-e1",
+          "type": "mcq",
+          "question": "What is a habitat?",
+          "options": ["A type of food", "The natural place where a plant or animal lives", "A kind of bird", "The colour of an animal"],
+          "answer": "The natural place where a plant or animal lives",
+          "explanation": "A habitat is the natural environment where an organism lives. It provides everything the organism needs — food, water, shelter, and the right climate."
+        },
+        {
+          "id": "ch2-t4-e2",
+          "type": "mcq",
+          "question": "Why does a cactus have thick, fleshy stems?",
+          "options": ["To attract insects", "To store water in a dry desert", "To climb walls", "To float in water"],
+          "answer": "To store water in a dry desert",
+          "explanation": "The cactus is adapted to desert life. Its thick fleshy stem stores water so the plant can survive for long periods without rain."
+        },
+        {
+          "id": "ch2-t4-e3",
+          "type": "fill",
+          "question": "A special feature that helps an animal or plant survive in its habitat is called an ______.",
+          "answer": "adaptation",
+          "explanation": "Adaptations are special features — physical or behavioural — that help a living thing survive in its environment. They develop over thousands of years."
+        },
+        {
+          "id": "ch2-t4-e4",
+          "type": "mcq",
+          "question": "A fish has a streamlined body. This adaptation helps it —",
+          "options": ["Climb trees", "Move through water easily", "Survive in cold mountains", "Store food"],
+          "answer": "Move through water easily",
+          "explanation": "A streamlined (smooth, torpedo-shaped) body reduces resistance in water and helps fish swim efficiently."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t4-m1",
+          "type": "short",
+          "question": "How is a camel adapted to live in a desert? Name at least three adaptations.",
+          "answer": "1. Stores fat in its hump, which can be used as energy when food is scarce. 2. Can go many days without water — its body is very efficient at conserving water. 3. Wide, flat feet prevent it from sinking into sand. 4. Long eyelashes and nostrils that can be closed protect against sandstorms.",
+          "explanation": "Each of a camel's adaptations solves a specific problem of desert life — extreme heat, lack of water, and sandy ground. Adaptations are never random; they are specific responses to the challenges of a habitat."
+        },
+        {
+          "id": "ch2-t4-m2",
+          "type": "short",
+          "question": "Why would a fish die if taken out of water? Why would a camel struggle to survive in a river habitat?",
+          "answer": "A fish has gills adapted to take in oxygen dissolved in water. On land, it cannot breathe air and will die. A camel is adapted for dry, hot desert conditions — it cannot breathe underwater, has no fins, and its body is not built for moving through water. Each organism is suited to its own habitat, and moving it to a completely different one would put it at risk of death.",
+          "explanation": "Adaptations make an organism well-suited to one habitat but may make it unsuitable for another. This is why habitat destruction is so dangerous — animals cannot simply 'move' to a completely different environment."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t4-h1",
+          "type": "short",
+          "question": "Forests in India are being cut down to build roads and factories. Using what you know about habitats and adaptations, explain why this is a serious problem for animals like tigers and elephants.",
+          "answer": "Tigers and elephants are adapted to live in forests — they need the trees for shelter, the forest ecosystem for food, and large areas of land to roam and find mates. When forests are cut down, these animals lose their habitat. Their adaptations — camouflage in forest light, behaviour adapted to dense vegetation, food chains connected to forest prey — become useless in open land. They may not be able to find enough food, may come into conflict with humans, and their population shrinks. Eventually they could become endangered or extinct. Protecting forests means protecting the entire ecosystem these animals depend on.",
+          "explanation": "Habitat loss is the biggest cause of species extinction worldwide. When a habitat is destroyed, all the organisms adapted to live there lose their home — and adaptations that took thousands of years to develop cannot be changed overnight. This is why conservation of forests and natural habitats is so urgent."
+        }
+      ]
+    }
+  ]
+}
