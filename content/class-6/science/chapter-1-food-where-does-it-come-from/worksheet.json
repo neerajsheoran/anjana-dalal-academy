@@ -1,0 +1,113 @@
+{
+  "easy": [
+    {
+      "id": "e1",
+      "type": "mcq",
+      "question": "Which of the following is a root vegetable?",
+      "options": ["Spinach", "Carrot", "Mango", "Wheat"],
+      "answer": "Carrot",
+      "explanation": "Carrot grows underground and is the root of the plant. Spinach is a leaf, Mango is a fruit, and Wheat is a seed."
+    },
+    {
+      "id": "e2",
+      "type": "mcq",
+      "question": "What do cows give us?",
+      "options": ["Honey", "Eggs", "Milk", "Wool"],
+      "answer": "Milk",
+      "explanation": "Cows are a source of milk. Honey comes from bees, eggs come from hens, and wool comes from sheep."
+    },
+    {
+      "id": "e3",
+      "type": "fill",
+      "question": "Animals that eat only plants are called ___________.",
+      "answer": "Herbivores",
+      "explanation": "Herbivores only eat plants. Examples are cow, goat, rabbit, and deer."
+    },
+    {
+      "id": "e4",
+      "type": "mcq",
+      "question": "Which part of the plant is spinach (palak)?",
+      "options": ["Root", "Stem", "Leaf", "Fruit"],
+      "answer": "Leaf",
+      "explanation": "Spinach is the leaf of the plant. We eat the green flat part which is the leaf."
+    },
+    {
+      "id": "e5",
+      "type": "fill",
+      "question": "Honey is made by ___________.",
+      "answer": "Bees",
+      "explanation": "Bees collect nectar from flowers and convert it into honey in their hive."
+    }
+  ],
+  "medium": [
+    {
+      "id": "m1",
+      "type": "mcq",
+      "question": "Which of the following is a stem that we eat?",
+      "options": ["Carrot", "Spinach", "Potato", "Cauliflower"],
+      "answer": "Potato",
+      "explanation": "Potato is a stem that grows underground called a tuber. Carrot is a root, Spinach is a leaf, and Cauliflower is a flower."
+    },
+    {
+      "id": "m2",
+      "type": "short",
+      "question": "Name two food items we get from animals (other than milk and eggs).",
+      "answer": "Honey and Meat / Fish",
+      "explanation": "Honey is made by bees. Meat comes from animals like goats and fish comes from water animals. These are all animal sources of food."
+    },
+    {
+      "id": "m3",
+      "type": "mcq",
+      "question": "A lion only eats other animals. What type of eater is a lion?",
+      "options": ["Herbivore", "Omnivore", "Carnivore", "Scavenger"],
+      "answer": "Carnivore",
+      "explanation": "Carnivores eat only other animals. Lions hunt and eat deer, zebras, etc. They never eat plants."
+    },
+    {
+      "id": "m4",
+      "type": "short",
+      "question": "Your mom makes aloo sabzi. Name the plant part of the potato and tell where it grows.",
+      "answer": "Potato is the stem (tuber) of the plant. It grows underground.",
+      "explanation": "Even though it looks like a root, potato is actually an underground stem called a tuber. It stores food for the plant."
+    },
+    {
+      "id": "m5",
+      "type": "mcq",
+      "question": "Which of the following foods comes from a SEED?",
+      "options": ["Potato", "Carrot", "Rice", "Cauliflower"],
+      "answer": "Rice",
+      "explanation": "Rice is a seed of the rice plant. We eat the seed directly. Potato is a stem, Carrot is a root, and Cauliflower is a flower."
+    }
+  ],
+  "hard": [
+    {
+      "id": "h1",
+      "type": "short",
+      "question": "Explain the difference between herbivores, carnivores, and omnivores. Give one example of each.",
+      "answer": "Herbivores eat only plants (e.g., cow). Carnivores eat only animals (e.g., lion). Omnivores eat both plants and animals (e.g., humans).",
+      "explanation": "These three categories classify animals based on what they eat. Humans are omnivores because we eat both dal-roti (plant) and chicken/eggs (animal)."
+    },
+    {
+      "id": "h2",
+      "type": "mcq",
+      "question": "Dal tadka contains ghee. Where does ghee come from?",
+      "options": ["It is made from wheat", "It is made from cow's milk", "It is made from mustard seeds", "It is made from coconut"],
+      "answer": "It is made from cow's milk",
+      "explanation": "Ghee is made by heating butter, which itself is made from cream that comes from cow's milk. So ghee is an animal product."
+    },
+    {
+      "id": "h3",
+      "type": "short",
+      "question": "Look at this meal: rice, dal, palak sabzi, curd, and mango pickle. For each item, write whether it comes from a plant or an animal, and which part.",
+      "answer": "Rice – plant (seed). Dal – plant (seed). Palak – plant (leaf). Curd – animal (made from cow's milk). Mango pickle – plant (fruit).",
+      "explanation": "This exercise helps identify the source of every ingredient. Notice that curd is the only animal product in this meal — it comes from milk."
+    },
+    {
+      "id": "h4",
+      "type": "short",
+      "question": "Are humans herbivores, carnivores, or omnivores? Give two reasons with examples from your daily diet.",
+      "answer": "Humans are omnivores. We eat plants (rice, dal, vegetables) and animal products (milk, eggs, meat).",
+      "explanation": "The key word is 'both'. Because we eat from both plant and animal sources, we are classified as omnivores. This is true even for vegetarians, as they consume milk and dairy which are animal products."
+    }
+  ]
+}
