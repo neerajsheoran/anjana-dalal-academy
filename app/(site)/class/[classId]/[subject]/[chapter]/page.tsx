@@ -35,7 +35,9 @@ export default async function ChapterPage({
 
   const notesPath = path.join(basePath, "index.mdx");
   const hasNotes = fs.existsSync(notesPath);
-  const notesSource = hasNotes ? fs.readFileSync(notesPath, "utf8") : null;
+  const notesRaw = hasNotes ? fs.readFileSync(notesPath, "utf8") : null;
+  // Strip YAML frontmatter (--- ... ---) added by Keystatic CMS before rendering
+  const notesSource = notesRaw ? notesRaw.replace(/^---[\s\S]*?---\s*\n?/, "") : null;
 
   const worksheetPath = path.join(basePath, "worksheet.json");
   const hasWorksheet = fs.existsSync(worksheetPath);

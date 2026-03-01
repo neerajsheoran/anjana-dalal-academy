@@ -1,0 +1,204 @@
+{
+  "chapterRef": "class-6/science/chapter-5-measurement-of-length-and-motion/worksheet",
+  "topics": [
+    {
+      "topic": "Measurement and Units",
+      "easy": [
+        {
+          "id": "ch5-e1",
+          "type": "mcq",
+          "question": "What is the SI unit of length?",
+          "options": [
+            "Metre",
+            "Centimetre",
+            "Kilometre",
+            "Inch"
+          ],
+          "answer": "Metre",
+          "explanation": "The SI (International System of Units) unit of length is the metre (m)."
+        },
+        {
+          "id": "ch5-e2",
+          "type": "mcq",
+          "question": "How many centimetres are there in 1 metre?",
+          "options": [
+            "100",
+            "10",
+            "1000",
+            "50"
+          ],
+          "answer": "100",
+          "explanation": "1 metre = 100 centimetres. This is a fundamental conversion in the metric system."
+        },
+        {
+          "id": "ch5-e3",
+          "type": "fill",
+          "question": "The full form of SI is ______.",
+          "options": [],
+          "answer": "International System of Units",
+          "explanation": "SI stands for Système International d’Unités, which is French for International System of Units."
+        },
+        {
+          "id": "ch5-e4",
+          "type": "mcq",
+          "question": "Which unit would you use to measure the distance between two cities?",
+          "options": [
+            "Kilometre",
+            "Centimetre",
+            "Millimetre",
+            "Metre"
+          ],
+          "answer": "Kilometre",
+          "explanation": "Large distances like those between cities are measured in kilometres (km). 1 km = 1000 m."
+        },
+        {
+          "id": "ch5-e5",
+          "type": "short",
+          "question": "Why did early humans stop using body parts like hand span and foot length for measurement?",
+          "options": [],
+          "answer": "Because body parts vary from person to person, making measurements inconsistent. Standard units were needed so measurements could be compared and understood universally.",
+          "explanation": "A hand span of one person may be different from another’s. Standard units ensure everyone gets the same measurement for the same object."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-m1",
+          "type": "mcq",
+          "question": "What error occurs when you read a ruler by looking at it from the side instead of straight on?",
+          "options": [
+            "Parallax error",
+            "Zero error",
+            "Random error",
+            "Scale error"
+          ],
+          "answer": "Parallax error",
+          "explanation": "Parallax error occurs when the line of sight is not perpendicular to the scale being read, causing an incorrect reading."
+        },
+        {
+          "id": "ch5-m2",
+          "type": "short",
+          "question": "How would you measure the length of a curved line using a thread?",
+          "options": [],
+          "answer": "Lay the thread carefully along the curved line, following its curves. Mark the point on the thread where the line ends. Then straighten the thread and measure the marked length with a ruler.",
+          "explanation": "A flexible thread can follow curved shapes. Once laid along the curve and straightened, its length can be measured with a ruler."
+        },
+        {
+          "id": "ch5-m3",
+          "type": "mcq",
+          "question": "1 kilometre is equal to how many metres?",
+          "options": [
+            "1000 m",
+            "100 m",
+            "10 m",
+            "10000 m"
+          ],
+          "answer": "1000 m",
+          "explanation": "The prefix ‘kilo’ means 1000. So 1 kilometre = 1000 metres."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-h1",
+          "type": "short",
+          "question": "A student measures the length of a table as 1.2 m. Express this length in (a) centimetres and (b) millimetres.",
+          "options": [],
+          "answer": "(a) 1.2 m × 100 = 120 cm. (b) 1.2 m × 1000 = 1200 mm.",
+          "explanation": "1 m = 100 cm, so 1.2 m = 120 cm. 1 m = 1000 mm, so 1.2 m = 1200 mm."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Motion and Speed",
+      "easy": [
+        {
+          "id": "ch5-e6",
+          "type": "mcq",
+          "question": "What is motion?",
+          "options": [
+            "Change in position of an object over time",
+            "Change in shape of an object",
+            "Change in colour of an object",
+            "Change in temperature of an object"
+          ],
+          "answer": "Change in position of an object over time",
+          "explanation": "Motion means that an object’s position changes with respect to time and a reference point."
+        },
+        {
+          "id": "ch5-e7",
+          "type": "mcq",
+          "question": "Which of the following is an example of circular motion?",
+          "options": [
+            "Blades of a fan rotating",
+            "A ball rolling in a straight line",
+            "A child on a swing",
+            "A car moving on a highway"
+          ],
+          "answer": "Blades of a fan rotating",
+          "explanation": "Fan blades rotate around a central axis, following a circular path. A swing is oscillatory, and a car on a straight highway is linear motion."
+        },
+        {
+          "id": "ch5-e8",
+          "type": "fill",
+          "question": "A pendulum swinging back and forth is an example of ______ motion.",
+          "options": [],
+          "answer": "oscillatory",
+          "explanation": "Oscillatory (or to-and-fro) motion is when an object moves repeatedly back and forth about a fixed position."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-m4",
+          "type": "mcq",
+          "question": "A car travels 120 km in 2 hours. What is its speed?",
+          "options": [
+            "60 km/h",
+            "240 km/h",
+            "120 km/h",
+            "30 km/h"
+          ],
+          "answer": "60 km/h",
+          "explanation": "Speed = Distance ÷ Time = 120 km ÷ 2 h = 60 km/h."
+        },
+        {
+          "id": "ch5-m5",
+          "type": "short",
+          "question": "What is the difference between uniform and non-uniform motion? Give one example of each.",
+          "options": [],
+          "answer": "Uniform motion: an object covers equal distances in equal time intervals (e.g., a train moving at constant speed). Non-uniform motion: an object covers unequal distances in equal time intervals (e.g., a car in city traffic that stops and starts).",
+          "explanation": "Uniform motion has constant speed; non-uniform motion has changing speed."
+        },
+        {
+          "id": "ch5-m6",
+          "type": "mcq",
+          "question": "On a distance-time graph, a horizontal straight line means the object is:",
+          "options": [
+            "At rest",
+            "Moving at constant speed",
+            "Accelerating",
+            "Decelerating"
+          ],
+          "answer": "At rest",
+          "explanation": "A horizontal line on a distance-time graph means the distance is not changing over time, so the object is stationary (at rest)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-h2",
+          "type": "short",
+          "question": "Explain relative motion with an example.",
+          "options": [],
+          "answer": "Relative motion means that whether an object appears to be in motion or at rest depends on the observer’s position. Example: A passenger sitting in a moving train is at rest relative to other passengers in the same train, but appears to be in motion to a person standing on the platform.",
+          "explanation": "Motion is always relative to a reference point. The same object can be in motion and at rest depending on who is observing it."
+        },
+        {
+          "id": "ch5-h3",
+          "type": "short",
+          "question": "Classify each of the following as linear, circular, or oscillatory motion: (a) Earth revolving around the Sun, (b) a guitar string when plucked, (c) a train on a straight track.",
+          "options": [],
+          "answer": "(a) Circular motion — Earth follows a roughly circular/elliptical orbit around the Sun. (b) Oscillatory motion — the guitar string vibrates back and forth. (c) Linear motion — the train moves in a straight line.",
+          "explanation": "Circular = round path; oscillatory = back and forth; linear = straight line."
+        }
+      ]
+    }
+  ]
+}

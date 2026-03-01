@@ -1,0 +1,194 @@
+{
+  "chapterRef": "class-6/science/chapter-4-exploring-magnets/worksheet",
+  "topics": [
+    {
+      "topic": "Magnets and Their Types",
+      "easy": [
+        {
+          "id": "ch4-e1",
+          "type": "mcq",
+          "question": "What is a magnet?",
+          "options": [
+            "An object that attracts iron and certain metals",
+            "An object that repels all metals",
+            "A type of plastic material",
+            "A material that conducts electricity"
+          ],
+          "answer": "An object that attracts iron and certain metals",
+          "explanation": "A magnet is an object that can attract iron, nickel, cobalt, and some other metals due to its magnetic properties."
+        },
+        {
+          "id": "ch4-e2",
+          "type": "mcq",
+          "question": "Which of the following is a natural magnet?",
+          "options": [
+            "Lodestone",
+            "Bar magnet",
+            "Horseshoe magnet",
+            "Disc magnet"
+          ],
+          "answer": "Lodestone",
+          "explanation": "Lodestone is a naturally occurring rock (magnetite) that has magnetic properties. All other options are artificial magnets."
+        },
+        {
+          "id": "ch4-e3",
+          "type": "mcq",
+          "question": "How many poles does a magnet have?",
+          "options": [
+            "Two",
+            "One",
+            "Three",
+            "Four"
+          ],
+          "answer": "Two",
+          "explanation": "Every magnet has exactly two poles — a North Pole (N) and a South Pole (S)."
+        },
+        {
+          "id": "ch4-e4",
+          "type": "fill",
+          "question": "The two poles of a magnet are the ______ pole and the ______ pole.",
+          "options": [],
+          "answer": "North; South",
+          "explanation": "Every magnet has a North Pole and a South Pole at its two ends."
+        },
+        {
+          "id": "ch4-e5",
+          "type": "short",
+          "question": "Name any two shapes of magnets.",
+          "options": [],
+          "answer": "Bar magnet and horseshoe magnet (also accept disc magnet, rod magnet, strip magnet).",
+          "explanation": "Magnets are made in many shapes: bar, horseshoe/U-shape, disc, strip, and rod."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-m1",
+          "type": "mcq",
+          "question": "What happens when the north poles of two magnets are brought close to each other?",
+          "options": [
+            "They repel each other",
+            "They attract each other",
+            "Nothing happens",
+            "They stick together permanently"
+          ],
+          "answer": "They repel each other",
+          "explanation": "Like poles repel each other. When two north poles (or two south poles) are brought close, they push each other away."
+        },
+        {
+          "id": "ch4-m2",
+          "type": "mcq",
+          "question": "Which of these materials is attracted by a magnet?",
+          "options": [
+            "Iron nail",
+            "Plastic bottle cap",
+            "Rubber eraser",
+            "Glass piece"
+          ],
+          "answer": "Iron nail",
+          "explanation": "Iron is a magnetic material and is attracted by magnets. Plastic, rubber, and glass are non-magnetic materials."
+        },
+        {
+          "id": "ch4-m3",
+          "type": "short",
+          "question": "What is the difference between magnetic and non-magnetic materials? Give one example of each.",
+          "options": [],
+          "answer": "Magnetic materials are attracted by magnets (e.g., iron nail). Non-magnetic materials are not attracted by magnets (e.g., plastic, wood, glass).",
+          "explanation": "Only materials containing iron, nickel, or cobalt are attracted to magnets. All other materials are non-magnetic."
+        },
+        {
+          "id": "ch4-m4",
+          "type": "fill",
+          "question": "The name ‘magnet’ comes from a region called ______ in ancient Greece.",
+          "options": [],
+          "answer": "Magnesia",
+          "explanation": "The word magnet is derived from Magnesia, a region in ancient Greece where naturally magnetic rocks (lodestones) were first found."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-h1",
+          "type": "short",
+          "question": "Explain why a freely suspended bar magnet always points in the north-south direction.",
+          "options": [],
+          "answer": "The Earth behaves like a giant magnet. The Earth’s magnetic south pole is near the geographic north pole, which attracts the north pole of the suspended magnet. This is why the magnet’s north-seeking pole always points geographically north.",
+          "explanation": "Earth’s magnetic field aligns any freely suspended magnet along the geographic north-south direction."
+        },
+        {
+          "id": "ch4-h2",
+          "type": "short",
+          "question": "Can a magnet be made to lose its magnetism? How?",
+          "options": [],
+          "answer": "Yes, a magnet can lose its magnetism (demagnetisation) by: (1) dropping it repeatedly from a height, (2) heating it to a high temperature, (3) hammering it hard. These actions disturb the alignment of magnetic domains inside the magnet.",
+          "explanation": "Magnetic domains are tiny regions inside a magnet where atoms are aligned. Any shock or heat disrupts this alignment, causing loss of magnetism."
+        }
+      ]
+    },
+    {
+      "topic": "Compass and Magnetic Field",
+      "easy": [
+        {
+          "id": "ch4-e6",
+          "type": "mcq",
+          "question": "What is a compass used for?",
+          "options": [
+            "Finding direction",
+            "Measuring temperature",
+            "Measuring length",
+            "Measuring weight"
+          ],
+          "answer": "Finding direction",
+          "explanation": "A compass contains a magnetised needle that always points north-south, helping us find directions."
+        },
+        {
+          "id": "ch4-e7",
+          "type": "fill",
+          "question": "The area around a magnet where its force acts is called the ______.",
+          "options": [],
+          "answer": "magnetic field",
+          "explanation": "The magnetic field is the region surrounding a magnet where its attractive or repulsive force can be experienced."
+        },
+        {
+          "id": "ch4-e8",
+          "type": "short",
+          "question": "What is an electromagnet?",
+          "options": [],
+          "answer": "An electromagnet is a magnet made by passing electric current through a coil of wire wound around an iron rod. It can be switched on and off.",
+          "explanation": "Electromagnets use electric current to generate magnetic fields. They are used in cranes, electric bells, and MRI machines."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-m5",
+          "type": "mcq",
+          "question": "Where is the magnetic field of a bar magnet the strongest?",
+          "options": [
+            "At the poles",
+            "At the centre",
+            "Equally everywhere",
+            "Far away from the magnet"
+          ],
+          "answer": "At the poles",
+          "explanation": "The magnetic field is strongest at the two poles of a magnet and weakens as you move toward the centre or away from the magnet."
+        },
+        {
+          "id": "ch4-m6",
+          "type": "short",
+          "question": "How can you use iron filings to visualise a magnetic field? What pattern do you see?",
+          "options": [],
+          "answer": "Place a sheet of paper over a bar magnet and sprinkle iron filings on it. Tap the paper gently. The iron filings arrange into curved lines going from the north pole to the south pole. These lines represent the magnetic field lines.",
+          "explanation": "Iron filings act like tiny compass needles and align along the magnetic field lines, revealing the field pattern around the magnet."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-h3",
+          "type": "short",
+          "question": "List any four uses of magnets in everyday life and explain briefly how magnetism helps in each case.",
+          "options": [],
+          "answer": "1. Compass — magnetic needle points north-south to show direction. 2. Refrigerator door seal — strip magnet keeps the door closed airtight. 3. Crane — electromagnet lifts and moves heavy iron/steel loads in factories. 4. Credit card — magnetic strip on the card stores account information.",
+          "explanation": "Magnets are used wherever attraction, direction-finding, data storage, or controllable lifting force is needed."
+        }
+      ]
+    }
+  ]
+}

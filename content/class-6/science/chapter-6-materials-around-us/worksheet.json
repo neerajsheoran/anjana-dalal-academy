@@ -1,0 +1,194 @@
+{
+  "chapterRef": "class-6/science/chapter-6-materials-around-us/worksheet",
+  "topics": [
+    {
+      "topic": "Types and Properties of Materials",
+      "easy": [
+        {
+          "id": "ch6-e1",
+          "type": "mcq",
+          "question": "Which of the following is a natural material?",
+          "options": [
+            "Plastic",
+            "Nylon",
+            "Cotton",
+            "Glass"
+          ],
+          "answer": "Cotton",
+          "explanation": "Cotton is obtained from the cotton plant — it is a natural material. Plastic, nylon, and glass are synthetic (man-made) materials."
+        },
+        {
+          "id": "ch6-e2",
+          "type": "mcq",
+          "question": "Which material allows light to pass through it completely?",
+          "options": [
+            "Glass",
+            "Wood",
+            "Cardboard",
+            "Brick"
+          ],
+          "answer": "Glass",
+          "explanation": "Glass is transparent — it allows light to pass through clearly. Wood, cardboard, and brick are opaque."
+        },
+        {
+          "id": "ch6-e3",
+          "type": "fill",
+          "question": "Materials that allow electricity to flow through them are called ______.",
+          "options": [],
+          "answer": "conductors",
+          "explanation": "Conductors (mainly metals like copper and iron) allow electric current to flow through them easily."
+        },
+        {
+          "id": "ch6-e4",
+          "type": "mcq",
+          "question": "Which of the following dissolves in water?",
+          "options": [
+            "Salt",
+            "Sand",
+            "Chalk powder",
+            "Sawdust"
+          ],
+          "answer": "Salt",
+          "explanation": "Salt is soluble in water — it dissolves to form salt water. Sand, chalk, and sawdust are insoluble."
+        },
+        {
+          "id": "ch6-e5",
+          "type": "short",
+          "question": "Give two examples each of hard materials and soft materials.",
+          "options": [],
+          "answer": "Hard materials: iron, diamond (also accept stone, glass). Soft materials: cotton, rubber (also accept clay, sponge).",
+          "explanation": "Hard materials resist scratching. Soft materials are easily deformed or compressed."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-m1",
+          "type": "mcq",
+          "question": "The handle of a cooking pan is made of wood or plastic because:",
+          "options": [
+            "They are insulators and do not conduct heat",
+            "They are conductors of heat",
+            "They are magnetic",
+            "They are transparent"
+          ],
+          "answer": "They are insulators and do not conduct heat",
+          "explanation": "Wood and plastic are insulators — they do not conduct heat, so the handle stays cool even when the pan is hot."
+        },
+        {
+          "id": "ch6-m2",
+          "type": "short",
+          "question": "What is the difference between transparent, translucent, and opaque materials? Give one example of each.",
+          "options": [],
+          "answer": "Transparent: allows all light through clearly (e.g., clear glass). Translucent: allows some light through but scatters it (e.g., frosted glass, butter paper). Opaque: allows no light through (e.g., wood, metal sheet).",
+          "explanation": "The difference lies in how much and how clearly light passes through the material."
+        },
+        {
+          "id": "ch6-m3",
+          "type": "mcq",
+          "question": "Which property makes copper wire ideal for making electrical wires?",
+          "options": [
+            "It is an excellent conductor of electricity",
+            "It is transparent",
+            "It is magnetic",
+            "It is soluble in water"
+          ],
+          "answer": "It is an excellent conductor of electricity",
+          "explanation": "Copper is chosen for electrical wiring because it allows electric current to flow with very little resistance."
+        },
+        {
+          "id": "ch6-m4",
+          "type": "fill",
+          "question": "Gold and silver appear shiny because they have high ______.",
+          "options": [],
+          "answer": "lustre",
+          "explanation": "Lustre is the property of a material that makes it look shiny. Metals, especially gold and silver, have high lustre."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-h1",
+          "type": "short",
+          "question": "Why are different materials used for different parts of a cooking pan? Explain with reference to their properties.",
+          "options": [],
+          "answer": "The base and sides of the pan are made of steel or aluminium because they are good conductors of heat, allowing heat to spread evenly for cooking. The handle is made of wood or plastic because they are insulators — they do not conduct heat, keeping the handle safe to hold. This shows how different properties of materials are used for different purposes.",
+          "explanation": "Choosing the right material for each part of an object depends on the properties needed: heat conduction for the body, heat insulation for the handle."
+        },
+        {
+          "id": "ch6-h2",
+          "type": "short",
+          "question": "List the three states of matter and one characteristic of each. Give an example for each state.",
+          "options": [],
+          "answer": "Solid: fixed shape and fixed volume (e.g., ice). Liquid: no fixed shape but fixed volume — takes the shape of its container (e.g., water). Gas: no fixed shape and no fixed volume — spreads to fill any container (e.g., steam/water vapour).",
+          "explanation": "The state of matter depends on how closely particles are packed and how freely they can move."
+        }
+      ]
+    },
+    {
+      "topic": "Mixtures and Separation",
+      "easy": [
+        {
+          "id": "ch6-e6",
+          "type": "mcq",
+          "question": "Which method would you use to separate sand from water?",
+          "options": [
+            "Filtration",
+            "Evaporation",
+            "Magnetic separation",
+            "Sieving"
+          ],
+          "answer": "Filtration",
+          "explanation": "Sand does not dissolve in water (it is insoluble). Filtration traps sand particles in filter paper while water passes through."
+        },
+        {
+          "id": "ch6-e7",
+          "type": "fill",
+          "question": "Air is a ______ of several gases including nitrogen, oxygen, and carbon dioxide.",
+          "options": [],
+          "answer": "mixture",
+          "explanation": "Air is a mixture — it contains nitrogen (~78%), oxygen (~21%), carbon dioxide, argon, and other gases mixed together without a chemical reaction."
+        },
+        {
+          "id": "ch6-e8",
+          "type": "short",
+          "question": "What is a mixture? Give two examples.",
+          "options": [],
+          "answer": "A mixture is a combination of two or more substances that are not chemically combined. Examples: salt water (salt + water), air (nitrogen + oxygen + other gases), soil (sand + clay + minerals).",
+          "explanation": "In a mixture, the components retain their individual properties and can be separated by physical methods."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-m5",
+          "type": "mcq",
+          "question": "You have a mixture of iron filings and sand. Which method would best separate them?",
+          "options": [
+            "Magnetic separation",
+            "Filtration",
+            "Evaporation",
+            "Sieving"
+          ],
+          "answer": "Magnetic separation",
+          "explanation": "Iron is magnetic; sand is not. Passing a magnet through the mixture attracts iron filings, leaving sand behind."
+        },
+        {
+          "id": "ch6-m6",
+          "type": "short",
+          "question": "How would you obtain dry salt from salt water? Name the method and explain the steps.",
+          "options": [],
+          "answer": "Method: Evaporation. Steps: Pour salt water into an evaporating dish. Heat it gently. As water evaporates (turns to vapour), salt crystals are left behind in the dish. The dry salt can then be collected.",
+          "explanation": "Evaporation works because water has a much lower boiling point than salt. When heated, water turns to vapour and escapes, leaving salt behind."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-h3",
+          "type": "short",
+          "question": "A mixture contains iron filings, salt, and sand. Describe step by step how you would separate all three components.",
+          "options": [],
+          "answer": "Step 1 — Magnetic separation: Use a magnet to remove iron filings from the mixture. Step 2 — Add water and stir: Salt dissolves in water but sand does not. Step 3 — Filtration: Filter the mixture to separate sand (stays on filter paper) from salt water (passes through). Step 4 — Evaporation: Heat the salt water to evaporate water, leaving dry salt behind. Result: Iron filings, sand, and salt are all separated.",
+          "explanation": "Each step exploits a different property: magnetism for iron, solubility for salt, insolubility for sand."
+        }
+      ]
+    }
+  ]
+}
