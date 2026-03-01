@@ -1,0 +1,207 @@
+{
+  "chapterRef": "class-6/science/chapter-8-a-journey-through-states-of-water/worksheet",
+  "topics": [
+    {
+      "topic": "Evaporation and Condensation",
+      "easy": [
+        {
+          "id": "ch8-e1",
+          "type": "mcq",
+          "question": "What is evaporation?",
+          "options": [
+            "The process by which liquid water converts into water vapour",
+            "The process by which water vapour converts into liquid water",
+            "The process by which water freezes into ice",
+            "The process by which ice melts into water"
+          ],
+          "answer": "The process by which liquid water converts into water vapour",
+          "explanation": "Evaporation is when liquid water at the surface converts into water vapour (gas) and mixes with the air. It happens below boiling point as well."
+        },
+        {
+          "id": "ch8-e2",
+          "type": "mcq",
+          "question": "Why do wet clothes dry when hung outside?",
+          "options": [
+            "Water in the clothes evaporates into the air",
+            "Water in the clothes freezes and falls off",
+            "The clothes absorb more water from air",
+            "Wind blows the water into the ground"
+          ],
+          "answer": "Water in the clothes evaporates into the air",
+          "explanation": "Heat from sunlight and movement of air causes water in the wet clothes to evaporate — converting liquid water into invisible water vapour that mixes with the air."
+        },
+        {
+          "id": "ch8-e3",
+          "type": "fill",
+          "question": "The process by which water vapour converts into liquid water on a cool surface is called ______.",
+          "options": [],
+          "answer": "condensation",
+          "explanation": "Condensation is the reverse of evaporation. When water vapour is cooled, it loses energy and converts back to liquid water."
+        },
+        {
+          "id": "ch8-e4",
+          "type": "mcq",
+          "question": "Where do dew drops on grass in the early morning come from?",
+          "options": [
+            "Water vapour in air condenses on the cool grass surface",
+            "Water rises from the soil through the grass",
+            "Rain falls during the night",
+            "Dew is produced by the grass plant itself"
+          ],
+          "answer": "Water vapour in air condenses on the cool grass surface",
+          "explanation": "At night, grass cools down. Water vapour in the air touches the cool surface and condenses into tiny liquid droplets — these are dew drops."
+        },
+        {
+          "id": "ch8-e5",
+          "type": "short",
+          "question": "Name two everyday situations where you observe condensation.",
+          "options": [],
+          "answer": "1. Water droplets forming on the outside of a cold glass tumbler. 2. Dew drops on grass/leaves in the morning. (Also accept: mirror fogging up after a shower, breath forming a cloud on a cold day, fog/mist.)",
+          "explanation": "Condensation occurs whenever warm moist air contacts a cool surface, causing water vapour to convert into liquid droplets."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-m1",
+          "type": "mcq",
+          "question": "Which of the following conditions will make clothes dry the fastest?",
+          "options": [
+            "Hot sunny day with strong wind and low humidity",
+            "Cool cloudy day with no wind and high humidity",
+            "Cool day with strong wind but high humidity",
+            "Hot day with no wind and high humidity"
+          ],
+          "answer": "Hot sunny day with strong wind and low humidity",
+          "explanation": "High temperature, wind (air movement), and low humidity all speed up evaporation. All three together give the fastest drying."
+        },
+        {
+          "id": "ch8-m2",
+          "type": "short",
+          "question": "What is humidity? How does high humidity affect us on a hot day?",
+          "options": [],
+          "answer": "Humidity is the amount of water vapour present in the air. On a hot day with high humidity, the air is already saturated with moisture, so sweat from our body evaporates very slowly. Since sweating cools us by evaporation, slow evaporation means we feel hotter, stickier, and more uncomfortable.",
+          "explanation": "Our body cools itself through sweat evaporation. High humidity slows this process, making hot days feel even more unbearable."
+        },
+        {
+          "id": "ch8-m3",
+          "type": "mcq",
+          "question": "You spread the same amount of water on a large plate and a small bowl. What will you observe?",
+          "options": [
+            "Water on the plate dries faster because it has more surface area",
+            "Water in the bowl dries faster because it is deeper",
+            "Both dry at the same speed",
+            "Water in the bowl dries faster because it has less surface area"
+          ],
+          "answer": "Water on the plate dries faster because it has more surface area",
+          "explanation": "Evaporation happens at the surface of a liquid. A larger surface area means more liquid molecules can escape into the air at the same time, speeding up evaporation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-h1",
+          "type": "short",
+          "question": "Explain why water stored in an earthen pot (matka) is cooler than water stored in a plastic bottle.",
+          "options": [],
+          "answer": "An earthen pot has tiny pores (small holes). Water slowly seeps through these pores to the outer surface of the pot. This water then evaporates. Evaporation is a cooling process — it takes heat from its surroundings (including the water inside the pot). This continuous evaporation keeps removing heat, cooling the water inside. A plastic bottle has no pores, so no evaporation occurs and no cooling happens.",
+          "explanation": "This is an application of the cooling effect of evaporation. The earthen pot acts as a natural refrigerator using evaporative cooling."
+        },
+        {
+          "id": "ch8-h2",
+          "type": "short",
+          "question": "Why do we feel cooler when we sit under a fan, even if the fan does not blow cold air?",
+          "options": [],
+          "answer": "Our body produces sweat (liquid water) on the skin. The fan increases air movement over our skin. Faster moving air speeds up the evaporation of sweat. Since evaporation is a cooling process (it takes heat from the skin), faster evaporation removes more heat from our body, making us feel cooler.",
+          "explanation": "The fan provides no cold air — it simply speeds up evaporation of sweat, which carries heat away from the skin."
+        }
+      ]
+    },
+    {
+      "topic": "States of Water and the Water Cycle",
+      "easy": [
+        {
+          "id": "ch8-e6",
+          "type": "mcq",
+          "question": "At what temperature does water freeze into ice?",
+          "options": [
+            "0°C",
+            "100°C",
+            "37°C",
+            "-10°C"
+          ],
+          "answer": "0°C",
+          "explanation": "Water freezes (becomes ice) at 0°C. This is also the melting point of ice — at 0°C, ice melts back into water."
+        },
+        {
+          "id": "ch8-e7",
+          "type": "fill",
+          "question": "The continuous circulation of water through evaporation, condensation, and precipitation is called the ______.",
+          "options": [],
+          "answer": "water cycle",
+          "explanation": "The water cycle (hydrological cycle) describes how water continuously moves between the Earth’s surface and the atmosphere through evaporation, condensation, and precipitation."
+        },
+        {
+          "id": "ch8-e8",
+          "type": "mcq",
+          "question": "Which state of water has no fixed shape and no fixed volume?",
+          "options": [
+            "Gas (water vapour)",
+            "Liquid (water)",
+            "Solid (ice)",
+            "All states"
+          ],
+          "answer": "Gas (water vapour)",
+          "explanation": "A gas has no fixed shape (spreads to fill any container) and no fixed volume. Liquid has no fixed shape but has fixed volume. Solid has both fixed shape and fixed volume."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-m4",
+          "type": "short",
+          "question": "Describe the water cycle in four steps.",
+          "options": [],
+          "answer": "1. Evaporation: Heat from the Sun causes water from oceans and water bodies to evaporate into water vapour. 2. Condensation: Water vapour rises and cools at higher altitudes, condensing around dust particles to form tiny water droplets that make up clouds. 3. Precipitation: Droplets join together and fall as rain, snow, or hail when they become heavy enough. 4. Collection: Water collects in rivers, lakes, and oceans, and the cycle repeats.",
+          "explanation": "The water cycle continuously moves water between Earth’s surface and atmosphere, driven by solar energy."
+        },
+        {
+          "id": "ch8-m5",
+          "type": "mcq",
+          "question": "When water vapour rises in the atmosphere and cools, what does it form?",
+          "options": [
+            "Clouds — tiny water droplets condensed around dust particles",
+            "Rain — large water drops that fall immediately",
+            "Ice — water vapour freezes in the sky",
+            "Fog — water vapour stays on the ground"
+          ],
+          "answer": "Clouds — tiny water droplets condensed around dust particles",
+          "explanation": "Water vapour rises because it is lighter than air. As it rises and cools, it condenses around tiny dust particles to form millions of microscopic water droplets — these together form clouds."
+        },
+        {
+          "id": "ch8-m6",
+          "type": "fill",
+          "question": "The process of liquid water converting to solid ice on cooling is called ______.",
+          "options": [],
+          "answer": "freezing",
+          "explanation": "Freezing is when a liquid loses heat and solidifies. For water, freezing occurs at 0°C."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-h3",
+          "type": "short",
+          "question": "Compare the three states of water (solid, liquid, gas) under three headings: shape, volume, and an example from daily life.",
+          "options": [],
+          "answer": "Solid (ice): Fixed shape; Fixed volume; Example — ice cubes in a glass. Liquid (water): No fixed shape (takes shape of container); Fixed volume; Example — water poured into different containers. Gas (water vapour): No fixed shape; No fixed volume (fills entire space); Example — steam rising from hot tea, invisible water vapour in air.",
+          "explanation": "The state of matter depends on how closely packed and how freely moving the water particles are."
+        },
+        {
+          "id": "ch8-h4",
+          "type": "short",
+          "question": "The Thirukkural says: ‘If it does not rain well, even the mighty ocean will be drained.’ Explain this using the concept of the water cycle.",
+          "options": [],
+          "answer": "The water cycle continuously moves water from oceans (via evaporation) to clouds (via condensation) and back to Earth (via rain). Rain replenishes rivers, lakes, and groundwater that humans and all living things depend on. If rainfall fails (the water cycle is disrupted), water sources dry up even though the ocean holds vast amounts of water — because we cannot use ocean water directly for drinking, farming, or most daily needs. So rain is the crucial link that delivers usable freshwater to land.",
+          "explanation": "This question connects the water cycle concept to the wisdom of the Thirukkural — rainfall is the mechanism that distributes water from the ocean to land-based life."
+        }
+      ]
+    }
+  ]
+}
