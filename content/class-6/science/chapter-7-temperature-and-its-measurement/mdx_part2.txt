@@ -1,0 +1,100 @@
+---
+title: Chapter 7 Temperature and its Measurement
+---
+
+## Feeling Hot or Cold?
+
+Have you ever touched a glass of cold water on a summer day and felt instant relief? Or placed your hand near a hot cup of tea? Our body uses the sense of **touch** to judge whether something is hot or cold. But is touch always reliable?
+
+> **Story:** Lambok and Phiban, two friends from Shillong, visited different places. Lambok went to a hot desert, Phiban went to a cold hill station. When they dipped their hands into the same bucket of water, Lambok said “It’s cold!” and Phiban said “It’s warm!” — yet it was the same water!
+
+This tells us that our sense of touch is **not reliable** for measuring hotness or coldness. We need a proper scientific measure — **temperature**.
+
+---
+
+## What is Temperature?
+
+**Temperature** is the measure of how hot or cold an object is.
+
+- A higher temperature means the object is **hotter**.
+- A lower temperature means the object is **colder**.
+
+Temperature is measured using an instrument called a **thermometer**.
+
+The SI unit of temperature is the **kelvin (K)**.
+
+In everyday life, we use **degrees Celsius (°C)** or **degrees Fahrenheit (°F)**.
+
+---
+
+## Temperature Scales
+
+Three scales are used to measure temperature:
+
+| Scale | Unit Symbol | Used For |
+|-------|-------------|---------|
+| Celsius | °C | Weather, medicine, science labs |
+| Fahrenheit | °F | Body temperature (in some countries), weather (USA) |
+| Kelvin | K | Science (SI unit) |
+
+### Important Reference Points
+
+| Condition | Celsius (°C) | Fahrenheit (°F) | Kelvin (K) |
+|-----------|-------------|----------------|-----------|
+| Freezing point of water | 0 | 32 | 273.15 |
+| Boiling point of water | 100 | 212 | 373.15 |
+| Normal human body temperature | 37.0 | 98.6 | 310.15 |
+
+### Converting Between Scales
+
+> **Celsius to Kelvin:** K = °C + 273.15
+> **Celsius to Fahrenheit:** °F = (°C × 9/5) + 32
+
+### Absolute Zero
+
+The lowest possible temperature is **−273.15°C**, called **absolute zero**. It equals **0 K** on the Kelvin scale. At this temperature, particles stop moving entirely. Nothing can be colder than absolute zero.
+
+---
+
+## Measuring Temperature — Thermometers
+
+A **thermometer** is an instrument used to measure temperature.
+
+---
+
+### 1. Clinical Thermometer
+
+A **clinical thermometer** is used to measure human body temperature.
+
+**Features:**
+- Has a narrow range — usually **35°C to 42°C** (because normal body temperature is around 37°C)
+- Has a **kink** (a bend in the glass tube near the bulb) that prevents mercury from falling back, so you can read it after removing from the body
+- Must be washed and shaken down after each use (for mercury type)
+- **Digital clinical thermometers** are now more commonly used — they beep when done and display the reading on a screen
+
+**How to use:**
+1. Wash the thermometer and shake mercury down below 35°C (or switch on digital)
+2. Place the bulb under the tongue (or in the armpit)
+3. Wait for about 1–2 minutes
+4. Read the temperature (digital: read the display)
+
+**Normal body temperature:** 37.0°C (98.6°F)
+
+> A person has a fever if their temperature is consistently above **37.5°C**.
+
+---
+
+### 2. Laboratory Thermometer
+
+A **laboratory thermometer** is used in science experiments.
+
+**Features:**
+- Wider range — typically **−10°C to 110°C**
+- Smallest division on scale: **1°C**
+- No kink — must be read while still in the substance
+- Should be held upright and not placed on the bottom of the container
+
+**How to use:**
+1. Hold the thermometer vertically in the liquid (do not let bulb touch the bottom)
+2. Wait until the reading becomes steady
+3. Read at eye level to avoid parallax error

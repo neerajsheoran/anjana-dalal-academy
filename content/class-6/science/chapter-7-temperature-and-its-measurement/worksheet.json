@@ -1,0 +1,194 @@
+{
+  "chapterRef": "class-6/science/chapter-7-temperature-and-its-measurement/worksheet",
+  "topics": [
+    {
+      "topic": "Temperature and Thermometers",
+      "easy": [
+        {
+          "id": "ch7-e1",
+          "type": "mcq",
+          "question": "What is the SI unit of temperature?",
+          "options": [
+            "Kelvin",
+            "Celsius",
+            "Fahrenheit",
+            "Joule"
+          ],
+          "answer": "Kelvin",
+          "explanation": "The SI (International System of Units) unit of temperature is the kelvin (K). In everyday use, Celsius and Fahrenheit are also used."
+        },
+        {
+          "id": "ch7-e2",
+          "type": "mcq",
+          "question": "What is the normal body temperature of a healthy human?",
+          "options": [
+            "37.0°C",
+            "100°C",
+            "0°C",
+            "98°C"
+          ],
+          "answer": "37.0°C",
+          "explanation": "Normal human body temperature is 37.0°C (98.6°F). A temperature consistently above 37.5°C indicates fever."
+        },
+        {
+          "id": "ch7-e3",
+          "type": "fill",
+          "question": "An instrument used to measure temperature is called a ______.",
+          "options": [],
+          "answer": "thermometer",
+          "explanation": "A thermometer measures temperature. Different types include clinical, laboratory, and digital thermometers."
+        },
+        {
+          "id": "ch7-e4",
+          "type": "mcq",
+          "question": "On the Celsius scale, at what temperature does water freeze?",
+          "options": [
+            "0°C",
+            "100°C",
+            "37°C",
+            "−273°C"
+          ],
+          "answer": "0°C",
+          "explanation": "Water freezes (turns to ice) at 0°C. It boils at 100°C on the Celsius scale."
+        },
+        {
+          "id": "ch7-e5",
+          "type": "short",
+          "question": "Why is our sense of touch not reliable for measuring temperature?",
+          "options": [],
+          "answer": "Our sense of touch depends on our body’s current temperature. The same object can feel cold to one person and warm to another depending on what temperature they were exposed to before. So touch gives relative (not absolute) information, making it unreliable for accurate measurement.",
+          "explanation": "As shown in the story of Lambok and Phiban, the same bucket of water felt different to two people who had been in different temperature environments."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-m1",
+          "type": "mcq",
+          "question": "What is the range of a typical laboratory thermometer?",
+          "options": [
+            "−10°C to 110°C",
+            "35°C to 42°C",
+            "0°C to 50°C",
+            "−100°C to 500°C"
+          ],
+          "answer": "−10°C to 110°C",
+          "explanation": "A laboratory thermometer has a wider range (−10°C to 110°C) to cover the temperatures encountered in experiments. A clinical thermometer has a narrow range of 35°C to 42°C."
+        },
+        {
+          "id": "ch7-m2",
+          "type": "short",
+          "question": "What is the purpose of the kink in a clinical thermometer?",
+          "options": [],
+          "answer": "The kink (a bend in the glass tube near the bulb) prevents the mercury from flowing back into the bulb when the thermometer is removed from the patient’s body. This allows the reading to remain fixed so it can be read accurately after removal.",
+          "explanation": "Without the kink, mercury would slide back down as soon as the thermometer cools, making it impossible to read the temperature after removing it from the patient."
+        },
+        {
+          "id": "ch7-m3",
+          "type": "mcq",
+          "question": "What does the Kelvin temperature scale start from?",
+          "options": [
+            "Absolute zero (−273.15°C)",
+            "The freezing point of water (0°C)",
+            "The boiling point of water (100°C)",
+            "Normal body temperature (37°C)"
+          ],
+          "answer": "Absolute zero (−273.15°C)",
+          "explanation": "The Kelvin scale starts at absolute zero (0 K = −273.15°C), the lowest possible temperature where particle movement stops completely."
+        },
+        {
+          "id": "ch7-m4",
+          "type": "fill",
+          "question": "To convert Celsius to Kelvin, we use the formula: K = °C + ______.",
+          "options": [],
+          "answer": "273.15",
+          "explanation": "K = °C + 273.15. So 0°C = 273.15 K and 100°C = 373.15 K."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-h1",
+          "type": "short",
+          "question": "What is the difference between heat and temperature? Give one example to illustrate.",
+          "options": [],
+          "answer": "Temperature is a measure of how hot or cold an object is (measured in °C, °F, or K with a thermometer). Heat is a form of energy that flows from a hotter object to a cooler one (measured in joules with a calorimeter). Example: A burning matchstick has a higher temperature than a large pot of warm water, but the pot of warm water contains far more heat energy because it is much larger.",
+          "explanation": "Temperature tells us how hot something is; heat is the total thermal energy an object contains. A small hot flame has high temperature but little total heat."
+        },
+        {
+          "id": "ch7-h2",
+          "type": "short",
+          "question": "Convert 37°C (normal body temperature) to (a) Kelvin and (b) Fahrenheit.",
+          "options": [],
+          "answer": "(a) Kelvin: K = 37 + 273.15 = 310.15 K. (b) Fahrenheit: °F = (37 × 9/5) + 32 = 66.6 + 32 = 98.6°F.",
+          "explanation": "Use K = °C + 273.15 for Celsius to Kelvin. Use °F = (°C × 9/5) + 32 for Celsius to Fahrenheit."
+        }
+      ]
+    },
+    {
+      "topic": "Using Thermometers Correctly",
+      "easy": [
+        {
+          "id": "ch7-e6",
+          "type": "mcq",
+          "question": "Which thermometer is used to measure a patient’s body temperature?",
+          "options": [
+            "Clinical thermometer",
+            "Laboratory thermometer",
+            "Maximum-minimum thermometer",
+            "Weather thermometer"
+          ],
+          "answer": "Clinical thermometer",
+          "explanation": "A clinical thermometer is specifically designed to measure human body temperature in the range of 35°C to 42°C."
+        },
+        {
+          "id": "ch7-e7",
+          "type": "fill",
+          "question": "When reading a thermometer, you should hold it at ______ level to avoid parallax error.",
+          "options": [],
+          "answer": "eye",
+          "explanation": "Reading a thermometer at eye level ensures the line of sight is perpendicular to the scale, avoiding parallax error."
+        },
+        {
+          "id": "ch7-e8",
+          "type": "short",
+          "question": "Name the Indian scientist known as the ‘Weather Woman of India’.",
+          "options": [],
+          "answer": "Anna Mani (1918–2001). She was an Indian physicist and meteorologist who designed weather instruments and worked at the India Meteorological Department.",
+          "explanation": "Anna Mani made significant contributions to meteorological instrumentation in India."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-m5",
+          "type": "short",
+          "question": "Why should the bulb of a laboratory thermometer not touch the bottom of the container?",
+          "options": [],
+          "answer": "If the bulb touches the container’s bottom, it measures the temperature of the container rather than the liquid inside it. The container may be hotter or cooler than the liquid, giving an incorrect reading.",
+          "explanation": "The thermometer bulb must be surrounded by the substance being measured (not touching any surface) to give an accurate reading."
+        },
+        {
+          "id": "ch7-m6",
+          "type": "mcq",
+          "question": "What is a Stevenson Screen?",
+          "options": [
+            "A louvred box that protects outdoor thermometers from direct sunlight while allowing air flow",
+            "A type of digital thermometer screen",
+            "A screen used in laboratories to read thermometers",
+            "A cover for clinical thermometers"
+          ],
+          "answer": "A louvred box that protects outdoor thermometers from direct sunlight while allowing air flow",
+          "explanation": "A Stevenson Screen is a white wooden box with louvred sides. It protects weather instruments from rain and direct sunlight while allowing free air circulation for accurate atmospheric temperature measurement."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-h3",
+          "type": "short",
+          "question": "Compare the clinical thermometer and the laboratory thermometer under three headings: range, presence of kink, and how you read it.",
+          "options": [],
+          "answer": "Clinical thermometer: Range 35–42°C; Has a kink to hold the reading; Can be read after removing from the patient. Laboratory thermometer: Range −10°C to 110°C; No kink; Must be read while the bulb is still in the substance being measured.",
+          "explanation": "The clinical thermometer is designed for body temperature measurement with safety features; the laboratory thermometer is designed for experiment use with a wider range."
+        }
+      ]
+    }
+  ]
+}
