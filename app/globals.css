@@ -18,8 +18,20 @@ body {
   0%, 100% { transform: rotate(-10deg); }
   50% { transform: rotate(10deg); }
 }
-.animate-wiggle {
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.25); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.25); }
+  70%       { transform: scale(1); }
+}
+
+@utility animate-wiggle {
   animation: wiggle 1.8s ease-in-out infinite;
+  display: inline-block;
+}
+@utility animate-heartbeat {
+  animation: heartbeat 1.4s ease-in-out infinite;
   display: inline-block;
 }
 
