@@ -1,2 +1,0 @@
-line with "double quotes"
-line two
