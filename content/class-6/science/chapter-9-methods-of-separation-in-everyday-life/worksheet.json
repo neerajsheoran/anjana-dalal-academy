@@ -1,0 +1,416 @@
+{
+  "chapterRef": "class-6/science/chapter-9-methods-of-separation-in-everyday-life/worksheet",
+  "topics": [
+    {
+      "topic": "Need for Separation and Basic Concepts",
+      "easy": [
+        {
+          "id": "ch9-e1",
+          "type": "mcq",
+          "question": "Why do we need to separate mixtures?",
+          "options": [
+            "To remove harmful or unwanted parts and to get useful components",
+            "Just for fun — there is no real reason",
+            "Because mixtures cannot be stored",
+            "Because all mixtures are dangerous"
+          ],
+          "answer": "To remove harmful or unwanted parts and to get useful components",
+          "explanation": "We separate mixtures to remove unwanted substances (like stones in rice), to get a pure useful substance (like salt from sea water), or to separate two useful components."
+        },
+        {
+          "id": "ch9-e2",
+          "type": "mcq",
+          "question": "Which of the following is an example of a mixture that needs to be separated in everyday life?",
+          "options": [
+            "Rice mixed with small pebbles before cooking",
+            "Water at room temperature",
+            "A piece of iron",
+            "A glass of clean water"
+          ],
+          "answer": "Rice mixed with small pebbles before cooking",
+          "explanation": "Rice mixed with pebbles is a mixture that needs to be separated before cooking. Pure water, iron, and clean water are not mixtures needing separation."
+        },
+        {
+          "id": "ch9-e3",
+          "type": "fill",
+          "question": "A substance that dissolves in water is called ______.",
+          "options": [],
+          "answer": "soluble",
+          "explanation": "A soluble substance dissolves in a liquid (like salt in water). An insoluble substance does not dissolve (like sand in water)."
+        },
+        {
+          "id": "ch9-e4",
+          "type": "mcq",
+          "question": "What is the solid material that remains on the filter paper called?",
+          "options": [
+            "Residue",
+            "Filtrate",
+            "Sediment",
+            "Solution"
+          ],
+          "answer": "Residue",
+          "explanation": "The solid that does not pass through the filter and remains on the filter paper is called the residue. The liquid that passes through is called the filtrate."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m1",
+          "type": "short",
+          "question": "Differentiate between a soluble and an insoluble substance. Give one example of each.",
+          "options": [],
+          "answer": "A soluble substance dissolves completely in a liquid — example: salt in water. An insoluble substance does not dissolve — example: sand in water.",
+          "explanation": "Solubility determines which separation method to use. Filtration removes insoluble solids; evaporation removes the solvent from a soluble solid."
+        },
+        {
+          "id": "ch9-m2",
+          "type": "short",
+          "question": "Name any three methods of separating mixtures. For each, give one Indian example.",
+          "options": [],
+          "answer": "1. Winnowing — used by farmers to separate grain from chaff. 2. Sieving — sieving flour with a chalani in the kitchen. 3. Hand-picking — picking stones from dal.",
+          "explanation": "Different methods suit different types of mixtures depending on the properties (size, weight, solubility, magnetic nature) of the components."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-h1",
+          "type": "long",
+          "question": "Explain how you would separate a mixture of sand, iron filings, and salt from water. Use the correct methods in the correct order.",
+          "options": [],
+          "answer": "Step 1 — Magnetic separation: pass a magnet over the dry mixture to remove iron filings. Step 2 — Sieving or decantation with water: dissolve the remaining salt-sand mixture in water; sand is insoluble and sinks. Step 3 — Filtration: filter the solution through filter paper to remove sand (residue). Step 4 — Evaporation: heat the filtrate (salt solution) to evaporate water, leaving salt behind.",
+          "explanation": "Complex mixtures often need multiple methods in sequence. Choosing the right order matters — magnetic separation first (when dry), then use solubility differences (sand vs salt in water), then filter the insoluble, then evaporate the dissolved."
+        }
+      ]
+    },
+    {
+      "topic": "Hand-picking, Threshing, and Winnowing",
+      "easy": [
+        {
+          "id": "ch9-e5",
+          "type": "mcq",
+          "question": "Which method is used to separate stones from rice before cooking?",
+          "options": [
+            "Hand-picking",
+            "Sieving",
+            "Filtration",
+            "Evaporation"
+          ],
+          "answer": "Hand-picking",
+          "explanation": "Hand-picking uses fingers to pick out unwanted larger pieces like stones or pebbles from rice or dal. It works when the pieces are large enough to see and pick."
+        },
+        {
+          "id": "ch9-e6",
+          "type": "mcq",
+          "question": "Winnowing separates grain from chaff because they have different —",
+          "options": [
+            "weights",
+            "colours",
+            "shapes",
+            "tastes"
+          ],
+          "answer": "weights",
+          "explanation": "Winnowing uses wind. The light chaff is blown away while the heavier grain falls straight down. The key property is difference in weight (density)."
+        },
+        {
+          "id": "ch9-e7",
+          "type": "fill",
+          "question": "The process of separating grain from stalks by beating is called ______.",
+          "options": [],
+          "answer": "threshing",
+          "explanation": "Threshing is done after harvesting. Farmers beat the stalks to loosen the grain. Modern threshing machines do this job quickly."
+        },
+        {
+          "id": "ch9-e8",
+          "type": "mcq",
+          "question": "A farmer wants to separate wheat from its broken stalks using wind. Which method will she use?",
+          "options": [
+            "Winnowing",
+            "Sieving",
+            "Hand-picking",
+            "Filtration"
+          ],
+          "answer": "Winnowing",
+          "explanation": "Winnowing uses wind or blowing air to separate light components (chaff, broken stalks) from heavier ones (grain). It is commonly used by farmers after threshing."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m3",
+          "type": "short",
+          "question": "What is the difference between threshing and winnowing? Why are both steps needed?",
+          "options": [],
+          "answer": "Threshing separates the grain from the stalks by beating. Winnowing then separates the loose grain from the chaff (husk and broken bits) using wind. Both are needed because threshing gives a mix of grain and chaff, which must then be cleaned by winnowing.",
+          "explanation": "After harvesting, the crop goes through threshing first, then winnowing. These two steps together clean the grain for storage and use."
+        },
+        {
+          "id": "ch9-m4",
+          "type": "short",
+          "question": "Why is hand-picking not a practical method for separating fine mixtures like sand and salt?",
+          "options": [],
+          "answer": "Hand-picking requires the unwanted pieces to be large enough to see and pick individually. Sand and salt particles are too tiny and numerous to pick by hand. A different method like dissolving in water followed by filtration and evaporation would be needed.",
+          "explanation": "Hand-picking works only for coarse mixtures with few unwanted pieces (like stones in rice). For fine particles, faster and more efficient methods are required."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Sieving",
+      "easy": [
+        {
+          "id": "ch9-e9",
+          "type": "mcq",
+          "question": "Sieving is used to separate components that differ in —",
+          "options": [
+            "particle size",
+            "colour",
+            "taste",
+            "magnetic property"
+          ],
+          "answer": "particle size",
+          "explanation": "A sieve has holes of a specific size. Particles smaller than the holes pass through; larger particles are held back. This separates by particle size."
+        },
+        {
+          "id": "ch9-e10",
+          "type": "fill",
+          "question": "In a kitchen, a ______ (Hindi: chalani) is used to sieve flour and remove lumps or bran.",
+          "options": [],
+          "answer": "sieve / strainer",
+          "explanation": "A chalani or sieve is a fine mesh used to sift flour. It removes larger bran particles and lumps while allowing fine flour to pass through."
+        },
+        {
+          "id": "ch9-e11",
+          "type": "mcq",
+          "question": "Which of the following can be separated by sieving?",
+          "options": [
+            "Sand mixed with pebbles",
+            "Salt dissolved in water",
+            "Iron filings and sand",
+            "Grain from chaff"
+          ],
+          "answer": "Sand mixed with pebbles",
+          "explanation": "Sieving works when the components have different particle sizes. Sand and pebbles differ in size, so a sieve can separate them. Salt in water is a solution (sieving will not help). Iron and sand need magnetic separation. Grain and chaff need winnowing."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m5",
+          "type": "short",
+          "question": "Describe an activity to separate a mixture of sand and fine gravel using sieving.",
+          "options": [],
+          "answer": "Take a mixture of sand and fine gravel. Place a sieve with holes larger than sand particles but smaller than gravel pieces over a container. Pour the mixture into the sieve. Shake gently. Fine sand particles pass through the holes and collect in the container below. The larger gravel pieces remain in the sieve.",
+          "explanation": "Sieving works because the holes in the sieve are larger than sand but smaller than gravel — a physical barrier that separates by size."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Sedimentation, Loading, and Decantation",
+      "easy": [
+        {
+          "id": "ch9-e12",
+          "type": "mcq",
+          "question": "What is sedimentation?",
+          "options": [
+            "The settling of heavy particles at the bottom of a liquid",
+            "The pouring off of clear liquid after particles settle",
+            "The separation of grain from stalks",
+            "The filtering of liquid through filter paper"
+          ],
+          "answer": "The settling of heavy particles at the bottom of a liquid",
+          "explanation": "Sedimentation is the process where heavier, insoluble particles in a liquid sink to the bottom due to gravity. Muddy water left undisturbed is a common example."
+        },
+        {
+          "id": "ch9-e13",
+          "type": "mcq",
+          "question": "After sedimentation, the clear liquid on top is carefully poured off. This process is called —",
+          "options": [
+            "Decantation",
+            "Filtration",
+            "Evaporation",
+            "Loading"
+          ],
+          "answer": "Decantation",
+          "explanation": "Decantation is carefully pouring off the clear liquid (supernatant) from above the sediment without disturbing it. It is done after sedimentation."
+        },
+        {
+          "id": "ch9-e14",
+          "type": "fill",
+          "question": "Adding ______ (fitkari) to muddy water helps the fine particles clump together and settle faster.",
+          "options": [],
+          "answer": "alum",
+          "explanation": "Alum (fitkari) causes fine suspended particles to coagulate — they clump into larger, heavier clusters and settle much faster. This process is called loading."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m6",
+          "type": "short",
+          "question": "Explain the steps of purifying muddy water using sedimentation, loading, and decantation.",
+          "options": [],
+          "answer": "1. Take muddy water in a container. 2. Add a small piece of alum and stir (loading). 3. Leave undisturbed for some time — mud particles settle at the bottom (sedimentation). 4. Carefully pour the clear water from the top into another container without disturbing the sediment (decantation). The water obtained is clearer but may still have very fine particles.",
+          "explanation": "These three steps together are traditionally used to purify water in villages. However, the water may still need filtration or boiling before drinking."
+        },
+        {
+          "id": "ch9-m7",
+          "type": "short",
+          "question": "Why is decantation not enough to get completely pure water from muddy water?",
+          "options": [],
+          "answer": "Decantation removes only the sediment that has settled at the bottom. Very fine particles that remain suspended in the water are not removed by decantation. Filtration is needed to remove these fine particles.",
+          "explanation": "Decantation is only a partial separation. Fine particles still pass with the decanted liquid. Filtration provides a more thorough removal of insoluble particles."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-h2",
+          "type": "long",
+          "question": "A villager has collected water from a muddy pond for drinking. Describe the complete process she should follow to make the water safe to drink, naming each method used.",
+          "options": [],
+          "answer": "Step 1 — Loading: Add a small piece of alum (fitkari) to the muddy water and stir. Alum causes fine mud particles to coagulate and settle faster. Step 2 — Sedimentation: Leave the water undisturbed for some time. Heavy mud particles and clumped fine particles settle at the bottom. Step 3 — Decantation: Carefully pour the clear water into another clean vessel without disturbing the sediment. Step 4 — Filtration: Pass the decanted water through a filter (filter cloth or filter candle) to remove remaining fine particles. Step 5 — Boiling or other disinfection: Boil the filtered water to kill bacteria and germs. The water is now safe to drink.",
+          "explanation": "Water purification uses multiple physical separation methods in sequence: loading, sedimentation, decantation, filtration — followed by disinfection (boiling). Each step removes different impurities."
+        }
+      ]
+    },
+    {
+      "topic": "Filtration",
+      "easy": [
+        {
+          "id": "ch9-e15",
+          "type": "mcq",
+          "question": "What does filtration separate from a liquid?",
+          "options": [
+            "Insoluble solid particles",
+            "Dissolved salts",
+            "Lighter particles",
+            "Magnetic materials"
+          ],
+          "answer": "Insoluble solid particles",
+          "explanation": "Filtration removes insoluble solid particles from a liquid by passing the mixture through a filter. Dissolved substances (like salt) pass through the filter with the liquid and cannot be removed by filtration."
+        },
+        {
+          "id": "ch9-e16",
+          "type": "mcq",
+          "question": "The liquid that passes through the filter paper is called the —",
+          "options": [
+            "filtrate",
+            "residue",
+            "sediment",
+            "solute"
+          ],
+          "answer": "filtrate",
+          "explanation": "The filtrate is the clear liquid collected after filtration. The solid that remains on the filter paper is called the residue."
+        },
+        {
+          "id": "ch9-e17",
+          "type": "fill",
+          "question": "If you filter salt water through filter paper, the water that passes through will still taste ______ because salt is ______ in water.",
+          "options": [],
+          "answer": "salty; soluble",
+          "explanation": "Salt dissolves in water (it is soluble). Filtration only removes insoluble particles. Dissolved salt molecules are too small to be trapped by filter paper pores and pass through with the water."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m8",
+          "type": "short",
+          "question": "Describe the laboratory method of filtration to separate chalk powder from water.",
+          "options": [],
+          "answer": "Fold a filter paper into a cone and place it in a glass funnel. Set the funnel on a stand over a beaker. Pour the chalk-water mixture slowly through the filter paper. Chalk particles (insoluble) are too large to pass through the tiny pores and collect as residue on the filter paper. Water passes through and is collected as filtrate in the beaker.",
+          "explanation": "Filtration is a physical separation using the difference in particle size. Water molecules and dissolved substances pass through; undissolved solids do not."
+        },
+        {
+          "id": "ch9-m9",
+          "type": "mcq",
+          "question": "Which of the following CANNOT be removed from water by filtration alone?",
+          "options": [
+            "Dissolved sugar",
+            "Sand",
+            "Chalk powder",
+            "Mud particles"
+          ],
+          "answer": "Dissolved sugar",
+          "explanation": "Dissolved sugar molecules are at the molecular level — far too small to be held back by filter paper. Filtration only removes insoluble particles. To remove dissolved sugar, evaporation would be needed."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Evaporation and Magnetic Separation",
+      "easy": [
+        {
+          "id": "ch9-e18",
+          "type": "mcq",
+          "question": "Evaporation is used to separate —",
+          "options": [
+            "A dissolved solid from its solution",
+            "Large particles from small particles",
+            "Magnetic materials from non-magnetic ones",
+            "Heavy particles from a liquid"
+          ],
+          "answer": "A dissolved solid from its solution",
+          "explanation": "Evaporation heats a solution until the solvent (usually water) turns to vapour and escapes, leaving the dissolved solid behind. Example: getting salt from sea water."
+        },
+        {
+          "id": "ch9-e19",
+          "type": "mcq",
+          "question": "Sea salt is obtained from sea water by which method?",
+          "options": [
+            "Evaporation",
+            "Filtration",
+            "Sieving",
+            "Decantation"
+          ],
+          "answer": "Evaporation",
+          "explanation": "Sea water is collected in large shallow pans. The sun heats the water, causing it to evaporate. Salt remains behind in the pans. This is how salt is produced in places like Rann of Kutch and coastal Tamil Nadu."
+        },
+        {
+          "id": "ch9-e20",
+          "type": "fill",
+          "question": "A magnet can be used to separate iron filings from sand because iron is a ______ material.",
+          "options": [],
+          "answer": "magnetic",
+          "explanation": "Iron, nickel, and cobalt are magnetic materials. A magnet attracts them. Sand is non-magnetic, so it is not attracted and stays behind."
+        },
+        {
+          "id": "ch9-e21",
+          "type": "mcq",
+          "question": "Which method would you use to separate iron nails that have fallen into a box of sand?",
+          "options": [
+            "Magnetic separation",
+            "Filtration",
+            "Evaporation",
+            "Winnowing"
+          ],
+          "answer": "Magnetic separation",
+          "explanation": "Iron nails are magnetic. Passing a magnet over the sand-nail mixture will attract and lift out the iron nails, leaving the sand behind."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-m10",
+          "type": "short",
+          "question": "Why is evaporation not suitable for separating a mixture of alcohol and water?",
+          "options": [],
+          "answer": "Evaporation works well when one component evaporates (becomes vapour) at a low temperature and the other stays behind as a solid. In an alcohol-water mixture, both alcohol and water are liquids that evaporate — just at different temperatures. Simple evaporation would partly evaporate both. A method like distillation (controlled evaporation and condensation) is better for separating two liquids.",
+          "explanation": "Evaporation is ideal for separating a dissolved solid from a liquid solvent. For two liquids, distillation (which uses both evaporation and condensation) is more appropriate."
+        },
+        {
+          "id": "ch9-m11",
+          "type": "short",
+          "question": "In a recycling factory, crushed metal scrap contains a mixture of iron pieces and aluminium pieces. How can they be separated quickly? Explain the principle.",
+          "options": [],
+          "answer": "A large powerful magnet on a conveyor belt can separate them. When the mixture passes under the magnet, iron pieces (magnetic) are attracted and pulled away. Aluminium pieces (non-magnetic) are not attracted and continue on the belt. This is industrial magnetic separation. The principle: iron is a magnetic material; aluminium is not.",
+          "explanation": "Magnetic separation is efficient for large-scale sorting of magnetic from non-magnetic metals. It is widely used in recycling and mining industries."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-h3",
+          "type": "long",
+          "question": "Compare evaporation and condensation. How can both methods be used together to get pure water from salt water?",
+          "options": [],
+          "answer": "Evaporation is the process where a liquid is heated and converts to vapour. In evaporation alone, the vapour escapes and the dissolved solid (salt) remains. We get salt but lose the water. Condensation is the reverse — water vapour is cooled and converts back to liquid water. When both are combined (distillation): heat the salt water → water evaporates → vapour is led through a cool tube → vapour condenses back into liquid water → this is pure distilled water, free of salt. Salt remains behind. This is how desalination plants get drinking water from sea water in water-scarce regions.",
+          "explanation": "Evaporation converts liquid to vapour; condensation converts vapour back to liquid. Together they allow us to separate and collect both components — pure water and the dissolved salt — without wasting either."
+        }
+      ]
+    }
+  ]
+}
