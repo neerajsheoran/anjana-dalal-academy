@@ -1,8 +1,4 @@
 import Link from 'next/link';
-import LottieIcon from '@/components/LottieIcon';
-import browseByClassAnim from '@/public/animations/browse-by-class.json';
-import browseBySubjectAnim from '@/public/animations/browse-by-subject.json';
-import quizAndRevisionAnim from '@/public/animations/quiz-and-revision.json';
 
 export default function HomePage() {
   return (
@@ -40,8 +36,8 @@ export default function HomePage() {
             href="/classes"
             className="group bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
           >
-            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200 overflow-hidden">
-              <LottieIcon animationData={browseByClassAnim} className="w-16 h-16" />
+            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+              <span className="text-5xl animate-bounce">🎒</span>
             </div>
             <h3 className="text-white text-xl font-bold mb-2">Browse by Class</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
@@ -55,8 +51,8 @@ export default function HomePage() {
             href="/subjects"
             className="group bg-gradient-to-br from-emerald-500 to-green-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
           >
-            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200 overflow-hidden">
-              <LottieIcon animationData={browseBySubjectAnim} className="w-16 h-16" />
+            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+              <span className="text-5xl animate-wiggle">🔬</span>
             </div>
             <h3 className="text-white text-xl font-bold mb-2">Browse by Subject</h3>
             <p className="text-green-100 text-sm leading-relaxed">
@@ -70,8 +66,8 @@ export default function HomePage() {
             href="/quiz-start"
             className="group bg-gradient-to-br from-purple-500 to-violet-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
           >
-            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200 overflow-hidden">
-              <LottieIcon animationData={quizAndRevisionAnim} className="w-16 h-16" />
+            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+              <span className="text-5xl animate-pulse">🧠</span>
             </div>
             <h3 className="text-white text-xl font-bold mb-2">Quiz &amp; Revision</h3>
             <p className="text-purple-100 text-sm leading-relaxed">

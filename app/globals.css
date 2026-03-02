@@ -14,6 +14,15 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+}
+.animate-wiggle {
+  animation: wiggle 1.8s ease-in-out infinite;
+  display: inline-block;
+}
+
 @media print {
   /* Hide site chrome when printing question papers */
   header, footer, nav {
