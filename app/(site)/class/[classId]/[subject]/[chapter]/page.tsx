@@ -73,6 +73,14 @@ export default async function ChapterPage({
               {chapterMeta.description}
             </p>
           )}
+          <div className="mt-4">
+            <a
+              href={`/quiz?class=${classId}&subject=${subject}&chapters=${chapter}`}
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-colors border border-white/30"
+            >
+              🧠 Quiz / Revision
+            </a>
+          </div>
         </div>
       </div>
 

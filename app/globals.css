@@ -13,3 +13,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+@media print {
+  /* Hide site chrome when printing question papers */
+  header, footer, nav {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    font-size: 13px;
+  }
+  /* Ensure page breaks don't cut questions */
+  .mb-6 {
+    page-break-inside: avoid;
+  }
+}

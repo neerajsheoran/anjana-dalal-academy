@@ -1,0 +1,5 @@
+line 1: normal text
+line 2: with "double quotes"
+line 3: with 'single quotes'
+line 4: with °C unicode
+line 5: with − minus sign

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getChapters, getClassLabel, getSubjectLabel } from "@/lib/content";
 import { ClassId, SubjectId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
+import ChapterQuizSelector from "@/components/quiz/ChapterQuizSelector";
 
 export default async function ClassSubjectPage({
   params,
@@ -28,6 +29,14 @@ export default async function ClassSubjectPage({
           {classLabel} — {subjectLabel}
         </h1>
         <p className="text-gray-500 mb-8">NCERT · {chapters.length} chapters</p>
+
+        {chapters.length > 0 && (
+          <ChapterQuizSelector
+            classId={classId}
+            subject={subject}
+            chapters={chapters}
+          />
+        )}
 
         {chapters.length === 0 ? (
           <p className="text-gray-400">Chapters coming soon...</p>

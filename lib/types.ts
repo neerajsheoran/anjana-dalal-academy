@@ -25,7 +25,7 @@ export interface ChapterMeta {
 // A single question
 export interface Question {
   id: string;
-  type: "mcq" | "short" | "fill";
+  type: "mcq" | "short" | "fill" | "long";
   question: string;
   options?: string[];       // Only for MCQ
   answer: string;
