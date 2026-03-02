@@ -40,8 +40,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── How do you want to learn today? ───────────────────────────────── */}
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      {/* ── 3 Learning Cards ───────────────────────────────────────────────── */}
+      <div className="max-w-5xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
           How do you want to learn today?
         </h2>
@@ -49,25 +49,30 @@ export default function HomePage() {
           Choose one of the options below to get started
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          {/* ── Card 1 — Browse by Class ──────────────────────────────────── */}
-          <div className="bg-white border-2 border-blue-100 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-blue-300 transition-all flex flex-col">
-            <div className="flex items-start gap-4 mb-6">
-              <span className="text-5xl leading-none">📘</span>
-              <div>
-                <h3 className="text-xl font-bold text-blue-900">Browse by Class</h3>
-                <p className="text-blue-400 text-sm mt-1">
-                  Pick your class, then explore subjects and chapters at your own pace
-                </p>
+          {/* ── Card 1 — Browse by Class (Blue) ───────────────────────────── */}
+          <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-6 shadow-lg flex flex-col">
+            {/* Icon */}
+            <div className="flex justify-center mb-5">
+              <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl">
+                📘
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3 mt-auto">
+            {/* Title + subtitle */}
+            <h3 className="text-white text-xl font-bold text-center mb-1">
+              Browse by Class
+            </h3>
+            <p className="text-blue-100 text-sm text-center mb-6">
+              Pick your class, then explore subjects and chapters at your own pace
+            </p>
+            {/* Class buttons */}
+            <div className="grid grid-cols-2 gap-2.5 mt-auto">
               {CLASSES.map((cls) => (
                 <Link
                   key={cls.id}
                   href={`/class/${cls.id}`}
-                  className="bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-800 font-semibold text-center py-3 rounded-xl transition-colors border border-blue-100 hover:border-blue-600"
+                  className="bg-white/20 hover:bg-white/35 text-white font-semibold text-center py-2.5 rounded-xl transition-colors border border-white/25 text-sm"
                 >
                   {cls.label}
                 </Link>
@@ -75,32 +80,66 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* ── Card 2 — Quiz & Revision ──────────────────────────────────── */}
-          <div className="bg-gradient-to-br from-purple-50 to-violet-50 border-2 border-purple-100 rounded-2xl p-7 shadow-sm hover:shadow-md hover:border-purple-300 transition-all flex flex-col">
-            <div className="flex items-start gap-4 mb-6">
-              <span className="text-5xl leading-none">🧠</span>
-              <div>
-                <h3 className="text-xl font-bold text-purple-900">Quiz &amp; Revision</h3>
-                <p className="text-purple-400 text-sm mt-1">
-                  Practice with MCQ quizzes or print question papers for any chapter
-                </p>
+          {/* ── Card 2 — Browse by Subject (Green) ────────────────────────── */}
+          <div className="bg-gradient-to-br from-emerald-500 to-green-700 rounded-2xl p-6 shadow-lg flex flex-col">
+            {/* Icon */}
+            <div className="flex justify-center mb-5">
+              <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl">
+                🔬
               </div>
             </div>
+            {/* Title + subtitle */}
+            <h3 className="text-white text-xl font-bold text-center mb-1">
+              Browse by Subject
+            </h3>
+            <p className="text-green-100 text-sm text-center mb-6">
+              Choose a subject you love, then pick your class to explore chapters
+            </p>
+            {/* Subject buttons */}
+            <div className="flex flex-col gap-3 mt-auto">
+              {SUBJECTS.map((sub) => (
+                <Link
+                  key={sub.id}
+                  href={`/subject/${sub.id}`}
+                  className="bg-white/20 hover:bg-white/35 text-white font-semibold py-3 rounded-xl transition-colors border border-white/25 flex items-center justify-center gap-2"
+                >
+                  <span>{sub.icon}</span>
+                  <span>{sub.label}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* ── Card 3 — Quiz & Revision (Purple) ─────────────────────────── */}
+          <div className="bg-gradient-to-br from-purple-500 to-violet-700 rounded-2xl p-6 shadow-lg flex flex-col">
+            {/* Icon */}
+            <div className="flex justify-center mb-5">
+              <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl">
+                🧠
+              </div>
+            </div>
+            {/* Title + subtitle */}
+            <h3 className="text-white text-xl font-bold text-center mb-1">
+              Quiz &amp; Revision
+            </h3>
+            <p className="text-purple-100 text-sm text-center mb-5">
+              Practice with MCQ quizzes or print question papers for any chapter
+            </p>
 
             {/* Class picker */}
-            <div className="mb-4">
-              <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">
-                Select Class
+            <div className="mb-3">
+              <p className="text-purple-200 text-xs font-semibold uppercase tracking-wide mb-2">
+                Class
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {CLASSES.map((cls) => (
                   <button
                     key={cls.id}
                     onClick={() => setQuizClass(cls.id)}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
+                    className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors ${
                       quizClass === cls.id
-                        ? 'bg-purple-600 text-white border-purple-600'
-                        : 'bg-white text-gray-600 border-gray-200 hover:border-purple-400'
+                        ? 'bg-white text-purple-700 border-white'
+                        : 'bg-white/20 text-white border-white/25 hover:bg-white/30'
                     }`}
                   >
                     {cls.label}
@@ -110,19 +149,19 @@ export default function HomePage() {
             </div>
 
             {/* Subject picker */}
-            <div className="mb-6">
-              <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">
-                Select Subject
+            <div className="mb-5">
+              <p className="text-purple-200 text-xs font-semibold uppercase tracking-wide mb-2">
+                Subject
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {SUBJECTS.map((sub) => (
                   <button
                     key={sub.id}
                     onClick={() => setQuizSubject(sub.id)}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
+                    className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors ${
                       quizSubject === sub.id
-                        ? 'bg-purple-600 text-white border-purple-600'
-                        : 'bg-white text-gray-600 border-gray-200 hover:border-purple-400'
+                        ? 'bg-white text-purple-700 border-white'
+                        : 'bg-white/20 text-white border-white/25 hover:bg-white/30'
                     }`}
                   >
                     {sub.icon} {sub.label}
@@ -131,9 +170,10 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* CTA */}
             <Link
               href={quizHref}
-              className="mt-auto w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+              className="mt-auto w-full flex items-center justify-center gap-2 bg-white text-purple-700 font-bold px-6 py-3 rounded-xl hover:bg-purple-50 transition-colors"
             >
               Select Chapters &amp; Start →
             </Link>
