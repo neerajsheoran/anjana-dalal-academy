@@ -55,10 +55,6 @@ export default config({
         title: fields.slug({ name: { label: 'Chapter Title' } }),
         content: fields.mdx({
           label: 'Chapter Notes',
-          images: {
-            directory: 'public/images/content',
-            publicPath: '/images/content/',
-          },
         }),
       },
     }),

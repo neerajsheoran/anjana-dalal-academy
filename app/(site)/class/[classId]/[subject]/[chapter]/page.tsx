@@ -1,10 +1,25 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getChapter, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
 import { ClassId, SubjectId, WorksheetData } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import fs from "fs";
 import path from "path";
+
+// Keystatic stores images in content/[classId]/[subject]/[chapterId]/content/filename
+// and writes relative paths like ![](filename.png) in the MDX.
+// This factory builds a chapter-aware img component that maps those to the API route.
+function makeMdxImage(classId: string, subject: string, chapter: string) {
+  return function MdxImage({ src, alt }: { src?: string; alt?: string }) {
+    const resolved =
+      src && !src.startsWith("/") && !src.startsWith("http")
+        ? `/api/content-image/${classId}/${subject}/${chapter}/content/${src}`
+        : src;
+    // eslint-disable-next-line @next/next/no-img-element
+    return <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg my-4" />;
+  };
+}
 
 const SUBJECT_BANNER: Record<string, { bg: string; text: string; badge: string }> = {
   science: {
@@ -25,6 +40,7 @@ export default async function ChapterPage({
   params: Promise<{ classId: ClassId; subject: SubjectId; chapter: string }>;
 }) {
   const { classId, subject, chapter } = await params;
+  const mdxComponents = { img: makeMdxImage(classId, subject, chapter) };
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
   const chapterMeta = getChapter(chapter);
@@ -88,7 +104,11 @@ export default async function ChapterPage({
       <div className="max-w-3xl mx-auto px-6 py-8">
         <ChapterTabs worksheet={worksheet}>
           {notesSource ? (
-            <MDXRemote source={notesSource} />
+            <MDXRemote
+              source={notesSource}
+              components={mdxComponents}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
           ) : (
             <p className="text-gray-400">Notes coming soon...</p>
           )}
