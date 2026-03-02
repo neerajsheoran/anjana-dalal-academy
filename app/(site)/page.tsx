@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import LottieIcon from '@/components/LottieIcon';
+import browseByClassAnim from '@/public/animations/browse-by-class.json';
 
 export default function HomePage() {
   return (
@@ -36,8 +38,8 @@ export default function HomePage() {
             href="/classes"
             className="group bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
           >
-            <div className="w-20 h-20 bg-white/25 rounded-full flex items-center justify-center text-5xl mb-5 group-hover:scale-110 transition-transform duration-200">
-              📘
+            <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200 overflow-hidden">
+              <LottieIcon animationData={browseByClassAnim} className="w-16 h-16" />
             </div>
             <h3 className="text-white text-xl font-bold mb-2">Browse by Class</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
