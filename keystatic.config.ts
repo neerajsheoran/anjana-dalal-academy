@@ -1,10 +1,14 @@
-import { config, collection, fields } from '@keystatic/core';
+import { config, collection, fields, type Collection } from '@keystatic/core';
 
-// Question schema — reused for easy/medium/hard arrays
+// ─── Question schema — reused for easy/medium/hard arrays ─────────────────────
 const questionSchema = fields.object({
-  id: fields.text({ label: 'Question ID' }),
+  id: fields.text({
+    label: 'Question ID',
+    description: 'Auto-generated ID like ch1-t1-e1. Do not change unless necessary.',
+  }),
   type: fields.select({
     label: 'Question Type',
+    description: 'MCQ = multiple choice with options. Fill = blank to fill. Short/Long = written answers.',
     options: [
       { label: 'Multiple Choice (MCQ)', value: 'mcq' },
       { label: 'Short Answer', value: 'short' },
@@ -15,13 +19,150 @@ const questionSchema = fields.object({
   }),
   question: fields.text({ label: 'Question', multiline: true }),
   options: fields.array(fields.text({ label: 'Option' }), {
-    label: 'Options (MCQ only — leave empty for Short Answer / Fill / Long Answer)',
+    label: 'Options (MCQ only)',
+    description: 'Add 4 options for MCQ questions. Leave empty for other question types.',
     itemLabel: (props) => props.value || 'Option',
   }),
-  answer: fields.text({ label: 'Answer', multiline: true }),
-  explanation: fields.text({ label: 'Explanation', multiline: true }),
+  answer: fields.text({
+    label: 'Correct Answer',
+    multiline: true,
+    description: 'For MCQ, write the exact text of the correct option.',
+  }),
+  explanation: fields.text({
+    label: 'Explanation',
+    multiline: true,
+    description: 'Explain why this is the correct answer. Shown to students after they attempt.',
+  }),
 });
 
+// ─── Class/Subject definitions ────────────────────────────────────────────────
+const classSubjects = [
+  { classId: 'class-1', subject: 'maths', label: 'Class 1 Maths', icon: '🔢' },
+  { classId: 'class-2', subject: 'maths', label: 'Class 2 Maths', icon: '🔢' },
+  { classId: 'class-3', subject: 'maths', label: 'Class 3 Maths', icon: '🔢' },
+  { classId: 'class-4', subject: 'maths', label: 'Class 4 Maths', icon: '🔢' },
+  { classId: 'class-5', subject: 'maths', label: 'Class 5 Maths', icon: '🔢' },
+  { classId: 'class-6', subject: 'maths', label: 'Class 6 Maths', icon: '🔢' },
+  { classId: 'class-6', subject: 'science', label: 'Class 6 Science', icon: '🔬' },
+  { classId: 'class-7', subject: 'maths', label: 'Class 7 Maths', icon: '🔢' },
+  { classId: 'class-7', subject: 'science', label: 'Class 7 Science', icon: '🔬' },
+  { classId: 'class-8', subject: 'maths', label: 'Class 8 Maths', icon: '🔢' },
+  { classId: 'class-8', subject: 'science', label: 'Class 8 Science', icon: '🔬' },
+  { classId: 'class-9', subject: 'maths', label: 'Class 9 Maths', icon: '🔢' },
+  { classId: 'class-9', subject: 'science', label: 'Class 9 Science', icon: '🔬' },
+  { classId: 'class-10', subject: 'maths', label: 'Class 10 Maths', icon: '🔢' },
+  { classId: 'class-10', subject: 'science', label: 'Class 10 Science', icon: '🔬' },
+] as const;
+
+// ─── Helper: prettify slug into readable title ────────────────────────────────
+// "chapter-1-finding-the-furry-cat" → "Chapter 1 — Finding the Furry Cat"
+function prettifySlug(slug: string): string {
+  return slug
+    .replace(/^chapter-(\d+)-/, 'Ch $1 — ')
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// ─── Generate collections per class-subject ───────────────────────────────────
+function makeNotesCollection(
+  classId: string,
+  subject: string,
+  label: string,
+  icon: string
+): Collection<any, any> {
+  return collection({
+    label: `${icon} ${label} — Notes`,
+    path: `content/${classId}/${subject}/*/`,
+    slugField: 'title',
+    format: { contentField: 'content' },
+    entryLayout: 'content',
+    columns: ['title'],
+    schema: {
+      title: fields.slug({
+        name: {
+          label: 'Chapter Title',
+          description: 'The chapter title shown on the website.',
+        },
+      }),
+      content: fields.mdx({
+        label: 'Chapter Notes',
+        description: 'Write or edit the chapter content. Use headings, bold text, and blockquotes.',
+      }),
+    },
+  });
+}
+
+function makeWorksheetCollection(
+  classId: string,
+  subject: string,
+  label: string,
+  icon: string
+): Collection<any, any> {
+  return collection({
+    label: `${icon} ${label} — Worksheets`,
+    path: `content/${classId}/${subject}/*/worksheet`,
+    slugField: 'chapterRef',
+    format: { data: 'json' },
+    columns: ['chapterRef'],
+    schema: {
+      chapterRef: fields.slug({
+        name: {
+          label: 'Chapter Reference',
+          description: 'This links the worksheet to a chapter. Do not change.',
+        },
+      }),
+      topics: fields.array(
+        fields.object({
+          topic: fields.text({
+            label: 'Topic Name',
+            description: 'The topic this group of questions covers (e.g. "Fractions", "Newton\'s Laws").',
+          }),
+          easy: fields.array(questionSchema, {
+            label: 'Easy Questions',
+            description: 'Basic recall and understanding. 3-5 questions recommended.',
+            itemLabel: (props) =>
+              props.fields.question.value.substring(0, 60) || 'New Question',
+          }),
+          medium: fields.array(questionSchema, {
+            label: 'Medium Questions',
+            description: 'Application and analysis. 2-3 questions recommended.',
+            itemLabel: (props) =>
+              props.fields.question.value.substring(0, 60) || 'New Question',
+          }),
+          hard: fields.array(questionSchema, {
+            label: 'Hard Questions',
+            description: 'Higher-order thinking and multi-step problems. 1-2 questions recommended.',
+            itemLabel: (props) =>
+              props.fields.question.value.substring(0, 60) || 'New Question',
+          }),
+        }),
+        {
+          label: 'Topics',
+          itemLabel: (props) => props.fields.topic.value || 'New Topic',
+        }
+      ),
+    },
+  });
+}
+
+// ─── Build collections and navigation dynamically ─────────────────────────────
+const collections: Record<string, Collection<any, any>> = {};
+const navigation: Record<string, string[]> = {};
+
+for (const { classId, subject, label, icon } of classSubjects) {
+  const notesKey = `${classId}-${subject}-notes`;
+  const worksheetsKey = `${classId}-${subject}-worksheets`;
+
+  collections[notesKey] = makeNotesCollection(classId, subject, label, icon);
+  collections[worksheetsKey] = makeWorksheetCollection(classId, subject, label, icon);
+
+  // Group by class in sidebar
+  const classLabel = label.replace(/ (Maths|Science)$/, '');
+  if (!navigation[classLabel]) navigation[classLabel] = [];
+  navigation[classLabel].push(notesKey, worksheetsKey);
+}
+
+// ─── Export config ────────────────────────────────────────────────────────────
 export default config({
   storage:
     process.env.KEYSTATIC_GITHUB_CLIENT_ID
@@ -38,62 +179,8 @@ export default config({
     brand: {
       name: 'Anjana Dalal Academy — Content CMS',
     },
+    navigation,
   },
 
-  collections: {
-    // ─── Chapter Notes (MDX) ─────────────────────────────────────────────────
-    // Each chapter folder has an index.mdx. This collection lets teachers edit
-    // chapter notes through a visual editor without touching code.
-    chapterNotes: collection({
-      label: 'Chapter Notes',
-      path: 'content/**/',
-      slugField: 'title',
-      format: {
-        contentField: 'content',
-      },
-      schema: {
-        title: fields.slug({ name: { label: 'Chapter Title' } }),
-        content: fields.mdx({
-          label: 'Chapter Notes',
-        }),
-      },
-    }),
-
-    // ─── Worksheets (JSON) ────────────────────────────────────────────────────
-    // Each chapter folder has a worksheet.json with topics and questions.
-    // Teachers can add/edit/reorder questions through the CMS UI.
-    worksheets: collection({
-      label: 'Worksheets',
-      path: 'content/**/worksheet',
-      slugField: 'chapterRef',
-      format: { data: 'json' },
-      schema: {
-        chapterRef: fields.slug({ name: { label: 'Chapter Reference' } }),
-        topics: fields.array(
-          fields.object({
-            topic: fields.text({ label: 'Topic Name' }),
-            easy: fields.array(questionSchema, {
-              label: 'Easy Questions',
-              itemLabel: (props) =>
-                props.fields.question.value.substring(0, 60) || 'New Question',
-            }),
-            medium: fields.array(questionSchema, {
-              label: 'Medium Questions',
-              itemLabel: (props) =>
-                props.fields.question.value.substring(0, 60) || 'New Question',
-            }),
-            hard: fields.array(questionSchema, {
-              label: 'Hard Questions',
-              itemLabel: (props) =>
-                props.fields.question.value.substring(0, 60) || 'New Question',
-            }),
-          }),
-          {
-            label: 'Topics',
-            itemLabel: (props) => props.fields.topic.value || 'New Topic',
-          }
-        ),
-      },
-    }),
-  },
+  collections,
 });
