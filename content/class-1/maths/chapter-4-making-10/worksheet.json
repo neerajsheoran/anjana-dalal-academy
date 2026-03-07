@@ -1,0 +1,68 @@
+{
+  "topics": [
+    {
+      "topic": "The Number Zero",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "How many elephants are in your classroom?", "options": ["1", "2", "3", "0"], "answer": "0", "explanation": "There are no elephants in a classroom. Zero means nothing or none." },
+        { "id": "ch4-t1-e2", "type": "fill", "question": "When nothing is left, we write the number ______.", "answer": "0", "explanation": "Zero (0) means nothing or none." },
+        { "id": "ch4-t1-e3", "type": "mcq", "question": "Gola had 4 buttons. All 4 fell off. How many buttons does he have now?", "options": ["1", "2", "4", "0"], "answer": "0", "explanation": "If all 4 buttons fell off, none are left. That is 0." },
+        { "id": "ch4-t1-e4", "type": "mcq", "question": "How many moons can you see at noon?", "options": ["0", "1", "2", "3"], "answer": "0", "explanation": "We cannot see the moon at noon, so the answer is 0." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "Riya had 3 chocolates. She ate 1, then 1 more, then the last one. How many chocolates does she have now? Write the number.", "answer": "0 chocolates. She ate all three so nothing is left.", "explanation": "3 - 1 - 1 - 1 = 0. When everything is taken away, zero is left." },
+        { "id": "ch4-t1-m2", "type": "fill", "question": "5, 4, 3, 2, 1, ______.", "answer": "0", "explanation": "Counting backwards from 5, after 1 comes 0." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "short", "question": "Give two examples of things where the answer is zero.", "answer": "How many fish are in your pocket? 0. How many suns are there at night? 0.", "explanation": "Zero means nothing or none. When something does not exist or is not present, we use zero." }
+      ]
+    },
+    {
+      "topic": "Counting to 10 and Number Pairs of 5",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "What number comes after 9?", "options": ["8", "10", "11", "7"], "answer": "10", "explanation": "9 and 1 more makes 10." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "3 and ______ make 5.", "answer": "2", "explanation": "3 + 2 = 5. So 3 and 2 are a number pair of 5." },
+        { "id": "ch4-t2-e3", "type": "mcq", "question": "1 and 4 together make ______.", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "1 + 4 = 5." },
+        { "id": "ch4-t2-e4", "type": "fill", "question": "4 and ______ make 5.", "answer": "1", "explanation": "4 + 1 = 5. So we need 1 more to make 5." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "Show 3 fingers on one hand. How many more fingers do you need to make 5?", "answer": "2 more fingers. 3 + 2 = 5.", "explanation": "One hand has 5 fingers. If 3 are up, 2 more are needed to make 5." },
+        { "id": "ch4-t2-m2", "type": "mcq", "question": "Which pair of numbers makes 5?", "options": ["3 and 3", "2 and 3", "4 and 4", "1 and 1"], "answer": "2 and 3", "explanation": "2 + 3 = 5. The other pairs do not add up to 5." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "Write all the number pairs that make 5. (Hint: Start with 0 and 5.)", "answer": "0 and 5, 1 and 4, 2 and 3, 3 and 2, 4 and 1, 5 and 0.", "explanation": "These are all the ways to split 5 into two numbers." }
+      ]
+    },
+    {
+      "topic": "Number Pairs That Make 10",
+      "easy": [
+        { "id": "ch4-t3-e1", "type": "fill", "question": "5 and ______ make 10.", "answer": "5", "explanation": "5 + 5 = 10. Both hands together have 10 fingers." },
+        { "id": "ch4-t3-e2", "type": "mcq", "question": "Which two numbers make 10?", "options": ["3 and 5", "4 and 6", "2 and 5", "3 and 3"], "answer": "4 and 6", "explanation": "4 + 6 = 10." },
+        { "id": "ch4-t3-e3", "type": "fill", "question": "7 and ______ make 10.", "answer": "3", "explanation": "7 + 3 = 10." }
+      ],
+      "medium": [
+        { "id": "ch4-t3-m1", "type": "short", "question": "Show 4 fingers. How many fingers are folded? What number pair of 10 is this?", "answer": "6 fingers are folded. The number pair is 4 and 6 (4 + 6 = 10).", "explanation": "We have 10 fingers in all. If 4 are up, 10 - 4 = 6 are folded." },
+        { "id": "ch4-t3-m2", "type": "fill", "question": "8 + ______ = 10.", "answer": "2", "explanation": "8 + 2 = 10." },
+        { "id": "ch4-t3-m3", "type": "mcq", "question": "9 + ? = 10. What is ?", "options": ["0", "1", "2", "3"], "answer": "1", "explanation": "9 + 1 = 10." }
+      ],
+      "hard": [
+        { "id": "ch4-t3-h1", "type": "long", "question": "Write any 3 number pairs that make 10.", "answer": "1 and 9, 2 and 8, 3 and 7 (or any three correct pairs that add to 10).", "explanation": "Number pairs of 10: 1+9, 2+8, 3+7, 4+6, 5+5." }
+      ]
+    },
+    {
+      "topic": "Counting 11 to 20",
+      "easy": [
+        { "id": "ch4-t4-e1", "type": "mcq", "question": "10 and 3 make which number?", "options": ["10", "12", "13", "14"], "answer": "13", "explanation": "10 + 3 = 13 (thirteen)." },
+        { "id": "ch4-t4-e2", "type": "fill", "question": "10 and 5 make ______.", "answer": "15", "explanation": "10 + 5 = 15 (fifteen)." },
+        { "id": "ch4-t4-e3", "type": "mcq", "question": "What number comes after 19?", "options": ["18", "20", "21", "17"], "answer": "20", "explanation": "10 + 10 = 20. After 19 comes 20 (twenty)." },
+        { "id": "ch4-t4-e4", "type": "fill", "question": "13, 14, ______, 16, 17.", "answer": "15", "explanation": "The number after 14 is 15." }
+      ],
+      "medium": [
+        { "id": "ch4-t4-m1", "type": "short", "question": "Which is bigger: 12 or 19? How do you know?", "answer": "19 is bigger than 12 because 19 comes after 12 when counting.", "explanation": "When counting from 1 to 20, 19 comes later, so it is bigger." },
+        { "id": "ch4-t4-m2", "type": "fill", "question": "10, 11, ______, 13, ______, 15.", "answer": "12 and 14", "explanation": "Counting in order: 10, 11, 12, 13, 14, 15." }
+      ],
+      "hard": [
+        { "id": "ch4-t4-h1", "type": "long", "question": "Put these numbers in order from smallest to biggest: 20, 11, 15, 13, 18.", "answer": "11, 13, 15, 18, 20", "explanation": "We arrange from the smallest number to the biggest." }
+      ]
+    }
+  ]
+}

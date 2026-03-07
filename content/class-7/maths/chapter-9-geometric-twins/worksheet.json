@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Congruence of Figures",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "Two figures that have the same shape and size are called:", "options": ["Similar", "Congruent", "Symmetric", "Equal"], "answer": "Congruent", "explanation": "Congruent figures are exact copies of each other — same shape and same size." },
+        { "id": "ch9-t1-e2", "type": "fill", "question": "Two circles are congruent if they have the same ______.", "answer": "radius", "explanation": "A circle is completely determined by its radius. Two circles with the same radius are congruent." },
+        { "id": "ch9-t1-e3", "type": "mcq", "question": "When checking congruence, a figure can be:", "options": ["Only translated", "Only rotated", "Rotated or flipped", "Neither rotated nor flipped"], "answer": "Rotated or flipped", "explanation": "To check congruence, we may rotate or flip (reflect) one figure before placing it over the other." },
+        { "id": "ch9-t1-e4", "type": "short", "question": "What measurements are needed to check if two rectangles are congruent?", "answer": "Length and breadth. Two rectangles are congruent if they have the same length and the same breadth.", "explanation": "A rectangle is determined by its length and breadth. Both must match for congruence." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "If triangle ABC is congruent to triangle XYZ, what does this tell us about corresponding sides and angles?", "answer": "Corresponding sides: AB = XY, BC = YZ, AC = XZ.\nCorresponding angles: angle A = angle X, angle B = angle Y, angle C = angle Z.", "explanation": "The order of vertices in the congruence statement tells us which parts correspond. A↔X, B↔Y, C↔Z." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "Do three equal angles guarantee that two triangles are congruent? Explain.", "answer": "No. Two triangles with the same three angles (AAA) may have different sizes. They have the same shape but not necessarily the same size. Such triangles are called similar, not congruent.", "explanation": "AAA guarantees similarity but not congruence. You can have a small and a large triangle with the same angles." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "long", "question": "In rectangle ABCD, diagonal BD divides it into triangles ABD and CDB. Prove that these two triangles are congruent.", "answer": "In triangles ABD and CDB:\n1. AB = CD (opposite sides of a rectangle are equal)\n2. AD = CB (opposite sides of a rectangle are equal)\n3. BD = BD (common side)\n\nBy SSS (all three pairs of sides are equal), triangle ABD is congruent to triangle CDB.\n\nTherefore, the diagonal divides the rectangle into two congruent triangles.", "explanation": "Using the property that opposite sides of a rectangle are equal and the diagonal is a common side, we apply SSS congruence." }
+      ]
+    },
+    {
+      "topic": "Conditions for Triangle Congruence",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "mcq", "question": "Which condition is NOT a valid test for triangle congruence?", "options": ["SSS", "SAS", "AAA", "ASA"], "answer": "AAA", "explanation": "AAA (three equal angles) does not guarantee congruence — the triangles may have different sizes." },
+        { "id": "ch9-t2-e2", "type": "fill", "question": "SSS stands for ______ - ______ - ______.", "answer": "Side-Side-Side", "explanation": "SSS means all three sides of one triangle are equal to the three sides of another triangle." },
+        { "id": "ch9-t2-e3", "type": "mcq", "question": "In SAS congruence, the angle must be:", "options": ["Any angle", "The largest angle", "The included angle (between the two sides)", "The smallest angle"], "answer": "The included angle (between the two sides)", "explanation": "In SAS, the angle must be the one between (included by) the two given sides. Two sides and a non-included angle (SSA) does not guarantee congruence." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "Triangle PQR has PQ = 6 cm, QR = 5 cm, angle Q = 50°. Triangle XYZ has XY = 6 cm, YZ = 5 cm, angle Y = 50°. Are they congruent? State the condition.", "answer": "Yes, they are congruent by SAS.\n\nPQ = XY = 6 cm, QR = YZ = 5 cm, and the included angle Q = angle Y = 50°.", "explanation": "Two sides and the included angle are equal, satisfying the SAS condition." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "Why does SSA (two sides and a non-included angle) not guarantee congruence?", "answer": "With SSA, when you construct the triangle, the arc from the third vertex may intersect the base line at two different points, producing two non-congruent triangles. This ambiguity means SSA is not a reliable congruence test.", "explanation": "The SSA condition creates an ambiguous case where two different triangles can satisfy the same conditions." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "In a figure, O is the midpoint of both AD and BC. Prove that AB = DC using triangle congruence.", "answer": "In triangles AOB and DOC:\n1. AO = OD (O is the midpoint of AD)\n2. BO = OC (O is the midpoint of BC)\n3. Angle AOB = Angle DOC (vertically opposite angles)\n\nBy SAS, triangle AOB is congruent to triangle DOC.\n\nTherefore, AB = DC (corresponding sides of congruent triangles).", "explanation": "We use the midpoint property to establish two pairs of equal sides, vertically opposite angles for the included angle, then apply SAS to prove the triangles are congruent." },
+        { "id": "ch9-t2-h2", "type": "long", "question": "List all five valid congruence conditions for triangles and briefly explain each.", "answer": "1. SSS (Side-Side-Side): All three sides equal. Three equal sides determine a unique triangle shape and size.\n\n2. SAS (Side-Angle-Side): Two sides and the included angle equal. The included angle fixes the relationship between the two sides.\n\n3. ASA (Angle-Side-Angle): Two angles and the included side equal. Two angles determine the third, and the side fixes the size.\n\n4. AAS (Angle-Angle-Side): Two angles and a non-included side equal. Since the third angle is determined, this converts to ASA.\n\n5. RHS (Right angle-Hypotenuse-Side): For right triangles, hypotenuse and one side equal. The right angle constraint removes the SSA ambiguity.", "explanation": "These five conditions each guarantee that two triangles are congruent. AAA and SSA are NOT valid conditions." }
+      ]
+    }
+  ]
+}

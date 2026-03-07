@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Baudhayana-Pythagoras Theorem",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "In a right triangle with legs 3 and 4, the hypotenuse is:", "options": ["5", "7", "12", "25"], "answer": "5", "explanation": "c² = 3² + 4² = 9 + 16 = 25. c = √25 = 5." },
+        { "id": "ch9-t1-e2", "type": "fill", "question": "In a right triangle, a² + b² = ______, where c is the hypotenuse.", "answer": "c²", "explanation": "The Baudhayana-Pythagoras theorem: the square of the hypotenuse equals the sum of squares of the other two sides." },
+        { "id": "ch9-t1-e3", "type": "mcq", "question": "Which of these is a Pythagorean triple?", "options": ["3, 4, 6", "5, 12, 13", "4, 6, 8", "7, 8, 10"], "answer": "5, 12, 13", "explanation": "5² + 12² = 25 + 144 = 169 = 13². So (5, 12, 13) is a Pythagorean triple." },
+        { "id": "ch9-t1-e4", "type": "short", "question": "Find the hypotenuse of a right triangle with legs 5 and 12.", "answer": "c² = 5² + 12² = 25 + 144 = 169. c = √169 = 13.", "explanation": "Apply the theorem: square both legs, add, then take the square root." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "A right triangle has hypotenuse 10 and one leg 6. Find the other leg.", "answer": "6² + b² = 10².\n36 + b² = 100.\nb² = 64.\nb = 8.", "explanation": "Rearrange the formula: b² = c² - a² = 100 - 36 = 64." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "Does a triangle with sides 6, 8, 10 form a right triangle?", "answer": "Check: 6² + 8² = 36 + 64 = 100 = 10². Yes, it forms a right triangle.", "explanation": "The converse of the theorem: if a² + b² = c², the triangle is a right triangle." },
+        { "id": "ch9-t1-m3", "type": "short", "question": "If (3, 4, 5) is a Pythagorean triple, find another triple derived from it.", "answer": "Multiply each by 2: (6, 8, 10). Check: 6² + 8² = 36 + 64 = 100 = 10². Correct.", "explanation": "If (a, b, c) is a triple, then (ka, kb, kc) is also a triple for any positive k." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "long", "question": "A ladder of length 5 m leans against a wall. The foot is 3 m from the wall. (a) How high does it reach? (b) If the foot slides 1 m further away, how much does the top slide down?", "answer": "(a) Using Pythagoras: 3² + h² = 5².\n9 + h² = 25.\nh² = 16.\nh = 4 m.\n\n(b) New foot distance = 3 + 1 = 4 m.\n4² + h₂² = 5².\n16 + h₂² = 25.\nh₂² = 9.\nh₂ = 3 m.\n\nThe top slides down by 4 - 3 = 1 m.", "explanation": "Apply the theorem twice — once with the original position and once with the new position — to find the change in height." }
+      ]
+    },
+    {
+      "topic": "Square Roots and Irrational Numbers",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "mcq", "question": "The diagonal of a square with side 1 has length:", "options": ["1", "√2", "2", "√3"], "answer": "√2", "explanation": "Using the theorem: c² = 1² + 1² = 2, so c = √2." },
+        { "id": "ch9-t2-e2", "type": "fill", "question": "√2 is approximately ______.", "answer": "1.414", "explanation": "√2 = 1.41421356..., approximately 1.414." },
+        { "id": "ch9-t2-e3", "type": "short", "question": "Is √2 rational or irrational?", "answer": "Irrational. √2 cannot be expressed as a fraction m/n of whole numbers. Its decimal goes on forever without repeating.", "explanation": "If 2 = m²/n², then 2n² = m². The factor 2 appears an odd number of times on one side and even on the other — a contradiction." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "An isosceles right triangle has equal sides of length 12 units. Find the hypotenuse.", "answer": "c² = 12² + 12² = 144 + 144 = 288.\nc = √288 = √(144 x 2) = 12√2 ≈ 12 x 1.414 = 16.97 units.", "explanation": "For an isosceles right triangle: c = a√2 where a is the equal side length." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "The area of a square is 50 cm². Find the length of its diagonal.", "answer": "Side = √50 = 5√2 cm.\nDiagonal = side x √2 = 5√2 x √2 = 5 x 2 = 10 cm.", "explanation": "The diagonal of a square with side s is s√2. If area = 50, side = √50, diagonal = √50 x √2 = √100 = 10." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "Two friends start from the same point. One walks 6 km east and the other walks 8 km north. How far apart are they? If the first friend then walks 2 km north, how far apart are they now?", "answer": "Part 1:\nThe paths form a right angle (east and north are perpendicular).\nd² = 6² + 8² = 36 + 64 = 100.\nd = 10 km apart.\n\nPart 2:\nFriend 1 is now at (6, 2) — 6 km east, 2 km north.\nFriend 2 is at (0, 8) — 0 km east, 8 km north.\nHorizontal distance = 6 km.\nVertical distance = 8 - 2 = 6 km.\nd² = 6² + 6² = 36 + 36 = 72.\nd = √72 = 6√2 ≈ 8.49 km.\n\nThey are now approximately 8.49 km apart.", "explanation": "Use coordinate positions and the Pythagorean theorem. The second calculation uses the differences in coordinates as the legs of a right triangle." }
+      ]
+    }
+  ]
+}

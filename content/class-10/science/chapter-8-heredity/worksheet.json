@@ -1,0 +1,108 @@
+{
+  "topics": [
+    {
+      "topic": "Mendel's Laws and Inheritance",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers with short pea plants bearing white flowers. The progeny all bore violet flowers, but almost half of them were short. This suggests that the genetic make-up of the tall parent can be depicted as:",
+          "options": ["TTWW", "TTww", "TtWW", "TtWw"],
+          "answer": "TtWW",
+          "explanation": "Since all progeny have violet flowers, the violet parent must be homozygous (WW) for flower colour. Since half the progeny are short, the tall parent must be heterozygous (Tt) for height. So the tall parent's genotype is TtWW."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "The trait that gets expressed in the F₁ generation is called the ______ trait.",
+          "answer": "dominant",
+          "explanation": "When two organisms with contrasting traits are crossed, the trait that appears in all F₁ offspring is called the dominant trait. The hidden trait is called recessive."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "short",
+          "question": "How do Mendel's experiments show that traits may be dominant or recessive?",
+          "answer": "Mendel crossed pea plants with contrasting traits (e.g., tall x short). In the F₁ generation, only one trait appeared (tall). This trait is dominant. When F₁ plants were self-pollinated, both traits appeared in F₂ in a 3:1 ratio — 3 tall : 1 short. The trait that was hidden in F₁ but reappeared in F₂ is the recessive trait (short). This showed that both traits are inherited, but the recessive trait is masked by the dominant trait in F₁ because only one copy of the dominant gene is sufficient for expression.",
+          "explanation": "The reappearance of the recessive trait in F₂ proves that the trait was present in F₁ (as a hidden gene) but was not expressed because of the dominance of the other trait."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "short",
+          "question": "How do Mendel's experiments show that traits are inherited independently?",
+          "answer": "In a dihybrid cross (round yellow x wrinkled green seeds), Mendel found that in F₂, new combinations appeared — round green and wrinkled yellow — in addition to the parental combinations. The F₂ ratio was 9:3:3:1. This showed that the inheritance of seed shape (round/wrinkled) is independent of seed colour (yellow/green). Each trait is inherited separately and can combine in new ways in the offspring. This is Mendel's Law of Independent Assortment.",
+          "explanation": "The appearance of new combinations (round green, wrinkled yellow) that were not present in either parent proves that the two traits are inherited independently."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "A man with blood group A marries a woman with blood group O and their daughter has blood group O. Is this information enough to tell you which of the traits — blood group A or O — is dominant? Why or why not?",
+          "answer": "No, this information alone is not sufficient to determine which trait is dominant. If blood group A were dominant, the father could be heterozygous (AO), and the daughter could inherit the O allele from both parents (OO). If blood group O were dominant, then the father (AO) could be expressing the recessive A while the dominant O appears in the daughter. Without knowing the full genotypes and observing more offspring ratios (like the 3:1 ratio), we cannot conclusively determine dominance from a single cross.",
+          "explanation": "To determine dominance, we would need to see the phenotypic ratio in a larger number of offspring or perform crosses with known genotypes."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "How is the equal genetic contribution of male and female parents ensured in the progeny?",
+          "answer": "Equal genetic contribution is ensured through the following mechanism:\n1. Both parents are diploid — they have two copies of each gene on paired chromosomes.\n2. During germ cell formation, each parent produces haploid gametes containing only one set of chromosomes (one copy of each gene).\n3. During fertilisation, the male gamete (sperm) and female gamete (egg) fuse, each contributing one set of chromosomes.\n4. The resulting zygote has two sets of chromosomes — one from each parent — restoring the diploid number.\n\nThus, the offspring inherits exactly 50% of its genetic material from each parent.",
+          "explanation": "The mechanism of meiosis (which produces haploid gametes) and fertilisation (which combines them) ensures equal genetic contribution from both parents."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "A study found that children with light-coloured eyes are likely to have parents with light-coloured eyes. On this basis, can we say anything about whether the light eye colour trait is dominant or recessive? Why or why not? Outline a project which aims to find the dominant coat colour in dogs.",
+          "answer": "Light eye colour analysis:\nWe cannot conclusively determine whether light eye colour is dominant or recessive from this observation alone. If light eye colour were recessive, light-eyed children would need to inherit the recessive allele from both parents, so both parents would need to carry the recessive allele. If light eye colour were dominant, parents with light eyes would naturally have children with light eyes (either homozygous or heterozygous). Both scenarios are consistent with the observation. We would need to study cases where light-eyed parents produce dark-eyed children, or examine the ratios across many families to determine dominance.\n\nProject to find dominant coat colour in dogs:\n1. Select a pair of dogs with contrasting coat colours (e.g., black and white) that are true-breeding (pure breed for that colour).\n2. Cross them and observe the F₁ generation. The coat colour that appears in all F₁ offspring is the dominant trait.\n3. Cross F₁ dogs with each other to produce F₂ generation.\n4. If the F₂ generation shows a 3:1 ratio (e.g., 3 black : 1 white), this confirms that the F₁ colour is dominant and the other is recessive.\n5. Record observations over multiple litters for statistical reliability.\n6. The trait that was hidden in F₁ but reappeared in F₂ is recessive.",
+          "explanation": "Determining dominance requires careful genetic crosses and observation of phenotypic ratios across generations, following Mendel's experimental approach."
+        }
+      ]
+    },
+    {
+      "topic": "Sex Determination and Chromosomes",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "fill",
+          "question": "In human beings, females have ______ sex chromosomes and males have ______ sex chromosomes.",
+          "answer": "XX, XY",
+          "explanation": "Women have two X chromosomes (XX), while men have one X and one Y chromosome (XY). The Y chromosome is shorter than the X chromosome."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "short",
+          "question": "How is the sex of the child determined in human beings?",
+          "answer": "In human beings, sex is determined by the sex chromosomes. Females have XX chromosomes and males have XY chromosomes.\n\nAll eggs produced by the mother contain an X chromosome. The father produces two types of sperms — one carrying X and one carrying Y.\n\nIf an X-bearing sperm fertilises the egg: XX → girl\nIf a Y-bearing sperm fertilises the egg: XY → boy\n\nThus, the sex of the child is determined by the father's sperm. The probability of having a boy or girl is 50% each.",
+          "explanation": "The mother always contributes an X chromosome. It is the father's sperm that determines whether the child will be a boy (Y) or a girl (X)."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "Humans have how many pairs of autosomes?",
+          "options": ["20", "22", "23", "46"],
+          "answer": "22",
+          "explanation": "Humans have 23 pairs of chromosomes in total — 22 pairs of autosomes and 1 pair of sex chromosomes. The total number of individual chromosomes is 46."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Explain how genes on chromosomes enable independent inheritance of traits.",
+          "answer": "Genes are not present as a single long thread of DNA. Instead, they are located on separate, independent pieces of DNA called chromosomes. Each cell has two copies of each chromosome (one from each parent). When germ cells are formed, they receive one chromosome from each pair. The chromosome may be of either maternal or paternal origin.\n\nSince genes for different traits are often located on different chromosomes, they are sorted independently into gametes during germ cell formation. This independent assortment of chromosomes explains why traits like seed shape and seed colour can be inherited independently of each other, as Mendel demonstrated.",
+          "explanation": "The physical separation of genes on different chromosomes is the basis for Mendel's Law of Independent Assortment."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Explain how traits are expressed in organisms. How does a change in a gene lead to a change in the trait? Use an example to illustrate.",
+          "answer": "Traits are expressed through the following pathway:\n\nGene → Protein (enzyme) → Cellular process → Trait\n\nGenes carry the information for making specific proteins. These proteins (often enzymes) carry out various cellular functions that ultimately determine the organism's traits.\n\nExample: Consider a gene that controls plant height.\n- The gene codes for an enzyme that promotes the production of growth hormone.\n- In a tall plant (TT or Tt), at least one functional copy of the gene produces enough enzyme for normal growth hormone production, resulting in a tall plant.\n- In a short plant (tt), both copies of the gene are altered (mutated). The enzyme produced is inefficient, leading to less growth hormone and hence a short plant.\n\nThis explains why the dominant trait is expressed even in heterozygous organisms (Tt) — one functional copy of the gene produces sufficient enzyme/protein for the dominant phenotype. The recessive trait appears only when both copies (tt) produce inefficient enzymes, resulting in insufficient protein for the dominant phenotype.\n\nA change (mutation) in a gene changes the protein it codes for, which changes the cellular process it controls, ultimately changing the trait.",
+          "explanation": "The connection between genes, proteins, and traits is fundamental to understanding inheritance. Dominant traits need only one functional gene copy, while recessive traits appear when both copies are non-functional."
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-3">
-            Class 3 to Class 7 · CBSE · NCERT
+            Class 1 to Class 12 · CBSE · NCERT
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
             Learn CBSE the Easy Way

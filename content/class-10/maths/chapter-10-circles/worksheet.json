@@ -1,0 +1,138 @@
+{
+  "topics": [
+    {
+      "topic": "Tangent to a Circle",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "A tangent to a circle is a line that intersects the circle at:",
+          "options": ["No points", "One point", "Two points", "Three points"],
+          "answer": "One point",
+          "explanation": "A tangent is a line that touches (intersects) the circle at exactly one point, called the point of contact or point of tangency."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "A line that intersects a circle at two distinct points is called a ______.",
+          "answer": "secant",
+          "explanation": "A secant is a line that intersects a circle at two points. Compare with a tangent, which touches at exactly one point."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "How many tangents can be drawn to a circle from a point on the circle?",
+          "options": ["0", "1", "2", "Infinite"],
+          "answer": "1",
+          "explanation": "From a point on the circle, exactly one tangent can be drawn (perpendicular to the radius at that point)."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "mcq",
+          "question": "How many tangents can be drawn to a circle from an external point?",
+          "options": ["0", "1", "2", "Infinite"],
+          "answer": "2",
+          "explanation": "From a point outside a circle, exactly two tangents can be drawn to the circle."
+        },
+        {
+          "id": "ch10-t1-e5",
+          "type": "fill",
+          "question": "The tangent at any point of a circle is ______ to the radius through the point of contact.",
+          "answer": "perpendicular",
+          "explanation": "This is a fundamental theorem: the tangent to a circle at any point is perpendicular to the radius drawn to the point of contact."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "If a tangent and a radius meet at the point of contact, what is the angle between them?",
+          "answer": "90 degrees",
+          "explanation": "The tangent at any point of a circle is perpendicular to the radius through the point of contact. Therefore, the angle between them is 90 degrees."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. Find the radius of the circle.",
+          "answer": "Radius = 7 cm",
+          "explanation": "Step 1: Let O be the centre, T the point of tangency. OT is perpendicular to QT.\nStep 2: In right triangle OTQ: OQ^2 = OT^2 + QT^2.\nStep 3: 25^2 = r^2 + 24^2.\nStep 4: 625 = r^2 + 576.\nStep 5: r^2 = 49. r = 7 cm."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "short",
+          "question": "A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Find the length PQ.",
+          "answer": "PQ = sqrt(119) cm",
+          "explanation": "Step 1: OP is perpendicular to PQ (radius to tangent).\nStep 2: In right triangle OPQ: PQ^2 = OQ^2 - OP^2 = 144 - 25 = 119.\nStep 3: PQ = sqrt(119) cm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "answer": "Proved by contradiction.",
+          "explanation": "Step 1: Let O be the centre, P the point of contact, and AB the tangent at P.\nStep 2: Assume OP is not perpendicular to AB. Then there exists a point Q on AB such that OQ is perpendicular to AB.\nStep 3: In right triangle OQP: OP > OQ (hypotenuse > any other side).\nStep 4: But Q is on the tangent AB (outside the circle), so OQ > OP (since OP = radius and Q is outside).\nStep 5: This contradicts OP > OQ.\nStep 6: Therefore, OP must be perpendicular to AB."
+        }
+      ]
+    },
+    {
+      "topic": "Properties of Tangents from External Points",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "The lengths of tangents drawn from an external point to a circle are:",
+          "options": ["Unequal", "Equal", "One is double the other", "Cannot be determined"],
+          "answer": "Equal",
+          "explanation": "The lengths of two tangents drawn from an external point to a circle are always equal."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "If PA and PB are tangents from point P to a circle with centre O, then angle OPA = angle ______.",
+          "answer": "OPB",
+          "explanation": "The tangents from an external point are equal in length, and the line from the external point to the centre bisects the angle between the tangents."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "short",
+          "question": "Two tangents TP and TQ are drawn to a circle with centre O from an external point T. If angle PTQ = 60 degrees, find angle OPQ.",
+          "answer": "angle OPQ = 30 degrees",
+          "explanation": "Step 1: OT bisects angle PTQ, so angle PTO = 30 degrees.\nStep 2: angle OPT = 90 degrees (radius perpendicular to tangent).\nStep 3: In triangle OPT: angle POT = 180 - 90 - 30 = 60 degrees.\nStep 4: angle POQ = 2 x angle POT = 120 degrees.\nStep 5: In triangle OPQ (isosceles, OP = OQ = r): angle OPQ = (180 - 120)/2 = 30 degrees."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "long",
+          "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+          "answer": "PA = PB where PA and PB are tangents from external point P.",
+          "explanation": "Step 1: Let PA and PB be tangents from point P to circle with centre O, where A and B are points of contact.\nStep 2: OA = OB (radii). OP = OP (common). angle OAP = angle OBP = 90 degrees.\nStep 3: In right triangles OAP and OBP:\n- OA = OB (radii)\n- OP = OP (common)\n- angle OAP = angle OBP = 90 degrees\nStep 4: By RHS congruence: triangle OAP is congruent to triangle OBP.\nStep 5: Therefore, PA = PB (corresponding parts of congruent triangles)."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "PQ is a chord of length 8 cm of a circle of radius 5 cm. The tangents at P and Q intersect at a point T. Find the length TP.",
+          "answer": "TP = 20/3 cm",
+          "explanation": "Step 1: Let M be the midpoint of PQ. PM = 4 cm, OP = 5 cm.\nStep 2: OM = sqrt(OP^2 - PM^2) = sqrt(25 - 16) = 3 cm.\nStep 3: TP is tangent, so angle OPT = 90 degrees.\nStep 4: Triangles OMP and TPM are similar (angle OMP = angle TMP = 90 degrees, common angle at P).\nActually, let's use: In right triangle OPT: OT^2 = OP^2 + PT^2.\nAlso, T, M, O are collinear (by symmetry).\nOT = OM + MT = 3 + MT.\nIn right triangle PMT: PT^2 = PM^2 + MT^2 = 16 + MT^2.\nIn right triangle OPT: (3 + MT)^2 = 25 + 16 + MT^2.\n9 + 6MT + MT^2 = 41 + MT^2.\n6MT = 32. MT = 16/3.\nPT = sqrt(16 + 256/9) = sqrt(400/9) = 20/3 cm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+          "answer": "A parallelogram circumscribing a circle is a rhombus.",
+          "explanation": "Step 1: Let ABCD be a parallelogram circumscribing a circle.\nStep 2: Since it circumscribes a circle, AB + CD = BC + DA (property of tangential quadrilateral).\nStep 3: Since ABCD is a parallelogram: AB = CD and BC = DA.\nStep 4: So AB + AB = BC + BC, i.e., 2AB = 2BC, i.e., AB = BC.\nStep 5: Since all sides are equal (AB = BC = CD = DA), ABCD is a rhombus."
+        },
+        {
+          "id": "ch10-t2-h2",
+          "type": "long",
+          "question": "A triangle ABC is drawn to circumscribe a circle of radius 4 cm such that the segments BD and DC into which BC is divided by the point of contact D are of lengths 8 cm and 6 cm respectively. Find AB and AC.",
+          "answer": "AB = 15 cm, AC = 13 cm.",
+          "explanation": "Step 1: BD = 8 cm, DC = 6 cm. Let the circle touch AB at E and AC at F.\nStep 2: By tangent properties: BE = BD = 8, CF = CD = 6.\nStep 3: Let AE = AF = x.\nStep 4: AB = AE + BE = x + 8, AC = AF + FC = x + 6, BC = BD + DC = 14.\nStep 5: Semi-perimeter s = (AB + BC + AC)/2 = (x + 8 + 14 + x + 6)/2 = (2x + 28)/2 = x + 14.\nStep 6: Area = r x s = 4(x + 14).\nStep 7: By Heron's formula: Area = sqrt[s(s-a)(s-b)(s-c)] where a=14, b=x+6, c=x+8.\nStep 8: s-a = x, s-b = 8, s-c = 6.\nStep 9: Area = sqrt[(x+14)(x)(8)(6)] = sqrt[48x(x+14)].\nStep 10: 4(x+14) = sqrt[48x(x+14)]. 16(x+14)^2 = 48x(x+14). 16(x+14) = 48x. x+14 = 3x. 14 = 2x. x = 7.\nStep 11: AB = 7 + 8 = 15 cm, AC = 7 + 6 = 13 cm."
+        }
+      ]
+    }
+  ]
+}

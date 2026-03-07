@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "topic": "Flat Shapes (Circle, Rectangle, Square, Triangle)",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "How many corners does a circle have?", "options": ["0", "1", "3", "4"], "answer": "0", "explanation": "A circle is round with no corners at all." },
+        { "id": "ch4-t1-e2", "type": "mcq", "question": "How many sides does a triangle have?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "A triangle has 3 sides and 3 corners." },
+        { "id": "ch4-t1-e3", "type": "fill", "question": "A square has ______ sides and all sides are equal.", "answer": "4", "explanation": "A square has 4 equal sides." },
+        { "id": "ch4-t1-e4", "type": "mcq", "question": "Which shape is a coin?", "options": ["Square", "Triangle", "Circle", "Rectangle"], "answer": "Circle", "explanation": "A coin is round, which is a circle." },
+        { "id": "ch4-t1-e5", "type": "fill", "question": "A door is shaped like a ______.", "answer": "rectangle", "explanation": "A door has 2 long sides and 2 short sides, making it a rectangle." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "How is a square different from a rectangle?", "answer": "A square has all 4 sides equal. A rectangle has 2 long sides and 2 short sides. Both have 4 corners.", "explanation": "A square is a special rectangle where all sides are the same length." },
+        { "id": "ch4-t1-m2", "type": "short", "question": "Name one object shaped like: (a) circle, (b) triangle, (c) rectangle.", "answer": "(a) Circle: clock face or coin. (b) Triangle: samosa or roof of a hut. (c) Rectangle: book or TV screen.", "explanation": "Flat shapes are hiding in many everyday objects." },
+        { "id": "ch4-t1-m3", "type": "mcq", "question": "Which shape has the FEWEST sides?", "options": ["Square", "Rectangle", "Triangle", "Circle"], "answer": "Circle", "explanation": "A circle has 0 straight sides. A triangle has 3 sides, which is the fewest among shapes with straight sides." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "long", "question": "Fill in the table: Circle: __ sides, __ corners. Triangle: __ sides, __ corners. Square: __ sides, __ corners. Rectangle: __ sides, __ corners.", "answer": "Circle: 0 sides, 0 corners. Triangle: 3 sides, 3 corners. Square: 4 sides, 4 corners. Rectangle: 4 sides, 4 corners.", "explanation": "Each shape has different properties." }
+      ]
+    },
+    {
+      "topic": "Shadows and Tracing",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "When is your shadow the LONGEST?", "options": ["At noon", "In the morning", "Never", "At midnight"], "answer": "In the morning", "explanation": "When the sun is low (morning or evening), shadows are long." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "At noon, when the sun is right above you, your shadow is very ______.", "answer": "short", "explanation": "When the sun is directly overhead at noon, shadows become very short." },
+        { "id": "ch4-t2-e3", "type": "mcq", "question": "If you trace around a bottle cap on paper, what shape do you get?", "options": ["Square", "Circle", "Triangle", "Rectangle"], "answer": "Circle", "explanation": "A bottle cap is round, so tracing it gives a circle." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "How does a shadow form?", "answer": "A shadow forms when an object blocks the light. The dark shape on the other side is the shadow.", "explanation": "Light travels in straight lines. When an object blocks the light, it creates a dark area behind it." },
+        { "id": "ch4-t2-m2", "type": "short", "question": "If you trace an eraser on paper, what flat shape do you get?", "answer": "A rectangle.", "explanation": "An eraser is a rectangular shape, so tracing it gives a rectangle." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "Your shadow changes during the day. Describe how: (a) In the morning (b) At noon (c) In the evening.", "answer": "(a) In the morning, the shadow is very long because the sun is low. (b) At noon, the shadow is very short because the sun is right above. (c) In the evening, the shadow becomes long again because the sun is low.", "explanation": "Shadow length depends on the position of the sun. Low sun = long shadow, high sun = short shadow." }
+      ]
+    },
+    {
+      "topic": "Patterns with Shapes and Numbers",
+      "easy": [
+        { "id": "ch4-t3-e1", "type": "fill", "question": "Circle, Square, Circle, Square, Circle, ______.", "answer": "Square", "explanation": "The pattern alternates between Circle and Square." },
+        { "id": "ch4-t3-e2", "type": "mcq", "question": "5, 10, 15, 20, ______. What comes next?", "options": ["22", "24", "25", "30"], "answer": "25", "explanation": "Each number is 5 more. 20 + 5 = 25." },
+        { "id": "ch4-t3-e3", "type": "fill", "question": "Triangle, Triangle, Circle, Triangle, Triangle, ______.", "answer": "Circle", "explanation": "The pattern is: Triangle, Triangle, Circle repeating. After two Triangles comes Circle." }
+      ],
+      "medium": [
+        { "id": "ch4-t3-m1", "type": "short", "question": "What is the rule for this pattern: 1, 4, 7, 10, 13? What comes next?", "answer": "The rule is add 3 each time. The next number is 16 (13 + 3 = 16).", "explanation": "Each number is 3 more than the one before it." },
+        { "id": "ch4-t3-m2", "type": "mcq", "question": "What is the rule for this pattern: 7, 14, 21, 28, 35?", "options": ["Add 5", "Add 6", "Add 7", "Add 8"], "answer": "Add 7", "explanation": "Each number is 7 more than the previous: 7+7=14, 14+7=21, etc." }
+      ],
+      "hard": [
+        { "id": "ch4-t3-h1", "type": "long", "question": "Kikku the rabbit starts at tile 1 and jumps 3 tiles at a time. Write his first 8 tile numbers. Does he ever land on tile 20?", "answer": "1, 4, 7, 10, 13, 16, 19, 22. No, he does not land on tile 20. He goes from 19 to 22, skipping 20.", "explanation": "Starting at 1 and adding 3 each time: 1, 4, 7, 10, 13, 16, 19, 22. The number 20 is not in this pattern." }
+      ]
+    }
+  ]
+}

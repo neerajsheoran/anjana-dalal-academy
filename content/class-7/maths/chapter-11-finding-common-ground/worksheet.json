@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "HCF and Prime Factorisation",
+      "easy": [
+        { "id": "ch11-t1-e1", "type": "mcq", "question": "What is the HCF of 12 and 16?", "options": ["2", "4", "8", "12"], "answer": "4", "explanation": "Factors of 12: 1,2,3,4,6,12. Factors of 16: 1,2,4,8,16. Common: 1,2,4. Highest = 4." },
+        { "id": "ch11-t1-e2", "type": "fill", "question": "A number greater than 1 that has no factors other than 1 and itself is called a ______ number.", "answer": "prime", "explanation": "Prime numbers have exactly two factors: 1 and themselves. Examples: 2, 3, 5, 7, 11." },
+        { "id": "ch11-t1-e3", "type": "mcq", "question": "What is the prime factorisation of 90?", "options": ["2 x 3 x 15", "2 x 3 x 3 x 5", "2 x 5 x 9", "3 x 3 x 10"], "answer": "2 x 3 x 3 x 5", "explanation": "90 = 2 x 45 = 2 x 3 x 15 = 2 x 3 x 3 x 5. All factors must be prime." },
+        { "id": "ch11-t1-e4", "type": "short", "question": "Find the prime factorisation of 360.", "answer": "360 = 2 x 2 x 2 x 3 x 3 x 5.\n\n360 ÷ 2 = 180, 180 ÷ 2 = 90, 90 ÷ 2 = 45, 45 ÷ 3 = 15, 15 ÷ 3 = 5, 5 ÷ 5 = 1.", "explanation": "Divide by the smallest prime factor at each step until you reach 1." }
+      ],
+      "medium": [
+        { "id": "ch11-t1-m1", "type": "short", "question": "Find the HCF of 45 and 75 using prime factorisation.", "answer": "45 = 3 x 3 x 5.\n75 = 3 x 5 x 5.\nCommon primes: 3 (min 1 time) and 5 (min 1 time).\nHCF = 3 x 5 = 15.", "explanation": "For HCF, take each common prime factor the minimum number of times it appears." },
+        { "id": "ch11-t1-m2", "type": "short", "question": "Find the HCF of 112 and 84.", "answer": "112 = 2 x 2 x 2 x 2 x 7.\n84 = 2 x 2 x 3 x 7.\nCommon primes: 2 (min 2 times) and 7 (min 1 time).\nHCF = 2 x 2 x 7 = 28.", "explanation": "112 has four 2s and 84 has two 2s, so take the minimum: two 2s. Both have one 7." },
+        { "id": "ch11-t1-m3", "type": "short", "question": "What is the HCF of two consecutive numbers like 14 and 15?", "answer": "HCF = 1. Consecutive numbers are always co-prime.", "explanation": "Two consecutive numbers have no common factor other than 1, so their HCF is always 1." }
+      ],
+      "hard": [
+        { "id": "ch11-t1-h1", "type": "long", "question": "A farmer has 84 kg of rice from one farm and 108 kg from another. She wants to pack them into bags of equal weight (whole kg) using as few bags as possible. Find the weight per bag and the total number of bags.", "answer": "Weight per bag = HCF(84, 108).\n\n84 = 2 x 2 x 3 x 7.\n108 = 2 x 2 x 3 x 3 x 3.\n\nCommon primes: 2 (min 2), 3 (min 1).\nHCF = 2 x 2 x 3 = 12 kg.\n\nBags from first farm = 84 ÷ 12 = 7.\nBags from second farm = 108 ÷ 12 = 9.\nTotal bags = 7 + 9 = 16 bags.", "explanation": "To use as few bags as possible, each bag should be as heavy as possible. The HCF gives the largest weight that divides both quantities exactly." }
+      ]
+    },
+    {
+      "topic": "LCM and HCF-LCM Relationship",
+      "easy": [
+        { "id": "ch11-t2-e1", "type": "mcq", "question": "What is the LCM of 6 and 8?", "options": ["12", "24", "48", "2"], "answer": "24", "explanation": "Multiples of 6: 6,12,18,24... Multiples of 8: 8,16,24... Smallest common = 24." },
+        { "id": "ch11-t2-e2", "type": "fill", "question": "LCM stands for ______ Common ______.", "answer": "Lowest, Multiple", "explanation": "LCM = Lowest Common Multiple, the smallest number that is a multiple of all given numbers." },
+        { "id": "ch11-t2-e3", "type": "short", "question": "Find the LCM of 7 and 10.", "answer": "LCM = 70.\n7 = 7. 10 = 2 x 5.\nAll primes: 2(max 1), 5(max 1), 7(max 1).\nLCM = 2 x 5 x 7 = 70.", "explanation": "Since 7 and 10 are co-prime (no common factors), their LCM = their product = 70." }
+      ],
+      "medium": [
+        { "id": "ch11-t2-m1", "type": "short", "question": "Find the LCM of 14 and 35 using prime factorisation.", "answer": "14 = 2 x 7.\n35 = 5 x 7.\nAll primes: 2 (max 1), 5 (max 1), 7 (max 1).\nLCM = 2 x 5 x 7 = 70.", "explanation": "For LCM, take each prime factor the maximum number of times it appears in any factorisation." },
+        { "id": "ch11-t2-m2", "type": "short", "question": "Verify the relationship HCF x LCM = a x b for a = 12 and b = 18.", "answer": "HCF(12, 18) = 6.\nLCM(12, 18) = 36.\nHCF x LCM = 6 x 36 = 216.\na x b = 12 x 18 = 216.\nBoth are equal. Verified.", "explanation": "For any two positive numbers, HCF(a,b) x LCM(a,b) = a x b." }
+      ],
+      "hard": [
+        { "id": "ch11-t2-h1", "type": "long", "question": "Two traffic lights at a junction blink every 48 seconds and 72 seconds respectively. They blink together at 8:00 AM. When will they next blink together? Find using LCM.", "answer": "We need LCM(48, 72).\n\n48 = 2 x 2 x 2 x 2 x 3.\n72 = 2 x 2 x 2 x 3 x 3.\n\nAll primes: 2 (max 4), 3 (max 2).\nLCM = 2 x 2 x 2 x 2 x 3 x 3 = 16 x 9 = 144 seconds.\n\n144 seconds = 2 minutes 24 seconds.\n\nThey will next blink together at 8:02:24 AM.", "explanation": "The LCM gives the smallest time interval after which both events coincide again. 144 seconds = 2 minutes and 24 seconds after 8:00 AM." },
+        { "id": "ch11-t2-h2", "type": "long", "question": "The HCF of two numbers is 12 and their LCM is 180. If one number is 36, find the other number.", "answer": "Using the relationship: HCF x LCM = a x b.\n12 x 180 = 36 x b\n2160 = 36 x b\nb = 2160 ÷ 36 = 60.\n\nThe other number is 60.\n\nVerification: HCF(36, 60) = 12 and LCM(36, 60) = 180. Correct.", "explanation": "The formula HCF x LCM = product of the two numbers allows us to find one number when the other and both HCF and LCM are known." }
+      ]
+    }
+  ]
+}

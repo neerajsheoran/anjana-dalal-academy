@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "topic": "Counting in Groups of Ten",
+      "easy": [
+        { "id": "ch1-t1-e1", "type": "mcq", "question": "Manoj puts 10 chikoos in each tray. If he has 3 full trays and 5 extra chikoos, how many chikoos does he have?", "options": ["30", "35", "53", "15"], "answer": "35", "explanation": "3 trays of 10 = 30 chikoos. Plus 5 extra = 35 chikoos." },
+        { "id": "ch1-t1-e2", "type": "fill", "question": "If there are 4 trays of 10 oranges and 3 loose oranges, the total is ______ oranges.", "answer": "43", "explanation": "4 tens = 40, plus 3 ones = 43." },
+        { "id": "ch1-t1-e3", "type": "mcq", "question": "5 block sticks and 8 loose blocks make ______ blocks.", "options": ["58", "85", "13", "50"], "answer": "58", "explanation": "5 tens = 50, plus 8 ones = 58." },
+        { "id": "ch1-t1-e4", "type": "fill", "question": "10 ten strips joined together make ______.", "answer": "100", "explanation": "10 groups of 10 = 100." }
+      ],
+      "medium": [
+        { "id": "ch1-t1-m1", "type": "short", "question": "Suraj has 43 oranges. Each tray holds 10 oranges. How many trays does he need and how many oranges are left over?", "answer": "He needs 4 trays and 3 oranges are left over.", "explanation": "43 = 4 tens + 3 ones. So 4 full trays with 3 extra oranges." },
+        { "id": "ch1-t1-m2", "type": "mcq", "question": "How many groups of 10 are in the number 72?", "options": ["2", "7", "72", "9"], "answer": "7", "explanation": "72 has 7 tens and 2 ones." }
+      ],
+      "hard": [
+        { "id": "ch1-t1-h1", "type": "long", "question": "Write the tens and ones for each number: 31, 52, 75, 93.", "answer": "31 = 3 tens, 1 one. 52 = 5 tens, 2 ones. 75 = 7 tens, 5 ones. 93 = 9 tens, 3 ones.", "explanation": "The first digit tells the tens and the second digit tells the ones." }
+      ]
+    },
+    {
+      "topic": "Comparing Numbers",
+      "easy": [
+        { "id": "ch1-t2-e1", "type": "mcq", "question": "Which is bigger: 43 or 34?", "options": ["43", "34", "Both are equal", "Cannot tell"], "answer": "43", "explanation": "43 has 4 tens and 34 has 3 tens. More tens means a bigger number." },
+        { "id": "ch1-t2-e2", "type": "mcq", "question": "Which is smaller: 67 or 76?", "options": ["67", "76", "Both are equal", "Cannot tell"], "answer": "67", "explanation": "67 has 6 tens and 76 has 7 tens. Fewer tens means a smaller number." },
+        { "id": "ch1-t2-e3", "type": "fill", "question": "53 is ______ than 35. (more / less)", "answer": "more", "explanation": "53 has 5 tens while 35 has 3 tens. So 53 is more." },
+        { "id": "ch1-t2-e4", "type": "mcq", "question": "Which is bigger: 43 or 47?", "options": ["43", "47", "Both are equal", "Cannot tell"], "answer": "47", "explanation": "Both have 4 tens but 47 has 7 ones while 43 has only 3 ones." }
+      ],
+      "medium": [
+        { "id": "ch1-t2-m1", "type": "short", "question": "Put these numbers in order from smallest to biggest: 72, 27, 56, 65.", "answer": "27, 56, 65, 72.", "explanation": "Compare tens first: 27 (2 tens), 56 (5 tens), 65 (6 tens), 72 (7 tens)." },
+        { "id": "ch1-t2-m2", "type": "fill", "question": "The smallest two-digit number is ______ and the largest is ______.", "answer": "10 and 99", "explanation": "10 is the first two-digit number and 99 is the last." }
+      ],
+      "hard": [
+        { "id": "ch1-t2-h1", "type": "long", "question": "Two numbers have the same tens digit (6). One number is 63 and the other is 68. Which is bigger and why?", "answer": "68 is bigger. Both have 6 tens, but 68 has 8 ones while 63 has only 3 ones. When tens are the same, we compare ones.", "explanation": "Step 1: Compare tens (both are 6, so they are equal). Step 2: Compare ones (8 > 3), so 68 > 63." }
+      ]
+    },
+    {
+      "topic": "Ordinal Numbers and Number Labels",
+      "easy": [
+        { "id": "ch1-t3-e1", "type": "mcq", "question": "The boat that finishes a race first is in which position?", "options": ["2nd", "3rd", "1st", "4th"], "answer": "1st", "explanation": "The first to finish is in the 1st position." },
+        { "id": "ch1-t3-e2", "type": "fill", "question": "In a race, the position after 2nd is ______.", "answer": "3rd", "explanation": "After 1st and 2nd comes 3rd." },
+        { "id": "ch1-t3-e3", "type": "mcq", "question": "A player wears jersey number 17. Does this mean he is the 17th player?", "options": ["Yes, he is the 17th player", "No, 17 is just a label", "Yes, there are 17 players", "Cannot tell"], "answer": "No, 17 is just a label", "explanation": "Jersey numbers are used as labels or names, not to show position or counting." }
+      ],
+      "medium": [
+        { "id": "ch1-t3-m1", "type": "short", "question": "Give two examples of numbers used as labels (not for counting).", "answer": "House number, bus number, phone number, roll number, train number (any two).", "explanation": "Sometimes numbers are used as names to identify things, not to count them." },
+        { "id": "ch1-t3-m2", "type": "short", "question": "In a line of 5 children, who is in the 3rd position? Is that the same as having 3 children?", "answer": "The 3rd child is the one standing third from the front. No, 3rd position means one child's place, not 3 children.", "explanation": "Ordinal numbers (1st, 2nd, 3rd) tell position, while counting numbers (1, 2, 3) tell how many." }
+      ],
+      "hard": [
+        { "id": "ch1-t3-h1", "type": "long", "question": "In the Vallam Kali boat race, 5 boats finished. The red boat came 1st, the blue boat came 3rd, and the green boat came 5th. What positions were left for the yellow and white boats?", "answer": "The yellow and white boats came in 2nd and 4th position (in some order).", "explanation": "Positions 1st, 3rd, and 5th are taken. So 2nd and 4th remain for the other two boats." }
+      ]
+    }
+  ]
+}

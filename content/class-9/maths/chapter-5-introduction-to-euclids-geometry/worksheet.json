@@ -1,0 +1,78 @@
+{
+  "topics": [
+    {
+      "topic": "Euclid's Definitions, Axioms and Postulates",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "According to Euclid, a 'terminated line' can be produced indefinitely. What do we call a 'terminated line' in modern geometry?",
+          "options": ["Ray", "Line", "Line segment", "Plane"],
+          "answer": "Line segment",
+          "explanation": "What Euclid called a terminated line is now called a line segment -- a part of a line with two endpoints."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "Euclid's axiom states: Things which are equal to the same thing are ______ to one another.",
+          "answer": "equal",
+          "explanation": "This is Euclid's first axiom: if A = C and B = C, then A = B."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is TRUE according to Euclid's postulates?",
+          "options": ["Only one line can pass through a single point", "There are infinitely many lines through two distinct points", "A terminated line can be produced indefinitely on both sides", "A circle cannot be drawn with any radius"],
+          "answer": "A terminated line can be produced indefinitely on both sides",
+          "explanation": "Postulate 2 states that a terminated line (line segment) can be extended indefinitely. Through a single point, infinitely many lines can pass. Through two distinct points, exactly one line passes."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "short",
+          "question": "State whether true or false: 'If two circles are equal, then their radii are equal.' Give a reason.",
+          "answer": "True. If two circles are equal, they coincide when superimposed. By Euclid's Axiom 4 (things which coincide are equal), their radii, being corresponding parts, are equal.",
+          "explanation": "When two equal circles are superimposed, their centres and boundaries coincide, so their radii must be equal."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "State whether true or false with reason: 'Only one line can pass through a single point.'",
+          "answer": "False. Through a single point, infinitely many lines can pass. A unique line requires at least two distinct points.",
+          "explanation": "Euclid's Axiom 5.1 says a unique line passes through two distinct points, but through one point, we can draw countless lines in different directions."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "If AB = PQ and PQ = XY, then is AB = XY? Which of Euclid's axioms supports this?",
+          "answer": "Yes, AB = XY. This follows from Euclid's Axiom 1: Things which are equal to the same thing are equal to one another.",
+          "explanation": "AB = PQ and PQ = XY. Both AB and XY are equal to the same thing (PQ), so by Axiom 1, they must be equal to each other."
+        },
+        {
+          "id": "ch5-t1-m3",
+          "type": "short",
+          "question": "State Euclid's five postulates.",
+          "answer": "Postulate 1: A straight line may be drawn from any point to any other point.\nPostulate 2: A terminated line can be produced indefinitely.\nPostulate 3: A circle can be drawn with any centre and any radius.\nPostulate 4: All right angles are equal to one another.\nPostulate 5: If a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, the two lines meet on that side.",
+          "explanation": "These five postulates form the foundation of Euclidean geometry and were assumed without proof."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "If a point C lies between two points A and B such that AC = BC, prove that AC = (1/2)AB.",
+          "answer": "Given: C lies between A and B, and AC = BC.\nSince C lies between A and B:\nAC + BC = AB ... (by Euclid's Axiom 4, since AC + BC coincides with AB)\nBut AC = BC (given)\nSo AC + AC = AB\ni.e., 2AC = AB\nTherefore, AC = (1/2)AB\nHence proved.",
+          "explanation": "We use the fact that AC + BC = AB (since C is between A and B) and substitute AC = BC to get 2AC = AB."
+        },
+        {
+          "id": "ch5-t1-h2",
+          "type": "long",
+          "question": "In the figure, if AC = BD, prove that AB = CD. (Points are in order A, B, C, D on a line.)",
+          "answer": "Given: AC = BD, with points A, B, C, D on a line in order.\nAC = AB + BC ... (B is between A and C)\nBD = BC + CD ... (C is between B and D)\nSince AC = BD:\nAB + BC = BC + CD\nSubtracting BC from both sides (Euclid's Axiom 3):\nAB = CD\nHence proved.",
+          "explanation": "Express AC and BD in terms of smaller segments using the betweenness property, then use Euclid's Axiom 3 (equals subtracted from equals give equal remainders)."
+        }
+      ]
+    }
+  ]
+}

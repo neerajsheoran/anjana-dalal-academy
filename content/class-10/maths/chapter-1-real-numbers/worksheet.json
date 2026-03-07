@@ -1,0 +1,221 @@
+{
+  "topics": [
+    {
+      "topic": "Fundamental Theorem of Arithmetic",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "The prime factorisation of 140 is:",
+          "options": ["2 x 2 x 5 x 7", "2 x 5 x 7 x 3", "2 x 2 x 7 x 3", "2 x 2 x 5 x 5"],
+          "answer": "2 x 2 x 5 x 7",
+          "explanation": "140 = 2 x 70 = 2 x 2 x 35 = 2 x 2 x 5 x 7 = 2^2 x 5 x 7."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "The prime factorisation of 156 is 2^2 x 3 x ______.",
+          "answer": "13",
+          "explanation": "156 = 2 x 78 = 2 x 2 x 39 = 2 x 2 x 3 x 13 = 2^2 x 3 x 13."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "mcq",
+          "question": "The prime factorisation of 3825 is:",
+          "options": ["3^2 x 5^2 x 17", "3 x 5^2 x 17", "3^2 x 5 x 17", "3 x 5 x 17^2"],
+          "answer": "3^2 x 5^2 x 17",
+          "explanation": "3825 = 3 x 1275 = 3 x 3 x 425 = 9 x 425 = 9 x 5 x 85 = 9 x 5 x 5 x 17 = 3^2 x 5^2 x 17."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "short",
+          "question": "Express 5005 as a product of its prime factors.",
+          "answer": "5005 = 5 x 7 x 11 x 13",
+          "explanation": "5005 = 5 x 1001 = 5 x 7 x 143 = 5 x 7 x 11 x 13."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "mcq",
+          "question": "The Fundamental Theorem of Arithmetic states that every composite number can be expressed as a product of primes and this factorisation is:",
+          "options": ["Not always possible", "Unique apart from the order of factors", "Unique including the order of factors", "Possible in multiple distinct ways"],
+          "answer": "Unique apart from the order of factors",
+          "explanation": "The Fundamental Theorem of Arithmetic states that every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Find the LCM and HCF of 26 and 91, and verify that LCM x HCF = product of the two numbers.",
+          "answer": "HCF(26, 91) = 13, LCM(26, 91) = 182. Verification: 13 x 182 = 2366 = 26 x 91.",
+          "explanation": "Step 1: Prime factorise: 26 = 2 x 13, 91 = 7 x 13.\nStep 2: HCF = product of common prime factors with smallest powers = 13.\nStep 3: LCM = product of all prime factors with greatest powers = 2 x 7 x 13 = 182.\nStep 4: Verify: HCF x LCM = 13 x 182 = 2366, and 26 x 91 = 2366. Verified."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Find the LCM and HCF of 510 and 92, and verify that LCM x HCF = product of the two numbers.",
+          "answer": "HCF(510, 92) = 2, LCM(510, 92) = 23460. Verification: 2 x 23460 = 46920 = 510 x 92.",
+          "explanation": "Step 1: 510 = 2 x 3 x 5 x 17, 92 = 2^2 x 23.\nStep 2: HCF = 2 (only common factor).\nStep 3: LCM = 2^2 x 3 x 5 x 17 x 23 = 23460.\nStep 4: HCF x LCM = 2 x 23460 = 46920, and 510 x 92 = 46920. Verified."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "short",
+          "question": "Find the LCM and HCF of 12, 15 and 21 by applying the prime factorisation method.",
+          "answer": "HCF = 3, LCM = 420",
+          "explanation": "Step 1: 12 = 2^2 x 3, 15 = 3 x 5, 21 = 3 x 7.\nStep 2: HCF = product of common prime factors with smallest powers = 3.\nStep 3: LCM = product of all prime factors with greatest powers = 2^2 x 3 x 5 x 7 = 420."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Given that HCF(306, 657) = 9, find LCM(306, 657).",
+          "answer": "LCM(306, 657) = 22338",
+          "explanation": "Step 1: We know for two positive integers a and b: HCF(a, b) x LCM(a, b) = a x b.\nStep 2: So LCM(306, 657) = (306 x 657) / HCF(306, 657).\nStep 3: LCM = (306 x 657) / 9 = 201042 / 9 = 22338."
+        },
+        {
+          "id": "ch1-t1-h2",
+          "type": "long",
+          "question": "Explain why 7 x 11 x 13 + 13 and 7 x 6 x 5 x 4 x 3 x 2 x 1 + 5 are composite numbers.",
+          "answer": "Both expressions can be factored to show they have factors other than 1 and themselves, making them composite.",
+          "explanation": "For 7 x 11 x 13 + 13:\nStep 1: Factor out 13: 13(7 x 11 + 1) = 13 x (77 + 1) = 13 x 78 = 1014.\nStep 2: Since 1014 = 13 x 78 = 13 x 2 x 3 x 13, it has factors other than 1 and itself, so it is composite.\n\nFor 7 x 6 x 5 x 4 x 3 x 2 x 1 + 5:\nStep 1: Factor out 5: 5(7 x 6 x 4 x 3 x 2 x 1 + 1) = 5 x (1008 + 1) = 5 x 1009.\nStep 2: Since 5 x 1009 has factors 5 and 1009 (other than 1 and itself), it is composite."
+        }
+      ]
+    },
+    {
+      "topic": "HCF and LCM Applications",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "Can 6^n end with the digit 0 for any natural number n?",
+          "options": ["Yes, when n = 5", "Yes, when n = 10", "No, never", "Yes, when n is even"],
+          "answer": "No, never",
+          "explanation": "6^n = (2 x 3)^n = 2^n x 3^n. For a number to end in 0, it must be divisible by both 2 and 5. Since the prime factorisation of 6^n contains only 2 and 3, it can never end with 0."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "If HCF(a, b) = 12 and a x b = 1800, then LCM(a, b) = ______.",
+          "answer": "150",
+          "explanation": "Using the relation HCF x LCM = a x b, we get LCM = (a x b) / HCF = 1800 / 12 = 150."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "The HCF of two consecutive natural numbers is always:",
+          "options": ["2", "0", "1", "The smaller number"],
+          "answer": "1",
+          "explanation": "Two consecutive natural numbers have no common factor other than 1, so their HCF is always 1."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "short",
+          "question": "Find the HCF of 336 and 54 using prime factorisation.",
+          "answer": "HCF(336, 54) = 6",
+          "explanation": "336 = 2^4 x 3 x 7, 54 = 2 x 3^3. Common factors with smallest powers: 2^1 x 3^1 = 6."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point?",
+          "answer": "They will meet again at the starting point after 36 minutes.",
+          "explanation": "Step 1: They will meet at the starting point after a time that is a common multiple of 18 and 12.\nStep 2: The minimum time is the LCM of 18 and 12.\nStep 3: 18 = 2 x 3^2 and 12 = 2^2 x 3.\nStep 4: LCM = 2^2 x 3^2 = 4 x 9 = 36 minutes."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "Can 4^n end with the digit 0 for any natural number n? Justify your answer.",
+          "answer": "No, 4^n cannot end with the digit 0 for any natural number n.",
+          "explanation": "4^n = (2^2)^n = 2^(2n). For a number to end in 0, its prime factorisation must contain both 2 and 5. Since 4^n = 2^(2n), the only prime factor is 2. There is no factor of 5, so 4^n can never end with the digit 0."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "Three bells ring at intervals of 6, 12, and 18 minutes respectively. If they all ring together at 6:00 AM, when will they next all ring together?",
+          "answer": "They will next all ring together at 6:36 AM.",
+          "explanation": "Step 1: Find LCM of 6, 12, and 18.\nStep 2: 6 = 2 x 3, 12 = 2^2 x 3, 18 = 2 x 3^2.\nStep 3: LCM = 2^2 x 3^2 = 4 x 9 = 36.\nStep 4: So all three bells ring together every 36 minutes.\nStep 5: 6:00 AM + 36 minutes = 6:36 AM."
+        }
+      ]
+    },
+    {
+      "topic": "Irrational Numbers and Proofs",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is an irrational number?",
+          "options": ["0.75", "sqrt(4)", "sqrt(5)", "22/7"],
+          "answer": "sqrt(5)",
+          "explanation": "0.75 = 3/4 is rational. sqrt(4) = 2 is rational. 22/7 is rational. sqrt(5) cannot be expressed as p/q where p and q are integers, so it is irrational."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "A number 's' is called irrational if it cannot be written in the form p/q, where p and q are ______ and q is not equal to 0.",
+          "answer": "integers",
+          "explanation": "By definition, an irrational number cannot be expressed as a ratio of two integers."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "mcq",
+          "question": "The sum of a rational number and an irrational number is:",
+          "options": ["Always rational", "Always irrational", "Sometimes rational, sometimes irrational", "Always zero"],
+          "answer": "Always irrational",
+          "explanation": "The sum (or difference) of a rational number and an irrational number is always irrational."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "mcq",
+          "question": "The product of a non-zero rational number and an irrational number is:",
+          "options": ["Always rational", "Always irrational", "Sometimes rational", "Zero"],
+          "answer": "Always irrational",
+          "explanation": "The product of a non-zero rational number with an irrational number is always irrational."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "long",
+          "question": "Prove that sqrt(5) is irrational.",
+          "answer": "sqrt(5) is irrational (proved by contradiction).",
+          "explanation": "Step 1: Assume sqrt(5) is rational, i.e., sqrt(5) = a/b where a and b are coprime integers and b is not 0.\nStep 2: Squaring both sides: 5 = a^2/b^2, so a^2 = 5b^2.\nStep 3: This means 5 divides a^2. By Theorem 1.2 (if p divides a^2, then p divides a), 5 divides a.\nStep 4: Let a = 5c for some integer c. Then a^2 = 25c^2 = 5b^2, so b^2 = 5c^2.\nStep 5: This means 5 divides b^2, so 5 divides b.\nStep 6: Both a and b are divisible by 5, contradicting the assumption that a and b are coprime.\nStep 7: Therefore, sqrt(5) is irrational."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "long",
+          "question": "Show that 5 - sqrt(3) is irrational.",
+          "answer": "5 - sqrt(3) is irrational.",
+          "explanation": "Step 1: Assume 5 - sqrt(3) is rational, i.e., 5 - sqrt(3) = a/b where a, b are coprime integers.\nStep 2: Then sqrt(3) = 5 - a/b = (5b - a)/b.\nStep 3: Since a and b are integers, (5b - a)/b is rational.\nStep 4: This means sqrt(3) is rational, which contradicts the fact that sqrt(3) is irrational.\nStep 5: Therefore, 5 - sqrt(3) is irrational."
+        },
+        {
+          "id": "ch1-t3-m3",
+          "type": "short",
+          "question": "Prove that 3 + 2*sqrt(5) is irrational.",
+          "answer": "3 + 2*sqrt(5) is irrational.",
+          "explanation": "Step 1: Assume 3 + 2*sqrt(5) is rational, so 3 + 2*sqrt(5) = a/b for coprime integers a, b.\nStep 2: Then 2*sqrt(5) = a/b - 3 = (a - 3b)/b.\nStep 3: sqrt(5) = (a - 3b)/(2b), which is rational.\nStep 4: This contradicts the fact that sqrt(5) is irrational.\nStep 5: Therefore, 3 + 2*sqrt(5) is irrational."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Prove that 1/sqrt(2) is irrational.",
+          "answer": "1/sqrt(2) is irrational.",
+          "explanation": "Step 1: Assume 1/sqrt(2) is rational, i.e., 1/sqrt(2) = a/b where a, b are coprime integers and b is not 0.\nStep 2: Then sqrt(2) = b/a, which means sqrt(2) is rational.\nStep 3: But sqrt(2) is irrational (proved using the Fundamental Theorem of Arithmetic).\nStep 4: This is a contradiction.\nStep 5: Therefore, 1/sqrt(2) is irrational."
+        },
+        {
+          "id": "ch1-t3-h2",
+          "type": "long",
+          "question": "Prove that 7*sqrt(5) is irrational.",
+          "answer": "7*sqrt(5) is irrational.",
+          "explanation": "Step 1: Assume 7*sqrt(5) is rational, i.e., 7*sqrt(5) = a/b where a, b are coprime integers.\nStep 2: Then sqrt(5) = a/(7b).\nStep 3: Since a, 7 and b are integers, a/(7b) is rational.\nStep 4: This means sqrt(5) is rational, contradicting the proven fact that sqrt(5) is irrational.\nStep 5: Therefore, 7*sqrt(5) is irrational."
+        }
+      ]
+    }
+  ]
+}

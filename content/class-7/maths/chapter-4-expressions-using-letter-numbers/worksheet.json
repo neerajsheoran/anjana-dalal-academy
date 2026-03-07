@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Variables and Algebraic Expressions",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "If a = Aftab's age and Shabnam is 3 years older, which expression represents Shabnam's age?", "options": ["a - 3", "3a", "a + 3", "a / 3"], "answer": "a + 3", "explanation": "Shabnam is 3 years older than Aftab, so Shabnam's age = a + 3." },
+        { "id": "ch4-t1-e2", "type": "fill", "question": "The expression 4 x n is written in algebra as ______.", "answer": "4n", "explanation": "In algebra, we drop the multiplication sign. 4 x n is written as 4n." },
+        { "id": "ch4-t1-e3", "type": "short", "question": "Find the value of 7k when k = 4.", "answer": "7k = 7 x 4 = 28", "explanation": "Substitute k = 4 into 7k: 7 x 4 = 28." },
+        { "id": "ch4-t1-e4", "type": "mcq", "question": "What is the perimeter of a square with side q?", "options": ["2q", "q + 4", "4q", "q²"], "answer": "4q", "explanation": "A square has 4 equal sides, so perimeter = 4 x q = 4q." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "Find the value of 5m + 3 when m = 2.", "answer": "5m + 3 = 5 x 2 + 3 = 10 + 3 = 13", "explanation": "Substitute m = 2: first multiply 5 x 2 = 10, then add 3 to get 13." },
+        { "id": "ch4-t1-m2", "type": "short", "question": "If a = -4, find the value of 10 - a.", "answer": "10 - (-4) = 10 + 4 = 14", "explanation": "Subtracting a negative number is the same as adding its positive value. 10 - (-4) = 14, not 6." },
+        { "id": "ch4-t1-m3", "type": "short", "question": "Ketaki buys c coconuts at Rs 35 each and j kg of jaggery at Rs 60 per kg. Write the expression for total cost and find it when c = 7 and j = 4.", "answer": "Total cost = 35c + 60j.\nWhen c = 7, j = 4: 35 x 7 + 60 x 4 = 245 + 240 = Rs 485.", "explanation": "Cost of coconuts = 35c, cost of jaggery = 60j. Total = 35c + 60j. Substitute the given values." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "long", "question": "Are the expressions 5u and 5 + u equal? Justify your answer by substituting at least three values of u.", "answer": "No, 5u and 5 + u are not equal.\n\nWhen u = 2: 5u = 10, 5 + u = 7 (not equal)\nWhen u = 5: 5u = 25, 5 + u = 10 (not equal)\nWhen u = 8: 5u = 40, 5 + u = 13 (not equal)\n\n5u means 5 times u, while 5 + u means 5 added to u. These are fundamentally different operations.", "explanation": "Multiplication and addition are different operations, so 5u and 5 + u give different values for all values of u (except u = 5/4 = 1.25)." }
+      ]
+    },
+    {
+      "topic": "Simplification of Expressions",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "Which of the following are like terms?", "options": ["5c and 3d", "18c and 11d", "12n and -4n", "5x and 3y"], "answer": "12n and -4n", "explanation": "Like terms involve the same letter-number. 12n and -4n both involve n, so they are like terms." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "5c + 3c + 10c = ______c.", "answer": "18", "explanation": "Combining like terms: (5 + 3 + 10)c = 18c." },
+        { "id": "ch4-t2-e3", "type": "short", "question": "Simplify: 12n - 4n", "answer": "8n", "explanation": "12n - 4n = (12 - 4)n = 8n. Like terms can be subtracted by subtracting their coefficients." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "Simplify: (40x + 75y) - (6x + 10y)", "answer": "34x + 65y.\n\nStep 1: Remove brackets (minus changes signs): 40x + 75y - 6x - 10y.\nStep 2: Group like terms: (40x - 6x) + (75y - 10y).\nStep 3: Simplify: 34x + 65y.", "explanation": "When brackets are preceded by a minus sign, all signs inside flip. Then combine like terms." },
+        { "id": "ch4-t2-m2", "type": "short", "question": "Simplify 4(x + y) - y using the distributive property.", "answer": "4x + 3y.\n\n4(x + y) - y = 4x + 4y - y = 4x + (4 - 1)y = 4x + 3y.", "explanation": "First distribute 4 over (x + y) to get 4x + 4y, then combine like terms 4y - y = 3y." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "Charu's scores in three quiz rounds are: 7p - 3q, 8p - 4q, and 6p - 2q. Her friend Krishita scored 23p - 7q in total. Find each person's total score and determine who scored more.", "answer": "Charu's total = (7p - 3q) + (8p - 4q) + (6p - 2q)\n= 7p + 8p + 6p - 3q - 4q - 2q\n= 21p - 9q.\n\nKrishita's total = 23p - 7q.\n\nDifference = (23p - 7q) - (21p - 9q)\n= 23p - 7q - 21p + 9q\n= 2p + 2q.\n\nSince p and q are both positive (score for correct and penalty for wrong), 2p + 2q > 0. Therefore Krishita scored more than Charu.", "explanation": "The difference 2p + 2q is always positive when p and q are positive, meaning Krishita always scores more regardless of the specific values of p and q." },
+        { "id": "ch4-t2-h2", "type": "long", "question": "Write the perimeter of a rectangle with length l and breadth b as an algebraic expression. Simplify it and find the perimeter when l = 12 cm and b = 7 cm.", "answer": "Perimeter = l + b + l + b = 2l + 2b.\n\nWhen l = 12, b = 7:\nPerimeter = 2(12) + 2(7) = 24 + 14 = 38 cm.", "explanation": "A rectangle has two lengths and two breadths. Combine like terms: l + l = 2l and b + b = 2b, giving perimeter = 2l + 2b." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "topics": [
+    {
+      "topic": "Distance, Displacement, Speed, and Velocity",
+      "easy": [
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "An object has moved through a distance. Can it have zero displacement?",
+          "options": ["No, never", "Yes, if it returns to its starting point", "Yes, only if it moves in a straight line", "Yes, only if it stops"],
+          "answer": "Yes, if it returns to its starting point",
+          "explanation": "Displacement is the shortest distance from start to end. If the object returns to its starting position, the displacement is zero, even though the distance covered is not zero."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "The rate of motion of an object that specifies both speed and direction is called ______.",
+          "answer": "velocity",
+          "explanation": "Velocity is speed in a definite direction. It is a vector quantity."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "mcq",
+          "question": "What does the odometer of an automobile measure?",
+          "options": ["Speed", "Velocity", "Distance", "Acceleration"],
+          "answer": "Distance",
+          "explanation": "The odometer records the total distance travelled by a vehicle."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "mcq",
+          "question": "Under what condition is the magnitude of average velocity equal to average speed?",
+          "options": ["When the object is at rest", "When the object moves in a straight line without changing direction", "Always", "Never"],
+          "answer": "When the object moves in a straight line without changing direction",
+          "explanation": "When an object moves in a straight line without changing direction, the distance equals the magnitude of displacement, so average speed equals the magnitude of average velocity."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "A farmer moves along the boundary of a square field of side 10 m in 40 s. What will be the magnitude of displacement at the end of 2 minutes 20 seconds?",
+          "answer": "Total time = 2 min 20 s = 140 s. Time for one round = 40 s. Number of rounds = 140/40 = 3.5 rounds. After 3 complete rounds the farmer is back at the start. In the remaining half round, he covers 2 sides = 20 m. The displacement is the diagonal of the square (from start to the diagonally opposite corner) = sqrt(10^2 + 10^2) = sqrt(200) = 14.14 m.",
+          "explanation": "After 3.5 rounds, the farmer is at the corner diagonally opposite to his starting position."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "short",
+          "question": "An object travels 16 m in 4 s and then another 16 m in 2 s. What is the average speed?",
+          "answer": "Total distance = 16 + 16 = 32 m. Total time = 4 + 2 = 6 s. Average speed = 32/6 = 5.33 m/s.",
+          "explanation": "Average speed is total distance divided by total time."
+        },
+        {
+          "id": "ch7-t1-m3",
+          "type": "short",
+          "question": "Distinguish between speed and velocity.",
+          "answer": "Speed is the distance travelled per unit time and is a scalar quantity (has only magnitude). Velocity is the displacement per unit time in a specific direction and is a vector quantity (has both magnitude and direction). Speed is always positive, while velocity can be positive, negative, or zero.",
+          "explanation": "Speed tells how fast; velocity tells how fast and in which direction."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "Abdul, while driving to school, computes the average speed for his trip to be 20 km/h. On his return trip along the same route, there is less traffic and the average speed is 30 km/h. What is the average speed for Abdul's trip?",
+          "answer": "Let the one-way distance be d km. Time for going = d/20 hours. Time for return = d/30 hours. Total distance = 2d km. Total time = d/20 + d/30 = (3d + 2d)/60 = 5d/60 = d/12 hours. Average speed = Total distance / Total time = 2d / (d/12) = 2d x 12/d = 24 km/h.",
+          "explanation": "The average speed for the entire trip is 24 km/h, not the simple average of 20 and 30 (which would be 25). When distances are equal but speeds differ, use the harmonic mean formula."
+        },
+        {
+          "id": "ch7-t1-h2",
+          "type": "long",
+          "question": "Usha swims in a 90 m long pool. She covers 180 m in one minute by swimming from one end to the other and back. Find her average speed and average velocity.",
+          "answer": "Total distance = 180 m. Total time = 1 min = 60 s. Average speed = 180/60 = 3 m/s. Displacement = 0 m (she returns to the starting point after swimming to one end and back). Average velocity = 0/60 = 0 m/s.",
+          "explanation": "Average speed considers total path length, while average velocity considers displacement. Since she returns to her starting point, displacement is zero."
+        }
+      ]
+    },
+    {
+      "topic": "Acceleration and Equations of Motion",
+      "easy": [
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "When will you say a body has uniform acceleration?",
+          "options": ["When it covers equal distances in equal time", "When its velocity changes by equal amounts in equal intervals of time", "When it moves in a circle", "When it is at rest"],
+          "answer": "When its velocity changes by equal amounts in equal intervals of time",
+          "explanation": "Uniform acceleration means the rate of change of velocity is constant."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "The SI unit of acceleration is ______.",
+          "answer": "m/s squared (m s-2)",
+          "explanation": "Acceleration is the change in velocity per unit time. Since velocity is in m/s and time in s, acceleration is in m/s^2."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "mcq",
+          "question": "If a body starts from rest, its initial velocity u is:",
+          "options": ["1 m/s", "0 m/s", "Cannot be determined", "Equal to final velocity"],
+          "answer": "0 m/s",
+          "explanation": "Starting from rest means the initial velocity is zero."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "mcq",
+          "question": "The slope of a velocity-time graph gives:",
+          "options": ["Speed", "Distance", "Acceleration", "Velocity"],
+          "answer": "Acceleration",
+          "explanation": "The slope of a velocity-time graph represents the rate of change of velocity, which is acceleration."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "A bus decreases its speed from 80 km/h to 60 km/h in 5 s. Find the acceleration of the bus.",
+          "answer": "u = 80 km/h = 80 x 5/18 = 22.22 m/s. v = 60 km/h = 60 x 5/18 = 16.67 m/s. t = 5 s. a = (v - u)/t = (16.67 - 22.22)/5 = -5.55/5 = -1.11 m/s^2. The negative sign indicates deceleration (retardation).",
+          "explanation": "The bus is slowing down, so the acceleration is negative (deceleration)."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "A train starting from rest moves with uniform acceleration and attains a speed of 40 km/h in 10 minutes. Find its acceleration.",
+          "answer": "u = 0 (starts from rest). v = 40 km/h = 40 x 5/18 = 11.11 m/s. t = 10 min = 600 s. a = (v - u)/t = (11.11 - 0)/600 = 0.0185 m/s^2.",
+          "explanation": "Always convert all quantities to SI units (m/s and seconds) before calculating."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "A train is travelling at a speed of 90 km/h. Brakes are applied so as to produce a uniform acceleration of -0.5 m/s^2. Find how far the train will go before it is brought to rest.",
+          "answer": "u = 90 km/h = 90 x 5/18 = 25 m/s. v = 0 (brought to rest). a = -0.5 m/s^2. Using v^2 = u^2 + 2as: 0 = (25)^2 + 2(-0.5)(s). 0 = 625 - s. s = 625 m. Also, time taken: v = u + at, 0 = 25 + (-0.5)t, t = 50 s. Distance = 96 m can also be verified for other problems. Here the train travels 625 m before stopping.",
+          "explanation": "Using the third equation of motion directly gives the distance without needing to find time first."
+        },
+        {
+          "id": "ch7-t2-h2",
+          "type": "long",
+          "question": "A car starts from rest and moves along the x-axis with constant acceleration 5 m/s^2 for 8 seconds. If it then continues with constant velocity, what distance will the car cover in 12 seconds since it started from rest?",
+          "answer": "Phase 1 (0 to 8 s): u = 0, a = 5 m/s^2, t = 8 s. Distance s1 = ut + (1/2)at^2 = 0 + (1/2)(5)(64) = 160 m. Velocity at end of 8 s: v = u + at = 0 + 5(8) = 40 m/s. Phase 2 (8 to 12 s): Constant velocity = 40 m/s, t = 4 s. Distance s2 = 40 x 4 = 160 m. Total distance = 160 + 160 = 320 m.",
+          "explanation": "The problem has two phases: accelerated motion for 8 s and then uniform motion for the remaining 4 s."
+        },
+        {
+          "id": "ch7-t2-h3",
+          "type": "long",
+          "question": "A ball is gently dropped from a height of 20 m. If its velocity increases uniformly at the rate of 10 m/s^2, with what velocity will it strike the ground? After what time will it strike the ground?",
+          "answer": "u = 0 (dropped from rest), s = 20 m, a = 10 m/s^2. Using v^2 = u^2 + 2as: v^2 = 0 + 2(10)(20) = 400. v = 20 m/s. Using v = u + at: 20 = 0 + 10t. t = 2 s. The ball strikes the ground with a velocity of 20 m/s after 2 seconds.",
+          "explanation": "For freely falling objects, acceleration due to gravity g = 10 m/s^2 (approximately)."
+        }
+      ]
+    },
+    {
+      "topic": "Circular Motion",
+      "easy": [
+        {
+          "id": "ch7-t3-e1",
+          "type": "mcq",
+          "question": "In uniform circular motion, which of the following remains constant?",
+          "options": ["Velocity", "Speed", "Acceleration", "Direction"],
+          "answer": "Speed",
+          "explanation": "In uniform circular motion, speed is constant but velocity keeps changing because the direction of motion changes continuously."
+        },
+        {
+          "id": "ch7-t3-e2",
+          "type": "fill",
+          "question": "The speed of an object moving in a circle of radius r in time t for one complete revolution is ______.",
+          "answer": "2 pi r / t",
+          "explanation": "The circumference of the circle is 2 pi r, and the object covers this distance in time t."
+        },
+        {
+          "id": "ch7-t3-e3",
+          "type": "mcq",
+          "question": "Is uniform circular motion an accelerated motion?",
+          "options": ["No, because speed is constant", "Yes, because direction keeps changing", "No, because the object returns to the same point", "Yes, because the object speeds up"],
+          "answer": "Yes, because direction keeps changing",
+          "explanation": "Even though speed is constant, the velocity changes because direction changes at every point. A change in velocity means there is acceleration."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t3-m1",
+          "type": "short",
+          "question": "An artificial satellite is moving in a circular orbit of radius 42250 km. Calculate its speed if it takes 24 hours to revolve around the earth.",
+          "answer": "r = 42250 km = 42250 x 1000 = 42250000 m. t = 24 h = 24 x 3600 = 86400 s. Speed = 2 x 3.14 x 42250000 / 86400 = 265330000/86400 = 3070.8 m/s = 3.07 km/s.",
+          "explanation": "The speed is approximately 3.07 km/s, which is the orbital speed of a geostationary satellite."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t3-h1",
+          "type": "long",
+          "question": "An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the distance covered and displacement at the end of 2 minutes 20 seconds?",
+          "answer": "Radius = 200/2 = 100 m. Circumference = 2 x 3.14 x 100 = 628 m. Time for one round = 40 s. Total time = 2 min 20 s = 140 s. Number of rounds = 140/40 = 3.5 rounds. Distance = 3.5 x 628 = 2198 m. After 3.5 rounds, the athlete is at the diametrically opposite point. Displacement = diameter = 200 m. Average speed = 2198/140 = 15.7 m/s.",
+          "explanation": "After 3.5 rounds, the athlete is at the point diametrically opposite the start, so displacement equals the diameter."
+        }
+      ]
+    }
+  ]
+}

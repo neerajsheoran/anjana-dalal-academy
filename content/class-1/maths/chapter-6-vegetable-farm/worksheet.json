@@ -1,0 +1,54 @@
+{
+  "topics": [
+    {
+      "topic": "Addition Beyond 10",
+      "easy": [
+        { "id": "ch6-t1-e1", "type": "mcq", "question": "7 + 5 = ?", "options": ["10", "11", "12", "13"], "answer": "12", "explanation": "7 + 5 = 12." },
+        { "id": "ch6-t1-e2", "type": "fill", "question": "8 + 5 = ______.", "answer": "13", "explanation": "8 + 5 = 13." },
+        { "id": "ch6-t1-e3", "type": "mcq", "question": "9 + 4 = ?", "options": ["12", "13", "14", "15"], "answer": "13", "explanation": "9 + 4 = 13." },
+        { "id": "ch6-t1-e4", "type": "fill", "question": "6 + 8 = ______.", "answer": "14", "explanation": "6 + 8 = 14." }
+      ],
+      "medium": [
+        { "id": "ch6-t1-m1", "type": "short", "question": "Rumi picks 7 tomatoes. Shami picks 5 tomatoes. How many tomatoes did they pick altogether?", "answer": "7 + 5 = 12 tomatoes.", "explanation": "We add the two amounts: 7 + 5 = 12." },
+        { "id": "ch6-t1-m2", "type": "fill", "question": "5 + 7 = ______.", "answer": "12", "explanation": "5 + 7 = 12. The order of adding does not matter." },
+        { "id": "ch6-t1-m3", "type": "mcq", "question": "8 + 8 = ?", "options": ["14", "15", "16", "17"], "answer": "16", "explanation": "8 + 8 = 16." }
+      ],
+      "hard": [
+        { "id": "ch6-t1-h1", "type": "long", "question": "Sapna has 12 coloured pencils. Gauri has 6 coloured pencils. How many pencils do they have altogether?", "answer": "12 + 6 = 18 pencils altogether.", "explanation": "We add both amounts: 12 + 6 = 18." },
+        { "id": "ch6-t1-h2", "type": "short", "question": "Find 13 + 4 by counting on from 13.", "answer": "Start at 13, count on 4: 14, 15, 16, 17. So 13 + 4 = 17.", "explanation": "Counting on means starting from the bigger number and counting forward." }
+      ]
+    },
+    {
+      "topic": "Making 10 First (Addition Trick)",
+      "easy": [
+        { "id": "ch6-t2-e1", "type": "mcq", "question": "8 needs how many more to make 10?", "options": ["1", "2", "3", "4"], "answer": "2", "explanation": "8 + 2 = 10. So 8 needs 2 more to make 10." },
+        { "id": "ch6-t2-e2", "type": "fill", "question": "9 + ______ = 10.", "answer": "1", "explanation": "9 + 1 = 10." },
+        { "id": "ch6-t2-e3", "type": "mcq", "question": "7 needs how many more to make 10?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "7 + 3 = 10." }
+      ],
+      "medium": [
+        { "id": "ch6-t2-m1", "type": "short", "question": "Find 8 + 6 using the 'make 10 first' trick.", "answer": "8 needs 2 to make 10. Take 2 from the 6, leaving 4. So 8 + 6 = 10 + 4 = 14.", "explanation": "Break the second number to first make 10, then add the rest." },
+        { "id": "ch6-t2-m2", "type": "short", "question": "Find 9 + 5 using the 'make 10 first' trick.", "answer": "9 needs 1 to make 10. Take 1 from the 5, leaving 4. So 9 + 5 = 10 + 4 = 14.", "explanation": "We break 5 into 1 and 4 to first make 10 with 9." }
+      ],
+      "hard": [
+        { "id": "ch6-t2-h1", "type": "long", "question": "Use the 'make 10 first' trick to find 7 + 6. Show your steps.", "answer": "7 needs 3 to make 10. Take 3 from 6, leaving 3. So 7 + 6 = 10 + 3 = 13.", "explanation": "Step 1: 7 + 3 = 10. Step 2: 6 - 3 = 3 left over. Step 3: 10 + 3 = 13." }
+      ]
+    },
+    {
+      "topic": "Subtraction with Bigger Numbers",
+      "easy": [
+        { "id": "ch6-t3-e1", "type": "mcq", "question": "16 - 6 = ?", "options": ["8", "9", "10", "11"], "answer": "10", "explanation": "16 take away 6 leaves 10." },
+        { "id": "ch6-t3-e2", "type": "fill", "question": "15 - 5 = ______.", "answer": "10", "explanation": "15 take away 5 leaves 10." },
+        { "id": "ch6-t3-e3", "type": "mcq", "question": "15 - 0 = ?", "options": ["0", "10", "14", "15"], "answer": "15", "explanation": "When you subtract 0, the number stays the same." },
+        { "id": "ch6-t3-e4", "type": "fill", "question": "13 - 3 = ______.", "answer": "10", "explanation": "13 take away 3 leaves 10." }
+      ],
+      "medium": [
+        { "id": "ch6-t3-m1", "type": "short", "question": "Kuljeet got 14 toffees. She shared some and was left with 6. How many did she share?", "answer": "14 - 6 = 8 toffees shared.", "explanation": "We subtract what is left from the total to find how many were shared." },
+        { "id": "ch6-t3-m2", "type": "fill", "question": "12 - 5 = ______.", "answer": "7", "explanation": "12 take away 5 leaves 7." }
+      ],
+      "hard": [
+        { "id": "ch6-t3-h1", "type": "long", "question": "A potter had 9 diyas. He sold 5 diyas. Then he made 7 more diyas. How many does he have now? Show your work.", "answer": "Step 1: 9 - 5 = 4 (after selling). Step 2: 4 + 7 = 11 (after making more). He has 11 diyas now.", "explanation": "First subtract the ones sold, then add the new ones made." },
+        { "id": "ch6-t3-h2", "type": "short", "question": "Raman got 12 bananas and ate some. He is left with 5. How many did he eat?", "answer": "12 - 5 = 7. He ate 7 bananas.", "explanation": "We subtract what is left from the total." }
+      ]
+    }
+  ]
+}

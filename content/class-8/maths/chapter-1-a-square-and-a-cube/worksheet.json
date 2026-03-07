@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Square Numbers and Square Roots",
+      "easy": [
+        { "id": "ch1-t1-e1", "type": "mcq", "question": "Which of these is NOT a perfect square?", "options": ["49", "64", "72", "81"], "answer": "72", "explanation": "49 = 7², 64 = 8², 81 = 9². But 72 cannot be expressed as n² for any whole number." },
+        { "id": "ch1-t1-e2", "type": "fill", "question": "Perfect squares can only end in the digits 0, 1, 4, 5, 6, or ______.", "answer": "9", "explanation": "No perfect square ends in 2, 3, 7, or 8. The possible units digits are 0, 1, 4, 5, 6, 9." },
+        { "id": "ch1-t1-e3", "type": "mcq", "question": "The sum of the first 5 odd numbers (1 + 3 + 5 + 7 + 9) equals:", "options": ["20", "25", "30", "35"], "answer": "25", "explanation": "The sum of the first n odd numbers = n². Here n = 5, so the sum = 5² = 25." },
+        { "id": "ch1-t1-e4", "type": "short", "question": "Find the square root of 324 using prime factorisation.", "answer": "324 = 2 x 2 x 3 x 3 x 3 x 3. Pairing: (2x2)(3x3)(3x3). All pair up, so √324 = 2 x 3 x 3 = 18.", "explanation": "Each prime factor appears an even number of times, confirming 324 is a perfect square. Take one from each pair." }
+      ],
+      "medium": [
+        { "id": "ch1-t1-m1", "type": "short", "question": "If 35² = 1225, find 36² without calculating from scratch.", "answer": "36² = 1225 + 71 = 1296.\nThe 36th odd number = 2(36) - 1 = 71.\nSo 36² = 35² + 71 = 1225 + 71 = 1296.", "explanation": "The difference between consecutive squares equals the next odd number: n² = (n-1)² + (2n-1)." },
+        { "id": "ch1-t1-m2", "type": "short", "question": "Estimate √1936 without a calculator.", "answer": "√1936 = 44.\n1936 lies between 40² = 1600 and 50² = 2500.\nLast digit is 6, so root ends in 4 or 6.\n45² = 2025 > 1936, so root < 45.\nMust be 44. Check: 44² = 1936. Correct.", "explanation": "Narrow down using known squares, then use the units digit pattern to identify the exact root." },
+        { "id": "ch1-t1-m3", "type": "short", "question": "Is 156 a perfect square? Justify using prime factorisation.", "answer": "156 = 2 x 2 x 3 x 13. The factors 3 and 13 are unpaired, so 156 is NOT a perfect square.", "explanation": "For a perfect square, every prime factor must appear an even number of times. Here 3 and 13 appear only once each." }
+      ],
+      "hard": [
+        { "id": "ch1-t1-h1", "type": "long", "question": "In the locker puzzle with 100 lockers, explain why only perfect square numbered lockers remain open.", "answer": "Each locker number n is toggled once for each of its factors.\n\nMost numbers have factors in pairs: for number 6, the pairs are (1,6) and (2,3) — 4 toggles (even), so it ends up closed.\n\nBut perfect squares have one factor that pairs with itself: for number 9, the pairs are (1,9) and (3,3) — 3 toggles (odd), so it ends up open.\n\nA number has an odd number of factors if and only if it is a perfect square. Therefore only lockers 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 remain open.", "explanation": "The key insight is that factors come in pairs a x b = n, but when a = b (i.e., a² = n), that pair is counted only once, giving an odd total." }
+      ]
+    },
+    {
+      "topic": "Cube Numbers and Cube Roots",
+      "easy": [
+        { "id": "ch1-t2-e1", "type": "mcq", "question": "What is 5³?", "options": ["15", "25", "125", "625"], "answer": "125", "explanation": "5³ = 5 x 5 x 5 = 125." },
+        { "id": "ch1-t2-e2", "type": "fill", "question": "(-6)³ = ______.", "answer": "-216", "explanation": "(-6)³ = (-6) x (-6) x (-6) = 36 x (-6) = -216. The cube of a negative number is negative." },
+        { "id": "ch1-t2-e3", "type": "mcq", "question": "The cube root of 27 is:", "options": ["3", "9", "27", "81"], "answer": "3", "explanation": "3³ = 27, so ∛27 = 3." },
+        { "id": "ch1-t2-e4", "type": "short", "question": "Is 500 a perfect cube? Explain.", "answer": "500 = 2 x 2 x 5 x 5 x 5. The factor 2 appears only twice (not a multiple of 3), so 500 is NOT a perfect cube.", "explanation": "For a perfect cube, every prime factor must appear a multiple of 3 times. Here 2 appears only twice." }
+      ],
+      "medium": [
+        { "id": "ch1-t2-m1", "type": "short", "question": "Find the cube root of 3375 using prime factorisation.", "answer": "3375 = 3 x 3 x 3 x 5 x 5 x 5 = (3³)(5³). All factors form complete triplets. ∛3375 = 3 x 5 = 15.", "explanation": "Group prime factors into triplets. Take one factor from each triplet to get the cube root." },
+        { "id": "ch1-t2-m2", "type": "short", "question": "Express 2³ as a sum of consecutive odd numbers.", "answer": "2³ = 8 = 3 + 5.", "explanation": "The pattern: 1³ = 1, 2³ = 3+5, 3³ = 7+9+11, 4³ = 13+15+17+19. Each cube equals n consecutive odd numbers." }
+      ],
+      "hard": [
+        { "id": "ch1-t2-h1", "type": "long", "question": "The Hardy-Ramanujan number 1729 can be expressed as the sum of two cubes in two different ways. Show both ways and verify.", "answer": "Way 1: 1729 = 1³ + 12³ = 1 + 1728 = 1729. Correct.\n\nWay 2: 1729 = 9³ + 10³ = 729 + 1000 = 1729. Correct.\n\n1729 is the smallest number expressible as the sum of two cubes in two different ways. It is called a taxicab number.", "explanation": "Ramanujan recognised this property instantly when Hardy mentioned his taxi number 1729, calling it 'a very interesting number.'" }
+      ]
+    }
+  ]
+}

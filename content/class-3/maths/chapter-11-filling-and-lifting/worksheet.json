@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "topic": "Capacity and Litres",
+      "easy": [
+        { "id": "ch11-t1-e1", "type": "mcq", "question": "Which vessel holds the most water?", "options": ["A glass", "A spoon", "A bucket", "A bowl"], "answer": "A bucket", "explanation": "A bucket is the largest vessel among these choices, so it holds the most water." },
+        { "id": "ch11-t1-e2", "type": "fill", "question": "The amount of liquid a vessel can hold is called its ______.", "answer": "capacity", "explanation": "Capacity is how much liquid a vessel can hold." },
+        { "id": "ch11-t1-e3", "type": "mcq", "question": "What is the standard unit for measuring liquids?", "options": ["Metre", "Kilogram", "Litre", "Hour"], "answer": "Litre", "explanation": "A litre is the standard unit for measuring liquids, just like a metre is for length." },
+        { "id": "ch11-t1-e4", "type": "fill", "question": "2 half litres = ______ litre(s).", "answer": "1", "explanation": "2 halves make a whole. 2 half litres = 1 litre." }
+      ],
+      "medium": [
+        { "id": "ch11-t1-m1", "type": "short", "question": "How many quarter litres make one litre?", "answer": "4 quarter litres make one litre.", "explanation": "Just like 4 quarters of anything make a whole, 4 quarter litres = 1 litre." },
+        { "id": "ch11-t1-m2", "type": "short", "question": "Ritu's glass holds more milk than Nita's glass. How can you check this without a measuring tool?", "answer": "Pour the milk from Ritu's glass into a glass the same size as Nita's. Compare the levels. The one with a higher level holds more.", "explanation": "Using same-sized glasses helps you compare by looking at the liquid levels." },
+        { "id": "ch11-t1-m3", "type": "mcq", "question": "A mug holds about how much water?", "options": ["About a quarter litre", "About half a litre", "About 1 litre", "About 5 litres"], "answer": "About half a litre", "explanation": "A typical mug holds about half a litre of water." }
+      ],
+      "hard": [
+        { "id": "ch11-t1-h1", "type": "long", "question": "A family uses 2 litres of milk every day. How many half-litre packets of milk do they need to buy each day? How many packets do they need for a week (7 days)?", "answer": "Each day: 2 litres = 4 half-litre packets. For a week: 4 x 7 = 28 half-litre packets.", "explanation": "1 litre = 2 half-litre packets. So 2 litres = 4 packets per day. For 7 days: 4 x 7 = 28 packets." }
+      ]
+    },
+    {
+      "topic": "Weight and Kilograms",
+      "easy": [
+        { "id": "ch11-t2-e1", "type": "mcq", "question": "Which is heavier: a watermelon or a pencil?", "options": ["Pencil", "Watermelon", "Both are the same", "Cannot tell"], "answer": "Watermelon", "explanation": "A watermelon is much heavier than a pencil." },
+        { "id": "ch11-t2-e2", "type": "fill", "question": "The standard unit for measuring weight is the ______.", "answer": "kilogram", "explanation": "A kilogram (kg) is the standard unit for measuring weight." },
+        { "id": "ch11-t2-e3", "type": "mcq", "question": "On a pan balance, which side goes down?", "options": ["The lighter side", "The heavier side", "Both stay the same", "The empty side"], "answer": "The heavier side", "explanation": "On a pan balance, the heavier object makes its side go down." },
+        { "id": "ch11-t2-e4", "type": "fill", "question": "A packet of salt from the shop is usually about ______ kg.", "answer": "1", "explanation": "A standard salt packet weighs about 1 kilogram." }
+      ],
+      "medium": [
+        { "id": "ch11-t2-m1", "type": "short", "question": "How many half kilograms make 1 kilogram? How many quarter kilograms make 1 kilogram?", "answer": "2 half kilograms make 1 kg. 4 quarter kilograms make 1 kg.", "explanation": "Just like with litres: 1 kg = 2 half kg = 4 quarter kg." },
+        { "id": "ch11-t2-m2", "type": "short", "question": "You have 3 balls that look the same, but one is heavier. How can you find the heavy ball using a pan balance in just 1 weighing?", "answer": "Put one ball on each side of the pan balance. If one side goes down, that ball is the heavy one. If both sides are equal, the third ball (not on the balance) is the heavy one.", "explanation": "This is a clever puzzle. By weighing 2 of the 3 balls, you can always find the heavy one." },
+        { "id": "ch11-t2-m3", "type": "mcq", "question": "Which is about 1 kilogram?", "options": ["A feather", "A pencil", "A packet of daal", "A bus"], "answer": "A packet of daal", "explanation": "A packet of daal from the shop is usually about 1 kg." }
+      ],
+      "hard": [
+        { "id": "ch11-t2-h1", "type": "long", "question": "Amma buys 2 kg of rice, 1 kg of sugar, and half a kg of tea. How much do all the items weigh together? If she can carry only 5 kg in one bag, can she carry all these items in one bag? How much more weight can she add?", "answer": "Total weight: 2 + 1 + 0.5 = 3.5 kg (or 3 and a half kg). Yes, she can carry them in one bag because 3.5 kg < 5 kg. She can add 5 - 3.5 = 1.5 kg (or 1 and a half kg) more.", "explanation": "Add all weights: 2 + 1 + 0.5 = 3.5 kg. This is less than 5 kg, so she can carry it. Remaining capacity: 5 - 3.5 = 1.5 kg." },
+        { "id": "ch11-t2-h2", "type": "long", "question": "To make one plastic bottle (1 litre), factories use about 5 litres of water. If a school has 200 students and each brings a 1-litre plastic bottle, how much water was used to make all those bottles? Why should we use reusable bottles instead?", "answer": "200 bottles x 5 litres each = 1000 litres of water used. That is a lot of water wasted! Using reusable bottles saves water because one reusable bottle lasts for a long time.", "explanation": "200 x 5 = 1000 litres. Using reusable bottles helps save water and protect the environment." }
+      ]
+    }
+  ]
+}

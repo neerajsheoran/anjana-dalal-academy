@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Addition and Subtraction on the Number Line",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "There are 15 marbles in total. 12 are on the table. How many are hidden?", "options": ["2", "3", "5", "7"], "answer": "3", "explanation": "15 - 12 = 3 marbles are hidden." },
+        { "id": "ch4-t1-e2", "type": "fill", "question": "7 + 5 = ______", "answer": "12", "explanation": "7 + 5 = 12." },
+        { "id": "ch4-t1-e3", "type": "mcq", "question": "Nandini brought 7 sweets and Chirag brought 5 sweets. How many sweets do they have together?", "options": ["10", "11", "12", "13"], "answer": "12", "explanation": "7 + 5 = 12 sweets in total." },
+        { "id": "ch4-t1-e4", "type": "fill", "question": "15 + 7 = ______", "answer": "22", "explanation": "Start at 15 and jump forward 7 on the number line to reach 22." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "There are 20 seeds in total. 9 seeds are on the table. How many seeds are hidden under the cloth?", "answer": "11 seeds are hidden because 20 - 9 = 11.", "explanation": "If you know the total and one part, subtract to find the other part." },
+        { "id": "ch4-t1-m2", "type": "short", "question": "The children have 52 stamps. 37 stamps have faces of famous people. How many stamps have pictures of monuments?", "answer": "15 stamps have monuments because 52 - 37 = 15.", "explanation": "52 - 37 = 15. You can jump backward on the number line from 52 to 37." },
+        { "id": "ch4-t1-m3", "type": "mcq", "question": "On the number line, to subtract 37 from 52, which direction do you jump?", "options": ["Forward", "Backward", "Up", "Down"], "answer": "Backward", "explanation": "Subtraction means jumping backward (to the left) on the number line." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "long", "question": "Rani had 45 stickers. She gave 18 stickers to her friend and then received 25 new stickers from her mother. How many stickers does Rani have now?", "answer": "Rani first had 45 - 18 = 27 stickers. Then she got 25 more: 27 + 25 = 52 stickers.", "explanation": "First subtract: 45 - 18 = 27. Then add: 27 + 25 = 52 stickers." }
+      ]
+    },
+    {
+      "topic": "Adding Bigger Numbers and Skip Counting",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "What is the next number when skip counting by 10 from 23?", "options": ["24", "30", "33", "43"], "answer": "33", "explanation": "23 + 10 = 33. When skip counting by 10, the ones digit stays the same." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "Skip counting by 10: 7, 17, 27, 37, ______, 57", "answer": "47", "explanation": "Add 10 each time: 37 + 10 = 47." },
+        { "id": "ch4-t2-e3", "type": "mcq", "question": "25 + 36 = ?", "options": ["51", "61", "71", "56"], "answer": "61", "explanation": "25 + 36 = 61. Add ones first (5+6=11, carry 1), then tens (2+3+1=6)." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "Nani Maa plucked 25 red radishes and 36 white radishes. How many radishes did she pluck in total?", "answer": "She plucked 25 + 36 = 61 radishes in total.", "explanation": "Add ones: 5 + 6 = 11 (write 1, carry 1). Add tens: 2 + 3 + 1 = 6. Answer: 61." },
+        { "id": "ch4-t2-m2", "type": "short", "question": "Nandini collected 85 apples and Chirag plucked 67 apples. How many apples did they collect altogether?", "answer": "85 + 67 = 152 apples.", "explanation": "Jump from 85 to 100 (add 15), then add the remaining 52. Or: 5+7=12, carry 1. 8+6+1=15. Answer: 152." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "Without solving, tell whether each answer is more than 100 or less than 100: (a) 70 + 30 + 1, (b) 20 + 41, (c) 95 + 10 + 5. Then solve to check your estimate.", "answer": "(a) More than 100. 70 + 30 + 1 = 101. (b) Less than 100. 20 + 41 = 61. (c) More than 100. 95 + 10 + 5 = 110.", "explanation": "Estimate first by rounding numbers. Then solve to verify your estimate." },
+        { "id": "ch4-t2-h2", "type": "long", "question": "A frog starts at number 7 on the number line and jumps 10 each time. Write the numbers it lands on until it crosses 90. How many jumps does it take?", "answer": "7, 17, 27, 37, 47, 57, 67, 77, 87, 97. The frog crosses 90 at the 9th jump (landing on 97).", "explanation": "Keep adding 10: the ones digit stays 7. After 9 jumps from 7, the frog reaches 97." }
+      ]
+    }
+  ]
+}

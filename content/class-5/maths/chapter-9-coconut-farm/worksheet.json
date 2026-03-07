@@ -1,0 +1,178 @@
+{
+  "topics": [
+    {
+      "topic": "Division Basics and Patterns",
+      "easy": [
+        {
+          "id": "ch9-t1-e1",
+          "type": "mcq",
+          "question": "If 5 x 7 = 35, what is 35 / 7?",
+          "options": ["3", "5", "7", "8"],
+          "answer": "5",
+          "explanation": "Division is the reverse of multiplication. If 5 x 7 = 35, then 35 / 7 = 5."
+        },
+        {
+          "id": "ch9-t1-e2",
+          "type": "fill",
+          "question": "In the division 35 / 5 = 7, the number 35 is called the ______, 5 is the ______, and 7 is the ______.",
+          "answer": "dividend, divisor, quotient",
+          "explanation": "Dividend is the number being divided (35), divisor is the number you divide by (5), and quotient is the result (7)."
+        },
+        {
+          "id": "ch9-t1-e3",
+          "type": "mcq",
+          "question": "What is 4,000 / 10?",
+          "options": ["40", "400", "4,000", "4"],
+          "answer": "400",
+          "explanation": "Dividing by 10 removes one zero from the end: 4,000 / 10 = 400."
+        },
+        {
+          "id": "ch9-t1-e4",
+          "type": "short",
+          "question": "Write two division facts from 400 x 8 = 3,200.",
+          "answer": "3,200 / 400 = 8 and 3,200 / 8 = 400.",
+          "explanation": "Every multiplication fact gives two division facts. From 400 x 8 = 3,200, we get 3,200 / 400 = 8 and 3,200 / 8 = 400."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t1-m1",
+          "type": "short",
+          "question": "Find 1,248 / 6 using the split into convenient parts strategy.",
+          "answer": "208. Split: 1,248 = 1,200 + 48. Then 1,200 / 6 = 200 and 48 / 6 = 8. Total: 200 + 8 = 208.",
+          "explanation": "Split 1,248 into parts that are easily divisible by 6: 1,200 (200 x 6) and 48 (8 x 6). Answer: 200 + 8 = 208."
+        },
+        {
+          "id": "ch9-t1-m2",
+          "type": "mcq",
+          "question": "What is 128 / 4 using repeated halving?",
+          "options": ["16", "24", "32", "64"],
+          "answer": "32",
+          "explanation": "Dividing by 4 = halving twice. Half of 128 = 64. Half of 64 = 32."
+        },
+        {
+          "id": "ch9-t1-m3",
+          "type": "short",
+          "question": "Find 1,992 / 4 using the nearest multiple strategy.",
+          "answer": "498. 2,000 / 4 = 500. But 2,000 - 1,992 = 8, and 8 / 4 = 2. So 500 - 2 = 498.",
+          "explanation": "1,992 is close to 2,000. Divide 2,000 by 4 = 500. Since we used 8 more (2,000 - 1,992), and 8/4 = 2, subtract: 500 - 2 = 498."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t1-h1",
+          "type": "long",
+          "question": "A coconut farm produced 4,376 coconuts. They extract 1 litre of oil from every 8 coconuts. How many litres of oil can they extract? If each litre of coconut oil sells for Rs 250, what is the total income from oil?",
+          "answer": "Litres of oil: 4,376 / 8 = 547 litres. Total income: 547 x Rs 250 = Rs 1,36,750.",
+          "explanation": "4,376 / 8 = 547 litres. Revenue: 547 x 250 = 547 x 200 + 547 x 50 = 1,09,400 + 27,350 = Rs 1,36,750."
+        }
+      ]
+    },
+    {
+      "topic": "Division with Remainders",
+      "easy": [
+        {
+          "id": "ch9-t2-e1",
+          "type": "mcq",
+          "question": "What is the remainder when 535 is divided by 25?",
+          "options": ["5", "10", "15", "20"],
+          "answer": "10",
+          "explanation": "25 x 21 = 525. 535 - 525 = 10. So quotient = 21, remainder = 10."
+        },
+        {
+          "id": "ch9-t2-e2",
+          "type": "fill",
+          "question": "The division formula is: Dividend = Divisor x Quotient + ______.",
+          "answer": "Remainder",
+          "explanation": "N = D x Q + R. The dividend equals the divisor times the quotient plus the remainder."
+        },
+        {
+          "id": "ch9-t2-e3",
+          "type": "short",
+          "question": "Find the quotient and remainder when 726 is divided by 4.",
+          "answer": "Quotient = 181, Remainder = 2.",
+          "explanation": "4 x 181 = 724. 726 - 724 = 2. Check: 4 x 181 + 2 = 724 + 2 = 726."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t2-m1",
+          "type": "short",
+          "question": "Ibrahim sold tender coconuts at Rs 35 each and earned Rs 8,890. How many coconuts did he sell?",
+          "answer": "254 coconuts. 8,890 / 35 = 254.",
+          "explanation": "Divide total earnings by price per coconut: 8,890 / 35 = 254 coconuts."
+        },
+        {
+          "id": "ch9-t2-m2",
+          "type": "mcq",
+          "question": "If 582 / 6 is calculated, what is the quotient?",
+          "options": ["87", "92", "97", "102"],
+          "answer": "97",
+          "explanation": "582 / 6: 6 x 90 = 540, 582 - 540 = 42. 42 / 6 = 7. Total: 90 + 7 = 97."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t2-h1",
+          "type": "long",
+          "question": "Ibrahim sold 254 tender coconuts at Rs 35 each and earned Rs 8,890. He had bought them at Rs 20 each. Find: (a) His total buying cost, (b) His total profit, (c) His profit per coconut.",
+          "answer": "(a) Buying cost: 254 x Rs 20 = Rs 5,080. (b) Total profit: Rs 8,890 - Rs 5,080 = Rs 3,810. (c) Profit per coconut: Rs 35 - Rs 20 = Rs 15.",
+          "explanation": "Buying cost = 254 x 20 = 5,080. Selling price = 8,890. Profit = 8,890 - 5,080 = 3,810. Per coconut profit = selling price - buying price = 35 - 20 = 15."
+        }
+      ]
+    },
+    {
+      "topic": "Long Division",
+      "easy": [
+        {
+          "id": "ch9-t3-e1",
+          "type": "mcq",
+          "question": "What is 324 / 3?",
+          "options": ["18", "108", "180", "1,080"],
+          "answer": "108",
+          "explanation": "3 goes into 3 once (1 hundred), into 2 tens zero times (0 tens), into 24 ones eight times (8 ones). Answer: 108."
+        },
+        {
+          "id": "ch9-t3-e2",
+          "type": "fill",
+          "question": "136 / 6 = ______ remainder ______.",
+          "answer": "22, 4",
+          "explanation": "6 x 22 = 132. 136 - 132 = 4. So 136 / 6 = 22 remainder 4."
+        },
+        {
+          "id": "ch9-t3-e3",
+          "type": "short",
+          "question": "Divide 900 by 30.",
+          "answer": "30",
+          "explanation": "900 / 30 = 30. Or: 9 / 3 = 3, then add back one zero = 30."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t3-m1",
+          "type": "short",
+          "question": "A farm earned Rs 9,913 from selling coconut husk at Rs 23 per kg. How many kilograms did they sell?",
+          "answer": "431 kg",
+          "explanation": "9,913 / 23 = 431. Check: 23 x 431 = 23 x 400 + 23 x 31 = 9,200 + 713 = 9,913."
+        },
+        {
+          "id": "ch9-t3-m2",
+          "type": "mcq",
+          "question": "When dividing 508 by 5, why must we place a 0 in the quotient?",
+          "options": ["Because the answer is zero", "Because 5 cannot divide 0 tens, so we write 0 in the tens place", "Because we forgot to carry", "Because the remainder is zero"],
+          "answer": "Because 5 cannot divide 0 tens, so we write 0 in the tens place",
+          "explanation": "508 / 5: 5 goes into 5 once (1 hundred), 0 tens divided by 5 = 0, 8 ones divided by 5 = 1 remainder 3. Answer: 101 R3. The 0 in the tens place must not be skipped."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t3-h1",
+          "type": "long",
+          "question": "A school in Kerala collected 8,568 coconuts during Onam festival. They want to distribute them equally among 12 classrooms. How many coconuts does each classroom get? Are there any left over? If the leftover coconuts are given to teachers equally among 8 teachers, how many does each teacher get?",
+          "answer": "8,568 / 12 = 714 coconuts per classroom, remainder 0. Since there is no remainder, all coconuts are distributed. Each teacher gets 0 extra coconuts.",
+          "explanation": "8,568 / 12: 12 x 700 = 8,400. 8,568 - 8,400 = 168. 168 / 12 = 14. Total: 700 + 14 = 714. Check: 12 x 714 = 8,568. Remainder = 0, so nothing is left for teachers."
+        }
+      ]
+    }
+  ]
+}

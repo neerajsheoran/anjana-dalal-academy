@@ -1,0 +1,54 @@
+{
+  "topics": [
+    {
+      "topic": "3D Shapes (Solid Shapes)",
+      "easy": [
+        { "id": "ch2-t1-e1", "type": "mcq", "question": "A dice is shaped like a ______.", "options": ["Sphere", "Cube", "Cylinder", "Cone"], "answer": "Cube", "explanation": "A dice has 6 equal square faces, making it a cube." },
+        { "id": "ch2-t1-e2", "type": "mcq", "question": "A ball is shaped like a ______.", "options": ["Cube", "Cuboid", "Cone", "Sphere"], "answer": "Sphere", "explanation": "A ball is perfectly round on all sides, which is a sphere." },
+        { "id": "ch2-t1-e3", "type": "fill", "question": "A tin can is shaped like a ______.", "answer": "cylinder", "explanation": "A tin can has two flat circular faces and a curved surface, making it a cylinder." },
+        { "id": "ch2-t1-e4", "type": "mcq", "question": "An ice cream cone is shaped like a ______.", "options": ["Sphere", "Cube", "Cone", "Cuboid"], "answer": "Cone", "explanation": "An ice cream cone has a circular base and comes to a point at the top." }
+      ],
+      "medium": [
+        { "id": "ch2-t1-m1", "type": "short", "question": "Name one real-life example for each: cube, cuboid, cylinder, sphere.", "answer": "Cube: dice. Cuboid: matchbox. Cylinder: glass. Sphere: orange.", "explanation": "3D shapes are found in everyday objects all around us." },
+        { "id": "ch2-t1-m2", "type": "mcq", "question": "Which 3D shape has NO corners at all?", "options": ["Cube", "Cuboid", "Sphere", "Cone"], "answer": "Sphere", "explanation": "A sphere is perfectly round with 0 corners and 0 edges." }
+      ],
+      "hard": [
+        { "id": "ch2-t1-h1", "type": "long", "question": "How is a cube different from a cuboid? Give one example of each.", "answer": "A cube has all 6 faces that are equal squares (like a dice). A cuboid has 6 faces that are rectangles, with some faces being different sizes (like a matchbox or brick).", "explanation": "Both have 6 faces, 12 edges, and 8 corners, but the cube's faces are all the same size." }
+      ]
+    },
+    {
+      "topic": "Faces, Edges, and Corners",
+      "easy": [
+        { "id": "ch2-t2-e1", "type": "mcq", "question": "How many faces does a cube have?", "options": ["4", "6", "8", "12"], "answer": "6", "explanation": "A cube has 6 flat square faces." },
+        { "id": "ch2-t2-e2", "type": "fill", "question": "A cuboid has ______ corners.", "answer": "8", "explanation": "A cuboid has 8 corners (also called vertices)." },
+        { "id": "ch2-t2-e3", "type": "mcq", "question": "How many corners does a sphere have?", "options": ["0", "1", "4", "8"], "answer": "0", "explanation": "A sphere is perfectly round and has no corners at all." },
+        { "id": "ch2-t2-e4", "type": "mcq", "question": "How many corners does a cone have?", "options": ["0", "1", "4", "8"], "answer": "1", "explanation": "A cone has 1 corner at its pointed tip." }
+      ],
+      "medium": [
+        { "id": "ch2-t2-m1", "type": "short", "question": "How many stars (for faces), ribbons (for edges), and pompom balls (for corners) would you need to decorate a cube?", "answer": "6 stars, 12 ribbons, and 8 pompom balls.", "explanation": "A cube has 6 faces, 12 edges, and 8 corners." },
+        { "id": "ch2-t2-m2", "type": "mcq", "question": "Which shapes have 0 corners?", "options": ["Cube and cone", "Sphere and cylinder", "Cuboid and cube", "Cone and sphere"], "answer": "Sphere and cylinder", "explanation": "Sphere has 0 corners and cylinder also has 0 corners. They are both smooth and round." }
+      ],
+      "hard": [
+        { "id": "ch2-t2-h1", "type": "long", "question": "Fill in the table: Cube has __ faces, __ edges, __ corners. Cone has __ faces, __ edges, __ corners.", "answer": "Cube: 6 faces, 12 edges, 8 corners. Cone: 2 faces (1 flat + 1 curved), 1 edge, 1 corner.", "explanation": "Different shapes have different numbers of faces, edges, and corners." }
+      ]
+    },
+    {
+      "topic": "2D Shapes (Flat Shapes)",
+      "easy": [
+        { "id": "ch2-t3-e1", "type": "mcq", "question": "If you trace the face of a dice on paper, you get a ______.", "options": ["Circle", "Triangle", "Square", "Rectangle"], "answer": "Square", "explanation": "A dice has square faces, so tracing gives a square." },
+        { "id": "ch2-t3-e2", "type": "fill", "question": "A clock face is shaped like a ______.", "answer": "circle", "explanation": "Clock faces are round, which is a circle." },
+        { "id": "ch2-t3-e3", "type": "mcq", "question": "A door is shaped like a ______.", "options": ["Circle", "Triangle", "Square", "Rectangle"], "answer": "Rectangle", "explanation": "Doors are flat shapes with 4 sides, two longer and two shorter, making them rectangles." },
+        { "id": "ch2-t3-e4", "type": "mcq", "question": "A slice of pizza looks like a ______.", "options": ["Circle", "Triangle", "Square", "Rectangle"], "answer": "Triangle", "explanation": "A pizza slice has a triangular shape with 3 sides." }
+      ],
+      "medium": [
+        { "id": "ch2-t3-m1", "type": "short", "question": "How many sides and corners does a triangle have?", "answer": "A triangle has 3 sides and 3 corners.", "explanation": "The word 'tri' means 3. A triangle always has 3 sides and 3 corners." },
+        { "id": "ch2-t3-m2", "type": "short", "question": "How is a square different from a rectangle?", "answer": "A square has all 4 sides equal. A rectangle has 2 long sides and 2 short sides.", "explanation": "Both have 4 sides and 4 corners, but a square has all equal sides." },
+        { "id": "ch2-t3-m3", "type": "mcq", "question": "How many corners does a circle have?", "options": ["0", "1", "2", "4"], "answer": "0", "explanation": "A circle is perfectly round with no corners." }
+      ],
+      "hard": [
+        { "id": "ch2-t3-h1", "type": "long", "question": "Fill in: Circle has __ sides, __ corners. Triangle has __ sides, __ corners. Square has __ sides, __ corners. Rectangle has __ sides, __ corners.", "answer": "Circle: 0 sides (curved), 0 corners. Triangle: 3 sides, 3 corners. Square: 4 sides, 4 corners. Rectangle: 4 sides, 4 corners.", "explanation": "Each flat shape has a different number of sides and corners." },
+        { "id": "ch2-t3-h2", "type": "short", "question": "Name two objects that have a rectangular shape and two that have a circular shape.", "answer": "Rectangle: door, book. Circle: coin, plate.", "explanation": "Flat shapes can be found in many everyday objects around us." }
+      ]
+    }
+  ]
+}

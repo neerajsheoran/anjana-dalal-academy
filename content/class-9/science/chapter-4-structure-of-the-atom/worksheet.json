@@ -1,0 +1,243 @@
+{
+  "topics": [
+    {
+      "topic": "Sub-atomic Particles and Atomic Models",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "Who discovered the electron?",
+          "options": ["Rutherford", "J.J. Thomson", "Bohr", "Chadwick"],
+          "answer": "J.J. Thomson",
+          "explanation": "J.J. Thomson discovered the electron and was awarded the Nobel Prize in Physics in 1906."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "Positively charged radiations discovered by E. Goldstein in a gas discharge tube are called ______ rays.",
+          "answer": "canal",
+          "explanation": "Canal rays are positively charged radiations that led to the discovery of the proton."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "mcq",
+          "question": "If an atom contains one electron and one proton, what charge will it carry?",
+          "options": ["Positive", "Negative", "No charge (neutral)", "Cannot be determined"],
+          "answer": "No charge (neutral)",
+          "explanation": "The positive charge of the proton (+1) and the negative charge of the electron (-1) cancel each other out, making the atom electrically neutral."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "mcq",
+          "question": "Rutherford's alpha-particle scattering experiment was responsible for the discovery of:",
+          "options": ["Electron", "Proton", "Atomic nucleus", "Neutron"],
+          "answer": "Atomic nucleus",
+          "explanation": "Rutherford's experiment showed that the positive charge and nearly all the mass of an atom are concentrated in a tiny centre called the nucleus."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "What are the limitations of Rutherford's model of the atom?",
+          "answer": "According to Rutherford's model, electrons revolve around the nucleus in circular orbits. But a charged particle moving in a circular path undergoes acceleration and should continuously radiate energy. As the electron loses energy, it would slow down and spiral into the nucleus, making the atom unstable. Since atoms are actually very stable, Rutherford's model could not explain the stability of atoms.",
+          "explanation": "This limitation was overcome by Bohr's model, which proposed that electrons revolve in fixed orbits without radiating energy."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "On the basis of Thomson's model, explain how the atom is neutral as a whole.",
+          "answer": "According to Thomson's model, an atom consists of a sphere of positive charge with electrons (negative charges) embedded in it. The total positive charge equals the total negative charge of all the electrons. Since the positive and negative charges are equal in magnitude, they balance each other, making the atom electrically neutral as a whole.",
+          "explanation": "Thomson's model was also called the 'plum pudding model' or 'watermelon model'."
+        },
+        {
+          "id": "ch4-t1-m3",
+          "type": "short",
+          "question": "Describe Bohr's model of the atom.",
+          "answer": "Bohr proposed that: (1) Electrons can only revolve in certain special orbits called discrete orbits or shells. (2) While revolving in these discrete orbits, electrons do not radiate energy. (3) These orbits or shells are called energy levels and are designated as K, L, M, N, etc. This model explained the stability of atoms because electrons in fixed orbits do not lose energy continuously.",
+          "explanation": "Bohr's model was an improvement over Rutherford's model and explained why atoms are stable."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "Describe Rutherford's alpha-particle scattering experiment. What were the observations and conclusions?",
+          "answer": "Rutherford bombarded a thin gold foil (about 1000 atoms thick) with fast-moving alpha particles (doubly-charged helium ions, mass 4u). Observations: (1) Most alpha particles passed straight through the foil without deflection. (2) Some particles were deflected by small angles. (3) About 1 in 12,000 particles bounced back (deflected by 180 degrees). Conclusions: (1) Most of the space inside the atom is empty (most particles passed through). (2) The positive charge occupies very little space (few particles were deflected). (3) All the positive charge and nearly all the mass are concentrated in a very small volume called the nucleus. The radius of the nucleus is about 10^5 times less than the radius of the atom.",
+          "explanation": "This experiment disproved Thomson's model and established the nuclear model of the atom."
+        },
+        {
+          "id": "ch4-t1-h2",
+          "type": "long",
+          "question": "Compare all the proposed models of the atom: Thomson's, Rutherford's, and Bohr's.",
+          "answer": "Thomson's model: The atom is a sphere of positive charge with electrons embedded in it like seeds in a watermelon. It explained electrical neutrality but could not explain the results of the alpha-particle scattering experiment. Rutherford's model: The atom has a small, dense, positively charged nucleus at the centre with electrons revolving around it in circular orbits. It explained the scattering experiment but could not explain the stability of atoms (electrons should lose energy and spiral into the nucleus). Bohr's model: Electrons revolve in certain fixed orbits (energy levels) around the nucleus without radiating energy. It explained both the nuclear structure and the stability of atoms. Energy is only absorbed or emitted when electrons jump between orbits.",
+          "explanation": "Each successive model improved upon the limitations of the previous one, gradually leading to a better understanding of atomic structure."
+        }
+      ]
+    },
+    {
+      "topic": "Electron Distribution and Valency",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "What is the maximum number of electrons that can be accommodated in the L shell?",
+          "options": ["2", "8", "18", "32"],
+          "answer": "8",
+          "explanation": "Using the formula 2n^2, where n=2 for the L shell: 2 x 2^2 = 2 x 4 = 8 electrons."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "fill",
+          "question": "The electronic configuration of sodium (atomic number 11) is 2, 8, ______.",
+          "answer": "1",
+          "explanation": "Sodium has 11 electrons distributed as 2 in the K shell, 8 in the L shell, and 1 in the M shell."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "mcq",
+          "question": "What is the correct electronic configuration of sodium?",
+          "options": ["2, 8", "8, 2, 1", "2, 1, 8", "2, 8, 1"],
+          "answer": "2, 8, 1",
+          "explanation": "Sodium has 11 electrons. The K shell takes 2, the L shell takes 8, and the M shell takes the remaining 1 electron."
+        },
+        {
+          "id": "ch4-t2-e4",
+          "type": "mcq",
+          "question": "Number of valence electrons in a Cl- ion are:",
+          "options": ["16", "8", "17", "18"],
+          "answer": "8",
+          "explanation": "Chlorine atom has 17 electrons (2,8,7). Cl- ion has gained 1 electron, so it has 18 electrons (2,8,8). The valence electrons in the outermost shell are 8."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "Write the distribution of electrons in carbon and sodium atoms.",
+          "answer": "Carbon (atomic number 6): Has 6 electrons. Distribution: K shell = 2, L shell = 4. Written as (2, 4). Sodium (atomic number 11): Has 11 electrons. Distribution: K shell = 2, L shell = 8, M shell = 1. Written as (2, 8, 1).",
+          "explanation": "Electrons fill inner shells first before moving to outer shells (step-wise filling)."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "short",
+          "question": "Define valency by taking examples of silicon and oxygen.",
+          "answer": "Valency is the combining capacity of an atom, determined by the number of electrons it needs to gain, lose, or share to achieve a stable octet. Silicon (atomic number 14) has electronic configuration (2, 8, 4). It has 4 valence electrons and can share 4 electrons, so its valency is 4. Oxygen (atomic number 8) has electronic configuration (2, 6). It has 6 valence electrons and needs 2 more to complete the octet, so its valency is 8 - 6 = 2.",
+          "explanation": "Valency depends on the number of electrons in the outermost shell and whether the atom tends to gain, lose, or share electrons."
+        },
+        {
+          "id": "ch4-t2-m3",
+          "type": "short",
+          "question": "How will you find the valency of chlorine, sulphur, and magnesium?",
+          "answer": "Chlorine (2, 8, 7): Has 7 valence electrons, needs 1 more to complete octet, valency = 8 - 7 = 1. Sulphur (2, 8, 6): Has 6 valence electrons, needs 2 more to complete octet, valency = 8 - 6 = 2. Magnesium (2, 8, 2): Has 2 valence electrons, can lose 2 to achieve stable configuration, valency = 2.",
+          "explanation": "For elements with 1-3 valence electrons, valency equals the number of electrons. For 5-7 valence electrons, valency = 8 minus the number."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "Summarise the rules for writing the distribution of electrons in various shells for the first eighteen elements.",
+          "answer": "Rule 1: The maximum number of electrons in a shell is given by the formula 2n^2, where n is the shell number. K shell (n=1) = 2, L shell (n=2) = 8, M shell (n=3) = 18, N shell (n=4) = 32. Rule 2: The outermost shell can hold a maximum of 8 electrons only, regardless of the formula. Rule 3: Electrons are filled in a step-wise manner -- inner shells are filled first before electrons go into outer shells. For example, potassium (atomic number 19) would have 2, 8, 8, 1 (not 2, 8, 9) because the M shell as the outermost shell can only hold 8, and the 19th electron goes into the N shell.",
+          "explanation": "These rules help us write the electronic configuration of any element systematically."
+        },
+        {
+          "id": "ch4-t2-h2",
+          "type": "long",
+          "question": "Explain why Na+ has completely filled K and L shells.",
+          "answer": "Sodium (Na) has atomic number 11, so it has 11 electrons with the configuration 2, 8, 1. When sodium loses one electron from its outermost shell to form Na+ ion, it has 10 electrons with the configuration 2, 8. The K shell has 2 electrons (its maximum capacity) and the L shell has 8 electrons (its maximum capacity as the outermost shell). Thus, Na+ has completely filled K and L shells. This is why sodium readily loses one electron -- it achieves the stable configuration of neon (2, 8), which is a noble gas.",
+          "explanation": "Atoms tend to gain or lose electrons to achieve the stable noble gas configuration with 8 electrons (or 2 for helium) in the outermost shell."
+        }
+      ]
+    },
+    {
+      "topic": "Atomic Number, Mass Number, Isotopes, and Isobars",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "mcq",
+          "question": "Isotopes of an element have:",
+          "options": ["The same physical properties", "Different chemical properties", "Different number of neutrons", "Different atomic numbers"],
+          "answer": "Different number of neutrons",
+          "explanation": "Isotopes have the same atomic number (same protons) but different mass numbers, which means they have different numbers of neutrons."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "The atomic number of an element is defined as the total number of ______ present in the nucleus.",
+          "answer": "protons",
+          "explanation": "Atomic number (Z) equals the number of protons in the nucleus. It uniquely identifies an element."
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "mcq",
+          "question": "If an atom has 8 electrons and 8 protons, what is its atomic number?",
+          "options": ["4", "8", "16", "0"],
+          "answer": "8",
+          "explanation": "Atomic number equals the number of protons. Since the atom has 8 protons, its atomic number is 8 (oxygen)."
+        },
+        {
+          "id": "ch4-t3-e4",
+          "type": "mcq",
+          "question": "Helium atom has an atomic mass of 4 u and two protons in its nucleus. How many neutrons does it have?",
+          "options": ["0", "2", "4", "6"],
+          "answer": "2",
+          "explanation": "Number of neutrons = Mass number - Atomic number = 4 - 2 = 2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "Explain with examples: (i) Isotopes (ii) Isobars.",
+          "answer": "(i) Isotopes are atoms of the same element with the same atomic number but different mass numbers. Example: Hydrogen has three isotopes -- protium (mass 1), deuterium (mass 2), and tritium (mass 3). All have 1 proton but 0, 1, and 2 neutrons respectively. (ii) Isobars are atoms of different elements with different atomic numbers but the same mass number. Example: Calcium (Z=20, A=40) and Argon (Z=18, A=40) both have mass number 40.",
+          "explanation": "Isotopes differ in neutrons but are chemically similar. Isobars are entirely different elements that happen to have the same mass number."
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "short",
+          "question": "Compare the properties of electrons, protons, and neutrons.",
+          "answer": "Electron: charge = -1, mass = 1/1840 u (negligible), found outside nucleus in shells. Proton: charge = +1, mass = 1 u, found inside nucleus. Neutron: charge = 0 (neutral), mass = 1 u, found inside nucleus. Protons and neutrons together are called nucleons and account for almost all the mass of an atom.",
+          "explanation": "The three sub-atomic particles differ in charge, mass, and location within the atom."
+        },
+        {
+          "id": "ch4-t3-m3",
+          "type": "short",
+          "question": "Give any two uses of isotopes.",
+          "answer": "1. An isotope of uranium (U-235) is used as fuel in nuclear reactors to generate electricity. 2. An isotope of cobalt (Co-60) is used in the treatment of cancer through radiation therapy. Additionally, an isotope of iodine (I-131) is used in the treatment of goitre (thyroid disorder).",
+          "explanation": "Different isotopes of the same element have different physical properties that make them useful for specific applications."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "If bromine atom is available as two isotopes: Br-79 (49.7%) and Br-81 (50.3%), calculate the average atomic mass of bromine atom.",
+          "answer": "Average atomic mass = (79 x 49.7/100) + (81 x 50.3/100) = (79 x 0.497) + (81 x 0.503) = 39.263 + 40.743 = 80.006 u. The average atomic mass of bromine is approximately 80 u.",
+          "explanation": "The average atomic mass is the weighted average of the masses of all naturally occurring isotopes, taking into account their relative abundance."
+        },
+        {
+          "id": "ch4-t3-h2",
+          "type": "long",
+          "question": "The average atomic mass of a sample of element X is 16.2 u. What are the percentages of isotopes X-16 and X-18 in the sample?",
+          "answer": "Let the percentage of X-16 be 'a' and that of X-18 be (100 - a). Average atomic mass = (16 x a/100) + (18 x (100-a)/100) = 16.2. Solving: 16a/100 + 18(100-a)/100 = 16.2. 16a + 1800 - 18a = 1620. -2a = 1620 - 1800 = -180. a = 90. So the percentage of X-16 is 90% and the percentage of X-18 is 10%.",
+          "explanation": "Using the weighted average formula and solving the equation gives us the percentage of each isotope."
+        },
+        {
+          "id": "ch4-t3-h3",
+          "type": "long",
+          "question": "Complete the following table: Atomic Number 9, Mass Number ?, Neutrons 10, Protons ?, Electrons ?, Name ?",
+          "answer": "Atomic Number = 9, so Number of protons = 9. For a neutral atom, number of electrons = number of protons = 9. Number of neutrons = 10. Mass number = protons + neutrons = 9 + 10 = 19. The element with atomic number 9 is Fluorine. Similarly for the other entries in the textbook table: Sulphur (Z=16, A=32, n=16, p=16, e=16), Magnesium (Z=12, A=24, n=12, p=12, e=12), Deuterium (Z=1, A=2, n=1, p=1, e=1), and Protium (Z=1, A=1, n=0, p=1, e=0 -- note: protium listed with 0 electrons means it is H+ ion).",
+          "explanation": "Use the relationships: Atomic number = protons = electrons (for neutral atoms). Mass number = protons + neutrons. Neutrons = mass number - atomic number."
+        },
+        {
+          "id": "ch4-t3-h4",
+          "type": "long",
+          "question": "If Z = 3, what would be the valency of the element? Also name the element.",
+          "answer": "The element with atomic number Z = 3 is Lithium (Li). It has 3 electrons distributed as: K shell = 2, L shell = 1. Since the outermost shell has 1 electron, lithium can easily lose this 1 electron to achieve a stable configuration. Therefore, the valency of lithium is 1.",
+          "explanation": "The valency of lithium is 1 because it has only 1 electron in its outermost shell, which it tends to lose to achieve the stable helium configuration (2)."
+        }
+      ]
+    }
+  ]
+}

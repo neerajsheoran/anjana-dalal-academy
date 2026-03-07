@@ -1,0 +1,161 @@
+{
+  "topics": [
+    {
+      "topic": "Plant Tissues",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "Which tissue is responsible for the growth of plants?",
+          "options": ["Parenchyma", "Sclerenchyma", "Meristematic tissue", "Collenchyma"],
+          "answer": "Meristematic tissue",
+          "explanation": "Meristematic tissue consists of actively dividing cells and is responsible for plant growth."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "fill",
+          "question": "The husk of a coconut is made of ______ tissue.",
+          "answer": "sclerenchyma",
+          "explanation": "Sclerenchyma is a dead tissue with thick lignified walls that makes the plant hard and stiff."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "mcq",
+          "question": "Where is apical meristem found?",
+          "options": ["At the sides of stems", "Near nodes", "At the growing tips of stems and roots", "In leaves"],
+          "answer": "At the growing tips of stems and roots",
+          "explanation": "Apical meristem is present at the tips of stems and roots, where it increases the length of the plant."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "mcq",
+          "question": "What are the constituents of phloem?",
+          "options": ["Tracheids, vessels, xylem parenchyma, xylem fibres", "Sieve tubes, companion cells, phloem parenchyma, phloem fibres", "Only sieve tubes", "Only companion cells"],
+          "answer": "Sieve tubes, companion cells, phloem parenchyma, phloem fibres",
+          "explanation": "Phloem consists of sieve tubes, companion cells, phloem parenchyma, and phloem fibres."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "How are simple tissues different from complex tissues in plants?",
+          "answer": "Simple tissues are made of only one type of cell (e.g., parenchyma, collenchyma, sclerenchyma). Complex tissues are made of more than one type of cell, all coordinating to perform a common function (e.g., xylem and phloem). In xylem, tracheids, vessels, xylem parenchyma, and xylem fibres work together to transport water.",
+          "explanation": "The distinction is based on whether the tissue contains one or multiple types of cells."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "short",
+          "question": "Differentiate between parenchyma, collenchyma, and sclerenchyma on the basis of their cell wall.",
+          "answer": "Parenchyma: Cells have thin cell walls made of cellulose. Collenchyma: Cells have cell walls that are irregularly thickened at the corners. Sclerenchyma: Cells have uniformly thick cell walls due to deposition of lignin, making them very hard. Often the walls are so thick that there is no internal space inside the cell.",
+          "explanation": "The thickness and composition of cell walls determine the function: thin walls for storage, thickened corners for flexibility, and heavily lignified walls for strength."
+        },
+        {
+          "id": "ch6-t1-m3",
+          "type": "short",
+          "question": "What are the functions of stomata?",
+          "answer": "Stomata are small pores in the epidermis of leaves, enclosed by two kidney-shaped guard cells. They have two main functions: (1) Exchange of gases (CO2 enters for photosynthesis, O2 exits) with the atmosphere. (2) Transpiration -- loss of water from the plant in the form of water vapour takes place through stomata.",
+          "explanation": "Guard cells regulate the opening and closing of stomata, controlling gas exchange and water loss."
+        },
+        {
+          "id": "ch6-t1-m4",
+          "type": "short",
+          "question": "How does the cork act as a protective tissue?",
+          "answer": "Cork is formed by secondary meristem in the cortex of older plants. Cork cells are dead and compactly arranged without any intercellular spaces. Their cell walls contain a substance called suberin, which makes them impervious to gases and water. This prevents water loss and protects the plant from mechanical injury and infection.",
+          "explanation": "Cork replaces the epidermis as the plant grows older and provides better protection to the mature plant."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "How many types of elements together make up the xylem tissue? Name them and describe their functions.",
+          "answer": "Xylem is made up of four types of elements: (1) Tracheids -- elongated dead cells with thick walls; they transport water and minerals vertically. (2) Vessels -- tubular dead cells that are wider than tracheids; they also transport water and minerals. (3) Xylem parenchyma -- the only living cells in xylem; they store food. (4) Xylem fibres -- dead cells that provide mechanical support to the plant. Together, these elements conduct water and minerals from the roots to all parts of the plant and provide structural support.",
+          "explanation": "Xylem is a complex tissue because it is made of more than one type of cell, each with a specific role."
+        },
+        {
+          "id": "ch6-t1-h2",
+          "type": "long",
+          "question": "What is the role of epidermis in plants? Explain its different modifications.",
+          "answer": "The epidermis is the outermost protective layer of cells covering the entire plant surface. It protects against water loss, mechanical injury, and fungal invasion. It is usually a single layer of cells without intercellular spaces. Modifications include: (1) On aerial parts, epidermal cells secrete a waxy cuticle to prevent water loss. (2) In leaves, the epidermis has stomata with guard cells for gas exchange and transpiration. (3) In roots, epidermal cells bear root hairs to increase surface area for water absorption. (4) In desert plants, the epidermis has a thick waxy coating of cutin for extra protection against water loss. (5) In older plants, epidermis is replaced by cork with suberin for waterproofing.",
+          "explanation": "The epidermis is adapted differently in different parts of the plant to suit the specific needs of each region."
+        }
+      ]
+    },
+    {
+      "topic": "Animal Tissues",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "Which tissue forms the inner lining of our mouth?",
+          "options": ["Muscular tissue", "Epithelial tissue", "Connective tissue", "Nervous tissue"],
+          "answer": "Epithelial tissue",
+          "explanation": "Squamous epithelial tissue lines the mouth, oesophagus, blood vessels, and other body cavities."
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "The tissue that connects muscle to bone is called ______.",
+          "answer": "tendon",
+          "explanation": "Tendons are strong connective tissues with limited flexibility that connect muscles to bones."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "mcq",
+          "question": "Which connective tissue has a fluid matrix?",
+          "options": ["Bone", "Cartilage", "Blood", "Tendon"],
+          "answer": "Blood",
+          "explanation": "Blood is a connective tissue with a fluid matrix called plasma, in which RBCs, WBCs, and platelets are suspended."
+        },
+        {
+          "id": "ch6-t2-e4",
+          "type": "mcq",
+          "question": "Which tissue stores fat in our body?",
+          "options": ["Areolar tissue", "Adipose tissue", "Bone tissue", "Blood"],
+          "answer": "Adipose tissue",
+          "explanation": "Adipose tissue is a type of connective tissue filled with fat-storing cells. It provides insulation and energy storage."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "What is the specific function of cardiac muscle?",
+          "answer": "Cardiac muscles are found only in the heart. Their specific function is to contract and relax rhythmically throughout life to pump blood to all parts of the body. They are involuntary muscles, meaning they work automatically without our conscious control. Cardiac muscle cells are cylindrical, branched, and uninucleate.",
+          "explanation": "Cardiac muscles never fatigue because the heart needs to pump blood continuously from birth to death."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "short",
+          "question": "What are the functions of areolar tissue?",
+          "answer": "Areolar tissue is a loose connective tissue found between the skin and muscles, around blood vessels, nerves, and in the bone marrow. Its functions include: (1) Filling the spaces between organs and tissues, (2) Supporting internal organs, (3) Helping in repair of tissues after injury, (4) Providing a framework that holds other tissues in place.",
+          "explanation": "Areolar tissue is one of the most widely distributed connective tissues in the body."
+        },
+        {
+          "id": "ch6-t2-m3",
+          "type": "short",
+          "question": "What does a neuron look like? Describe its structure.",
+          "answer": "A neuron (nerve cell) consists of a cell body containing the nucleus and cytoplasm. From the cell body, long thin hair-like parts arise. There is usually one single long fibre called the axon, which transmits signals away from the cell body. There are many short, branched parts called dendrites, which receive signals. The axon ends in nerve endings that connect with the next neuron. A single neuron can be up to a metre long.",
+          "explanation": "The structure of the neuron is designed for rapid transmission of nerve impulses across long distances in the body."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "Differentiate between striated, unstriated, and cardiac muscles on the basis of their structure and location in the body.",
+          "answer": "Striated (skeletal) muscles: Long, cylindrical, unbranched cells with multiple nuclei. Show light and dark bands (striations). Found attached to bones in limbs. They are voluntary (controlled by will). Unstriated (smooth) muscles: Spindle-shaped (pointed ends) cells with a single nucleus. No striations. Found in the walls of the alimentary canal, blood vessels, iris of eye, ureters, and bronchi. They are involuntary. Cardiac muscles: Cylindrical, branched cells with a single nucleus. Show striations. Found only in the heart. They are involuntary and contract rhythmically throughout life without fatigue.",
+          "explanation": "These three types of muscles differ in structure, location, and whether they are under voluntary or involuntary control."
+        },
+        {
+          "id": "ch6-t2-h2",
+          "type": "long",
+          "question": "Identify the type of tissue in the following: skin, bark of tree, bone, lining of kidney tubule, vascular bundle.",
+          "answer": "(1) Skin -- Stratified squamous epithelial tissue (in animals), epidermis (in plants). (2) Bark of tree -- Cork (protective tissue formed by secondary meristem, with cells containing suberin). (3) Bone -- Connective tissue with a hard matrix rich in calcium and phosphorus. (4) Lining of kidney tubule -- Cuboidal epithelial tissue (cube-shaped cells that provide mechanical support). (5) Vascular bundle -- Complex permanent tissue consisting of xylem (transports water) and phloem (transports food).",
+          "explanation": "Different tissues are found in different parts of plant and animal bodies, each specialised for its particular function."
+        }
+      ]
+    }
+  ]
+}

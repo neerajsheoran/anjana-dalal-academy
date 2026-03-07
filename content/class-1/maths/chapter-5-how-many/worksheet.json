@@ -1,0 +1,55 @@
+{
+  "topics": [
+    {
+      "topic": "Addition (Putting Together)",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "3 + 2 = ?", "options": ["4", "5", "6", "7"], "answer": "5", "explanation": "3 and 2 together make 5." },
+        { "id": "ch5-t1-e2", "type": "fill", "question": "4 + 1 = ______.", "answer": "5", "explanation": "Adding 1 to any number gives the next number. 4 + 1 = 5." },
+        { "id": "ch5-t1-e3", "type": "mcq", "question": "6 + 2 = ?", "options": ["7", "8", "9", "10"], "answer": "8", "explanation": "6 and 2 together make 8." },
+        { "id": "ch5-t1-e4", "type": "fill", "question": "5 + 0 = ______.", "answer": "5", "explanation": "Adding 0 to any number gives the same number." },
+        { "id": "ch5-t1-e5", "type": "mcq", "question": "2 + 3 = ?", "options": ["4", "5", "6", "3"], "answer": "5", "explanation": "2 + 3 = 5. The order does not matter: 3 + 2 also equals 5." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "Ravi has 4 pencils. His friend gives him 3 more. How many pencils does Ravi have now?", "answer": "4 + 3 = 7 pencils.", "explanation": "We add the two groups: 4 pencils + 3 pencils = 7 pencils altogether." },
+        { "id": "ch5-t1-m2", "type": "fill", "question": "7 + 1 = ______.", "answer": "8", "explanation": "Adding 1 gives the next number. 7 + 1 = 8." },
+        { "id": "ch5-t1-m3", "type": "mcq", "question": "4 + 4 = ?", "options": ["6", "7", "8", "9"], "answer": "8", "explanation": "4 + 4 = 8." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "There are 3 coconuts in one bag and 4 coconuts in another bag. How many coconuts are there altogether? Write the addition sentence.", "answer": "3 + 4 = 7 coconuts altogether.", "explanation": "We put both groups together: 3 + 4 = 7." },
+        { "id": "ch5-t1-h2", "type": "short", "question": "Raghav has 4 shells. Sarita has 5 shells. How many shells do they have in all?", "answer": "4 + 5 = 9 shells.", "explanation": "We add both amounts: 4 + 5 = 9 shells altogether." }
+      ]
+    },
+    {
+      "topic": "Adding on a Number Strip",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "Start at 3 on the number strip. Hop 2 steps forward. Where do you land?", "options": ["4", "5", "6", "3"], "answer": "5", "explanation": "3 + 2 = 5. Starting at 3 and hopping forward 2: 4, 5." },
+        { "id": "ch5-t2-e2", "type": "fill", "question": "Start at 5. Hop 3 steps forward. You land on ______.", "answer": "8", "explanation": "5 + 3 = 8. Hopping from 5: 6, 7, 8." },
+        { "id": "ch5-t2-e3", "type": "mcq", "question": "Start at 4. Hop 2 forward. Where do you land?", "options": ["5", "6", "7", "4"], "answer": "6", "explanation": "4 + 2 = 6." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "Use the number strip to add 6 + 3. Show the hops.", "answer": "Start at 6. Hop 3 times: 7, 8, 9. The answer is 9.", "explanation": "On a number strip, we start at the first number and hop forward the second number of steps." },
+        { "id": "ch5-t2-m2", "type": "fill", "question": "Start at 7. Hop 2 forward. You land on ______.", "answer": "9", "explanation": "7 + 2 = 9." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "short", "question": "On a number strip, 3 + 5 and 5 + 3 both land on the same number. What number is it? Why?", "answer": "Both land on 8. The order of adding does not matter (3 + 5 = 8 and 5 + 3 = 8).", "explanation": "Addition can be done in any order and the answer stays the same." }
+      ]
+    },
+    {
+      "topic": "Subtraction (Taking Away)",
+      "easy": [
+        { "id": "ch5-t3-e1", "type": "mcq", "question": "5 - 1 = ?", "options": ["3", "4", "5", "6"], "answer": "4", "explanation": "5 take away 1 leaves 4." },
+        { "id": "ch5-t3-e2", "type": "fill", "question": "7 - 2 = ______.", "answer": "5", "explanation": "7 take away 2 leaves 5." },
+        { "id": "ch5-t3-e3", "type": "mcq", "question": "6 - 2 = ?", "options": ["3", "4", "5", "6"], "answer": "4", "explanation": "6 take away 2 leaves 4." },
+        { "id": "ch5-t3-e4", "type": "fill", "question": "9 - 6 = ______.", "answer": "3", "explanation": "9 take away 6 leaves 3." }
+      ],
+      "medium": [
+        { "id": "ch5-t3-m1", "type": "short", "question": "Manisha has 9 bananas. She ate 3. How many bananas are left?", "answer": "9 - 3 = 6 bananas are left.", "explanation": "Subtraction tells us what is left after taking away." },
+        { "id": "ch5-t3-m2", "type": "mcq", "question": "8 - 5 = ?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "8 take away 5 leaves 3." }
+      ],
+      "hard": [
+        { "id": "ch5-t3-h1", "type": "long", "question": "There are 8 butterflies on flowers. 5 fly away. How many are left? Write the subtraction sentence.", "answer": "8 - 5 = 3 butterflies are left.", "explanation": "We start with 8 and take away 5 to find what is left: 8 - 5 = 3." },
+        { "id": "ch5-t3-h2", "type": "short", "question": "Start at 7 on the number strip. Hop 4 steps backward. Where do you land?", "answer": "7 - 4 = 3. You land on 3.", "explanation": "Hopping backwards from 7: 6, 5, 4, 3." }
+      ]
+    }
+  ]
+}

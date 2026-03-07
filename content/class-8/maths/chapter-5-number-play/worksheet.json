@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Parity and Divisibility Properties",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "The expression 2a + 2b is:", "options": ["Always even", "Always odd", "Sometimes even, sometimes odd", "Always zero"], "answer": "Always even", "explanation": "2a and 2b are both even (multiples of 2). Even + even = even. So 2a + 2b is always even." },
+        { "id": "ch5-t1-e2", "type": "fill", "question": "Numbers that leave a remainder of 3 when divided by 5 can be written as ______.", "answer": "5k + 3", "explanation": "These numbers are 3 more than a multiple of 5: 3, 8, 13, 18, 23, ... = 5k + 3 for k = 0, 1, 2, ..." },
+        { "id": "ch5-t1-e3", "type": "mcq", "question": "If 8 divides two numbers, does 8 always divide their sum?", "options": ["Yes, always", "No, never", "Sometimes", "Only if both are positive"], "answer": "Yes, always", "explanation": "If 8a and 8b are divisible by 8, then 8a + 8b = 8(a + b) is also divisible by 8." },
+        { "id": "ch5-t1-e4", "type": "short", "question": "Is 13k - 5k always even? Explain.", "answer": "Yes. 13k - 5k = 8k, which is always even (since 8k = 2 x 4k is a multiple of 2).", "explanation": "Simplify the expression first: 13k - 5k = 8k. Since 8 is even, 8k is always even." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "If a number is divisible by 12, is it divisible by all factors of 12? Explain.", "answer": "Yes. Factors of 12 are 1, 2, 3, 4, 6, 12. If a number equals 12k, then it equals 2(6k), 3(4k), 4(3k), 6(2k), showing it is divisible by each factor.", "explanation": "In general, if A is divisible by k, then A is divisible by all factors of k." },
+        { "id": "ch5-t1-m2", "type": "short", "question": "When do two even numbers add up to a multiple of 4? Give examples.", "answer": "Case 1: Both are multiples of 4. Example: 12 + 16 = 28 (multiple of 4).\nCase 2: Both are even but NOT multiples of 4. Example: 6 + 10 = 16 (multiple of 4).\n\nIf one is a multiple of 4 and the other is not, their sum is NOT a multiple of 4. Example: 8 + 6 = 14 (not a multiple of 4).", "explanation": "Two even numbers sum to a multiple of 4 when both are multiples of 4, or both are non-multiples of 4." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "Take any 4 consecutive numbers and place + or - between them. Show algebraically that the result is always even.", "answer": "Let the 4 consecutive numbers be n, n+1, n+2, n+3.\n\nThe sum n + (n+1) + (n+2) + (n+3) = 4n + 6 = 2(2n + 3), which is even.\n\nSwitching any + to - changes the result by 2 times that number (since a + b vs a - b differs by 2b), which is always even.\n\nSince the starting sum is even and every sign change adds or subtracts an even amount, all 8 possible expressions give even results.\n\nAlternatively: (a + b) - (a - b) = 2b, which is even. So a + b and a - b have the same parity. This extends to all sign choices.", "explanation": "The key insight is that changing a + to - (or vice versa) changes the result by an even number, preserving parity." }
+      ]
+    },
+    {
+      "topic": "Divisibility Tests",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "A number is divisible by 4 if:", "options": ["Its last digit is 4", "Its last two digits form a number divisible by 4", "Its digit sum is divisible by 4", "It is even"], "answer": "Its last two digits form a number divisible by 4", "explanation": "Since 100 is divisible by 4, only the last two digits matter." },
+        { "id": "ch5-t2-e2", "type": "fill", "question": "A number is divisible by 9 if the ______ of its digits is divisible by 9.", "answer": "sum", "explanation": "The digit sum test works for 9 because each place value (10, 100, 1000, ...) is 1 more than a multiple of 9." },
+        { "id": "ch5-t2-e3", "type": "short", "question": "Is 7452 divisible by 3?", "answer": "Sum of digits = 7 + 4 + 5 + 2 = 18. Since 18 is divisible by 3, yes, 7452 is divisible by 3.", "explanation": "Divisibility by 3: sum the digits. If the sum is divisible by 3, so is the number." },
+        { "id": "ch5-t2-e4", "type": "short", "question": "Is 7309 divisible by 9?", "answer": "Sum = 7 + 3 + 0 + 9 = 19 → 1 + 9 = 10 → 1 + 0 = 1. Remainder is 1, so 7309 is NOT divisible by 9.", "explanation": "Keep adding digits until you get a single digit. If it is 9, the number is divisible by 9; otherwise, that digit is the remainder." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "Is 82918 divisible by 11? Show the alternating sum test.", "answer": "Alternating sum (from right): 8 - 1 + 9 - 2 + 8 = 22. Since 22 is divisible by 11, yes, 82918 is divisible by 11.", "explanation": "For divisibility by 11, alternate adding and subtracting digits from right to left." },
+        { "id": "ch5-t2-m2", "type": "short", "question": "Explain why the digit sum test works for divisibility by 9.", "answer": "Each place value is 1 more than a multiple of 9:\n10 = 9 + 1, 100 = 99 + 1, 1000 = 999 + 1.\n\nSo any number = (multiples of 9) + (sum of digits).\nThe remainder when divided by 9 = remainder of digit sum when divided by 9.", "explanation": "The algebraic proof: abc = a(99+1) + b(9+1) + c = (99a + 9b) + (a+b+c). The first part is divisible by 9." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "long", "question": "A 4-digit number 3a5b is divisible by both 9 and 4. Find all possible values of a and b.", "answer": "Divisibility by 4: last two digits '5b' must be divisible by 4.\n50 + b divisible by 4: b = 2 (52/4=13) or b = 6 (56/4=14).\n\nDivisibility by 9: sum of digits = 3 + a + 5 + b = 8 + a + b must be divisible by 9.\n\nCase 1: b = 2 → 8 + a + 2 = 10 + a. For divisibility by 9: a = 8 (10+8=18). Number: 3852.\n\nCase 2: b = 6 → 8 + a + 6 = 14 + a. For divisibility by 9: a = 4 (14+4=18). Number: 3456.\n\nThe possible numbers are 3852 and 3456.", "explanation": "Apply both divisibility tests simultaneously. The test for 4 restricts b, and the test for 9 restricts a + b." }
+      ]
+    }
+  ]
+}

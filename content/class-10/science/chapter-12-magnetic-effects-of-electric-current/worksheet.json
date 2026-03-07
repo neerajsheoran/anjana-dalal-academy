@@ -1,0 +1,173 @@
+{
+  "topics": [
+    {
+      "topic": "Magnetic Field, Field Lines, and Current-Carrying Conductors",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following correctly describes the magnetic field near a long straight wire?",
+          "options": [
+            "The field consists of straight lines perpendicular to the wire",
+            "The field consists of straight lines parallel to the wire",
+            "The field consists of radial lines originating from the wire",
+            "The field consists of concentric circles centred on the wire"
+          ],
+          "answer": "The field consists of concentric circles centred on the wire",
+          "explanation": "A current-carrying straight conductor produces a magnetic field in the form of concentric circles around it. The field strength decreases as the distance from the wire increases."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "mcq",
+          "question": "The magnetic field inside a long straight solenoid carrying current:",
+          "options": [
+            "is zero",
+            "decreases as we move towards its end",
+            "increases as we move towards its end",
+            "is the same at all points"
+          ],
+          "answer": "is the same at all points",
+          "explanation": "The magnetic field inside a solenoid is uniform — the field lines are parallel and equally spaced, indicating the same field strength at all points inside the solenoid."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "fill",
+          "question": "The rule used to find the direction of magnetic field around a straight current-carrying conductor is called the ______ rule.",
+          "answer": "right-hand thumb",
+          "explanation": "The right-hand thumb rule states: if you grip the conductor in your right hand with the thumb pointing in the direction of current, the curled fingers give the direction of the magnetic field lines."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "short",
+          "question": "List the properties of magnetic field lines.",
+          "answer": "Properties of magnetic field lines:\n(i) They emerge from the north pole and merge at the south pole outside the magnet.\n(ii) Inside the magnet, they travel from south to north pole.\n(iii) They are closed continuous curves.\n(iv) They never intersect each other — if they did, the compass needle would point in two directions at the intersection, which is impossible.\n(v) The closeness (density) of field lines indicates the strength of the magnetic field — closer lines mean a stronger field.",
+          "explanation": "Magnetic field lines are a visual representation of the magnetic field. Their direction shows the field direction, and their density shows the field strength."
+        },
+        {
+          "id": "ch12-t1-e5",
+          "type": "short",
+          "question": "List two methods of producing magnetic fields.",
+          "answer": "Two methods of producing magnetic fields are:\n(i) Using a permanent magnet — a bar magnet or horseshoe magnet produces a magnetic field in the region surrounding it.\n(ii) Using a current-carrying conductor — when electric current flows through a conductor (straight wire, circular loop, or solenoid), it produces a magnetic field around it.",
+          "explanation": "Both permanent magnets and electric currents can produce magnetic fields, establishing the fundamental link between electricity and magnetism."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "Why don't two magnetic field lines intersect each other?",
+          "answer": "Two magnetic field lines never intersect each other because at the point of intersection, there would be two different directions of the magnetic field, which is not possible. A compass needle placed at such a point would have to point in two directions simultaneously, which is impossible. Since the magnetic field has a unique direction at every point in space, field lines cannot cross.",
+          "explanation": "The uniqueness of the magnetic field direction at any point in space is the fundamental reason why field lines never intersect."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "short",
+          "question": "A current through a horizontal power line flows in east to west direction. What is the direction of magnetic field at a point directly below it and at a point directly above it?",
+          "answer": "Applying the right-hand thumb rule:\nPoint the right-hand thumb in the direction of current (east to west). The fingers curl around the wire indicating the direction of the magnetic field.\n\nAt a point directly below the wire: the magnetic field is directed towards the south.\nAt a point directly above the wire: the magnetic field is directed towards the north.\n\n(When viewed from the east end, the field turns clockwise; when viewed from the west end, it turns anti-clockwise.)",
+          "explanation": "The right-hand thumb rule helps determine the direction of the magnetic field around a straight current-carrying conductor at any point."
+        },
+        {
+          "id": "ch12-t1-m3",
+          "type": "short",
+          "question": "What is a solenoid? How does the magnetic field produced by a solenoid compare with that of a bar magnet?",
+          "answer": "A solenoid is a coil of many circular turns of insulated copper wire wound closely in the shape of a cylinder.\n\nWhen current flows through a solenoid, it produces a magnetic field pattern very similar to that of a bar magnet:\n(i) One end of the solenoid behaves as a magnetic north pole and the other end as a south pole.\n(ii) The field lines emerge from one end and enter at the other end, just like a bar magnet.\n(iii) Inside the solenoid, the field is uniform — the field lines are parallel and equally spaced.\n\nWhen a soft iron core is placed inside a solenoid, it becomes an electromagnet with a much stronger magnetic field. The advantage of an electromagnet over a permanent magnet is that its strength can be varied by changing the current, and it can be switched on and off.",
+          "explanation": "A current-carrying solenoid produces a field pattern identical to a bar magnet. Adding a soft iron core creates a powerful electromagnet."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "Consider a circular loop of wire lying in the plane of the table. Let the current pass through the loop clockwise. Apply the right-hand rule to find out the direction of the magnetic field inside and outside the loop.",
+          "answer": "When current flows clockwise through a circular loop lying in the plane of the table (as seen from above):\n\nApplying the right-hand thumb rule to any small segment of the wire:\n\nInside the loop: All segments of the current-carrying loop contribute magnetic field lines in the same direction — pointing downward (into the table). This is because when the current flows clockwise (viewed from above), the right-hand rule gives the field direction as going into the plane of the loop at the centre.\n\nOutside the loop: The magnetic field lines emerge from the bottom face of the loop, curve around, and enter back through the top face. Thus, outside the loop, the field is directed upward (away from the table) and curves around to complete the loop.\n\nThe face of the loop where current appears to flow clockwise acts as a south pole (field lines enter), and the face where current appears anti-clockwise acts as a north pole (field lines emerge).\n\nAt the centre of the loop, the field lines are nearly straight and perpendicular to the plane of the loop, giving a nearly uniform field.",
+          "explanation": "The right-hand rule applied to each segment of the circular loop shows that all segments contribute field in the same direction at the centre. The clockwise face is the south pole and anti-clockwise face is the north pole."
+        }
+      ]
+    },
+    {
+      "topic": "Force on Conductors, Electric Motor, Electromagnetic Induction, and Generator",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "At the time of short circuit, the current in the circuit:",
+          "options": [
+            "reduces substantially",
+            "does not change",
+            "increases heavily",
+            "varies continuously"
+          ],
+          "answer": "increases heavily",
+          "explanation": "During a short circuit, the live and neutral wires come in direct contact, providing a path of very low resistance. Since I = V/R, a very low resistance causes a very large current to flow through the circuit."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "The direction of force on a current-carrying conductor placed in a magnetic field is given by ______ rule.",
+          "answer": "Fleming's left-hand",
+          "explanation": "Fleming's left-hand rule: stretch the thumb, forefinger, and middle finger of the left hand mutually perpendicular. Forefinger = field direction, middle finger = current direction, thumb = force/motion direction."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "short",
+          "question": "When is the force experienced by a current-carrying conductor placed in a magnetic field largest?",
+          "answer": "The force experienced by a current-carrying conductor placed in a magnetic field is the largest when the direction of current is at right angles (perpendicular) to the direction of the magnetic field. The force is zero when the current flows parallel to the magnetic field.",
+          "explanation": "The force F = BIl sin(theta), where theta is the angle between the current direction and magnetic field. Force is maximum when theta = 90 degrees (sin 90 = 1) and zero when theta = 0 degrees (sin 0 = 0)."
+        },
+        {
+          "id": "ch12-t2-e4",
+          "type": "short",
+          "question": "Name two safety measures commonly used in electric circuits and appliances.",
+          "answer": "Two safety measures commonly used in electric circuits and appliances are:\n(i) Electric fuse — a thin wire of low melting point connected in series with the circuit. When current exceeds the safe limit, the fuse wire melts due to Joule heating and breaks the circuit, preventing damage to appliances.\n(ii) Earthing (grounding) — the metallic body of an appliance is connected to the earth wire (green insulation), which is connected to a metal plate buried deep in the ground. This ensures that any leakage of current to the metallic body flows to the earth, preventing electric shock to the user.",
+          "explanation": "Fuses protect against overcurrent (short circuit/overloading), while earthing protects against electric shock from current leakage to metallic bodies."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "Imagine that you are sitting in a chamber with your back to one wall. An electron beam, moving horizontally from the back wall towards the front wall, is deflected by a strong magnetic field to your right side. What is the direction of the magnetic field?",
+          "answer": "The electron beam moves from the back wall towards the front wall. Since conventional current is opposite to the direction of electron flow, the current direction is from the front wall towards the back wall.\n\nThe electron beam is deflected to the right, meaning the force is directed to the right.\n\nApplying Fleming's left-hand rule:\n- Thumb (force) → to the right\n- Middle finger (current) → from front to back (towards you)\n\nThe forefinger (magnetic field) must point downward (vertically downward).\n\nTherefore, the direction of the magnetic field is vertically downward.",
+          "explanation": "Remember that conventional current flows opposite to electron flow. Then apply Fleming's left-hand rule with the force direction (deflection) and current direction to find the field direction."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "short",
+          "question": "State the rule to determine the direction of (i) magnetic field produced around a straight conductor carrying current, (ii) force experienced by a current-carrying conductor placed in a perpendicular magnetic field, and (iii) current induced in a coil due to its rotation in a magnetic field.",
+          "answer": "(i) Right-Hand Thumb Rule: Imagine holding the current-carrying straight conductor in the right hand such that the thumb points in the direction of current. Then the curled fingers indicate the direction of the magnetic field lines around the conductor.\n\n(ii) Fleming's Left-Hand Rule: Stretch the thumb, forefinger, and middle finger of the left hand mutually perpendicular. If the forefinger points in the direction of the magnetic field and the middle finger in the direction of current, then the thumb gives the direction of the force (motion) on the conductor.\n\n(iii) Fleming's Right-Hand Rule: Stretch the thumb, forefinger, and middle finger of the right hand mutually perpendicular. If the forefinger points in the direction of the magnetic field and the thumb in the direction of motion of the conductor, then the middle finger gives the direction of the induced current.",
+          "explanation": "These three rules cover the three key electromagnetic phenomena: field from current (right-hand thumb rule), force on current in field (Fleming's left-hand rule), and induced current from motion in field (Fleming's right-hand rule)."
+        },
+        {
+          "id": "ch12-t2-m3",
+          "type": "short",
+          "question": "What is the function of the split ring commutator in an electric motor?",
+          "answer": "The split ring commutator in an electric motor serves to reverse the direction of current flowing through the coil after every half rotation (180 degrees).\n\nWithout the commutator, the coil would rotate half a turn and then reverse its direction of rotation (since the force direction would reverse). The commutator reverses the current direction every half turn so that the force continues to act in the same rotational direction, allowing the coil to rotate continuously in one direction.\n\nThe split ring commutator consists of two halves of a metallic ring, insulated from each other. Each half is connected to one end of the coil. As the coil rotates, the split rings change contact with the fixed carbon brushes, thereby reversing the current direction in the coil at just the right moment.",
+          "explanation": "The split ring commutator is essential for continuous rotation of the motor coil. It acts as a mechanical current reverser that switches current direction every half rotation."
+        },
+        {
+          "id": "ch12-t2-m4",
+          "type": "short",
+          "question": "An electric oven of 2 kW power rating is operated in a domestic electric circuit (220 V) that has a current rating of 5 A. What result do you expect? Explain.",
+          "answer": "Power of the electric oven P = 2 kW = 2000 W\nSupply voltage V = 220 V\nCurrent rating of circuit = 5 A\n\nCurrent drawn by the oven: I = P/V = 2000/220 = 9.09 A\n\nSince the current drawn by the oven (9.09 A) exceeds the current rating of the circuit (5 A), the fuse in the circuit will blow (melt) and the circuit will be broken. This is a case of overloading.\n\nThe oven should be connected to a circuit with a higher current rating (such as the 15 A circuit) to operate safely.",
+          "explanation": "The oven draws more current than the circuit's rated capacity. The fuse protects the circuit by melting and breaking the connection when the current exceeds the safe limit."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "State whether the following statements are true or false: (a) The field at the centre of a long circular coil carrying current will be parallel straight lines. (b) A wire with a green insulation is usually the live wire of an electric supply. Also, explain your answers and describe the domestic electric circuit.",
+          "answer": "(a) True. At the centre of a long circular coil (solenoid) carrying current, the magnetic field lines are in the form of parallel straight lines, indicating a uniform magnetic field. Each circular turn contributes to the field in the same direction, and the resultant field at the centre is uniform.\n\n(b) False. The wire with green insulation is the earth wire, not the live wire. The live wire has red insulation, and the neutral wire has black insulation.\n\nDomestic Electric Circuit:\nIn India, electric power is supplied at 220 V AC with a frequency of 50 Hz. The domestic circuit has three wires:\n\n(i) Live wire (red insulation) — carries current at high potential (220 V)\n(ii) Neutral wire (black insulation) — at approximately zero potential\n(iii) Earth wire (green insulation) — connected to a metal plate buried deep in the earth for safety\n\nAt the meter board, the wires pass through an electricity meter and a main fuse, then through a main switch to supply two separate circuits — one rated at 15 A (for high-power appliances like geysers and air coolers) and one at 5 A (for bulbs, fans, etc.).\n\nAll appliances are connected in parallel between the live and neutral wires so that each receives the full 220 V and can be independently switched on/off.\n\nSafety devices include fuses (or MCBs) and earthing. Short circuits occur when live and neutral wires come in direct contact, causing excessive current. Overloading occurs when too many appliances are connected to a single socket or when supply voltage increases abnormally.",
+          "explanation": "The true/false questions test understanding of solenoid field patterns and the colour coding of domestic wiring. Understanding domestic circuits is essential for electrical safety."
+        },
+        {
+          "id": "ch12-t2-h2",
+          "type": "long",
+          "question": "Explain the principle, construction, and working of an electric generator. How is an AC generator different from a DC generator?",
+          "answer": "Principle: An electric generator works on the principle of electromagnetic induction. When a coil is rotated in a magnetic field, the changing magnetic flux through the coil induces an electromotive force (EMF) and hence a current in the coil.\n\nConstruction:\n(i) Armature — a rectangular coil of insulated copper wire (ABCD) that rotates between the poles of a permanent magnet\n(ii) Field magnets — strong permanent magnets that provide the magnetic field\n(iii) Slip rings (for AC) or split ring commutator (for DC) — connected to the two ends of the coil\n(iv) Brushes — carbon brushes press against the rings/commutator and maintain electrical contact with the external circuit\n\nWorking:\nWhen the coil rotates in the magnetic field, the magnetic flux through it changes continuously. This induces an EMF (and current) in the coil according to Faraday's law. As the coil rotates through different positions, the rate of change of magnetic flux varies, producing a varying EMF. The EMF is maximum when the coil is parallel to the field and zero when perpendicular to it.\n\nDifference between AC and DC generators:\n\nAC Generator:\n- Uses slip rings (two complete rings)\n- Slip rings rotate with the coil and maintain continuous contact with brushes\n- The output current reverses direction every half rotation\n- Produces alternating current (AC) that changes direction periodically\n- In India, AC frequency is 50 Hz (current reverses direction 100 times per second)\n\nDC Generator:\n- Uses a split ring commutator (a single ring split into two halves, insulated from each other)\n- The commutator reverses the connections to the external circuit every half rotation\n- This ensures current flows in one direction only in the external circuit\n- Produces direct current (DC)\n\nAC is preferred for power transmission because its voltage can be easily stepped up or down using transformers for efficient long-distance transmission.",
+          "explanation": "The generator converts mechanical energy to electrical energy — the reverse of a motor. The key difference between AC and DC generators lies in the use of slip rings vs split ring commutator."
+        }
+      ]
+    }
+  ]
+}

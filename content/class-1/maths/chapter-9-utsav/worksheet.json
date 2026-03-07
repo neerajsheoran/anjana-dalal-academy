@@ -1,0 +1,54 @@
+{
+  "topics": [
+    {
+      "topic": "What is a Pattern",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "A pattern is something that ______ in the same order.", "options": ["Stops", "Repeats", "Changes", "Hides"], "answer": "Repeats", "explanation": "A pattern is something that repeats again and again in the same order." },
+        { "id": "ch9-t1-e2", "type": "mcq", "question": "Which of these is a pattern?", "options": ["Red, Blue, Red, Blue", "Red, Green, Yellow, Pink", "Blue, Blue, Blue, Blue", "Green only"], "answer": "Red, Blue, Red, Blue", "explanation": "Red, Blue, Red, Blue repeats in the same order. That is a pattern." },
+        { "id": "ch9-t1-e3", "type": "fill", "question": "The stripes on a zebra are: black, white, black, ______.", "answer": "white", "explanation": "The pattern repeats: black, white, black, white." },
+        { "id": "ch9-t1-e4", "type": "mcq", "question": "Where can we find patterns?", "options": ["Only in books", "Only in class", "Everywhere around us", "Nowhere"], "answer": "Everywhere around us", "explanation": "Patterns are found in nature, art, clothes, tiles, and many more places." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "Give an example of a pattern you see in nature.", "answer": "Butterfly wings have the same pattern on both sides. Zebras have black and white stripes that repeat.", "explanation": "Nature is full of patterns in flowers, leaves, animals, and more." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "What is rangoli? When do people make rangoli?", "answer": "Rangoli is a colourful pattern made on the floor. People make it during festivals like Diwali.", "explanation": "Rangoli uses coloured powder, petals, or rice to create beautiful repeating patterns." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "short", "question": "Name two Indian art forms that use patterns.", "answer": "Rangoli and Kolam. Rangoli is popular during Diwali and Kolam is drawn at the entrance of homes in South India.", "explanation": "Both rangoli and kolam use repeating shapes and designs." }
+      ]
+    },
+    {
+      "topic": "Colour and Shape Patterns",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "fill", "question": "Red, Blue, Red, Blue, Red, ______. What comes next?", "answer": "Blue", "explanation": "The pattern repeats: Red, Blue, Red, Blue. So next is Blue." },
+        { "id": "ch9-t2-e2", "type": "mcq", "question": "Green, Yellow, Green, Yellow, Green, ______. What comes next?", "options": ["Red", "Green", "Yellow", "Blue"], "answer": "Yellow", "explanation": "The pattern is Green, Yellow repeating. After Green comes Yellow." },
+        { "id": "ch9-t2-e3", "type": "fill", "question": "Circle, Square, Circle, Square, Circle, ______.", "answer": "Square", "explanation": "The pattern alternates between Circle and Square." },
+        { "id": "ch9-t2-e4", "type": "mcq", "question": "Star, Heart, Star, Heart, Star, ______. What comes next?", "options": ["Star", "Heart", "Circle", "Square"], "answer": "Heart", "explanation": "The pattern is Star, Heart repeating. After Star comes Heart." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "What comes next: Red, Red, Blue, Red, Red, Blue, Red, Red, ______?", "answer": "Blue", "explanation": "The pattern group is Red, Red, Blue. It keeps repeating. After Red, Red comes Blue." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "What comes next: Triangle, Triangle, Circle, Triangle, Triangle, Circle, ______?", "answer": "Triangle", "explanation": "The pattern group is Triangle, Triangle, Circle. It starts again with Triangle." },
+        { "id": "ch9-t2-m3", "type": "fill", "question": "Pink, Orange, Orange, Pink, Orange, Orange, ______.", "answer": "Pink", "explanation": "The pattern group is Pink, Orange, Orange. It starts again with Pink." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "Create your own colour pattern using 3 colours. Write the first 9 items of the pattern.", "answer": "Example: Red, Green, Blue, Red, Green, Blue, Red, Green, Blue. (Any 3-colour repeating pattern is correct.)", "explanation": "A pattern with 3 colours repeats the group of 3 over and over." }
+      ]
+    },
+    {
+      "topic": "Number Patterns",
+      "easy": [
+        { "id": "ch9-t3-e1", "type": "fill", "question": "1, 2, 3, 4, 5, ______. What comes next?", "answer": "6", "explanation": "Each number is 1 more than the one before it." },
+        { "id": "ch9-t3-e2", "type": "mcq", "question": "2, 4, 6, 8, ______. What comes next?", "options": ["9", "10", "11", "12"], "answer": "10", "explanation": "Each number is 2 more. 8 + 2 = 10." },
+        { "id": "ch9-t3-e3", "type": "fill", "question": "5, 10, 15, 20, ______.", "answer": "25", "explanation": "Each number is 5 more. 20 + 5 = 25." },
+        { "id": "ch9-t3-e4", "type": "mcq", "question": "10, 20, 30, 40, ______. What comes next?", "options": ["45", "50", "60", "41"], "answer": "50", "explanation": "Each number is 10 more. 40 + 10 = 50." }
+      ],
+      "medium": [
+        { "id": "ch9-t3-m1", "type": "short", "question": "Find the next number: 1, 1, 2, 2, 3, 3, ______.", "answer": "4", "explanation": "Each number is repeated twice. After 3, 3, the next number is 4." },
+        { "id": "ch9-t3-m2", "type": "mcq", "question": "In the pattern 3, 6, 9, 12, what comes next?", "options": ["13", "14", "15", "16"], "answer": "15", "explanation": "Each number is 3 more. 12 + 3 = 15." }
+      ],
+      "hard": [
+        { "id": "ch9-t3-h1", "type": "long", "question": "Look at this pattern: 2, 4, 6, 8, 10. What is the rule? What would be the next 3 numbers?", "answer": "The rule is: add 2 each time. The next 3 numbers are 12, 14, 16.", "explanation": "Each number in the pattern is 2 more than the one before: 10 + 2 = 12, 12 + 2 = 14, 14 + 2 = 16." },
+        { "id": "ch9-t3-h2", "type": "short", "question": "Make a number pattern that goes up by 5. Start from 5 and write 5 numbers.", "answer": "5, 10, 15, 20, 25.", "explanation": "Adding 5 each time: 5, 10, 15, 20, 25." }
+      ]
+    }
+  ]
+}

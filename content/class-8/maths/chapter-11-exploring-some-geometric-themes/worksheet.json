@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Fractals and Self-Similarity",
+      "easy": [
+        { "id": "ch11-t1-e1", "type": "mcq", "question": "A fractal is a shape that:", "options": ["Has exactly 4 sides", "Shows the same pattern at smaller and smaller scales", "Always has curved edges", "Is always a triangle"], "answer": "Shows the same pattern at smaller and smaller scales", "explanation": "Fractals exhibit self-similarity: the same or similar pattern repeats at increasingly smaller scales." },
+        { "id": "ch11-t1-e2", "type": "fill", "question": "In the Sierpinski Carpet, at each step the square is divided into 9 equal parts and the ______ square is removed.", "answer": "central", "explanation": "The Sierpinski Carpet is formed by dividing a square into 9 equal smaller squares and removing the central one, then repeating on each remaining square." },
+        { "id": "ch11-t1-e3", "type": "mcq", "question": "Which of these is a natural example of a fractal?", "options": ["A perfect circle", "A fern leaf", "A rectangle", "A straight line"], "answer": "A fern leaf", "explanation": "A fern leaf has smaller copies of itself as its leaflets, and these leaflets have even smaller copies -- a classic example of self-similarity in nature." },
+        { "id": "ch11-t1-e4", "type": "short", "question": "In the Sierpinski Carpet, how many remaining squares are there at step 1 and step 2?", "answer": "At step 1: The original square is divided into 9 parts and 1 is removed, leaving 8 squares.\nAt step 2: Each of the 8 squares is divided into 9 parts and 1 is removed from each, leaving 8 x 8 = 64 squares.\nThe pattern is 8^n at step n.", "explanation": "At each step, every remaining square produces 8 new squares (9 parts minus the central one). So the count follows the pattern 8^n." }
+      ],
+      "medium": [
+        { "id": "ch11-t1-m1", "type": "short", "question": "In the Koch Snowflake, the number of sides at step n is 3 x 4^n. How many sides are there at step 0, step 1, and step 2?", "answer": "Step 0: 3 x 4^0 = 3 x 1 = 3 sides (equilateral triangle).\nStep 1: 3 x 4^1 = 3 x 4 = 12 sides.\nStep 2: 3 x 4^2 = 3 x 16 = 48 sides.", "explanation": "The Koch Snowflake starts with a triangle (3 sides). At each step, every side is replaced by 4 new segments, so the count multiplies by 4." },
+        { "id": "ch11-t1-m2", "type": "short", "question": "In the Sierpinski Triangle, at each step, the number of remaining triangles is 3^n. What fraction of the original area remains at step 3?", "answer": "At each step, each triangle keeps 3 out of 4 parts, so the area fraction is (3/4)^n.\nAt step 3: (3/4)^3 = 27/64 of the original area remains.", "explanation": "At each step, 1/4 of each remaining triangle is removed, so 3/4 of the area stays. After n steps, the fraction remaining is (3/4)^n." }
+      ],
+      "hard": [
+        { "id": "ch11-t1-h1", "type": "long", "question": "In the Sierpinski Carpet, the number of holes at step n follows the pattern: H(0) = 0, H(1) = 1, H(2) = 9, H(3) = 73. Verify the formula H(n) = H(n-1) x 8 + 1 for n = 2 and n = 3. Then find H(4).", "answer": "For n = 2: H(2) = H(1) x 8 + 1 = 1 x 8 + 1 = 9. Correct (matches given value).\n\nFor n = 3: H(3) = H(2) x 8 + 1 = 9 x 8 + 1 = 73. Correct (matches given value).\n\nFor n = 4: H(4) = H(3) x 8 + 1 = 73 x 8 + 1 = 584 + 1 = 585.\n\nAt step 4, there are 585 holes in the Sierpinski Carpet.", "explanation": "At each new step, every remaining square (8^(n-1) of them) gets a new hole, plus all previous holes are preserved in the 8 copies. This gives the recurrence H(n) = 8 x H(n-1) + 1." }
+      ]
+    },
+    {
+      "topic": "Faces, Edges, Vertices, and Nets of Solids",
+      "easy": [
+        { "id": "ch11-t2-e1", "type": "mcq", "question": "A cube has:", "options": ["4 faces, 8 edges, 6 vertices", "6 faces, 12 edges, 8 vertices", "8 faces, 6 edges, 12 vertices", "6 faces, 8 edges, 12 vertices"], "answer": "6 faces, 12 edges, 8 vertices", "explanation": "A cube has 6 square faces, 12 edges, and 8 vertices (corners)." },
+        { "id": "ch11-t2-e2", "type": "fill", "question": "Euler's formula for any convex polyhedron is V - E + F = ______.", "answer": "2", "explanation": "Euler's formula: Vertices - Edges + Faces = 2. This holds for all convex polyhedra." },
+        { "id": "ch11-t2-e3", "type": "mcq", "question": "A triangular prism has how many faces?", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "A triangular prism has 2 triangular faces (top and bottom) and 3 rectangular faces (sides), giving 5 faces in total." },
+        { "id": "ch11-t2-e4", "type": "short", "question": "Verify Euler's formula for a square pyramid (5 faces, 8 edges, 5 vertices).", "answer": "V - E + F = 5 - 8 + 5 = 2.\nEuler's formula is satisfied.", "explanation": "Substitute the values: V = 5, E = 8, F = 5 into V - E + F and check that the result is 2." }
+      ],
+      "medium": [
+        { "id": "ch11-t2-m1", "type": "short", "question": "A prism has a pentagonal (5-sided) base. Using the general formulas, find the number of faces, edges, and vertices. Verify Euler's formula.", "answer": "For a prism with n-sided base: Faces = n + 2, Edges = 3n, Vertices = 2n.\nWith n = 5:\nFaces = 5 + 2 = 7.\nEdges = 3 x 5 = 15.\nVertices = 2 x 5 = 10.\n\nEuler's formula: V - E + F = 10 - 15 + 7 = 2. Verified.", "explanation": "A pentagonal prism has 2 pentagonal faces + 5 rectangular faces = 7 faces. Apply the prism formulas and check Euler's formula." },
+        { "id": "ch11-t2-m2", "type": "short", "question": "A solid has 12 vertices and 18 edges. Using Euler's formula, find the number of faces. What solid could this be?", "answer": "V - E + F = 2.\n12 - 18 + F = 2.\nF = 2 + 18 - 12 = 8.\nThe solid has 8 faces.\n\nA solid with 12 vertices, 18 edges, and 8 faces could be a hexagonal prism (n = 6: F = 6+2 = 8, E = 3x6 = 18, V = 2x6 = 12).", "explanation": "Use Euler's formula to find the missing value. Then check which standard solid matches these numbers." },
+        { "id": "ch11-t2-m3", "type": "short", "question": "The net of a cylinder consists of which flat shapes?", "answer": "A cylinder's net consists of:\n1. Two circles (for the top and bottom faces).\n2. One rectangle (for the curved surface).\n\nThe rectangle's width equals the circumference of the circle (2 x pi x r) and its height equals the height of the cylinder.", "explanation": "When a cylinder is 'unrolled,' the curved surface becomes a rectangle whose width matches the circle's circumference." }
+      ],
+      "hard": [
+        { "id": "ch11-t2-h1", "type": "long", "question": "A polyhedron has all triangular faces. If it has 6 vertices and 12 edges, find the number of faces using Euler's formula. Identify the solid. Also, for any polyhedron with only triangular faces, prove that E = 3F/2.", "answer": "Using Euler's formula: V - E + F = 2.\n6 - 12 + F = 2.\nF = 8.\nThe solid has 8 triangular faces. This is an octahedron.\n\nProof that E = 3F/2 for a polyhedron with all triangular faces:\nEach triangular face has 3 edges. The total count of edge-face pairs is 3F.\nBut each edge is shared by exactly 2 faces, so 3F = 2E.\nTherefore E = 3F/2.\n\nVerification: F = 8, so E = 3 x 8 / 2 = 12. This matches.", "explanation": "For the octahedron: apply Euler's formula. For the general proof: use the double-counting principle -- each edge is shared by two faces, so the total number of edges around all faces (3F for triangular faces) equals 2E." }
+      ]
+    }
+  ]
+}

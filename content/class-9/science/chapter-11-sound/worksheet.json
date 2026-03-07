@@ -1,0 +1,193 @@
+{
+  "topics": [
+    {
+      "topic": "Production and Propagation of Sound",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "Sound is produced by:",
+          "options": ["Light", "Heat", "Vibrations", "Pressure"],
+          "answer": "Vibrations",
+          "explanation": "Sound is produced when an object vibrates. The vibrations create disturbances in the surrounding medium."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "Sound waves are ______ waves because the particles vibrate parallel to the direction of wave propagation.",
+          "answer": "longitudinal",
+          "explanation": "In longitudinal waves, the vibration of medium particles is along the direction of wave travel, creating compressions and rarefactions."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "mcq",
+          "question": "Sound cannot travel through:",
+          "options": ["Air", "Water", "Vacuum", "Steel"],
+          "answer": "Vacuum",
+          "explanation": "Sound needs a material medium to travel. In a vacuum, there are no particles to carry the vibrations."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "mcq",
+          "question": "In which medium does sound travel fastest?",
+          "options": ["Air", "Water", "Vacuum", "Steel"],
+          "answer": "Steel",
+          "explanation": "Sound travels fastest in solids (like steel) because the particles are closest together and can transmit vibrations quickly."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "Explain why sound cannot travel through a vacuum.",
+          "answer": "Sound is a mechanical wave that requires a material medium (solid, liquid, or gas) to propagate. Sound travels by creating compressions and rarefactions in the medium's particles. In a vacuum, there are no particles, so there is nothing to compress or rarefy. Therefore, sound cannot travel through a vacuum.",
+          "explanation": "This was demonstrated by Robert Boyle's bell-jar experiment, where the sound of a bell gradually faded as air was pumped out."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "short",
+          "question": "Distinguish between longitudinal and transverse waves.",
+          "answer": "In longitudinal waves, particles vibrate parallel to the direction of wave propagation, creating compressions and rarefactions. Example: sound waves. In transverse waves, particles vibrate perpendicular to the direction of wave propagation, creating crests and troughs. Example: light waves, water surface waves.",
+          "explanation": "Sound in air is always a longitudinal wave."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "A sound wave travels at a speed of 339 m/s. If its wavelength is 1.5 cm, what is the frequency of the wave? Would it be audible?",
+          "answer": "v = 339 m/s, wavelength = 1.5 cm = 0.015 m. f = v/wavelength = 339/0.015 = 22,600 Hz. Since the audible range for humans is 20 Hz to 20,000 Hz, and 22,600 Hz is above 20,000 Hz, this sound would NOT be audible to humans. It is an ultrasound.",
+          "explanation": "Sounds with frequency above 20,000 Hz are ultrasonic and cannot be heard by humans."
+        }
+      ]
+    },
+    {
+      "topic": "Characteristics of Sound and Audible Range",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "Loudness of sound depends on:",
+          "options": ["Frequency", "Wavelength", "Amplitude", "Speed"],
+          "answer": "Amplitude",
+          "explanation": "Greater amplitude means louder sound. Loudness is measured in decibels (dB)."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "The audible range of frequency for human ears is ______ Hz to ______ Hz.",
+          "answer": "20, 20000",
+          "explanation": "Sounds below 20 Hz are infrasound and above 20,000 Hz are ultrasound, both inaudible to humans."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "mcq",
+          "question": "Pitch of a sound depends on its:",
+          "options": ["Amplitude", "Frequency", "Speed", "Wavelength"],
+          "answer": "Frequency",
+          "explanation": "Higher frequency produces a higher pitch (shrill sound). Lower frequency produces a lower pitch (bass sound)."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "mcq",
+          "question": "Sounds of frequency greater than 20,000 Hz are called:",
+          "options": ["Infrasound", "Audible sound", "Ultrasound", "Supersound"],
+          "answer": "Ultrasound",
+          "explanation": "Ultrasound has frequencies above 20 kHz, which is beyond the upper limit of human hearing."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "What is the difference between loudness and pitch?",
+          "answer": "Loudness depends on the amplitude of the sound wave. Higher amplitude means louder sound, measured in decibels (dB). Pitch depends on the frequency of the sound wave. Higher frequency means higher pitch (shrill), and lower frequency means lower pitch (bass). For example, a whistle has high pitch but may not be very loud, while a drum has low pitch but can be quite loud.",
+          "explanation": "Loudness and pitch are independent properties of sound determined by different characteristics of the wave."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "short",
+          "question": "A person clapped their hands near a cliff and heard the echo after 5 s. What is the distance of the cliff from the person if the speed of sound is 346 m/s?",
+          "answer": "Time for echo = 5 s. Speed of sound = 346 m/s. Total distance (to cliff and back) = speed x time = 346 x 5 = 1730 m. Distance of cliff = 1730/2 = 865 m.",
+          "explanation": "The sound travels to the cliff and back, so the actual distance to the cliff is half the total distance."
+        },
+        {
+          "id": "ch11-t2-m3",
+          "type": "short",
+          "question": "Give two applications of ultrasound.",
+          "answer": "(1) Ultrasonography: Ultrasound is used in medical imaging to get images of internal organs and to monitor the development of a foetus during pregnancy. (2) SONAR: Ultrasound is used in SONAR to measure ocean depth, locate underwater objects like submarines, and find schools of fish.",
+          "explanation": "Ultrasound is useful because it can travel long distances and can be reflected from surfaces to provide information."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "Calculate the wavelength of a sound wave whose frequency is 220 Hz and speed is 440 m/s in a given medium. Also calculate the wavelength when it enters another medium where its speed is 132 m/s.",
+          "answer": "In the first medium: v = 440 m/s, f = 220 Hz. wavelength = v/f = 440/220 = 2 m. In the second medium: v = 132 m/s. The frequency does not change when sound enters a different medium (frequency depends on the source). wavelength = v/f = 132/220 = 0.6 m. The wavelength decreases from 2 m to 0.6 m.",
+          "explanation": "When sound passes from one medium to another, its speed and wavelength change, but its frequency remains the same."
+        }
+      ]
+    },
+    {
+      "topic": "Echo, Reverberation, and SONAR",
+      "easy": [
+        {
+          "id": "ch11-t3-e1",
+          "type": "mcq",
+          "question": "The minimum distance required to hear an echo (at 20 degrees C) is approximately:",
+          "options": ["10 m", "17.2 m", "34.4 m", "50 m"],
+          "answer": "17.2 m",
+          "explanation": "The reflected sound must reach the ear at least 0.1 s after the original. d = v x t / 2 = 344 x 0.1 / 2 = 17.2 m."
+        },
+        {
+          "id": "ch11-t3-e2",
+          "type": "fill",
+          "question": "SONAR stands for ______.",
+          "answer": "Sound Navigation And Ranging",
+          "explanation": "SONAR uses ultrasonic waves to measure distances and detect underwater objects."
+        },
+        {
+          "id": "ch11-t3-e3",
+          "type": "mcq",
+          "question": "The persistence of sound in an enclosed space due to multiple reflections is called:",
+          "options": ["Echo", "Reverberation", "Resonance", "Interference"],
+          "answer": "Reverberation",
+          "explanation": "Reverberation is the prolonged sound heard in halls and auditoriums due to repeated reflections from walls and ceiling."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t3-m1",
+          "type": "short",
+          "question": "How does SONAR work?",
+          "answer": "SONAR uses ultrasonic waves. A transmitter sends ultrasonic pulses towards the ocean floor or underwater objects. When these waves hit an object, they are reflected back. A detector receives these reflected waves. The time between sending and receiving the signal is recorded, and the distance is calculated using d = v x t / 2 (since sound travels to the object and back). This helps determine the depth of the sea, locate submarines, and find fish.",
+          "explanation": "SONAR is based on the reflection of ultrasound waves."
+        },
+        {
+          "id": "ch11-t3-m2",
+          "type": "short",
+          "question": "How are echoes used by bats to find their way?",
+          "answer": "Bats use a method called echolocation. They produce high-frequency ultrasonic squeaks while flying. These waves are reflected by obstacles and prey (like insects) and return as echoes. By interpreting the time taken for the echo to return and the direction from which it comes, bats can determine the location, distance, and size of objects, allowing them to navigate in the dark and catch prey.",
+          "explanation": "Echolocation is similar to SONAR and is also used by dolphins."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t3-h1",
+          "type": "long",
+          "question": "A sonar device on a submarine sends out a signal and receives an echo 5 s later. Calculate the speed of sound in water if the distance of the object from the submarine is 3625 m.",
+          "answer": "Total distance = 2 x 3625 = 7250 m (sound goes to the object and back). Time = 5 s. Speed = total distance / time = 7250 / 5 = 1450 m/s. The speed of sound in water is 1450 m/s.",
+          "explanation": "In SONAR calculations, remember that sound travels twice the distance (to the object and back)."
+        },
+        {
+          "id": "ch11-t3-h2",
+          "type": "long",
+          "question": "A submarine emits a sonar pulse which returns from an underwater cliff in 1.02 s. If the speed of sound in salt water is 1531 m/s, how far away is the cliff?",
+          "answer": "t = 1.02 s, v = 1531 m/s. Total distance = v x t = 1531 x 1.02 = 1561.62 m. Distance of cliff = 1561.62 / 2 = 780.81 m. The cliff is approximately 781 m away.",
+          "explanation": "Using the formula d = vt/2, where t is the total time for the sound to travel to the cliff and back."
+        }
+      ]
+    }
+  ]
+}

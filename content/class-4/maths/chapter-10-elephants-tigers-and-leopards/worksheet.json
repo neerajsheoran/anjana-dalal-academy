@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Addition and Subtraction of 4-Digit Numbers",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "What is 6049 + 3054?", "options": ["9003", "9093", "9103", "9143"], "answer": "9103", "explanation": "Ones: 9+4=13, write 3, carry 1. Tens: 4+5+1=10, write 0, carry 1. Hundreds: 0+0+1=1. Thousands: 6+3=9. Answer: 9103." },
+        { "id": "ch10-t1-e2", "type": "fill", "question": "When adding, if a column totals 10 or more, we ______ 1 to the next column.", "answer": "carry", "explanation": "Carrying (regrouping) moves the extra 10 to the next higher place value." },
+        { "id": "ch10-t1-e3", "type": "mcq", "question": "5719 - 3965 = ?", "options": ["1654", "1754", "1854", "2754"], "answer": "1754", "explanation": "Ones: 9-5=4. Tens: 1<6, borrow: 11-6=5. Hundreds: 6<9, borrow: 16-9=7. Thousands: 4-3=1. Answer: 1754." },
+        { "id": "ch10-t1-e4", "type": "fill", "question": "10 Hundreds = 1 ______.", "answer": "Thousand", "explanation": "Just like 10 Ones = 1 Ten and 10 Tens = 1 Hundred, 10 Hundreds = 1 Thousand." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "Gujarat has 1355 leopards, Karnataka has 1131, and Madhya Pradesh has 1817. What is the total number of leopards in these three states?", "answer": "1355 + 1131 + 1817 = 4303 leopards.", "explanation": "Add all three: Ones: 5+1+7=13. Tens: 5+3+1+1=10. Hundreds: 3+1+8+1=13. Thousands: 1+1+1+1=4. Answer: 4303." },
+        { "id": "ch10-t1-m2", "type": "short", "question": "Use mental maths to solve: 8787 - 99.", "answer": "8787 - 99 = 8787 - 100 + 1 = 8687 + 1 = 8688.", "explanation": "Subtracting 99 is the same as subtracting 100 and adding 1 back." },
+        { "id": "ch10-t1-m3", "type": "mcq", "question": "Without calculating, which is bigger: 54 + 97 or 54 + 90?", "options": ["54 + 97", "54 + 90", "Both are equal", "Cannot tell"], "answer": "54 + 97", "explanation": "Same starting number (54), but 97 > 90, so adding 97 gives a bigger total." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "long", "question": "Assam has 5719 elephants. Kerala has 3054 elephants. How many more elephants does Assam have than Kerala? If 1200 baby elephants are born across both states next year, and 800 are in Assam and 400 in Kerala, what will the new totals be?", "answer": "Difference: 5719 - 3054 = 2665 more in Assam. New Assam total: 5719 + 800 = 6519. New Kerala total: 3054 + 400 = 3454.", "explanation": "First subtract to find difference. Then add new births to each state's total." }
+      ]
+    },
+    {
+      "topic": "Reverse and Add Patterns and Money",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "Take the number 27. Reverse its digits to get 72. What is 27 + 72?", "options": ["89", "95", "99", "100"], "answer": "99", "explanation": "27 + 72 = 99." },
+        { "id": "ch10-t2-e2", "type": "fill", "question": "36 reversed is 63. 36 + 63 = ______.", "answer": "99", "explanation": "36 + 63 = 99. Numbers whose digits sum to 9 (3+6=9) always give 99 when reversed and added." },
+        { "id": "ch10-t2-e3", "type": "mcq", "question": "How many Rs 500 notes are needed to make Rs 2000?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "2000 / 500 = 4 notes." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "Try the reverse-and-add pattern with 23. What do you get? Now try 14. What pattern do you notice?", "answer": "23 + 32 = 55. 14 + 41 = 55. Both give 55! The pattern is that numbers whose digits sum to the same total (2+3=5, 1+4=5) give the same reverse-and-add result.", "explanation": "When digit sums are equal, the reverse-and-add results are equal." },
+        { "id": "ch10-t2-m2", "type": "short", "question": "If 354 + 167 = 521, what is 354 + 168 without calculating from scratch?", "answer": "354 + 168 = 522. Since 168 is 1 more than 167, the answer is 1 more: 521 + 1 = 522.", "explanation": "Using known facts: adding 1 more to one number adds 1 more to the answer." },
+        { "id": "ch10-t2-m3", "type": "mcq", "question": "If 456 + 209 = 665, what is 446 + 219?", "options": ["655", "665", "675", "755"], "answer": "665", "explanation": "446 is 10 less than 456, and 219 is 10 more than 209. The changes cancel out: 665." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "long", "question": "Rahul wants to deposit Rs 2045 at the bank. He has notes of Rs 500, Rs 100, Rs 50, and Rs 10, and coins of Rs 5, Rs 2, and Rs 1. Show one way he could make Rs 2045 using these notes and coins.", "answer": "One way: 4 notes of Rs 500 = Rs 2000. Then 4 coins of Rs 10 = Rs 40. Then 1 coin of Rs 5 = Rs 5. Total: 2000 + 40 + 5 = Rs 2045. (Other combinations are also correct.)", "explanation": "Start with the largest notes and work down. There are many valid combinations." },
+        { "id": "ch10-t2-h2", "type": "long", "question": "India has about 3/4 of the world's tiger population. If the world has about 4500 tigers, approximately how many tigers are in India? If India's tiger population grows by 500 in the next 5 years, what will the new number be?", "answer": "3/4 of 4500 = 3 x (4500/4) = 3 x 1125 = 3375 tigers in India. After growth: 3375 + 500 = 3875 tigers.", "explanation": "Find 1/4 first: 4500/4 = 1125. Then 3/4 = 3 x 1125 = 3375. Add growth: 3375 + 500 = 3875." }
+      ]
+    }
+  ]
+}

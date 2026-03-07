@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "topic": "Tessellation and Tiling",
+      "easy": [
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "Which of these shapes can tessellate (cover a flat surface without gaps)?",
+          "options": ["Circle", "Regular pentagon", "Square", "Regular octagon"],
+          "answer": "Square",
+          "explanation": "Only three regular shapes can tessellate on their own: triangles, squares, and hexagons. Squares fit perfectly with 4 meeting at each point."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "Covering a flat surface with shapes that fit together without gaps or overlaps is called ______.",
+          "answer": "tessellation",
+          "explanation": "Tessellation means covering a surface with shapes leaving no gaps or overlaps, like floor tiles."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "mcq",
+          "question": "How many equilateral triangles meet at a point in a tessellation?",
+          "options": ["3", "4", "5", "6"],
+          "answer": "6",
+          "explanation": "In a tessellation of equilateral triangles, 6 triangles fit together at each point."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "short",
+          "question": "Can regular pentagons tessellate on their own? Why or why not?",
+          "answer": "No, regular pentagons cannot tessellate on their own because they leave gaps when placed together.",
+          "explanation": "Regular pentagons do not fit together perfectly at a point. There will always be gaps between them."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "Name the three regular shapes that can tessellate on their own. For each, state how many shapes meet at a single point.",
+          "answer": "Equilateral triangle (6 at a point), Square (4 at a point), Regular hexagon (3 at a point).",
+          "explanation": "These three shapes have angles that divide evenly into 360 degrees, allowing them to tile perfectly."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "mcq",
+          "question": "Regular octagons leave gaps when used alone for tiling. Which shape can fill those gaps?",
+          "options": ["Circles", "Triangles", "Squares", "Pentagons"],
+          "answer": "Squares",
+          "explanation": "Regular octagons combined with squares can tessellate. The small square-shaped gaps between octagons are filled perfectly by squares."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "A rangoli design uses hexagonal tiles and triangular tiles. If the floor area needs 24 hexagonal tiles and each hexagon is surrounded by 6 triangles (shared with neighbouring hexagons), explain why tessellation with hexagons and triangles works.",
+          "answer": "Hexagons tessellate on their own with 3 meeting at each point. When triangles are added around hexagons, they fill perfectly because the angles of the hexagon (120 degrees each) and the equilateral triangle (60 degrees each) combine to make 360 degrees at each vertex (120 + 120 + 60 + 60 = 360). This is why the combination works without gaps.",
+          "explanation": "The key is that the angles at each meeting point must add up to exactly 360 degrees. Hexagon angles (120 degrees) and triangle angles (60 degrees) are multiples of 60, so they combine perfectly."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Triangles and Quadrilaterals",
+      "easy": [
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "A triangle with all 3 sides equal is called:",
+          "options": ["Scalene", "Isosceles", "Equilateral", "Right-angled"],
+          "answer": "Equilateral",
+          "explanation": "An equilateral triangle has all 3 sides equal and all 3 angles equal."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "A triangle with 2 equal sides is called an ______ triangle.",
+          "answer": "isosceles",
+          "explanation": "An isosceles triangle has exactly 2 equal sides and 2 equal angles."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "mcq",
+          "question": "Which quadrilateral has all 4 sides equal and all 4 angles as right angles?",
+          "options": ["Rectangle", "Rhombus", "Parallelogram", "Square"],
+          "answer": "Square",
+          "explanation": "A square has all 4 sides equal AND all 4 angles are right angles."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "short",
+          "question": "What type of triangle has no equal sides?",
+          "answer": "Scalene triangle",
+          "explanation": "A scalene triangle has no sides equal and no angles equal."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "How is a rhombus different from a square?",
+          "answer": "Both have all 4 sides equal. But a square has all right angles (90 degrees), while a rhombus does not necessarily have right angles.",
+          "explanation": "A square is a special rhombus where all angles are right angles. A rhombus has equal sides but its angles are not necessarily 90 degrees."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "mcq",
+          "question": "Which shape has two pairs of adjacent (neighbouring) sides that are equal?",
+          "options": ["Rectangle", "Parallelogram", "Kite", "Rhombus"],
+          "answer": "Kite",
+          "explanation": "A kite has two pairs of adjacent sides that are equal. Unlike a parallelogram where opposite sides are equal."
+        },
+        {
+          "id": "ch7-t2-m3",
+          "type": "short",
+          "question": "Is every square a rectangle? Is every rectangle a square? Explain.",
+          "answer": "Yes, every square is a rectangle (it has all right angles and opposite sides equal). No, not every rectangle is a square (a rectangle can have unequal adjacent sides).",
+          "explanation": "A square meets all the requirements of a rectangle (right angles, opposite sides equal) plus has the extra property that all sides are equal. But a rectangle need not have all sides equal."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "When you cut a rhombus along both its diagonals, you get 4 triangles. Using 2 of these triangles, list all the different shapes you can make. Using all 4 triangles, name at least 3 different shapes you can make.",
+          "answer": "Using 2 triangles: isosceles triangle, parallelogram, kite. Using 4 triangles: square, rectangle, triangle, parallelogram, pentagon, hexagon (depending on arrangement).",
+          "explanation": "The 4 triangles from a rhombus are all congruent (same shape and size). By arranging them differently, you can create many shapes. Two triangles placed base-to-base make a parallelogram, and placed differently make a kite or larger triangle."
+        }
+      ]
+    },
+    {
+      "topic": "3D Shapes and Tangram",
+      "easy": [
+        {
+          "id": "ch7-t3-e1",
+          "type": "mcq",
+          "question": "How many faces does a cube have?",
+          "options": ["4", "6", "8", "12"],
+          "answer": "6",
+          "explanation": "A cube has 6 faces, all of which are squares."
+        },
+        {
+          "id": "ch7-t3-e2",
+          "type": "fill",
+          "question": "A cube has ______ edges and ______ vertices.",
+          "answer": "12, 8",
+          "explanation": "A cube has 12 edges (lines where two faces meet) and 8 vertices (corners)."
+        },
+        {
+          "id": "ch7-t3-e3",
+          "type": "short",
+          "question": "How many pieces make up a tangram puzzle?",
+          "answer": "7 pieces: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, and 1 parallelogram.",
+          "explanation": "A tangram is an ancient Chinese puzzle made of 7 pieces cut from a square."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t3-m1",
+          "type": "short",
+          "question": "If you glue 27 small cubes into a big 3x3x3 cube and paint the outside, how many small cubes have exactly 3 faces painted?",
+          "answer": "8 cubes (the corner cubes).",
+          "explanation": "Only the 8 corner cubes have 3 faces showing on the outside. Corner positions are where 3 faces of the big cube meet."
+        },
+        {
+          "id": "ch7-t3-m2",
+          "type": "mcq",
+          "question": "In the painted 3x3x3 cube, how many small cubes have 0 faces painted?",
+          "options": ["0", "1", "6", "8"],
+          "answer": "1",
+          "explanation": "Only the cube in the very centre of the 3x3x3 cube has no faces painted. It is completely hidden inside."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t3-h1",
+          "type": "long",
+          "question": "In a 3x3x3 painted cube, find: (a) How many small cubes have exactly 2 faces painted? (b) How many have exactly 1 face painted? (c) Verify that the total of all categories equals 27.",
+          "answer": "(a) 12 cubes have 2 faces painted (edge cubes, not corners). (b) 6 cubes have 1 face painted (centre of each face). (c) Total: 8 (3 faces) + 12 (2 faces) + 6 (1 face) + 1 (0 faces) = 27. Verified!",
+          "explanation": "Corners (3 faces) = 8, Edges minus corners (2 faces) = 12, Face centres (1 face) = 6, Centre (0 faces) = 1. Total = 8 + 12 + 6 + 1 = 27."
+        }
+      ]
+    }
+  ]
+}

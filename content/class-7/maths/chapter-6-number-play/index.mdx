@@ -1,0 +1,222 @@
+---
+title: "Chapter 6 — Number Play"
+---
+
+Numbers have fascinating hidden properties. In this chapter, we explore the concept of parity (even and odd), discover the magic of magic squares, play with palindromes, and investigate interesting patterns in number operations.
+
+## Numbers Tell Us Things
+
+Numbers can encode information in creative ways. Imagine a line of children standing one behind the other. Each child calls out the number of children standing in front of them who are taller than them.
+
+- A child who says **0** has no one taller in front of them.
+- The first child always says **0** (there is nobody in front).
+- The largest number a child can say in a group of 8 is **7** (if they are the shortest and standing last).
+
+This shows that numbers can represent relationships between things, not just quantities.
+
+## Picking Parity
+
+**Parity** refers to whether a number is **even** or **odd**.
+
+- **Even numbers** can be arranged in pairs with nothing left over: 2, 4, 6, 8, 10, ...
+- **Odd numbers** have one left over after pairing: 1, 3, 5, 7, 9, ...
+
+### Parity Rules for Addition
+
+| Operation | Result | Why? |
+|-----------|--------|------|
+| even + even | **even** | Both can be paired, so the total can be paired |
+| odd + odd | **even** | Each has one leftover; two leftovers pair up |
+| even + odd | **odd** | Only one number has a leftover |
+| odd + even | **odd** | Same as above |
+
+These rules extend to any number of terms:
+- The sum of **5 odd numbers** = odd (since odd + odd = even, so 4 odds give even, plus one more odd gives odd)
+- The sum of **any number of even numbers** = even
+
+### Parity in Problem Solving
+
+**Puzzle:** Kishor has cards with odd numbers 1, 3, 5, 7, 9, 11, 13, 15, 17. Can he choose exactly 5 cards that add up to 30?
+
+The answer is **no**! The sum of 5 odd numbers is always odd (since odd + odd + odd + odd + odd = odd). But 30 is even. So it is impossible!
+
+**Puzzle:** Martin and Maria were born exactly one year apart. Can the sum of their ages be 112?
+
+Their ages are consecutive numbers (one even, one odd). The sum of an even and an odd number is always **odd**. Since 112 is even, this is **impossible**.
+
+> **Parity is a powerful tool** for proving that something is impossible. Instead of checking every case, we simply check whether the parity works out.
+
+### Parity Rules for Subtraction and Multiplication
+
+| Operation | Result |
+|-----------|--------|
+| even - even | even |
+| odd - odd | even |
+| even - odd | odd |
+| odd - even | odd |
+| even x even | even |
+| odd x odd | odd |
+| even x odd | even |
+| odd x even | even |
+
+### Parity and Grid Dimensions
+
+In a rectangular grid, the number of small squares = rows x columns.
+- 27 x 13: odd x odd = **odd** number of squares
+- 42 x 78: even x even = **even** number of squares
+- 135 x 654: odd x even = **even** number of squares
+
+### Even and Odd Number Formulas
+
+The **nth even number** = **2n**
+(For n = 1, 2, 3, ... we get 2, 4, 6, ...)
+
+The **nth odd number** = **2n - 1**
+(For n = 1, 2, 3, ... we get 1, 3, 5, ...)
+
+For example, the 100th even number = 2 x 100 = **200**, and the 100th odd number = 2 x 100 - 1 = **199**.
+
+## Some Explorations in Grids
+
+### Row and Column Sums
+
+In a 3 x 3 grid filled with the numbers 1 to 9 (each used exactly once), the sum of all row sums = the sum of all column sums = **1 + 2 + 3 + ... + 9 = 45**.
+
+This means:
+- The smallest possible row/column sum is 1 + 2 + 3 = **6**
+- The largest possible row/column sum is 7 + 8 + 9 = **24**
+
+### Magic Squares
+
+A **magic square** is a square grid of numbers where every row, every column, and every diagonal add up to the **same number**, called the **magic sum**.
+
+For a 3 x 3 magic square using numbers 1 to 9:
+- Total of all numbers = 45
+- There are 3 rows, and all row sums are equal
+- So magic sum = 45 / 3 = **15**
+
+### Building a 3 x 3 Magic Square
+
+Through logical reasoning, we can discover the structure:
+
+1. **The centre must be 5:** Numbers like 1 and 9 cannot be at the centre because there are not enough combinations to make 15 in all directions.
+
+2. **1 and 9 cannot be in corners:** The number 1 in a corner would need three pairs of other numbers each adding to 14, but only two such pairs exist (5+9 and 6+8).
+
+3. **1 and 9 must be in middle edge positions.**
+
+Here is one valid 3 x 3 magic square:
+
+| 2 | 7 | 6 |
+|---|---|---|
+| **9** | **5** | **1** |
+| 4 | 3 | 8 |
+
+Check: Every row, column, and diagonal sums to 15!
+
+### Generalised Form of a Magic Square
+
+Using the centre number **m**, the magic square can be expressed as:
+
+| m + 3 | m - 4 | m + 1 |
+|-------|-------|-------|
+| m - 2 | m | m + 2 |
+| m - 1 | m + 4 | m - 3 |
+
+This works for any set of 9 consecutive numbers. For consecutive numbers with centre 25, the magic sum = 3 x 25 = 75.
+
+### Magic Squares in Indian History
+
+> **Did You Know?** The first recorded 4 x 4 magic square is found in a 10th-century inscription at the **Parshvanath Jain Temple in Khajuraho, India**. It is called the **Chautis Yantra** ("chautis" means 34, the magic sum).
+
+| 7 | 12 | 1 | 14 |
+|---|---|---|---|
+| 2 | 13 | 8 | 11 |
+| 16 | 3 | 10 | 5 |
+| 9 | 6 | 15 | 4 |
+
+Every row, column, and diagonal adds up to **34**.
+
+The earliest magic square ever recorded is the **Lo Shu Square** from ancient China, dating back over 2000 years.
+
+## Reversals and Digit Sums
+
+### Digit Sum
+
+The **digit sum** of a number is obtained by adding all its digits. If the result has more than one digit, we add again until we get a single digit.
+
+| Number | Digits Sum | Digit Sum |
+|--------|-----------|-----------|
+| 34 | 3 + 4 = 7 | 7 |
+| 142 | 1 + 4 + 2 = 7 | 7 |
+| 789 | 7 + 8 + 9 = 24, then 2 + 4 = 6 | 6 |
+
+### The 1089 Trick
+
+Here is a mathematical magic trick:
+
+1. Take any 3-digit number where the first and last digits differ by at least 2 (e.g., 523)
+2. Reverse the digits (325)
+3. Subtract the smaller from the larger: 523 - 325 = **198**
+4. Reverse the result: 891
+5. Add the result and its reverse: 198 + 891 = **1089**
+
+The answer is **always 1089**, no matter which 3-digit number you start with!
+
+### Palindromes
+
+A **palindrome** is a number that reads the same forwards and backwards: 121, 1331, 45654.
+
+Many numbers can be turned into palindromes by repeatedly reversing and adding:
+- Start with 48
+- 48 + 84 = 132
+- 132 + 231 = 363 (palindrome!)
+
+## Divisibility Tests
+
+Divisibility tests help us check whether a number divides evenly into another without performing the full division.
+
+### Divisibility by 2, 5, and 10
+
+- **Divisible by 2:** Last digit is 0, 2, 4, 6, or 8
+- **Divisible by 5:** Last digit is 0 or 5
+- **Divisible by 10:** Last digit is 0
+
+### Divisibility by 3 and 9
+
+- **Divisible by 3:** The sum of digits is divisible by 3
+- **Divisible by 9:** The sum of digits is divisible by 9
+
+**Example:** Is 4518 divisible by 9?
+Digit sum = 4 + 5 + 1 + 8 = 18, and 18 is divisible by 9. So yes!
+
+### Divisibility by 4
+
+A number is divisible by 4 if its **last two digits** form a number divisible by 4.
+
+**Example:** Is 7324 divisible by 4?
+Last two digits: 24. Since 24 / 4 = 6, the number 7324 is divisible by 4.
+
+### Divisibility by 8
+
+A number is divisible by 8 if its **last three digits** form a number divisible by 8.
+
+### Divisibility by 11
+
+A number is divisible by 11 if the **alternating sum** of its digits (subtracting and adding alternately from right to left) is divisible by 11 (or equals 0).
+
+**Example:** Is 82918 divisible by 11?
+8 - 1 + 9 - 2 + 8 = 22, and 22 is divisible by 11. So yes!
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Parity** | The property of being even or odd |
+| **Even number** | A number divisible by 2, expressible as 2n |
+| **Odd number** | A number not divisible by 2, expressible as 2n - 1 |
+| **Magic square** | A square grid where rows, columns, and diagonals all have the same sum |
+| **Magic sum** | The common sum of all rows, columns, and diagonals in a magic square |
+| **Palindrome** | A number that reads the same forwards and backwards (e.g., 121) |
+| **Digit sum** | The single digit obtained by repeatedly adding all digits of a number |
+| **Divisibility test** | A quick rule to check if one number divides another without remainder |

@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "topic": "Area of Rectangles, Squares, and Triangles",
+      "easy": [
+        { "id": "ch14-t1-e1", "type": "mcq", "question": "The area of a rectangle with length 12 cm and width 5 cm is:", "options": ["17 cm^2", "34 cm^2", "60 cm^2", "120 cm^2"], "answer": "60 cm^2", "explanation": "Area of rectangle = length x width = 12 x 5 = 60 cm^2." },
+        { "id": "ch14-t1-e2", "type": "fill", "question": "Area of a triangle = (1/2) x base x ______.", "answer": "height", "explanation": "The formula for the area of a triangle is (1/2) x base x height, where the height is the perpendicular distance from the base to the opposite vertex." },
+        { "id": "ch14-t1-e3", "type": "mcq", "question": "A square has a side of 9 cm. Its area is:", "options": ["18 cm^2", "36 cm^2", "81 cm^2", "72 cm^2"], "answer": "81 cm^2", "explanation": "Area of square = side x side = 9 x 9 = 81 cm^2." },
+        { "id": "ch14-t1-e4", "type": "short", "question": "Find the area of a triangle with base 10 cm and height 7 cm.", "answer": "Area = (1/2) x 10 x 7 = 35 cm^2.", "explanation": "Apply the formula: Area = (1/2) x base x height." }
+      ],
+      "medium": [
+        { "id": "ch14-t1-m1", "type": "short", "question": "A triangle has an area of 48 cm^2 and a base of 16 cm. Find its height.", "answer": "Area = (1/2) x base x height.\n48 = (1/2) x 16 x h.\n48 = 8h.\nh = 48/8 = 6 cm.", "explanation": "Rearrange the area formula to solve for height: h = 2 x Area / base." },
+        { "id": "ch14-t1-m2", "type": "short", "question": "Two rectangles have the same perimeter of 24 cm. One is 8 cm x 4 cm and the other is 7 cm x 5 cm. Which has a larger area?", "answer": "Rectangle 1: Area = 8 x 4 = 32 cm^2.\nRectangle 2: Area = 7 x 5 = 35 cm^2.\n\nRectangle 2 (7 cm x 5 cm) has a larger area.\n\nNote: Same perimeter does not mean same area. The more 'square-like' a rectangle is, the larger its area for a given perimeter.", "explanation": "Area and perimeter are independent. Among rectangles with the same perimeter, the one closest to a square has the largest area." },
+        { "id": "ch14-t1-m3", "type": "short", "question": "A diagonal divides a rectangle of length 8 cm and width 6 cm into two triangles. Find the area of each triangle.", "answer": "Area of rectangle = 8 x 6 = 48 cm^2.\nA diagonal divides the rectangle into two congruent triangles.\nArea of each triangle = 48 / 2 = 24 cm^2.\n\nAlternatively: (1/2) x 8 x 6 = 24 cm^2.", "explanation": "A diagonal of a rectangle creates two congruent right triangles, each with half the area of the rectangle." }
+      ],
+      "hard": [
+        { "id": "ch14-t1-h1", "type": "long", "question": "A rectangular garden is 20 m long and 15 m wide. A triangular flower bed with base 10 m and height 6 m is cut from one corner. (a) Find the area of the flower bed. (b) Find the remaining area of the garden. (c) If the remaining area is to be covered with grass at Rs 12 per m^2, find the total cost.", "answer": "(a) Area of flower bed = (1/2) x 10 x 6 = 30 m^2.\n\n(b) Area of garden = 20 x 15 = 300 m^2.\nRemaining area = 300 - 30 = 270 m^2.\n\n(c) Cost = 270 x 12 = Rs 3240.", "explanation": "Find the total rectangular area, subtract the triangular flower bed area, then multiply the remaining area by the cost per unit area." }
+      ]
+    },
+    {
+      "topic": "Area of Parallelograms and Trapeziums",
+      "easy": [
+        { "id": "ch14-t2-e1", "type": "mcq", "question": "The area of a parallelogram with base 14 cm and height 8 cm is:", "options": ["22 cm^2", "56 cm^2", "112 cm^2", "44 cm^2"], "answer": "112 cm^2", "explanation": "Area of parallelogram = base x height = 14 x 8 = 112 cm^2." },
+        { "id": "ch14-t2-e2", "type": "fill", "question": "Area of a trapezium = (1/2) x (sum of ______ sides) x height.", "answer": "parallel", "explanation": "The trapezium area formula uses the two parallel sides (also called bases): Area = (1/2) x (a + b) x h." },
+        { "id": "ch14-t2-e3", "type": "mcq", "question": "A trapezium has parallel sides 5 cm and 9 cm, and height 6 cm. Its area is:", "options": ["42 cm^2", "84 cm^2", "27 cm^2", "54 cm^2"], "answer": "42 cm^2", "explanation": "Area = (1/2) x (5 + 9) x 6 = (1/2) x 14 x 6 = 42 cm^2." },
+        { "id": "ch14-t2-e4", "type": "short", "question": "Find the area of a parallelogram with base 11 cm and height 5 cm.", "answer": "Area = base x height = 11 x 5 = 55 cm^2.", "explanation": "The height is the perpendicular distance between the two parallel sides, not the slant side." }
+      ],
+      "medium": [
+        { "id": "ch14-t2-m1", "type": "short", "question": "A parallelogram has an area of 96 cm^2 and base 12 cm. Find its height.", "answer": "Area = base x height.\n96 = 12 x h.\nh = 96/12 = 8 cm.", "explanation": "Rearrange the formula: height = Area / base." },
+        { "id": "ch14-t2-m2", "type": "short", "question": "A trapezium has parallel sides 8 cm and 14 cm. If its area is 88 cm^2, find the height.", "answer": "Area = (1/2) x (a + b) x h.\n88 = (1/2) x (8 + 14) x h.\n88 = (1/2) x 22 x h.\n88 = 11h.\nh = 88/11 = 8 cm.", "explanation": "Substitute the known values and solve for height: h = 2 x Area / (a + b)." },
+        { "id": "ch14-t2-m3", "type": "short", "question": "A rhombus has diagonals of length 12 cm and 16 cm. Find its area.", "answer": "Area of rhombus = (1/2) x d1 x d2 = (1/2) x 12 x 16 = 96 cm^2.", "explanation": "The area of a rhombus equals half the product of its diagonals." }
+      ],
+      "hard": [
+        { "id": "ch14-t2-h1", "type": "long", "question": "A quadrilateral ABCD has diagonal AC = 20 cm. The perpendicular distances from B and D to AC are 6 cm and 8 cm respectively. (a) Find the area of the quadrilateral. (b) A triangle is drawn with the same base AC and the same area as the quadrilateral. Find the height of this triangle.", "answer": "(a) Area of quadrilateral = (1/2) x diagonal x (h1 + h2)\n= (1/2) x 20 x (6 + 8)\n= (1/2) x 20 x 14\n= 140 cm^2.\n\n(b) For a triangle with base AC = 20 cm and area 140 cm^2:\nArea = (1/2) x base x height.\n140 = (1/2) x 20 x h.\n140 = 10h.\nh = 14 cm.\n\nThe triangle's height must be 14 cm, which equals the sum of the two perpendicular distances (h1 + h2) from the quadrilateral.", "explanation": "The quadrilateral is split into two triangles by the diagonal. Each triangle's area uses the same base (the diagonal) with its own height. To convert the quadrilateral into a triangle of equal area with the same base, the triangle's height equals h1 + h2." },
+        { "id": "ch14-t2-h2", "type": "long", "question": "All triangles with the same base and the same height have the same area. Use this to explain why all triangles with base BC and their third vertex on a line parallel to BC have the same area.", "answer": "Let BC be the base, and let line l be parallel to BC.\n\nFor any point A on line l, triangle ABC has:\n- Base = BC (fixed for all triangles).\n- Height = the perpendicular distance between line l and line BC.\n\nSince l is parallel to BC, this perpendicular distance is constant, no matter where A is placed on l.\n\nTherefore, all such triangles have:\nArea = (1/2) x BC x h,\nwhere h is the fixed distance between the parallel lines.\n\nSince both BC and h are the same for every triangle, all triangles have the same area.\n\nExample: If BC = 10 cm and the distance between the parallel lines is 6 cm, then every triangle with base BC and vertex on l has area = (1/2) x 10 x 6 = 30 cm^2, regardless of the position of the vertex.", "explanation": "Parallel lines are equidistant. Since the height of every such triangle is this constant distance and the base is shared, the area formula gives the same result for all of them." }
+      ]
+    }
+  ]
+}

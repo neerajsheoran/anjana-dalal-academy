@@ -1,0 +1,193 @@
+{
+  "topics": [
+    {
+      "topic": "Perimeter",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "What is the perimeter of a square with side 5 cm?",
+          "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+          "answer": "20 cm",
+          "explanation": "Perimeter of a square = 4 x side = 4 x 5 = 20 cm."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "Perimeter is the total ______ of the boundary of a shape.",
+          "answer": "length",
+          "explanation": "The perimeter is the total distance around the boundary of a shape."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "mcq",
+          "question": "What is the perimeter of a rectangle with length 15 and breadth 10?",
+          "options": ["25", "50", "150", "60"],
+          "answer": "50",
+          "explanation": "Perimeter of rectangle = 2 x length + 2 x breadth = 2 x 15 + 2 x 10 = 30 + 20 = 50 units."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "short",
+          "question": "A rectangular garden has a length of 6 m and breadth of 4 m. What is its perimeter?",
+          "answer": "20 m",
+          "explanation": "Perimeter = 2 x 6 + 2 x 4 = 12 + 8 = 20 m."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "A farmer wants to put a fence around his rectangular field which is 42 m long and 34 m wide. What length of fencing does he need?",
+          "answer": "152 m",
+          "explanation": "Perimeter = 2 x 42 + 2 x 34 = 84 + 68 = 152 m."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "mcq",
+          "question": "A square park has a perimeter of 100 m. What is the length of each side?",
+          "options": ["10 m", "20 m", "25 m", "50 m"],
+          "answer": "25 m",
+          "explanation": "For a square: perimeter = 4 x side. So side = 100 / 4 = 25 m."
+        },
+        {
+          "id": "ch11-t1-m3",
+          "type": "short",
+          "question": "Priya jogs around a rectangular park that is 80 m long and 50 m wide. If she completes 3 rounds, how far does she jog?",
+          "answer": "780 m",
+          "explanation": "Perimeter of park = 2 x 80 + 2 x 50 = 160 + 100 = 260 m. For 3 rounds: 3 x 260 = 780 m."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "A rectangular room is 12 m long and 8 m wide. A decorative border tape costs Rs 15 per metre. How much will it cost to put the tape all around the room? If there is a door 1 m wide where no tape is needed, what is the new cost?",
+          "answer": "Full perimeter = 2 x 12 + 2 x 8 = 24 + 16 = 40 m. Full cost = 40 x Rs 15 = Rs 600. With door: tape needed = 40 - 1 = 39 m. New cost = 39 x Rs 15 = Rs 585.",
+          "explanation": "Perimeter = 40 m. Cost = 40 x 15 = Rs 600. With a 1 m door opening, tape = 39 m. Cost = 39 x 15 = Rs 585."
+        }
+      ]
+    },
+    {
+      "topic": "Area",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "What is the area of a rectangle with length 6 and breadth 4?",
+          "options": ["10 square units", "20 square units", "24 square units", "48 square units"],
+          "answer": "24 square units",
+          "explanation": "Area of rectangle = length x breadth = 6 x 4 = 24 square units."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "Area of a square = ______ x ______.",
+          "answer": "side, side",
+          "explanation": "Since all sides of a square are equal, area = side x side."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "short",
+          "question": "A square tile has a side of 5 cm. What is its area?",
+          "answer": "25 square cm",
+          "explanation": "Area of square = side x side = 5 x 5 = 25 sq cm."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "mcq",
+          "question": "Which shape CANNOT tile a surface without gaps?",
+          "options": ["Square", "Rectangle", "Circle", "Triangle"],
+          "answer": "Circle",
+          "explanation": "Circles leave gaps when placed together. Squares, rectangles, and triangles can all tile a surface perfectly."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "A classroom floor is 42 m long and 34 m wide. What is the area of the floor?",
+          "answer": "1,428 square metres",
+          "explanation": "Area = length x breadth = 42 x 34 = 1,428 sq m."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "short",
+          "question": "The area of a rectangular field is 64 sq m and its length is 16 m. Find the breadth.",
+          "answer": "4 m",
+          "explanation": "Breadth = area / length = 64 / 16 = 4 m."
+        },
+        {
+          "id": "ch11-t2-m3",
+          "type": "mcq",
+          "question": "A quilt patch is 8 cm long and 5 cm wide. If grandmother needs 20 such patches, what is the total area of fabric needed?",
+          "options": ["400 sq cm", "600 sq cm", "800 sq cm", "1,000 sq cm"],
+          "answer": "800 sq cm",
+          "explanation": "Area of one patch = 8 x 5 = 40 sq cm. Total for 20 patches = 20 x 40 = 800 sq cm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "A rectangular garden is 20 m long and 15 m wide. A path 1 m wide runs along the inside of all four edges. Find: (a) The area of the entire garden, (b) The dimensions of the inner garden (without the path), (c) The area of just the path.",
+          "answer": "(a) Total area = 20 x 15 = 300 sq m. (b) Inner garden: length = 20 - 2(1) = 18 m, breadth = 15 - 2(1) = 13 m. (c) Inner area = 18 x 13 = 234 sq m. Path area = 300 - 234 = 66 sq m.",
+          "explanation": "The path takes 1 m from each side. Inner dimensions: 20 - 2 = 18 m and 15 - 2 = 13 m. Path area = total area - inner area = 300 - 234 = 66 sq m."
+        }
+      ]
+    },
+    {
+      "topic": "Relationship Between Area and Perimeter",
+      "easy": [
+        {
+          "id": "ch11-t3-e1",
+          "type": "mcq",
+          "question": "Two rectangles both have area 12 square units. One is 6x2 and the other is 4x3. Do they have the same perimeter?",
+          "options": ["Yes, both are 16", "No, 6x2 has perimeter 16 and 4x3 has perimeter 14", "Yes, both are 14", "Cannot tell"],
+          "answer": "No, 6x2 has perimeter 16 and 4x3 has perimeter 14",
+          "explanation": "6x2: perimeter = 2(6+2) = 16. 4x3: perimeter = 2(4+3) = 14. Same area but different perimeters!"
+        },
+        {
+          "id": "ch11-t3-e2",
+          "type": "fill",
+          "question": "Shapes with the same area can have ______ perimeters.",
+          "answer": "different",
+          "explanation": "This is an important discovery: same area does NOT mean same perimeter."
+        },
+        {
+          "id": "ch11-t3-e3",
+          "type": "short",
+          "question": "A rectangle is 7 x 1 and a square is 4 x 4. Both have the same perimeter (16). Which has a larger area?",
+          "answer": "The square (4 x 4) has area 16, and the rectangle (7 x 1) has area 7. The square has a larger area.",
+          "explanation": "Rectangle: area = 7 x 1 = 7. Square: area = 4 x 4 = 16. Among rectangles with the same perimeter, the square has the largest area."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t3-m1",
+          "type": "short",
+          "question": "List three different rectangles (with whole number sides) that have an area of 12 square units. Find the perimeter of each.",
+          "answer": "12 x 1: perimeter = 26. 6 x 2: perimeter = 16. 4 x 3: perimeter = 14.",
+          "explanation": "Find factor pairs of 12: (1,12), (2,6), (3,4). Perimeters: 2(12+1)=26, 2(6+2)=16, 2(4+3)=14."
+        },
+        {
+          "id": "ch11-t3-m2",
+          "type": "mcq",
+          "question": "Among all rectangles with perimeter 20, which has the largest area?",
+          "options": ["9 x 1", "8 x 2", "7 x 3", "5 x 5"],
+          "answer": "5 x 5",
+          "explanation": "Check: 9x1 area=9, 8x2 area=16, 7x3 area=21, 5x5 area=25. The square (5x5) has the largest area."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t3-h1",
+          "type": "long",
+          "question": "A farmer has 48 metres of fencing to enclose a rectangular vegetable garden. He wants the maximum area. (a) What dimensions should he choose? (b) What is the maximum area? (c) If he chose a 20 m x 4 m rectangle instead, what area would he get? How much area would he lose?",
+          "answer": "(a) For maximum area, make it a square. Side = 48 / 4 = 12 m. Dimensions: 12 m x 12 m. (b) Maximum area = 12 x 12 = 144 sq m. (c) 20 x 4 rectangle: perimeter = 2(20+4) = 48 m (correct). Area = 20 x 4 = 80 sq m. Area lost = 144 - 80 = 64 sq m.",
+          "explanation": "Among all rectangles with the same perimeter, the square has the maximum area. Square: 12 x 12 = 144 sq m. 20 x 4 rectangle: 80 sq m. The farmer would lose 64 sq m by choosing the wrong shape."
+        }
+      ]
+    }
+  ]
+}

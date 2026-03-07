@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Place Value and Expanded Form of 4-Digit Numbers",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "How many hundreds make one thousand?", "options": ["5", "10", "100", "1000"], "answer": "10", "explanation": "10 hundreds = 1 thousand. Just like 10 tens = 1 hundred." },
+        { "id": "ch4-t1-e2", "type": "fill", "question": "The expanded form of 2345 is 2000 + ______ + 40 + 5.", "answer": "300", "explanation": "2345 = 2000 + 300 + 40 + 5. The 3 is in the hundreds place." },
+        { "id": "ch4-t1-e3", "type": "mcq", "question": "What is the place value of 7 in the number 7024?", "options": ["7", "70", "700", "7000"], "answer": "7000", "explanation": "The 7 is in the thousands place, so its value is 7000." },
+        { "id": "ch4-t1-e4", "type": "fill", "question": "3000 + 0 + 10 + 9 = ______.", "answer": "3019", "explanation": "3 thousands + 0 hundreds + 1 ten + 9 ones = 3019." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "Write the number name for 5603. Why must we include the zero?", "answer": "Five thousand six hundred and three. The zero is important as a placeholder in the tens place. Without it, the number would be wrong (563 instead of 5603).", "explanation": "Zero holds the tens place. Without it, digits shift position and the number changes." },
+        { "id": "ch4-t1-m2", "type": "short", "question": "What two numbers add up to make 1000? Give three examples.", "answer": "Examples: 900 + 100 = 1000, 760 + 240 = 1000, 500 + 500 = 1000.", "explanation": "Subtract each number from 1000 to find its pair. For example, 1000 - 760 = 240." },
+        { "id": "ch4-t1-m3", "type": "mcq", "question": "12 Hundreds, 18 Tens, and 2 Ones is the same as:", "options": ["1282", "1382", "1202", "12182"], "answer": "1382", "explanation": "12 Hundreds = 1 Thousand + 2 Hundreds. 18 Tens = 1 Hundred + 8 Tens. Total: 1 Th + 3 H + 8 T + 2 O = 1382." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "long", "question": "Ram wrote 7 Thousand, 0 Hundreds, 2 Tens, 4 Ones as 724. What mistake did he make? What is the correct number? Explain why zero is important.", "answer": "Ram forgot the zero in the hundreds place. The correct number is 7024. Without the zero, the 7 moves from the thousands place to the hundreds place, making it 724 instead of 7024. Zero acts as a placeholder to keep digits in their correct positions.", "explanation": "Zero is crucial as a placeholder. It tells us that there are 0 hundreds, keeping 7 in the thousands place." }
+      ]
+    },
+    {
+      "topic": "Comparing and Ordering 4-Digit Numbers",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "Which is greater: 982 or 1024?", "options": ["982", "1024", "They are equal", "Cannot tell"], "answer": "1024", "explanation": "A 4-digit number is always greater than a 3-digit number. 1024 > 982." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "3012 ______ 3102 (fill with < or >)", "answer": "<", "explanation": "Thousands are same (3=3). Hundreds: 0 < 1. So 3012 < 3102." },
+        { "id": "ch4-t2-e3", "type": "mcq", "question": "To compare two 4-digit numbers, what do you compare first?", "options": ["Ones digit", "Tens digit", "Hundreds digit", "Thousands digit"], "answer": "Thousands digit", "explanation": "Always compare from left to right, starting with the thousands digit." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "Arrange in increasing order: 1986, 1099, 1899.", "answer": "1099, 1899, 1986.", "explanation": "All have 1 thousand. Compare hundreds: 0 < 8 < 9. So 1099 < 1899 < 1986." },
+        { "id": "ch4-t2-m2", "type": "short", "question": "How many numbers are there between 7000 and 8000?", "answer": "There are 999 numbers between 7000 and 8000 (from 7001 to 7999).", "explanation": "7999 - 7001 + 1 = 999 numbers." },
+        { "id": "ch4-t2-m3", "type": "mcq", "question": "Which is the correct decreasing order?", "options": ["1276, 1646, 1930", "1930, 1646, 1276", "1646, 1276, 1930", "1276, 1930, 1646"], "answer": "1930, 1646, 1276", "explanation": "Decreasing order means biggest to smallest: 1930 > 1646 > 1276." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "Here are the heights of some Indian mountains (in metres): K2 = 8611, Kangchenjunga = 8586, Nanda Devi = 7816, Mullayanagiri = 1930. Arrange them in decreasing order. Which mountain is the tallest? What is the difference in height between K2 and Mullayanagiri?", "answer": "Decreasing order: 8611, 8586, 7816, 1930. K2 is the tallest at 8611 metres. Difference: 8611 - 1930 = 6681 metres.", "explanation": "Compare thousands digits first: 8 > 7 > 1. For the two 8-thousand numbers, compare hundreds: 6 > 5. K2 is tallest." },
+        { "id": "ch4-t2-h2", "type": "long", "question": "Using the digits 3, 0, 7, and 5 (each used once), what is the largest 4-digit number you can make? What is the smallest 4-digit number? (Remember: a 4-digit number cannot start with 0!)", "answer": "Largest: 7530 (put biggest digits first). Smallest: 3057 (smallest non-zero digit first, then 0, then remaining in order). Note: 0 cannot be the first digit.", "explanation": "For largest: arrange digits in decreasing order. For smallest: the first digit must be the smallest non-zero digit (3), then 0, then 5, then 7 = 3057." }
+      ]
+    }
+  ]
+}

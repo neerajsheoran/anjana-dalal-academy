@@ -1,0 +1,53 @@
+{
+  "topics": [
+    {
+      "topic": "Collecting and Organising Data",
+      "easy": [
+        { "id": "ch11-t1-e1", "type": "mcq", "question": "When we collect information by counting things, it is called ______.", "options": ["Drawing", "Data", "Story", "Pattern"], "answer": "Data", "explanation": "Data is information collected by asking questions or counting things." },
+        { "id": "ch11-t1-e2", "type": "mcq", "question": "The best way to organise data neatly is to use a ______.", "options": ["Picture", "Song", "Table", "Story"], "answer": "Table", "explanation": "A table uses rows and columns to organise data clearly." },
+        { "id": "ch11-t1-e3", "type": "fill", "question": "To collect data about favourite colours, you need to ______ your friends.", "answer": "ask", "explanation": "We collect data by asking people a question and recording their answers." },
+        { "id": "ch11-t1-e4", "type": "mcq", "question": "Why do we organise data in a table?", "options": ["To make it colourful", "To see information clearly", "To make it longer", "To hide information"], "answer": "To see information clearly", "explanation": "A table helps us see the data clearly and compare groups easily." }
+      ],
+      "medium": [
+        { "id": "ch11-t1-m1", "type": "short", "question": "How do you collect data about your classmates' favourite fruits? Describe the steps.", "answer": "1. Ask each classmate: What is your favourite fruit? 2. Write down each answer. 3. Count how many children chose each fruit. 4. Make a table to show the results.", "explanation": "Data collection involves asking, recording, counting, and organising." },
+        { "id": "ch11-t1-m2", "type": "short", "question": "What is the difference between data as a list and data in a table?", "answer": "A list is just answers written one after another (hard to understand). A table organises the data by counting each answer and showing the totals clearly.", "explanation": "Tables make data easy to read and compare." }
+      ],
+      "hard": [
+        { "id": "ch11-t1-h1", "type": "long", "question": "These are the answers when children were asked their favourite colour: Red, Blue, Red, Green, Blue, Red, Green, Blue, Red, Blue. Organise this into a table.", "answer": "Red: 4 children. Blue: 4 children. Green: 2 children.", "explanation": "Count each colour: Red appears 4 times, Blue appears 4 times, Green appears 2 times." }
+      ]
+    },
+    {
+      "topic": "Reading Data Tables",
+      "easy": [
+        { "id": "ch11-t2-e1", "type": "mcq", "question": "From this data: Apple=4, Banana=6, Orange=3, Guava=5. Which fruit is liked by the MOST children?", "options": ["Apple", "Banana", "Orange", "Guava"], "answer": "Banana", "explanation": "6 is the biggest number, so banana is liked by the most children." },
+        { "id": "ch11-t2-e2", "type": "fill", "question": "From the data: Apple=4, Banana=6, Orange=3, Guava=5. The LEAST liked fruit is ______.", "answer": "Orange", "explanation": "3 is the smallest number, so orange is liked by the fewest children." },
+        { "id": "ch11-t2-e3", "type": "mcq", "question": "From: Potato=7, Carrot=3, Beans=5, Peas=4. Which vegetable is liked by the MOST children?", "options": ["Potato", "Carrot", "Beans", "Peas"], "answer": "Potato", "explanation": "7 is the biggest number, so potato is liked the most." },
+        { "id": "ch11-t2-e4", "type": "mcq", "question": "From: Cricket=8, Kabaddi=7, Football=5. Do more children like kabaddi or football?", "options": ["Kabaddi", "Football", "Both are equal", "Cannot tell"], "answer": "Kabaddi", "explanation": "7 children like kabaddi and only 5 like football. 7 > 5." }
+      ],
+      "medium": [
+        { "id": "ch11-t2-m1", "type": "short", "question": "From this data: On foot=8, Auto=4, Bus=6, Bike=3, Bicycle=5. How do most students come to school? How do the fewest come?", "answer": "Most students come on foot (8). Fewest come by bike (3).", "explanation": "8 is the biggest and 3 is the smallest number in the data." },
+        { "id": "ch11-t2-m2", "type": "short", "question": "From the data: Red=6, Blue=5, Green=3, Yellow=2. How many more children like red than green?", "answer": "6 - 3 = 3. Three more children like red than green.", "explanation": "We subtract to find the difference: 6 - 3 = 3." },
+        { "id": "ch11-t2-m3", "type": "mcq", "question": "From: Gilli-danda=3, Kabaddi=7, Pithu=4, Football=5, Cricket=8. Which game is liked more: Pithu or Gilli-danda?", "options": ["Pithu", "Gilli-danda", "Both are equal", "Cannot tell"], "answer": "Pithu", "explanation": "4 children like Pithu and 3 like Gilli-danda. 4 > 3." }
+      ],
+      "hard": [
+        { "id": "ch11-t2-h1", "type": "long", "question": "From the family data: 2 people=1 family, 3 people=4 families, 4 people=8 families, 5 people=5 families, 6+ people=3 families. (a) How many families have 4 people? (b) What is the most common family size? (c) How many families were surveyed in total?", "answer": "(a) 8 families have 4 people. (b) The most common family size is 4 people (8 families). (c) Total families: 1 + 4 + 8 + 5 + 3 = 21 families.", "explanation": "We read the table and add all the family counts to find the total." }
+      ]
+    },
+    {
+      "topic": "Pictographs",
+      "easy": [
+        { "id": "ch11-t3-e1", "type": "mcq", "question": "A pictograph uses ______ to show data.", "options": ["Only numbers", "Pictures or symbols", "Only words", "Colours only"], "answer": "Pictures or symbols", "explanation": "A pictograph uses small pictures or symbols where each picture stands for one item (or more)." },
+        { "id": "ch11-t3-e2", "type": "fill", "question": "In a pictograph, the ______ row of pictures means the biggest number.", "answer": "longest", "explanation": "The longer the row of pictures, the bigger the number it represents." },
+        { "id": "ch11-t3-e3", "type": "mcq", "question": "In a pictograph, if each face means 1 student, and there are 5 faces for 'Bus', how many students come by bus?", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "5 faces = 5 students." }
+      ],
+      "medium": [
+        { "id": "ch11-t3-m1", "type": "short", "question": "Why are pictographs useful? How do they help compared to just numbers?", "answer": "Pictographs show data using pictures, making it easy to compare groups visually. You can quickly see which group has the most or least by looking at the length of rows.", "explanation": "Pictures make data visual and easy to understand, even without reading all the numbers." },
+        { "id": "ch11-t3-m2", "type": "short", "question": "In a pictograph, 'Walking' has 8 faces and 'Bicycle' has 5 faces. How many more children walk than cycle?", "answer": "8 - 5 = 3. Three more children walk than cycle.", "explanation": "We count the faces and subtract to find the difference." }
+      ],
+      "hard": [
+        { "id": "ch11-t3-h1", "type": "long", "question": "You ask 15 friends about their favourite game. Cricket=6, Football=4, Kabaddi=5. Draw a pictograph using stars. How many stars for each game? Which game has the most stars?", "answer": "Cricket: 6 stars (the longest row). Football: 4 stars. Kabaddi: 5 stars. Cricket has the most stars because 6 children like it.", "explanation": "Each star represents 1 child. The game with the most children gets the most stars and the longest row." },
+        { "id": "ch11-t3-h2", "type": "short", "question": "From the games data: Cricket=8, Kabaddi=7. True or False: More children like cricket than kabaddi.", "answer": "True. 8 > 7, so more children like cricket.", "explanation": "We compare the numbers: 8 is more than 7." }
+      ]
+    }
+  ]
+}

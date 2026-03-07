@@ -1,0 +1,205 @@
+{
+  "topics": [
+    {
+      "topic": "Introduction to Quadratic Equations",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following is a quadratic equation?",
+          "options": ["x^3 + x = 2", "x^2 + 2x + 1 = 0", "x + 3 = 0", "1/x + x = 5"],
+          "answer": "x^2 + 2x + 1 = 0",
+          "explanation": "A quadratic equation is of the form ax^2 + bx + c = 0 where a is not 0. Only x^2 + 2x + 1 = 0 fits this form with a = 1, b = 2, c = 1."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "The standard form of a quadratic equation is ax^2 + bx + c = 0 where a ______ 0.",
+          "answer": "is not equal to",
+          "explanation": "In a quadratic equation ax^2 + bx + c = 0, the coefficient 'a' must not be zero, otherwise it becomes a linear equation."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "mcq",
+          "question": "Check whether (x - 2)^2 + 1 = 2x - 3 is a quadratic equation:",
+          "options": ["Yes", "No"],
+          "answer": "Yes",
+          "explanation": "Expanding: x^2 - 4x + 4 + 1 = 2x - 3, which gives x^2 - 6x + 8 = 0. This is of the form ax^2 + bx + c = 0 with a = 1."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "mcq",
+          "question": "Is x(x + 1) + 8 = (x + 2)(x - 2) a quadratic equation?",
+          "options": ["Yes", "No"],
+          "answer": "No",
+          "explanation": "LHS = x^2 + x + 8, RHS = x^2 - 4. Simplifying: x + 12 = 0, which is linear, not quadratic."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "Represent the following situation as a quadratic equation: The product of two consecutive positive integers is 306.",
+          "answer": "x^2 + x - 306 = 0, where x is the smaller integer.",
+          "explanation": "Step 1: Let the smaller integer be x. The next consecutive integer is x + 1.\nStep 2: x(x + 1) = 306.\nStep 3: x^2 + x - 306 = 0."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "Represent the following as a quadratic equation: The area of a rectangular plot is 528 m^2. The length of the plot is one more than twice its breadth.",
+          "answer": "2x^2 + x - 528 = 0, where x is the breadth in metres.",
+          "explanation": "Step 1: Let breadth = x metres. Then length = 2x + 1 metres.\nStep 2: Area = length x breadth = (2x + 1)(x) = 528.\nStep 3: 2x^2 + x - 528 = 0."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "Rohan's mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. Represent this situation as a quadratic equation and find Rohan's present age.",
+          "answer": "x^2 + 32x - 273 = 0, Rohan's present age is 7 years.",
+          "explanation": "Step 1: Let Rohan's present age = x years. Mother's age = x + 26.\nStep 2: After 3 years: Rohan = x + 3, Mother = x + 29.\nStep 3: (x + 3)(x + 29) = 360.\nStep 4: x^2 + 32x + 87 = 360, so x^2 + 32x - 273 = 0.\nStep 5: Factorising: (x + 39)(x - 7) = 0.\nStep 6: x = 7 (rejecting x = -39 as age cannot be negative). Rohan is 7 years old."
+        }
+      ]
+    },
+    {
+      "topic": "Solving Quadratic Equations by Factorisation",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "The roots of the quadratic equation x^2 - 3x - 10 = 0 are:",
+          "options": ["5 and -2", "5 and 2", "-5 and 2", "-5 and -2"],
+          "answer": "5 and -2",
+          "explanation": "x^2 - 3x - 10 = (x - 5)(x + 2) = 0, so x = 5 or x = -2."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "short",
+          "question": "Solve: 2x^2 + x - 6 = 0 by factorisation.",
+          "answer": "x = 3/2 or x = -2",
+          "explanation": "Step 1: 2x^2 + x - 6 = 2x^2 + 4x - 3x - 6 = 2x(x + 2) - 3(x + 2) = (2x - 3)(x + 2) = 0.\nStep 2: 2x - 3 = 0 gives x = 3/2, and x + 2 = 0 gives x = -2."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "fill",
+          "question": "The roots of x^2 - 5x + 6 = 0 are 2 and ______.",
+          "answer": "3",
+          "explanation": "x^2 - 5x + 6 = (x - 2)(x - 3) = 0, so x = 2 or x = 3."
+        },
+        {
+          "id": "ch4-t2-e4",
+          "type": "short",
+          "question": "Find the roots of 2x^2 - 5x + 2 = 0 by factorisation.",
+          "answer": "x = 1/2 or x = 2",
+          "explanation": "2x^2 - 5x + 2 = 2x^2 - 4x - x + 2 = 2x(x - 2) - 1(x - 2) = (2x - 1)(x - 2) = 0.\nx = 1/2 or x = 2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "Find two numbers whose sum is 27 and product is 182.",
+          "answer": "The numbers are 13 and 14.",
+          "explanation": "Step 1: Let one number be x, then the other is 27 - x.\nStep 2: x(27 - x) = 182, so 27x - x^2 = 182.\nStep 3: x^2 - 27x + 182 = 0.\nStep 4: (x - 13)(x - 14) = 0, so x = 13 or x = 14.\nStep 5: The numbers are 13 and 14."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "short",
+          "question": "Find two consecutive positive integers, the sum of whose squares is 365.",
+          "answer": "The integers are 13 and 14.",
+          "explanation": "Step 1: Let the integers be x and x + 1.\nStep 2: x^2 + (x + 1)^2 = 365.\nStep 3: 2x^2 + 2x + 1 = 365, so 2x^2 + 2x - 364 = 0, i.e., x^2 + x - 182 = 0.\nStep 4: (x + 14)(x - 13) = 0, so x = 13 (rejecting -14).\nStep 5: The integers are 13 and 14."
+        },
+        {
+          "id": "ch4-t2-m3",
+          "type": "long",
+          "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
+          "answer": "Base = 12 cm, Altitude = 5 cm.",
+          "explanation": "Step 1: Let base = x cm. Then altitude = (x - 7) cm.\nStep 2: By Pythagoras: x^2 + (x - 7)^2 = 13^2.\nStep 3: x^2 + x^2 - 14x + 49 = 169, so 2x^2 - 14x - 120 = 0.\nStep 4: x^2 - 7x - 60 = 0.\nStep 5: (x - 12)(x + 5) = 0, so x = 12 (rejecting -5).\nStep 6: Base = 12 cm, altitude = 12 - 7 = 5 cm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "A cottage industry produces a certain number of pottery articles in a day. It was observed on a particular day that the cost of production of each article (in rupees) was 3 more than twice the number of articles produced on that day. If the total cost of production on that day was Rs 90, find the number of articles produced and the cost of each article.",
+          "answer": "Number of articles = 6, Cost of each article = Rs 15.",
+          "explanation": "Step 1: Let number of articles = x.\nStep 2: Cost per article = 2x + 3.\nStep 3: Total cost: x(2x + 3) = 90.\nStep 4: 2x^2 + 3x - 90 = 0.\nStep 5: 2x^2 + 15x - 12x - 90 = 0, x(2x + 15) - 6(2x + 15) = 0.\nStep 6: (x - 6)(2x + 15) = 0, x = 6 (rejecting -15/2).\nStep 7: Cost = 2(6) + 3 = Rs 15."
+        }
+      ]
+    },
+    {
+      "topic": "Nature of Roots and Quadratic Formula",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "mcq",
+          "question": "The discriminant of the quadratic equation ax^2 + bx + c = 0 is:",
+          "options": ["b^2 + 4ac", "b^2 - 4ac", "4ac - b^2", "b^2 - 2ac"],
+          "answer": "b^2 - 4ac",
+          "explanation": "The discriminant D = b^2 - 4ac determines the nature of roots of a quadratic equation."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "If the discriminant of a quadratic equation is zero, the equation has two ______ real roots.",
+          "answer": "equal",
+          "explanation": "When D = b^2 - 4ac = 0, the quadratic equation has two equal (coincident) real roots, each equal to -b/(2a)."
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "mcq",
+          "question": "If the discriminant D < 0, then the quadratic equation has:",
+          "options": ["Two distinct real roots", "Two equal real roots", "No real roots", "One real root"],
+          "answer": "No real roots",
+          "explanation": "When D = b^2 - 4ac < 0, the square root of D is not a real number, so the equation has no real roots."
+        },
+        {
+          "id": "ch4-t3-e4",
+          "type": "short",
+          "question": "Find the discriminant of 2x^2 - 4x + 3 = 0 and determine the nature of its roots.",
+          "answer": "D = -8. The equation has no real roots.",
+          "explanation": "D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8. Since D < 0, the equation has no real roots."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "Find the values of k for which the equation 2x^2 + kx + 3 = 0 has two equal real roots.",
+          "answer": "k = +/- 2*sqrt(6)",
+          "explanation": "Step 1: For equal roots, D = 0.\nStep 2: D = k^2 - 4(2)(3) = k^2 - 24 = 0.\nStep 3: k^2 = 24, so k = +/- sqrt(24) = +/- 2*sqrt(6)."
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "short",
+          "question": "Find the nature of roots of the equation 2x^2 - 6x + 3 = 0 and find the roots if they exist.",
+          "answer": "D = 12 > 0, roots are distinct. Roots: (3 + sqrt(3))/2 and (3 - sqrt(3))/2.",
+          "explanation": "Step 1: D = (-6)^2 - 4(2)(3) = 36 - 24 = 12 > 0. Roots are distinct and real.\nStep 2: x = (6 +/- sqrt(12))/(2 x 2) = (6 +/- 2*sqrt(3))/4 = (3 +/- sqrt(3))/2."
+        },
+        {
+          "id": "ch4-t3-m3",
+          "type": "short",
+          "question": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m^2? If so, find its length and breadth.",
+          "answer": "Yes. Length = 20 m, Breadth = 20 m (it is a square).",
+          "explanation": "Step 1: Let length = x. Perimeter = 80, so 2(l + b) = 80, l + b = 40. Breadth = 40 - x.\nStep 2: Area = x(40 - x) = 400, so 40x - x^2 = 400, i.e., x^2 - 40x + 400 = 0.\nStep 3: D = 1600 - 1600 = 0. Equal roots.\nStep 4: x = 40/2 = 20. So length = breadth = 20 m."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "Find the value of k for which the equation kx(x - 2) + 6 = 0 has two equal real roots.",
+          "answer": "k = 6",
+          "explanation": "Step 1: Expand: kx^2 - 2kx + 6 = 0.\nStep 2: For equal roots: D = 0.\nStep 3: D = (-2k)^2 - 4(k)(6) = 4k^2 - 24k = 0.\nStep 4: 4k(k - 6) = 0, so k = 0 or k = 6.\nStep 5: k = 0 is not valid (equation would not be quadratic).\nStep 6: Therefore k = 6."
+        },
+        {
+          "id": "ch4-t3-h2",
+          "type": "long",
+          "question": "Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m^2? If so, find its length and breadth.",
+          "answer": "Yes. Breadth = 20 m, Length = 40 m.",
+          "explanation": "Step 1: Let breadth = x m. Length = 2x m.\nStep 2: Area = 2x * x = 2x^2 = 800.\nStep 3: x^2 = 400, x = 20 (rejecting -20).\nStep 4: Breadth = 20 m, Length = 40 m.\nStep 5: Check: D = 0 - 4(2)(-800) = 6400 > 0, so real roots exist. Yes, it is possible."
+        }
+      ]
+    }
+  ]
+}

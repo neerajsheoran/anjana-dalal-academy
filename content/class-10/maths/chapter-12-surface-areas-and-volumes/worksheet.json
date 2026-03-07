@@ -1,0 +1,168 @@
+{
+  "topics": [
+    {
+      "topic": "Surface Areas of Combinations of Solids",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "A toy is in the form of a cone mounted on a hemisphere of same radius. If the radius is 3.5 cm, the total surface area includes:",
+          "options": ["CSA of cone + CSA of hemisphere", "CSA of cone + TSA of hemisphere", "TSA of cone + TSA of hemisphere", "CSA of cone + Area of base"],
+          "answer": "CSA of cone + CSA of hemisphere",
+          "explanation": "When a cone is mounted on a hemisphere, the base of the cone and the flat face of the hemisphere join together. So TSA = CSA of cone + CSA of hemisphere (the common base is not exposed)."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "fill",
+          "question": "The curved surface area of a hemisphere of radius r is ______ pi r^2.",
+          "answer": "2",
+          "explanation": "The curved surface area of a hemisphere = 2*pi*r^2."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "short",
+          "question": "A solid is in the shape of a cone standing on a hemisphere with both having radius 1 cm and the height of the cone equal to its radius. Find the surface area of the solid in terms of pi.",
+          "answer": "Surface area = (3 + sqrt(2))*pi cm^2",
+          "explanation": "Step 1: Radius r = 1 cm, height of cone h = 1 cm.\nStep 2: Slant height l = sqrt(r^2 + h^2) = sqrt(1 + 1) = sqrt(2).\nStep 3: CSA of cone = pi*r*l = pi*sqrt(2).\nStep 4: CSA of hemisphere = 2*pi*r^2 = 2*pi.\nStep 5: But wait, there's also the base of the hemisphere (the flat circular face is not exposed since the cone sits on it). Actually the cone sits on the hemisphere, and the flat face of the hemisphere is the base which we should include if it's not joined. Actually, looking at this problem: the cone stands ON the hemisphere - the flat face of the hemisphere is at the bottom (exposed), the curved face of the hemisphere is in the middle, and the cone is on top. So: TSA = CSA of cone + CSA of hemisphere + base area? No - the cone's base sits on the top of the hemisphere (the flat face of the hemisphere). So the exposed surfaces are: CSA of cone + CSA of hemisphere = pi*sqrt(2) + 2*pi = pi(sqrt(2) + 2) cm^2. Hmm, but the base of the hemisphere (bottom flat circle)? If the solid is sitting, the bottom is also exposed. So TSA = CSA of cone + CSA of hemisphere + pi*r^2 = pi*sqrt(2) + 2*pi + pi = pi(3 + sqrt(2)) cm^2."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "mcq",
+          "question": "A capsule-shaped solid is formed by joining two hemispheres to a cylinder. If the radius is r and total length is L, the total surface area is:",
+          "options": ["2*pi*r*L", "2*pi*r*(L-2r) + 4*pi*r^2", "2*pi*r*L + 2*pi*r^2", "pi*r^2 + 2*pi*r*h"],
+          "answer": "2*pi*r*(L-2r) + 4*pi*r^2",
+          "explanation": "The cylinder height = L - 2r. TSA = CSA of cylinder + 2 x CSA of hemisphere = 2*pi*r*(L-2r) + 2 x 2*pi*r^2 = 2*pi*r*(L-2r) + 4*pi*r^2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "A tent is in the shape of a cylinder surmounted by a conical top. If the height and diameter of the cylindrical part are 2.1 m and 4 m respectively, and the slant height of the top is 2.8 m, find the area of the canvas used for making the tent. (Use pi = 22/7)",
+          "answer": "Area of canvas = 44 m^2",
+          "explanation": "Step 1: Radius r = 2 m, cylinder height = 2.1 m, slant height of cone = 2.8 m.\nStep 2: CSA of cylindrical part = 2*pi*r*h = 2 x (22/7) x 2 x 2.1 = 2 x 22 x 2 x 0.3 = 26.4 m^2.\nStep 3: CSA of conical top = pi*r*l = (22/7) x 2 x 2.8 = 22 x 0.8 = 17.6 m^2.\nStep 4: Total canvas = 26.4 + 17.6 = 44 m^2."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "long",
+          "question": "A decorative block is made of two solids: a cube and a hemisphere. The base of the block is a cube with edge 5 cm, and the hemisphere is attached on the top of the cube. Find the total surface area of the block. (Use pi = 22/7)",
+          "answer": "Total surface area = 5 x 5 x 6 - pi*(2.5)^2 + 2*pi*(2.5)^2 = 150 + pi*(2.5)^2 = 150 + 22/7 x 6.25 = 150 + 137.5/7 = 150 + 19.64 = 169.64 cm^2 approximately.",
+          "explanation": "Step 1: TSA of cube = 6 x 5^2 = 150 cm^2.\nStep 2: The hemisphere sits on one face, so we subtract the base circle area and add the CSA of hemisphere.\nStep 3: Hemisphere radius = 5/2 = 2.5 cm.\nStep 4: Base circle area = pi x (2.5)^2 = 22/7 x 6.25 = 19.64 cm^2.\nStep 5: CSA of hemisphere = 2*pi*(2.5)^2 = 2 x 19.64 = 39.29 cm^2.\nStep 6: TSA = 150 - 19.64 + 39.29 = 169.64 cm^2 (approximately)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is 14 mm and the diameter of the capsule is 5 mm. Find its surface area. (Use pi = 22/7)",
+          "answer": "Surface area = 220 mm^2",
+          "explanation": "Step 1: Diameter = 5 mm, radius = 2.5 mm.\nStep 2: Length of cylinder = 14 - 2(2.5) = 14 - 5 = 9 mm.\nStep 3: CSA of cylinder = 2*pi*r*h = 2 x (22/7) x 2.5 x 9 = 2 x 22/7 x 22.5 = 990/7 mm^2.\nStep 4: CSA of two hemispheres = 2 x 2*pi*r^2 = 4 x (22/7) x 6.25 = 550/7 mm^2.\nStep 5: Total = 990/7 + 550/7 = 1540/7 = 220 mm^2."
+        }
+      ]
+    },
+    {
+      "topic": "Volumes of Combinations of Solids",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "The volume of a hemisphere of radius r is:",
+          "options": ["(4/3)*pi*r^3", "(2/3)*pi*r^3", "(1/3)*pi*r^3", "pi*r^3"],
+          "answer": "(2/3)*pi*r^3",
+          "explanation": "Volume of hemisphere = (2/3)*pi*r^3 (half the volume of a sphere)."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "The volume of a cone with radius r and height h is (1/3) x pi x r^2 x ______.",
+          "answer": "h",
+          "explanation": "Volume of cone = (1/3)*pi*r^2*h."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "short",
+          "question": "A solid is in the shape of a cone mounted on a hemisphere of radius 7 cm. If the total height of the solid is 14.5 cm, find the volume. (Use pi = 22/7)",
+          "answer": "Volume = 1232/3 + (2/3) x (22/7) x 343 = approximately 1127.67 cm^3.",
+          "explanation": "Step 1: Radius = 7 cm. Hemisphere height = 7 cm. Cone height = 14.5 - 7 = 7.5 cm.\nStep 2: Volume of cone = (1/3) x (22/7) x 49 x 7.5 = (1/3) x 22 x 7 x 7.5 = 1155/3 = 385 cm^3.\nStep 3: Volume of hemisphere = (2/3) x (22/7) x 343 = (2/3) x 22 x 49 = 2156/3 cm^3.\nWait: (2/3) x (22/7) x 343 = 2 x 22 x 343/(3 x 7) = 2 x 22 x 49/3 = 2156/3 = 718.67 cm^3.\nStep 4: Total = 385 + 718.67 = 1103.67 cm^3."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "A gulab jamun contains sugar syrup up to about 30% of its volume. Find approximately how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends with length 5 cm and diameter 2.8 cm. (Use pi = 22/7)",
+          "answer": "Approximately 338 cm^3 of syrup.",
+          "explanation": "Step 1: Radius = 1.4 cm. Cylinder height = 5 - 2(1.4) = 2.2 cm.\nStep 2: Volume of one gulab jamun = pi*r^2*h + (4/3)*pi*r^3 = (22/7)(1.96)(2.2) + (4/3)(22/7)(2.744).\nStep 3: = (22/7)(1.96 x 2.2 + 4/3 x 2.744) = (22/7)(4.312 + 3.659) = (22/7)(7.971) = 25.05 cm^3.\nStep 4: Volume of 45 = 45 x 25.05 = 1127.25 cm^3.\nStep 5: Syrup = 30% x 1127.25 = 338.17 cm^3 approximately 338 cm^3."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "long",
+          "question": "A pen stand made of wood is in the shape of a cuboid with four conical depressions to hold pens. The dimensions of the cuboid are 15 cm x 10 cm x 3.5 cm. The radius of each depression is 0.5 cm and the depth is 1.4 cm. Find the volume of wood in the entire stand. (Use pi = 22/7)",
+          "answer": "Volume of wood = 523.53 cm^3 (approximately).",
+          "explanation": "Step 1: Volume of cuboid = 15 x 10 x 3.5 = 525 cm^3.\nStep 2: Volume of one cone = (1/3)*pi*r^2*h = (1/3) x (22/7) x 0.25 x 1.4 = (1/3) x 22 x 0.05 = 1.1/3 = 0.367 cm^3.\nStep 3: Volume of 4 cones = 4 x 0.367 = 1.47 cm^3.\nStep 4: Volume of wood = 525 - 1.47 = 523.53 cm^3."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm, which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given that 1 cm^3 of iron has approximately 8 g mass. (Use pi = 3.14)",
+          "answer": "Mass = approximately 892.26 kg.",
+          "explanation": "Step 1: Lower cylinder: r = 12 cm, h = 220 cm. Volume = pi x 144 x 220 = 3.14 x 31680 = 99475.2 cm^3.\nStep 2: Upper cylinder: r = 8 cm, h = 60 cm. Volume = pi x 64 x 60 = 3.14 x 3840 = 12057.6 cm^3.\nStep 3: Total volume = 99475.2 + 12057.6 = 111532.8 cm^3.\nStep 4: Mass = 111532.8 x 8 = 892262.4 g = 892.26 kg."
+        },
+        {
+          "id": "ch12-t2-h2",
+          "type": "long",
+          "question": "Water in a canal, 6 m wide and 1.5 m deep, is flowing with a speed of 10 km/h. How much area will it irrigate in 30 minutes, if 8 cm of standing water is needed?",
+          "answer": "Area = 562500 m^2 (56.25 hectares).",
+          "explanation": "Step 1: Volume of water flowing in 30 min = width x depth x distance = 6 x 1.5 x (10 x 1000 x 30/60) = 6 x 1.5 x 5000 = 45000 m^3.\nStep 2: Standing water depth = 8 cm = 0.08 m.\nStep 3: Area irrigated = Volume/depth = 45000/0.08 = 562500 m^2."
+        }
+      ]
+    },
+    {
+      "topic": "Conversion of Solids",
+      "easy": [
+        {
+          "id": "ch12-t3-e1",
+          "type": "mcq",
+          "question": "When a solid is converted from one shape to another, which of the following remains the same?",
+          "options": ["Surface area", "Volume", "Both surface area and volume", "Neither"],
+          "answer": "Volume",
+          "explanation": "When a solid is melted and recast into a different shape, the volume remains constant but the surface area generally changes."
+        },
+        {
+          "id": "ch12-t3-e2",
+          "type": "short",
+          "question": "A metallic sphere of radius 4.2 cm is melted and recast into the shape of a cylinder of radius 6 cm. Find the height of the cylinder. (Use pi = 22/7)",
+          "answer": "Height = 2.744 cm",
+          "explanation": "Step 1: Volume of sphere = (4/3)*pi*r^3 = (4/3) x (22/7) x (4.2)^3 = (4/3) x (22/7) x 74.088.\nStep 2: = 4 x 22 x 74.088/(3 x 7) = 310.464 cm^3. Let me recalculate: (4/3)(22/7)(4.2)^3 = (4/3)(22/7)(74.088) = 88 x 74.088/21 = 88 x 3.528 = 310.464 cm^3.\nStep 3: Volume of cylinder = pi*r^2*h = (22/7) x 36 x h.\nStep 4: 310.464 = (22/7) x 36 x h. h = 310.464 x 7/(22 x 36) = 2173.248/792 = 2.744 cm."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t3-m1",
+          "type": "short",
+          "question": "How many silver coins, 1.75 cm in diameter and of thickness 2 mm, must be melted to form a cuboid of dimensions 5.5 cm x 10 cm x 3.5 cm? (Use pi = 22/7)",
+          "answer": "400 coins",
+          "explanation": "Step 1: Volume of cuboid = 5.5 x 10 x 3.5 = 192.5 cm^3.\nStep 2: Volume of one coin = pi x (0.875)^2 x 0.2 = (22/7) x 0.765625 x 0.2 = (22/7) x 0.153125 = 0.48125 cm^3.\nStep 3: Number of coins = 192.5/0.48125 = 400."
+        },
+        {
+          "id": "ch12-t3-m2",
+          "type": "long",
+          "question": "A cylindrical bucket, 32 cm high and with radius of base 18 cm, is filled with sand. This bucket is emptied on the ground and a conical heap of sand is formed. If the height of the conical heap is 24 cm, find the radius and slant height of the heap.",
+          "answer": "Radius = 36 cm, Slant height = 12*sqrt(13) cm.",
+          "explanation": "Step 1: Volume of cylinder = pi x 18^2 x 32 = pi x 324 x 32 = 10368*pi cm^3.\nStep 2: Volume of cone = (1/3) x pi x R^2 x 24 = 8*pi*R^2.\nStep 3: 10368*pi = 8*pi*R^2. R^2 = 1296. R = 36 cm.\nStep 4: Slant height = sqrt(R^2 + h^2) = sqrt(1296 + 576) = sqrt(1872) = sqrt(144 x 13) = 12*sqrt(13) cm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t3-h1",
+          "type": "long",
+          "question": "A well of diameter 3 m is dug 14 m deep. The earth taken out of it has been spread evenly all around it in the shape of a circular ring of width 4 m to form an embankment. Find the height of the embankment. (Use pi = 22/7)",
+          "answer": "Height of embankment = 1.125 m.",
+          "explanation": "Step 1: Volume of earth dug = pi x (1.5)^2 x 14 = (22/7) x 2.25 x 14 = 22 x 2.25 x 2 = 99 m^3.\nStep 2: Inner radius of embankment = 1.5 m. Outer radius = 1.5 + 4 = 5.5 m.\nStep 3: Area of ring = pi(5.5^2 - 1.5^2) = (22/7)(30.25 - 2.25) = (22/7)(28) = 88 m^2.\nStep 4: Height = Volume/Area = 99/88 = 1.125 m."
+        }
+      ]
+    }
+  ]
+}

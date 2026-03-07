@@ -1,0 +1,164 @@
+---
+title: "Chapter 14 — Constructions and Tilings"
+---
+
+With just two simple tools -- an unmarked ruler and a compass -- we can create beautiful and precise geometric constructions. In this chapter, we learn to construct perpendicular bisectors, angle bisectors, and specific angles, and then explore the fascinating world of tilings and tessellations.
+
+## The Perpendicular Bisector
+
+### The "Eyes" Construction
+
+Recall the "Eyes" figure from earlier grades. To draw a symmetric eye shape, we need two points A (above the line) and B (below the line) such that both are equidistant from the endpoints X and Y of a line segment.
+
+When we join A and B, the line AB:
+- Passes through the **midpoint** of XY
+- Is **perpendicular** to XY (forms a 90-degree angle)
+
+This line AB is called the **perpendicular bisector** of XY.
+
+> **Key Property:** Any point that is **equidistant** from both endpoints X and Y lies on the perpendicular bisector of XY.
+
+### Why It Works: A Proof Using Congruence
+
+Let O be the point where AB meets XY. To prove AB is the perpendicular bisector, we show that triangles AOX and AOY are congruent:
+
+1. AX = AY (both are radii of arcs from X and Y)
+2. AO is common to both triangles
+3. Angle XAO = Angle YAO (from the congruence of triangles ABX and ABY, proved using SSS)
+
+By SAS, triangle AOX is congruent to triangle AOY. Therefore:
+- OX = OY (O is the midpoint of XY)
+- Angle AOX = Angle AOY = 90 degrees (they form a straight line, so each is half of 180 degrees)
+
+### How to Construct the Perpendicular Bisector
+
+Given a line segment XY:
+
+**Step 1:** With the compass centred at X, draw an arc above and below XY using any radius greater than half of XY.
+
+**Step 2:** Without changing the radius, centre the compass at Y and draw arcs that intersect the first arcs. Call the intersection points A (above) and B (below).
+
+**Step 3:** Draw the line through A and B. This is the perpendicular bisector of XY.
+
+> **Did You Know?** The ancient Indian **Shulba-Sutras** (geometric texts of the Vedic period, dating back over 2500 years) describe methods for constructing perpendicular bisectors using a **rope** as a compass. The Katyayana Shulba-Sutra describes finding the midpoint of a rope, fastening its ends to pegs at X and Y, and pulling the midpoint taut to find points equidistant from both ends -- the same principle we use today with a compass!
+
+### Useful Facts About the Construction
+
+- The two pairs of arcs (above and below) do **not** need to have the same radius -- any two points equidistant from X and Y will do.
+- Both pairs of arcs can even be on the **same side** of XY (since two points determine a unique line).
+
+## Constructing a 90-Degree Angle
+
+To construct a 90-degree angle at a point O on a line:
+
+**Step 1:** Using a compass, mark two points X and Y on the line at equal distances from O (so O is the midpoint of XY).
+
+**Step 2:** Construct the perpendicular bisector of XY. Since O is already the midpoint, we only need one more point on the perpendicular bisector. Draw arcs from X and Y (with the same radius) to find point A above the line.
+
+**Step 3:** Draw OA. The angle between OA and the line is **90 degrees**.
+
+## Angle Bisection
+
+To **bisect** an angle means to divide it into two **equal** parts.
+
+### How to Bisect Any Angle
+
+Given angle XOY:
+
+**Step 1:** With the compass centred at O, draw an arc cutting OX at B and OY at A. Now OA = OB.
+
+**Step 2:** With the compass centred at A, draw an arc. Without changing the radius, draw an arc from B. Let the two arcs intersect at C.
+
+**Step 3:** Draw OC. This line bisects the angle XOY.
+
+### Why It Works
+
+By construction: OA = OB and AC = BC. OC is common to both triangles OAC and OBC. By SSS, the two triangles are congruent, so angle AOC = angle BOC.
+
+## Constructing Specific Angles
+
+Using perpendicular bisectors and angle bisectors, we can construct many standard angles:
+
+| Angle | Method |
+|-------|--------|
+| **90 degrees** | Construct a perpendicular at a point on a line |
+| **45 degrees** | Bisect a 90-degree angle |
+| **60 degrees** | Construct an equilateral triangle (all angles are 60 degrees) |
+| **30 degrees** | Bisect a 60-degree angle |
+| **120 degrees** | Construct a 60-degree angle, then another 60 degrees adjacent to it |
+| **150 degrees** | 180 - 30 degrees |
+
+### Constructing a 60-Degree Angle
+
+**Step 1:** Draw a ray OA.
+
+**Step 2:** With compass centred at O, draw an arc cutting OA at P.
+
+**Step 3:** Without changing the radius, centre the compass at P and draw an arc cutting the first arc at Q.
+
+**Step 4:** Draw OQ. Angle POQ = 60 degrees.
+
+This works because triangle OPQ is equilateral (OP = PQ = OQ = radius), and all angles of an equilateral triangle are 60 degrees.
+
+## Tilings and Tessellations
+
+A **tiling** (or **tessellation**) is an arrangement of shapes that covers a flat surface completely, without any gaps or overlaps.
+
+### Which Regular Polygons Can Tile?
+
+For a regular polygon to tile a flat surface, its interior angles must divide 360 degrees evenly (since the angles meeting at each vertex must sum to 360 degrees):
+
+| Shape | Interior Angle | 360 / Angle | Can Tile? |
+|-------|---------------|-------------|-----------|
+| Equilateral triangle | 60 degrees | 6 | **Yes** (6 triangles at each vertex) |
+| Square | 90 degrees | 4 | **Yes** (4 squares at each vertex) |
+| Regular hexagon | 120 degrees | 3 | **Yes** (3 hexagons at each vertex) |
+| Regular pentagon | 108 degrees | 3.33... | **No** |
+| Regular octagon | 135 degrees | 2.67... | **No** (alone, but can with squares) |
+
+> Only **three** regular polygons can tile the plane by themselves: equilateral triangles, squares, and regular hexagons.
+
+### Mixed Tilings
+
+Combinations of different regular polygons can also tile the plane. For example:
+- Regular octagons + squares
+- Regular hexagons + equilateral triangles
+- Squares + equilateral triangles
+
+The rule is that the angles at every vertex must add up to exactly **360 degrees**.
+
+### Tilings in Indian Art and Architecture
+
+Tiling patterns appear widely in Indian art:
+- **Kolam** and **rangoli** patterns use geometric tilings
+- **Jali** screens in Mughal architecture use intricate tessellations
+- Temple floors across India often use square and hexagonal tilings
+
+## Constructing Regular Polygons
+
+To construct a regular polygon inscribed in a circle:
+
+1. Draw a circle
+2. Divide the 360 degrees at the centre into equal angles
+3. The points where the angle lines meet the circle are the vertices of the polygon
+
+| Polygon | Central Angle | Construction Method |
+|---------|--------------|-------------------|
+| Equilateral triangle | 120 degrees | Step compass around circle with radius = circle's radius |
+| Square | 90 degrees | Two perpendicular diameters |
+| Regular hexagon | 60 degrees | Step compass around circle (radius = side length) |
+
+> **Interesting Fact:** A regular hexagon can be constructed by simply stepping the compass (set to the radius) around the circle -- it fits exactly 6 times! This is because the radius of a circle equals the side of the inscribed regular hexagon.
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Perpendicular bisector** | A line that passes through the midpoint of a segment and is perpendicular to it |
+| **Bisect** | To divide into two equal parts |
+| **Angle bisector** | A ray that divides an angle into two equal angles |
+| **Compass** | A tool used to draw circles and arcs |
+| **Tiling (Tessellation)** | An arrangement of shapes covering a surface with no gaps or overlaps |
+| **Regular polygon** | A polygon with all sides and all angles equal |
+| **Interior angle** | The angle inside a polygon at each vertex |
+| **Shulba-Sutras** | Ancient Indian geometric texts describing construction methods using ropes |

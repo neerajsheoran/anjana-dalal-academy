@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "topic": "Indian and International Number Systems",
+      "easy": [
+        { "id": "ch1-t1-e1", "type": "mcq", "question": "How is 1,00,000 read in the Indian system?", "options": ["One thousand", "Ten thousand", "One lakh", "One million"], "answer": "One lakh", "explanation": "1,00,000 is the smallest 6-digit number and is called one lakh in the Indian system." },
+        { "id": "ch1-t1-e2", "type": "fill", "question": "In the Indian system, commas are placed in a ______ pattern from right to left.", "answer": "3-2-2-2", "explanation": "The Indian system groups digits as 3-2-2-2 from right to left: thousands, lakhs, crores, arabs." },
+        { "id": "ch1-t1-e3", "type": "mcq", "question": "How many lakhs make one million?", "options": ["1", "10", "100", "1000"], "answer": "10", "explanation": "1 million = 10,00,000 = 10 lakhs." },
+        { "id": "ch1-t1-e4", "type": "fill", "question": "1 crore = 1 followed by ______ zeroes.", "answer": "7", "explanation": "1 crore = 1,00,00,000 which has 7 zeroes after 1." },
+        { "id": "ch1-t1-e5", "type": "mcq", "question": "In the International system, commas are placed in groups of:", "options": ["2-2-2", "3-2-2", "3-3-3", "2-3-3"], "answer": "3-3-3", "explanation": "The International system uses a 3-3-3 pattern from right to left: thousands, millions, billions." }
+      ],
+      "medium": [
+        { "id": "ch1-t1-m1", "type": "short", "question": "Write 3,45,67,890 in words in both the Indian and International systems.", "answer": "Indian system: Three crore forty-five lakh sixty-seven thousand eight hundred ninety. International system: Thirty-four million five hundred sixty-seven thousand eight hundred ninety.", "explanation": "In the Indian system, 3,45,67,890 groups as 3 crore 45 lakh 67 thousand 890. In the International system, 34,567,890 reads as 34 million 567 thousand 890." },
+        { "id": "ch1-t1-m2", "type": "short", "question": "How many crores make 1 billion?", "answer": "100 crores make 1 billion.", "explanation": "1 billion = 1,00,00,00,000. 1 crore = 1,00,00,000. So 1 billion / 1 crore = 100." },
+        { "id": "ch1-t1-m3", "type": "short", "question": "Express 25,00,000 in the International system with commas and in words.", "answer": "2,500,000 — Two million five hundred thousand.", "explanation": "25,00,000 in Indian notation = 2,500,000 in International notation. 25 lakhs = 2.5 million." }
+      ],
+      "hard": [
+        { "id": "ch1-t1-h1", "type": "long", "question": "A city has a population of 1,24,42,373. Express this number in the International system and explain the conversion steps.", "answer": "Step 1: Remove Indian commas: 12442373.\nStep 2: Apply International comma pattern (groups of 3 from right): 12,442,373.\nStep 3: Read as twelve million four hundred forty-two thousand three hundred seventy-three.", "explanation": "The number 1,24,42,373 in Indian notation becomes 12,442,373 in International notation. We regroup the same digits using the 3-3-3 pattern instead of the 3-2-2-2 pattern." }
+      ]
+    },
+    {
+      "topic": "Rounding and Estimation",
+      "easy": [
+        { "id": "ch1-t2-e1", "type": "mcq", "question": "What is 76,068 rounded to the nearest thousand?", "options": ["76,000", "77,000", "75,000", "76,100"], "answer": "76,000", "explanation": "The hundreds digit is 0, which is less than 5, so we round down to 76,000." },
+        { "id": "ch1-t2-e2", "type": "fill", "question": "When we round 732 up to the nearest fifty, we get ______.", "answer": "750", "explanation": "732 is between 700 and 750. Rounding up means going to the higher value, which is 750." },
+        { "id": "ch1-t2-e3", "type": "mcq", "question": "If you want to order enough sweets for 732 people, should you round up or round down?", "options": ["Round down", "Round up", "Use exact number", "Does not matter"], "answer": "Round up", "explanation": "When you want to be safe and ensure everyone gets a sweet, you should round up so you have enough." }
+      ],
+      "medium": [
+        { "id": "ch1-t2-m1", "type": "short", "question": "Round 6,72,85,183 to the nearest lakh.", "answer": "6,73,00,000", "explanation": "The ten-thousands digit is 8 (in 85,183), which is 5 or more, so we round up the lakhs digit from 72 to 73, giving 6,73,00,000." },
+        { "id": "ch1-t2-m2", "type": "short", "question": "Estimate the sum 4,63,128 + 4,19,682 by rounding each number to the nearest ten thousand.", "answer": "Approximately 8,80,000.", "explanation": "4,63,128 rounds to 4,60,000 and 4,19,682 rounds to 4,20,000. Sum = 4,60,000 + 4,20,000 = 8,80,000. The exact answer is 8,82,810." }
+      ],
+      "hard": [
+        { "id": "ch1-t2-h1", "type": "long", "question": "A school has 4,832 students. The principal wants to order notebooks in bundles of 100. How many bundles should she order to ensure every student gets at least one notebook? Explain using the concept of rounding.", "answer": "She should order 49 bundles (4,900 notebooks).\n\nStep 1: 4,832 rounded up to the nearest hundred = 4,900.\nStep 2: Number of bundles = 4,900 / 100 = 49.\n\nThis ensures all 4,832 students get a notebook with 68 extras.", "explanation": "Since notebooks come in bundles of 100 and we need at least 4,832, we round up to 4,900. Rounding down to 4,800 would leave 32 students without notebooks." }
+      ]
+    },
+    {
+      "topic": "Multiplication Shortcuts and Patterns",
+      "easy": [
+        { "id": "ch1-t3-e1", "type": "mcq", "question": "What is 116 x 5 using the shortcut method?", "options": ["560", "580", "600", "550"], "answer": "580", "explanation": "Multiply by 5: divide by 2 and multiply by 10. 116 / 2 = 58, then 58 x 10 = 580." },
+        { "id": "ch1-t3-e2", "type": "fill", "question": "The product of a 2-digit number and a 3-digit number has ______ or ______ digits.", "answer": "4 or 5", "explanation": "Using the rule: m-digit x n-digit number has (m+n-1) or (m+n) digits. So 2+3-1=4 or 2+3=5 digits." },
+        { "id": "ch1-t3-e3", "type": "short", "question": "Calculate 824 x 25 using the shortcut method.", "answer": "20,600", "explanation": "Multiply by 25: divide by 4 and multiply by 100. 824 / 4 = 206, then 206 x 100 = 20,600." }
+      ],
+      "medium": [
+        { "id": "ch1-t3-m1", "type": "short", "question": "Calculate 72 x 125 using the shortcut method. Explain each step.", "answer": "9,000.\n\nStep 1: Multiplying by 125 = dividing by 8 and multiplying by 1,000.\nStep 2: 72 / 8 = 9.\nStep 3: 9 x 1,000 = 9,000.", "explanation": "Since 125 = 1000/8, multiplying by 125 is the same as dividing by 8 and multiplying by 1000." },
+        { "id": "ch1-t3-m2", "type": "short", "question": "Without calculating, how many digits will the product of 999 x 99 have?", "answer": "4 or 5 digits.", "explanation": "999 is a 3-digit number and 99 is a 2-digit number. Product has (3+2-1) = 4 or (3+2) = 5 digits. Actually 999 x 99 = 98,901 which has 5 digits." }
+      ],
+      "hard": [
+        { "id": "ch1-t3-h1", "type": "long", "question": "If you travel 100 km every day, can you reach the Moon (3,84,400 km away) in 10 years? Show your calculation and explain.", "answer": "No, you cannot reach the Moon in 10 years.\n\nStep 1: Distance covered in 10 years = 100 x 365 x 10 = 3,65,000 km.\nStep 2: Distance to Moon = 3,84,400 km.\nStep 3: Shortfall = 3,84,400 - 3,65,000 = 19,400 km.\n\nYou would fall about 19,400 km short of reaching the Moon.", "explanation": "At 100 km per day for 10 years (3,650 days), you cover 3,65,000 km. The Moon is 3,84,400 km away, so you would be 19,400 km short." }
+      ]
+    }
+  ]
+}

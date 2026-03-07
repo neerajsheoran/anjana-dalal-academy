@@ -1,0 +1,56 @@
+{
+  "topics": [
+    {
+      "topic": "Seasons of India",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "In which season do flowers bloom and birds sing?", "options": ["Summer", "Winter", "Spring", "Monsoon"], "answer": "Spring", "explanation": "Spring (Vasant) is when flowers bloom and birds sing." },
+        { "id": "ch9-t1-e2", "type": "mcq", "question": "In which season do we carry umbrellas and raincoats?", "options": ["Summer", "Monsoon", "Winter", "Autumn"], "answer": "Monsoon", "explanation": "The monsoon (rainy season) is when it rains a lot." },
+        { "id": "ch9-t1-e3", "type": "fill", "question": "In ______, we wear warm clothes like sweaters and jackets.", "answer": "winter", "explanation": "Winter is cold, so we wear warm clothes." },
+        { "id": "ch9-t1-e4", "type": "mcq", "question": "In which season do we eat mangoes and watermelons?", "options": ["Spring", "Summer", "Monsoon", "Winter"], "answer": "Summer", "explanation": "Mangoes and watermelons are summer fruits." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "Name all five seasons of India.", "answer": "Spring (Vasant), Summer (Grishma), Monsoon/Rainy (Varsha), Autumn (Sharad), Winter (Shishir).", "explanation": "India has five seasons throughout the year." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "Name two festivals celebrated in winter.", "answer": "Christmas and Lohri (or Republic Day, Bihu, Gurunanak Jayanti).", "explanation": "Winter festivals include Lohri, Christmas, Republic Day, and others." },
+        { "id": "ch9-t1-m3", "type": "mcq", "question": "In which season do leaves fall from trees?", "options": ["Spring", "Summer", "Autumn", "Winter"], "answer": "Autumn", "explanation": "Autumn (Sharad) is when leaves fall from trees." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "long", "question": "Match each season with its description: (a) Spring (b) Monsoon (c) Winter. Descriptions: It rains a lot, Flowers bloom, We wear sweaters.", "answer": "(a) Spring - Flowers bloom. (b) Monsoon - It rains a lot. (c) Winter - We wear sweaters.", "explanation": "Each season has its own weather and activities." }
+      ]
+    },
+    {
+      "topic": "Calendar (Months and Days)",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "mcq", "question": "How many months are there in a year?", "options": ["7", "10", "12", "14"], "answer": "12", "explanation": "A year has 12 months." },
+        { "id": "ch9-t2-e2", "type": "mcq", "question": "How many days are there in a week?", "options": ["5", "6", "7", "10"], "answer": "7", "explanation": "A week has 7 days." },
+        { "id": "ch9-t2-e3", "type": "fill", "question": "The first month of the year is ______.", "answer": "January", "explanation": "January is the first month of the year." },
+        { "id": "ch9-t2-e4", "type": "mcq", "question": "Which month has 28 or 29 days?", "options": ["January", "February", "March", "April"], "answer": "February", "explanation": "February has 28 days (or 29 in a leap year)." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "Name the 7 days of the week in order.", "answer": "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.", "explanation": "The 7 days repeat in a cycle every week." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "How many days does January have? How many days does April have?", "answer": "January has 31 days. April has 30 days.", "explanation": "Some months have 31 days and some have 30 days." },
+        { "id": "ch9-t2-m3", "type": "fill", "question": "Independence Day is on ______ August.", "answer": "15th", "explanation": "India's Independence Day is celebrated on 15th August every year." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "Name all the months that have 31 days.", "answer": "January, March, May, July, August, October, December (7 months).", "explanation": "These 7 months each have 31 days. April, June, September, and November have 30 days. February has 28 or 29." },
+        { "id": "ch9-t2-h2", "type": "short", "question": "What day comes after Saturday? What month comes after June?", "answer": "Sunday comes after Saturday. July comes after June.", "explanation": "Days and months follow a fixed order." }
+      ]
+    },
+    {
+      "topic": "Reading a Clock and Directions",
+      "easy": [
+        { "id": "ch9-t3-e1", "type": "mcq", "question": "The SHORT hand on a clock shows the ______.", "options": ["Minutes", "Hour", "Seconds", "Day"], "answer": "Hour", "explanation": "The short hand is the hour hand. It points to the current hour." },
+        { "id": "ch9-t3-e2", "type": "fill", "question": "When the long hand points to 12 and the short hand points to 6, the time is ______ o'clock.", "answer": "6", "explanation": "When the minute hand is at 12, we read the hour from the short hand." },
+        { "id": "ch9-t3-e3", "type": "mcq", "question": "If you face the rising sun, you are looking ______.", "options": ["North", "South", "East", "West"], "answer": "East", "explanation": "The sun rises in the East." },
+        { "id": "ch9-t3-e4", "type": "mcq", "question": "When the short hand is at 3 and the long hand is at 12, what time is it?", "options": ["12 o'clock", "3 o'clock", "6 o'clock", "9 o'clock"], "answer": "3 o'clock", "explanation": "The short hand points to 3 and the long hand is at 12, so it is 3 o'clock." }
+      ],
+      "medium": [
+        { "id": "ch9-t3-m1", "type": "short", "question": "Name the four main directions. How do you find East?", "answer": "North, South, East, West. You find East by facing the rising sun in the morning.", "explanation": "Face the sunrise to find East. Behind you is West. Left is North. Right is South." },
+        { "id": "ch9-t3-m2", "type": "short", "question": "Gargi wakes up at 6 o'clock morning and goes to sleep at 9 o'clock night. Which activity takes longer: sleeping or being awake?", "answer": "Being awake takes longer. She is awake from 6 AM to 9 PM (15 hours) and sleeps from 9 PM to 6 AM (9 hours).", "explanation": "We compare the hours for each activity." }
+      ],
+      "hard": [
+        { "id": "ch9-t3-h1", "type": "long", "question": "If you face East, your back is towards West. Your left hand points to ______ and your right hand points to ______. Name all 4 directions.", "answer": "Left hand points to North. Right hand points to South. The 4 directions are: North, South, East, West.", "explanation": "When facing East: behind = West, left = North, right = South." },
+        { "id": "ch9-t3-h2", "type": "short", "question": "What is a compass? What does it always point to?", "answer": "A compass is a small tool that shows directions. It always points to the North.", "explanation": "A compass helps us find direction no matter where we are." }
+      ]
+    }
+  ]
+}

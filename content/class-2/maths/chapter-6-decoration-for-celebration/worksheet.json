@@ -1,0 +1,55 @@
+{
+  "topics": [
+    {
+      "topic": "Addition of Two-Digit Numbers (Without Carrying)",
+      "easy": [
+        { "id": "ch6-t1-e1", "type": "mcq", "question": "43 + 20 = ?", "options": ["53", "60", "63", "65"], "answer": "63", "explanation": "Ones: 3 + 0 = 3. Tens: 4 + 2 = 6. Answer: 63." },
+        { "id": "ch6-t1-e2", "type": "fill", "question": "12 + 53 = ______.", "answer": "65", "explanation": "Ones: 2 + 3 = 5. Tens: 1 + 5 = 6. Answer: 65." },
+        { "id": "ch6-t1-e3", "type": "mcq", "question": "31 + 24 = ?", "options": ["54", "55", "45", "57"], "answer": "55", "explanation": "Ones: 1 + 4 = 5. Tens: 3 + 2 = 5. Answer: 55." },
+        { "id": "ch6-t1-e4", "type": "fill", "question": "25 + 12 = ______.", "answer": "37", "explanation": "Ones: 5 + 2 = 7. Tens: 2 + 1 = 3. Answer: 37." }
+      ],
+      "medium": [
+        { "id": "ch6-t1-m1", "type": "short", "question": "Simarpreet had 12 colour pencils and got 36 more. How many does she have now?", "answer": "12 + 36 = 48 colour pencils.", "explanation": "Ones: 2 + 6 = 8. Tens: 1 + 3 = 4. Total: 48." },
+        { "id": "ch6-t1-m2", "type": "fill", "question": "34 + 45 = ______.", "answer": "79", "explanation": "Ones: 4 + 5 = 9. Tens: 3 + 4 = 7. Answer: 79." },
+        { "id": "ch6-t1-m3", "type": "mcq", "question": "50 + 30 = ?", "options": ["70", "80", "53", "35"], "answer": "80", "explanation": "Ones: 0 + 0 = 0. Tens: 5 + 3 = 8. Answer: 80." }
+      ],
+      "hard": [
+        { "id": "ch6-t1-h1", "type": "long", "question": "Add 23 + 14 using a number line. Show your jumps.", "answer": "Start at 23. Jump 10 to reach 33. Jump 4 more to reach 37. So 23 + 14 = 37.", "explanation": "On a number line, first jump by tens, then jump by ones." }
+      ]
+    },
+    {
+      "topic": "Addition of Two-Digit Numbers (With Carrying)",
+      "easy": [
+        { "id": "ch6-t2-e1", "type": "mcq", "question": "36 + 47 = ?", "options": ["73", "83", "76", "87"], "answer": "83", "explanation": "Ones: 6 + 7 = 13. Write 3, carry 1. Tens: 3 + 4 + 1 = 8. Answer: 83." },
+        { "id": "ch6-t2-e2", "type": "fill", "question": "45 + 35 = ______.", "answer": "80", "explanation": "Ones: 5 + 5 = 10. Write 0, carry 1. Tens: 4 + 3 + 1 = 8. Answer: 80." },
+        { "id": "ch6-t2-e3", "type": "mcq", "question": "56 + 19 = ?", "options": ["65", "75", "74", "85"], "answer": "75", "explanation": "Ones: 6 + 9 = 15. Write 5, carry 1. Tens: 5 + 1 + 1 = 7. Answer: 75." }
+      ],
+      "medium": [
+        { "id": "ch6-t2-m1", "type": "short", "question": "Add 23 + 38. Show your work.", "answer": "Ones: 3 + 8 = 11. Write 1, carry 1. Tens: 2 + 3 + 1 = 6. Answer: 61.", "explanation": "When ones add up to 10 or more, we carry 1 to the tens place." },
+        { "id": "ch6-t2-m2", "type": "fill", "question": "48 + 27 = ______.", "answer": "75", "explanation": "Ones: 8 + 7 = 15. Write 5, carry 1. Tens: 4 + 2 + 1 = 7. Answer: 75." },
+        { "id": "ch6-t2-m3", "type": "mcq", "question": "67 + 25 = ?", "options": ["82", "92", "87", "95"], "answer": "92", "explanation": "Ones: 7 + 5 = 12. Write 2, carry 1. Tens: 6 + 2 + 1 = 9. Answer: 92." }
+      ],
+      "hard": [
+        { "id": "ch6-t2-h1", "type": "long", "question": "Sarika spent Rs 56 and Manish spent Rs 35 at the fair. How much did they spend together? Show your working.", "answer": "Ones: 6 + 5 = 11. Write 1, carry 1. Tens: 5 + 3 + 1 = 9. Total: Rs 91.", "explanation": "56 + 35 = 91. When the ones add to 11, we write 1 and carry 1 to tens." },
+        { "id": "ch6-t2-h2", "type": "short", "question": "What does 'carry' mean in addition?", "answer": "When the ones digits add up to 10 or more, we carry the extra ten to the tens column. For example, if ones = 13, we write 3 and carry 1 ten.", "explanation": "Carrying is like making a new garland of 10 when you have more than 10 loose flowers." }
+      ]
+    },
+    {
+      "topic": "Subtraction of Two-Digit Numbers",
+      "easy": [
+        { "id": "ch6-t3-e1", "type": "mcq", "question": "45 - 12 = ?", "options": ["33", "23", "43", "57"], "answer": "33", "explanation": "Ones: 5 - 2 = 3. Tens: 4 - 1 = 3. Answer: 33." },
+        { "id": "ch6-t3-e2", "type": "fill", "question": "75 - 35 = ______.", "answer": "40", "explanation": "Ones: 5 - 5 = 0. Tens: 7 - 3 = 4. Answer: 40." },
+        { "id": "ch6-t3-e3", "type": "mcq", "question": "22 - 22 = ?", "options": ["0", "22", "44", "11"], "answer": "0", "explanation": "Any number minus itself is always 0." },
+        { "id": "ch6-t3-e4", "type": "fill", "question": "14 - 0 = ______.", "answer": "14", "explanation": "Subtracting 0 from any number gives the same number." }
+      ],
+      "medium": [
+        { "id": "ch6-t3-m1", "type": "short", "question": "Subtract 46 - 18 with borrowing. Show your work.", "answer": "We cannot take 8 from 6. Borrow 1 ten: 4 tens becomes 3 tens, 6 ones becomes 16 ones. Ones: 16 - 8 = 8. Tens: 3 - 1 = 2. Answer: 28.", "explanation": "When the top ones digit is smaller, we borrow 1 ten to make it bigger." },
+        { "id": "ch6-t3-m2", "type": "fill", "question": "54 - 28 = ______.", "answer": "26", "explanation": "Borrow: 5 tens becomes 4, 4 ones becomes 14. Ones: 14 - 8 = 6. Tens: 4 - 2 = 2. Answer: 26." }
+      ],
+      "hard": [
+        { "id": "ch6-t3-h1", "type": "long", "question": "If 20 + 30 = 50, write the full fact family for 20, 30, and 50.", "answer": "20 + 30 = 50. 30 + 20 = 50. 50 - 30 = 20. 50 - 20 = 30.", "explanation": "A fact family shows how addition and subtraction are related using the same three numbers." },
+        { "id": "ch6-t3-h2", "type": "short", "question": "A diya maker made 75 diyas and sold 35. How many are left?", "answer": "75 - 35 = 40 diyas left.", "explanation": "Ones: 5 - 5 = 0. Tens: 7 - 3 = 4. Answer: 40." }
+      ]
+    }
+  ]
+}

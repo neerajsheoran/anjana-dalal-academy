@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Multiplication of Integers",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "What is 4 x (-2)?", "options": ["8", "-8", "6", "-6"], "answer": "-8", "explanation": "Positive x negative = negative. 4 x 2 = 8, so 4 x (-2) = -8." },
+        { "id": "ch10-t1-e2", "type": "fill", "question": "(-3) x (-5) = ______.", "answer": "15", "explanation": "Negative x negative = positive. 3 x 5 = 15, so (-3) x (-5) = 15." },
+        { "id": "ch10-t1-e3", "type": "mcq", "question": "When two numbers with the same sign are multiplied, the product is:", "options": ["Negative", "Zero", "Positive", "Undefined"], "answer": "Positive", "explanation": "Same signs give a positive product: (+)(+) = (+) and (-)(-) = (+)." },
+        { "id": "ch10-t1-e4", "type": "short", "question": "Calculate (-7) x 6.", "answer": "(-7) x 6 = -42. Different signs (negative x positive) give a negative product.", "explanation": "7 x 6 = 42, and since the signs are different, the result is -42." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "If 123 x 456 = 56,088, find (-123) x (-456) without calculating.", "answer": "(-123) x (-456) = 56,088. Same signs (both negative) give a positive product with the same magnitude.", "explanation": "The magnitude is 123 x 456 = 56,088. Since both numbers are negative, the product is positive: 56,088." },
+        { "id": "ch10-t1-m2", "type": "short", "question": "Verify the distributive property: (-3) x (4 + (-2)) = (-3) x 4 + (-3) x (-2).", "answer": "LHS: (-3) x (4 + (-2)) = (-3) x 2 = -6.\nRHS: (-3) x 4 + (-3) x (-2) = -12 + 6 = -6.\nLHS = RHS = -6. Verified.", "explanation": "The distributive property a x (b + c) = a x b + a x c holds for all integers, including negative numbers." },
+        { "id": "ch10-t1-m3", "type": "short", "question": "The temperature drops by 3°C every hour. What is the total temperature change after 5 hours?", "answer": "Total change = 5 x (-3) = -15°C. The temperature drops by 15°C.", "explanation": "A drop of 3°C is represented as -3. Over 5 hours: 5 x (-3) = -15." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "long", "question": "Using the pattern approach, explain why (-2) x (-3) = 6.", "answer": "Observe the pattern as the multiplier decreases by 1:\n\n2 x (-3) = -6\n1 x (-3) = -3  (increased by 3)\n0 x (-3) = 0   (increased by 3)\n-1 x (-3) = 3  (increased by 3)\n-2 x (-3) = 6  (increased by 3)\n\nEach time the multiplier decreases by 1, the product increases by 3 (the absolute value of the multiplicand).\n\nFollowing this pattern, (-2) x (-3) = 6.\n\nThis confirms the rule: negative x negative = positive.", "explanation": "The pattern shows that multiplying by progressively more negative numbers with a negative multiplicand gives increasing positive results." }
+      ]
+    },
+    {
+      "topic": "Division of Integers",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "What is (-12) ÷ 3?", "options": ["4", "-4", "36", "-36"], "answer": "-4", "explanation": "Different signs give a negative quotient. 12 ÷ 3 = 4, so (-12) ÷ 3 = -4." },
+        { "id": "ch10-t2-e2", "type": "fill", "question": "(-20) ÷ (-5) = ______.", "answer": "4", "explanation": "Same signs (both negative) give a positive quotient. 20 ÷ 5 = 4." },
+        { "id": "ch10-t2-e3", "type": "mcq", "question": "Division by zero is:", "options": ["Zero", "One", "Infinity", "Undefined"], "answer": "Undefined", "explanation": "No number multiplied by 0 gives a non-zero result, so division by zero is undefined." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "Calculate: (-36) ÷ (-9) and 18 ÷ (-6).", "answer": "(-36) ÷ (-9) = 4 (same signs → positive).\n18 ÷ (-6) = -3 (different signs → negative).", "explanation": "Apply the sign rules: same signs → positive quotient, different signs → negative quotient." },
+        { "id": "ch10-t2-m2", "type": "short", "question": "Is division of integers commutative? Give an example to support your answer.", "answer": "No, division is not commutative.\nExample: 12 ÷ 4 = 3, but 4 ÷ 12 = 1/3.\nSince 3 ≠ 1/3, the order matters.", "explanation": "Unlike multiplication, changing the order in division gives a different result." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "long", "question": "A submarine descends 8 metres per minute. (a) Write an expression for its position after t minutes relative to the surface. (b) What is its position after 6 minutes? (c) If it starts at -20 metres and descends for 5 more minutes, what is its final position?", "answer": "(a) Position after t minutes = t x (-8) = -8t metres.\n\n(b) After 6 minutes: -8 x 6 = -48 metres (48 metres below the surface).\n\n(c) Starting position = -20 metres.\nFurther descent = 5 x (-8) = -40 metres.\nFinal position = -20 + (-40) = -60 metres (60 metres below the surface).", "explanation": "Descent is represented by negative numbers. Each minute adds -8 to the position. Combine the starting position with the total descent." }
+      ]
+    }
+  ]
+}

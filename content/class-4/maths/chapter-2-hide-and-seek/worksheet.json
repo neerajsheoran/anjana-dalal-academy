@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Views of Objects",
+      "easy": [
+        { "id": "ch2-t1-e1", "type": "mcq", "question": "What does a ball look like from every direction?", "options": ["A square", "A rectangle", "A circle", "A triangle"], "answer": "A circle", "explanation": "A ball (sphere) looks the same from every direction — always a circle." },
+        { "id": "ch2-t1-e2", "type": "fill", "question": "The three main views of an object are front view, side view, and ______ view.", "answer": "top", "explanation": "The three main views are front view, side view, and top view (looking from above)." },
+        { "id": "ch2-t1-e3", "type": "mcq", "question": "What does a glass (tumbler) look like from the top?", "options": ["A rectangle", "A triangle", "A circle", "A square"], "answer": "A circle", "explanation": "A glass has a circular opening, so from the top it looks like a circle." },
+        { "id": "ch2-t1-e4", "type": "fill", "question": "A birthday cap (cone) looks like a ______ from the front.", "answer": "triangle", "explanation": "A cone's front view shows its triangular profile with a pointed top." }
+      ],
+      "medium": [
+        { "id": "ch2-t1-m1", "type": "short", "question": "A pencil looks like a long thin rectangle from the front. What does it look like from the top (looking straight down at the eraser end)?", "answer": "From the top, a pencil looks like a small circle (or hexagon, depending on the pencil shape).", "explanation": "Looking directly down at the tip of a pencil, you see its circular or hexagonal cross-section." },
+        { "id": "ch2-t1-m2", "type": "short", "question": "Why does the same brick look different when drawn by three friends from three different positions?", "answer": "Because each friend sees the brick from a different angle — front, side, and top. From each angle, different faces of the brick are visible, giving different-shaped drawings.", "explanation": "Objects look different depending on your viewing position because you see different faces of the object." }
+      ],
+      "hard": [
+        { "id": "ch2-t1-h1", "type": "long", "question": "Describe the front view, side view, and top view of a water bottle. How do these three views help someone understand the shape of the bottle even without seeing it?", "answer": "Front view: a rectangle with a narrower rectangle on top (the neck). Side view: same as front view (since the bottle is round). Top view: a circle (the cap). Together, the three views tell us the bottle is a cylinder shape — round from above and rectangular from the side.", "explanation": "Combining all three views gives complete information about the 3D shape of the object." }
+      ]
+    },
+    {
+      "topic": "Grids, Positions, and Maps",
+      "easy": [
+        { "id": "ch2-t2-e1", "type": "mcq", "question": "On a grid, a row goes from ______ to ______.", "options": ["Top to bottom", "Left to right", "Front to back", "Up to down"], "answer": "Left to right", "explanation": "A row is a horizontal line going from left to right. A column goes from top to bottom." },
+        { "id": "ch2-t2-e2", "type": "fill", "question": "A ______ is a pattern of rows and columns used to place and find objects.", "answer": "grid", "explanation": "A grid is like a checkerboard with rows and columns for locating positions." },
+        { "id": "ch2-t2-e3", "type": "mcq", "question": "A map shows a place as seen from which direction?", "options": ["The front", "The side", "Above (bird's-eye view)", "Below"], "answer": "Above (bird's-eye view)", "explanation": "A map shows a top view, as if you are looking down from above like a bird." }
+      ],
+      "medium": [
+        { "id": "ch2-t2-m1", "type": "short", "question": "On a 3x3 grid, the ball is at Row 1, Column 1 (bottom-left). The eraser is at Row 3, Column 3 (top-right). How many steps right and how many steps up would you need to go from the ball to the eraser?", "answer": "2 steps right (from Column 1 to Column 3) and 2 steps up (from Row 1 to Row 3).", "explanation": "Count the moves: Column 1 to 3 = 2 right, Row 1 to 3 = 2 up. Total = 4 steps." },
+        { "id": "ch2-t2-m2", "type": "short", "question": "Give directions from your classroom to the school playground using words like left, right, straight, and turn.", "answer": "Answers will vary. Example: Go straight from the classroom door. Turn left at the corridor. Walk past the library. The playground is at the end on your right.", "explanation": "Good directions use clear terms like straight, left, right, and landmarks to help someone navigate." }
+      ],
+      "hard": [
+        { "id": "ch2-t2-h1", "type": "long", "question": "On a 5x5 grid, a cat is at Row 1, Column 1. A mouse is at Row 4, Column 5. The cat can only move right or up. Find two different paths the cat can take to reach the mouse. What is the minimum number of steps needed?", "answer": "Minimum steps: 3 right + 3 up = the cat needs to move from Column 1 to 5 (4 right) and Row 1 to 4 (3 up) = 7 steps minimum. Path 1: Right, Right, Right, Right, Up, Up, Up. Path 2: Up, Up, Up, Right, Right, Right, Right.", "explanation": "The shortest path is always the total horizontal + vertical distance: 4 right + 3 up = 7 steps. Any order of these moves works." },
+        { "id": "ch2-t2-h2", "type": "long", "question": "Draw a simple map of your school showing at least 4 important places (like the classroom, library, playground, and office). Write directions for someone to walk from the school gate to the library.", "answer": "Answers will vary. Example map places: Gate, Office, Playground, Classroom, Library. Directions: Enter the gate. Walk straight past the office on your left. Turn right at the playground. Walk straight for 20 steps. The library is on your left.", "explanation": "A good map shows key locations and uses clear directions to help someone navigate." }
+      ]
+    }
+  ]
+}

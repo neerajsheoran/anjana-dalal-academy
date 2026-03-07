@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Addition and Subtraction with Regrouping",
+      "easy": [
+        { "id": "ch7-t1-e1", "type": "mcq", "question": "What is 24 + 28?", "options": ["42", "48", "52", "56"], "answer": "52", "explanation": "Ones: 4+8=12, write 2 carry 1. Tens: 2+2+1=5. Answer: 52." },
+        { "id": "ch7-t1-e2", "type": "fill", "question": "438 + 476 = ______.", "answer": "914", "explanation": "Ones: 8+6=14, carry 1. Tens: 3+7+1=11, carry 1. Hundreds: 4+4+1=9. Answer: 914." },
+        { "id": "ch7-t1-e3", "type": "mcq", "question": "When ones add up to 10 or more, we ______ 1 to the tens column.", "options": ["subtract", "carry", "divide", "estimate"], "answer": "carry", "explanation": "When ones add up to 10 or more, we carry 1 ten to the tens column." },
+        { "id": "ch7-t1-e4", "type": "fill", "question": "83 - 46 = ______.", "answer": "37", "explanation": "Ones: 3 < 6, borrow 1 ten. 13 - 6 = 7. Tens: 7 - 4 = 3. Answer: 37." }
+      ],
+      "medium": [
+        { "id": "ch7-t1-m1", "type": "short", "question": "310 - 179 = ? Show your working.", "answer": "Ones: 0 < 9, borrow from tens. But tens is 1, so borrow from hundreds first. 3H becomes 2H + 10T. Then 10T becomes 9T + 10O. 10 - 9 = 1. 9T + 1 from borrow = 10T. Wait, let me recalculate: 310 - 179. Ones: 10-9=1. Tens: 0(now)-7, borrow: 10-7=3. Hundreds: 2-1=1. Answer: 131.", "explanation": "Step by step regrouping: borrow from hundreds to make tens, then from tens to make ones." },
+        { "id": "ch7-t1-m2", "type": "short", "question": "Estimate 438 + 476 before calculating. Is the estimate close to the actual answer?", "answer": "Estimate: 440 + 480 = 920. Actual: 914. Yes, the estimate (920) is close to the actual answer (914).", "explanation": "Round to nearest ten for estimation. 438 rounds to 440, 476 rounds to 480." },
+        { "id": "ch7-t1-m3", "type": "mcq", "question": "Which mental maths trick helps with 811 + 99?", "options": ["Add 100, subtract 1", "Add 90, add 9", "Add 100, add 1", "Subtract 100, add 1"], "answer": "Add 100, subtract 1", "explanation": "Adding 99 = adding 100 and then subtracting 1. 811 + 100 = 911, 911 - 1 = 910." }
+      ],
+      "hard": [
+        { "id": "ch7-t1-h1", "type": "long", "question": "Ram Chacha got 264 mangoes last year and 527 this year. How many more mangoes did he get this year? If he also sold 350 mangoes this year, how many does he have left?", "answer": "More mangoes: 527 - 264 = 263 more. Left after selling: 527 - 350 = 177 mangoes.", "explanation": "First subtraction: 527 - 264 = 263. Second subtraction: 527 - 350 = 177." }
+      ]
+    },
+    {
+      "topic": "Money Problems and Real-Life Applications",
+      "easy": [
+        { "id": "ch7-t2-e1", "type": "mcq", "question": "If beans cost Rs 53 per kg and onion costs Rs 32 per kg, what is the total cost?", "options": ["Rs 75", "Rs 85", "Rs 95", "Rs 105"], "answer": "Rs 85", "explanation": "53 + 32 = Rs 85." },
+        { "id": "ch7-t2-e2", "type": "fill", "question": "You buy items for Rs 435 and pay Rs 500. Your change is Rs ______.", "answer": "65", "explanation": "500 - 435 = Rs 65 change." },
+        { "id": "ch7-t2-e3", "type": "mcq", "question": "Balance = Amount Paid - ______.", "options": ["Change", "Total", "Cost", "Profit"], "answer": "Cost", "explanation": "Balance (change) = Amount Paid - Cost of items." }
+      ],
+      "medium": [
+        { "id": "ch7-t2-m1", "type": "short", "question": "Daisy buys 2 kg of radish at Rs 25 per kg and 2 kg of papaya at Rs 65 per kg. What is the total cost? If she pays Rs 200, how much change does she get?", "answer": "Radish: 2 x 25 = Rs 50. Papaya: 2 x 65 = Rs 130. Total: 50 + 130 = Rs 180. Change: 200 - 180 = Rs 20.", "explanation": "Calculate each item's cost, add for total, subtract from payment for change." },
+        { "id": "ch7-t2-m2", "type": "short", "question": "Use mental maths to solve: 945 - 19.", "answer": "945 - 19 = 945 - 20 + 1 = 925 + 1 = 926.", "explanation": "Subtracting 19 is the same as subtracting 20 and adding 1 back." }
+      ],
+      "hard": [
+        { "id": "ch7-t2-h1", "type": "long", "question": "At Sapan Dada's vegetable cart: beans cost Rs 53/kg, potato costs Rs 37/kg, and banana costs Rs 55/kg. Meera buys 2 kg of beans, 3 kg of potatoes, and 1 kg of bananas. What is her total bill? She has Rs 400. Does she have enough money? If yes, how much change will she get?", "answer": "Beans: 2 x 53 = Rs 106. Potatoes: 3 x 37 = Rs 111. Bananas: 1 x 55 = Rs 55. Total: 106 + 111 + 55 = Rs 272. She has Rs 400, which is enough. Change: 400 - 272 = Rs 128.", "explanation": "Calculate each item's cost, add for total bill, compare with money available, and find change." },
+        { "id": "ch7-t2-h2", "type": "long", "question": "A school trip costs Rs 326 per student. There are 25 students going on the trip. The school pays Rs 5000 towards the cost. How much does each student still need to pay? (Hint: first estimate, then calculate.)", "answer": "Total cost: estimate 325 x 25 = about Rs 8000. Actual: 326 x 25 = Rs 8150. School pays Rs 5000. Remaining: 8150 - 5000 = Rs 3150. Per student: 3150 / 25 = Rs 126 each.", "explanation": "Total = 326 x 25 = 8150. After school payment: 8150 - 5000 = 3150. Per student: 3150 / 25 = 126." }
+      ]
+    }
+  ]
+}

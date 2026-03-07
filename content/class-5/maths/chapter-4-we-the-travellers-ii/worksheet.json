@@ -1,0 +1,178 @@
+{
+  "topics": [
+    {
+      "topic": "Addition and Subtraction of Large Numbers",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "What is 1,855 + 1,862?",
+          "options": ["3,617", "3,717", "3,817", "2,717"],
+          "answer": "3,717",
+          "explanation": "Adding column by column: O: 5+2=7, T: 5+6=11 (write 1, carry 1), H: 8+8+1=17 (write 7, carry 1), Th: 1+1+1=3. Answer: 3,717."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "2,700 - 1,083 = ______",
+          "answer": "1,617",
+          "explanation": "Subtract column by column with regrouping: O: 10-3=7, T: 9-8=1, H: 6-0=6, Th: 2-1=1. Answer: 1,617."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "short",
+          "question": "Add: 21,880 + 38,900",
+          "answer": "60,780",
+          "explanation": "O: 0+0=0, T: 8+0=8, H: 8+9=17 (write 7, carry 1), Th: 1+8+1=10 (write 0, carry 1), TTh: 2+3+1=6. Answer: 60,780."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "mcq",
+          "question": "What is 15,150 - 10,228?",
+          "options": ["5,922", "4,922", "4,822", "5,078"],
+          "answer": "4,922",
+          "explanation": "Subtracting with regrouping: 15,150 - 10,228 = 4,922."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "Nazrana drove from Delhi to Mumbai (1,600 km), Mumbai to Goa (590 km), Goa to Hyderabad (670 km), and Hyderabad to Puri (1,055 km). What is the total distance?",
+          "answer": "3,915 km",
+          "explanation": "1,600 + 590 + 670 + 1,055 = 3,915 km."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "If 46 + 21 = 67, write two subtraction facts using the same numbers.",
+          "answer": "67 - 21 = 46 and 67 - 46 = 21",
+          "explanation": "Addition and subtraction are reverse operations. From any addition fact, you can write two subtraction facts."
+        },
+        {
+          "id": "ch4-t1-m3",
+          "type": "mcq",
+          "question": "A school collected Rs 25,400 in January and Rs 18,650 in February. How much more was collected in January?",
+          "options": ["Rs 6,750", "Rs 7,750", "Rs 6,650", "Rs 44,050"],
+          "answer": "Rs 6,750",
+          "explanation": "25,400 - 18,650 = 6,750. January collection was Rs 6,750 more."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "Mount Everest is 8,848 metres tall and Mount Annapurna is 8,091 metres tall. Find the difference in their heights. If a climber has climbed 5,500 metres up Everest, how many more metres does she need to climb to reach the summit?",
+          "answer": "Difference: 8,848 - 8,091 = 757 metres. Remaining climb: 8,848 - 5,500 = 3,348 metres.",
+          "explanation": "For the difference: 8,848 - 8,091 = 757 m. For the remaining distance: 8,848 - 5,500 = 3,348 m more to reach the summit."
+        }
+      ]
+    },
+    {
+      "topic": "Consecutive Numbers and Patterns",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "What is the sum of 3 consecutive numbers 67, 68, 69?",
+          "options": ["195", "200", "204", "210"],
+          "answer": "204",
+          "explanation": "For 3 consecutive numbers, the sum = 3 x middle number = 3 x 68 = 204."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "fill",
+          "question": "The sum of two consecutive numbers is always ______.",
+          "answer": "odd",
+          "explanation": "Two consecutive numbers are always one even and one odd. Even + Odd = Odd."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "short",
+          "question": "Is the number 8,558 a palindrome? Why?",
+          "answer": "Yes, 8,558 is a palindrome because it reads the same forwards (8558) and backwards (8558).",
+          "explanation": "A palindrome number reads the same in both directions. 8-5-5-8 reversed is 8-5-5-8."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "Find the sum of 5 consecutive numbers: 48, 49, 50, 51, 52 using the quick trick.",
+          "answer": "250. Using the trick: sum = 5 x middle number = 5 x 50 = 250.",
+          "explanation": "For 5 consecutive numbers, the sum = 5 x the middle number. The middle number is 50, so the sum = 5 x 50 = 250."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "mcq",
+          "question": "What happens when you add two odd numbers?",
+          "options": ["Always odd", "Always even", "Sometimes odd, sometimes even", "Always zero"],
+          "answer": "Always even",
+          "explanation": "When two odd numbers are added, the two leftover ones pair up, making the result even. Example: 5 + 7 = 12 (even)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "Group A has numbers: 1, 2, 7, 9 (sum = 19). Group B has numbers: 3, 4, 5, 9 (sum = 21). Can you swap one number from each group to make both sums equal? Show your working.",
+          "answer": "Total = 19 + 21 = 40. For equal sums, each group needs 40 / 2 = 20. Group A needs 1 more (19 to 20), Group B needs 1 less (21 to 20). Swap 2 from Group A with 3 from Group B. New Group A: 1, 3, 7, 9 = 20. New Group B: 2, 4, 5, 9 = 20.",
+          "explanation": "The difference needed is 1 (Group A needs +1, Group B needs -1). Find two numbers with a difference of 1: 2 (from A) and 3 (from B). After swapping, both groups sum to 20."
+        }
+      ]
+    },
+    {
+      "topic": "Quick Mental Maths Tricks",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "mcq",
+          "question": "What is 67 - 9 using the quick trick?",
+          "options": ["56", "57", "58", "59"],
+          "answer": "58",
+          "explanation": "Subtracting 9 = subtract 10, then add 1. 67 - 10 = 57, then 57 + 1 = 58."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "59 + ______ = 100",
+          "answer": "41",
+          "explanation": "First find what makes 99: 59 + 40 = 99. Then add 1 more: 59 + 41 = 100."
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "short",
+          "question": "Find 187 - 99 using the quick trick.",
+          "answer": "88",
+          "explanation": "Subtracting 99 = subtract 100, then add 1. 187 - 100 = 87, then 87 + 1 = 88."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "What number should be added to 877 to make 1,000?",
+          "answer": "123",
+          "explanation": "Think: 877 + ? = 1,000. First find 877 + 123 = 1,000. Check: 877 + 123 = 1,000. Yes!"
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "mcq",
+          "question": "What number should be added to 4,103 to make 10,000?",
+          "options": ["5,897", "6,897", "5,997", "5,907"],
+          "answer": "5,897",
+          "explanation": "10,000 - 4,103 = 5,897. Check: 4,103 + 5,897 = 10,000."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "A shopkeeper in a Holi mela had Rs 10,000 in the cash box. He sold colours for Rs 4,103 and water guns for Rs 3,520. How much money does he have now? How much more does he need to reach Rs 20,000?",
+          "answer": "Total money = 10,000 + 4,103 + 3,520 = Rs 17,623. Amount needed to reach Rs 20,000 = 20,000 - 17,623 = Rs 2,377.",
+          "explanation": "First add the initial amount and all sales: 10,000 + 4,103 = 14,103; 14,103 + 3,520 = 17,623. Then subtract from the target: 20,000 - 17,623 = 2,377."
+        }
+      ]
+    }
+  ]
+}

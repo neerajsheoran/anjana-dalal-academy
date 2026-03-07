@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Numbers from 500 to 1000",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "What is 1000 called?", "options": ["Ten Hundred", "One Thousand", "One Lakh", "One Crore"], "answer": "One Thousand", "explanation": "1000 is called One Thousand. It equals 10 hundreds." },
+        { "id": "ch9-t1-e2", "type": "fill", "question": "The number 832 has ______ hundreds, ______ tens, and ______ ones.", "answer": "8, 3, 2", "explanation": "832 = 8 hundreds + 3 tens + 2 ones." },
+        { "id": "ch9-t1-e3", "type": "mcq", "question": "Which number is Seven Hundred?", "options": ["70", "77", "700", "7000"], "answer": "700", "explanation": "Seven Hundred = 700." },
+        { "id": "ch9-t1-e4", "type": "fill", "question": "The number 504 in words is ______.", "answer": "Five Hundred Four", "explanation": "504 = 5 hundreds + 0 tens + 4 ones = Five Hundred Four." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "Between which two hundreds does the number 693 lie?", "answer": "693 lies between 600 and 700.", "explanation": "Look at the hundreds digit (6). So 693 is between 600 and 700." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "Fill in the pattern: 720, 730, 740, ___, ___, 770, 780.", "answer": "750, 760.", "explanation": "The pattern is counting by 10s. 740 + 10 = 750, 750 + 10 = 760." },
+        { "id": "ch9-t1-m3", "type": "mcq", "question": "The number 947 lies between which two tens?", "options": ["930 and 940", "940 and 950", "950 and 960", "900 and 1000"], "answer": "940 and 950", "explanation": "Look at the tens digit (4). So 947 is between 940 and 950." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "long", "question": "In the story of Akbar and Birbal, Birbal said there were 963 crows in the city. Write this number in expanded form. What are its neighbours on the number line (1 less and 1 more)?", "answer": "963 = 900 + 60 + 3. One less: 962. One more: 964.", "explanation": "Expanded form: 9 hundreds + 6 tens + 3 ones = 900 + 60 + 3. Subtract 1 for 962, add 1 for 964." }
+      ]
+    },
+    {
+      "topic": "Number Patterns and Number Sentences",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "mcq", "question": "Which of these is a palindrome number (reads the same forwards and backwards)?", "options": ["123", "353", "456", "789"], "answer": "353", "explanation": "353 reads the same from left to right and right to left: 3-5-3." },
+        { "id": "ch9-t2-e2", "type": "fill", "question": "111, 222, 333, 444, ______, 666", "answer": "555", "explanation": "These are triplet digit numbers. The next one after 444 is 555." },
+        { "id": "ch9-t2-e3", "type": "mcq", "question": "What is the next number in the staircase pattern: 123, 234, 345, 456, ___?", "options": ["457", "465", "567", "678"], "answer": "567", "explanation": "In this pattern, digits go up by 1: 1-2-3, 2-3-4, 3-4-5, 4-5-6, 5-6-7." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "Write the number 368 in three different ways using number sentences.", "answer": "368 = 300 + 60 + 8. Also, 368 = 300 + 68. Also, 368 = 400 - 32.", "explanation": "A number can be written in many different ways using addition and subtraction." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "Continue this pattern: 1000, 998, 996, 994, ___, ___.", "answer": "992, 990.", "explanation": "The pattern is counting backward by 2. 994 - 2 = 992, 992 - 2 = 990." },
+        { "id": "ch9-t2-m3", "type": "mcq", "question": "Continue: 150, 250, 350, 450, ___?", "options": ["460", "500", "550", "650"], "answer": "550", "explanation": "The pattern adds 100 each time. 450 + 100 = 550." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "You have 6 paper slips. On each slip, you can write 100, 10, or 1. What is the biggest number you can make? What is the smallest? Can you make the number 231?", "answer": "Biggest: Write 100 on all 6 slips = 600. Smallest: Write 1 on all 6 slips = 6. For 231: Use 2 slips of 100, 3 slips of 10, 1 slip of 1 = 200 + 30 + 1 = 231. Yes, you can make 231!", "explanation": "Use all slips as 100 for biggest (600), all as 1 for smallest (6). For 231, use 2+3+1 = 6 slips." },
+        { "id": "ch9-t2-h2", "type": "long", "question": "Write all palindrome numbers between 100 and 200.", "answer": "101, 111, 121, 131, 141, 151, 161, 171, 181, 191.", "explanation": "A palindrome reads the same forwards and backwards. Between 100 and 200, the first and last digits must both be 1. The middle digit can be 0-9, giving us 10 palindromes." }
+      ]
+    }
+  ]
+}

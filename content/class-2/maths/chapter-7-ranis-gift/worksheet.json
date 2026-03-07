@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "topic": "Measuring Length",
+      "easy": [
+        { "id": "ch7-t1-e1", "type": "mcq", "question": "A handspan measures from the tip of your ______ to the tip of your little finger.", "options": ["Index finger", "Thumb", "Middle finger", "Wrist"], "answer": "Thumb", "explanation": "A handspan goes from thumb tip to little finger tip when the hand is spread wide." },
+        { "id": "ch7-t1-e2", "type": "fill", "question": "For measuring bigger distances, we can use our ______.", "answer": "footsteps", "explanation": "Footsteps are used to measure larger distances like the length of a room." },
+        { "id": "ch7-t1-e3", "type": "mcq", "question": "Why did the carpenter, raja, and guard get different measurements for the same bed?", "options": ["The bed kept changing", "They used different rulers", "Their hands were different sizes", "They counted wrong"], "answer": "Their hands were different sizes", "explanation": "Different people have different sized hands, so their handspans are different." },
+        { "id": "ch7-t1-e4", "type": "mcq", "question": "Which is a shorter path: a straight road or a winding road going to the same place?", "options": ["Straight road", "Winding road", "Both are equal", "Cannot tell"], "answer": "Straight road", "explanation": "A straight path is always shorter than a winding or curved path to the same place." }
+      ],
+      "medium": [
+        { "id": "ch7-t1-m1", "type": "short", "question": "How can you compare the length of two curved paths?", "answer": "Place a thread along each curved path. Then stretch both threads out straight and compare which one is longer.", "explanation": "A thread follows the curve and when straightened shows the true length." },
+        { "id": "ch7-t1-m2", "type": "short", "question": "You measured your desk with your handspan and got 8 handspans. Your friend got 6 handspans. Why are the answers different?", "answer": "Your friend has bigger hands. A bigger handspan covers more distance, so fewer handspans are needed.", "explanation": "Different hand sizes give different measurements for the same object." }
+      ],
+      "hard": [
+        { "id": "ch7-t1-h1", "type": "long", "question": "Why do we need standard units like centimetres instead of handspans? Give a reason with an example.", "answer": "Because everyone's hands are different sizes, so handspan measurements vary from person to person. If a carpenter uses his big hands and a customer uses smaller hands, they will measure different lengths. Standard units like centimetres give the same measurement for everyone.", "explanation": "Standard units solve the problem of different-sized body parts giving different measurements." }
+      ]
+    },
+    {
+      "topic": "Heavy and Light (Weight)",
+      "easy": [
+        { "id": "ch7-t2-e1", "type": "mcq", "question": "Which is HEAVIER: a pumpkin or a green chilli?", "options": ["Green chilli", "Pumpkin", "Both are equal", "Cannot tell"], "answer": "Pumpkin", "explanation": "A pumpkin is much heavier than a small green chilli." },
+        { "id": "ch7-t2-e2", "type": "fill", "question": "The lightest vegetable among pumpkin, carrot, and chilli is ______.", "answer": "chilli", "explanation": "A green chilli is the lightest of these three vegetables." },
+        { "id": "ch7-t2-e3", "type": "mcq", "question": "On a balance, which side goes DOWN?", "options": ["The lighter side", "The heavier side", "Both sides", "Neither side"], "answer": "The heavier side", "explanation": "On a balance, the heavier object makes that side go down." },
+        { "id": "ch7-t2-e4", "type": "mcq", "question": "How can you compare the weight of two objects using your hands?", "options": ["Measure them with a ruler", "Hold one in each hand", "Count them", "Look at their colour"], "answer": "Hold one in each hand", "explanation": "Hold one object in each hand. The hand that goes down is holding the heavier object." }
+      ],
+      "medium": [
+        { "id": "ch7-t2-m1", "type": "short", "question": "Put these vegetables in order from lightest to heaviest: cauliflower, green chilli, pumpkin, carrot.", "answer": "Green chilli, carrot, cauliflower, pumpkin.", "explanation": "Chilli is the lightest, then carrot, then cauliflower, and pumpkin is the heaviest." },
+        { "id": "ch7-t2-m2", "type": "short", "question": "How can you make a simple balance at home?", "answer": "Tie thread to 2 paper cups and hang them from both ends of a clothes hanger. Put one object in each cup. The cup that goes down has the heavier object.", "explanation": "A homemade balance compares the weight of two objects." }
+      ],
+      "hard": [
+        { "id": "ch7-t2-h1", "type": "long", "question": "On a see-saw, a watermelon sits on one side and a mango on the other. The watermelon side goes down. What does this tell us? How many mangoes might you need to balance the watermelon?", "answer": "The watermelon is heavier than one mango. You might need many mangoes (maybe 5 to 10) on the other side to balance the watermelon, because the watermelon is much heavier.", "explanation": "When one side of a see-saw goes down, that side is heavier. To balance, we need enough weight on the other side." }
+      ]
+    },
+    {
+      "topic": "Capacity (How Much Liquid)",
+      "easy": [
+        { "id": "ch7-t3-e1", "type": "mcq", "question": "Which holds MORE water: a big bottle or a small bottle?", "options": ["Small bottle", "Big bottle", "Both hold the same", "Cannot tell"], "answer": "Big bottle", "explanation": "A big bottle has more capacity and holds more water." },
+        { "id": "ch7-t3-e2", "type": "fill", "question": "If a big bottle holds 4 glasses of water and a small bottle holds 2 glasses, the big bottle holds ______ more glasses.", "answer": "2", "explanation": "4 - 2 = 2. The big bottle holds 2 more glasses of water." },
+        { "id": "ch7-t3-e3", "type": "mcq", "question": "For 1 glass of nimbu pani, Raghu needs 1 glass of water and 1 spoon of sugar. For 3 glasses, how many spoons of sugar does he need?", "options": ["1", "2", "3", "4"], "answer": "3", "explanation": "For 3 glasses, he needs 3 times the ingredients: 3 spoons of sugar." }
+      ],
+      "medium": [
+        { "id": "ch7-t3-m1", "type": "short", "question": "How can you compare the capacity of two different bottles?", "answer": "Fill each bottle with glasses of water and count how many glasses each one holds. The bottle that holds more glasses has more capacity.", "explanation": "We use a smaller container (like a glass) to measure and compare." },
+        { "id": "ch7-t3-m2", "type": "short", "question": "For 1 glass of nimbu pani: 1 glass water, 1 spoon sugar, 2 spoons lemon juice. How much lemon juice for 3 glasses?", "answer": "3 x 2 = 6 spoons of lemon juice.", "explanation": "For 3 servings, multiply each ingredient by 3: 2 x 3 = 6 spoons." }
+      ],
+      "hard": [
+        { "id": "ch7-t3-h1", "type": "long", "question": "In Jal Tarang, glasses with different levels of water make different sounds. Which glass makes a higher sound: one with less water or one with more water?", "answer": "A glass with less water makes a higher sound. A glass with more water makes a lower sound.", "explanation": "In Jal Tarang, the amount of water changes how the glass vibrates when tapped, producing different musical notes." }
+      ]
+    }
+  ]
+}

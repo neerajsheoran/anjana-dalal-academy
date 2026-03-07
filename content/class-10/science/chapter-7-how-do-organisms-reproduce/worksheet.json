@@ -1,0 +1,131 @@
+{
+  "topics": [
+    {
+      "topic": "Asexual Reproduction",
+      "easy": [
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "Asexual reproduction takes place through budding in:",
+          "options": ["Amoeba", "Yeast", "Plasmodium", "Leishmania"],
+          "answer": "Yeast",
+          "explanation": "Yeast reproduces by budding — a small outgrowth (bud) develops on the parent cell, grows, and eventually detaches to form a new organism. Amoeba reproduces by binary fission, Plasmodium by multiple fission, and Leishmania by binary fission."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "The ability of an organism to grow a complete body from a cut body part using specialised cells is called ______.",
+          "answer": "regeneration",
+          "explanation": "Regeneration is seen in organisms like Hydra and Planaria. It requires organised, specialised cells and is different from reproduction."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "short",
+          "question": "How are the modes for reproduction different in unicellular and multicellular organisms?",
+          "answer": "In unicellular organisms, reproduction occurs by simple cell division (fission). The entire cell divides to produce new individuals. Examples: binary fission in Amoeba, multiple fission in Plasmodium.\n\nIn multicellular organisms, simple cell division is not sufficient because they have specialised cells and tissues. They use more complex methods like budding, vegetative propagation, and sexual reproduction, which involve specialised reproductive cells and organs.",
+          "explanation": "The body design of the organism determines the mode of reproduction. Simpler organisms use simpler methods."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "mcq",
+          "question": "Vegetative propagation through leaves is seen in:",
+          "options": ["Potato", "Rose", "Bryophyllum", "Sugarcane"],
+          "answer": "Bryophyllum",
+          "explanation": "Bryophyllum has buds on the margins of its leaves. These buds can grow into new plants when they fall on moist soil. Potato propagates through stem tubers, rose through stem cuttings, and sugarcane through stem cuttings."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "What are the advantages of sexual reproduction over asexual reproduction?",
+          "answer": "Advantages of sexual reproduction:\n1. Creates greater genetic variation since DNA from two parents combines, producing offspring that are genetically unique.\n2. Variations help the species adapt to changing environments, improving survival chances.\n3. Promotes evolution through natural selection of beneficial variations.\n4. Increases the ability of the species to withstand environmental changes like diseases, climate change.\n5. Reduces the accumulation of harmful mutations because two sets of genes allow for masking of defective genes.",
+          "explanation": "While asexual reproduction is faster and requires only one parent, sexual reproduction's key advantage is the generation of genetic diversity, which is essential for long-term species survival."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "short",
+          "question": "How does reproduction help in providing stability to populations of species?",
+          "answer": "Reproduction maintains a balance between birth rate and death rate in a population. When organisms reproduce, they produce new individuals that replace those that die, keeping the population stable. DNA copying during reproduction creates variations, which allow some individuals to survive even when the environment changes drastically. This ensures that the species as a whole continues to exist even if some individuals die. Without reproduction, a species would eventually become extinct.",
+          "explanation": "The stability of a population depends on the equilibrium between birth rate and death rate. Reproduction ensures that new individuals are constantly being added to the population."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "Explain why variations are generated during reproduction, and why they are important for species survival. How does the mode of reproduction affect the amount of variation?",
+          "answer": "Variations during reproduction:\nDNA copying is the basis of reproduction. However, the biochemical process of DNA copying is not perfectly accurate — small errors or changes occur during replication. These changes create variations in the offspring's DNA compared to the parent.\n\nImportance:\n1. Variations make some individuals better suited to survive in changing environments.\n2. If the environment changes (e.g., temperature rise), individuals with heat-resistant variations may survive while others may not.\n3. This ensures that the species does not become extinct even in adverse conditions.\n4. Variations are the raw material for evolution through natural selection.\n\nEffect of mode of reproduction:\n- Asexual reproduction produces very little variation because only one parent is involved and DNA is simply copied.\n- Sexual reproduction generates much greater variation because DNA from two different individuals combines during fertilisation, creating unique genetic combinations in each offspring. Additionally, crossing over during gamete formation further increases variation.\n\nThus, sexually reproducing organisms have better long-term survival prospects because of their greater genetic diversity.",
+          "explanation": "Variations arise from imperfect DNA copying and from the combination of genetic material from two parents. They are the driving force behind evolution and species adaptation."
+        }
+      ]
+    },
+    {
+      "topic": "Sexual Reproduction in Plants and Humans",
+      "easy": [
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following is not a part of the female reproductive system in human beings?",
+          "options": ["Ovary", "Uterus", "Vas deferens", "Fallopian tube"],
+          "answer": "Vas deferens",
+          "explanation": "Vas deferens is a part of the male reproductive system — it carries sperms from the testes to the urethra. The female reproductive system includes ovaries, fallopian tubes, uterus, and vagina."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "mcq",
+          "question": "The anther contains:",
+          "options": ["Sepals", "Ovules", "Pistil", "Pollen grains"],
+          "answer": "Pollen grains",
+          "explanation": "The anther is the top part of the stamen (male reproductive organ) and produces pollen grains containing male gametes. Ovules are found in the ovary of the pistil."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "short",
+          "question": "How is the process of pollination different from fertilisation?",
+          "answer": "Pollination is the transfer of pollen grains from the anther to the stigma of a flower. It can occur by wind, water, insects, or other agents.\n\nFertilisation is the fusion of the male gamete (from the pollen grain) with the female gamete (egg cell in the ovule). It occurs after pollination, when the pollen tube grows through the style to reach the ovule.\n\nPollination is a physical transfer process, while fertilisation is a biological fusion process.",
+          "explanation": "Pollination is a prerequisite for fertilisation in flowering plants. Pollination brings the male gametes close to the female gametes, but the actual fusion (fertilisation) happens inside the ovule."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "short",
+          "question": "Why does menstruation occur?",
+          "answer": "Menstruation occurs when the egg released by the ovary is not fertilised. Each month, the uterus prepares for pregnancy by developing a thick, blood-rich lining to nourish the embryo. If fertilisation does not take place, the egg dies after about a day, and the thickened uterine lining is no longer needed. This lining breaks down and is shed through the vagina as blood and mucus, which is called menstruation. The cycle occurs roughly every 28 days.",
+          "explanation": "Menstruation is a natural process indicating that the reproductive system is functioning normally. It begins at puberty (menarche) and continues until menopause."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "What are the functions performed by the testis in human beings?",
+          "answer": "The testes perform two main functions:\n1. Production of sperms (male gametes) — the testes are the site of sperm formation. They are located outside the abdominal cavity in the scrotum because sperm formation requires a lower temperature than normal body temperature.\n2. Secretion of testosterone — the male sex hormone that regulates sperm production and brings about secondary sexual characteristics during puberty (facial hair, deepened voice, broadened shoulders).",
+          "explanation": "The testes serve both a reproductive function (gamete production) and an endocrine function (hormone secretion)."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "How does the embryo get nourishment inside the mother's body?",
+          "answer": "The embryo gets nourishment from the mother's blood through a special tissue called the placenta. The placenta is a disc-shaped tissue embedded in the uterine wall. It has finger-like projections called villi on the embryo's side, which are surrounded by blood spaces on the mother's side. This arrangement provides a large surface area for exchange of materials.\n\nGlucose and oxygen pass from the mother's blood to the embryo, while carbon dioxide and other waste products pass from the embryo to the mother's blood for removal. The placenta thus acts as a bridge between the mother and the developing embryo.",
+          "explanation": "The placenta enables nutrient and gas exchange between mother and embryo without direct mixing of their blood."
+        },
+        {
+          "id": "ch7-t2-m3",
+          "type": "short",
+          "question": "What are the different methods of contraception?",
+          "answer": "Methods of contraception include:\n\n1. Mechanical barriers: Condoms (male and female) prevent sperms from reaching the egg. They also provide some protection against STDs.\n\n2. Hormonal methods: Oral contraceptive pills alter hormonal balance to prevent release of eggs. May cause side effects.\n\n3. Intrauterine devices: Copper-T or loop placed inside the uterus prevent implantation of the embryo. May cause side effects.\n\n4. Surgical methods:\n- Vasectomy (males): Vas deferens is cut and blocked to prevent sperm transfer.\n- Tubectomy (females): Fallopian tubes are cut and tied to prevent the egg from reaching the uterus.\nThese are permanent methods.",
+          "explanation": "Different contraceptive methods work at different stages — preventing sperm release, egg release, fertilisation, or implantation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "If a woman is using a copper-T, will it help in protecting her from sexually transmitted diseases? What could be the reasons for adopting contraceptive methods?",
+          "answer": "No, a copper-T will not protect against sexually transmitted diseases (STDs). The copper-T is an intrauterine device placed inside the uterus that prevents pregnancy by blocking implantation of the embryo. It does not prevent the entry of disease-causing organisms. Only barrier methods like condoms can provide some protection against STDs such as gonorrhoea, syphilis, warts, and HIV-AIDS.\n\nReasons for adopting contraceptive methods:\n1. To prevent unwanted pregnancies, especially when the woman's body or mind is not ready\n2. To space children for better health of the mother and children\n3. To control population growth\n4. To prevent sexually transmitted diseases (using barrier methods like condoms)\n5. To ensure better standard of living by having a manageable family size\n6. Health reasons — pregnancy and childbirth pose health risks, especially in very young or older women\n7. Economic reasons — to be able to provide adequate resources for existing children\n\nIt is important to choose an appropriate method after consulting a healthcare provider and understanding the potential side effects.",
+          "explanation": "Only condoms (barrier method) offer protection against STDs. Other contraceptive methods only prevent pregnancy. The choice of method depends on individual circumstances, health, and preference."
+        }
+      ]
+    }
+  ]
+}

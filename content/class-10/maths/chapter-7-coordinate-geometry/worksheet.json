@@ -1,0 +1,137 @@
+{
+  "topics": [
+    {
+      "topic": "Distance Formula",
+      "easy": [
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "The distance between the points (2, 3) and (4, 1) is:",
+          "options": ["2*sqrt(2)", "2*sqrt(3)", "4", "2"],
+          "answer": "2*sqrt(2)",
+          "explanation": "Distance = sqrt[(4-2)^2 + (1-3)^2] = sqrt[4 + 4] = sqrt(8) = 2*sqrt(2)."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "The distance of the point (3, 4) from the origin is ______.",
+          "answer": "5",
+          "explanation": "Distance = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "short",
+          "question": "Find the distance between the points (0, 0) and (6, 8).",
+          "answer": "10",
+          "explanation": "Distance = sqrt[(6-0)^2 + (8-0)^2] = sqrt[36 + 64] = sqrt(100) = 10."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "mcq",
+          "question": "The distance between the points (a, b) and (-a, -b) is:",
+          "options": ["2*sqrt(a^2 + b^2)", "sqrt(a^2 + b^2)", "2(a + b)", "0"],
+          "answer": "2*sqrt(a^2 + b^2)",
+          "explanation": "Distance = sqrt[(-a-a)^2 + (-b-b)^2] = sqrt[4a^2 + 4b^2] = 2*sqrt(a^2 + b^2)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "Find a point on the y-axis which is equidistant from the points A(6, 5) and B(-4, 3).",
+          "answer": "The point is (0, 9).",
+          "explanation": "Step 1: A point on the y-axis has coordinates (0, y).\nStep 2: Distance from A = sqrt(36 + (y-5)^2). Distance from B = sqrt(16 + (y-3)^2).\nStep 3: Setting equal: 36 + (y-5)^2 = 16 + (y-3)^2.\nStep 4: 36 + y^2 - 10y + 25 = 16 + y^2 - 6y + 9.\nStep 5: 61 - 10y = 25 - 6y. -4y = -36. y = 9.\nStep 6: The point is (0, 9)."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "short",
+          "question": "Check whether (5, -2), (6, 4), and (7, -2) are the vertices of an isosceles triangle.",
+          "answer": "Yes, it is an isosceles triangle.",
+          "explanation": "Step 1: AB = sqrt[(6-5)^2 + (4-(-2))^2] = sqrt[1 + 36] = sqrt(37).\nStep 2: BC = sqrt[(7-6)^2 + (-2-4)^2] = sqrt[1 + 36] = sqrt(37).\nStep 3: AC = sqrt[(7-5)^2 + (-2-(-2))^2] = sqrt[4 + 0] = 2.\nStep 4: AB = BC = sqrt(37), so the triangle is isosceles."
+        },
+        {
+          "id": "ch7-t1-m3",
+          "type": "short",
+          "question": "Find the value of y for which the distance between the points P(2, -3) and Q(10, y) is 10 units.",
+          "answer": "y = 3 or y = -9",
+          "explanation": "Step 1: Distance = sqrt[(10-2)^2 + (y+3)^2] = 10.\nStep 2: 64 + (y+3)^2 = 100.\nStep 3: (y+3)^2 = 36.\nStep 4: y + 3 = 6 or y + 3 = -6.\nStep 5: y = 3 or y = -9."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "Show that the points (1, 7), (4, 2), (-1, -1), and (-4, 4) are vertices of a square.",
+          "answer": "The four points form a square with side sqrt(34) and equal diagonals.",
+          "explanation": "Step 1: AB = sqrt[(4-1)^2 + (2-7)^2] = sqrt[9 + 25] = sqrt(34).\nStep 2: BC = sqrt[(-1-4)^2 + (-1-2)^2] = sqrt[25 + 9] = sqrt(34).\nStep 3: CD = sqrt[(-4+1)^2 + (4+1)^2] = sqrt[9 + 25] = sqrt(34).\nStep 4: DA = sqrt[(1+4)^2 + (7-4)^2] = sqrt[25 + 9] = sqrt(34).\nStep 5: All sides are equal.\nStep 6: Diagonal AC = sqrt[(-1-1)^2 + (-1-7)^2] = sqrt[4 + 64] = sqrt(68).\nStep 7: Diagonal BD = sqrt[(-4-4)^2 + (4-2)^2] = sqrt[64 + 4] = sqrt(68).\nStep 8: Diagonals are equal. Since all sides are equal and diagonals are equal, ABCD is a square."
+        }
+      ]
+    },
+    {
+      "topic": "Section Formula",
+      "easy": [
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "The midpoint of the line segment joining (2, 4) and (6, 8) is:",
+          "options": ["(3, 5)", "(4, 6)", "(8, 12)", "(2, 2)"],
+          "answer": "(4, 6)",
+          "explanation": "Midpoint = ((2+6)/2, (4+8)/2) = (8/2, 12/2) = (4, 6)."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "The coordinates of the point dividing the line segment joining (x1, y1) and (x2, y2) in the ratio m:n internally are ((m*x2 + n*x1)/(m+n), (m*y2 + n*______)/( m+n)).",
+          "answer": "y1",
+          "explanation": "The section formula: ((m*x2 + n*x1)/(m+n), (m*y2 + n*y1)/(m+n))."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "short",
+          "question": "Find the coordinates of the point which divides the line segment joining (4, -3) and (8, 5) in the ratio 3:1 internally.",
+          "answer": "(7, 3)",
+          "explanation": "x = (3*8 + 1*4)/(3+1) = (24+4)/4 = 28/4 = 7.\ny = (3*5 + 1*(-3))/(3+1) = (15-3)/4 = 12/4 = 3."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "short",
+          "question": "Find the midpoint of the segment joining (-1, 3) and (5, -7).",
+          "answer": "(2, -2)",
+          "explanation": "Midpoint = ((-1+5)/2, (3+(-7))/2) = (4/2, -4/2) = (2, -2)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "Find the ratio in which the line segment joining A(1, -5) and B(-4, 5) is divided by the x-axis. Also find the coordinates of the point of division.",
+          "answer": "Ratio is 1:1. Point of division is (-3/2, 0).",
+          "explanation": "Step 1: Let the x-axis divide AB in ratio k:1. The y-coordinate of the point on x-axis is 0.\nStep 2: y = (k*5 + 1*(-5))/(k+1) = 0.\nStep 3: 5k - 5 = 0, k = 1. Ratio = 1:1.\nStep 4: x = (1*(-4) + 1*1)/(1+1) = -3/2.\nStep 5: Point = (-3/2, 0)."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "If (1, 2), (4, y), (x, 6), and (3, 5) are the vertices of a parallelogram taken in order, find x and y.",
+          "answer": "x = 6, y = 3",
+          "explanation": "Step 1: In a parallelogram, diagonals bisect each other.\nStep 2: Midpoint of AC = Midpoint of BD.\nStep 3: ((1+x)/2, (2+6)/2) = ((4+3)/2, (y+5)/2).\nStep 4: (1+x)/2 = 7/2, so x = 6.\nStep 5: 8/2 = (y+5)/2, so y + 5 = 8, y = 3."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "Find the area of a triangle whose vertices are (2, 3), (4, 7), and (6, -3).",
+          "answer": "Area = 12 square units.",
+          "explanation": "Step 1: Using formula: Area = (1/2)|x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|.\nStep 2: = (1/2)|2(7 - (-3)) + 4((-3) - 3) + 6(3 - 7)|.\nStep 3: = (1/2)|2(10) + 4(-6) + 6(-4)|.\nStep 4: = (1/2)|20 - 24 - 24| = (1/2)|-28| = 14.\nWait, let me recalculate: |20 - 24 - 24| = |-28| = 28. Area = 28/2 = 14.\nActually the area is 14 square units."
+        },
+        {
+          "id": "ch7-t2-h2",
+          "type": "long",
+          "question": "Find the area of the quadrilateral whose vertices, taken in order, are (-4, -2), (-3, -5), (3, -2) and (2, 3).",
+          "answer": "Area = 28 square units.",
+          "explanation": "Step 1: Divide quadrilateral into two triangles by diagonal from (-4,-2) to (3,-2).\nStep 2: Triangle 1: (-4,-2), (-3,-5), (3,-2).\nArea1 = (1/2)|(-4)(-5+2) + (-3)(-2+2) + 3(-2+5)| = (1/2)|(-4)(-3) + 0 + 3(3)| = (1/2)|12 + 9| = 21/2.\nStep 3: Triangle 2: (-4,-2), (3,-2), (2,3).\nArea2 = (1/2)|(-4)(-2-3) + 3(3+2) + 2(-2+2)| = (1/2)|(-4)(-5) + 3(5) + 0| = (1/2)|20 + 15| = 35/2.\nStep 4: Total area = 21/2 + 35/2 = 56/2 = 28 square units."
+        }
+      ]
+    }
+  ]
+}

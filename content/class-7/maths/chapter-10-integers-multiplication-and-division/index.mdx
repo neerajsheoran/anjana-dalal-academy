@@ -1,0 +1,204 @@
+---
+title: "Chapter 10 — Integers: Multiplication and Division"
+---
+
+We already know how to add and subtract integers (positive and negative numbers). In this chapter, we extend our understanding to **multiplication** and **division** of integers, and discover the elegant rules that govern the signs of products and quotients.
+
+## A Quick Recap of Integers
+
+Integers include all positive numbers, zero, and negative numbers: ..., -3, -2, -1, 0, 1, 2, 3, ...
+
+We can model integers using **tokens**:
+- A **green token** represents +1
+- A **red token** represents -1
+- A green and red token together form a **zero pair** (they cancel out)
+
+**Key fact:** Subtracting a number is the same as **adding its additive inverse**.
+- 7 - 18 = 7 + (-18) = -11
+- 4 - (-12) = 4 + 12 = 16
+
+The **additive inverse** of a number a is -a. The additive inverse of 18 is -18, and the additive inverse of -18 is 18.
+
+## Multiplication of Integers
+
+### Positive x Positive
+
+This is the multiplication we already know:
+- 4 x 2 = 8 (place 2 green tokens into a bag, 4 times -- 8 green tokens total)
+
+### Positive x Negative
+
+**4 x (-2):** Place 2 red tokens into a bag 4 times.
+Result: 8 red tokens = **-8**
+
+So: **4 x (-2) = -8**
+
+> When the multiplier is positive and the multiplicand is negative, the product is **negative**.
+
+### Negative x Positive
+
+**(-4) x 2:** Remove 2 green tokens from the bag 4 times.
+
+But the bag is empty! So we first add zero pairs (green + red), then remove the green tokens. After removing 2 green tokens 4 times (8 green tokens total), we are left with 8 red tokens.
+
+Result: **(-4) x 2 = -8**
+
+> When the multiplier is negative and the multiplicand is positive, the product is **negative**.
+
+### Negative x Negative
+
+**(-4) x (-2):** Remove 2 red tokens from the bag 4 times.
+
+Again, start with zero pairs. After removing 2 red tokens 4 times (8 red tokens total), we are left with 8 green tokens.
+
+Result: **(-4) x (-2) = +8**
+
+> When both the multiplier and the multiplicand are negative, the product is **positive**.
+
+### Sign Rules for Multiplication
+
+| Multiplier | Multiplicand | Product |
+|:---:|:---:|:---:|
+| + | + | **+** |
+| + | - | **-** |
+| - | + | **-** |
+| - | - | **+** |
+
+> **Simple Rule:**
+> - **Same signs** produce a **positive** product
+> - **Different signs** produce a **negative** product
+
+The **magnitude** (absolute value) of the product is always the product of the magnitudes, regardless of signs.
+
+### Patterns in Integer Multiplication
+
+Observe the pattern as the multiplier decreases by 1:
+
+```
+ 4 x 3 = 12
+ 3 x 3 =  9    (decreased by 3)
+ 2 x 3 =  6    (decreased by 3)
+ 1 x 3 =  3    (decreased by 3)
+ 0 x 3 =  0    (decreased by 3)
+-1 x 3 = -3    (decreased by 3)
+-2 x 3 = -6    (decreased by 3)
+```
+
+And with a negative multiplicand:
+
+```
+ 4 x (-3) = -12
+ 3 x (-3) =  -9    (increased by 3)
+ 2 x (-3) =  -6    (increased by 3)
+ 1 x (-3) =  -3    (increased by 3)
+ 0 x (-3) =   0    (increased by 3)
+-1 x (-3) =   3    (increased by 3)
+-2 x (-3) =   6    (increased by 3)
+```
+
+The patterns confirm: **negative x negative = positive**.
+
+### Quick Calculations
+
+If you know 123 x 456 = 56,088, then without calculating:
+- (-123) x 456 = **-56,088** (different signs: negative)
+- (-123) x (-456) = **56,088** (same signs: positive)
+- 123 x (-456) = **-56,088** (different signs: negative)
+
+## Properties of Integer Multiplication
+
+### Commutative Property
+
+The order of multiplication does not matter:
+
+**a x b = b x a**
+
+Examples: 3 x (-5) = -15 and (-5) x 3 = -15
+
+### Associative Property
+
+The grouping of multiplication does not matter:
+
+**(a x b) x c = a x (b x c)**
+
+Example: (2 x (-3)) x 4 = (-6) x 4 = -24, and 2 x ((-3) x 4) = 2 x (-12) = -24
+
+### Distributive Property
+
+Multiplication distributes over addition:
+
+**a x (b + c) = a x b + a x c**
+
+Example: (-3) x (4 + (-2)) = (-3) x 2 = -6, and (-3) x 4 + (-3) x (-2) = -12 + 6 = -6
+
+### Multiplication by 0 and 1
+
+- **a x 0 = 0** for any integer a
+- **a x 1 = a** for any integer a
+- **a x (-1) = -a** for any integer a (multiplying by -1 gives the additive inverse)
+
+## Division of Integers
+
+Division is the **inverse operation** of multiplication. If a x b = c, then c / a = b (when a is not zero).
+
+### Sign Rules for Division
+
+Since division is the reverse of multiplication, the same sign rules apply:
+
+| Dividend | Divisor | Quotient |
+|:---:|:---:|:---:|
+| + | + | **+** |
+| + | - | **-** |
+| - | + | **-** |
+| - | - | **+** |
+
+> **Same signs** give a **positive** quotient. **Different signs** give a **negative** quotient.
+
+### Examples
+
+| Division | Working | Result |
+|:-:|:-:|:-:|
+| (-12) / 3 | 12 / 3 = 4, different signs = negative | **-4** |
+| (-20) / (-5) | 20 / 5 = 4, same signs = positive | **+4** |
+| 18 / (-6) | 18 / 6 = 3, different signs = negative | **-3** |
+| (-36) / (-9) | 36 / 9 = 4, same signs = positive | **+4** |
+
+### Division is Not Commutative
+
+Unlike multiplication, the order matters in division:
+- 12 / 4 = 3, but 4 / 12 is not 3
+- (-6) / 2 = -3, but 2 / (-6) is not -3
+
+### Division by Zero is Undefined
+
+We **cannot** divide any number by zero. There is no number that, when multiplied by 0, gives a non-zero result. So expressions like 5 / 0 or (-3) / 0 are **undefined**.
+
+## Brahmagupta's Contribution
+
+> **Did You Know?** The great Indian mathematician **Brahmagupta** (598-668 CE) was one of the first mathematicians in history to systematically describe the rules for arithmetic with negative numbers and zero. In his work *Brahmasphutasiddhanta* (628 CE), he stated rules equivalent to:
+> - A positive number multiplied by a negative gives a negative
+> - A negative multiplied by a negative gives a positive
+> - Zero multiplied by anything gives zero
+>
+> These rules, formulated in India nearly 1400 years ago, are the same ones we use today!
+
+## Practical Applications
+
+**Temperature changes:** If the temperature drops by 3 degrees every hour, after 5 hours the total change is: 5 x (-3) = **-15 degrees**
+
+**Debt:** If Ravi owes Rs 50 to each of 4 friends, his total debt is: 4 x (-50) = **-Rs 200**
+
+**Altitude:** A submarine descends 8 metres per minute. After 6 minutes, its position relative to the surface is: 6 x (-8) = **-48 metres** (48 metres below surface)
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Integer** | Any positive number, negative number, or zero |
+| **Additive inverse** | The number that, when added to a given number, gives zero; the additive inverse of a is -a |
+| **Positive product** | Result when two numbers with the same sign are multiplied |
+| **Negative product** | Result when two numbers with different signs are multiplied |
+| **Commutative property** | a x b = b x a (order does not matter in multiplication) |
+| **Associative property** | (a x b) x c = a x (b x c) (grouping does not matter in multiplication) |
+| **Distributive property** | a x (b + c) = a x b + a x c |
+| **Undefined** | Division by zero has no meaningful answer |

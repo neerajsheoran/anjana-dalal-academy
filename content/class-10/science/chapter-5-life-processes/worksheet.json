@@ -1,0 +1,182 @@
+{
+  "topics": [
+    {
+      "topic": "Nutrition",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "The autotrophic mode of nutrition requires:",
+          "options": ["Carbon dioxide and water", "Chlorophyll", "Sunlight", "All of the above"],
+          "answer": "All of the above",
+          "explanation": "Autotrophic nutrition (photosynthesis) requires carbon dioxide, water, chlorophyll (to absorb light), and sunlight (as energy source) to synthesise food."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "The tiny pores on the surface of leaves through which gas exchange takes place are called ______.",
+          "answer": "stomata",
+          "explanation": "Stomata are tiny pores on leaf surfaces surrounded by guard cells that control their opening and closing. They allow CO₂ to enter and O₂ to exit during photosynthesis."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "short",
+          "question": "What is the role of saliva in the digestion of food?",
+          "answer": "Saliva plays two important roles in digestion:\n1. It contains the enzyme salivary amylase which breaks down starch (a complex carbohydrate) into maltose (a simpler sugar).\n2. It moistens the food, making it easier to chew and swallow by creating a smooth bolus for passage through the oesophagus.",
+          "explanation": "Saliva is secreted by salivary glands in the mouth. The enzyme salivary amylase initiates the chemical digestion of starch even before the food reaches the stomach."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "short",
+          "question": "What are the necessary conditions for autotrophic nutrition and what are its byproducts?",
+          "answer": "Necessary conditions for autotrophic nutrition:\n1. Carbon dioxide (from atmosphere)\n2. Water (from soil, through roots)\n3. Sunlight (as energy source)\n4. Chlorophyll (green pigment in chloroplasts to absorb light)\n\nByproducts: Oxygen is the main byproduct released during photosynthesis. The main product is glucose (carbohydrate).",
+          "explanation": "Photosynthesis equation: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. The glucose produced provides energy and raw materials for the plant."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "How are fats digested in our bodies? Where does this process take place?",
+          "answer": "Fat digestion takes place mainly in the small intestine in two steps:\n\n1. Emulsification: Bile juice (produced by the liver, stored in the gall bladder) is released into the small intestine. Bile salts break down large fat globules into smaller droplets, increasing the surface area for enzyme action. This process is called emulsification.\n\n2. Enzymatic digestion: Pancreatic lipase (from the pancreas) and intestinal lipase act on the emulsified fat droplets, breaking them down into fatty acids and glycerol, which are then absorbed by the villi in the small intestine.",
+          "explanation": "Bile does not contain enzymes but plays a crucial role by emulsifying fats. The actual chemical digestion of fats is done by lipase enzymes."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "Why is diffusion insufficient to meet the oxygen requirements of multicellular organisms like humans?",
+          "answer": "Diffusion is insufficient for multicellular organisms because:\n1. In multicellular organisms, not all cells are in direct contact with the external environment.\n2. The body volume is large, and diffusion is a slow process that works efficiently only over very short distances.\n3. The oxygen demand of a large multicellular body is much higher than what can be met by simple diffusion.\n4. Internal cells are far from the body surface, so oxygen cannot reach them fast enough by diffusion alone.\n\nTherefore, multicellular organisms need specialised respiratory organs (like lungs) and a circulatory system to transport oxygen to every cell.",
+          "explanation": "Diffusion works well for unicellular organisms where the entire cell surface is in contact with the environment, but it is too slow for larger organisms."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "Describe the process of digestion in the human alimentary canal, explaining the role of different organs and enzymes involved.",
+          "answer": "Digestion in the human alimentary canal:\n\n1. Mouth: Teeth mechanically break down food. Salivary amylase in saliva converts starch to maltose. The tongue mixes food and helps in swallowing.\n\n2. Oesophagus: Peristaltic movements push the food bolus down to the stomach. No digestion occurs here.\n\n3. Stomach: Gastric glands secrete HCl (creates acidic pH, kills bacteria), pepsin (digests proteins into peptones), and mucus (protects stomach lining). The muscular walls churn food into a semi-solid paste called chyme.\n\n4. Small intestine: Receives bile juice from liver (emulsifies fats, makes medium alkaline), pancreatic juice (contains trypsin for proteins, lipase for fats, amylase for starch), and intestinal juice (completes digestion of all food components). The inner wall has villi — finger-like projections with rich blood supply that absorb digested nutrients into the bloodstream.\n\n5. Large intestine: Absorbs excess water and mineral salts. The remaining undigested material forms faeces.\n\n6. Anus: Faeces are expelled from the body (egestion).",
+          "explanation": "The alimentary canal is a continuous tube where food undergoes both mechanical and chemical digestion. Each region is specialised for specific functions, and enzymes work at specific pH levels."
+        }
+      ]
+    },
+    {
+      "topic": "Respiration and Transportation",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "The breakdown of pyruvate to give carbon dioxide, water and energy takes place in:",
+          "options": ["Cytoplasm", "Mitochondria", "Chloroplast", "Nucleus"],
+          "answer": "Mitochondria",
+          "explanation": "Aerobic respiration occurs in two stages: glucose is first broken down to pyruvate in the cytoplasm (glycolysis), then pyruvate is further broken down in the mitochondria to produce CO₂, water, and a large amount of energy."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "mcq",
+          "question": "The xylem in plants is responsible for:",
+          "options": ["Transport of water", "Transport of food", "Transport of amino acids", "Transport of oxygen"],
+          "answer": "Transport of water",
+          "explanation": "Xylem tissue transports water and dissolved minerals from roots to the aerial parts of the plant. Food (products of photosynthesis) is transported by phloem."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "fill",
+          "question": "The oxygen-carrying pigment in red blood cells is called ______.",
+          "answer": "haemoglobin",
+          "explanation": "Haemoglobin binds with oxygen in the lungs to form oxyhaemoglobin and releases it in the body tissues where oxygen concentration is low."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "short",
+          "question": "What would be the consequences of a deficiency of haemoglobin in our bodies?",
+          "answer": "A deficiency of haemoglobin would reduce the oxygen-carrying capacity of the blood. This would result in:\n1. Less oxygen reaching the body cells, leading to reduced energy production.\n2. Breathlessness and fatigue even during light physical activity.\n3. A condition called anaemia, characterised by weakness, pale skin, and tiredness.\n4. The body's overall metabolic rate would decrease as cells cannot perform aerobic respiration efficiently.",
+          "explanation": "Haemoglobin is essential for oxygen transport. Its deficiency directly impacts the body's ability to generate energy through aerobic respiration."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "What are the differences between aerobic and anaerobic respiration? Name some organisms that use the anaerobic mode of respiration.",
+          "answer": "Aerobic respiration:\n- Occurs in the presence of oxygen\n- Takes place in mitochondria\n- Complete breakdown of glucose\n- Produces CO₂ and water\n- Releases a large amount of energy (38 ATP)\n\nAnaerobic respiration:\n- Occurs in the absence of oxygen\n- Takes place in the cytoplasm\n- Incomplete breakdown of glucose\n- Produces ethanol and CO₂ (in yeast) or lactic acid (in muscles)\n- Releases much less energy (2 ATP)\n\nOrganisms using anaerobic respiration: Yeast (for fermentation), certain bacteria, and some parasites. Human muscle cells also use anaerobic respiration temporarily during vigorous exercise.",
+          "explanation": "The key difference is that aerobic respiration completely breaks down glucose, releasing much more energy. Anaerobic respiration is an incomplete process."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "short",
+          "question": "How are the alveoli designed to maximise the exchange of gases?",
+          "answer": "Alveoli are designed to maximise gas exchange through several structural features:\n1. They are balloon-like, thin-walled structures that provide an enormous surface area (about 80 m² in both lungs combined).\n2. Their walls are extremely thin (one cell thick), allowing gases to diffuse quickly.\n3. They are richly supplied with blood capillaries, ensuring a constant flow of blood for gas exchange.\n4. The alveolar surface is moist, which helps gases dissolve and diffuse easily.\n5. The large number of alveoli (approximately 300 million in both lungs) further increases the surface area.",
+          "explanation": "The design of alveoli follows the principle of maximising surface area while minimising diffusion distance — both essential for efficient gas exchange."
+        },
+        {
+          "id": "ch5-t2-m3",
+          "type": "short",
+          "question": "Why is it necessary to separate oxygenated and deoxygenated blood in mammals and birds?",
+          "answer": "Mammals and birds are warm-blooded animals that need to maintain a constant body temperature regardless of the environment. This requires a high metabolic rate, which in turn needs a continuous and efficient supply of oxygen to body tissues.\n\nSeparating oxygenated and deoxygenated blood ensures that only pure oxygenated blood is supplied to the body, maximising oxygen delivery. If the two types of blood mixed, the oxygen content reaching the tissues would be reduced, making energy production less efficient.\n\nThis is why mammals and birds have a four-chambered heart with complete separation of the right (deoxygenated) and left (oxygenated) sides.",
+          "explanation": "Animals like amphibians and reptiles (except crocodiles) have three-chambered hearts where some mixing occurs. They can tolerate this because they are cold-blooded and have lower energy demands."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "Describe double circulation of blood in human beings. Why is it necessary? Also compare the functioning of alveoli in the lungs and nephrons in the kidneys.",
+          "answer": "Double Circulation:\nIn humans, blood passes through the heart twice in one complete circuit, hence called double circulation:\n\n1. Pulmonary circulation: Deoxygenated blood from the right ventricle is pumped to the lungs via pulmonary arteries. In the lungs, CO₂ is released and O₂ is absorbed. Oxygenated blood returns to the left atrium via pulmonary veins.\n\n2. Systemic circulation: Oxygenated blood from the left ventricle is pumped to all body organs via the aorta. Oxygen is delivered and CO₂ is collected. Deoxygenated blood returns to the right atrium via the vena cava.\n\nNecessity: Double circulation is necessary in warm-blooded animals (mammals and birds) to maintain a constant body temperature, which requires a high metabolic rate and efficient oxygen supply. The complete separation ensures that oxygenated blood does not mix with deoxygenated blood.\n\nComparison of Alveoli and Nephrons:\n\nSimilarities:\n- Both have a large surface area for exchange\n- Both are richly supplied with blood capillaries\n- Both are the functional units of their respective organs\n- Both have thin walls for efficient exchange\n\nDifferences:\n- Alveoli exchange gases (O₂ in, CO₂ out) while nephrons filter blood to remove nitrogenous wastes\n- Alveoli use diffusion for gas exchange while nephrons use filtration and selective reabsorption\n- Alveoli are in the lungs (respiratory system) while nephrons are in the kidneys (excretory system)",
+          "explanation": "Both alveoli and nephrons exemplify how biological structures are adapted for maximum efficiency through large surface area and thin walls."
+        }
+      ]
+    },
+    {
+      "topic": "Excretion and Transport in Plants",
+      "easy": [
+        {
+          "id": "ch5-t3-e1",
+          "type": "mcq",
+          "question": "The kidneys in human beings are a part of the system for:",
+          "options": ["Nutrition", "Respiration", "Excretion", "Transportation"],
+          "answer": "Excretion",
+          "explanation": "Kidneys are the main excretory organs in humans. They filter blood to remove nitrogenous waste products (urea, uric acid) and excess water, forming urine."
+        },
+        {
+          "id": "ch5-t3-e2",
+          "type": "fill",
+          "question": "The basic filtration unit of the kidney is called the ______.",
+          "answer": "nephron",
+          "explanation": "Each kidney contains millions of nephrons. Each nephron consists of a Bowman's capsule (containing the glomerulus) and a tubular part where selective reabsorption occurs."
+        },
+        {
+          "id": "ch5-t3-e3",
+          "type": "short",
+          "question": "What are the methods used by plants to get rid of excretory products?",
+          "answer": "Plants use several methods to get rid of excretory products:\n1. Gaseous wastes (O₂ and CO₂) are removed through stomata.\n2. Excess water is lost by transpiration.\n3. Waste products are stored in cellular vacuoles.\n4. Some wastes are stored in leaves that eventually fall off.\n5. Wastes like resins and gums are stored in old xylem.\n6. Some waste substances are excreted into the soil around them.",
+          "explanation": "Unlike animals, plants do not have specialised excretory organs. They use multiple strategies including storage, shedding, and diffusion."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t3-m1",
+          "type": "short",
+          "question": "Describe the structure and functioning of nephrons.",
+          "answer": "Structure: Each nephron consists of:\n1. Bowman's capsule — a cup-shaped structure that encloses a cluster of thin-walled blood capillaries called the glomerulus\n2. Proximal convoluted tubule\n3. Loop of Henle\n4. Distal convoluted tubule (which opens into a collecting duct)\n\nFunctioning:\n1. Filtration: Blood enters the glomerulus under high pressure. Water, salts, glucose, amino acids, urea, and other small molecules are filtered into Bowman's capsule. Blood cells and proteins remain in the blood.\n2. Selective reabsorption: As the filtrate flows through the tubular part, useful substances like glucose, amino acids, salts, and most water are reabsorbed back into the blood.\n3. The remaining fluid (containing urea, excess salts, and water) forms urine, which flows into the collecting duct and then to the ureter.",
+          "explanation": "The nephron acts as a sophisticated filter that retains useful substances while removing waste. The amount of water reabsorbed varies depending on the body's hydration status."
+        },
+        {
+          "id": "ch5-t3-m2",
+          "type": "short",
+          "question": "What are the differences between the transport of materials in xylem and phloem?",
+          "answer": "Transport in Xylem:\n- Transports water and dissolved minerals\n- Movement is upward (from roots to leaves)\n- Uses physical forces: root pressure and transpiration pull\n- Does not require energy (passive process)\n- Occurs through vessels and tracheids (dead cells)\n\nTransport in Phloem:\n- Transports products of photosynthesis (mainly sucrose) and amino acids\n- Movement is bidirectional (both upward and downward)\n- Requires energy (ATP) for loading sucrose into phloem\n- Active process using osmotic pressure\n- Occurs through sieve tubes and companion cells (living cells)",
+          "explanation": "The key difference is that xylem transport is passive (driven by transpiration pull) while phloem transport (translocation) is an active, energy-requiring process."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t3-h1",
+          "type": "long",
+          "question": "How are water and minerals transported in plants? Explain the role of transpiration in this process.",
+          "answer": "Water and mineral transport in plants occurs through xylem tissue by two main mechanisms:\n\n1. Root Pressure: Root cells actively absorb mineral ions from the soil, creating a higher ion concentration inside the root. This concentration difference causes water to move into the root by osmosis. The continuous entry of water creates a pressure (root pressure) that pushes water upward through the xylem. Root pressure is more significant at night when stomata are closed.\n\n2. Transpiration Pull: During the day, water evaporates from the leaf surface through stomata (transpiration). This loss of water from leaf cells creates a suction force. Since water molecules are cohesive (stick together), this suction pulls an entire column of water upward through the xylem vessels from the roots. This transpiration pull is the major driving force for water transport during the day.\n\nRole of transpiration:\n- Creates the main driving force (suction) for upward movement of water\n- Helps in absorption of water and minerals from the soil\n- Helps in temperature regulation of the plant (cooling effect)\n- Maintains the continuous flow of water and minerals from roots to leaves\n\nThe xylem vessels and tracheids form a continuous system of water-conducting channels from roots through stems to leaves, making this transport possible.",
+          "explanation": "Water transport in plants is mainly a physical process driven by transpiration pull (during the day) and root pressure (at night). No energy expenditure by the plant is needed for xylem transport."
+        }
+      ]
+    }
+  ]
+}

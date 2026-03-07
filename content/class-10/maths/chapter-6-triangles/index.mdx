@@ -1,0 +1,264 @@
+---
+title: Chapter 6 Triangles
+---
+
+## Introduction
+
+In Class 9, you studied **congruence** of triangles -- two figures are congruent if they have the same shape AND the same size. In this chapter, we go a step further to study **similarity** -- two figures that have the same shape but not necessarily the same size.
+
+Think about how the heights of mountains like Mount Everest or the distance to the Moon have been measured. These cannot be measured directly with a tape! They were calculated using the principle of **similarity of figures** and indirect measurements.
+
+---
+
+## Similar Figures
+
+Two figures are **similar** if they have the same shape, but may differ in size.
+
+### Examples of Similar Figures
+
+- All **circles** are similar (they all have the same shape -- round)
+- All **squares** are similar
+- All **equilateral triangles** are similar
+
+> **Key idea:** All congruent figures are similar, but all similar figures are NOT necessarily congruent. Congruence is a special case of similarity where the size is also the same.
+
+### When Are Two Polygons Similar?
+
+Two polygons of the same number of sides are similar if:
+1. Their **corresponding angles are equal**, AND
+2. Their **corresponding sides are in the same ratio** (proportion)
+
+Both conditions must be satisfied. For example:
+- A **square** and a **rectangle** have equal angles (all 90 degrees) but sides are not in the same ratio -- so they are NOT similar
+- A **square** and a **rhombus** have sides in the same ratio but angles may not be equal -- so they are NOT similar
+
+**Note:** For triangles, a special rule applies -- we do not need BOTH conditions. Either one is sufficient (as we shall see below).
+
+---
+
+## Basic Proportionality Theorem (Thales' Theorem)
+
+This is one of the most important theorems in the chapter.
+
+**Theorem (BPT):** If a line is drawn parallel to one side of a triangle, it divides the other two sides **in the same ratio**.
+
+In triangle ABC, if DE is drawn parallel to BC such that D lies on AB and E lies on AC, then:
+
+**AD/DB = AE/EC**
+
+### Proof Outline
+
+1. Draw DE parallel to BC in triangle ABC
+2. Join BE and CD
+3. Draw DM perpendicular to AC and EN perpendicular to AB
+4. Using the fact that triangles BDE and CDE have equal areas (same base DE, between same parallels DE and BC)
+5. Show that Area(ADE)/Area(BDE) = AD/DB and Area(ADE)/Area(CDE) = AE/EC
+6. Since Area(BDE) = Area(CDE), we get **AD/DB = AE/EC**
+
+### Converse of BPT
+
+If a line divides any two sides of a triangle **in the same ratio**, then the line is **parallel** to the third side.
+
+> **Key idea:** BPT and its converse are the foundation for many problems in this chapter. If you see a line parallel to one side of a triangle, immediately think of BPT.
+
+### Worked Example
+
+In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD = 4, DB = 5, and AE = 8, find EC.
+
+By BPT: AD/DB = AE/EC
+4/5 = 8/EC
+EC = 8 x 5/4 = **10**
+
+---
+
+## Similarity of Triangles
+
+For triangles, we have special criteria that make checking similarity easier than for general polygons.
+
+### Criteria for Similarity of Triangles
+
+#### 1. AAA Similarity Criterion
+
+If in two triangles, **all three corresponding angles are equal**, then the triangles are similar.
+
+Since the sum of angles in a triangle is always 180 degrees, if two angles are equal, the third automatically becomes equal. So we get:
+
+#### 2. AA Similarity Criterion
+
+If in two triangles, **two angles of one are equal to two angles of the other**, then the triangles are similar.
+
+> **Key idea:** AA criterion is the most commonly used similarity test. If you can show any two pairs of angles are equal, the triangles are similar!
+
+#### 3. SSS Similarity Criterion
+
+If in two triangles, the **corresponding sides are in the same ratio**, then the triangles are similar.
+
+That is, if AB/PQ = BC/QR = CA/RP, then triangle ABC ~ triangle PQR.
+
+#### 4. SAS Similarity Criterion
+
+If **one angle** of a triangle is equal to one angle of another triangle, and the **sides including these angles are in the same ratio** (proportional), then the triangles are similar.
+
+That is, if angle A = angle P and AB/PQ = AC/PR, then triangle ABC ~ triangle PQR.
+
+---
+
+## How to Write Similarity
+
+When we write **triangle ABC ~ triangle PQR**, the order of vertices matters! It tells us which vertices correspond to each other:
+
+- A corresponds to P
+- B corresponds to Q
+- C corresponds to R
+
+This means:
+- Angle A = Angle P, Angle B = Angle Q, Angle C = Angle R
+- AB/PQ = BC/QR = CA/RP
+
+---
+
+## Worked Examples on Similarity
+
+### Example 1: Using AA Criterion
+
+In triangles ABC and DEF, angle A = angle D = 50 degrees and angle B = angle E = 60 degrees. Are the triangles similar?
+
+Since two pairs of angles are equal, by **AA criterion**, triangle ABC ~ triangle DEF.
+
+Also, angle C = angle F = 180 - 50 - 60 = 70 degrees.
+
+### Example 2: Shadow Problem
+
+A girl of height 90 cm walks away from a lamp-post (height 3.6 m) at 1.2 m/s. Find the length of her shadow after 4 seconds.
+
+**Step 1:** Distance walked = 1.2 x 4 = 4.8 m
+
+**Step 2:** Let shadow length = x metres.
+
+**Step 3:** The lamp-post triangle and the girl-shadow triangle are similar (AA criterion -- both have a right angle and share the angle at the shadow tip).
+
+**Step 4:** (4.8 + x)/x = 3.6/0.9 = 4
+
+**Step 5:** 4.8 + x = 4x, so 3x = 4.8, giving **x = 1.6 m**
+
+### Example 3: Pole and Tower Shadow
+
+A vertical pole of 6 m casts a shadow of 4 m. At the same time, a tower casts a shadow of 28 m. Find the height of the tower.
+
+The triangles formed by the pole-shadow and tower-shadow are similar (same angle of elevation of the sun).
+
+Height of tower / 28 = 6 / 4
+Height of tower = 6 x 28 / 4 = **42 m**
+
+---
+
+## Areas of Similar Triangles
+
+**Theorem:** The ratio of the areas of two similar triangles is equal to the **square of the ratio of their corresponding sides**.
+
+If triangle ABC ~ triangle PQR, then:
+
+**Area(ABC) / Area(PQR) = (AB/PQ)^2 = (BC/QR)^2 = (CA/RP)^2**
+
+### Worked Example
+
+If triangle ABC ~ triangle DEF and AB/DE = 3/5, find the ratio of their areas.
+
+Area(ABC)/Area(DEF) = (AB/DE)^2 = (3/5)^2 = **9/25**
+
+### Also Applies to:
+
+- Ratio of squares of corresponding **altitudes**
+- Ratio of squares of corresponding **medians**
+- Ratio of squares of corresponding **angle bisectors**
+
+> **Key idea:** When dealing with areas of similar triangles, always think "square of the ratio." If sides are in ratio 2:3, areas are in ratio 4:9.
+
+---
+
+## Pythagoras Theorem
+
+This is perhaps the most famous theorem in all of mathematics.
+
+**Theorem:** In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+
+If triangle ABC is right-angled at B, then:
+
+**AC^2 = AB^2 + BC^2**
+
+### Proof Using Similarity
+
+1. Draw BD perpendicular to AC (where angle B = 90 degrees)
+2. In triangle ADB and triangle ABC:
+   - Angle A is common
+   - Angle ADB = Angle ABC = 90 degrees
+   - So triangle ADB ~ triangle ABC (AA)
+   - This gives: AD/AB = AB/AC, i.e., **AB^2 = AD x AC** ... (1)
+
+3. Similarly, triangle BDC ~ triangle ABC
+   - This gives: CD/BC = BC/AC, i.e., **BC^2 = CD x AC** ... (2)
+
+4. Adding (1) and (2):
+   AB^2 + BC^2 = AD x AC + CD x AC = AC(AD + CD) = AC x AC = **AC^2**
+
+### Converse of Pythagoras Theorem
+
+If in a triangle, the square of one side equals the sum of squares of the other two sides, then the angle opposite the first side is a **right angle**.
+
+That is, if AC^2 = AB^2 + BC^2, then angle B = 90 degrees.
+
+> **Key idea:** Pythagoras theorem works ONLY for right-angled triangles. The converse helps you CHECK whether a triangle is right-angled.
+
+### Worked Example: Is It a Right Triangle?
+
+A triangle has sides 5 cm, 12 cm, and 13 cm. Is it right-angled?
+
+Check: 13^2 = 169. And 5^2 + 12^2 = 25 + 144 = 169.
+
+Since 13^2 = 5^2 + 12^2, by the converse of Pythagoras theorem, the triangle is right-angled at the vertex opposite the 13 cm side.
+
+### Worked Example: Ladder Problem
+
+A ladder 10 m long reaches a window 8 m above the ground. How far is the foot of the ladder from the base of the wall?
+
+Let the distance from wall = x.
+
+By Pythagoras theorem: 10^2 = 8^2 + x^2
+100 = 64 + x^2
+x^2 = 36
+**x = 6 m**
+
+---
+
+## Important Results Related to Pythagoras Theorem
+
+1. In an **obtuse triangle** ABC with angle B obtuse, if AD is perpendicular to CB produced:
+   AC^2 = AB^2 + BC^2 + 2BC x BD
+
+2. In an **acute triangle** ABC, if AD is perpendicular to BC:
+   AC^2 = AB^2 + BC^2 - 2BC x BD
+
+---
+
+## Chapter Summary
+
+1. Two figures having the same shape but not necessarily the same size are called **similar** figures.
+
+2. All congruent figures are similar but the converse is not true.
+
+3. Two polygons are similar if (i) corresponding angles are equal AND (ii) corresponding sides are in the same ratio.
+
+4. **Basic Proportionality Theorem (BPT):** If a line is parallel to one side of a triangle, it divides the other two sides in the same ratio.
+
+5. **Converse of BPT:** If a line divides two sides of a triangle in the same ratio, the line is parallel to the third side.
+
+6. **Similarity criteria for triangles:**
+   - **AA:** Two angles of one triangle equal to two angles of another
+   - **SSS:** Corresponding sides in the same ratio
+   - **SAS:** One angle equal and including sides in the same ratio
+
+7. The ratio of **areas** of two similar triangles equals the **square** of the ratio of their corresponding sides.
+
+8. **Pythagoras Theorem:** In a right triangle, hypotenuse^2 = base^2 + height^2.
+
+9. **Converse of Pythagoras Theorem:** If the square of one side equals the sum of squares of the other two sides, the triangle is right-angled.

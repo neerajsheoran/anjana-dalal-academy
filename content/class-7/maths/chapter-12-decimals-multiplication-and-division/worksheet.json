@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Multiplication of Decimals",
+      "easy": [
+        { "id": "ch12-t1-e1", "type": "mcq", "question": "What is 5 x 9.5?", "options": ["45.5", "47.5", "49.5", "14.5"], "answer": "47.5", "explanation": "5 x 95 = 475. Place decimal to get 1 digit after the point: 47.5." },
+        { "id": "ch12-t1-e2", "type": "fill", "question": "When multiplying two decimals, the total decimal places in the product equals the ______ of decimal places in both factors.", "answer": "sum", "explanation": "Count decimal places in each factor and add them. The product has that many decimal places." },
+        { "id": "ch12-t1-e3", "type": "mcq", "question": "What is 123 ÷ 10?", "options": ["1230", "12.3", "1.23", "0.123"], "answer": "12.3", "explanation": "Dividing by 10 moves the decimal point 1 place to the left: 123 → 12.3." },
+        { "id": "ch12-t1-e4", "type": "short", "question": "Calculate 5.8 x 1.24.", "answer": "Multiply as whole numbers: 58 x 124 = 7192.\nTotal decimal places: 1 + 2 = 3.\nResult: 7.192.", "explanation": "Ignore decimals, multiply, then place the decimal point so the product has 3 decimal places." }
+      ],
+      "medium": [
+        { "id": "ch12-t1-m1", "type": "short", "question": "A rupee coin is 1.45 mm thick. What is the height of a stack of 36 coins in cm?", "answer": "Height = 36 x 1.45 = 52.2 mm = 5.22 cm.\n\n36 x 145 = 5220. Decimal places: 2. So 52.20 mm = 52.2 mm = 5.22 cm.", "explanation": "Multiply 36 x 1.45 = 52.2 mm. Convert to cm by dividing by 10: 52.2 / 10 = 5.22 cm." },
+        { "id": "ch12-t1-m2", "type": "short", "question": "Multiplying by a number less than 1 makes the result smaller. Is 0.75 x 0.4 greater or less than both 0.75 and 0.4?", "answer": "0.75 x 0.4 = 0.3. This is less than both 0.75 and 0.4.\n\nWhen both factors are between 0 and 1, the product is smaller than either factor.", "explanation": "Both numbers are proper fractions (less than 1), so their product is smaller than both." },
+        { "id": "ch12-t1-m3", "type": "short", "question": "If 18 x 12 = 216, find 1.8 x 1.2 without recalculating.", "answer": "1.8 x 1.2: total decimal places = 1 + 1 = 2. So 216 becomes 2.16.", "explanation": "Use the known product. Count total decimal places in the factors and place the decimal accordingly." }
+      ],
+      "hard": [
+        { "id": "ch12-t1-h1", "type": "long", "question": "Meenu buys 4 notebooks at Rs 15.50 each and 3 erasers at Rs 2.75 each. How much does she spend in total? If she pays with a Rs 100 note, how much change does she get?", "answer": "Notebooks: 4 x 15.50 = 62.00.\nErasers: 3 x 2.75 = 8.25.\n\nTotal spent = 62.00 + 8.25 = Rs 70.25.\n\nChange = 100.00 - 70.25 = Rs 29.75.", "explanation": "Multiply each item by its quantity, add for total, then subtract from the amount paid." }
+      ]
+    },
+    {
+      "topic": "Division of Decimals",
+      "easy": [
+        { "id": "ch12-t2-e1", "type": "mcq", "question": "What is 117.5 ÷ 5?", "options": ["23.5", "23", "24.5", "22.5"], "answer": "23.5", "explanation": "1175 ÷ 50 = 23.5. Or directly: 117.5 / 5 = 23.5." },
+        { "id": "ch12-t2-e2", "type": "fill", "question": "To divide a decimal by a decimal, first make the ______ a whole number by multiplying both numbers by the same power of 10.", "answer": "divisor", "explanation": "Multiply both dividend and divisor by 10, 100, etc., to make the divisor a whole number, then divide normally." },
+        { "id": "ch12-t2-e3", "type": "short", "question": "Calculate 7.5 ÷ 2.5.", "answer": "Multiply both by 10: 75 ÷ 25 = 3.", "explanation": "Make the divisor a whole number by multiplying both by 10. Then 75 ÷ 25 = 3." }
+      ],
+      "medium": [
+        { "id": "ch12-t2-m1", "type": "short", "question": "How many pieces of 0.75 m can be cut from a 6 m ribbon?", "answer": "6 ÷ 0.75 = 6 ÷ (75/100) = 6 x (100/75) = 600/75 = 8 pieces.", "explanation": "Divide total length by piece length. Multiply both by 100: 600 ÷ 75 = 8." },
+        { "id": "ch12-t2-m2", "type": "short", "question": "Calculate 9.36 ÷ 1.2. Show the method.", "answer": "Multiply both by 10: 93.6 ÷ 12 = 7.8.\n\n93.6 ÷ 12: 12 x 7 = 84, remainder 9.6. 12 x 0.8 = 9.6. So answer = 7.8.", "explanation": "Make the divisor a whole number by multiplying both by 10, then perform the division." }
+      ],
+      "hard": [
+        { "id": "ch12-t2-h1", "type": "long", "question": "A person walks 0.827 km to school and the same distance back home, 6 days a week. (a) How much does she walk in a week? (b) How much in 4 weeks? (c) If she walks at 4.5 km/h, how many hours does she walk per day (to and fro)?", "answer": "(a) Daily walking = 0.827 x 2 = 1.654 km.\nWeekly walking = 1.654 x 6 = 9.924 km.\n\n(b) In 4 weeks = 9.924 x 4 = 39.696 km.\n\n(c) Daily distance = 1.654 km.\nTime = distance / speed = 1.654 ÷ 4.5.\nMultiply both by 10: 16.54 ÷ 45 = 0.3676 hours.\n0.3676 x 60 = 22.04 minutes ≈ 22 minutes per day.", "explanation": "Multiply distance by 2 for round trip, then by number of days. For time, use time = distance/speed." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+---
+title: "Chapter 5: Number Play"
+---
+
+## 5.1 Is This a Multiple Of?
+
+### Sum of Consecutive Numbers
+
+Many numbers can be written as the sum of consecutive numbers:
+
+- 7 = 3 + 4
+- 10 = 1 + 2 + 3 + 4
+- 12 = 3 + 4 + 5
+- 15 = 7 + 8 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
+
+Interesting questions to explore:
+- Can every natural number be written as a sum of consecutive numbers?
+- Which numbers can be written in more than one way?
+- All **odd numbers** can be written as a sum of two consecutive numbers (for example, 7 = 3 + 4, since any two consecutive numbers differ by 1 and their sum is odd).
+
+---
+
+### Parity: Even and Odd
+
+Take any 4 consecutive numbers, say 3, 4, 5, 6. Place "+" and "-" signs between them in all possible ways. There are **8 possibilities**:
+
+- 3 + 4 + 5 + 6 = 18
+- 3 + 4 + 5 - 6 = 6
+- 3 + 4 - 5 + 6 = 8
+- 3 + 4 - 5 - 6 = -4
+- 3 - 4 + 5 + 6 = 10
+- 3 - 4 + 5 - 6 = -2
+- 3 - 4 - 5 + 6 = 0
+- 3 - 4 - 5 - 6 = -12
+
+Notice something? **All the results are even numbers!**
+
+> **Key idea:** No matter which 4 consecutive numbers you choose, and no matter how you place "+" and "-" signs, the result is always **even**. This is because switching a "+" to a "-" (or vice versa) always changes the value by an even amount (2 times that number). So all 8 expressions have the same **parity** (all even or all odd).
+
+### Why Does This Work?
+
+**Explanation using algebra:** The parity of a + b and a - b is always the same. This is because:
+- (a + b) - (a - b) = 2b, which is always even
+
+Since the difference is even, both expressions have the same parity. Extending this to more numbers: all expressions a +/- b +/- c +/- d have the same parity.
+
+---
+
+### Breaking Even
+
+Without computing, you can tell if an expression gives an even or odd result by using parity rules:
+
+- **even + even = even**
+- **odd + odd = even**
+- **even + odd = odd**
+- **even x anything = even**
+
+**Examples of always-even expressions:**
+- **2a + 2b** -- both terms are even, so the sum is even
+- **4m + 2n** -- equals 2(2m + n), which always has factor 2
+- **13k - 5k** -- equals 8k, which is always even
+
+**Example of not-always-even:**
+- **x² + 2** -- if x = 6, then x² + 2 = 38 (even); if x = 3, then x² + 2 = 11 (odd)
+
+---
+
+### Pairs to Make Fours
+
+When do two even numbers add up to give a multiple of 4?
+
+- **Multiples of 4 + Multiples of 4 = Multiple of 4**
+  - 4p + 4q = 4(p + q). Example: 12 + 16 = 28
+- **Non-multiples of 4 (but even) + Non-multiples of 4 (but even) = Multiple of 4**
+  - (4p + 2) + (4q + 2) = 4(p + q + 1). Example: 6 + 10 = 16
+- **Multiple of 4 + Non-multiple of 4 (but even) = NOT a multiple of 4**
+  - 4p + (4q + 2) = 4(p + q) + 2. Example: 8 + 6 = 14
+
+> **Key idea:** Two even numbers add up to a multiple of 4 only when both are multiples of 4, or both are non-multiples of 4 (but even). When one is a multiple of 4 and the other is not, their sum is NOT a multiple of 4.
+
+---
+
+### Always, Sometimes, or Never True
+
+For each statement about divisibility, we can determine if it is **always true**, **sometimes true**, or **never true**:
+
+**1. If 8 divides two numbers, it divides their sum.** -- **Always true.**
+- If two numbers are 8a and 8b, then 8a + 8b = 8(a + b), which is divisible by 8.
+- In general: if a divides M and a divides N, then a divides M + N and a divides M - N.
+
+**2. If a number is divisible by 8, then 8 divides any two numbers that add up to it.** -- **Sometimes true.**
+- 72 = 48 + 24 (both divisible by 8? No, 48 = 8 x 6, 24 = 8 x 3 -- yes, both are)
+- But 72 = 50 + 22 (neither 50 nor 22 is divisible by 8)
+
+**3. If a number is divisible by 7, all its multiples are divisible by 7.** -- **Always true.**
+- If the number is 7j, then any multiple is 7j x m = 7(jm), which has 7 as a factor.
+
+**4. If a number is divisible by 12, it is divisible by all factors of 12.** -- **Always true.**
+- In general: if A is divisible by k, then A is divisible by all factors of k.
+
+**5. If a number is divisible by 7, it is divisible by any multiple of 7.** -- **Sometimes true.**
+- 42 (= 7 x 6) is divisible by 14 (= 7 x 2) since 2 divides 6.
+- But 42 is NOT divisible by 28 (= 7 x 4) since 4 does not divide 6.
+
+---
+
+### What Remains?
+
+Numbers that leave a **remainder of 3** when divided by 5 can be written as **5k + 3** (where k = 0, 1, 2, 3, ...).
+
+For k = 0, 1, 2, 3, 4: the numbers are 3, 8, 13, 18, 23, ...
+
+These can also be written as **5k - 2** (where k = 1, 2, 3, ...) since being "3 more" than a multiple of 5 is the same as being "2 less" than the next multiple of 5.
+
+> **Key idea:** The remainder when dividing by n classifies all numbers into n groups. Numbers with the same remainder behave similarly under many operations.
+
+---
+
+## 5.2 Checking Divisibility Quickly
+
+### Divisibility by 10, 5, and 2
+
+Any number can be written in expanded form: for example, 4075 = 4 x 1000 + 0 x 100 + 7 x 10 + 5 x 1.
+
+Since 1000, 100, and 10 are all multiples of 10, only the **units digit** matters for divisibility by 10.
+
+- **Divisible by 10:** units digit is **0**
+- **Divisible by 5:** units digit is **0 or 5**
+- **Divisible by 2:** units digit is **0, 2, 4, 6, or 8** (even)
+
+### Divisibility by 4
+
+Since 100, 1000, 10000, ... are all divisible by 4, only the **last two digits** matter. A number is divisible by 4 if the number formed by its last two digits is divisible by 4.
+
+### Divisibility by 8
+
+Since 1000, 10000, ... are all divisible by 8, only the **last three digits** matter. A number is divisible by 8 if the number formed by its last three digits is divisible by 8.
+
+---
+
+### Divisibility by 9: The Digit Sum Trick
+
+Notice these facts:
+- 10 = 9 + 1
+- 100 = 99 + 1
+- 1000 = 999 + 1
+- 10000 = 9999 + 1
+
+Each place value is **1 more than a multiple of 9**.
+
+So for any number like 427:
+- 427 = 4 x (99 + 1) + 2 x (9 + 1) + 7 x 1
+- = (4 x 99 + 2 x 9) + (4 + 2 + 7)
+- = (a multiple of 9) + (sum of digits)
+
+The remainder when 427 is divided by 9 equals the remainder when **4 + 2 + 7 = 13** is divided by 9, which equals the remainder when **1 + 3 = 4** is divided by 9. So 427 leaves a remainder of **4** when divided by 9.
+
+> **Key idea:** A number is divisible by 9 **if and only if** the sum of its digits is divisible by 9. You can keep adding digits repeatedly until you get a single digit -- this is the remainder when divided by 9 (with 9 itself giving remainder 0).
+
+**Example:** Is 7309 divisible by 9?
+- Sum of digits: 7 + 3 + 0 + 9 = 19
+- Sum again: 1 + 9 = 10
+- Sum again: 1 + 0 = 1
+- Remainder is 1, so 7309 is NOT divisible by 9.
+
+---
+
+### Divisibility by 3
+
+The same trick works for 3! Since 9 is a multiple of 3, and each place value leaves remainder 1 when divided by 3:
+
+**A number is divisible by 3 if and only if the sum of its digits is divisible by 3.**
+
+**Example:** Is 7452 divisible by 3?
+- Sum of digits: 7 + 4 + 5 + 2 = 18
+- 18 is divisible by 3, so yes, 7452 is divisible by 3.
+
+---
+
+### Divisibility by 11
+
+For divisibility by 11, we use the **alternating sum** of digits (alternately add and subtract digits from right to left).
+
+Notice:
+- 10 = 11 - 1 (remainder -1 or equivalently +10)
+- 100 = 99 + 1 (remainder +1)
+- 1000 = 1001 - 1 (remainder -1)
+
+The pattern of remainders alternates: +1, -1, +1, -1, ...
+
+So for a number like 82918:
+- Alternating sum = 8 - 1 + 9 - 2 + 8 = 22
+- 22 is divisible by 11, so 82918 is divisible by 11.
+
+> **Key idea:** A number is divisible by 11 if the **alternating sum** of its digits (starting from the units place: add, subtract, add, subtract, ...) is divisible by 11 (or equals 0).
+
+---
+
+## Divisibility Rules Summary
+
+| Divisor | Rule |
+|---|---|
+| **2** | Last digit is even (0, 2, 4, 6, 8) |
+| **3** | Sum of digits is divisible by 3 |
+| **4** | Last two digits form a number divisible by 4 |
+| **5** | Last digit is 0 or 5 |
+| **6** | Divisible by both 2 and 3 |
+| **8** | Last three digits form a number divisible by 8 |
+| **9** | Sum of digits is divisible by 9 |
+| **10** | Last digit is 0 |
+| **11** | Alternating sum of digits is divisible by 11 |
+
+---
+
+## Summary
+
+- The **parity** (even/odd nature) of expressions like a +/- b +/- c +/- d depends only on the parities of a, b, c, d, not on the choice of + or - signs.
+- **Divisibility properties** can be proved using algebra: if a divides M and N, then a divides M + N and M - N.
+- If A is divisible by k, then A is divisible by all **factors** of k, and all **multiples** of A are divisible by k.
+- Numbers leaving the same remainder when divided by n can be described using expressions like **nk + r**.
+- **Divisibility tests** for 2, 4, 5, 8, 10 depend on the last few digits; tests for 3 and 9 use the digit sum; and the test for 11 uses the alternating digit sum.
+- These rules work because of how place values relate to the divisor (each place value being a multiple of the divisor, or 1 more, or alternating).

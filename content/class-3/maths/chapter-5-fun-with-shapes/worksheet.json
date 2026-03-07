@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "2D Shapes: Rectangle, Square, Triangle, Circle",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "How many sides does a triangle have?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "A triangle has 3 sides. The word 'tri' means three." },
+        { "id": "ch5-t1-e2", "type": "fill", "question": "A ______ has no sides and no corners. It is a round shape.", "answer": "circle", "explanation": "A circle is perfectly round with no sides and no corners." },
+        { "id": "ch5-t1-e3", "type": "mcq", "question": "Which shape has 4 equal sides?", "options": ["Rectangle", "Triangle", "Square", "Circle"], "answer": "Square", "explanation": "A square has 4 sides and all 4 sides are equal in length." },
+        { "id": "ch5-t1-e4", "type": "fill", "question": "A rectangle has ______ sides and ______ corners.", "answer": "4, 4", "explanation": "A rectangle has 4 sides and 4 corners (all square corners)." },
+        { "id": "ch5-t1-e5", "type": "mcq", "question": "Which of these real-life objects is shaped like a circle?", "options": ["A door", "A book", "A roti", "A samosa"], "answer": "A roti", "explanation": "A roti is round like a circle. A door and book are rectangles. A samosa is like a triangle." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "How is a square different from a rectangle?", "answer": "In a square, all 4 sides are equal. In a rectangle, only the opposite sides are equal. Both have 4 square corners.", "explanation": "A square is actually a special type of rectangle where all sides are the same length." },
+        { "id": "ch5-t1-m2", "type": "short", "question": "Name 2 things around you that are shaped like a rectangle and 2 things shaped like a circle.", "answer": "Rectangles: a notebook and a door. Circles: a coin and a bangle. (Answers may vary.)", "explanation": "Look around your home or school. Many flat surfaces are rectangles, and many round objects are circles." },
+        { "id": "ch5-t1-m3", "type": "mcq", "question": "Which shape has curved sides?", "options": ["Rectangle", "Square", "Triangle", "Circle"], "answer": "Circle", "explanation": "A circle is made of one smooth curved line. Rectangles, squares, and triangles all have straight sides." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "Fill in this table: For each shape (Rectangle, Square, Triangle, Circle), write the number of sides, number of corners, and whether the sides are straight or curved.", "answer": "Rectangle: 4 sides, 4 corners, straight. Square: 4 sides, 4 corners, straight. Triangle: 3 sides, 3 corners, straight. Circle: 0 sides, 0 corners, curved.", "explanation": "Each shape has unique properties. Circles are the only common 2D shape with no sides and no corners." }
+      ]
+    },
+    {
+      "topic": "Corners and Combining Shapes",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "What is a square corner also called?", "options": ["A round angle", "A right angle", "A sharp angle", "A wide angle"], "answer": "A right angle", "explanation": "A square corner is also known as a right angle. It looks like the corner of a book." },
+        { "id": "ch5-t2-e2", "type": "fill", "question": "When you join 2 squares side by side, you get a ______.", "answer": "rectangle", "explanation": "Two squares placed next to each other make a rectangle." },
+        { "id": "ch5-t2-e3", "type": "mcq", "question": "How can you check if a corner is a square corner?", "options": ["Use a ball", "Place the corner of a book on it", "Measure it with a string", "Count its sides"], "answer": "Place the corner of a book on it", "explanation": "If the corner of the shape matches exactly with the corner of a book, it is a square corner." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "How can you make a square by joining two triangles?", "answer": "Take two right-angled triangles of the same size. Place their longest sides together. This makes a square.", "explanation": "Two identical right triangles can be joined along their longest side to form a square." },
+        { "id": "ch5-t2-m2", "type": "short", "question": "What is a tangram? How many pieces does it have?", "answer": "A tangram is a puzzle made of 7 flat shapes. You can arrange them to make animals, houses, and many fun figures.", "explanation": "A tangram is a famous Chinese puzzle with 7 flat pieces (called tans) that can be arranged to form different shapes." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "long", "question": "Look at the corner of your maths notebook, the open blade of a pair of scissors, and the hands of a clock showing 3 o'clock. Which has a square corner? Which has less than a square corner? Which has more than a square corner?", "answer": "The notebook corner is a square corner (right angle). The open scissors can have less than a square corner (sharper angle). The clock at 3 o'clock shows a square corner (right angle) because the hands form a 90-degree angle.", "explanation": "Compare each corner with the corner of a book. If it matches exactly, it is a square corner. If it is sharper, it is less. If it is wider, it is more." },
+        { "id": "ch5-t2-h2", "type": "long", "question": "Draw a beautiful rangoli pattern using only triangles, squares, and circles. Describe which shapes you used and how many of each.", "answer": "Answers will vary. Example: A square in the center with 4 triangles attached to its sides (pointing outward) and a circle around the whole pattern. Total: 1 square, 4 triangles, 1 circle.", "explanation": "Rangoli designs use combinations of shapes arranged in patterns. You can create many beautiful designs by combining simple shapes." }
+      ]
+    }
+  ]
+}

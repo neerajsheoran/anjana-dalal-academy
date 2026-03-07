@@ -1,0 +1,224 @@
+---
+title: Chapter 9 Some Applications of Trigonometry
+---
+
+## Introduction
+
+In the previous chapter, you learnt about trigonometric ratios. Now we will see how trigonometry is used in real life to find **heights and distances** that cannot be measured directly.
+
+How do engineers measure the height of a building, the width of a river, or the distance of a ship from a lighthouse? They use trigonometry! This chapter is all about applying the ratios you learnt in Chapter 8 to solve practical problems.
+
+---
+
+## Key Terminology
+
+### Line of Sight
+
+The **line of sight** is the line drawn from the eye of an observer to the point on the object being viewed.
+
+### Angle of Elevation
+
+When you look **upward** at an object (like the top of a building or a flying kite), the angle between the **horizontal** and your line of sight is called the **angle of elevation**.
+
+Think of it this way: you raise your head to look up, and the angle your eyes make with the horizontal is the angle of elevation.
+
+### Angle of Depression
+
+When you look **downward** at an object (like a boat from a cliff or a car from a tower), the angle between the **horizontal** and your line of sight is called the **angle of depression**.
+
+Think of it this way: you lower your head to look down, and the angle your eyes make with the horizontal is the angle of depression.
+
+> **Key idea:** The angle of elevation and the angle of depression are always measured from the **horizontal line**, never from the vertical. Also, the angle of elevation from point A to point B equals the angle of depression from point B to point A (alternate angles).
+
+---
+
+## How to Solve Heights and Distances Problems
+
+### Step-by-Step Approach
+
+1. **Draw a clear diagram** showing all the given information
+2. **Identify the right triangle(s)** in the diagram
+3. **Mark** the known sides and angles
+4. **Choose the appropriate trigonometric ratio** (sin, cos, or tan) based on which sides are known and which are needed
+5. **Solve** the equation to find the unknown
+
+### Which Ratio to Use?
+
+| You know | You need to find | Use |
+|----------|-----------------|-----|
+| Opposite and Hypotenuse | - | sin |
+| Adjacent and Hypotenuse | - | cos |
+| Opposite and Adjacent | - | tan |
+
+> **Key idea:** In most problems, **tan** is the most commonly used ratio because you typically know or need the height (opposite) and the horizontal distance (adjacent).
+
+---
+
+## Worked Examples
+
+### Example 1: Height of a Tower
+
+From a point on the ground, 15 m away from the foot of a tower, the angle of elevation of the top is 60 degrees. Find the height of the tower.
+
+**Diagram:** Right triangle with base = 15 m, angle of elevation = 60 degrees, height = ?
+
+**Solution:**
+tan 60 = height / 15
+root(3) = height / 15
+Height = 15 root(3) m (approximately 25.98 m)
+
+### Example 2: Ladder Problem
+
+An electrician needs to reach a point 3.7 m below the top of a 5 m pole. Her ladder makes an angle of 60 degrees with the ground. Find the length of the ladder and how far from the pole she should place it.
+
+**Height to reach:** 5 - 1.3 = 3.7 m
+
+**Finding ladder length:**
+sin 60 = 3.7 / ladder length
+root(3)/2 = 3.7 / ladder length
+Ladder length = 3.7 x 2 / root(3) = **4.28 m** (approx.)
+
+**Finding distance from pole:**
+cot 60 = distance / 3.7
+1/root(3) = distance / 3.7
+Distance = 3.7 / root(3) = **2.14 m** (approx.)
+
+### Example 3: Observer and Chimney
+
+An observer 1.5 m tall stands 28.5 m away from a chimney. The angle of elevation of the chimney top from her eyes is 45 degrees. Find the chimney's height.
+
+**Important:** The angle is from the observer's **eyes**, not from the ground.
+
+tan 45 = AE / 28.5, where AE is the height above the observer's eye level
+1 = AE / 28.5
+AE = 28.5 m
+
+Total chimney height = AE + observer's height = 28.5 + 1.5 = **30 m**
+
+### Example 4: Two Angles of Elevation (Flag on Building)
+
+From a point P, the angle of elevation of a 10 m building is 30 degrees. A flagstaff on top of the building has angle of elevation 45 degrees from the same point. Find the length of the flagstaff and distance from the building.
+
+**Step 1:** Find distance from building.
+tan 30 = 10 / distance
+1/root(3) = 10 / distance
+Distance = 10 root(3) = **17.32 m**
+
+**Step 2:** Find flagstaff length.
+Let flagstaff = x. Total height = (10 + x).
+tan 45 = (10 + x) / (10 root(3))
+1 = (10 + x) / (10 root(3))
+10 + x = 10 root(3)
+x = 10(root(3) - 1) = 10(1.732 - 1) = **7.32 m**
+
+---
+
+## Shadow Problems
+
+### Example 5: Tower Shadow
+
+A tower's shadow is 40 m longer when the sun's altitude is 30 degrees than when it is 60 degrees. Find the tower's height.
+
+Let height = h, shorter shadow = x.
+
+**When sun's altitude is 60 degrees:**
+tan 60 = h/x, so root(3) = h/x, giving h = x root(3) ... (1)
+
+**When sun's altitude is 30 degrees:**
+tan 30 = h/(x + 40), so 1/root(3) = h/(x + 40) ... (2)
+
+Substituting h = x root(3) from (1) into (2):
+x root(3) / root(3) = (x + 40)/1... wait, let's redo:
+From (2): h = (x + 40)/root(3)
+From (1): x root(3) = (x + 40)/root(3)
+3x = x + 40
+2x = 40, so x = 20
+
+h = 20 root(3) = **34.64 m** (approx.)
+
+---
+
+## Two Buildings / Angle of Depression Problems
+
+### Example 6: Two Buildings
+
+From the top of a multi-storeyed building, the angles of depression of the top and bottom of an 8 m building are 30 degrees and 45 degrees respectively. Find the height of the taller building and the distance between them.
+
+Let the height of the taller building = h, and distance between buildings = d.
+
+**From bottom:** tan 45 = h/d, so d = h ... (1)
+
+**From top of shorter building:** The height difference = (h - 8)
+tan 30 = (h - 8)/d
+1/root(3) = (h - 8)/d ... (2)
+
+Substituting d = h from (1):
+1/root(3) = (h - 8)/h
+h = root(3)(h - 8) = root(3)h - 8 root(3)
+h(root(3) - 1) = 8 root(3)
+h = 8 root(3) / (root(3) - 1)
+
+Rationalising: h = 8 root(3)(root(3) + 1) / (3 - 1) = 8(3 + root(3)) / 2 = **4(3 + root(3))** m
+
+### Example 7: Bridge Over a River
+
+From a bridge 3 m above the river, the angles of depression of opposite banks are 30 degrees and 45 degrees. Find the width of the river.
+
+**Left bank:** tan 30 = 3/d1, so d1 = 3 root(3) m
+**Right bank:** tan 45 = 3/d2, so d2 = 3 m
+
+Width = d1 + d2 = 3 root(3) + 3 = **3(root(3) + 1) m**
+
+---
+
+## Common Problem Types for Board Exams
+
+### Type 1: Simple Height Finding
+Given: distance from base and angle of elevation.
+Find: height using tan.
+
+### Type 2: Two Angles of Elevation from Same Point
+Given: two objects at different heights, same observation point.
+Find: height of each or distance.
+
+### Type 3: Moving Observer
+Given: angles of elevation at two different distances.
+Find: height or the distance moved.
+
+### Type 4: Angle of Depression Problems
+Given: height and angle of depression.
+Find: horizontal distance.
+
+### Type 5: Two Buildings
+Given: angles of depression from one building to top and bottom of another.
+Find: heights and distances.
+
+---
+
+## Important Tips
+
+1. Always draw a **clear, labelled diagram** before solving.
+
+2. Remember that the **angle of depression** from point A equals the **angle of elevation** from the ground point (alternate interior angles with parallel horizontals).
+
+3. When the observer's height is given (e.g., "a 1.5 m tall boy"), the angle is from the **eyes**, so you need to add the observer's height to the calculated value.
+
+4. Common values you should know by heart:
+   - tan 30 = 1/root(3)
+   - tan 45 = 1
+   - tan 60 = root(3)
+   - root(3) = 1.732 (approximately)
+
+5. If a problem involves **two right triangles**, set up equations from each and solve simultaneously.
+
+---
+
+## Chapter Summary
+
+1. The **line of sight** is the line from the observer's eye to the object being viewed.
+
+2. The **angle of elevation** is formed when we look upward -- it is the angle between the line of sight and the horizontal.
+
+3. The **angle of depression** is formed when we look downward -- it is the angle between the line of sight and the horizontal.
+
+4. Heights and distances of objects can be calculated using **trigonometric ratios** in right triangles formed by the line of sight, the horizontal, and the vertical.

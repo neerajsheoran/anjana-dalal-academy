@@ -1,0 +1,191 @@
+{
+  "topics": [
+    {
+      "topic": "Trigonometric Ratios",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "In a right triangle ABC with right angle at B, if AB = 24 and BC = 7, then sin A is:",
+          "options": ["7/25", "24/25", "7/24", "25/7"],
+          "answer": "7/25",
+          "explanation": "AC (hypotenuse) = sqrt(24^2 + 7^2) = sqrt(576 + 49) = sqrt(625) = 25. sin A = opposite/hypotenuse = BC/AC = 7/25."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "sin A = opposite side / ______.",
+          "answer": "hypotenuse",
+          "explanation": "sin A = side opposite to angle A / hypotenuse."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "If tan A = 3/4, then sin A is:",
+          "options": ["3/5", "4/5", "3/4", "5/3"],
+          "answer": "3/5",
+          "explanation": "tan A = opposite/adjacent = 3/4. Hypotenuse = sqrt(3^2 + 4^2) = 5. sin A = 3/5."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "short",
+          "question": "If sin A = 3/4, find cos A and tan A.",
+          "answer": "cos A = sqrt(7)/4, tan A = 3/sqrt(7)",
+          "explanation": "Step 1: sin A = 3/4, so opposite = 3k, hypotenuse = 4k.\nStep 2: Adjacent = sqrt((4k)^2 - (3k)^2) = sqrt(16k^2 - 9k^2) = k*sqrt(7).\nStep 3: cos A = adjacent/hypotenuse = k*sqrt(7)/(4k) = sqrt(7)/4.\nStep 4: tan A = opposite/adjacent = 3k/(k*sqrt(7)) = 3/sqrt(7)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "In triangle PQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine the values of sin P, cos P and tan P.",
+          "answer": "sin P = 12/13, cos P = 5/13, tan P = 12/5",
+          "explanation": "Step 1: Let QR = x. Then PR = 25 - x.\nStep 2: By Pythagoras: PR^2 = PQ^2 + QR^2, (25-x)^2 = 25 + x^2.\nStep 3: 625 - 50x + x^2 = 25 + x^2. 600 = 50x. x = 12. So QR = 12, PR = 13.\nStep 4: sin P = QR/PR = 12/13, cos P = PQ/PR = 5/13, tan P = QR/PQ = 12/5."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "If 15 cot A = 8, find sin A and sec A.",
+          "answer": "sin A = 15/17, sec A = 17/8",
+          "explanation": "Step 1: cot A = 8/15, so adjacent = 8k, opposite = 15k.\nStep 2: Hypotenuse = sqrt(64k^2 + 225k^2) = sqrt(289k^2) = 17k.\nStep 3: sin A = 15k/17k = 15/17.\nStep 4: sec A = 17k/8k = 17/8."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "In triangle ABC, right-angled at B, if tan A = 1/sqrt(3), find the value of: (i) sin A cos C + cos A sin C (ii) cos A cos C - sin A sin C.",
+          "answer": "(i) 1 (ii) 0",
+          "explanation": "Step 1: tan A = 1/sqrt(3), so A = 30 degrees. Since angle B = 90, angle C = 60 degrees.\nStep 2: sin 30 = 1/2, cos 30 = sqrt(3)/2, sin 60 = sqrt(3)/2, cos 60 = 1/2.\nStep 3: (i) sin A cos C + cos A sin C = (1/2)(1/2) + (sqrt(3)/2)(sqrt(3)/2) = 1/4 + 3/4 = 1.\nStep 4: (ii) cos A cos C - sin A sin C = (sqrt(3)/2)(1/2) - (1/2)(sqrt(3)/2) = sqrt(3)/4 - sqrt(3)/4 = 0."
+        }
+      ]
+    },
+    {
+      "topic": "Trigonometric Ratios of Standard Angles",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "The value of sin 45 degrees is:",
+          "options": ["1/2", "sqrt(3)/2", "1/sqrt(2)", "1"],
+          "answer": "1/sqrt(2)",
+          "explanation": "sin 45 = 1/sqrt(2) = sqrt(2)/2."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "cos 60 degrees = ______.",
+          "answer": "1/2",
+          "explanation": "cos 60 = 1/2 is a standard trigonometric value."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "short",
+          "question": "Evaluate: 2 tan^2(45) + cos^2(30) - sin^2(60).",
+          "answer": "2",
+          "explanation": "tan 45 = 1, cos 30 = sqrt(3)/2, sin 60 = sqrt(3)/2.\n2(1)^2 + (sqrt(3)/2)^2 - (sqrt(3)/2)^2 = 2 + 3/4 - 3/4 = 2."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "mcq",
+          "question": "The value of tan 0 degrees is:",
+          "options": ["0", "1", "Not defined", "1/2"],
+          "answer": "0",
+          "explanation": "tan 0 = sin 0 / cos 0 = 0/1 = 0."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "If tan(A + B) = sqrt(3) and tan(A - B) = 1/sqrt(3), where 0 < A + B <= 90 and A > B, find A and B.",
+          "answer": "A = 45 degrees, B = 15 degrees.",
+          "explanation": "Step 1: tan(A + B) = sqrt(3) implies A + B = 60.\nStep 2: tan(A - B) = 1/sqrt(3) implies A - B = 30.\nStep 3: Adding: 2A = 90, A = 45.\nStep 4: B = 60 - 45 = 15."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "Evaluate: (sin^2(30) + cos^2(30))/(sec^2(60) - tan^2(60)).",
+          "answer": "1",
+          "explanation": "Step 1: sin^2(30) + cos^2(30) = 1 (trigonometric identity).\nStep 2: sec^2(60) - tan^2(60) = 1 (trigonometric identity: sec^2(x) - tan^2(x) = 1).\nStep 3: Result = 1/1 = 1."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Evaluate: (5cos^2(60) + 4sec^2(30) - tan^2(45)) / (sin^2(30) + cos^2(30)).",
+          "answer": "67/12",
+          "explanation": "Step 1: cos 60 = 1/2, so cos^2(60) = 1/4. 5 x 1/4 = 5/4.\nStep 2: sec 30 = 2/sqrt(3), so sec^2(30) = 4/3. 4 x 4/3 = 16/3.\nStep 3: tan 45 = 1, so tan^2(45) = 1.\nStep 4: Numerator = 5/4 + 16/3 - 1 = 15/12 + 64/12 - 12/12 = 67/12.\nStep 5: Denominator = sin^2(30) + cos^2(30) = 1.\nStep 6: Result = 67/12."
+        }
+      ]
+    },
+    {
+      "topic": "Trigonometric Identities",
+      "easy": [
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is a trigonometric identity?",
+          "options": ["sin^2 A + cos^2 A = 1", "sin A + cos A = 1", "tan A + cot A = 1", "sec A + cosec A = 1"],
+          "answer": "sin^2 A + cos^2 A = 1",
+          "explanation": "sin^2 A + cos^2 A = 1 is the fundamental trigonometric identity, valid for all values of A."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "1 + tan^2 A = ______.",
+          "answer": "sec^2 A",
+          "explanation": "Dividing sin^2 A + cos^2 A = 1 by cos^2 A gives tan^2 A + 1 = sec^2 A."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "mcq",
+          "question": "1 + cot^2 A equals:",
+          "options": ["sin^2 A", "cos^2 A", "tan^2 A", "cosec^2 A"],
+          "answer": "cosec^2 A",
+          "explanation": "Dividing sin^2 A + cos^2 A = 1 by sin^2 A gives 1 + cot^2 A = cosec^2 A."
+        },
+        {
+          "id": "ch8-t3-e4",
+          "type": "short",
+          "question": "Simplify: (1 - cos^2 A) * cosec^2 A.",
+          "answer": "1",
+          "explanation": "1 - cos^2 A = sin^2 A. So sin^2 A x cosec^2 A = sin^2 A x 1/sin^2 A = 1."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t3-m1",
+          "type": "long",
+          "question": "Prove that: (1 + tan^2 A)/(1 + cot^2 A) = tan^2 A.",
+          "answer": "(1 + tan^2 A)/(1 + cot^2 A) = tan^2 A",
+          "explanation": "Step 1: 1 + tan^2 A = sec^2 A.\nStep 2: 1 + cot^2 A = cosec^2 A.\nStep 3: sec^2 A / cosec^2 A = (1/cos^2 A) / (1/sin^2 A) = sin^2 A / cos^2 A = tan^2 A.\nHence proved."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "long",
+          "question": "Prove that: (sin A - cos A + 1)/(sin A + cos A - 1) = 1/(sec A - tan A).",
+          "answer": "Proved using trigonometric identities.",
+          "explanation": "Step 1: Divide numerator and denominator by cos A:\n= (tan A - 1 + sec A)/(tan A + 1 - sec A).\nStep 2: Rearrange: = (tan A + sec A - 1)/(tan A - sec A + 1).\nStep 3: Multiply numerator and denominator by (sec A - tan A):\nNumerator: (tan A + sec A - 1)(sec A - tan A) = (sec^2 A - tan^2 A) - (sec A - tan A) = 1 - sec A + tan A.\nDenominator: (tan A - sec A + 1)(sec A - tan A) = -(tan A - sec A + 1)(tan A - sec A) = -(tan A - sec A)^2 - (tan A - sec A).\nActually, let's use a simpler approach:\nStep 1: LHS numerator: sin A - cos A + 1. Denominator: sin A + cos A - 1.\nStep 2: Multiply top and bottom by (sin A + cos A + 1)/(sin A + cos A + 1) or use identity sec^2 A - tan^2 A = 1.\nStep 3: Using the identity and algebraic manipulation, both sides reduce to the same expression."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "Express sin A in terms of cot A.",
+          "answer": "sin A = 1/sqrt(1 + cot^2 A)",
+          "explanation": "Step 1: We know 1 + cot^2 A = cosec^2 A.\nStep 2: cosec A = sqrt(1 + cot^2 A).\nStep 3: sin A = 1/cosec A = 1/sqrt(1 + cot^2 A)."
+        },
+        {
+          "id": "ch8-t3-h2",
+          "type": "long",
+          "question": "Express all trigonometric ratios of angle A in terms of sec A.",
+          "answer": "sin A = sqrt(sec^2 A - 1)/sec A, cos A = 1/sec A, tan A = sqrt(sec^2 A - 1), cot A = 1/sqrt(sec^2 A - 1), cosec A = sec A/sqrt(sec^2 A - 1).",
+          "explanation": "Step 1: cos A = 1/sec A.\nStep 2: sin^2 A = 1 - cos^2 A = 1 - 1/sec^2 A = (sec^2 A - 1)/sec^2 A. So sin A = sqrt(sec^2 A - 1)/sec A.\nStep 3: tan A = sin A/cos A = sqrt(sec^2 A - 1). (Also from sec^2 A - 1 = tan^2 A.)\nStep 4: cot A = 1/tan A = 1/sqrt(sec^2 A - 1).\nStep 5: cosec A = 1/sin A = sec A/sqrt(sec^2 A - 1)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "topics": [
+    {
+      "topic": "Physical Nature and Characteristics of Matter",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following is matter?",
+          "options": ["Love", "Air", "Thought", "Hate"],
+          "answer": "Air",
+          "explanation": "Air has mass and occupies space, so it is matter. Love, thought, and hate are feelings or emotions and do not have mass or volume."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "mcq",
+          "question": "The smell of hot sizzling food reaches you several metres away, but to get the smell from cold food you have to go close. This is because:",
+          "options": ["Cold food has no smell", "Hot food has more particles", "At higher temperature, particles move faster and diffusion is quicker", "Cold food particles are heavier"],
+          "answer": "At higher temperature, particles move faster and diffusion is quicker",
+          "explanation": "At higher temperature, particles have more kinetic energy and move faster, so diffusion of the smell through air is much quicker."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "fill",
+          "question": "The intermixing of particles of two different types of matter on their own is called ______.",
+          "answer": "diffusion",
+          "explanation": "When particles of different substances mix on their own due to their kinetic energy, it is called diffusion."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "mcq",
+          "question": "A diver is able to cut through water in a swimming pool. Which property of matter does this show?",
+          "options": ["Particles of matter are very small", "There is space between particles of matter", "Particles of matter attract each other with less force in liquids", "Particles of matter are continuously moving"],
+          "answer": "Particles of matter attract each other with less force in liquids",
+          "explanation": "The force of attraction between water particles is not very strong, so a diver can easily cut through water, unlike a solid."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "What are the characteristics of the particles of matter?",
+          "answer": "The particles of matter have three main characteristics: (1) Particles have space between them, (2) Particles are continuously moving and possess kinetic energy, and (3) Particles attract each other with a force that varies from substance to substance.",
+          "explanation": "These three characteristics explain many physical properties of matter such as diffusion, compressibility, and why different substances exist in different states."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "When we dissolve salt in water, the level of water does not rise noticeably. Why?",
+          "answer": "When salt is dissolved in water, the salt particles fit into the spaces between the water particles. Since the salt particles occupy the empty spaces already present between water particles, the water level does not rise noticeably.",
+          "explanation": "This demonstrates that particles of matter have space between them."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "short",
+          "question": "Why does the rate of diffusion increase with temperature?",
+          "answer": "As temperature increases, particles gain more kinetic energy and move faster. The faster-moving particles intermix more quickly with particles of another substance, so the rate of diffusion increases.",
+          "explanation": "This is why the smell of hot food spreads faster than that of cold food."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Explain how dissolving potassium permanganate crystals in water demonstrates that matter is made up of very tiny particles.",
+          "answer": "When 2-3 crystals of potassium permanganate are dissolved in 100 mL of water, a deep purple solution is obtained. If 10 mL of this solution is taken and added to 90 mL of water, and this dilution is repeated 5-8 times, the water still appears coloured. This shows that just a few crystals contain millions of tiny particles that spread throughout all the water. Even after repeated dilutions (totalling about 1000 L of water), the colour is still visible, proving that the particles of matter are extremely small -- so small that a single crystal contains an enormous number of them.",
+          "explanation": "This classic experiment shows that matter is particulate in nature, not continuous, and the particles are incredibly tiny."
+        }
+      ]
+    },
+    {
+      "topic": "States of Matter",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following has a fixed shape and a fixed volume?",
+          "options": ["Water", "Air", "Iron", "Oxygen"],
+          "answer": "Iron",
+          "explanation": "Iron is a solid. Solids have both a fixed shape and a fixed volume."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "Liquids have a fixed ______ but no fixed shape.",
+          "answer": "volume",
+          "explanation": "Liquids take the shape of the container they are kept in, but their volume remains the same."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "Arrange the following in order of increasing density: air, exhaust from chimneys, honey, water, chalk, cotton, iron.",
+          "options": [
+            "Air, exhaust, cotton, water, honey, chalk, iron",
+            "Exhaust, air, cotton, water, honey, chalk, iron",
+            "Air, cotton, exhaust, water, chalk, honey, iron",
+            "Cotton, air, exhaust, water, honey, chalk, iron"
+          ],
+          "answer": "Air, exhaust, cotton, water, honey, chalk, iron",
+          "explanation": "Density is mass per unit volume. Air has the lowest density, while iron has the highest density among these substances."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "mcq",
+          "question": "Which state of matter is highly compressible?",
+          "options": ["Solid", "Liquid", "Gas", "All of these"],
+          "answer": "Gas",
+          "explanation": "Gases are highly compressible because their particles are far apart with large spaces between them. This is why large volumes of gas can be compressed into small cylinders."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "A gas fills completely the vessel in which it is kept. Why?",
+          "answer": "Gas particles move randomly at high speed in all directions. They have very weak forces of attraction and large spaces between them. Due to this high kinetic energy and freedom of movement, gas particles spread out and fill the entire vessel they are kept in.",
+          "explanation": "Unlike solids and liquids, gases have neither a fixed shape nor a fixed volume."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "A gas exerts pressure on the walls of the container. Why?",
+          "answer": "Gas particles move randomly at high speed. They constantly collide with each other and with the walls of the container. The force exerted by these particles per unit area on the walls of the container is experienced as pressure.",
+          "explanation": "Pressure is force per unit area, and the continuous bombardment of gas particles on the container walls creates this pressure."
+        },
+        {
+          "id": "ch1-t2-m3",
+          "type": "short",
+          "question": "Why should a wooden table be called a solid?",
+          "answer": "A wooden table should be called a solid because it has a definite shape, distinct boundaries, and a fixed volume. It is rigid and cannot be compressed easily. Its particles are tightly packed with strong forces of attraction between them.",
+          "explanation": "A wooden table shows all the characteristic properties of solids."
+        },
+        {
+          "id": "ch1-t2-m4",
+          "type": "short",
+          "question": "We can easily move our hand in air but to do the same through a solid block of wood we need a karate expert. Why?",
+          "answer": "In air (a gas), the particles are far apart with very weak forces of attraction, so our hand can easily push through them. In a solid block of wood, particles are closely packed with very strong forces of attraction between them, making it extremely difficult to separate them. Only a karate expert with a very strong force can break through.",
+          "explanation": "This difference arises because the interparticle forces and spacing are very different in solids and gases."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "Tabulate the differences in the characteristics of the three states of matter (solid, liquid, gas) in terms of shape, volume, compressibility, fluidity, and density.",
+          "answer": "Solids: fixed shape, fixed volume, negligible compressibility, not fluid (rigid), generally high density. Liquids: no fixed shape (take shape of container), fixed volume, very slightly compressible, fluid (can flow), moderate density. Gases: no fixed shape, no fixed volume (fill entire container), highly compressible, fluid (can flow), very low density. These differences arise because particles in solids are tightly packed with strong forces, particles in liquids are close but can slide, and particles in gases are far apart with weak forces.",
+          "explanation": "The three states of matter differ in particle arrangement, spacing, forces of attraction, and kinetic energy."
+        },
+        {
+          "id": "ch1-t2-h2",
+          "type": "long",
+          "question": "Liquids generally have lower density as compared to solids. But ice floats on water. Explain why.",
+          "answer": "Ice floats on water because ice has a lower density than liquid water. This is an unusual property of water. When water freezes, the water molecules arrange themselves in a crystal structure that has large open spaces between molecules. This cage-like structure makes ice occupy more volume than the same mass of liquid water. Since density = mass/volume, and the volume increases while mass stays the same, ice has a lower density (about 0.9 g/cm cubed) than liquid water (1.0 g/cm cubed). This is why ice floats.",
+          "explanation": "Water is an exception to the general rule that solids are denser than liquids. The open crystal structure of ice makes it less dense than water."
+        }
+      ]
+    },
+    {
+      "topic": "Change of State of Matter",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "What is the melting point of ice?",
+          "options": ["100 degrees C", "273 K", "373 K", "0 K"],
+          "answer": "273 K",
+          "explanation": "The melting point of ice is 273.15 K, which is approximately 273 K or 0 degrees Celsius."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "The change of solid state directly to gaseous state without passing through the liquid state is called ______.",
+          "answer": "sublimation",
+          "explanation": "Sublimation is the direct conversion from solid to gas. Examples include camphor and naphthalene balls."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "mcq",
+          "question": "Convert 293 K to the Celsius scale.",
+          "options": ["20 degrees C", "293 degrees C", "566 degrees C", "27 degrees C"],
+          "answer": "20 degrees C",
+          "explanation": "To convert from Kelvin to Celsius, subtract 273. So 293 - 273 = 20 degrees C."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "mcq",
+          "question": "Convert 470 K to the Celsius scale.",
+          "options": ["200 degrees C", "743 degrees C", "197 degrees C", "470 degrees C"],
+          "answer": "197 degrees C",
+          "explanation": "To convert from Kelvin to Celsius, subtract 273. So 470 - 273 = 197 degrees C."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "Convert the following temperatures to the Kelvin scale: (a) 25 degrees C (b) 373 degrees C.",
+          "answer": "(a) 25 degrees C = 25 + 273 = 298 K. (b) 373 degrees C = 373 + 273 = 646 K.",
+          "explanation": "To convert from Celsius to Kelvin, add 273 to the Celsius temperature."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "short",
+          "question": "What is the physical state of water at (a) 25 degrees C (b) 0 degrees C (c) 100 degrees C?",
+          "answer": "(a) At 25 degrees C, water is in the liquid state. (b) At 0 degrees C, water can exist as both solid (ice) and liquid (water) since this is its melting/freezing point. (c) At 100 degrees C, water can exist as both liquid (water) and gas (steam) since this is its boiling point.",
+          "explanation": "At the melting point and boiling point, two states can coexist during the change of state."
+        },
+        {
+          "id": "ch1-t3-m3",
+          "type": "short",
+          "question": "For any substance, why does the temperature remain constant during the change of state?",
+          "answer": "During a change of state, the heat energy supplied is used to overcome the forces of attraction between the particles. This energy does not increase the kinetic energy of the particles, so the temperature remains constant. This hidden heat is called latent heat.",
+          "explanation": "The latent heat is used entirely to change the arrangement of particles (breaking or forming bonds between them) rather than increasing their speed."
+        },
+        {
+          "id": "ch1-t3-m4",
+          "type": "short",
+          "question": "Naphthalene balls disappear with time without leaving any solid. Give a reason.",
+          "answer": "Naphthalene balls undergo sublimation -- they change directly from the solid state to the gaseous state without passing through the liquid state. The naphthalene vapours diffuse into the air, and over time the entire ball disappears.",
+          "explanation": "Sublimation is the direct conversion of a solid into gas. Camphor and dry ice also show this property."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Why is ice at 273 K more effective in cooling than water at the same temperature?",
+          "answer": "Both ice and water at 273 K (0 degrees C) are at the same temperature, but ice is more effective in cooling. This is because when ice at 273 K is used for cooling, it first absorbs the latent heat of fusion (334 kJ/kg) to convert from solid to liquid at the same temperature. After melting, the water formed then absorbs more heat to rise in temperature. In contrast, water at 273 K can only absorb heat to raise its temperature. So ice at 273 K absorbs extra energy equal to the latent heat of fusion compared to water at the same temperature, making it more effective for cooling.",
+          "explanation": "The additional latent heat absorption by ice makes it a better coolant than water at the same temperature."
+        },
+        {
+          "id": "ch1-t3-h2",
+          "type": "long",
+          "question": "What produces more severe burns -- boiling water or steam? Explain why.",
+          "answer": "Steam produces more severe burns than boiling water, even though both are at 100 degrees C (373 K). This is because steam contains extra energy in the form of latent heat of vaporisation. When steam comes in contact with skin, it first releases this large amount of latent heat (2260 kJ/kg) as it condenses to form water, and then the hot water further releases heat as it cools down. Boiling water only releases heat as it cools down from 100 degrees C. The additional latent heat released by steam causes much more severe burns.",
+          "explanation": "Steam has more energy than boiling water at the same temperature due to the latent heat of vaporisation."
+        },
+        {
+          "id": "ch1-t3-h3",
+          "type": "long",
+          "question": "Name A, B, C, D, E, and F in the following changes of state: Solid --(A)--> Liquid --(C)--> Gas. Gas --(D)--> Liquid --(B)--> Solid. Solid --(E)--> Gas. Gas --(F)--> Solid.",
+          "answer": "A = Melting (or Fusion) -- the change from solid to liquid. B = Freezing (or Solidification) -- the change from liquid to solid. C = Boiling (or Vaporisation) -- the change from liquid to gas. D = Condensation (or Liquefaction) -- the change from gas to liquid. E = Sublimation -- the direct change from solid to gas. F = Deposition -- the direct change from gas to solid.",
+          "explanation": "These are the six possible interconversions between the three states of matter."
+        },
+        {
+          "id": "ch1-t3-h4",
+          "type": "long",
+          "question": "Suggest a method to liquefy atmospheric gases.",
+          "answer": "Atmospheric gases can be liquefied by applying high pressure and reducing the temperature. When pressure is increased, gas particles are forced closer together. When temperature is reduced, the particles slow down and their kinetic energy decreases. The combination of high pressure and low temperature brings the particles close enough for the forces of attraction to hold them together in the liquid state. For example, oxygen, nitrogen, and other atmospheric gases are liquefied using this method for industrial and medical purposes.",
+          "explanation": "Pressure and temperature together determine the state of matter. By increasing pressure and decreasing temperature, gases can be converted into liquids."
+        }
+      ]
+    },
+    {
+      "topic": "Evaporation",
+      "easy": [
+        {
+          "id": "ch1-t4-e1",
+          "type": "mcq",
+          "question": "Evaporation is a:",
+          "options": ["Bulk phenomenon", "Surface phenomenon", "Both bulk and surface", "Neither bulk nor surface"],
+          "answer": "Surface phenomenon",
+          "explanation": "Evaporation occurs only at the surface of a liquid, where particles with enough kinetic energy escape into the air. Boiling, on the other hand, is a bulk phenomenon."
+        },
+        {
+          "id": "ch1-t4-e2",
+          "type": "fill",
+          "question": "The amount of water vapour present in air is called ______.",
+          "answer": "humidity",
+          "explanation": "Humidity measures how much water vapour is in the air. High humidity slows down evaporation."
+        },
+        {
+          "id": "ch1-t4-e3",
+          "type": "mcq",
+          "question": "Which of the following does NOT increase the rate of evaporation?",
+          "options": ["Increase in temperature", "Increase in surface area", "Increase in humidity", "Increase in wind speed"],
+          "answer": "Increase in humidity",
+          "explanation": "An increase in humidity means the air already has a lot of water vapour, which slows down evaporation. All other factors increase the rate of evaporation."
+        },
+        {
+          "id": "ch1-t4-e4",
+          "type": "mcq",
+          "question": "Why does our palm feel cold when we put some acetone on it?",
+          "options": ["Acetone is naturally cold", "Acetone absorbs heat from the palm as it evaporates", "Acetone reacts with skin", "Acetone reduces blood flow"],
+          "answer": "Acetone absorbs heat from the palm as it evaporates",
+          "explanation": "Acetone evaporates quickly because it has a low boiling point. During evaporation, it absorbs heat energy from the palm, making it feel cold."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t4-m1",
+          "type": "short",
+          "question": "Why does a desert cooler cool better on a hot dry day?",
+          "answer": "A desert cooler works by evaporating water. On a hot dry day, the temperature is high and humidity is low. High temperature increases the rate of evaporation, and low humidity means the air can absorb more water vapour. Both factors increase evaporation, which absorbs more heat from the surroundings, producing better cooling.",
+          "explanation": "Desert coolers are less effective on humid days because the air already contains a lot of moisture, slowing evaporation."
+        },
+        {
+          "id": "ch1-t4-m2",
+          "type": "short",
+          "question": "How does the water kept in an earthen pot (matka) become cool during summer?",
+          "answer": "An earthen pot has tiny pores in its walls. Water slowly seeps through these pores to the outer surface of the pot and evaporates. During evaporation, the water absorbs latent heat of vaporisation from the remaining water inside the pot, making it cool.",
+          "explanation": "This is why matkas have been used in India for centuries to keep drinking water cool without electricity."
+        },
+        {
+          "id": "ch1-t4-m3",
+          "type": "short",
+          "question": "Why are we able to sip hot tea or milk faster from a saucer rather than a cup?",
+          "answer": "A saucer has a larger surface area compared to a cup. Since evaporation is a surface phenomenon, a larger surface area increases the rate of evaporation. Faster evaporation means more heat is absorbed from the tea or milk, cooling it down more quickly. This is why we can sip it faster from a saucer.",
+          "explanation": "This is a practical application of the relationship between surface area and rate of evaporation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t4-h1",
+          "type": "long",
+          "question": "Explain the process of evaporation. What factors affect the rate of evaporation? How does evaporation cause cooling?",
+          "answer": "Evaporation is the process of change of a liquid into vapour at any temperature below its boiling point. It is a surface phenomenon. At any given temperature, particles in a liquid have different amounts of kinetic energy. Some particles at the surface have enough energy to overcome the forces of attraction and escape into the air as vapour. Factors affecting the rate of evaporation: (1) Surface area -- larger surface area increases evaporation. (2) Temperature -- higher temperature gives more particles enough energy to escape. (3) Humidity -- lower humidity allows faster evaporation since the air can hold more vapour. (4) Wind speed -- higher wind speed carries away vapour particles, allowing more liquid particles to evaporate. Evaporation causes cooling because the escaping particles absorb energy (latent heat of vaporisation) from the liquid and its surroundings, reducing their temperature.",
+          "explanation": "Evaporation is different from boiling. Boiling occurs at a fixed temperature throughout the liquid, while evaporation occurs at any temperature only at the surface."
+        },
+        {
+          "id": "ch1-t4-h2",
+          "type": "long",
+          "question": "What type of clothes should we wear in summer? Explain the science behind your answer.",
+          "answer": "We should wear light-coloured, loose-fitting cotton clothes in summer. Cotton is a good absorber of water (sweat). During summer, our body produces sweat to keep cool. Cotton absorbs this sweat and exposes it to the atmosphere, allowing it to evaporate easily. When the sweat evaporates, it absorbs heat energy (latent heat of vaporisation) from the body, producing a cooling effect. Light colours reflect more heat and absorb less, keeping us cooler. Loose-fitting clothes allow air circulation, which increases the rate of evaporation of sweat. Synthetic clothes do not absorb sweat as well, so the cooling effect is less.",
+          "explanation": "This is a practical application of evaporation causing cooling. Cotton's ability to absorb and release moisture makes it ideal for hot weather."
+        }
+      ]
+    }
+  ]
+}

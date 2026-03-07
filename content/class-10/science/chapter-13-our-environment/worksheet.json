@@ -1,0 +1,152 @@
+{
+  "topics": [
+    {
+      "topic": "Ecosystem, Food Chains, and Energy Flow",
+      "easy": [
+        {
+          "id": "ch13-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following constitute a food chain?",
+          "options": [
+            "Grass, wheat and mango",
+            "Grass, goat and human",
+            "Goat, cow and elephant",
+            "Grass, fish and goat"
+          ],
+          "answer": "Grass, goat and human",
+          "explanation": "A food chain shows organisms feeding on one another in a sequence. Grass (producer) → Goat (primary consumer/herbivore) → Human (secondary consumer) forms a valid food chain. The other options either list organisms at the same trophic level or organisms that do not naturally feed on each other in sequence."
+        },
+        {
+          "id": "ch13-t1-e2",
+          "type": "mcq",
+          "question": "Which of the following groups contain only biodegradable items?",
+          "options": [
+            "Grass, flowers and leather",
+            "Grass, wood and plastic",
+            "Fruit-peels, cake and lime-juice",
+            "Cake, wood and grass"
+          ],
+          "answer": "Grass, flowers and leather",
+          "explanation": "Grass, flowers, and leather are all biodegradable — they can be broken down by biological processes. Plastic (in option b) is non-biodegradable. Options (c) and (d) also contain only biodegradable items, but option (a) is the answer given in the NCERT answer key. Note: All items in (c) and (d) are also biodegradable — this is a question where multiple options could be considered correct, but (a) is the official NCERT answer."
+        },
+        {
+          "id": "ch13-t1-e3",
+          "type": "fill",
+          "question": "On average, only ______% of the energy at one trophic level is transferred to the next trophic level.",
+          "answer": "10",
+          "explanation": "This is known as the 10% law. When green plants are eaten by primary consumers, most energy is lost as heat, used in digestion and life processes. Only about 10% of the food eaten is converted into body mass available for the next level."
+        },
+        {
+          "id": "ch13-t1-e4",
+          "type": "short",
+          "question": "What are trophic levels? Give an example of a food chain and state the different trophic levels in it.",
+          "answer": "A trophic level is each step or level of a food chain at which the transfer of food (and energy) takes place.\n\nExample food chain: Grass → Grasshopper → Frog → Snake → Hawk\n\nTrophic levels:\n- First trophic level: Grass (Producer/Autotroph)\n- Second trophic level: Grasshopper (Primary consumer/Herbivore)\n- Third trophic level: Frog (Secondary consumer/Small carnivore)\n- Fourth trophic level: Snake (Tertiary consumer/Larger carnivore)\n- Fifth trophic level: Hawk (Top carnivore)\n\nThe producers (autotrophs) are always at the first trophic level as they fix solar energy and make it available for consumers.",
+          "explanation": "Trophic levels represent the position of an organism in a food chain. Energy decreases at each successive trophic level."
+        },
+        {
+          "id": "ch13-t1-e5",
+          "type": "short",
+          "question": "What is the role of decomposers in the ecosystem?",
+          "answer": "Decomposers (bacteria and fungi) play a crucial role in the ecosystem:\n\n(i) They break down the dead remains and waste products of organisms into simple inorganic substances.\n(ii) These simple substances are released back into the soil, water, and air, making them available for use by producers (plants) again.\n(iii) They help in the natural replenishment of the soil by recycling nutrients.\n(iv) They help in cleaning the environment by decomposing dead organic matter.\n\nWithout decomposers, dead organisms and waste would accumulate, nutrients would not be recycled, and the soil would not be replenished — eventually making it impossible for producers to grow.",
+          "explanation": "Decomposers are essential for nutrient cycling. They convert complex organic substances back into simple inorganic forms that plants can use, completing the cycle of matter in the ecosystem."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t1-m1",
+          "type": "short",
+          "question": "What will happen if we kill all the organisms in one trophic level?",
+          "answer": "If all organisms in one trophic level are killed, it will severely disrupt the food chain and the entire ecosystem:\n\n(i) The organisms at the trophic level just above will have no food and will starve and die or migrate. This effect will cascade upward through all higher trophic levels.\n\n(ii) The organisms at the trophic level just below will have no predators and their population will increase uncontrollably. This overpopulation will lead to overuse of resources at their level, eventually causing their own decline.\n\n(iii) The balance of the ecosystem will be completely disturbed.\n\nFor example, if all herbivores (second trophic level) are removed:\n- Carnivores will starve and die\n- Plant population will increase enormously, leading to competition for resources\n- Decomposer activity will change\n\nThe entire food web connected to that trophic level will collapse.",
+          "explanation": "Removing any trophic level disrupts the balance of the ecosystem both above and below that level, demonstrating the interdependence of organisms."
+        },
+        {
+          "id": "ch13-t1-m2",
+          "type": "short",
+          "question": "Will the impact of removing all the organisms in a trophic level be different for different trophic levels? Can the organisms of any trophic level be removed without causing any damage to the ecosystem?",
+          "answer": "Yes, the impact will be different for different trophic levels:\n\n(i) Removing producers (first trophic level) would be the most devastating — all life in the ecosystem would collapse since producers form the base of all food chains and are the only organisms that can convert solar energy into food energy.\n\n(ii) Removing primary consumers (herbivores) would cause producer populations to grow uncontrollably and all higher consumers to starve.\n\n(iii) Removing top-level consumers would have a relatively smaller impact since there are fewer organisms at higher trophic levels, but it would still cause population imbalances at lower levels.\n\nNo, the organisms of any trophic level cannot be removed without causing damage to the ecosystem. Each trophic level plays a specific role, and all levels are interconnected. Removing any one level would disrupt the flow of energy and the balance of the entire ecosystem.",
+          "explanation": "The lower the trophic level removed, the more devastating the impact, since lower levels support all levels above them. No trophic level can be removed without consequences."
+        },
+        {
+          "id": "ch13-t1-m3",
+          "type": "short",
+          "question": "What is biological magnification? Will the levels of this magnification be different at different levels of the ecosystem?",
+          "answer": "Biological magnification is the phenomenon in which the concentration of harmful non-biodegradable chemicals (such as pesticides like DDT) increases progressively at each successive trophic level of a food chain.\n\nThese chemicals enter the food chain when plants absorb them from contaminated soil or water. Since they are non-biodegradable, they cannot be broken down or excreted by organisms. At each trophic level, the consumer eats many organisms from the level below, accumulating all the chemicals from each one.\n\nYes, the levels of magnification are different at different levels:\n- Producers have the lowest concentration\n- Primary consumers have a higher concentration\n- Secondary consumers have an even higher concentration\n- Top consumers (including humans) have the maximum concentration\n\nFor example, if water has 0.001 ppm of DDT, aquatic plants may have 0.01 ppm, small fish 0.1 ppm, large fish 1 ppm, and fish-eating birds 10 ppm — a 10,000-fold increase from water to top consumers.",
+          "explanation": "Biological magnification increases at higher trophic levels because non-biodegradable chemicals accumulate through the food chain. Humans, being top consumers, are most affected."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t1-h1",
+          "type": "long",
+          "question": "Explain the flow of energy in an ecosystem. Why are food chains generally limited to 3-4 trophic levels? If all the waste we generate is biodegradable, will this have no impact on the environment?",
+          "answer": "Flow of energy in an ecosystem:\n\nThe Sun is the ultimate source of energy for most ecosystems. The flow of energy follows these patterns:\n\n(i) Green plants (producers) capture about 1% of the solar energy falling on their leaves and convert it into chemical energy through photosynthesis.\n\n(ii) When primary consumers (herbivores) eat plants, they obtain this stored energy. However, a large part of the energy is lost as heat during life processes (respiration), some is used in digestion, and only about 10% is converted into body mass available for the next trophic level.\n\n(iii) This 10% transfer continues at each subsequent trophic level — secondary consumers get 10% of what primary consumers had, and so on.\n\n(iv) The flow of energy is unidirectional — it moves from the Sun → producers → primary consumers → secondary consumers → tertiary consumers. Energy does not flow back from consumers to producers or from producers back to the Sun.\n\n(v) Energy diminishes progressively at each trophic level.\n\nWhy food chains are limited to 3-4 levels:\nSince only 10% of energy is transferred to the next trophic level, the energy available decreases rapidly:\n- If producers have 10,000 J of energy\n- Primary consumers get 1,000 J (10%)\n- Secondary consumers get 100 J (10% of 1,000)\n- Tertiary consumers get 10 J (10% of 100)\n- Fourth-level consumers would get only 1 J\n\nAfter 3-4 trophic levels, so little usable energy remains that it cannot sustain another level of consumers. This is why food chains rarely have more than 3-4 steps.\n\nBiodegradable waste impact:\nEven if all waste generated is biodegradable, it would still have an impact on the environment:\n\n(i) If the volume of biodegradable waste is too large, the decomposers may not be able to break it down fast enough, leading to accumulation.\n(ii) Accumulated biodegradable waste produces foul smell and becomes a breeding ground for disease-causing organisms (flies, mosquitoes, bacteria).\n(iii) Decomposition of large amounts of organic waste produces harmful gases like methane and hydrogen sulphide.\n(iv) Excessive biodegradable waste in water bodies leads to eutrophication — excessive nutrient enrichment that depletes oxygen and kills aquatic life.\n\nTherefore, even biodegradable waste needs to be managed properly.",
+          "explanation": "Energy flow is unidirectional and only 10% is transferred between trophic levels, limiting food chains. Even biodegradable waste can cause environmental problems if not properly managed."
+        }
+      ]
+    },
+    {
+      "topic": "Ozone Depletion and Waste Management",
+      "easy": [
+        {
+          "id": "ch13-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following are environment-friendly practices?",
+          "options": [
+            "Carrying cloth-bags to put purchases in while shopping",
+            "Switching off unnecessary lights and fans",
+            "Walking to school instead of getting your mother to drop you on her scooter",
+            "All of the above"
+          ],
+          "answer": "All of the above",
+          "explanation": "All the listed practices are environment-friendly: cloth bags reduce plastic waste, switching off lights saves energy, and walking reduces fuel consumption and air pollution."
+        },
+        {
+          "id": "ch13-t2-e2",
+          "type": "fill",
+          "question": "The chemicals responsible for the depletion of the ozone layer are called ______ (CFCs).",
+          "answer": "chlorofluorocarbons",
+          "explanation": "Chlorofluorocarbons (CFCs) are synthetic chemicals used as refrigerants and in fire extinguishers. They break down ozone molecules in the upper atmosphere, thinning the protective ozone layer."
+        },
+        {
+          "id": "ch13-t2-e3",
+          "type": "short",
+          "question": "Why are some substances biodegradable and some non-biodegradable?",
+          "answer": "Substances are biodegradable or non-biodegradable based on whether biological enzymes can break them down:\n\n(i) Biodegradable substances (like paper, cotton, food waste, wood) are made of natural organic compounds that decomposer organisms (bacteria, fungi) can recognise and break down using their enzymes.\n\n(ii) Non-biodegradable substances (like plastics, polythene, glass, synthetic fibres) are human-made materials whose molecular structure is not recognised by any naturally occurring enzymes. Since enzymes are specific in their action — each enzyme can only break down a particular type of substance — there are no enzymes in nature designed to decompose these artificial materials.\n\nThis is why non-biodegradable substances persist in the environment for very long periods — they are not part of any natural biological cycle.",
+          "explanation": "The specificity of enzymes is the key reason. Natural substances have corresponding enzymes in decomposers, while synthetic materials do not."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t2-m1",
+          "type": "short",
+          "question": "Why is damage to the ozone layer a cause for concern? What steps are being taken to limit this damage?",
+          "answer": "Damage to the ozone layer is a cause for concern because:\n\n(i) The ozone layer in the upper atmosphere shields the Earth's surface from harmful ultraviolet (UV) radiation from the Sun.\n(ii) UV radiation is known to cause skin cancer in human beings.\n(iii) UV radiation can damage eyes, causing cataracts.\n(iv) It can suppress the immune system and affect the growth of plants.\n(v) Increased UV radiation can harm aquatic ecosystems by killing phytoplankton, which are the base of aquatic food chains.\n\nSteps being taken to limit this damage:\n\n(i) In 1987, the United Nations Environment Programme (UNEP) forged an international agreement (Montreal Protocol) to freeze CFC production at 1986 levels.\n(ii) It is now mandatory for all manufacturing companies worldwide to make CFC-free refrigerators.\n(iii) Alternative, ozone-friendly chemicals are being used as substitutes for CFCs in refrigeration, air conditioning, and aerosol products.\n(iv) Countries regularly monitor the ozone layer thickness and enforce regulations on ozone-depleting substances.\n(v) Public awareness campaigns educate people about the importance of the ozone layer.",
+          "explanation": "The ozone layer is essential for protecting life on Earth from UV radiation. International cooperation through the Montreal Protocol has been crucial in limiting CFC emissions."
+        },
+        {
+          "id": "ch13-t2-m2",
+          "type": "short",
+          "question": "Give any two ways in which biodegradable substances would affect the environment.",
+          "answer": "Two ways in which biodegradable substances can affect the environment:\n\n(i) When biodegradable substances (like kitchen waste, dead organisms, animal excreta) decompose, they produce foul smell and become breeding grounds for disease-causing organisms such as flies, mosquitoes, and pathogenic bacteria. This can lead to the spread of diseases.\n\n(ii) When large amounts of biodegradable waste are dumped into water bodies, their decomposition by microorganisms uses up dissolved oxygen in the water. This reduces the oxygen available for aquatic organisms, leading to their death. Excessive nutrients released during decomposition can also cause eutrophication — excessive growth of algae that further depletes oxygen.",
+          "explanation": "Even biodegradable substances can cause environmental problems if they accumulate faster than they can be decomposed, leading to health hazards and water pollution."
+        },
+        {
+          "id": "ch13-t2-m3",
+          "type": "short",
+          "question": "Give any two ways in which non-biodegradable substances would affect the environment.",
+          "answer": "Two ways in which non-biodegradable substances affect the environment:\n\n(i) Non-biodegradable substances like pesticides (DDT) enter food chains and undergo biological magnification — their concentration increases at each trophic level, causing harmful effects on organisms at higher levels, including humans. These chemicals can cause cancer, hormonal disruption, and organ damage.\n\n(ii) Non-biodegradable materials like plastics and polythene persist in the environment for hundreds of years. They clog drains causing waterlogging and flooding, pollute soil making it infertile, and are ingested by animals (especially marine life) causing suffocation and death. Microplastics contaminate water bodies and enter the food chain.",
+          "explanation": "Non-biodegradable substances cause long-term environmental damage because they cannot be broken down naturally and persist in the environment, accumulating through food chains."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t2-h1",
+          "type": "long",
+          "question": "What is ozone and how does it affect any ecosystem? How can you help in reducing the problem of waste disposal? Give any two methods. Also explain the problems caused by the non-biodegradable wastes that we generate.",
+          "answer": "Ozone and its effect on ecosystems:\n\nOzone (O3) is a molecule formed by three atoms of oxygen. It is found in the upper atmosphere (stratosphere) where it forms a protective layer.\n\nFormation: UV radiation from the Sun splits molecular oxygen (O2) into free oxygen atoms (O), which then combine with O2 to form ozone (O3).\nO2 → O + O (UV splits O2)\nO + O2 → O3 (ozone forms)\n\nEffect on ecosystem:\n(i) The ozone layer shields the Earth's surface from harmful ultraviolet (UV) radiation from the Sun.\n(ii) Without this protection, UV radiation would cause skin cancer in humans, damage eyes, suppress immune systems, and harm plant growth.\n(iii) UV radiation can kill phytoplankton in oceans, disrupting the entire aquatic food chain.\n(iv) The depletion of ozone by CFCs has created 'holes' in the ozone layer, allowing more UV radiation to reach the Earth's surface, threatening all ecosystems.\n(v) At ground level, ozone is a pollutant — it is toxic to living organisms and can damage lungs and plant tissues.\n\nTwo methods to reduce waste disposal problems:\n\n(i) Segregation and composting: Separate biodegradable waste from non-biodegradable waste at the source. Biodegradable waste (kitchen waste, garden waste) can be composted to produce nutrient-rich manure for plants, reducing the volume of waste going to landfills.\n\n(ii) Reduce and recycle: Reduce the use of non-biodegradable materials (use cloth bags instead of plastic, avoid single-use plastics). Recycle materials like paper, glass, metals, and certain plastics through proper recycling systems to reduce the amount of waste that needs disposal.\n\nProblems caused by non-biodegradable wastes:\n\n(i) Persistence: Non-biodegradable wastes like plastics, glass, and synthetic materials remain in the environment for hundreds to thousands of years, accumulating in landfills, oceans, and soil.\n\n(ii) Biological magnification: Non-biodegradable pesticides and chemicals enter food chains and their concentration increases at each trophic level, reaching harmful levels in top consumers including humans, causing cancer and organ damage.\n\n(iii) Soil and water pollution: Chemicals leaching from non-biodegradable waste contaminate soil and groundwater, making them toxic. Plastics in water bodies harm aquatic life — animals mistake plastic for food, leading to choking, strangulation, and death.\n\n(iv) Blocking natural processes: Plastics and other non-biodegradable materials in soil prevent water absorption and root penetration, reducing soil fertility. In drains, they cause blockages leading to flooding and stagnant water that breeds mosquitoes.\n\n(v) Burning non-biodegradable waste (like plastics) releases toxic fumes and greenhouse gases, contributing to air pollution and climate change.",
+          "explanation": "Ozone is protective in the upper atmosphere but harmful at ground level. Non-biodegradable waste causes long-term environmental damage through persistence, biological magnification, and pollution. Reducing and recycling waste are essential strategies."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "topics": [
+    {
+      "topic": "Basic Probability Concepts",
+      "easy": [
+        {
+          "id": "ch14-t1-e1",
+          "type": "mcq",
+          "question": "The probability of an event that is certain to happen is:",
+          "options": ["0", "0.5", "1", "2"],
+          "answer": "1",
+          "explanation": "A sure or certain event has probability 1. For example, the sun will rise tomorrow has probability 1."
+        },
+        {
+          "id": "ch14-t1-e2",
+          "type": "fill",
+          "question": "The probability of an impossible event is ______.",
+          "answer": "0",
+          "explanation": "An impossible event can never occur, so its probability is 0."
+        },
+        {
+          "id": "ch14-t1-e3",
+          "type": "mcq",
+          "question": "The probability of any event E satisfies:",
+          "options": ["0 <= P(E) <= 1", "-1 <= P(E) <= 1", "0 < P(E) < 1", "P(E) >= 0"],
+          "answer": "0 <= P(E) <= 1",
+          "explanation": "The probability of any event always lies between 0 and 1, inclusive."
+        },
+        {
+          "id": "ch14-t1-e4",
+          "type": "mcq",
+          "question": "If P(E) = 0.05, what is the probability of 'not E'?",
+          "options": ["0.05", "0.5", "0.95", "1"],
+          "answer": "0.95",
+          "explanation": "P(not E) = 1 - P(E) = 1 - 0.05 = 0.95."
+        },
+        {
+          "id": "ch14-t1-e5",
+          "type": "fill",
+          "question": "P(E) + P(not E) = ______.",
+          "answer": "1",
+          "explanation": "The sum of the probability of an event and its complement is always 1."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t1-m1",
+          "type": "short",
+          "question": "It is given that in a group of 3 students, the probability of 2 students not having the same birthday is 0.992. What is the probability that the 2 students have the same birthday?",
+          "answer": "P(same birthday) = 0.008",
+          "explanation": "P(same birthday) = 1 - P(not same birthday) = 1 - 0.992 = 0.008."
+        },
+        {
+          "id": "ch14-t1-m2",
+          "type": "short",
+          "question": "A bag contains 3 red balls and 5 black balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is (i) red? (ii) not red?",
+          "answer": "(i) P(red) = 3/8, (ii) P(not red) = 5/8",
+          "explanation": "(i) Total balls = 8. Red balls = 3. P(red) = 3/8.\n(ii) P(not red) = 1 - 3/8 = 5/8."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t1-h1",
+          "type": "long",
+          "question": "A box contains 12 balls out of which x are black. If one ball is drawn at random from the box, what is the probability of getting a black ball? If 6 more black balls are put in the box, the probability of drawing a black ball is now double of what it was before. Find x.",
+          "answer": "x = 3",
+          "explanation": "Step 1: Initial probability = x/12.\nStep 2: After adding 6 black balls: total = 18, black = x + 6.\nStep 3: New probability = (x + 6)/18.\nStep 4: (x + 6)/18 = 2 * (x/12) = x/6.\nStep 5: 6(x + 6) = 18x. 6x + 36 = 18x. 12x = 36. x = 3."
+        }
+      ]
+    },
+    {
+      "topic": "Probability with Coins and Dice",
+      "easy": [
+        {
+          "id": "ch14-t2-e1",
+          "type": "mcq",
+          "question": "A coin is tossed once. The probability of getting a head is:",
+          "options": ["0", "1/4", "1/2", "1"],
+          "answer": "1/2",
+          "explanation": "A fair coin has two equally likely outcomes: Head and Tail. P(Head) = 1/2."
+        },
+        {
+          "id": "ch14-t2-e2",
+          "type": "fill",
+          "question": "When a die is thrown, the probability of getting a number greater than 4 is ______.",
+          "answer": "1/3",
+          "explanation": "Numbers greater than 4: {5, 6}. Total outcomes = 6. P = 2/6 = 1/3."
+        },
+        {
+          "id": "ch14-t2-e3",
+          "type": "short",
+          "question": "A die is thrown once. Find the probability of getting: (i) a prime number (ii) a number lying between 2 and 6.",
+          "answer": "(i) 1/2 (ii) 1/2",
+          "explanation": "(i) Prime numbers on a die: {2, 3, 5}. P = 3/6 = 1/2.\n(ii) Numbers between 2 and 6 (exclusive): {3, 4, 5}. P = 3/6 = 1/2."
+        },
+        {
+          "id": "ch14-t2-e4",
+          "type": "mcq",
+          "question": "When two coins are tossed simultaneously, the probability of getting at least one head is:",
+          "options": ["1/4", "1/2", "3/4", "1"],
+          "answer": "3/4",
+          "explanation": "Total outcomes: {HH, HT, TH, TT}. At least one head: {HH, HT, TH}. P = 3/4."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t2-m1",
+          "type": "short",
+          "question": "Two dice are thrown simultaneously. Find the probability of getting: (i) the sum as 7 (ii) a doublet (same number on both dice).",
+          "answer": "(i) 1/6 (ii) 1/6",
+          "explanation": "(i) Sum 7: {(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)} = 6 outcomes. P = 6/36 = 1/6.\n(ii) Doublets: {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)} = 6 outcomes. P = 6/36 = 1/6."
+        },
+        {
+          "id": "ch14-t2-m2",
+          "type": "long",
+          "question": "A coin is tossed 3 times. Find the probability of getting: (i) at least 2 heads (ii) at most 2 heads.",
+          "answer": "(i) 1/2 (ii) 7/8",
+          "explanation": "Step 1: Total outcomes = 2^3 = 8: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}.\nStep 2: (i) At least 2 heads: {HHH, HHT, HTH, THH} = 4. P = 4/8 = 1/2.\nStep 3: (ii) At most 2 heads = not 3 heads. P = 1 - P(3 heads) = 1 - 1/8 = 7/8.\nAlternatively: outcomes with 0,1,2 heads: {TTT, HTT, THT, TTH, HHT, HTH, THH} = 7. P = 7/8."
+        },
+        {
+          "id": "ch14-t2-m3",
+          "type": "short",
+          "question": "Two dice are thrown simultaneously. Find the probability that the sum of the two numbers is not 11.",
+          "answer": "P(sum not 11) = 17/18",
+          "explanation": "Step 1: Sum 11: {(5,6),(6,5)} = 2 outcomes. P(sum 11) = 2/36 = 1/18.\nStep 2: P(sum not 11) = 1 - 1/18 = 17/18."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t2-h1",
+          "type": "long",
+          "question": "Two dice are thrown at the same time. Determine the probability that the difference of the numbers on the two dice is 2.",
+          "answer": "P = 2/9",
+          "explanation": "Step 1: Favourable outcomes where |difference| = 2:\n(1,3), (2,4), (3,5), (4,6), (3,1), (4,2), (5,3), (6,4) = 8 outcomes.\nStep 2: Total outcomes = 36.\nStep 3: P = 8/36 = 2/9."
+        }
+      ]
+    },
+    {
+      "topic": "Probability with Cards and Other Applications",
+      "easy": [
+        {
+          "id": "ch14-t3-e1",
+          "type": "mcq",
+          "question": "A standard deck of playing cards has how many cards?",
+          "options": ["48", "50", "52", "54"],
+          "answer": "52",
+          "explanation": "A standard deck has 52 cards: 4 suits (hearts, diamonds, clubs, spades) with 13 cards each."
+        },
+        {
+          "id": "ch14-t3-e2",
+          "type": "fill",
+          "question": "The probability of drawing a king from a well-shuffled deck of 52 cards is ______.",
+          "answer": "1/13",
+          "explanation": "There are 4 kings in a deck of 52 cards. P(king) = 4/52 = 1/13."
+        },
+        {
+          "id": "ch14-t3-e3",
+          "type": "short",
+          "question": "One card is drawn from a well-shuffled deck of 52 cards. Find the probability that the card drawn is a face card.",
+          "answer": "P(face card) = 3/13",
+          "explanation": "Face cards: Jack, Queen, King = 3 per suit x 4 suits = 12. P = 12/52 = 3/13."
+        },
+        {
+          "id": "ch14-t3-e4",
+          "type": "mcq",
+          "question": "The probability of drawing a red card from a deck is:",
+          "options": ["1/4", "1/2", "1/13", "3/4"],
+          "answer": "1/2",
+          "explanation": "Red cards = hearts (13) + diamonds (13) = 26. P = 26/52 = 1/2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t3-m1",
+          "type": "long",
+          "question": "One card is drawn from a well-shuffled deck of 52 cards. Find the probability of getting: (i) a king of red colour (ii) a spade (iii) the queen of diamonds.",
+          "answer": "(i) 1/26 (ii) 1/4 (iii) 1/52",
+          "explanation": "(i) Red kings: king of hearts + king of diamonds = 2. P = 2/52 = 1/26.\n(ii) Spades: 13 cards. P = 13/52 = 1/4.\n(iii) Queen of diamonds: 1 card. P = 1/52."
+        },
+        {
+          "id": "ch14-t3-m2",
+          "type": "short",
+          "question": "A jar contains 24 marbles: some green and some blue. If a marble is drawn at random, the probability that it is green is 2/3. What is the number of blue marbles?",
+          "answer": "Number of blue marbles = 8.",
+          "explanation": "Step 1: P(green) = 2/3. Green marbles = (2/3) x 24 = 16.\nStep 2: Blue marbles = 24 - 16 = 8."
+        },
+        {
+          "id": "ch14-t3-m3",
+          "type": "long",
+          "question": "A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at random from the box, find the probability that it bears: (i) a two-digit number (ii) a perfect square number (iii) a number divisible by 5.",
+          "answer": "(i) 81/90 = 9/10 (ii) 9/90 = 1/10 (iii) 18/90 = 1/5",
+          "explanation": "(i) Two-digit numbers from 10 to 90 = 81. P = 81/90 = 9/10.\n(ii) Perfect squares: 1, 4, 9, 16, 25, 36, 49, 64, 81 = 9. P = 9/90 = 1/10.\n(iii) Divisible by 5: 5,10,15,...,90 = 18 numbers. P = 18/90 = 1/5."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t3-h1",
+          "type": "long",
+          "question": "A game consists of tossing a one-rupee coin 3 times and noting its outcome each time. Hanif wins if all the tosses give the same result (i.e., three heads or three tails) and loses otherwise. Calculate the probability that Hanif will lose the game.",
+          "answer": "P(Hanif loses) = 3/4",
+          "explanation": "Step 1: Total outcomes = 2^3 = 8.\nStep 2: Hanif wins: {HHH, TTT} = 2 outcomes.\nStep 3: P(win) = 2/8 = 1/4.\nStep 4: P(lose) = 1 - 1/4 = 3/4."
+        },
+        {
+          "id": "ch14-t3-h2",
+          "type": "long",
+          "question": "A game of chance consists of spinning an arrow which comes to rest pointing at one of the numbers 1, 2, 3, 4, 5, 6, 7, 8, and these are equally likely outcomes. What is the probability that it will point at: (i) 8? (ii) an odd number? (iii) a number greater than 2? (iv) a number less than 9?",
+          "answer": "(i) 1/8 (ii) 1/2 (iii) 3/4 (iv) 1",
+          "explanation": "(i) P(8) = 1/8.\n(ii) Odd numbers: {1, 3, 5, 7} = 4. P = 4/8 = 1/2.\n(iii) Numbers greater than 2: {3,4,5,6,7,8} = 6. P = 6/8 = 3/4.\n(iv) Numbers less than 9: all 8 numbers. P = 8/8 = 1."
+        }
+      ]
+    }
+  ]
+}

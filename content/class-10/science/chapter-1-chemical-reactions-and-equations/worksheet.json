@@ -1,0 +1,225 @@
+{
+  "topics": [
+    {
+      "topic": "Chemical Equations and Balancing",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "Which of the statements about the reaction below are incorrect?\n2PbO(s) + C(s) → 2Pb(s) + CO₂(g)\n(a) Lead is getting reduced.\n(b) Carbon dioxide is getting oxidised.\n(c) Carbon is getting oxidised.\n(d) Lead oxide is getting reduced.",
+          "options": ["(a) and (b)", "(a) and (c)", "(a), (b) and (c)", "All"],
+          "answer": "(a) and (b)",
+          "explanation": "Lead oxide (PbO) is getting reduced to lead (Pb) by losing oxygen — so (a) is incorrect (it should say lead oxide, not lead). Carbon dioxide is a product, not getting oxidised — so (b) is incorrect. Carbon is getting oxidised (gains oxygen to form CO₂) — (c) is correct. Lead oxide is getting reduced — (d) is correct."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "A chemical equation is balanced so that the number of ______ of each element is the same on both sides.",
+          "answer": "atoms",
+          "explanation": "According to the law of conservation of mass, the total number of atoms of each element must be equal on both sides of a balanced chemical equation."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "mcq",
+          "question": "What happens when dilute hydrochloric acid is added to iron fillings?",
+          "options": ["Hydrogen gas and iron chloride are produced", "Chlorine gas and iron hydroxide are produced", "No reaction takes place", "Iron salt and water are produced"],
+          "answer": "Hydrogen gas and iron chloride are produced",
+          "explanation": "When dilute HCl reacts with iron, it produces iron chloride (FeCl₂) and hydrogen gas (H₂). The reaction is: Fe + 2HCl → FeCl₂ + H₂"
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "short",
+          "question": "What is a balanced chemical equation? Why should chemical equations be balanced?",
+          "answer": "A balanced chemical equation has an equal number of atoms of each element on both sides of the equation. Chemical equations should be balanced to satisfy the law of conservation of mass, which states that mass can neither be created nor destroyed in a chemical reaction.",
+          "explanation": "The law of conservation of mass requires that the total mass of reactants equals the total mass of products. This is ensured when the number of atoms of each element is the same on both sides."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "fill",
+          "question": "The symbols (s), (l), (g), and (aq) in a chemical equation represent ______, liquid, gas, and aqueous states respectively.",
+          "answer": "solid",
+          "explanation": "Physical state symbols are added to make chemical equations more informative: (s) for solid, (l) for liquid, (g) for gas, and (aq) for aqueous (dissolved in water)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Translate the following statement into a balanced chemical equation: Hydrogen gas combines with nitrogen to form ammonia.",
+          "answer": "3H₂(g) + N₂(g) → 2NH₃(g)",
+          "explanation": "Nitrogen and hydrogen combine in a 1:3 molar ratio to form ammonia. Balancing gives 3 molecules of H₂ and 1 molecule of N₂ producing 2 molecules of NH₃."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Balance the following chemical equation: NaOH + H₂SO₄ → Na₂SO₄ + H₂O",
+          "answer": "2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O",
+          "explanation": "Na₂SO₄ has 2 Na atoms, so we need 2NaOH on the LHS. This gives 2 O and 2 H from NaOH plus 4 O, 2 H and 1 S from H₂SO₄ on LHS. On RHS, Na₂SO₄ has 4 O and 1 S, plus 2H₂O gives 2 O and 4 H. All atoms balance."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "long",
+          "question": "Write balanced chemical equations with state symbols for the following reactions:\n(i) Solutions of barium chloride and sodium sulphate in water react to give insoluble barium sulphate and the solution of sodium chloride.\n(ii) Sodium hydroxide solution reacts with hydrochloric acid solution to produce sodium chloride solution and water.",
+          "answer": "(i) BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq)\n(ii) NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)",
+          "explanation": "In (i), barium sulphate is insoluble so it is marked (s) as a precipitate. In (ii), the reaction between a base and an acid produces a salt and water — a neutralisation reaction."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Write the balanced chemical equations for the following reactions and identify the type of reaction:\n(a) Potassium bromide(aq) + Barium iodide(aq) → Potassium iodide(aq) + Barium bromide(s)\n(b) Zinc carbonate(s) → Zinc oxide(s) + Carbon dioxide(g)\n(c) Hydrogen(g) + Chlorine(g) → Hydrogen chloride(g)\n(d) Magnesium(s) + Hydrochloric acid(aq) → Magnesium chloride(aq) + Hydrogen(g)",
+          "answer": "(a) 2KBr(aq) + BaI₂(aq) → 2KI(aq) + BaBr₂(s) — Double displacement reaction\n(b) ZnCO₃(s) → ZnO(s) + CO₂(g) — Decomposition reaction\n(c) H₂(g) + Cl₂(g) → 2HCl(g) — Combination reaction\n(d) Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g) — Displacement reaction",
+          "explanation": "(a) Ions are exchanged between KBr and BaI₂, making it a double displacement reaction. (b) A single compound breaks into two products — decomposition. (c) Two elements combine into one compound — combination. (d) Magnesium displaces hydrogen from HCl — displacement."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Chemical Reactions",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "Fe₂O₃ + 2Al → Al₂O₃ + 2Fe. The above reaction is an example of a:",
+          "options": ["Combination reaction", "Double displacement reaction", "Decomposition reaction", "Displacement reaction"],
+          "answer": "Displacement reaction",
+          "explanation": "Aluminium displaces iron from iron oxide because aluminium is more reactive than iron. This is a displacement reaction (also known as a thermite reaction)."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "A reaction in which a single product is formed from two or more reactants is called a ______ reaction.",
+          "answer": "combination",
+          "explanation": "In a combination reaction, two or more substances (elements or compounds) combine to form a single product."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "short",
+          "question": "Why does the colour of copper sulphate solution change when an iron nail is dipped in it?",
+          "answer": "Iron is more reactive than copper, so it displaces copper from copper sulphate solution. The blue colour of copper sulphate fades as it converts to green ferrous sulphate, and a brownish deposit of copper forms on the iron nail. Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s)",
+          "explanation": "This is a displacement reaction. Iron displaces copper because it is higher in the reactivity series. The blue Cu²⁺ ions are replaced by green Fe²⁺ ions in solution."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "mcq",
+          "question": "Which of the following is a decomposition reaction?",
+          "options": ["2H₂ + O₂ → 2H₂O", "2AgCl → 2Ag + Cl₂", "Fe + CuSO₄ → FeSO₄ + Cu", "NaOH + HCl → NaCl + H₂O"],
+          "answer": "2AgCl → 2Ag + Cl₂",
+          "explanation": "In this reaction, a single compound (AgCl) breaks down into two simpler substances (Ag and Cl₂), which is the definition of a decomposition reaction."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Why are decomposition reactions called the opposite of combination reactions? Write equations for these reactions.",
+          "answer": "In a combination reaction, two or more substances combine to form a single product. In a decomposition reaction, a single substance breaks down into two or more simpler substances. They are opposite processes.\n\nCombination: CaO(s) + H₂O(l) → Ca(OH)₂(aq)\nDecomposition: CaCO₃(s) → CaO(s) + CO₂(g)",
+          "explanation": "Combination reactions build complex substances from simpler ones, while decomposition reactions break down complex substances into simpler ones. They are reverse processes."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "long",
+          "question": "Write one equation each for decomposition reactions where energy is supplied in the form of heat, light, or electricity.",
+          "answer": "Heat (thermal decomposition): CaCO₃(s) →(heat) CaO(s) + CO₂(g)\nLight (photolytic decomposition): 2AgCl(s) →(sunlight) 2Ag(s) + Cl₂(g)\nElectricity (electrolytic decomposition): 2H₂O(l) →(electricity) 2H₂(g) + O₂(g)",
+          "explanation": "Decomposition reactions require energy input. Depending on the form of energy used, they are classified as thermal (heat), photolytic (light), or electrolytic (electricity) decomposition."
+        },
+        {
+          "id": "ch1-t2-m3",
+          "type": "short",
+          "question": "What is the difference between displacement and double displacement reactions? Write equations for these reactions.",
+          "answer": "In a displacement reaction, a more reactive element displaces a less reactive element from its compound. In a double displacement reaction, there is an exchange of ions between two compounds.\n\nDisplacement: Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)\nDouble displacement: Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq)",
+          "explanation": "Displacement involves one element replacing another, while double displacement involves mutual exchange of ions between two compounds."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "Give an example of a double displacement reaction other than the ones given in the textbook. Also, explain what a precipitation reaction is with examples.",
+          "answer": "Double displacement reaction:\nAgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)\n\nA precipitation reaction is a type of double displacement reaction in which an insoluble product (precipitate) is formed. In the above example, silver chloride (AgCl) is the white precipitate that forms when silver nitrate and sodium chloride solutions are mixed.\n\nAnother example: Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)\nHere, lead iodide (PbI₂) is the yellow precipitate formed.",
+          "explanation": "Precipitation reactions are a subset of double displacement reactions where one of the products is insoluble and settles out of solution as a precipitate."
+        },
+        {
+          "id": "ch1-t2-h2",
+          "type": "long",
+          "question": "In the refining of silver, the recovery of silver from silver nitrate solution involves displacement by copper metal. Write down the reaction involved and explain why copper can displace silver.",
+          "answer": "Cu(s) + 2AgNO₃(aq) → Cu(NO₃)₂(aq) + 2Ag(s)\n\nCopper can displace silver from silver nitrate solution because copper is more reactive than silver. In the reactivity series, copper is placed above silver. A more reactive metal can displace a less reactive metal from its salt solution.",
+          "explanation": "This is a displacement reaction used in the refining of silver. The copper metal dissolves into the solution as Cu²⁺ ions while silver ions (Ag⁺) are deposited as metallic silver."
+        }
+      ]
+    },
+    {
+      "topic": "Oxidation, Reduction, and Everyday Effects",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "fill",
+          "question": "If a substance gains oxygen during a reaction, it is said to be ______.",
+          "answer": "oxidised",
+          "explanation": "Oxidation is defined as the gain of oxygen or loss of hydrogen during a chemical reaction."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "mcq",
+          "question": "The process of rusting of iron is an example of:",
+          "options": ["Combination reaction", "Corrosion", "Rancidity", "Decomposition"],
+          "answer": "Corrosion",
+          "explanation": "Rusting of iron is corrosion — the gradual destruction of a metal by reaction with moisture, oxygen, and other substances in the environment."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "short",
+          "question": "Why do we apply paint on iron articles?",
+          "answer": "We apply paint on iron articles to prevent them from coming in contact with air and moisture. This prevents rusting (corrosion) of iron, which would otherwise damage the articles.",
+          "explanation": "Paint acts as a protective barrier between the iron surface and the atmosphere, preventing the oxidation reaction that causes rust formation."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "fill",
+          "question": "When fats and oils are oxidised, they become rancid. This process is called ______.",
+          "answer": "rancidity",
+          "explanation": "Rancidity is the oxidation of fats and oils in food materials, causing unpleasant changes in smell and taste."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "Identify the substances that are oxidised and the substances that are reduced in the following reactions:\n(i) 4Na(s) + O₂(g) → 2Na₂O(s)\n(ii) CuO(s) + H₂(g) → Cu(s) + H₂O(l)",
+          "answer": "(i) Sodium (Na) is oxidised because it gains oxygen.\n(ii) CuO is reduced because it loses oxygen. H₂ is oxidised because it gains oxygen to form H₂O.",
+          "explanation": "Oxidation is gain of oxygen or loss of hydrogen. Reduction is loss of oxygen or gain of hydrogen. In redox reactions, one substance is oxidised while another is reduced simultaneously."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "short",
+          "question": "Oil and fat containing food items are flushed with nitrogen. Why?",
+          "answer": "Food items containing fats and oils are flushed with nitrogen gas to prevent oxidation (rancidity). Nitrogen is an inert gas that creates an unreactive atmosphere inside the packet, preventing the fats and oils from reacting with oxygen in the air.",
+          "explanation": "Nitrogen displaces oxygen from the packet. Without oxygen, oxidation cannot occur, and the food remains fresh for a longer period."
+        },
+        {
+          "id": "ch1-t3-m3",
+          "type": "short",
+          "question": "Why is respiration considered an exothermic reaction? Explain.",
+          "answer": "Respiration is considered an exothermic reaction because during respiration, glucose (obtained from food) combines with oxygen in the cells of our body to produce carbon dioxide and water, along with the release of energy. This energy is used for various life processes.\n\nC₆H₁₂O₆(aq) + 6O₂(aq) → 6CO₂(aq) + 6H₂O(l) + energy",
+          "explanation": "Since energy is released during respiration, it is classified as an exothermic reaction. This energy is essential for maintaining body temperature and carrying out various biological functions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Explain the following terms with one example each: (a) Corrosion (b) Rancidity. Also explain how they can be prevented.",
+          "answer": "(a) Corrosion: It is the process in which metals are gradually destroyed by the action of air, moisture, or chemicals on their surface. Example: Rusting of iron — iron reacts with oxygen and moisture to form hydrated iron(III) oxide (rust), which is a reddish-brown flaky substance. Prevention methods include painting, oiling, greasing, galvanising (coating with zinc), and chrome plating.\n\n(b) Rancidity: It is the process of oxidation of fats and oils in food, resulting in an unpleasant smell and taste. Example: Butter left at room temperature for a long time becomes rancid. Prevention methods include adding antioxidants, storing food in airtight containers, flushing food packets with nitrogen gas, and refrigeration.",
+          "explanation": "Both corrosion and rancidity are caused by oxidation reactions. Corrosion affects metals while rancidity affects food containing fats and oils. Prevention strategies aim to minimise contact with oxygen."
+        },
+        {
+          "id": "ch1-t3-h2",
+          "type": "long",
+          "question": "A shiny brown coloured element 'X' on heating in air becomes black in colour. Name the element 'X' and the black coloured compound formed. Write the balanced chemical equation and identify the type of reaction.",
+          "answer": "The element 'X' is copper (Cu). On heating in air, copper reacts with oxygen to form copper(II) oxide (CuO), which is black in colour.\n\nBalanced equation: 2Cu(s) + O₂(g) →(heat) 2CuO(s)\n\nThis is both a combination reaction (two reactants form a single product) and an oxidation reaction (copper gains oxygen).",
+          "explanation": "Copper is a shiny brown metal. When heated, it combines with oxygen from the air to form black copper oxide. This reaction demonstrates both combination and oxidation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Perpendicular Bisector and Angle Bisector",
+      "easy": [
+        { "id": "ch14-t1-e1", "type": "mcq", "question": "A perpendicular bisector of a line segment:", "options": ["Passes through one endpoint", "Divides it into two equal parts at 90°", "Is parallel to it", "Divides it into three equal parts"], "answer": "Divides it into two equal parts at 90°", "explanation": "A perpendicular bisector passes through the midpoint and is perpendicular (90°) to the segment." },
+        { "id": "ch14-t1-e2", "type": "fill", "question": "To bisect an angle means to divide it into ______ equal parts.", "answer": "two", "explanation": "Bisecting an angle divides it into two angles of equal measure." },
+        { "id": "ch14-t1-e3", "type": "mcq", "question": "Any point on the perpendicular bisector of XY is:", "options": ["Closer to X", "Closer to Y", "Equidistant from X and Y", "At the midpoint"], "answer": "Equidistant from X and Y", "explanation": "The key property: every point on the perpendicular bisector is at equal distance from both endpoints." },
+        { "id": "ch14-t1-e4", "type": "short", "question": "What angle does a perpendicular bisector make with the original line segment?", "answer": "90 degrees.", "explanation": "The word 'perpendicular' means at right angles (90°) to the segment." }
+      ],
+      "medium": [
+        { "id": "ch14-t1-m1", "type": "short", "question": "Describe the steps to construct the perpendicular bisector of a line segment XY.", "answer": "Step 1: With compass centred at X, draw arcs above and below XY (radius > half of XY).\nStep 2: Without changing the radius, centre at Y and draw arcs intersecting the first arcs. Call these points A and B.\nStep 3: Draw the line through A and B. This is the perpendicular bisector.", "explanation": "Points A and B are equidistant from X and Y, so the line through them is the perpendicular bisector." },
+        { "id": "ch14-t1-m2", "type": "short", "question": "Describe how to construct a 45° angle using compass and ruler.", "answer": "Step 1: Construct a 90° angle at a point on a line (using the perpendicular bisector method).\nStep 2: Bisect the 90° angle using the angle bisector construction.\nStep 3: Each half = 45°.", "explanation": "45° = half of 90°. Construct 90° first, then bisect it." }
+      ],
+      "hard": [
+        { "id": "ch14-t1-h1", "type": "long", "question": "Explain why the angle bisector construction works using triangle congruence.", "answer": "Given angle XOY:\n\nStep 1: Draw arc from O cutting OX at B and OY at A. So OA = OB (same radius).\nStep 2: From A and B, draw arcs with equal radii, intersecting at C. So AC = BC.\n\nIn triangles OAC and OBC:\n1. OA = OB (from step 1)\n2. AC = BC (from step 2)\n3. OC = OC (common side)\n\nBy SSS, triangle OAC ≅ triangle OBC.\n\nTherefore angle AOC = angle BOC (corresponding angles of congruent triangles).\n\nSo OC bisects angle XOY.", "explanation": "The construction creates two congruent triangles that share the angle bisector as a common side, proving the angles are equal." }
+      ]
+    },
+    {
+      "topic": "Tilings and Tessellations",
+      "easy": [
+        { "id": "ch14-t2-e1", "type": "mcq", "question": "Which of these regular polygons can tile a flat surface by itself?", "options": ["Regular pentagon", "Regular octagon", "Regular hexagon", "Regular heptagon"], "answer": "Regular hexagon", "explanation": "Only equilateral triangles (60°), squares (90°), and regular hexagons (120°) can tile alone, as their angles divide 360° evenly." },
+        { "id": "ch14-t2-e2", "type": "fill", "question": "An arrangement of shapes covering a surface with no gaps or overlaps is called a ______ or tessellation.", "answer": "tiling", "explanation": "A tiling (tessellation) covers a flat surface completely without gaps or overlaps." },
+        { "id": "ch14-t2-e3", "type": "mcq", "question": "How many equilateral triangles meet at each vertex in a triangular tiling?", "options": ["3", "4", "5", "6"], "answer": "6", "explanation": "Each angle of an equilateral triangle is 60°. At a vertex: 360° / 60° = 6 triangles." },
+        { "id": "ch14-t2-e4", "type": "short", "question": "Why can a regular pentagon not tile a flat surface?", "answer": "The interior angle of a regular pentagon is 108°. 360 / 108 = 3.33..., which is not a whole number. So pentagons cannot fit around a vertex without gaps or overlaps.", "explanation": "For a regular polygon to tile, its interior angle must divide 360° evenly." }
+      ],
+      "medium": [
+        { "id": "ch14-t2-m1", "type": "short", "question": "Which three regular polygons can tile a plane by themselves? Give the number of polygons meeting at each vertex for each.", "answer": "1. Equilateral triangle (60°): 6 triangles at each vertex (6 x 60° = 360°).\n2. Square (90°): 4 squares at each vertex (4 x 90° = 360°).\n3. Regular hexagon (120°): 3 hexagons at each vertex (3 x 120° = 360°).", "explanation": "These are the only three regular polygons whose interior angles divide 360° into a whole number." },
+        { "id": "ch14-t2-m2", "type": "short", "question": "Can regular octagons and squares tile together? Explain.", "answer": "Yes. A regular octagon has interior angles of 135°. Two octagons = 270°. One square = 90°. Total = 270° + 90° = 360°. So 2 octagons and 1 square can meet at each vertex.", "explanation": "Mixed tilings work when the angles at each vertex sum to exactly 360°." }
+      ],
+      "hard": [
+        { "id": "ch14-t2-h1", "type": "long", "question": "A regular polygon has an interior angle of 150°. (a) How many sides does it have? (b) Can it tile a plane by itself? (c) Can it tile together with equilateral triangles?", "answer": "(a) Interior angle formula: (n-2) x 180 / n = 150.\n(n-2) x 180 = 150n.\n180n - 360 = 150n.\n30n = 360.\nn = 12.\nIt is a regular 12-sided polygon (dodecagon).\n\n(b) 360 / 150 = 2.4, which is not a whole number. So it cannot tile alone.\n\n(c) Check: 150° + 150° + 60° = 360°. Yes! Two dodecagons and one equilateral triangle can meet at each vertex to form a tiling.", "explanation": "Use the interior angle formula to find the polygon. Then check if angles sum to 360° at a vertex for tiling." }
+      ]
+    }
+  ]
+}

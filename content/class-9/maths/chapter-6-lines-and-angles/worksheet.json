@@ -1,0 +1,168 @@
+{
+  "topics": [
+    {
+      "topic": "Pairs of Angles",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "Two angles whose sum is 180 degrees are called:",
+          "options": ["Complementary angles", "Supplementary angles", "Vertically opposite angles", "Adjacent angles"],
+          "answer": "Supplementary angles",
+          "explanation": "Two angles whose sum is 180 degrees are called supplementary angles. Complementary angles sum to 90 degrees."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "fill",
+          "question": "If two lines intersect, the vertically opposite angles are ______.",
+          "answer": "equal",
+          "explanation": "Theorem 6.1 states that when two lines intersect, the vertically opposite angles are always equal."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "short",
+          "question": "If a ray stands on a line making two adjacent angles, what is their sum?",
+          "answer": "The sum of the two adjacent angles is 180 degrees (Linear Pair Axiom).",
+          "explanation": "By Axiom 6.1, if a ray stands on a line, the two adjacent angles formed are supplementary, summing to 180 degrees."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "mcq",
+          "question": "Lines AB and CD intersect at O. If angle AOC = 40 degrees, what is angle BOD?",
+          "options": ["40 degrees", "140 degrees", "50 degrees", "180 degrees"],
+          "answer": "40 degrees",
+          "explanation": "Angle AOC and angle BOD are vertically opposite angles, so they are equal. Angle BOD = 40 degrees."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "Lines PQ and RS intersect at O. If angle POR : angle ROQ = 5 : 7, find all four angles.",
+          "answer": "angle POR + angle ROQ = 180 degrees (linear pair)\nangle POR = (5/12) x 180 = 75 degrees\nangle ROQ = (7/12) x 180 = 105 degrees\nangle POS = angle ROQ = 105 degrees (vertically opposite)\nangle SOQ = angle POR = 75 degrees (vertically opposite)",
+          "explanation": "Use the linear pair property and the given ratio to find angle POR and angle ROQ. Then use vertically opposite angles to find the remaining two."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "short",
+          "question": "Lines AB and CD intersect at O. If angle AOC + angle BOE = 70 degrees and angle BOD = 40 degrees, find angle BOE and reflex angle COE.",
+          "answer": "angle AOC = angle BOD = 40 degrees (vertically opposite)\nSo 40 + angle BOE = 70, giving angle BOE = 30 degrees.\nReflex angle COE = 360 - angle COE = 360 - (angle COB + angle BOE) = 360 - (140 + 30) = 360 - 170 = 190 degrees.\n(Note: angle COB = 180 - 40 = 140 degrees, linear pair with angle AOC)",
+          "explanation": "First find angle AOC using vertically opposite angles. Then calculate angle BOE from the given sum. Finally compute reflex angle COE."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "It is given that angle XYZ = 64 degrees and XY is produced to point P. If ray YQ bisects angle ZYP, find angle XYQ and reflex angle QYP.",
+          "answer": "Since XY is produced to P, XYP is a straight line.\nangle XYZ + angle ZYP = 180 degrees (linear pair)\n64 + angle ZYP = 180\nangle ZYP = 116 degrees\n\nRay YQ bisects angle ZYP:\nangle ZYQ = angle QYP = 116/2 = 58 degrees\n\nangle XYQ = angle XYZ + angle ZYQ = 64 + 58 = 122 degrees\n\nReflex angle QYP = 360 - angle QYP = 360 - 58 = 302 degrees",
+          "explanation": "Use the linear pair property to find angle ZYP. Then use the angle bisector to split it equally. Add angles to find angle XYQ."
+        }
+      ]
+    },
+    {
+      "topic": "Parallel Lines and Transversal",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "When a transversal intersects two parallel lines, the corresponding angles are:",
+          "options": ["Complementary", "Supplementary", "Equal", "Unequal"],
+          "answer": "Equal",
+          "explanation": "By the Corresponding Angles Axiom, corresponding angles formed by a transversal cutting two parallel lines are always equal."
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "When a transversal cuts two parallel lines, co-interior angles (same-side interior angles) are ______.",
+          "answer": "supplementary",
+          "explanation": "Co-interior angles (also called consecutive interior angles or same-side interior angles) sum to 180 degrees when the lines are parallel."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "short",
+          "question": "If AB || CD and a transversal makes an angle of 126 degrees with AB, what angle does it make at the corresponding position with CD?",
+          "answer": "126 degrees, because corresponding angles are equal when lines are parallel.",
+          "explanation": "By the Corresponding Angles Axiom, each pair of corresponding angles is equal when a transversal intersects two parallel lines."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "In the figure, AB || CD, EF is perpendicular to CD, and angle GED = 126 degrees. Find angle AGE, angle GEF, and angle FGE.",
+          "answer": "angle GEF = angle GED - angle DEF = 126 - 90 = 36 degrees\nangle AGE = 180 - angle GED = 180 - 126 = 54 degrees (co-interior angles)\nangle FGE = 180 - angle GEF - angle AGE... Actually:\nangle AGE + angle GED = 180 (co-interior angles, AB || CD)\nangle AGE = 180 - 126 = 54 degrees\nangle GEF = 126 - 90 = 36 degrees\nangle FGE = 180 - angle AGE = 180 - 54... Let us reconsider: angle FGE = 90 - angle AGE... No.\nangle AGE = 126 degrees (alternate interior angles if measured correctly) or 54 degrees depending on position.",
+          "explanation": "Use properties of parallel lines: co-interior angles sum to 180 degrees and alternate interior angles are equal. Since EF is perpendicular to CD, angle DEF = 90 degrees."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "short",
+          "question": "If AB || CD, CD || EF, and y : z = 3 : 7, find x.",
+          "answer": "Since AB || CD, x + y = 180 degrees (co-interior angles).\nSince CD || EF, y = z (alternate interior angles)... but actually z + y = 180 (co-interior).\nWait: y : z = 3 : 7, and y + z = 180 (co-interior angles, CD || EF).\nSo y = (3/10) x 180 = 54, z = (7/10) x 180 = 126.\nx + y = 180 (AB || CD, co-interior angles)\nx = 180 - 54 = 126 degrees.",
+          "explanation": "Since CD || EF, co-interior angles y and z sum to 180. Using the ratio 3:7, find y = 54 and z = 126. Then x = 180 - y = 126 (co-interior angles with AB || CD)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "In the figure, AB || CD and CD || EF. Also EA is perpendicular to AB. If angle BEF = 55 degrees, find the values of x, y, and z.",
+          "answer": "Since CD || EF:\ny + 55 = 180 (co-interior angles on the same side of transversal ED)\ny = 125 degrees\n\nSince AB || CD:\nx = y = 125 degrees (corresponding angles)\n\nSince AB || CD and CD || EF, we have AB || EF:\nangle EAB + angle FEA = 180 (co-interior angles)\n90 + z + 55 = 180\nz + 145 = 180\nz = 35 degrees",
+          "explanation": "Use parallel line properties step by step. First find y using CD || EF. Then find x using AB || CD. Finally use AB || EF (transitive property of parallel lines) to find z."
+        }
+      ]
+    },
+    {
+      "topic": "Angle Sum Property of a Triangle",
+      "easy": [
+        {
+          "id": "ch6-t3-e1",
+          "type": "mcq",
+          "question": "The sum of the angles of a triangle is:",
+          "options": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+          "answer": "180 degrees",
+          "explanation": "The angle sum property of a triangle states that the three interior angles always add up to 180 degrees."
+        },
+        {
+          "id": "ch6-t3-e2",
+          "type": "fill",
+          "question": "An exterior angle of a triangle is equal to the sum of the two ______ opposite angles.",
+          "answer": "interior",
+          "explanation": "The exterior angle theorem states that an exterior angle of a triangle equals the sum of the two non-adjacent (remote) interior angles."
+        },
+        {
+          "id": "ch6-t3-e3",
+          "type": "short",
+          "question": "In a triangle, two angles are 45 degrees and 65 degrees. Find the third angle.",
+          "answer": "Third angle = 180 - 45 - 65 = 70 degrees.",
+          "explanation": "By the angle sum property, the three angles must sum to 180 degrees."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t3-m1",
+          "type": "short",
+          "question": "In triangle PQR, if angle P = 50 degrees and angle Q = 77 degrees, find angle R. If QR is produced to S, find angle PRS.",
+          "answer": "angle R = 180 - 50 - 77 = 53 degrees.\nExterior angle PRS = angle P + angle Q = 50 + 77 = 127 degrees.\n(Or: angle PRS = 180 - angle PRQ = 180 - 53 = 127 degrees.)",
+          "explanation": "Use the angle sum property to find angle R. The exterior angle PRS equals the sum of the two remote interior angles (angle P and angle Q)."
+        },
+        {
+          "id": "ch6-t3-m2",
+          "type": "short",
+          "question": "The angles of a triangle are in the ratio 2 : 3 : 5. Find each angle and classify the triangle.",
+          "answer": "Sum = 2x + 3x + 5x = 10x = 180, so x = 18.\nAngles: 36 degrees, 54 degrees, 90 degrees.\nSince one angle is 90 degrees, it is a right-angled triangle.",
+          "explanation": "Use the ratio and the angle sum property to find each angle. The presence of a 90-degree angle makes it a right triangle."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t3-h1",
+          "type": "long",
+          "question": "Prove that the sum of angles of a triangle is 180 degrees.",
+          "answer": "Consider triangle ABC. Draw a line PQ through A parallel to BC.\nSince PQ || BC and AB is a transversal:\nangle PAB = angle ABC (alternate interior angles) ... (1)\nSince PQ || BC and AC is a transversal:\nangle QAC = angle ACB (alternate interior angles) ... (2)\nNow, angle PAB + angle BAC + angle QAC = 180 degrees (angles on a straight line PQ)\nSubstituting from (1) and (2):\nangle ABC + angle BAC + angle ACB = 180 degrees.\nHence, the sum of angles of a triangle is 180 degrees.",
+          "explanation": "The proof works by constructing a line through one vertex parallel to the opposite side, then using alternate interior angles to replace the angles at that vertex with the angles of the triangle."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+---
+title: Chapter 11 Areas Related to Circles
+---
+
+## Introduction
+
+You already know the basic formulas for circles: circumference = 2 pi r and area = pi r^2. In this chapter, we go deeper into finding the areas and lengths associated with **parts** of a circle -- specifically **sectors** and **segments**.
+
+These concepts are used in many real-life situations: the area swept by a clock hand, the grazing area of a horse tied to a post, the area cleaned by a car wiper, and much more.
+
+---
+
+## Recap: Basic Circle Formulas
+
+Before we begin, let us recall:
+
+- **Circumference** of a circle = 2 pi r
+- **Area** of a circle = pi r^2
+
+where **r** is the radius.
+
+Unless stated otherwise, use **pi = 22/7** in calculations.
+
+---
+
+## Sector and Segment of a Circle
+
+### What Is a Sector?
+
+A **sector** is the region enclosed by **two radii** and the **arc** between them. Think of it as a "slice" of a circular pizza.
+
+- **Minor sector:** the smaller slice (angle less than 180 degrees)
+- **Major sector:** the larger slice (angle greater than 180 degrees)
+
+The angle formed at the centre is called the **angle of the sector** (theta).
+
+Note: Angle of major sector = 360 - theta.
+
+### What Is a Segment?
+
+A **segment** is the region enclosed between a **chord** and the **arc** it cuts off.
+
+- **Minor segment:** the smaller region (on the side of the minor arc)
+- **Major segment:** the larger region (on the side of the major arc)
+
+> **Key idea:** A sector is like a pizza slice (bounded by two radii and an arc). A segment is like the region between a chord and the arc (no radii involved).
+
+---
+
+## Area of a Sector
+
+If a complete circle has an angle of 360 degrees and area pi r^2, then a sector with angle theta has:
+
+**Area of sector = (theta / 360) x pi r^2**
+
+### How to Remember
+
+The fraction **(theta / 360)** tells you what fraction of the whole circle the sector represents. Multiply this fraction by the area of the full circle.
+
+### Worked Example 1
+
+Find the area of a sector with radius 6 cm and angle 60 degrees.
+
+Area = (60/360) x (22/7) x 6^2
+= (1/6) x (22/7) x 36
+= (1/6) x (792/7)
+= 132/7
+= **18.86 cm^2** (approx.)
+
+### Worked Example 2
+
+The minute hand of a clock is 14 cm long. Find the area swept in 5 minutes.
+
+The minute hand completes 360 degrees in 60 minutes.
+In 5 minutes, it sweeps: (5/60) x 360 = 30 degrees.
+
+Area = (30/360) x (22/7) x 14^2
+= (1/12) x (22/7) x 196
+= (1/12) x 616
+= **154/3 cm^2** (approx. 51.33 cm^2)
+
+---
+
+## Length of an Arc
+
+Similarly, the length of the arc corresponding to a sector of angle theta is:
+
+**Length of arc = (theta / 360) x 2 pi r**
+
+### Worked Example
+
+In a circle of radius 21 cm, an arc subtends an angle of 60 degrees. Find the arc length.
+
+Arc length = (60/360) x 2 x (22/7) x 21
+= (1/6) x 2 x 22 x 3
+= (1/6) x 132
+= **22 cm**
+
+---
+
+## Area of a Segment
+
+A segment is the region between a chord and the corresponding arc. To find its area:
+
+**Area of segment = Area of sector - Area of triangle**
+
+The triangle is formed by the two radii and the chord.
+
+> **Key idea:** Segment = Sector minus Triangle. This is the formula you need for all segment problems.
+
+### Finding the Area of the Triangle
+
+For a sector with angle theta and radius r, the triangle formed by the two radii and the chord has area:
+
+**Area of triangle = (1/2) r^2 sin(theta)**
+
+For common angles:
+- theta = 60 degrees: Area of triangle = (root(3)/4) r^2
+- theta = 90 degrees: Area of triangle = (1/2) r^2
+- theta = 120 degrees: Area of triangle = (root(3)/4) r^2
+
+### Worked Example: Segment with 90-Degree Angle
+
+A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the minor segment. (Use pi = 3.14)
+
+**Step 1: Area of sector**
+= (90/360) x 3.14 x 10^2
+= (1/4) x 314
+= 78.5 cm^2
+
+**Step 2: Area of triangle**
+= (1/2) x 10 x 10 = 50 cm^2
+
+**Step 3: Area of segment**
+= 78.5 - 50 = **28.5 cm^2**
+
+### Worked Example: Segment with 60-Degree Angle
+
+In a circle of radius 21 cm, a chord subtends 60 degrees at the centre. Find the area of the minor segment.
+
+**Step 1: Area of sector**
+= (60/360) x (22/7) x 21^2
+= (1/6) x (22/7) x 441
+= (1/6) x 1386
+= 231 cm^2
+
+**Step 2: Area of triangle**
+The triangle formed is equilateral (two sides are radii = 21 cm, angle between them = 60 degrees, so it is equilateral).
+Area = (root(3)/4) x 21^2 = (root(3)/4) x 441 = (441 root(3))/4 cm^2
+
+Using root(3) = 1.73: Area of triangle = 441 x 1.73 / 4 = 190.73 cm^2
+
+**Step 3: Area of segment**
+= 231 - 190.73 = **40.27 cm^2** (approx.)
+
+---
+
+## Area of Major Sector and Major Segment
+
+- **Area of major sector** = Area of circle - Area of minor sector
+  = pi r^2 - (theta/360) x pi r^2
+
+- **Area of major segment** = Area of circle - Area of minor segment
+
+---
+
+## Real-Life Application Problems
+
+### Horse Tied to a Corner
+
+A horse is tied with a 5 m rope to a corner of a square field of side 15 m. The area it can graze is a **quarter circle** (since the corner angle is 90 degrees).
+
+Grazing area = (90/360) x pi x 5^2 = (1/4) x 3.14 x 25 = **19.625 m^2**
+
+If the rope is increased to 10 m:
+New area = (1/4) x 3.14 x 100 = 78.5 m^2
+Increase = 78.5 - 19.625 = **58.875 m^2**
+
+### Car Wiper
+
+Each wiper blade is 25 cm long and sweeps through 115 degrees. The area cleaned by one blade:
+
+Area = (115/360) x pi x 25^2
+
+Total area for two blades = 2 x (115/360) x 3.14 x 625 = **1254.96 cm^2** (approx.)
+
+### Clock Hand Sweep
+
+The area swept by the minute hand of a clock from 6:00 to 6:20 (20 minutes) with a 14 cm long minute hand:
+
+Angle swept in 20 min = (20/60) x 360 = 120 degrees
+Area = (120/360) x (22/7) x 14^2 = (1/3) x 616 = **205.33 cm^2** (approx.)
+
+---
+
+## Combination of Figures
+
+Many board exam problems involve finding areas of regions that combine sectors, segments, and triangles. The approach is:
+
+1. **Break the figure** into recognizable shapes (sectors, triangles, rectangles)
+2. **Calculate each area** separately
+3. **Add or subtract** as needed
+
+---
+
+## Chapter Summary
+
+1. **Length of an arc** of a sector with angle theta and radius r:
+   = (theta/360) x 2 pi r
+
+2. **Area of a sector** with angle theta and radius r:
+   = (theta/360) x pi r^2
+
+3. **Area of a segment** = Area of corresponding sector - Area of corresponding triangle
+
+4. **Area of major sector** = pi r^2 - Area of minor sector
+
+5. **Area of major segment** = pi r^2 - Area of minor segment

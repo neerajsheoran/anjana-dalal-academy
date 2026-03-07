@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Comparing Groups (More, Less, Equal)",
+      "easy": [
+        { "id": "ch13-t1-e1", "type": "mcq", "question": "There are 6 cars and 3 elephants. Which group has MORE?", "options": ["Elephants", "Cars", "Both are the same", "Cannot tell"], "answer": "Cars", "explanation": "6 is more than 3, so cars are more." },
+        { "id": "ch13-t1-e2", "type": "fill", "question": "3 is ______ than 6. (more / less)", "answer": "less", "explanation": "3 is a smaller number than 6, so 3 is less than 6." },
+        { "id": "ch13-t1-e3", "type": "mcq", "question": "Priya has 4 dolls. Meena has 4 dolls. Their dolls are ______.", "options": ["More", "Less", "Equal", "Different"], "answer": "Equal", "explanation": "4 and 4 are the same number, so they are equal." },
+        { "id": "ch13-t1-e4", "type": "mcq", "question": "5 is ______ than 2.", "options": ["Less", "Equal", "More", "Smaller"], "answer": "More", "explanation": "5 is a bigger number than 2." }
+      ],
+      "medium": [
+        { "id": "ch13-t1-m1", "type": "short", "question": "A toy shop has: 3 elephants, 4 teddy bears, 6 cars, 5 dolls. Which toy has the MOST? Which has the LEAST?", "answer": "Cars have the most (6). Elephants have the least (3).", "explanation": "6 is the biggest number and 3 is the smallest, so cars are most and elephants are least." },
+        { "id": "ch13-t1-m2", "type": "mcq", "question": "Blue flowers: 3, Orange flowers: 5, Red flowers: 7. Which colour has the MOST flowers?", "options": ["Blue", "Orange", "Red", "All are equal"], "answer": "Red", "explanation": "7 is the biggest number, so red flowers are the most." }
+      ],
+      "hard": [
+        { "id": "ch13-t1-h1", "type": "long", "question": "In a fruit basket: Apples = 4, Bananas = 6, Oranges = 4. Which fruit has the most? Which fruits are equal? Are there more bananas or oranges?", "answer": "Bananas have the most (6). Apples and Oranges are equal (both have 4). There are more bananas (6) than oranges (4).", "explanation": "We compare the numbers: 6 is the most, and 4 = 4 means apples and oranges are equal." }
+      ]
+    },
+    {
+      "topic": "Collecting and Organising Data",
+      "easy": [
+        { "id": "ch13-t2-e1", "type": "mcq", "question": "When we count and write down information, it is called ______.", "options": ["Drawing", "Data", "Story", "Painting"], "answer": "Data", "explanation": "Data is information that we collect by counting or observing." },
+        { "id": "ch13-t2-e2", "type": "mcq", "question": "A ______ helps us write down information neatly.", "options": ["Story", "Song", "Table", "Picture"], "answer": "Table", "explanation": "A table organises information in rows and columns so we can see it clearly." },
+        { "id": "ch13-t2-e3", "type": "fill", "question": "Collecting information by counting things is called collecting ______.", "answer": "data", "explanation": "Data means information we collect by counting or observing." }
+      ],
+      "medium": [
+        { "id": "ch13-t2-m1", "type": "short", "question": "Look at this data: Mango is liked by 4 children, Apple by 2, Banana by 3, Orange by 1. Which fruit is liked by the MOST children?", "answer": "Mango is liked by the most children (4).", "explanation": "4 is the biggest number, so mango is the most popular." },
+        { "id": "ch13-t2-m2", "type": "short", "question": "From the data above, which fruit is liked by the FEWEST children?", "answer": "Orange is liked by the fewest children (1).", "explanation": "1 is the smallest number, so orange has the fewest." },
+        { "id": "ch13-t2-m3", "type": "mcq", "question": "From the data: Mango=4, Apple=2, Banana=3, Orange=1. Are there more children who like Banana or Apple?", "options": ["Banana", "Apple", "Both are equal", "Cannot tell"], "answer": "Banana", "explanation": "3 children like banana and 2 like apple. 3 is more than 2." }
+      ],
+      "hard": [
+        { "id": "ch13-t2-h1", "type": "long", "question": "In a class, 5 children like red, 3 like blue, 5 like green, and 2 like yellow. Which colours are liked by an EQUAL number of children? Which colour is liked by the LEAST?", "answer": "Red and Green are liked by an equal number (both 5). Yellow is liked by the least (2).", "explanation": "5 = 5 so red and green are equal. 2 is the smallest number so yellow is the least popular." },
+        { "id": "ch13-t2-h2", "type": "short", "question": "True or False: If there are 7 red flowers and 3 blue flowers, then blue flowers are more than red flowers.", "answer": "False. Red flowers (7) are more than blue flowers (3).", "explanation": "7 is greater than 3, so red flowers are more, not less." }
+      ]
+    }
+  ]
+}

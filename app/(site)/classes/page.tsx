@@ -2,6 +2,22 @@ import Link from 'next/link';
 
 const CLASS_CARDS = [
   {
+    id: 'class-1',
+    label: 'Class 1',
+    icon: '🧒',
+    desc: 'Begin your first steps',
+    from: 'from-lime-400',
+    to: 'to-green-600',
+  },
+  {
+    id: 'class-2',
+    label: 'Class 2',
+    icon: '🌈',
+    desc: 'Explore the world around you',
+    from: 'from-cyan-400',
+    to: 'to-sky-600',
+  },
+  {
     id: 'class-3',
     label: 'Class 3',
     icon: '🌱',
@@ -40,6 +56,46 @@ const CLASS_CARDS = [
     desc: 'Expand your horizons',
     from: 'from-teal-500',
     to: 'to-cyan-700',
+  },
+  {
+    id: 'class-8',
+    label: 'Class 8',
+    icon: '🔬',
+    desc: 'Dive deeper into concepts',
+    from: 'from-violet-500',
+    to: 'to-purple-700',
+  },
+  {
+    id: 'class-9',
+    label: 'Class 9',
+    icon: '🧪',
+    desc: 'Prepare for board-level thinking',
+    from: 'from-indigo-500',
+    to: 'to-indigo-700',
+  },
+  {
+    id: 'class-10',
+    label: 'Class 10',
+    icon: '🏆',
+    desc: 'Master your board exams',
+    from: 'from-red-500',
+    to: 'to-rose-700',
+  },
+  {
+    id: 'class-11',
+    label: 'Class 11',
+    icon: '📐',
+    desc: 'Advanced concepts begin here',
+    from: 'from-emerald-500',
+    to: 'to-green-700',
+  },
+  {
+    id: 'class-12',
+    label: 'Class 12',
+    icon: '🎓',
+    desc: 'Final year — aim for the top',
+    from: 'from-fuchsia-500',
+    to: 'to-pink-700',
   },
 ];
 

@@ -1,0 +1,215 @@
+{
+  "topics": [
+    {
+      "topic": "Laws of Chemical Combination and Dalton's Atomic Theory",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "The law of conservation of mass states that:",
+          "options": ["Mass can be created in a chemical reaction", "Mass can be destroyed in a chemical reaction", "Mass can neither be created nor destroyed in a chemical reaction", "Mass always increases in a chemical reaction"],
+          "answer": "Mass can neither be created nor destroyed in a chemical reaction",
+          "explanation": "The law of conservation of mass means the total mass of reactants always equals the total mass of products."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "In water, hydrogen and oxygen are always present in the ratio ______ by mass.",
+          "answer": "1:8",
+          "explanation": "According to the law of constant proportions, water always has hydrogen and oxygen in a fixed ratio of 1:8 by mass."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "Which postulate of Dalton's atomic theory explains the law of conservation of mass?",
+          "options": ["Atoms of a given element are identical", "Atoms combine in small whole number ratios", "Atoms cannot be created or destroyed in a chemical reaction", "Atoms of different elements have different masses"],
+          "answer": "Atoms cannot be created or destroyed in a chemical reaction",
+          "explanation": "Since atoms are neither created nor destroyed during a reaction, the total mass remains unchanged."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "mcq",
+          "question": "Which postulate of Dalton's atomic theory explains the law of definite proportions?",
+          "options": ["Atoms are indivisible", "The relative number and kinds of atoms are constant in a given compound", "All matter is made of atoms", "Atoms of a given element are identical"],
+          "answer": "The relative number and kinds of atoms are constant in a given compound",
+          "explanation": "Since a compound always has the same types and numbers of atoms, the proportion by mass is always fixed."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "In a reaction, 5.3 g of sodium carbonate reacted with 6 g of acetic acid. The products were 2.2 g of carbon dioxide, 0.9 g of water, and 8.2 g of sodium acetate. Show that these observations agree with the law of conservation of mass.",
+          "answer": "Total mass of reactants = 5.3 + 6.0 = 11.3 g. Total mass of products = 2.2 + 0.9 + 8.2 = 11.3 g. Since the total mass of reactants equals the total mass of products (11.3 g = 11.3 g), the observations are in agreement with the law of conservation of mass.",
+          "explanation": "The law states mass is neither created nor destroyed in a chemical reaction, so reactant mass must equal product mass."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "Hydrogen and oxygen combine in the ratio of 1:8 by mass to form water. What mass of oxygen gas would be required to react completely with 3 g of hydrogen gas?",
+          "answer": "Since hydrogen and oxygen combine in the ratio 1:8 by mass, for every 1 g of hydrogen, 8 g of oxygen is required. Therefore, for 3 g of hydrogen, oxygen required = 3 x 8 = 24 g.",
+          "explanation": "The law of constant proportions tells us the ratio is always 1:8 by mass, so we simply multiply."
+        },
+        {
+          "id": "ch3-t1-m3",
+          "type": "short",
+          "question": "When 3.0 g of carbon is burnt in 8.00 g of oxygen, 11.00 g of carbon dioxide is produced. What mass of carbon dioxide will be formed when 3.00 g of carbon is burnt in 50.00 g of oxygen? Which law governs your answer?",
+          "answer": "Carbon and oxygen combine in a fixed ratio of 3:8 by mass. So 3 g of carbon will react with only 8 g of oxygen to form 11 g of carbon dioxide. The remaining 42 g of oxygen will be left unreacted. The answer is governed by the law of constant proportions.",
+          "explanation": "Even though excess oxygen is available, only 8 g will react with 3 g of carbon because elements combine in fixed proportions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "A 0.24 g sample of a compound of oxygen and boron was found to contain 0.096 g of boron and 0.144 g of oxygen. Calculate the percentage composition of the compound by weight.",
+          "answer": "Mass of compound = 0.24 g. Mass of boron = 0.096 g. Mass of oxygen = 0.144 g. Percentage of boron = (0.096/0.24) x 100 = 40%. Percentage of oxygen = (0.144/0.24) x 100 = 60%. The compound contains 40% boron and 60% oxygen by weight.",
+          "explanation": "Percentage composition is calculated by dividing the mass of each element by the total mass and multiplying by 100."
+        }
+      ]
+    },
+    {
+      "topic": "Atoms, Symbols, and Atomic Mass",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "The atomic mass unit is defined as:",
+          "options": ["Mass of one hydrogen atom", "Mass of one oxygen atom", "1/12th the mass of one carbon-12 atom", "Mass of one nitrogen atom"],
+          "answer": "1/12th the mass of one carbon-12 atom",
+          "explanation": "One atomic mass unit (u) is defined as exactly one-twelfth of the mass of one atom of carbon-12."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "The symbol of iron is ______, derived from its Latin name ferrum.",
+          "answer": "Fe",
+          "explanation": "Some element symbols come from their Latin names. Iron's Latin name is ferrum, so its symbol is Fe."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "The symbol of sodium is Na. This comes from its name in:",
+          "options": ["English", "Greek", "Latin", "Hindi"],
+          "answer": "Latin",
+          "explanation": "The symbol Na comes from the Latin name 'natrium' for sodium."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "mcq",
+          "question": "Why is it not possible to see an atom with naked eyes?",
+          "options": ["Atoms are transparent", "Atoms are extremely small (about 10^-10 m)", "Atoms are invisible", "Atoms move too fast"],
+          "answer": "Atoms are extremely small (about 10^-10 m)",
+          "explanation": "Atoms have a radius of about 10^-10 m (0.1 nm), which is far too small to be seen with the naked eye or even with an ordinary microscope."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Define the atomic mass unit. Why was carbon-12 chosen as the standard?",
+          "answer": "One atomic mass unit (u) is a mass unit equal to exactly one-twelfth of the mass of one atom of carbon-12. Carbon-12 was chosen as the standard in 1961 because it gave a universally accepted reference point and resulted in atomic masses of most elements being close to whole numbers.",
+          "explanation": "Earlier, oxygen was used as the standard (1/16th of oxygen atom), but carbon-12 was later adopted as a universal standard."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "How do atoms exist? Can they exist independently?",
+          "answer": "Most atoms cannot exist independently. They combine with other atoms to form molecules (by sharing electrons) or ions (by gaining or losing electrons). These molecules or ions then aggregate in large numbers to form the matter that we can see and touch.",
+          "explanation": "Noble gas atoms like helium and argon are exceptions -- they can exist as single atoms because they have stable electron configurations."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Explain Dalton's atomic theory. What are its limitations?",
+          "answer": "Dalton's atomic theory states: (1) All matter is made of tiny particles called atoms. (2) Atoms are indivisible and cannot be created or destroyed. (3) Atoms of a given element are identical in mass and properties. (4) Atoms of different elements have different masses. (5) Atoms combine in small whole number ratios to form compounds. (6) The relative number and kinds of atoms are constant in a given compound. Limitations: (i) Atoms are actually divisible -- they contain electrons, protons, and neutrons. (ii) Atoms of the same element can have different masses (isotopes). (iii) Atoms of different elements can have the same mass (isobars). (iv) The theory does not explain why atoms combine or what forces hold them together.",
+          "explanation": "While Dalton's theory was groundbreaking, modern discoveries about subatomic particles, isotopes, and chemical bonding have shown its limitations."
+        }
+      ]
+    },
+    {
+      "topic": "Chemical Formulae and Molecular Mass",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "What is the chemical formula of calcium carbonate?",
+          "options": ["CaCO3", "Ca2CO3", "CaCO2", "Ca(CO3)2"],
+          "answer": "CaCO3",
+          "explanation": "Calcium has valency 2 and carbonate (CO3) has valency 2. Since both have the same valency, the formula is CaCO3."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "A negatively charged ion is called an ______ and a positively charged ion is called a ______.",
+          "answer": "anion, cation",
+          "explanation": "An anion has a negative charge (gained electrons) and a cation has a positive charge (lost electrons)."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "mcq",
+          "question": "How many atoms are present in one molecule of H2S?",
+          "options": ["2", "3", "4", "5"],
+          "answer": "3",
+          "explanation": "H2S has 2 hydrogen atoms and 1 sulphur atom, giving a total of 3 atoms."
+        },
+        {
+          "id": "ch3-t3-e4",
+          "type": "mcq",
+          "question": "What is the chemical formula of aluminium chloride?",
+          "options": ["AlCl", "AlCl2", "AlCl3", "Al3Cl"],
+          "answer": "AlCl3",
+          "explanation": "Aluminium has valency 3 and chlorine has valency 1. By criss-cross method, the formula is AlCl3."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "Write the chemical formulae of: (a) Magnesium chloride (b) Calcium oxide (c) Copper nitrate",
+          "answer": "(a) MgCl2 -- Mg has valency 2, Cl has valency 1, so two Cl atoms are needed. (b) CaO -- Ca has valency 2, O has valency 2, so the formula simplifies to CaO. (c) Cu(NO3)2 -- Cu(II) has valency 2, nitrate (NO3) has valency 1, so two nitrate groups are needed.",
+          "explanation": "The criss-cross method is used: write the valencies and cross them over to get the subscripts."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "short",
+          "question": "What are polyatomic ions? Give two examples.",
+          "answer": "Polyatomic ions are groups of atoms that carry a net electrical charge. They act as a single unit in chemical reactions. Examples: (1) Sulphate ion (SO4 2-) -- a group of one sulphur and four oxygen atoms carrying a charge of 2-. (2) Ammonium ion (NH4+) -- a group of one nitrogen and four hydrogen atoms carrying a charge of 1+.",
+          "explanation": "Polyatomic ions are different from simple ions because they consist of multiple atoms bonded together, carrying a charge as a group."
+        },
+        {
+          "id": "ch3-t3-m3",
+          "type": "short",
+          "question": "Give the names of elements present in: (a) Quick lime (b) Hydrogen bromide (c) Potassium sulphate",
+          "answer": "(a) Quick lime is CaO -- it contains calcium and oxygen. (b) Hydrogen bromide is HBr -- it contains hydrogen and bromine. (c) Potassium sulphate is K2SO4 -- it contains potassium, sulphur, and oxygen.",
+          "explanation": "The chemical formula tells us which elements are present. Quick lime (CaO) is calcium oxide."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "Calculate the molar mass (molecular mass) of: (a) Ethyne (C2H2) (b) Sulphur molecule (S8) (c) Phosphorus molecule (P4, atomic mass of P = 31) (d) Hydrochloric acid (HCl) (e) Nitric acid (HNO3)",
+          "answer": "(a) C2H2 = 2 x 12 + 2 x 1 = 24 + 2 = 26 u. (b) S8 = 8 x 32 = 256 u. (c) P4 = 4 x 31 = 124 u. (d) HCl = 1 + 35.5 = 36.5 u. (e) HNO3 = 1 + 14 + 3 x 16 = 1 + 14 + 48 = 63 u.",
+          "explanation": "Molecular mass is calculated by adding up the atomic masses of all atoms in the molecule."
+        },
+        {
+          "id": "ch3-t3-h2",
+          "type": "long",
+          "question": "Calculate the formula unit masses of: (a) ZnO (b) Na2O (c) K2CO3. Given: Zn = 65 u, Na = 23 u, K = 39 u, C = 12 u, O = 16 u.",
+          "answer": "(a) ZnO = 65 + 16 = 81 u. (b) Na2O = 2 x 23 + 16 = 46 + 16 = 62 u. (c) K2CO3 = 2 x 39 + 12 + 3 x 16 = 78 + 12 + 48 = 138 u.",
+          "explanation": "Formula unit mass is calculated the same way as molecular mass, by adding atomic masses of all atoms in the formula unit."
+        },
+        {
+          "id": "ch3-t3-h3",
+          "type": "long",
+          "question": "Write the chemical formulae and calculate the molecular mass of: (a) Aluminium sulphate (b) Calcium hydroxide (c) Ammonium sulphate",
+          "answer": "(a) Aluminium sulphate: Al has valency 3, SO4 has valency 2. Formula = Al2(SO4)3. Molecular mass = 2 x 27 + 3 x (32 + 4 x 16) = 54 + 3 x 96 = 54 + 288 = 342 u. (b) Calcium hydroxide: Ca has valency 2, OH has valency 1. Formula = Ca(OH)2. Molecular mass = 40 + 2 x (16 + 1) = 40 + 34 = 74 u. (c) Ammonium sulphate: NH4 has valency 1, SO4 has valency 2. Formula = (NH4)2SO4. Molecular mass = 2 x (14 + 4) + 32 + 4 x 16 = 36 + 32 + 64 = 132 u.",
+          "explanation": "First write the formula using the criss-cross method, then calculate molecular mass by adding up all atomic masses."
+        }
+      ]
+    }
+  ]
+}

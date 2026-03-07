@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Understanding and Solving Simple Equations",
+      "easy": [
+        { "id": "ch15-t1-e1", "type": "mcq", "question": "An equation is a mathematical statement that uses:", "options": ["Only numbers", "An equals sign (=)", "Only variables", "A not-equal sign"], "answer": "An equals sign (=)", "explanation": "An equation states that two expressions are equal, using the = sign." },
+        { "id": "ch15-t1-e2", "type": "fill", "question": "In the equation 5x = 30, the value of x is ______.", "answer": "6", "explanation": "Divide both sides by 5: x = 30/5 = 6." },
+        { "id": "ch15-t1-e3", "type": "mcq", "question": "Solve: x + 8 = 15", "options": ["x = 5", "x = 7", "x = 23", "x = 8"], "answer": "x = 7", "explanation": "Subtract 8 from both sides: x = 15 - 8 = 7." },
+        { "id": "ch15-t1-e4", "type": "short", "question": "Solve: y - 7 = 12", "answer": "y = 19.\nAdd 7 to both sides: y = 12 + 7 = 19.\nCheck: 19 - 7 = 12. Correct.", "explanation": "To undo subtraction, add the same number to both sides." }
+      ],
+      "medium": [
+        { "id": "ch15-t1-m1", "type": "short", "question": "Solve: n / 4 = 7", "answer": "Multiply both sides by 4: n = 7 x 4 = 28.\nCheck: 28 / 4 = 7. Correct.", "explanation": "To undo division by 4, multiply both sides by 4." },
+        { "id": "ch15-t1-m2", "type": "short", "question": "Solve the two-step equation: 5x - 4 = 16", "answer": "Step 1: Add 4 to both sides: 5x = 20.\nStep 2: Divide both sides by 5: x = 4.\nCheck: 5(4) - 4 = 20 - 4 = 16. Correct.", "explanation": "First undo the subtraction, then undo the multiplication." },
+        { "id": "ch15-t1-m3", "type": "short", "question": "Solve: 3m + 7 = 22", "answer": "Step 1: Subtract 7: 3m = 15.\nStep 2: Divide by 3: m = 5.\nCheck: 3(5) + 7 = 15 + 7 = 22. Correct.", "explanation": "Undo operations in reverse order: first subtract 7, then divide by 3." }
+      ],
+      "hard": [
+        { "id": "ch15-t1-h1", "type": "long", "question": "Solve the equation with variable on both sides: 5n - 3 = 3n + 7. Show all steps and check your answer.", "answer": "Step 1: Subtract 3n from both sides: 2n - 3 = 7.\nStep 2: Add 3 to both sides: 2n = 10.\nStep 3: Divide both sides by 2: n = 5.\n\nCheck:\nLHS = 5(5) - 3 = 25 - 3 = 22.\nRHS = 3(5) + 7 = 15 + 7 = 22.\nLHS = RHS. Correct.", "explanation": "Collect variable terms on one side and constants on the other. Always check by substituting back." }
+      ]
+    },
+    {
+      "topic": "Word Problems with Equations",
+      "easy": [
+        { "id": "ch15-t2-e1", "type": "mcq", "question": "Ravi thinks of a number, multiplies by 3 and adds 5 to get 23. The equation is:", "options": ["3x + 5 = 23", "3 + 5x = 23", "x + 3 + 5 = 23", "3(x + 5) = 23"], "answer": "3x + 5 = 23", "explanation": "Multiplies by 3 gives 3x. Then adds 5 gives 3x + 5. Result is 23: 3x + 5 = 23." },
+        { "id": "ch15-t2-e2", "type": "fill", "question": "If a number is doubled and then 9 is subtracted to get 15, the equation is 2n - 9 = 15 and n = ______.", "answer": "12", "explanation": "2n - 9 = 15. Add 9: 2n = 24. Divide by 2: n = 12." },
+        { "id": "ch15-t2-e3", "type": "short", "question": "A number multiplied by 3 and added to 5 gives 23. Find the number.", "answer": "Let the number be x.\n3x + 5 = 23.\n3x = 18.\nx = 6.\nThe number is 6.", "explanation": "Translate the words into an equation, then solve using the balance principle." }
+      ],
+      "medium": [
+        { "id": "ch15-t2-m1", "type": "short", "question": "The sum of three consecutive numbers is 42. Find the numbers.", "answer": "Let the smallest number be x.\nNumbers: x, x+1, x+2.\nEquation: x + (x+1) + (x+2) = 42.\n3x + 3 = 42.\n3x = 39.\nx = 13.\nThe numbers are 13, 14, and 15.\nCheck: 13 + 14 + 15 = 42. Correct.", "explanation": "Consecutive numbers differ by 1. Express all three in terms of x, set up the equation, and solve." },
+        { "id": "ch15-t2-m2", "type": "short", "question": "Aadhira's age is 4 more than twice Bala's age. If Aadhira is 18, how old is Bala?", "answer": "Let Bala's age = b.\n2b + 4 = 18.\n2b = 14.\nb = 7.\nBala is 7 years old.", "explanation": "Translate: twice Bala's age = 2b, plus 4 = 2b + 4, equals 18." }
+      ],
+      "hard": [
+        { "id": "ch15-t2-h1", "type": "long", "question": "A father is 30 years older than his son. In 5 years, the father's age will be 3 times the son's age. Find their present ages.", "answer": "Let son's present age = x.\nFather's present age = x + 30.\n\nIn 5 years:\nSon's age = x + 5.\nFather's age = x + 35.\n\nEquation: x + 35 = 3(x + 5).\nx + 35 = 3x + 15.\n35 - 15 = 3x - x.\n20 = 2x.\nx = 10.\n\nSon's present age = 10 years.\nFather's present age = 40 years.\n\nCheck: In 5 years: Son = 15, Father = 45. Is 45 = 3 x 15? Yes. Correct.", "explanation": "Set up expressions for present and future ages, then form an equation using the given relationship." },
+        { "id": "ch15-t2-h2", "type": "long", "question": "Matchsticks are arranged in a row of triangles sharing sides. The pattern needs (2n + 1) matchsticks for n triangles. How many triangles can be made with 99 matchsticks? What about 100 matchsticks?", "answer": "For 99 matchsticks:\n2n + 1 = 99.\n2n = 98.\nn = 49.\n49 triangles can be made with exactly 99 matchsticks.\n\nFor 100 matchsticks:\n2n + 1 = 100.\n2n = 99.\nn = 49.5.\n\nSince n must be a whole number, we cannot use exactly 100 matchsticks. With 49 triangles we need 99 matchsticks (1 leftover). With 50 triangles we would need 101 matchsticks (not enough).\n\nSo with 100 matchsticks, we can make 49 triangles with 1 matchstick remaining.", "explanation": "Solve 2n + 1 = total. If the answer is not a whole number, we take the largest whole number value that gives a count ≤ total matchsticks." }
+      ]
+    }
+  ]
+}

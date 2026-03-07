@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Evaluating Arithmetic Expressions",
+      "easy": [
+        { "id": "ch2-t1-e1", "type": "mcq", "question": "What is the value of 30 + 5 x 4?", "options": ["140", "50", "120", "54"], "answer": "50", "explanation": "Multiplication is done before addition. 5 x 4 = 20, then 30 + 20 = 50." },
+        { "id": "ch2-t1-e2", "type": "fill", "question": "In the expression 6 x 5 + 3, the terms are ______ and ______.", "answer": "6 x 5 and 3", "explanation": "Terms are separated by the + sign. 6 x 5 is a single term (it contains multiplication but no +), and 3 is another term." },
+        { "id": "ch2-t1-e3", "type": "mcq", "question": "What is the value of 100 - (15 + 56)?", "options": ["141", "29", "71", "85"], "answer": "29", "explanation": "First evaluate inside the brackets: 15 + 56 = 71. Then 100 - 71 = 29." },
+        { "id": "ch2-t1-e4", "type": "short", "question": "Evaluate: 5 x (3 + 2) + 7 x 8 + 3", "answer": "84", "explanation": "Terms are: 5 x (3+2), 7 x 8, and 3. Evaluate each: 5 x 5 = 25, 7 x 8 = 56, 3 = 3. Sum = 25 + 56 + 3 = 84." }
+      ],
+      "medium": [
+        { "id": "ch2-t1-m1", "type": "short", "question": "Evaluate: 200 - (40 + 3) step by step.", "answer": "200 - (40 + 3) = 200 - 43 = 157.\nAlternatively: 200 - 40 - 3 = 160 - 3 = 157.", "explanation": "When removing brackets preceded by a minus sign, change signs of all terms inside: 200 - 40 - 3 = 157." },
+        { "id": "ch2-t1-m2", "type": "short", "question": "Without calculating, which is greater: 1023 + 125 or 1022 + 128? By how much?", "answer": "1022 + 128 is greater by 2.", "explanation": "1022 is 1 less than 1023, but 128 is 3 more than 125. Net difference = 3 - 1 = 2 more for the second expression." }
+      ],
+      "hard": [
+        { "id": "ch2-t1-h1", "type": "long", "question": "Evaluate 500 - (250 - 100) in two ways: (1) by first evaluating inside the brackets, and (2) by removing the brackets. Show that both methods give the same answer.", "answer": "Method 1: 500 - (250 - 100) = 500 - 150 = 350.\n\nMethod 2: Remove brackets (minus sign before bracket flips signs): 500 - 250 + 100 = 250 + 100 = 350.\n\nBoth methods give 350.", "explanation": "When a minus sign precedes a bracket, removing the bracket changes the signs of all terms inside. +250 becomes -250 and -100 becomes +100." }
+      ]
+    },
+    {
+      "topic": "Commutative, Associative, and Distributive Properties",
+      "easy": [
+        { "id": "ch2-t2-e1", "type": "mcq", "question": "Which property states that 6 + (-4) = (-4) + 6?", "options": ["Distributive property", "Associative property", "Commutative property", "Identity property"], "answer": "Commutative property", "explanation": "The commutative property of addition says that swapping the order of terms does not change the sum." },
+        { "id": "ch2-t2-e2", "type": "fill", "question": "The distributive property states: a x (b + c) = a x b ______ a x c.", "answer": "+", "explanation": "The distributive property says a x (b + c) = a x b + a x c. Multiplication distributes over addition." },
+        { "id": "ch2-t2-e3", "type": "mcq", "question": "What is 97 x 25 calculated using the distributive property?", "options": ["2425", "2475", "2325", "2500"], "answer": "2425", "explanation": "97 x 25 = (100 - 3) x 25 = 100 x 25 - 3 x 25 = 2500 - 75 = 2425." }
+      ],
+      "medium": [
+        { "id": "ch2-t2-m1", "type": "short", "question": "Using the distributive property, find 63 x 18 given that 53 x 18 = 954.", "answer": "1134", "explanation": "63 x 18 = (53 + 10) x 18 = 53 x 18 + 10 x 18 = 954 + 180 = 1134." },
+        { "id": "ch2-t2-m2", "type": "short", "question": "Simplify 4 x 5 + 3 x 5 using the distributive property.", "answer": "(4 + 3) x 5 = 7 x 5 = 35", "explanation": "Both terms share a common factor of 5. Factor it out: 4 x 5 + 3 x 5 = (4 + 3) x 5 = 7 x 5 = 35." },
+        { "id": "ch2-t2-m3", "type": "short", "question": "Evaluate (-7) + 10 + (-11) by grouping in two different ways. Show both give the same answer.", "answer": "Both give -8.\nWay 1: [(-7) + 10] + (-11) = 3 + (-11) = -8.\nWay 2: (-7) + [10 + (-11)] = (-7) + (-1) = -8.", "explanation": "The associative property of addition guarantees that grouping terms differently does not change the sum." }
+      ],
+      "hard": [
+        { "id": "ch2-t2-h1", "type": "long", "question": "A metro ticket costs Rs 40 for adults and Rs 20 for children. Write an expression for the total cost of tickets for 4 adults and 3 children. Then, if the prices increase by Rs 5 each, write the new expression and find the difference in total cost.", "answer": "Original cost = 4 x 40 + 3 x 20 = 160 + 60 = Rs 220.\n\nNew prices: Adult = Rs 45, Child = Rs 25.\nNew cost = 4 x 45 + 3 x 25 = 180 + 75 = Rs 255.\n\nDifference = 255 - 220 = Rs 35.\n\nAlternatively: Increase = 4 x 5 + 3 x 5 = (4 + 3) x 5 = 7 x 5 = Rs 35.", "explanation": "The difference can also be calculated using the distributive property: the price increase of Rs 5 applies to all 7 people, so extra cost = 7 x 5 = Rs 35." },
+        { "id": "ch2-t2-h2", "type": "long", "question": "Binu earns Rs 20,000 per month. She spends Rs 5,000 on rent, Rs 5,000 on food, and Rs 2,000 on other expenses. Write an expression for her annual savings and evaluate it.", "answer": "Monthly savings = 20,000 - (5,000 + 5,000 + 2,000) = 20,000 - 12,000 = Rs 8,000.\n\nAnnual savings = 12 x 8,000 = Rs 96,000.\n\nExpression: 12 x [20,000 - (5,000 + 5,000 + 2,000)] = 12 x 8,000 = 96,000.", "explanation": "First calculate monthly savings by subtracting total expenses from income, then multiply by 12 for annual savings." }
+      ]
+    }
+  ]
+}

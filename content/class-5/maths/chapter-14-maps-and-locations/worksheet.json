@@ -1,0 +1,178 @@
+{
+  "topics": [
+    {
+      "topic": "Directions (North, South, East, West)",
+      "easy": [
+        {
+          "id": "ch14-t1-e1",
+          "type": "mcq",
+          "question": "If you face the rising Sun, which direction are you facing?",
+          "options": ["North", "South", "East", "West"],
+          "answer": "East",
+          "explanation": "The Sun rises in the East. So if you face the rising Sun, you are facing East."
+        },
+        {
+          "id": "ch14-t1-e2",
+          "type": "fill",
+          "question": "If you face East, your left hand points ______ and your right hand points ______.",
+          "answer": "North, South",
+          "explanation": "When facing East: left hand = North, right hand = South, behind you = West."
+        },
+        {
+          "id": "ch14-t1-e3",
+          "type": "mcq",
+          "question": "On most maps, which direction is at the top?",
+          "options": ["East", "West", "North", "South"],
+          "answer": "North",
+          "explanation": "By convention, most maps show North at the top, South at the bottom, East on the right, and West on the left."
+        },
+        {
+          "id": "ch14-t1-e4",
+          "type": "short",
+          "question": "Name the four cardinal directions.",
+          "answer": "North, South, East, and West.",
+          "explanation": "The four main directions are called cardinal directions: North (N), South (S), East (E), and West (W)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t1-m1",
+          "type": "short",
+          "question": "A bus starts heading North, then takes a right turn. Which direction is it now heading?",
+          "answer": "East",
+          "explanation": "If you are facing North and turn right, you face East. Right turn from North = East."
+        },
+        {
+          "id": "ch14-t1-m2",
+          "type": "mcq",
+          "question": "The bus continues East, then takes a left turn. Which direction is it heading now?",
+          "options": ["North", "South", "East", "West"],
+          "answer": "North",
+          "explanation": "If facing East and you turn left, you face North."
+        },
+        {
+          "id": "ch14-t1-m3",
+          "type": "short",
+          "question": "Siberian Cranes fly from Siberia (North) to India (South) every winter. In which direction do they fly to reach India? In which direction do they return?",
+          "answer": "They fly South to reach India and North to return to Siberia.",
+          "explanation": "India is south of Siberia. The cranes fly south for winter and north when returning."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t1-h1",
+          "type": "long",
+          "question": "Ravi starts at his house facing North. He walks straight, then takes a right turn and walks to the park. From the park, he takes a left turn and walks to the school. From the school, he takes a left turn and walks to the market. What direction does Ravi face at each stage?",
+          "answer": "Start: facing North. After right turn: facing East (walks to park). After left turn from East: facing North (walks to school). After left turn from North: facing West (walks to market). Ravi faces West when he reaches the market.",
+          "explanation": "North + right = East. East + left = North. North + left = West."
+        }
+      ]
+    },
+    {
+      "topic": "Grid Maps and Coordinates",
+      "easy": [
+        {
+          "id": "ch14-t2-e1",
+          "type": "mcq",
+          "question": "Coordinates are written as (column, row). To find point (4, 1), which do you move first?",
+          "options": ["1 step North, then 4 steps East", "4 steps East, then 1 step North", "4 steps North, then 1 step East", "1 step East, then 4 steps North"],
+          "answer": "4 steps East, then 1 step North",
+          "explanation": "Coordinates go (across, up) — horizontal first, then vertical. Move 4 steps East (horizontal), then 1 step North (vertical)."
+        },
+        {
+          "id": "ch14-t2-e2",
+          "type": "fill",
+          "question": "On a grid, coordinates always go (______, ______) — horizontal first, then vertical.",
+          "answer": "across, up",
+          "explanation": "Think of it as: walk along the corridor (across), then climb the stairs (up)."
+        },
+        {
+          "id": "ch14-t2-e3",
+          "type": "short",
+          "question": "In a zoo grid map, the Panda is at (1, 1) and the Tortoise is at (4, 1). Are they in the same row or the same column?",
+          "answer": "They are in the same row (row 1). The Panda is in column 1 and the Tortoise is in column 4.",
+          "explanation": "Both have row = 1, so they are in the same row. But their columns differ (1 and 4)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t2-m1",
+          "type": "short",
+          "question": "On a grid, an ant is at position (2, 3). It crawls 3 steps East and 2 steps North. What are its new coordinates?",
+          "answer": "(5, 5)",
+          "explanation": "Starting at (2, 3). Moving 3 East: column 2 + 3 = 5. Moving 2 North: row 3 + 2 = 5. New position: (5, 5)."
+        },
+        {
+          "id": "ch14-t2-m2",
+          "type": "mcq",
+          "question": "An ant at (0, 0) needs to reach (3, 2). What is the shortest path description?",
+          "options": ["3 East, 2 North", "2 East, 3 North", "3 North, 2 East", "5 steps in any direction"],
+          "answer": "3 East, 2 North",
+          "explanation": "From (0,0) to (3,2): move 3 steps East (column 0 to 3) and 2 steps North (row 0 to 2). Order doesn't matter for distance, but 3 East then 2 North directly matches the coordinates."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t2-h1",
+          "type": "long",
+          "question": "On a 6x6 grid, a treasure hunt has clues at these coordinates: Start (0, 0), Clue 1 at (3, 0), Clue 2 at (3, 4), Clue 3 at (5, 4), and Treasure at (5, 5). Describe the path and find the total number of grid steps if you can only move along grid lines.",
+          "answer": "Start (0,0) to Clue 1 (3,0): 3 steps East. Clue 1 (3,0) to Clue 2 (3,4): 4 steps North. Clue 2 (3,4) to Clue 3 (5,4): 2 steps East. Clue 3 (5,4) to Treasure (5,5): 1 step North. Total: 3 + 4 + 2 + 1 = 10 grid steps.",
+          "explanation": "Calculate horizontal and vertical distances between each pair: (0,0) to (3,0) = 3 East. (3,0) to (3,4) = 4 North. (3,4) to (5,4) = 2 East. (5,4) to (5,5) = 1 North. Total = 10 steps."
+        }
+      ]
+    },
+    {
+      "topic": "Reading Maps and Routes",
+      "easy": [
+        {
+          "id": "ch14-t3-e1",
+          "type": "mcq",
+          "question": "What is a key (legend) on a map?",
+          "options": ["A lock on the map", "A box explaining what the symbols mean", "The title of the map", "The scale of the map"],
+          "answer": "A box explaining what the symbols mean",
+          "explanation": "A key or legend is a box on a map that explains what each symbol, colour, or marking represents."
+        },
+        {
+          "id": "ch14-t3-e2",
+          "type": "fill",
+          "question": "On a metro map, where two lines cross, you can change trains at an ______ station.",
+          "answer": "interchange",
+          "explanation": "An interchange station is where two or more metro lines meet, allowing passengers to switch between lines."
+        },
+        {
+          "id": "ch14-t3-e3",
+          "type": "short",
+          "question": "What tool always points North and helps us find directions?",
+          "answer": "A compass",
+          "explanation": "A compass has a magnetic needle that always points towards the North, helping us determine all four directions."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch14-t3-m1",
+          "type": "short",
+          "question": "On a metro map, Station A is on the Blue Line and Station B is on the Yellow Line. How would you travel from A to B?",
+          "answer": "Find an interchange station where the Blue Line and Yellow Line cross. Travel on the Blue Line to the interchange station, switch to the Yellow Line, and continue to Station B.",
+          "explanation": "When stations are on different metro lines, you must find a common station (interchange) where both lines meet, and change trains there."
+        },
+        {
+          "id": "ch14-t3-m2",
+          "type": "mcq",
+          "question": "If two possible routes exist from Station A to Station B, which route is usually better?",
+          "options": ["The one with more stations", "The one with fewer interchange (line changes)", "The one that goes North", "Both are always the same"],
+          "answer": "The one with fewer interchange (line changes)",
+          "explanation": "The best route usually has the fewest line changes, as each interchange adds waiting time and walking between platforms."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch14-t3-h1",
+          "type": "long",
+          "question": "Draw a simple map of a neighbourhood (describe it in words): A school is in the centre. North of the school is a park. East of the school is a hospital. South of the school is a market. West of the school is a library. If Priya walks from the library to the hospital, describe her route using directions and state the minimum number of turns she makes.",
+          "answer": "Priya starts at the library (West of school). She walks East past the school to reach the hospital (East of school). She walks in a straight line heading East the entire way. Minimum turns: 0 (she walks straight East without turning). If roads do not allow a straight path and she must go through the school area: she could walk East to school (1 segment), then continue East to the hospital (still 0 turns, same direction).",
+          "explanation": "The library is to the West and the hospital is to the East. Walking from West to East is a straight line through the centre. No turns are needed if there is a direct East-West road."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+---
+title: "Chapter 11: Exploring Some Geometric Themes"
+---
+
+## 4.1 Fractals
+
+A **fractal** is a shape that exhibits the same or similar pattern at smaller and smaller scales. This property is called **self-similarity**.
+
+### Fractals in Nature
+
+One of the most beautiful natural fractals is the **fern**. A fern leaf has smaller copies of itself as its leaflets, and these leaflets have even smaller copies, and so on!
+
+Self-similarity also occurs in:
+- **Trees** -- trunks have limbs, limbs have branches, branches have branchlets
+- **Clouds** and **mountains** -- similar bumpy patterns at every scale
+- **Coastlines** -- a jagged line that looks jagged no matter how much you zoom in
+- **Lightning** -- branches into smaller branches
+
+---
+
+### Sierpinski Carpet
+
+The Polish mathematician **Sierpinski** discovered a fractal made by:
+1. **Step 0:** Start with a square.
+2. **Step 1:** Divide it into 9 equal smaller squares and remove the central one.
+3. **Step 2:** Repeat the process on each of the 8 remaining squares.
+4. Continue forever...
+
+**Pattern in the numbers:**
+- Remaining squares at step n: **R(n) = 8^n**
+- R(0) = 1, R(1) = 8, R(2) = 64, R(3) = 512, ...
+- Holes at step n: H(n) = H(n-1) + R(n-1)
+- H(0) = 0, H(1) = 1, H(2) = 9, H(3) = 73, ...
+
+---
+
+### Sierpinski Triangle (Gasket)
+
+Another Sierpinski fractal starts with an **equilateral triangle**:
+1. Join the midpoints of the sides to divide it into 4 smaller equilateral triangles.
+2. Remove the central triangle.
+3. Repeat on the 3 remaining triangles.
+
+At each step, the number of remaining triangles is **3^n** and each is (1/4)^n of the original area.
+
+---
+
+### Koch Snowflake
+
+Named after the Swedish mathematician **Von Koch** (1904):
+1. Start with an equilateral triangle.
+2. Divide each side into 3 equal parts.
+3. Raise an equilateral triangle over the middle part and remove the base.
+4. Each side becomes a "bump" shape. Repeat on all new sides.
+
+At step n:
+- Number of sides = **3 x 4^n**
+- The perimeter keeps increasing with each step, but the area stays bounded!
+
+> **Key idea:** Fractals demonstrate **exponential growth** in complexity at every step. The number of pieces, holes, or sides grows as powers of a number.
+
+---
+
+### Fractals in Art
+
+Fractal-like patterns have been used in art for centuries:
+- **Indian temples** -- The Kandariya Mahadev Temple in Khajuraho (c. 1025 CE) shows a tall structure made of smaller copies of itself, with even smaller copies on those.
+- **African art** -- Nigerian Fulani wedding blankets feature diamond patterns within diamond patterns.
+- **M.C. Escher** -- The Dutch artist created prints like "Smaller and Smaller" showing identical patterns of lizards at smaller and smaller scales.
+
+---
+
+## 4.2 Visualising Solids
+
+### Profiles of Solids
+
+When we look at a 3D object from different viewpoints, we see different 2D **profiles** (outlines).
+
+**Examples:**
+- A **cube** can show a square profile (from the front) or a hexagonal profile (from a corner)
+- A **cylinder** can show a rectangle (from the side) or a circle (from the top)
+- A **cone** can show a triangle (from the side) or a circle (from below)
+
+**Challenge:** Can you think of a solid that has:
+- A rectangular profile from one view and circular from another? (A cylinder!)
+- A circular profile from one view and triangular from another? (A cone!)
+- A trapezium profile from one view and circular from another? (A frustum or bucket shape!)
+
+---
+
+### Faces, Edges, and Vertices
+
+Solid shapes with flat surfaces have:
+- **Faces:** The flat surfaces forming the boundary
+- **Edges:** The line segments where two faces meet
+- **Vertices:** The points where edges meet
+
+| Solid | Faces | Edges | Vertices |
+|---|---|---|---|
+| Cube/Cuboid | 6 | 12 | 8 |
+| Triangular prism | 5 | 9 | 6 |
+| Triangular pyramid (tetrahedron) | 4 | 6 | 4 |
+| Square pyramid | 5 | 8 | 5 |
+| Pentagonal prism | 7 | 15 | 10 |
+| Octahedron | 8 | 12 | 6 |
+
+### General Formulas
+
+For a **prism** with an n-sided polygon base:
+- Faces = n + 2
+- Edges = 3n
+- Vertices = 2n
+
+For a **pyramid** with an n-sided polygon base:
+- Faces = n + 1
+- Edges = 2n
+- Vertices = n + 1
+
+> **Key idea:** For any convex polyhedron (solid with flat faces), **Euler's formula** holds: **V - E + F = 2**, where V = vertices, E = edges, F = faces. Check this with any solid above!
+
+---
+
+### Nets of Solids
+
+A **net** is a flat shape that can be folded to form a solid. It is obtained by "unfolding" a solid onto a flat surface.
+
+**Net of a cube:** A cross-shaped arrangement of 6 squares (and other arrangements). A cube has **11 different possible nets**.
+
+**Net of a cylinder:** Two circles plus a rectangle (whose width equals the circumference of the circle).
+
+**Net of a cone:** A circle (base) plus a sector of a larger circle (the curved surface).
+
+**Net of a regular tetrahedron:** 4 equilateral triangles arranged in a specific pattern. It has only **2 different nets**.
+
+**Net of an octahedron:** 8 equilateral triangles. An octahedron has **11 different nets**.
+
+**Net of a dodecahedron** (12 pentagonal faces): Has an amazing **43,380 different nets**!
+
+**Can you make a net of a sphere?** Try wrapping paper around a ball perfectly -- you will find it is impossible without wrinkles or gaps! A sphere cannot have a flat net.
+
+---
+
+### Shortest Paths on a Cube
+
+An interesting application of nets: finding the **shortest path** between two points on the surface of a cuboid.
+
+**Method:** Unfold the cuboid into its net. On the flat net, the shortest path between two points is a straight line. This straight line, when folded back, gives the shortest path on the surface.
+
+**Example:** An ant is at the centre of one face and needs to reach a laddu at the centre of the top face.
+- Draw the net of the cuboid.
+- Mark the ant's position and the laddu's position on the net.
+- The straight line between them on the net gives the shortest surface path.
+
+Sometimes you may need to try different ways of unfolding to find which gives the truly shortest path.
+
+---
+
+## Summary
+
+- **Fractals** are self-similar shapes that repeat the same pattern at smaller and smaller scales.
+- Famous fractals include the **Sierpinski Carpet**, **Sierpinski Triangle**, and **Koch Snowflake**.
+- Fractals appear in nature (ferns, trees, coastlines) and in art (Indian temples, African blankets).
+- 3D solids have **faces** (flat surfaces), **edges** (line segments), and **vertices** (corner points).
+- **Euler's formula:** V - E + F = 2 for any convex polyhedron.
+- A **net** is a flat shape that folds into a solid. Different solids have different numbers of possible nets.
+- **Shortest paths** on a cuboid surface can be found by unfolding the cuboid into a net and drawing a straight line.

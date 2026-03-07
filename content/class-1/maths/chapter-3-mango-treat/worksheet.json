@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "topic": "Counting 1 to 9",
+      "easy": [
+        { "id": "ch3-t1-e1", "type": "mcq", "question": "How many fingers are on one hand?", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "One hand has 5 fingers." },
+        { "id": "ch3-t1-e2", "type": "fill", "question": "Count: 1, 2, 3, ______, 5.", "answer": "4", "explanation": "The number after 3 is 4." },
+        { "id": "ch3-t1-e3", "type": "mcq", "question": "How many legs does a table have?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "A table has 4 legs." },
+        { "id": "ch3-t1-e4", "type": "fill", "question": "Count: 5, 6, 7, ______, 9.", "answer": "8", "explanation": "The number after 7 is 8." }
+      ],
+      "medium": [
+        { "id": "ch3-t1-m1", "type": "short", "question": "Fill in the missing numbers: 1, __, 3, __, 5, __, 7, __, 9.", "answer": "2, 4, 6, 8", "explanation": "Counting in order: 1, 2, 3, 4, 5, 6, 7, 8, 9." },
+        { "id": "ch3-t1-m2", "type": "mcq", "question": "Which is the BIGGEST number: 3, 7, 5, 9?", "options": ["3", "7", "5", "9"], "answer": "9", "explanation": "9 is the largest number among 3, 7, 5, and 9." }
+      ],
+      "hard": [
+        { "id": "ch3-t1-h1", "type": "short", "question": "Count backwards from 9 to 1. Write all the numbers.", "answer": "9, 8, 7, 6, 5, 4, 3, 2, 1", "explanation": "Counting backwards means going from the biggest to the smallest." }
+      ]
+    },
+    {
+      "topic": "More, Less, and Equal",
+      "easy": [
+        { "id": "ch3-t2-e1", "type": "mcq", "question": "Riya has 5 apples. Aman has 3 apples. Who has MORE?", "options": ["Riya", "Aman", "Both have the same", "Cannot tell"], "answer": "Riya", "explanation": "5 is more than 3, so Riya has more apples." },
+        { "id": "ch3-t2-e2", "type": "mcq", "question": "Sita has 4 flowers. Meena has 4 flowers. Their flowers are ______.", "options": ["More", "Less", "Equal", "Different"], "answer": "Equal", "explanation": "Both have 4 flowers, so they are equal." },
+        { "id": "ch3-t2-e3", "type": "fill", "question": "2 is ______ than 7. (more / less)", "answer": "less", "explanation": "2 is a smaller number than 7, so 2 is less than 7." },
+        { "id": "ch3-t2-e4", "type": "mcq", "question": "Which group has LESS: 6 bananas or 8 bananas?", "options": ["6 bananas", "8 bananas", "Both are equal", "Cannot tell"], "answer": "6 bananas", "explanation": "6 is less than 8." }
+      ],
+      "medium": [
+        { "id": "ch3-t2-m1", "type": "short", "question": "Put these numbers in order from smallest to biggest: 7, 2, 5, 1.", "answer": "1, 2, 5, 7", "explanation": "The smallest number is 1 and the biggest is 7." },
+        { "id": "ch3-t2-m2", "type": "mcq", "question": "Which number is LESS than 6?", "options": ["7", "8", "4", "9"], "answer": "4", "explanation": "4 is less than 6. The other numbers (7, 8, 9) are all more than 6." }
+      ],
+      "hard": [
+        { "id": "ch3-t2-h1", "type": "long", "question": "Aman has 3 red balls and 5 blue balls. Priya has 4 red balls and 4 blue balls. Who has more balls in total? Are their totals equal or different?", "answer": "Aman has 3 + 5 = 8 balls. Priya has 4 + 4 = 8 balls. Both have 8 balls, so their totals are equal.", "explanation": "We add each person's balls to find the total, then compare." }
+      ]
+    },
+    {
+      "topic": "Counting Things Around Us",
+      "easy": [
+        { "id": "ch3-t3-e1", "type": "mcq", "question": "How many eyes do you have?", "options": ["1", "2", "3", "4"], "answer": "2", "explanation": "Every person has 2 eyes." },
+        { "id": "ch3-t3-e2", "type": "mcq", "question": "How many wheels does an auto-rickshaw have?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "An auto-rickshaw has 3 wheels." },
+        { "id": "ch3-t3-e3", "type": "fill", "question": "A spider has ______ legs.", "answer": "8", "explanation": "A spider has 8 legs." }
+      ],
+      "medium": [
+        { "id": "ch3-t3-m1", "type": "short", "question": "How many days are there in one week?", "answer": "7 days", "explanation": "There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday." },
+        { "id": "ch3-t3-m2", "type": "short", "question": "An ant has 6 legs. A spider has 8 legs. Which has more legs and by how many?", "answer": "A spider has more legs. It has 2 more legs than an ant (8 - 6 = 2).", "explanation": "We compare 8 and 6. 8 is more than 6 by 2." }
+      ],
+      "hard": [
+        { "id": "ch3-t3-h1", "type": "long", "question": "There are 3 mangoes and 5 bananas together. One more mango is added. Now how many mangoes are there? How many fruits are there in total?", "answer": "There are now 4 mangoes (3 + 1 = 4). Total fruits = 4 mangoes + 5 bananas = 9 fruits.", "explanation": "First we add 1 more mango to 3. Then we add all fruits together: 4 + 5 = 9." }
+      ]
+    }
+  ]
+}

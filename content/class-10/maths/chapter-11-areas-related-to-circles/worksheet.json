@@ -1,0 +1,137 @@
+{
+  "topics": [
+    {
+      "topic": "Perimeter and Area of a Circle",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "The area of a circle with radius 7 cm is (use pi = 22/7):",
+          "options": ["44 cm^2", "154 cm^2", "308 cm^2", "77 cm^2"],
+          "answer": "154 cm^2",
+          "explanation": "Area = pi * r^2 = (22/7) x 7 x 7 = 22 x 7 = 154 cm^2."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "The circumference of a circle with diameter 14 cm is ______ cm (use pi = 22/7).",
+          "answer": "44",
+          "explanation": "Circumference = pi x d = (22/7) x 14 = 44 cm."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "short",
+          "question": "Find the circumference of a circle of radius 14 cm. (Use pi = 22/7)",
+          "answer": "88 cm",
+          "explanation": "Circumference = 2 x pi x r = 2 x (22/7) x 14 = 2 x 44 = 88 cm."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "mcq",
+          "question": "If the circumference of a circle is 132 cm, its radius is (pi = 22/7):",
+          "options": ["7 cm", "14 cm", "21 cm", "42 cm"],
+          "answer": "21 cm",
+          "explanation": "2 x (22/7) x r = 132. r = 132 x 7 / (2 x 22) = 924/44 = 21 cm."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "The radii of two circles are 8 cm and 6 cm respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.",
+          "answer": "Radius = 10 cm",
+          "explanation": "Step 1: Area of first circle = pi(8^2) = 64*pi.\nStep 2: Area of second circle = pi(6^2) = 36*pi.\nStep 3: Sum = 100*pi = pi*r^2.\nStep 4: r^2 = 100, r = 10 cm."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "short",
+          "question": "A race track is in the form of a ring whose inner circumference is 352 m and the outer circumference is 396 m. Find the width of the track.",
+          "answer": "Width = 7 m",
+          "explanation": "Step 1: Inner: 2*pi*r1 = 352, r1 = 352/(2 x 22/7) = 352 x 7/44 = 56 m.\nStep 2: Outer: 2*pi*r2 = 396, r2 = 396 x 7/44 = 63 m.\nStep 3: Width = r2 - r1 = 63 - 56 = 7 m."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "An umbrella has 8 ribs which are equally spaced. Assuming the umbrella to be a flat circle of radius 45 cm, find the area between two consecutive ribs of the umbrella. (Use pi = 22/7)",
+          "answer": "Area between two consecutive ribs = 22275/28 cm^2 (approximately 795.54 cm^2).",
+          "explanation": "Step 1: The 8 ribs divide the circle into 8 equal sectors.\nStep 2: Angle of each sector = 360/8 = 45 degrees.\nStep 3: Area of each sector = (45/360) x pi x r^2 = (1/8) x (22/7) x 45 x 45.\nStep 4: = (1/8) x (22/7) x 2025 = 22 x 2025 / 56 = 44550/56 = 22275/28 cm^2."
+        }
+      ]
+    },
+    {
+      "topic": "Areas of Sectors and Segments",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "The area of a sector of angle theta (in degrees) and radius r is:",
+          "options": ["(theta/180) x pi x r^2", "(theta/360) x pi x r^2", "(theta/360) x 2 x pi x r", "pi x r^2"],
+          "answer": "(theta/360) x pi x r^2",
+          "explanation": "Area of sector = (theta/360) x pi x r^2, where theta is the angle of the sector in degrees."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "The length of an arc of a sector of angle theta and radius r is ______ x 2 x pi x r.",
+          "answer": "theta/360",
+          "explanation": "Arc length = (theta/360) x 2*pi*r."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "short",
+          "question": "Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60 degrees. (Use pi = 22/7)",
+          "answer": "Area = 132/7 cm^2 (approximately 18.86 cm^2)",
+          "explanation": "Area = (60/360) x (22/7) x 6^2 = (1/6) x (22/7) x 36 = (1/6) x 792/7 = 132/7 cm^2."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "short",
+          "question": "Find the length of the arc of a sector of angle 90 degrees and radius 14 cm. (Use pi = 22/7)",
+          "answer": "Arc length = 22 cm",
+          "explanation": "Arc length = (90/360) x 2 x (22/7) x 14 = (1/4) x 88 = 22 cm."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the corresponding minor segment. (Use pi = 3.14)",
+          "answer": "Area = 28.5 cm^2",
+          "explanation": "Step 1: Area of sector = (90/360) x 3.14 x 100 = 78.5 cm^2.\nStep 2: Area of triangle = (1/2) x 10 x 10 = 50 cm^2.\nStep 3: Area of minor segment = 78.5 - 50 = 28.5 cm^2."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "short",
+          "question": "A horse is tied to a peg at one corner of a square-shaped grass field of side 15 m by means of a 5 m long rope. Find the area of that part of the field in which the horse can graze. (Use pi = 3.14)",
+          "answer": "Area = 19.625 m^2",
+          "explanation": "Step 1: The horse can graze in a quarter circle (angle at corner = 90 degrees).\nStep 2: Area = (90/360) x pi x r^2 = (1/4) x 3.14 x 25 = 19.625 m^2."
+        },
+        {
+          "id": "ch11-t2-m3",
+          "type": "long",
+          "question": "A brooch is made with silver wire in the form of a circle with diameter 35 mm. The wire is also used in making 5 diameters which divide the circle into 10 equal sectors. Find the total length of the silver wire required. (Use pi = 22/7)",
+          "answer": "Total length = 285 mm",
+          "explanation": "Step 1: Circumference = pi x d = (22/7) x 35 = 110 mm.\nStep 2: Length of 5 diameters = 5 x 35 = 175 mm.\nStep 3: Total = 110 + 175 = 285 mm."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "A round table cover has six equal designs as shown by shading in the textbook. If the radius of the cover is 28 cm, find the cost of making the designs at the rate of Rs 0.35 per cm^2. (Use sqrt(3) = 1.7)",
+          "answer": "Cost = Rs 162.68 (approximately)",
+          "explanation": "Step 1: The 6 designs are formed between the inscribed regular hexagon and 6 sectors of 60 degrees each.\nStep 2: Area of each sector = (60/360) x (22/7) x 28^2 = (1/6) x (22/7) x 784 = 2464/6/7 = Hmm, let me recalculate.\n(1/6) x (22/7) x 784 = 22 x 784/(6 x 7) = 17248/42 = 410.67 cm^2.\nStep 3: Area of equilateral triangle with side 28 = (sqrt(3)/4) x 28^2 = 1.7/4 x 784 = 333.2 cm^2.\nStep 4: Area of one segment = 410.67 - 333.2 = 77.47 cm^2.\nStep 5: Total shaded area = 6 x 77.47 = 464.8 cm^2.\nStep 6: Cost = 464.8 x 0.35 = Rs 162.68."
+        },
+        {
+          "id": "ch11-t2-h2",
+          "type": "long",
+          "question": "In a circle of radius 21 cm, an arc subtends an angle of 60 degrees at the centre. Find: (i) the length of the arc, (ii) the area of the sector formed by the arc, (iii) the area of the segment formed by the corresponding chord. (Use pi = 22/7, sqrt(3) = 1.73)",
+          "answer": "(i) 22 cm (ii) 231 cm^2 (iii) 231 - 441*sqrt(3)/4 cm^2 (approximately 40.25 cm^2)",
+          "explanation": "Step 1: Arc length = (60/360) x 2 x (22/7) x 21 = (1/6) x 132 = 22 cm.\nStep 2: Area of sector = (60/360) x (22/7) x 441 = (1/6) x 9702/7 = 1386/6/7. Let me recalculate: (1/6) x (22/7) x 441 = (22 x 441)/(7 x 6) = 9702/42 = 231 cm^2.\nStep 3: The chord subtends 60 degrees, forming an equilateral triangle with two radii (since the triangle formed is isosceles with the angle between the equal sides = 60 degrees, so all angles are 60 degrees).\nStep 4: Area of triangle = (sqrt(3)/4) x 21^2 = (1.73/4) x 441 = 190.75 cm^2.\nStep 5: Area of segment = 231 - 190.75 = 40.25 cm^2."
+        }
+      ]
+    }
+  ]
+}

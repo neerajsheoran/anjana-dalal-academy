@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Intersecting Lines and Angles",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "When two lines intersect, how many angles are formed?", "options": ["2", "3", "4", "8"], "answer": "4", "explanation": "Two intersecting lines form 4 angles at the point of intersection." },
+        { "id": "ch5-t1-e2", "type": "fill", "question": "Two adjacent angles formed by intersecting lines add up to ______ degrees. They are called a ______ pair.", "answer": "180, linear", "explanation": "Adjacent angles at an intersection point form a straight angle (180 degrees) and are called a linear pair." },
+        { "id": "ch5-t1-e3", "type": "mcq", "question": "Vertically opposite angles are always:", "options": ["Complementary", "Supplementary", "Equal", "Right angles"], "answer": "Equal", "explanation": "Vertically opposite angles (angles across from each other at an intersection) are always equal." },
+        { "id": "ch5-t1-e4", "type": "short", "question": "Two lines intersect and one angle measures 120°. Find all four angles.", "answer": "120°, 60°, 120°, 60°.\n\nThe angle adjacent to 120° = 180° - 120° = 60° (linear pair).\nVertically opposite to 120° = 120°.\nVertically opposite to 60° = 60°.", "explanation": "Using linear pairs (adjacent angles sum to 180°) and vertically opposite angles (opposite angles are equal)." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "Two lines intersect at right angles. What type of lines are they and what is the measure of each angle formed?", "answer": "They are perpendicular lines. Each of the four angles measures 90°.", "explanation": "Perpendicular lines intersect at right angles. Since all four angles must be equal and sum to 360°, each angle = 360°/4 = 90°." },
+        { "id": "ch5-t1-m2", "type": "short", "question": "If two lines intersect and one angle is 75°, find the vertically opposite angle and both adjacent angles.", "answer": "Vertically opposite angle = 75°.\nAdjacent angles = 180° - 75° = 105° each.", "explanation": "Vertically opposite = 75° (equal). Adjacent angles form linear pairs: 180° - 75° = 105°." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "Prove that vertically opposite angles are equal using the linear pair property.", "answer": "Let two lines intersect forming angles a, b, c, d (in order around the point).\n\nStep 1: a and b are a linear pair, so a + b = 180° ... (i)\nStep 2: b and c are a linear pair, so b + c = 180° ... (ii)\nStep 3: From (i) and (ii): a + b = b + c\nStep 4: Subtract b from both sides: a = c\n\nSimilarly, from b + c = 180° and c + d = 180°, we get b = d.\n\nTherefore, vertically opposite angles are always equal.", "explanation": "The proof uses the fact that two linear pairs share a common angle (b). Since both sums equal 180°, the other two angles must be equal." }
+      ]
+    },
+    {
+      "topic": "Parallel Lines and Transversals",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "When a transversal intersects two parallel lines, how many angles are formed in total?", "options": ["4", "6", "8", "12"], "answer": "8", "explanation": "A transversal creates 4 angles at each intersection point, and it intersects 2 lines, so 4 x 2 = 8 angles." },
+        { "id": "ch5-t2-e2", "type": "fill", "question": "When a transversal crosses parallel lines, corresponding angles are ______.", "answer": "equal", "explanation": "The corresponding angles property states that corresponding angles formed by a transversal on parallel lines are always equal." },
+        { "id": "ch5-t2-e3", "type": "mcq", "question": "Alternate angles formed by a transversal on parallel lines are:", "options": ["Supplementary", "Complementary", "Equal", "Unequal"], "answer": "Equal", "explanation": "Alternate angles (on opposite sides of the transversal, between the parallel lines) are equal when the lines are parallel." },
+        { "id": "ch5-t2-e4", "type": "fill", "question": "Co-interior angles (same-side interior angles) formed by a transversal on parallel lines add up to ______ degrees.", "answer": "180", "explanation": "Co-interior angles are supplementary — they always add up to 180° when the lines are parallel." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "A transversal intersects two parallel lines. If one angle is 135°, find all eight angles.", "answer": "The 8 angles are: 135°, 45°, 135°, 45°, 135°, 45°, 135°, 45°.\n\nAt each intersection: one angle = 135° and its linear pair = 45°.\nCorresponding angles at the second intersection are equal to those at the first.", "explanation": "With parallel lines, there are only 2 distinct angle values that add up to 180°. All corresponding, alternate, and vertically opposite angle relationships give us the complete set." },
+        { "id": "ch5-t2-m2", "type": "short", "question": "If angle a = 120° and angle f = 70° at two intersections of a transversal with two lines, are the lines parallel? Explain.", "answer": "No, the lines are not parallel.\n\nFor the lines to be parallel, corresponding angles must be equal. Since 120° ≠ 70°, the lines are not parallel.", "explanation": "The corresponding angles test: if corresponding angles formed by a transversal are not equal, the lines are not parallel." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "long", "question": "A transversal intersects two parallel lines. One of the angles formed is (2x + 10)° and its corresponding angle is (3x - 20)°. Find the value of x and both angles.", "answer": "Since the lines are parallel, corresponding angles are equal:\n2x + 10 = 3x - 20\n10 + 20 = 3x - 2x\n30 = x\n\nSo x = 30.\n\nBoth corresponding angles = 2(30) + 10 = 70°.\nVerification: 3(30) - 20 = 90 - 20 = 70°. Correct.", "explanation": "Corresponding angles formed by a transversal on parallel lines are equal. Set the two expressions equal and solve for x." },
+        { "id": "ch5-t2-h2", "type": "long", "question": "Two parallel lines are cut by a transversal. The co-interior angles are (3x + 15)° and (2x + 25)°. Find x and both angles.", "answer": "Co-interior angles add up to 180°:\n(3x + 15) + (2x + 25) = 180\n5x + 40 = 180\n5x = 140\nx = 28\n\nFirst angle = 3(28) + 15 = 84 + 15 = 99°.\nSecond angle = 2(28) + 25 = 56 + 25 = 81°.\n\nCheck: 99 + 81 = 180°. Correct.", "explanation": "Co-interior angles (same-side interior angles) formed by a transversal on parallel lines are supplementary, meaning they add up to 180°." }
+      ]
+    }
+  ]
+}

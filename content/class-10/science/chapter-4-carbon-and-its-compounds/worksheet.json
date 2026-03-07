@@ -1,0 +1,197 @@
+{
+  "topics": [
+    {
+      "topic": "Covalent Bonding and Carbon Compounds",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "Ethane, with the molecular formula C₂H₆, has:",
+          "options": ["6 covalent bonds", "7 covalent bonds", "8 covalent bonds", "9 covalent bonds"],
+          "answer": "7 covalent bonds",
+          "explanation": "Ethane has 1 C-C bond and 6 C-H bonds (3 per carbon atom), giving a total of 7 covalent bonds."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "mcq",
+          "question": "Butanone is a four-carbon compound with the functional group:",
+          "options": ["Carboxylic acid", "Aldehyde", "Ketone", "Alcohol"],
+          "answer": "Ketone",
+          "explanation": "The suffix '-one' in butanone indicates a ketone functional group (—CO—). The prefix 'but-' indicates 4 carbon atoms."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "fill",
+          "question": "The unique ability of carbon to form bonds with other carbon atoms, giving rise to large molecules, is called ______.",
+          "answer": "catenation",
+          "explanation": "Catenation allows carbon to form long chains, branched chains, and ring structures. This is possible because C-C bonds are very strong and stable."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "short",
+          "question": "What are the two properties of carbon which lead to the huge number of carbon compounds we see around us?",
+          "answer": "The two properties are:\n1. Catenation — the ability of carbon to form bonds with other carbon atoms, creating long chains, branched chains, and rings.\n2. Tetravalency — carbon has a valency of 4, allowing it to bond with four other atoms of carbon or other elements, leading to a vast variety of compounds.",
+          "explanation": "These two properties together enable carbon to form millions of compounds with diverse properties."
+        },
+        {
+          "id": "ch4-t1-e5",
+          "type": "short",
+          "question": "What would be the electron dot structure of carbon dioxide (CO₂)?",
+          "answer": "In CO₂, the carbon atom shares two pairs of electrons with each oxygen atom, forming two double bonds: O=C=O. Each oxygen atom has two lone pairs of electrons. Carbon achieves an octet by sharing 4 pairs (2 with each oxygen), and each oxygen achieves an octet by sharing 2 pairs with carbon plus having 2 lone pairs.",
+          "explanation": "CO₂ is a linear molecule where carbon forms double bonds with both oxygen atoms to satisfy the valency of all three atoms."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "Explain the nature of the covalent bond using the bond formation in CH₃Cl.",
+          "answer": "In CH₃Cl, carbon has 4 valence electrons and needs to share electrons to achieve a noble gas configuration. Carbon shares one electron each with three hydrogen atoms (forming 3 C-H single bonds) and one electron with a chlorine atom (forming 1 C-Cl single bond). Each hydrogen achieves a duplet, chlorine achieves an octet, and carbon achieves an octet through sharing. No transfer of electrons takes place — only sharing. This is why CH₃Cl is a covalent compound.",
+          "explanation": "Covalent bonds are formed by sharing of electrons. In CH₃Cl, all four valencies of carbon are satisfied by single bonds — three with hydrogen and one with chlorine."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "What is a homologous series? Explain with an example.",
+          "answer": "A homologous series is a series of compounds with the same functional group in which successive members differ by a —CH₂— unit (molecular mass difference of 14 u). Members of a homologous series have similar chemical properties but show a gradual change in physical properties.\n\nExample — Alkane series: CH₄ (methane), C₂H₆ (ethane), C₃H₈ (propane), C₄H₁₀ (butane). General formula: CₙH₂ₙ₊₂. Each member differs from the next by CH₂ (14 u).",
+          "explanation": "The concept of homologous series helps organise the vast number of carbon compounds into families with predictable properties."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "How many structural isomers can you draw for pentane (C₅H₁₂)? Draw their structures and name them.",
+          "answer": "Pentane (C₅H₁₂) has three structural isomers:\n\n1. n-Pentane: CH₃-CH₂-CH₂-CH₂-CH₃ (straight chain of 5 carbon atoms)\n\n2. Isopentane (2-methylbutane): A 4-carbon chain with a methyl group (CH₃) on the second carbon.\n\n3. Neopentane (2,2-dimethylpropane): A 3-carbon chain with two methyl groups on the second (central) carbon.\n\nAll three isomers have the same molecular formula C₅H₁₂ but different structural arrangements, leading to different physical properties such as boiling points.",
+          "explanation": "Structural isomers have the same molecular formula but different structural arrangements. As the number of carbon atoms increases, the number of possible isomers increases rapidly."
+        }
+      ]
+    },
+    {
+      "topic": "Chemical Properties and Reactions",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "While cooking, if the bottom of the vessel is getting blackened on the outside, it means that:",
+          "options": ["The food is not cooked completely", "The fuel is not burning completely", "The fuel is wet", "The fuel is burning completely"],
+          "answer": "The fuel is not burning completely",
+          "explanation": "Blackening is caused by soot (carbon) deposited due to incomplete combustion of fuel. This happens when air holes in the stove are blocked, providing insufficient oxygen."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "fill",
+          "question": "The process of converting unsaturated hydrocarbons to saturated hydrocarbons by adding hydrogen in the presence of a catalyst is called ______.",
+          "answer": "hydrogenation",
+          "explanation": "Hydrogenation uses catalysts like palladium or nickel. Its main industrial application is converting vegetable oils (unsaturated) into vanaspati ghee (saturated fats)."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "mcq",
+          "question": "Which of the following hydrocarbons undergo addition reactions?",
+          "options": ["C₂H₆ and C₃H₈", "C₃H₆ and C₂H₂", "C₂H₆ and CH₄", "CH₄ and C₃H₈"],
+          "answer": "C₃H₆ and C₂H₂",
+          "explanation": "Addition reactions are characteristic of unsaturated hydrocarbons. C₃H₆ (propene, an alkene with double bond) and C₂H₂ (ethyne, an alkyne with triple bond) are unsaturated and undergo addition reactions. C₂H₆, C₃H₈, and CH₄ are saturated alkanes."
+        },
+        {
+          "id": "ch4-t2-e4",
+          "type": "short",
+          "question": "Why is the conversion of ethanol to ethanoic acid an oxidation reaction?",
+          "answer": "The conversion of ethanol (CH₃CH₂OH) to ethanoic acid (CH₃COOH) is an oxidation reaction because oxygen is being added to the ethanol molecule. An oxidising agent like alkaline potassium permanganate or acidified potassium dichromate adds oxygen to ethanol, converting the alcohol group (—OH) to a carboxylic acid group (—COOH).",
+          "explanation": "Oxidation is defined as the gain of oxygen or loss of hydrogen. In this reaction, ethanol gains oxygen to become ethanoic acid."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "Give a test that can be used to differentiate between saturated and unsaturated hydrocarbons.",
+          "answer": "Add a few drops of bromine water (or alkaline potassium permanganate solution) to the hydrocarbon:\n\n- Unsaturated hydrocarbons will decolourise bromine water (or KMnO₄) because they undergo addition reactions, adding bromine across the double/triple bond.\n- Saturated hydrocarbons will not decolourise bromine water under normal conditions.\n\nAlternatively, burn the hydrocarbons: saturated hydrocarbons burn with a clean blue flame, while unsaturated hydrocarbons burn with a yellow sooty flame.",
+          "explanation": "The decolourisation test works because unsaturated compounds have double or triple bonds that can react with bromine or KMnO₄ through addition reactions."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "short",
+          "question": "Why are carbon and its compounds used as fuels for most applications?",
+          "answer": "Carbon and its compounds are used as fuels because:\n1. They release a large amount of heat and light energy on combustion (high calorific value).\n2. They are abundantly available (coal, petroleum, natural gas, wood).\n3. Most carbon compounds undergo complete combustion in sufficient oxygen, producing CO₂ and H₂O — relatively clean products.\n4. The ignition temperature of most carbon fuels is achievable under normal conditions.\n5. They can exist in solid (coal, wood), liquid (petrol, kerosene), and gaseous (CNG, LPG) forms, making them versatile fuels.",
+          "explanation": "The high heat of combustion of carbon compounds makes them ideal fuels. However, incomplete combustion produces soot and harmful gases."
+        },
+        {
+          "id": "ch4-t2-m3",
+          "type": "short",
+          "question": "A mixture of oxygen and ethyne is burnt for welding. Can you tell why a mixture of ethyne and air is not used?",
+          "answer": "A mixture of ethyne and pure oxygen is used for welding because it produces a very hot flame (around 3000°C) which can melt metals. If air were used instead of pure oxygen, the nitrogen present in air (about 78%) would absorb a large amount of heat, reducing the temperature of the flame significantly. This lower temperature would not be sufficient to melt metals for welding. Using pure oxygen ensures complete combustion and the maximum possible temperature.",
+          "explanation": "The presence of nitrogen in air acts as a heat sink, absorbing energy and lowering the flame temperature. Pure oxygen ensures all the heat goes into the welding process."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "How can ethanol and ethanoic acid be differentiated on the basis of their physical and chemical properties?",
+          "answer": "Differentiation between ethanol and ethanoic acid:\n\nPhysical properties:\n1. Smell: Ethanol has a pleasant smell; ethanoic acid has a pungent vinegar-like smell.\n2. Taste: Ethanol has a burning taste; ethanoic acid has a sour taste (though tasting chemicals is not recommended).\n\nChemical tests:\n1. Litmus test: Ethanoic acid turns blue litmus red (it is an acid). Ethanol does not change the colour of litmus (it is neutral).\n2. Sodium hydrogencarbonate/carbonate test: Ethanoic acid reacts with NaHCO₃ to produce CO₂ gas (effervescence). Ethanol does not react with NaHCO₃.\n   CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\n3. pH test: Ethanoic acid has a pH less than 7. Ethanol has a pH close to 7.\n4. Reaction with sodium: Both react with sodium to produce hydrogen gas, but the products differ — sodium ethoxide from ethanol and sodium ethanoate from ethanoic acid.",
+          "explanation": "The simplest test is the sodium bicarbonate test — only the acid produces effervescence (CO₂). The litmus test also works since only ethanoic acid is acidic."
+        }
+      ]
+    },
+    {
+      "topic": "Soaps, Detergents, and Important Compounds",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "short",
+          "question": "Would you be able to check if water is hard by using a detergent?",
+          "answer": "No, we cannot check if water is hard by using a detergent. Detergents produce foam equally well in both hard and soft water because they do not form insoluble precipitates with calcium and magnesium ions. Only soap can distinguish hard water from soft water — soap produces less foam and forms a white scum (insoluble precipitate) in hard water.",
+          "explanation": "Detergents are designed to work in all types of water. The charged end of detergent molecules does not react with Ca²⁺ and Mg²⁺ ions unlike soap."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "A 5-8% solution of acetic acid in water is called ______.",
+          "answer": "vinegar",
+          "explanation": "Vinegar is widely used as a food preservative, particularly in pickles. Pure acetic acid (ethanoic acid) freezes at 290 K and is called glacial acetic acid."
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "short",
+          "question": "What change will you observe if you test soap with litmus paper (red and blue)?",
+          "answer": "Soap is basic in nature (it is a sodium or potassium salt of a long-chain carboxylic acid formed by reaction with a strong base). Therefore, soap solution will turn red litmus paper blue. Blue litmus paper will remain unchanged.",
+          "explanation": "Soaps are made by reacting fatty acids with strong bases (NaOH or KOH). The resulting salt is mildly basic, which is why it turns red litmus blue."
+        },
+        {
+          "id": "ch4-t3-e4",
+          "type": "mcq",
+          "question": "The reaction of an ester with sodium hydroxide to form alcohol and sodium salt of carboxylic acid is called:",
+          "options": ["Esterification", "Hydrogenation", "Saponification", "Substitution"],
+          "answer": "Saponification",
+          "explanation": "Saponification literally means 'soap making'. It is the reverse of esterification and is used in the preparation of soap from fats/oils and NaOH."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "Explain the mechanism of the cleaning action of soaps.",
+          "answer": "Soap molecules have two ends: a hydrophilic (water-attracting) ionic end and a hydrophobic (water-repelling) hydrocarbon tail.\n\nWhen soap is dissolved in water and applied to a dirty surface:\n1. The hydrophobic tails of soap molecules attach to the oil/grease (dirt).\n2. The hydrophilic heads remain in the water.\n3. This forms spherical structures called micelles, with oil trapped inside and ionic ends on the surface.\n4. Agitation (beating, scrubbing) helps dislodge the dirt from the surface.\n5. The micelles (with trapped dirt) remain suspended in water as a colloid due to ion-ion repulsion and are easily rinsed away.",
+          "explanation": "The dual nature of soap molecules (hydrophilic and hydrophobic ends) allows them to act as a bridge between water and oily dirt, emulsifying the dirt for removal."
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "short",
+          "question": "Why does micelle formation take place when soap is added to water? Will a micelle be formed in other solvents such as ethanol also?",
+          "answer": "Micelle formation occurs because soap molecules have a hydrophobic hydrocarbon tail and a hydrophilic ionic head. In water, the hydrophobic tails are repelled by water and cluster together, forming micelles with tails inside and ionic heads on the surface facing water.\n\nMicelles will NOT form in ethanol or other organic solvents because the hydrocarbon tail of soap is soluble in such solvents. Since both ends would dissolve in ethanol, there is no driving force for micelle formation. Micelles form only in polar solvents like water where the hydrophobic tail cannot dissolve.",
+          "explanation": "Micelle formation requires the soap molecule to have one end soluble and one end insoluble in the solvent. In water, the hydrocarbon tail is insoluble, driving micelle formation. In ethanol, both ends dissolve, so no micelles form."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "Explain the formation of scum when hard water is treated with soap. How do detergents overcome this problem? What is hydrogenation and what is its industrial application?",
+          "answer": "Scum formation: Hard water contains dissolved salts of calcium and magnesium (as chlorides, sulphates, or hydrogencarbonates). When soap (sodium salt of a long-chain fatty acid) is added to hard water, it reacts with Ca²⁺ and Mg²⁺ ions to form an insoluble precipitate called scum:\n2C₁₇H₃₅COONa + CaCl₂ → (C₁₇H₃₅COO)₂Ca + 2NaCl\nThis scum is an insoluble calcium salt of the fatty acid. It wastes soap and reduces its cleaning effectiveness.\n\nDetergents overcome this problem because they are sodium salts of sulphonic acids. Their charged ends do not form insoluble precipitates with Ca²⁺ and Mg²⁺ ions, so they remain effective in hard water.\n\nHydrogenation: It is the process of adding hydrogen to unsaturated hydrocarbons in the presence of catalysts (nickel or palladium) to form saturated hydrocarbons. Its main industrial application is the conversion of vegetable oils (which contain unsaturated fatty acid chains, liquid at room temperature) into vanaspati ghee/solid fats (which contain saturated fatty acid chains). This is done by adding hydrogen to the double bonds in the oil molecules.",
+          "explanation": "The difference between soaps and detergents in hard water is a key practical concept. Hydrogenation is an important industrial process that converts liquid oils to solid fats."
+        }
+      ]
+    }
+  ]
+}

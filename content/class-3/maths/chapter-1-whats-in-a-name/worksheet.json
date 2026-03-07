@@ -1,0 +1,50 @@
+{
+  "topics": [
+    {
+      "topic": "Tally Marks and Counting",
+      "easy": [
+        { "id": "ch1-t1-e1", "type": "mcq", "question": "Deba and Deep used tally marks to keep track of their cows. If they made 7 marks and crossed out 5, how many cows are still missing?", "options": ["3", "2", "5", "7"], "answer": "2", "explanation": "7 marks minus 5 crossed out means 2 cows are still outside." },
+        { "id": "ch1-t1-e2", "type": "fill", "question": "Making a mark on the wall for each cow and crossing it out when the cow comes back is called ______.", "answer": "tally marking", "explanation": "Tally marking is a way to keep track of things by making marks." },
+        { "id": "ch1-t1-e3", "type": "mcq", "question": "If you make 10 tally marks for 10 goats going out and cross out all 10 marks, how many goats are missing?", "options": ["10", "5", "0", "1"], "answer": "0", "explanation": "All 10 marks are crossed out, so all 10 goats are home. None are missing." },
+        { "id": "ch1-t1-e4", "type": "short", "question": "You made 6 tally marks for birds flying out. Only 4 marks got crossed. How many birds have not come back?", "answer": "2 birds have not come back because 6 - 4 = 2.", "explanation": "Subtract the crossed marks from total marks: 6 - 4 = 2 birds are still missing." }
+      ],
+      "medium": [
+        { "id": "ch1-t1-m1", "type": "short", "question": "Rani has 15 hens. She makes tally marks for all of them. By evening, she crosses out 12 marks. How many hens are still outside?", "answer": "3 hens are still outside because 15 - 12 = 3.", "explanation": "Total marks = 15, crossed out = 12, so 15 - 12 = 3 hens are missing." },
+        { "id": "ch1-t1-m2", "type": "short", "question": "Why is tally marking useful even if you do not know how to count?", "answer": "With tally marking, you can match one mark to one thing. If all marks are crossed out, all things are home. You do not need to know the exact count.", "explanation": "Tally marks use one-to-one matching. You just need to check if all marks are crossed." }
+      ],
+      "hard": [
+        { "id": "ch1-t1-h1", "type": "long", "question": "A farmer has some sheep. In the morning, he makes tally marks as each sheep goes out: he makes 20 marks. In the evening, he crosses out marks as they return. He crosses out 17 marks. Then 2 more sheep come back. How many marks are still not crossed? How many sheep are still missing?", "answer": "After 17 marks are crossed out, 3 are left. Then 2 more come back, so 2 more marks are crossed. Only 1 mark is left uncrossed. 1 sheep is still missing.", "explanation": "20 - 17 = 3 marks uncrossed. Then 2 more come back: 3 - 2 = 1 mark uncrossed = 1 sheep missing." }
+      ]
+    },
+    {
+      "topic": "Comparing Names by Length",
+      "easy": [
+        { "id": "ch1-t2-e1", "type": "mcq", "question": "Which animal name has the most letters?", "options": ["Dog", "Cat", "Elephant", "Goat"], "answer": "Elephant", "explanation": "Elephant has 8 letters, which is the most among the choices." },
+        { "id": "ch1-t2-e2", "type": "fill", "question": "The name 'Ox' has ______ letters and it is the ______ name.", "answer": "2, shortest", "explanation": "Ox has only 2 letters, making it the shortest name." },
+        { "id": "ch1-t2-e3", "type": "mcq", "question": "Which name is longer: Tiger or Goat?", "options": ["Tiger", "Goat", "Both are the same", "Cannot tell"], "answer": "Tiger", "explanation": "Tiger has 5 letters and Goat has 4 letters, so Tiger is longer." }
+      ],
+      "medium": [
+        { "id": "ch1-t2-m1", "type": "short", "question": "Arrange these names from shortest to longest: Monkey, Ox, Dog, Elephant.", "answer": "Ox (2 letters), Dog (3 letters), Monkey (6 letters), Elephant (8 letters).", "explanation": "Count the letters in each name and arrange from fewest to most." },
+        { "id": "ch1-t2-m2", "type": "short", "question": "Riya has 4 letters in her name. Subramaniam has 11 letters. How many more letters does Subramaniam have than Riya?", "answer": "Subramaniam has 7 more letters than Riya because 11 - 4 = 7.", "explanation": "Subtract: 11 - 4 = 7 more letters." }
+      ],
+      "hard": [
+        { "id": "ch1-t2-h1", "type": "long", "question": "Write the names of 4 animals. Count the letters in each name. Which name is the longest and which is the shortest? How many more letters does the longest name have than the shortest?", "answer": "Example: Ant (3), Lion (4), Parrot (6), Butterfly (9). Longest: Butterfly (9 letters). Shortest: Ant (3 letters). Difference: 9 - 3 = 6 more letters.", "explanation": "Answers will vary. Count the letters, find the longest and shortest, then subtract to find the difference." }
+      ]
+    },
+    {
+      "topic": "Number Names and Grouping",
+      "easy": [
+        { "id": "ch1-t3-e1", "type": "mcq", "question": "How many letters are in the number name 'Five'?", "options": ["3", "4", "5", "6"], "answer": "4", "explanation": "F-I-V-E has 4 letters." },
+        { "id": "ch1-t3-e2", "type": "fill", "question": "The number name for 10 is 'Ten' and it has ______ letters.", "answer": "3", "explanation": "T-E-N has 3 letters." },
+        { "id": "ch1-t3-e3", "type": "mcq", "question": "Which number name has MORE letters: 'One' or 'Three'?", "options": ["One", "Three", "Both have the same", "Cannot tell"], "answer": "Three", "explanation": "One has 3 letters and Three has 5 letters, so Three has more." }
+      ],
+      "medium": [
+        { "id": "ch1-t3-m1", "type": "short", "question": "Group these into two groups - things that need electricity and things that do not: Fan, Chair, TV, Bed, Lamp, Pillow.", "answer": "Need electricity: Fan, TV, Lamp. Do not need electricity: Chair, Bed, Pillow.", "explanation": "Fan, TV, and Lamp all need electricity to work. Chair, Bed, and Pillow do not." },
+        { "id": "ch1-t3-m2", "type": "short", "question": "How many letters does the number name 'Forty Three' have? Remember to count letters in both words.", "answer": "10 letters. Forty has 5 letters and Three has 5 letters. 5 + 5 = 10.", "explanation": "Count all letters in both words (not the space): F-O-R-T-Y (5) + T-H-R-E-E (5) = 10." }
+      ],
+      "hard": [
+        { "id": "ch1-t3-h1", "type": "long", "question": "Look around your classroom. Collect data about what colour shirts your classmates are wearing. Make a table with columns: Colour and Number of Children. Which colour is worn by the most children?", "answer": "Answers will vary. Example: White - 8 children, Blue - 5 children, Red - 3 children. White is worn by the most children.", "explanation": "This is a data collection activity. Count and record how many children wear each colour. The colour with the highest count is the most popular." }
+      ]
+    }
+  ]
+}

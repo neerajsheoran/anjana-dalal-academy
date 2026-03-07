@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Metres, Centimetres, and Conversions",
+      "easy": [
+        { "id": "ch6-t1-e1", "type": "mcq", "question": "How many centimetres are in 1 metre?", "options": ["10", "50", "100", "1000"], "answer": "100", "explanation": "1 metre = 100 centimetres." },
+        { "id": "ch6-t1-e2", "type": "fill", "question": "Half a metre = ______ cm.", "answer": "50", "explanation": "1/2 of 100 cm = 50 cm." },
+        { "id": "ch6-t1-e3", "type": "mcq", "question": "Which unit would you use to measure the length of a pencil?", "options": ["Kilometres", "Metres", "Centimetres", "Litres"], "answer": "Centimetres", "explanation": "A pencil is small, so centimetres are the right unit. Metres are too big." },
+        { "id": "ch6-t1-e4", "type": "fill", "question": "3 metres = ______ cm.", "answer": "300", "explanation": "3 x 100 = 300 cm." }
+      ],
+      "medium": [
+        { "id": "ch6-t1-m1", "type": "short", "question": "Ramu says his height is 120 cm. Shamu says his height is 1 m 20 cm. Who is taller?", "answer": "They are the same height! 1 m 20 cm = 100 cm + 20 cm = 120 cm.", "explanation": "Convert to the same unit to compare: 1 m 20 cm = 120 cm = Ramu's height." },
+        { "id": "ch6-t1-m2", "type": "short", "question": "Your ruler is broken and starts at the 3 cm mark. If the end of your eraser is at the 10 cm mark, how long is the eraser?", "answer": "10 - 3 = 7 cm.", "explanation": "With a broken ruler, subtract the starting number from the ending number." },
+        { "id": "ch6-t1-m3", "type": "mcq", "question": "1 m 40 cm is equal to how many cm?", "options": ["104 cm", "114 cm", "140 cm", "400 cm"], "answer": "140 cm", "explanation": "1 m = 100 cm, plus 40 cm = 140 cm." }
+      ],
+      "hard": [
+        { "id": "ch6-t1-h1", "type": "long", "question": "A blue whale is about 30 metres long and a crocodile is about 6 metres long. How many crocodiles placed end to end would equal the length of one blue whale? Express the blue whale's length in centimetres.", "answer": "30 / 6 = 5 crocodiles. 30 metres = 30 x 100 = 3000 cm.", "explanation": "Divide the whale's length by the crocodile's length: 30/6 = 5. Convert: 30 x 100 = 3000 cm." }
+      ]
+    },
+    {
+      "topic": "Perimeter",
+      "easy": [
+        { "id": "ch6-t2-e1", "type": "mcq", "question": "The perimeter is the total length around the ______ of a shape.", "options": ["centre", "area", "boundary", "inside"], "answer": "boundary", "explanation": "Perimeter is the total length of the outside boundary of a shape." },
+        { "id": "ch6-t2-e2", "type": "fill", "question": "A square has sides of 4 cm each. Its perimeter = ______ cm.", "answer": "16", "explanation": "Perimeter of a square = 4 + 4 + 4 + 4 = 16 cm." },
+        { "id": "ch6-t2-e3", "type": "mcq", "question": "A rectangle has length 5 cm and breadth 3 cm. What is its perimeter?", "options": ["8 cm", "15 cm", "16 cm", "30 cm"], "answer": "16 cm", "explanation": "Perimeter = 5 + 3 + 5 + 3 = 16 cm." }
+      ],
+      "medium": [
+        { "id": "ch6-t2-m1", "type": "short", "question": "A rectangular garden is 10 m long and 6 m wide. Bhola wants to build a brick boundary around it. What is the total length of the boundary?", "answer": "Perimeter = 10 + 6 + 10 + 6 = 32 metres.", "explanation": "Add all four sides: length + width + length + width = 2 x (10 + 6) = 32 m." },
+        { "id": "ch6-t2-m2", "type": "short", "question": "Can two different shapes have the same perimeter? Give an example.", "answer": "Yes! A square with sides of 4 cm has perimeter 16 cm. A rectangle with sides 5 cm and 3 cm also has perimeter 16 cm. Different shapes, same perimeter.", "explanation": "Different combinations of side lengths can add up to the same total perimeter." },
+        { "id": "ch6-t2-m3", "type": "mcq", "question": "A triangle has sides of 5 cm, 7 cm, and 8 cm. What is its perimeter?", "options": ["15 cm", "20 cm", "40 cm", "56 cm"], "answer": "20 cm", "explanation": "Perimeter = 5 + 7 + 8 = 20 cm. Add all sides." }
+      ],
+      "hard": [
+        { "id": "ch6-t2-h1", "type": "long", "question": "Rina wants to put a ribbon around a rectangular photo frame that is 30 cm long and 20 cm wide. How much ribbon does she need? If the ribbon costs Rs 2 per centimetre, how much will it cost?", "answer": "Perimeter = 30 + 20 + 30 + 20 = 100 cm. Cost = 100 x 2 = Rs 200.", "explanation": "First find the perimeter: 2 x (30 + 20) = 100 cm. Then multiply by the cost per cm: 100 x 2 = Rs 200." },
+        { "id": "ch6-t2-h2", "type": "long", "question": "A square playground has a perimeter of 200 m. What is the length of each side? If a student runs around it 3 times, how many metres does the student run?", "answer": "Each side = 200 / 4 = 50 m. Running 3 times around = 3 x 200 = 600 m.", "explanation": "A square has 4 equal sides. If perimeter = 200, each side = 200/4 = 50 m. 3 rounds = 3 x 200 = 600 m." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topics": [
+    {
+      "topic": "Universal Law of Gravitation and Free Fall",
+      "easy": [
+        {
+          "id": "ch9-t1-e1",
+          "type": "mcq",
+          "question": "The gravitational force between two objects is proportional to:",
+          "options": ["Sum of their masses", "Product of their masses", "Difference of their masses", "Ratio of their masses"],
+          "answer": "Product of their masses",
+          "explanation": "According to Newton's law of gravitation, F = GMm/d^2, the force is proportional to the product of the masses."
+        },
+        {
+          "id": "ch9-t1-e2",
+          "type": "fill",
+          "question": "The value of acceleration due to gravity on the surface of the earth is approximately ______ m/s squared.",
+          "answer": "9.8",
+          "explanation": "The value of g = GM/R^2 = 9.8 m/s^2 on the earth's surface."
+        },
+        {
+          "id": "ch9-t1-e3",
+          "type": "mcq",
+          "question": "When an object is dropped from a height, it falls towards the earth because of:",
+          "options": ["Air resistance", "Magnetic force", "Gravitational force", "Electrical force"],
+          "answer": "Gravitational force",
+          "explanation": "The earth attracts all objects towards its centre due to gravitational force."
+        },
+        {
+          "id": "ch9-t1-e4",
+          "type": "mcq",
+          "question": "The value of G (universal gravitational constant) is:",
+          "options": ["9.8 m/s^2", "6.673 x 10^-11 Nm^2/kg^2", "6.4 x 10^6 m", "6 x 10^24 kg"],
+          "answer": "6.673 x 10^-11 Nm^2/kg^2",
+          "explanation": "G is the universal gravitational constant with a very small value, which is why gravitational force between everyday objects is negligible."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t1-m1",
+          "type": "short",
+          "question": "What is the gravitational force on an object of mass 1 kg on the earth's surface? (g = 9.8 m/s^2)",
+          "answer": "Weight = mg = 1 x 9.8 = 9.8 N. The gravitational force on a 1 kg object on the earth's surface is 9.8 N.",
+          "explanation": "Weight is the gravitational force acting on an object and is calculated using W = mg."
+        },
+        {
+          "id": "ch9-t1-m2",
+          "type": "short",
+          "question": "A stone is dropped from a height of 20 m. What is its velocity when it reaches the ground? (g = 10 m/s^2)",
+          "answer": "u = 0 (dropped from rest), h = 20 m, g = 10 m/s^2. Using v^2 = u^2 + 2gh: v^2 = 0 + 2(10)(20) = 400. v = 20 m/s. The velocity of the stone when it hits the ground is 20 m/s. From answer key: v = 19.6 m/s (using g = 9.8 m/s^2).",
+          "explanation": "For a freely falling object starting from rest, use v^2 = 2gh."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t1-h1",
+          "type": "long",
+          "question": "A stone is thrown vertically upward with an initial velocity of 40 m/s. Taking g = 10 m/s^2, find the maximum height reached, the net displacement, and the total distance covered.",
+          "answer": "u = 40 m/s, v = 0 (at maximum height), g = -10 m/s^2 (upward motion). Using v^2 = u^2 + 2gh: 0 = 1600 - 20h. h = 80 m. Time to reach maximum height: v = u + gt, 0 = 40 - 10t, t = 4 s. Total time of flight = 2 x 4 = 8 s. Maximum height = 80 m. Net displacement = 0 (returns to starting point). Total distance = 80 + 80 = 160 m.",
+          "explanation": "The stone goes up 80 m and comes back down 80 m. Displacement is zero since it returns to start."
+        },
+        {
+          "id": "ch9-t1-h2",
+          "type": "long",
+          "question": "A ball is thrown vertically upward with a velocity of 49 m/s. Calculate the maximum height to which it rises and the total time it takes to return to the surface of the earth. (g = 9.8 m/s^2)",
+          "answer": "u = 49 m/s, v = 0 at maximum height, g = -9.8 m/s^2. Maximum height: v^2 = u^2 + 2gh. 0 = (49)^2 - 2(9.8)h. 0 = 2401 - 19.6h. h = 2401/19.6 = 122.5 m. Time to reach maximum height: v = u + gt. 0 = 49 - 9.8t. t = 49/9.8 = 5 s. Total time = 2 x 5 = 10 s.",
+          "explanation": "The ball takes 5 s to go up and 5 s to come back down. Maximum height is 122.5 m."
+        },
+        {
+          "id": "ch9-t1-h3",
+          "type": "long",
+          "question": "A stone is released from the top of a tower of height 19.6 m. Calculate its final velocity just before touching the ground. (g = 9.8 m/s^2)",
+          "answer": "u = 0 (released from rest), h = 19.6 m, g = 9.8 m/s^2. Using v^2 = u^2 + 2gh: v^2 = 0 + 2(9.8)(19.6) = 384.16. v = 19.6 m/s.",
+          "explanation": "The stone accelerates under gravity and reaches a velocity of 19.6 m/s just before hitting the ground."
+        }
+      ]
+    },
+    {
+      "topic": "Mass, Weight, and Buoyancy",
+      "easy": [
+        {
+          "id": "ch9-t2-e1",
+          "type": "mcq",
+          "question": "The weight of an object on the moon is about:",
+          "options": ["Same as on earth", "1/2 of earth weight", "1/6 of earth weight", "6 times earth weight"],
+          "answer": "1/6 of earth weight",
+          "explanation": "The acceleration due to gravity on the moon is about 1/6th of that on earth, so weight on the moon is 1/6th of weight on earth."
+        },
+        {
+          "id": "ch9-t2-e2",
+          "type": "fill",
+          "question": "The SI unit of pressure is ______.",
+          "answer": "Pascal (Pa)",
+          "explanation": "Pressure = Force/Area. 1 Pascal = 1 Newton per square metre."
+        },
+        {
+          "id": "ch9-t2-e3",
+          "type": "mcq",
+          "question": "An object will float in a liquid if:",
+          "options": ["Its density is greater than the liquid", "Its density is less than the liquid", "Its density equals zero", "Its mass is very large"],
+          "answer": "Its density is less than the liquid",
+          "explanation": "An object floats when its density is less than the density of the liquid, as the buoyant force can support its weight."
+        },
+        {
+          "id": "ch9-t2-e4",
+          "type": "mcq",
+          "question": "Which quantity does NOT change when you go from earth to moon?",
+          "options": ["Weight", "Acceleration due to gravity", "Mass", "Gravitational force"],
+          "answer": "Mass",
+          "explanation": "Mass is the amount of matter in an object and remains constant everywhere. Weight depends on g and changes with location."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t2-m1",
+          "type": "short",
+          "question": "An object weighs 10 N on earth. What would be its weight on the moon?",
+          "answer": "Weight on moon = (1/6) x weight on earth = (1/6) x 10 = 1.67 N. The mass of the object = W/g = 10/9.8 = 1.02 kg (mass remains the same on moon and earth).",
+          "explanation": "Weight on moon is 1/6th of weight on earth because g on moon is about 1/6th of g on earth."
+        },
+        {
+          "id": "ch9-t2-m2",
+          "type": "short",
+          "question": "State Archimedes' principle. Give one application.",
+          "answer": "Archimedes' principle states that when a body is immersed fully or partially in a fluid, it experiences an upward buoyant force equal to the weight of the fluid displaced by it. Application: Lactometers, used to determine the purity of milk, work on the principle of Archimedes. They measure the density of milk by noting how much the device sinks -- pure milk of standard density will make the lactometer float at a specific level.",
+          "explanation": "The buoyant force depends on the volume of fluid displaced and the density of the fluid."
+        },
+        {
+          "id": "ch9-t2-m3",
+          "type": "short",
+          "question": "Why is it easier to cut with a sharp knife than a blunt one?",
+          "answer": "A sharp knife has a very thin edge (small area), while a blunt knife has a thick edge (larger area). When we apply the same force, pressure = force/area. Since the sharp knife has a smaller area, it exerts greater pressure on the object and cuts through it more easily.",
+          "explanation": "This is an application of the concept that pressure is inversely proportional to area for the same force."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t2-h1",
+          "type": "long",
+          "question": "A block of wood has a density of 800 kg/m^3 and a mass of 4 kg. Will it float or sink in water? (density of water = 1000 kg/m^3). What is the mass of water displaced by the block?",
+          "answer": "The density of the block (800 kg/m^3) is less than the density of water (1000 kg/m^3), so the block will float. Volume of block = mass/density = 4/800 = 0.005 m^3. When the block floats, the weight of water displaced equals the weight of the block. Weight of block = mg = 4 x 9.8 = 39.2 N. Mass of water displaced = weight of block / g = 39.2/9.8 = 4 kg. Alternatively, volume of water displaced = mass of block / density of water = 4/1000 = 0.004 m^3 (only partial submersion since it floats).",
+          "explanation": "Since the block floats, it displaces water equal to its own weight (not its own volume)."
+        },
+        {
+          "id": "ch9-t2-h2",
+          "type": "long",
+          "question": "A ball is thrown up vertically with a velocity of 29.4 m/s. What are the velocity and height of the ball after 4 s? (g = 9.8 m/s^2)",
+          "answer": "u = 29.4 m/s (upward), g = -9.8 m/s^2 (opposing upward motion). Time to reach max height: t = u/g = 29.4/9.8 = 3 s. Maximum height = u^2/(2g) = (29.4)^2/(2 x 9.8) = 864.36/19.6 = 44.1 m. After 4 s, the ball has passed its maximum height (at 3 s) and is falling back. It has been falling for 4-3 = 1 s from the top. Distance fallen = (1/2)g(1)^2 = (1/2)(9.8)(1) = 4.9 m from top. Height from ground = 44.1 - 4.9 = 39.2 m. Velocity after 4 s: v = 0 + g(1) = 9.8 m/s downward.",
+          "explanation": "After 4 seconds, the ball is 39.2 m above the ground and moving downward at 9.8 m/s."
+        }
+      ]
+    }
+  ]
+}

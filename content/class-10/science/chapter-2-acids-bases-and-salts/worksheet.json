@@ -1,0 +1,226 @@
+{
+  "topics": [
+    {
+      "topic": "Acids and Bases — Properties and Reactions",
+      "easy": [
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "A solution turns red litmus blue, its pH is likely to be:",
+          "options": ["1", "4", "5", "10"],
+          "answer": "10",
+          "explanation": "A solution that turns red litmus blue is basic in nature. Basic solutions have pH greater than 7. Among the options, only pH 10 is greater than 7."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "mcq",
+          "question": "A solution reacts with crushed egg-shells to give a gas that turns lime-water milky. The solution contains:",
+          "options": ["NaCl", "HCl", "LiCl", "KCl"],
+          "answer": "HCl",
+          "explanation": "Egg shells contain calcium carbonate. Only an acid (HCl) would react with calcium carbonate to produce CO₂ gas, which turns lime water milky. NaCl, LiCl, and KCl are neutral salts that don't react with carbonates."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "fill",
+          "question": "When an acid reacts with a metal, ______ gas is evolved along with the formation of a salt.",
+          "answer": "hydrogen",
+          "explanation": "The general reaction is: Acid + Metal → Salt + Hydrogen gas. The hydrogen gas can be tested by bringing a burning splint near it — it burns with a pop sound."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "short",
+          "question": "Why should curd and sour substances not be kept in brass and copper vessels?",
+          "answer": "Curd and sour substances contain acids. These acids react with brass and copper metals, corroding the vessel and forming toxic metal compounds that can be harmful if consumed.",
+          "explanation": "Acids in sour substances react with metals in brass (alloy of copper and zinc) and copper vessels, producing poisonous metallic salts that contaminate the food."
+        },
+        {
+          "id": "ch2-t1-e5",
+          "type": "mcq",
+          "question": "10 mL of a solution of NaOH is found to be completely neutralised by 8 mL of a given solution of HCl. If we take 20 mL of the same NaOH solution, the amount of HCl solution required to neutralise it will be:",
+          "options": ["4 mL", "8 mL", "12 mL", "16 mL"],
+          "answer": "16 mL",
+          "explanation": "If 10 mL NaOH requires 8 mL HCl, then 20 mL NaOH (double the amount) will require 16 mL HCl (double). The ratio of NaOH to HCl remains constant."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "Which gas is usually liberated when an acid reacts with a metal? Illustrate with an example. How will you test for the presence of this gas?",
+          "answer": "Hydrogen gas is liberated when an acid reacts with a metal. For example: Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g). The presence of hydrogen gas can be tested by bringing a burning candle or matchstick near it — it burns with a 'pop' sound.",
+          "explanation": "Metals displace hydrogen from acids because they are more reactive than hydrogen. The pop sound test is a characteristic test for hydrogen gas."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "short",
+          "question": "Metal compound A reacts with dilute hydrochloric acid to produce effervescence. The gas evolved extinguishes a burning candle. Write a balanced chemical equation for the reaction if one of the compounds formed is calcium chloride.",
+          "answer": "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g). The metal compound A is calcium carbonate (CaCO₃). The gas evolved is carbon dioxide which extinguishes a burning candle.",
+          "explanation": "Since one product is calcium chloride and the gas extinguishes fire (CO₂), the metal compound must be calcium carbonate. The effervescence is due to CO₂ gas evolution."
+        },
+        {
+          "id": "ch2-t1-m3",
+          "type": "short",
+          "question": "What is a neutralisation reaction? Give two examples.",
+          "answer": "A neutralisation reaction is a reaction between an acid and a base to form a salt and water.\n\nExamples:\n1. NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)\n2. Ca(OH)₂(aq) + H₂SO₄(aq) → CaSO₄(aq) + 2H₂O(l)",
+          "explanation": "In neutralisation, the H⁺ ions from the acid combine with OH⁻ ions from the base to form water, while the remaining ions form the salt."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "Write word equations and then balanced equations for the reaction taking place when:\n(a) dilute sulphuric acid reacts with zinc granules\n(b) dilute hydrochloric acid reacts with magnesium ribbon\n(c) dilute sulphuric acid reacts with aluminium powder\n(d) dilute hydrochloric acid reacts with iron filings",
+          "answer": "(a) Zinc + Sulphuric acid → Zinc sulphate + Hydrogen\nZn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)\n\n(b) Magnesium + Hydrochloric acid → Magnesium chloride + Hydrogen\nMg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)\n\n(c) Aluminium + Sulphuric acid → Aluminium sulphate + Hydrogen\n2Al(s) + 3H₂SO₄(aq) → Al₂(SO₄)₃(aq) + 3H₂(g)\n\n(d) Iron + Hydrochloric acid → Ferrous chloride + Hydrogen\nFe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)",
+          "explanation": "In all these reactions, the metal displaces hydrogen from the acid, forming the corresponding metal salt and liberating hydrogen gas."
+        },
+        {
+          "id": "ch2-t1-h2",
+          "type": "long",
+          "question": "Compounds such as alcohols and glucose also contain hydrogen but are not categorised as acids. Describe an Activity to prove it.",
+          "answer": "Set up a circuit with a 6V battery, a bulb, a switch, and two nails fixed on a cork placed in a beaker. Pour dilute HCl in the beaker — the bulb glows, showing that the acid solution conducts electricity (due to H⁺ ions). Now repeat with glucose solution and alcohol solution — the bulb does not glow in either case. This proves that glucose and alcohol do not produce H⁺(aq) ions in solution, so they are not acids despite containing hydrogen. Only those hydrogen-containing compounds that dissociate to produce H⁺ ions in aqueous solution are classified as acids.",
+          "explanation": "The key difference is ionisation. Acids ionise in water to produce H⁺ ions that carry electric current. Glucose and alcohol dissolve in water but do not ionise, so they don't show acidic character or conduct electricity."
+        }
+      ]
+    },
+    {
+      "topic": "pH Scale and Its Importance",
+      "easy": [
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "Which one of the following types of medicines is used for treating indigestion?",
+          "options": ["Antibiotic", "Analgesic", "Antacid", "Antiseptic"],
+          "answer": "Antacid",
+          "explanation": "Indigestion is caused by excess acid production in the stomach. Antacids are mild bases that neutralise the excess acid and provide relief."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "fill",
+          "question": "The pH of a neutral solution is ______.",
+          "answer": "7",
+          "explanation": "On the pH scale (0–14), a value of 7 represents a neutral solution — neither acidic nor basic. Pure water has a pH of 7."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "short",
+          "question": "You have two solutions, A and B. The pH of solution A is 6 and pH of solution B is 8. Which solution has more hydrogen ion concentration? Which is acidic and which is basic?",
+          "answer": "Solution A (pH 6) has more hydrogen ion concentration than solution B (pH 8). Solution A is acidic (pH < 7) and solution B is basic (pH > 7).",
+          "explanation": "Lower pH means higher H⁺ concentration. pH below 7 indicates an acidic solution, while pH above 7 indicates a basic solution."
+        },
+        {
+          "id": "ch2-t2-e4",
+          "type": "mcq",
+          "question": "Tooth decay starts when the pH in the mouth is:",
+          "options": ["Greater than 7", "Equal to 7", "Lower than 5.5", "Greater than 9"],
+          "answer": "Lower than 5.5",
+          "explanation": "Tooth enamel (made of calcium hydroxyapatite) begins to corrode when the pH in the mouth drops below 5.5 due to acids produced by bacteria."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "Five solutions A, B, C, D and E when tested with universal indicator showed pH as 4, 1, 11, 7 and 9 respectively. Which solution is (a) neutral? (b) strongly alkaline? (c) strongly acidic? (d) weakly acidic? (e) weakly alkaline? Arrange the pH in increasing order of hydrogen-ion concentration.",
+          "answer": "(a) Neutral: D (pH 7)\n(b) Strongly alkaline: C (pH 11)\n(c) Strongly acidic: B (pH 1)\n(d) Weakly acidic: A (pH 4)\n(e) Weakly alkaline: E (pH 9)\n\nIncreasing order of H⁺ concentration: C (pH 11) < E (pH 9) < D (pH 7) < A (pH 4) < B (pH 1)",
+          "explanation": "Lower pH = higher H⁺ concentration. pH 7 is neutral, pH below 7 is acidic (lower = stronger acid), and pH above 7 is basic (higher = stronger base)."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "short",
+          "question": "Fresh milk has a pH of 6. How do you think the pH will change as it turns into curd? Explain your answer.",
+          "answer": "The pH will decrease (become more acidic) as milk turns into curd. This is because the lactose (sugar) in milk is converted into lactic acid by bacterial action during curd formation. The production of lactic acid increases the H⁺ ion concentration, lowering the pH.",
+          "explanation": "Curd formation is a fermentation process where bacteria convert milk sugar (lactose) into lactic acid, making the solution more acidic and reducing the pH below 6."
+        },
+        {
+          "id": "ch2-t2-m3",
+          "type": "short",
+          "question": "A milkman adds a very small amount of baking soda to fresh milk. (a) Why does he shift the pH from 6 to slightly alkaline? (b) Why does this milk take a long time to set as curd?",
+          "answer": "(a) By adding baking soda (NaHCO₃, a basic salt), the milkman makes the milk slightly alkaline (pH above 7). This prevents the milk from turning sour quickly, as the base neutralises any acid formed by bacterial action.\n(b) Since the milk is now slightly alkaline, the lactic acid produced by bacteria first has to neutralise the excess base before the pH can drop enough for curd formation. This delays the setting of curd.",
+          "explanation": "Baking soda is a mild base that shifts pH above 7. For curd to set, sufficient lactic acid must accumulate to make the milk acidic, which takes longer when starting from a basic pH."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t2-h1",
+          "type": "long",
+          "question": "Why do HCl, HNO₃, etc., show acidic characters in aqueous solutions while solutions of compounds like alcohol and glucose do not show acidic character? Also explain why dry HCl gas does not change the colour of dry litmus paper.",
+          "answer": "HCl, HNO₃, etc., show acidic character in aqueous solutions because they dissociate to produce hydrogen ions H⁺(aq) (or hydronium ions H₃O⁺) in water. These H⁺ ions are responsible for all acidic properties.\n\nAlcohol and glucose contain hydrogen atoms in their molecules, but these hydrogen atoms are bonded in such a way that they do not dissociate to produce H⁺ ions in water. Hence, they do not show acidic character.\n\nDry HCl gas does not change the colour of dry litmus paper because HCl can produce H⁺ ions only in the presence of water. In the absence of water, HCl remains as molecules and cannot ionise. Without H⁺ ions, no acidic behaviour is observed.\n\nHCl + H₂O → H₃O⁺ + Cl⁻",
+          "explanation": "The key concept is that acidic character depends on the production of H⁺(aq) ions, which requires water as a medium for ionisation. Without water, even strong acids like HCl cannot show acidic properties."
+        }
+      ]
+    },
+    {
+      "topic": "Salts and Their Properties",
+      "easy": [
+        {
+          "id": "ch2-t3-e1",
+          "type": "fill",
+          "question": "The common name of the compound Ca(ClO)₂ is ______.",
+          "answer": "bleaching powder",
+          "explanation": "Ca(ClO)₂ is bleaching powder (calcium hypochlorite), produced by the action of chlorine on dry slaked lime."
+        },
+        {
+          "id": "ch2-t3-e2",
+          "type": "short",
+          "question": "Name the substance which on treatment with chlorine yields bleaching powder.",
+          "answer": "Dry slaked lime [Ca(OH)₂] on treatment with chlorine yields bleaching powder.",
+          "explanation": "The reaction is: 2Ca(OH)₂ + 2Cl₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O"
+        },
+        {
+          "id": "ch2-t3-e3",
+          "type": "short",
+          "question": "Name the sodium compound which is used for softening hard water.",
+          "answer": "Washing soda — sodium carbonate decahydrate (Na₂CO₃.10H₂O) — is used for removing permanent hardness of water.",
+          "explanation": "Washing soda reacts with the calcium and magnesium salts that cause hardness, converting them into insoluble carbonates that can be removed."
+        },
+        {
+          "id": "ch2-t3-e4",
+          "type": "mcq",
+          "question": "The chemical name of baking soda is:",
+          "options": ["Sodium carbonate", "Sodium hydrogencarbonate", "Sodium hydroxide", "Calcium carbonate"],
+          "answer": "Sodium hydrogencarbonate",
+          "explanation": "Baking soda has the chemical formula NaHCO₃ and is chemically called sodium hydrogencarbonate (or sodium bicarbonate)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t3-m1",
+          "type": "short",
+          "question": "What will happen if a solution of sodium hydrogencarbonate is heated? Give the equation of the reaction involved.",
+          "answer": "On heating, sodium hydrogencarbonate decomposes to form sodium carbonate, water, and carbon dioxide gas.\n\n2NaHCO₃ →(heat) Na₂CO₃ + H₂O + CO₂",
+          "explanation": "This thermal decomposition reaction is used in cooking — the CO₂ gas released makes bread and cake rise, making them soft and spongy."
+        },
+        {
+          "id": "ch2-t3-m2",
+          "type": "short",
+          "question": "Write an equation to show the reaction between Plaster of Paris and water. Why should Plaster of Paris be stored in a moisture-proof container?",
+          "answer": "CaSO₄.½H₂O + 1½H₂O → CaSO₄.2H₂O\n(Plaster of Paris)          (Gypsum)\n\nPlaster of Paris should be stored in moisture-proof containers because it readily absorbs moisture from the atmosphere and gets converted to gypsum (a hard solid mass), making it useless.",
+          "explanation": "Plaster of Paris has the ability to set into a hard mass by absorbing water. If exposed to moisture, it will harden prematurely and cannot be used for its intended purposes."
+        },
+        {
+          "id": "ch2-t3-m3",
+          "type": "short",
+          "question": "Give two important uses of washing soda and baking soda.",
+          "answer": "Uses of washing soda (Na₂CO₃.10H₂O):\n1. Used in glass, soap, and paper industries\n2. Used for removing permanent hardness of water\n\nUses of baking soda (NaHCO₃):\n1. Used for making baking powder (with tartaric acid) for cooking\n2. Used as an ingredient in antacids to relieve indigestion",
+          "explanation": "Washing soda is an industrial chemical used for cleaning and manufacturing. Baking soda is a common household chemical used in cooking and medicine."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t3-h1",
+          "type": "long",
+          "question": "Why does distilled water not conduct electricity, whereas rain water does? Also explain why while diluting an acid, it is recommended that the acid should be added to water and not water to the acid.",
+          "answer": "Distilled water does not conduct electricity because it is pure water with no dissolved ions. Rain water, on the other hand, contains dissolved gases like CO₂, SO₂, and NO₂ from the atmosphere, which form carbonic acid, sulphurous acid, and nitric acid respectively. These acids dissociate to form ions (H⁺ and other anions), which carry the electric current.\n\nWhile diluting an acid, acid should be added to water (not water to acid) because the process of dissolving an acid in water is highly exothermic. If water is added to concentrated acid, the heat generated is so intense that it can cause the mixture to splash out violently, causing acid burns. When acid is added slowly to water, the large volume of water absorbs the heat safely. The glass container may also crack due to excessive localised heating if water is added to acid.",
+          "explanation": "Conductivity requires ions in solution. Pure water has negligible ions, while rain water dissolves atmospheric gases that form acid solutions with ions. The dilution safety rule is based on the exothermic nature of the process."
+        },
+        {
+          "id": "ch2-t3-h2",
+          "type": "long",
+          "question": "Equal lengths of magnesium ribbons are taken in test tubes A and B. Hydrochloric acid (HCl) is added to test tube A, while acetic acid (CH₃COOH) is added to test tube B. Amount and concentration taken for both the acids are same. In which test tube will the fizzing occur more vigorously and why?",
+          "answer": "The fizzing will occur more vigorously in test tube A (containing HCl) than in test tube B (containing CH₃COOH).\n\nThis is because HCl is a strong acid that completely dissociates in water to produce a large number of H⁺ ions. Acetic acid (CH₃COOH) is a weak acid that only partially dissociates in water, producing fewer H⁺ ions. Since the reaction rate depends on the concentration of H⁺ ions, more vigorous fizzing (hydrogen gas evolution) occurs with HCl.\n\nMg + 2HCl → MgCl₂ + H₂ (vigorous)\nMg + 2CH₃COOH → (CH₃COO)₂Mg + H₂ (less vigorous)",
+          "explanation": "Strong acids ionise completely, producing more H⁺ ions per unit volume than weak acids of the same concentration. More H⁺ ions means faster reaction rate and more vigorous gas evolution."
+        }
+      ]
+    }
+  ]
+}

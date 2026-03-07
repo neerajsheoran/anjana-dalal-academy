@@ -1,0 +1,191 @@
+---
+title: Chapter 10 Circles
+---
+
+## Introduction
+
+You have studied circles in earlier classes -- the definition, properties of chords, arcs, sectors, and segments. In this chapter, we focus on one special concept: **tangents** to a circle.
+
+When a circle and a line are in the same plane, three situations can arise:
+
+1. **No common point** -- the line does not touch the circle at all (non-intersecting line)
+2. **Two common points** -- the line cuts through the circle (this line is called a **secant**)
+3. **Exactly one common point** -- the line just touches the circle (this line is called a **tangent**)
+
+Think of a bicycle wheel rolling on the ground. The ground touches the wheel at exactly one point at any instant. That point of contact is where the tangent touches the circle.
+
+---
+
+## Tangent to a Circle
+
+A **tangent** to a circle is a line that touches the circle at **exactly one point**. This point is called the **point of contact**.
+
+### Understanding Tangents
+
+Imagine a secant (a line cutting through a circle at two points). As you move the secant parallel to itself, the two intersection points come closer and closer. When they merge into a single point, the secant becomes a tangent.
+
+> **Key idea:** A tangent is a special case of a secant, where the two end points of the chord coincide into one point.
+
+---
+
+## Theorem 1: Tangent is Perpendicular to Radius
+
+**Theorem 10.1:** The tangent at any point of a circle is **perpendicular** to the radius through the point of contact.
+
+### Proof
+
+Given: A circle with centre O and a tangent XY at point P.
+To prove: OP is perpendicular to XY.
+
+**Step 1:** Take any point Q on XY other than P.
+
+**Step 2:** Since XY is a tangent, Q must lie **outside** the circle (if Q were inside, XY would be a secant, not a tangent).
+
+**Step 3:** Therefore, OQ > OP (because OP is a radius and Q is outside the circle).
+
+**Step 4:** This is true for **every** point Q on XY except P. So OP is the **shortest distance** from O to the line XY.
+
+**Step 5:** The shortest distance from a point to a line is the perpendicular distance. Therefore, **OP is perpendicular to XY**.
+
+> **Key idea:** At any point on a circle, there is one and only one tangent, and it is always perpendicular to the radius at that point.
+
+### Practical Application
+
+Look at the spokes of a bicycle wheel. Each spoke is along a radius. The ground (tangent) is always at right angles to the spoke that touches the ground.
+
+---
+
+## Number of Tangents from a Point
+
+The number of tangents you can draw depends on **where the point is** relative to the circle:
+
+| Position of Point | Number of Tangents |
+|-------------------|-------------------|
+| **Inside** the circle | **0** (no tangent possible) |
+| **On** the circle | **1** (exactly one tangent) |
+| **Outside** the circle | **2** (exactly two tangents) |
+
+When two tangents are drawn from an external point, the segments from the external point to the points of contact are called the **lengths of the tangents**.
+
+---
+
+## Theorem 2: Equal Tangent Lengths
+
+**Theorem 10.2:** The lengths of tangents drawn from an **external point** to a circle are **equal**.
+
+### Proof
+
+Given: A circle with centre O, an external point P, and tangents PQ and PR to the circle.
+To prove: PQ = PR.
+
+**Step 1:** Join OP, OQ, and OR.
+
+**Step 2:** Since PQ is a tangent and OQ is a radius, angle OQP = 90 degrees (by Theorem 10.1). Similarly, angle ORP = 90 degrees.
+
+**Step 3:** In right triangles OQP and ORP:
+- OQ = OR (radii of the same circle)
+- OP = OP (common side)
+
+**Step 4:** By **RHS congruence**, triangle OQP is congruent to triangle ORP.
+
+**Step 5:** Therefore, **PQ = PR** (by CPCT).
+
+> **Key idea:** From any point outside a circle, you can draw exactly two tangents, and they are always equal in length. Also, the line OP bisects the angle between the two tangents.
+
+### Additional Result
+
+From the proof, we also get: **angle OPQ = angle OPR**. This means OP is the **angle bisector** of the angle QPR (the angle between the two tangents). In other words, the centre of the circle lies on the bisector of the angle between the two tangents.
+
+---
+
+## Worked Examples
+
+### Example 1: Concentric Circles
+
+In two concentric circles, prove that the chord of the larger circle which touches the smaller circle is bisected at the point of contact.
+
+**Proof:** Let O be the common centre. Let AB be a chord of the larger circle touching the smaller circle at P.
+
+- AB is a tangent to the smaller circle at P
+- OP is the radius to the point of contact
+- By Theorem 10.1, OP is perpendicular to AB
+- A perpendicular from the centre to a chord **bisects** the chord
+- Therefore, **AP = BP**
+
+### Example 2: Angle Between Tangents
+
+Two tangents TP and TQ are drawn from external point T. Prove that angle PTQ = 2 times angle OPQ.
+
+Let angle PTQ = theta.
+
+Since TP = TQ (equal tangent lengths), triangle TPQ is isosceles.
+So angle TPQ = angle TQP = (180 - theta)/2 = 90 - theta/2
+
+Also, angle OPT = 90 degrees (tangent perpendicular to radius).
+
+So angle OPQ = angle OPT - angle TPQ = 90 - (90 - theta/2) = **theta/2**
+
+Therefore, angle PTQ = 2 times angle OPQ. Proved!
+
+### Example 3: Finding Tangent Length
+
+From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. Find the radius.
+
+Let the radius = r. By Theorem 10.1, the tangent and radius form a right angle.
+
+By Pythagoras theorem: 25^2 = 24^2 + r^2
+625 = 576 + r^2
+r^2 = 49
+**r = 7 cm**
+
+### Example 4: Finding Tangent Length from a Chord
+
+PQ is a chord of length 8 cm in a circle of radius 5 cm. Tangents at P and Q meet at point T. Find TP.
+
+**Step 1:** Join OT. OT is perpendicular to PQ and bisects it (since the triangle TPQ is isosceles).
+So PR = QR = 4 cm.
+
+**Step 2:** OR = root(OP^2 - PR^2) = root(25 - 16) = root(9) = 3 cm.
+
+**Step 3:** Using similar triangles TRP and PRO:
+TP/PO = RP/RO
+TP/5 = 4/3
+**TP = 20/3 cm**
+
+---
+
+## Important Properties for Board Exams
+
+### Tangents at Ends of a Diameter Are Parallel
+
+If tangents are drawn at both ends of a diameter, they are **parallel** to each other (both are perpendicular to the same diameter).
+
+### Circumscribed Quadrilateral Property
+
+If a quadrilateral ABCD is drawn to **circumscribe** a circle (all four sides are tangents to the circle), then:
+
+**AB + CD = AD + BC**
+
+This is because tangent lengths from each vertex to the circle are equal, and when you add up all the sides, the opposite pairs give equal sums.
+
+### Circumscribed Parallelogram Is a Rhombus
+
+If a **parallelogram** circumscribes a circle, it must be a **rhombus**. This is because opposite sides of a parallelogram are equal, and using the property AB + CD = AD + BC along with AB = CD and AD = BC, we get AB = AD, making all sides equal.
+
+### Angle Between Tangents and Angle at Centre Are Supplementary
+
+The angle between two tangents from an external point and the angle subtended at the centre by the line segment joining the points of contact **add up to 180 degrees**.
+
+If angle PTQ = theta, then angle POQ = 180 - theta.
+
+---
+
+## Chapter Summary
+
+1. A **tangent** to a circle is a line that touches it at exactly one point.
+
+2. **Theorem 10.1:** The tangent at any point of a circle is **perpendicular** to the radius through the point of contact.
+
+3. **Theorem 10.2:** The lengths of tangents drawn from an external point to a circle are **equal**.
+
+4. From a point **inside** a circle, no tangent can be drawn. From a point **on** the circle, exactly one tangent exists. From a point **outside** the circle, exactly two tangents can be drawn.

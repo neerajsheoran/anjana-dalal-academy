@@ -1,0 +1,147 @@
+{
+  "topics": [
+    {
+      "topic": "Cartesian System and Axes",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "What is the name of the horizontal line in the Cartesian plane?",
+          "options": ["y-axis", "x-axis", "Origin", "Quadrant"],
+          "answer": "x-axis",
+          "explanation": "The horizontal line drawn in the Cartesian plane is called the x-axis."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "The point where the x-axis and y-axis intersect is called the ______.",
+          "answer": "origin",
+          "explanation": "The point of intersection of the coordinate axes is called the origin, denoted by O, with coordinates (0, 0)."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "How many quadrants does the Cartesian plane have?",
+          "options": ["2", "3", "4", "6"],
+          "answer": "4",
+          "explanation": "The two coordinate axes divide the plane into four parts called quadrants, numbered I, II, III, and IV."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "short",
+          "question": "What are the names of the two lines drawn to determine the position of a point in the Cartesian plane?",
+          "answer": "The x-axis (horizontal line) and the y-axis (vertical line). Together they are called the coordinate axes.",
+          "explanation": "The Cartesian plane is defined by two perpendicular lines: the horizontal x-axis and the vertical y-axis."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "What are the sign conventions of coordinates in each of the four quadrants?",
+          "answer": "Quadrant I: (+, +), Quadrant II: (-, +), Quadrant III: (-, -), Quadrant IV: (+, -)",
+          "explanation": "In Quadrant I, both coordinates are positive. In Quadrant II, x is negative and y is positive. In Quadrant III, both are negative. In Quadrant IV, x is positive and y is negative."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "What are the coordinates of any point lying on the x-axis? What about the y-axis?",
+          "answer": "Points on the x-axis: (x, 0) for some value x. Points on the y-axis: (0, y) for some value y.",
+          "explanation": "Any point on the x-axis has zero distance from the x-axis, so y = 0. Any point on the y-axis has zero distance from the y-axis, so x = 0."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "A city has two main roads crossing at the centre, running North-South and East-West. Streets run parallel to these roads, 200 m apart, with 5 streets in each direction. Using the convention where cross-street (a, b) means the a-th street running North-South meets the b-th street running East-West, explain: (i) How many cross-streets can be referred to as (4, 3)? (ii) How many cross-streets can be referred to as (3, 4)?",
+          "answer": "(i) There is only one cross-street that can be referred to as (4, 3), because it uniquely identifies the intersection of the 4th North-South street and the 3rd East-West street.\n(ii) Similarly, there is only one cross-street referred to as (3, 4). Note that (4, 3) and (3, 4) represent different cross-streets.",
+          "explanation": "Each ordered pair uniquely identifies one intersection point. The two reference lines (North-South and East-West roads) serve as coordinate axes, and the pair (a, b) fixes a unique location."
+        }
+      ]
+    },
+    {
+      "topic": "Coordinates of Points",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "The x-coordinate of a point is also called its:",
+          "options": ["Ordinate", "Abscissa", "Origin", "Quadrant"],
+          "answer": "Abscissa",
+          "explanation": "The x-coordinate of a point is also known as its abscissa. The y-coordinate is called the ordinate."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "The coordinates of the origin are ______.",
+          "answer": "(0, 0)",
+          "explanation": "The origin is the point where both axes meet. Its distance from both axes is zero, so its coordinates are (0, 0)."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "A point has coordinates (-5, 2). In which quadrant does it lie?",
+          "options": ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"],
+          "answer": "Quadrant II",
+          "explanation": "The sign pattern is (-, +), which corresponds to Quadrant II where x is negative and y is positive."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "short",
+          "question": "Write the coordinates of a point that lies on the x-axis at a distance of 5 units to the left of the origin.",
+          "answer": "(-5, 0)",
+          "explanation": "The point is on the x-axis (so y = 0) and 5 units to the left (negative direction), so x = -5."
+        },
+        {
+          "id": "ch3-t2-e5",
+          "type": "mcq",
+          "question": "Is the point (3, 4) the same as the point (4, 3)?",
+          "options": ["Yes, always", "No, they are different points", "Only if they are in the same quadrant", "Cannot be determined"],
+          "answer": "No, they are different points",
+          "explanation": "In an ordered pair, the first number is the x-coordinate and the second is the y-coordinate. (3, 4) means x=3, y=4 while (4, 3) means x=4, y=3. These are different locations."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Write the coordinates of a point that is 3 units to the right of the y-axis and 4 units below the x-axis. In which quadrant does it lie?",
+          "answer": "The coordinates are (3, -4). It lies in Quadrant IV.",
+          "explanation": "3 units to the right means x = 3 (positive). 4 units below means y = -4 (negative). The sign pattern (+, -) corresponds to Quadrant IV."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "A point has abscissa -3 and ordinate -5. Write its coordinates and state the quadrant in which it lies.",
+          "answer": "The coordinates are (-3, -5). It lies in Quadrant III.",
+          "explanation": "Abscissa is the x-coordinate (-3) and ordinate is the y-coordinate (-5). Both negative means the point is in Quadrant III."
+        },
+        {
+          "id": "ch3-t2-m3",
+          "type": "mcq",
+          "question": "A point is at a distance of 6 units from the y-axis (left side) and zero distance from the x-axis. What are its coordinates?",
+          "options": ["(6, 0)", "(-6, 0)", "(0, -6)", "(0, 6)"],
+          "answer": "(-6, 0)",
+          "explanation": "6 units to the left of the y-axis means x = -6. Zero distance from the x-axis means y = 0. So the point is (-6, 0), lying on the x-axis."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Plot the following points on a Cartesian plane and identify the quadrant or axis on which each lies: A(4, 3), B(-3, 4), C(-5, -4), D(3, -4), E(5, 0), F(0, -3).",
+          "answer": "A(4, 3): Quadrant I (both positive)\nB(-3, 4): Quadrant II (x negative, y positive)\nC(-5, -4): Quadrant III (both negative)\nD(3, -4): Quadrant IV (x positive, y negative)\nE(5, 0): On the x-axis (y = 0)\nF(0, -3): On the y-axis (x = 0)",
+          "explanation": "Points are classified based on the signs of their coordinates. Points with y = 0 lie on the x-axis, and points with x = 0 lie on the y-axis."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "If the coordinates of two points are (a, b) and (b, a), under what condition will both points coincide?",
+          "answer": "The two points (a, b) and (b, a) will coincide if and only if a = b.\nWhen a = b, both ordered pairs become (a, a), representing the same point.\nFor example, (3, 3) and (3, 3) are the same point, but (3, 5) and (5, 3) are different.",
+          "explanation": "In an ordered pair, order matters. (x, y) = (y, x) only when x = y. Otherwise, the two pairs represent distinct points in the Cartesian plane."
+        }
+      ]
+    }
+  ]
+}

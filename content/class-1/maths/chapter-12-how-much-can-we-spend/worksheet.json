@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "topic": "Indian Coins and Notes",
+      "easy": [
+        { "id": "ch12-t1-e1", "type": "mcq", "question": "In India, we use ______ to buy things.", "options": ["Dollars", "Rupees", "Euros", "Pounds"], "answer": "Rupees", "explanation": "In India, we use Rupees. The symbol is Rs or the sign is the rupee sign." },
+        { "id": "ch12-t1-e2", "type": "mcq", "question": "Which of these is a coin?", "options": ["A paper note of 100", "A round metal piece of 5 rupees", "A credit card", "A cheque"], "answer": "A round metal piece of 5 rupees", "explanation": "Coins are round metal pieces. The 5 rupee coin is made of metal." },
+        { "id": "ch12-t1-e3", "type": "fill", "question": "Coins are made of ______ and notes are made of paper.", "answer": "metal", "explanation": "Coins are round pieces made of metal." },
+        { "id": "ch12-t1-e4", "type": "mcq", "question": "Which coin has two colours (silver and gold)?", "options": ["1 rupee coin", "2 rupee coin", "5 rupee coin", "10 rupee coin"], "answer": "10 rupee coin", "explanation": "The 10 rupee coin has two colours: silver and gold." }
+      ],
+      "medium": [
+        { "id": "ch12-t1-m1", "type": "short", "question": "Name two Indian coins and two Indian notes.", "answer": "Coins: 1 rupee coin and 5 rupee coin. Notes: 10 rupee note and 100 rupee note.", "explanation": "India has coins of 1, 2, 5, and 10 rupees, and notes of 10, 20, 50, and 100 rupees (and more)." },
+        { "id": "ch12-t1-m2", "type": "mcq", "question": "What colour is the 10 rupee note?", "options": ["Blue", "Green", "Chocolate brown", "Red"], "answer": "Chocolate brown", "explanation": "The 10 rupee note is chocolate brown in colour." }
+      ],
+      "hard": [
+        { "id": "ch12-t1-h1", "type": "short", "question": "How are coins different from notes? Give two differences.", "answer": "Coins are round and made of metal. Notes are flat and made of paper (or special material). Coins are usually for smaller amounts.", "explanation": "Coins and notes are both money but look and feel different." }
+      ]
+    },
+    {
+      "topic": "Adding Up Money",
+      "easy": [
+        { "id": "ch12-t2-e1", "type": "mcq", "question": "You have two coins of 5 rupees each. How much money do you have?", "options": ["5 rupees", "10 rupees", "15 rupees", "20 rupees"], "answer": "10 rupees", "explanation": "5 + 5 = 10 rupees." },
+        { "id": "ch12-t2-e2", "type": "fill", "question": "One 10 rupee note and one 5 rupee coin make ______ rupees.", "answer": "15", "explanation": "10 + 5 = 15 rupees." },
+        { "id": "ch12-t2-e3", "type": "mcq", "question": "You have three coins of 2 rupees. How much is that?", "options": ["4 rupees", "5 rupees", "6 rupees", "8 rupees"], "answer": "6 rupees", "explanation": "2 + 2 + 2 = 6 rupees." },
+        { "id": "ch12-t2-e4", "type": "fill", "question": "Two notes of 10 rupees = ______ rupees.", "answer": "20", "explanation": "10 + 10 = 20 rupees." }
+      ],
+      "medium": [
+        { "id": "ch12-t2-m1", "type": "short", "question": "You have one 10 rupee coin and three 1 rupee coins. How much money do you have?", "answer": "10 + 1 + 1 + 1 = 13 rupees.", "explanation": "Add the value of all coins: 10 + 3 = 13." },
+        { "id": "ch12-t2-m2", "type": "short", "question": "If you save 5 rupees every day, how much will you have after 4 days?", "answer": "5 + 5 + 5 + 5 = 20 rupees.", "explanation": "Saving 5 rupees for 4 days: 4 times 5 = 20 rupees." }
+      ],
+      "hard": [
+        { "id": "ch12-t2-h1", "type": "long", "question": "You save 2 rupees every day in your gullak. How much will you save in 5 days? In 10 days?", "answer": "In 5 days: 2 + 2 + 2 + 2 + 2 = 10 rupees. In 10 days: 10 + 10 = 20 rupees.", "explanation": "5 times 2 = 10 rupees. 10 times 2 = 20 rupees." }
+      ]
+    },
+    {
+      "topic": "Paying in Different Ways",
+      "easy": [
+        { "id": "ch12-t3-e1", "type": "mcq", "question": "A ball costs 10 rupees. Which of these can pay for it?", "options": ["One 5 rupee coin", "Two 5 rupee coins", "Three 2 rupee coins", "One 2 rupee coin"], "answer": "Two 5 rupee coins", "explanation": "5 + 5 = 10 rupees. Two 5 rupee coins make 10 rupees." },
+        { "id": "ch12-t3-e2", "type": "fill", "question": "Five coins of 2 rupees each = ______ rupees.", "answer": "10", "explanation": "2 + 2 + 2 + 2 + 2 = 10 rupees." },
+        { "id": "ch12-t3-e3", "type": "mcq", "question": "How many 1 rupee coins make 10 rupees?", "options": ["5", "8", "10", "20"], "answer": "10", "explanation": "Ten coins of 1 rupee each make 10 rupees." }
+      ],
+      "medium": [
+        { "id": "ch12-t3-m1", "type": "short", "question": "A toy costs 14 rupees. You have a 10 rupee note. How many more rupees do you need?", "answer": "14 - 10 = 4 more rupees.", "explanation": "The toy costs 14 and you have 10, so you need 4 more rupees." },
+        { "id": "ch12-t3-m2", "type": "short", "question": "Name two different ways to make 20 rupees.", "answer": "Way 1: One 20 rupee note. Way 2: Two 10 rupee coins.", "explanation": "The same amount can be made with different combinations of coins and notes." }
+      ],
+      "hard": [
+        { "id": "ch12-t3-h1", "type": "long", "question": "A whistle costs 5 rupees and a small ball costs 10 rupees. If you buy both, how much do you need? Show two different ways to pay this amount.", "answer": "Total: 5 + 10 = 15 rupees. Way 1: One 10 rupee coin + one 5 rupee coin. Way 2: Three 5 rupee coins (5 + 5 + 5 = 15).", "explanation": "First find the total cost, then think of different coin combinations that add up to 15." },
+        { "id": "ch12-t3-h2", "type": "short", "question": "Are five 2 rupee coins the same as one 10 rupee coin?", "answer": "Yes! 2 + 2 + 2 + 2 + 2 = 10 rupees. Both are worth 10 rupees.", "explanation": "Different coins can have the same total value." }
+      ]
+    }
+  ]
+}

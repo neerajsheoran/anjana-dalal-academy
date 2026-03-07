@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Properties of Parallelograms",
+      "easy": [
+        {"id": "ch8-t1-e1", "type": "mcq", "question": "In a parallelogram, opposite sides are:", "options": ["Perpendicular", "Equal and parallel", "Unequal", "Only parallel"], "answer": "Equal and parallel", "explanation": "By definition, opposite sides of a parallelogram are parallel. By Theorem 8.2, they are also equal."},
+        {"id": "ch8-t1-e2", "type": "fill", "question": "The diagonals of a parallelogram ______ each other.", "answer": "bisect", "explanation": "Theorem 8.6 states that the diagonals of a parallelogram bisect each other, meaning they cut each other into two equal halves."},
+        {"id": "ch8-t1-e3", "type": "short", "question": "State any two properties of a parallelogram.", "answer": "1. Opposite sides are equal. 2. Opposite angles are equal. (Other valid answers: diagonals bisect each other, each diagonal divides it into two congruent triangles.)", "explanation": "A parallelogram has several properties: equal opposite sides, equal opposite angles, and diagonals that bisect each other."},
+        {"id": "ch8-t1-e4", "type": "mcq", "question": "A quadrilateral whose diagonals bisect each other is a:", "options": ["Trapezium", "Parallelogram", "Kite", "None of these"], "answer": "Parallelogram", "explanation": "By Theorem 8.7 (converse), if the diagonals of a quadrilateral bisect each other, then it is a parallelogram."}
+      ],
+      "medium": [
+        {"id": "ch8-t1-m1", "type": "short", "question": "Show that each angle of a rectangle is 90 degrees.", "answer": "A rectangle is a parallelogram with one angle = 90 degrees. Let angle A = 90 degrees.\nSince AD || BC and AB is a transversal: angle A + angle B = 180 (co-interior angles).\nSo angle B = 90 degrees.\nAngle C = angle A = 90 degrees and angle D = angle B = 90 degrees (opposite angles of parallelogram).\nHence all angles are 90 degrees.", "explanation": "Using co-interior angles and the property that opposite angles of a parallelogram are equal."},
+        {"id": "ch8-t1-m2", "type": "short", "question": "In parallelogram ABCD, if angle A = 70 degrees, find all other angles.", "answer": "Angle C = angle A = 70 degrees (opposite angles).\nAngle B = 180 - 70 = 110 degrees (co-interior angles, or adjacent angles are supplementary).\nAngle D = angle B = 110 degrees (opposite angles).", "explanation": "In a parallelogram, opposite angles are equal and adjacent angles are supplementary (sum to 180 degrees)."},
+        {"id": "ch8-t1-m3", "type": "short", "question": "Show that the diagonals of a rhombus are perpendicular to each other.", "answer": "In rhombus ABCD, AB = BC = CD = DA.\nDiagonals AC and BD intersect at O.\nIn triangles AOD and COD:\nOA = OC (diagonals bisect each other)\nOD = OD (common)\nAD = CD (sides of rhombus)\nSo triangle AOD is congruent to triangle COD (SSS).\nAngle AOD = angle COD (CPCT).\nBut angle AOD + angle COD = 180 degrees (linear pair).\nSo 2 x angle AOD = 180, giving angle AOD = 90 degrees.\nHence AC is perpendicular to BD.", "explanation": "Using SSS congruence and the linear pair property, we prove that each angle at the intersection is 90 degrees."}
+      ],
+      "hard": [
+        {"id": "ch8-t1-h1", "type": "long", "question": "ABCD is a parallelogram and AP and CQ are perpendiculars from vertices A and C on diagonal BD. Show that triangle APB is congruent to triangle CQD.", "answer": "In triangles APB and CQD:\nAngle APB = angle CQD = 90 degrees (given, AP and CQ are perpendiculars)\nAB = CD (opposite sides of parallelogram)\nAngle ABP = angle CDQ (alternate interior angles, AB || CD with BD as transversal)\nTherefore, triangle APB is congruent to triangle CQD (AAS rule).\nThis gives AP = CQ (CPCT).", "explanation": "Use the properties of the parallelogram (AB || CD, AB = CD) with the perpendiculars to establish congruence by AAS."}
+      ]
+    },
+    {
+      "topic": "Mid-Point Theorem",
+      "easy": [
+        {"id": "ch8-t2-e1", "type": "mcq", "question": "The line segment joining the mid-points of two sides of a triangle is:", "options": ["Equal to the third side", "Half of the third side", "Twice the third side", "Perpendicular to the third side"], "answer": "Half of the third side", "explanation": "By the Mid-Point Theorem, the segment joining the mid-points of two sides is parallel to the third side and half its length."},
+        {"id": "ch8-t2-e2", "type": "fill", "question": "If D and E are mid-points of AB and AC in triangle ABC, and BC = 12 cm, then DE = ______ cm.", "answer": "6", "explanation": "By the Mid-Point Theorem, DE = (1/2) x BC = (1/2) x 12 = 6 cm."},
+        {"id": "ch8-t2-e3", "type": "short", "question": "State the Mid-Point Theorem.", "answer": "The line segment joining the mid-points of two sides of a triangle is parallel to the third side and is half of it.", "explanation": "This is Theorem 8.9 -- one of the most important results about triangles connecting mid-points of sides."}
+      ],
+      "medium": [
+        {"id": "ch8-t2-m1", "type": "short", "question": "In triangle ABC, D is the mid-point of AB and E is the mid-point of AC. If DE = 5 cm, find BC.", "answer": "By the Mid-Point Theorem, DE = (1/2) BC.\nSo BC = 2 x DE = 2 x 5 = 10 cm.", "explanation": "The mid-point theorem gives DE = BC/2, so BC = 2 x DE."},
+        {"id": "ch8-t2-m2", "type": "short", "question": "In triangle ABC, D is the mid-point of AB. A line through D parallel to BC meets AC at E. Show that E is the mid-point of AC.", "answer": "This is the converse of the Mid-Point Theorem (Theorem 8.10). Since D is the mid-point of AB and DE || BC, by the converse, E must be the mid-point of AC.", "explanation": "The converse states that a line through the mid-point of one side, parallel to another side, bisects the third side."}
+      ],
+      "hard": [
+        {"id": "ch8-t2-h1", "type": "long", "question": "ABCD is a quadrilateral where P, Q, R, S are the mid-points of AB, BC, CD, DA respectively. Show that PQRS is a parallelogram.", "answer": "Join diagonal AC.\nIn triangle ABC, P is mid-point of AB and Q is mid-point of BC.\nBy Mid-Point Theorem: PQ || AC and PQ = (1/2) AC ... (1)\nIn triangle ACD, S is mid-point of DA and R is mid-point of CD.\nBy Mid-Point Theorem: SR || AC and SR = (1/2) AC ... (2)\nFrom (1) and (2): PQ || SR and PQ = SR.\nSince one pair of opposite sides is both equal and parallel, PQRS is a parallelogram.", "explanation": "Apply the Mid-Point Theorem in two triangles formed by a diagonal. The result shows that opposite sides of PQRS are equal and parallel."}
+      ]
+    }
+  ]
+}

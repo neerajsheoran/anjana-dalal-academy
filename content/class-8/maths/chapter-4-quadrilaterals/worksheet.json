@@ -1,0 +1,35 @@
+{
+  "topics": [
+    {
+      "topic": "Properties of Rectangles and Squares",
+      "easy": [
+        { "id": "ch4-t1-e1", "type": "mcq", "question": "The sum of all angles in any quadrilateral is:", "options": ["180°", "270°", "360°", "540°"], "answer": "360°", "explanation": "A diagonal splits a quadrilateral into two triangles. Each triangle has angle sum 180°, so total = 360°." },
+        { "id": "ch4-t1-e2", "type": "fill", "question": "The diagonals of a rectangle are ______ in length and ______ each other.", "answer": "equal, bisect", "explanation": "Rectangle diagonals are equal in length and cross at their midpoints (bisect each other)." },
+        { "id": "ch4-t1-e3", "type": "mcq", "question": "Every square is:", "options": ["A rectangle but not a rhombus", "A rhombus but not a rectangle", "Both a rectangle and a rhombus", "Neither"], "answer": "Both a rectangle and a rhombus", "explanation": "A square has all angles 90° (rectangle property) and all sides equal (rhombus property)." },
+        { "id": "ch4-t1-e4", "type": "short", "question": "In a square, what angle do the diagonals make with each other?", "answer": "90° (right angles). The diagonals of a square bisect each other at right angles.", "explanation": "This is a special property of squares (and rhombuses). Rectangle diagonals bisect each other but not necessarily at 90°." }
+      ],
+      "medium": [
+        { "id": "ch4-t1-m1", "type": "short", "question": "Three angles of a quadrilateral are 90°, 90°, and 85°. Find the fourth angle.", "answer": "Fourth angle = 360° - 90° - 90° - 85° = 95°.", "explanation": "Sum of all angles in a quadrilateral = 360°. Subtract the known angles to find the unknown." },
+        { "id": "ch4-t1-m2", "type": "short", "question": "Can a quadrilateral have all four angles equal to 80°? Explain.", "answer": "No. If all angles were 80°, their sum = 4 x 80 = 320°. But the angle sum must be 360°. So this is impossible.", "explanation": "The angle sum property requires the four angles to add to exactly 360°." }
+      ],
+      "hard": [
+        { "id": "ch4-t1-h1", "type": "long", "question": "Prove that the diagonals of a rectangle are equal using triangle congruence.", "answer": "In rectangle ABCD, consider triangles ADC and BCD:\n1. AD = BC (opposite sides of rectangle are equal).\n2. DC = DC (common side).\n3. Angle ADC = Angle BCD = 90° (all angles of a rectangle are 90°).\n\nBy SAS congruence, triangle ADC ≅ triangle BCD.\n\nTherefore, AC = BD (corresponding sides of congruent triangles).\n\nThe diagonals are equal.", "explanation": "The proof uses the SAS congruence condition with the right angles and equal opposite sides of the rectangle." }
+      ]
+    },
+    {
+      "topic": "Parallelograms and Rhombuses",
+      "easy": [
+        { "id": "ch4-t2-e1", "type": "mcq", "question": "In a parallelogram, opposite angles are:", "options": ["Supplementary", "Complementary", "Equal", "Right angles"], "answer": "Equal", "explanation": "Opposite angles of a parallelogram are always equal." },
+        { "id": "ch4-t2-e2", "type": "fill", "question": "Adjacent angles of a parallelogram add up to ______ degrees.", "answer": "180", "explanation": "Adjacent angles are supplementary (co-interior angles of parallel lines)." },
+        { "id": "ch4-t2-e3", "type": "mcq", "question": "A rhombus has:", "options": ["All sides equal", "All angles equal", "Diagonals equal", "No parallel sides"], "answer": "All sides equal", "explanation": "A rhombus is defined as a quadrilateral with all four sides equal." }
+      ],
+      "medium": [
+        { "id": "ch4-t2-m1", "type": "short", "question": "One angle of a parallelogram is 70°. Find all four angles.", "answer": "Opposite angle = 70°.\nAdjacent angles = 180° - 70° = 110° each.\nThe four angles are: 70°, 110°, 70°, 110°.", "explanation": "Opposite angles are equal, and adjacent angles are supplementary (sum to 180°)." },
+        { "id": "ch4-t2-m2", "type": "short", "question": "Which properties do a rhombus and a rectangle share? Which are different?", "answer": "Shared: opposite sides parallel, opposite sides equal, diagonals bisect each other, opposite angles equal.\n\nDifferent: Rectangle has all angles 90° (rhombus does not). Rhombus has all sides equal (rectangle does not). Rhombus diagonals are perpendicular (rectangle's are not). Rhombus diagonals bisect angles (rectangle's do not).", "explanation": "Both are parallelograms, so they share parallelogram properties. Their unique properties differ." }
+      ],
+      "hard": [
+        { "id": "ch4-t2-h1", "type": "long", "question": "One angle of a rhombus is 50°. Find all four angles and explain why the rhombus is a parallelogram.", "answer": "Angles:\nGiven angle = 50°.\nAdjacent angle = 180° - 50° = 130°.\nOpposite to 50° = 50°.\nOpposite to 130° = 130°.\nFour angles: 50°, 130°, 50°, 130°.\n\nWhy it is a parallelogram:\nSince all sides are equal, the diagonal divides the rhombus into two congruent triangles (SSS). This means alternate angles are equal, proving opposite sides are parallel. Any quadrilateral with both pairs of opposite sides parallel is a parallelogram.", "explanation": "Every rhombus is a parallelogram because equal sides create congruent triangles with equal alternate angles, which proves the sides are parallel." }
+      ]
+    }
+  ]
+}

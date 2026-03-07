@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Measuring and Comparing Lengths",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "Which of these can you use to measure the length of a desk?", "options": ["A weighing scale", "A hand span", "A jug", "A clock"], "answer": "A hand span", "explanation": "You can measure length using a hand span. A weighing scale is for weight, a jug for liquid, and a clock for time." },
+        { "id": "ch10-t1-e2", "type": "fill", "question": "When two people measure the same table with their hands, they may get different answers because their ______ are different sizes.", "answer": "hands", "explanation": "Everyone's hand span is different, so the same table may measure differently for different people." },
+        { "id": "ch10-t1-e3", "type": "mcq", "question": "To compare which of two sticks is longer, what should you do?", "options": ["Weigh them", "Place them side by side", "Count them", "Fold them"], "answer": "Place them side by side", "explanation": "Placing things side by side lets you see which one sticks out more and is therefore longer." },
+        { "id": "ch10-t1-e4", "type": "fill", "question": "A ______ is a standard unit of length that is the same everywhere in the world.", "answer": "metre", "explanation": "A metre is a standard unit for measuring length." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "Why do we need a standard unit like a metre to measure length?", "answer": "Because everyone's hands, feet, and pencils are different sizes. A metre is always the same everywhere, so everyone gets the same measurement.", "explanation": "Non-standard units (like hand spans) give different results for different people. Standard units ensure everyone agrees." },
+        { "id": "ch10-t1-m2", "type": "mcq", "question": "Which of these is about 1 metre long?", "options": ["A pencil", "The width of a door", "A bus", "A coin"], "answer": "The width of a door", "explanation": "The width of a door is about 1 metre. A pencil is much shorter, and a bus is much longer." },
+        { "id": "ch10-t1-m3", "type": "short", "question": "Name two things that are less than a metre and two things that are more than a metre.", "answer": "Less than a metre: a pencil and a school bag. More than a metre: a classroom wall and a cricket pitch.", "explanation": "Small everyday objects are less than a metre, while large things like walls and fields are more than a metre." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "long", "question": "Rina wants to check if a table can fit through a doorway. She does not have a measuring tape. How can she use a piece of string to check?", "answer": "Step 1: Cut a string as long as the table's width. Step 2: Hold the string against the doorway. Step 3: If the string is shorter than the doorway opening, the table will fit. If the string is longer, it will not fit.", "explanation": "A string can transfer a measurement from one place to another without using numbers." }
+      ]
+    },
+    {
+      "topic": "Half Metre, Quarter Metre, and Estimating",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "How many half metres make one metre?", "options": ["1", "2", "4", "10"], "answer": "2", "explanation": "2 half metres = 1 metre, just like 2 halves of anything make a whole." },
+        { "id": "ch10-t2-e2", "type": "fill", "question": "A quarter of a metre is the length you get when you fold a metre rope into ______ equal parts.", "answer": "4", "explanation": "A quarter means one-fourth, so you fold the metre rope into 4 equal parts." },
+        { "id": "ch10-t2-e3", "type": "mcq", "question": "A large pencil is about how long?", "options": ["A quarter of a metre", "Half a metre", "One metre", "Two metres"], "answer": "A quarter of a metre", "explanation": "A large pencil is about a quarter of a metre (about 25 cm)." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "How can you make a metre rope using a metre rod?", "answer": "Take a metre rod and a piece of rope. Make a knot at one end of the rope. Stretch the rope along the metre rod. Make a knot at the other end at exactly one metre.", "explanation": "The metre rod provides the standard length. The knots mark exactly one metre on the rope." },
+        { "id": "ch10-t2-m2", "type": "short", "question": "Your arm from elbow to hand is about half a metre. About how many times would you need to measure with your arm to cover 3 metres?", "answer": "About 6 times, because 3 metres = 6 half metres.", "explanation": "1 metre = 2 half metres. So 3 metres = 3 x 2 = 6 half metres." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "long", "question": "Ravi's classroom is 8 metres long. He measures it using his footsteps and counts 20 steps. His friend Priya counts 24 steps for the same room. Why did they get different answers? How long is each of their footsteps compared to half a metre?", "answer": "They got different answers because their feet are different sizes. Ravi's step: 8 metres / 20 steps = about 0.4 metres (a little less than half a metre). Priya's step: 8 metres / 24 steps = about 0.33 metres (about a third of a metre). Ravi has bigger footsteps.", "explanation": "Non-standard units like footsteps vary from person to person. Bigger feet mean fewer steps for the same distance." },
+        { "id": "ch10-t2-h2", "type": "long", "question": "Your height is often about the same as your arms stretched wide. If you are about 1 metre and a quarter tall, about how wide would your arms stretch? How many large pencils (each about a quarter metre) could you line up across your arm stretch?", "answer": "Your arm stretch would be about 1 metre and a quarter (same as your height). Number of pencils: 1 and a quarter metres = 5 quarter metres. So about 5 large pencils.", "explanation": "1 and a quarter metres = 1 + 1/4 = 5/4 metres = 5 quarter metres. Each pencil is about a quarter metre." }
+      ]
+    }
+  ]
+}

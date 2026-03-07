@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Congruence of Triangles",
+      "easy": [
+        {"id": "ch7-t1-e1", "type": "mcq", "question": "Two triangles are congruent if they have:", "options": ["Same shape only", "Same size only", "Same shape and same size", "Same perimeter"], "answer": "Same shape and same size", "explanation": "Congruent figures have both the same shape and the same size. All corresponding sides and angles must be equal."},
+        {"id": "ch7-t1-e2", "type": "fill", "question": "CPCT stands for ______.", "answer": "Corresponding Parts of Congruent Triangles", "explanation": "CPCT is a commonly used abbreviation to state that corresponding parts (sides and angles) of congruent triangles are equal."},
+        {"id": "ch7-t1-e3", "type": "mcq", "question": "Which congruence rule requires two sides and the included angle to be equal?", "options": ["ASA", "SSS", "SAS", "RHS"], "answer": "SAS", "explanation": "SAS (Side-Angle-Side) requires two sides and the angle between them (the included angle) to be equal."},
+        {"id": "ch7-t1-e4", "type": "short", "question": "Name all five criteria for congruence of triangles.", "answer": "SAS (Side-Angle-Side), ASA (Angle-Side-Angle), AAS (Angle-Angle-Side), SSS (Side-Side-Side), RHS (Right angle-Hypotenuse-Side).", "explanation": "These are the five standard congruence criteria. Note that SSA (or ASS) is NOT a valid criterion."}
+      ],
+      "medium": [
+        {"id": "ch7-t1-m1", "type": "short", "question": "In triangles ABC and DEF, AB = DE, angle B = angle E, and BC = EF. Are the triangles congruent? State the rule.", "answer": "Yes, triangle ABC is congruent to triangle DEF by the SAS congruence rule. The equal angle (angle B = angle E) is included between the two equal sides.", "explanation": "Two sides (AB = DE, BC = EF) and the included angle (angle B = angle E) are equal, satisfying the SAS criterion."},
+        {"id": "ch7-t1-m2", "type": "short", "question": "In triangles ABC and PQR, angle A = angle P, angle B = angle Q, and BC = QR. Are they congruent? Which rule?", "answer": "Yes, they are congruent by ASA (or AAS) rule. Two angles and a side are equal.", "explanation": "Since angle A = angle P and angle B = angle Q, and BC = QR (the side between angles B and C corresponds to QR between Q and R), the triangles are congruent by ASA."}
+      ],
+      "hard": [
+        {"id": "ch7-t1-h1", "type": "long", "question": "AB is a line segment and line l is its perpendicular bisector. If a point P lies on l, show that P is equidistant from A and B.", "answer": "Let C be the midpoint of AB where l intersects AB.\nIn triangles PCA and PCB:\nAC = BC (C is the midpoint of AB)\nAngle PCA = angle PCB = 90 degrees (l is perpendicular to AB)\nPC = PC (common side)\nTherefore, triangle PCA is congruent to triangle PCB (SAS rule)\nSo PA = PB (CPCT)\nHence P is equidistant from A and B.", "explanation": "The perpendicular bisector creates two right triangles sharing side PC. With AC = BC and the right angles equal, SAS gives congruence, so PA = PB."}
+      ]
+    },
+    {
+      "topic": "Properties and Inequalities of Triangles",
+      "easy": [
+        {"id": "ch7-t2-e1", "type": "mcq", "question": "In an isosceles triangle with AB = AC, which angles are equal?", "options": ["Angle A = Angle B", "Angle B = Angle C", "Angle A = Angle C", "All angles are equal"], "answer": "Angle B = Angle C", "explanation": "By the isosceles triangle theorem, angles opposite to equal sides are equal. Since AB = AC, the angles opposite to them (angle C and angle B) are equal."},
+        {"id": "ch7-t2-e2", "type": "fill", "question": "Each angle of an equilateral triangle is ______ degrees.", "answer": "60", "explanation": "In an equilateral triangle, all three sides are equal, so all three angles are equal. Since their sum is 180 degrees, each angle = 180/3 = 60 degrees."},
+        {"id": "ch7-t2-e3", "type": "short", "question": "Can a triangle have sides of lengths 2 cm, 3 cm, and 6 cm? Why or why not?", "answer": "No. By the triangle inequality, the sum of any two sides must be greater than the third. But 2 + 3 = 5, which is less than 6.", "explanation": "The triangle inequality theorem requires that the sum of any two sides must exceed the third side. Since 2 + 3 = 5 < 6, no such triangle can exist."},
+        {"id": "ch7-t2-e4", "type": "mcq", "question": "In a triangle, the side opposite to the largest angle is:", "options": ["The shortest side", "The longest side", "Equal to the other sides", "Cannot be determined"], "answer": "The longest side", "explanation": "By Theorem 7.7, in a triangle, the side opposite to the larger angle is longer. So the side opposite the largest angle is the longest."}
+      ],
+      "medium": [
+        {"id": "ch7-t2-m1", "type": "short", "question": "In triangle ABC, AB = AC and angle A = 80 degrees. Find angles B and C.", "answer": "Since AB = AC, triangle ABC is isosceles with angle B = angle C.\nAngle A + angle B + angle C = 180\n80 + 2(angle B) = 180\n2(angle B) = 100\nAngle B = angle C = 50 degrees.", "explanation": "Use the isosceles triangle property (angles opposite equal sides are equal) and the angle sum property."},
+        {"id": "ch7-t2-m2", "type": "short", "question": "In triangle PQR, PQ = 7 cm, QR = 10 cm, PR = 5 cm. Arrange the angles in ascending order.", "answer": "The smallest side is PR = 5 cm, so the opposite angle Q is the smallest.\nThe next side is PQ = 7 cm, so the opposite angle R is next.\nThe largest side is QR = 10 cm, so the opposite angle P is the largest.\nAscending order: angle Q < angle R < angle P.", "explanation": "By Theorem 7.6, the angle opposite the longer side is larger. So we order angles by the lengths of their opposite sides."}
+      ],
+      "hard": [
+        {"id": "ch7-t2-h1", "type": "long", "question": "Prove that the angles opposite to equal sides of a triangle are equal. (Isosceles Triangle Theorem)", "answer": "Given: Triangle ABC with AB = AC.\nTo prove: Angle B = Angle C.\nConstruction: Draw AD, the bisector of angle A, meeting BC at D.\nIn triangles ABD and ACD:\nAB = AC (given)\nAngle BAD = angle CAD (AD bisects angle A)\nAD = AD (common)\nTherefore, triangle ABD is congruent to triangle ACD (SAS rule)\nSo angle ABD = angle ACD (CPCT)\ni.e., angle B = angle C. Hence proved.", "explanation": "The proof constructs the angle bisector from the apex to create two congruent triangles using SAS, from which the base angles are shown to be equal."},
+        {"id": "ch7-t2-h2", "type": "long", "question": "Prove that the sum of any two sides of a triangle is greater than the third side.", "answer": "Given: Triangle ABC.\nTo prove: AB + AC > BC.\nConstruction: Extend BA to a point D such that AD = AC. Join DC.\nIn triangle ACD, AD = AC, so angle ACD = angle ADC (isosceles triangle).\nAngle BCD = angle BCA + angle ACD > angle ACD = angle ADC = angle BDC.\nIn triangle BCD, since angle BCD > angle BDC, the side opposite the larger angle is longer:\nBD > BC\nBut BD = BA + AD = BA + AC\nTherefore, BA + AC > BC. Hence proved.", "explanation": "By extending one side and using the isosceles triangle property and the theorem about sides opposite to larger angles, we establish the triangle inequality."}
+      ]
+    }
+  ]
+}

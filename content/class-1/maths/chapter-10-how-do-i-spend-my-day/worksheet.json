@@ -1,0 +1,53 @@
+{
+  "topics": [
+    {
+      "topic": "Parts of the Day",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "When the sun rises, it is ______ time.", "options": ["Night", "Evening", "Morning", "Afternoon"], "answer": "Morning", "explanation": "The sun rises in the morning." },
+        { "id": "ch10-t1-e2", "type": "mcq", "question": "When you see the moon and stars in the sky, it is ______ time.", "options": ["Morning", "Afternoon", "Evening", "Night"], "answer": "Night", "explanation": "The moon and stars are visible at night." },
+        { "id": "ch10-t1-e3", "type": "fill", "question": "When the sun is high in the sky, it is ______ time.", "answer": "afternoon", "explanation": "The sun is highest during the afternoon." },
+        { "id": "ch10-t1-e4", "type": "mcq", "question": "When the sun is setting, it is ______ time.", "options": ["Morning", "Afternoon", "Evening", "Night"], "answer": "Evening", "explanation": "The sun sets in the evening." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "Name the four parts of a day in order.", "answer": "Morning, Afternoon, Evening, Night.", "explanation": "The day starts with morning, then afternoon, then evening, and finally night." },
+        { "id": "ch10-t1-m2", "type": "short", "question": "What do you usually do in the morning before going to school?", "answer": "Wake up, brush teeth, take a bath, eat breakfast, and get ready for school.", "explanation": "Morning activities include getting up, hygiene, eating, and preparing for the day." },
+        { "id": "ch10-t1-m3", "type": "mcq", "question": "When do you eat lunch?", "options": ["Morning", "Afternoon", "Evening", "Night"], "answer": "Afternoon", "explanation": "Lunch is usually eaten during the afternoon." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "long", "question": "Match each activity with the correct time of day: (a) Eat dinner (b) Go to school (c) Sleep (d) Play with friends outside.", "answer": "(a) Eat dinner - Night, (b) Go to school - Morning, (c) Sleep - Night, (d) Play with friends - Evening.", "explanation": "We do different activities at different times of the day." }
+      ]
+    },
+    {
+      "topic": "Which Takes Longer or Shorter",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "Which takes LONGER: taking a bath or washing your hands?", "options": ["Taking a bath", "Washing hands", "Both take the same time", "Cannot tell"], "answer": "Taking a bath", "explanation": "Taking a bath takes much longer than a quick hand wash." },
+        { "id": "ch10-t2-e2", "type": "mcq", "question": "Which takes SHORTER time: drinking a glass of water or eating a meal?", "options": ["Drinking a glass of water", "Eating a meal", "Both take the same time", "Cannot tell"], "answer": "Drinking a glass of water", "explanation": "Drinking water takes a few seconds, but eating a meal takes much longer." },
+        { "id": "ch10-t2-e3", "type": "fill", "question": "Sleeping at night takes ______ than tying your shoes. (longer / shorter)", "answer": "longer", "explanation": "Sleeping takes many hours, while tying shoes takes less than a minute." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "Put these in order from shortest time to longest time: sleeping at night, brushing teeth, eating lunch.", "answer": "Brushing teeth, eating lunch, sleeping at night.", "explanation": "Brushing takes a few minutes, eating takes about 15-30 minutes, sleeping takes many hours." },
+        { "id": "ch10-t2-m2", "type": "mcq", "question": "Which activity takes the LONGEST time?", "options": ["Brushing teeth", "Going to school", "Drinking water", "Tying shoes"], "answer": "Going to school", "explanation": "Going to school involves travelling which takes much more time than the other quick activities." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "short", "question": "Name one activity that takes a short time and one activity that takes a long time from your daily life.", "answer": "Short time: washing hands. Long time: sleeping at night (or going to school).", "explanation": "Some activities are quick (seconds or minutes) and others take a long time (hours)." }
+      ]
+    },
+    {
+      "topic": "Seasons of India",
+      "easy": [
+        { "id": "ch10-t3-e1", "type": "mcq", "question": "In which season do we eat mangoes and ice cream?", "options": ["Winter", "Summer", "Monsoon", "Spring"], "answer": "Summer", "explanation": "Mangoes and ice cream are enjoyed in the hot summer season." },
+        { "id": "ch10-t3-e2", "type": "fill", "question": "In winter, we wear ______ to keep warm.", "answer": "sweaters", "explanation": "We wear sweaters, jackets, and caps in winter to stay warm." },
+        { "id": "ch10-t3-e3", "type": "mcq", "question": "In which season does it rain a lot?", "options": ["Summer", "Winter", "Monsoon", "Spring"], "answer": "Monsoon", "explanation": "The monsoon is the rainy season." },
+        { "id": "ch10-t3-e4", "type": "mcq", "question": "In which season do flowers bloom?", "options": ["Summer", "Winter", "Monsoon", "Spring"], "answer": "Spring", "explanation": "Spring is the pleasant season when flowers bloom on trees." }
+      ],
+      "medium": [
+        { "id": "ch10-t3-m1", "type": "short", "question": "What do we carry with us during the monsoon (rainy) season?", "answer": "We carry umbrellas and raincoats during the monsoon season.", "explanation": "It rains a lot during monsoon, so we need umbrellas and raincoats." },
+        { "id": "ch10-t3-m2", "type": "short", "question": "Name all four seasons of India.", "answer": "Summer, Monsoon (rainy season), Winter, and Spring.", "explanation": "India has four seasons with different weather in each." }
+      ],
+      "hard": [
+        { "id": "ch10-t3-h1", "type": "long", "question": "Match the season with what we wear: (a) Summer (b) Winter (c) Monsoon. Choices: sweater, cotton clothes, raincoat.", "answer": "(a) Summer - cotton clothes, (b) Winter - sweater, (c) Monsoon - raincoat.", "explanation": "We wear light cotton in summer, warm sweaters in winter, and raincoats in monsoon." },
+        { "id": "ch10-t3-h2", "type": "short", "question": "Which festival comes in spring? What do people do during this festival?", "answer": "Holi comes in spring. People play with colours, sing, and dance.", "explanation": "Holi is the festival of colours celebrated in the pleasant spring season." }
+      ]
+    }
+  ]
+}

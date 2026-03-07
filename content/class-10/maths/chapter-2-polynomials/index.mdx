@@ -1,0 +1,257 @@
+---
+title: Chapter 2 Polynomials
+---
+
+## Introduction
+
+In Class 9, you studied polynomials in one variable and their degrees. Let us quickly recall the basics before going deeper.
+
+If p(x) is a polynomial in x, the **highest power of x** in p(x) is called the **degree** of the polynomial. For example:
+
+- **4x + 2** has degree 1
+- **2y^2 - 3y + 4** has degree 2
+- **5x^3 - 4x^2 + x - 2** has degree 3
+
+Expressions like 1/(x+1) or 1/root(x+2) are **not** polynomials.
+
+### Types of Polynomials by Degree
+
+| Degree | Name | General Form | Examples |
+|--------|------|-------------|----------|
+| 1 | Linear | ax + b | 2x - 3, 3x + 5 |
+| 2 | Quadratic | ax^2 + bx + c | x^2 - 3x + 2, 5v^2 - 3 |
+| 3 | Cubic | ax^3 + bx^2 + cx + d | 2x^3 - x + 1, x^3 |
+
+The word **quadratic** comes from "quadrate" meaning "square".
+
+In this chapter, we explore the relationship between the **zeroes** of a polynomial and its **coefficients**, and also study the geometrical meaning of zeroes.
+
+---
+
+## Zeroes of a Polynomial
+
+If p(x) is a polynomial and k is any real number, the value obtained by replacing x with k is called the **value of p(x) at x = k**, written as **p(k)**.
+
+A real number k is called a **zero** of a polynomial p(x) if **p(k) = 0**.
+
+### Example: Finding Zeroes
+
+Consider p(x) = x^2 - 3x - 4.
+
+- p(-1) = (-1)^2 - 3(-1) - 4 = 1 + 3 - 4 = **0**
+- p(4) = (4)^2 - 3(4) - 4 = 16 - 12 - 4 = **0**
+
+Since p(-1) = 0 and p(4) = 0, the zeroes of this polynomial are **-1 and 4**.
+
+### Zero of a Linear Polynomial
+
+For a linear polynomial p(x) = ax + b, the zero is:
+
+**k = -b/a = -(Constant term) / (Coefficient of x)**
+
+For example, the zero of 2x + 3 is -3/2.
+
+---
+
+## Geometrical Meaning of Zeroes
+
+### For Linear Polynomials
+
+The graph of y = ax + b is a **straight line**. It intersects the x-axis at exactly one point, namely (-b/a, 0). The x-coordinate of this point is the zero of the polynomial.
+
+**Example:** The graph of y = 2x + 3 is a straight line that crosses the x-axis at (-3/2, 0). So the zero of 2x + 3 is -3/2.
+
+### For Quadratic Polynomials
+
+The graph of y = ax^2 + bx + c is a **parabola** (a U-shaped curve):
+
+- If **a > 0**, the parabola opens **upwards** (like a cup)
+- If **a < 0**, the parabola opens **downwards** (like an inverted cup)
+
+> **Key idea:** The zeroes of a quadratic polynomial are the x-coordinates of the points where the parabola intersects the x-axis.
+
+Three cases are possible:
+
+**Case 1: Two distinct zeroes** -- The parabola crosses the x-axis at two different points. The polynomial has two distinct zeroes.
+
+**Case 2: One zero (repeated)** -- The parabola just touches the x-axis at one point. The polynomial has two equal zeroes (one repeated zero).
+
+**Case 3: No real zeroes** -- The parabola does not cross or touch the x-axis at all. The polynomial has no real zeroes.
+
+### For Cubic Polynomials
+
+The graph of a cubic polynomial can cross the x-axis at **at most 3 points**.
+
+**Example:** For y = x^3 - 4x:
+- At x = -2: y = -8 + 8 = 0
+- At x = 0: y = 0
+- At x = 2: y = 8 - 8 = 0
+
+The zeroes are -2, 0, and 2 (three distinct zeroes).
+
+> **Key idea:** A polynomial of degree n has **at most n zeroes**. This is a fundamental rule. A linear polynomial has at most 1 zero, a quadratic has at most 2, and a cubic has at most 3.
+
+---
+
+## Relationship Between Zeroes and Coefficients of a Quadratic Polynomial
+
+This is one of the most important topics in this chapter and is frequently asked in board exams.
+
+If **alpha** and **beta** are the zeroes of the quadratic polynomial **ax^2 + bx + c** (where a is not zero), then:
+
+- **Sum of zeroes** = alpha + beta = **-b/a** = -(Coefficient of x) / (Coefficient of x^2)
+- **Product of zeroes** = alpha x beta = **c/a** = (Constant term) / (Coefficient of x^2)
+
+> **Key idea:** The zeroes of a quadratic polynomial are directly related to its coefficients through these two simple formulas. Memorise them well!
+
+### How to Derive This
+
+If alpha and beta are zeroes of ax^2 + bx + c, then (x - alpha) and (x - beta) are its factors:
+
+ax^2 + bx + c = k(x - alpha)(x - beta) = k[x^2 - (alpha + beta)x + alpha x beta]
+
+Comparing coefficients:
+- a = k
+- b = -k(alpha + beta), so alpha + beta = -b/a
+- c = k(alpha x beta), so alpha x beta = c/a
+
+---
+
+## Worked Examples on Zeroes and Coefficients
+
+### Example 1: Find zeroes and verify the relationship
+
+**Polynomial:** x^2 + 7x + 10
+
+**Step 1:** Factorise by splitting the middle term.
+- x^2 + 7x + 10 = x^2 + 5x + 2x + 10 = x(x + 5) + 2(x + 5) = (x + 2)(x + 5)
+
+**Step 2:** Find zeroes.
+- x + 2 = 0 gives x = -2
+- x + 5 = 0 gives x = -5
+- Zeroes are **-2 and -5**
+
+**Step 3:** Verify the relationships.
+- Sum of zeroes = -2 + (-5) = -7 = -(7)/1 = -b/a. Verified!
+- Product of zeroes = (-2)(-5) = 10 = 10/1 = c/a. Verified!
+
+### Example 2: Find zeroes of x^2 - 3
+
+**Step 1:** Use the identity a^2 - b^2 = (a - b)(a + b).
+- x^2 - 3 = (x - root 3)(x + root 3)
+
+**Step 2:** Zeroes are **root 3** and **-root 3**.
+
+**Step 3:** Verify.
+- Sum = root 3 + (-root 3) = 0 = -(0)/1 = -b/a. Verified!
+- Product = (root 3)(-root 3) = -3 = -3/1 = c/a. Verified!
+
+### Example 3: Find zeroes of 2x^2 - 8x + 6
+
+**Step 1:** Factorise.
+- 2x^2 - 8x + 6 = 2x^2 - 6x - 2x + 6 = 2x(x - 3) - 2(x - 3) = (2x - 2)(x - 3) = 2(x - 1)(x - 3)
+
+**Step 2:** Zeroes are **1 and 3**.
+
+**Step 3:** Verify.
+- Sum = 1 + 3 = 4 = -(-8)/2 = 8/2 = 4. Verified!
+- Product = 1 x 3 = 3 = 6/2 = 3. Verified!
+
+---
+
+## Finding a Quadratic Polynomial from Given Zeroes
+
+If you know the sum and product of zeroes, you can write the quadratic polynomial.
+
+### Formula
+
+If S = sum of zeroes and P = product of zeroes, then the quadratic polynomial is:
+
+**x^2 - Sx + P**
+
+(or any non-zero constant multiple of it: k(x^2 - Sx + P))
+
+### Example: Sum = -3, Product = 2
+
+The polynomial is x^2 - (-3)x + 2 = **x^2 + 3x + 2**.
+
+You can verify: the zeroes of x^2 + 3x + 2 = (x + 1)(x + 2) are -1 and -2. Their sum is -3 and product is 2. Correct!
+
+### More Examples
+
+| Sum of zeroes | Product of zeroes | Quadratic polynomial |
+|--------------|-------------------|---------------------|
+| 1/4 | -1 | x^2 - (1/4)x - 1 or 4x^2 - x - 4 |
+| root 2 | 1/3 | x^2 - root(2)x + 1/3 or 3x^2 - 3root(2)x + 1 |
+| 0 | root 5 | x^2 + root 5 |
+| 1 | 1 | x^2 - x + 1 |
+
+---
+
+## Relationship Between Zeroes and Coefficients of a Cubic Polynomial
+
+If **alpha, beta, and gamma** are the zeroes of the cubic polynomial **ax^3 + bx^2 + cx + d**, then:
+
+- **Sum of zeroes:** alpha + beta + gamma = **-b/a**
+- **Sum of products taken two at a time:** alpha x beta + beta x gamma + gamma x alpha = **c/a**
+- **Product of all three zeroes:** alpha x beta x gamma = **-d/a**
+
+> **Key idea:** For a cubic polynomial, there are three relationships connecting the three zeroes to the four coefficients. Notice how the signs alternate: -b/a, +c/a, -d/a.
+
+### Worked Example
+
+**Verify** that 3, -1, and -1/3 are zeroes of p(x) = 3x^3 - 5x^2 - 11x - 3.
+
+**Step 1:** Check each value.
+- p(3) = 3(27) - 5(9) - 11(3) - 3 = 81 - 45 - 33 - 3 = 0
+- p(-1) = 3(-1) - 5(1) - 11(-1) - 3 = -3 - 5 + 11 - 3 = 0
+- p(-1/3) = 3(-1/27) - 5(1/9) - 11(-1/3) - 3 = -1/9 - 5/9 + 11/3 - 3 = 0
+
+All three give zero, so they are indeed zeroes.
+
+**Step 2:** Verify the relationships (a = 3, b = -5, c = -11, d = -3).
+
+- Sum = 3 + (-1) + (-1/3) = 2 - 1/3 = 5/3 = -(-5)/3 = -b/a. Verified!
+- Sum of products in pairs = 3(-1) + (-1)(-1/3) + (-1/3)(3) = -3 + 1/3 - 1 = -11/3 = c/a. Verified!
+- Product = 3 x (-1) x (-1/3) = 1 = -(-3)/3 = -d/a. Verified!
+
+---
+
+## Important Tips for Board Exams
+
+1. **Always verify** the relationship between zeroes and coefficients after finding the zeroes.
+
+2. To factorise quadratic polynomials, use the **splitting the middle term** method:
+   - For ax^2 + bx + c, find two numbers whose product is a x c and sum is b
+   - Split the middle term using these two numbers
+   - Factor by grouping
+
+3. To find a quadratic polynomial from given zeroes alpha and beta, use:
+   - p(x) = x^2 - (alpha + beta)x + (alpha x beta)
+
+4. Remember the maximum number of zeroes:
+   - Linear (degree 1): at most **1** zero
+   - Quadratic (degree 2): at most **2** zeroes
+   - Cubic (degree 3): at most **3** zeroes
+   - Degree n: at most **n** zeroes
+
+---
+
+## Chapter Summary
+
+1. Polynomials of degrees 1, 2, and 3 are called **linear**, **quadratic**, and **cubic** polynomials respectively.
+
+2. A quadratic polynomial in x with real coefficients is of the form **ax^2 + bx + c**, where a, b, c are real numbers and a is not zero.
+
+3. The **zeroes** of a polynomial p(x) are the x-coordinates of the points where the graph of y = p(x) intersects the x-axis.
+
+4. A quadratic polynomial can have **at most 2 zeroes** and a cubic polynomial can have **at most 3 zeroes**.
+
+5. If alpha and beta are zeroes of ax^2 + bx + c, then:
+   - alpha + beta = -b/a
+   - alpha x beta = c/a
+
+6. If alpha, beta, and gamma are zeroes of ax^3 + bx^2 + cx + d, then:
+   - alpha + beta + gamma = -b/a
+   - alpha.beta + beta.gamma + gamma.alpha = c/a
+   - alpha.beta.gamma = -d/a

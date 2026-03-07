@@ -1,0 +1,234 @@
+---
+title: "Chapter 13: Algebra Play"
+---
+
+## 6.1 Introduction
+
+Algebra is not just about solving equations -- it can be used to explain tricks and puzzles, model situations, and even invent new games! In this chapter, we explore the fun side of algebra.
+
+---
+
+## 6.2 "Think of a Number" Tricks
+
+### A Classic Trick
+
+1. Think of a number: **x**
+2. Double it: **2x**
+3. Add four: **2x + 4**
+4. Divide by 2: **x + 2**
+5. Subtract the original number: **(x + 2) - x = 2**
+
+No matter what number you start with, the result is always **2**!
+
+To make the final answer 3 instead, change step 3 to "Add six" (since 6/2 = 3). To get 5, add 10.
+
+> **Key idea:** "Think of a number" tricks work because algebra shows that the unknown cancels out, leaving a fixed result regardless of the starting number.
+
+---
+
+### The Date Trick
+
+Ask a friend to think of a date (like 26th January = 26/01):
+
+1. Multiply the month by 5: **5M**
+2. Add 6: **5M + 6**
+3. Multiply by 4: **20M + 24**
+4. Add 9: **20M + 33**
+5. Multiply by 5: **100M + 165**
+6. Add the day: **100M + 165 + D**
+
+When your friend tells you the result, subtract 165. The last two digits give the day, and the digits before that give the month!
+
+**Example:** If the answer is 291:
+- 291 - 165 = 126
+- Month = 1 (January), Day = 26
+- The date is **26th January** (Republic Day!)
+
+**Example:** If the answer is 1390:
+- 1390 - 165 = 1225
+- Month = 12 (December), Day = 25
+- The date is **25th December** (Christmas!)
+
+---
+
+## 6.3 Number Pyramids
+
+In a **number pyramid**, each number is the **sum** of the two numbers directly below it.
+
+```
+    23
+   /  \
+  10   13
+ /  \
+1    9    4
+```
+
+### Filling Pyramids
+
+If the bottom row is a, b, c, the pyramid looks like:
+
+```
+   a + 2b + c
+    /      \
+  a+b     b+c
+  / \     / \
+ a    b  c
+```
+
+The top number = **a + 2b + c** (the middle number counts twice!).
+
+### For a 4-row pyramid
+
+If the bottom row is a, b, c, d, the top number is:
+
+**a + 3b + 3c + d**
+
+Notice the coefficients 1, 3, 3, 1 -- these are the **binomial coefficients** (from Pascal's Triangle)!
+
+### Solving for Unknown Values
+
+**Example:** A pyramid has 60 at the top, and the bottom row is 12, ?, 8.
+
+Let the unknown be c. From the pyramid rule:
+- The second row has: 12+c and c+8
+- Top = (12+c) + (c+8) = 20 + 2c = 60
+- 2c = 40, so **c = 20**
+
+The completed bottom row is 12, 20, 8.
+
+### Connection to Virahanka-Fibonacci Numbers
+
+If you fill a pyramid's bottom row with the first n Virahanka-Fibonacci numbers (1, 2, 3, 5, 8, 13, ...), all the numbers in the pyramid are also Virahanka-Fibonacci numbers, and the top number is the (2n-1)th Virahanka-Fibonacci number!
+
+---
+
+## 6.4 Fun with Grids
+
+### Calendar Magic
+
+Pick any **2 x 2 grid** from a calendar page. If the top-left number is a:
+
+| a | a+1 |
+|---|---|
+| a+7 | a+8 |
+
+Sum = a + (a+1) + (a+7) + (a+8) = **4a + 16**
+
+So if someone tells you the sum, you can find a:
+- **a = (sum - 16) / 4**
+
+**Example:** If the sum is 36:
+- a = (36 - 16)/4 = 20/4 = 5
+- The grid is: 5, 6 / 12, 13
+
+You can create similar tricks with 3x3 grids, L-shaped selections, or diagonal patterns!
+
+### Algebra Grids
+
+In these puzzles, shapes represent unknown numbers. Each row's sum is given.
+
+**Example:**
+- Triangle + Triangle + Triangle = 27, so Triangle = 9
+- Circle + Circle + Triangle = 19, so 2 x Circle + 9 = 19, Circle = 5
+
+> **Key idea:** Algebra grids are systems of equations in disguise. You solve them by substitution -- find one unknown first, then use it to find the others.
+
+---
+
+## 6.5 The Largest Product
+
+**Problem:** Place the digits 2, 3, and 5 in __ __ x __ to get the largest product.
+
+There are 6 possible arrangements:
+- 23 x 5 = 115
+- 25 x 3 = 75
+- 32 x 5 = **160** (the winner!)
+- 35 x 2 = 70
+- 52 x 3 = 156
+- 53 x 2 = 106
+
+### The General Rule
+
+For three digits p < q < r, the largest product comes from **qp x r** -- use the **largest digit as the multiplier** and arrange the other two in **decreasing order** as the multiplicand.
+
+**Proof using algebra:** For digits p, q, r where p < q < r:
+- qp x r = (10q + p)r = 10qr + pr
+- rp x q = (10r + p)q = 10rq + pq
+
+Since r > q, we have pr > pq, so qp x r wins!
+
+---
+
+## 6.6 Decoding Divisibility Tricks
+
+### Reversing a 2-digit Number
+
+**Trick:** Take any 2-digit number with different digits. Reverse the digits. Find the difference. The result is always divisible by 9!
+
+**Proof:** Let the number be 10a + b (where a is the tens digit, b is the units digit).
+
+Reversed number = 10b + a
+
+Difference = (10b + a) - (10a + b) = 9b - 9a = **9(b - a)**
+
+Since 9 is a factor, the difference is always divisible by 9!
+
+### Reversing a 3-digit Number
+
+**Trick:** Take any 3-digit number. Reverse it. The difference is always divisible by **99**.
+
+**Proof:** Let the number be 100a + 10b + c.
+
+Reversed = 100c + 10b + a
+
+Difference = 99a - 99c = **99(a - c)**
+
+The middle digit cancels out, and 99 is always a factor!
+
+### Sum of a Number and Its Reverse
+
+For a 2-digit number 10a + b:
+- Sum with reverse = (10a + b) + (10b + a) = 11a + 11b = **11(a + b)**
+
+The sum is always divisible by **11**!
+
+> **Key idea:** Place value notation (writing numbers as 10a + b or 100a + 10b + c) combined with algebra explains many number tricks and divisibility patterns.
+
+---
+
+## 6.7 Solving Equations
+
+### Example: Finding Two Numbers
+
+The sum of two numbers is 48 and their difference is 14. Find the numbers.
+
+Let the numbers be x and y (with x > y).
+- x + y = 48
+- x - y = 14
+
+Adding both equations: 2x = 62, so x = 31.
+Subtracting: 2y = 34, so y = 17.
+
+The numbers are **31 and 17**.
+
+### Example: Age Problem
+
+Ravi is 3 times as old as his son. Five years ago, Ravi was 4 times his son's age. Find their current ages.
+
+Let son's age = x. Ravi's age = 3x.
+- Five years ago: (3x - 5) = 4(x - 5)
+- 3x - 5 = 4x - 20
+- 15 = x
+
+Son is **15 years old**, Ravi is **45 years old**.
+
+---
+
+## Summary
+
+- Algebra explains why "think of a number" tricks always give the same result -- the variable cancels out.
+- **Number pyramids** use the rule that each number equals the sum of the two below it. The top number can be expressed using binomial coefficients.
+- **Calendar grids** can be decoded using algebra: express all numbers in terms of one variable.
+- To find the **largest product** from given digits, use the largest digit as the single-digit multiplier.
+- **Divisibility tricks** for reversed numbers are explained by place value: 10a + b reversed gives 10b + a, and their difference is 9(b-a).
+- Algebra turns mysterious tricks into clear, logical explanations!

@@ -1,0 +1,40 @@
+{
+  "topics": [
+    {
+      "topic": "Calendar: Months, Weeks, and Dates",
+      "easy": [
+        { "id": "ch13-t1-e1", "type": "mcq", "question": "How many months are there in a year?", "options": ["7", "10", "12", "52"], "answer": "12", "explanation": "There are 12 months in a year: January, February, March, April, May, June, July, August, September, October, November, December." },
+        { "id": "ch13-t1-e2", "type": "fill", "question": "1 week = ______ days.", "answer": "7", "explanation": "A week has 7 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday." },
+        { "id": "ch13-t1-e3", "type": "mcq", "question": "How many days does January have?", "options": ["28", "29", "30", "31"], "answer": "31", "explanation": "January has 31 days." },
+        { "id": "ch13-t1-e4", "type": "fill", "question": "The date 15/08/2024 means the ______th of ______, 2024.", "answer": "15, August", "explanation": "In DD/MM/YYYY format, 15 is the day and 08 means August." },
+        { "id": "ch13-t1-e5", "type": "mcq", "question": "Which month has the fewest days?", "options": ["January", "February", "June", "November"], "answer": "February", "explanation": "February has only 28 days (or 29 in a leap year), which is the fewest." }
+      ],
+      "medium": [
+        { "id": "ch13-t1-m1", "type": "short", "question": "Republic Day is on 26th January. Independence Day is on 15th August. Write both dates in DD/MM/YYYY format for the year 2025.", "answer": "Republic Day: 26/01/2025. Independence Day: 15/08/2025.", "explanation": "DD/MM/YYYY: Day first, then month number, then year." },
+        { "id": "ch13-t1-m2", "type": "short", "question": "Hetal was born in 2015. How old will she be in 2026?", "answer": "2026 - 2015 = 11 years old.", "explanation": "Subtract birth year from current year: 2026 - 2015 = 11." },
+        { "id": "ch13-t1-m3", "type": "mcq", "question": "About how many weeks are in 1 year?", "options": ["12", "30", "52", "365"], "answer": "52", "explanation": "1 year has about 52 weeks (365 days / 7 days per week is about 52)." }
+      ],
+      "hard": [
+        { "id": "ch13-t1-h1", "type": "long", "question": "Hetal is twice as old as her brother. She is also 10 years older than him. How old are Hetal and her brother? Explain your thinking.", "answer": "If the brother is 10, then Hetal is 10 + 10 = 20. Check: 20 is twice 10. Yes! So Hetal is 20 and her brother is 10.", "explanation": "If Hetal is twice her brother's age AND 10 years older, then her brother's age equals the extra 10 years. Brother = 10, Hetal = 20." }
+      ]
+    },
+    {
+      "topic": "Reading the Clock",
+      "easy": [
+        { "id": "ch13-t2-e1", "type": "mcq", "question": "Which hand on a clock shows the hour?", "options": ["The long hand", "The short hand", "Both hands", "Neither hand"], "answer": "The short hand", "explanation": "The short hand (hour hand) shows the hour. The long hand (minute hand) shows the minutes." },
+        { "id": "ch13-t2-e2", "type": "fill", "question": "When the minute hand points to 12 and the hour hand points to 7, the time is ______ o'clock.", "answer": "7", "explanation": "When the minute hand is at 12, it is an exact hour. The hour hand shows 7, so it is 7 o'clock." },
+        { "id": "ch13-t2-e3", "type": "mcq", "question": "What does 'half past 8' mean?", "options": ["8:00", "8:15", "8:30", "8:45"], "answer": "8:30", "explanation": "Half past means 30 minutes past the hour. Half past 8 = 8:30." },
+        { "id": "ch13-t2-e4", "type": "fill", "question": "Quarter past 7 means the time is ______.", "answer": "7:15", "explanation": "Quarter past means 15 minutes past the hour. Quarter past 7 = 7:15." }
+      ],
+      "medium": [
+        { "id": "ch13-t2-m1", "type": "short", "question": "Hetal wakes up at 7:00 AM and finishes breakfast at 7:15 AM. How long does it take her to eat breakfast?", "answer": "It takes her 15 minutes.", "explanation": "From 7:00 to 7:15 is 15 minutes." },
+        { "id": "ch13-t2-m2", "type": "short", "question": "How many hours are there in one full day?", "answer": "There are 24 hours in one full day.", "explanation": "A complete day (from midnight to the next midnight) has 24 hours." },
+        { "id": "ch13-t2-m3", "type": "mcq", "question": "At 'quarter past 3', where does the minute hand point?", "options": ["12", "3", "6", "9"], "answer": "3", "explanation": "Quarter past means 15 minutes past the hour. The minute hand points to 3 at 15 minutes." }
+      ],
+      "hard": [
+        { "id": "ch13-t2-h1", "type": "long", "question": "Rohan goes to school at 8:00 AM and comes home at 2:00 PM. How many hours is he at school? If he plays for 1 hour after coming home and then studies for half an hour, what time does he finish studying?", "answer": "School time: 8:00 AM to 2:00 PM = 6 hours. After coming home at 2:00 PM, he plays for 1 hour until 3:00 PM. Then he studies for 30 minutes until 3:30 PM. He finishes studying at 3:30 PM.", "explanation": "Count hours from 8 AM to 2 PM = 6 hours. Add 1 hour for play (3:00 PM). Add 30 minutes for study (3:30 PM)." },
+        { "id": "ch13-t2-h2", "type": "long", "question": "Name two activities that take minutes, two that take hours, and two that take days. Why is it important to use the right unit of time?", "answer": "Minutes: brushing teeth, eating a snack. Hours: watching a movie, a school day. Days: a weekend trip, growing a plant. Using the right unit helps us communicate time clearly. Saying 'a movie takes 2 hours' makes more sense than saying 'a movie takes 120 minutes'.", "explanation": "Different activities take different amounts of time. Using the right unit makes it easier to understand and plan." }
+      ]
+    }
+  ]
+}

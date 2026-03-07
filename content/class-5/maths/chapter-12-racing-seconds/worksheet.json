@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "topic": "Units of Time and Conversions",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "How many seconds are there in 1 minute?",
+          "options": ["30", "60", "100", "120"],
+          "answer": "60",
+          "explanation": "1 minute = 60 seconds."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "fill",
+          "question": "60 minutes = 1 ______ and 24 hours = 1 ______.",
+          "answer": "hour, day",
+          "explanation": "60 minutes make 1 hour, and 24 hours make 1 day."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "mcq",
+          "question": "How many minutes are in 2 hours?",
+          "options": ["60", "100", "120", "200"],
+          "answer": "120",
+          "explanation": "1 hour = 60 minutes. So 2 hours = 2 x 60 = 120 minutes."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "short",
+          "question": "Convert 75 minutes to hours and minutes.",
+          "answer": "1 hour 15 minutes",
+          "explanation": "75 / 60 = 1 remainder 15. So 75 minutes = 1 hour 15 minutes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "Convert 4 hours 20 minutes to minutes.",
+          "answer": "260 minutes",
+          "explanation": "4 hours = 4 x 60 = 240 minutes. Add 20: 240 + 20 = 260 minutes."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "mcq",
+          "question": "320 seconds is equal to:",
+          "options": ["3 minutes 20 seconds", "5 minutes 20 seconds", "5 minutes 30 seconds", "6 minutes 20 seconds"],
+          "answer": "5 minutes 20 seconds",
+          "explanation": "320 / 60 = 5 remainder 20. So 320 seconds = 5 minutes 20 seconds."
+        },
+        {
+          "id": "ch12-t1-m3",
+          "type": "short",
+          "question": "In a 200m walking race, Akira finished in 1 minute 55 seconds and Sunita in 1 minute 56 seconds. By how many seconds did Akira win?",
+          "answer": "1 second",
+          "explanation": "1 min 56 sec - 1 min 55 sec = 1 second. Akira was 1 second faster."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "Convert 10 minutes 13 seconds to seconds. Then convert 700 seconds to minutes and seconds. Which is longer?",
+          "answer": "10 min 13 sec = (10 x 60) + 13 = 613 seconds. 700 seconds = 700 / 60 = 11 minutes 40 seconds. 700 seconds is longer because 700 > 613.",
+          "explanation": "10 min 13 sec = 613 sec. 700 sec = 11 min 40 sec. Since 700 > 613, 700 seconds (11 min 40 sec) is longer."
+        }
+      ]
+    },
+    {
+      "topic": "12-Hour and 24-Hour Time",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "What is 2:30 PM in 24-hour format?",
+          "options": ["02:30 hours", "12:30 hours", "14:30 hours", "22:30 hours"],
+          "answer": "14:30 hours",
+          "explanation": "For PM times, add 12 to the hour: 2 + 12 = 14. So 2:30 PM = 14:30 hours."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "AM stands for ______ and covers the time from midnight to ______.",
+          "answer": "Ante Meridiem, noon",
+          "explanation": "AM (Ante Meridiem) covers the time from midnight (12:00 AM) to noon (12:00 PM)."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "short",
+          "question": "Convert 21:35 hours to 12-hour format.",
+          "answer": "9:35 PM",
+          "explanation": "21 - 12 = 9. Since it is after 12:00, it is PM. So 21:35 = 9:35 PM."
+        },
+        {
+          "id": "ch12-t2-e4",
+          "type": "mcq",
+          "question": "What is 12:00 AM in 24-hour format?",
+          "options": ["00:00 hours", "12:00 hours", "24:00 hours", "06:00 hours"],
+          "answer": "00:00 hours",
+          "explanation": "12:00 AM (midnight) = 00:00 hours in 24-hour format."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "A cricket match starts at 14:00 hours and ends at 20:45 hours. Express the start and end times in 12-hour format.",
+          "answer": "Start: 2:00 PM. End: 8:45 PM.",
+          "explanation": "14:00 - 12 = 2:00 PM. 20:45 - 12 = 8:45 PM."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "mcq",
+          "question": "The Rajdhani Express departs at 16:30 hours and arrives at 08:15 hours the next morning. Convert the departure time to 12-hour format.",
+          "options": ["4:30 AM", "4:30 PM", "6:30 PM", "6:30 AM"],
+          "answer": "4:30 PM",
+          "explanation": "16:30 hours: 16 - 12 = 4. It's after noon, so 4:30 PM."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "A Durga Puja event schedule shows: Opening ceremony at 09:00 hours, Cultural programme at 14:30 hours, Evening aarti at 18:00 hours, and Dinner at 20:30 hours. Convert all times to 12-hour format and find the total duration of the event from start to dinner.",
+          "answer": "Opening: 9:00 AM. Cultural: 2:30 PM. Aarti: 6:00 PM. Dinner: 8:30 PM. Duration: from 9:00 AM to 8:30 PM. 9:00 AM to 9:00 PM = 12 hours. 9:00 PM to 8:30 PM = subtract 30 minutes. Total: 11 hours 30 minutes.",
+          "explanation": "Convert: 09:00 = 9:00 AM, 14:30 = 2:30 PM, 18:00 = 6:00 PM, 20:30 = 8:30 PM. Duration: 9:00 AM to 8:30 PM. Count: 9 AM to 8 PM = 11 hours, plus 30 min = 11 hours 30 minutes."
+        }
+      ]
+    },
+    {
+      "topic": "Finding Time Duration",
+      "easy": [
+        {
+          "id": "ch12-t3-e1",
+          "type": "mcq",
+          "question": "Raghu left at 08:00 and arrived at 09:05. How long did his journey take?",
+          "options": ["55 minutes", "1 hour", "1 hour 5 minutes", "1 hour 15 minutes"],
+          "answer": "1 hour 5 minutes",
+          "explanation": "08:00 to 09:00 = 1 hour. 09:00 to 09:05 = 5 minutes. Total: 1 hour 5 minutes."
+        },
+        {
+          "id": "ch12-t3-e2",
+          "type": "fill",
+          "question": "Jyoti started playing at 6:15 PM and played for 1 hour 45 minutes. She finished at ______ PM.",
+          "answer": "8:00",
+          "explanation": "6:15 + 1 hour = 7:15 PM. 7:15 + 45 min = 8:00 PM."
+        },
+        {
+          "id": "ch12-t3-e3",
+          "type": "short",
+          "question": "Ragini finished homework at 9:40 PM. It took 1 hour 10 minutes. What time did she start?",
+          "answer": "8:30 PM",
+          "explanation": "9:40 - 1 hour = 8:40 PM. 8:40 - 10 minutes = 8:30 PM."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t3-m1",
+          "type": "short",
+          "question": "A Hindi movie starts at 3:15 PM and is 2 hours 45 minutes long. At what time does it end?",
+          "answer": "6:00 PM",
+          "explanation": "3:15 + 2 hours = 5:15 PM. 5:15 + 45 minutes = 6:00 PM."
+        },
+        {
+          "id": "ch12-t3-m2",
+          "type": "mcq",
+          "question": "A train departs at 11:45 AM and arrives at 3:15 PM. How long is the journey?",
+          "options": ["3 hours", "3 hours 15 minutes", "3 hours 30 minutes", "4 hours 30 minutes"],
+          "answer": "3 hours 30 minutes",
+          "explanation": "11:45 AM to 12:45 PM = 1 hour. 12:45 to 2:45 PM = 2 more hours. 2:45 to 3:15 = 30 min. Total: 3 hours 30 minutes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t3-h1",
+          "type": "long",
+          "question": "Ananya's school day: She wakes up at 6:30 AM, reaches school at 8:15 AM, school ends at 2:30 PM, she reaches home at 3:45 PM, and goes to bed at 9:30 PM. Find: (a) Time from waking up to reaching school, (b) How long is school, (c) Time from reaching home to bedtime.",
+          "answer": "(a) 6:30 AM to 8:15 AM = 1 hour 45 minutes. (b) 8:15 AM to 2:30 PM: 8:15 to 2:15 = 6 hours, plus 15 min = 6 hours 15 minutes. (c) 3:45 PM to 9:30 PM: 3:45 to 9:45 = 6 hours, minus 15 min = 5 hours 45 minutes.",
+          "explanation": "(a) 6:30 to 8:15: 6:30 to 8:00 = 1 hr 30 min, 8:00 to 8:15 = 15 min. Total: 1 hr 45 min. (b) 8:15 to 2:30: 8:15 to 2:15 = 6 hrs, plus 15 min = 6 hrs 15 min. (c) 3:45 to 9:30: 3:45 to 9:30 = 5 hrs 45 min."
+        }
+      ]
+    }
+  ]
+}

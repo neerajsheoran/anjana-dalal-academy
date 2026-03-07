@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Understanding 100 and Making 100",
+      "easy": [
+        { "id": "ch3-t1-e1", "type": "mcq", "question": "What is 99 + 1?", "options": ["98", "100", "101", "109"], "answer": "100", "explanation": "One more than 99 is 100, which is called one hundred." },
+        { "id": "ch3-t1-e2", "type": "fill", "question": "A batsman who scores 100 runs has scored a ______.", "answer": "century", "explanation": "100 is also called a century. In cricket, scoring 100 runs is a century." },
+        { "id": "ch3-t1-e3", "type": "mcq", "question": "How many bundles of 10 sticks make 100?", "options": ["5", "10", "20", "100"], "answer": "10", "explanation": "10 bundles of 10 sticks = 10 x 10 = 100 sticks." },
+        { "id": "ch3-t1-e4", "type": "fill", "question": "70 + ______ = 100", "answer": "30", "explanation": "70 + 30 = 100. You need 30 more to go from 70 to 100." }
+      ],
+      "medium": [
+        { "id": "ch3-t1-m1", "type": "short", "question": "Write three different pairs of numbers that add up to 100.", "answer": "Examples: 60 + 40 = 100, 75 + 25 = 100, 55 + 45 = 100.", "explanation": "There are many pairs. Think: how far is the first number from 100? That gives the second number." },
+        { "id": "ch3-t1-m2", "type": "mcq", "question": "Which pair of numbers adds up to 100?", "options": ["45 and 65", "85 and 15", "50 and 40", "30 and 60"], "answer": "85 and 15", "explanation": "85 + 15 = 100. The other pairs add up to 110, 90, and 90." }
+      ],
+      "hard": [
+        { "id": "ch3-t1-h1", "type": "long", "question": "Amit collected 35 stamps on Monday and 28 stamps on Tuesday. He wants to collect 100 stamps in total by Wednesday. How many more stamps does he need on Wednesday?", "answer": "Amit has 35 + 28 = 63 stamps so far. He needs 100 - 63 = 37 more stamps on Wednesday.", "explanation": "First add what he has: 35 + 28 = 63. Then subtract from 100: 100 - 63 = 37." }
+      ]
+    },
+    {
+      "topic": "Numbers from 100 to 200",
+      "easy": [
+        { "id": "ch3-t2-e1", "type": "mcq", "question": "What is the number name for 115?", "options": ["One Hundred Five", "One Hundred Fifteen", "One Hundred Fifty", "Eleven Five"], "answer": "One Hundred Fifteen", "explanation": "115 = 100 + 15 = One Hundred Fifteen." },
+        { "id": "ch3-t2-e2", "type": "fill", "question": "The number 123 has ______ hundred, ______ tens, and ______ ones.", "answer": "1, 2, 3", "explanation": "123 = 1 hundred + 2 tens + 3 ones." },
+        { "id": "ch3-t2-e3", "type": "mcq", "question": "What number comes just after 149?", "options": ["148", "150", "159", "140"], "answer": "150", "explanation": "One more than 149 is 150." },
+        { "id": "ch3-t2-e4", "type": "fill", "question": "200 is called a ______ century.", "answer": "double", "explanation": "200 means two hundreds, which is called a double century." }
+      ],
+      "medium": [
+        { "id": "ch3-t2-m1", "type": "short", "question": "Write the number that has 1 hundred, 4 tens, and 7 ones. What is this number in words?", "answer": "The number is 147. In words: One Hundred Forty Seven.", "explanation": "1 hundred = 100, 4 tens = 40, 7 ones = 7. So 100 + 40 + 7 = 147." },
+        { "id": "ch3-t2-m2", "type": "short", "question": "Fill in the missing numbers: 160, ___, 180, ___, 200.", "answer": "160, 170, 180, 190, 200.", "explanation": "The pattern is counting by 10s. Add 10 each time." },
+        { "id": "ch3-t2-m3", "type": "mcq", "question": "Which number is 1 less than 130?", "options": ["131", "129", "120", "139"], "answer": "129", "explanation": "1 less than 130 is 129." }
+      ],
+      "hard": [
+        { "id": "ch3-t2-h1", "type": "long", "question": "Start at 100 and skip count by 5. Write the first 10 numbers in this pattern. What is the 10th number? Is it more or less than 150?", "answer": "100, 105, 110, 115, 120, 125, 130, 135, 140, 145. The 10th number is 145. It is less than 150.", "explanation": "Starting at 100 and adding 5 each time: the 10th number is 100 + (9 x 5) = 100 + 45 = 145." },
+        { "id": "ch3-t2-h2", "type": "long", "question": "Sachin scored a double century (200 runs) in a cricket match. In the first half, he scored 112 runs. How many runs did he score in the second half?", "answer": "He scored 200 - 112 = 88 runs in the second half.", "explanation": "Total runs = 200. First half = 112. Second half = 200 - 112 = 88." }
+      ]
+    }
+  ]
+}

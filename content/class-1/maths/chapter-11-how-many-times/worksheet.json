@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "topic": "Counting in Groups (Repeated Addition)",
+      "easy": [
+        { "id": "ch11-t1-e1", "type": "mcq", "question": "2 + 2 + 2 = ?", "options": ["4", "5", "6", "8"], "answer": "6", "explanation": "Adding 2 three times: 2 + 2 + 2 = 6." },
+        { "id": "ch11-t1-e2", "type": "fill", "question": "3 + 3 + 3 = ______.", "answer": "9", "explanation": "Adding 3 three times: 3 + 3 + 3 = 9." },
+        { "id": "ch11-t1-e3", "type": "mcq", "question": "5 + 5 = ?", "options": ["5", "8", "10", "15"], "answer": "10", "explanation": "Adding 5 two times: 5 + 5 = 10." },
+        { "id": "ch11-t1-e4", "type": "fill", "question": "4 + 4 = ______.", "answer": "8", "explanation": "Adding 4 two times: 4 + 4 = 8." }
+      ],
+      "medium": [
+        { "id": "ch11-t1-m1", "type": "short", "question": "A toy train has 3 bogies. Each bogie holds 3 children. How many children can ride the train?", "answer": "3 + 3 + 3 = 9 children.", "explanation": "3 groups of 3 means we add 3 three times: 3 + 3 + 3 = 9." },
+        { "id": "ch11-t1-m2", "type": "mcq", "question": "4 + 4 + 4 + 4 = ?", "options": ["12", "14", "16", "20"], "answer": "16", "explanation": "Adding 4 four times: 4 + 4 + 4 + 4 = 16." },
+        { "id": "ch11-t1-m3", "type": "fill", "question": "2 + 2 + 2 + 2 = ______.", "answer": "8", "explanation": "Adding 2 four times: 2 + 2 + 2 + 2 = 8." }
+      ],
+      "hard": [
+        { "id": "ch11-t1-h1", "type": "long", "question": "Each plate has 3 jalebis. There are 6 plates. How many jalebis are there? Show your addition.", "answer": "3 + 3 + 3 + 3 + 3 + 3 = 18 jalebis.", "explanation": "6 groups of 3: we add 3 six times. 6 times 3 is 18." },
+        { "id": "ch11-t1-h2", "type": "short", "question": "5 + 5 + 5 + 5 = ? How many times did we add 5?", "answer": "5 + 5 + 5 + 5 = 20. We added 5 four times.", "explanation": "4 times 5 is 20." }
+      ]
+    },
+    {
+      "topic": "Understanding Times",
+      "easy": [
+        { "id": "ch11-t2-e1", "type": "mcq", "question": "3 times 2 means:", "options": ["3 + 2", "2 + 2 + 2", "3 + 3", "2 + 3"], "answer": "2 + 2 + 2", "explanation": "3 times 2 means adding 2 three times: 2 + 2 + 2 = 6." },
+        { "id": "ch11-t2-e2", "type": "fill", "question": "2 times 5 means 5 + 5 = ______.", "answer": "10", "explanation": "2 times 5 means adding 5 two times: 5 + 5 = 10." },
+        { "id": "ch11-t2-e3", "type": "mcq", "question": "4 times 2 = ?", "options": ["6", "8", "10", "4"], "answer": "8", "explanation": "4 times 2 means 2 + 2 + 2 + 2 = 8." }
+      ],
+      "medium": [
+        { "id": "ch11-t2-m1", "type": "short", "question": "A bus has 9 rows. Each row has 2 seats. How many seats are there? Write it as repeated addition.", "answer": "2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 18 seats. (9 times 2 is 18.)", "explanation": "9 rows of 2 seats each: we add 2 nine times." },
+        { "id": "ch11-t2-m2", "type": "mcq", "question": "5 times 3 = ?", "options": ["8", "10", "12", "15"], "answer": "15", "explanation": "5 times 3 means 3 + 3 + 3 + 3 + 3 = 15." }
+      ],
+      "hard": [
+        { "id": "ch11-t2-h1", "type": "long", "question": "There are 4 crates. Each crate has 5 water bottles. How many bottles are there in all? Write as repeated addition and also using 'times'.", "answer": "Repeated addition: 5 + 5 + 5 + 5 = 20 bottles. Using times: 4 times 5 is 20.", "explanation": "4 groups of 5 can be written as 5 + 5 + 5 + 5 = 20, or 4 times 5 = 20." }
+      ]
+    },
+    {
+      "topic": "Counting Things in Groups Around Us",
+      "easy": [
+        { "id": "ch11-t3-e1", "type": "mcq", "question": "How many wheels do 2 bicycles have? (Each bicycle has 2 wheels.)", "options": ["2", "3", "4", "6"], "answer": "4", "explanation": "2 bicycles with 2 wheels each: 2 + 2 = 4 wheels." },
+        { "id": "ch11-t3-e2", "type": "fill", "question": "Each hand has 5 fingers. 2 hands have ______ fingers.", "answer": "10", "explanation": "5 + 5 = 10 fingers on 2 hands." },
+        { "id": "ch11-t3-e3", "type": "mcq", "question": "A chair has 4 legs. How many legs do 2 chairs have?", "options": ["4", "6", "8", "10"], "answer": "8", "explanation": "2 chairs with 4 legs each: 4 + 4 = 8 legs." }
+      ],
+      "medium": [
+        { "id": "ch11-t3-m1", "type": "short", "question": "Each flower has 5 petals. There are 3 flowers. How many petals in all?", "answer": "5 + 5 + 5 = 15 petals.", "explanation": "3 groups of 5 petals: 5 + 5 + 5 = 15." },
+        { "id": "ch11-t3-m2", "type": "short", "question": "Cheenu bought 4 packs of erasers. Each pack has 2 erasers. How many erasers does he have?", "answer": "2 + 2 + 2 + 2 = 8 erasers.", "explanation": "4 packs of 2: 4 times 2 is 8." }
+      ],
+      "hard": [
+        { "id": "ch11-t3-h1", "type": "long", "question": "There are 5 bicycles parked outside. Each bicycle has 2 wheels. There are also 3 auto-rickshaws. Each auto has 3 wheels. How many wheels are there in all?", "answer": "Bicycle wheels: 2 + 2 + 2 + 2 + 2 = 10. Auto wheels: 3 + 3 + 3 = 9. Total wheels: 10 + 9 = 19.", "explanation": "We first count bicycle wheels (5 times 2 = 10), then auto wheels (3 times 3 = 9), then add both totals." }
+      ]
+    }
+  ]
+}

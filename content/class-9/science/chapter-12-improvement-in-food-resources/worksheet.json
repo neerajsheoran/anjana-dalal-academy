@@ -1,0 +1,147 @@
+{
+  "topics": [
+    {
+      "topic": "Crop Improvement and Production",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "What do we get from cereals?",
+          "options": ["Proteins", "Fats", "Carbohydrates", "Vitamins"],
+          "answer": "Carbohydrates",
+          "explanation": "Cereals like wheat, rice, maize provide carbohydrates for energy."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "fill",
+          "question": "Crops grown in the rainy season from June to October are called ______ crops.",
+          "answer": "kharif",
+          "explanation": "Kharif crops include paddy, maize, soyabean, cotton, and green gram."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is a rabi crop?",
+          "options": ["Paddy", "Maize", "Wheat", "Soyabean"],
+          "answer": "Wheat",
+          "explanation": "Wheat is a rabi crop grown in the winter season from November to April."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "mcq",
+          "question": "Hybridisation refers to:",
+          "options": ["Growing crops in water", "Crossing genetically dissimilar plants", "Adding fertilisers", "Removing weeds"],
+          "answer": "Crossing genetically dissimilar plants",
+          "explanation": "Hybridisation involves crossing different plant varieties to combine desirable traits."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "How do biotic and abiotic factors affect crop production?",
+          "answer": "Biotic factors include diseases (caused by bacteria, fungi, viruses), insects, and nematodes that attack crops and reduce yield. Abiotic factors include drought, salinity, waterlogging, heat, cold, and frost, which create stress conditions that reduce plant growth and crop production. Developing crop varieties resistant to these factors is important for stable production.",
+          "explanation": "Biotic means living organisms that cause damage; abiotic means non-living environmental conditions that cause stress."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "short",
+          "question": "What are the advantages of inter-cropping and crop rotation?",
+          "answer": "Inter-cropping: Growing two or more crops simultaneously in definite row patterns. It prevents pest and disease spread, uses nutrients and water more efficiently, and gives better total yield. Crop rotation: Growing different crops on the same land in successive seasons. It replenishes soil nutrients (e.g., legumes fix nitrogen), reduces pest buildup, and maintains soil fertility.",
+          "explanation": "Both practices help maintain soil health, reduce pest damage, and improve overall production."
+        },
+        {
+          "id": "ch12-t1-m3",
+          "type": "short",
+          "question": "What are macro-nutrients and why are they called so? How do plants get nutrients?",
+          "answer": "Macro-nutrients are nutrients required by plants in large quantities. They include nitrogen, phosphorus, potassium, calcium, magnesium, and sulphur. They are called macro-nutrients because plants need them in larger amounts compared to micro-nutrients. Plants get nutrients from three sources: air provides carbon and oxygen, water provides hydrogen, and soil provides the remaining thirteen nutrients (both macro and micro).",
+          "explanation": "Micro-nutrients like iron, zinc, boron are needed in small quantities but are equally essential for plant health."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "Compare the use of manure and fertilisers in maintaining soil fertility.",
+          "answer": "Manure: It is a natural, organic substance prepared by decomposing plant and animal waste. It provides nutrients in small quantities but enriches the soil with organic matter (humus). Manure improves soil structure, increases water-holding capacity in sandy soil, and helps drainage in clayey soil. It is cost-effective and environmentally friendly. Fertilisers: These are manufactured chemicals that provide specific nutrients (N, P, K) in concentrated form. They give quick results and increase crop production significantly. However, excessive use can damage soil structure, kill beneficial soil organisms, pollute water bodies (eutrophication), and reduce soil fertility over time. For sustainable agriculture, a balanced use of both manure and fertilisers is recommended, along with organic farming practices.",
+          "explanation": "While fertilisers give quick results, manure maintains long-term soil health. Organic farming combines both for sustainability."
+        },
+        {
+          "id": "ch12-t1-h2",
+          "type": "long",
+          "question": "What are the desirable agronomic characteristics for crop improvements?",
+          "answer": "Desirable agronomic characteristics vary by crop type: (1) For cereals, dwarfness is desirable so that less nutrients are consumed by the plant body and more go to grain production. (2) For fodder crops, tallness and profuse branching are desirable for more biomass. (3) Developing varieties with shorter maturity duration allows growing multiple crops in a year. (4) Uniform maturity makes harvesting easier and reduces losses. (5) Resistance to lodging (falling over) in cereals. (6) Good response to fertilisers to maximise yield. Developing varieties with these agronomic characters helps increase overall productivity.",
+          "explanation": "Agronomic characteristics are physical traits of the plant that directly affect its usefulness and yield."
+        }
+      ]
+    },
+    {
+      "topic": "Animal Husbandry",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "Poultry farming is undertaken to raise:",
+          "options": ["Cattle for milk", "Fish for food", "Chickens for eggs and meat", "Bees for honey"],
+          "answer": "Chickens for eggs and meat",
+          "explanation": "Poultry farming involves raising domestic fowl (chickens) for eggs (layers) and meat (broilers)."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "Bee-keeping is also known as ______.",
+          "answer": "apiculture",
+          "explanation": "Apiculture is the practice of maintaining bee colonies for honey and beeswax production."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "mcq",
+          "question": "Which of the following is an exotic breed of cattle?",
+          "options": ["Red Sindhi", "Sahiwal", "Jersey", "Gir"],
+          "answer": "Jersey",
+          "explanation": "Jersey and Holstein-Friesian are exotic (foreign) breeds known for high milk production. Red Sindhi, Sahiwal, and Gir are indigenous Indian breeds."
+        },
+        {
+          "id": "ch12-t2-e4",
+          "type": "mcq",
+          "question": "Growing 5-6 species of fish together in the same pond is called:",
+          "options": ["Mariculture", "Composite fish culture", "Capture fishing", "Aquaculture"],
+          "answer": "Composite fish culture",
+          "explanation": "In composite fish culture, different fish species are chosen so that they do not compete for food -- each feeds at a different level in the pond."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "What are the differences between roughage and concentrates in cattle feed?",
+          "answer": "Roughage is fibre-rich, bulky food with low nutrient content, such as green fodder, silage, hay, and legumes. It mainly provides fibre for digestion. Concentrates are nutrient-rich food with low fibre content, including grains (maize, oats, barley), oilcakes, and mineral mixtures. They provide proteins, fats, and energy. A balanced diet for cattle includes both roughage and concentrates.",
+          "explanation": "Cattle need both types of feed for proper nutrition -- roughage for fibre and concentrates for energy and proteins."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "short",
+          "question": "What is the advantage of composite fish culture?",
+          "answer": "In composite fish culture, 5-6 different species of fish are grown together in the same pond. The advantage is that different species feed at different levels and on different types of food, so they do not compete with each other. For example, catla feeds on the surface, rohu feeds in the middle zone, mrigal and common carp feed at the bottom, and grass carp feeds on weeds. This makes efficient use of the entire pond space and available food, resulting in higher total fish yield.",
+          "explanation": "Composite fish culture maximises productivity by utilising all the ecological niches in a pond."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "How are cattle cross-bred to produce improved varieties? What are the desired traits for dairy animals?",
+          "answer": "Cross-breeding involves mating indigenous (Indian) breeds with exotic (foreign) breeds to combine the desirable traits of both. Indigenous breeds like Red Sindhi and Sahiwal are disease-resistant and well-adapted to local climatic conditions but produce less milk. Exotic breeds like Jersey and Holstein-Friesian produce large quantities of milk but may not be as disease-resistant in Indian conditions. Cross-breeding aims to produce cattle with high milk yield from exotic breeds and disease resistance and adaptability from indigenous breeds. Desired traits for dairy animals include: long lactation period (time during which milk is produced), high milk yield per lactation, resistance to diseases, ability to thrive on locally available feed, and good reproductive performance.",
+          "explanation": "Cross-breeding is a key strategy in India's White Revolution to improve milk production while maintaining disease resistance."
+        },
+        {
+          "id": "ch12-t2-h2",
+          "type": "long",
+          "question": "Discuss the factors for which variety improvement of crops is done. Give examples.",
+          "answer": "Variety improvement is done for the following factors: (1) Higher yield -- more production per unit area. (2) Improved quality -- better baking quality in wheat, more protein in pulses, better oil quality in oilseeds. (3) Biotic resistance -- resistance to diseases (caused by fungi, bacteria, viruses), insects, and nematodes that reduce crop production. (4) Abiotic resistance -- tolerance to drought, salinity, waterlogging, heat, cold, and frost. (5) Shorter maturity duration -- allows multiple cropping per year, reduces cost, and ensures uniform maturity for easier harvesting. (6) Wider adaptability -- varieties that grow well in diverse climatic and soil conditions. (7) Desirable agronomic characteristics -- dwarfness in cereals (saves nutrients for grain), tallness in fodder crops (more biomass). These improvements are achieved through hybridisation (crossing different varieties) and genetic modification.",
+          "explanation": "All these factors together contribute to developing crop varieties that give higher and more stable yields across different conditions."
+        }
+      ]
+    }
+  ]
+}

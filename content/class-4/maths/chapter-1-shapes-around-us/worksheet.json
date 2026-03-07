@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "3D Shapes: Prisms, Pyramids, and Euler's Formula",
+      "easy": [
+        { "id": "ch1-t1-e1", "type": "mcq", "question": "A prism has two identical flat faces called bases. What shape are the side faces of every prism?", "options": ["Triangles", "Circles", "Rectangles", "Hexagons"], "answer": "Rectangles", "explanation": "All prisms have rectangular faces on their sides. The shape of the base tells us the name of the prism." },
+        { "id": "ch1-t1-e2", "type": "fill", "question": "A cube has ______ faces, ______ edges, and ______ corners.", "answer": "6, 12, 8", "explanation": "A cube has 6 square faces, 12 edges, and 8 corners (vertices)." },
+        { "id": "ch1-t1-e3", "type": "mcq", "question": "All the side faces of a pyramid are which shape?", "options": ["Squares", "Rectangles", "Triangles", "Circles"], "answer": "Triangles", "explanation": "A pyramid has one base and all other faces are triangles that meet at a single point at the top." },
+        { "id": "ch1-t1-e4", "type": "fill", "question": "Euler's formula says F + V - E = ______.", "answer": "2", "explanation": "Euler's formula states that Faces + Vertices - Edges = 2 for any 3D shape." }
+      ],
+      "medium": [
+        { "id": "ch1-t1-m1", "type": "short", "question": "A square pyramid has 5 faces and 5 corners. Use Euler's formula (F + V - E = 2) to find the number of edges.", "answer": "F + V - E = 2, so 5 + 5 - E = 2, which means E = 8. A square pyramid has 8 edges.", "explanation": "Substitute F=5 and V=5 into the formula: 10 - E = 2, so E = 8." },
+        { "id": "ch1-t1-m2", "type": "mcq", "question": "Which 3D shape has a triangular base and 4 faces in total?", "options": ["Triangular prism", "Square pyramid", "Triangular pyramid", "Cube"], "answer": "Triangular pyramid", "explanation": "A triangular pyramid has a triangle as its base and 3 more triangular faces, totalling 4 faces." },
+        { "id": "ch1-t1-m3", "type": "short", "question": "What is a net of a 3D shape? Describe the net of a cube.", "answer": "A net is what you get when you unfold a 3D shape and lay it flat. A cube's net has 6 connected squares arranged in a cross-like pattern.", "explanation": "When you unfold a cube, you see 6 squares connected to each other. Folding the net along the lines recreates the cube." }
+      ],
+      "hard": [
+        { "id": "ch1-t1-h1", "type": "long", "question": "The Qutub Minar looks like a tall cylinder. How is a cylinder different from a prism? Why is a cylinder not usually called a prism even though it has two identical bases?", "answer": "A prism has flat rectangular side faces and a polygon (shape with straight sides) as its base. A cylinder has a curved side face and circles as its bases. Since circles are not polygons (they have no straight sides), a cylinder is not a prism.", "explanation": "Prisms require flat polygonal bases and flat rectangular sides. Cylinders have curved surfaces and circular bases." }
+      ]
+    },
+    {
+      "topic": "Angles and Circles",
+      "easy": [
+        { "id": "ch1-t2-e1", "type": "mcq", "question": "What is an angle that is exactly like the corner of a book called?", "options": ["Acute angle", "Right angle", "Obtuse angle", "Straight angle"], "answer": "Right angle", "explanation": "A right angle is exactly 90 degrees, like the corner of a book or window." },
+        { "id": "ch1-t2-e2", "type": "fill", "question": "An angle smaller than a right angle is called an ______ angle.", "answer": "acute", "explanation": "An acute angle is smaller than a right angle (less than 90 degrees)." },
+        { "id": "ch1-t2-e3", "type": "mcq", "question": "If the radius of a circle is 5 cm, what is the diameter?", "options": ["2.5 cm", "5 cm", "10 cm", "15 cm"], "answer": "10 cm", "explanation": "Diameter = 2 x Radius = 2 x 5 = 10 cm." },
+        { "id": "ch1-t2-e4", "type": "fill", "question": "The distance from the centre of a circle to its edge is called the ______.", "answer": "radius", "explanation": "The radius is the distance from the centre to any point on the circle's boundary." }
+      ],
+      "medium": [
+        { "id": "ch1-t2-m1", "type": "short", "question": "Why is a triangle the most rigid shape? What happens when you push a rectangle made of straws?", "answer": "A triangle does not change shape when pushed because its angles are fixed. A rectangle made of straws can be pushed into a slanted shape (parallelogram) because its angles can change.", "explanation": "Triangles keep their form, which is why they are used in bridges and buildings for strength." },
+        { "id": "ch1-t2-m2", "type": "short", "question": "A truck wheel has a radius of 50 cm and a bicycle wheel has a radius of 30 cm. What is the diameter of each? Which wheel is bigger?", "answer": "Truck wheel diameter = 2 x 50 = 100 cm. Bicycle wheel diameter = 2 x 30 = 60 cm. The truck wheel is bigger.", "explanation": "Diameter = 2 x Radius. The truck wheel has a larger radius, so it is bigger." }
+      ],
+      "hard": [
+        { "id": "ch1-t2-h1", "type": "long", "question": "A pentagon has 5 sides and 5 angles. A hexagon has 6 sides. How many angles does a hexagon have? If you make a hexagonal prism, how many faces, edges, and corners will it have? Verify using Euler's formula.", "answer": "A hexagon has 6 angles (number of sides = number of angles). A hexagonal prism has 8 faces (2 hexagons + 6 rectangles), 18 edges, and 12 corners. Euler's check: 8 + 12 - 18 = 2. Correct!", "explanation": "A hexagonal prism has 2 hexagonal bases + 6 rectangular side faces = 8 faces. Each hexagon has 6 edges, plus 6 vertical edges = 18. Each hexagon has 6 corners = 12 total." },
+        { "id": "ch1-t2-h2", "type": "long", "question": "Look around your home and find one example each of an acute angle, a right angle, and an obtuse angle. Describe where you found each.", "answer": "Examples: Acute angle - the tip of a pair of scissors when slightly open. Right angle - the corner of a table or book. Obtuse angle - a reclining chair leaning back, or a fully opened door against the wall.", "explanation": "Acute angles are less than 90 degrees, right angles are exactly 90 degrees, and obtuse angles are greater than 90 degrees." }
+      ]
+    }
+  ]
+}

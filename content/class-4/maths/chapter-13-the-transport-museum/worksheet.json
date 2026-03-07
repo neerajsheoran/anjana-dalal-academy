@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Multiplying by 10, 100, and Bigger Numbers",
+      "easy": [
+        { "id": "ch13-t1-e1", "type": "mcq", "question": "What is 26 x 10?", "options": ["26", "260", "2060", "2600"], "answer": "260", "explanation": "Multiplying by 10 adds a zero to the end: 26 x 10 = 260." },
+        { "id": "ch13-t1-e2", "type": "fill", "question": "53 x 100 = ______.", "answer": "5300", "explanation": "Multiplying by 100 adds two zeros: 53 x 100 = 5300." },
+        { "id": "ch13-t1-e3", "type": "mcq", "question": "What is 12 x 20?", "options": ["120", "240", "1200", "2400"], "answer": "240", "explanation": "12 x 20 = 12 x 2 x 10 = 24 x 10 = 240." },
+        { "id": "ch13-t1-e4", "type": "fill", "question": "5 x 500 = ______.", "answer": "2500", "explanation": "5 x 500 = 5 x 5 x 100 = 25 x 100 = 2500." }
+      ],
+      "medium": [
+        { "id": "ch13-t1-m1", "type": "short", "question": "Build the times-15 table for 1 to 5. Use the split method: 15 = 10 + 5.", "answer": "1x15=15, 2x15=30, 3x15=45, 4x15=60, 5x15=75.", "explanation": "For each: multiply by 10 and by 5 separately, then add. E.g., 3x15 = 3x10 + 3x5 = 30+15 = 45." },
+        { "id": "ch13-t1-m2", "type": "short", "question": "What is 15 x 14 using the grid method?", "answer": "Split 15 = 10+5 and 14 = 10+4. Grid: 10x10=100, 10x4=40, 5x10=50, 5x4=20. Total: 100+40+50+20 = 210.", "explanation": "The grid method breaks each number into parts, multiplies each pair, and adds all results." },
+        { "id": "ch13-t1-m3", "type": "mcq", "question": "What is 600 / 10?", "options": ["6", "60", "600", "6000"], "answer": "60", "explanation": "Dividing by 10 removes one zero: 600 / 10 = 60." }
+      ],
+      "hard": [
+        { "id": "ch13-t1-h1", "type": "long", "question": "The Punjab Mail train has 24 coaches, each carrying 72 passengers. What is the total capacity? Use the grid method to solve 24 x 72.", "answer": "Split: 24 = 20+4, 72 = 70+2. Grid: 20x70=1400, 20x2=40, 4x70=280, 4x2=8. Total: 1400+40+280+8 = 1728 passengers.", "explanation": "Grid method: multiply each combination of parts and add. 1400+40+280+8=1728." }
+      ]
+    },
+    {
+      "topic": "Division with 2-Digit Divisors",
+      "easy": [
+        { "id": "ch13-t2-e1", "type": "mcq", "question": "What is 60 / 10?", "options": ["6", "60", "600", "0"], "answer": "6", "explanation": "Dividing by 10 removes one zero from the end: 60 / 10 = 6." },
+        { "id": "ch13-t2-e2", "type": "fill", "question": "1000 / 10 = ______.", "answer": "100", "explanation": "1000 divided by 10 removes one zero: 1000 / 10 = 100." },
+        { "id": "ch13-t2-e3", "type": "mcq", "question": "400 / 100 = ?", "options": ["4", "40", "400", "4000"], "answer": "4", "explanation": "Dividing by 100 removes two zeros: 400 / 100 = 4." }
+      ],
+      "medium": [
+        { "id": "ch13-t2-m1", "type": "short", "question": "324 children need coaches with 14 seats each. How many coaches are needed? Will there be any children left over?", "answer": "324 / 14: Take 10 coaches = 140 children (184 left). Take 10 more = 140 (44 left). Take 3 more = 42 (2 left). Total: 23 coaches with 2 children remaining. So 24 coaches are needed.", "explanation": "Using partial quotients: 10+10+3 = 23 coaches for 322 children. 2 children remain, so 1 more coach is needed = 24 total." },
+        { "id": "ch13-t2-m2", "type": "short", "question": "Doubling one factor and halving the other gives the same product. Show this with 44 x 10 and 22 x 20.", "answer": "44 x 10 = 440. 22 x 20 = 440. Both give 440! 44 is halved to 22, and 10 is doubled to 20.", "explanation": "This works because halving one factor and doubling the other keeps the product constant." }
+      ],
+      "hard": [
+        { "id": "ch13-t2-h1", "type": "long", "question": "The snake-boat race in Kerala has 960 participants. Each boat holds 64 paddlers. How many boats are needed? Show your working using the partial quotient method.", "answer": "Step 1: 10 boats x 64 = 640 paddlers. Remaining: 960-640 = 320. Step 2: 5 boats x 64 = 320 paddlers. Remaining: 320-320 = 0. Total: 10+5 = 15 boats. No remainder.", "explanation": "Partial quotients: subtract large groups first. 10 boats handle 640, leaving 320. 5 boats handle 320. Total: 15 boats exactly." },
+        { "id": "ch13-t2-h2", "type": "long", "question": "A toy train has 15 coaches with 14 children per coach. What is the total capacity? If 190 children want to ride, how many trips does the train need to make?", "answer": "Total capacity per trip: 15 x 14 = 210 children. 190 children want to ride. Since 190 < 210, only 1 trip is needed. There would be 210 - 190 = 20 empty seats.", "explanation": "15 x 14 = 210 capacity. 190 < 210, so all children fit in 1 trip." }
+      ]
+    }
+  ]
+}

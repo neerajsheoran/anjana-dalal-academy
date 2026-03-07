@@ -1,0 +1,200 @@
+{
+  "topics": [
+    {
+      "topic": "Turns and Types of Angles",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "A quarter turn is the same as which type of angle?",
+          "options": ["Acute angle", "Right angle", "Obtuse angle", "Straight angle"],
+          "answer": "Right angle",
+          "explanation": "A right angle is exactly a quarter turn (1/4 turn). It looks like the corner of a book or square."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "An angle that is less than a right angle is called an ______ angle.",
+          "answer": "acute",
+          "explanation": "An acute angle is less than a right angle (less than a quarter turn). It is a small, sharp angle."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "A straight angle is equal to how much of a full turn?",
+          "options": ["1/4 turn", "1/3 turn", "1/2 turn", "Full turn"],
+          "answer": "1/2 turn",
+          "explanation": "A straight angle is exactly a half turn. It looks like a straight line (180 degrees)."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "short",
+          "question": "Name the type of angle that is more than a right angle but less than a straight angle.",
+          "answer": "Obtuse angle",
+          "explanation": "An obtuse angle is between a right angle (1/4 turn) and a straight angle (1/2 turn). Think of a fan opened wide."
+        },
+        {
+          "id": "ch3-t1-e5",
+          "type": "fill",
+          "question": "4 quarter turns = 1 ______ turn.",
+          "answer": "full",
+          "explanation": "4 quarter turns make a complete circle, bringing you back to the start. 4 × 1/4 = 1 full turn."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "How many right angles are there in a full turn? Explain.",
+          "answer": "4 right angles. A full turn = 4 quarter turns, and each quarter turn is one right angle.",
+          "explanation": "A right angle = 1/4 turn. A full turn = 4 × (1/4 turn) = 4 right angles."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "mcq",
+          "question": "Which of these is an example of a right angle in daily life?",
+          "options": ["A bird's beak", "The corner of a book", "A fan opened wide", "A straight road"],
+          "answer": "The corner of a book",
+          "explanation": "The corner of a book forms a perfect right angle (90 degrees). A bird's beak is acute, a fan opened wide is obtuse, and a straight road is a straight angle."
+        },
+        {
+          "id": "ch3-t1-m3",
+          "type": "short",
+          "question": "Raju says two acute angles together can sometimes make a right angle. Is he correct? Give an example.",
+          "answer": "Yes, Raju is correct. For example, two angles that are each 1/8 turn are both acute, and together they make 1/8 + 1/8 = 1/4 turn = one right angle.",
+          "explanation": "Two small acute turns can add up to a quarter turn (right angle). If both acute angles are very small, their sum might still be acute. But if they are bigger, they can sum to a right angle or even an obtuse angle."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "A clock's minute hand starts at 12. It moves for 20 minutes. Describe the angle it has turned through in terms of a fraction of a full turn, and state whether this angle is acute, right, obtuse, or straight.",
+          "answer": "In 60 minutes, the minute hand completes 1 full turn. In 20 minutes, it completes 20/60 = 1/3 of a full turn. Since 1/3 turn is more than 1/4 turn (right angle) but less than 1/2 turn (straight angle), it is an obtuse angle.",
+          "explanation": "20 minutes out of 60 = 1/3 turn. A right angle is 1/4 turn and a straight angle is 1/2 turn. Since 1/4 < 1/3 < 1/2, the angle is obtuse."
+        }
+      ]
+    },
+    {
+      "topic": "Clockwise, Anti-clockwise, and Directions",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "If you are facing North and make a quarter turn clockwise, which direction do you face?",
+          "options": ["South", "East", "West", "North"],
+          "answer": "East",
+          "explanation": "A quarter turn clockwise from North takes you to East. Think of the direction the clock hands move."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "Opening a bottle cap usually requires turning it in the ______ direction.",
+          "answer": "anti-clockwise",
+          "explanation": "To open a bottle cap or a tap, you usually turn it anti-clockwise (opposite to the direction clock hands move)."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "If you face North and make a half turn, which direction do you now face?",
+          "options": ["East", "West", "South", "North"],
+          "answer": "South",
+          "explanation": "A half turn from any direction takes you to the opposite direction. North → South."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "short",
+          "question": "What is the difference between clockwise and anti-clockwise?",
+          "answer": "Clockwise is the direction in which clock hands move (right, down, left, up). Anti-clockwise is the opposite direction.",
+          "explanation": "Clockwise follows the same direction as the hands of a clock. Anti-clockwise (counter-clockwise) goes in the reverse direction."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "A soldier faces East. He makes a 3/4 turn clockwise. Which direction does he now face?",
+          "answer": "North",
+          "explanation": "Starting from East, a 3/4 clockwise turn: East → South (1/4) → West (1/2) → North (3/4). He now faces North."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "mcq",
+          "question": "How many quarter turns anti-clockwise should you make from South to reach East?",
+          "options": ["1", "2", "3", "4"],
+          "answer": "1",
+          "explanation": "Anti-clockwise from South: South → East is one quarter turn anti-clockwise. (Anti-clockwise goes South → East → North → West.)"
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Priya is playing a direction game. She starts facing North. She makes a quarter turn clockwise, then a half turn anti-clockwise, then another quarter turn clockwise. Which direction is she facing now? Trace each step.",
+          "answer": "Step 1: North → quarter turn clockwise → East. Step 2: East → half turn anti-clockwise → West. Step 3: West → quarter turn clockwise → North. Priya ends up facing North again.",
+          "explanation": "Starting North: 1/4 clockwise = East. From East: 1/2 anti-clockwise = West (East → North → West, going anti-clockwise past 2 quarter turns). Wait: 1/2 turn from East anti-clockwise: East → North (1/4) → West (1/2). Yes, West. From West: 1/4 clockwise = North."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "The minute hand of a clock is pointing at 3. It moves for 30 minutes. What number does it now point to? How many quarter turns did it make? In which direction?",
+          "answer": "Starting at 3, after 30 minutes (half turn), the minute hand points at 9. It made 2 quarter turns in the clockwise direction.",
+          "explanation": "30 minutes = 1/2 turn. From 3, moving clockwise halfway around the clock face = 9. A half turn = 2 quarter turns, and clock hands always move clockwise."
+        }
+      ]
+    },
+    {
+      "topic": "Angles and the Clock",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "In 15 minutes, the minute hand of a clock makes what fraction of a full turn?",
+          "options": ["1/2 turn", "1/3 turn", "1/4 turn", "1/6 turn"],
+          "answer": "1/4 turn",
+          "explanation": "The minute hand completes a full turn in 60 minutes. 15 minutes = 15/60 = 1/4 of a full turn."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "The minute hand takes ______ minutes to complete a full turn.",
+          "answer": "60",
+          "explanation": "The minute hand goes around once every 60 minutes (1 hour)."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "short",
+          "question": "In 5 minutes, what fraction of a full turn does the minute hand make?",
+          "answer": "1/12 of a full turn",
+          "explanation": "5 out of 60 minutes = 5/60 = 1/12 of a full turn."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "The minute hand moves from 12 to 9. How many minutes have passed and what fraction of a turn is this?",
+          "answer": "45 minutes have passed. This is 3/4 of a full turn.",
+          "explanation": "From 12 to 9 clockwise covers 9 × 5 = 45 minutes. 45/60 = 3/4 of a full turn."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "mcq",
+          "question": "If the minute hand makes 1/6 of a turn, how many minutes have passed?",
+          "options": ["5 minutes", "10 minutes", "15 minutes", "20 minutes"],
+          "answer": "10 minutes",
+          "explanation": "1/6 of 60 minutes = 60 ÷ 6 = 10 minutes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "Riya starts her Diwali puja at 6:00 PM. The puja lasts 45 minutes. How many quarter turns does the minute hand make during the puja? What time does it end? At the end, is the angle formed by the minute hand (from 12 o'clock position) acute, right, obtuse, or straight?",
+          "answer": "45 minutes = 3 quarter turns. The puja ends at 6:45 PM. At 6:45, the minute hand is at 9, which is 3/4 of a full turn from 12. The angle from the 12 o'clock position is 3/4 turn, which is larger than a straight angle (1/2 turn) — so it is a reflex-type angle (more than 2 right angles). However, if we consider the smaller angle between the 12 and 9 positions, it is a right angle (1/4 turn) measured on the other side.",
+          "explanation": "45 minutes ÷ 15 minutes per quarter turn = 3 quarter turns. Start 6:00 + 45 min = 6:45 PM. The minute hand at 9 has covered 3/4 of the clock face from 12."
+        }
+      ]
+    }
+  ]
+}

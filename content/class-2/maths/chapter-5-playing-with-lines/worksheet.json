@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "topic": "Types of Lines",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "A standing line goes ______.", "options": ["Left and right", "Up and down", "At an angle", "In a curve"], "answer": "Up and down", "explanation": "A standing line (vertical line) goes straight up and down, like a pole." },
+        { "id": "ch5-t1-e2", "type": "mcq", "question": "A sleeping line goes ______.", "options": ["Up and down", "Left and right", "At an angle", "In a curve"], "answer": "Left and right", "explanation": "A sleeping line (horizontal line) goes straight from left to right, like the ground." },
+        { "id": "ch5-t1-e3", "type": "fill", "question": "A rainbow is an example of a ______ line.", "answer": "curved", "explanation": "A rainbow bends smoothly, making it a curved line." },
+        { "id": "ch5-t1-e4", "type": "mcq", "question": "A ladder leaning against a wall makes a ______ line.", "options": ["Standing", "Sleeping", "Slanting", "Curved"], "answer": "Slanting", "explanation": "A leaning ladder goes at an angle, which is a slanting (diagonal) line." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "Name the four types of lines and give one example of each.", "answer": "1. Standing line (pillar). 2. Sleeping line (ruler on a table). 3. Slanting line (ladder on a wall). 4. Curved line (rainbow).", "explanation": "Lines can be vertical, horizontal, diagonal, or curved." },
+        { "id": "ch5-t1-m2", "type": "mcq", "question": "Which of these lines is NOT straight?", "options": ["Standing line", "Sleeping line", "Slanting line", "Curved line"], "answer": "Curved line", "explanation": "Standing, sleeping, and slanting lines are all straight. Only curved lines bend." },
+        { "id": "ch5-t1-m3", "type": "short", "question": "What kind of lines can you find in the letter L?", "answer": "The letter L has a standing line (going down) and a sleeping line (going right).", "explanation": "Letters are made of different types of lines." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "Look at a house. What types of lines do you see in its walls, floor, roof, and doorknob?", "answer": "Walls: standing lines. Floor: sleeping lines. Roof: slanting lines. Doorknob or arch: curved lines.", "explanation": "Buildings have all four types of lines in different parts." }
+      ]
+    },
+    {
+      "topic": "Lines in Letters and Nature",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "The letter V is made of ______ lines.", "options": ["Standing", "Sleeping", "Slanting", "Curved"], "answer": "Slanting", "explanation": "The letter V has two slanting lines meeting at a point." },
+        { "id": "ch5-t2-e2", "type": "mcq", "question": "The letter O is made of ______ lines.", "options": ["Standing", "Sleeping", "Slanting", "Curved"], "answer": "Curved", "explanation": "The letter O is round and made of curved lines." },
+        { "id": "ch5-t2-e3", "type": "fill", "question": "A tall tree trunk makes a ______ line.", "answer": "standing", "explanation": "A tree trunk goes straight up and down, like a standing (vertical) line." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "What types of lines does the letter T have?", "answer": "The letter T has a standing line (going down) and a sleeping line (going across the top).", "explanation": "T is made by combining vertical and horizontal lines." },
+        { "id": "ch5-t2-m2", "type": "short", "question": "A hill slope is what type of line? A river from above shows what type of line?", "answer": "A hill slope is a slanting line. A river from above shows a curved line.", "explanation": "Slopes go at an angle (slanting) and rivers bend smoothly (curved)." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "long", "question": "Name an Indian art form that uses lines. What types of lines does it use?", "answer": "Madhubani painting from Bihar uses both straight and curved lines to draw fish, birds, and flowers. Warli painting from Maharashtra uses straight lines to make triangles and circles.", "explanation": "Indian art forms like Madhubani, Warli, and Kalamkari use different types of lines to create beautiful patterns." }
+      ]
+    },
+    {
+      "topic": "Lines from Paper Folding",
+      "easy": [
+        { "id": "ch5-t3-e1", "type": "mcq", "question": "When you fold a piece of paper, the fold creates a line called a ______.", "options": ["Curve", "Crease", "Circle", "Corner"], "answer": "Crease", "explanation": "The line made when you fold paper is called a crease." },
+        { "id": "ch5-t3-e2", "type": "fill", "question": "If you hold a thread tightly and pull it straight, it makes a ______ line.", "answer": "straight", "explanation": "A tightly pulled thread makes a straight line." },
+        { "id": "ch5-t3-e3", "type": "mcq", "question": "If you bring your hands closer and the thread hangs down, it makes a ______ line.", "options": ["Straight", "Standing", "Curved", "Slanting"], "answer": "Curved", "explanation": "When a thread hangs loosely, it bends and makes a curved line." }
+      ],
+      "medium": [
+        { "id": "ch5-t3-m1", "type": "short", "question": "If you fold a paper once from top to bottom, what type of crease do you get?", "answer": "A standing (vertical) crease line going from top to bottom.", "explanation": "The crease follows the direction of the fold." },
+        { "id": "ch5-t3-m2", "type": "short", "question": "Can you get a slanting crease line from folding paper?", "answer": "Yes, if you fold the paper diagonally (from one corner to the opposite corner), you get a slanting crease.", "explanation": "Different folds create different types of creases: standing, sleeping, or slanting." }
+      ],
+      "hard": [
+        { "id": "ch5-t3-h1", "type": "long", "question": "You fold a paper from left to right, then from top to bottom. How many crease lines do you get? What types are they?", "answer": "You get 2 crease lines. The first fold (left to right) makes a standing crease. The second fold (top to bottom) makes a sleeping crease.", "explanation": "Each fold creates one crease line. The direction of the fold determines the type of line." }
+      ]
+    }
+  ]
+}

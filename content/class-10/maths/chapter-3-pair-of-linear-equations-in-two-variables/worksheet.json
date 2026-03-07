@@ -1,0 +1,190 @@
+{
+  "topics": [
+    {
+      "topic": "Graphical Method and Consistency of Linear Equations",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "A pair of linear equations which has no solution is called:",
+          "options": ["Consistent", "Inconsistent", "Dependent", "Independent"],
+          "answer": "Inconsistent",
+          "explanation": "A pair of linear equations which has no solution is called an inconsistent pair. The lines are parallel and never intersect."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "If two lines are coincident, the pair of equations has ______ many solutions.",
+          "answer": "infinitely",
+          "explanation": "Coincident lines overlap completely, so every point on one line is also on the other, giving infinitely many solutions."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "If a1/a2 = b1/b2 but not equal to c1/c2 for the pair a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0, then the lines are:",
+          "options": ["Intersecting", "Coincident", "Parallel", "Perpendicular"],
+          "answer": "Parallel",
+          "explanation": "When a1/a2 = b1/b2 but this ratio is not equal to c1/c2, the lines are parallel and the system has no solution."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "mcq",
+          "question": "If a1/a2 is not equal to b1/b2, the pair of linear equations has:",
+          "options": ["No solution", "Infinitely many solutions", "Exactly one solution", "Exactly two solutions"],
+          "answer": "Exactly one solution",
+          "explanation": "When a1/a2 is not equal to b1/b2, the lines intersect at exactly one point, giving a unique solution."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Check whether the following pair of equations is consistent or inconsistent: x + 3y = 6 and 2x - 3y = 12.",
+          "answer": "Consistent. The lines intersect at the point (6, 0).",
+          "explanation": "Step 1: a1/a2 = 1/2, b1/b2 = 3/(-3) = -1. Since 1/2 is not equal to -1, the lines intersect.\nStep 2: The system is consistent with a unique solution.\nStep 3: Adding: 3x = 18, so x = 6. Substituting: 6 + 3y = 6, so y = 0."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "Determine graphically whether the pair of equations 2x + 3y - 9 = 0 and 4x + 6y - 18 = 0 is consistent. State the type of lines.",
+          "answer": "Consistent (dependent). The lines are coincident with infinitely many solutions.",
+          "explanation": "Step 1: a1/a2 = 2/4 = 1/2, b1/b2 = 3/6 = 1/2, c1/c2 = -9/-18 = 1/2.\nStep 2: Since a1/a2 = b1/b2 = c1/c2, the lines are coincident.\nStep 3: The system is consistent (dependent) with infinitely many solutions."
+        },
+        {
+          "id": "ch3-t1-m3",
+          "type": "short",
+          "question": "Half the perimeter of a rectangular garden, whose length is 4 m more than its width, is 36 m. Find the dimensions of the garden graphically.",
+          "answer": "Length = 20 m and breadth = 16 m.",
+          "explanation": "Step 1: Let length = x and breadth = y.\nStep 2: x = y + 4 (length is 4 more than width).\nStep 3: x + y = 36 (half perimeter).\nStep 4: From equation 1: x - y = 4.\nStep 5: Adding: 2x = 40, so x = 20. Then y = 16."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Draw the graphs of the equations x - y + 1 = 0 and 3x + 2y - 12 = 0. Determine the coordinates of the vertices of the triangle formed by these lines and the x-axis.",
+          "answer": "Vertices of the triangle are (-1, 0), (4, 0) and (2, 3).",
+          "explanation": "Step 1: Line 1: x - y + 1 = 0, i.e., y = x + 1. It meets the x-axis (y = 0) at x = -1, giving (-1, 0).\nStep 2: Line 2: 3x + 2y - 12 = 0, i.e., y = (12 - 3x)/2. It meets the x-axis at 3x = 12, x = 4, giving (4, 0).\nStep 3: Intersection of the two lines: Substitute y = x + 1 into 3x + 2(x + 1) = 12.\n3x + 2x + 2 = 12, so 5x = 10, x = 2, y = 3.\nStep 4: The three vertices are (-1, 0), (4, 0), and (2, 3)."
+        }
+      ]
+    },
+    {
+      "topic": "Algebraic Methods of Solving Linear Equations",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Solve: x + y = 14 and x - y = 4. The value of x is:",
+          "options": ["5", "9", "10", "7"],
+          "answer": "9",
+          "explanation": "Adding the equations: 2x = 18, so x = 9. Subtracting: 2y = 10, so y = 5."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "If x = 9 and y = 5 satisfy the equation x + y = ______.",
+          "answer": "14",
+          "explanation": "Substituting: 9 + 5 = 14."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "short",
+          "question": "Solve: x + y = 14 and x - y = 4 by the substitution method.",
+          "answer": "x = 9, y = 5",
+          "explanation": "Step 1: From equation 2: x = y + 4.\nStep 2: Substitute in equation 1: (y + 4) + y = 14, so 2y = 10, y = 5.\nStep 3: x = 5 + 4 = 9."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "short",
+          "question": "Solve by substitution: s - t = 3 and s/3 + t/2 = 6.",
+          "answer": "s = 9, t = 6",
+          "explanation": "Step 1: From equation 1: s = t + 3.\nStep 2: Substitute: (t + 3)/3 + t/2 = 6. Multiply by 6: 2(t + 3) + 3t = 36.\nStep 3: 2t + 6 + 3t = 36, so 5t = 30, t = 6.\nStep 4: s = 6 + 3 = 9."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Solve using elimination method: 3x + 4y = -6 and 5x - 4y = 14.",
+          "answer": "x = 1, y = -9/4",
+          "explanation": "Step 1: Add both equations: (3x + 4y) + (5x - 4y) = -6 + 14, so 8x = 8, x = 1.\nStep 2: Substitute x = 1 in equation 1: 3(1) + 4y = -6, 4y = -9, y = -9/4."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "long",
+          "question": "The sum of a two-digit number and the number obtained by reversing the digits is 66. If the digits of the number differ by 2, find the number. How many such numbers are there?",
+          "answer": "The numbers are 40 or 24 (two such numbers exist).",
+          "explanation": "Step 1: Let the ten's digit be x and the unit's digit be y. The number is 10x + y.\nStep 2: Reversed number = 10y + x.\nStep 3: (10x + y) + (10y + x) = 66, so 11x + 11y = 66, x + y = 6.\nStep 4: |x - y| = 2, so x - y = 2 or x - y = -2.\nCase 1: x + y = 6 and x - y = 2 gives x = 4, y = 2. Number = 42.\nCase 2: x + y = 6 and x - y = -2 gives x = 2, y = 4. Number = 24.\nThere are 2 such numbers: 42 and 24."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "A fraction becomes 1/3 when 1 is subtracted from the numerator and it becomes 1/4 when 8 is added to its denominator. Find the fraction.",
+          "answer": "The fraction is 5/12.",
+          "explanation": "Step 1: Let the fraction be x/y.\nStep 2: (x - 1)/y = 1/3, so 3(x - 1) = y, i.e., 3x - 3 = y ... (1)\nStep 3: x/(y + 8) = 1/4, so 4x = y + 8, i.e., 4x - y = 8 ... (2)\nStep 4: Substitute y = 3x - 3 from (1) into (2): 4x - (3x - 3) = 8, x + 3 = 8, x = 5.\nStep 5: y = 3(5) - 3 = 12.\nStep 6: The fraction is 5/12."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "Places A and B are 100 km apart on a highway. One car starts from A and another from B at the same time. If the cars travel in the same direction at different speeds, they meet in 5 hours. If they travel towards each other, they meet in 1 hour. What are the speeds of the two cars?",
+          "answer": "Speed of car from A = 60 km/h, speed of car from B = 40 km/h.",
+          "explanation": "Step 1: Let speed of car from A = x km/h and from B = y km/h (x > y).\nStep 2: Same direction: In 5 hours, car A covers 5x km and car B covers 5y km. 5x - 5y = 100, so x - y = 20 ... (1)\nStep 3: Opposite direction: x + y = 100/1 = 100 ... (2)\nStep 4: Adding (1) and (2): 2x = 120, x = 60.\nStep 5: y = 100 - 60 = 40.\nStep 6: Speeds are 60 km/h and 40 km/h."
+        }
+      ]
+    },
+    {
+      "topic": "Cross-Multiplication and Word Problems",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "The pair of equations x + 2y - 4 = 0 and 2x + 4y - 12 = 0 represents:",
+          "options": ["Intersecting lines", "Coincident lines", "Parallel lines", "Perpendicular lines"],
+          "answer": "Parallel lines",
+          "explanation": "a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = -4/-12 = 1/3. Since a1/a2 = b1/b2 but not equal to c1/c2, the lines are parallel."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "If the pair of equations 2x + 3y = 7 and (a+b)x + (2a-b)y = 21 has infinitely many solutions, and a1/a2 = b1/b2 = c1/c2, then 2/(a+b) = 3/(2a-b) = 7/21 = ______.",
+          "answer": "1/3",
+          "explanation": "7/21 simplifies to 1/3. For infinitely many solutions, all three ratios must be equal to 1/3."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "short",
+          "question": "Solve: x + y = 5 and 2x - 3y = 4.",
+          "answer": "x = 19/5, y = 6/5",
+          "explanation": "Step 1: From equation 1: x = 5 - y.\nStep 2: Substitute: 2(5 - y) - 3y = 4, 10 - 2y - 3y = 4, -5y = -6, y = 6/5.\nStep 3: x = 5 - 6/5 = 19/5."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "long",
+          "question": "5 pencils and 7 pens together cost Rs 50, while 7 pencils and 5 pens together cost Rs 46. Find the cost of one pencil and one pen.",
+          "answer": "Cost of one pencil = Rs 3, Cost of one pen = Rs 5.",
+          "explanation": "Step 1: Let cost of pencil = x and pen = y.\nStep 2: 5x + 7y = 50 ... (1) and 7x + 5y = 46 ... (2)\nStep 3: Add: 12x + 12y = 96, so x + y = 8 ... (3)\nStep 4: Subtract (1) from (2): 2x - 2y = -4, so x - y = -2 ... (4)\nStep 5: From (3) and (4): 2x = 6, x = 3 and y = 5."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "long",
+          "question": "The taxi charges in a city consist of a fixed charge together with the charge for the distance covered. For a distance of 10 km, the charge paid is Rs 105, and for a distance of 15 km, the charge paid is Rs 155. What are the fixed charges and the charge per km? How much does a person have to pay for travelling a distance of 25 km?",
+          "answer": "Fixed charge = Rs 5, Charge per km = Rs 10. Cost for 25 km = Rs 255.",
+          "explanation": "Step 1: Let fixed charge = x and charge per km = y.\nStep 2: x + 10y = 105 ... (1) and x + 15y = 155 ... (2)\nStep 3: Subtract (1) from (2): 5y = 50, y = 10.\nStep 4: x = 105 - 100 = 5.\nStep 5: For 25 km: charge = 5 + 25(10) = Rs 255."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "Solve the following pair of linear equations by the cross-multiplication method: x/a + y/b = a + b and x/a^2 + y/b^2 = 2.",
+          "answer": "x = a^2, y = b^2",
+          "explanation": "Step 1: Rewrite equations: bx + ay = ab(a + b) ... (1) and b^2*x + a^2*y = 2*a^2*b^2 ... (2)\nStep 2: Multiply (1) by a: abx + a^2*y = a^2*b(a + b).\nStep 3: Subtract from (2): b^2*x - abx = 2a^2*b^2 - a^2*b(a + b).\nStep 4: bx(b - a) = a^2*b^2(2) - a^2*b*a - a^2*b^2 = a^2*b^2 - a^3*b = a^2*b(b - a).\nStep 5: bx(b - a) = a^2*b(b - a). Since b - a may not be 0, x = a^2.\nStep 6: Substitute in (1): b(a^2) + ay = ab(a + b), a^2*b + ay = a^2*b + ab^2, ay = ab^2, y = b^2."
+        }
+      ]
+    }
+  ]
+}

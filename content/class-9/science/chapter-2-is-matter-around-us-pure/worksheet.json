@@ -1,0 +1,229 @@
+{
+  "topics": [
+    {
+      "topic": "Mixtures and Solutions",
+      "easy": [
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "What is meant by a 'pure substance' in science?",
+          "options": ["A substance with no adulteration", "A substance made of a single type of particle", "Any natural substance", "A substance that is expensive"],
+          "answer": "A substance made of a single type of particle",
+          "explanation": "In science, a pure substance consists of a single type of particle with the same chemical nature throughout."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "fill",
+          "question": "A ______ mixture has a uniform composition throughout.",
+          "answer": "homogeneous",
+          "explanation": "Homogeneous mixtures have uniform composition throughout, such as salt dissolved in water or air."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is a homogeneous mixture?",
+          "options": ["Oil and water", "Soil", "Soda water", "Sand and iron filings"],
+          "answer": "Soda water",
+          "explanation": "Soda water is a homogeneous mixture of carbon dioxide gas dissolved in water. Oil and water, soil, and sand with iron filings are heterogeneous."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "mcq",
+          "question": "In a solution of sugar in water, which is the solute?",
+          "options": ["Water", "Sugar", "Both", "Neither"],
+          "answer": "Sugar",
+          "explanation": "The solute is the component present in lesser quantity that gets dissolved. Sugar dissolves in water, so sugar is the solute and water is the solvent."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "List the points of differences between homogeneous and heterogeneous mixtures.",
+          "answer": "Homogeneous mixtures have uniform composition throughout and the components cannot be seen separately (e.g., salt solution). Heterogeneous mixtures have non-uniform composition, and the components can be seen as distinct parts (e.g., oil and water). In homogeneous mixtures, the particles are evenly distributed, while in heterogeneous mixtures, they are unevenly distributed.",
+          "explanation": "The key difference is uniformity of composition. Solutions are homogeneous; suspensions are heterogeneous."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "short",
+          "question": "To make a saturated solution, 36 g of sodium chloride is dissolved in 100 g of water at 293 K. Find its concentration at this temperature.",
+          "answer": "Mass of solute = 36 g, Mass of solvent = 100 g, Mass of solution = 36 + 100 = 136 g. Concentration = (Mass of solute / Mass of solution) x 100 = (36/136) x 100 = 26.47%.",
+          "explanation": "Concentration is calculated using the formula: mass percentage = (mass of solute / mass of solution) x 100."
+        },
+        {
+          "id": "ch2-t1-m3",
+          "type": "short",
+          "question": "How are sol, solution, and suspension different from each other?",
+          "answer": "A solution is a homogeneous mixture with particle size less than 1 nm; it is transparent and stable. A sol (colloid) is heterogeneous with particle size between 1-100 nm; it shows the Tyndall effect and is fairly stable. A suspension is heterogeneous with particle size greater than 100 nm; particles are visible, settle down over time, and can be filtered.",
+          "explanation": "The key differences are particle size, visibility, stability, and ability to scatter light."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "Explain the following with examples: (a) Saturated solution (b) Colloid (c) Suspension",
+          "answer": "(a) A saturated solution is one in which no more solute can be dissolved at a given temperature. For example, if we keep adding salt to water at room temperature and stir, a point comes when no more salt dissolves. This is a saturated solution. The amount of salt dissolved is its solubility at that temperature. (b) A colloid is a heterogeneous mixture that appears homogeneous. The particle size is between 1 nm and 100 nm. Colloidal particles scatter light (Tyndall effect) and do not settle down. Examples include milk, fog, and smoke. (c) A suspension is a heterogeneous mixture in which solid particles are dispersed in a liquid but do not dissolve. The particles are larger than 100 nm, are visible to the naked eye, scatter light, and settle down when left undisturbed. Example: chalk powder in water.",
+          "explanation": "These three types of mixtures are distinguished by particle size, homogeneity, stability, and light-scattering behaviour."
+        },
+        {
+          "id": "ch2-t1-h2",
+          "type": "long",
+          "question": "Pragya tested the solubility of potassium nitrate at different temperatures: 21 g at 283 K, 32 g at 293 K, 62 g at 313 K, 106 g at 333 K, and 167 g at 353 K (per 100 g of water). (a) What mass of potassium nitrate would be needed to produce a saturated solution in 50 g of water at 313 K? (b) What is the effect of temperature on solubility?",
+          "answer": "(a) At 313 K, 62 g of potassium nitrate dissolves in 100 g of water. Therefore, in 50 g of water, the amount needed = 62/2 = 31 g of potassium nitrate. (b) As the temperature increases, the solubility of potassium nitrate increases significantly. At 283 K, only 21 g dissolves in 100 g of water, but at 353 K, 167 g dissolves. This shows that solubility of most solid solutes increases with increase in temperature.",
+          "explanation": "Solubility is directly proportional to temperature for most solid solutes. If a saturated solution at higher temperature is cooled, the excess solute will crystallise out."
+        }
+      ]
+    },
+    {
+      "topic": "Separation Techniques",
+      "easy": [
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "Which technique is used to separate ammonium chloride from a mixture of ammonium chloride and sodium chloride?",
+          "options": ["Filtration", "Evaporation", "Sublimation", "Distillation"],
+          "answer": "Sublimation",
+          "explanation": "Ammonium chloride sublimes (changes directly from solid to gas) on heating, while sodium chloride does not. So sublimation can separate them."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "fill",
+          "question": "The scattering of a beam of light by colloidal particles is called the ______ effect.",
+          "answer": "Tyndall",
+          "explanation": "The Tyndall effect is the scattering of light by colloidal particles, making the path of the beam visible."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "mcq",
+          "question": "Which of the following will show the Tyndall effect?",
+          "options": ["Salt solution", "Milk", "Copper sulphate solution", "Sugar solution"],
+          "answer": "Milk",
+          "explanation": "Milk is a colloidal solution and its particles are large enough to scatter light, showing the Tyndall effect. True solutions like salt or sugar solution do not show this effect."
+        },
+        {
+          "id": "ch2-t2-e4",
+          "type": "mcq",
+          "question": "Which method is used to separate cream from milk?",
+          "options": ["Filtration", "Centrifugation", "Distillation", "Evaporation"],
+          "answer": "Centrifugation",
+          "explanation": "Centrifugation is used to separate colloidal particles. When milk is spun rapidly, the denser milk settles and the lighter cream collects at the top."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "Which separation techniques will you apply for: (a) Sodium chloride from its solution in water? (b) Small pieces of metal in engine oil of a car?",
+          "answer": "(a) Evaporation -- heat the salt solution so the water evaporates, leaving behind solid sodium chloride. (b) Filtration -- pour the engine oil through a filter. The small metal pieces will be retained on the filter paper while the oil passes through.",
+          "explanation": "The technique depends on the properties of the components: solubility, particle size, boiling point, etc."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "short",
+          "question": "How would you separate a mixture of oil and water?",
+          "answer": "Oil and water are immiscible liquids (they do not mix). They can be separated using a separating funnel. The mixture is poured into the funnel and allowed to stand. Water, being denser, settles at the bottom. The stopcock is opened to let the water drain out first, and then the oil is collected separately.",
+          "explanation": "A separating funnel works because immiscible liquids form separate layers based on their densities."
+        },
+        {
+          "id": "ch2-t2-m3",
+          "type": "short",
+          "question": "How would you separate different pigments from an extract of flower petals?",
+          "answer": "Chromatography would be used. The flower petal extract is placed on a strip of filter paper, and a suitable solvent is allowed to rise through the paper. Different pigments dissolve at different rates in the solvent and travel different distances on the paper, thus separating them.",
+          "explanation": "Chromatography separates substances based on their different solubilities and rates of movement in a solvent."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t2-h1",
+          "type": "long",
+          "question": "Explain the process of distillation. How is it different from fractional distillation? When would you use each method?",
+          "answer": "Distillation is used to separate a mixture of two miscible liquids that have a significant difference in their boiling points (more than 25 degrees C). The mixture is heated; the liquid with the lower boiling point evaporates first, passes through a condenser where it cools and turns back to liquid, and is collected separately. Example: separating acetone (b.p. 56 degrees C) from water (b.p. 100 degrees C). Fractional distillation is used when the boiling points of the liquids are close to each other (less than 25 degrees C difference). It uses a fractionating column that provides multiple stages of condensation and evaporation, achieving better separation. Example: separating different fractions of petroleum or different gases from liquid air.",
+          "explanation": "Simple distillation works when boiling points differ widely. Fractional distillation is needed for closer boiling points and uses a fractionating column for more efficient separation."
+        },
+        {
+          "id": "ch2-t2-h2",
+          "type": "long",
+          "question": "How would you confirm that a colourless liquid given to you is pure water?",
+          "answer": "To confirm that a colourless liquid is pure water, we can check its boiling point and freezing point. Pure water boils at exactly 100 degrees C (373 K) at normal atmospheric pressure and freezes at exactly 0 degrees C (273 K). If the liquid boils at 100 degrees C and freezes at 0 degrees C, it is pure water. If the boiling point is higher or the freezing point is lower than these values, it indicates the presence of dissolved impurities (since impurities raise the boiling point and lower the freezing point).",
+          "explanation": "Pure substances have fixed boiling and freezing points. The presence of impurities changes these values."
+        }
+      ]
+    },
+    {
+      "topic": "Elements, Compounds, and Chemical Changes",
+      "easy": [
+        {
+          "id": "ch2-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is a pure substance?",
+          "options": ["Milk", "Air", "Iron", "Soil"],
+          "answer": "Iron",
+          "explanation": "Iron is an element and therefore a pure substance. Milk, air, and soil are all mixtures of different substances."
+        },
+        {
+          "id": "ch2-t3-e2",
+          "type": "fill",
+          "question": "A substance that cannot be broken down into simpler substances by chemical reactions is called an ______.",
+          "answer": "element",
+          "explanation": "An element is the simplest form of matter that cannot be broken down further by chemical reactions."
+        },
+        {
+          "id": "ch2-t3-e3",
+          "type": "mcq",
+          "question": "Which of the following is a chemical change?",
+          "options": ["Melting of butter", "Boiling of water", "Rusting of iron", "Dissolving salt in water"],
+          "answer": "Rusting of iron",
+          "explanation": "Rusting of iron is a chemical change because a new substance (iron oxide) is formed. The other options are physical changes."
+        },
+        {
+          "id": "ch2-t3-e4",
+          "type": "mcq",
+          "question": "Mercury is the only metal that is:",
+          "options": ["Solid at room temperature", "Gas at room temperature", "Liquid at room temperature", "Found in air"],
+          "answer": "Liquid at room temperature",
+          "explanation": "Mercury is unique among metals as it exists in the liquid state at room temperature."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t3-m1",
+          "type": "short",
+          "question": "Classify the following into elements, compounds, and mixtures: sodium, soil, sugar solution, silver, calcium carbonate, air.",
+          "answer": "Elements: sodium, silver (they cannot be broken down further by chemical reactions). Compounds: calcium carbonate (it is made of calcium, carbon, and oxygen combined chemically in a fixed proportion). Mixtures: soil, sugar solution, air (they contain two or more substances mixed together).",
+          "explanation": "Elements are the simplest pure substances. Compounds are pure substances made of two or more elements chemically combined. Mixtures contain two or more substances that are not chemically combined."
+        },
+        {
+          "id": "ch2-t3-m2",
+          "type": "short",
+          "question": "Classify each of the following as a homogeneous or heterogeneous mixture: soda water, wood, air, soil, vinegar, filtered tea.",
+          "answer": "Homogeneous: soda water, air, vinegar, filtered tea (these have uniform composition throughout). Heterogeneous: wood, soil (these have non-uniform composition with visible different parts).",
+          "explanation": "Homogeneous mixtures have the same composition throughout, while heterogeneous mixtures have visibly different components."
+        },
+        {
+          "id": "ch2-t3-m3",
+          "type": "short",
+          "question": "What are alloys? Why are they considered mixtures even though they cannot be separated by physical methods?",
+          "answer": "Alloys are homogeneous mixtures of two or more metals, or a metal and a non-metal. For example, brass is a mixture of copper and zinc. They are considered mixtures because they show the properties of their constituent elements and can have variable composition. Even though they cannot be separated by simple physical methods, they do not have a fixed ratio of components like compounds do.",
+          "explanation": "Alloys are special solid solutions. Steel, brass, and bronze are common examples."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t3-h1",
+          "type": "long",
+          "question": "When iron filings and sulphur powder are mixed and heated, a compound is formed. Describe the experiment and explain how the product differs from the mixture of iron and sulphur.",
+          "answer": "When iron filings and sulphur powder are mixed without heating, a mixture is formed. This mixture shows the properties of both iron and sulphur: it is attracted by a magnet (iron is magnetic), and the components can be seen separately. Carbon disulphide dissolves sulphur from the mixture. Adding dilute acid gives hydrogen gas. When the same mixture is heated strongly till red hot and then cooled, a compound called iron sulphide (FeS) is formed. This compound has completely different properties: it is not attracted by a magnet, carbon disulphide cannot separate any component, and adding dilute acid gives hydrogen sulphide gas (which smells like rotten eggs). The composition of the compound is fixed, and its properties are entirely different from those of iron and sulphur.",
+          "explanation": "This experiment clearly shows the difference between a mixture (physical combination) and a compound (chemical combination). In a compound, the elements lose their individual properties."
+        },
+        {
+          "id": "ch2-t3-h2",
+          "type": "long",
+          "question": "Write the steps you would use for making tea. Use the words: solution, solvent, solute, dissolve, soluble, insoluble, filtrate, and residue.",
+          "answer": "Take some water (solvent) in a pan and heat it. Add tea leaves to the water. The flavour and colour of the tea leaves dissolve in water forming a solution. Tea is soluble in water. Add sugar (solute) which dissolves in the hot water to form a solution. Add milk and stir. Now filter the tea using a strainer. The liquid tea that passes through is the filtrate. The used tea leaves that remain on the strainer are the residue. The tea leaves are insoluble in water and are therefore separated by filtration.",
+          "explanation": "Making tea involves dissolving soluble substances (sugar, tea extract) in water and filtering out insoluble substances (tea leaves)."
+        }
+      ]
+    }
+  ]
+}

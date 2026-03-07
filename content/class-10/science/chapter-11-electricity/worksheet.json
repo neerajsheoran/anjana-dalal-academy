@@ -1,0 +1,130 @@
+{
+  "topics": [
+    {
+      "topic": "Ohm's Law and Resistance",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "A piece of wire of resistance R is cut into two equal halves. These halves are connected in parallel. The equivalent resistance of the combination is:",
+          "options": ["R/4", "R/2", "R", "2R"],
+          "answer": "R/4",
+          "explanation": "Each half has resistance R/2. When two R/2 resistors are in parallel: 1/R_eq = 1/(R/2) + 1/(R/2) = 2/R + 2/R = 4/R, so R_eq = R/4."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "mcq",
+          "question": "The SI unit of electric current is:",
+          "options": ["Volt", "Ohm", "Ampere", "Watt"],
+          "answer": "Ampere",
+          "explanation": "Electric current is measured in amperes (A). 1 ampere = 1 coulomb of charge flowing per second."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "fill",
+          "question": "According to Ohm's law, V = ______.",
+          "answer": "IR",
+          "explanation": "Ohm's law states that V = IR, where V is potential difference, I is current, and R is resistance. This holds true when temperature is constant."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "short",
+          "question": "How is a voltmeter connected in the circuit to measure the potential difference between two points?",
+          "answer": "A voltmeter is always connected in parallel across the two points between which the potential difference is to be measured. It has very high resistance so that it draws negligible current from the circuit and does not affect the current flowing through the component being measured.",
+          "explanation": "An ammeter (low resistance) is connected in series to measure current, while a voltmeter (high resistance) is connected in parallel to measure potential difference."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "When a 12 V battery is connected across an unknown resistor, there is a current of 2.5 mA in the circuit. Find the value of the resistance of the resistor.",
+          "answer": "Given: V = 12 V, I = 2.5 mA = 2.5 × 10⁻³ A\n\nUsing Ohm's law: R = V/I = 12 / (2.5 × 10⁻³) = 4800 Ω = 4.8 kΩ",
+          "explanation": "Direct application of Ohm's law. Note the conversion of mA to A (1 mA = 10⁻³ A)."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "short",
+          "question": "A battery of 9 V is connected in series with resistors of 0.2 Ω, 0.3 Ω, 0.4 Ω, 0.5 Ω and 12 Ω. How much current would flow through the 12 Ω resistor?",
+          "answer": "In a series circuit, the current is the same through all resistors.\n\nTotal resistance: R = 0.2 + 0.3 + 0.4 + 0.5 + 12 = 13.4 Ω\n\nCurrent: I = V/R = 9/13.4 = 0.67 A\n\nThe current through the 12 Ω resistor is 0.67 A.",
+          "explanation": "In a series circuit, the same current flows through every resistor. The total resistance is the sum of all individual resistances."
+        },
+        {
+          "id": "ch11-t1-m3",
+          "type": "short",
+          "question": "Show how you would connect three resistors, each of 6 Ω, so that the combination has a resistance of (i) 9 Ω, (ii) 4 Ω.",
+          "answer": "(i) For 9 Ω: Connect two resistors in parallel and the third in series.\nTwo 6 Ω in parallel: 1/R_p = 1/6 + 1/6 = 2/6 → R_p = 3 Ω\nThen in series with third: R = 3 + 6 = 9 Ω\n\n(ii) For 4 Ω: Connect two resistors in series and the combination in parallel with the third.\nTwo 6 Ω in series: R_s = 6 + 6 = 12 Ω\nThen in parallel with third: 1/R = 1/12 + 1/6 = 1/12 + 2/12 = 3/12 → R = 4 Ω",
+          "explanation": "By combining series and parallel arrangements, different total resistances can be achieved from identical resistors."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "A hot plate of an electric oven connected to a 220 V line has two resistance coils A and B, each of 24 Ω resistance. What are the currents when they are used (i) separately, (ii) in series, (iii) in parallel?",
+          "answer": "(i) Separately:\nI = V/R = 220/24 = 9.2 A\n\n(ii) In series:\nR_total = 24 + 24 = 48 Ω\nI = V/R = 220/48 = 4.6 A\n\n(iii) In parallel:\n1/R_total = 1/24 + 1/24 = 2/24 = 1/12\nR_total = 12 Ω\nI = V/R = 220/12 = 18.3 A\n\nThe parallel combination draws the most current (and hence produces the most heat), while the series combination draws the least.",
+          "explanation": "Parallel connection has lower total resistance, drawing more current and producing more heat. Series connection has higher resistance, drawing less current."
+        }
+      ]
+    },
+    {
+      "topic": "Electric Power and Heating Effect",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "The commercial unit of electric energy is:",
+          "options": ["Watt", "Joule", "Kilowatt-hour", "Volt-ampere"],
+          "answer": "Kilowatt-hour",
+          "explanation": "The kilowatt-hour (kWh) is the commercial unit of electrical energy. 1 kWh = 3.6 × 10⁶ J. It is the energy consumed by a 1000 W appliance in 1 hour."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "The formula for electric power is P = ______.",
+          "answer": "VI",
+          "explanation": "Electric power P = VI = I²R = V²/R, measured in watts (W). 1 W = 1 V × 1 A."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "short",
+          "question": "Which uses more energy, a 250 W TV set in 1 hr, or a 1200 W toaster in 10 minutes?",
+          "answer": "TV set: Energy = P × t = 250 × 1 = 250 Wh\nToaster: Energy = P × t = 1200 × (10/60) = 1200 × 1/6 = 200 Wh\n\nThe 250 W TV set in 1 hour uses more energy (250 Wh) than the 1200 W toaster in 10 minutes (200 Wh).",
+          "explanation": "Even though the toaster has higher power, it runs for a much shorter time. Energy = Power × Time."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "short",
+          "question": "Two lamps, one rated 100 W at 220 V, and the other 60 W at 220 V, are connected in parallel to the electric mains. What current is drawn from the line if supply voltage is 220 V?",
+          "answer": "Current through 100 W lamp: I₁ = P₁/V = 100/220 = 5/11 A\nCurrent through 60 W lamp: I₂ = P₂/V = 60/220 = 3/11 A\n\nTotal current: I = I₁ + I₂ = 5/11 + 3/11 = 8/11 = 0.73 A",
+          "explanation": "In parallel, each lamp receives the full 220 V. The total current is the sum of individual currents."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "An electric heater of resistance 44 Ω draws 5 A from the service mains for 2 hours. Calculate the rate at which heat is developed in the heater.",
+          "answer": "The rate at which heat is developed = Power\n\nP = I²R = (5)² × 44 = 25 × 44 = 1100 W\n\nThe rate of heat development is 1100 W (or 1100 J/s or 1.1 kW).",
+          "explanation": "The rate of heat development is the same as electric power. Using P = I²R gives the power in watts (joules per second)."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "long",
+          "question": "Explain: (a) Why is tungsten used for filaments of electric lamps? (b) Why are heating devices made of alloys? (c) Why is the series arrangement not used for domestic circuits? (d) Why are copper and aluminium wires used for electricity transmission?",
+          "answer": "(a) Tungsten is used because it has a very high melting point (3380°C) and does not melt even when heated to white-hot temperatures. It also has high resistivity, which helps produce more heat and light.\n\n(b) Alloys like nichrome have: (i) higher resistivity than pure metals, producing more heat; (ii) higher melting points, so they don't melt during use; (iii) they don't oxidise easily at high temperatures.\n\n(c) Series arrangement is not used for domestic circuits because: (i) all appliances would not get the full supply voltage; (ii) if one appliance fails, all others stop working; (iii) appliances cannot be independently switched on/off; (iv) total resistance increases, reducing current.\n\n(d) Copper and aluminium have very low resistivity, meaning they offer minimal resistance to current flow. This results in less energy loss as heat during transmission, making them ideal for electricity transmission wires.",
+          "explanation": "The choice of materials in electrical devices is based on their electrical properties — resistivity, melting point, and oxidation resistance."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "Compare the power used in the 2 Ω resistor in each of the following circuits: (i) a 6 V battery in series with 1 Ω and 2 Ω resistors, and (ii) a 4 V battery in parallel with 12 Ω and 2 Ω resistors.",
+          "answer": "(i) Series circuit (6 V, 1 Ω and 2 Ω):\nTotal R = 1 + 2 = 3 Ω\nCurrent I = V/R = 6/3 = 2 A (same through both)\nPower in 2 Ω = I²R = (2)² × 2 = 8 W\n\n(ii) Parallel circuit (4 V, 12 Ω and 2 Ω):\nIn parallel, voltage across each is the same = 4 V\nPower in 2 Ω = V²/R = (4)²/2 = 16/2 = 8 W\n\nThe power used in the 2 Ω resistor is the same (8 W) in both circuits.",
+          "explanation": "In (i), the current is the key factor. In (ii), the voltage across the 2 Ω resistor is the key factor. Despite different circuit configurations, the power happens to be equal in this case."
+        }
+      ]
+    }
+  ]
+}

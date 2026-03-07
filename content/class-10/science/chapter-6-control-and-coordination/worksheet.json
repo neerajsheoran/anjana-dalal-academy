@@ -1,0 +1,130 @@
+{
+  "topics": [
+    {
+      "topic": "Nervous System and Reflex Actions",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "The gap between two neurons is called a:",
+          "options": ["Dendrite", "Synapse", "Axon", "Impulse"],
+          "answer": "Synapse",
+          "explanation": "A synapse is the small gap between the axon ending of one neuron and the dendrite of the next neuron. Chemical substances (neurotransmitters) are released here to transmit the impulse across."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "mcq",
+          "question": "The brain is responsible for:",
+          "options": ["Thinking", "Regulating the heart beat", "Balancing the body", "All of the above"],
+          "answer": "All of the above",
+          "explanation": "Thinking is controlled by the cerebrum, heart beat regulation by the medulla oblongata, and body balance by the cerebellum. These are all parts of the brain."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "fill",
+          "question": "The part of the brain that controls involuntary actions like blood pressure, salivation, and breathing is the ______.",
+          "answer": "medulla oblongata",
+          "explanation": "The medulla oblongata (or medulla) is part of the hind-brain and controls vital involuntary functions. It connects the brain to the spinal cord."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "short",
+          "question": "What is the function of receptors in our body? Think of situations where receptors do not work properly. What problems are likely to arise?",
+          "answer": "Receptors are specialised nerve endings located in sense organs that detect stimuli from the environment. For example, photoreceptors in eyes detect light, olfactory receptors in the nose detect smell.\n\nIf receptors do not work properly:\n- Damaged photoreceptors would lead to blindness or impaired vision\n- Damaged gustatory receptors would lead to loss of taste\n- Damaged receptors in the skin would prevent detection of pain, heat, or pressure, making us vulnerable to injuries",
+          "explanation": "Receptors are the first link in the chain of nervous response. Without functional receptors, the nervous system cannot detect environmental changes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "How are involuntary actions and reflex actions different from each other?",
+          "answer": "Involuntary actions are controlled by the medulla oblongata (part of the brain) and include functions like heartbeat, breathing, and peristalsis. They are continuous and essential for survival.\n\nReflex actions are controlled by the spinal cord and are rapid, automatic responses to specific stimuli, like pulling your hand away from a hot object or blinking. They are sudden and protective.\n\nKey difference: Involuntary actions involve the brain (medulla), while reflex actions involve the spinal cord. Both are not under conscious control.",
+          "explanation": "Both types of actions occur without thinking, but they are controlled by different parts of the central nervous system."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "short",
+          "question": "Which signals will get disrupted in case of a spinal cord injury?",
+          "answer": "In case of a spinal cord injury:\n1. Reflex actions below the point of injury will be disrupted since reflex arcs pass through the spinal cord.\n2. Voluntary movements of body parts below the injury will be affected because signals from the brain to muscles travel through the spinal cord.\n3. Sensory information from below the injury cannot reach the brain, leading to loss of sensation.\n4. Both motor and sensory signals between the brain and the body parts below the injury point will be disrupted.",
+          "explanation": "The spinal cord acts as a highway for nerve signals between the brain and the rest of the body. Damage to it disconnects communication below the injury site."
+        },
+        {
+          "id": "ch6-t1-m3",
+          "type": "long",
+          "question": "Draw the structure of a neuron and explain its function.",
+          "answer": "A neuron consists of:\n\n1. Dendrites: Short, branched projections that receive nerve impulses from receptors or other neurons and transmit them towards the cell body.\n\n2. Cell body (Cyton): Contains the nucleus and cytoplasm. It processes the incoming signal.\n\n3. Axon: A long, thin fibre that carries the nerve impulse away from the cell body towards the next neuron or effector organ (muscle/gland). It may be covered by a myelin sheath for insulation and faster impulse transmission.\n\n4. Nerve endings (Axon terminals): Branched endings of the axon that form synapses with the next neuron. They release neurotransmitters (chemical substances) to transmit the impulse across the synapse.\n\nFunction: Neurons receive information from the environment through receptors, convert it into electrical impulses, and transmit these impulses to the brain or spinal cord for processing. The response is then sent back through motor neurons to effector organs.",
+          "explanation": "The neuron is the structural and functional unit of the nervous system. Information flows in one direction: dendrite → cell body → axon → nerve endings."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "Compare and contrast nervous and hormonal mechanisms for control and coordination in animals.",
+          "answer": "Nervous mechanism:\n1. Uses electrical impulses transmitted along nerve fibres\n2. Response is very fast (milliseconds)\n3. Effect is short-lived and stops when the stimulus stops\n4. Response is very precise and localised (specific muscle or gland)\n5. Impulses travel along specific nerve pathways\n6. Does not involve chemical secretion into blood (except at synapses)\n\nHormonal mechanism:\n1. Uses chemical messengers (hormones) secreted into the blood\n2. Response is slower (minutes to hours)\n3. Effect is long-lasting and may persist even after the stimulus stops\n4. Response may be widespread, affecting multiple target organs\n5. Hormones travel through the bloodstream to reach target organs\n6. Regulated by feedback mechanisms\n\nSimilarities:\n- Both help in control and coordination\n- Both involve transmission of information\n- Both work together for effective body functioning\n\nBoth systems complement each other. For example, adrenaline (hormone) and the sympathetic nervous system work together during emergencies.",
+          "explanation": "The nervous system provides rapid, precise, short-term responses while the hormonal system provides slower, wider, longer-lasting responses. Both are essential for proper body functioning."
+        }
+      ]
+    },
+    {
+      "topic": "Plant Hormones and Coordination",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following is a plant hormone?",
+          "options": ["Insulin", "Thyroxin", "Oestrogen", "Cytokinin"],
+          "answer": "Cytokinin",
+          "explanation": "Cytokinin is a plant hormone that promotes cell division. Insulin, thyroxin, and oestrogen are all animal hormones."
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "The directional growth of a plant shoot towards light is called ______.",
+          "answer": "phototropism",
+          "explanation": "Phototropism is the growth movement of plants in response to light. Shoots show positive phototropism (towards light) while roots show negative phototropism."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "short",
+          "question": "How does phototropism occur in plants?",
+          "answer": "Phototropism occurs due to the plant hormone auxin. When light falls on one side of the shoot:\n1. Auxin diffuses towards the shaded side of the shoot.\n2. The higher concentration of auxin on the shaded side stimulates more cell elongation on that side.\n3. The cells on the shaded side grow longer than those on the lit side.\n4. This differential growth causes the shoot to bend towards the light source.",
+          "explanation": "Auxin is synthesised at the shoot tip and promotes cell elongation. Its uneven distribution in response to light causes the bending."
+        },
+        {
+          "id": "ch6-t2-e4",
+          "type": "short",
+          "question": "How does chemical coordination occur in plants?",
+          "answer": "Chemical coordination in plants occurs through plant hormones (phytohormones) such as auxins, gibberellins, cytokinins, abscisic acid, and ethylene. These hormones are synthesised in one part of the plant and transported to other parts where they promote or inhibit growth and development. For example, auxins promote cell elongation in shoots, cytokinins promote cell division, gibberellins promote stem growth and flowering, abscisic acid inhibits growth, and ethylene promotes fruit ripening.",
+          "explanation": "Unlike animals, plants do not have a nervous system. They rely entirely on chemical coordination through hormones for their responses to the environment."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "What is the difference between the manner in which movement takes place in a sensitive plant and the movement in our legs?",
+          "answer": "Movement in sensitive plant (Mimosa pudica):\n- Not growth-related; caused by changes in turgor pressure (water content) of cells\n- No nervous system involved\n- Triggered by touch stimulus\n- Movement is in response to stimulus and is not directional\n- No specialised muscles or nerves involved\n\nMovement in our legs:\n- Caused by contraction and relaxation of muscles attached to bones\n- Controlled by the nervous system (brain sends signals through motor neurons)\n- Can be voluntary (walking) or reflex (jerking)\n- Directional and precisely controlled\n- Involves specialised tissues: nerve cells, muscles, and bones",
+          "explanation": "Plant movements are based on cellular water changes or differential growth, while animal movements are based on nervous control of muscles."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "short",
+          "question": "What is the need for a system of control and coordination in an organism?",
+          "answer": "A system of control and coordination is needed because:\n1. The environment constantly changes and organisms need to respond appropriately to survive.\n2. Different organs must work together in a coordinated manner for proper body functioning.\n3. Appropriate responses to stimuli (like danger) are needed for survival.\n4. Internal body conditions (like temperature, blood sugar) need to be maintained within a narrow range.\n5. Growth and development must be properly regulated.\n6. In multicellular organisms, different parts must communicate with each other to function as a unified whole.",
+          "explanation": "Without control and coordination, an organism would not be able to respond to its environment, maintain internal balance, or coordinate the activities of its various organs."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "How does chemical coordination take place in animals? Why is the use of iodised salt advisable? How does our body respond when adrenaline is secreted into the blood?",
+          "answer": "Chemical coordination in animals:\nEndocrine glands secrete hormones directly into the bloodstream. These hormones travel to specific target organs and regulate their functions. For example, the pituitary gland secretes growth hormone that acts on bones and muscles, the thyroid gland secretes thyroxin that regulates metabolism, and the pancreas secretes insulin that regulates blood sugar. Feedback mechanisms ensure hormones are secreted in the right amounts.\n\nImportance of iodised salt:\nIodine is essential for the thyroid gland to synthesise thyroxin hormone, which regulates carbohydrate, protein, and fat metabolism. If iodine is deficient in the diet, the thyroid gland enlarges, causing a disease called goitre (visible as a swollen neck). Iodised salt ensures adequate iodine intake to prevent goitre.\n\nResponse to adrenaline:\nAdrenaline is secreted by the adrenal glands during emergency situations (fight or flight response). When secreted into the blood, it causes:\n1. Increased heart rate and blood pressure\n2. Increased breathing rate\n3. Increased blood supply to skeletal muscles\n4. Dilation of pupils\n5. Reduced blood supply to the digestive system and skin\n6. Release of glucose from the liver into the blood for quick energy\nAll these changes prepare the body to deal with the emergency by providing more oxygen and energy to the muscles.",
+          "explanation": "Chemical coordination through hormones is essential for maintaining internal balance and responding to emergencies. Each hormone has specific target organs and functions."
+        }
+      ]
+    }
+  ]
+}

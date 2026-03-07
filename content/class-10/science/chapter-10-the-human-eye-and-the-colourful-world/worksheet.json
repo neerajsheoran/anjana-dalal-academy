@@ -1,0 +1,123 @@
+{
+  "topics": [
+    {
+      "topic": "Human Eye and Defects of Vision",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "The human eye forms the image of an object at its:",
+          "options": ["Cornea", "Iris", "Pupil", "Retina"],
+          "answer": "Retina",
+          "explanation": "The eye lens focuses light to form a real, inverted image on the retina, which is the light-sensitive screen at the back of the eye."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "mcq",
+          "question": "The least distance of distinct vision for a young adult with normal vision is about:",
+          "options": ["25 m", "2.5 cm", "25 cm", "2.5 m"],
+          "answer": "25 cm",
+          "explanation": "The near point of a normal eye is 25 cm. Objects closer than this cannot be seen clearly because the eye lens cannot accommodate further."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "The change in focal length of an eye lens is caused by the action of the:",
+          "options": ["Pupil", "Retina", "Ciliary muscles", "Iris"],
+          "answer": "Ciliary muscles",
+          "explanation": "Ciliary muscles contract or relax to change the curvature (and hence focal length) of the eye lens, enabling the eye to focus on objects at different distances."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "fill",
+          "question": "Myopia is corrected by using a ______ lens.",
+          "answer": "concave",
+          "explanation": "In myopia, the image forms in front of the retina. A concave (diverging) lens diverges the light rays before they enter the eye, so the image shifts back onto the retina."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "The far point of a myopic person is 80 cm in front of the eye. What is the nature and power of the lens required to correct the problem?",
+          "answer": "For the corrective lens, a distant object (at infinity) should produce a virtual image at the far point (80 cm).\n\nu = infinity, v = -80 cm = -0.80 m (virtual image on same side as object)\n\nUsing lens formula: 1/v - 1/u = 1/f\n1/(-0.80) - 1/infinity = 1/f\n1/f = -1/0.80 = -1.25\nf = -0.80 m\n\nPower P = 1/f = 1/(-0.80) = -1.25 D\n\nA concave lens of power -1.25 D is required.",
+          "explanation": "The corrective concave lens creates a virtual image of distant objects at the far point of the myopic eye, allowing them to be seen clearly."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "The near point of a hypermetropic eye is 1 m. What is the power of the lens required to correct this defect? (Normal near point = 25 cm)",
+          "answer": "For the corrective lens, an object at 25 cm should produce a virtual image at 1 m (the near point of the defective eye).\n\nu = -25 cm = -0.25 m, v = -1 m = -100 cm (virtual image on same side as object)\n\nUsing lens formula: 1/v - 1/u = 1/f\n1/(-1) - 1/(-0.25) = 1/f\n-1 + 4 = 1/f\n1/f = +3\nf = +0.33 m\n\nPower P = 1/f = +3.0 D\n\nA convex lens of power +3.0 D is required.",
+          "explanation": "The convex lens helps converge light so that nearby objects can be focused on the retina."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "short",
+          "question": "Why is a normal eye not able to see clearly the objects placed closer than 25 cm?",
+          "answer": "At distances less than 25 cm, the ciliary muscles have to contract excessively to increase the curvature of the lens. The eye lens has a minimum focal length limit — it cannot become more curved beyond a certain point. Therefore, the lens cannot refract light sufficiently to focus the image on the retina for objects closer than 25 cm. The image would form behind the retina, resulting in a blurred image. Straining the eye to see such close objects causes headache and eye strain.",
+          "explanation": "The power of accommodation has a limit. The 25 cm near point represents the closest distance at which the eye can comfortably focus."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "A person needs a lens of power -5.5 dioptres for correcting his distant vision. For correcting his near vision he needs a lens of power +1.5 dioptre. What is the focal length of the lens required for correcting (i) distant vision, and (ii) near vision?",
+          "answer": "(i) For distant vision:\nP = -5.5 D\nf = 1/P = 1/(-5.5) = -0.18 m = -18.2 cm\n\nA concave lens of focal length 18.2 cm (approximately 0.18 m) is needed. The negative sign indicates a diverging lens, which corrects myopia.\n\n(ii) For near vision:\nP = +1.5 D\nf = 1/P = 1/1.5 = +0.67 m = +66.7 cm\n\nA convex lens of focal length 66.7 cm (approximately 0.67 m) is needed. The positive sign indicates a converging lens, which corrects hypermetropia.\n\nThis person suffers from both myopia and hypermetropia, which is common in older people. Bifocal lenses can combine both corrections.",
+          "explanation": "The person needs two different types of lenses — concave for distance and convex for near vision. Bifocal lenses are a practical solution for this condition."
+        }
+      ]
+    },
+    {
+      "topic": "Dispersion, Scattering, and Atmospheric Phenomena",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "fill",
+          "question": "The splitting of white light into its seven component colours by a prism is called ______.",
+          "answer": "dispersion",
+          "explanation": "Dispersion occurs because different colours of light travel at different speeds in glass, causing them to be refracted by different amounts."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "short",
+          "question": "Why do stars twinkle?",
+          "answer": "Stars twinkle because their light passes through many layers of the earth's atmosphere with varying densities and refractive indices. The continuous changes in atmospheric conditions (temperature, density) cause the path of starlight to shift constantly. This makes the apparent position and brightness of the star fluctuate, creating the twinkling effect. Stars are point sources of light, so even small fluctuations are noticeable.",
+          "explanation": "The twinkling is due to atmospheric refraction of starlight through turbulent layers of air with varying refractive indices."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "short",
+          "question": "Explain why the planets do not twinkle.",
+          "answer": "Planets do not twinkle because they are much closer to Earth than stars and appear as extended sources of light (small discs rather than point sources). The light from various parts of the planet's disc reaches our eyes from slightly different directions. The atmospheric fluctuations affecting light from one part of the disc are averaged out by the steadier light from other parts. This averaging effect makes planets appear to shine steadily without twinkling.",
+          "explanation": "Stars are point sources (very far away), so fluctuations are noticeable. Planets are extended sources (closer), so fluctuations cancel out."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "Why does the sky appear dark instead of blue to an astronaut?",
+          "answer": "In outer space, there is no atmosphere. On Earth, the blue colour of the sky is due to the scattering of sunlight by atmospheric molecules (Rayleigh scattering), which scatter shorter wavelengths (blue) more effectively. Without an atmosphere, there are no molecules to scatter sunlight, so the sky appears dark (black) to astronauts. They can see stars even during the daytime because there is no scattered light to overpower them.",
+          "explanation": "The blue sky is entirely a result of atmospheric scattering. In the absence of atmosphere (in space), there is no scattering and the sky is dark."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "Why does the Sun appear reddish at sunrise and sunset?",
+          "answer": "At sunrise and sunset, the Sun is near the horizon and its light has to travel through a much greater thickness of the earth's atmosphere compared to when it is overhead. During this long passage, most of the shorter wavelength light (blue, violet) gets scattered away by atmospheric particles. Only the longer wavelength light (red, orange) can travel through the thick atmosphere and reach our eyes. This is why the Sun appears reddish at sunrise and sunset.",
+          "explanation": "The longer path through the atmosphere at sunrise/sunset removes blue light by scattering, leaving predominantly red light to reach the observer."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Explain the phenomenon of dispersion of white light by a glass prism. Why does the sky appear blue on a clear day? What is the Tyndall effect?",
+          "answer": "Dispersion of white light:\nWhen a beam of white light passes through a glass prism, it splits into its seven component colours (VIBGYOR - Violet, Indigo, Blue, Green, Yellow, Orange, Red). This happens because white light is a mixture of seven colours, and each colour has a different wavelength. The prism refracts (bends) each colour by a different amount — violet light (shortest wavelength) is refracted the most, and red light (longest wavelength) is refracted the least. This differential refraction separates the colours into a spectrum.\n\nNewton showed this is a property of white light (not the prism) by recombining the colours using a second inverted prism to produce white light again.\n\nWhy the sky is blue:\nEarth's atmosphere contains fine molecules of nitrogen and oxygen. When sunlight enters the atmosphere, these molecules scatter shorter wavelengths (blue and violet) much more than longer wavelengths (red and orange). This is called Rayleigh scattering, where scattering intensity is inversely proportional to the fourth power of wavelength. Although violet is scattered even more than blue, our eyes are more sensitive to blue light, and the upper atmosphere absorbs some violet. So the sky appears blue.\n\nTyndall effect:\nThe Tyndall effect is the scattering of light by particles in a colloid or suspension. When a beam of light passes through a colloidal solution (like milk in water, or fog), the path of light becomes visible due to scattering by the colloidal particles. This is why a beam of sunlight becomes visible when it passes through a dusty room or through fog/mist.",
+          "explanation": "Dispersion, blue sky, and Tyndall effect are all related to the interaction of light with particles — the size of particles and wavelength of light determine the nature and extent of scattering."
+        }
+      ]
+    }
+  ]
+}

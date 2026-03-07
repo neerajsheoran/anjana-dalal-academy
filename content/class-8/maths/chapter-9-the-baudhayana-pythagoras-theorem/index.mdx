@@ -1,0 +1,178 @@
+---
+title: "Chapter 9: The Baudhayana-Pythagoras Theorem"
+---
+
+## 2.1 Doubling a Square
+
+In **Baudhyana's Shulba-Sutra** (c. 800 BCE), the great Indian mathematician Baudhyana asked:
+
+**How can you construct a square with double the area of a given square?**
+
+Your first thought might be to double the side length. But if you double the side, the area becomes **4 times** (not 2 times) the original. A square with side 2a has area (2a)² = 4a², which is 4 times a².
+
+Baudhyana's elegant answer (Verse 1.9):
+
+> **Key idea:** "The diagonal of a square produces a square of double the area of the original square."
+
+Draw a square on the **diagonal** of the original square. This new square has exactly **twice** the area!
+
+**Why does this work?** Draw horizontal and vertical lines through the tilted square. You will see that the original square is made of 2 congruent right triangles, while the new (diagonal) square is made of 4 of the same right triangles. Since 4 = 2 x 2, the new square has double the area.
+
+We can make a sequence of squares, each with double the area:
+- First square: 2 triangles
+- Second square (on diagonal): 4 triangles
+- Third square (on its diagonal): 8 triangles
+
+---
+
+## 2.2 Halving a Square
+
+To construct a square with **half** the area of a given square, reverse the process: draw a tilted square **inside** the larger one, connecting the midpoints of its sides.
+
+The inner square has exactly **half** the area of the outer square, because adding horizontal and vertical lines shows that the inner square covers exactly half the total area.
+
+---
+
+## 2.3 Hypotenuse of an Isosceles Right Triangle
+
+In a **right triangle**, the side opposite the right angle is called the **hypotenuse**.
+
+Consider an isosceles right triangle with both equal sides of length 1 unit. What is its hypotenuse?
+
+Two such triangles form a square of side 1. The square on the hypotenuse has area = 2 x area of original square = 2 x 1 = **2 sq. units**.
+
+If the hypotenuse is c, then c² = 2, so **c = sqrt(2)**.
+
+### What is the Value of sqrt(2)?
+
+We can find it by narrowing down:
+- 1² = 1 and 2² = 4, so **1 < sqrt(2) < 2**
+- 1.4² = 1.96 and 1.5² = 2.25, so **1.4 < sqrt(2) < 1.5**
+- 1.41² = 1.9881 and 1.42² = 2.0164, so **1.41 < sqrt(2) < 1.42**
+- 1.414² = 1.999396 and 1.415² = 2.002225, so **1.414 < sqrt(2) < 1.415**
+
+sqrt(2) = 1.41421356... The decimal goes on forever!
+
+### sqrt(2) is Irrational
+
+Can sqrt(2) be written as a fraction m/n? **No!**
+
+If 2 = m²/n², then 2n² = m². In the prime factorisation of m², the factor 2 appears an even number of times. But in 2n², the factor 2 appears an odd number of times. This is a contradiction. Therefore, sqrt(2) cannot be expressed as a fraction.
+
+> **Key idea:** sqrt(2) is an **irrational number** -- it cannot be written as a fraction of whole numbers. Its decimal representation goes on forever without repeating. This proof was given by **Euclid** (c. 300 BCE).
+
+### General Formula for Isosceles Right Triangles
+
+If both equal sides have length **a** and the hypotenuse is **c**, then:
+
+**c² = 2a²** or equivalently **c = a x sqrt(2)**
+
+**Example:** If a = 12, then c² = 2 x 144 = 288. Since 16² = 256 and 17² = 289, the hypotenuse is between 16 and 17 units.
+
+**Example:** If hypotenuse c = sqrt(72), then c² = 72, so 2a² = 72, giving a² = 36, and **a = 6**.
+
+---
+
+## 2.4 Combining Two Different Squares
+
+We have seen how to combine two identical squares. But what if we want to combine two squares of **different** sizes?
+
+Baudhyana's Shulba-Sutra (Verse 1.12) gives a truly remarkable solution:
+
+> **Key idea:** "The area of the square produced by the diagonal is the sum of the areas of the squares produced by the two sides."
+
+To combine two different squares:
+1. Make a **right-angled triangle** whose two perpendicular sides equal the side lengths of the two squares.
+2. The square on the **hypotenuse** of this triangle has area equal to the sum of the areas of the original two squares.
+
+---
+
+## 2.5 The Baudhayana-Pythagoras Theorem
+
+This gives us the famous theorem:
+
+**In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.**
+
+If the two legs are **a** and **b**, and the hypotenuse is **c**, then:
+
+**a² + b² = c²**
+
+This is known as the **Baudhayana-Pythagoras Theorem**. Baudhyana stated it in his Shulba-Sutra around 800 BCE, making it one of the earliest known statements of this fundamental result. The Greek mathematician Pythagoras is also credited with this theorem (c. 570-495 BCE).
+
+### Worked Examples
+
+**Example 1:** Find the hypotenuse of a right triangle with legs 3 and 4.
+- c² = 3² + 4² = 9 + 16 = 25
+- c = sqrt(25) = **5**
+
+**Example 2:** Find the hypotenuse of a right triangle with legs 5 and 12.
+- c² = 5² + 12² = 25 + 144 = 169
+- c = sqrt(169) = **13**
+
+**Example 3:** A right triangle has hypotenuse 10 and one leg 6. Find the other leg.
+- 6² + b² = 10²
+- 36 + b² = 100
+- b² = 64
+- b = **8**
+
+**Example 4:** Find the hypotenuse of a right triangle with legs 1 and 2.
+- c² = 1² + 2² = 1 + 4 = 5
+- c = sqrt(5) (approximately 2.236)
+
+---
+
+## Pythagorean Triples
+
+A **Pythagorean triple** is a set of three whole numbers (a, b, c) that satisfy a² + b² = c².
+
+Common Pythagorean triples:
+- **(3, 4, 5):** 9 + 16 = 25
+- **(5, 12, 13):** 25 + 144 = 169
+- **(8, 15, 17):** 64 + 225 = 289
+- **(7, 24, 25):** 49 + 576 = 625
+
+If (a, b, c) is a Pythagorean triple, then so is **(ka, kb, kc)** for any positive number k. For example, since (3, 4, 5) is a triple, so are (6, 8, 10), (9, 12, 15), (15, 20, 25), etc.
+
+> **Key idea:** Pythagorean triples give us right triangles with all whole-number sides. They have been studied since ancient times -- lists of such triples appear on Babylonian clay tablets dating to around 1800 BCE.
+
+---
+
+## The Converse of the Theorem
+
+The **converse** is also true: if the sides of a triangle satisfy a² + b² = c², then the triangle is a right triangle (with the right angle opposite the longest side c).
+
+**Example:** Does a triangle with sides 6, 8, 10 form a right triangle?
+- 6² + 8² = 36 + 64 = 100 = 10²
+- **Yes**, it is a right triangle.
+
+**Example:** Does a triangle with sides 5, 7, 9 form a right triangle?
+- 5² + 7² = 25 + 49 = 74, but 9² = 81
+- 74 is not equal to 81, so **no**, it is not a right triangle.
+
+---
+
+## Applications
+
+### Finding Distances
+
+**Example:** A ladder of length 5 m leans against a wall. The foot of the ladder is 3 m from the wall. How high up the wall does the ladder reach?
+- 3² + h² = 5²
+- 9 + h² = 25
+- h² = 16
+- h = **4 m**
+
+**Example:** Two friends start from the same point. One walks 6 km east, and the other walks 8 km north. How far apart are they?
+- d² = 6² + 8² = 36 + 64 = 100
+- d = **10 km**
+
+---
+
+## Summary
+
+- The **Baudhayana-Pythagoras Theorem** states: In a right triangle with legs a and b and hypotenuse c, **a² + b² = c²**.
+- Baudhyana stated this in his **Shulba-Sutra** (c. 800 BCE), one of the earliest known statements.
+- The diagonal of a square of side a has length **a x sqrt(2)**, and the square on the diagonal has **double** the area.
+- **sqrt(2) is irrational** -- it cannot be expressed as a fraction and has a non-terminating, non-repeating decimal.
+- **Pythagorean triples** like (3, 4, 5), (5, 12, 13) are sets of whole numbers satisfying the theorem.
+- The **converse** is also true: if a² + b² = c², the triangle is a right triangle.
+- The theorem is used in finding distances, heights, and in construction problems.

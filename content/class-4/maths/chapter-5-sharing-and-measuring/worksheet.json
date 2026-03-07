@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Understanding Fractions",
+      "easy": [
+        { "id": "ch5-t1-e1", "type": "mcq", "question": "If a dhokla is shared equally among 4 friends, what fraction does each friend get?", "options": ["1/2", "1/3", "1/4", "1/5"], "answer": "1/4", "explanation": "Sharing equally among 4 people means each gets 1 part out of 4 equal parts = 1/4." },
+        { "id": "ch5-t1-e2", "type": "fill", "question": "In the fraction 3/4, the top number 3 is called the ______ and the bottom number 4 is called the ______.", "answer": "numerator, denominator", "explanation": "The numerator tells how many parts we have. The denominator tells how many equal parts the whole is divided into." },
+        { "id": "ch5-t1-e3", "type": "mcq", "question": "Ikra says 1/2 is the same as 2/4. Is she correct?", "options": ["Yes", "No", "Only sometimes", "Cannot tell"], "answer": "Yes", "explanation": "1/2 = 2/4. Two quarters equal one half. These are equivalent fractions." },
+        { "id": "ch5-t1-e4", "type": "fill", "question": "5/5 = ______ whole.", "answer": "1", "explanation": "When the numerator equals the denominator (5 parts out of 5), it equals 1 whole." }
+      ],
+      "medium": [
+        { "id": "ch5-t1-m1", "type": "short", "question": "Why is 1/8 smaller than 1/4?", "answer": "When you divide something into more pieces (8 pieces vs 4 pieces), each piece is smaller. So 1/8 is smaller than 1/4.", "explanation": "The bigger the denominator, the more parts the whole is split into, and the smaller each part becomes." },
+        { "id": "ch5-t1-m2", "type": "mcq", "question": "Which fraction is the biggest: 1/2, 1/5, or 1/9?", "options": ["1/2", "1/5", "1/9", "They are all equal"], "answer": "1/2", "explanation": "When the numerator is the same, the fraction with the smallest denominator is the biggest. 1/2 > 1/5 > 1/9." },
+        { "id": "ch5-t1-m3", "type": "short", "question": "Write two equivalent fractions for 1/3.", "answer": "1/3 = 2/6 = 3/9.", "explanation": "Multiply both numerator and denominator by the same number. 1x2/3x2 = 2/6. 1x3/3x3 = 3/9." }
+      ],
+      "hard": [
+        { "id": "ch5-t1-h1", "type": "long", "question": "Idha's garden has 5 equal parts. Mogra takes 1/5, Rose takes 2/5, Lily takes 1/5, and Marigold takes the rest. What fraction is for Marigold? Show that all parts add up to 1 whole.", "answer": "Marigold's fraction = 1 - 1/5 - 2/5 - 1/5 = 1 - 4/5 = 1/5. Check: 1/5 + 2/5 + 1/5 + 1/5 = 5/5 = 1 whole.", "explanation": "Add the known fractions: 1+2+1 = 4 parts out of 5. Remaining = 5-4 = 1 part = 1/5." }
+      ]
+    },
+    {
+      "topic": "Fractions of a Group and Equivalent Fractions",
+      "easy": [
+        { "id": "ch5-t2-e1", "type": "mcq", "question": "What is 1/2 of 12 cookies?", "options": ["3", "4", "6", "8"], "answer": "6", "explanation": "1/2 of 12 = 12 divided by 2 = 6 cookies." },
+        { "id": "ch5-t2-e2", "type": "fill", "question": "1/4 of 8 diyas = ______ diyas.", "answer": "2", "explanation": "Divide 8 into 4 equal groups: 8 / 4 = 2 diyas per group." },
+        { "id": "ch5-t2-e3", "type": "mcq", "question": "Which fraction is equivalent to 1/2?", "options": ["2/3", "2/4", "3/5", "1/3"], "answer": "2/4", "explanation": "1/2 = 2/4. Multiply both numerator and denominator by 2." }
+      ],
+      "medium": [
+        { "id": "ch5-t2-m1", "type": "short", "question": "12 cookies are shared equally among 3 children. How many does each child get? What fraction of the total does each child get?", "answer": "Each child gets 12 / 3 = 4 cookies. Each gets 1/3 of the total.", "explanation": "Divide equally among 3: 12/3 = 4. Each person's share is 1/3." },
+        { "id": "ch5-t2-m2", "type": "short", "question": "Using a fraction chart, explain why 2/4 = 1/2.", "answer": "On a fraction chart, if you look at 1/2, it covers the same length as two pieces of 1/4 combined. So 2 pieces of 1/4 = 1 piece of 1/2.", "explanation": "The fraction chart shows that 2 quarters placed together equal exactly 1 half." },
+        { "id": "ch5-t2-m3", "type": "mcq", "question": "What is 1/3 of 15 laddoos?", "options": ["3", "5", "10", "15"], "answer": "5", "explanation": "1/3 of 15 = 15 / 3 = 5 laddoos." }
+      ],
+      "hard": [
+        { "id": "ch5-t2-h1", "type": "long", "question": "A dosa is divided into 3 equal parts. Ravi eats 2/3 of the dosa and Priya eats 1/3. If another dosa is divided into 6 equal parts, how many parts should Ravi eat to have the same fraction as before? How many parts should Priya eat?", "answer": "Ravi ate 2/3 before. 2/3 = 4/6, so Ravi should eat 4 parts. Priya ate 1/3 = 2/6, so Priya should eat 2 parts. Check: 4/6 + 2/6 = 6/6 = 1 whole dosa.", "explanation": "Convert to equivalent fractions with denominator 6: multiply both parts by 2. 2/3 = 4/6 and 1/3 = 2/6." },
+        { "id": "ch5-t2-h2", "type": "long", "question": "A class has 30 students. 1/5 of them like cricket, 1/3 like football, and the rest like badminton. How many students like each sport?", "answer": "Cricket: 1/5 of 30 = 6 students. Football: 1/3 of 30 = 10 students. Badminton: 30 - 6 - 10 = 14 students.", "explanation": "Find each fraction of 30. Cricket: 30/5 = 6. Football: 30/3 = 10. Remaining: 30 - 6 - 10 = 14." }
+      ]
+    }
+  ]
+}

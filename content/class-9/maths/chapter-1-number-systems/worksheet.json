@@ -1,0 +1,308 @@
+{
+  "topics": [
+    {
+      "topic": "Rational and Irrational Numbers",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following is an irrational number?",
+          "options": ["3/4", "0.333...", "sqrt(4)", "sqrt(2)"],
+          "answer": "sqrt(2)",
+          "explanation": "sqrt(4) = 2 which is rational. 3/4 and 0.333... are rational numbers. sqrt(2) = 1.41421356... is non-terminating non-recurring, hence irrational."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "Every rational number can be written in the form p/q where p and q are integers and q ______ 0.",
+          "answer": "is not equal to",
+          "explanation": "By definition, a rational number p/q requires q to be non-zero, since division by zero is undefined."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "mcq",
+          "question": "Is zero a rational number?",
+          "options": ["Yes, because 0 = 0/1", "No, because 0 has no value", "Yes, but only sometimes", "No, because 0 cannot be written as p/q"],
+          "answer": "Yes, because 0 = 0/1",
+          "explanation": "Zero is a rational number because it can be written as 0/1 (or 0/2, 0/3, etc.) where the numerator is 0 and the denominator is a non-zero integer."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "short",
+          "question": "State whether the following statement is true or false: 'Every natural number is a whole number.' Give a reason.",
+          "answer": "True, since the collection of whole numbers contains all the natural numbers.",
+          "explanation": "Whole numbers are {0, 1, 2, 3, ...} and natural numbers are {1, 2, 3, ...}. Every natural number is included in the set of whole numbers."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "mcq",
+          "question": "Which of the following statements is FALSE?",
+          "options": ["Every whole number is a rational number", "Every integer is a rational number", "Every rational number is an integer", "Every natural number is an integer"],
+          "answer": "Every rational number is an integer",
+          "explanation": "3/5 is a rational number but not an integer. Hence, 'Every rational number is an integer' is false."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Find five rational numbers between 3/5 and 4/5.",
+          "answer": "Five rational numbers between 3/5 and 4/5 are: 19/30, 20/30, 21/30, 22/30, 23/30 (i.e., 19/30, 2/3, 7/10, 11/15, 23/30).",
+          "explanation": "Rewrite 3/5 = 18/30 and 4/5 = 24/30. Then pick any five fractions with numerators between 18 and 24: 19/30, 20/30, 21/30, 22/30, 23/30."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Find six rational numbers between 3 and 4.",
+          "answer": "Six rational numbers between 3 and 4 are: 22/7, 23/7, 24/7, 25/7, 26/7, 27/7.",
+          "explanation": "Rewrite 3 = 21/7 and 4 = 28/7. Then the six rational numbers between them are 22/7, 23/7, 24/7, 25/7, 26/7, 27/7."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "short",
+          "question": "Are the square roots of all positive integers irrational? If not, give an example of the square root of a number that is a rational number.",
+          "answer": "No. For example, sqrt(4) = 2, which is a rational number.",
+          "explanation": "Square roots of perfect squares (like 1, 4, 9, 16, 25, ...) are rational numbers. Only square roots of non-perfect-square positive integers are irrational."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Show how sqrt(5) can be represented on the number line.",
+          "answer": "Step 1: Draw a number line and mark point O at 0 and A at 2.\nStep 2: At A, draw a perpendicular line segment AB of length 1 unit.\nStep 3: Join OB. By the Pythagoras theorem, OB = sqrt(2^2 + 1^2) = sqrt(5).\nStep 4: With O as centre and OB as radius, draw an arc that intersects the number line at point P.\nStep 5: Point P represents sqrt(5) on the number line.",
+          "explanation": "We use the fact that sqrt(5) = sqrt(4 + 1). By constructing a right triangle with legs 2 and 1, the hypotenuse equals sqrt(5). Transferring this length to the number line using a compass gives us the exact position of sqrt(5)."
+        },
+        {
+          "id": "ch1-t1-h2",
+          "type": "long",
+          "question": "Find an irrational number between 1/7 and 2/7.",
+          "answer": "1/7 = 0.142857... and 2/7 = 0.285714...\nAn irrational number between them is 0.150150015000150000... (non-terminating, non-recurring).",
+          "explanation": "We need a number whose decimal expansion is non-terminating and non-recurring, and lies between 0.142857... and 0.285714... The number 0.150150015000150000... satisfies all these conditions, as it has no repeating pattern and falls within the given range."
+        }
+      ]
+    },
+    {
+      "topic": "Decimal Expansions",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "What is the decimal expansion of 36/100?",
+          "options": ["0.036", "0.36", "3.6", "36.0"],
+          "answer": "0.36",
+          "explanation": "36/100 = 0.36, which is a terminating decimal."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "The decimal expansion of a rational number is either terminating or non-terminating ______.",
+          "answer": "recurring",
+          "explanation": "A rational number p/q always has a decimal expansion that either terminates (remainder becomes 0) or has a repeating block of digits (non-terminating recurring)."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "Which of the following has a terminating decimal expansion?",
+          "options": ["1/3", "1/7", "41/8", "1/11"],
+          "answer": "41/8",
+          "explanation": "41/8 = 5.125 (terminating). A rational number p/q in lowest terms has a terminating decimal if and only if the prime factorisation of q has only 2s and 5s. Since 8 = 2^3, it terminates."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "short",
+          "question": "Write the decimal form of 1/11 and state what kind of decimal expansion it has.",
+          "answer": "1/11 = 0.090909... = 0.09 (bar over 09). It has a non-terminating repeating decimal expansion.",
+          "explanation": "Dividing 1 by 11 gives 0.090909... where the block '09' repeats infinitely. This is a non-terminating recurring decimal."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Express 0.6 (recurring) in the form p/q.",
+          "answer": "Let x = 0.666...\n10x = 6.666...\n10x = 6 + x\n9x = 6\nx = 6/9 = 2/3",
+          "explanation": "Since one digit repeats, multiply by 10 to shift the decimal. Then subtract the original equation to eliminate the recurring part."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "Express 0.001 (bar over 001, i.e., 0.001001001...) in the form p/q.",
+          "answer": "Let x = 0.001001001...\n1000x = 1.001001...\n1000x = 1 + x\n999x = 1\nx = 1/999",
+          "explanation": "Since three digits repeat, multiply by 1000. Then subtract the original to get 999x = 1, so x = 1/999."
+        },
+        {
+          "id": "ch1-t2-m3",
+          "type": "short",
+          "question": "Express 0.99999... in the form p/q. What do you observe?",
+          "answer": "Let x = 0.9999...\n10x = 9.9999...\n10x = 9 + x\n9x = 9\nx = 1\nSurprisingly, 0.9999... = 1 exactly.",
+          "explanation": "This is a famous result: 0.999... equals 1. The algebraic manipulation proves it rigorously. There is no gap between 0.999... and 1."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "You know that 1/7 = 0.142857 (recurring). Without doing long division, predict the decimal expansions of 2/7, 3/7, 4/7, 5/7, and 6/7.",
+          "answer": "2/7 = 2 x (1/7) = 0.285714 (recurring)\n3/7 = 3 x (1/7) = 0.428571 (recurring)\n4/7 = 4 x (1/7) = 0.571428 (recurring)\n5/7 = 5 x (1/7) = 0.714285 (recurring)\n6/7 = 6 x (1/7) = 0.857142 (recurring)",
+          "explanation": "Each decimal is a cyclic permutation of the digits 142857. Multiplying 1/7 by 2, 3, 4, 5, 6 simply rotates the starting point of the repeating block. This is a beautiful property of the number 7."
+        },
+        {
+          "id": "ch1-t2-h2",
+          "type": "long",
+          "question": "What can the maximum number of digits be in the repeating block of 1/17? Perform the division to verify.",
+          "answer": "The maximum number of digits in the repeating block of 1/17 is 16 (one less than the divisor). Performing the division: 1/17 = 0.0588235294117647 (recurring), which has a repeating block of 16 digits.",
+          "explanation": "When dividing by q, the possible remainders are 1, 2, ..., q-1 (total q-1 values). So the repeating block can have at most q-1 digits. For 1/17, the maximum is 16, and in this case, all 16 possible remainders appear before the cycle repeats."
+        }
+      ]
+    },
+    {
+      "topic": "Operations on Real Numbers and Rationalisation",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "What is the result of (sqrt(3) + sqrt(3))(sqrt(3) - sqrt(3))?",
+          "options": ["0", "3", "6", "9"],
+          "answer": "0",
+          "explanation": "(sqrt(3) + sqrt(3))(sqrt(3) - sqrt(3)) = 2sqrt(3) x 0 = 0. Alternatively, since the second factor is 0, the product is 0."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "The sum of a rational number and an irrational number is always ______.",
+          "answer": "irrational",
+          "explanation": "If r is rational and s is irrational, then r + s cannot be rational (because that would imply s = (r+s) - r is rational, a contradiction). So r + s is irrational."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "mcq",
+          "question": "Classify 2 - sqrt(5): is it rational or irrational?",
+          "options": ["Rational", "Irrational", "Neither", "Cannot be determined"],
+          "answer": "Irrational",
+          "explanation": "2 is rational and sqrt(5) is irrational. The difference of a rational and an irrational number is always irrational. So 2 - sqrt(5) is irrational."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "short",
+          "question": "Classify (3 + sqrt(23)) - sqrt(23) as rational or irrational.",
+          "answer": "Rational. (3 + sqrt(23)) - sqrt(23) = 3, which is rational.",
+          "explanation": "The sqrt(23) terms cancel out, leaving just 3, which is a rational number."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "Simplify: (sqrt(5) + sqrt(2))^2",
+          "answer": "(sqrt(5) + sqrt(2))^2 = 5 + 2sqrt(10) + 2 = 7 + 2sqrt(10)",
+          "explanation": "Using the identity (sqrt(a) + sqrt(b))^2 = a + 2sqrt(ab) + b, we get 5 + 2sqrt(5 x 2) + 2 = 7 + 2sqrt(10)."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "short",
+          "question": "Rationalise the denominator of 1/sqrt(7).",
+          "answer": "1/sqrt(7) = 1/sqrt(7) x sqrt(7)/sqrt(7) = sqrt(7)/7",
+          "explanation": "Multiply numerator and denominator by sqrt(7). The denominator becomes sqrt(7) x sqrt(7) = 7, a rational number."
+        },
+        {
+          "id": "ch1-t3-m3",
+          "type": "short",
+          "question": "Rationalise the denominator of 1/(sqrt(5) + sqrt(2)).",
+          "answer": "Multiply by (sqrt(5) - sqrt(2))/(sqrt(5) - sqrt(2)):\n1/(sqrt(5) + sqrt(2)) = (sqrt(5) - sqrt(2))/(5 - 2) = (sqrt(5) - sqrt(2))/3",
+          "explanation": "Using the identity (a + b)(a - b) = a^2 - b^2, the denominator becomes 5 - 2 = 3."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Rationalise the denominator of 1/(7 - 2) where the denominator means (sqrt(7) - sqrt(2)).",
+          "answer": "Multiply numerator and denominator by (sqrt(7) + sqrt(2)):\n1/(sqrt(7) - sqrt(2)) = (sqrt(7) + sqrt(2))/((sqrt(7))^2 - (sqrt(2))^2) = (sqrt(7) + sqrt(2))/(7 - 2) = (sqrt(7) + sqrt(2))/5",
+          "explanation": "We use the conjugate (sqrt(7) + sqrt(2)) to rationalise. The denominator becomes 7 - 2 = 5 by the difference of squares identity."
+        },
+        {
+          "id": "ch1-t3-h2",
+          "type": "long",
+          "question": "Rationalise the denominator of 1/(7 + 3sqrt(2)).",
+          "answer": "Multiply by (7 - 3sqrt(2))/(7 - 3sqrt(2)):\n1/(7 + 3sqrt(2)) = (7 - 3sqrt(2))/(49 - 18) = (7 - 3sqrt(2))/31",
+          "explanation": "The conjugate of 7 + 3sqrt(2) is 7 - 3sqrt(2). The denominator becomes 7^2 - (3sqrt(2))^2 = 49 - 9(2) = 49 - 18 = 31."
+        }
+      ]
+    },
+    {
+      "topic": "Laws of Exponents for Real Numbers",
+      "easy": [
+        {
+          "id": "ch1-t4-e1",
+          "type": "mcq",
+          "question": "What is 64^(1/2)?",
+          "options": ["6", "8", "32", "4"],
+          "answer": "8",
+          "explanation": "64^(1/2) means the square root of 64. Since 8^2 = 64, 64^(1/2) = 8."
+        },
+        {
+          "id": "ch1-t4-e2",
+          "type": "fill",
+          "question": "32^(1/5) = ______",
+          "answer": "2",
+          "explanation": "32 = 2^5, so 32^(1/5) = (2^5)^(1/5) = 2^1 = 2."
+        },
+        {
+          "id": "ch1-t4-e3",
+          "type": "short",
+          "question": "Find 125^(1/3).",
+          "answer": "125^(1/3) = 5",
+          "explanation": "125 = 5^3, so the cube root of 125 is 5."
+        },
+        {
+          "id": "ch1-t4-e4",
+          "type": "mcq",
+          "question": "What is 125^(-1/3)?",
+          "options": ["5", "-5", "1/5", "-1/5"],
+          "answer": "1/5",
+          "explanation": "125^(-1/3) = 1/(125^(1/3)) = 1/5, since 125^(1/3) = 5."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t4-m1",
+          "type": "short",
+          "question": "Find 9^(3/2).",
+          "answer": "9^(3/2) = (9^(1/2))^3 = 3^3 = 27",
+          "explanation": "First find the square root of 9 (which is 3), then cube it: 3^3 = 27."
+        },
+        {
+          "id": "ch1-t4-m2",
+          "type": "short",
+          "question": "Simplify: 2^(2/3) x 2^(1/3)",
+          "answer": "2^(2/3) x 2^(1/3) = 2^(2/3 + 1/3) = 2^(3/3) = 2^1 = 2",
+          "explanation": "Using the law a^p x a^q = a^(p+q), we add the exponents: 2/3 + 1/3 = 1."
+        },
+        {
+          "id": "ch1-t4-m3",
+          "type": "short",
+          "question": "Simplify: 11^(1/2) / 11^(1/4)",
+          "answer": "11^(1/2) / 11^(1/4) = 11^(1/2 - 1/4) = 11^(1/4)",
+          "explanation": "Using the law a^p / a^q = a^(p-q): 1/2 - 1/4 = 2/4 - 1/4 = 1/4."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t4-h1",
+          "type": "long",
+          "question": "Simplify: (a) 16^(3/4) (b) 32^(2/5) (c) (1/33)^7 (d) 13^(1/5) x 17^(1/5)",
+          "answer": "(a) 16^(3/4) = (2^4)^(3/4) = 2^3 = 8\n(b) 32^(2/5) = (2^5)^(2/5) = 2^2 = 4\n(c) (1/33)^7 = (3^(-1/3))^7 = 3^(-7/3) -- but if read as (3^(1/3))^7 = 3^(7/3)\n(d) 13^(1/5) x 17^(1/5) = (13 x 17)^(1/5) = 221^(1/5)",
+          "explanation": "(a) Write 16 = 2^4, then apply (a^m)^n = a^(mn): (2^4)^(3/4) = 2^3 = 8.\n(b) Write 32 = 2^5, then (2^5)^(2/5) = 2^2 = 4.\n(d) Use a^p x b^p = (ab)^p: 13^(1/5) x 17^(1/5) = (13 x 17)^(1/5) = 221^(1/5)."
+        },
+        {
+          "id": "ch1-t4-h2",
+          "type": "long",
+          "question": "Simplify 7^(1/2) x 8^(1/2) and express in simplest radical form.",
+          "answer": "7^(1/2) x 8^(1/2) = (7 x 8)^(1/2) = 56^(1/2) = sqrt(56) = sqrt(4 x 14) = 2sqrt(14)",
+          "explanation": "Using a^p x b^p = (ab)^p, combine the bases: (7 x 8)^(1/2) = sqrt(56). Then simplify: 56 = 4 x 14, so sqrt(56) = 2sqrt(14)."
+        }
+      ]
+    }
+  ]
+}

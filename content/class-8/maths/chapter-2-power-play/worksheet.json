@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Laws of Exponents",
+      "easy": [
+        { "id": "ch2-t1-e1", "type": "mcq", "question": "What is 3⁴ x 3³?", "options": ["3⁷", "3¹²", "9⁷", "3¹"], "answer": "3⁷", "explanation": "When multiplying powers with the same base, add the exponents: 3⁴ x 3³ = 3⁴⁺³ = 3⁷." },
+        { "id": "ch2-t1-e2", "type": "fill", "question": "(n^a)^b = n^(______).", "answer": "a x b", "explanation": "When raising a power to another power, multiply the exponents." },
+        { "id": "ch2-t1-e3", "type": "mcq", "question": "What is 5⁰?", "options": ["0", "1", "5", "Undefined"], "answer": "1", "explanation": "Any non-zero number raised to the power 0 equals 1." },
+        { "id": "ch2-t1-e4", "type": "short", "question": "Simplify: 2⁵ x 5⁵", "answer": "2⁵ x 5⁵ = (2 x 5)⁵ = 10⁵ = 1,00,000.", "explanation": "Same exponents, different bases: combine the bases. m^a x n^a = (mn)^a." }
+      ],
+      "medium": [
+        { "id": "ch2-t1-m1", "type": "short", "question": "Simplify: 2¹⁰⁰ ÷ 2²⁵", "answer": "2¹⁰⁰ ÷ 2²⁵ = 2¹⁰⁰⁻²⁵ = 2⁷⁵.", "explanation": "When dividing powers with the same base, subtract the exponents." },
+        { "id": "ch2-t1-m2", "type": "short", "question": "What is 10⁻³?", "answer": "10⁻³ = 1/10³ = 1/1000 = 0.001.", "explanation": "A negative exponent means take the reciprocal: n⁻ᵃ = 1/nᵃ." },
+        { "id": "ch2-t1-m3", "type": "short", "question": "Express 32400 as a product of prime factors in exponential form.", "answer": "32400 = 2⁴ x 3⁴ x 5².\n\n32400 ÷ 2 = 16200, ÷ 2 = 8100, ÷ 2 = 4050, ÷ 2 = 2025, ÷ 3 = 675, ÷ 3 = 225, ÷ 3 = 75, ÷ 3 = 25, ÷ 5 = 5, ÷ 5 = 1.", "explanation": "Divide by the smallest prime factors systematically, then express using exponents." }
+      ],
+      "hard": [
+        { "id": "ch2-t1-h1", "type": "long", "question": "Simplify: (2³)⁴ x 3⁶ ÷ (6² x 2⁴). Show all steps using laws of exponents.", "answer": "Step 1: (2³)⁴ = 2¹² (power of a power: multiply exponents).\n\nStep 2: 6² = (2 x 3)² = 2² x 3² (distribute exponent).\n\nStep 3: Expression = 2¹² x 3⁶ ÷ (2² x 3² x 2⁴)\n= 2¹² x 3⁶ ÷ (2⁶ x 3²)\n= 2¹²⁻⁶ x 3⁶⁻²\n= 2⁶ x 3⁴\n= 64 x 81 = 5184.", "explanation": "Apply the laws systematically: power of a power, same base multiplication/division, and compute." }
+      ]
+    },
+    {
+      "topic": "Scientific Notation and Exponential Growth",
+      "easy": [
+        { "id": "ch2-t2-e1", "type": "mcq", "question": "5900 in scientific notation is:", "options": ["59 x 10²", "5.9 x 10³", "0.59 x 10⁴", "5.9 x 10²"], "answer": "5.9 x 10³", "explanation": "Scientific notation: x x 10^y where 1 ≤ x < 10. 5900 = 5.9 x 10³." },
+        { "id": "ch2-t2-e2", "type": "fill", "question": "In the expression 5⁴, the base is 5 and the ______ is 4.", "answer": "exponent", "explanation": "In n^a, n is the base and a is the exponent (or power)." },
+        { "id": "ch2-t2-e3", "type": "short", "question": "Write 80,00,000 in scientific notation.", "answer": "80,00,000 = 8 x 10⁶.", "explanation": "Move the decimal point 6 places to the left to get 8.0, so the number is 8 x 10⁶." }
+      ],
+      "medium": [
+        { "id": "ch2-t2-m1", "type": "short", "question": "A paper is 0.001 cm thick. After folding it 10 times (each fold doubles thickness), how thick is it?", "answer": "Thickness = 0.001 x 2¹⁰ = 0.001 x 1024 = 1.024 cm.", "explanation": "Each fold doubles the thickness. After n folds: 0.001 x 2ⁿ cm. With n = 10: 0.001 x 1024 = 1.024 cm." },
+        { "id": "ch2-t2-m2", "type": "short", "question": "Write 561.903 in expanded form using powers of 10.", "answer": "(5 x 10²) + (6 x 10¹) + (1 x 10⁰) + (9 x 10⁻¹) + (0 x 10⁻²) + (3 x 10⁻³).", "explanation": "Each digit is multiplied by its place value. Digits after the decimal point use negative powers of 10." }
+      ],
+      "hard": [
+        { "id": "ch2-t2-h1", "type": "long", "question": "Compare linear and exponential growth: Building a ladder to the Moon (384400 km) with 20 cm steps vs folding paper (0.001 cm thick). How many steps vs how many folds are needed?", "answer": "Linear growth (ladder):\nDistance = 384400 km = 384400 x 100000 cm = 3.844 x 10¹⁰ cm.\nSteps needed = 3.844 x 10¹⁰ / 20 = 1.922 x 10⁹ ≈ 192 crore steps.\n\nExponential growth (paper folding):\n0.001 x 2ⁿ ≥ 3.844 x 10¹⁰\n2ⁿ ≥ 3.844 x 10¹³\nSince 2⁴⁵ ≈ 3.52 x 10¹³ and 2⁴⁶ ≈ 7.04 x 10¹³, we need 46 folds.\n\nLinear: ~192 crore steps. Exponential: just 46 folds!\nExponential growth is dramatically faster.", "explanation": "Linear growth adds a fixed amount each step. Exponential growth multiplies by a fixed factor. 46 doublings far exceed 192 crore additions." }
+      ]
+    }
+  ]
+}

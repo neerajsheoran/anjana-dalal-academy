@@ -1,0 +1,139 @@
+{
+  "topics": [
+    {
+      "topic": "Units of Length and Conversions",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "How many centimetres make 1 metre?",
+          "options": ["10 cm", "100 cm", "1,000 cm", "50 cm"],
+          "answer": "100 cm",
+          "explanation": "1 metre = 100 centimetres."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "1 kilometre = ______ metres.",
+          "answer": "1,000",
+          "explanation": "The word 'kilo' means thousand. So 1 kilometre = 1,000 metres."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "Which unit would you use to measure the thickness of a coin?",
+          "options": ["Kilometre", "Metre", "Centimetre", "Millimetre"],
+          "answer": "Millimetre",
+          "explanation": "Millimetres are used for very small measurements like the thickness of a coin."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "short",
+          "question": "Convert 45 mm to centimetres and millimetres.",
+          "answer": "4 cm 5 mm",
+          "explanation": "45 mm = 40 mm + 5 mm = 4 cm + 5 mm = 4 cm 5 mm (since 10 mm = 1 cm)."
+        },
+        {
+          "id": "ch5-t1-e5",
+          "type": "fill",
+          "question": "1 cm = ______ mm.",
+          "answer": "10",
+          "explanation": "Between each centimetre mark on a ruler, there are 10 small lines. Each gap is 1 mm, so 1 cm = 10 mm."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Convert 5,792 cm to metres and centimetres.",
+          "answer": "57 m 92 cm",
+          "explanation": "5,792 ÷ 100 = 57 remainder 92. So 5,792 cm = 57 m 92 cm."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "mcq",
+          "question": "Which is longer: 456 cm or 5 m?",
+          "options": ["456 cm", "5 m", "Both are equal", "Cannot compare"],
+          "answer": "5 m",
+          "explanation": "Convert to the same unit: 5 m = 500 cm. Since 500 cm > 456 cm, 5 m is longer."
+        },
+        {
+          "id": "ch5-t1-m3",
+          "type": "short",
+          "question": "The Statue of Unity in Gujarat is 182 m tall and the Statue of Liberty in the USA is 93 m tall. What is the difference in their heights?",
+          "answer": "89 m",
+          "explanation": "182 - 93 = 89 metres. The Statue of Unity is 89 m taller."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "The Vivek Express travels 4,187 km from Dibrugarh to Kanniyakumari. If the train has reached Bhubaneswar (2,007 km from Dibrugarh), how many more kilometres does it need to travel? Convert this remaining distance to metres.",
+          "answer": "Remaining distance = 4,187 - 2,007 = 2,180 km. In metres: 2,180 x 1,000 = 21,80,000 m (or 2,180,000 m).",
+          "explanation": "Subtract the distance already covered: 4,187 - 2,007 = 2,180 km. To convert to metres, multiply by 1,000: 2,180 x 1,000 = 2,180,000 m."
+        }
+      ]
+    },
+    {
+      "topic": "Adding, Subtracting, Multiplying, and Dividing Lengths",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "3 km 450 m + 4 km 650 m = ?",
+          "options": ["7 km 100 m", "8 km 100 m", "7 km 1100 m", "8 km"],
+          "answer": "8 km 100 m",
+          "explanation": "km: 3 + 4 = 7 km. m: 450 + 650 = 1,100 m = 1 km 100 m. Total: 7 + 1 km and 100 m = 8 km 100 m."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "34 km = ______ m.",
+          "answer": "34,000",
+          "explanation": "1 km = 1,000 m. So 34 km = 34 x 1,000 = 34,000 m."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "short",
+          "question": "The Gulmarg Gondola has two sections: 2 km 300 m and 2 km 650 m. Find the total length.",
+          "answer": "4 km 950 m",
+          "explanation": "km: 2 + 2 = 4 km. m: 300 + 650 = 950 m. Total: 4 km 950 m."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "A shirt needs 1 m 80 cm of cloth. How much cloth is needed for 20 shirts?",
+          "answer": "36 m",
+          "explanation": "20 x 1 m 80 cm = 20 x 1 m + 20 x 80 cm = 20 m + 1,600 cm = 20 m + 16 m = 36 m."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "mcq",
+          "question": "A 12 km 600 m road is laid equally over 6 days. How much road is laid per day?",
+          "options": ["2 km 100 m", "2 km 600 m", "2 km 10 m", "2 km"],
+          "answer": "2 km 100 m",
+          "explanation": "12 km 600 m = 12,600 m. 12,600 / 6 = 2,100 m = 2 km 100 m per day."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "For the Republic Day parade, a ribbon of length 63 m is cut. First, 16 m 75 cm is cut for the first section. Then, the remaining ribbon is cut into 5 equal pieces. What is the length of each piece?",
+          "answer": "Remaining ribbon: 63 m - 16 m 75 cm = 6,300 cm - 1,675 cm = 4,625 cm = 46 m 25 cm. Each piece: 4,625 cm / 5 = 925 cm = 9 m 25 cm.",
+          "explanation": "Convert to cm: 63 m = 6,300 cm, 16 m 75 cm = 1,675 cm. Remaining = 6,300 - 1,675 = 4,625 cm. Divide by 5: 4,625 / 5 = 925 cm = 9 m 25 cm."
+        },
+        {
+          "id": "ch5-t2-h2",
+          "type": "long",
+          "question": "Amit walks 2 km 500 m to school every day. He goes and comes back. How many kilometres does he walk in 6 school days (going and coming back each day)?",
+          "answer": "One way = 2 km 500 m. Round trip per day = 2 x 2 km 500 m = 5 km. In 6 days = 6 x 5 km = 30 km.",
+          "explanation": "Each day, Amit walks 2 km 500 m x 2 = 5 km 0 m = 5 km. In 6 days: 5 x 6 = 30 km."
+        }
+      ]
+    }
+  ]
+}

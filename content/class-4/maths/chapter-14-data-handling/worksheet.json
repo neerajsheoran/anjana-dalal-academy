@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Collecting and Organising Data",
+      "easy": [
+        { "id": "ch14-t1-e1", "type": "mcq", "question": "What is data?", "options": ["A type of maths problem", "A collection of facts and information", "A kind of graph", "A number system"], "answer": "A collection of facts and information", "explanation": "Data is information that we collect about something, such as answers to a survey or counts of objects." },
+        { "id": "ch14-t1-e2", "type": "fill", "question": "In tally marks, the 5th line is drawn ______ the previous 4 lines.", "answer": "across", "explanation": "Every 5th tally line crosses the previous 4, making groups of 5 that are easy to count." },
+        { "id": "ch14-t1-e3", "type": "mcq", "question": "Which is a better question for collecting data?", "options": ["Which subjects do you like?", "Which subject do you like the most?", "Do you like school?", "Are subjects fun?"], "answer": "Which subject do you like the most?", "explanation": "A good data question is specific and gives one clear answer per person, making it easy to count and compare." },
+        { "id": "ch14-t1-e4", "type": "fill", "question": "The best way to organise data for easy reading is in a ______.", "answer": "table", "explanation": "A table with rows and columns makes data clear, easy to read, and easy to compare." }
+      ],
+      "medium": [
+        { "id": "ch14-t1-m1", "type": "short", "question": "In a class survey about favourite subjects, the results are: Maths = 10, Languages = 8, Science = 7, P.E. = 11, Arts = 9. Which subject is most popular? How many students were surveyed in total?", "answer": "Most popular: P.E. (11 students). Total surveyed: 10 + 8 + 7 + 11 + 9 = 45 students.", "explanation": "Look for the highest number (11 for P.E.) and add all numbers for the total." },
+        { "id": "ch14-t1-m2", "type": "short", "question": "How many more children like P.E. than Science in the survey above?", "answer": "P.E. = 11, Science = 7. Difference = 11 - 7 = 4 more children.", "explanation": "Subtract the smaller from the larger: 11 - 7 = 4." },
+        { "id": "ch14-t1-m3", "type": "mcq", "question": "Why is a long list of responses (like M, L, T, A, P.E., M, L, M...) hard to use?", "options": ["It takes too much paper", "It is hard to count and compare", "The letters are confusing", "Lists are not allowed"], "answer": "It is hard to count and compare", "explanation": "When data is in a long list, it is difficult to quickly see which item has the most or least responses." }
+      ],
+      "hard": [
+        { "id": "ch14-t1-h1", "type": "long", "question": "Design a survey question you could ask your class. Write a clear question, list the possible answers, and explain how you would organise the data.", "answer": "Example: Question: Which is your favourite fruit? Possible answers: Mango, Apple, Banana, Grapes, Other. I would ask each student and make a tally mark next to their choice. Then I would count the tallies and put the results in a table with two columns: Fruit and Number of Students.", "explanation": "A good survey has a clear question, specific answer choices, and a plan for organising the responses." }
+      ]
+    },
+    {
+      "topic": "Reading Pictographs and Interpreting Data",
+      "easy": [
+        { "id": "ch14-t2-e1", "type": "mcq", "question": "In a pictograph, each picture of a plate stands for 5 plates sold. If you see 4 pictures, how many plates were sold?", "options": ["4", "5", "15", "20"], "answer": "20", "explanation": "4 pictures x 5 plates per picture = 20 plates sold." },
+        { "id": "ch14-t2-e2", "type": "fill", "question": "In a pictograph, always check what each ______ represents.", "answer": "picture", "explanation": "The key/legend tells you the value of each picture (it could be 1, 2, 5, 10, or any number)." },
+        { "id": "ch14-t2-e3", "type": "mcq", "question": "In a pictograph where each picture = 5, how many pictures would you draw to show 35 items?", "options": ["5", "7", "30", "35"], "answer": "7", "explanation": "35 / 5 = 7 pictures." }
+      ],
+      "medium": [
+        { "id": "ch14-t2-m1", "type": "short", "question": "A fair sells fruit chaat and sandwiches. Day 1: Chaat = 4 pictures, Sandwich = 5 pictures. Day 2: Chaat = 6 pictures, Sandwich = 4 pictures. Each picture = 5 plates. Which day had the most total sales?", "answer": "Day 1: 4x5 + 5x5 = 20+25 = 45. Day 2: 6x5 + 4x5 = 30+20 = 50. Day 2 had more total sales (50 vs 45).", "explanation": "Calculate each day's total by converting pictures to numbers and adding both food items." },
+        { "id": "ch14-t2-m2", "type": "short", "question": "Give two examples of how data is used in real life in India.", "answer": "Examples: (1) Cricket uses data for scores, batting averages, and bowling figures. (2) Schools collect data about student attendance and marks to track progress.", "explanation": "Data is used everywhere: in sports, schools, hospitals, weather stations, shops, and government census." },
+        { "id": "ch14-t2-m3", "type": "mcq", "question": "Which way of showing data uses pictures or symbols?", "options": ["Table", "Tally marks", "Pictograph", "List"], "answer": "Pictograph", "explanation": "A pictograph uses pictures or symbols to represent data, making it visual and easy to understand." }
+      ],
+      "hard": [
+        { "id": "ch14-t2-h1", "type": "long", "question": "A school cafeteria sells 4 types of food. Here is the data for one week: Idli = 120 plates, Dosa = 85 plates, Poha = 60 plates, Sandwich = 95 plates. If you make a pictograph where each picture = 10 plates, how many pictures would you draw for each food? Which food is most popular? Which is least popular? How many total plates were sold?", "answer": "Idli: 120/10 = 12 pictures. Dosa: 85/10 = 8.5 pictures (8 full + 1 half picture). Poha: 60/10 = 6 pictures. Sandwich: 95/10 = 9.5 pictures (9 full + 1 half). Most popular: Idli (120). Least popular: Poha (60). Total: 120+85+60+95 = 360 plates.", "explanation": "Divide each value by 10 for pictures. For values not exactly divisible, use half-pictures. Compare totals for popularity." },
+        { "id": "ch14-t2-h2", "type": "long", "question": "30 students were asked: Do you play chess, cricket, both, or neither? Results: Chess only = 5 girls and 3 boys, Cricket only = 2 girls and 8 boys, Both = 3 girls and 4 boys, Neither = 2 girls and 3 boys. How many girls and boys were surveyed? Which game is more popular among boys? Among girls?", "answer": "Girls: 5+2+3+2 = 12. Boys: 3+8+4+3 = 18. Total: 12+18 = 30. For boys: Cricket (8+4=12 play cricket) vs Chess (3+4=7 play chess). Cricket is more popular among boys. For girls: Chess (5+3=8 play chess) vs Cricket (2+3=5 play cricket). Chess is more popular among girls.", "explanation": "Add each column for totals. For popularity, count everyone who plays each game (including 'both')." }
+      ]
+    }
+  ]
+}

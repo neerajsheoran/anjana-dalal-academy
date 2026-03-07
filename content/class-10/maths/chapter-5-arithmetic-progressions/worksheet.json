@@ -1,0 +1,210 @@
+{
+  "topics": [
+    {
+      "topic": "Introduction to Arithmetic Progressions",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following forms an AP?",
+          "options": ["1, 1, 2, 3, 5, 8, ...", "2, 4, 6, 8, 10, ...", "1, 4, 9, 16, 25, ...", "1, 2, 4, 8, 16, ..."],
+          "answer": "2, 4, 6, 8, 10, ...",
+          "explanation": "In an AP, the common difference between consecutive terms is constant. For 2, 4, 6, 8, 10, ... the common difference is 2."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "In an AP, the difference between any two consecutive terms is called the ______ difference.",
+          "answer": "common",
+          "explanation": "The common difference (d) is the fixed difference between successive terms: d = a(n+1) - a(n)."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "short",
+          "question": "Write the first four terms of the AP with first term a = 10 and common difference d = 10.",
+          "answer": "10, 20, 30, 40",
+          "explanation": "a1 = 10, a2 = 10 + 10 = 20, a3 = 20 + 10 = 30, a4 = 30 + 10 = 40."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "mcq",
+          "question": "The common difference of the AP: -5, -1, 3, 7, ... is:",
+          "options": ["-4", "4", "6", "-6"],
+          "answer": "4",
+          "explanation": "d = -1 - (-5) = -1 + 5 = 4."
+        },
+        {
+          "id": "ch5-t1-e5",
+          "type": "short",
+          "question": "Write first four terms of the AP when a = -2, d = 0.",
+          "answer": "-2, -2, -2, -2",
+          "explanation": "When d = 0, every term equals the first term. So all terms are -2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Is 150, 200, 250, 300, ... an AP? If so, find the common difference.",
+          "answer": "Yes, it is an AP with common difference d = 50.",
+          "explanation": "200 - 150 = 50, 250 - 200 = 50, 300 - 250 = 50. The difference is constant at 50, so it is an AP."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "Write the first four terms of the AP with a = 1/3 and d = 4/3.",
+          "answer": "1/3, 5/3, 3, 13/3",
+          "explanation": "a1 = 1/3, a2 = 1/3 + 4/3 = 5/3, a3 = 5/3 + 4/3 = 9/3 = 3, a4 = 3 + 4/3 = 13/3."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "For the AP: 3, 3 + sqrt(2), 3 + 2*sqrt(2), 3 + 3*sqrt(2), ... find the common difference and write the next three terms.",
+          "answer": "d = sqrt(2). Next three terms: 3 + 4*sqrt(2), 3 + 5*sqrt(2), 3 + 6*sqrt(2).",
+          "explanation": "Step 1: d = (3 + sqrt(2)) - 3 = sqrt(2).\nStep 2: 5th term = 3 + 4*sqrt(2), 6th term = 3 + 5*sqrt(2), 7th term = 3 + 6*sqrt(2)."
+        }
+      ]
+    },
+    {
+      "topic": "nth Term of an AP",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "The nth term of an AP with first term a and common difference d is:",
+          "options": ["a + nd", "a + (n-1)d", "a - (n-1)d", "a + (n+1)d"],
+          "answer": "a + (n-1)d",
+          "explanation": "The general (nth) term of an AP is a_n = a + (n - 1)d."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "The 10th term of the AP 2, 7, 12, 17, ... is ______.",
+          "answer": "47",
+          "explanation": "a = 2, d = 5. a_10 = 2 + (10 - 1)(5) = 2 + 45 = 47."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "short",
+          "question": "Find the 20th term of the AP: -5, -3, -1, 1, 3, ...",
+          "answer": "a_20 = 33",
+          "explanation": "a = -5, d = -3 - (-5) = 2. a_20 = -5 + (20 - 1)(2) = -5 + 38 = 33."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "short",
+          "question": "In the AP: 3, 8, 13, 18, ..., which term is 78?",
+          "answer": "78 is the 16th term.",
+          "explanation": "a = 3, d = 5. a_n = 3 + (n-1)(5) = 78. (n-1)(5) = 75. n - 1 = 15. n = 16."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "How many terms are there in the AP: 7, 13, 19, ..., 205?",
+          "answer": "There are 34 terms.",
+          "explanation": "Step 1: a = 7, d = 6, a_n = 205.\nStep 2: 205 = 7 + (n-1)(6) = 7 + 6n - 6 = 1 + 6n.\nStep 3: 6n = 204, n = 34."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "short",
+          "question": "Find the 31st term of an AP whose 11th term is 38 and the 16th term is 73.",
+          "answer": "a_31 = 178",
+          "explanation": "Step 1: a_11 = a + 10d = 38 ... (1)\nStep 2: a_16 = a + 15d = 73 ... (2)\nStep 3: Subtract (1) from (2): 5d = 35, d = 7.\nStep 4: From (1): a = 38 - 70 = -32.\nStep 5: a_31 = -32 + 30(7) = -32 + 210 = 178."
+        },
+        {
+          "id": "ch5-t2-m3",
+          "type": "short",
+          "question": "Which term of the AP: 3, 15, 27, 39, ... will be 132 more than its 54th term?",
+          "answer": "The 65th term.",
+          "explanation": "Step 1: a = 3, d = 12. a_54 = 3 + 53(12) = 3 + 636 = 639.\nStep 2: Required term = 639 + 132 = 771.\nStep 3: 771 = 3 + (n-1)(12), so (n-1)(12) = 768, n - 1 = 64, n = 65."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "An AP consists of 50 terms of which the 3rd term is 12 and the last term is 106. Find the 29th term.",
+          "answer": "a_29 = 64",
+          "explanation": "Step 1: a_3 = a + 2d = 12 ... (1)\nStep 2: a_50 = a + 49d = 106 ... (2)\nStep 3: Subtract (1) from (2): 47d = 94, d = 2.\nStep 4: From (1): a = 12 - 4 = 8.\nStep 5: a_29 = 8 + 28(2) = 8 + 56 = 64."
+        },
+        {
+          "id": "ch5-t2-h2",
+          "type": "long",
+          "question": "If the 3rd and the 9th terms of an AP are 4 and -8 respectively, which term of this AP is zero?",
+          "answer": "The 5th term is zero.",
+          "explanation": "Step 1: a_3 = a + 2d = 4 ... (1)\nStep 2: a_9 = a + 8d = -8 ... (2)\nStep 3: Subtract (1) from (2): 6d = -12, d = -2.\nStep 4: From (1): a = 4 - 2(-2) = 4 + 4 = 8.\nStep 5: a_n = 0: 8 + (n-1)(-2) = 0, 8 - 2n + 2 = 0, 10 = 2n, n = 5."
+        }
+      ]
+    },
+    {
+      "topic": "Sum of First n Terms of an AP",
+      "easy": [
+        {
+          "id": "ch5-t3-e1",
+          "type": "mcq",
+          "question": "The sum of first n terms of an AP with first term a and common difference d is:",
+          "options": ["n/2 [a + (n-1)d]", "n/2 [2a + (n-1)d]", "n [2a + (n-1)d]", "n/2 [a + nd]"],
+          "answer": "n/2 [2a + (n-1)d]",
+          "explanation": "S_n = n/2 [2a + (n-1)d] or equivalently S_n = n/2 [a + l] where l is the last term."
+        },
+        {
+          "id": "ch5-t3-e2",
+          "type": "fill",
+          "question": "The sum of first 20 positive integers is ______.",
+          "answer": "210",
+          "explanation": "S_n = n(n+1)/2 = 20 x 21/2 = 210."
+        },
+        {
+          "id": "ch5-t3-e3",
+          "type": "short",
+          "question": "Find the sum of the first 22 terms of the AP: 8, 3, -2, ...",
+          "answer": "S_22 = -979",
+          "explanation": "a = 8, d = 3 - 8 = -5. S_22 = 22/2 [2(8) + 21(-5)] = 11[16 - 105] = 11(-89) = -979."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t3-m1",
+          "type": "short",
+          "question": "Find the sum of the first 15 terms of the AP: 3, 11, 19, 27, ...",
+          "answer": "S_15 = 885",
+          "explanation": "Step 1: a = 3, d = 8.\nStep 2: S_15 = 15/2 [2(3) + 14(8)] = 15/2 [6 + 112] = 15/2 x 118 = 15 x 59 = 885."
+        },
+        {
+          "id": "ch5-t3-m2",
+          "type": "short",
+          "question": "How many terms of the AP: 9, 17, 25, ... must be taken to give a sum of 636?",
+          "answer": "12 terms.",
+          "explanation": "Step 1: a = 9, d = 8, S_n = 636.\nStep 2: 636 = n/2 [2(9) + (n-1)(8)] = n/2 [18 + 8n - 8] = n/2 [10 + 8n].\nStep 3: 1272 = n(10 + 8n) = 10n + 8n^2.\nStep 4: 8n^2 + 10n - 1272 = 0, i.e., 4n^2 + 5n - 636 = 0.\nStep 5: (4n + 53)(n - 12) = 0. n = 12 (rejecting -53/4)."
+        },
+        {
+          "id": "ch5-t3-m3",
+          "type": "long",
+          "question": "Find the sum of the first 51 terms of the AP whose second and third terms are 14 and 18 respectively.",
+          "answer": "S_51 = 5610",
+          "explanation": "Step 1: a_2 = 14, a_3 = 18. d = 18 - 14 = 4.\nStep 2: a = a_2 - d = 14 - 4 = 10.\nStep 3: S_51 = 51/2 [2(10) + 50(4)] = 51/2 [20 + 200] = 51/2 x 220 = 51 x 110 = 5610."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t3-h1",
+          "type": "long",
+          "question": "If the sum of first 7 terms of an AP is 49 and that of 17 terms is 289, find the sum of first n terms.",
+          "answer": "S_n = n^2",
+          "explanation": "Step 1: S_7 = 7/2 [2a + 6d] = 49. So 2a + 6d = 14, i.e., a + 3d = 7 ... (1)\nStep 2: S_17 = 17/2 [2a + 16d] = 289. So 2a + 16d = 34, i.e., a + 8d = 17 ... (2)\nStep 3: Subtract (1) from (2): 5d = 10, d = 2.\nStep 4: From (1): a = 7 - 6 = 1.\nStep 5: S_n = n/2 [2(1) + (n-1)(2)] = n/2 [2 + 2n - 2] = n/2 (2n) = n^2."
+        },
+        {
+          "id": "ch5-t3-h2",
+          "type": "long",
+          "question": "200 logs are stacked in the following manner: 20 logs in the bottom row, 19 in the next row, 18 in the row next to it, and so on. In how many rows are the 200 logs placed and how many logs are in the top row?",
+          "answer": "16 rows, with 5 logs in the top row.",
+          "explanation": "Step 1: This is an AP: a = 20, d = -1.\nStep 2: S_n = 200. n/2 [2(20) + (n-1)(-1)] = 200.\nStep 3: n/2 [40 - n + 1] = 200, n/2 [41 - n] = 200.\nStep 4: n(41 - n) = 400, 41n - n^2 = 400, n^2 - 41n + 400 = 0.\nStep 5: (n - 16)(n - 25) = 0. n = 16 or n = 25.\nStep 6: a_25 = 20 + 24(-1) = -4 (not possible, negative logs).\nStep 7: n = 16. a_16 = 20 + 15(-1) = 5. So 16 rows with 5 logs on top."
+        }
+      ]
+    }
+  ]
+}

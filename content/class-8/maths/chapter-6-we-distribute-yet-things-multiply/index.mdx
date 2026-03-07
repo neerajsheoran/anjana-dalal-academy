@@ -1,0 +1,225 @@
+---
+title: "Chapter 6: We Distribute, Yet Things Multiply"
+---
+
+## Introduction
+
+Algebra uses letter symbols to write general statements about patterns and relations. One of the most important algebraic properties is **distributivity** -- the connection between multiplication and addition. In this chapter, we explore multiplication patterns and describe them using algebra.
+
+---
+
+## 6.1 Some Properties of Multiplication
+
+### The Distributive Property
+
+If a, b, and c are any three numbers, then:
+
+**a(b + c) = ab + ac**
+
+This is called the **distributive property of multiplication over addition**.
+
+**Visual explanation:** Imagine a rectangle with a rows and (b + c) columns. You can split it into two rectangles -- one with a rows and b columns (area = ab), and another with a rows and c columns (area = ac). The total area is ab + ac.
+
+Similarly:
+- **(a + b)c = ac + bc**
+
+> **Key idea:** The distributive property lets us "distribute" multiplication over addition. This is the foundation for expanding algebraic expressions.
+
+---
+
+### Increments in Products
+
+**Question:** If we multiply 23 x 27, how does the product change when we increase one or both numbers?
+
+**Case 1: One number increased by 1**
+
+a(b + 1) = ab + a
+
+The product increases by **a** (the other number). So 23 x 28 = 23 x 27 + 23.
+
+**Case 2: Both numbers increased by 1**
+
+(a + 1)(b + 1) = ab + a + b + 1
+
+The product increases by **a + b + 1**.
+
+**Case 3: One increased by 1, other decreased by 1**
+
+(a + 1)(b - 1) = ab + b - a - 1
+
+The product increases by b - a - 1 (which can be negative).
+
+---
+
+### The General Identity
+
+For any numbers a, m, b, n:
+
+**Identity 1: (a + m)(b + n) = ab + mb + an + mn**
+
+The product equals the sum of every term in the first bracket multiplied by every term in the second bracket.
+
+**Example:** (23 + 2)(27 - 3) = 23 x 27 + 2 x 27 + 23 x (-3) + 2 x (-3) = 621 + 54 - 69 - 6 = 600
+
+This identity works for all integers, including negative numbers.
+
+---
+
+### Fast Multiplication Tricks
+
+#### Multiplying by 11
+
+Using distributivity: any number x 11 = number x (10 + 1) = number x 10 + number
+
+**Quick method for multiplying by 11:**
+1. Write the units digit as it is
+2. Add each pair of adjacent digits (from right to left)
+3. Write the leftmost digit as it is
+
+**Example:** 3874 x 11
+- Units: 4
+- 7 + 4 = 11, write 1, carry 1
+- 8 + 7 + 1 (carry) = 16, write 6, carry 1
+- 3 + 8 + 1 (carry) = 12, write 2, carry 1
+- 3 + 1 (carry) = 4
+
+Result: **42,614**
+
+#### Multiplying by 101
+
+Any number x 101 = number x 100 + number
+
+For a 4-digit number dcba: dcba x 101 gives a number where the middle digits are sums of digits that are 2 positions apart.
+
+#### Multiplying by 99 or 999
+
+- number x 99 = number x 100 - number
+- number x 999 = number x 1000 - number
+
+> **Key idea:** These fast multiplication methods were described by ancient Indian mathematicians **Brahmagupta** (628 CE), **Sridharacharya** (750 CE), and **Bhaskaracharya** (1150 CE). Brahmagupta called this technique **ista-gunana** (multiplication by parts).
+
+---
+
+## 6.2 Special Cases: Important Identities
+
+### Identity 1A: Square of a Sum
+
+**(a + b)² = a² + 2ab + b²**
+
+**Visual proof:** Draw a square of side (a + b). It splits into:
+- A square of side a (area a²)
+- A square of side b (area b²)
+- Two rectangles of sides a and b (each with area ab)
+
+Total: a² + 2ab + b²
+
+**Example:** Find 65²
+- 65² = (60 + 5)² = 60² + 2(60)(5) + 5² = 3600 + 600 + 25 = **4225**
+
+**Example:** Find 104²
+- 104² = (100 + 4)² = 10000 + 800 + 16 = **10,816**
+
+**Algebraic example:** Expand (6x + 5)²
+- = (6x)² + 2(6x)(5) + 5² = 36x² + 60x + 25
+
+---
+
+### Identity 1B: Square of a Difference
+
+**(a - b)² = a² - 2ab + b²**
+
+**Visual proof:** Draw a square of side a and remove strips of width b to get a square of side (a - b). Careful counting gives a² - 2ab + b².
+
+We can also derive this from Identity 1A by replacing b with (-b):
+- (a + (-b))² = a² + 2a(-b) + (-b)² = a² - 2ab + b²
+
+**Example:** Find 99²
+- 99² = (100 - 1)² = 10000 - 200 + 1 = **9801**
+
+**Example:** Find 55²
+- 55² = (60 - 5)² = 3600 - 600 + 25 = **3025**
+
+**Algebraic example:** Expand (7y - 3z)²
+- = 49y² - 42yz + 9z²
+
+---
+
+### Identity 2: Difference of Squares
+
+**(a + b)(a - b) = a² - b²**
+
+**Derivation:** Using distributivity:
+- (a + b)(a - b) = a² - ab + ab - b² = a² - b²
+
+**Example:** 63 x 57 = (60 + 3)(60 - 3) = 60² - 3² = 3600 - 9 = **3591**
+
+**Example:** 102 x 98 = (100 + 2)(100 - 2) = 10000 - 4 = **9996**
+
+> **Key idea:** When you multiply two numbers that are equally above and below a round number, the result is the square of the round number minus the square of the difference.
+
+---
+
+### Identity 3: Cube of a Sum
+
+**(a + b)³ = a³ + 3a²b + 3ab² + b³**
+
+This can be found by multiplying (a + b) with (a + b)²:
+- (a + b)(a² + 2ab + b²)
+- = a³ + 2a²b + ab² + a²b + 2ab² + b³
+- = a³ + 3a²b + 3ab² + b³
+
+---
+
+### Investigating Patterns
+
+**Pattern 1:** Products of consecutive differences
+- 1 x 3 = 3 = 2² - 1
+- 2 x 4 = 8 = 3² - 1
+- 3 x 5 = 15 = 4² - 1
+
+In general: n(n + 2) = (n + 1)² - 1. This follows from (a - b)(a + b) = a² - b² with a = n + 1 and b = 1.
+
+**Pattern 2:** Sum of squares
+- (a + b)² + (a - b)² = 2(a² + b²)
+
+This means the sum of the squares of two numbers that are equally above and below another number is always twice the sum of the squares of the middle number and the distance.
+
+---
+
+## Working with Algebraic Expressions
+
+### Like Terms
+
+**Like terms** are terms that have the same letter-number parts. Only like terms can be combined.
+
+- 3a²b and 5a²b are like terms (sum = 8a²b)
+- 3a² and 5ab are NOT like terms (cannot be combined)
+
+### Expanding Expressions
+
+When expanding products of expressions, multiply each term in one bracket by each term in the other bracket, then combine like terms.
+
+**Example:** Expand (a + b)(a² + 2ab + b²)
+- = a³ + 2a²b + ab² + a²b + 2ab² + b³
+- = a³ + 3a²b + 3ab² + b³ (combining like terms)
+
+---
+
+### A Pinch of History
+
+The **distributive property** was used implicitly by mathematicians across ancient civilisations -- Egypt, Mesopotamia, Greece, China, and India. **Euclid** used it geometrically, and **Aryabhata** used it algebraically.
+
+The first **explicit statement** of distributivity was given by **Brahmagupta** in his Brahmasphuasiddhanta (628 CE, Verse 12.55), where he called it **khanda-gunanam** (multiplication by parts): "The multiplier is broken up into two or more parts whose sum is equal to it; the multiplicand is then multiplied by each of these and the results added."
+
+---
+
+## Summary
+
+- The **distributive property**: a(b + c) = ab + ac, connects multiplication and addition.
+- **Identity 1:** (a + m)(b + n) = ab + mb + an + mn
+- **Identity 1A:** (a + b)² = a² + 2ab + b² (square of a sum)
+- **Identity 1B:** (a - b)² = a² - 2ab + b² (square of a difference)
+- **Identity 2:** (a + b)(a - b) = a² - b² (difference of squares)
+- These identities help in fast mental multiplication, simplifying expressions, and proving patterns.
+- **Like terms** (same letter-number parts) can be combined; unlike terms cannot.
+- When expanding products, multiply each term in one expression by each term in the other and combine like terms.

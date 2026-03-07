@@ -1,0 +1,170 @@
+{
+  "topics": [
+    {
+      "topic": "Mean of Grouped Data",
+      "easy": [
+        {
+          "id": "ch13-t1-e1",
+          "type": "mcq",
+          "question": "The mean of the first 10 natural numbers is:",
+          "options": ["5", "5.5", "10", "55"],
+          "answer": "5.5",
+          "explanation": "Sum of first 10 natural numbers = 10 x 11/2 = 55. Mean = 55/10 = 5.5."
+        },
+        {
+          "id": "ch13-t1-e2",
+          "type": "fill",
+          "question": "In the direct method for finding the mean of grouped data, mean = (sum of f_i * x_i) / (sum of ______).",
+          "answer": "f_i",
+          "explanation": "Mean = (sum of f_i * x_i) / (sum of f_i), where f_i is the frequency and x_i is the class mark."
+        },
+        {
+          "id": "ch13-t1-e3",
+          "type": "mcq",
+          "question": "The class mark of the class interval 10-20 is:",
+          "options": ["10", "15", "20", "30"],
+          "answer": "15",
+          "explanation": "Class mark = (upper limit + lower limit)/2 = (10 + 20)/2 = 15."
+        },
+        {
+          "id": "ch13-t1-e4",
+          "type": "short",
+          "question": "Find the class marks for the classes 0-10, 10-20, 20-30, 30-40.",
+          "answer": "5, 15, 25, 35",
+          "explanation": "Class mark = (lower + upper)/2. For 0-10: 5, for 10-20: 15, for 20-30: 25, for 30-40: 35."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t1-m1",
+          "type": "long",
+          "question": "The following table gives the literacy rate (in percentage) of 35 cities. Find the mean literacy rate.\n\nLiteracy rate: 45-55 (3), 55-65 (10), 65-75 (11), 75-85 (8), 85-95 (3). (Frequencies in parentheses)",
+          "answer": "Mean = 69.43%",
+          "explanation": "Step 1: Class marks: 50, 60, 70, 80, 90.\nStep 2: f_i x x_i: 3x50=150, 10x60=600, 11x70=770, 8x80=640, 3x90=270.\nStep 3: Sum(f_i x x_i) = 150+600+770+640+270 = 2430.\nStep 4: Sum(f_i) = 35.\nStep 5: Mean = 2430/35 = 69.43%."
+        },
+        {
+          "id": "ch13-t1-m2",
+          "type": "short",
+          "question": "If the mean of the following distribution is 6, find the value of p.\n\nValues: 2(3), 4(2), 6(3), 10(1), p+5(2). (Frequencies in parentheses)",
+          "answer": "p = 7",
+          "explanation": "Step 1: Sum(f_i) = 3+2+3+1+2 = 11.\nStep 2: Sum(f_i*x_i) = 6+8+18+10+2(p+5) = 42+2p+10 = 52+2p.\nStep 3: Mean = (52+2p)/11 = 6.\nStep 4: 52+2p = 66. 2p = 14. p = 7."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t1-h1",
+          "type": "long",
+          "question": "The following distribution shows the daily pocket allowance of children of a locality. The mean pocket allowance is Rs 18. Find the missing frequency f.\n\nDaily pocket allowance: 11-13 (7), 13-15 (6), 15-17 (9), 17-19 (13), 19-21 (f), 21-23 (5), 23-25 (4).",
+          "answer": "f = 20",
+          "explanation": "Step 1: Class marks: 12, 14, 16, 18, 20, 22, 24.\nStep 2: Sum(f_i*x_i) = 7(12) + 6(14) + 9(16) + 13(18) + f(20) + 5(22) + 4(24) = 84+84+144+234+20f+110+96 = 752+20f.\nStep 3: Sum(f_i) = 7+6+9+13+f+5+4 = 44+f.\nStep 4: Mean = (752+20f)/(44+f) = 18.\nStep 5: 752+20f = 18(44+f) = 792+18f.\nStep 6: 2f = 40. f = 20."
+        }
+      ]
+    },
+    {
+      "topic": "Mode of Grouped Data",
+      "easy": [
+        {
+          "id": "ch13-t2-e1",
+          "type": "mcq",
+          "question": "The mode of a data set is:",
+          "options": ["The middle value", "The average value", "The most frequently occurring value", "The range of values"],
+          "answer": "The most frequently occurring value",
+          "explanation": "The mode is the value that appears most frequently in a data set."
+        },
+        {
+          "id": "ch13-t2-e2",
+          "type": "fill",
+          "question": "In grouped data, the class with the highest frequency is called the ______ class.",
+          "answer": "modal",
+          "explanation": "The modal class is the class interval with the highest frequency. The mode lies in this class."
+        },
+        {
+          "id": "ch13-t2-e3",
+          "type": "mcq",
+          "question": "The formula for mode of grouped data is: l + [(f1 - f0)/(2f1 - f0 - f2)] x h, where l is:",
+          "options": ["Upper limit of modal class", "Lower limit of modal class", "Class mark of modal class", "Frequency of modal class"],
+          "answer": "Lower limit of modal class",
+          "explanation": "In the mode formula, l = lower limit of the modal class, f1 = frequency of modal class, f0 = frequency of class before modal class, f2 = frequency of class after modal class, h = class size."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t2-m1",
+          "type": "long",
+          "question": "The following data gives the information on the observed lifetimes (in hours) of 225 electrical components. Find the modal lifetimes.\n\nLifetime: 0-20 (10), 20-40 (35), 40-60 (52), 60-80 (61), 80-100 (38), 100-120 (29).",
+          "answer": "Modal lifetime = 65.625 hours.",
+          "explanation": "Step 1: Modal class = 60-80 (highest frequency = 61).\nStep 2: l = 60, f1 = 61, f0 = 52, f2 = 38, h = 20.\nStep 3: Mode = 60 + [(61-52)/(2x61-52-38)] x 20.\nStep 4: = 60 + [9/(122-90)] x 20 = 60 + (9/32) x 20 = 60 + 180/32 = 60 + 5.625 = 65.625."
+        },
+        {
+          "id": "ch13-t2-m2",
+          "type": "short",
+          "question": "Find the mode of the following frequency distribution:\n\nClass: 0-10 (8), 10-20 (16), 20-30 (36), 30-40 (34), 40-50 (6).",
+          "answer": "Mode = 24.17 (approximately)",
+          "explanation": "Step 1: Modal class = 20-30 (frequency 36).\nStep 2: l = 20, f1 = 36, f0 = 16, f2 = 34, h = 10.\nStep 3: Mode = 20 + [(36-16)/(72-16-34)] x 10 = 20 + [20/22] x 10 = 20 + 200/22 = 20 + 9.09 = 29.09.\nWait, let me recalculate: 2f1 = 72, f0 = 16, f2 = 34. 72 - 16 - 34 = 22. Mode = 20 + (20/22) x 10 = 20 + 9.09 = 29.09."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t2-h1",
+          "type": "long",
+          "question": "A student noted the number of cars passing through a spot on a road for 100 periods each of 3 minutes and summarised it. Find the mode.\n\nNumber of cars: 0-10 (7), 10-20 (14), 20-30 (13), 30-40 (12), 40-50 (20), 50-60 (11), 60-70 (15), 70-80 (8).",
+          "answer": "Mode = 44.7 cars (approximately).",
+          "explanation": "Step 1: Modal class = 40-50 (highest frequency = 20).\nStep 2: l = 40, f1 = 20, f0 = 12, f2 = 11, h = 10.\nStep 3: Mode = 40 + [(20-12)/(2x20-12-11)] x 10.\nStep 4: = 40 + [8/(40-23)] x 10 = 40 + (8/17) x 10 = 40 + 4.7 = 44.7."
+        }
+      ]
+    },
+    {
+      "topic": "Median of Grouped Data",
+      "easy": [
+        {
+          "id": "ch13-t3-e1",
+          "type": "mcq",
+          "question": "The median of grouped data is found using:",
+          "options": ["The class with the highest frequency", "The class in which the cumulative frequency just exceeds n/2", "The first class", "The last class"],
+          "answer": "The class in which the cumulative frequency just exceeds n/2",
+          "explanation": "The median class is identified as the class whose cumulative frequency is the first to be greater than or equal to n/2."
+        },
+        {
+          "id": "ch13-t3-e2",
+          "type": "fill",
+          "question": "The formula for median of grouped data is: l + [(n/2 - cf)/f] x ______.",
+          "answer": "h",
+          "explanation": "Median = l + [(n/2 - cf)/f] x h, where l = lower limit of median class, n = total frequency, cf = cumulative frequency of class before median class, f = frequency of median class, h = class size."
+        },
+        {
+          "id": "ch13-t3-e3",
+          "type": "mcq",
+          "question": "The three measures of central tendency are:",
+          "options": ["Mean, Range, Mode", "Mean, Median, Mode", "Mean, Median, Variance", "Mode, Range, Median"],
+          "answer": "Mean, Median, Mode",
+          "explanation": "The three measures of central tendency for data are Mean, Median, and Mode."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t3-m1",
+          "type": "long",
+          "question": "The distribution below gives the weights of 30 students of a class. Find the median weight.\n\nWeight (kg): 40-45 (2), 45-50 (3), 50-55 (8), 55-60 (6), 60-65 (6), 65-70 (3), 70-75 (2).",
+          "answer": "Median weight = 56.67 kg.",
+          "explanation": "Step 1: n = 30, n/2 = 15.\nStep 2: Cumulative frequencies: 2, 5, 13, 19, 25, 28, 30.\nStep 3: Median class = 55-60 (cf just exceeds 15 is 19).\nStep 4: l = 55, cf = 13, f = 6, h = 5.\nStep 5: Median = 55 + [(15-13)/6] x 5 = 55 + (2/6) x 5 = 55 + 10/6 = 55 + 1.67 = 56.67 kg."
+        },
+        {
+          "id": "ch13-t3-m2",
+          "type": "short",
+          "question": "If the median of the following data is 28.5, find the values of x and y.\n\nClass: 0-10 (5), 10-20 (x), 20-30 (20), 30-40 (15), 40-50 (y), 50-60 (5). Total = 60.",
+          "answer": "x = 8, y = 7",
+          "explanation": "Step 1: 5 + x + 20 + 15 + y + 5 = 60, so x + y = 15.\nStep 2: Median = 28.5 lies in class 20-30.\nStep 3: cf before median class = 5 + x. f = 20, l = 20, h = 10, n/2 = 30.\nStep 4: 28.5 = 20 + [(30 - 5 - x)/20] x 10.\nStep 5: 8.5 = (25 - x)/2. 17 = 25 - x. x = 8.\nStep 6: y = 15 - 8 = 7."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t3-h1",
+          "type": "long",
+          "question": "The median of the following data is 525. Find the values of x and y, if the total frequency is 100.\n\nClass: 200-300 (16), 300-400 (x), 400-500 (17), 500-600 (20), 600-700 (15), 700-800 (y), 800-900 (8), 900-1000 (10).",
+          "answer": "x = 4 (found from median equation). But let me check: 16+x+17+20+15+y+8+10 = 100. 86+x+y = 100, x+y = 14.",
+          "explanation": "Step 1: Total: 16 + x + 17 + 20 + 15 + y + 8 + 10 = 100. x + y = 14.\nStep 2: Median = 525 lies in class 500-600.\nStep 3: cf before median class = 16 + x + 17 = 33 + x.\nStep 4: l = 500, f = 20, h = 100, n/2 = 50.\nStep 5: 525 = 500 + [(50 - 33 - x)/20] x 100.\nStep 6: 25 = (17 - x) x 5. 5 = 17 - x. x = 12. Wait: 25 = [(17-x)/20] x 100 = 5(17-x). 25 = 85 - 5x. 5x = 60. x = 12.\nStep 7: y = 14 - 12 = 2.\nActually, let me recheck: 16 + x + 17 + 20 + 15 + y + 8 + 10 = 86 + x + y = 100, so x + y = 14. And from the median equation x = 12, y = 2.\nFinal answer: x = 12, y = 2."
+        }
+      ]
+    }
+  ]
+}

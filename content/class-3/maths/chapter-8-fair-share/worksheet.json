@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Halves and Quarters",
+      "easy": [
+        { "id": "ch8-t1-e1", "type": "mcq", "question": "When you divide 1 roti into 2 equal parts, each part is called a ______.", "options": ["Quarter", "Third", "Half", "Whole"], "answer": "Half", "explanation": "Dividing 1 whole into 2 equal parts gives 2 halves." },
+        { "id": "ch8-t1-e2", "type": "fill", "question": "2 halves make ______ whole.", "answer": "1", "explanation": "When you put 2 equal halves together, they make 1 complete whole." },
+        { "id": "ch8-t1-e3", "type": "mcq", "question": "When you divide a chikki into 4 equal parts, each part is called a ______.", "options": ["Half", "Quarter", "Double", "Whole"], "answer": "Quarter", "explanation": "Dividing into 4 equal parts gives quarters. Each part is one quarter." },
+        { "id": "ch8-t1-e4", "type": "fill", "question": "4 quarters make ______ whole.", "answer": "1", "explanation": "4 quarters together make 1 complete whole." }
+      ],
+      "medium": [
+        { "id": "ch8-t1-m1", "type": "short", "question": "How is a quarter related to a half?", "answer": "A quarter is half of a half. If you fold a paper in half and then fold it in half again, you get 4 quarters.", "explanation": "Halving a half gives a quarter. 2 quarters = 1 half, and 4 quarters = 1 whole." },
+        { "id": "ch8-t1-m2", "type": "mcq", "question": "How many quarters are equal to one half?", "options": ["1", "2", "3", "4"], "answer": "2", "explanation": "2 quarters make 1 half, because 2 out of 4 equal parts = half." },
+        { "id": "ch8-t1-m3", "type": "short", "question": "Shabnam ate 3 quarters of a pizza. Is that more than half or less than half?", "answer": "It is more than half. Half would be 2 quarters, and she ate 3 quarters.", "explanation": "2 quarters = half. Since 3 quarters > 2 quarters, she ate more than half." }
+      ],
+      "hard": [
+        { "id": "ch8-t1-h1", "type": "long", "question": "A rectangle can be divided into halves in three different ways. Describe these three ways.", "answer": "Way 1: Cut horizontally across the middle (top half and bottom half). Way 2: Cut vertically down the middle (left half and right half). Way 3: Cut diagonally from one corner to the opposite corner (two triangular halves).", "explanation": "All three ways give 2 equal halves. The pieces have different shapes but the same area." }
+      ]
+    },
+    {
+      "topic": "Half and Double of Numbers",
+      "easy": [
+        { "id": "ch8-t2-e1", "type": "mcq", "question": "What is the double of 5?", "options": ["3", "7", "10", "15"], "answer": "10", "explanation": "Double means 2 times. Double of 5 = 5 x 2 = 10." },
+        { "id": "ch8-t2-e2", "type": "fill", "question": "Half of 12 is ______.", "answer": "6", "explanation": "12 divided by 2 = 6. Half of 12 is 6." },
+        { "id": "ch8-t2-e3", "type": "mcq", "question": "What is the double of 7?", "options": ["9", "12", "14", "21"], "answer": "14", "explanation": "Double of 7 = 7 x 2 = 14." },
+        { "id": "ch8-t2-e4", "type": "fill", "question": "Half of 20 is ______.", "answer": "10", "explanation": "20 divided by 2 = 10." }
+      ],
+      "medium": [
+        { "id": "ch8-t2-m1", "type": "short", "question": "Rani has 8 mangoes. She shares them equally with her brother. How many mangoes does each of them get?", "answer": "Each gets 4 mangoes because half of 8 is 4.", "explanation": "Sharing equally between 2 means finding the half. 8 / 2 = 4." },
+        { "id": "ch8-t2-m2", "type": "short", "question": "The double of a number is 24. What is the number? What is its half?", "answer": "The number is 12 (because 12 x 2 = 24). Half of 12 is 6.", "explanation": "If the double is 24, the number is 24 / 2 = 12. Half of 12 = 12 / 2 = 6." }
+      ],
+      "hard": [
+        { "id": "ch8-t2-h1", "type": "long", "question": "4 friends share a birthday cake equally. Then 2 of the friends each share their piece equally with one more friend. How many pieces are there now? Is each new smaller piece a quarter of the cake?", "answer": "First, the cake is cut into 4 quarters. Then 2 of those quarters are each cut in half, making 4 smaller pieces. Total pieces: 2 original quarters + 4 smaller pieces = 6 pieces. Each smaller piece is half of a quarter, which is one-eighth of the whole cake.", "explanation": "Starting with 4 quarters: 2 quarters stay as is, 2 quarters are halved into 4 pieces. The small pieces are 1/8 of the cake, not 1/4." },
+        { "id": "ch8-t2-h2", "type": "long", "question": "Complete this table: For the numbers 8, 14, 20, 30, find their half and their double.", "answer": "8: half = 4, double = 16. 14: half = 7, double = 28. 20: half = 10, double = 40. 30: half = 15, double = 60.", "explanation": "Half = divide by 2. Double = multiply by 2." }
+      ]
+    }
+  ]
+}

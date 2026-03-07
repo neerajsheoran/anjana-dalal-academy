@@ -1,0 +1,185 @@
+{
+  "topics": [
+    {
+      "topic": "Units of Weight and Conversions",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "How many grams are there in 1 kilogram?",
+          "options": ["10 g", "100 g", "1,000 g", "10,000 g"],
+          "answer": "1,000 g",
+          "explanation": "1 kilogram = 1,000 grams. 'Kilo' means thousand."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "1,000 mg = 1 ______",
+          "answer": "gram",
+          "explanation": "1,000 milligrams make 1 gram. Milligrams are used for very light things like medicines."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which unit would you use to weigh a bag of rice?",
+          "options": ["Milligram", "Gram", "Kilogram", "Tonne"],
+          "answer": "Kilogram",
+          "explanation": "Kilograms are used for medium-weight things like a bag of rice or a person."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "short",
+          "question": "Convert 3 kg 500 g to grams.",
+          "answer": "3,500 g",
+          "explanation": "3 kg = 3,000 g. Add 500 g: 3,000 + 500 = 3,500 g."
+        },
+        {
+          "id": "ch8-t1-e5",
+          "type": "fill",
+          "question": "100 kg = 1 ______",
+          "answer": "quintal",
+          "explanation": "100 kilograms make 1 quintal. Quintals are used for heavy things like large sacks of grain."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Is 5 kg 50 g equal to 5,500 g? Explain.",
+          "answer": "No. 5 kg 50 g = 5,000 g + 50 g = 5,050 g, NOT 5,500 g.",
+          "explanation": "Common mistake! 50 g is just 50 g, not 500 g. 5 kg = 5,000 g, so 5 kg 50 g = 5,050 g."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "mcq",
+          "question": "Which is heavier: 1 kg 600 g or 1,700 g?",
+          "options": ["1 kg 600 g", "1,700 g", "Both are equal", "Cannot compare"],
+          "answer": "1,700 g",
+          "explanation": "1 kg 600 g = 1,600 g. Since 1,700 g > 1,600 g, 1,700 g is heavier."
+        },
+        {
+          "id": "ch8-t1-m3",
+          "type": "short",
+          "question": "A paracetamol tablet contains 500 mg of medicine. How many tablets are needed to make 2 grams of medicine?",
+          "answer": "4 tablets",
+          "explanation": "2 grams = 2,000 mg. Number of tablets = 2,000 / 500 = 4 tablets."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "A king donates wheat equal to 10 times his weight on his birthday. If his weight is 80 kg, how many quintals of wheat does he donate? If 1 quintal of wheat costs Rs 2,500, what is the total cost?",
+          "answer": "Wheat donated = 10 x 80 = 800 kg. In quintals: 800 / 100 = 8 quintals. Total cost = 8 x Rs 2,500 = Rs 20,000.",
+          "explanation": "10 times 80 kg = 800 kg. Since 100 kg = 1 quintal, 800 kg = 8 quintals. Cost = 8 x 2,500 = Rs 20,000."
+        }
+      ]
+    },
+    {
+      "topic": "Operations on Weight",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "What is 2 kg 500 g + 1 kg 750 g?",
+          "options": ["3 kg 250 g", "4 kg 250 g", "3 kg 1250 g", "4 kg 150 g"],
+          "answer": "4 kg 250 g",
+          "explanation": "kg: 2 + 1 = 3 kg. g: 500 + 750 = 1,250 g = 1 kg 250 g. Total: 3 + 1 = 4 kg 250 g."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "2 kg 500 g - 1 kg 750 g = ______ g.",
+          "answer": "750",
+          "explanation": "Convert to grams: 2,500 g - 1,750 g = 750 g."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "short",
+          "question": "A farmer has 4 sacks of potatoes, each weighing 10 kg 500 g. Find the total weight.",
+          "answer": "42 kg",
+          "explanation": "4 x 10 kg = 40 kg. 4 x 500 g = 2,000 g = 2 kg. Total: 40 + 2 = 42 kg."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "4 kg 800 g of cashew nuts are shared equally into 4 boxes. What is the weight of nuts in each box?",
+          "answer": "1 kg 200 g",
+          "explanation": "4 kg / 4 = 1 kg per box. 800 g / 4 = 200 g per box. Each box: 1 kg 200 g."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "mcq",
+          "question": "Rathna bought 2 kg 500 g of rice and 1 kg 750 g extra for Pongal. If she already had 3 kg at home, what is her total rice now?",
+          "options": ["6 kg 250 g", "7 kg 250 g", "7 kg 150 g", "6 kg 150 g"],
+          "answer": "7 kg 250 g",
+          "explanation": "Rice bought: 2 kg 500 g + 1 kg 750 g = 4 kg 250 g. Add rice at home: 4 kg 250 g + 3 kg = 7 kg 250 g."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "A goldsmith has a gold bar weighing 50 g. He makes 8 identical bangles from it, and 2 g of gold is wasted in the process. What is the weight of each bangle in grams and milligrams?",
+          "answer": "Gold used for bangles = 50 - 2 = 48 g. Weight of each bangle = 48 / 8 = 6 g = 6,000 mg.",
+          "explanation": "Total gold = 50 g. After waste: 50 - 2 = 48 g. Divide equally: 48 / 8 = 6 g per bangle. In mg: 6 x 1,000 = 6,000 mg."
+        }
+      ]
+    },
+    {
+      "topic": "Capacity (Litres and Millilitres)",
+      "easy": [
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "How many millilitres are in 1 litre?",
+          "options": ["10 ml", "100 ml", "1,000 ml", "500 ml"],
+          "answer": "1,000 ml",
+          "explanation": "1 litre = 1,000 millilitres."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "2 l 500 ml + 2 l 800 ml = ______ l ______ ml.",
+          "answer": "5, 300",
+          "explanation": "l: 2 + 2 = 4 l. ml: 500 + 800 = 1,300 ml = 1 l 300 ml. Total: 4 + 1 = 5 l 300 ml."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "short",
+          "question": "Convert 3 l 8 ml to millilitres.",
+          "answer": "3,008 ml",
+          "explanation": "3 l = 3,000 ml. Add 8 ml: 3,000 + 8 = 3,008 ml."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t3-m1",
+          "type": "short",
+          "question": "A truck fills 500 litres of petrol. If 3 trucks are filled at a petrol pump, how many litres of petrol are dispensed?",
+          "answer": "1,500 litres",
+          "explanation": "3 x 500 = 1,500 litres."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "mcq",
+          "question": "9 l - 5 l 300 ml = ?",
+          "options": ["3 l 300 ml", "3 l 700 ml", "4 l 300 ml", "4 l 700 ml"],
+          "answer": "3 l 700 ml",
+          "explanation": "Convert to ml: 9,000 ml - 5,300 ml = 3,700 ml = 3 l 700 ml."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "At a petrol pump: 3 trucks fill 500 litres each, 6 buses fill 300 litres each, and 10 cars fill 50 litres each. Find the total petrol dispensed. If petrol costs Rs 100 per litre, what is the total bill?",
+          "answer": "Trucks: 3 x 500 = 1,500 l. Buses: 6 x 300 = 1,800 l. Cars: 10 x 50 = 500 l. Total petrol: 1,500 + 1,800 + 500 = 3,800 litres. Total bill: 3,800 x Rs 100 = Rs 3,80,000.",
+          "explanation": "Add up all the petrol: 1,500 + 1,800 + 500 = 3,800 litres. At Rs 100 per litre: 3,800 x 100 = Rs 3,80,000."
+        }
+      ]
+    }
+  ]
+}

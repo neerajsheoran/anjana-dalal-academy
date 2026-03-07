@@ -1,0 +1,261 @@
+{
+  "topics": [
+    {
+      "topic": "Discovery of Cells and Cell Theory",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "Who discovered cells and in which year?",
+          "options": ["Leeuwenhoek in 1674", "Robert Hooke in 1665", "Robert Brown in 1831", "Virchow in 1855"],
+          "answer": "Robert Hooke in 1665",
+          "explanation": "Robert Hooke discovered cells in 1665 by observing a thin slice of cork under a microscope he had designed."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "The cell theory states that all plants and animals are composed of ______ and the cell is the basic unit of life.",
+          "answer": "cells",
+          "explanation": "The cell theory was proposed by Schleiden (1838) and Schwann (1839)."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is a unicellular organism?",
+          "options": ["Mango tree", "Human", "Amoeba", "Dog"],
+          "answer": "Amoeba",
+          "explanation": "Amoeba is a unicellular organism made of a single cell that performs all life functions."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "mcq",
+          "question": "Why is the cell called the structural and functional unit of life?",
+          "options": ["Because cells are very small", "Because all living organisms are made up of cells that perform all life functions", "Because Robert Hooke discovered cells", "Because cells cannot be seen"],
+          "answer": "Because all living organisms are made up of cells that perform all life functions",
+          "explanation": "The cell is the basic building block (structural unit) and performs all life processes (functional unit) in living organisms."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Who discovered cells, and how?",
+          "answer": "Robert Hooke discovered cells in 1665. He observed a thin slice of cork under a self-designed microscope and saw tiny box-like compartments resembling a honeycomb. He called these compartments 'cells' (from the Latin word meaning 'a little room'). The cells he saw were actually dead cells, as cork is made from the bark of a tree.",
+          "explanation": "Hooke's observation was the first time anyone noticed that living things are made up of separate units."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "How is a prokaryotic cell different from a eukaryotic cell?",
+          "answer": "Prokaryotic cells are generally small (1-10 micrometres), lack a well-defined nucleus (they have a nucleoid without a nuclear membrane), have a single chromosome, and lack membrane-bound organelles. Eukaryotic cells are larger (5-100 micrometres), have a well-defined nucleus surrounded by a nuclear membrane, have more than one chromosome, and contain membrane-bound organelles like mitochondria, ER, and Golgi apparatus.",
+          "explanation": "Bacteria are prokaryotic, while plants, animals, and fungi are eukaryotic."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "Make a comparison and write down ways in which plant cells are different from animal cells.",
+          "answer": "Plant cells differ from animal cells in several ways: (1) Plant cells have a rigid cell wall made of cellulose outside the plasma membrane; animal cells lack a cell wall. (2) Plant cells have plastids (chloroplasts for photosynthesis and leucoplasts for storage); animal cells do not have plastids. (3) Plant cells have a large central vacuole occupying 50-90% of cell volume; animal cells have small or no vacuoles. (4) Plant cells are usually rectangular with a fixed shape due to the cell wall; animal cells are usually round or irregular in shape. (5) Animal cells have centrosomes with centrioles; most plant cells lack centrioles.",
+          "explanation": "These differences reflect the different lifestyles of plants (which make their own food and need structural support) and animals (which move and obtain food externally)."
+        }
+      ]
+    },
+    {
+      "topic": "Plasma Membrane and Cell Wall",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "The plasma membrane is called selectively permeable because:",
+          "options": ["It allows all substances to pass through", "It blocks all substances", "It allows only certain substances to pass through while blocking others", "It is made of cellulose"],
+          "answer": "It allows only certain substances to pass through while blocking others",
+          "explanation": "The plasma membrane carefully controls what enters and leaves the cell, allowing some molecules to pass and blocking others."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "The movement of water molecules through a selectively permeable membrane is called ______.",
+          "answer": "osmosis",
+          "explanation": "Osmosis is the net diffusion of water across a selectively permeable membrane toward a higher solute concentration."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "mcq",
+          "question": "The plant cell wall is mainly made of:",
+          "options": ["Proteins", "Lipids", "Cellulose", "Starch"],
+          "answer": "Cellulose",
+          "explanation": "The cell wall of plant cells is mainly composed of cellulose, which provides structural strength."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "mcq",
+          "question": "When a cell is placed in a hypertonic solution, what happens?",
+          "options": ["Cell swells up", "Cell stays the same", "Cell shrinks", "Cell bursts"],
+          "answer": "Cell shrinks",
+          "explanation": "In a hypertonic solution (higher solute concentration outside), water leaves the cell by osmosis, causing it to shrink."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "How do substances like CO2 and water move in and out of the cell?",
+          "answer": "CO2 moves out of the cell by diffusion when its concentration is higher inside the cell than outside. Similarly, O2 enters the cell by diffusion when its concentration is lower inside. Water moves in and out of the cell by osmosis through the selectively permeable plasma membrane, from a region of higher water concentration to lower water concentration.",
+          "explanation": "Diffusion and osmosis are passive processes that do not require energy from the cell."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "short",
+          "question": "What is osmosis? Explain with an example.",
+          "answer": "Osmosis is the movement of water molecules through a selectively permeable membrane from a region of higher water concentration to a region of lower water concentration. For example, when dried raisins are placed in water, they swell up because water enters the raisins by osmosis (the concentration of water is higher outside than inside the raisins). When the same raisins are placed in a concentrated sugar solution, they shrink because water moves out.",
+          "explanation": "Osmosis is a special case of diffusion, applicable specifically to the movement of water through a selectively permeable membrane."
+        },
+        {
+          "id": "ch5-t2-m3",
+          "type": "short",
+          "question": "What would happen if the plasma membrane ruptures or breaks down?",
+          "answer": "If the plasma membrane ruptures, the cell will not be able to control the movement of substances in and out of it. The selective permeability will be lost. The cell contents will freely mix with the external environment, the internal composition will be disturbed, and the cell will die. The cell will not be able to maintain its internal environment, which is essential for life processes.",
+          "explanation": "The plasma membrane is essential for maintaining the cell's internal environment and for controlled exchange of materials."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "Explain the osmosis experiment with potato cups: Cup A is empty, Cup B has sugar, Cup C has salt, and Cup D has sugar in a boiled potato. Why does water gather in B and C but not in A and D?",
+          "answer": "In Cup B (sugar) and Cup C (salt), the sugar and salt solutions are hypertonic compared to the cells of the potato. Water from the potato cells moves into the cups by osmosis, so water gathers in the hollowed portions. Cup A is empty (no solute), so there is no concentration difference to drive osmosis, and no water gathers. Cup D has sugar but the potato is boiled (dead cells). Dead cells have no functional selectively permeable membranes, so osmosis cannot occur, and water does not gather. Potato A serves as a control to show that an empty cup without any solute does not accumulate water.",
+          "explanation": "This experiment demonstrates that osmosis requires both a concentration difference and a living selectively permeable membrane."
+        }
+      ]
+    },
+    {
+      "topic": "Cell Organelles",
+      "easy": [
+        {
+          "id": "ch5-t3-e1",
+          "type": "mcq",
+          "question": "Which organelle is known as the powerhouse of the cell?",
+          "options": ["Golgi apparatus", "Endoplasmic reticulum", "Mitochondria", "Lysosome"],
+          "answer": "Mitochondria",
+          "explanation": "Mitochondria release energy in the form of ATP (energy currency of the cell), so they are called the powerhouses of the cell."
+        },
+        {
+          "id": "ch5-t3-e2",
+          "type": "fill",
+          "question": "Lysosomes are known as the ______ bags of the cell.",
+          "answer": "suicide",
+          "explanation": "When a cell is damaged, lysosomes may burst and their digestive enzymes digest the entire cell, so they are called suicide bags."
+        },
+        {
+          "id": "ch5-t3-e3",
+          "type": "mcq",
+          "question": "Where are proteins synthesised inside the cell?",
+          "options": ["Golgi apparatus", "Mitochondria", "Ribosomes", "Lysosomes"],
+          "answer": "Ribosomes",
+          "explanation": "Ribosomes, found on the rough endoplasmic reticulum (RER) and free in the cytoplasm, are the sites of protein synthesis."
+        },
+        {
+          "id": "ch5-t3-e4",
+          "type": "mcq",
+          "question": "Which two organelles have their own DNA and ribosomes?",
+          "options": ["ER and Golgi apparatus", "Mitochondria and plastids", "Lysosomes and vacuoles", "Nucleus and ER"],
+          "answer": "Mitochondria and plastids",
+          "explanation": "Both mitochondria and plastids have their own DNA and ribosomes, which allows them to make some of their own proteins."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t3-m1",
+          "type": "short",
+          "question": "Why are lysosomes known as suicide bags?",
+          "answer": "Lysosomes are membrane-bound sacs filled with powerful digestive enzymes. When a cell gets damaged or disturbed, the lysosomes may burst and release these enzymes. The enzymes then digest the entire cell, including all its organelles. This self-destruction of the cell is why lysosomes are called 'suicide bags' of the cell.",
+          "explanation": "Normally, lysosomes digest foreign materials and worn-out organelles. Self-digestion only happens when the cell is damaged."
+        },
+        {
+          "id": "ch5-t3-m2",
+          "type": "short",
+          "question": "What would happen to the life of a cell if there was no Golgi apparatus?",
+          "answer": "Without the Golgi apparatus, the cell would not be able to package, modify, or dispatch the materials synthesised by the ER. Proteins and lipids made in the cell could not be properly processed or sent to their correct destinations. Complex sugars could not be made from simple sugars. Lysosomes would not be formed. The cell's ability to secrete substances and communicate with other cells would be severely affected.",
+          "explanation": "The Golgi apparatus acts as the packaging and distribution centre of the cell."
+        },
+        {
+          "id": "ch5-t3-m3",
+          "type": "short",
+          "question": "Where do the lipids and proteins constituting the cell membrane get synthesised?",
+          "answer": "The lipids for the cell membrane are synthesised by the smooth endoplasmic reticulum (SER), while the proteins are synthesised by the rough endoplasmic reticulum (RER), which has ribosomes on its surface. These lipids and proteins are then used to build new cell membrane through a process called membrane biogenesis.",
+          "explanation": "The ER plays a central role in making the components of the cell membrane."
+        },
+        {
+          "id": "ch5-t3-m4",
+          "type": "short",
+          "question": "Why is the mitochondria called the powerhouse of the cell?",
+          "answer": "Mitochondria are called the powerhouse of the cell because they release energy needed for various life processes. They produce ATP (adenosine triphosphate) through chemical reactions. ATP is the energy currency of the cell -- the body uses ATP energy to make new chemical compounds and for mechanical work. The inner membrane of mitochondria is deeply folded to increase the surface area for these energy-generating reactions.",
+          "explanation": "Without mitochondria, the cell would have no way to efficiently produce the energy it needs for its activities."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t3-h1",
+          "type": "long",
+          "question": "Describe the structure and functions of the endoplasmic reticulum (ER).",
+          "answer": "The endoplasmic reticulum (ER) is a large network of membrane-bound tubes and sheets extending throughout the cytoplasm. It has two types: (1) Rough ER (RER), which has ribosomes on its surface and is involved in protein synthesis. The proteins made here are sent to various parts of the cell. (2) Smooth ER (SER), which lacks ribosomes and is involved in the synthesis of lipids (fats). Functions of ER include: (a) Transport of materials, especially proteins, between different parts of the cell. (b) Membrane biogenesis -- some proteins and lipids made by ER help build the cell membrane. (c) Production of enzymes and hormones. (d) Providing a structural framework for biochemical activities. (e) In liver cells of vertebrates, SER detoxifies poisons and drugs.",
+          "explanation": "The ER is one of the most extensive organelles in the cell, connecting the nucleus to the plasma membrane."
+        },
+        {
+          "id": "ch5-t3-h2",
+          "type": "long",
+          "question": "If the organisation of a cell is destroyed due to some physical or chemical influence, what will happen?",
+          "answer": "If the organisation of a cell is destroyed, the cell will not be able to perform its basic life functions. The lysosomes will burst and release their digestive enzymes, which will digest all the cell contents -- this is why lysosomes are called suicide bags. Without an intact plasma membrane, the cell cannot control the entry and exit of substances. Without functional mitochondria, no ATP (energy) will be produced. Without the nucleus, the cell cannot direct its activities or reproduce. Without the ER and Golgi apparatus, proteins and lipids cannot be made and distributed. Essentially, the cell will die because all its organelles work together in an organised manner, and disrupting this organisation leads to cell death.",
+          "explanation": "The life of a cell depends on the coordinated functioning of all its organelles. Destroying this organisation is equivalent to killing the cell."
+        }
+      ]
+    },
+    {
+      "topic": "Cell Division",
+      "easy": [
+        {
+          "id": "ch5-t4-e1",
+          "type": "mcq",
+          "question": "Which type of cell division is required for growth and repair of body?",
+          "options": ["Meiosis", "Mitosis", "Both", "Neither"],
+          "answer": "Mitosis",
+          "explanation": "Mitosis produces two identical daughter cells with the same chromosome number as the mother cell, and is used for growth and repair."
+        },
+        {
+          "id": "ch5-t4-e2",
+          "type": "fill",
+          "question": "In meiosis, the mother cell divides to form ______ daughter cells with half the number of chromosomes.",
+          "answer": "four",
+          "explanation": "Meiosis involves two consecutive divisions, producing four cells with half the chromosome number, for forming gametes."
+        },
+        {
+          "id": "ch5-t4-e3",
+          "type": "mcq",
+          "question": "Which type of cell division is involved in the formation of gametes?",
+          "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+          "answer": "Meiosis",
+          "explanation": "Meiosis produces gametes (sex cells) with half the number of chromosomes, so that when they fuse during fertilisation, the normal chromosome number is restored."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t4-m1",
+          "type": "short",
+          "question": "Differentiate between mitosis and meiosis.",
+          "answer": "Mitosis: The mother cell divides to form two identical daughter cells, each with the same number of chromosomes as the mother cell. It is used for growth and repair. Meiosis: The mother cell divides twice to form four daughter cells, each with half the number of chromosomes. It is used for forming gametes (reproductive cells). Meiosis ensures genetic variation in offspring.",
+          "explanation": "Mitosis maintains chromosome number while meiosis reduces it to half."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t4-h1",
+          "type": "long",
+          "question": "How does an Amoeba obtain its food? Explain the role of the cell membrane in this process.",
+          "answer": "Amoeba obtains its food through a process called endocytosis (or phagocytosis). The plasma membrane of Amoeba is very flexible. When Amoeba senses food particles in its surroundings, it extends finger-like projections called pseudopodia around the food particle. The pseudopodia surround and engulf the food, forming a food vacuole inside the cell. The food is then digested by enzymes inside the food vacuole. This entire process is possible because of the flexibility of the plasma membrane, which can change shape, extend, and fold to engulf the food from the external environment.",
+          "explanation": "Endocytosis is a special property of the flexible plasma membrane that allows cells to take in large particles."
+        }
+      ]
+    }
+  ]
+}

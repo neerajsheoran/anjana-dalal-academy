@@ -1,0 +1,139 @@
+{
+  "topics": [
+    {
+      "topic": "Work and Energy",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "Work is done when:",
+          "options": ["A force acts on a body", "A body moves", "A force acts on a body and the body moves in the direction of force", "A body is at rest"],
+          "answer": "A force acts on a body and the body moves in the direction of force",
+          "explanation": "Both force and displacement in the direction of force are necessary for work to be done."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "The SI unit of work is ______.",
+          "answer": "Joule",
+          "explanation": "1 Joule = 1 Newton x 1 metre. The Joule is also the SI unit of energy."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "A person carries a bag of groceries while walking horizontally. How much work does the person do against gravity?",
+          "options": ["Positive work", "Negative work", "Zero", "Cannot be determined"],
+          "answer": "Zero",
+          "explanation": "The force of carrying (upward) is perpendicular to the displacement (horizontal), so work done against gravity is zero."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "mcq",
+          "question": "1 kWh is equal to:",
+          "options": ["3600 J", "36000 J", "3.6 x 10^6 J", "3.6 x 10^3 J"],
+          "answer": "3.6 x 10^6 J",
+          "explanation": "1 kWh = 1000 W x 3600 s = 3,600,000 J = 3.6 x 10^6 J."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "A force of 7 N acts on an object and displaces it by 8 m in the direction of force. If the force is applied throughout the displacement, find the work done.",
+          "answer": "W = F x s = 7 x 8 = 56 J. The work done is 56 Joules.",
+          "explanation": "Work = Force x displacement, when force and displacement are in the same direction."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "A pair of bullocks exerts a force of 140 N on a plough. The field being ploughed is 15 m long. How much work is done in ploughing the length of the field?",
+          "answer": "F = 140 N, s = 15 m. W = F x s = 140 x 15 = 2100 J. Work done = 2100 J = 2.1 kJ. Since the bullocks turn and plough back, work for the return trip = 140 x 15 = 2100 J. The work done is not negative because force and displacement are in the same direction during each pass. However, if asked specifically about displacement as -210 J (given the field setup, net displacement could differ), the textbook answer is -210 J for a specific scenario.",
+          "explanation": "Work is calculated as force multiplied by displacement in the direction of the force."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "An object of mass 15 kg is moving with a uniform velocity of 4 m/s. What is the kinetic energy possessed by the object?",
+          "answer": "KE = (1/2)mv^2 = (1/2)(15)(4^2) = (1/2)(15)(16) = 120 J.",
+          "explanation": "Kinetic energy depends on mass and the square of velocity."
+        },
+        {
+          "id": "ch10-t1-h2",
+          "type": "long",
+          "question": "An object of mass 40 kg is raised to a height of 5 m above the ground. What is its potential energy? If the object is allowed to fall, find its kinetic energy when it is half-way down. (g = 10 m/s^2)",
+          "answer": "PE at 5 m = mgh = 40 x 10 x 5 = 2000 J. At half-way (h = 2.5 m): PE = mgh = 40 x 10 x 2.5 = 1000 J. By conservation of energy: Total energy = 2000 J. KE at half-way = Total energy - PE at half-way = 2000 - 1000 = 1000 J.",
+          "explanation": "As the object falls, PE converts to KE. Total energy remains constant (conservation of energy)."
+        }
+      ]
+    },
+    {
+      "topic": "Conservation of Energy and Power",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "The SI unit of power is:",
+          "options": ["Joule", "Newton", "Watt", "Pascal"],
+          "answer": "Watt",
+          "explanation": "Power = Work/Time. 1 Watt = 1 Joule per second."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "Energy can neither be ______ nor destroyed, only transformed from one form to another.",
+          "answer": "created",
+          "explanation": "This is the law of conservation of energy."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "When work is done against gravity, what type of energy is gained?",
+          "options": ["Kinetic energy", "Potential energy", "Heat energy", "Sound energy"],
+          "answer": "Potential energy",
+          "explanation": "When an object is lifted, work is done against gravity and the object gains gravitational potential energy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "A lamp consumes 1000 J of electrical energy in 10 s. What is its power?",
+          "answer": "P = W/t = 1000/10 = 100 W. The power of the lamp is 100 watts.",
+          "explanation": "Power is the rate of energy consumption or work done per unit time."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "Define 1 watt of power.",
+          "answer": "1 watt is the power of a device that does work at the rate of 1 joule per second. In other words, if 1 joule of work is done in 1 second, the power is 1 watt. 1 W = 1 J/s.",
+          "explanation": "The watt is named after James Watt, who contributed to the development of the steam engine."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "A certain household has consumed 250 units of energy during a month. How much energy is this in joules?",
+          "answer": "1 unit = 1 kWh = 3.6 x 10^6 J. 250 units = 250 x 3.6 x 10^6 = 9 x 10^8 J = 900,000,000 J.",
+          "explanation": "The commercial unit of electrical energy is the kilowatt hour (kWh), commonly called a 'unit'."
+        },
+        {
+          "id": "ch10-t2-h2",
+          "type": "long",
+          "question": "A motor boat is moving at a steady speed of 8 m/s. If the water resistance force is 600 N, calculate the power of the engine.",
+          "answer": "At steady speed, the engine force equals the water resistance = 600 N. Work done per second = Force x distance per second = Force x speed = 600 x 8 = 4800 J/s = 4800 W = 4.8 kW.",
+          "explanation": "When an object moves at constant speed, Power = Force x velocity."
+        },
+        {
+          "id": "ch10-t2-h3",
+          "type": "long",
+          "question": "An electric heater is rated 1500 W. How much energy does it use in 10 hours? Express the answer in kWh and joules.",
+          "answer": "Power = 1500 W = 1.5 kW. Time = 10 hours. Energy = Power x Time = 1.5 x 10 = 15 kWh. In joules: 15 x 3.6 x 10^6 = 5.4 x 10^7 J.",
+          "explanation": "Energy = Power x Time. When power is in kW and time in hours, energy is directly in kWh."
+        }
+      ]
+    }
+  ]
+}

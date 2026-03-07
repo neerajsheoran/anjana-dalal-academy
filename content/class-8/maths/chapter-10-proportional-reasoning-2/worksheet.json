@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Map Scales, Multi-term Ratios, and Dividing in Ratios",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "A map has a scale of 1 : 50,000. A distance of 3 cm on the map represents:", "options": ["1.5 km", "15 km", "150 km", "0.15 km"], "answer": "1.5 km", "explanation": "3 cm x 50,000 = 1,50,000 cm = 1500 m = 1.5 km." },
+        { "id": "ch10-t1-e2", "type": "fill", "question": "To divide a quantity in the ratio a : b, the first share is quantity x a / ______.", "answer": "(a + b)", "explanation": "The total number of parts is a + b. The first share = quantity x a/(a + b)." },
+        { "id": "ch10-t1-e3", "type": "mcq", "question": "In the ratio 2 : 3 : 5, if the total is 50, the share corresponding to 3 is:", "options": ["10", "15", "25", "30"], "answer": "15", "explanation": "Total parts = 2 + 3 + 5 = 10. Share = 50 x 3/10 = 15." },
+        { "id": "ch10-t1-e4", "type": "short", "question": "Divide Rs 120 in the ratio 3 : 5.", "answer": "Total parts = 3 + 5 = 8.\nFirst share = 120 x 3/8 = Rs 45.\nSecond share = 120 x 5/8 = Rs 75.", "explanation": "Find total parts, then multiply the total quantity by each part's fraction." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "On a map with scale 1 : 60,00,000, two cities are 4.5 cm apart. Find the actual distance in km.", "answer": "Actual distance = 4.5 x 60,00,000 cm = 2,70,00,000 cm = 2,70,000 m = 270 km.", "explanation": "Multiply the map distance by the scale factor, then convert from cm to km (divide by 1,00,000)." },
+        { "id": "ch10-t1-m2", "type": "short", "question": "To make purple paint, Red : Blue : White = 2 : 3 : 5. How much of each colour is needed for 40 litres of purple paint?", "answer": "Total parts = 2 + 3 + 5 = 10.\nRed = 40 x 2/10 = 8 litres.\nBlue = 40 x 3/10 = 12 litres.\nWhite = 40 x 5/10 = 20 litres.", "explanation": "Divide the total quantity in the given multi-term ratio by finding each part's fraction of the total." },
+        { "id": "ch10-t1-m3", "type": "short", "question": "The angles of a triangle are in the ratio 2 : 3 : 4. Find each angle.", "answer": "Sum of angles = 180 degrees. Total parts = 2 + 3 + 4 = 9.\nAngle 1 = 180 x 2/9 = 40 degrees.\nAngle 2 = 180 x 3/9 = 60 degrees.\nAngle 3 = 180 x 4/9 = 80 degrees.", "explanation": "The sum of angles in a triangle is always 180 degrees. Divide 180 in the given ratio." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "long", "question": "A school has 1200 students. The ratio of students in classes 6, 7, and 8 is 5 : 4 : 3. If 20% of Class 8 students join a maths club, how many maths club members are there? Also, if the school adds 60 more students to Class 7, what is the new ratio?", "answer": "Total parts = 5 + 4 + 3 = 12.\nClass 6 = 1200 x 5/12 = 500 students.\nClass 7 = 1200 x 4/12 = 400 students.\nClass 8 = 1200 x 3/12 = 300 students.\n\nMaths club members = 20% of 300 = (20/100) x 300 = 60 students.\n\nNew Class 7 = 400 + 60 = 460 students.\nNew ratio = 500 : 460 : 300 = 50 : 46 : 30 = 25 : 23 : 15.", "explanation": "First divide the total in the given ratio to find each class's strength. Then apply the percentage to Class 8. For the new ratio, update Class 7 and simplify by dividing by the HCF." }
+      ]
+    },
+    {
+      "topic": "Pie Charts, Direct and Inverse Proportion",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "In a pie chart, the total angle of all sectors is:", "options": ["180 degrees", "270 degrees", "360 degrees", "90 degrees"], "answer": "360 degrees", "explanation": "A pie chart is a full circle, so all sector angles add up to 360 degrees." },
+        { "id": "ch10-t2-e2", "type": "fill", "question": "If x and y are inversely proportional, then x x y = ______.", "answer": "constant (k)", "explanation": "In inverse proportion, the product of the two quantities remains constant: x x y = k." },
+        { "id": "ch10-t2-e3", "type": "mcq", "question": "Which of these is an example of inverse proportion?", "options": ["More items, more cost", "More workers, less time to finish", "More distance, more fuel", "More hours studied, more marks"], "answer": "More workers, less time to finish", "explanation": "When more workers are employed, the time to finish decreases. As one quantity increases, the other decreases." },
+        { "id": "ch10-t2-e4", "type": "short", "question": "If 4 notebooks cost Rs 60, find the cost of 10 notebooks (assuming direct proportion).", "answer": "Cost of 1 notebook = 60/4 = Rs 15.\nCost of 10 notebooks = 15 x 10 = Rs 150.", "explanation": "Number of notebooks and cost are in direct proportion. Use the unitary method." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "In a class of 40, the number of students who like Cricket, Football, Badminton, and Tennis are 16, 10, 8, and 6 respectively. Find the angle for each sport in a pie chart.", "answer": "Cricket = (16/40) x 360 = 144 degrees.\nFootball = (10/40) x 360 = 90 degrees.\nBadminton = (8/40) x 360 = 72 degrees.\nTennis = (6/40) x 360 = 54 degrees.\nTotal = 144 + 90 + 72 + 54 = 360 degrees.", "explanation": "Each sector angle = (quantity / total) x 360. Verify that all angles sum to 360 degrees." },
+        { "id": "ch10-t2-m2", "type": "short", "question": "If 8 workers can build a wall in 15 days, how many days will 12 workers take?", "answer": "Workers and days are inversely proportional.\n8 x 15 = 12 x d.\n120 = 12d.\nd = 10 days.", "explanation": "More workers means less time. The product (workers x days) is constant: 8 x 15 = 12 x d." },
+        { "id": "ch10-t2-m3", "type": "short", "question": "A car travels 240 km in 4 hours. How long will it take to travel 360 km at the same speed?", "answer": "Speed = 240/4 = 60 km/h.\nTime = 360/60 = 6 hours.\n\nAlternatively, distance and time are directly proportional:\n240/4 = 360/t.\nt = (360 x 4)/240 = 6 hours.", "explanation": "At constant speed, distance and time are directly proportional. Use the unitary method or cross multiplication." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "long", "question": "A family's monthly expenses are: Food Rs 12,000, Rent Rs 8,000, Education Rs 6,000, Transport Rs 4,000, Savings Rs 10,000. (a) Draw a pie chart by finding the angle for each category. (b) If the family's income increases by 20% and they keep the same proportions, find the new amount for each category.", "answer": "(a) Total = 12000 + 8000 + 6000 + 4000 + 10000 = Rs 40,000.\nFood = (12000/40000) x 360 = 108 degrees.\nRent = (8000/40000) x 360 = 72 degrees.\nEducation = (6000/40000) x 360 = 54 degrees.\nTransport = (4000/40000) x 360 = 36 degrees.\nSavings = (10000/40000) x 360 = 90 degrees.\nTotal = 108 + 72 + 54 + 36 + 90 = 360 degrees.\n\n(b) New income = 40000 x 1.20 = Rs 48,000.\nFood = 48000 x 12000/40000 = Rs 14,400.\nRent = 48000 x 8000/40000 = Rs 9,600.\nEducation = 48000 x 6000/40000 = Rs 7,200.\nTransport = 48000 x 4000/40000 = Rs 4,800.\nSavings = 48000 x 10000/40000 = Rs 12,000.", "explanation": "For the pie chart, find each category's fraction of the total and multiply by 360. When income increases proportionally, each category increases by the same factor (1.20)." }
+      ]
+    }
+  ]
+}

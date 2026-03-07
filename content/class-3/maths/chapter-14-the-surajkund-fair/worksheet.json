@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Symmetry and Mirror Images",
+      "easy": [
+        { "id": "ch14-t1-e1", "type": "mcq", "question": "When something has two equal halves that look like mirror images, we say it is ______.", "options": ["Round", "Symmetrical", "Heavy", "Tall"], "answer": "Symmetrical", "explanation": "Symmetrical means both halves of a shape or object are exactly the same, like mirror images." },
+        { "id": "ch14-t1-e2", "type": "fill", "question": "The line that divides a shape into two equal mirror halves is called the line of ______.", "answer": "symmetry", "explanation": "The line of symmetry divides a shape into two halves that are mirror images of each other." },
+        { "id": "ch14-t1-e3", "type": "mcq", "question": "Which of these is symmetrical?", "options": ["A butterfly with both wings the same", "A hand waving", "The number 6", "A person standing sideways"], "answer": "A butterfly with both wings the same", "explanation": "A butterfly has matching left and right wings, making it symmetrical." },
+        { "id": "ch14-t1-e4", "type": "fill", "question": "In a mirror image, left becomes ______ and right becomes ______.", "answer": "right, left", "explanation": "A mirror flips things left to right. What is on the left appears on the right in the mirror." }
+      ],
+      "medium": [
+        { "id": "ch14-t1-m1", "type": "short", "question": "How can you check if a paper shape is symmetrical?", "answer": "Fold the paper in half. If both halves match exactly when folded, the shape is symmetrical.", "explanation": "Folding is a simple way to test for symmetry. If the halves overlap perfectly, the fold line is the line of symmetry." },
+        { "id": "ch14-t1-m2", "type": "short", "question": "Soni makes a bead necklace: Red, Blue, Blue, Red, Red, Blue, Blue, Red. Is this pattern symmetrical? Why?", "answer": "Yes, it is symmetrical. The left half (Red, Blue, Blue, Red) is the same as the right half (Red, Blue, Blue, Red).", "explanation": "Both halves of the necklace are identical, making it symmetrical." },
+        { "id": "ch14-t1-m3", "type": "mcq", "question": "A painter draws only half of your face and puts a mirror in the middle. Why does this work?", "options": ["Because faces are round", "Because faces are symmetrical", "Because mirrors are flat", "Because faces are colourful"], "answer": "Because faces are symmetrical", "explanation": "A face is approximately symmetrical - the left half looks like the right half. The mirror completes the picture." }
+      ],
+      "hard": [
+        { "id": "ch14-t1-h1", "type": "long", "question": "Look at the English capital letters: A, B, C, D, E. Which of these letters are symmetrical? For each symmetrical letter, describe where the line of symmetry is (horizontal, vertical, or both).", "answer": "A: Symmetrical with a vertical line of symmetry (left half mirrors right half). B: Symmetrical with a horizontal line of symmetry (top half mirrors bottom half). C: Symmetrical with a horizontal line of symmetry. D: Symmetrical with a horizontal line of symmetry. E: Symmetrical with a horizontal line of symmetry.", "explanation": "Check each letter by imagining folding it along different lines. If both halves match, that line is a line of symmetry." }
+      ]
+    },
+    {
+      "topic": "Tiling, Maps, and Directions",
+      "easy": [
+        { "id": "ch14-t2-e1", "type": "mcq", "question": "Which shape can tile a floor with no gaps?", "options": ["Circle", "Square", "Sphere", "Oval"], "answer": "Square", "explanation": "Squares fit together perfectly with no gaps and no overlaps. Circles always leave gaps." },
+        { "id": "ch14-t2-e2", "type": "fill", "question": "Good tiling means there are no ______ between the tiles and no ______.", "answer": "gaps, overlaps", "explanation": "Tiles should cover the surface completely with no spaces (gaps) and no tiles sitting on top of each other (overlaps)." },
+        { "id": "ch14-t2-e3", "type": "mcq", "question": "A map shows places as seen from ______.", "options": ["The side", "Underground", "Above (like a bird)", "Behind"], "answer": "Above (like a bird)", "explanation": "A map shows a bird's-eye view - as if you are looking down from above." }
+      ],
+      "medium": [
+        { "id": "ch14-t2-m1", "type": "short", "question": "Why can't circles tile a floor? What shape can you use instead?", "answer": "Circles are round, so they always leave gaps between them when placed next to each other. You can use squares or rectangles instead, which fit together perfectly.", "explanation": "Only shapes with straight edges that fit together without gaps can tile a surface. Circles have curved edges." },
+        { "id": "ch14-t2-m2", "type": "short", "question": "At the Surajkund Fair, Soni needs to go from the entry gate to the restaurant. The map says: Walk on the blue lane, turn right on the green lane, the restaurant is on the right. Name the four direction words used in maps.", "answer": "The four direction words are: forward (straight ahead), backward (go back), left, and right.", "explanation": "Maps use simple direction words to help people navigate from one place to another." }
+      ],
+      "hard": [
+        { "id": "ch14-t2-h1", "type": "long", "question": "You want to tile a rectangular garden path that is 6 squares long and 2 squares wide. You have square tiles and rectangular tiles (each rectangle covers 2 squares). How many square tiles would you need to cover the whole path? How many rectangular tiles would you need instead?", "answer": "The path has 6 x 2 = 12 square spaces. You need 12 square tiles to cover it. Each rectangular tile covers 2 squares, so you need 12 / 2 = 6 rectangular tiles.", "explanation": "Area = 6 x 2 = 12 squares. Square tiles: 12 tiles. Rectangular tiles (covering 2 squares each): 12 / 2 = 6 tiles." },
+        { "id": "ch14-t2-h2", "type": "long", "question": "Draw or describe a rangoli pattern that is symmetrical. It should use at least 3 different shapes (from: circle, triangle, square, rectangle). Explain where the line of symmetry is.", "answer": "Example: Place a circle in the centre. On each side of the circle, place a triangle pointing outward. Above and below the circle, place a square. The line of symmetry goes vertically through the centre of the circle. The left side is a mirror image of the right side.", "explanation": "A symmetrical rangoli has matching elements on both sides of the line of symmetry. Using different shapes makes it more interesting." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "topic": "Long and Round Things",
+      "easy": [
+        { "id": "ch2-t1-e1", "type": "mcq", "question": "Which of these is a ROUND thing?", "options": ["Pencil", "Stick", "Ball", "Rope"], "answer": "Ball", "explanation": "A ball is round in shape." },
+        { "id": "ch2-t1-e2", "type": "mcq", "question": "Which of these is a LONG thing?", "options": ["Orange", "Coin", "Bangle", "Scale (ruler)"], "answer": "Scale (ruler)", "explanation": "A scale or ruler is long in shape." },
+        { "id": "ch2-t1-e3", "type": "fill", "question": "A ______ is round and a pencil is long.", "answer": "ball", "explanation": "A ball is round in shape while a pencil is long." },
+        { "id": "ch2-t1-e4", "type": "mcq", "question": "A roti is ______ in shape.", "options": ["Long", "Round", "Tall", "Thin"], "answer": "Round", "explanation": "A roti is flat and round like a circle." }
+      ],
+      "medium": [
+        { "id": "ch2-t1-m1", "type": "short", "question": "Name two long things and two round things from your home.", "answer": "Long things: broom, rope (or any two). Round things: plate, coin (or any two).", "explanation": "Long things are stretched out. Round things are shaped like a circle or ball." },
+        { "id": "ch2-t1-m2", "type": "short", "question": "Is a bat long or round?", "answer": "A bat is long.", "explanation": "A cricket bat or baseball bat is stretched out in one direction, so it is long." }
+      ],
+      "hard": [
+        { "id": "ch2-t1-h1", "type": "long", "question": "Some things can be both long AND round. A candle is long but also round at the ends. Can you think of one more thing that is both long and round?", "answer": "A pipe or a water bottle. They are long and also round in shape.", "explanation": "Some objects like pipes, bottles, and candles have both long and round features because they are shaped like cylinders." }
+      ]
+    },
+    {
+      "topic": "3D Shapes",
+      "easy": [
+        { "id": "ch2-t2-e1", "type": "mcq", "question": "A ball is shaped like a ______.", "options": ["Cuboid", "Cone", "Sphere", "Cylinder"], "answer": "Sphere", "explanation": "A ball is round on all sides, which is called a sphere." },
+        { "id": "ch2-t2-e2", "type": "mcq", "question": "A matchbox is shaped like a ______.", "options": ["Sphere", "Cuboid", "Cone", "Cylinder"], "answer": "Cuboid", "explanation": "A matchbox is a box shape, which is called a cuboid." },
+        { "id": "ch2-t2-e3", "type": "fill", "question": "An ice-cream cone is shaped like a ______.", "answer": "cone", "explanation": "A cone shape is round at the bottom and pointed at the top, like an ice-cream cone." },
+        { "id": "ch2-t2-e4", "type": "mcq", "question": "A glass (tumbler) is shaped like a ______.", "options": ["Sphere", "Cuboid", "Cone", "Cylinder"], "answer": "Cylinder", "explanation": "A glass is like a tube shape, which is called a cylinder." }
+      ],
+      "medium": [
+        { "id": "ch2-t2-m1", "type": "short", "question": "Give one example each of a sphere, a cuboid, and a cylinder from your home.", "answer": "Sphere: orange or marble. Cuboid: book or eraser. Cylinder: water bottle or candle.", "explanation": "Sphere = ball shape, cuboid = box shape, cylinder = tube shape." },
+        { "id": "ch2-t2-m2", "type": "mcq", "question": "Which shape is a birthday cap?", "options": ["Sphere", "Cuboid", "Cylinder", "Cone"], "answer": "Cone", "explanation": "A birthday cap is pointed at the top and round at the bottom, which is a cone shape." }
+      ],
+      "hard": [
+        { "id": "ch2-t2-h1", "type": "long", "question": "Look around your room. Find one thing for each shape: sphere, cuboid, cylinder, and cone. Write them down.", "answer": "Sphere: ball or orange. Cuboid: book or lunch box. Cylinder: water bottle or glass. Cone: birthday cap or funnel.", "explanation": "Many everyday objects match these four shapes. Sphere is round like a ball, cuboid is like a box, cylinder is like a tube, and cone is pointed like a cap." }
+      ]
+    },
+    {
+      "topic": "Rolling and Sliding",
+      "easy": [
+        { "id": "ch2-t3-e1", "type": "mcq", "question": "Which of these can ROLL?", "options": ["Book", "Eraser", "Ball", "Box"], "answer": "Ball", "explanation": "A ball is round and can roll easily." },
+        { "id": "ch2-t3-e2", "type": "mcq", "question": "A book can ______.", "options": ["Roll", "Slide", "Fly", "Bounce"], "answer": "Slide", "explanation": "A book is flat and slides on a surface." },
+        { "id": "ch2-t3-e3", "type": "fill", "question": "Round things can ______ easily.", "answer": "roll", "explanation": "Round things like balls and marbles turn over and over, which is called rolling." }
+      ],
+      "medium": [
+        { "id": "ch2-t3-m1", "type": "short", "question": "Can a coin roll AND slide? Why?", "answer": "Yes, a coin can both roll and slide. It rolls on its round edge and slides on its flat side.", "explanation": "A coin has both a round edge and flat sides, so it can do both." },
+        { "id": "ch2-t3-m2", "type": "mcq", "question": "Why did the dholak (drum) roll down the hill in the story?", "options": ["It was heavy", "It was round", "It was small", "It was new"], "answer": "It was round", "explanation": "Round things roll easily, especially on a slope." }
+      ],
+      "hard": [
+        { "id": "ch2-t3-h1", "type": "long", "question": "Why can you stack boxes to make a tower, but you cannot stack balls? Which shape is best for building?", "answer": "Boxes (cuboids) have flat tops and bottoms, so they can be placed on top of each other. Balls (spheres) are round and roll away, so they cannot be stacked. Box shapes are best for building.", "explanation": "Flat surfaces allow stacking, while round surfaces roll away." }
+      ]
+    }
+  ]
+}

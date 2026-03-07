@@ -1,0 +1,56 @@
+{
+  "topics": [
+    {
+      "topic": "Multiplication as Repeated Addition",
+      "easy": [
+        { "id": "ch8-t1-e1", "type": "mcq", "question": "3 + 3 + 3 + 3 = ? This is the same as 4 x 3.", "options": ["9", "10", "12", "15"], "answer": "12", "explanation": "Adding 3 four times: 3 + 3 + 3 + 3 = 12. So 4 x 3 = 12." },
+        { "id": "ch8-t1-e2", "type": "fill", "question": "2 + 2 + 2 = ______. This is 3 x 2.", "answer": "6", "explanation": "Adding 2 three times: 2 + 2 + 2 = 6." },
+        { "id": "ch8-t1-e3", "type": "mcq", "question": "5 + 5 + 5 = ? This is the same as 3 x 5.", "options": ["10", "15", "20", "25"], "answer": "15", "explanation": "Adding 5 three times: 5 + 5 + 5 = 15." },
+        { "id": "ch8-t1-e4", "type": "fill", "question": "4 bicycles have ______ wheels in total. (Each bicycle has 2 wheels.)", "answer": "8", "explanation": "4 x 2 = 8 wheels." }
+      ],
+      "medium": [
+        { "id": "ch8-t1-m1", "type": "short", "question": "Write 7 x 4 as repeated addition and find the answer.", "answer": "7 x 4 = 4 + 4 + 4 + 4 + 4 + 4 + 4 = 28.", "explanation": "7 groups of 4 means adding 4 seven times." },
+        { "id": "ch8-t1-m2", "type": "mcq", "question": "Bharti puts 4 buttons on each shirt. She has 7 shirts. How many buttons in all?", "options": ["11", "21", "24", "28"], "answer": "28", "explanation": "7 x 4 = 28 buttons." },
+        { "id": "ch8-t1-m3", "type": "fill", "question": "4 x 10 = ______.", "answer": "40", "explanation": "4 groups of 10: 10 + 10 + 10 + 10 = 40." }
+      ],
+      "hard": [
+        { "id": "ch8-t1-h1", "type": "long", "question": "Ram makes 4 bouquets with 3 flowers each. Gopal makes 3 bouquets with 4 flowers each. Who uses more flowers?", "answer": "Ram: 4 x 3 = 12 flowers. Gopal: 3 x 4 = 12 flowers. Both use the same number of flowers (12).", "explanation": "The order of multiplication does not matter: 4 x 3 = 3 x 4 = 12." }
+      ]
+    },
+    {
+      "topic": "Multiplication Tables (2, 3, 5, 10)",
+      "easy": [
+        { "id": "ch8-t2-e1", "type": "mcq", "question": "2 x 5 = ?", "options": ["7", "8", "10", "12"], "answer": "10", "explanation": "2 x 5 = 10." },
+        { "id": "ch8-t2-e2", "type": "fill", "question": "3 x 4 = ______.", "answer": "12", "explanation": "3 x 4 = 12." },
+        { "id": "ch8-t2-e3", "type": "mcq", "question": "5 x 6 = ?", "options": ["25", "30", "35", "40"], "answer": "30", "explanation": "5 x 6 = 30." },
+        { "id": "ch8-t2-e4", "type": "fill", "question": "10 x 7 = ______.", "answer": "70", "explanation": "10 x 7 = 70. To multiply by 10, just add a 0 after the number." },
+        { "id": "ch8-t2-e5", "type": "mcq", "question": "2 x 8 = ?", "options": ["14", "16", "18", "20"], "answer": "16", "explanation": "2 x 8 = 16." }
+      ],
+      "medium": [
+        { "id": "ch8-t2-m1", "type": "short", "question": "What do you notice about the answers in the table of 2?", "answer": "All answers are even numbers. They end in 0, 2, 4, 6, or 8.", "explanation": "The table of 2 gives: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. All are even numbers." },
+        { "id": "ch8-t2-m2", "type": "short", "question": "What do all answers in the table of 5 end in?", "answer": "All answers in the table of 5 end in 0 or 5.", "explanation": "5, 10, 15, 20, 25, 30, 35, 40, 45, 50 - they all end in 0 or 5." },
+        { "id": "ch8-t2-m3", "type": "fill", "question": "3 x 7 = ______.", "answer": "21", "explanation": "3 x 7 = 21." }
+      ],
+      "hard": [
+        { "id": "ch8-t2-h1", "type": "long", "question": "Rita bought 6 pencils at Rs 4 each. How much did she spend? Write it as multiplication.", "answer": "6 x 4 = Rs 24. Rita spent Rs 24.", "explanation": "6 pencils at 4 rupees each: 6 x 4 = 24." },
+        { "id": "ch8-t2-h2", "type": "short", "question": "There are 8 packets of bindis with 5 bindis in each packet. How many bindis in all?", "answer": "8 x 5 = 40 bindis.", "explanation": "8 groups of 5: 8 x 5 = 40." }
+      ]
+    },
+    {
+      "topic": "Sharing Equally (Introduction to Division)",
+      "easy": [
+        { "id": "ch8-t3-e1", "type": "mcq", "question": "8 gulab jamuns shared equally between 2 children. How many does each child get?", "options": ["2", "3", "4", "6"], "answer": "4", "explanation": "8 divided equally between 2: each gets 4." },
+        { "id": "ch8-t3-e2", "type": "fill", "question": "12 beads shared equally into groups of 4 makes ______ groups.", "answer": "3", "explanation": "12 divided into groups of 4: 4 + 4 + 4 = 12. So there are 3 groups." },
+        { "id": "ch8-t3-e3", "type": "mcq", "question": "10 apples shared equally among 5 children. Each child gets ______ apples.", "options": ["1", "2", "3", "5"], "answer": "2", "explanation": "10 divided by 5: each gets 2 apples." }
+      ],
+      "medium": [
+        { "id": "ch8-t3-m1", "type": "short", "question": "24 bananas are shared equally among 3 monkeys. How many bananas does each monkey get?", "answer": "Each monkey gets 8 bananas. (24 shared among 3 = 8 each.)", "explanation": "8 + 8 + 8 = 24. So each monkey gets 8." },
+        { "id": "ch8-t3-m2", "type": "short", "question": "Garima has 20 beads and makes bracelets using 5 beads each. How many bracelets can she make?", "answer": "20 divided into groups of 5 = 4 bracelets.", "explanation": "5 + 5 + 5 + 5 = 20. She can make 4 bracelets." }
+      ],
+      "hard": [
+        { "id": "ch8-t3-h1", "type": "long", "question": "27 candles need to be put equally into 3 boxes. How many candles in each box? How does this relate to 3 x 9?", "answer": "Each box gets 9 candles (27 shared among 3 = 9 each). This relates to multiplication because 3 x 9 = 27. Division is the opposite of multiplication.", "explanation": "Multiplication puts groups together (3 groups of 9 = 27). Division splits a total into equal groups (27 into 3 groups = 9 each)." },
+        { "id": "ch8-t3-h2", "type": "short", "question": "30 buttons are put on shirts, 6 buttons per shirt. How many shirts?", "answer": "30 divided by 6 = 5 shirts.", "explanation": "6 + 6 + 6 + 6 + 6 = 30. So 5 shirts can be made." }
+      ]
+    }
+  ]
+}

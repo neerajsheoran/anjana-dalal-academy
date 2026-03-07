@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "topic": "Graphical Representation of Data",
+      "easy": [
+        {"id": "ch12-t1-e1", "type": "mcq", "question": "A histogram is used for:", "options": ["Discrete data", "Continuous class intervals", "Categorical data only", "Pie charts"], "answer": "Continuous class intervals", "explanation": "Histograms represent data with continuous class intervals. The bars have no gaps between them, unlike bar graphs used for discrete data."},
+        {"id": "ch12-t1-e2", "type": "fill", "question": "In a histogram, there are no ______ between the bars.", "answer": "gaps", "explanation": "Unlike bar graphs, histograms have no gaps between bars because they represent continuous data where one class interval immediately follows another."},
+        {"id": "ch12-t1-e3", "type": "mcq", "question": "A frequency polygon is drawn by joining:", "options": ["The upper limits of class intervals", "The lower limits of class intervals", "The class marks (midpoints)", "Random points"], "answer": "The class marks (midpoints)", "explanation": "A frequency polygon is created by plotting frequencies against class marks (midpoints of class intervals) and joining the points with straight lines."},
+        {"id": "ch12-t1-e4", "type": "short", "question": "What is the class mark (midpoint) of the class interval 20-30?", "answer": "Class mark = (20 + 30) / 2 = 25.", "explanation": "The class mark is the average of the lower and upper limits of a class interval."}
+      ],
+      "medium": [
+        {"id": "ch12-t1-m1", "type": "short", "question": "In a histogram with varying class widths, how is the height of each bar determined?", "answer": "The height of each bar = frequency / class width (frequency density). This ensures that the area of the bar (not just the height) represents the frequency.", "explanation": "When class widths are unequal, using raw frequencies for height would be misleading. Frequency density adjusts for different widths so areas are proportional to frequencies."},
+        {"id": "ch12-t1-m2", "type": "short", "question": "The following data shows the number of letters in words of a passage: 1-4 (6 words), 4-6 (30 words), 6-8 (44 words), 8-12 (16 words), 12-20 (4 words). If drawing a histogram, find the adjusted heights for bars assuming minimum class width is 2.", "answer": "Minimum class width = 2.\n1-4: width 3, height = 6 x (2/3) = 4\n4-6: width 2, height = 30 x (2/2) = 30\n6-8: width 2, height = 44 x (2/2) = 44\n8-12: width 4, height = 16 x (2/4) = 8\n12-20: width 8, height = 4 x (2/8) = 1", "explanation": "For varying widths, multiply the frequency by (minimum width / class width) to get the adjusted height of each bar."}
+      ],
+      "hard": [
+        {"id": "ch12-t1-h1", "type": "long", "question": "Draw a frequency polygon (describe the points) for the following data: Class intervals 0-10 (5), 10-20 (8), 20-30 (15), 30-40 (12), 40-50 (6). Include the two additional points needed to close the polygon.", "answer": "Class marks and frequencies:\n(-5, 0) -- imaginary class -10 to 0, frequency 0\n(5, 5) -- class 0-10\n(15, 8) -- class 10-20\n(25, 15) -- class 20-30\n(35, 12) -- class 30-40\n(45, 6) -- class 40-50\n(55, 0) -- imaginary class 50-60, frequency 0\n\nPlot these 7 points and join them with straight lines to form the frequency polygon.", "explanation": "To close the frequency polygon, add two imaginary classes (one before the first and one after the last) with frequency 0. The class marks of these imaginary classes are the endpoints."}
+      ]
+    },
+    {
+      "topic": "Measures of Central Tendency",
+      "easy": [
+        {"id": "ch12-t2-e1", "type": "mcq", "question": "The mean of 5, 10, 15, 20, 25 is:", "options": ["10", "15", "20", "12.5"], "answer": "15", "explanation": "Mean = (5 + 10 + 15 + 20 + 25) / 5 = 75 / 5 = 15."},
+        {"id": "ch12-t2-e2", "type": "fill", "question": "The value that occurs most frequently in a data set is called the ______.", "answer": "mode", "explanation": "The mode is the observation with the highest frequency in a data set."},
+        {"id": "ch12-t2-e3", "type": "short", "question": "Find the median of: 7, 3, 5, 1, 9.", "answer": "Arranging in ascending order: 1, 3, 5, 7, 9.\nn = 5 (odd). Median = (5+1)/2 = 3rd value = 5.", "explanation": "First arrange in order. For odd n, median is the middle value at position (n+1)/2."},
+        {"id": "ch12-t2-e4", "type": "mcq", "question": "Which measure of central tendency is most affected by extreme values?", "options": ["Mean", "Median", "Mode", "All equally"], "answer": "Mean", "explanation": "The mean uses all values in its calculation, so extreme values (outliers) pull the mean towards them. Median and mode are not as affected."},
+        {"id": "ch12-t2-e5", "type": "short", "question": "Find the mode of: 2, 6, 5, 3, 6, 4, 6, 2, 3.", "answer": "Frequencies: 2 appears 2 times, 3 appears 2 times, 4 appears 1 time, 5 appears 1 time, 6 appears 3 times.\nThe most frequent value is 6. Mode = 6.", "explanation": "Count the frequency of each value. The value with the highest frequency is the mode."}
+      ],
+      "medium": [
+        {"id": "ch12-t2-m1", "type": "short", "question": "The mean of 6 numbers is 20. If one number is excluded, the mean becomes 18. Find the excluded number.", "answer": "Sum of 6 numbers = 6 x 20 = 120.\nSum of remaining 5 numbers = 5 x 18 = 90.\nExcluded number = 120 - 90 = 30.", "explanation": "Use the relationship: sum = mean x count. Find the difference between the original sum and the new sum."},
+        {"id": "ch12-t2-m2", "type": "short", "question": "Find the mean of the following frequency distribution: x = 1, 2, 3, 4, 5 with frequencies f = 5, 10, 10, 7, 8.", "answer": "Sum(f_i x_i) = 1(5) + 2(10) + 3(10) + 4(7) + 5(8) = 5 + 20 + 30 + 28 + 40 = 123.\nSum(f_i) = 5 + 10 + 10 + 7 + 8 = 40.\nMean = 123/40 = 3.075.", "explanation": "For a frequency distribution, mean = sum of (frequency x value) / total frequency."},
+        {"id": "ch12-t2-m3", "type": "short", "question": "Find the median of the first 10 natural numbers.", "answer": "First 10 natural numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\nn = 10 (even). Median = average of 5th and 6th values.\nMedian = (5 + 6)/2 = 5.5.", "explanation": "For even n, median is the average of the two middle values at positions n/2 and (n/2)+1."}
+      ],
+      "hard": [
+        {"id": "ch12-t2-h1", "type": "long", "question": "The mean of 40 observations was 160. It was later discovered that two observations 125 and 100 were wrongly read as 225 and 200 respectively. Find the correct mean.", "answer": "Incorrect sum = 40 x 160 = 6400.\nDifference due to errors = (225 - 125) + (200 - 100) = 100 + 100 = 200.\nCorrect sum = 6400 - 200 = 6200.\nCorrect mean = 6200/40 = 155.", "explanation": "Find the incorrect sum, subtract the excess added due to wrong readings, then recalculate the mean."},
+        {"id": "ch12-t2-h2", "type": "long", "question": "The following data gives the number of goals scored by a football team in 10 matches: 2, 3, 4, 5, 0, 1, 3, 3, 4, 3. Find the mean, median, and mode. Which is the best measure here?", "answer": "Arranging: 0, 1, 2, 3, 3, 3, 3, 4, 4, 5.\n\nMean = (0+1+2+3+3+3+3+4+4+5)/10 = 28/10 = 2.8.\n\nMedian: n = 10 (even). Average of 5th and 6th values = (3+3)/2 = 3.\n\nMode: 3 appears 4 times (most frequent). Mode = 3.\n\nThe mode (3) is the best measure here as it represents the most typical performance of the team.", "explanation": "Calculate all three measures. The mode is often best for discrete count data like goals, as it shows the most common outcome."}
+      ]
+    }
+  ]
+}

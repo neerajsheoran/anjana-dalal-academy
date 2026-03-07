@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "3-Digit Numbers: Hundreds, Tens, and Ones",
+      "easy": [
+        { "id": "ch6-t1-e1", "type": "mcq", "question": "What number comes after 299?", "options": ["200", "290", "300", "399"], "answer": "300", "explanation": "299 + 1 = 300. After every 99, the next number is a new hundred." },
+        { "id": "ch6-t1-e2", "type": "fill", "question": "The number 235 has ______ hundreds, ______ tens, and ______ ones.", "answer": "2, 3, 5", "explanation": "235 = 2 hundreds + 3 tens + 5 ones." },
+        { "id": "ch6-t1-e3", "type": "mcq", "question": "What is the expanded form of 309?", "options": ["300 + 90", "300 + 9", "30 + 9", "300 + 0 + 9"], "answer": "300 + 0 + 9", "explanation": "309 = 3 hundreds + 0 tens + 9 ones = 300 + 0 + 9." },
+        { "id": "ch6-t1-e4", "type": "fill", "question": "200 + 70 + 5 = ______", "answer": "275", "explanation": "2 hundreds + 7 tens + 5 ones = 275." }
+      ],
+      "medium": [
+        { "id": "ch6-t1-m1", "type": "short", "question": "Write the number name for 423.", "answer": "Four Hundred Twenty Three.", "explanation": "423 = 4 hundreds + 2 tens + 3 ones = Four Hundred Twenty Three." },
+        { "id": "ch6-t1-m2", "type": "short", "question": "What number is 3 hundreds + 0 tens + 9 ones? Write it in digits.", "answer": "309.", "explanation": "3 hundreds = 300, 0 tens = 0, 9 ones = 9. Total = 309." },
+        { "id": "ch6-t1-m3", "type": "mcq", "question": "Which number has 5 hundreds and 0 tens and 0 ones?", "options": ["50", "55", "500", "505"], "answer": "500", "explanation": "5 hundreds + 0 tens + 0 ones = 500 = Five Hundred." }
+      ],
+      "hard": [
+        { "id": "ch6-t1-h1", "type": "long", "question": "On the number grid, house 105 is on the first floor. What house number is directly one floor above it? What house number is 10 floors above 13?", "answer": "One floor above 105 is 115 (add 10). Ten floors above 13 is 113 (add 100, since each floor adds 10, so 10 floors adds 100).", "explanation": "Moving up one floor adds 10. Moving up 10 floors adds 100." }
+      ]
+    },
+    {
+      "topic": "Comparing and Ordering Numbers",
+      "easy": [
+        { "id": "ch6-t2-e1", "type": "mcq", "question": "Which is greater: 321 or 231?", "options": ["321", "231", "Both are equal", "Cannot tell"], "answer": "321", "explanation": "Compare hundreds first: 3 > 2, so 321 > 231." },
+        { "id": "ch6-t2-e2", "type": "fill", "question": "157 ______ 153 (fill with > or <)", "answer": ">", "explanation": "Hundreds are same (1=1), tens are same (5=5), ones: 7 > 3. So 157 > 153." },
+        { "id": "ch6-t2-e3", "type": "mcq", "question": "Which sign means 'less than'?", "options": [">", "<", "=", "+"], "answer": "<", "explanation": "The < sign means less than. The open mouth always points to the bigger number." }
+      ],
+      "medium": [
+        { "id": "ch6-t2-m1", "type": "short", "question": "Arrange these numbers from smallest to biggest: 389, 110, 456, 207, 99.", "answer": "99, 110, 207, 389, 456.", "explanation": "Compare hundreds digits first. 99 has no hundreds (smallest), then 110, 207, 389, 456." },
+        { "id": "ch6-t2-m2", "type": "short", "question": "Using the digits 2, 3, and 4 (without repeating), what is the smallest 3-digit number you can make? What is the greatest?", "answer": "Smallest: 234. Greatest: 432.", "explanation": "For smallest, put the smallest digit in hundreds place: 2-3-4 = 234. For greatest, put the largest digit first: 4-3-2 = 432." },
+        { "id": "ch6-t2-m3", "type": "mcq", "question": "Which is greater: 329 or 392?", "options": ["329", "392", "Both are equal", "Cannot tell"], "answer": "392", "explanation": "Hundreds are same (3=3). Compare tens: 9 > 2. So 392 > 329." }
+      ],
+      "hard": [
+        { "id": "ch6-t2-h1", "type": "long", "question": "Using the digits 5, 1, and 7 (without repeating), write all possible 3-digit numbers. Then arrange them from smallest to greatest.", "answer": "All numbers: 157, 175, 517, 571, 715, 751. From smallest to greatest: 157, 175, 517, 571, 715, 751.", "explanation": "There are 6 possible arrangements. The smallest starts with 1 and the greatest starts with 7." },
+        { "id": "ch6-t2-h2", "type": "long", "question": "Raju's house number is a 3-digit number. The hundreds digit is 3. The tens digit is 2 more than the hundreds digit. The ones digit is 1 less than the tens digit. What is Raju's house number?", "answer": "Hundreds = 3. Tens = 3 + 2 = 5. Ones = 5 - 1 = 4. Raju's house number is 354.", "explanation": "Follow the clues step by step: H = 3, T = 3+2 = 5, O = 5-1 = 4. Number = 354." }
+      ]
+    }
+  ]
+}

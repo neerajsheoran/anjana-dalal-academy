@@ -1,0 +1,201 @@
+{
+  "topics": [
+    {
+      "topic": "Collecting and Organising Data",
+      "easy": [
+        {
+          "id": "ch15-t1-e1",
+          "type": "mcq",
+          "question": "What is data?",
+          "options": ["A type of graph", "Information collected about something", "A mathematical formula", "A picture on a chart"],
+          "answer": "Information collected about something",
+          "explanation": "Data is information (numbers, facts, or observations) collected about something. It needs to be organised and presented clearly to be useful."
+        },
+        {
+          "id": "ch15-t1-e2",
+          "type": "fill",
+          "question": "A table that shows how often something occurs is called a ______ table.",
+          "answer": "frequency",
+          "explanation": "A frequency table records how many times each category or value occurs in the data."
+        },
+        {
+          "id": "ch15-t1-e3",
+          "type": "short",
+          "question": "In a survey of 35 children about TV watching, 5 watch half an hour, 12 watch 1 hour, 8 watch 1.5 hours, 7 watch 2 hours, and 3 watch more than 2 hours. How many children watch more than 1 hour of TV?",
+          "answer": "18 children (8 + 7 + 3 = 18)",
+          "explanation": "Children watching more than 1 hour: 1.5 hours (8) + 2 hours (7) + more than 2 hours (3) = 18."
+        },
+        {
+          "id": "ch15-t1-e4",
+          "type": "mcq",
+          "question": "Before you can understand data, you need to:",
+          "options": ["Draw a picture", "Collect, organise, and present it", "Memorise all the numbers", "Throw away the paper"],
+          "answer": "Collect, organise, and present it",
+          "explanation": "The three steps of working with data are: collect it, organise it (in tables or lists), and present it (in graphs or charts)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch15-t1-m1",
+          "type": "short",
+          "question": "In the TV survey, how many children watch less than 2 hours? What fraction of the total (35 children) is this?",
+          "answer": "25 children watch less than 2 hours (5 + 12 + 8 = 25). Fraction = 25/35 = 5/7.",
+          "explanation": "Less than 2 hours: half hour (5) + 1 hour (12) + 1.5 hours (8) = 25. As a fraction: 25/35. Simplify by dividing both by 5: 5/7."
+        },
+        {
+          "id": "ch15-t1-m2",
+          "type": "mcq",
+          "question": "A school canteen tracks food wastage over 5 days: Monday 3 kg, Tuesday 5 kg, Wednesday 2 kg, Thursday 8 kg, Friday 4 kg. What is the total wastage?",
+          "options": ["18 kg", "20 kg", "22 kg", "24 kg"],
+          "answer": "22 kg",
+          "explanation": "3 + 5 + 2 + 8 + 4 = 22 kg of food wasted over 5 days."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch15-t1-h1",
+          "type": "long",
+          "question": "A school canteen wastes 22 kg of food in a week. If 1 kg can feed 3 children, how many children could have been fed? If the school has 200 students and each needs 250 g of food per meal, how many full meals could 22 kg of food provide?",
+          "answer": "Children that could be fed: 22 x 3 = 66 children. Full meals: 22 kg = 22,000 g. Each meal = 250 g. Number of meals = 22,000 / 250 = 88 meals.",
+          "explanation": "22 kg feeds 22 x 3 = 66 children (at 1 kg each). For 250 g meals: 22,000 g / 250 g = 88 meals."
+        }
+      ]
+    },
+    {
+      "topic": "Pictographs",
+      "easy": [
+        {
+          "id": "ch15-t2-e1",
+          "type": "mcq",
+          "question": "In a pictograph, if 1 icon represents 5 items and there are 6 icons for toys, how many toys are there?",
+          "options": ["5", "6", "11", "30"],
+          "answer": "30",
+          "explanation": "Number of items = number of icons x scale. 6 icons x 5 = 30 toys."
+        },
+        {
+          "id": "ch15-t2-e2",
+          "type": "fill",
+          "question": "A pictograph uses ______ to represent data.",
+          "answer": "pictures (or icons)",
+          "explanation": "A pictograph uses small pictures or icons to represent data. Each picture stands for a certain number of items."
+        },
+        {
+          "id": "ch15-t2-e3",
+          "type": "short",
+          "question": "In a pictograph with scale 1 icon = 3 two-wheelers, Monday has 8 icons. How many two-wheelers passed on Monday?",
+          "answer": "24 two-wheelers (8 x 3 = 24)",
+          "explanation": "Each icon represents 3 two-wheelers. 8 icons = 8 x 3 = 24 two-wheelers."
+        },
+        {
+          "id": "ch15-t2-e4",
+          "type": "mcq",
+          "question": "What does 'scale' mean in a pictograph?",
+          "options": ["The weight of the graph", "How many items each icon represents", "The size of the paper", "The colour of the icons"],
+          "answer": "How many items each icon represents",
+          "explanation": "The scale tells you the value of each picture. For example, scale: 1 icon = 5 items means each picture stands for 5 items."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch15-t2-m1",
+          "type": "short",
+          "question": "In a pictograph (scale: 1 icon = 3 two-wheelers): Monday has 8 icons, Wednesday has 5 icons, Friday has 7 icons. How many more two-wheelers passed on Monday than Wednesday?",
+          "answer": "9 more. Monday: 8 x 3 = 24. Wednesday: 5 x 3 = 15. Difference: 24 - 15 = 9.",
+          "explanation": "Monday: 24, Wednesday: 15. Difference = 24 - 15 = 9 more two-wheelers."
+        },
+        {
+          "id": "ch15-t2-m2",
+          "type": "mcq",
+          "question": "A toy store pictograph shows: Toys = 6 icons, Board games = 4 icons, Sports items = 5 icons (scale: 1 icon = 5 items). What is the total number of items?",
+          "options": ["15", "50", "75", "100"],
+          "answer": "75",
+          "explanation": "Toys: 6 x 5 = 30. Board games: 4 x 5 = 20. Sports items: 5 x 5 = 25. Total: 30 + 20 + 25 = 75."
+        },
+        {
+          "id": "ch15-t2-m3",
+          "type": "short",
+          "question": "If a pictograph needs to show 35 mangoes and the scale is 1 icon = 5 mangoes, how many icons should be drawn?",
+          "answer": "7 icons (35 / 5 = 7)",
+          "explanation": "Number of icons = total items / scale = 35 / 5 = 7 icons."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch15-t2-h1",
+          "type": "long",
+          "question": "A fruit seller sold these fruits in a week: Mangoes — 45, Bananas — 90, Apples — 30, Oranges — 60. She wants to make a pictograph. (a) What scale would work best? (b) How many icons for each fruit? (c) Which fruit was sold the most and the least?",
+          "answer": "(a) Scale: 1 icon = 15 fruits works well (all numbers are divisible by 15). (b) Mangoes: 45/15 = 3 icons. Bananas: 90/15 = 6 icons. Apples: 30/15 = 2 icons. Oranges: 60/15 = 4 icons. (c) Most sold: Bananas (90). Least sold: Apples (30).",
+          "explanation": "Choose a scale that divides all values evenly. 15 divides 45, 90, 30, and 60. Icons: 3, 6, 2, 4 respectively. Bananas sold the most (90) and Apples the least (30)."
+        }
+      ]
+    },
+    {
+      "topic": "Bar Graphs",
+      "easy": [
+        {
+          "id": "ch15-t3-e1",
+          "type": "mcq",
+          "question": "In a bar graph, what does the height of each bar represent?",
+          "options": ["The colour of the category", "The name of the category", "The value or number for that category", "The number of bars"],
+          "answer": "The value or number for that category",
+          "explanation": "In a bar graph, the height (or length) of each bar represents the numerical value for that category."
+        },
+        {
+          "id": "ch15-t3-e2",
+          "type": "fill",
+          "question": "A bar graph has two axes: the ______ axis (bottom) shows categories and the ______ axis (side) shows values.",
+          "answer": "horizontal, vertical",
+          "explanation": "The horizontal axis (bottom line) shows what is being compared (categories). The vertical axis (side line) shows the numbers/values."
+        },
+        {
+          "id": "ch15-t3-e3",
+          "type": "short",
+          "question": "In Raman's daily routine bar graph: sleeping = 9 hours, school = 7 hours, studying = 2 hours, playing = 3 hours, other = 3 hours. Which activity takes the most time?",
+          "answer": "Sleeping (9 hours)",
+          "explanation": "Sleeping has the highest value (9 hours), so its bar would be the tallest in the graph."
+        },
+        {
+          "id": "ch15-t3-e4",
+          "type": "mcq",
+          "question": "How is a bar graph different from a pictograph?",
+          "options": ["Bar graphs use icons, pictographs use bars", "Bar graphs use rectangular bars, pictographs use pictures", "They are exactly the same", "Bar graphs can only show 3 categories"],
+          "answer": "Bar graphs use rectangular bars, pictographs use pictures",
+          "explanation": "Bar graphs represent data with rectangular bars whose height shows the value. Pictographs use pictures/icons where each icon represents a set number of items."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch15-t3-m1",
+          "type": "short",
+          "question": "A bar graph shows food wastage: Monday 3 kg, Tuesday 5 kg, Wednesday 2 kg, Thursday 8 kg, Friday 4 kg. On which day was wastage highest? On which day was it lowest? What is the difference?",
+          "answer": "Highest: Thursday (8 kg). Lowest: Wednesday (2 kg). Difference: 8 - 2 = 6 kg.",
+          "explanation": "The tallest bar (Thursday, 8 kg) shows the most wastage. The shortest bar (Wednesday, 2 kg) shows the least. Difference = 8 - 2 = 6 kg."
+        },
+        {
+          "id": "ch15-t3-m2",
+          "type": "mcq",
+          "question": "If you want to compare sales of 5 products easily, which is usually better?",
+          "options": ["A table", "A pictograph", "A bar graph", "Just the numbers"],
+          "answer": "A bar graph",
+          "explanation": "Bar graphs make comparison easy because you can see the differences in bar heights at a glance. For larger data sets with many categories, bar graphs are more practical than pictographs."
+        },
+        {
+          "id": "ch15-t3-m3",
+          "type": "short",
+          "question": "Raman's daily routine adds up to how many hours? Does this make sense? Why?",
+          "answer": "9 + 7 + 2 + 3 + 3 = 24 hours. Yes, this makes sense because there are exactly 24 hours in a day.",
+          "explanation": "A complete daily routine should account for all 24 hours of the day. 9 + 7 + 2 + 3 + 3 = 24 hours, which checks out."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch15-t3-h1",
+          "type": "long",
+          "question": "During a cricket tournament, runs scored by 5 batsmen are: Sachin — 85, Virat — 110, Rohit — 95, Dhoni — 70, Rahul — 60. (a) If you make a bar graph with scale of 1 unit = 10 runs, how tall would each bar be? (b) What is the total runs scored? (c) What is the average runs per batsman? (d) How many more runs did the highest scorer make than the lowest?",
+          "answer": "(a) Sachin: 8.5 units, Virat: 11 units, Rohit: 9.5 units, Dhoni: 7 units, Rahul: 6 units. (b) Total = 85 + 110 + 95 + 70 + 60 = 420 runs. (c) Average = 420 / 5 = 84 runs per batsman. (d) Highest (Virat, 110) - Lowest (Rahul, 60) = 50 runs difference.",
+          "explanation": "Bar heights = runs / 10. Total = 420. Average = 420/5 = 84. Difference between highest and lowest = 110 - 60 = 50 runs."
+        }
+      ]
+    }
+  ]
+}

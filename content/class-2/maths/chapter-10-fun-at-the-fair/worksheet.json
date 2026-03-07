@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "topic": "Indian Coins and Notes",
+      "easy": [
+        { "id": "ch10-t1-e1", "type": "mcq", "question": "What is the symbol for Indian money?", "options": ["$", "Rs", "Euro", "Pound"], "answer": "Rs", "explanation": "In India, the symbol for rupees is Rs." },
+        { "id": "ch10-t1-e2", "type": "mcq", "question": "Which is worth MORE: a Rs 5 coin or a Rs 10 note?", "options": ["Rs 5 coin", "Rs 10 note", "Both are equal", "Cannot tell"], "answer": "Rs 10 note", "explanation": "Rs 10 is more than Rs 5." },
+        { "id": "ch10-t1-e3", "type": "fill", "question": "100 paise = ______ rupee.", "answer": "1", "explanation": "100 paise make 1 rupee." },
+        { "id": "ch10-t1-e4", "type": "mcq", "question": "The Rs 500 note has a picture of which famous building?", "options": ["Taj Mahal", "India Gate", "Red Fort", "Qutub Minar"], "answer": "Red Fort", "explanation": "The Red Fort of Delhi is printed on the Rs 500 note." }
+      ],
+      "medium": [
+        { "id": "ch10-t1-m1", "type": "short", "question": "Name three different coins and three different notes used in India.", "answer": "Coins: Rs 1, Rs 2, Rs 5 (or Rs 10, Rs 20). Notes: Rs 10, Rs 50, Rs 100 (or Rs 20, Rs 200, Rs 500).", "explanation": "India uses coins of Rs 1, 2, 5, 10, 20 and notes of Rs 10, 20, 50, 100, 200, 500." },
+        { "id": "ch10-t1-m2", "type": "mcq", "question": "How many coins of 50 paise make Rs 1?", "options": ["1", "2", "4", "10"], "answer": "2", "explanation": "50 paise + 50 paise = 100 paise = Rs 1." }
+      ],
+      "hard": [
+        { "id": "ch10-t1-h1", "type": "short", "question": "Paise coins are no longer used in India. What is the smallest coin we use now?", "answer": "The smallest coin we use now is the Rs 1 coin.", "explanation": "Paise coins have been discontinued. The Rs 1 coin is the smallest denomination now in use." }
+      ]
+    },
+    {
+      "topic": "Adding and Counting Money",
+      "easy": [
+        { "id": "ch10-t2-e1", "type": "mcq", "question": "Rs 10 + Rs 10 + Rs 5 + Rs 2 + Rs 1 = ?", "options": ["Rs 25", "Rs 28", "Rs 30", "Rs 18"], "answer": "Rs 28", "explanation": "10 + 10 + 5 + 2 + 1 = 28." },
+        { "id": "ch10-t2-e2", "type": "fill", "question": "An ice cream costs Rs 15 and a balloon costs Rs 5. Together they cost Rs ______.", "answer": "20", "explanation": "15 + 5 = 20." },
+        { "id": "ch10-t2-e3", "type": "mcq", "question": "A toy car costs Rs 20 and cotton candy costs Rs 10. What is the total cost?", "options": ["Rs 10", "Rs 20", "Rs 30", "Rs 40"], "answer": "Rs 30", "explanation": "20 + 10 = 30." },
+        { "id": "ch10-t2-e4", "type": "fill", "question": "Rs 25 + Rs 40 = Rs ______.", "answer": "65", "explanation": "25 + 40 = 65." }
+      ],
+      "medium": [
+        { "id": "ch10-t2-m1", "type": "short", "question": "Jayant spent Rs 25 on pens and Rs 40 on notebooks. How much did he spend in total?", "answer": "Rs 25 + Rs 40 = Rs 65.", "explanation": "We add both amounts to find the total cost." },
+        { "id": "ch10-t2-m2", "type": "short", "question": "A bread costs Rs 30 and a chocolate costs Rs 60. How much money do you need to buy both?", "answer": "Rs 30 + Rs 60 = Rs 90.", "explanation": "We add the prices of both items." }
+      ],
+      "hard": [
+        { "id": "ch10-t2-h1", "type": "long", "question": "Name two different ways to pay Rs 66.", "answer": "Way 1: One Rs 50 note + one Rs 10 note + one Rs 5 coin + one Rs 1 coin = 50 + 10 + 5 + 1 = Rs 66. Way 2: Three Rs 20 notes + one Rs 5 coin + one Rs 1 coin = 60 + 5 + 1 = Rs 66.", "explanation": "The same amount can be paid using different combinations of coins and notes." }
+      ]
+    },
+    {
+      "topic": "Spending and Getting Change",
+      "easy": [
+        { "id": "ch10-t3-e1", "type": "mcq", "question": "Rupal had Rs 50. She spent Rs 25. How much is left?", "options": ["Rs 15", "Rs 25", "Rs 30", "Rs 75"], "answer": "Rs 25", "explanation": "50 - 25 = 25. She has Rs 25 left." },
+        { "id": "ch10-t3-e2", "type": "fill", "question": "If something costs Rs 15 and you give Rs 20, the shopkeeper gives you Rs ______ change.", "answer": "5", "explanation": "20 - 15 = 5. The change is Rs 5." },
+        { "id": "ch10-t3-e3", "type": "mcq", "question": "Ajay has Rs 58. He spent Rs 48. How much is left?", "options": ["Rs 6", "Rs 10", "Rs 12", "Rs 16"], "answer": "Rs 10", "explanation": "58 - 48 = 10." }
+      ],
+      "medium": [
+        { "id": "ch10-t3-m1", "type": "short", "question": "Rupal had Rs 50. She spent Rs 10 on a ride and Rs 15 on snacks. How much did she spend? How much is left?", "answer": "Money spent: Rs 10 + Rs 15 = Rs 25. Money left: Rs 50 - Rs 25 = Rs 25.", "explanation": "First add the amounts spent, then subtract from the total." },
+        { "id": "ch10-t3-m2", "type": "short", "question": "Meera has Rs 43. Kanika has Rs 14 more than Meera. How much does Kanika have?", "answer": "Rs 43 + Rs 14 = Rs 57.", "explanation": "When someone has 'more than' another, we add to find their amount." }
+      ],
+      "hard": [
+        { "id": "ch10-t3-h1", "type": "long", "question": "Rupal's friend had Rs 50 and now has Rs 8 left. How much did she spend? Show your work.", "answer": "Money spent = Rs 50 - Rs 8 = Rs 42. She spent Rs 42 at the fair.", "explanation": "Total money - money left = money spent. 50 - 8 = 42." },
+        { "id": "ch10-t3-h2", "type": "short", "question": "You have Rs 50. You buy bangles for Rs 30 and ice cream for Rs 15. Can you afford both? How much is left?", "answer": "Total cost: Rs 30 + Rs 15 = Rs 45. Yes, you can afford both. Money left: Rs 50 - Rs 45 = Rs 5.", "explanation": "First check if the total cost is less than or equal to the money you have." }
+      ]
+    }
+  ]
+}

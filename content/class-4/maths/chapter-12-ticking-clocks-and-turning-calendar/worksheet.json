@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "topic": "Calendar, Dates, and Leap Years",
+      "easy": [
+        { "id": "ch12-t1-e1", "type": "mcq", "question": "How many days does a leap year have?", "options": ["360", "365", "366", "370"], "answer": "366", "explanation": "A leap year has 366 days because February gets an extra day (29 instead of 28)." },
+        { "id": "ch12-t1-e2", "type": "fill", "question": "In the date format DD/MM/YYYY, the date 04/07/2024 means the ______th of ______, 2024.", "answer": "4, July", "explanation": "DD=04 is the day, MM=07 is July (7th month), YYYY=2024 is the year." },
+        { "id": "ch12-t1-e3", "type": "mcq", "question": "Leap years happen every ______ years.", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "Leap years occur every 4 years: 2020, 2024, 2028, 2032..." },
+        { "id": "ch12-t1-e4", "type": "fill", "question": "A regular year has ______ days.", "answer": "365", "explanation": "A regular (non-leap) year has 365 days." }
+      ],
+      "medium": [
+        { "id": "ch12-t1-m1", "type": "short", "question": "Parv was born on 29 February 2016. When will his birthday date next appear on the calendar? How old will he be then (in calendar years)?", "answer": "29 February appears only in leap years. The next leap years after 2016 are 2020, 2024, 2028. His birthday date appears every 4 years. If we count from 2016, by 2028 he will be 12 years old in calendar years.", "explanation": "29 February only exists in leap years (every 4 years). Parv's birthday date appears on the calendar only once every 4 years." },
+        { "id": "ch12-t1-m2", "type": "mcq", "question": "Is 2025 a leap year?", "options": ["Yes", "No"], "answer": "No", "explanation": "2025 / 4 = 506 remainder 1. Since there is a remainder, 2025 is NOT a leap year." },
+        { "id": "ch12-t1-m3", "type": "short", "question": "A biscuit packet was made on 01/03/2025 and expires on 01/09/2025. How many months is it safe to eat?", "answer": "From March to September is 6 months.", "explanation": "Count the months: March, April, May, June, July, August, September = 6 months." }
+      ],
+      "hard": [
+        { "id": "ch12-t1-h1", "type": "long", "question": "Anjali's birthday is on 15 March and her friend Riya's birthday is on 20 July. Write both dates in DD/MM/YYYY format for 2026. How many months apart are their birthdays? Name the months between them.", "answer": "Anjali: 15/03/2026. Riya: 20/07/2026. Months apart: March to July = 4 months. The months between them are April, May, June (with parts of March and July).", "explanation": "Count from March to July: April, May, June = 3 complete months in between. From March to July is about 4 months." }
+      ]
+    },
+    {
+      "topic": "Reading Time: AM/PM, 24-Hour Clock, and Duration",
+      "easy": [
+        { "id": "ch12-t2-e1", "type": "mcq", "question": "8:00 AM is in the ______ and 8:00 PM is at ______.", "options": ["Night, Morning", "Morning, Night", "Afternoon, Evening", "Evening, Morning"], "answer": "Morning, Night", "explanation": "AM is from midnight to noon (morning hours). PM is from noon to midnight (evening/night hours)." },
+        { "id": "ch12-t2-e2", "type": "fill", "question": "1 hour = ______ minutes.", "answer": "60", "explanation": "There are 60 minutes in 1 hour." },
+        { "id": "ch12-t2-e3", "type": "mcq", "question": "What is 3:00 PM in 24-hour clock format?", "options": ["03:00", "13:00", "15:00", "21:00"], "answer": "15:00", "explanation": "For PM times, add 12 to the hour: 3 + 12 = 15. So 3:00 PM = 15:00." },
+        { "id": "ch12-t2-e4", "type": "fill", "question": "Half an hour = ______ minutes.", "answer": "30", "explanation": "Half of 60 minutes = 30 minutes." }
+      ],
+      "medium": [
+        { "id": "ch12-t2-m1", "type": "short", "question": "Raghav leaves home at 8:20 AM and returns at 9:05 AM. How many minutes was he away?", "answer": "From 8:20 to 9:00 = 40 minutes. From 9:00 to 9:05 = 5 minutes. Total = 45 minutes.", "explanation": "Break into parts: 8:20 to 9:00 = 40 min, 9:00 to 9:05 = 5 min. Total = 45 min." },
+        { "id": "ch12-t2-m2", "type": "mcq", "question": "When the hour hand is between 3 and 4, what hour is it?", "options": ["3", "4", "3 and a half", "Cannot tell"], "answer": "3", "explanation": "The hour only changes when the minute hand reaches 12. If the hour hand is between 3 and 4, it is still in the 3 o'clock hour." },
+        { "id": "ch12-t2-m3", "type": "short", "question": "Convert 5:20 PM to 24-hour format. Convert 07:15 to 12-hour AM/PM format.", "answer": "5:20 PM = 17:20 (add 12 to the hour). 07:15 = 7:15 AM.", "explanation": "PM to 24-hour: add 12 to the hour. 24-hour morning times are the same as AM times." }
+      ],
+      "hard": [
+        { "id": "ch12-t2-h1", "type": "long", "question": "Akira's school day: She leaves home at 7:45 AM, reaches school at 8:15 AM, has assembly until 8:30 AM, classes until 12:30 PM, then lunch until 1:00 PM, and school ends at 2:30 PM. How long is her travel to school? How long are her classes? How many hours is she at school in total (from arrival to school end)?", "answer": "Travel: 8:15 - 7:45 = 30 minutes. Classes: 8:30 AM to 12:30 PM = 4 hours. Total at school: 8:15 AM to 2:30 PM = 6 hours 15 minutes.", "explanation": "Travel: 30 min. Classes: 4 hours. Total school time: from 8:15 AM to 2:30 PM = 6 hours 15 minutes." },
+        { "id": "ch12-t2-h2", "type": "long", "question": "A train departs Mumbai at 16:30 (4:30 PM) and arrives in Pune at 19:45 (7:45 PM). How long is the journey? Express the time in hours and minutes. If the train departed 15 minutes late, what time would it arrive (assuming the same journey duration)?", "answer": "Journey time: 19:45 - 16:30 = 3 hours 15 minutes. If departed 15 min late at 16:45, arrival = 16:45 + 3h 15m = 20:00 (8:00 PM).", "explanation": "Duration: from 16:30 to 19:45 = 3 hours 15 minutes. Late departure at 16:45 + 3:15 = 20:00." }
+      ]
+    }
+  ]
+}

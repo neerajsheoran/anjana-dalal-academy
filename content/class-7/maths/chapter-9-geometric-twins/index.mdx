@@ -1,0 +1,144 @@
+---
+title: "Chapter 9 — Geometric Twins"
+---
+
+When two figures have exactly the same shape and size, we call them **congruent** -- geometric twins! In this chapter, we explore what it means for figures to be congruent, and discover the conditions under which two triangles are guaranteed to be congruent.
+
+## What is Congruence?
+
+Two figures are **congruent** if one can be placed exactly over the other so that they match perfectly. This means they have the same shape and the same size.
+
+When checking for congruence, a figure can be **rotated** or **flipped** (reflected) before superimposing it on the other.
+
+> **Key Idea:** Congruent figures are exact copies of each other. If you trace one on tracing paper, it will fit exactly over the other.
+
+### Checking Congruence of Simple Shapes
+
+To verify that two shapes are congruent, we measure their key dimensions:
+
+| Shape | Measurements Needed |
+|-------|-------------------|
+| **Circle** | Radius (or diameter) |
+| **Rectangle** | Length and breadth |
+| **Square** | Side length |
+| **Angle figure (like a V)** | Two arm lengths and the angle between them |
+
+Two circles are congruent if they have the **same radius**. Two rectangles are congruent if they have the **same length and breadth**.
+
+## Congruence of Triangles
+
+Triangles are the simplest polygons, and understanding their congruence is foundational to geometry. The question is: what measurements of a triangle do we need to know to uniquely determine its shape and size?
+
+### The SSS Condition (Side-Side-Side)
+
+If two triangles have the **same three side lengths**, they are congruent.
+
+**Why?** When you construct a triangle with given side lengths (using compass arcs), the two arcs always intersect in a way that produces congruent triangles -- the triangle above the base is a mirror image of the one below it.
+
+> **SSS Condition:** If the three sides of one triangle are equal to the three sides of another triangle, the two triangles are congruent.
+
+**Example:** Triangle ABC has sides AB = 6 cm, BC = 5 cm, CA = 3.5 cm. Triangle DEJ has sides DE = 3.5 cm, EJ = 5 cm, JD = 6 cm.
+
+Since all three pairs of sides are equal (in some order), the triangles are congruent by SSS.
+
+### Conventions for Expressing Congruence
+
+When we write **triangle ABC is congruent to triangle XYZ**, we mean:
+- Vertex A corresponds to vertex X
+- Vertex B corresponds to vertex Y
+- Vertex C corresponds to vertex Z
+
+This also means:
+- **Corresponding sides:** AB = XY, BC = YZ, AC = XZ
+- **Corresponding angles:** angle A = angle X, angle B = angle Y, angle C = angle Z
+
+The order of vertices matters! If triangle ABC is congruent to triangle XYZ, then we can also write triangle ACB is congruent to triangle XZY, but NOT triangle ACB is congruent to triangle XYZ.
+
+### Congruent Triangles in a Rectangle
+
+In rectangle ABCD, the diagonal BD divides it into two triangles: ABD and CDB. These triangles are congruent by SSS because:
+- AB = CD (opposite sides of a rectangle)
+- AD = CB (opposite sides of a rectangle)
+- BD = BD (common side)
+
+## Do Three Equal Angles Guarantee Congruence?
+
+**No!** If two triangles have the same three angles (say 30 degrees, 70 degrees, and 80 degrees), they may have different sizes. Such triangles have the same **shape** but not necessarily the same **size**. They are called **similar** triangles (a concept for later study).
+
+## The SAS Condition (Side-Angle-Side)
+
+If two sides and the **included angle** (the angle between those two sides) of one triangle are equal to the corresponding parts of another triangle, the triangles are congruent.
+
+> **SAS Condition:** Two sides and the angle between them determine a unique triangle.
+
+**Example:** If AB = XY = 6 cm, AC = XZ = 5 cm, and angle A = angle X = 30 degrees, then triangle ABC is congruent to triangle XYZ by SAS.
+
+### Why the Angle Must Be "Included"
+
+The **SSA condition** (two sides and a **non-included** angle) does **not** guarantee congruence. When you construct such a triangle, the arc from the third vertex may intersect the line at **two different points**, producing two non-congruent triangles.
+
+**Example:** With AB = 6 cm, AC = 4 cm, and angle B = 30 degrees, you can draw two different valid triangles. So SSA is **not** a reliable test for congruence.
+
+## The ASA Condition (Angle-Side-Angle)
+
+If two angles and the **included side** (the side between those two angles) of one triangle are equal to the corresponding parts of another triangle, the triangles are congruent.
+
+> **ASA Condition:** Two angles and the side between them determine a unique triangle.
+
+**Example:** If BC = YZ = 5 cm, angle B = angle Y = 50 degrees, and angle C = angle Z = 30 degrees, then triangle ABC is congruent to triangle XYZ by ASA.
+
+### Using ASA to Find Equal Parts
+
+**Example:** In a figure where point O is the midpoint of both AD and BC:
+- AO = OD (O is midpoint of AD)
+- BO = OC (O is midpoint of BC)
+- angle AOB = angle DOC (vertically opposite angles)
+
+By SAS, triangle AOB is congruent to triangle DOC. Therefore, AB = DC (corresponding sides of congruent triangles).
+
+## The AAS Condition (Angle-Angle-Side)
+
+If two angles and a **non-included side** of one triangle equal the corresponding parts of another, the triangles are still congruent.
+
+> **AAS Condition:** Two angles and a non-included side also guarantee congruence.
+
+**Why?** If two angles are known, the third angle is automatically determined (since angles sum to 180 degrees). This converts the AAS information into ASA information.
+
+**Example:** angle A = angle X = 35 degrees, angle C = angle Z = 75 degrees, BC = YZ = 4 cm.
+
+Since angle B = 180 - 35 - 75 = 70 degrees = angle Y, we have ASA: angle B = angle Y, BC = YZ, angle C = angle Z. So the triangles are congruent.
+
+## The RHS Condition (Right Angle-Hypotenuse-Side)
+
+For **right triangles**, there is a special condition:
+
+> **RHS Condition:** If the **hypotenuse** and one **side** of a right triangle are equal to the hypotenuse and one side of another right triangle, the two triangles are congruent.
+
+This is a special case where SSA does work -- because the right angle constraint prevents the ambiguity that normally occurs with SSA.
+
+## Summary of Congruence Conditions
+
+| Condition | What Must Be Equal | Guarantees Congruence? |
+|-----------|-------------------|----------------------|
+| **SSS** | All three sides | Yes |
+| **SAS** | Two sides and the included angle | Yes |
+| **ASA** | Two angles and the included side | Yes |
+| **AAS** | Two angles and a non-included side | Yes |
+| **RHS** | Hypotenuse and one side of right triangles | Yes |
+| **AAA** | All three angles | **No** (same shape, but not necessarily same size) |
+| **SSA** | Two sides and a non-included angle | **No** (ambiguous case) |
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Congruent figures** | Figures that have exactly the same shape and size |
+| **Superimpose** | To place one figure exactly on top of another to check if they match |
+| **Corresponding vertices** | Vertices of congruent triangles that overlap when superimposed |
+| **Corresponding sides** | Sides of congruent triangles that overlap when superimposed |
+| **Corresponding angles** | Angles of congruent triangles that overlap when superimposed |
+| **SSS** | Side-Side-Side condition: three equal sides guarantee congruence |
+| **SAS** | Side-Angle-Side condition: two sides and included angle guarantee congruence |
+| **ASA** | Angle-Side-Angle condition: two angles and included side guarantee congruence |
+| **AAS** | Angle-Angle-Side condition: two angles and a non-included side guarantee congruence |
+| **RHS** | Right angle-Hypotenuse-Side condition: for right triangles, hypotenuse and one side guarantee congruence |

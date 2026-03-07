@@ -1,0 +1,35 @@
+{
+  "topics": [
+    {
+      "topic": "Percentages and Applications",
+      "easy": [
+        { "id": "ch8-t1-e1", "type": "mcq", "question": "25% expressed as a fraction is:", "options": ["1/4", "1/5", "2/5", "1/25"], "answer": "1/4", "explanation": "25% = 25/100 = 1/4." },
+        { "id": "ch8-t1-e2", "type": "fill", "question": "To express a fraction as a percentage, multiply the fraction by ______.", "answer": "100", "explanation": "Fraction x 100 gives the percentage. E.g., 3/4 x 100 = 75%." },
+        { "id": "ch8-t1-e3", "type": "mcq", "question": "What is 35% of 200?", "options": ["70", "35", "7000", "0.35"], "answer": "70", "explanation": "35% of 200 = (35/100) x 200 = 70." },
+        { "id": "ch8-t1-e4", "type": "short", "question": "Express 2/5 as a percentage.", "answer": "2/5 x 100 = 40%. So 2/5 = 40%.", "explanation": "Multiply the fraction by 100 to convert to percentage." }
+      ],
+      "medium": [
+        { "id": "ch8-t1-m1", "type": "short", "question": "A shirt has a marked price of Rs 800 with a 15% discount. Find the selling price.", "answer": "Discount = 15% of 800 = (15/100) x 800 = Rs 120.\nSelling Price = 800 - 120 = Rs 680.", "explanation": "Discount is calculated on the marked price. SP = MP - Discount." },
+        { "id": "ch8-t1-m2", "type": "short", "question": "Ramu bought a bicycle for Rs 3000 and sold it for Rs 3450. Find the profit percentage.", "answer": "Profit = 3450 - 3000 = Rs 450.\nProfit % = (450/3000) x 100 = 15%.", "explanation": "Profit percentage is calculated on the cost price: (Profit/CP) x 100." }
+      ],
+      "hard": [
+        { "id": "ch8-t1-h1", "type": "long", "question": "A phone costs Rs 15,000 with 18% GST. The shop offers a 10% discount on the price before GST. Find the final bill amount.", "answer": "Step 1: Discount = 10% of 15000 = Rs 1500.\nPrice after discount = 15000 - 1500 = Rs 13,500.\n\nStep 2: GST = 18% of 13500 = (18/100) x 13500 = Rs 2430.\n\nStep 3: Final bill = 13500 + 2430 = Rs 15,930.", "explanation": "Apply discount first to get the selling price, then calculate GST on the discounted price." }
+      ]
+    },
+    {
+      "topic": "Simple Interest",
+      "easy": [
+        { "id": "ch8-t2-e1", "type": "mcq", "question": "Simple Interest formula is:", "options": ["SI = P + R + T", "SI = PRT/100", "SI = P x R x T", "SI = (P + R)/T"], "answer": "SI = PRT/100", "explanation": "Simple Interest = (Principal x Rate x Time) / 100." },
+        { "id": "ch8-t2-e2", "type": "fill", "question": "If Rs 5000 is deposited at 8% per annum for 3 years, the simple interest is Rs ______.", "answer": "1200", "explanation": "SI = (5000 x 8 x 3)/100 = 1200." },
+        { "id": "ch8-t2-e3", "type": "short", "question": "Find the simple interest on Rs 12,000 at 10% per annum for 2 years.", "answer": "SI = (12000 x 10 x 2)/100 = Rs 2400.", "explanation": "Apply the formula SI = PRT/100 with P = 12000, R = 10, T = 2." }
+      ],
+      "medium": [
+        { "id": "ch8-t2-m1", "type": "short", "question": "Rani deposits Rs 5000 at 8% per annum for 3 years. Find the total amount she receives.", "answer": "SI = (5000 x 8 x 3)/100 = Rs 1200.\nTotal amount = Principal + SI = 5000 + 1200 = Rs 6200.", "explanation": "The total amount returned includes both the principal and the interest earned." },
+        { "id": "ch8-t2-m2", "type": "short", "question": "At what rate of interest will Rs 4000 earn Rs 640 in 2 years?", "answer": "SI = PRT/100.\n640 = (4000 x R x 2)/100.\n640 = 80R.\nR = 640/80 = 8%.", "explanation": "Rearrange the SI formula to find R: R = (SI x 100)/(P x T)." }
+      ],
+      "hard": [
+        { "id": "ch8-t2-h1", "type": "long", "question": "Meera borrows Rs 25,000 at 12% per annum simple interest. She repays Rs 10,000 after 1 year and the remaining amount after another year. How much does she pay in total?", "answer": "Year 1:\nInterest = (25000 x 12 x 1)/100 = Rs 3000.\nTotal due after year 1 = 25000 + 3000 = Rs 28,000.\nShe repays Rs 10,000.\nRemaining principal = 28000 - 10000 = Rs 18,000.\n\nYear 2:\nInterest on 18000 = (18000 x 12 x 1)/100 = Rs 2160.\nTotal due after year 2 = 18000 + 2160 = Rs 20,160.\n\nTotal paid = 10000 + 20160 = Rs 30,160.", "explanation": "After partial repayment, interest in the second year is calculated on the remaining principal." }
+      ]
+    }
+  ]
+}

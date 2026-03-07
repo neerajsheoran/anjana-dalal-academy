@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Parity (Even and Odd Numbers)",
+      "easy": [
+        { "id": "ch6-t1-e1", "type": "mcq", "question": "What is the sum of two odd numbers?", "options": ["Always odd", "Always even", "Sometimes odd, sometimes even", "Always zero"], "answer": "Always even", "explanation": "Odd + odd = even. Each odd number has one leftover after pairing; two leftovers pair up to give an even sum." },
+        { "id": "ch6-t1-e2", "type": "fill", "question": "The 100th even number is ______.", "answer": "200", "explanation": "The nth even number = 2n. So the 100th even number = 2 x 100 = 200." },
+        { "id": "ch6-t1-e3", "type": "mcq", "question": "What is even x odd?", "options": ["Even", "Odd", "Cannot determine", "Zero"], "answer": "Even", "explanation": "When any factor is even, the product is even. Even x odd = even." },
+        { "id": "ch6-t1-e4", "type": "fill", "question": "The 100th odd number is ______.", "answer": "199", "explanation": "The nth odd number = 2n - 1. So the 100th odd number = 2 x 100 - 1 = 199." }
+      ],
+      "medium": [
+        { "id": "ch6-t1-m1", "type": "short", "question": "Can you choose exactly 5 cards from {1, 3, 5, 7, 9, 11, 13, 15, 17} that add up to 30? Explain using parity.", "answer": "No, it is impossible.\n\nAll 9 cards are odd. The sum of 5 odd numbers is always odd (odd + odd = even, so 4 odds give even, plus one more odd gives odd). Since 30 is even, no selection of 5 odd numbers can sum to 30.", "explanation": "Parity proves impossibility without checking every combination. Five odd numbers always give an odd sum." },
+        { "id": "ch6-t1-m2", "type": "short", "question": "A rectangular grid has 27 rows and 13 columns. Is the total number of small squares even or odd?", "answer": "Odd.\n\nTotal squares = 27 x 13. Since odd x odd = odd, the total is odd.", "explanation": "27 is odd and 13 is odd. The product of two odd numbers is always odd." }
+      ],
+      "hard": [
+        { "id": "ch6-t1-h1", "type": "long", "question": "Martin and Maria were born exactly one year apart. Can the sum of their ages ever be 112? Prove your answer.", "answer": "No, the sum of their ages can never be 112.\n\nProof:\nSince they were born one year apart, their ages are consecutive numbers at any given time.\nOne age is even and the other is odd (consecutive numbers always have different parities).\nEven + odd = odd.\n112 is even.\nSince the sum of their ages is always odd, it can never equal 112.", "explanation": "Consecutive numbers have different parities. The sum of an even and an odd number is always odd, but 112 is even — a contradiction." }
+      ]
+    },
+    {
+      "topic": "Magic Squares and Divisibility",
+      "easy": [
+        { "id": "ch6-t2-e1", "type": "mcq", "question": "In a 3x3 magic square using numbers 1 to 9, what is the magic sum?", "options": ["12", "15", "18", "20"], "answer": "15", "explanation": "Sum of 1 to 9 = 45. There are 3 rows with equal sums, so magic sum = 45/3 = 15." },
+        { "id": "ch6-t2-e2", "type": "fill", "question": "A number that reads the same forwards and backwards is called a ______.", "answer": "palindrome", "explanation": "Examples of palindromes: 121, 1331, 45654." },
+        { "id": "ch6-t2-e3", "type": "mcq", "question": "A number is divisible by 9 if:", "options": ["Its last digit is 9", "Its sum of digits is divisible by 9", "It ends in 0", "It is odd"], "answer": "Its sum of digits is divisible by 9", "explanation": "The divisibility test for 9: add all digits. If the sum is divisible by 9, so is the number." },
+        { "id": "ch6-t2-e4", "type": "short", "question": "Is 4518 divisible by 9?", "answer": "Yes. Digit sum = 4 + 5 + 1 + 8 = 18, and 18 is divisible by 9.", "explanation": "The sum of digits (18) is divisible by 9, so 4518 is divisible by 9." }
+      ],
+      "medium": [
+        { "id": "ch6-t2-m1", "type": "short", "question": "Is 7324 divisible by 4? Explain the test.", "answer": "Yes. The last two digits are 24. Since 24 ÷ 4 = 6 (no remainder), 7324 is divisible by 4.", "explanation": "Divisibility by 4: check if the last two digits form a number divisible by 4. Since 24 is divisible by 4, so is 7324." },
+        { "id": "ch6-t2-m2", "type": "short", "question": "Is 82918 divisible by 11? Show the alternating sum test.", "answer": "Yes. Alternating sum from right to left: 8 - 1 + 9 - 2 + 8 = 22. Since 22 is divisible by 11, the number 82918 is divisible by 11.", "explanation": "Divisibility by 11: compute the alternating sum of digits from right to left. If the result is 0 or divisible by 11, the number is divisible by 11." },
+        { "id": "ch6-t2-m3", "type": "short", "question": "What number always results from the 1089 trick? Demonstrate with 523.", "answer": "1089.\n\n1. Start with 523.\n2. Reverse: 325.\n3. Subtract: 523 - 325 = 198.\n4. Reverse the result: 891.\n5. Add: 198 + 891 = 1089.", "explanation": "The 1089 trick always gives 1089 for any 3-digit number where the first and last digits differ by at least 2." }
+      ],
+      "hard": [
+        { "id": "ch6-t2-h1", "type": "long", "question": "In the generalised 3x3 magic square with centre m, the entries are m-4, m-3, m-2, m-1, m, m+1, m+2, m+3, m+4. What is the magic sum in terms of m? Find the magic square with centre 25.", "answer": "The magic sum = 3m (since each row sums to 3m).\n\nFor m = 25, magic sum = 3 x 25 = 75.\n\nThe magic square is:\n| 28 | 21 | 26 |\n| 23 | 25 | 27 |\n| 24 | 29 | 22 |\n\nUsing the formula: m+3=28, m-4=21, m+1=26, m-2=23, m=25, m+2=27, m-1=24, m+4=29, m-3=22.\n\nVerification: Each row, column, and diagonal sums to 75.", "explanation": "The generalised magic square uses the centre value m. All 9 numbers are consecutive with m at the centre. The magic sum is always 3 times the centre value." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "topic": "Triangle Construction and Triangle Inequality",
+      "easy": [
+        { "id": "ch7-t1-e1", "type": "mcq", "question": "A triangle with all three sides equal is called:", "options": ["Isosceles", "Scalene", "Equilateral", "Right-angled"], "answer": "Equilateral", "explanation": "An equilateral triangle has all three sides of equal length." },
+        { "id": "ch7-t1-e2", "type": "fill", "question": "For a triangle to exist, each side must be ______ than the sum of the other two sides.", "answer": "less", "explanation": "This is the triangle inequality: each side < sum of the other two sides." },
+        { "id": "ch7-t1-e3", "type": "mcq", "question": "Can sides of 3 cm, 4 cm, and 8 cm form a triangle?", "options": ["Yes", "No", "Only if it is a right triangle", "Cannot determine"], "answer": "No", "explanation": "Check: is 8 < 3 + 4? Is 8 < 7? No! So a triangle cannot be formed." },
+        { "id": "ch7-t1-e4", "type": "short", "question": "Can sides of 4 cm, 5 cm, and 8 cm form a triangle?", "answer": "Yes. The longest side is 8. Check: 8 < 4 + 5 = 9. Since 8 < 9, the triangle can be formed.", "explanation": "To verify the triangle inequality, check that the longest side is less than the sum of the other two sides." }
+      ],
+      "medium": [
+        { "id": "ch7-t1-m1", "type": "short", "question": "Classify the following as possible or impossible triangles: (a) 2, 2, 5 (b) 5, 5, 8 (c) 10, 20, 35", "answer": "(a) 2, 2, 5: Longest side = 5. Is 5 < 2 + 2 = 4? No. Impossible.\n(b) 5, 5, 8: Longest side = 8. Is 8 < 5 + 5 = 10? Yes. Possible.\n(c) 10, 20, 35: Longest side = 35. Is 35 < 10 + 20 = 30? No. Impossible.", "explanation": "For each set, check if the longest side is strictly less than the sum of the other two sides." },
+        { "id": "ch7-t1-m2", "type": "short", "question": "A triangle has sides 4 cm, 5 cm, and 6 cm. What type of triangle is it (equilateral, isosceles, or scalene)?", "answer": "Scalene. All three sides are different (4 ≠ 5 ≠ 6), so it is a scalene triangle.", "explanation": "Equilateral: all sides equal. Isosceles: exactly two sides equal. Scalene: all sides different." }
+      ],
+      "hard": [
+        { "id": "ch7-t1-h1", "type": "long", "question": "Two sides of a triangle are 7 cm and 10 cm. What are the possible values for the third side? Explain using the triangle inequality.", "answer": "Let the third side be x.\n\nBy the triangle inequality:\n1. x < 7 + 10 = 17\n2. 7 < x + 10, which gives x > -3 (always true for positive x)\n3. 10 < x + 7, which gives x > 3\n\nCombining: 3 < x < 17.\n\nThe third side must be greater than 3 cm and less than 17 cm.", "explanation": "The triangle inequality gives us three conditions. Since side lengths must be positive, the effective range is (10 - 7) < x < (10 + 7), i.e., 3 < x < 17." }
+      ]
+    },
+    {
+      "topic": "Angle Sum Property and Exterior Angles",
+      "easy": [
+        { "id": "ch7-t2-e1", "type": "mcq", "question": "The sum of the three angles of any triangle is:", "options": ["90°", "180°", "270°", "360°"], "answer": "180°", "explanation": "The angle sum property of a triangle states that the three interior angles always add up to 180°." },
+        { "id": "ch7-t2-e2", "type": "fill", "question": "Each angle of an equilateral triangle measures ______ degrees.", "answer": "60", "explanation": "In an equilateral triangle, all three angles are equal. 180° / 3 = 60°." },
+        { "id": "ch7-t2-e3", "type": "short", "question": "In a triangle, angle A = 50° and angle B = 60°. Find angle C.", "answer": "Angle C = 180° - 50° - 60° = 70°.", "explanation": "Using the angle sum property: A + B + C = 180°, so C = 180° - 50° - 60° = 70°." },
+        { "id": "ch7-t2-e4", "type": "mcq", "question": "A triangle with one angle greater than 90° is called:", "options": ["Acute triangle", "Right triangle", "Obtuse triangle", "Equilateral triangle"], "answer": "Obtuse triangle", "explanation": "An obtuse triangle has one angle greater than 90°." }
+      ],
+      "medium": [
+        { "id": "ch7-t2-m1", "type": "short", "question": "In an isosceles triangle, the angle between the two equal sides is 40°. Find the base angles.", "answer": "Each base angle = 70°.\n\nThe two base angles are equal. Let each be x.\n40 + x + x = 180\n2x = 140\nx = 70°.", "explanation": "In an isosceles triangle, the base angles are equal. Using the angle sum property: 40 + 2x = 180, giving x = 70°." },
+        { "id": "ch7-t2-m2", "type": "short", "question": "Can a triangle have two right angles? Explain.", "answer": "No. If two angles were 90° each, their sum = 180°. The third angle would have to be 0°, which is impossible. A triangle must have three non-zero angles.", "explanation": "The angle sum property requires all three angles to add up to 180°. Two angles of 90° leave 0° for the third, which cannot form a triangle." },
+        { "id": "ch7-t2-m3", "type": "short", "question": "An exterior angle of a triangle is 110°. The two non-adjacent interior angles are 50° and x°. Find x.", "answer": "x = 60°.\n\nExterior angle = sum of non-adjacent interior angles.\n110 = 50 + x\nx = 110 - 50 = 60°.", "explanation": "The exterior angle property states that an exterior angle equals the sum of the two non-adjacent interior angles." }
+      ],
+      "hard": [
+        { "id": "ch7-t2-h1", "type": "long", "question": "In triangle PQR, angle P = (2x + 10)°, angle Q = (3x - 5)°, and angle R = (x + 25)°. Find the value of x and all three angles. Classify the triangle.", "answer": "Using the angle sum property:\n(2x + 10) + (3x - 5) + (x + 25) = 180\n6x + 30 = 180\n6x = 150\nx = 25\n\nAngle P = 2(25) + 10 = 60°\nAngle Q = 3(25) - 5 = 70°\nAngle R = 25 + 25 = 50°\n\nCheck: 60 + 70 + 50 = 180°. Correct.\n\nSince all angles are less than 90°, it is an acute triangle.\nSince all angles are different, it is also a scalene triangle.", "explanation": "Set up the equation using the angle sum property (sum = 180°), solve for x, then substitute to find each angle. Classify by checking angle measures." }
+      ]
+    }
+  ]
+}

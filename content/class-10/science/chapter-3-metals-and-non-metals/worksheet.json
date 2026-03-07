@@ -1,0 +1,204 @@
+{
+  "topics": [
+    {
+      "topic": "Physical and Chemical Properties of Metals and Non-metals",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following pairs will give a displacement reaction?",
+          "options": ["NaCl solution and copper metal", "MgCl₂ solution and aluminium metal", "FeSO₄ solution and silver metal", "AgNO₃ solution and copper metal"],
+          "answer": "AgNO₃ solution and copper metal",
+          "explanation": "Copper is more reactive than silver, so it can displace silver from silver nitrate solution: Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag. In all other options, the metal is less reactive than the metal in solution."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "mcq",
+          "question": "An element reacts with oxygen to give a compound with a high melting point. This compound is also soluble in water. The element is likely to be:",
+          "options": ["Calcium", "Carbon", "Silicon", "Iron"],
+          "answer": "Calcium",
+          "explanation": "Calcium reacts with oxygen to form calcium oxide (CaO), which has a high melting point and dissolves in water to form Ca(OH)₂. Carbon and silicon oxides don't dissolve in water to form bases, and iron oxide is insoluble."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "fill",
+          "question": "The ability of metals to be beaten into thin sheets is called ______.",
+          "answer": "malleability",
+          "explanation": "Malleability is the property that allows metals to be hammered into thin sheets. Gold and silver are the most malleable metals."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "short",
+          "question": "Give an example of a metal which (i) is a liquid at room temperature (ii) can be easily cut with a knife.",
+          "answer": "(i) Mercury (Hg) is the only metal that is liquid at room temperature.\n(ii) Sodium (Na) can be easily cut with a knife as it is a very soft metal. Other examples include potassium and lithium.",
+          "explanation": "Mercury has a very low melting point (-39°C) making it liquid at room temperature. Alkali metals like sodium, potassium, and lithium are exceptionally soft compared to other metals."
+        },
+        {
+          "id": "ch3-t1-e5",
+          "type": "short",
+          "question": "Explain the meanings of malleable and ductile.",
+          "answer": "Malleable means the ability of metals to be beaten or hammered into thin sheets without breaking. For example, gold and silver can be beaten into very thin foils.\n\nDuctile means the ability of metals to be drawn into thin wires. For example, gold is the most ductile metal — about 2 km of wire can be drawn from 1 gram of gold.",
+          "explanation": "Both malleability and ductility are important physical properties of metals that make them useful for various applications in daily life."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "What are amphoteric oxides? Give two examples of amphoteric oxides.",
+          "answer": "Amphoteric oxides are metal oxides that react with both acids and bases to produce salts and water. They show both acidic and basic behaviour.\n\nExamples: Aluminium oxide (Al₂O₃) and Zinc oxide (ZnO).\n\nAl₂O₃ + 6HCl → 2AlCl₃ + 3H₂O (reacts with acid)\nAl₂O₃ + 2NaOH → 2NaAlO₂ + H₂O (reacts with base)",
+          "explanation": "Most metal oxides are basic, but amphoteric oxides like Al₂O₃ and ZnO are special because they can neutralise both acids and bases."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "Name two metals which will displace hydrogen from dilute acids, and two metals which will not.",
+          "answer": "Metals that will displace hydrogen from dilute acids: Magnesium (Mg) and Zinc (Zn) — they are above hydrogen in the reactivity series.\n\nMetals that will not displace hydrogen from dilute acids: Copper (Cu) and Silver (Ag) — they are below hydrogen in the reactivity series.",
+          "explanation": "Only metals that are more reactive than hydrogen (placed above hydrogen in the activity series) can displace hydrogen from dilute acids."
+        },
+        {
+          "id": "ch3-t1-m3",
+          "type": "short",
+          "question": "What type of oxides are formed when non-metals combine with oxygen? How is this different from metal oxides?",
+          "answer": "Non-metals form acidic oxides or neutral oxides when they combine with oxygen. For example, sulphur dioxide (SO₂) dissolves in water to form sulphurous acid (H₂SO₃). Carbon dioxide forms carbonic acid.\n\nMetal oxides are basic in nature (e.g., Na₂O, MgO). Some metal oxides are amphoteric (Al₂O₃, ZnO). This is the fundamental chemical difference between metals and non-metals.",
+          "explanation": "The nature of oxides helps classify elements: metals form basic oxides while non-metals form acidic oxides."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Differentiate between metals and non-metals on the basis of their chemical properties.",
+          "answer": "Chemical differences between metals and non-metals:\n\n1. Reaction with oxygen: Metals form basic oxides (e.g., 2Mg + O₂ → 2MgO). Non-metals form acidic oxides (e.g., S + O₂ → SO₂).\n\n2. Reaction with water: Many metals react with water to produce metal hydroxide and hydrogen gas (e.g., 2Na + 2H₂O → 2NaOH + H₂). Non-metals generally do not react with water.\n\n3. Reaction with acids: Metals react with dilute acids to produce salt and hydrogen gas (e.g., Zn + H₂SO₄ → ZnSO₄ + H₂). Non-metals do not displace hydrogen from dilute acids.\n\n4. Reaction with salt solutions: Reactive metals displace less reactive metals from their salt solutions. Non-metals do not undergo such displacement reactions with metallic salts.\n\n5. Electron behaviour: Metals lose electrons to form positive ions (cations). Non-metals gain electrons to form negative ions (anions).\n\n6. Reaction with hydrogen: Non-metals react with hydrogen to form hydrides. Metals generally do not form hydrides (except reactive metals like Na, Ca).",
+          "explanation": "The chemical properties clearly distinguish metals from non-metals, particularly their behaviour with oxygen, water, acids, and in terms of electron transfer."
+        }
+      ]
+    },
+    {
+      "topic": "Ionic Compounds and Reactivity Series",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "fill",
+          "question": "Compounds formed by the transfer of electrons from a metal to a non-metal are called ______ compounds.",
+          "answer": "ionic",
+          "explanation": "Ionic compounds (also called electrovalent compounds) are formed when metals transfer electrons to non-metals, creating positive and negative ions held together by electrostatic forces."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "short",
+          "question": "Why do ionic compounds have high melting points?",
+          "answer": "Ionic compounds have high melting points because they consist of positive and negative ions held together by strong electrostatic forces of attraction. A considerable amount of energy is required to break these strong inter-ionic bonds.",
+          "explanation": "For example, NaCl has a melting point of 1074 K and CaO has a melting point of 2850 K, showing the strength of ionic bonds."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "Ionic compounds conduct electricity:",
+          "options": ["Only in solid state", "Only in molten state", "In molten state and in aqueous solution", "They never conduct electricity"],
+          "answer": "In molten state and in aqueous solution",
+          "explanation": "In solid state, ions are fixed in a rigid structure and cannot move. In molten state or aqueous solution, ions are free to move and carry electric current."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "short",
+          "question": "Why is sodium kept immersed in kerosene oil?",
+          "answer": "Sodium is a highly reactive metal that reacts vigorously with oxygen and moisture in air. It can catch fire if kept in the open. To protect it from reacting with air and water, and to prevent accidental fires, sodium is kept immersed in kerosene oil.",
+          "explanation": "Sodium reacts violently with water: 2Na + 2H₂O → 2NaOH + H₂ + heat. The reaction is so exothermic that the hydrogen gas produced catches fire."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "long",
+          "question": "Samples of four metals A, B, C and D were taken and added to solutions. The results are: A displaces copper from CuSO₄ and silver from AgNO₃ but not iron from FeSO₄ or zinc from ZnSO₄. B displaces iron from FeSO₄ but not copper from CuSO₄ or zinc from ZnSO₄. C and D show no displacement. Which is the most reactive? Arrange them in decreasing order of reactivity.",
+          "answer": "The most reactive metal is B (since it can displace iron from FeSO₄, which A cannot do).\n\nOrder of decreasing reactivity: B > A > C ≥ D\n\nReasoning: B can displace iron, so B is more reactive than iron. A can displace copper and silver but not iron or zinc, so A is less reactive than iron but more reactive than copper. C and D cannot displace any of the metals tested, so they are the least reactive.\n\nIf B is added to CuSO₄ solution, copper will be displaced because B is more reactive than iron, which is more reactive than copper.",
+          "explanation": "Displacement reactions help determine the relative reactivity of metals. A more reactive metal displaces a less reactive metal from its salt solution."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "Show the formation of Na₂O by the transfer of electrons. What are the ions present in this compound?",
+          "answer": "Formation of Na₂O:\n- Each sodium atom loses 1 electron: Na → Na⁺ + e⁻\n- Oxygen atom gains 2 electrons: O + 2e⁻ → O²⁻\n- Two sodium atoms provide 2 electrons for one oxygen atom.\n- 2Na + O → 2Na⁺ + O²⁻ → Na₂O\n\nIons present: Na⁺ (sodium cation) and O²⁻ (oxide anion).",
+          "explanation": "Na₂O is an ionic compound formed by the transfer of electrons from sodium to oxygen. Two Na atoms are needed because oxygen needs 2 electrons to complete its octet."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "A man went door to door posing as a goldsmith. He promised to bring back the glitter of old gold ornaments. He dipped the bangles in a solution. The bangles sparkled like new but their weight was reduced drastically. What solution did he use? Explain.",
+          "answer": "The man used aqua regia, which is a freshly prepared mixture of concentrated hydrochloric acid (HCl) and concentrated nitric acid (HNO₃) in the ratio of 3:1.\n\nAqua regia (meaning 'royal water' in Latin) is one of the few reagents that can dissolve gold. When the bangles were dipped in aqua regia, some of the gold dissolved in the solution. This removed the tarnished outer layer, making the bangles sparkle, but also dissolved a significant amount of gold, reducing their weight drastically.\n\nThe reaction is: Au + 3HCl + HNO₃ → AuCl₃ + NO + 2H₂O",
+          "explanation": "Neither HCl nor HNO₃ alone can dissolve gold, but their mixture (aqua regia) can. This is because the combined action of both acids creates a highly oxidising and complexing environment."
+        }
+      ]
+    },
+    {
+      "topic": "Extraction of Metals and Corrosion",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following methods is suitable for preventing an iron frying pan from rusting?",
+          "options": ["Applying grease", "Applying paint", "Applying a coating of zinc", "All of the above"],
+          "answer": "All of the above",
+          "explanation": "All three methods prevent rusting by creating a barrier between iron and the environment (air and moisture). Applying grease, paint, or zinc coating (galvanisation) all effectively prevent corrosion."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "The process of coating iron with a thin layer of zinc is called ______.",
+          "answer": "galvanisation",
+          "explanation": "Galvanisation protects iron from rusting. Even if the zinc coating is broken, the zinc preferentially corrodes (being more reactive) and protects the iron underneath."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "short",
+          "question": "Define the following: (i) Mineral (ii) Ore (iii) Gangue",
+          "answer": "(i) Mineral: Elements or compounds that occur naturally in the earth's crust.\n(ii) Ore: Minerals from which metals can be profitably extracted (they contain a high percentage of the desired metal).\n(iii) Gangue: Impurities such as soil, sand, and rocky material present in the ore that must be removed before extraction.",
+          "explanation": "All ores are minerals, but not all minerals are ores. A mineral is called an ore only when the metal can be extracted from it economically."
+        },
+        {
+          "id": "ch3-t3-e4",
+          "type": "mcq",
+          "question": "Food cans are coated with tin and not with zinc because:",
+          "options": ["Zinc is costlier than tin", "Zinc has a higher melting point than tin", "Zinc is more reactive than tin", "Zinc is less reactive than tin"],
+          "answer": "Zinc is more reactive than tin",
+          "explanation": "Zinc is more reactive and could react with the organic acids in food, making it harmful. Tin is less reactive and does not react with organic acids present in food, making it safer for food storage."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "In the electrolytic refining of a metal M, what would you take as the anode, the cathode, and the electrolyte?",
+          "answer": "Anode: Impure metal M (thick block)\nCathode: Thin strip of pure metal M\nElectrolyte: Acidified solution of a salt of metal M\n\nOn passing current, pure metal from the anode dissolves into the electrolyte and an equivalent amount of pure metal deposits on the cathode. Insoluble impurities settle as anode mud.",
+          "explanation": "Electrolytic refining uses the principle that during electrolysis, the anode dissolves and pure metal deposits on the cathode, leaving impurities behind."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "short",
+          "question": "What are alloys? Why is pure iron not used for making articles? Give examples of two alloys and their uses.",
+          "answer": "An alloy is a homogeneous mixture of two or more metals, or a metal and a non-metal. Alloys are made to improve the properties of metals.\n\nPure iron is not used because it is very soft and stretches easily when hot. When mixed with carbon (about 0.05%), it becomes hard and strong (steel).\n\nExamples:\n1. Stainless steel (iron + nickel + chromium) — hard and rust-resistant, used for utensils and surgical instruments.\n2. Bronze (copper + tin) — hard and resistant to corrosion, used for statues and medals.",
+          "explanation": "Alloying changes the properties of metals. The electrical conductivity and melting point of alloys are generally less than those of pure metals."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "Give reasons: (a) Platinum, gold and silver are used to make jewellery. (b) Sodium, potassium and lithium are stored under oil. (c) Aluminium is a highly reactive metal, yet it is used to make utensils for cooking. (d) Carbonate and sulphide ores are usually converted into oxides during extraction.",
+          "answer": "(a) Platinum, gold and silver are used for jewellery because they are very lustrous and have a beautiful appearance. Being very low in the reactivity series, they are highly resistant to corrosion and do not tarnish easily, retaining their shine for a long time.\n\n(b) Sodium, potassium and lithium are stored under kerosene oil because they are extremely reactive metals that react vigorously with air and water. Sodium and potassium catch fire when exposed to air and react explosively with water. Kerosene prevents contact with air and moisture.\n\n(c) Although aluminium is highly reactive, it develops a thin, tough layer of aluminium oxide (Al₂O₃) on its surface when exposed to air. This oxide layer is very stable and protects the metal from further reaction. This makes aluminium safe for cooking utensils. It is also a good conductor of heat.\n\n(d) It is easier to obtain metals from their oxides than from sulphides or carbonates. Therefore, sulphide ores are first roasted (heated in excess air) and carbonate ores are calcinated (heated in limited air) to convert them into oxides, which are then reduced using carbon or other reducing agents.",
+          "explanation": "Each answer relates to the reactivity and properties of the metals involved. Understanding the reactivity series and surface chemistry explains these practical applications."
+        },
+        {
+          "id": "ch3-t3-h2",
+          "type": "long",
+          "question": "Explain why copper is used to make hot water tanks and not steel (an alloy of iron).",
+          "answer": "Copper is used to make hot water tanks instead of steel for the following reasons:\n\n1. Copper is a much better conductor of heat than steel. This means copper tanks heat water more efficiently and quickly.\n\n2. Copper does not react with water under normal conditions. While it is below hydrogen in the reactivity series, it forms a stable oxide layer that prevents further reaction.\n\n3. Steel (an alloy of iron) reacts with water and oxygen, leading to rusting. Hot water accelerates this corrosion process, causing the tank to deteriorate quickly and contaminate the water with rust.\n\n4. Copper is more resistant to corrosion in the presence of water than iron/steel, making it more durable for long-term water storage.\n\n5. Copper also has antimicrobial properties that help keep stored water cleaner.",
+          "explanation": "The combination of high thermal conductivity, resistance to corrosion by water, and durability makes copper the preferred material for hot water tanks despite being more expensive than steel."
+        }
+      ]
+    }
+  ]
+}

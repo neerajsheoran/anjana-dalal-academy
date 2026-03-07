@@ -30,7 +30,7 @@ export default async function Header() {
             Anjana Dalal Academy
           </Link>
           <p className="text-sm text-gray-500 mt-1">
-            CBSE Learning Made Simple — Class 3 to 7
+            CBSE Learning Made Simple — Class 1 to 12
           </p>
         </div>
 

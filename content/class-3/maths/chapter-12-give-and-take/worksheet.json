@@ -1,0 +1,39 @@
+{
+  "topics": [
+    {
+      "topic": "Adding and Subtracting 3-Digit Numbers",
+      "easy": [
+        { "id": "ch12-t1-e1", "type": "mcq", "question": "What is 364 + 52?", "options": ["316", "412", "416", "516"], "answer": "416", "explanation": "Ones: 4+2=6. Tens: 6+5=11, write 1 carry 1. Hundreds: 3+0+1=4. Answer: 416." },
+        { "id": "ch12-t1-e2", "type": "fill", "question": "When ones add up to 10 or more, we regroup. 10 ones become ______ ten.", "answer": "1", "explanation": "10 ones = 1 ten. This is called regrouping or carrying over." },
+        { "id": "ch12-t1-e3", "type": "mcq", "question": "If you add 100 to 269, what do you get?", "options": ["270", "279", "369", "469"], "answer": "369", "explanation": "Adding 100 changes only the hundreds digit: 269 + 100 = 369." },
+        { "id": "ch12-t1-e4", "type": "fill", "question": "230 - 75 = ______", "answer": "155", "explanation": "Borrow from tens, then from hundreds. 230 - 75 = 155." }
+      ],
+      "medium": [
+        { "id": "ch12-t1-m1", "type": "short", "question": "Kishan had 364 saplings and brought 52 more. How many does he have now? Show the addition using hundreds, tens, and ones.", "answer": "Ones: 4 + 2 = 6. Tens: 6 + 5 = 11 (write 1, carry 1). Hundreds: 3 + 0 + 1 = 4. Answer: 416 saplings.", "explanation": "Add each place value: ones first, then tens, then hundreds. Carry over when needed." },
+        { "id": "ch12-t1-m2", "type": "short", "question": "What does it mean to 'borrow' in subtraction? Give an example.", "answer": "Borrowing means taking 1 from the next higher place. For example, in 230 - 75: we cannot take 5 from 0 ones, so we borrow 1 ten (making it 10 ones). 10 - 5 = 5 ones.", "explanation": "When a digit is too small to subtract from, we borrow from the next place. 1 ten = 10 ones, 1 hundred = 10 tens." },
+        { "id": "ch12-t1-m3", "type": "mcq", "question": "What is 454 + 10?", "options": ["455", "464", "554", "460"], "answer": "464", "explanation": "Adding 10 changes only the tens digit: 454 + 10 = 464." }
+      ],
+      "hard": [
+        { "id": "ch12-t1-h1", "type": "long", "question": "A school has 458 students. 275 students are boys. How many are girls? Show your working using borrowing.", "answer": "458 - 275: Ones: 8 - 5 = 3. Tens: 5 - 7, cannot do! Borrow 1 hundred: 15 - 7 = 8. Hundreds: 3 - 2 = 1. Answer: 183 girls.", "explanation": "When 5 tens minus 7 tens is not possible, borrow 1 hundred to make 15 tens. Then 15 - 7 = 8 tens." }
+      ]
+    },
+    {
+      "topic": "Money Problems and Estimation",
+      "easy": [
+        { "id": "ch12-t2-e1", "type": "mcq", "question": "How many ₹100 notes make ₹500?", "options": ["2", "3", "5", "10"], "answer": "5", "explanation": "5 notes of ₹100 = 5 x 100 = ₹500." },
+        { "id": "ch12-t2-e2", "type": "fill", "question": "Long ago, people exchanged things instead of using money. This is called ______.", "answer": "barter", "explanation": "Barter means exchanging goods directly without using money." },
+        { "id": "ch12-t2-e3", "type": "mcq", "question": "Reena bought groceries for ₹209 and gave a ₹500 note. How much change should she get?", "options": ["₹209", "₹291", "₹301", "₹391"], "answer": "₹291", "explanation": "Change = 500 - 209 = ₹291." },
+        { "id": "ch12-t2-e4", "type": "fill", "question": "₹100 = ______ notes of ₹20.", "answer": "5", "explanation": "5 x 20 = 100. So ₹100 = 5 notes of ₹20." }
+      ],
+      "medium": [
+        { "id": "ch12-t2-m1", "type": "short", "question": "Shireen has ₹150 in her piggy bank. She puts ₹100 every week. How much will she have after 4 weeks?", "answer": "After 4 weeks: ₹150 + (4 x ₹100) = ₹150 + ₹400 = ₹550.", "explanation": "She starts with ₹150 and adds ₹100 each week for 4 weeks: 150 + 400 = 550." },
+        { "id": "ch12-t2-m2", "type": "short", "question": "Without solving, estimate whether 505 + 405 is closer to 800 or 900. Then solve to check.", "answer": "Estimate: 500 + 400 = 900. So the answer is close to 900. Actual: 505 + 405 = 910.", "explanation": "Round to nearest hundred for estimating: 505 rounds to 500, 405 rounds to 400. Estimate = 900." },
+        { "id": "ch12-t2-m3", "type": "mcq", "question": "Without calculating, which gives a bigger answer: 373 + 23 or 373 + 40?", "options": ["373 + 23", "373 + 40", "Both are equal", "Cannot tell"], "answer": "373 + 40", "explanation": "Since 40 > 23, adding 40 to 373 gives a bigger answer than adding 23." }
+      ],
+      "hard": [
+        { "id": "ch12-t2-h1", "type": "long", "question": "Arjun went to a shop with ₹500. He bought a book for ₹175 and a pen for ₹45. How much did he spend in total? How much money does he have left? Can he buy a toy car costing ₹300 with the remaining money?", "answer": "Total spent: ₹175 + ₹45 = ₹220. Money left: ₹500 - ₹220 = ₹280. The toy car costs ₹300, which is more than ₹280. So he cannot buy the toy car.", "explanation": "Add expenses: 175 + 45 = 220. Subtract from total: 500 - 220 = 280. Compare 280 with 300: 280 < 300, so not enough." },
+        { "id": "ch12-t2-h2", "type": "long", "question": "Peter uncle had ₹465 in the morning and ₹756 by afternoon. How much did he earn? If he then spent ₹180 on supplies, how much does he have at the end of the day?", "answer": "Earnings: ₹756 - ₹465 = ₹291. After spending: ₹756 - ₹180 = ₹576 at the end of the day.", "explanation": "First find earnings: 756 - 465 = 291. Then subtract spending from afternoon amount: 756 - 180 = 576." }
+      ]
+    }
+  ]
+}

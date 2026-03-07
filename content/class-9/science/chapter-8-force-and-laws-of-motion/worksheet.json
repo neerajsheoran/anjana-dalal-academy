@@ -1,0 +1,192 @@
+{
+  "topics": [
+    {
+      "topic": "Force, Inertia, and Newton's First Law",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "Newton's first law of motion is also known as the law of:",
+          "options": ["Acceleration", "Inertia", "Action and reaction", "Conservation of momentum"],
+          "answer": "Inertia",
+          "explanation": "Newton's first law states that objects resist changes in their state of motion, which is the property of inertia."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "The tendency of an object to resist a change in its state of motion is called ______.",
+          "answer": "inertia",
+          "explanation": "Inertia is the natural tendency of objects to stay at rest or keep moving with the same velocity."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "When a bus suddenly starts, the passengers tend to fall backward. This is because of:",
+          "options": ["Gravity", "Friction", "Inertia of rest", "Inertia of motion"],
+          "answer": "Inertia of rest",
+          "explanation": "The passengers were at rest. When the bus starts moving, their lower body moves with the bus but the upper body tends to remain at rest due to inertia."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "mcq",
+          "question": "Which of the following is a measure of inertia?",
+          "options": ["Velocity", "Acceleration", "Mass", "Force"],
+          "answer": "Mass",
+          "explanation": "The mass of an object is a measure of its inertia. Heavier objects have more inertia."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Why do passengers fall forward when a moving bus stops suddenly?",
+          "answer": "When the bus is moving, the passengers are also moving with the same velocity as the bus. When brakes are applied suddenly, the bus comes to rest but the passengers' bodies tend to continue moving forward due to inertia of motion. This causes them to fall forward.",
+          "explanation": "This is an application of Newton's first law -- objects in motion tend to stay in motion."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "What is the difference between balanced and unbalanced forces? Give examples.",
+          "answer": "Balanced forces are equal in magnitude and opposite in direction, resulting in zero net force. They do not change the state of motion. Example: a book lying on a table (weight downward balanced by table's reaction upward). Unbalanced forces have a net force that is not zero. They cause a change in the state of motion (acceleration). Example: pushing a box with a force greater than friction.",
+          "explanation": "Only unbalanced forces can cause an object to start moving, stop, or change direction."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "State Newton's first law of motion. Explain with the help of Galileo's experiment with inclined planes.",
+          "answer": "Newton's first law: An object remains in a state of rest or of uniform motion in a straight line unless compelled to change that state by an applied force. Galileo observed that when a marble rolls down an inclined plane, its velocity increases, and when it climbs up, its velocity decreases. On a double inclined plane, a marble released from one side rolls up the other side to the same height. If the angle of the second plane is reduced, the marble travels a longer distance to reach the same height. If the second plane is made horizontal, the marble would continue moving forever, trying to reach the original height. This shows that no unbalanced force is needed to maintain uniform motion; force is only needed to change the state of motion.",
+          "explanation": "Galileo's thought experiment was the foundation for Newton's first law."
+        }
+      ]
+    },
+    {
+      "topic": "Newton's Second Law, Momentum, and Force",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "The SI unit of force is:",
+          "options": ["Kilogram", "Metre per second", "Newton", "Joule"],
+          "answer": "Newton",
+          "explanation": "1 Newton is the force that produces an acceleration of 1 m/s^2 in a body of mass 1 kg."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "Momentum is defined as the product of ______ and velocity of an object.",
+          "answer": "mass",
+          "explanation": "Momentum p = mass x velocity = mv. Its SI unit is kg m/s."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "According to Newton's second law, F equals:",
+          "options": ["m + a", "m / a", "m x a", "a / m"],
+          "answer": "m x a",
+          "explanation": "Newton's second law states that Force = mass x acceleration, or F = ma."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "A constant force acts on an object of mass 5 kg for a duration of 2 s. It increases the object's velocity from 3 m/s to 7 m/s. Find the magnitude of the applied force.",
+          "answer": "m = 5 kg, u = 3 m/s, v = 7 m/s, t = 2 s. Acceleration a = (v-u)/t = (7-3)/2 = 4/2 = 2 m/s^2. Force F = ma = 5 x 2 = 10 N. Alternatively, F = m(v-u)/t = 5(7-3)/2 = 5 x 4/2 = 10 N.",
+          "explanation": "Using F = ma or equivalently F = m(v-u)/t gives the same result."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "Which would require a greater force: accelerating a 2 kg mass at 5 m/s^2 or a 4 kg mass at 2 m/s^2?",
+          "answer": "For 2 kg mass: F = ma = 2 x 5 = 10 N. For 4 kg mass: F = ma = 4 x 2 = 8 N. Accelerating the 2 kg mass at 5 m/s^2 requires a greater force (10 N > 8 N).",
+          "explanation": "Force depends on both mass and acceleration. Even a lighter object needs more force if the required acceleration is high enough."
+        },
+        {
+          "id": "ch8-t2-m3",
+          "type": "short",
+          "question": "A motorcar of mass 1200 kg is moving along a straight line with uniform velocity of 90 km/h. Its velocity is slowed to 18 km/h in 4 s by an unbalanced external force. Calculate the acceleration and change in momentum. Also calculate the magnitude of the force required.",
+          "answer": "m = 1200 kg. u = 90 km/h = 25 m/s. v = 18 km/h = 5 m/s. t = 4 s. Acceleration = (v-u)/t = (5-25)/4 = -20/4 = -5 m/s^2. Change in momentum = m(v-u) = 1200(5-25) = 1200 x (-20) = -24000 kg m/s. Force = ma = 1200 x (-5) = -6000 N. The negative sign shows the force is opposite to the direction of motion.",
+          "explanation": "The force is negative (retarding force) because it slows down the car."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "A force of 5 N gives a mass m1 an acceleration of 8 m/s^2, and a mass m2 an acceleration of 24 m/s^2. What acceleration would it give if both masses are tied together?",
+          "answer": "For mass m1: F = m1 x a1, so m1 = F/a1 = 5/8 = 0.625 kg. For mass m2: F = m2 x a2, so m2 = F/a2 = 5/24 = 0.208 kg. Combined mass = m1 + m2 = 0.625 + 0.208 = 0.833 kg. Acceleration when tied together: a = F/(m1+m2) = 5/0.833 = 6 m/s^2.",
+          "explanation": "When masses are combined, the same force produces less acceleration because the total mass is greater."
+        },
+        {
+          "id": "ch8-t2-h2",
+          "type": "long",
+          "question": "The velocity-time graph of a ball of mass 20 g moving along a straight line on a long table is given. How much force does the table exert on the ball if it moves from velocity 20 cm/s to rest in 10 s?",
+          "answer": "m = 20 g = 0.02 kg. u = 20 cm/s = 0.2 m/s. v = 0 m/s (comes to rest). t = 10 s. Acceleration a = (v-u)/t = (0-0.2)/10 = -0.02 m/s^2. Force = ma = 0.02 x (-0.02) = -0.0004 N = -4 x 10^-4 N. The magnitude of force is 0.0004 N, and the negative sign indicates it acts opposite to the direction of motion (friction).",
+          "explanation": "The table exerts a frictional force that decelerates the ball and eventually brings it to rest."
+        }
+      ]
+    },
+    {
+      "topic": "Newton's Third Law and Conservation of Momentum",
+      "easy": [
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "According to Newton's third law, action and reaction forces:",
+          "options": ["Act on the same object", "Act on different objects", "Are unequal", "Always cancel each other"],
+          "answer": "Act on different objects",
+          "explanation": "Action and reaction are equal and opposite but act on two different objects, so they do not cancel each other."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "When a gun is fired, the gun moves backward. This is called ______ of the gun.",
+          "answer": "recoil",
+          "explanation": "The recoil of the gun is explained by Newton's third law and conservation of momentum."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "mcq",
+          "question": "A swimmer pushes water backward to move forward. This is an example of:",
+          "options": ["Newton's first law", "Newton's second law", "Newton's third law", "Law of conservation of energy"],
+          "answer": "Newton's third law",
+          "explanation": "The swimmer pushes water backward (action) and water pushes the swimmer forward (reaction)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t3-m1",
+          "type": "short",
+          "question": "State the law of conservation of momentum. Give one example.",
+          "answer": "The law of conservation of momentum states that the total momentum of a system of objects remains unchanged (constant) before and after a collision, provided no external unbalanced force acts on the system. Example: When a bullet is fired from a gun, the total momentum before firing is zero (both at rest). After firing, the bullet gains forward momentum and the gun gains an equal backward momentum (recoil), keeping total momentum zero.",
+          "explanation": "Conservation of momentum is a direct consequence of Newton's third law."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "short",
+          "question": "Explain why a cricket player moves his hands backward while catching a fast-moving ball.",
+          "answer": "By moving his hands backward, the cricketer increases the time taken to stop the ball. According to Newton's second law, F = m(v-u)/t. Since the change in momentum (m(v-u)) is fixed, increasing the time t decreases the force F on the hands. This reduces the impact and prevents injury.",
+          "explanation": "This is an application of the impulse-momentum theorem: spreading the change in momentum over a longer time reduces the force."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "An object of mass 1 kg travelling in a straight line with a velocity of 10 m/s collides with and sticks to a stationary wooden block of mass 5 kg. Find the velocity of the combined object after collision.",
+          "answer": "Using conservation of momentum: m1u1 + m2u2 = (m1+m2)v. m1 = 1 kg, u1 = 10 m/s, m2 = 5 kg, u2 = 0 m/s. (1)(10) + (5)(0) = (1+5)v. 10 = 6v. v = 10/6 = 5/3 = 1.67 m/s. The combined object moves with a velocity of 5/3 m/s in the same direction as the original object.",
+          "explanation": "Since no external force acts, total momentum is conserved. The combined heavier object moves slower than the original lighter object."
+        },
+        {
+          "id": "ch8-t3-h2",
+          "type": "long",
+          "question": "A bullet of mass 10 g is moving with a velocity of 400 m/s and gets embedded in a freely suspended wooden block of mass 900 g. What is the velocity acquired by the block?",
+          "answer": "m1 = 10 g = 0.01 kg, u1 = 400 m/s. m2 = 900 g = 0.9 kg, u2 = 0. Using conservation of momentum: m1u1 + m2u2 = (m1+m2)v. (0.01)(400) + (0.9)(0) = (0.01+0.9)v. 4 = 0.91v. v = 4/0.91 = 4.4 m/s. The block (with bullet) moves with a velocity of about 4.4 m/s.",
+          "explanation": "The much heavier block-bullet system moves much slower than the original bullet, conserving total momentum."
+        }
+      ]
+    }
+  ]
+}

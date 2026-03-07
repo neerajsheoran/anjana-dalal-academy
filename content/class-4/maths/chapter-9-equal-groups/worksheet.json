@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "topic": "Multiples and Multiplication",
+      "easy": [
+        { "id": "ch9-t1-e1", "type": "mcq", "question": "What are the first 5 multiples of 4?", "options": ["4, 8, 12, 16, 20", "4, 8, 14, 16, 20", "4, 6, 8, 10, 12", "1, 2, 3, 4, 5"], "answer": "4, 8, 12, 16, 20", "explanation": "Multiples of 4: 4x1=4, 4x2=8, 4x3=12, 4x4=16, 4x5=20." },
+        { "id": "ch9-t1-e2", "type": "fill", "question": "18 x 4 = ______.", "answer": "72", "explanation": "Split: 10x4=40 and 8x4=32. Add: 40+32=72." },
+        { "id": "ch9-t1-e3", "type": "mcq", "question": "What is double of 95?", "options": ["180", "185", "190", "195"], "answer": "190", "explanation": "Double means multiply by 2. 95 x 2 = 190." },
+        { "id": "ch9-t1-e4", "type": "fill", "question": "20 x 4 = ______.", "answer": "80", "explanation": "20 x 4 = 2 x 4 = 8, then add a zero = 80." }
+      ],
+      "medium": [
+        { "id": "ch9-t1-m1", "type": "short", "question": "What is a common multiple of 3 and 4? Give two examples.", "answer": "12 and 24. Both are in the times-3 table (3, 6, 9, 12...) and the times-4 table (4, 8, 12, 16, 20, 24...).", "explanation": "Common multiples appear in both skip-counting sequences. 12 = 3x4 = 4x3. 24 = 3x8 = 4x6." },
+        { "id": "ch9-t1-m2", "type": "short", "question": "Find 125 x 8 by splitting into hundreds, tens, and ones.", "answer": "100x8=800, 20x8=160, 5x8=40. Total: 800+160+40=1000.", "explanation": "Break 125 into 100+20+5, multiply each part by 8, then add." },
+        { "id": "ch9-t1-m3", "type": "mcq", "question": "When you double any number, the result is always:", "options": ["Odd", "Even", "A multiple of 5", "A prime number"], "answer": "Even", "explanation": "Doubling means multiplying by 2. Any number times 2 is always even." }
+      ],
+      "hard": [
+        { "id": "ch9-t1-h1", "type": "long", "question": "Each lily has 3 petals. If Gulabo has 174 lily flowers, how many petals are there in total? Show your working by splitting 174 into hundreds, tens, and ones.", "answer": "100x3=300, 70x3=210, 4x3=12. Total: 300+210+12=522 petals.", "explanation": "Break 174 into 100+70+4. Multiply each by 3. Add the results: 300+210+12=522." }
+      ]
+    },
+    {
+      "topic": "Division and Remainders",
+      "easy": [
+        { "id": "ch9-t2-e1", "type": "mcq", "question": "What is 90 / 3?", "options": ["3", "27", "30", "33"], "answer": "30", "explanation": "9/3=3, so 90/3=30." },
+        { "id": "ch9-t2-e2", "type": "fill", "question": "108 / 9 = ______.", "answer": "12", "explanation": "108 divided equally among 9 = 12 each." },
+        { "id": "ch9-t2-e3", "type": "mcq", "question": "When dividing, the amount left over is called the ______.", "options": ["Product", "Sum", "Remainder", "Factor"], "answer": "Remainder", "explanation": "The remainder is what is left after dividing into equal groups." }
+      ],
+      "medium": [
+        { "id": "ch9-t2-m1", "type": "short", "question": "A factory has 58 wheels. Each tempo needs 3 wheels. How many tempos can be made? How many wheels are left over?", "answer": "58 / 3 = 19 tempos with 1 wheel left over. Check: 19 x 3 = 57, 58 - 57 = 1.", "explanation": "Divide 58 by 3. 19 x 3 = 57, remainder = 58 - 57 = 1." },
+        { "id": "ch9-t2-m2", "type": "short", "question": "Is this always true, sometimes true, or never true: 'Multiplying a number by 10 gives 0 in the ones digit'?", "answer": "Always true. Any number multiplied by 10 ends in 0.", "explanation": "10, 20, 30, 40... all numbers x 10 end in 0." },
+        { "id": "ch9-t2-m3", "type": "mcq", "question": "800 / 4 = ?", "options": ["20", "200", "400", "2000"], "answer": "200", "explanation": "8/4=2, so 800/4=200." }
+      ],
+      "hard": [
+        { "id": "ch9-t2-h1", "type": "long", "question": "108 people need to cross a river in boats. Each boat holds 9 people. How many boats are needed? Now, if the boats are replaced with smaller boats that hold 6 people, how many boats are needed? Which option uses fewer boats?", "answer": "With 9-person boats: 108/9 = 12 boats. With 6-person boats: 108/6 = 18 boats. The 9-person boats use fewer boats (12 vs 18).", "explanation": "Larger boats need fewer trips. 108/9=12, 108/6=18." },
+        { "id": "ch9-t2-h2", "type": "long", "question": "A school has 240 students. They need to be divided into teams of 8 for sports day. How many teams will there be? If each team needs 3 cricket balls, how many cricket balls are needed in total?", "answer": "Teams: 240 / 8 = 30 teams. Cricket balls: 30 x 3 = 90 balls.", "explanation": "First divide students into teams: 240/8=30. Then multiply teams by balls needed: 30x3=90." }
+      ]
+    }
+  ]
+}

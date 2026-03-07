@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "topic": "Heron's Formula for Area of Triangles",
+      "easy": [
+        {"id": "ch10-t1-e1", "type": "mcq", "question": "In Heron's formula, s represents:", "options": ["The perimeter", "The semi-perimeter", "The area", "The longest side"], "answer": "The semi-perimeter", "explanation": "In Heron's formula, s = (a + b + c)/2, which is the semi-perimeter (half the perimeter) of the triangle."},
+        {"id": "ch10-t1-e2", "type": "fill", "question": "Heron's formula for the area of a triangle with sides a, b, c is Area = sqrt(s(s-a)(s-b)(s-c)) where s = ______.", "answer": "(a + b + c)/2", "explanation": "s is the semi-perimeter, calculated as half the sum of all three sides."},
+        {"id": "ch10-t1-e3", "type": "short", "question": "Find the area of an equilateral triangle with side 10 cm using Heron's formula.", "answer": "s = (10 + 10 + 10)/2 = 15 cm.\nArea = sqrt(15 x 5 x 5 x 5) = sqrt(1875) = 25sqrt(3) cm^2 (approximately 43.3 cm^2).", "explanation": "All three sides are 10 cm. Compute s = 15, then s-a = s-b = s-c = 5. Multiply under the square root."},
+        {"id": "ch10-t1-e4", "type": "mcq", "question": "A traffic signal board in the shape of an equilateral triangle has perimeter 180 cm. What is the length of each side?", "options": ["45 cm", "60 cm", "90 cm", "30 cm"], "answer": "60 cm", "explanation": "Perimeter = 3 x side = 180 cm, so side = 180/3 = 60 cm."}
+      ],
+      "medium": [
+        {"id": "ch10-t1-m1", "type": "short", "question": "Find the area of a triangle with sides 122 m, 22 m, and 120 m.", "answer": "s = (122 + 22 + 120)/2 = 264/2 = 132 m.\ns - a = 10, s - b = 110, s - c = 12.\nArea = sqrt(132 x 10 x 110 x 12) = sqrt(1742400) = 1320 m^2.", "explanation": "Apply Heron's formula with the three sides. Note: 22^2 + 120^2 = 484 + 14400 = 14884 = 122^2, confirming it is a right triangle. Area = (1/2)(22)(120) = 1320 m^2."},
+        {"id": "ch10-t1-m2", "type": "short", "question": "Find the area of a triangle two sides of which are 18 cm and 10 cm and the perimeter is 42 cm.", "answer": "Third side = 42 - 18 - 10 = 14 cm.\ns = 42/2 = 21 cm.\ns - 18 = 3, s - 10 = 11, s - 14 = 7.\nArea = sqrt(21 x 3 x 11 x 7) = sqrt(4851) = 21sqrt(11) cm^2.", "explanation": "First find the third side from the perimeter, then apply Heron's formula."},
+        {"id": "ch10-t1-m3", "type": "short", "question": "An isosceles triangle has perimeter 30 cm and each equal side is 12 cm. Find its area.", "answer": "Third side = 30 - 12 - 12 = 6 cm.\ns = 30/2 = 15 cm.\nArea = sqrt(15 x 3 x 3 x 9) = sqrt(1215) = 9sqrt(15) cm^2.", "explanation": "With sides 12, 12, 6 and s = 15: s-12 = 3, s-12 = 3, s-6 = 9. Area = sqrt(15 x 3 x 3 x 9) = 9sqrt(15)."}
+      ],
+      "hard": [
+        {"id": "ch10-t1-h1", "type": "long", "question": "The sides of a triangular plot are in the ratio 12 : 17 : 25 and its perimeter is 540 cm. Find its area.", "answer": "Let sides be 12x, 17x, 25x.\n12x + 17x + 25x = 540\n54x = 540, so x = 10.\nSides: 120 cm, 170 cm, 250 cm.\ns = 540/2 = 270 cm.\ns - 120 = 150, s - 170 = 100, s - 250 = 20.\nArea = sqrt(270 x 150 x 100 x 20)\n= sqrt(81000000)\n= 9000 cm^2.", "explanation": "First find the actual side lengths using the ratio and perimeter. Then apply Heron's formula. Notice that 120^2 + 160^2... let us just compute: sqrt(270 x 150 x 100 x 20) = sqrt(81000000) = 9000 cm^2."},
+        {"id": "ch10-t1-h2", "type": "long", "question": "A rhombus-shaped field has green grass for 18 cows to graze. If each side of the rhombus is 30 m and one diagonal is 48 m, how much area of grass field will each cow be getting?", "answer": "The diagonal divides the rhombus into two congruent triangles.\nEach triangle has sides 30 m, 30 m, and 48 m.\ns = (30 + 30 + 48)/2 = 54 m.\nArea of each triangle = sqrt(54 x 24 x 24 x 6) = sqrt(186624) = 432 m^2.\nTotal area of rhombus = 2 x 432 = 864 m^2.\nArea per cow = 864/18 = 48 m^2.", "explanation": "Divide the rhombus into two triangles using the diagonal. Find each triangle's area using Heron's formula, double it for the total area, then divide by 18."}
+      ]
+    }
+  ]
+}

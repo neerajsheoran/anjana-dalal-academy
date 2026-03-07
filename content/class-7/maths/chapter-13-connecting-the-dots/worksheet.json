@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "Mean and Median",
+      "easy": [
+        { "id": "ch13-t1-e1", "type": "mcq", "question": "The mean of 23, 7, 10, 52, and 18 is:", "options": ["18", "22", "23", "110"], "answer": "22", "explanation": "Mean = (23 + 7 + 10 + 52 + 18) / 5 = 110 / 5 = 22." },
+        { "id": "ch13-t1-e2", "type": "fill", "question": "Mean = Sum of all values ÷ ______ of values.", "answer": "Number", "explanation": "Mean = (Sum of all values) / (Number of values). It is the arithmetic average." },
+        { "id": "ch13-t1-e3", "type": "mcq", "question": "The median of the data set {118, 165, 170, 173, 175} is:", "options": ["165", "170", "173", "160.2"], "answer": "170", "explanation": "The data is sorted. With 5 values, the median is the middle (3rd) value = 170." },
+        { "id": "ch13-t1-e4", "type": "short", "question": "Find the mean of 3, 8, 10, 5, and 4.", "answer": "Mean = (3 + 8 + 10 + 5 + 4) / 5 = 30 / 5 = 6.", "explanation": "Add all values and divide by the count. The mean represents the fair share if everything is distributed equally." }
+      ],
+      "medium": [
+        { "id": "ch13-t1-m1", "type": "short", "question": "Find the median of 155, 160, 164, 165, 169, 173.", "answer": "The data is sorted. With 6 values (even), the median = average of 3rd and 4th values = (164 + 165) / 2 = 164.5.", "explanation": "For an even number of values, the median is the average of the two middle values." },
+        { "id": "ch13-t1-m2", "type": "short", "question": "Heights in a family: 170, 173, 165, 118, 175 cm. Find the mean. Is it a good representative? Why or why not?", "answer": "Mean = (170 + 173 + 165 + 118 + 175) / 5 = 801 / 5 = 160.2 cm.\n\nThe mean is not a good representative because 4 out of 5 people are taller than 160.2 cm. The very low value of 118 cm (an outlier) pulls the average down.", "explanation": "When outliers are present, the mean can be misleading. The median (170 cm) better represents this data." },
+        { "id": "ch13-t1-m3", "type": "short", "question": "When is the median preferred over the mean?", "answer": "The median is preferred when the data contains outliers (extremely high or low values). The mean is pulled towards outliers, but the median is barely affected by them.", "explanation": "Outliers distort the mean but not the median, making the median a better representative for skewed data." }
+      ],
+      "hard": [
+        { "id": "ch13-t1-h1", "type": "long", "question": "Shubman scored 23, 7, 10, 52, and 18 in 5 matches. Yashasvi scored 26, 53, 2, and 15 in 4 matches. Who has the better average? Who scored more in total? Explain why the mean is a fairer comparison than the total.", "answer": "Shubman: Total = 110, Matches = 5, Mean = 110/5 = 22.\nYashasvi: Total = 96, Matches = 4, Mean = 96/4 = 24.\n\nShubman scored more in total (110 > 96), but Yashasvi has a better average (24 > 22).\n\nThe mean is fairer because the players played different numbers of matches. Total runs favours the player who played more matches. The mean accounts for this by dividing by the number of matches, giving a per-match comparison.", "explanation": "When groups have different sizes, the mean provides a fair comparison by normalising for the number of data points." }
+      ]
+    },
+    {
+      "topic": "Bar Graphs and Data Representation",
+      "easy": [
+        { "id": "ch13-t2-e1", "type": "mcq", "question": "A bar graph uses which of the following to represent data?", "options": ["Lines", "Dots", "Rectangular bars", "Circles"], "answer": "Rectangular bars", "explanation": "A bar graph uses rectangular bars whose heights correspond to the values they represent." },
+        { "id": "ch13-t2-e2", "type": "fill", "question": "The difference between the maximum and minimum values in a data set is called the ______.", "answer": "range", "explanation": "Range = maximum value - minimum value. It measures how spread out the data is." },
+        { "id": "ch13-t2-e3", "type": "mcq", "question": "A question that expects variability in answers and requires data collection is called a:", "options": ["Mathematical question", "Statistical question", "Logical question", "Trick question"], "answer": "Statistical question", "explanation": "A statistical question is one where the answers vary and data must be collected. Example: 'How tall are Class 7 students?'" }
+      ],
+      "medium": [
+        { "id": "ch13-t2-m1", "type": "short", "question": "The numbers of students in four activities are: Music 25, Dance 30, Art 15, Sports 40. Find the range and the mean.", "answer": "Range = 40 - 15 = 25.\nMean = (25 + 30 + 15 + 40) / 4 = 110 / 4 = 27.5.", "explanation": "Range measures spread (max - min). Mean gives the average number of students per activity." },
+        { "id": "ch13-t2-m2", "type": "short", "question": "Why should a bar graph always start from 0 on the vertical axis?", "answer": "If a bar graph does not start from 0, the visual differences between bars can be misleading. Small differences look exaggerated, making comparisons inaccurate.", "explanation": "Starting from a non-zero value truncates the bars, making small differences appear much larger than they actually are." }
+      ],
+      "hard": [
+        { "id": "ch13-t2-h1", "type": "long", "question": "Monthly onion prices (Rs/kg) in two towns:\nYahapur: 25, 24, 26, 28, 30, 35, 39, 43, 49, 56, 59, 44\nWahapur: 19, 17, 23, 30, 38, 35, 42, 39, 53, 60, 52, 42\n\nFind the mean, median, and range for each town. Which town has more stable prices?", "answer": "Yahapur:\nSum = 458, Mean = 458/12 = 38.17 (approx).\nSorted: 24,25,26,28,30,35,39,43,44,49,56,59. Median = (35+39)/2 = 37.\nRange = 59 - 24 = 35.\n\nWahapur:\nSum = 450, Mean = 450/12 = 37.5.\nSorted: 17,19,23,30,35,38,39,42,42,52,53,60. Median = (38+39)/2 = 38.5.\nRange = 60 - 17 = 43.\n\nYahapur has more stable prices (smaller range of 35 vs 43).", "explanation": "The range shows how spread out the data is. A smaller range indicates more stable/consistent prices." }
+      ]
+    }
+  ]
+}
