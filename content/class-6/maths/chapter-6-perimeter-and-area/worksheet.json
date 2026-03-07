@@ -1,0 +1,187 @@
+{
+  "chapterRef": "class-6/maths/chapter-6-perimeter-and-area/worksheet",
+  "topics": [
+    {
+      "topic": "Perimeter of Rectangle, Square, and Triangle",
+      "easy": [
+        {
+          "id": "m6-e1",
+          "type": "mcq",
+          "question": "Find the perimeter of a rectangle with length 14 cm and breadth 9 cm.",
+          "options": ["46 cm", "126 cm", "23 cm", "92 cm"],
+          "answer": "46 cm",
+          "explanation": "Perimeter of rectangle = 2(l + b) = 2(14 + 9) = 2 × 23 = 46 cm."
+        },
+        {
+          "id": "m6-e2",
+          "type": "fill",
+          "question": "The perimeter of a square with side 17 m is ______ m.",
+          "options": [],
+          "answer": "68",
+          "explanation": "Perimeter of square = 4 × side = 4 × 17 = 68 m."
+        },
+        {
+          "id": "m6-e3",
+          "type": "mcq",
+          "question": "A triangle has sides 8 cm, 11 cm, and 15 cm. Its perimeter is —",
+          "options": ["34 cm", "28 cm", "26 cm", "24 cm"],
+          "answer": "34 cm",
+          "explanation": "Perimeter of triangle = sum of all sides = 8 + 11 + 15 = 34 cm."
+        },
+        {
+          "id": "m6-e4",
+          "type": "mcq",
+          "question": "The perimeter of a rectangle is 72 cm. Its length is 22 cm. What is its breadth?",
+          "options": ["14 cm", "28 cm", "50 cm", "7 cm"],
+          "answer": "14 cm",
+          "explanation": "P = 2(l+b). 72 = 2(22+b). 36 = 22+b. b = 36−22 = 14 cm."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m6-m1",
+          "type": "short",
+          "question": "A rectangular field is 120 m long and 75 m wide. Priya runs 4 complete laps around the field. (a) What is the perimeter of the field? (b) How many metres does Priya run in total? (c) How many kilometres is that?",
+          "options": [],
+          "answer": "(a) Perimeter = 2(120+75) = 2×195 = 390 m. (b) Distance for 4 laps = 4 × 390 = 1,560 m. (c) 1,560 m = 1.56 km.",
+          "explanation": "Athletics tracks, racing circuits, and parks all use perimeter calculations. A standard 400 m athletics track is designed so that one lap = 400 m."
+        },
+        {
+          "id": "m6-m2",
+          "type": "short",
+          "question": "A rectangular garden needs fencing on all four sides. The garden is 35 m long and 20 m wide. Fencing costs ₹85 per metre. Find the total cost of fencing.",
+          "options": [],
+          "answer": "Perimeter = 2(35+20) = 2×55 = 110 m. Cost = 110 × 85 = ₹9,350.",
+          "explanation": "Perimeter gives the total length of fencing needed. Always find perimeter first, then multiply by cost per unit length."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Area of Rectangle and Square",
+      "easy": [
+        {
+          "id": "m6-e5",
+          "type": "mcq",
+          "question": "Find the area of a rectangle with length 18 cm and breadth 7 cm.",
+          "options": ["126 cm²", "50 cm²", "25 cm²", "252 cm²"],
+          "answer": "126 cm²",
+          "explanation": "Area of rectangle = l × b = 18 × 7 = 126 cm²."
+        },
+        {
+          "id": "m6-e6",
+          "type": "fill",
+          "question": "A square has side 13 m. Its area is ______ m².",
+          "options": [],
+          "answer": "169",
+          "explanation": "Area of square = side² = 13² = 13 × 13 = 169 m²."
+        },
+        {
+          "id": "m6-e7",
+          "type": "mcq",
+          "question": "The area of a rectangle is 264 cm². Its breadth is 12 cm. What is its length?",
+          "options": ["22 cm", "252 cm", "11 cm", "44 cm"],
+          "answer": "22 cm",
+          "explanation": "Area = l × b. 264 = l × 12. l = 264 ÷ 12 = 22 cm."
+        },
+        {
+          "id": "m6-e8",
+          "type": "mcq",
+          "question": "A square has area 196 m². What is the length of its side?",
+          "options": ["14 m", "49 m", "98 m", "28 m"],
+          "answer": "14 m",
+          "explanation": "Area = s². 196 = s². s = √196 = 14 m. (14 × 14 = 196 ✓)"
+        }
+      ],
+      "medium": [
+        {
+          "id": "m6-m3",
+          "type": "short",
+          "question": "A room is 6.5 m long and 4.8 m wide. (a) Find its area. (b) Find the cost of laying tiles at ₹450 per m². (c) Find the cost of fixing a border (lace) around the room at ₹60 per metre.",
+          "options": [],
+          "answer": "(a) Area = 6.5 × 4.8 = 31.2 m². (b) Cost of tiles = 31.2 × 450 = ₹14,040. (c) Perimeter = 2(6.5+4.8) = 2×11.3 = 22.6 m. Cost of border = 22.6 × 60 = ₹1,356.",
+          "explanation": "This is a common real-life application combining both perimeter (for border/lace) and area (for flooring/tiles). Notice how both measurements are used for different purposes in the same room."
+        },
+        {
+          "id": "m6-m4",
+          "type": "short",
+          "question": "A square field has the same perimeter as a rectangular field that is 40 m long and 20 m wide. (a) Find the perimeter of the rectangular field. (b) Find the side of the square field. (c) Which field has a larger area, and by how much?",
+          "options": [],
+          "answer": "(a) Perimeter of rectangle = 2(40+20) = 2×60 = 120 m. (b) Square has same perimeter 120 m. Side of square = 120÷4 = 30 m. (c) Area of rectangle = 40×20 = 800 m². Area of square = 30×30 = 900 m². The square has a larger area, by 900−800 = 100 m².",
+          "explanation": "This confirms the key insight: among all rectangles with the same perimeter, the square has the greatest area. The square field gives 100 m² more space even though both use the same length of fencing."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m6-h1",
+          "type": "long",
+          "question": "A school has a rectangular playground 80 m long and 60 m wide. A 3-metre-wide path runs along the inside of all four edges. (a) Find the area of the whole playground. (b) Find the dimensions of the inner rectangular space (excluding the path). (c) Find the area of the inner rectangle. (d) Find the area of the path alone. (e) If the path is to be paved at ₹280 per m², find the total cost.",
+          "options": [],
+          "answer": "(a) Area of whole playground = 80 × 60 = 4,800 m². (b) The path (3 m wide) runs along all four inside edges. Inner length = 80 − 3 − 3 = 74 m. Inner breadth = 60 − 3 − 3 = 54 m. (c) Area of inner rectangle = 74 × 54 = 3,996 m². (d) Area of path = Total area − Inner area = 4,800 − 3,996 = 804 m². (e) Cost = 804 × 280 = ₹2,25,120.",
+          "explanation": "This is the classic 'path around a rectangle' problem. The path takes 3 m from each side — so subtract 3×2=6 m from both length and breadth to get inner dimensions. This type of problem appears in real estate, garden design, and civil engineering."
+        }
+      ]
+    },
+    {
+      "topic": "Relationship Between Perimeter and Area",
+      "easy": [
+        {
+          "id": "m6-e9",
+          "type": "mcq",
+          "question": "Two rectangles have the same area of 48 cm². Rectangle A is 12 cm × 4 cm. Rectangle B is 8 cm × 6 cm. Which has the smaller perimeter?",
+          "options": [
+            "Rectangle B (perimeter 28 cm)",
+            "Rectangle A (perimeter 32 cm)",
+            "Both have the same perimeter",
+            "Cannot be determined"
+          ],
+          "answer": "Rectangle B (perimeter 28 cm)",
+          "explanation": "Perimeter A = 2(12+4) = 32 cm. Perimeter B = 2(8+6) = 28 cm. Same area (48 cm²) but different perimeters. B is closer to a square shape so has a smaller perimeter. This confirms: for the same area, the more 'square' the shape, the smaller the perimeter."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m6-m5",
+          "type": "short",
+          "question": "A farmer has 200 m of fencing. He wants to enclose a rectangular field. He considers three options: (a) 80 m × 20 m, (b) 60 m × 40 m, (c) 50 m × 50 m. Verify each has perimeter ≤ 200 m, then find which gives the maximum area.",
+          "options": [],
+          "answer": "(a) P = 2(80+20) = 200 m ✓. Area = 80×20 = 1,600 m². (b) P = 2(60+40) = 200 m ✓. Area = 60×40 = 2,400 m². (c) P = 2(50+50) = 200 m ✓. Area = 50×50 = 2,500 m². Maximum area = 2,500 m² (the square shape). This confirms that for a fixed perimeter, a square gives the greatest possible area. A wise farmer would choose the square plot!",
+          "explanation": "This is the 'isoperimetric problem' — a famous result in mathematics. For all shapes with the same perimeter, the circle has the greatest area, and among rectangles, the square has the greatest area. Bees instinctively build hexagonal honeycombs for similar efficiency reasons."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Area of Compound Shapes and Unit Conversions",
+      "easy": [
+        {
+          "id": "m6-e10",
+          "type": "mcq",
+          "question": "How many cm² are in 1 m²?",
+          "options": ["100 cm²", "1,000 cm²", "10,000 cm²", "100,000 cm²"],
+          "answer": "10,000 cm²",
+          "explanation": "1 m = 100 cm. So 1 m² = 100 cm × 100 cm = 10,000 cm²."
+        },
+        {
+          "id": "m6-e11",
+          "type": "fill",
+          "question": "A land area of 2.5 hectares equals ______ m².",
+          "options": [],
+          "answer": "25,000",
+          "explanation": "1 hectare = 10,000 m². 2.5 hectares = 2.5 × 10,000 = 25,000 m²."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m6-m6",
+          "type": "short",
+          "question": "An L-shaped veranda has the following dimensions: the longer part is 10 m × 4 m and the shorter part is 5 m × 3 m. Find the total area of the veranda and the total length of its boundary (perimeter).",
+          "options": [],
+          "answer": "Area: Split into two rectangles. Longer part: 10×4 = 40 m². Shorter part: 5×3 = 15 m². Total area = 40+15 = 55 m². Perimeter: An L-shape has 6 sides. If longer part is 10×4 and shorter part extends 5 m in length and 3 m in width from one corner: the 6 sides are 10, 4, 5, (4−3)=1, (10−5)=5, 3. Wait — let me use actual outer dimensions. Outer dimensions: total length = 10 m, total width = 4+3 = 7 m (if arranged one way). Perimeter = go around the outside: 10 + 7 + 5 + 3 + 5 + 4 = 34 m. (Exact perimeter depends on the arrangement — students should draw the shape carefully to identify all 6 sides.)",
+          "explanation": "For compound shapes, always draw them carefully and label all sides before calculating. The perimeter must follow every edge of the outer boundary. Break the area into simple rectangles and add."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}

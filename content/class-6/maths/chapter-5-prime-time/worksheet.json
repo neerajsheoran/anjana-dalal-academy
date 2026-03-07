@@ -1,0 +1,195 @@
+{
+  "chapterRef": "class-6/maths/chapter-5-prime-time/worksheet",
+  "topics": [
+    {
+      "topic": "Factors and Multiples",
+      "easy": [
+        {
+          "id": "m5-e1",
+          "type": "mcq",
+          "question": "Which of the following is a factor of 48?",
+          "options": ["7", "9", "16", "11"],
+          "answer": "16",
+          "explanation": "48 ÷ 16 = 3, with no remainder. So 16 is a factor of 48. Check others: 48÷7=6.86 (no), 48÷9=5.33 (no), 48÷11=4.36 (no)."
+        },
+        {
+          "id": "m5-e2",
+          "type": "mcq",
+          "question": "Which of the following is NOT a multiple of 7?",
+          "options": ["49", "63", "84", "95"],
+          "answer": "95",
+          "explanation": "49=7×7 ✓, 63=7×9 ✓, 84=7×12 ✓. 95÷7=13.57 — not a whole number. So 95 is NOT a multiple of 7."
+        },
+        {
+          "id": "m5-e3",
+          "type": "fill",
+          "question": "The number of factors of 18 is ______.",
+          "options": [],
+          "answer": "6",
+          "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Count = 6 factors."
+        },
+        {
+          "id": "m5-e4",
+          "type": "mcq",
+          "question": "Which statement is true?",
+          "options": [
+            "6 is a factor of 42, so 42 is a multiple of 6",
+            "8 is a multiple of 48",
+            "Every number is a multiple of 0",
+            "Factors of a number can be greater than the number"
+          ],
+          "answer": "6 is a factor of 42, so 42 is a multiple of 6",
+          "explanation": "42 ÷ 6 = 7 exactly, so 6 is a factor of 42, AND 42 is a multiple of 6. These two facts always go together: if A is a factor of B, then B is a multiple of A."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m5-m1",
+          "type": "short",
+          "question": "Find all the factors of 60. How many factors does it have? Which factors of 60 are also factors of 45?",
+          "options": [],
+          "answer": "Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. Total: 12 factors. Factors of 45: 1, 3, 5, 9, 15, 45. Common factors (factors of both 60 and 45): 1, 3, 5, 15. These are the factors of HCF(60,45) = 15.",
+          "explanation": "Finding all factors systematically: check each number from 1 to √60 ≈ 7.7. For each factor found, its pair (60÷factor) is also a factor. 1×60, 2×30, 3×20, 4×15, 5×12, 6×10."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Prime and Composite Numbers",
+      "easy": [
+        {
+          "id": "m5-e5",
+          "type": "mcq",
+          "question": "Which of the following is a prime number?",
+          "options": ["1", "9", "27", "29"],
+          "answer": "29",
+          "explanation": "1 is neither prime nor composite. 9 = 3×3 (composite). 27 = 3³ (composite). 29 has factors only 1 and 29 — it is prime. (29 is not divisible by 2, 3, 5 — and √29 < 6, so we only need to check up to 5.)"
+        },
+        {
+          "id": "m5-e6",
+          "type": "fill",
+          "question": "The only even prime number is ______.",
+          "options": [],
+          "answer": "2",
+          "explanation": "2 is the only even prime number. All other even numbers are divisible by 2 (in addition to 1 and themselves), giving them more than 2 factors — making them composite."
+        },
+        {
+          "id": "m5-e7",
+          "type": "mcq",
+          "question": "How many prime numbers are there between 20 and 40?",
+          "options": ["4", "5", "3", "6"],
+          "answer": "4",
+          "explanation": "Prime numbers between 20 and 40: 23, 29, 31, 37. That is 4 prime numbers. (21=3×7, 22=2×11, 24=2³×3, 25=5², 26=2×13, 27=3³, 28=2²×7, 30=2×3×5, 32=2⁵, 33=3×11, 34=2×17, 35=5×7, 36=2²×3², 38=2×19, 39=3×13 — all composite.)"
+        }
+      ],
+      "medium": [
+        {
+          "id": "m5-m2",
+          "type": "short",
+          "question": "Use the Sieve of Eratosthenes to find all prime numbers between 1 and 30. List them and explain the process.",
+          "options": [],
+          "answer": "Process: Start with numbers 2 to 30. Circle 2 (prime); cross out all multiples of 2: 4,6,8,10,12,14,16,18,20,22,24,26,28,30. Circle 3 (prime); cross out multiples of 3 not yet crossed: 9,15,21,27. Circle 5 (prime); cross out multiples of 5 not yet crossed: 25. Circle 7 (prime); 7²=49>30, so no new multiples to cross. All remaining uncrossed numbers are prime. Primes between 1 and 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. (10 prime numbers in total.)",
+          "explanation": "The Sieve of Eratosthenes is an efficient method. You only need to eliminate multiples of primes up to √30 ≈ 5.5 — so primes 2, 3, and 5. After that, all remaining numbers are prime."
+        },
+        {
+          "id": "m5-m3",
+          "type": "short",
+          "question": "Express each of the following as the sum of two prime numbers (Goldbach's Conjecture): (a) 18  (b) 36  (c) 50",
+          "options": [],
+          "answer": "(a) 18 = 7 + 11 (or 5 + 13). (b) 36 = 7 + 29 (or 5 + 31 or 13 + 23 or 17 + 19). (c) 50 = 3 + 47 (or 7 + 43 or 13 + 37 or 19 + 31). Note: Goldbach's Conjecture states that every even number greater than 2 can be written as the sum of two primes. It has been verified for very large numbers but has never been proved for all even numbers — it remains one of mathematics' oldest unsolved problems!",
+          "explanation": "Goldbach's Conjecture (1742) has been verified for every even number up to 4 × 10^18, but no one has proved it is true for all even numbers. It is one of the most famous unsolved problems in mathematics."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Prime Factorisation",
+      "easy": [
+        {
+          "id": "m5-e8",
+          "type": "mcq",
+          "question": "What is the prime factorisation of 72?",
+          "options": ["2³ × 3²", "2² × 3³", "2⁴ × 3", "2 × 36"],
+          "answer": "2³ × 3²",
+          "explanation": "72 ÷ 2 = 36, 36 ÷ 2 = 18, 18 ÷ 2 = 9, 9 ÷ 3 = 3, 3 ÷ 3 = 1. So 72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²."
+        },
+        {
+          "id": "m5-e9",
+          "type": "fill",
+          "question": "Prime factorisation of 100 = 2² × ______.",
+          "options": [],
+          "answer": "5²",
+          "explanation": "100 = 4 × 25 = 2² × 5². Or: 100÷2=50, 50÷2=25, 25÷5=5, 5÷5=1. So 100 = 2×2×5×5 = 2² × 5²."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m5-m4",
+          "type": "short",
+          "question": "Find the prime factorisation of 360 using a division ladder. Then use it to find how many factors 360 has in total.",
+          "options": [],
+          "answer": "Division ladder: 2|360, 2|180, 2|90, 3|45, 3|15, 5|5, 1. So 360 = 2³ × 3² × 5¹. Number of factors: For a number of form pᵃ × qᵇ × rᶜ, the number of factors = (a+1)(b+1)(c+1). For 360 = 2³ × 3² × 5¹: Number of factors = (3+1)(2+1)(1+1) = 4 × 3 × 2 = 24. So 360 has exactly 24 factors!",
+          "explanation": "The formula for the number of factors uses the prime factorisation. If n = p₁^a × p₂^b × p₃^c, then n has (a+1)(b+1)(c+1) factors. This is because each factor uses 0 to a copies of p₁, 0 to b copies of p₂, etc."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "HCF and LCM",
+      "easy": [
+        {
+          "id": "m5-e10",
+          "type": "mcq",
+          "question": "Find the HCF of 24 and 36.",
+          "options": ["6", "12", "4", "72"],
+          "answer": "12",
+          "explanation": "Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common factors: 1,2,3,4,6,12. Highest = 12. Using prime factorisation: 24=2³×3, 36=2²×3². HCF = 2²×3 = 12."
+        },
+        {
+          "id": "m5-e11",
+          "type": "mcq",
+          "question": "Find the LCM of 8 and 12.",
+          "options": ["48", "4", "24", "96"],
+          "answer": "24",
+          "explanation": "8 = 2³, 12 = 2²×3. LCM = 2³×3 = 24. Check: multiples of 8: 8,16,24... Multiples of 12: 12,24... First common = 24 ✓."
+        },
+        {
+          "id": "m5-e12",
+          "type": "fill",
+          "question": "The HCF of two numbers is 9 and their product is 1620. Their LCM is ______.",
+          "options": [],
+          "answer": "180",
+          "explanation": "HCF × LCM = product of numbers. 9 × LCM = 1620. LCM = 1620 ÷ 9 = 180."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m5-m5",
+          "type": "short",
+          "question": "Three bells ring at intervals of 12 minutes, 18 minutes, and 24 minutes. They all ring together at 9:00 AM. At what time will they next ring together?",
+          "options": [],
+          "answer": "Find LCM of 12, 18, and 24. 12 = 2²×3. 18 = 2×3². 24 = 2³×3. LCM = 2³×3² = 8×9 = 72 minutes. The bells will next ring together after 72 minutes. 9:00 AM + 72 minutes = 10:12 AM.",
+          "explanation": "Whenever 'how long until they meet again' type problems appear, LCM is the tool. The LCM gives the first time at which all cycles coincide again."
+        },
+        {
+          "id": "m5-m6",
+          "type": "short",
+          "question": "A shopkeeper has 96 apples and 64 oranges. He wants to pack them in boxes such that each box has the same number of fruits, all fruits are used up, and each box has only one type of fruit. What is the maximum number of fruits per box? How many boxes of each fruit will there be?",
+          "options": [],
+          "answer": "To find maximum fruits per box = HCF(96, 64). 96 = 2⁵ × 3. 64 = 2⁶. HCF = 2⁵ = 32. Maximum fruits per box = 32. Boxes of apples = 96 ÷ 32 = 3 boxes. Boxes of oranges = 64 ÷ 32 = 2 boxes. Total boxes = 3 + 2 = 5 boxes.",
+          "explanation": "HCF problems typically involve dividing things into equal groups as large as possible. The HCF gives the size of the largest possible equal group."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m5-h1",
+          "type": "long",
+          "question": "Find the HCF and LCM of 120, 180, and 240 using prime factorisation. Then verify that HCF × LCM ≠ product of all three numbers. Why doesn't the HCF × LCM formula work for three numbers?",
+          "options": [],
+          "answer": "Prime factorisations: 120 = 2³×3×5. 180 = 2²×3²×5. 240 = 2⁴×3×5. HCF = lowest power of each common prime = 2²×3×5 = 4×3×5 = 60. LCM = highest power of each prime = 2⁴×3²×5 = 16×9×5 = 720. Verify: HCF × LCM = 60 × 720 = 43,200. Product of three numbers = 120 × 180 × 240 = 5,184,000. These are NOT equal (43,200 ≠ 5,184,000). Why? The formula HCF × LCM = product of numbers only works for EXACTLY TWO numbers. For three or more numbers, there is no simple equivalent formula because the common factors overlap in complex ways between all three numbers simultaneously.",
+          "explanation": "This is a common misconception. HCF × LCM = A × B is true for two numbers only. For three numbers A, B, C: HCF(A,B,C) × LCM(A,B,C) ≠ A×B×C in general. This is because LCM accounts for the union of all prime factors, while the product triple-counts shared factors."
+        }
+      ]
+    }
+  ]
+}
