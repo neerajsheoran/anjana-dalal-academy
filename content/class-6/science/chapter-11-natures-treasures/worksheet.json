@@ -1,0 +1,357 @@
+{
+  "chapterRef": "class-6/science/chapter-11-natures-treasures/worksheet",
+  "topics": [
+    {
+      "topic": "Air and Wind Energy",
+      "easy": [
+        {
+          "id": "ch11-e1",
+          "type": "mcq",
+          "question": "What percentage of air is made up of oxygen?",
+          "options": [
+            "~21%",
+            "~78%",
+            "~0.04%",
+            "~50%"
+          ],
+          "answer": "~21%",
+          "explanation": "Air is roughly 78% nitrogen, 21% oxygen, 0.9% argon, and 0.04% carbon dioxide. Oxygen (21%) is the gas used for respiration by most living things."
+        },
+        {
+          "id": "ch11-e2",
+          "type": "mcq",
+          "question": "Which gas in air is used by plants for photosynthesis?",
+          "options": [
+            "Carbon dioxide",
+            "Nitrogen",
+            "Oxygen",
+            "Argon"
+          ],
+          "answer": "Carbon dioxide",
+          "explanation": "Plants absorb carbon dioxide (CO₂) from the air and use it along with water and sunlight to make glucose during photosynthesis. They release oxygen as a by-product."
+        },
+        {
+          "id": "ch11-e3",
+          "type": "fill",
+          "question": "Devices that use wind to generate electricity are called wind ______.",
+          "options": [],
+          "answer": "turbines",
+          "explanation": "Wind turbines have large blades that spin when wind blows. This spinning motion drives a generator to produce electricity. India has large wind farms in Tamil Nadu, Gujarat, and Rajasthan."
+        },
+        {
+          "id": "ch11-e4",
+          "type": "mcq",
+          "question": "Which of the following is a cleaner alternative to petrol and diesel vehicles, producing no exhaust pollution?",
+          "options": [
+            "Electric vehicles (EVs)",
+            "Diesel trucks",
+            "Petrol motorcycles",
+            "Coal-powered trains"
+          ],
+          "answer": "Electric vehicles (EVs)",
+          "explanation": "Electric vehicles run on batteries and produce no exhaust gases. They reduce air pollution. India is actively promoting EVs to improve air quality in cities."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-m1",
+          "type": "short",
+          "question": "Why is air considered a natural resource? Name three ways in which air is important for living organisms.",
+          "options": [],
+          "answer": "Air is a natural resource because it is found in nature and is essential for the survival of living organisms — it cannot be manufactured. Three ways air is important: 1. Oxygen in air is needed by living organisms for respiration (releasing energy from food). 2. Carbon dioxide in air is needed by plants for photosynthesis (making food). 3. Nitrogen in air is needed by plants (converted by soil bacteria) to make proteins.",
+          "explanation": "Air is often overlooked as a resource because it is invisible and seems unlimited. But its composition — especially oxygen and CO₂ — is carefully balanced to support life on Earth."
+        },
+        {
+          "id": "ch11-m2",
+          "type": "short",
+          "question": "What causes air pollution in cities? Mention two effects of air pollution on health and the environment.",
+          "options": [],
+          "answer": "Air pollution in cities is mainly caused by: vehicle exhaust (releasing CO, CO₂, NOₓ), factory and industrial smoke, burning of garbage and crop stubble, and construction dust. Two effects: 1. Health effects — breathing polluted air causes asthma, lung disease, bronchitis, and eye irritation. 2. Environmental effects — acid rain (from SO₂ and NOₓ) damages forests and water bodies; greenhouse gases (CO₂) cause climate change.",
+          "explanation": "Air pollution is one of India's biggest environmental challenges. Delhi's smog in winter (caused partly by crop stubble burning in Punjab and Haryana) is a well-known example of severe urban air pollution."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Water — Sources, Conservation, and Pollution",
+      "easy": [
+        {
+          "id": "ch11-e5",
+          "type": "mcq",
+          "question": "What percentage of Earth's water is freshwater?",
+          "options": [
+            "About 3%",
+            "About 71%",
+            "About 97%",
+            "About 50%"
+          ],
+          "answer": "About 3%",
+          "explanation": "About 71% of Earth's surface is covered by water, but 97% of it is salty ocean water. Only about 3% is freshwater — and most of that is locked in glaciers. This makes freshwater a very precious resource."
+        },
+        {
+          "id": "ch11-e6",
+          "type": "mcq",
+          "question": "What is rainwater harvesting?",
+          "options": [
+            "Collecting and storing rainwater from rooftops for future use",
+            "Purifying seawater into freshwater",
+            "Digging borewells to access groundwater",
+            "Building dams to store river water"
+          ],
+          "answer": "Collecting and storing rainwater from rooftops for future use",
+          "explanation": "Rainwater harvesting means collecting rainwater that falls on rooftops and directing it into storage tanks or into the ground to recharge groundwater. Many Indian cities now make it mandatory for new buildings."
+        },
+        {
+          "id": "ch11-e7",
+          "type": "fill",
+          "question": "The famous stepwell built in Gujarat, now a UNESCO World Heritage Site, is called ______ ki Vav.",
+          "options": [],
+          "answer": "Rani",
+          "explanation": "Rani ki Vav is a magnificent stepwell in Patan, Gujarat. Built in the 11th century, it is an example of ancient Indian water conservation and engineering. It is now a UNESCO World Heritage Site."
+        },
+        {
+          "id": "ch11-e8",
+          "type": "mcq",
+          "question": "The continuous movement of water between the Earth's surface and the atmosphere is called the —",
+          "options": [
+            "Water cycle",
+            "Carbon cycle",
+            "Nitrogen cycle",
+            "Rock cycle"
+          ],
+          "answer": "Water cycle",
+          "explanation": "The water cycle involves evaporation (water to vapour), condensation (vapour to clouds), and precipitation (rain/snow falling back to Earth). This continuous cycle replenishes freshwater on land."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-m3",
+          "type": "short",
+          "question": "Why is freshwater considered more precious than saltwater even though 71% of Earth is covered with water? What are the sources of freshwater in India?",
+          "options": [],
+          "answer": "Although water covers 71% of Earth's surface, 97% of this is salty ocean water — undrinkable and unsuitable for most agriculture and industry. Only 3% is freshwater, and most of that is locked in polar ice caps and glaciers. The easily available freshwater (rivers, lakes, groundwater) is very small indeed. Sources of freshwater in India include: rivers (Ganga, Yamuna, Godavari, Brahmaputra), lakes (Dal, Chilika), glaciers (Himalayan glaciers that feed our rivers), groundwater (wells, borewells), and rainwater.",
+          "explanation": "This question highlights a critical global issue — water scarcity. India faces severe freshwater stress in many regions, making conservation and rainwater harvesting extremely important."
+        },
+        {
+          "id": "ch11-m4",
+          "type": "short",
+          "question": "Name two traditional water conservation methods used in India and explain how each works.",
+          "options": [],
+          "answer": "1. Bawdi (Stepwell / Vav) — A stepwell is a large, deep well with steps leading down to the water. Even when water levels are low in summer, people can walk down the steps to reach the water. The famous Rani ki Vav in Gujarat is an example. 2. Johad — Traditional earthen ponds in Rajasthan that are built to collect and store rainwater. The stored water slowly seeps into the ground, recharging groundwater levels. These have been revived by activists like Rajendra Singh ('Water Man of India') in Alwar, Rajasthan.",
+          "explanation": "India has a rich tradition of water conservation. These traditional methods are often more sustainable and low-cost than modern alternatives. Reviving them is important in water-scarce regions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-h1",
+          "type": "long",
+          "question": "Describe the water cycle with all its stages. How does deforestation affect the water cycle and lead to water scarcity?",
+          "options": [],
+          "answer": "The Water Cycle: 1. Evaporation — The Sun heats water in oceans, lakes, and rivers, converting it to water vapour that rises into the atmosphere. 2. Transpiration — Plants also release water vapour through their leaves (this combined process is called evapotranspiration). 3. Condensation — As water vapour rises and cools, it condenses into tiny water droplets forming clouds. 4. Precipitation — Water droplets in clouds combine and fall as rain, hail, or snow. 5. Collection — Water flows into rivers, lakes, and the ocean, or seeps into the ground to recharge groundwater. The cycle then repeats. Effect of deforestation on the water cycle: Trees play a key role through transpiration — they release large amounts of water vapour, which contributes to cloud formation and rainfall. When forests are cut down: Transpiration is reduced → less water vapour → less cloud formation → less rainfall. Without tree roots, rain water runs off quickly instead of seeping into the ground → less groundwater recharge → wells and rivers dry up. Soil erosion increases → rivers carry more silt → floods worsen but groundwater reduces. Result: Deforestation directly leads to reduced rainfall, drying up of rivers, and water scarcity — a self-reinforcing cycle of environmental damage.",
+          "explanation": "The water cycle is driven by solar energy. Forests are crucial to maintaining the cycle — they are sometimes called 'green water towers'. Deforestation disrupts rainfall patterns not just locally but regionally. The drying of rivers in parts of India and the Amazon is directly linked to deforestation."
+        }
+      ]
+    },
+    {
+      "topic": "Solar Energy and Forests",
+      "easy": [
+        {
+          "id": "ch11-e9",
+          "type": "mcq",
+          "question": "A solar cooker uses which source of energy to cook food?",
+          "options": [
+            "Sunlight",
+            "Electricity",
+            "Coal",
+            "Natural gas"
+          ],
+          "answer": "Sunlight",
+          "explanation": "A solar cooker has a reflective panel that concentrates sunlight onto a cooking vessel. It uses free, clean solar energy to cook food — no fuel, no pollution, no cost."
+        },
+        {
+          "id": "ch11-e10",
+          "type": "mcq",
+          "question": "The Chipko Movement is associated with —",
+          "options": [
+            "Protecting forests by hugging trees to prevent them being cut",
+            "Building dams on rivers",
+            "Collecting rainwater from rooftops",
+            "Mining coal in Jharkhand"
+          ],
+          "answer": "Protecting forests by hugging trees to prevent them being cut",
+          "explanation": "The Chipko Movement (1973) started in Chamoli, Uttarakhand. Local women, led by Gaura Devi, hugged trees to prevent logging. 'Chipko' means 'to hug or cling to'. It became a landmark environmental movement in India."
+        },
+        {
+          "id": "ch11-e11",
+          "type": "fill",
+          "question": "The annual tree planting festival in India started in 1950 is called ______ Mahotsav.",
+          "options": [],
+          "answer": "Van",
+          "explanation": "Van Mahotsav (Forest Festival) is celebrated every year during the first week of July. Millions of trees are planted across India during this event. 'Van' means forest in Hindi."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-m5",
+          "type": "short",
+          "question": "Why is the Sun called the 'ultimate source of energy' on Earth? Give three examples to support this.",
+          "options": [],
+          "answer": "The Sun is called the ultimate source of energy because almost all energy available on Earth originally comes from the Sun. Three examples: 1. Plants use sunlight for photosynthesis to make food → animals eat plants → the food chain runs on solar energy. 2. Wind energy — the Sun unevenly heats Earth's surface, creating pressure differences → wind blows → wind turbines generate electricity. 3. Fossil fuels (coal, petroleum) — these are stored solar energy from millions of years ago. Ancient plants (coal) and marine organisms (petroleum) captured solar energy through photosynthesis, and this energy was locked inside them. Even the energy released by burning coal or petrol is ancient solar energy.",
+          "explanation": "Solar energy is the primary energy input to Earth's systems. Understanding this helps appreciate both renewable energy and the origin of fossil fuels."
+        },
+        {
+          "id": "ch11-m6",
+          "type": "short",
+          "question": "List four important products we get from forests and explain one benefit of forests that goes beyond providing products.",
+          "options": [],
+          "answer": "Four products from forests: 1. Timber (wood for furniture and construction), 2. Medicinal plants (neem, tulsi, ashwagandha), 3. Bamboo (construction, baskets, food), 4. Honey (from wild bees). Benefit beyond products: Forests regulate the water cycle. Tree roots hold water in the soil; leaves release water vapour through transpiration, which helps form clouds and bring rain. Forests also absorb CO₂ and release O₂, helping regulate the atmosphere and fight climate change.",
+          "explanation": "Forests are often valued only for their timber. But their ecological services — clean air, clean water, climate regulation, soil conservation, biodiversity — are far more valuable than the products they provide."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Soil, Rocks, and Minerals",
+      "easy": [
+        {
+          "id": "ch11-e12",
+          "type": "mcq",
+          "question": "Which type of soil is most fertile and best for most crops?",
+          "options": [
+            "Loamy soil",
+            "Sandy soil",
+            "Clayey soil",
+            "Rocky soil"
+          ],
+          "answer": "Loamy soil",
+          "explanation": "Loamy soil is a mixture of sand, silt, and clay. It holds enough water for plants without becoming waterlogged, and is rich in nutrients. It is considered the most fertile soil for agriculture."
+        },
+        {
+          "id": "ch11-e13",
+          "type": "mcq",
+          "question": "The Taj Mahal is made of which type of rock?",
+          "options": [
+            "Marble from Makrana, Rajasthan",
+            "Granite from Tamil Nadu",
+            "Sandstone from Rajasthan",
+            "Limestone from Madhya Pradesh"
+          ],
+          "answer": "Marble from Makrana, Rajasthan",
+          "explanation": "The Taj Mahal is made of white marble from Makrana, Rajasthan. Marble is a metamorphic rock known for its beauty and polish. Sandstone was used for the Red Fort and Qutub Minar."
+        },
+        {
+          "id": "ch11-e14",
+          "type": "fill",
+          "question": "Iron ore is found mainly in ______, Odisha, and Chhattisgarh.",
+          "options": [],
+          "answer": "Jharkhand",
+          "explanation": "Jharkhand, Odisha, and Chhattisgarh are India's major iron ore producing states. Iron ore is used to make steel, which is used in construction, vehicles, machines, and infrastructure."
+        },
+        {
+          "id": "ch11-e15",
+          "type": "mcq",
+          "question": "Your mobile phone contains which of the following?",
+          "options": [
+            "Over 60 different minerals including gold, copper, and lithium",
+            "Only plastic and glass",
+            "Only iron and aluminium",
+            "Only coal and sand"
+          ],
+          "answer": "Over 60 different minerals including gold, copper, and lithium",
+          "explanation": "Modern smartphones contain over 60 minerals — gold (circuits), copper (wiring), lithium (battery), cobalt (battery), tin (solder), rare earth elements (screen, speakers), and many more. This is why e-waste recycling is important."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-m7",
+          "type": "short",
+          "question": "How is soil formed? Why does it take so long?",
+          "options": [],
+          "answer": "Soil is formed by the weathering of rocks — the slow breaking down of rocks by wind, water, temperature changes (expansion in heat, contraction in cold), and by the action of lichens and mosses that grow on rocks. As rocks break into smaller and smaller fragments, they mix with decomposed plant and animal matter (humus) to form soil. This process is extremely slow — it can take hundreds to thousands of years to form even a few centimetres of topsoil. This is why soil is considered a precious natural resource and soil erosion is a serious problem.",
+          "explanation": "Soil formation is a geological process measured on a timescale of centuries. Topsoil (the most fertile layer) is particularly slow to form and easy to destroy through erosion, deforestation, and bad farming practices."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Fossil Fuels and Renewable vs Non-Renewable Resources",
+      "easy": [
+        {
+          "id": "ch11-e16",
+          "type": "mcq",
+          "question": "Fossil fuels are formed from —",
+          "options": [
+            "Remains of ancient plants and animals buried under the Earth over millions of years",
+            "Burning of wood in forests",
+            "Chemical reactions in factories",
+            "Solar energy stored in rocks"
+          ],
+          "answer": "Remains of ancient plants and animals buried under the Earth over millions of years",
+          "explanation": "Fossil fuels (coal, petroleum, natural gas) are formed from the remains of plants and animals that lived hundreds of millions of years ago. Heat and pressure inside the Earth transformed these remains into energy-rich fuels over millions of years."
+        },
+        {
+          "id": "ch11-e17",
+          "type": "mcq",
+          "question": "CNG (Compressed Natural Gas) is considered a cleaner fuel than petrol because —",
+          "options": [
+            "It burns more completely and produces less harmful pollutants",
+            "It is cheaper to buy",
+            "It comes from renewable sources",
+            "It makes vehicles go faster"
+          ],
+          "answer": "It burns more completely and produces less harmful pollutants",
+          "explanation": "CNG burns more cleanly than petrol or diesel, producing less carbon monoxide, particulate matter (PM 2.5), and sulphur dioxide. This is why Delhi switched its buses and autos to CNG in the early 2000s — it significantly improved air quality."
+        },
+        {
+          "id": "ch11-e18",
+          "type": "fill",
+          "question": "Sunlight, wind, and water are examples of ______ resources because they are continuously replenished by nature.",
+          "options": [],
+          "answer": "renewable",
+          "explanation": "Renewable resources are replenished by natural processes and will not run out if used wisely. Sunlight is produced continuously by the Sun; wind is driven by solar heating; and water is renewed through the water cycle."
+        },
+        {
+          "id": "ch11-e19",
+          "type": "mcq",
+          "question": "Which of the following is a NON-renewable resource?",
+          "options": [
+            "Coal",
+            "Sunlight",
+            "Wind",
+            "Rainwater"
+          ],
+          "answer": "Coal",
+          "explanation": "Coal is a fossil fuel that took millions of years to form. Once we use it up, it cannot be replaced in a human timescale. Sunlight, wind, and rainwater are continuously renewed by nature — they are renewable resources."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-m8",
+          "type": "short",
+          "question": "What is petroleum? How is it formed, and what products are obtained from it?",
+          "options": [],
+          "answer": "Petroleum (crude oil) is a fossil fuel — a thick, dark liquid found deep underground or under the ocean floor. It formed from the remains of marine organisms (plankton, algae) that lived hundreds of millions of years ago. When they died, they were buried under layers of sediment on the sea floor. Over millions of years, heat and pressure transformed these remains into petroleum. After extraction by drilling, petroleum is sent to refineries where it is separated (refined) into: petrol (for cars, motorcycles), diesel (for trucks, buses, trains), kerosene (for lamps and cooking), LPG (cooking gas), bitumen (for roads), and raw material for making plastics.",
+          "explanation": "Petroleum is one of the most versatile natural resources — providing fuel, materials for plastics, and raw materials for thousands of products. India produces petroleum from Mumbai High offshore fields, Gujarat, and Assam, but is also a major importer."
+        },
+        {
+          "id": "ch11-m9",
+          "type": "short",
+          "question": "Give two reasons why we should reduce our dependence on fossil fuels and switch to renewable energy sources.",
+          "options": [],
+          "answer": "1. Fossil fuels will run out — They are non-renewable. Coal, petroleum, and natural gas took millions of years to form. At current rates of use, they could be exhausted within decades to a few centuries. Once used up, they cannot be replaced. Renewable sources like solar and wind are available indefinitely. 2. Fossil fuels cause pollution and climate change — Burning fossil fuels releases carbon dioxide (CO₂), carbon monoxide (CO), sulphur dioxide (SO₂), and particles — causing air pollution, acid rain, and climate change. Solar, wind, and hydro power produce no greenhouse gases during operation.",
+          "explanation": "The energy transition from fossil fuels to renewables is one of the most important global challenges. India is making significant progress — it is now one of the world's largest producers of solar and wind energy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-h2",
+          "type": "long",
+          "question": "Imagine you are advising the government of a small town that currently uses coal for electricity and petrol vehicles for transport. Suggest a complete plan to switch to renewable energy, naming the resources to use, the technologies involved, and the challenges that might arise.",
+          "options": [],
+          "answer": "Plan for the town's transition to renewable energy: Electricity generation: Install solar panels on rooftops of all government buildings, schools, and homes (solar photovoltaic — converts sunlight to electricity). Set up wind turbines on nearby hills or open land (if windy). Build a small hydropower plant on a nearby river (if available). For transport: Replace petrol and diesel vehicles with electric vehicles (EVs) — buses, auto-rickshaws, and official vehicles first. Install EV charging stations powered by solar energy. Water heating: Mandate solar water heaters on all new constructions. Cooking: Promote solar cookers for daytime cooking; piped natural gas (PNG — cleaner fossil fuel) as transition fuel until full renewable coverage. Challenges: High upfront cost of solar panels and wind turbines (the government may need loans or subsidies). Solar energy is intermittent — no power at night or on cloudy days (needs battery storage). Wind energy depends on consistent wind (needs good wind assessment). Public resistance — people may be reluctant to change habits or bear upfront costs. Need for skilled workers to install and maintain equipment. Solutions: Government subsidies (like India's PM Surya Ghar scheme), phased implementation, public awareness campaigns, and training local youth as solar technicians.",
+          "explanation": "This question tests integrated understanding of renewable vs non-renewable energy, real-world technologies, and practical planning. India's national energy transition plan faces similar challenges at scale."
+        }
+      ]
+    }
+  ]
+}

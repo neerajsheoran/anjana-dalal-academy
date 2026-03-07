@@ -1,0 +1,409 @@
+{
+  "chapterRef": "class-6/science/chapter-10-living-creatures-exploring-their-characteristics/worksheet",
+  "topics": [
+    {
+      "topic": "What Makes Something Alive? — Characteristics of Living Organisms",
+      "easy": [
+        {
+          "id": "ch10-e1",
+          "type": "mcq",
+          "question": "Which of the following is NOT a characteristic of living organisms?",
+          "options": [
+            "Rusting when exposed to rain",
+            "Reproducing to produce offspring",
+            "Responding to stimuli",
+            "Growing over time"
+          ],
+          "answer": "Rusting when exposed to rain",
+          "explanation": "Rusting is a chemical reaction in non-living metals. Living organisms grow, reproduce, and respond to stimuli. Rusting is not a life process."
+        },
+        {
+          "id": "ch10-e2",
+          "type": "mcq",
+          "question": "Which of the following is a living organism?",
+          "options": [
+            "A seed stored in a packet",
+            "A lump of coal",
+            "A river stone",
+            "A glass of water"
+          ],
+          "answer": "A seed stored in a packet",
+          "explanation": "A seed is a living organism — it is in a dormant (resting) state but is alive. It can germinate, grow, reproduce, and carry out life processes. Coal, stone, and water are non-living."
+        },
+        {
+          "id": "ch10-e3",
+          "type": "fill",
+          "question": "A change in the environment that causes a response in a living organism is called a ______.",
+          "options": [],
+          "answer": "stimulus",
+          "explanation": "A stimulus (plural: stimuli) is any change in the environment — light, touch, sound, heat — that a living organism detects and responds to. For example, bright light makes your pupil shrink."
+        },
+        {
+          "id": "ch10-e4",
+          "type": "mcq",
+          "question": "How many main characteristics of living organisms are recognised by scientists?",
+          "options": [
+            "Seven — movement, nutrition, respiration, growth, excretion, response to stimuli, reproduction",
+            "Three — eating, breathing, moving",
+            "Two — growing and dying",
+            "Five — eating, drinking, sleeping, moving, speaking"
+          ],
+          "answer": "Seven — movement, nutrition, respiration, growth, excretion, response to stimuli, reproduction",
+          "explanation": "The seven recognised characteristics of living organisms are: movement, nutrition, respiration, growth, excretion, response to stimuli, and reproduction. All living things share all seven."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-m1",
+          "type": "short",
+          "question": "A stone grows bigger over millions of years as minerals deposit on it. Does this mean a stone is a living organism? Explain.",
+          "options": [],
+          "answer": "No, a stone is not a living organism. Although it may grow in size over time, this growth is caused by external deposition of minerals — not by the stone using food and energy from within. Living organisms grow using internal processes (nutrition and cellular growth). A stone also does not breathe, reproduce, excrete, or respond to stimuli — so it does not show all seven characteristics of life.",
+          "explanation": "Growth in living organisms is an internal, self-driven process. Growth by external deposition (as in crystals or stones) does not qualify as biological growth. All seven life characteristics must be present for something to be considered alive."
+        },
+        {
+          "id": "ch10-m2",
+          "type": "short",
+          "question": "List the seven characteristics of living organisms. Which two do you think are the most important? Give reasons.",
+          "options": [],
+          "answer": "The seven characteristics are: 1. Movement, 2. Nutrition, 3. Respiration, 4. Growth, 5. Excretion, 6. Response to stimuli, 7. Reproduction. Two most important (with justification): Nutrition — without energy/food, no other life process can happen. Reproduction — without reproduction, a species would go extinct. (Answers may vary; students should justify their choice.)",
+          "explanation": "While all seven are essential, nutrition provides the energy for all other processes, and reproduction ensures the continuation of the species. These two are often considered most fundamental."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-h1",
+          "type": "long",
+          "question": "Fire grows, moves, and needs oxygen — yet fire is not a living organism. Explain why fire is non-living by comparing it to a living organism using the seven characteristics of life.",
+          "options": [],
+          "answer": "Fire may appear alive because it flickers (moves), spreads (grows), and needs oxygen. However, comparing with the seven life characteristics: 1. Movement — Fire moves but not by its own will; it is pushed by air currents. 2. Nutrition — Fire does not take in food; it burns fuel (wood, paper) — a chemical reaction, not nutrition. 3. Respiration — Fire uses oxygen, but it is combustion (burning), not biological respiration inside cells. 4. Growth — Fire spreads by burning more fuel, not by internal growth processes. 5. Excretion — Fire releases smoke and gases but does not have a biological excretion system. 6. Response to stimuli — Fire changes with wind, but it has no nervous system or sense organs. 7. Reproduction — Fire cannot reproduce; it produces no offspring. Conclusion: Fire fails all seven biological criteria. It is a chemical reaction, not a living thing.",
+          "explanation": "This is a classic conceptual question. Fire shares superficial resemblances to life (movement, oxygen use) but fails all biological tests. Life requires cells, self-driven internal processes, and the complete set of seven characteristics."
+        }
+      ]
+    },
+    {
+      "topic": "Movement and Nutrition",
+      "easy": [
+        {
+          "id": "ch10-e5",
+          "type": "mcq",
+          "question": "The movement of the whole body of an organism from one place to another is called —",
+          "options": [
+            "Locomotion",
+            "Photosynthesis",
+            "Respiration",
+            "Excretion"
+          ],
+          "answer": "Locomotion",
+          "explanation": "Locomotion specifically means moving the whole body from one place to another — as in walking, swimming, or flying. Plants move their parts but cannot perform locomotion."
+        },
+        {
+          "id": "ch10-e6",
+          "type": "mcq",
+          "question": "Plants are called autotrophs because they —",
+          "options": [
+            "Make their own food using sunlight, water, and carbon dioxide",
+            "Eat other plants and animals",
+            "Get energy from dead organisms",
+            "Absorb food directly through their roots from the soil"
+          ],
+          "answer": "Make their own food using sunlight, water, and carbon dioxide",
+          "explanation": "Autotroph means 'self-feeder'. Plants make glucose through photosynthesis using sunlight (energy), water (from soil), and carbon dioxide (from air). They do not eat other organisms."
+        },
+        {
+          "id": "ch10-e7",
+          "type": "fill",
+          "question": "The process by which plants make food using sunlight is called ______.",
+          "options": [],
+          "answer": "photosynthesis",
+          "explanation": "Photosynthesis is the process where plants use chlorophyll (green pigment), sunlight, carbon dioxide, and water to produce glucose (food) and oxygen. It happens mainly in the leaves."
+        },
+        {
+          "id": "ch10-e8",
+          "type": "mcq",
+          "question": "A lion that eats only deer and other animals is called a —",
+          "options": [
+            "Carnivore",
+            "Herbivore",
+            "Omnivore",
+            "Autotroph"
+          ],
+          "answer": "Carnivore",
+          "explanation": "A carnivore eats only animals (meat). A herbivore eats only plants. An omnivore eats both. An autotroph makes its own food (like plants). Lions are carnivores."
+        },
+        {
+          "id": "ch10-e9",
+          "type": "mcq",
+          "question": "Which plant folds its leaves when touched?",
+          "options": [
+            "Touch-me-not (Mimosa pudica / Lajwanti)",
+            "Sunflower",
+            "Banyan tree",
+            "Rose"
+          ],
+          "answer": "Touch-me-not (Mimosa pudica / Lajwanti)",
+          "explanation": "The Touch-me-not plant (Mimosa pudica), called Lajwanti or Chui-mui in Hindi, immediately folds its leaves when touched. This is a rapid response to a touch stimulus — one of the clearest examples of plant movement."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-m3",
+          "type": "short",
+          "question": "Explain the difference between locomotion and movement. Give one example of each from the plant kingdom.",
+          "options": [],
+          "answer": "Locomotion is the movement of the entire body from one place to another. Plants cannot perform locomotion — they are rooted to the ground. However, plants do show movement: the Touch-me-not (Mimosa pudica) folds its leaves in response to touch, and sunflowers turn their heads toward the sun (a growth movement called phototropism). Both are examples of movement without locomotion.",
+          "explanation": "Locomotion requires the whole body to move. Plants show responses and growth movements (parts of the plant move) but the whole plant does not move. This is an important distinction between plant and animal movement."
+        },
+        {
+          "id": "ch10-m4",
+          "type": "short",
+          "question": "You are eating a plate of rajma-chawal (kidney beans and rice). Are you behaving as an autotroph or a heterotroph? Explain, and give two more examples of heterotrophs.",
+          "options": [],
+          "answer": "You are behaving as a heterotroph — you are eating food made from other organisms (rice from rice plants, rajma from bean plants). You cannot make your own food. Two more examples of heterotrophs: a tiger (eats deer), and a crow (eats grains, insects, and scraps — an omnivore). Decomposers like mushrooms are also heterotrophs.",
+          "explanation": "Heterotrophs cannot make their own food and must eat other organisms. Autotrophs (like plants) make food through photosynthesis. Humans are omnivorous heterotrophs."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Respiration, Growth, and Excretion",
+      "easy": [
+        {
+          "id": "ch10-e10",
+          "type": "mcq",
+          "question": "Which of the following is the correct equation for aerobic respiration?",
+          "options": [
+            "Glucose + Oxygen → Carbon dioxide + Water + Energy",
+            "Carbon dioxide + Water → Glucose + Oxygen",
+            "Glucose + Water → Oxygen + Energy",
+            "Food + Carbon dioxide → Energy + Glucose"
+          ],
+          "answer": "Glucose + Oxygen → Carbon dioxide + Water + Energy",
+          "explanation": "Aerobic respiration uses oxygen to break down glucose. Products are carbon dioxide, water, and energy. The second option is actually photosynthesis (in reverse)."
+        },
+        {
+          "id": "ch10-e11",
+          "type": "mcq",
+          "question": "Fish use ______ to take in oxygen from water.",
+          "options": [
+            "Gills",
+            "Lungs",
+            "Stomata",
+            "Spiracles"
+          ],
+          "answer": "Gills",
+          "explanation": "Fish breathe through gills, which extract dissolved oxygen from water. Lungs are used by land mammals. Stomata are tiny pores on plant leaves. Spiracles are breathing holes in insects."
+        },
+        {
+          "id": "ch10-e12",
+          "type": "fill",
+          "question": "The removal of waste products from a living organism is called ______.",
+          "options": [],
+          "answer": "excretion",
+          "explanation": "Excretion is the biological process of removing metabolic waste products. In humans, kidneys excrete urea in urine, lungs excrete CO₂, and skin excretes salt and water in sweat."
+        },
+        {
+          "id": "ch10-e13",
+          "type": "mcq",
+          "question": "Which organ in the human body filters waste from the blood to produce urine?",
+          "options": [
+            "Kidneys",
+            "Lungs",
+            "Liver",
+            "Heart"
+          ],
+          "answer": "Kidneys",
+          "explanation": "The kidneys filter waste products (especially urea) from the blood and excrete them as urine. The lungs excrete CO₂. The liver processes toxins. The heart pumps blood."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-m5",
+          "type": "short",
+          "question": "What is the difference between respiration and breathing? Why is it important to understand this difference?",
+          "options": [],
+          "answer": "Breathing is the physical process of inhaling and exhaling air — moving air into and out of the lungs. Respiration is the chemical process inside cells where glucose is broken down using oxygen to release energy (Glucose + O₂ → CO₂ + Water + Energy). Breathing brings oxygen to the cells so they can respire. This distinction matters because respiration happens in every cell, all the time, even in organisms that don't 'breathe' (like plants, which absorb oxygen through stomata).",
+          "explanation": "Breathing is a mechanical process; respiration is a biochemical process. All living cells respire. Not all organisms breathe (breathe through lungs/gills) — but all respire at the cellular level."
+        },
+        {
+          "id": "ch10-m6",
+          "type": "short",
+          "question": "How does the lifespan of a housefly compare with that of a tortoise? What does lifespan tell us about an organism?",
+          "options": [],
+          "answer": "A housefly lives for only 20–30 days, while a tortoise can live for 150–200 years. Lifespan tells us the maximum time an organism typically lives under natural conditions. It varies enormously between species — insects tend to have very short lifespans, while reptiles like tortoises, and some trees, can live for centuries. Lifespan is related to body size, metabolism rate, and reproductive strategy.",
+          "explanation": "Different organisms have vastly different lifespans. Generally, smaller organisms with faster metabolisms have shorter lifespans. Tortoises have very slow metabolisms and are known for exceptional longevity."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-h2",
+          "type": "long",
+          "question": "Idli and dosa batter is left overnight to ferment before cooking. During fermentation, the batter rises and becomes sour. Explain the science behind this, naming the type of respiration, the organisms involved, and the products formed.",
+          "options": [],
+          "answer": "The rising and souring of idli/dosa batter is caused by yeasts and lactic acid bacteria naturally present in the batter. These microorganisms carry out anaerobic respiration (fermentation) — they break down the glucose in rice and lentils WITHOUT oxygen. Yeast fermentation: Glucose → Ethanol (alcohol) + Carbon dioxide + Energy. The CO₂ gas produced makes the batter rise and become fluffy (this is why idlis are soft). Lactic acid bacteria fermentation: Glucose → Lactic acid + Energy. Lactic acid makes the batter sour. When idlis/dosas are steamed or fried, the alcohol evaporates and the CO₂ makes them light and porous. This is anaerobic respiration used beneficially in cooking.",
+          "explanation": "Fermentation is anaerobic respiration used by microorganisms. Yeast produces CO₂ (makes batter rise) and alcohol (evaporates on cooking). Bacteria produce lactic acid (creates the sour taste). This same principle is used in bread-making, yogurt, pickles, and many other fermented foods."
+        }
+      ]
+    },
+    {
+      "topic": "Response to Stimuli and J.C. Bose",
+      "easy": [
+        {
+          "id": "ch10-e14",
+          "type": "mcq",
+          "question": "Which Indian scientist proved that plants also respond to stimuli like pain, touch, and heat?",
+          "options": [
+            "Jagadish Chandra Bose",
+            "C.V. Raman",
+            "Homi J. Bhabha",
+            "A.P.J. Abdul Kalam"
+          ],
+          "answer": "Jagadish Chandra Bose",
+          "explanation": "Jagadish Chandra Bose (1858–1937) was a pioneering Bengali scientist who proved that plants respond to stimuli. He invented the crescograph — an instrument so sensitive it could measure the tiniest movements in plants caused by stimuli."
+        },
+        {
+          "id": "ch10-e15",
+          "type": "fill",
+          "question": "The instrument invented by J.C. Bose to measure tiny plant movements is called the ______.",
+          "options": [],
+          "answer": "crescograph",
+          "explanation": "The crescograph was J.C. Bose's invention. It magnified and recorded the tiny movements of plant tissues in response to various stimuli, proving that plants are sensitive living things."
+        },
+        {
+          "id": "ch10-e16",
+          "type": "mcq",
+          "question": "When you move from a dark room into bright sunlight, your pupils become smaller. This is an example of —",
+          "options": [
+            "Response to a stimulus (light)",
+            "Excretion",
+            "Nutrition",
+            "Reproduction"
+          ],
+          "answer": "Response to a stimulus (light)",
+          "explanation": "Your pupils shrink in bright light to protect your eyes. Bright light is the stimulus; pupil constriction is the response. This is a clear example of how living organisms respond to changes in their environment."
+        },
+        {
+          "id": "ch10-e17",
+          "type": "mcq",
+          "question": "A sunflower turns its head to face the sun throughout the day. What type of movement is this?",
+          "options": [
+            "A response to light stimulus (phototropism)",
+            "Locomotion",
+            "Excretion",
+            "Anaerobic respiration"
+          ],
+          "answer": "A response to light stimulus (phototropism)",
+          "explanation": "Phototropism is the growth movement of a plant toward (or away from) light. Sunflowers track the sun across the sky — this is a response to the light stimulus. It is a movement, not locomotion (the whole plant does not move from place to place)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-m7",
+          "type": "short",
+          "question": "Why was J.C. Bose's research on plants considered revolutionary? What did he discover?",
+          "options": [],
+          "answer": "Before Bose's work, scientists believed only animals could sense and respond to stimuli. Bose's experiments using his crescograph showed that plants also respond to touch, heat, cold, and chemicals — similar to how animals respond to pain and stimulation. He showed that an electrical signal travels through plant tissue when stimulated, similar to nerve signals in animals. This blurred the sharp boundary thought to exist between plant and animal life. It was revolutionary because it changed how scientists viewed plants — from passive organisms to sensitive, responsive living things.",
+          "explanation": "J.C. Bose proved that plants have a form of sensory response. His experiments were precise and scientific. He also worked on radio waves — contributing to physics as well as biology. He was one of the first great modern scientists from India."
+        },
+        {
+          "id": "ch10-m8",
+          "type": "short",
+          "question": "Give four examples of stimulus-response in everyday life — two from animals and two from plants.",
+          "options": [],
+          "answer": "From animals: 1. A bright light flashed at a cat → its pupils become narrow slits (response to light stimulus). 2. The smell of food → a dog salivates (response to smell stimulus). From plants: 1. Touch → Touch-me-not (Mimosa pudica) folds its leaves immediately (response to touch stimulus). 2. Roots of a plant grow toward water in the soil (response to water/moisture stimulus — called hydrotropism).",
+          "explanation": "Stimulus-response is one of the key characteristics that distinguishes living from non-living things. Both animals and plants respond to their environment, though in different ways and at different speeds."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-h3",
+          "type": "long",
+          "question": "Design a simple experiment to show that the Touch-me-not plant (Mimosa pudica) responds to touch. Describe the setup, what you observe, and what conclusion you draw about plants and stimuli.",
+          "options": [],
+          "answer": "Experiment: Showing that Mimosa pudica responds to touch. Materials needed: A healthy Touch-me-not (Mimosa pudica / Lajwanti) plant, a pencil or thin stick. Setup: Place the plant on a table in a quiet spot. Observe the leaves — they are open and spread out. Step 1: Gently touch one leaflet with the pencil tip. Observe immediately. Step 2: Wait 2–3 minutes. Observe again. Step 3: Touch a larger section of leaves with your hand. Observe. Observations: When a single leaflet is touched, it and nearby leaflets fold inward within seconds. The response travels along the leaf — more leaflets fold even though they were not directly touched. After 2–3 minutes, the leaves slowly reopen — showing the response was temporary, not permanent damage. A larger touch causes more leaves to fold (stronger stimulus → stronger response). Conclusion: The Touch-me-not plant clearly responds to touch — a stimulus. The response travels through the plant electrically (similar to nerve signals). This shows plants are sensitive, living organisms that respond to stimuli — just as J.C. Bose demonstrated with the crescograph. Non-living things would not respond this way.",
+          "explanation": "This experiment demonstrates stimulus-response in plants. The response of Mimosa pudica to touch is one of the fastest plant movements known. It is believed to be a defense against insects and grazers. J.C. Bose's crescograph measured similar responses precisely."
+        }
+      ]
+    },
+    {
+      "topic": "Reproduction and Cells — The Basic Unit of Life",
+      "easy": [
+        {
+          "id": "ch10-e18",
+          "type": "mcq",
+          "question": "Which type of reproduction involves only ONE parent and produces offspring identical to that parent?",
+          "options": [
+            "Asexual reproduction",
+            "Sexual reproduction",
+            "Locomotion",
+            "Excretion"
+          ],
+          "answer": "Asexual reproduction",
+          "explanation": "In asexual reproduction, only one parent is needed. The offspring is genetically identical to the parent. Examples: amoeba splitting in two, yeast budding, growing a rose plant from a cutting."
+        },
+        {
+          "id": "ch10-e19",
+          "type": "fill",
+          "question": "The smallest unit of structure and function of all living organisms is the ______.",
+          "options": [],
+          "answer": "cell",
+          "explanation": "The cell is the basic unit of life. All living things are made of cells. Some organisms are made of just one cell (unicellular), while others are made of millions (multicellular)."
+        },
+        {
+          "id": "ch10-e20",
+          "type": "mcq",
+          "question": "Amoeba, which is made of just one cell, is called a —",
+          "options": [
+            "Unicellular organism",
+            "Multicellular organism",
+            "Autotroph",
+            "Carnivore"
+          ],
+          "answer": "Unicellular organism",
+          "explanation": "Unicellular means 'one cell'. Amoeba, bacteria, and some algae are unicellular — their single cell performs all life functions. Humans, trees, and fish are multicellular — made of billions of specialised cells."
+        },
+        {
+          "id": "ch10-e21",
+          "type": "mcq",
+          "question": "Growing a new rose plant from a stem cutting is an example of —",
+          "options": [
+            "Asexual reproduction",
+            "Sexual reproduction",
+            "Photosynthesis",
+            "Excretion"
+          ],
+          "answer": "Asexual reproduction",
+          "explanation": "A stem cutting involves only one parent plant. The new plant grown from it is genetically identical to the parent. This is asexual reproduction — no seeds, no pollination, no fertilisation involved."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-m9",
+          "type": "short",
+          "question": "Explain the levels of organisation in the human body using the example of the heart and circulatory system.",
+          "options": [],
+          "answer": "In multicellular organisms, cells are organised into increasingly complex structures: Cell → Tissue → Organ → Organ System → Organism. In the human circulatory system: Muscle cells group together to form muscle tissue. Muscle tissue, nerve tissue, and connective tissue work together to form the heart (an organ). The heart, along with arteries, veins, and capillaries, forms the circulatory system (organ system). All organ systems together make up the human body (organism). Each level has a more complex structure and function than the one below it.",
+          "explanation": "Organisation is a key feature of multicellular life. Specialised cells form tissues, tissues form organs, organs form systems, and systems together make up the whole organism. This division of labour allows complex functions."
+        },
+        {
+          "id": "ch10-m10",
+          "type": "short",
+          "question": "A farmer plants a piece of sugarcane stalk in soil, and it grows into a new plant. Is this sexual or asexual reproduction? How is it different from growing a mango tree from a mango seed?",
+          "options": [],
+          "answer": "Planting a sugarcane stalk is asexual reproduction — only one parent is needed, and the new plant is genetically identical to the parent stalk. Growing a mango tree from a seed is sexual reproduction — the seed was formed after pollination (pollen from a male flower fertilised the egg cell in a female flower). The seed contains genetic material from two parents, so the mango tree grown may not be exactly like either parent. In asexual reproduction there is one parent and identical offspring; in sexual reproduction there are two parents and varied offspring.",
+          "explanation": "Vegetative propagation (sugarcane, potatoes, rose cuttings) is asexual. Seed germination is usually the result of sexual reproduction. Understanding this difference matters in agriculture — vegetative propagation preserves desirable traits; seeds create genetic variation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-h4",
+          "type": "long",
+          "question": "Are viruses living or non-living? Discuss by comparing them with the seven characteristics of living organisms. What makes viruses a special case in biology?",
+          "options": [],
+          "answer": "Viruses are one of the most debated entities in biology — they fall on the borderline between living and non-living. Let us compare with the seven characteristics: 1. Movement — Viruses do not move on their own; they are carried by air, water, or contact. 2. Nutrition — Viruses do not take in food or produce energy on their own. 3. Respiration — No cellular respiration; viruses have no cells. 4. Growth — Viruses do not grow in the biological sense. 5. Excretion — No metabolic waste production. 6. Response to stimuli — No response mechanism of their own. 7. Reproduction — Here is the exception! Viruses CAN reproduce — but ONLY by hijacking a living host cell. They inject their genetic material into the host cell and force it to make copies of the virus. Key special features of viruses: They are not made of cells (the basic unit of life). They carry genetic material (DNA or RNA) — like living things. Outside a host cell, they are inert (like a crystal — totally non-living). Inside a host cell, they replicate actively. Conclusion: Viruses are acellular (not made of cells), cannot carry out life processes on their own, but can reproduce inside a host. Most scientists classify them as non-living, but they are a unique, special case — sometimes called 'at the edge of life'.",
+          "explanation": "Viruses challenge our very definition of life. They have genetic material like living things but lack cells and cannot independently carry out any life process. Their reproduction requires a living host. This makes them fascinating and important — they cause diseases like COVID-19, flu, and rabies, yet are not truly alive by biological standards."
+        }
+      ]
+    }
+  ]
+}

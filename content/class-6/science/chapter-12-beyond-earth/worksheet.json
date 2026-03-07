@@ -1,0 +1,312 @@
+{
+  "chapterRef": "class-6/science/chapter-12-beyond-earth/worksheet",
+  "topics": [
+    {
+      "topic": "Stars and Constellations",
+      "easy": [
+        {
+          "id": "ch12-e1",
+          "type": "mcq",
+          "question": "What is a star?",
+          "options": [
+            "A huge ball of hot, glowing gas that produces its own light and heat",
+            "A planet that reflects sunlight very brightly",
+            "A chunk of ice and rock orbiting the Sun",
+            "A natural satellite orbiting a planet"
+          ],
+          "answer": "A huge ball of hot, glowing gas that produces its own light and heat",
+          "explanation": "A star is a massive ball of hot gas (mainly hydrogen and helium) that produces its own light and heat through nuclear reactions in its core. Our Sun is a star. Other stars appear as tiny points of light because they are extremely far away."
+        },
+        {
+          "id": "ch12-e2",
+          "type": "mcq",
+          "question": "How many officially recognised constellations are there in the sky?",
+          "options": [
+            "88",
+            "12",
+            "27",
+            "100"
+          ],
+          "answer": "88",
+          "explanation": "The International Astronomical Union (IAU) officially recognises 88 constellations that together cover the entire sky. Each constellation is a defined region of the sky, named after the pattern its brightest stars seem to form."
+        },
+        {
+          "id": "ch12-e3",
+          "type": "fill",
+          "question": "The brightest star in the night sky (other than the Sun) is ______, found in the constellation Canis Major.",
+          "options": [],
+          "answer": "Sirius",
+          "explanation": "Sirius is the brightest star visible from Earth at night. It is about 8.6 light years away. It is part of the constellation Canis Major (the Great Dog), found just below Orion in the winter sky."
+        },
+        {
+          "id": "ch12-e4",
+          "type": "mcq",
+          "question": "The seven bright stars of Ursa Major are called ______ in Indian tradition.",
+          "options": [
+            "Saptarishi (Seven Sages)",
+            "Dhruva Tara",
+            "Nakshatras",
+            "Akasha Ganga"
+          ],
+          "answer": "Saptarishi (Seven Sages)",
+          "explanation": "The seven bright stars forming the Big Dipper in Ursa Major are called Saptarishi in Indian tradition — named after seven great sages (Marichi, Atri, Angiras, Pulaha, Kratu, Pulastya, Vashistha). They are visible throughout the year in northern India."
+        },
+        {
+          "id": "ch12-e5",
+          "type": "mcq",
+          "question": "Why is the Pole Star (Dhruva Tara / Polaris) special compared to other stars?",
+          "options": [
+            "It appears almost stationary in the sky as it is nearly above the North Pole",
+            "It is the brightest star in the sky",
+            "It is the closest star to Earth",
+            "It changes colour every night"
+          ],
+          "answer": "It appears almost stationary in the sky as it is nearly above the North Pole",
+          "explanation": "The Pole Star (Polaris) is almost exactly above Earth's North Pole. As Earth rotates, all stars appear to move across the sky except Polaris, which stays nearly fixed. This made it invaluable for navigation — it always points north."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-m1",
+          "type": "short",
+          "question": "How can you locate the Pole Star using the Big Dipper (Saptarishi)? Why was the Pole Star important to ancient travellers?",
+          "options": [],
+          "answer": "To find the Pole Star: 1. Find the Big Dipper (Saptarishi) — seven bright stars in the shape of a large ladle. 2. Look at the two stars at the outer edge of the dipper's bowl (the 'pointer stars'). 3. Draw an imaginary line through these two stars and extend it about five times the distance between them. 4. The bright star you reach is Polaris — the Pole Star. Importance to ancient travellers: The Pole Star appears almost stationary in the sky (it is nearly directly above Earth's North Pole). While all other stars move across the sky due to Earth's rotation, Polaris stays fixed. So sailors and travellers used it as a reliable compass to find north — essential for navigation at sea or in deserts where there are no landmarks.",
+          "explanation": "Before GPS and magnetic compasses were widely available, the Pole Star was the most reliable navigation tool. It is why ancient Indian, Arab, Chinese, and European sailors all knew this star well. Its Indian name, Dhruva Tara, reflects its special status — Dhruva means 'immovable' or 'fixed'."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "The Solar System — Sun and Planets",
+      "easy": [
+        {
+          "id": "ch12-e6",
+          "type": "mcq",
+          "question": "How many planets are there in our Solar System?",
+          "options": [
+            "8",
+            "9",
+            "7",
+            "12"
+          ],
+          "answer": "8",
+          "explanation": "There are 8 planets in our Solar System: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Pluto was reclassified as a dwarf planet in 2006 by the International Astronomical Union."
+        },
+        {
+          "id": "ch12-e7",
+          "type": "mcq",
+          "question": "Which planet is called the Red Planet?",
+          "options": [
+            "Mars",
+            "Venus",
+            "Jupiter",
+            "Saturn"
+          ],
+          "answer": "Mars",
+          "explanation": "Mars is called the Red Planet because its surface is covered with iron oxide (rust), giving it a reddish appearance. India's Mangalyaan (Mars Orbiter Mission) successfully reached Mars in 2014, making India the first country to do so in its first attempt."
+        },
+        {
+          "id": "ch12-e8",
+          "type": "fill",
+          "question": "Earth is called the Blue Planet because about ______ % of its surface is covered with water.",
+          "options": [],
+          "answer": "70",
+          "explanation": "Seen from space, Earth appears blue because about 70% of its surface is covered by oceans. This makes Earth unique in our Solar System — it is the only planet known to have liquid water on its surface and to support life."
+        },
+        {
+          "id": "ch12-e9",
+          "type": "mcq",
+          "question": "Which planet is the largest in the Solar System?",
+          "options": [
+            "Jupiter",
+            "Saturn",
+            "Neptune",
+            "Earth"
+          ],
+          "answer": "Jupiter",
+          "explanation": "Jupiter is the largest planet in the Solar System — it is so large that more than 1,300 Earths could fit inside it. It is a gas giant with 95 known moons and a famous feature called the Great Red Spot — a storm larger than Earth that has been raging for centuries."
+        },
+        {
+          "id": "ch12-e10",
+          "type": "mcq",
+          "question": "Venus is often called the Morning Star or Evening Star because —",
+          "options": [
+            "It is very bright and visible near the Sun just before sunrise or after sunset",
+            "It rises in the morning and sets in the evening like all stars",
+            "It shines its own light like a star",
+            "It is the closest planet to the Sun"
+          ],
+          "answer": "It is very bright and visible near the Sun just before sunrise or after sunset",
+          "explanation": "Venus is the brightest object in the sky after the Sun and Moon. Because its orbit is inside Earth's, it is always seen close to the Sun — appearing in the east before sunrise (Morning Star) or in the west just after sunset (Evening Star). It is not actually a star."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-m2",
+          "type": "short",
+          "question": "What is the difference between rotation and revolution? How long does Earth take for each? What phenomena do they cause?",
+          "options": [],
+          "answer": "Rotation is the spinning of a planet on its own axis (like a spinning top). Earth takes 24 hours (1 day) to rotate once. Rotation causes day and night — the side facing the Sun experiences day, the other side experiences night. Revolution is the movement of a planet around the Sun in its orbit. Earth takes 365.25 days (1 year) to complete one revolution around the Sun. Revolution, combined with Earth's tilted axis, causes the seasons (summer, monsoon, winter, spring).",
+          "explanation": "Rotation and revolution are two fundamental motions of Earth. Understanding them explains day/night cycles and the yearly cycle of seasons — essential concepts in Earth science."
+        },
+        {
+          "id": "ch12-m3",
+          "type": "short",
+          "question": "Name the eight planets of the Solar System in order from the Sun. What memory trick can you use to remember them?",
+          "options": [],
+          "answer": "In order from the Sun: 1. Mercury, 2. Venus, 3. Earth, 4. Mars, 5. Jupiter, 6. Saturn, 7. Uranus, 8. Neptune. Memory trick: My Very Excited Martin Jumped Slowly Up Neptune. (Each first letter matches the planet: M-V-E-M-J-S-U-N.) Inner planets (rocky, smaller): Mercury, Venus, Earth, Mars. Outer planets (gas/ice giants, larger): Jupiter, Saturn, Uranus, Neptune. The Asteroid Belt lies between Mars and Jupiter, separating the two groups.",
+          "explanation": "Knowing the order of planets is fundamental to understanding solar system structure. The inner/outer planet distinction also helps explain their very different characteristics — rocky vs gas giant, small vs huge."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-h1",
+          "type": "long",
+          "question": "Venus is closer to the Sun than Earth but is actually hotter than Mercury, which is the closest planet to the Sun. Explain why. What lesson does Venus teach us about Earth's atmosphere?",
+          "options": [],
+          "answer": "Mercury vs Venus temperatures: Mercury is the closest planet to the Sun — yet it is NOT the hottest planet. Venus, which is farther away, is hotter. Why? Mercury has virtually no atmosphere. Heat from the Sun warms Mercury's surface, but at night all that heat escapes back into space. Surface temperatures swing wildly from 430°C during the day to -180°C at night. Venus has an extremely thick atmosphere made mostly of carbon dioxide (CO₂) with clouds of sulphuric acid. CO₂ is a greenhouse gas — it traps heat (like the glass of a greenhouse). Heat from the Sun enters Venus's atmosphere but cannot escape. This is called the runaway greenhouse effect. As a result, Venus maintains an average surface temperature of about 465°C — hotter than Mercury, even though it is farther from the Sun. Lesson for Earth: Earth's atmosphere also contains CO₂ and acts as a natural greenhouse — keeping Earth warm enough for life. But human activities (burning fossil fuels, deforestation) are increasing CO₂ levels in Earth's atmosphere. If this continues, Earth could warm dangerously — approaching conditions more like Venus. This is why climate change is a serious global concern and why reducing CO₂ emissions is so important.",
+          "explanation": "Venus is a powerful real-world example of the greenhouse effect taken to an extreme. It shows that atmospheric composition — not just distance from the Sun — determines a planet's temperature. Earth's rising CO₂ is a warning sign that we study by looking at Venus."
+        }
+      ]
+    },
+    {
+      "topic": "Moon, Asteroids, and Comets",
+      "easy": [
+        {
+          "id": "ch12-e11",
+          "type": "mcq",
+          "question": "How long does the Moon take to orbit Earth?",
+          "options": [
+            "About 27 days",
+            "About 365 days",
+            "About 24 hours",
+            "About 12 months"
+          ],
+          "answer": "About 27 days",
+          "explanation": "The Moon takes about 27.3 days to orbit Earth. Because it also rotates on its own axis in the same time, we always see the same face of the Moon from Earth."
+        },
+        {
+          "id": "ch12-e12",
+          "type": "mcq",
+          "question": "India's Chandrayaan-3 mission (2023) was historic because it —",
+          "options": [
+            "Was the first mission to land near the Moon's south pole",
+            "Was the first spacecraft to orbit the Sun",
+            "Discovered water on Mars",
+            "Was the first Indian satellite to orbit the Moon"
+          ],
+          "answer": "Was the first mission to land near the Moon's south pole",
+          "explanation": "Chandrayaan-3 successfully landed its Vikram lander and Pragyan rover near the lunar south pole on 23 August 2023. India became the first country to land near the Moon's south pole and the fourth country overall to achieve a soft lunar landing."
+        },
+        {
+          "id": "ch12-e13",
+          "type": "fill",
+          "question": "Most asteroids are found in the ______ Belt, located between Mars and Jupiter.",
+          "options": [],
+          "answer": "Asteroid",
+          "explanation": "The Asteroid Belt is a region between the orbits of Mars and Jupiter containing millions of rocky objects (asteroids) ranging from tiny pebbles to nearly 1,000 km across. These are thought to be material left over from the formation of the solar system."
+        },
+        {
+          "id": "ch12-e14",
+          "type": "mcq",
+          "question": "Halley's Comet is visible from Earth roughly every —",
+          "options": [
+            "76 years",
+            "12 years",
+            "100 years",
+            "Every year"
+          ],
+          "answer": "76 years",
+          "explanation": "Halley's Comet orbits the Sun in a long elliptical path and is visible from Earth about every 76 years. It was last visible in 1986 and is expected to return around 2061. It is named after British astronomer Edmond Halley who correctly predicted its return."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-m4",
+          "type": "short",
+          "question": "Why does the Moon appear to change shape (phases) over a month? Name four phases of the Moon.",
+          "options": [],
+          "answer": "The Moon does not produce its own light — it reflects sunlight. As the Moon orbits Earth over about 29.5 days, the angle between the Sun, Moon, and Earth changes. From Earth, we see different amounts of the Moon's lit (sunlit) surface at different times — these are the phases. When the Moon is between Earth and the Sun, its lit side faces away from us → New Moon (dark). As it moves, we see a thin sliver → Crescent. Half the lit side is visible → Quarter Moon. Most of the lit side visible → Gibbous Moon. The entire lit side faces us → Full Moon. Four phases: New Moon, Quarter Moon (Half Moon), Full Moon, Crescent.",
+          "explanation": "Moon phases are caused by the Moon's changing position relative to Earth and the Sun — not by Earth's shadow (that is a lunar eclipse). Understanding phases is important for calendars, tides, and cultural traditions (Indian festivals like Diwali, Eid, and Purnima are based on the lunar calendar)."
+        },
+        {
+          "id": "ch12-m5",
+          "type": "short",
+          "question": "What is a comet? Why does a comet develop a tail only when it comes near the Sun?",
+          "options": [],
+          "answer": "A comet is an icy, rocky object that orbits the Sun in a long, stretched (elliptical) orbit. Comets are made of ice (water, methane, ammonia), dust, and rock — sometimes called 'dirty snowballs'. When a comet is far from the Sun, it is cold and dark — with no tail. As it approaches the Sun, the Sun's heat causes the ice to turn directly to gas (sublimation). The gas and dust released form a glowing cloud around the comet called the coma. The Sun emits a stream of particles called the solar wind, which blows the gas and dust away from the Sun — forming the comet's bright tail. The tail always points away from the Sun (not behind the comet's direction of travel). As the comet moves away from the Sun again, it cools down and the tail disappears.",
+          "explanation": "Comet tails are fascinating — they are formed by the solar wind, not air resistance. A comet may have two tails: a dust tail (curved, white) and an ion/plasma tail (straight, bluish). Halley's Comet's periodic returns have been recorded across cultures for thousands of years."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "The Milky Way, Universe, and the Search for Life",
+      "easy": [
+        {
+          "id": "ch12-e15",
+          "type": "mcq",
+          "question": "What is the Milky Way?",
+          "options": [
+            "The galaxy that contains our Solar System — a spiral collection of hundreds of billions of stars",
+            "A bright comet visible every year",
+            "A constellation in the night sky",
+            "The name of the asteroid belt"
+          ],
+          "answer": "The galaxy that contains our Solar System — a spiral collection of hundreds of billions of stars",
+          "explanation": "The Milky Way is our home galaxy — a spiral galaxy containing hundreds of billions of stars, including our Sun. It is called Akasha Ganga in Indian tradition. On very dark nights, it appears as a hazy white band of light across the sky."
+        },
+        {
+          "id": "ch12-e16",
+          "type": "fill",
+          "question": "The Milky Way galaxy is called ______ Ganga in Indian tradition.",
+          "options": [],
+          "answer": "Akasha",
+          "explanation": "Akasha Ganga means 'the celestial river' in Sanskrit. This beautiful Indian name for the Milky Way compares it to the sacred River Ganga — a shimmering river of light flowing across the night sky."
+        },
+        {
+          "id": "ch12-e17",
+          "type": "mcq",
+          "question": "One light year is —",
+          "options": [
+            "The distance light travels in one year (~9.46 lakh crore km)",
+            "The time light takes to reach the Moon",
+            "The distance from Earth to the Sun",
+            "One million kilometres"
+          ],
+          "answer": "The distance light travels in one year (~9.46 lakh crore km)",
+          "explanation": "A light year is a unit of distance (not time), equal to about 9.46 × 10¹² km — the distance light travels in one year at 3 lakh km per second. Stars are so far away that kilometres are impractical — light years are the standard unit for astronomical distances."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-m6",
+          "type": "short",
+          "question": "What is an exoplanet? Why are scientists excited about finding Earth-like exoplanets in the habitable zone?",
+          "options": [],
+          "answer": "An exoplanet is a planet orbiting a star other than our Sun. Thousands of exoplanets have been discovered using space telescopes like Kepler and James Webb. Scientists are particularly excited about exoplanets in the 'habitable zone' — the region around a star where temperatures are just right for liquid water to exist on a planet's surface. Liquid water is considered essential for life as we know it. Finding an Earth-sized planet in the habitable zone of a Sun-like star raises the possibility that life — perhaps even intelligent life — may exist there. This makes the search for exoplanets one of the most thrilling frontiers in modern astronomy.",
+          "explanation": "The discovery of exoplanets has transformed astronomy and the search for extraterrestrial life. As of 2024, over 5,500 exoplanets have been confirmed. The James Webb Space Telescope is now analysing exoplanet atmospheres for signs of water and potentially oxygen — key biosignatures of life."
+        },
+        {
+          "id": "ch12-m7",
+          "type": "short",
+          "question": "What is light pollution? How does it affect our ability to see stars and what harm does it cause to wildlife?",
+          "options": [],
+          "answer": "Light pollution is the excess artificial light from street lamps, buildings, advertising signs, and vehicles that brightens the night sky. This skyglow makes faint stars and the Milky Way invisible from cities. Effects on astronomy: Astronomers cannot see faint stars, galaxies, or nebulae from cities and must travel to remote areas. Major observatories are built on mountains far from cities (e.g., the Indian Astronomical Observatory at Hanle, Ladakh — one of the world's highest observatories). Effects on wildlife: Nocturnal animals (owls, bats, moths) depend on darkness to hunt and navigate — bright lights confuse and disorient them. Sea turtle hatchlings instinctively move toward the sea (toward reflected moonlight) but get confused by bright beach lights. Migrating birds can be disoriented by brightly lit buildings at night. Solutions: Use shielded downward-pointing lights, switch off unnecessary lights, use warmer-toned LEDs, and designate dark-sky reserves.",
+          "explanation": "Light pollution affects both science and ecology. Dark-sky preserves are being created around the world. Hanle in Ladakh is one of India's darkest areas — the local government and astronomical community are working together to keep it dark for both science and local tourism."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-h2",
+          "type": "long",
+          "question": "India's space programme, led by ISRO, has achieved remarkable milestones. Describe three major achievements of ISRO and explain why space exploration matters for a developing country like India.",
+          "options": [],
+          "answer": "Three major achievements of ISRO: 1. Mangalyaan — Mars Orbiter Mission (2014): India became the first country to successfully reach Mars in its very first attempt and the first Asian nation to do so. The mission cost only about ₹450 crore (less than the budget of many Hollywood films!) — showcasing India's ability to do world-class science cost-effectively. 2. Chandrayaan-3 (2023): India successfully landed the Vikram lander and Pragyan rover near the Moon's south pole on 23 August 2023 — a historic first. India became the first country to explore the lunar south pole, a region potentially rich in water ice. The Chandrayaan-1 mission (2008) had earlier discovered evidence of water molecules on the Moon. 3. PSLV and satellite launches: India's Polar Satellite Launch Vehicle (PSLV) is one of the world's most reliable and affordable launch vehicles. India has launched hundreds of satellites for multiple countries, earning foreign revenue and establishing itself as a global launch service provider. One PSLV mission set a world record by launching 104 satellites in a single mission (2017). Why space exploration matters for India: 1. Practical benefits — satellites provide weather forecasts (critical for farmers and disaster management), GPS navigation, communication, remote sensing for agriculture and disaster monitoring. 2. Scientific knowledge — understanding the Moon, Mars, and beyond advances human knowledge. 3. Technology development — space research drives innovation in electronics, materials, computing, and engineering — skills that benefit industry and defence. 4. National pride and inspiration — ISRO inspires millions of young Indians to pursue science and engineering.",
+          "explanation": "ISRO's achievements are remarkable for their scientific ambition and cost-effectiveness. India's space missions balance national pride, practical utility (satellite services), and fundamental science. The Chandrayaan-3 landing was watched live by millions of Indians — a powerful example of science as a national aspiration."
+        }
+      ]
+    }
+  ]
+}
