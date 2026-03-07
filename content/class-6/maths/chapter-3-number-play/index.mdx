@@ -1,0 +1,327 @@
+---
+title: Chapter 3 Number Play
+---
+
+## Numbers Are Full of Surprises
+
+You have been using numbers since you were very young. But numbers hide many secrets — tricks, puzzles, and patterns that have fascinated mathematicians for thousands of years. Some of these puzzles are still unsolved today!
+
+In this chapter, we will **play** with numbers — and discover how surprising and beautiful they can be.
+
+---
+
+## Numbers in Our World
+
+Before we play with numbers, notice how numbers are all around us:
+- The number on your house
+- The PIN of your bank account
+- A cricket score
+- The population of India (about 140 crore!)
+- The distance from Delhi to Mumbai (about 1,400 km)
+- The size of a bacterium (about 0.000001 m)
+
+We use different types of numbers for different purposes. Some numbers name things (**nominal** — like bus number 36, or jersey number 10). Some numbers **count** (how many students in a class). Some numbers **measure** (how many kg, km, or °C).
+
+---
+
+## Interesting Number Properties
+
+### Supercells
+
+Look at a row of numbers. A number is a **supercell** if it is **greater than all its neighbours** (the numbers directly next to it).
+
+*Example:* In the row: 3, **7**, 2, **9**, 1, **8**, 4
+
+- 7 is greater than 3 and 2 → **supercell** ✓
+- 9 is greater than 2 and 1 → **supercell** ✓
+- 8 is greater than 1 and 4 → **supercell** ✓
+
+Numbers at the ends only have one neighbour.
+
+> *Challenge:* In a row of numbers, can two supercells be next to each other? Why or why not?
+> (Think: if A and B are adjacent, A is a supercell means A > B, and B is a supercell means B > A — both can't be true at the same time!)
+
+---
+
+## Divisibility Rules
+
+Instead of dividing to check, we can use quick **divisibility rules**:
+
+| Divisible by | Rule | Example |
+|-------------|------|---------|
+| **2** | Last digit is 0, 2, 4, 6, or 8 (even) | 348 ÷ 2 ✓ (last digit 8) |
+| **3** | Sum of digits is divisible by 3 | 375: 3+7+5=15, 15÷3=5 ✓ |
+| **4** | Last two digits form a number divisible by 4 | 1,532: last two digits 32, 32÷4=8 ✓ |
+| **5** | Last digit is 0 or 5 | 245 ÷ 5 ✓, 780 ÷ 5 ✓ |
+| **6** | Divisible by both 2 AND 3 | 126: even ✓, 1+2+6=9 ÷3 ✓, so ÷6 ✓ |
+| **8** | Last three digits divisible by 8 | 3,120: last three digits 120, 120÷8=15 ✓ |
+| **9** | Sum of digits is divisible by 9 | 729: 7+2+9=18, 18÷9=2 ✓ |
+| **10** | Last digit is 0 | 450 ÷ 10 ✓ |
+| **11** | Difference of (sum of digits in odd positions) and (sum of digits in even positions) is 0 or divisible by 11 | 2,728: (2+2)−(7+8) = 4−15 = −11 → divisible by 11 ✓ |
+
+**Worked Examples:**
+
+*Is 4,572 divisible by 3?*
+> Sum of digits = 4 + 5 + 7 + 2 = **18**. Is 18 divisible by 3? Yes (18 ÷ 3 = 6). So **yes**, 4,572 is divisible by 3.
+
+*Is 7,836 divisible by 9?*
+> Sum of digits = 7 + 8 + 3 + 6 = **24**. Is 24 divisible by 9? No (24 ÷ 9 = 2 remainder 6). So **no**.
+
+*Is 5,280 divisible by 6?*
+> Check divisible by 2: last digit 0 → **yes**.
+> Check divisible by 3: 5+2+8+0=15, 15÷3=5 → **yes**.
+> Divisible by both 2 and 3 → **yes**, 5,280 is divisible by 6.
+
+---
+
+## Playing with Digit Sums
+
+The **digit sum** of a number is found by adding all its digits. If the result has more than one digit, add again — until you get a single digit.
+
+*Example:* Digit sum of 4,679:
+> 4 + 6 + 7 + 9 = 26 → 2 + 6 = **8**
+
+*Example:* Digit sum of 999:
+> 9 + 9 + 9 = 27 → 2 + 7 = **9**
+
+**Pattern — The digit sum of multiples of 9 is always 9:**
+- 9 → 9
+- 18 → 1+8 = 9
+- 27 → 2+7 = 9
+- 36 → 3+6 = 9
+- 99 → 9+9=18 → 1+8 = 9
+
+This is why the **divisibility rule for 9** works — if the digit sum equals 9 (or a multiple of 9), the number is divisible by 9.
+
+---
+
+## Kaprekar's Constant — 6174
+
+This is one of the most magical discoveries in recreational mathematics, made by Indian mathematician **D. R. Kaprekar** (1905–1986) from Devlali, Maharashtra.
+
+**The trick:**
+1. Take any **4-digit number** where not all digits are the same (e.g., 1234, 5678, 9081).
+2. Arrange its digits in **descending order** (largest to smallest) → call this number A.
+3. Arrange its digits in **ascending order** (smallest to largest) → call this number B.
+4. Compute **A − B**.
+5. Repeat with the result.
+6. You will **always reach 6174** — usually within 7 steps!
+
+**Example with 1234:**
+
+| Step | Descending | Ascending | Difference |
+|------|-----------|-----------|------------|
+| 1 | 4321 | 1234 | 4321 − 1234 = **3087** |
+| 2 | 8730 | 0378 | 8730 − 0378 = **8352** |
+| 3 | 8532 | 2358 | 8532 − 2358 = **6174** |
+
+Done in 3 steps! Now check: 7641 − 1467 = **6174** — it loops back to itself!
+
+**Example with 5678:**
+
+| Step | Descending | Ascending | Difference |
+|------|-----------|-----------|------------|
+| 1 | 8765 | 5678 | 8765 − 5678 = **3087** |
+| 2 | 8730 | 0378 | 8730 − 0378 = **8352** |
+| 3 | 8532 | 2358 | 8532 − 2358 = **6174** |
+
+> **6174 is called Kaprekar's Constant** — every 4-digit number (with at least two different digits) leads to 6174!
+
+*Try with your favourite 4-digit number. Count how many steps it takes to reach 6174!*
+
+---
+
+## The Collatz Conjecture — An Unsolved Mystery
+
+Here is a simple rule that has puzzled mathematicians for nearly 100 years — and **nobody has proved it yet**.
+
+**The rule:**
+- Start with any positive whole number.
+- If it is **even**: divide by 2.
+- If it is **odd**: multiply by 3 and add 1.
+- Repeat. The conjecture says you will **always eventually reach 1**.
+
+**Example starting from 6:**
+
+| Step | Number | Operation |
+|------|--------|-----------|
+| 1 | 6 | Even → 6 ÷ 2 = **3** |
+| 2 | 3 | Odd → 3×3+1 = **10** |
+| 3 | 10 | Even → 10 ÷ 2 = **5** |
+| 4 | 5 | Odd → 5×3+1 = **16** |
+| 5 | 16 | Even → 16 ÷ 2 = **8** |
+| 6 | 8 | Even → 8 ÷ 2 = **4** |
+| 7 | 4 | Even → 4 ÷ 2 = **2** |
+| 8 | 2 | Even → 2 ÷ 2 = **1** ✓ |
+
+**Example starting from 27:** (takes 111 steps to reach 1 — and goes as high as 9,232 along the way!)
+
+**Example starting from 7:**
+> 7 → 22 → 11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1 ✓
+
+Computers have checked the Collatz rule for all numbers up to 10²⁰ (that's 1 followed by 20 zeros!) — and it always reaches 1. But mathematicians have not been able to prove it will work for *every* number. This is called the **Collatz Conjecture** — a conjecture is something believed to be true but not yet proved.
+
+> This is what makes mathematics exciting — there are simple questions that even the smartest people in the world haven't answered yet!
+
+---
+
+## Magic Squares
+
+A **magic square** is a grid of numbers where the sum of every row, every column, and both diagonals is the **same number** (called the **magic sum**).
+
+### 3×3 Magic Square
+
+```
+2  7  6
+9  5  1
+4  3  8
+```
+
+Check:
+- Rows: 2+7+6=15, 9+5+1=15, 4+3+8=15 ✓
+- Columns: 2+9+4=15, 7+5+3=15, 6+1+8=15 ✓
+- Diagonals: 2+5+8=15, 6+5+4=15 ✓
+
+Magic sum = **15**
+
+This square uses the numbers 1 to 9, each exactly once!
+
+> **Indian connection:** Magic squares have been studied in India for over 2,000 years. The ancient text *Garga Samhita* (1st century CE) contains magic squares. The 4×4 magic square in the famous **Parshvanath Jain temple** in Khajuraho (Madhya Pradesh) has a magic sum of **34** and was created around 900 CE — centuries before Europeans studied them!
+
+### The Lo Shu Magic Square
+
+The 3×3 magic square above is one of the oldest known — from ancient China (Lo Shu square, ~650 BCE). In India, similar squares appear in ancient Sanskrit texts.
+
+---
+
+## Pascal's Triangle
+
+Arrange numbers in a triangle like this — each number is the **sum of the two numbers directly above it**:
+
+```
+           1
+          1 1
+         1 2 1
+        1 3 3 1
+       1 4 6 4 1
+      1 5 10 10 5 1
+```
+
+**Hidden patterns in Pascal's Triangle:**
+
+1. **Each row gives the powers of 11:**
+   - Row 1: 1 → 11⁰ = 1
+   - Row 2: 11 → 11¹ = 11
+   - Row 3: 121 → 11² = 121
+   - Row 4: 1331 → 11³ = 1331
+   - Row 5: 14641 → 11⁴ = 14641
+
+2. **Each row sums to a power of 2:**
+   - Row 1: 1 = 2⁰
+   - Row 2: 1+1 = 2 = 2¹
+   - Row 3: 1+2+1 = 4 = 2²
+   - Row 4: 1+3+3+1 = 8 = 2³
+
+3. **The diagonal of 1s, then natural numbers, then triangular numbers!**
+   - Outermost diagonal: 1, 1, 1, 1 … (all 1s)
+   - Next diagonal: 1, 2, 3, 4, 5 … (natural numbers)
+   - Next diagonal: 1, 3, 6, 10, 15 … (triangular numbers!)
+
+4. **The Virahanka (Fibonacci) sequence** appears — look at the shallow diagonals!
+
+---
+
+## Numbers in Different Bases
+
+We normally use **base 10** — ten digits (0-9), and each position is a power of 10.
+
+The number 345 means:
+> 3 × 100 + 4 × 10 + 5 × 1 = 300 + 40 + 5
+
+Computers use **base 2** (binary) — only two digits: 0 and 1.
+
+*Example:* The number 13 in binary:
+> 13 = 8 + 4 + 1 = 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = **1101** in binary
+
+| Decimal | Binary |
+|---------|--------|
+| 1 | 1 |
+| 2 | 10 |
+| 3 | 11 |
+| 4 | 100 |
+| 5 | 101 |
+| 8 | 1000 |
+
+---
+
+## Estimation — The Art of Smart Guessing
+
+Sometimes we do not need an exact answer — a good **estimate** is enough.
+
+**Estimation strategies:**
+
+**Rounding:** Replace numbers with nearby round numbers.
+- 387 + 214 ≈ 400 + 200 = **600** (actual: 601 — very close!)
+
+**Front-end estimation:** Use only the leading digits.
+- 4,723 + 3,189 ≈ 4,000 + 3,000 = **7,000** (actual: 7,912)
+
+*Indian examples of estimation:*
+- A shopkeeper estimates if a customer has given enough money.
+- A cook estimates the amount of dal needed for 20 guests.
+- A civil engineer estimates the number of bricks needed for a wall.
+- A cricket commentator estimates that a six cleared the boundary by 10 metres.
+
+**Worked Example:** A school has 1,247 girls and 1,389 boys. About how many students in total?
+> Round: 1,247 ≈ 1,250 and 1,389 ≈ 1,400
+> Estimate: 1,250 + 1,400 = **2,650** (Actual: 2,636 — close enough for a quick estimate!)
+
+---
+
+## The Beauty of Number Patterns
+
+### Palindromic numbers
+
+A **palindrome** reads the same forwards and backwards.
+- 121, 1331, 12321, 9009, 1001001
+
+*The 1 × 1 pattern:*
+```
+  1 × 1 = 1
+ 11 × 11 = 121
+111 × 111 = 12321
+1111 × 1111 = 1234321
+11111 × 11111 = 123454321
+```
+
+All palindromes! The pattern continues until 111,111,111 × 111,111,111.
+
+### The 9 trick:
+```
+9 × 1 = 9
+9 × 2 = 18   → 1+8 = 9
+9 × 3 = 27   → 2+7 = 9
+9 × 4 = 36   → 3+6 = 9
+9 × 12 = 108 → 1+0+8 = 9
+9 × 99 = 891 → 8+9+1 = 18 → 1+8 = 9
+```
+
+The digit sum of any multiple of 9 is always 9!
+
+---
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Divisibility rule** | A quick test to check if a number is divisible by another without doing full division |
+| **Digit sum** | The sum of all digits of a number (repeated until a single digit) |
+| **Kaprekar's Constant** | The number 6174 — every 4-digit number reaches it through the Kaprekar process |
+| **Collatz Conjecture** | The unsolved puzzle: apply odd→3n+1, even→n÷2 repeatedly, you always reach 1 |
+| **Magic square** | A grid where rows, columns, and diagonals all have the same sum |
+| **Palindrome** | A number (or word) that reads the same forwards and backwards |
+| **Estimation** | Finding an approximate answer, close enough to be useful |
+| **Conjecture** | A statement believed to be true but not yet proved |
+| **Pascal's Triangle** | A triangle of numbers where each number = sum of two above it |
+| **Base 10** | Our number system using digits 0–9, with each position worth 10× the one to its right |
+| **Binary (Base 2)** | Number system using only 0 and 1 — used by computers |

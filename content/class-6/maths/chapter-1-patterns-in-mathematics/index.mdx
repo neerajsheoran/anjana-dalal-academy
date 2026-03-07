@@ -1,0 +1,328 @@
+---
+title: Chapter 1 Patterns in Mathematics
+---
+
+## What Is Mathematics?
+
+Have you ever noticed the spiral on a snail's shell, the petals of a sunflower, or the branching of a tree? Have you counted the sections of an orange or the rows on a pineapple?
+
+All of these follow **patterns** — and patterns are at the very heart of mathematics.
+
+> "Mathematics is the science of patterns." — Mathematician's saying
+>
+> Fields Medal winner **Manjul Bhargava** (the first person of Indian origin to win the highest prize in mathematics) describes mathematics as a **creative art** — much like music or painting. The "art" in mathematics lies in discovering beautiful patterns and understanding *why* they appear.
+
+Mathematics is not just about calculating. It is about **noticing**, **wondering**, **guessing**, and **proving**.
+
+---
+
+## What Is a Pattern?
+
+A **pattern** is a sequence or arrangement that follows a **rule**. Once you know the rule, you can predict what comes next.
+
+*Examples of patterns in daily life:*
+- Monday, Tuesday, Wednesday, Thursday… *(days repeat in a cycle)*
+- 2, 4, 6, 8, 10… *(each number is 2 more than the previous)*
+- ◆ ◆◆ ◆◆◆ ◆◆◆◆… *(one more diamond added each time)*
+- The black and white squares on a chessboard
+- The design on a rangoli or tile floor
+
+---
+
+## Number Sequences
+
+A **sequence** is a list of numbers arranged in a specific order, following a pattern or rule.
+
+### 1. Counting Numbers (Natural Numbers)
+
+**1, 2, 3, 4, 5, 6, 7, 8, …**
+
+The simplest sequence — add 1 each time. These are the numbers we use to count objects.
+
+---
+
+### 2. Odd Numbers
+
+**1, 3, 5, 7, 9, 11, 13, …**
+
+Start at 1, add 2 each time. Odd numbers cannot be divided equally into two groups.
+
+*Pattern:* The nth odd number = **2n − 1**
+- 1st odd = 2(1) − 1 = 1
+- 5th odd = 2(5) − 1 = 9 ✓
+
+---
+
+### 3. Even Numbers
+
+**2, 4, 6, 8, 10, 12, …**
+
+Start at 2, add 2 each time. Even numbers can always be divided into two equal groups.
+
+*Pattern:* The nth even number = **2n**
+- 1st even = 2(1) = 2
+- 6th even = 2(6) = 12 ✓
+
+---
+
+### 4. Triangular Numbers
+
+**1, 3, 6, 10, 15, 21, 28, …**
+
+These numbers can be arranged as **triangles of dots**:
+
+```
+●          = 1
+● ●        = 3
+● ● ●      = 6
+● ● ● ●    = 10
+```
+
+*How to get the next term:* Add the next counting number.
+- 1 → +2 → 3 → +3 → 6 → +4 → 10 → +5 → 15 …
+
+*Pattern:* The nth triangular number = **n × (n+1) ÷ 2**
+- 4th triangular = 4 × 5 ÷ 2 = **10** ✓
+
+*A beautiful fact:* The sum of the first n counting numbers = the nth triangular number!
+- 1 + 2 + 3 + 4 = 10 = 4th triangular number ✓
+
+---
+
+### 5. Square Numbers
+
+**1, 4, 9, 16, 25, 36, 49, …**
+
+These numbers can be arranged as **squares of dots**:
+
+```
+●    ● ●    ● ● ●
+          ● ●    ● ● ●
+                 ● ● ●
+1     4      9
+```
+
+*Pattern:* The nth square number = **n²** (n × n)
+- 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25 …
+
+*Another beautiful fact:* Each square number = sum of consecutive odd numbers!
+- 1 = 1
+- 4 = 1 + 3
+- 9 = 1 + 3 + 5
+- 16 = 1 + 3 + 5 + 7
+- 25 = 1 + 3 + 5 + 7 + 9
+
+*And:* Square numbers = sum of two consecutive triangular numbers!
+- 4 = 1 + 3 (1st + 2nd triangular)
+- 9 = 3 + 6 (2nd + 3rd triangular)
+- 16 = 6 + 10 (3rd + 4th triangular)
+
+---
+
+### 6. Cube Numbers
+
+**1, 8, 27, 64, 125, 216, …**
+
+*Pattern:* The nth cube number = **n³** (n × n × n)
+- 1³ = 1, 2³ = 8, 3³ = 27, 4³ = 64, 5³ = 125 …
+
+*A stunning fact* (discovered centuries ago):
+- 1³ = 1 = 1²
+- 1³ + 2³ = 9 = 3²
+- 1³ + 2³ + 3³ = 36 = 6²
+- 1³ + 2³ + 3³ + 4³ = 100 = 10²
+
+The sum of the first n cube numbers = (nth triangular number)²!
+
+---
+
+### 7. Powers of 2
+
+**1, 2, 4, 8, 16, 32, 64, 128, …**
+
+*Pattern:* Double the previous term. Each term = **2ⁿ⁻¹**
+- Term 1 = 2⁰ = 1
+- Term 2 = 2¹ = 2
+- Term 3 = 2² = 4
+- Term 6 = 2⁵ = 32
+
+*Where do we see powers of 2?*
+- A cell divides into 2 → those 2 divide into 4 → 8 → 16 → … (cell division)
+- A paper folded in half repeatedly: 1 layer → 2 → 4 → 8 …
+- Computer memory: 1 KB, 2 KB, 4 KB, 8 KB, 16 KB… (binary system)
+
+*A famous story — the wheat and chessboard:*
+A king offered a wise man any reward. The wise man asked for 1 grain of wheat on the first square of a chessboard, 2 on the second, 4 on the third, doubling each time. By the 64th square, the total would be 2⁶⁴ − 1 ≈ 18,000,000,000,000,000,000 grains — more wheat than has ever existed on Earth!
+
+---
+
+### 8. Virahanka Numbers (Fibonacci Sequence)
+
+**1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …**
+
+*Rule:* Each term = sum of the two terms before it.
+- 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8 …
+
+> These numbers were described by the Indian mathematician and poet **Virahanka** (around 700 CE) — centuries before the European mathematician Fibonacci wrote about them! Virahanka studied how many ways you can arrange short (1-beat) and long (2-beat) rhythms in poetry of different lengths. This is why in India they are often called **Virahanka numbers**.
+
+*Where do Virahanka numbers appear in nature?*
+- **Sunflower spirals** — count the clockwise spirals (34) and anticlockwise spirals (55) — both Virahanka numbers!
+- **Pine cone scales** — arranged in spirals of 8 and 13.
+- **Pineapple** — spirals of 8 and 13.
+- **Leaf arrangement (phyllotaxis)** on stems — leaves arranged to maximise sunlight exposure, following Virahanka angles.
+- **Branching in trees** — the number of branches follows this sequence.
+
+---
+
+## Visualising Numbers as Shapes
+
+Numbers can be represented as arrangements of dots. This is how ancient Indian and Greek mathematicians thought about them — not just as abstract symbols but as **shapes**.
+
+### Triangular numbers as triangles:
+```
+●        ●●       ●●●      ●●●●
+         ●        ●●       ●●●
+                  ●        ●●
+                           ●
+  1        3        6       10
+```
+
+### Square numbers as squares:
+```
+●    ●●    ●●●    ●●●●
+     ●●    ●●●    ●●●●
+           ●●●    ●●●●
+                  ●●●●
+1     4      9      16
+```
+
+*Did you notice?* Each square number is built by adding an "L-shape" (called a gnomon) to the previous square — and the gnomon is always an odd number!
+
+---
+
+## Patterns in Operations
+
+### Sum of first n odd numbers = n²
+
+| How many odd numbers | Sum | Equals |
+|----------------------|-----|--------|
+| First 1 | 1 | 1² = 1 |
+| First 2 | 1 + 3 = 4 | 2² = 4 |
+| First 3 | 1 + 3 + 5 = 9 | 3² = 9 |
+| First 4 | 1 + 3 + 5 + 7 = 16 | 4² = 16 |
+| First 5 | 1 + 3 + 5 + 7 + 9 = 25 | 5² = 25 |
+
+### The 1-2-3 pattern:
+```
+  1 × 1 = 1
+ 11 × 11 = 121
+111 × 111 = 12321
+```
+Notice the palindrome pattern in the answers!
+
+---
+
+## Sequences of Shapes
+
+Patterns don't have to be just numbers — shapes can form sequences too.
+
+*Example:* A sequence of growing L-shapes:
+```
+■      ■■     ■■■     ■■■■
+       ■      ■■      ■■■
+              ■       ■■
+                      ■
+1      3      6       10  (triangular numbers!)
+```
+
+*Example:* A sequence of growing plus (+) signs:
+```
+  ■        ■         ■
+■■■■    ■■■■■      ■■■■■
+  ■        ■■■        ■■■■■
+           ■           ■
+                       ■
+ 1         5          13  (these follow a different pattern — can you find it?)
+```
+
+---
+
+## Patterns in Nature
+
+Mathematics appears everywhere in the natural world:
+
+- **Snowflakes** — every snowflake has 6-fold symmetry, yet no two are identical.
+- **Honeycomb** — bees build hexagonal cells because hexagons pack together without gaps and use the least wax for the most space.
+- **Sunflower seeds** — packed in interlocking spirals, always Virahanka numbers.
+- **Spider webs** — precise geometric spirals.
+- **River deltas** — branch in self-similar (fractal) patterns.
+- **Coastlines** — jagged at every scale of measurement (fractal geometry).
+
+> **Fractals:** When you zoom in on a fractal shape, it looks similar to the whole — it is self-similar at every scale. Clouds, mountain ranges, and the branching of blood vessels and trees are all fractal-like.
+
+---
+
+## What Comes Next? — Finding the Rule
+
+To continue a sequence, always look for the **rule** that connects consecutive terms.
+
+**Strategy 1 — Look at differences:**
+
+Sequence: 3, 7, 11, 15, 19, …
+
+| Term | Difference |
+|------|-----------|
+| 3 → 7 | +4 |
+| 7 → 11 | +4 |
+| 11 → 15 | +4 |
+
+Difference is constant (+4), so next term = 19 + 4 = **23**
+
+**Strategy 2 — Look at ratios:**
+
+Sequence: 2, 6, 18, 54, …
+
+| Term | Ratio |
+|------|-------|
+| 2 → 6 | ×3 |
+| 6 → 18 | ×3 |
+| 18 → 54 | ×3 |
+
+Each term is multiplied by 3, so next term = 54 × 3 = **162**
+
+**Strategy 3 — Look at position:**
+
+Sequence: 1, 4, 9, 16, 25, …
+Position:   1, 2, 3,  4,  5, …
+
+Term = position² → next term (position 6) = 6² = **36**
+
+---
+
+## Summary of Key Sequences
+
+| Sequence | First few terms | Rule |
+|----------|----------------|------|
+| Counting numbers | 1, 2, 3, 4, 5 … | Add 1 |
+| Odd numbers | 1, 3, 5, 7, 9 … | Add 2 (start at 1) |
+| Even numbers | 2, 4, 6, 8, 10 … | Add 2 (start at 2) |
+| Triangular numbers | 1, 3, 6, 10, 15 … | Add next counting number |
+| Square numbers | 1, 4, 9, 16, 25 … | n² |
+| Cube numbers | 1, 8, 27, 64, 125 … | n³ |
+| Powers of 2 | 1, 2, 4, 8, 16 … | Double each time |
+| Virahanka (Fibonacci) | 1, 1, 2, 3, 5, 8 … | Sum of two previous terms |
+
+---
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Sequence** | A list of numbers or shapes arranged in order according to a rule |
+| **Term** | Each number or shape in a sequence |
+| **Pattern** | An arrangement that follows a predictable rule |
+| **Square number** | A number that is the product of a number with itself (n²) |
+| **Triangular number** | A number that can be arranged as a triangle of dots |
+| **Cube number** | A number that is n × n × n (n³) |
+| **Virahanka numbers** | A sequence where each term = sum of the two previous terms (1, 1, 2, 3, 5, 8, …) |
+| **Fractal** | A shape that looks similar at every level of magnification |

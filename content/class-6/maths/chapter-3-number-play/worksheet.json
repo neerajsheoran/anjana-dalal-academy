@@ -1,0 +1,209 @@
+{
+  "chapterRef": "class-6/maths/chapter-3-number-play/worksheet",
+  "topics": [
+    {
+      "topic": "Divisibility Rules",
+      "easy": [
+        {
+          "id": "m3-e1",
+          "type": "mcq",
+          "question": "Which of the following numbers is divisible by 9?",
+          "options": ["4,572", "3,481", "7,265", "1,234"],
+          "answer": "4,572",
+          "explanation": "Divisibility rule for 9: sum of digits must be divisible by 9. 4+5+7+2 = 18, and 18÷9 = 2 ✓. Check others: 3+4+8+1=16 (no), 7+2+6+5=20 (no), 1+2+3+4=10 (no)."
+        },
+        {
+          "id": "m3-e2",
+          "type": "mcq",
+          "question": "Is 7,836 divisible by 6?",
+          "options": [
+            "Yes — it is divisible by both 2 and 3",
+            "No — it is not divisible by 2",
+            "No — it is not divisible by 3",
+            "Yes — because it ends in 6"
+          ],
+          "answer": "Yes — it is divisible by both 2 and 3",
+          "explanation": "Divisibility by 6 requires divisibility by both 2 AND 3. By 2: last digit is 6 (even) ✓. By 3: 7+8+3+6 = 24, and 24÷3 = 8 ✓. Since divisible by both 2 and 3, it is divisible by 6."
+        },
+        {
+          "id": "m3-e3",
+          "type": "fill",
+          "question": "The digit sum of 6,849 (reduced to a single digit) is ______.",
+          "options": [],
+          "answer": "9",
+          "explanation": "6+8+4+9 = 27. Then 2+7 = 9. The digit sum is 9 — which means 6,849 is divisible by 9!"
+        },
+        {
+          "id": "m3-e4",
+          "type": "mcq",
+          "question": "Which rule can you use to quickly check if 5,280 is divisible by 4?",
+          "options": [
+            "Check if the last two digits (80) form a number divisible by 4",
+            "Check if the sum of all digits is divisible by 4",
+            "Check if the last digit is even",
+            "Check if the number ends in 0"
+          ],
+          "answer": "Check if the last two digits (80) form a number divisible by 4",
+          "explanation": "Divisibility rule for 4: the last two digits must form a number divisible by 4. Last two digits = 80. 80 ÷ 4 = 20 ✓. So 5,280 is divisible by 4."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m3-m1",
+          "type": "short",
+          "question": "Find the smallest 4-digit number that is divisible by both 3 and 5. Show your working.",
+          "options": [],
+          "answer": "Divisible by both 3 and 5 means divisible by 15. Smallest 4-digit number = 1000. Is 1000 divisible by 15? 1000 ÷ 15 = 66.67 (no). Next multiple of 15 after 1000: 15 × 67 = 1005. Check: Divisible by 5? Last digit 5 ✓. Divisible by 3? 1+0+0+5=6, 6÷3=2 ✓. So 1005 is the smallest 4-digit number divisible by both 3 and 5.",
+          "explanation": "A number divisible by both 3 and 5 must be divisible by 15 (since 3 and 5 share no common factors). Find the smallest 4-digit multiple of 15 by dividing 1000 by 15 and taking the next whole multiple."
+        },
+        {
+          "id": "m3-m2",
+          "type": "short",
+          "question": "A number N has 4 digits. The sum of its digits is 18. It is even. Its last two digits form a number divisible by 4. Give one possible value of N and verify all conditions.",
+          "options": [],
+          "answer": "One possible answer: N = 2,916. Check: (1) 4 digits ✓. (2) Digit sum: 2+9+1+6 = 18 ✓. (3) Even: last digit 6 ✓. (4) Last two digits 16: 16÷4=4 ✓. Another possible answer: 3,612 (3+6+1+2=12, not 18 — incorrect). Let's try 4,518: 4+5+1+8=18 ✓, even ✓, last two digits 18: 18÷4=4.5 ✗. Try 1,836: 1+8+3+6=18 ✓, even ✓, last two digits 36: 36÷4=9 ✓. So N = 1,836 also works.",
+          "explanation": "This question requires combining multiple divisibility conditions. A digit sum of 18 means the number is also divisible by 9. An even number whose last two digits are divisible by 4 is also divisible by 4. So any valid N is divisible by both 9 and 4 — meaning it is divisible by 36."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Kaprekar's Constant and Number Tricks",
+      "easy": [
+        {
+          "id": "m3-e5",
+          "type": "mcq",
+          "question": "What is Kaprekar's Constant?",
+          "options": ["6174", "1729", "3087", "8352"],
+          "answer": "6174",
+          "explanation": "Kaprekar's Constant is 6174. Any 4-digit number (with at least two different digits) will reach 6174 within 7 steps of the Kaprekar process (arrange digits in descending order, subtract ascending arrangement, repeat)."
+        },
+        {
+          "id": "m3-e6",
+          "type": "fill",
+          "question": "D. R. Kaprekar was a mathematician from ______, India, who discovered the constant that bears his name.",
+          "options": [],
+          "answer": "Devlali (Maharashtra)",
+          "explanation": "D. R. Kaprekar (1905–1986) was born in Dahanu, Maharashtra, and worked as a school teacher in Devlali. He made many recreational mathematics discoveries including Kaprekar numbers and Kaprekar's constant 6174."
+        },
+        {
+          "id": "m3-e7",
+          "type": "mcq",
+          "question": "Apply the Kaprekar process once to 2,581. What do you get?",
+          "options": ["6174", "8532 − 1258 = 7274", "8521 − 1258 = 7263", "5821 − 1258 = 4563"],
+          "answer": "8521 − 1258 = 7263",
+          "explanation": "Digits of 2,581: 2, 5, 8, 1. Descending: 8521. Ascending: 1258. Difference: 8521 − 1258 = 7263. (Continue: 7632 − 2367 = 5265, then 6552 − 2556 = 3996, then 9963 − 3699 = 6264, then 6642 − 2466 = 4176, then 7641 − 1467 = 6174 ✓)"
+        }
+      ],
+      "medium": [
+        {
+          "id": "m3-m3",
+          "type": "short",
+          "question": "Apply the Kaprekar process to 3,524. Show each step until you reach 6174.",
+          "options": [],
+          "answer": "Start: 3,524. Digits: 3,5,2,4. Step 1: Descending = 5432, Ascending = 2345. 5432 − 2345 = 3087. Step 2: Digits of 3087: 3,0,8,7. Descending = 8730, Ascending = 0378. 8730 − 0378 = 8352. Step 3: Digits of 8352: 8,3,5,2. Descending = 8532, Ascending = 2358. 8532 − 2358 = 6174. ✓ Reached in 3 steps.",
+          "explanation": "Note: when arranging digits in ascending order, zeros go first (e.g., 3087 → ascending = 0378, which we treat as the 4-digit number 0378 = 378 in the subtraction). The Kaprekar process is reliable — no matter what 4-digit number you start with (as long as all digits aren't identical), you always reach 6174."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m3-h1",
+          "type": "long",
+          "question": "The number 1729 is famous in mathematics as the Hardy-Ramanujan number. Research: (a) Who was Ramanujan? (b) Why is 1729 special — express it as the sum of two cubes in two different ways. (c) What connection does Ramanujan have to India?",
+          "options": [],
+          "answer": "(a) Srinivasa Ramanujan (1887–1920) was one of the greatest mathematical geniuses in history. Born in Erode, Tamil Nadu, he had almost no formal mathematical training but independently discovered thousands of mathematical results. He was invited to Cambridge University by British mathematician G. H. Hardy. (b) 1729 is the smallest number that can be expressed as the sum of two cubes in TWO different ways: Way 1: 1³ + 12³ = 1 + 1728 = 1729. Way 2: 9³ + 10³ = 729 + 1000 = 1729. The story: Hardy visited Ramanujan in hospital and mentioned his taxi had the 'dull' number 1729. Ramanujan immediately replied it was not dull — it was the smallest number expressible as the sum of two cubes in two ways! (c) Ramanujan was Indian — born in Tamil Nadu. His birthday (22 December) is celebrated as National Mathematics Day in India. He is an inspiration for Indian students of mathematics — showing that genius can come from anywhere.",
+          "explanation": "1729 is called a 'taxicab number'. Ramanujan's life story is extraordinary — he sent letters to Hardy full of mathematical theorems, many completely new. Hardy said that Ramanujan's results were 'of the highest class' and could only have been discovered by one of the greatest mathematicians in the world."
+        }
+      ]
+    },
+    {
+      "topic": "The Collatz Conjecture and Magic Squares",
+      "easy": [
+        {
+          "id": "m3-e8",
+          "type": "mcq",
+          "question": "In the Collatz process, if the current number is 12 (even), what is the next number?",
+          "options": ["37", "6", "36 + 1 = 37", "12 + 1 = 13"],
+          "answer": "6",
+          "explanation": "Collatz rule for even numbers: divide by 2. 12 ÷ 2 = 6. (For odd numbers, the rule is: multiply by 3 and add 1.)"
+        },
+        {
+          "id": "m3-e9",
+          "type": "mcq",
+          "question": "In a 3×3 magic square using numbers 1 to 9, what is the magic sum?",
+          "options": ["15", "18", "12", "45"],
+          "answer": "15",
+          "explanation": "Numbers 1 to 9 sum to 45. In a 3×3 square with 3 rows, each row's sum = 45 ÷ 3 = 15. This is the magic sum."
+        },
+        {
+          "id": "m3-e10",
+          "type": "fill",
+          "question": "Apply the Collatz process starting from 5: 5 → 16 → 8 → 4 → _____ → 1.",
+          "options": [],
+          "answer": "2",
+          "explanation": "4 is even → 4 ÷ 2 = 2. Then 2 is even → 2 ÷ 2 = 1. The sequence is 5 → 16 → 8 → 4 → 2 → 1."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m3-m4",
+          "type": "short",
+          "question": "Apply the Collatz process starting from 11. List each step until you reach 1. How many steps does it take?",
+          "options": [],
+          "answer": "11 (odd) → 34 → 17 (odd) → 52 → 26 → 13 (odd) → 40 → 20 → 10 → 5 (odd) → 16 → 8 → 4 → 2 → 1. Steps: 11→34 (1), 34→17 (2), 17→52 (3), 52→26 (4), 26→13 (5), 13→40 (6), 40→20 (7), 20→10 (8), 10→5 (9), 5→16 (10), 16→8 (11), 8→4 (12), 4→2 (13), 2→1 (14). Total: 14 steps.",
+          "explanation": "The Collatz sequence for 11 takes 14 steps. Notice how the numbers can go much higher than the starting number (11 → 34 → 52) before eventually coming down to 1. This unpredictable behaviour is why the conjecture is so hard to prove."
+        },
+        {
+          "id": "m3-m5",
+          "type": "short",
+          "question": "Complete the magic square: Fill in the missing numbers so that every row, column, and diagonal adds to 15. Numbers 1–9, each used once.\n\n| ___ | 7 | ___ |\n| 9 | 5 | 1 |\n| 4 | ___ | 8 |",
+          "options": [],
+          "answer": "The complete magic square is: Row 1: 2, 7, 6. Row 2: 9, 5, 1. Row 3: 4, 3, 8. Check Row 1: 2+7+6=15 ✓. Row 2: 9+5+1=15 ✓. Row 3: 4+3+8=15 ✓. Column 1: 2+9+4=15 ✓. Column 2: 7+5+3=15 ✓. Column 3: 6+1+8=15 ✓. Diagonal (top-left to bottom-right): 2+5+8=15 ✓. Diagonal (top-right to bottom-left): 6+5+4=15 ✓. Missing numbers: top-left=2, top-right=6, bottom-middle=3.",
+          "explanation": "Since Row 2 is complete (9+5+1=15) and Column 2 is almost complete (7+5+middle), the middle of Row 3 = 15−7−5=3. Then use remaining numbers (2 and 6) to complete Row 1, checking column sums."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m3-h2",
+          "type": "long",
+          "question": "The Collatz conjecture has never been proved. What is a conjecture? Why do mathematicians continue to work on unproved conjectures? Can you find a starting number between 1 and 20 that takes MORE than 15 steps to reach 1 using the Collatz process? Show all steps.",
+          "options": [],
+          "answer": "A conjecture is a mathematical statement that is believed to be true based on evidence (patterns, examples, computer verification) but has not yet been formally proved for ALL cases. Mathematicians work on unproved conjectures because: (1) Proving them reveals deep truths about numbers and mathematics. (2) The tools developed while trying to prove them advance all of mathematics. (3) If a counterexample (a case where the conjecture fails) is found, that is also a major discovery. Numbers between 1 and 20 that take many steps: 27 takes 111 steps (though it is beyond 20). Among 1–20, let us try 18: 18→9→28→14→7→22→11→34→17→52→26→13→40→20→10→5→16→8→4→2→1. Steps: 20 steps! Try 17: 17→52→26→13→40→20→10→5→16→8→4→2→1. Steps: 12. Try 18 again more carefully: 18(1)→9(2)→28(3)→14(4)→7(5)→22(6)→11(7)→34(8)→17(9)→52(10)→26(11)→13(12)→40(13)→20(14)→10(15)→5(16)→16(17)→8(18)→4(19)→2(20)→1. That's 20 steps for starting number 18!",
+          "explanation": "This open-ended question encourages mathematical exploration. The Collatz conjecture has been checked by computers for all numbers up to 10^20, and it always reaches 1. But a proof for all numbers remains one of mathematics' great open problems. Paul Erdős famously said 'Mathematics is not yet ready for such problems.'"
+        }
+      ]
+    },
+    {
+      "topic": "Estimation and Number Patterns",
+      "easy": [
+        {
+          "id": "m3-e11",
+          "type": "mcq",
+          "question": "Estimate 4,873 + 3,126 by rounding both numbers to the nearest thousand.",
+          "options": ["8,000", "7,999", "7,000", "9,000"],
+          "answer": "8,000",
+          "explanation": "Rounding to the nearest thousand: 4,873 ≈ 5,000 (since 873 > 500). 3,126 ≈ 3,000 (since 126 < 500). Estimate: 5,000 + 3,000 = 8,000. (Actual: 7,999 — very close!)"
+        },
+        {
+          "id": "m3-e12",
+          "type": "fill",
+          "question": "111 × 111 = ______. (Look for a palindrome pattern!)",
+          "options": [],
+          "answer": "12321",
+          "explanation": "Following the pattern: 1×1=1, 11×11=121, 111×111=12321. The answer is a palindrome that counts up then back down: 1,2,3,2,1."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m3-m6",
+          "type": "short",
+          "question": "A cricket stadium has 42,350 spectators today and 38,780 spectators tomorrow. Estimate the total attendance over both days. Then find the exact total and check how close your estimate was.",
+          "options": [],
+          "answer": "Estimation (rounding to nearest 10,000): 42,350 ≈ 40,000 and 38,780 ≈ 40,000. Estimate: 40,000 + 40,000 = 80,000. Exact: 42,350 + 38,780 = 81,130. Difference: 81,130 − 80,000 = 1,130. The estimate was off by only 1,130 — less than 1.5% error. A good estimate! A better estimate using rounding to nearest 1,000: 42,000 + 39,000 = 81,000 — even closer!",
+          "explanation": "Estimation is a practical skill used in everyday life. The choice of rounding level (to nearest 10, 100, 1000, etc.) affects how close the estimate is. For quick mental maths, rounding to the nearest 10,000 is fast; for more accuracy, round to the nearest 1,000."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}

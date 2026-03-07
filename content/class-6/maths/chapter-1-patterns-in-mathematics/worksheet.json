@@ -1,0 +1,175 @@
+{
+  "chapterRef": "class-6/maths/chapter-1-patterns-in-mathematics/worksheet",
+  "topics": [
+    {
+      "topic": "Number Sequences — Odd, Even, Triangular, Square",
+      "easy": [
+        {
+          "id": "m1-e1",
+          "type": "mcq",
+          "question": "What is the next number in the sequence: 1, 3, 6, 10, 15, ___?",
+          "options": ["18", "20", "21", "25"],
+          "answer": "21",
+          "explanation": "These are triangular numbers. Each term is obtained by adding the next counting number: 1, 1+2=3, 3+3=6, 6+4=10, 10+5=15, 15+6=21."
+        },
+        {
+          "id": "m1-e2",
+          "type": "mcq",
+          "question": "What is the 7th square number?",
+          "options": ["36", "49", "42", "56"],
+          "answer": "49",
+          "explanation": "Square numbers are n². The 7th square number = 7² = 7 × 7 = 49. The sequence is: 1, 4, 9, 16, 25, 36, 49..."
+        },
+        {
+          "id": "m1-e3",
+          "type": "fill",
+          "question": "The next term in the Virahanka (Fibonacci) sequence 1, 1, 2, 3, 5, 8, 13, 21 is ______.",
+          "options": [],
+          "answer": "34",
+          "explanation": "In the Virahanka sequence, each term = sum of the two previous terms. 13 + 21 = 34."
+        },
+        {
+          "id": "m1-e4",
+          "type": "mcq",
+          "question": "Which of the following is NOT a square number?",
+          "options": ["64", "81", "50", "100"],
+          "answer": "50",
+          "explanation": "64 = 8², 81 = 9², 100 = 10². 50 is not a perfect square (7² = 49, 8² = 64 — 50 is between them and not a perfect square)."
+        },
+        {
+          "id": "m1-e5",
+          "type": "fill",
+          "question": "The sum of the first 6 odd numbers is ______.",
+          "options": [],
+          "answer": "36",
+          "explanation": "The sum of the first n odd numbers = n². So sum of first 6 odd numbers = 6² = 36. Check: 1+3+5+7+9+11 = 36 ✓"
+        }
+      ],
+      "medium": [
+        {
+          "id": "m1-m1",
+          "type": "short",
+          "question": "Find the 10th triangular number. Show your working.",
+          "options": [],
+          "answer": "The nth triangular number = n × (n+1) ÷ 2. For n=10: 10 × 11 ÷ 2 = 110 ÷ 2 = 55. The 10th triangular number is 55.",
+          "explanation": "Alternatively: 1+2+3+4+5+6+7+8+9+10 = 55. The nth triangular number is simply the sum of the first n counting numbers."
+        },
+        {
+          "id": "m1-m2",
+          "type": "short",
+          "question": "Show that the square number 25 equals the sum of two consecutive triangular numbers.",
+          "options": [],
+          "answer": "The consecutive triangular numbers before 25 are the 4th and 5th triangular numbers. 4th triangular = 4×5÷2 = 10. 5th triangular = 5×6÷2 = 15. Sum = 10 + 15 = 25 = 5². ✓",
+          "explanation": "Every square number equals the sum of two consecutive triangular numbers. This is a beautiful hidden connection between different number families."
+        },
+        {
+          "id": "m1-m3",
+          "type": "short",
+          "question": "Write the next 3 terms of the sequence: 3, 6, 12, 24, ___. What is the rule?",
+          "options": [],
+          "answer": "The rule is: multiply each term by 2 (double it). Next three terms: 24 × 2 = 48, 48 × 2 = 96, 96 × 2 = 192. Sequence: 3, 6, 12, 24, 48, 96, 192.",
+          "explanation": "This is a geometric sequence with a common ratio of 2. Each term is double the previous one. This is related to the powers of 2 sequence."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m1-h1",
+          "type": "long",
+          "question": "A triangular number can be represented as dots arranged in a triangle. Show with a diagram (using numbers) and calculation that the 5th triangular number can be obtained as: (a) by adding to the 4th triangular number, and (b) using the formula n(n+1)÷2. Also show that the sum of the 4th and 5th triangular numbers equals the 5th square number.",
+          "options": [],
+          "answer": "(a) 4th triangular number = 1+2+3+4 = 10. To get 5th: add the next counting number, which is 5. So 5th triangular = 10 + 5 = 15. (b) Using formula: n(n+1)÷2 = 5×6÷2 = 30÷2 = 15. ✓ Both give 15. Connection to square numbers: 4th triangular + 5th triangular = 10 + 15 = 25 = 5². The 5th square number is indeed 25. ✓ This confirms the beautiful pattern: every square number = sum of two consecutive triangular numbers.",
+          "explanation": "This question links three different families of figurate numbers. The pattern (square = sum of two consecutive triangular numbers) can be proven algebraically: (n-1)n/2 + n(n+1)/2 = n[(n-1)+(n+1)]/2 = n[2n]/2 = n²."
+        }
+      ]
+    },
+    {
+      "topic": "Cube Numbers, Powers of 2, and Virahanka Numbers",
+      "easy": [
+        {
+          "id": "m1-e6",
+          "type": "mcq",
+          "question": "What is 5³ (5 cubed)?",
+          "options": ["15", "25", "125", "55"],
+          "answer": "125",
+          "explanation": "5³ = 5 × 5 × 5 = 25 × 5 = 125. Cube numbers are n × n × n."
+        },
+        {
+          "id": "m1-e7",
+          "type": "fill",
+          "question": "The 7th term in the powers of 2 sequence (1, 2, 4, 8, 16, 32, ___) is ______.",
+          "options": [],
+          "answer": "64",
+          "explanation": "Powers of 2: each term = 2 × previous term. 1, 2, 4, 8, 16, 32, 64. The 7th term = 2⁶ = 64."
+        },
+        {
+          "id": "m1-e8",
+          "type": "mcq",
+          "question": "The Virahanka numbers (1, 1, 2, 3, 5, 8, 13…) were first described by which Indian mathematician?",
+          "options": ["Virahanka", "Aryabhata", "Brahmagupta", "Kaprekar"],
+          "answer": "Virahanka",
+          "explanation": "Indian mathematician Virahanka (around 700 CE) studied these numbers while analysing Sanskrit poetic metres — centuries before the European mathematician Fibonacci wrote about them."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m1-m4",
+          "type": "short",
+          "question": "Verify that 1³ + 2³ + 3³ + 4³ = (1+2+3+4)². What does this tell you about the relationship between cube numbers and triangular numbers?",
+          "options": [],
+          "answer": "Left side: 1³ + 2³ + 3³ + 4³ = 1 + 8 + 27 + 64 = 100. Right side: (1+2+3+4)² = 10² = 100. Both equal 100. ✓ This tells us that the sum of the first n cube numbers equals the square of the nth triangular number. Since 1+2+3+...+n = nth triangular number, we have: 1³+2³+...+n³ = (nth triangular number)².",
+          "explanation": "This is one of the most beautiful identities in mathematics. The sum of the first n cubes equals the square of the nth triangular number. Mathematicians call this Nicomachus's theorem."
+        },
+        {
+          "id": "m1-m5",
+          "type": "short",
+          "question": "A paper is folded in half repeatedly. How many layers are there after 1, 2, 3, 4, and 5 folds? What sequence is this? After how many folds would there be 256 layers?",
+          "options": [],
+          "answer": "After 1 fold: 2 layers. After 2 folds: 4 layers. After 3 folds: 8 layers. After 4 folds: 16 layers. After 5 folds: 32 layers. This is the powers of 2 sequence (2, 4, 8, 16, 32...). After n folds there are 2ⁿ layers. For 256 layers: 2ⁿ = 256 = 2⁸, so after 8 folds there would be 256 layers.",
+          "explanation": "Folding doubles the layers each time — this is exponential growth. In reality, paper can only be folded about 7-8 times due to its thickness. But theoretically, 42 folds would produce a stack reaching to the Moon!"
+        }
+      ],
+      "hard": [
+        {
+          "id": "m1-h2",
+          "type": "long",
+          "question": "Virahanka numbers appear in nature. Explain with TWO examples from nature where these numbers appear, and explain WHY they might appear there. Also find the ratio of consecutive Virahanka numbers (e.g., 8÷5, 13÷8, 21÷13) and describe what you notice.",
+          "options": [],
+          "answer": "Example 1 — Sunflower seeds: Count the spirals on a sunflower head — you typically find 34 clockwise spirals and 55 anticlockwise spirals. Both 34 and 55 are Virahanka numbers! The seeds are packed this way because it gives the most efficient packing — each new seed appears at a Virahanka angle from the previous one, leaving no wasted space. Example 2 — Pine cone scales: Arranged in 8 spirals one way and 13 spirals the other — both Virahanka numbers. Ratios of consecutive Virahanka numbers: 2÷1=2.0, 3÷2=1.5, 5÷3=1.667, 8÷5=1.6, 13÷8=1.625, 21÷13=1.615, 34÷21=1.619, 55÷34=1.618... These ratios get closer and closer to 1.618... — the Golden Ratio (φ, phi). This special ratio has been found in art, architecture, and nature for thousands of years. The Virahanka numbers approach the golden ratio because of the way they are constructed.",
+          "explanation": "The Golden Ratio (≈1.618) is closely related to Virahanka numbers. It appears in many natural growth patterns because it produces the most efficient packing or branching. This is why these numbers appear in sunflowers, pine cones, and many other plants — nature 'discovers' the most efficient pattern through evolution."
+        }
+      ]
+    },
+    {
+      "topic": "Finding Patterns and Rules",
+      "easy": [
+        {
+          "id": "m1-e9",
+          "type": "mcq",
+          "question": "What is the rule for the sequence: 5, 8, 11, 14, 17, ___?",
+          "options": ["Add 2 each time", "Add 3 each time", "Multiply by 2", "Subtract 3"],
+          "answer": "Add 3 each time",
+          "explanation": "8-5=3, 11-8=3, 14-11=3, 17-14=3. The difference between consecutive terms is constantly 3. Next term = 17+3 = 20."
+        },
+        {
+          "id": "m1-e10",
+          "type": "fill",
+          "question": "The missing term in the sequence 2, 6, ___, 54, 162 is ______.",
+          "options": [],
+          "answer": "18",
+          "explanation": "Ratio: 6÷2=3, so each term is multiplied by 3. 6×3=18, 18×3=54, 54×3=162. The missing term is 18."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m1-m6",
+          "type": "short",
+          "question": "Look at this pattern and find the next two rows:\n1 = 1\n1 + 3 = 4\n1 + 3 + 5 = 9\n1 + 3 + 5 + 7 = 16\nWhat is the pattern? Predict the sum of the first 20 odd numbers.",
+          "options": [],
+          "answer": "Next two rows: 1+3+5+7+9 = 25 (= 5²) and 1+3+5+7+9+11 = 36 (= 6²). Pattern: The sum of the first n odd numbers = n². This means you can find the sum without adding all terms! Prediction: Sum of first 20 odd numbers = 20² = 400.",
+          "explanation": "This beautiful pattern shows that square numbers are literally built from odd numbers. This is why we say 'each square number = sum of consecutive odd numbers starting from 1'. Each odd number adds a new 'L-shape' (gnomon) to the previous square."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}
