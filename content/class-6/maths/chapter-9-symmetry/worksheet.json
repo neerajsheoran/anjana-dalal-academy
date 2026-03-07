@@ -1,0 +1,144 @@
+{
+  "chapterRef": "class-6/maths/chapter-9-symmetry/worksheet",
+  "topics": [
+    {
+      "topic": "Line Symmetry",
+      "easy": [
+        {
+          "id": "m9-e1",
+          "type": "mcq",
+          "question": "How many lines of symmetry does an equilateral triangle have?",
+          "options": ["1", "2", "3", "0"],
+          "answer": "3",
+          "explanation": "An equilateral triangle has 3 lines of symmetry — one from each vertex to the midpoint of the opposite side. Each line divides the triangle into two mirror-image halves."
+        },
+        {
+          "id": "m9-e2",
+          "type": "mcq",
+          "question": "Which letter of the English alphabet has exactly 2 lines of symmetry?",
+          "options": ["A", "H", "M", "B"],
+          "answer": "H",
+          "explanation": "H has both a horizontal and a vertical line of symmetry — 2 lines. A and M have only 1 line (vertical). B has only 1 line (horizontal). X and O have 2+ lines."
+        },
+        {
+          "id": "m9-e3",
+          "type": "fill",
+          "question": "A square has ______ lines of symmetry.",
+          "options": [],
+          "answer": "4",
+          "explanation": "A square has 4 lines of symmetry: 2 through the midpoints of opposite sides (horizontal and vertical) and 2 through opposite corners (diagonal). A rectangle (non-square) has only 2."
+        },
+        {
+          "id": "m9-e4",
+          "type": "mcq",
+          "question": "Which shape has infinitely many lines of symmetry?",
+          "options": ["Circle", "Square", "Regular hexagon", "Rectangle"],
+          "answer": "Circle",
+          "explanation": "A circle has infinitely many lines of symmetry — any line through the centre is a line of symmetry. A square has 4, a regular hexagon has 6, a rectangle has 2."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m9-m1",
+          "type": "short",
+          "question": "A rectangle is 8 cm long and 5 cm wide (not a square). (a) How many lines of symmetry does it have? (b) Are the diagonals lines of symmetry? Explain why or why not.",
+          "options": [],
+          "answer": "(a) A rectangle (non-square) has 2 lines of symmetry: one horizontal (through midpoints of the 8 cm sides) and one vertical (through midpoints of the 5 cm sides). (b) The diagonals are NOT lines of symmetry. If you fold along a diagonal, the two triangles formed have a right angle at one corner — but when folded, the 8 cm sides don't match the 5 cm sides. The fold doesn't produce a mirror image. This is different from a square, where the diagonals ARE lines of symmetry (because all sides are equal).",
+          "explanation": "For a rectangle, diagonals divide it into two congruent right triangles — but the two triangles are not mirror images of each other along the diagonal. This is a common misconception. In a square, the diagonals DO work as lines of symmetry."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Rotational Symmetry",
+      "easy": [
+        {
+          "id": "m9-e5",
+          "type": "mcq",
+          "question": "A regular hexagon has rotational symmetry. What is the angle of rotation?",
+          "options": ["45°", "60°", "90°", "120°"],
+          "answer": "60°",
+          "explanation": "A regular hexagon looks the same after rotating 60°. Order = 360°÷60° = 6. So it has order 6 rotational symmetry — it looks identical 6 times during one full rotation."
+        },
+        {
+          "id": "m9-e6",
+          "type": "fill",
+          "question": "A shape that looks identical after rotating 90° has rotational symmetry of order ______.",
+          "options": [],
+          "answer": "4",
+          "explanation": "Order = 360° ÷ angle of rotation = 360° ÷ 90° = 4. The shape looks the same at 90°, 180°, 270°, and 360°."
+        },
+        {
+          "id": "m9-e7",
+          "type": "mcq",
+          "question": "The letter 'S' has —",
+          "options": [
+            "Rotational symmetry of order 2, but no line symmetry",
+            "Line symmetry only",
+            "Both line and rotational symmetry",
+            "No symmetry at all"
+          ],
+          "answer": "Rotational symmetry of order 2, but no line symmetry",
+          "explanation": "The letter S, when rotated 180°, looks the same — order 2 rotational symmetry. But no line can be drawn through it that produces a mirror image. So it has rotational symmetry but NOT line symmetry. Same for Z and N."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m9-m2",
+          "type": "short",
+          "question": "Complete this table for regular polygons:\n\n| Polygon | Sides | Lines of symmetry | Order of rotational symmetry | Angle of rotation |\n|---------|-------|-------------------|------------------------------|-------------------|\n| Equilateral triangle | 3 | ? | ? | ? |\n| Square | 4 | ? | ? | ? |\n| Regular pentagon | 5 | ? | ? | ? |\n| Regular hexagon | 6 | ? | ? | ? |",
+          "options": [],
+          "answer": "For a regular polygon with n sides: Lines of symmetry = n. Order of rotational symmetry = n. Angle of rotation = 360°÷n. Equilateral triangle (n=3): 3 lines, order 3, 120°. Square (n=4): 4 lines, order 4, 90°. Regular pentagon (n=5): 5 lines, order 5, 72°. Regular hexagon (n=6): 6 lines, order 6, 60°. Pattern: For any regular polygon, the number of lines of symmetry = order of rotational symmetry = number of sides!",
+          "explanation": "This is a beautiful pattern: for regular polygons, lines of symmetry = sides = order of rotational symmetry. The angle of rotation = 360°/n. This reflects the deep connection between line and rotational symmetry in regular shapes."
+        },
+        {
+          "id": "m9-m3",
+          "type": "short",
+          "question": "A fan has 4 identical blades. (a) What is the order of its rotational symmetry? (b) What angle does each blade turn through to reach the next blade? (c) Does it have line symmetry? How many lines?",
+          "options": [],
+          "answer": "(a) A fan with 4 identical blades has rotational symmetry of order 4 — it looks the same after rotating by 90°, 180°, 270°, and 360°. (b) Each blade is 360°÷4 = 90° apart from the next blade. (c) Yes, a 4-bladed fan has 4 lines of symmetry — 2 passing through opposite blade tips, and 2 passing between blades (depending on blade shape). If the blades are symmetric themselves, there are 4 lines of symmetry.",
+          "explanation": "Fans, wheels, propellers, and flowers with equal petals all show rotational symmetry. The number of equal units = the order of symmetry = the number of lines of symmetry (for symmetric units)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m9-h1",
+          "type": "long",
+          "question": "Describe the symmetry in: (a) A traditional Indian Rangoli with 8-fold symmetry. (b) The national emblem of India (Ashoka Chakra — the wheel on the flag). (c) A snowflake. For each: state the order of rotational symmetry, angle of rotation, and number of lines of symmetry.",
+          "options": [],
+          "answer": "(a) Rangoli with 8-fold symmetry: Rotational symmetry order = 8. Angle of rotation = 360°÷8 = 45°. Lines of symmetry = 8 (4 through opposite points, 4 between them). Such rangoli look the same from 8 different orientations. (b) Ashoka Chakra (wheel on Indian flag): The Dharma Chakra has 24 spokes equally spaced. Rotational symmetry order = 24. Angle of rotation = 360°÷24 = 15°. Lines of symmetry = 24. The 24 spokes represent the 24 hours of the day in one interpretation. (c) Snowflake: All snowflakes have 6-fold symmetry (based on the hexagonal crystal structure of ice). Rotational symmetry order = 6. Angle of rotation = 60°. Lines of symmetry = 6. No two snowflakes are identical despite sharing this 6-fold structure — demonstrating that symmetry constrains but doesn't fully determine a design.",
+          "explanation": "Symmetry analysis connects mathematics to culture and nature. The Ashoka Chakra's 24-fold symmetry, the 6-fold snowflake, and 8-fold rangoli all demonstrate how different orders of symmetry create different aesthetic and mathematical properties."
+        }
+      ]
+    },
+    {
+      "topic": "Tessellations and Practical Symmetry",
+      "easy": [
+        {
+          "id": "m9-e8",
+          "type": "mcq",
+          "question": "Which of the following regular shapes can tessellate (tile a flat surface with no gaps)?",
+          "options": [
+            "Equilateral triangle, square, regular hexagon",
+            "All regular polygons",
+            "Only squares",
+            "Regular pentagon and octagon"
+          ],
+          "answer": "Equilateral triangle, square, regular hexagon",
+          "explanation": "Only three regular polygons tessellate on their own: equilateral triangle (6 meet at each vertex), square (4 meet at each vertex), and regular hexagon (3 meet at each vertex). Regular pentagons and heptagons leave gaps or overlap."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m9-m4",
+          "type": "short",
+          "question": "Honeybees build hexagonal cells. Give TWO mathematical reasons why hexagons are the most efficient shape for a honeycomb.",
+          "options": [],
+          "answer": "Reason 1 — Tessellation efficiency: Regular hexagons tessellate perfectly with no gaps or wasted space, meaning every bit of the comb area is used for storage. Triangles and squares also tessellate, but hexagons are more efficient. Reason 2 — Perimeter efficiency: Among all shapes that tessellate with equal area cells, the regular hexagon has the shortest total wall length (perimeter) to enclose a given area. This means bees use the least amount of wax to build the most storage space — a perfect example of mathematical optimisation in nature. (This is known as the Honeycomb Conjecture, proved mathematically in 1999.)",
+          "explanation": "Bees instinctively build the optimal structure. The hexagonal honeycomb was described as optimal by ancient Greek mathematician Pappus (~300 CE), but the rigorous mathematical proof took until 1999 (Thomas Hales). This is a beautiful meeting of mathematics, biology, and engineering."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}

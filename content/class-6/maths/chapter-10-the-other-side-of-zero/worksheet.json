@@ -1,0 +1,163 @@
+{
+  "chapterRef": "class-6/maths/chapter-10-the-other-side-of-zero/worksheet",
+  "topics": [
+    {
+      "topic": "Integers and the Number Line",
+      "easy": [
+        {
+          "id": "m10-e1",
+          "type": "mcq",
+          "question": "Which of the following is the correct order from smallest to largest?",
+          "options": [
+            "−8, −3, 0, 2, 5",
+            "−3, −8, 0, 2, 5",
+            "5, 2, 0, −3, −8",
+            "0, −3, −8, 2, 5"
+          ],
+          "answer": "−8, −3, 0, 2, 5",
+          "explanation": "On the number line, numbers increase from left to right. Negative numbers are to the left of 0. −8 < −3 < 0 < 2 < 5 is the correct ascending order."
+        },
+        {
+          "id": "m10-e2",
+          "type": "mcq",
+          "question": "Which is greater: −12 or −5?",
+          "options": ["−5", "−12", "They are equal", "Cannot be determined"],
+          "answer": "−5",
+          "explanation": "On the number line, −5 is to the right of −12. −5 > −12. Think of it as debts: a debt of ₹5 is less bad than a debt of ₹12, so −5 > −12."
+        },
+        {
+          "id": "m10-e3",
+          "type": "fill",
+          "question": "The absolute value of −17 is ______.",
+          "options": [],
+          "answer": "17",
+          "explanation": "|−17| = 17. Absolute value is the distance from 0 on the number line — always positive (or zero). |−17| = |17| = 17."
+        },
+        {
+          "id": "m10-e4",
+          "type": "mcq",
+          "question": "A building has 5 floors above ground and 2 basement levels. If ground floor = 0, which floor number represents the 2nd basement?",
+          "options": ["−2", "+2", "−1", "2B"],
+          "answer": "−2",
+          "explanation": "Floors below ground are represented as negative integers. 1st basement = −1, 2nd basement = −2. Floors above ground: 1st floor = +1, 2nd floor = +2, etc."
+        },
+        {
+          "id": "m10-e5",
+          "type": "mcq",
+          "question": "The Indian mathematician who first defined clear rules for negative numbers (calling them 'debts') was —",
+          "options": ["Brahmagupta", "Aryabhata", "Ramanujan", "Kaprekar"],
+          "answer": "Brahmagupta",
+          "explanation": "Brahmagupta (598–668 CE) from Rajasthan described positive numbers as 'fortunes' and negative numbers as 'debts' in his book Brahmasphutasiddhanta (628 CE). He gave the first clear rules for arithmetic with negative numbers and zero — 1,400 years ago."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m10-m1",
+          "type": "short",
+          "question": "The temperatures in five Indian cities on a January night were: Delhi −2°C, Shimla −8°C, Jaipur 4°C, Mumbai 18°C, Srinagar −12°C. (a) Arrange them in ascending order. (b) Which city was coldest? (c) What is the difference in temperature between Mumbai and Srinagar?",
+          "options": [],
+          "answer": "(a) Ascending order: −12 < −8 < −2 < 4 < 18. Cities: Srinagar (−12°C), Shimla (−8°C), Delhi (−2°C), Jaipur (4°C), Mumbai (18°C). (b) Srinagar was coldest (−12°C). (c) Difference = 18 − (−12) = 18 + 12 = 30°C. The temperature difference between Mumbai and Srinagar is 30°C.",
+          "explanation": "Temperature differences require subtracting integers: 18−(−12) = 18+12 = 30. Subtracting a negative = adding a positive. India's climate varies enormously — from sub-zero temperatures in J&K to 40°C+ in Rajasthan in the same season."
+        }
+      ],
+      "hard": []
+    },
+    {
+      "topic": "Addition and Subtraction of Integers",
+      "easy": [
+        {
+          "id": "m10-e6",
+          "type": "mcq",
+          "question": "(−7) + (−5) = ?",
+          "options": ["−12", "12", "−2", "2"],
+          "answer": "−12",
+          "explanation": "Adding two negatives: add the absolute values (7+5=12) and keep the negative sign. (−7)+(−5) = −12. Think: debt of 7 + debt of 5 = debt of 12."
+        },
+        {
+          "id": "m10-e7",
+          "type": "mcq",
+          "question": "(+9) + (−13) = ?",
+          "options": ["−4", "4", "−22", "22"],
+          "answer": "−4",
+          "explanation": "Different signs: subtract smaller from larger absolute value (13−9=4), keep sign of the larger absolute value (−13 has larger absolute value). Answer: −4."
+        },
+        {
+          "id": "m10-e8",
+          "type": "fill",
+          "question": "5 − (−8) = ______.",
+          "options": [],
+          "answer": "13",
+          "explanation": "Subtracting a negative = adding a positive. 5−(−8) = 5+8 = 13."
+        },
+        {
+          "id": "m10-e9",
+          "type": "mcq",
+          "question": "(−6) − (−4) = ?",
+          "options": ["−2", "2", "−10", "10"],
+          "answer": "−2",
+          "explanation": "(−6)−(−4) = (−6)+(+4) = −2. (Subtract negative = add positive. Then: different signs, |−6|>|4|, so answer is negative: 6−4=2, keep negative sign = −2.)"
+        }
+      ],
+      "medium": [
+        {
+          "id": "m10-m2",
+          "type": "short",
+          "question": "A submarine is at a depth of −240 m (240 m below sea level). It rises 85 m, then dives 120 m. Where is it now? Show all working.",
+          "options": [],
+          "answer": "Starting position: −240 m. After rising 85 m: −240 + 85 = −155 m. After diving 120 m: −155 + (−120) = −155 − 120 = −275 m. The submarine is now at −275 m (275 m below sea level) — deeper than it started!",
+          "explanation": "Rising = adding positive. Diving = adding negative (or subtracting). Multi-step integer problems are solved one step at a time, keeping track of the current position after each change."
+        },
+        {
+          "id": "m10-m3",
+          "type": "short",
+          "question": "Rohan's bank account shows these transactions in a week: Monday +₹2,000 (deposit), Tuesday −₹350 (ATM withdrawal), Wednesday −₹1,800 (online shopping), Thursday +₹500 (received from friend), Friday −₹700 (electricity bill). If his balance was ₹1,200 on Monday morning, what is his balance on Friday evening?",
+          "options": [],
+          "answer": "Starting balance: ₹1,200. Monday deposit: 1,200 + 2,000 = ₹3,200. Tuesday withdrawal: 3,200 − 350 = ₹2,850. Wednesday shopping: 2,850 − 1,800 = ₹1,050. Thursday received: 1,050 + 500 = ₹1,550. Friday bill: 1,550 − 700 = ₹850. Final balance: ₹850.",
+          "explanation": "Bank account problems are real-world integer addition/subtraction. Deposits are positive, withdrawals and expenses are negative. Always process transactions in order."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m10-h1",
+          "type": "long",
+          "question": "Brahmagupta described negative numbers as 'debts' (rina) and positive numbers as 'fortunes' (dhana) 1,400 years ago. Using this context, explain the following rules he described, and give a real-life money example for each: (a) fortune + fortune = fortune. (b) debt + debt = debt. (c) fortune − debt = fortune + fortune. (d) If debts are equal and fortunes are equal, the result is zero.",
+          "options": [],
+          "answer": "(a) Fortune + fortune = fortune: (+5) + (+3) = +8. Example: You have ₹500 savings and earn ₹300 more. Total = ₹800 (a fortune). Positive + positive = positive. (b) Debt + debt = debt: (−5) + (−3) = −8. Example: You owe ₹500 to one friend and ₹300 to another. Total debt = ₹800. Negative + negative = more negative. (c) Fortune − debt = fortune + fortune: 5−(−3) = 5+3 = 8. Example: You have ₹500 and someone cancels a ₹300 debt you owed them. You now effectively have ₹800 worth of wealth. Subtracting a negative = adding a positive. (d) If debts equal fortunes, result is zero: (+5)+(−5) = 0. Example: You have ₹500 savings but owe exactly ₹500. Net worth = ₹0. Opposites cancel each other.",
+          "explanation": "Brahmagupta's framework of 'debts and fortunes' is the clearest intuitive explanation of integers. It shows that the abstract rules of integer arithmetic are not arbitrary — they follow directly from the logic of financial transactions. This is why negative numbers were first developed in financial and commercial contexts in India."
+        }
+      ]
+    },
+    {
+      "topic": "Patterns and Applications of Integers",
+      "easy": [
+        {
+          "id": "m10-e10",
+          "type": "mcq",
+          "question": "Continue the pattern: 8, 5, 2, −1, ___, ___",
+          "options": ["−4, −7", "−2, −5", "0, −3", "−3, −6"],
+          "answer": "−4, −7",
+          "explanation": "Each term decreases by 3: 8−3=5, 5−3=2, 2−3=−1, −1−3=−4, −4−3=−7. The pattern of subtracting 3 continues into negative numbers."
+        },
+        {
+          "id": "m10-e11",
+          "type": "fill",
+          "question": "A football team scored 3 goals and conceded 7. Their goal difference is ______.",
+          "options": [],
+          "answer": "−4",
+          "explanation": "Goal difference = Goals scored − Goals conceded = 3 − 7 = −4. A negative goal difference means the team conceded more than they scored."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m10-m4",
+          "type": "short",
+          "question": "Look at this multiplication table for negative numbers and complete it. What pattern do you see?\n\n| | ×(−3) | ×(−2) | ×(−1) | ×0 | ×1 | ×2 | ×3 |\n|--|-------|-------|-------|----|----|----|----|----|\n| 3 | −9 | −6 | −3 | 0 | 3 | 6 | 9 |\n| 2 | ___ | ___ | ___ | 0 | 2 | 4 | 6 |\n| 1 | ___ | ___ | ___ | 0 | 1 | 2 | 3 |\n| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| −1 | ___ | ___ | ___ | 0 | −1 | −2 | −3 |\n| −2 | ___ | ___ | ___ | 0 | −2 | −4 | −6 |",
+          "options": [],
+          "answer": "Row 2 (×−3, ×−2, ×−1): −6, −4, −2. Row 1 (×−3, ×−2, ×−1): −3, −2, −1. Row −1 (×−3, ×−2, ×−1): 3, 2, 1. Row −2 (×−3, ×−2, ×−1): 6, 4, 2. Patterns observed: Positive × negative = negative (rows 1,2,3 in left columns). Negative × positive = negative (rows −1,−2 in right columns). Negative × negative = positive (rows −1,−2 in left columns: 3,2,1 and 6,4,2 are positive!). Each column decreases by a fixed amount going down. Each row decreases by a fixed amount going left.",
+          "explanation": "The multiplication table makes the rule 'negative × negative = positive' feel natural — it's the only choice that maintains the consistent pattern of arithmetic. This is how Brahmagupta and later mathematicians justified these rules: they must hold to preserve patterns."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}

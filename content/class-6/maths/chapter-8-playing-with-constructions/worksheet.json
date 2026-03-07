@@ -1,0 +1,122 @@
+{
+  "chapterRef": "class-6/maths/chapter-8-playing-with-constructions/worksheet",
+  "topics": [
+    {
+      "topic": "Basic Constructions — Bisectors and Perpendiculars",
+      "easy": [
+        {
+          "id": "m8-e1",
+          "type": "mcq",
+          "question": "The perpendicular bisector of a line segment AB —",
+          "options": [
+            "Cuts AB into two equal halves at 90°",
+            "Bisects the angle at A",
+            "Is parallel to AB",
+            "Passes through A and B"
+          ],
+          "answer": "Cuts AB into two equal halves at 90°",
+          "explanation": "The perpendicular bisector does two things: (1) bisects AB — divides it into two equal parts, and (2) is perpendicular to AB — meets it at 90°. Its intersection with AB gives the midpoint of AB."
+        },
+        {
+          "id": "m8-e2",
+          "type": "mcq",
+          "question": "To draw a perpendicular bisector of a segment AB using compass, you draw arcs from —",
+          "options": [
+            "Both A and B, with radius more than half of AB",
+            "Only from A",
+            "Only from the midpoint",
+            "Both A and B, with radius less than AB"
+          ],
+          "answer": "Both A and B, with radius more than half of AB",
+          "explanation": "You must draw arcs from BOTH endpoints (A and B) and the radius must be MORE than half of AB so the arcs cross above and below the segment. The two crossing points define the perpendicular bisector."
+        },
+        {
+          "id": "m8-e3",
+          "type": "fill",
+          "question": "The angle bisector of an angle of 80° divides it into two angles of ______ each.",
+          "options": [],
+          "answer": "40°",
+          "explanation": "The angle bisector divides any angle into two EQUAL halves. Half of 80° = 40°."
+        },
+        {
+          "id": "m8-e4",
+          "type": "mcq",
+          "question": "To construct a 60° angle using compass and ruler, you use the fact that —",
+          "options": [
+            "An equilateral triangle has all angles = 60°",
+            "A right angle is exactly 90°",
+            "A straight angle is 180°",
+            "A semicircle subtends 90° at the centre"
+          ],
+          "answer": "An equilateral triangle has all angles = 60°",
+          "explanation": "When you draw two arcs of the same radius from a point and the arc's starting point, the three equal lengths form an equilateral triangle, making a 60° angle. This is the key insight for constructing 60°."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m8-m1",
+          "type": "short",
+          "question": "Describe step by step how to construct a 90° angle at a point P on a line l, using only compass and ruler (no protractor). What other angles can you get by further construction?",
+          "options": [],
+          "answer": "Construction of 90° at P on line l: Step 1: With P as centre, draw arcs of equal radius on both sides of P, cutting line l at points A and B. Step 2: With A as centre and radius more than AP, draw an arc above l. Step 3: With B as centre and same radius, draw another arc above l (crossing the first arc at point Q). Step 4: Join PQ. Angle QPl = 90°. This is essentially constructing the perpendicular bisector of segment AB at P. Further angles: Bisect 90° → 45°. Bisect 45° → 22.5°. Construct 60° at same point and bisect the remaining 30° to get 15°, etc.",
+          "explanation": "A 90° angle construction uses the perpendicular bisector principle. Starting from 90°, bisection gives 45°, 22.5°, etc. Combining with 60° constructions gives many other angles."
+        },
+        {
+          "id": "m8-m2",
+          "type": "short",
+          "question": "Is it possible to construct a triangle with sides 4 cm, 6 cm, and 11 cm? Why or why not? What is the mathematical principle involved?",
+          "options": [],
+          "answer": "No, it is NOT possible to construct this triangle. The Triangle Inequality states that the sum of any two sides of a triangle must be GREATER than the third side. Check: 4+6=10, but 10 < 11. The sum of the two shorter sides (4+6=10) is less than the longest side (11). If you tried to construct it, the arcs drawn from the two endpoints of the 11 cm base would not intersect — they would be too far apart to meet.",
+          "explanation": "The Triangle Inequality is a fundamental theorem: for a triangle with sides a, b, c, we need a+b>c, b+c>a, and a+c>b (all three conditions). If any one fails, no triangle exists."
+        }
+      ],
+      "hard": [
+        {
+          "id": "m8-h1",
+          "type": "long",
+          "question": "Describe how to construct an angle of 75° using only compass and ruler. Explain the logic at each step.",
+          "options": [],
+          "answer": "75° = 60° + 15° = 60° + (30°/2). Or: 75° = 90° − 15° = 90° − (30°/2). Method using 90° and 60°: Step 1: Construct a 90° angle at point O on ray OA (gives angle of 90°). Step 2: Now construct a 60° angle from OA (gives a ray at 60° from OA). Step 3: The angle between the 60° ray and the 90° ray is 30°. Step 4: Bisect this 30° angle to get 15°. Step 5: Add 15° to the 60° ray: 60° + 15° = 75°. Alternative: Step 1: Construct 60° from OA. Step 2: Construct 90° from OA. The angle between them is 30°. Step 3: Bisect the 30° sector: this gives a ray at 60°+15° = 75°. Logic: We can only construct angles that are multiples and combinations of 60° (from equilateral triangles) and 90° (from perpendicular bisectors), and their bisections. 75° = 45° + 30° = 45° + 30° also works: bisect 90° to get 45°, construct 30° (by bisecting 60°), add them.",
+          "explanation": "Complex angle construction uses the building blocks of 60° and 90° combined with bisection. Any angle that is a multiple of 3° can be constructed with compass and ruler — but angles like 20° cannot be (a famous mathematical proof)."
+        }
+      ]
+    },
+    {
+      "topic": "Triangle Construction and Symmetry in Patterns",
+      "easy": [
+        {
+          "id": "m8-e5",
+          "type": "mcq",
+          "question": "In SSS construction (Side-Side-Side), which of the following information is needed?",
+          "options": [
+            "The lengths of all three sides",
+            "Two sides and the angle between them",
+            "One side and two angles",
+            "Only the perimeter"
+          ],
+          "answer": "The lengths of all three sides",
+          "explanation": "SSS stands for Side-Side-Side. To construct a unique triangle using this method, you need to know the length of all three sides. Two sides and an included angle is SAS; one side and two angles is ASA."
+        },
+        {
+          "id": "m8-e6",
+          "type": "fill",
+          "question": "A regular hexagon can be drawn inside a circle by stepping the ______ around the circle as the chord length.",
+          "options": [],
+          "answer": "radius",
+          "explanation": "The key fact: the side of a regular hexagon inscribed in a circle equals the radius of that circle. So you step the radius around the circle 6 times to mark all 6 vertices of the hexagon."
+        }
+      ],
+      "medium": [
+        {
+          "id": "m8-m3",
+          "type": "short",
+          "question": "Describe the steps to construct a triangle ABC where AB = 7 cm, BC = 5 cm, and CA = 6 cm. How do you verify your construction is correct?",
+          "options": [],
+          "answer": "Steps: 1. Draw base BC = 5 cm (or any side as base). 2. With B as centre, draw an arc of radius AB = 7 cm. 3. With C as centre, draw an arc of radius CA = 6 cm. 4. The two arcs intersect at A. 5. Join AB and CA. Triangle ABC is complete. Verification: Measure all three sides with a ruler: AB should measure 7 cm, BC = 5 cm, CA = 6 cm. Also measure angles to check they sum to 180°.",
+          "explanation": "In SSS construction, the base is drawn first, then arcs of the other two sides are drawn from each endpoint. Their intersection gives the third vertex. The order of steps matters — the base is always drawn first."
+        }
+      ],
+      "hard": []
+    }
+  ]
+}
