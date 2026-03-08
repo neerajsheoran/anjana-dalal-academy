@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
-import { adminAuth } from "@/lib/firebase-admin";
+import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import LogoutButton from "./LogoutButton";
 
 async function getUser() {
@@ -9,10 +9,18 @@ async function getUser() {
     const session = cookieStore.get("session")?.value;
     if (!session) return null;
     const decoded = await adminAuth.verifySessionCookie(session);
+    let role = "student";
+    try {
+      const userDoc = await adminDb.collection("users").doc(decoded.uid).get();
+      if (userDoc.exists) role = userDoc.data()?.role || "student";
+    } catch {
+      // Firestore unavailable — default to student
+    }
     return {
       name: decoded.name || decoded.email || "User",
       email: decoded.email || "",
       initial: (decoded.name || decoded.email || "U")[0].toUpperCase(),
+      role,
     };
   } catch {
     return null;
@@ -48,6 +56,14 @@ export default async function Header() {
                 <p className="text-xs text-gray-400 leading-tight">{user.email}</p>
               </div>
             </Link>
+            {user.role === "admin" && (
+              <Link
+                href="/admin"
+                className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                Admin
+              </Link>
+            )}
             <div className="w-px h-8 bg-gray-200" />
             <LogoutButton />
           </div>
