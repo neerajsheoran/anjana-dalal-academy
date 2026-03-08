@@ -165,12 +165,12 @@ for (const { classId, subject, label, icon } of classSubjects) {
 // ─── Export config ────────────────────────────────────────────────────────────
 export default config({
   storage:
-    process.env.KEYSTATIC_GITHUB_CLIENT_ID
+    process.env.NODE_ENV === 'production'
       ? {
           kind: 'github',
           repo: {
-            owner: process.env.NEXT_PUBLIC_GITHUB_OWNER as string,
-            name: process.env.NEXT_PUBLIC_GITHUB_REPO as string,
+            owner: process.env.NEXT_PUBLIC_GITHUB_OWNER ?? 'neerajsheoran',
+            name: process.env.NEXT_PUBLIC_GITHUB_REPO ?? 'anjana-dalal-academy',
           },
         }
       : { kind: 'local' },
