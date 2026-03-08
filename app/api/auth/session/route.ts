@@ -1,4 +1,4 @@
-import { adminAuth } from '@/lib/firebase-admin';
+import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
@@ -9,6 +9,8 @@ export async function POST(req: Request) {
   const { idToken } = await req.json();
 
   try {
+    const decoded = await adminAuth.verifyIdToken(idToken);
+
     const sessionCookie = await adminAuth.createSessionCookie(idToken, {
       expiresIn: FIVE_DAYS_MS,
     });
@@ -21,6 +23,18 @@ export async function POST(req: Request) {
       path: '/',
       sameSite: 'lax',
     });
+
+    // Create Firestore user document on first login
+    const userRef = adminDb.collection('users').doc(decoded.uid);
+    const userDoc = await userRef.get();
+    if (!userDoc.exists) {
+      await userRef.set({
+        role: 'student',
+        name: decoded.name || null,
+        email: decoded.email || null,
+        createdAt: new Date(),
+      });
+    }
 
     return NextResponse.json({ ok: true });
   } catch {

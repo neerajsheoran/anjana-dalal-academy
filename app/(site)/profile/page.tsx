@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { adminAuth } from "@/lib/firebase-admin";
+import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 
 async function getUser() {
@@ -7,7 +7,18 @@ async function getUser() {
   const session = cookieStore.get("session")?.value;
   if (!session) redirect("/login");
   const decoded = await adminAuth.verifySessionCookie(session);
-  return decoded;
+
+  const userDoc = await adminDb.collection("users").doc(decoded.uid).get();
+  const profile = userDoc.exists ? userDoc.data() : null;
+
+  return {
+    uid: decoded.uid,
+    name: decoded.name as string | undefined,
+    email: decoded.email,
+    firebase: decoded.firebase,
+    iat: decoded.iat,
+    profile,
+  };
 }
 
 export default async function ProfilePage() {
@@ -18,10 +29,12 @@ export default async function ProfilePage() {
   const initial = (user.name || user.email || "U")[0].toUpperCase();
   const provider = user.firebase?.sign_in_provider === "google.com" ? "Google" : "Email & Password";
   const uid = user.uid;
+  const role = user.profile?.role
+    ? user.profile.role.charAt(0).toUpperCase() + user.profile.role.slice(1)
+    : "Student";
 
-  // Format creation time from token (iat = issued at, in seconds)
-  const memberSince = user.iat
-    ? new Date(user.iat * 1000).toLocaleDateString("en-IN", {
+  const memberSince = user.profile?.createdAt?.toDate
+    ? new Date(user.profile.createdAt.toDate()).toLocaleDateString("en-IN", {
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -61,7 +74,7 @@ export default async function ProfilePage() {
             Subscription
           </h2>
           <div className="space-y-4">
-            <Row label="Role" value="Student" />
+            <Row label="Role" value={role} />
             <Row label="Subscribed Class" value="—" />
             <Row label="Valid Until" value="—" />
           </div>
