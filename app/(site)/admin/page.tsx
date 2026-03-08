@@ -2,6 +2,7 @@ import { cookies } from 'next/headers';
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { redirect } from 'next/navigation';
 import RoleSelector from '@/components/admin/RoleSelector';
+import ApplicationActions from '@/components/admin/ApplicationActions';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -36,9 +37,40 @@ async function getAllUsers() {
   });
 }
 
+async function getPendingApplications() {
+  try {
+    const snapshot = await adminDb
+      .collection('partnerApplications')
+      .where('status', '==', 'pending')
+      .orderBy('createdAt', 'desc')
+      .get();
+    return snapshot.docs.map((doc) => {
+      const d = doc.data();
+      return {
+        id: doc.id,
+        name: (d.name as string) || '—',
+        email: (d.email as string) || '—',
+        phone: (d.phone as string) || '—',
+        city: (d.city as string) || '—',
+        reason: (d.reason as string) || '',
+        createdAt: d.createdAt?.toDate
+          ? d.createdAt.toDate().toLocaleDateString('en-IN', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            })
+          : '—',
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
 export default async function AdminPage() {
   await requireAdmin();
   const users = await getAllUsers();
+  const pendingApplications = await getPendingApplications();
 
   const totalUsers = users.length;
   const byRole = {
@@ -116,6 +148,46 @@ export default async function AdminPage() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Partner Applications */}
+        <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
+          <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+              Partner Applications
+            </h2>
+            {pendingApplications.length > 0 && (
+              <span className="text-xs font-medium text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
+                {pendingApplications.length} pending
+              </span>
+            )}
+          </div>
+
+          {pendingApplications.length === 0 ? (
+            <div className="px-6 py-8 text-center">
+              <p className="text-sm text-gray-400">No pending applications.</p>
+            </div>
+          ) : (
+            <div className="divide-y divide-gray-100">
+              {pendingApplications.map((app) => (
+                <div key={app.id} className="px-6 py-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="min-w-0">
+                      <p className="font-medium text-gray-800">{app.name}</p>
+                      <p className="text-xs text-gray-400">
+                        {app.email} · {app.phone} · {app.city}
+                      </p>
+                      <p className="text-sm text-gray-600 mt-2">{app.reason}</p>
+                      <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
+                    </div>
+                    <div className="shrink-0">
+                      <ApplicationActions applicationId={app.id} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </main>
