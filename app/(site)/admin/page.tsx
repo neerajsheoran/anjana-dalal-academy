@@ -41,27 +41,33 @@ async function getPendingApplications() {
   try {
     const snapshot = await adminDb
       .collection('partnerApplications')
-      .where('status', '==', 'pending')
-      .orderBy('createdAt', 'desc')
       .get();
-    return snapshot.docs.map((doc) => {
-      const d = doc.data();
-      return {
-        id: doc.id,
-        name: (d.name as string) || '—',
-        email: (d.email as string) || '—',
-        phone: (d.phone as string) || '—',
-        city: (d.city as string) || '—',
-        reason: (d.reason as string) || '',
-        createdAt: d.createdAt?.toDate
-          ? d.createdAt.toDate().toLocaleDateString('en-IN', {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric',
-            })
-          : '—',
-      };
-    });
+    return snapshot.docs
+      .map((doc) => ({ doc, data: doc.data() }))
+      .filter((d) => d.data.status === 'pending')
+      .sort((a, b) => {
+        const aTime = a.data.createdAt?.toMillis?.() ?? 0;
+        const bTime = b.data.createdAt?.toMillis?.() ?? 0;
+        return bTime - aTime;
+      })
+      .map(({ doc }) => {
+        const d = doc.data();
+        return {
+          id: doc.id,
+          name: (d.name as string) || '—',
+          email: (d.email as string) || '—',
+          phone: (d.phone as string) || '—',
+          city: (d.city as string) || '—',
+          reason: (d.reason as string) || '',
+          createdAt: d.createdAt?.toDate
+            ? d.createdAt.toDate().toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+              })
+            : '—',
+        };
+      });
   } catch {
     return [];
   }
