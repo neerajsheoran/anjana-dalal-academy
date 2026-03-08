@@ -37,20 +37,11 @@ async function getAllUsers() {
   });
 }
 
-async function getPendingApplications() {
+async function getAllApplications() {
   try {
-    const snapshot = await adminDb
-      .collection('partnerApplications')
-      .get();
-    return snapshot.docs
-      .map((doc) => ({ doc, data: doc.data() }))
-      .filter((d) => d.data.status === 'pending')
-      .sort((a, b) => {
-        const aTime = a.data.createdAt?.toMillis?.() ?? 0;
-        const bTime = b.data.createdAt?.toMillis?.() ?? 0;
-        return bTime - aTime;
-      })
-      .map(({ doc }) => {
+    const snapshot = await adminDb.collection('partnerApplications').get();
+    const all = snapshot.docs
+      .map((doc) => {
         const d = doc.data();
         return {
           id: doc.id,
@@ -59,6 +50,7 @@ async function getPendingApplications() {
           phone: (d.phone as string) || '—',
           city: (d.city as string) || '—',
           reason: (d.reason as string) || '',
+          status: (d.status as string) || 'pending',
           createdAt: d.createdAt?.toDate
             ? d.createdAt.toDate().toLocaleDateString('en-IN', {
                 day: 'numeric',
@@ -66,17 +58,25 @@ async function getPendingApplications() {
                 year: 'numeric',
               })
             : '—',
+          _time: d.createdAt?.toMillis?.() ?? 0,
         };
-      });
+      })
+      .sort((a, b) => b._time - a._time);
+
+    return {
+      pending: all.filter((a) => a.status === 'pending'),
+      processed: all.filter((a) => a.status !== 'pending'),
+      total: all.length,
+    };
   } catch {
-    return [];
+    return { pending: [], processed: [], total: 0 };
   }
 }
 
 export default async function AdminPage() {
   await requireAdmin();
   const users = await getAllUsers();
-  const pendingApplications = await getPendingApplications();
+  const applications = await getAllApplications();
 
   const totalUsers = users.length;
   const byRole = {
@@ -92,11 +92,12 @@ export default async function AdminPage() {
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Admin Dashboard</h1>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-8">
           <StatCard label="Total Users" value={totalUsers} />
           <StatCard label="Students" value={byRole.student} />
           <StatCard label="Teachers" value={byRole.teacher} />
           <StatCard label="Partners" value={byRole.partner} />
+          <StatCard label="Applications" value={applications.total} />
         </div>
 
         {/* User table */}
@@ -156,26 +157,26 @@ export default async function AdminPage() {
           </div>
         </div>
 
-        {/* Partner Applications */}
+        {/* Partner Applications — Pending */}
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
           <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
-              Partner Applications
+              Pending Applications
             </h2>
-            {pendingApplications.length > 0 && (
+            {applications.pending.length > 0 && (
               <span className="text-xs font-medium text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
-                {pendingApplications.length} pending
+                {applications.pending.length} pending
               </span>
             )}
           </div>
 
-          {pendingApplications.length === 0 ? (
+          {applications.pending.length === 0 ? (
             <div className="px-6 py-8 text-center">
               <p className="text-sm text-gray-400">No pending applications.</p>
             </div>
           ) : (
             <div className="divide-y divide-gray-100">
-              {pendingApplications.map((app) => (
+              {applications.pending.map((app) => (
                 <div key={app.id} className="px-6 py-4">
                   <div className="flex items-start justify-between gap-4">
                     <div className="min-w-0">
@@ -195,6 +196,39 @@ export default async function AdminPage() {
             </div>
           )}
         </div>
+
+        {/* Partner Applications — Processed */}
+        {applications.processed.length > 0 && (
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
+            <div className="px-6 py-4 border-b border-gray-100">
+              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+                Application History
+              </h2>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {applications.processed.map((app) => (
+                <div key={app.id} className="px-6 py-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="min-w-0">
+                      <p className="font-medium text-gray-800">{app.name}</p>
+                      <p className="text-xs text-gray-400">
+                        {app.email} · {app.phone} · {app.city}
+                      </p>
+                      <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
+                    </div>
+                    <span className={`shrink-0 text-xs font-medium px-2 py-0.5 rounded-full ${
+                      app.status === 'approved'
+                        ? 'bg-green-50 text-green-600'
+                        : 'bg-red-50 text-red-500'
+                    }`}>
+                      {app.status === 'approved' ? 'Approved' : 'Rejected'}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </main>
   );
