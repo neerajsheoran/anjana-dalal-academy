@@ -1,8 +1,29 @@
 import Link from "next/link";
+import { cookies } from "next/headers";
 import { getChapters, getClassLabel, getSubjectLabel } from "@/lib/content";
 import { ClassId, SubjectId } from "@/lib/types";
+import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterQuizSelector from "@/components/quiz/ChapterQuizSelector";
+
+async function getReadChapters(classId: string, subject: string): Promise<Set<string>> {
+  try {
+    const cookieStore = await cookies();
+    const session = cookieStore.get("session")?.value;
+    if (!session) return new Set();
+    const decoded = await adminAuth.verifySessionCookie(session);
+    const snapshot = await adminDb
+      .collection("users")
+      .doc(decoded.uid)
+      .collection("progress")
+      .where("classId", "==", classId)
+      .where("subject", "==", subject)
+      .get();
+    return new Set(snapshot.docs.map((doc) => doc.id));
+  } catch {
+    return new Set();
+  }
+}
 
 export default async function ClassSubjectPage({
   params,
@@ -13,6 +34,7 @@ export default async function ClassSubjectPage({
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
   const chapters = getChapters(classId, subject);
+  const readChapters = await getReadChapters(classId, subject);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -52,10 +74,17 @@ export default async function ClassSubjectPage({
                   <span className="text-lg font-bold text-blue-200 min-w-[2rem]">
                     {String(chapter.order).padStart(2, "0")}
                   </span>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <p className="text-lg font-semibold text-gray-800">{chapter.title}</p>
                     <p className="text-sm text-gray-500 mt-1">{chapter.description}</p>
                   </div>
+                  {readChapters.has(chapter.chapterId) && (
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center" title="Read">
+                      <svg className="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                  )}
                 </div>
               </Link>
             ))}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ContinueLearning from '@/components/progress/ContinueLearning';
 
 export default function HomePage() {
   return (
@@ -78,6 +79,8 @@ export default function HomePage() {
 
         </div>
       </div>
+
+      <ContinueLearning />
     </main>
   );
 }

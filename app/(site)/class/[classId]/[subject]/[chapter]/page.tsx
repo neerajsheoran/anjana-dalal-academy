@@ -4,6 +4,7 @@ import { getChapter, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/cont
 import { ClassId, SubjectId, WorksheetData } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
+import ProgressTracker from "@/components/progress/ProgressTracker";
 import fs from "fs";
 import path from "path";
 
@@ -114,6 +115,13 @@ export default async function ChapterPage({
           )}
         </ChapterTabs>
       </div>
+
+      <ProgressTracker
+        classId={classId}
+        subject={subject}
+        chapterId={chapter}
+        chapterTitle={chapterMeta?.title ?? chapter}
+      />
     </main>
   );
 }
