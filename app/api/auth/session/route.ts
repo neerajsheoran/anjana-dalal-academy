@@ -29,8 +29,22 @@ export async function POST(req: Request) {
       const userRef = adminDb.collection('users').doc(decoded.uid);
       const userDoc = await userRef.get();
       if (!userDoc.exists) {
+        // Check if this email has an approved partner application
+        let role = 'student';
+        if (decoded.email) {
+          const appSnap = await adminDb
+            .collection('partnerApplications')
+            .where('email', '==', decoded.email)
+            .where('status', '==', 'approved')
+            .limit(1)
+            .get();
+          if (!appSnap.empty) {
+            role = 'partner';
+          }
+        }
+
         await userRef.set({
-          role: 'student',
+          role,
           name: decoded.name || null,
           email: decoded.email || null,
           createdAt: new Date(),

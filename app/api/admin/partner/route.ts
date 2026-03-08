@@ -43,9 +43,26 @@ export async function POST(req: Request) {
     // Update application status
     await appRef.update({ status: action === 'approve' ? 'approved' : 'rejected' });
 
-    // If approved and the applicant has a uid, update their role to partner
-    if (action === 'approve' && data.uid) {
-      await adminDb.collection('users').doc(data.uid).update({ role: 'partner' });
+    // If approved, find the user by uid or email and upgrade to partner
+    if (action === 'approve') {
+      let targetUid: string | null = data.uid || null;
+
+      // If no uid linked, look up by email
+      if (!targetUid && data.email) {
+        const userSnap = await adminDb
+          .collection('users')
+          .where('email', '==', data.email)
+          .limit(1)
+          .get();
+        if (!userSnap.empty) {
+          targetUid = userSnap.docs[0].id;
+        }
+      }
+
+      if (targetUid) {
+        await adminDb.collection('users').doc(targetUid).update({ role: 'partner' });
+      }
+      // If no account yet, they'll get partner role on signup (handled in session route)
     }
 
     return NextResponse.json({ ok: true });
