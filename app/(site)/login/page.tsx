@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import {
   signInWithEmailAndPassword,
   signInWithRedirect,
-  getRedirectResult,
+  onAuthStateChanged,
   createUserWithEmailAndPassword,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
@@ -29,13 +29,16 @@ function LoginForm() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Handle Google redirect result when page loads after OAuth
+  // After Google redirect, detect auth state and create session
   useEffect(() => {
-    getRedirectResult(auth).then(async (result) => {
-      if (result) {
+    if (!sessionStorage.getItem('pendingGoogleLogin')) return;
+
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        sessionStorage.removeItem('pendingGoogleLogin');
         setLoading(true);
         try {
-          const idToken = await result.user.getIdToken();
+          const idToken = await user.getIdToken(true); // force fresh token
           await createSession(idToken);
           router.push(from);
         } catch {
@@ -43,9 +46,9 @@ function LoginForm() {
           setLoading(false);
         }
       }
-    }).catch(() => {
-      // No redirect result or error — ignore
     });
+
+    return () => unsubscribe();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function createSession(idToken: string) {
@@ -89,8 +92,10 @@ function LoginForm() {
     setError('');
     setLoading(true);
     try {
+      sessionStorage.setItem('pendingGoogleLogin', '1');
       await signInWithRedirect(auth, googleProvider);
     } catch {
+      sessionStorage.removeItem('pendingGoogleLogin');
       setError('Google sign-in failed. Please try again.');
       setLoading(false);
     }
