@@ -172,6 +172,7 @@ export default config({
             owner: process.env.NEXT_PUBLIC_GITHUB_OWNER ?? 'neerajsheoran',
             name: process.env.NEXT_PUBLIC_GITHUB_REPO ?? 'anjana-dalal-academy',
           },
+          branchPrefix: 'content/',
         }
       : { kind: 'local' },
 
