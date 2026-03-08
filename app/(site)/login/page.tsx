@@ -1,10 +1,11 @@
 'use client';
 
-import { Suspense, useState } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
   signInWithEmailAndPassword,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   createUserWithEmailAndPassword,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
@@ -27,6 +28,25 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  // Handle Google redirect result when page loads after OAuth
+  useEffect(() => {
+    getRedirectResult(auth).then(async (result) => {
+      if (result) {
+        setLoading(true);
+        try {
+          const idToken = await result.user.getIdToken();
+          await createSession(idToken);
+          router.push(from);
+        } catch {
+          setError('Google sign-in failed. Please try again.');
+          setLoading(false);
+        }
+      }
+    }).catch(() => {
+      // No redirect result or error — ignore
+    });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -69,16 +89,9 @@ function LoginForm() {
     setError('');
     setLoading(true);
     try {
-      const credential = await signInWithPopup(auth, googleProvider);
-      const idToken = await credential.user.getIdToken();
-      await createSession(idToken);
-      router.push(from);
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : '';
-      if (!msg.includes('popup-closed-by-user')) {
-        setError('Google sign-in failed. Please try again.');
-      }
-    } finally {
+      await signInWithRedirect(auth, googleProvider);
+    } catch {
+      setError('Google sign-in failed. Please try again.');
       setLoading(false);
     }
   }
