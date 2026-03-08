@@ -1,11 +1,10 @@
 'use client';
 
-import { Suspense, useState, useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { Suspense, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   signInWithEmailAndPassword,
-  signInWithRedirect,
-  onAuthStateChanged,
+  signInWithPopup,
   createUserWithEmailAndPassword,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
@@ -19,7 +18,6 @@ export default function LoginPage() {
 }
 
 function LoginForm() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const from = searchParams.get('from') || '/';
 
@@ -28,28 +26,6 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-
-  // After Google redirect, detect auth state and create session
-  useEffect(() => {
-    if (!sessionStorage.getItem('pendingGoogleLogin')) return;
-
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        sessionStorage.removeItem('pendingGoogleLogin');
-        setLoading(true);
-        try {
-          const idToken = await user.getIdToken(true); // force fresh token
-          await createSession(idToken);
-          router.push(from);
-        } catch {
-          setError('Google sign-in failed. Please try again.');
-          setLoading(false);
-        }
-      }
-    });
-
-    return () => unsubscribe();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -71,7 +47,7 @@ function LoginForm() {
           : await createUserWithEmailAndPassword(auth, email, password);
       const idToken = await credential.user.getIdToken();
       await createSession(idToken);
-      router.push(from);
+      window.location.href = from;
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Something went wrong';
       if (msg.includes('user-not-found') || msg.includes('wrong-password') || msg.includes('invalid-credential')) {
@@ -92,11 +68,16 @@ function LoginForm() {
     setError('');
     setLoading(true);
     try {
-      sessionStorage.setItem('pendingGoogleLogin', '1');
-      await signInWithRedirect(auth, googleProvider);
-    } catch {
-      sessionStorage.removeItem('pendingGoogleLogin');
-      setError('Google sign-in failed. Please try again.');
+      const credential = await signInWithPopup(auth, googleProvider);
+      const idToken = await credential.user.getIdToken();
+      await createSession(idToken);
+      window.location.href = from;
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : '';
+      if (!msg.includes('popup-closed-by-user')) {
+        setError('Google sign-in failed. Please try again.');
+      }
+    } finally {
       setLoading(false);
     }
   }
