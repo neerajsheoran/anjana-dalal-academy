@@ -24,16 +24,20 @@ export async function POST(req: Request) {
       sameSite: 'lax',
     });
 
-    // Create Firestore user document on first login
-    const userRef = adminDb.collection('users').doc(decoded.uid);
-    const userDoc = await userRef.get();
-    if (!userDoc.exists) {
-      await userRef.set({
-        role: 'student',
-        name: decoded.name || null,
-        email: decoded.email || null,
-        createdAt: new Date(),
-      });
+    // Create Firestore user document on first login (non-blocking)
+    try {
+      const userRef = adminDb.collection('users').doc(decoded.uid);
+      const userDoc = await userRef.get();
+      if (!userDoc.exists) {
+        await userRef.set({
+          role: 'student',
+          name: decoded.name || null,
+          email: decoded.email || null,
+          createdAt: new Date(),
+        });
+      }
+    } catch {
+      // Firestore errors should not block login
     }
 
     return NextResponse.json({ ok: true });

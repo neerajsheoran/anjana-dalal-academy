@@ -8,8 +8,13 @@ async function getUser() {
   if (!session) redirect("/login");
   const decoded = await adminAuth.verifySessionCookie(session);
 
-  const userDoc = await adminDb.collection("users").doc(decoded.uid).get();
-  const profile = userDoc.exists ? userDoc.data() : null;
+  let profile = null;
+  try {
+    const userDoc = await adminDb.collection("users").doc(decoded.uid).get();
+    profile = userDoc.exists ? userDoc.data() : null;
+  } catch {
+    // Firestore unavailable — fall back to auth token data
+  }
 
   return {
     uid: decoded.uid,
