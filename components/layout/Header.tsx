@@ -34,7 +34,7 @@ export default async function Header() {
           </p>
         </div>
 
-        {user && (
+        {user ? (
           <div className="flex items-center gap-3">
             <Link
               href="/profile"
@@ -51,6 +51,13 @@ export default async function Header() {
             <div className="w-px h-8 bg-gray-200" />
             <LogoutButton />
           </div>
+        ) : (
+          <Link
+            href="/login"
+            className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Sign In
+          </Link>
         )}
       </div>
     </header>
