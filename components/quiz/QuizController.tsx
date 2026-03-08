@@ -56,6 +56,35 @@ export default function QuizController({
   const [score, setScore] = useState(0);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [printWithAnswers, setPrintWithAnswers] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  // Save quiz result to Firestore when quiz is completed
+  useEffect(() => {
+    if (phase !== 'result' || saved) return;
+
+    const pct = Math.round((score / activeQuestions.length) * 100);
+
+    fetch('/api/quiz/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        score,
+        total: activeQuestions.length,
+        percentage: pct,
+        classId,
+        subject,
+        chapterIds,
+        chapterTitles,
+        difficulty,
+      }),
+    })
+      .then((res) => {
+        if (res.ok) setSaved(true);
+      })
+      .catch(() => {
+        // Not logged in or network error — silently ignore
+      });
+  }, [phase, saved, score, activeQuestions.length, classId, subject, chapterIds, chapterTitles, difficulty]);
 
   const availableOnline = useMemo(
     () => filterQuestions(allQuestions, difficulty, true).length,
@@ -118,6 +147,7 @@ export default function QuizController({
     setSelectedAnswer(null);
     setAnswered(false);
     setScore(0);
+    setSaved(false);
     setPhase('quiz');
   }
 
@@ -343,9 +373,12 @@ export default function QuizController({
           <span className="font-bold">{activeQuestions.length}</span> correct —{' '}
           <span className="font-bold">{pct}%</span>
         </p>
-        <div className="h-4 bg-gray-200 rounded-full overflow-hidden max-w-xs mx-auto mb-8">
+        <div className="h-4 bg-gray-200 rounded-full overflow-hidden max-w-xs mx-auto mb-4">
           <div className={`h-full rounded-full ${barColor}`} style={{ width: `${pct}%` }} />
         </div>
+        {saved && (
+          <p className="text-xs text-green-600 mb-4">Score saved to your profile.</p>
+        )}
         <div className="flex justify-center gap-3 flex-wrap">
           <button
             onClick={handleRetry}

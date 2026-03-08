@@ -26,8 +26,44 @@ async function getUser() {
   };
 }
 
+async function getQuizHistory(uid: string) {
+  try {
+    const snapshot = await adminDb
+      .collection("users")
+      .doc(uid)
+      .collection("quizAttempts")
+      .orderBy("timestamp", "desc")
+      .limit(20)
+      .get();
+
+    return snapshot.docs.map((doc) => {
+      const d = doc.data();
+      return {
+        id: doc.id,
+        score: d.score as number,
+        total: d.total as number,
+        percentage: d.percentage as number,
+        classId: d.classId as string,
+        subject: d.subject as string,
+        chapterTitles: (d.chapterTitles || []) as string[],
+        difficulty: d.difficulty as string,
+        timestamp: d.timestamp?.toDate
+          ? d.timestamp.toDate().toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })
+          : "—",
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
 export default async function ProfilePage() {
   const user = await getUser();
+  const quizHistory = await getQuizHistory(user.uid);
 
   const name = user.name || "—";
   const email = user.email || "—";
@@ -86,6 +122,44 @@ export default async function ProfilePage() {
           <p className="text-xs text-gray-400 mt-4">
             Subscriptions will be available soon.
           </p>
+        </div>
+
+        {/* Quiz History */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Quiz History
+          </h2>
+          {quizHistory.length === 0 ? (
+            <p className="text-sm text-gray-400">
+              No quiz attempts yet. Take a quiz to see your scores here.
+            </p>
+          ) : (
+            <div className="space-y-3">
+              {quizHistory.map((attempt) => (
+                <div
+                  key={attempt.id}
+                  className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0"
+                >
+                  <div className="min-w-0 mr-4">
+                    <p className="text-sm font-medium text-gray-800 truncate">
+                      {attempt.chapterTitles.join(", ") || attempt.classId}
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      {attempt.subject} · {attempt.difficulty} · {attempt.timestamp}
+                    </p>
+                  </div>
+                  <div className="text-right shrink-0">
+                    <p className="text-sm font-bold text-blue-600">
+                      {attempt.percentage}%
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      {attempt.score}/{attempt.total}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
       </div>
