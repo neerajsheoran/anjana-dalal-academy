@@ -72,6 +72,11 @@ export default async function ChapterPage({
   // Strip YAML frontmatter (--- ... ---) added by Keystatic CMS before rendering
   const notesSource = notesRaw ? notesRaw.replace(/^---[\s\S]*?---\s*\n?/, "") : null;
 
+  const discussionPath = path.join(basePath, "discussion.mdx");
+  const hasDiscussion = fs.existsSync(discussionPath);
+  const discussionRaw = hasDiscussion ? fs.readFileSync(discussionPath, "utf8") : null;
+  const discussionSource = discussionRaw ? discussionRaw.replace(/^---[\s\S]*?---\s*\n?/, "") : null;
+
   const worksheetPath = path.join(basePath, "worksheet.json");
   const hasWorksheet = fs.existsSync(worksheetPath);
   const worksheet: WorksheetData | null = hasWorksheet
@@ -119,7 +124,20 @@ export default async function ChapterPage({
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-6 py-8">
-        <ChapterTabs worksheet={worksheet} isLoggedIn={isLoggedIn} currentPath={currentPath}>
+        <ChapterTabs
+          worksheet={worksheet}
+          isLoggedIn={isLoggedIn}
+          currentPath={currentPath}
+          discussionContent={
+            discussionSource ? (
+              <MDXRemote
+                source={discussionSource}
+                components={mdxComponents}
+                options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+              />
+            ) : null
+          }
+        >
           {notesSource ? (
             <MDXRemote
               source={notesSource}
