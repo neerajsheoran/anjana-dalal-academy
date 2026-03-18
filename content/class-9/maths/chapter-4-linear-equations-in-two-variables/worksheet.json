@@ -1,4 +1,5 @@
 {
+  "chapterRef": "",
   "topics": [
     {
       "topic": "Linear Equations in Two Variables",
@@ -7,7 +8,12 @@
           "id": "ch4-t1-e1",
           "type": "mcq",
           "question": "Which of the following is a linear equation in two variables?",
-          "options": ["x^2 + y = 5", "x + y = 9", "x^2 + y^2 = 1", "xy = 6"],
+          "options": [
+            "x^2 + y = 5",
+            "x + y = 9",
+            "x^2 + y^2 = 1",
+            "xy = 6"
+          ],
           "answer": "x + y = 9",
           "explanation": "A linear equation in two variables has both variables with power 1 and no product of variables. x + y = 9 satisfies this condition."
         },
@@ -15,6 +21,7 @@
           "id": "ch4-t1-e2",
           "type": "fill",
           "question": "The standard form of a linear equation in two variables is ax + by + c = 0, where a and b are not both ______.",
+          "options": [],
           "answer": "zero",
           "explanation": "If both a and b were zero, the equation would reduce to c = 0, which has no variables and is not a linear equation in two variables."
         },
@@ -22,6 +29,7 @@
           "id": "ch4-t1-e3",
           "type": "short",
           "question": "Express the equation 2x + 3y = 9.35 in the form ax + by + c = 0 and state the values of a, b, and c.",
+          "options": [],
           "answer": "2x + 3y - 9.35 = 0. Here a = 2, b = 3, c = -9.35.",
           "explanation": "Rearrange the equation by moving the constant to the left side: 2x + 3y - 9.35 = 0."
         },
@@ -29,6 +37,7 @@
           "id": "ch4-t1-e4",
           "type": "short",
           "question": "The cost of a notebook is twice the cost of a pen. Write a linear equation in two variables to represent this statement. (Let x = cost of notebook, y = cost of pen.)",
+          "options": [],
           "answer": "x = 2y, or equivalently x - 2y = 0.",
           "explanation": "If the notebook costs x rupees and the pen costs y rupees, then x is twice y, giving x = 2y or x - 2y + 0 = 0."
         }
@@ -38,6 +47,7 @@
           "id": "ch4-t1-m1",
           "type": "short",
           "question": "Express the following equations in the form ax + by + c = 0: (i) 2x = y (ii) 3x + 2 = 0 (iii) y - 2 = 0",
+          "options": [],
           "answer": "(i) 2x - y + 0 = 0 (a=2, b=-1, c=0)\n(ii) 3x + 0.y + 2 = 0 (a=3, b=0, c=2)\n(iii) 0.x + 1.y - 2 = 0 (a=0, b=1, c=-2)",
           "explanation": "Each equation is rearranged into the standard form. Note that equations in one variable are special cases where the coefficient of the other variable is 0."
         },
@@ -45,7 +55,12 @@
           "id": "ch4-t1-m2",
           "type": "mcq",
           "question": "The equation y = 3x + 5 has:",
-          "options": ["A unique solution", "Only two solutions", "Infinitely many solutions", "No solution"],
+          "options": [
+            "A unique solution",
+            "Only two solutions",
+            "Infinitely many solutions",
+            "No solution"
+          ],
           "answer": "Infinitely many solutions",
           "explanation": "A linear equation in two variables always has infinitely many solutions. For every value of x, there is a corresponding value of y."
         }
@@ -55,6 +70,7 @@
           "id": "ch4-t1-h1",
           "type": "long",
           "question": "Two students together scored 176 runs in a cricket match. Express this as a linear equation in two variables. Write three solutions of this equation and verify each.",
+          "options": [],
           "answer": "Let x = runs scored by one student, y = runs scored by the other.\nEquation: x + y = 176\nSolution 1: x = 100, y = 76. Check: 100 + 76 = 176. Verified.\nSolution 2: x = 80, y = 96. Check: 80 + 96 = 176. Verified.\nSolution 3: x = 50, y = 126. Check: 50 + 126 = 176. Verified.",
           "explanation": "There are infinitely many pairs (x, y) where x + y = 176. Any valid pair where both values are non-negative and add to 176 is a solution."
         }
@@ -67,7 +83,12 @@
           "id": "ch4-t2-e1",
           "type": "mcq",
           "question": "Which of the following is a solution of x - 2y = 4?",
-          "options": ["(0, 2)", "(2, 0)", "(4, 0)", "(1, 1)"],
+          "options": [
+            "(0, 2)",
+            "(2, 0)",
+            "(4, 0)",
+            "(1, 1)"
+          ],
           "answer": "(4, 0)",
           "explanation": "Substituting (4, 0): 4 - 2(0) = 4. This equals 4, so (4, 0) is a solution. Check others: (0,2) gives -4, (2,0) gives 2, (1,1) gives -1."
         },
@@ -75,6 +96,7 @@
           "id": "ch4-t2-e2",
           "type": "fill",
           "question": "The graph of a linear equation in two variables is always a ______.",
+          "options": [],
           "answer": "straight line",
           "explanation": "The graph of every linear equation ax + by + c = 0 is a straight line on the Cartesian plane."
         },
@@ -82,6 +104,7 @@
           "id": "ch4-t2-e3",
           "type": "short",
           "question": "Find two solutions of the equation 4x + 3y = 12.",
+          "options": [],
           "answer": "Taking x = 0: 3y = 12, y = 4. Solution: (0, 4).\nTaking y = 0: 4x = 12, x = 3. Solution: (3, 0).",
           "explanation": "Set one variable to 0 and solve for the other. This gives the y-intercept and x-intercept respectively."
         },
@@ -89,7 +112,12 @@
           "id": "ch4-t2-e4",
           "type": "mcq",
           "question": "The equation x = 3 represents:",
-          "options": ["A point", "A horizontal line", "A vertical line parallel to y-axis", "A line passing through origin"],
+          "options": [
+            "A point",
+            "A horizontal line",
+            "A vertical line parallel to y-axis",
+            "A line passing through origin"
+          ],
           "answer": "A vertical line parallel to y-axis",
           "explanation": "x = 3 means the x-coordinate is always 3 regardless of y. This gives a vertical line passing through (3, 0), parallel to the y-axis."
         }
@@ -99,6 +127,7 @@
           "id": "ch4-t2-m1",
           "type": "short",
           "question": "Write four solutions of the equation 2x + y = 7.",
+          "options": [],
           "answer": "(0, 7): 2(0) + 7 = 7\n(1, 5): 2(1) + 5 = 7\n(2, 3): 2(2) + 3 = 7\n(3, 1): 2(3) + 1 = 7",
           "explanation": "For each chosen value of x, compute y = 7 - 2x to find the corresponding solution."
         },
@@ -106,6 +135,7 @@
           "id": "ch4-t2-m2",
           "type": "short",
           "question": "Find the value of k if x = 2, y = 1 is a solution of the equation 2x + 3y = k.",
+          "options": [],
           "answer": "Substituting x = 2 and y = 1: k = 2(2) + 3(1) = 4 + 3 = 7",
           "explanation": "Since (2, 1) is a solution, substituting these values into the equation gives k = 7."
         },
@@ -113,6 +143,7 @@
           "id": "ch4-t2-m3",
           "type": "short",
           "question": "Find two solutions of 2x + 5y = 0.",
+          "options": [],
           "answer": "Solution 1: x = 0, y = 0 gives (0, 0).\nSolution 2: x = 5, y = -2 gives (5, -2) since 2(5) + 5(-2) = 10 - 10 = 0.",
           "explanation": "The equation passes through the origin. For a second solution, pick x = 5 and solve: 10 + 5y = 0, so y = -2."
         }
@@ -122,6 +153,7 @@
           "id": "ch4-t2-h1",
           "type": "long",
           "question": "Draw the graph of the equation 2x + 3y = 6 by finding at least three solutions. Also find the points where the line crosses the x-axis and y-axis.",
+          "options": [],
           "answer": "Solutions:\n- x = 0: 3y = 6, y = 2. Point: (0, 2)\n- y = 0: 2x = 6, x = 3. Point: (3, 0)\n- x = -3: -6 + 3y = 6, y = 4. Point: (-3, 4)\n\nPlot these three points and draw a straight line through them.\n\nThe line crosses the y-axis at (0, 2) and the x-axis at (3, 0).",
           "explanation": "The x-intercept is found by setting y = 0, and the y-intercept by setting x = 0. These two points are sufficient to draw the line, but a third point helps verify accuracy."
         },
@@ -129,6 +161,7 @@
           "id": "ch4-t2-h2",
           "type": "long",
           "question": "The equation 3y + 4 = 0 represents a line. Write it in standard form, find two solutions, and describe the line geometrically.",
+          "options": [],
           "answer": "Standard form: 0.x + 3y + 4 = 0, so a = 0, b = 3, c = 4.\nSolving: y = -4/3 for any value of x.\nSolution 1: (0, -4/3)\nSolution 2: (5, -4/3)\n\nGeometrically, this is a horizontal line parallel to the x-axis, at a distance of 4/3 units below it.",
           "explanation": "Since the coefficient of x is 0, x can take any value. The equation fixes y = -4/3, producing a horizontal line."
         }
