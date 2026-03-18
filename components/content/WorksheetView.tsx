@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { WorksheetData, TopicWorksheet, Question, DifficultyLevel } from "@/lib/types";
+import ContentBlur from "./ContentBlur";
 
 const DIFFICULTY_LABELS: Record<DifficultyLevel, string> = {
   easy: "Easy",
@@ -122,7 +123,15 @@ function TopicSection({ topic }: { topic: TopicWorksheet }) {
   );
 }
 
-export default function WorksheetView({ worksheet }: { worksheet: WorksheetData | null }) {
+export default function WorksheetView({
+  worksheet,
+  isLoggedIn = true,
+  currentPath = '/',
+}: {
+  worksheet: WorksheetData | null;
+  isLoggedIn?: boolean;
+  currentPath?: string;
+}) {
   const [activeTopicIndex, setActiveTopicIndex] = useState<number | null>(null);
 
   if (!worksheet) {
@@ -135,6 +144,11 @@ export default function WorksheetView({ worksheet }: { worksheet: WorksheetData 
 
   const topics = worksheet.topics;
   const displayedTopics = activeTopicIndex === null ? topics : [topics[activeTopicIndex]];
+
+  // For anonymous users viewing all topics: show first topic, blur the rest
+  const shouldBlurRest = !isLoggedIn && activeTopicIndex === null && displayedTopics.length > 1;
+  const visibleTopics = shouldBlurRest ? displayedTopics.slice(0, 1) : displayedTopics;
+  const blurredTopics = shouldBlurRest ? displayedTopics.slice(1) : [];
 
   return (
     <div>
@@ -166,10 +180,19 @@ export default function WorksheetView({ worksheet }: { worksheet: WorksheetData 
         ))}
       </div>
 
-      {/* Topic Sections */}
-      {displayedTopics.map((topic, index) => (
+      {/* Visible Topics */}
+      {visibleTopics.map((topic, index) => (
         <TopicSection key={index} topic={topic} />
       ))}
+
+      {/* Blurred Topics (anonymous only) */}
+      {blurredTopics.length > 0 && (
+        <ContentBlur isLoggedIn={false} currentPath={currentPath} maxHeight="300px">
+          {blurredTopics.map((topic, index) => (
+            <TopicSection key={visibleTopics.length + index} topic={topic} />
+          ))}
+        </ContentBlur>
+      )}
     </div>
   );
 }

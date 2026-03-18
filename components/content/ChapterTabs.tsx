@@ -2,14 +2,17 @@
 
 import { useState } from "react";
 import WorksheetView from "./WorksheetView";
+import ContentBlur from "./ContentBlur";
 import { WorksheetData } from "@/lib/types";
 
 interface ChapterTabsProps {
   children: React.ReactNode; // pre-rendered MDX notes from server
   worksheet: WorksheetData | null;
+  isLoggedIn: boolean;
+  currentPath: string;
 }
 
-export default function ChapterTabs({ children, worksheet }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, isLoggedIn, currentPath }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "worksheet">("notes");
 
   return (
@@ -41,12 +44,14 @@ export default function ChapterTabs({ children, worksheet }: ChapterTabsProps) {
       {/* Tab Content */}
       {activeTab === "notes" && (
         <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-          {children}
+          <ContentBlur isLoggedIn={isLoggedIn} currentPath={currentPath}>
+            {children}
+          </ContentBlur>
         </article>
       )}
 
       {activeTab === "worksheet" && (
-        <WorksheetView worksheet={worksheet} />
+        <WorksheetView worksheet={worksheet} isLoggedIn={isLoggedIn} currentPath={currentPath} />
       )}
     </div>
   );

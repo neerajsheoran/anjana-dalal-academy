@@ -57,6 +57,7 @@ export default function QuizController({
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [printWithAnswers, setPrintWithAnswers] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [saveAttempted, setSaveAttempted] = useState(false);
 
   // Save quiz result to Firestore when quiz is completed
   useEffect(() => {
@@ -80,9 +81,10 @@ export default function QuizController({
     })
       .then((res) => {
         if (res.ok) setSaved(true);
+        setSaveAttempted(true);
       })
       .catch(() => {
-        // Not logged in or network error — silently ignore
+        setSaveAttempted(true);
       });
   }, [phase, saved, score, activeQuestions.length, classId, subject, chapterIds, chapterTitles, difficulty]);
 
@@ -148,6 +150,7 @@ export default function QuizController({
     setAnswered(false);
     setScore(0);
     setSaved(false);
+    setSaveAttempted(false);
     setPhase('quiz');
   }
 
@@ -378,6 +381,19 @@ export default function QuizController({
         </div>
         {saved && (
           <p className="text-xs text-green-600 mb-4">Score saved to your profile.</p>
+        )}
+        {saveAttempted && !saved && (
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4 max-w-sm mx-auto">
+            <p className="text-sm text-amber-800 font-medium mb-2">
+              Want to save your score and track progress?
+            </p>
+            <Link
+              href={`/login?from=${encodeURIComponent(`/quiz?class=${classId}&subject=${subject}&chapters=${chapterIds.join(',')}`)}`}
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
+            >
+              Sign Up Free
+            </Link>
+          </div>
         )}
         <div className="flex justify-center gap-3 flex-wrap">
           <button

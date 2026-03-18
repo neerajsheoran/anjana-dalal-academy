@@ -5,6 +5,8 @@ import { ClassId, SubjectId, WorksheetData } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import ProgressTracker from "@/components/progress/ProgressTracker";
+import { cookies } from "next/headers";
+import { adminAuth } from "@/lib/firebase-admin";
 import fs from "fs";
 import path from "path";
 
@@ -41,6 +43,20 @@ export default async function ChapterPage({
   params: Promise<{ classId: ClassId; subject: SubjectId; chapter: string }>;
 }) {
   const { classId, subject, chapter } = await params;
+
+  let isLoggedIn = false;
+  try {
+    const cookieStore = await cookies();
+    const session = cookieStore.get("session")?.value;
+    if (session) {
+      await adminAuth.verifySessionCookie(session);
+      isLoggedIn = true;
+    }
+  } catch {
+    isLoggedIn = false;
+  }
+
+  const currentPath = `/class/${classId}/${subject}/${chapter}`;
   const mdxComponents = { img: makeMdxImage(classId, subject, chapter) };
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
@@ -103,7 +119,7 @@ export default async function ChapterPage({
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-6 py-8">
-        <ChapterTabs worksheet={worksheet}>
+        <ChapterTabs worksheet={worksheet} isLoggedIn={isLoggedIn} currentPath={currentPath}>
           {notesSource ? (
             <MDXRemote
               source={notesSource}
