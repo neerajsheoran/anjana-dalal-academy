@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { WorksheetData, TopicWorksheet, Question, DifficultyLevel } from "@/lib/types";
 import ContentBlur from "./ContentBlur";
 
@@ -127,12 +127,20 @@ export default function WorksheetView({
   worksheet,
   isLoggedIn = true,
   currentPath = '/',
+  initialTopicIndex = null,
 }: {
   worksheet: WorksheetData | null;
   isLoggedIn?: boolean;
   currentPath?: string;
+  initialTopicIndex?: number | null;
 }) {
   const [activeTopicIndex, setActiveTopicIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (initialTopicIndex !== null && initialTopicIndex !== undefined) {
+      setActiveTopicIndex(initialTopicIndex);
+    }
+  }, [initialTopicIndex]);
 
   if (!worksheet) {
     return (

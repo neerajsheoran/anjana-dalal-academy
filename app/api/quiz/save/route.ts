@@ -50,6 +50,35 @@ export async function POST(req: Request) {
         timestamp: FieldValue.serverTimestamp(),
       });
 
+    // Mark chapters as completed when score >= 60%
+    if (percentage >= 60 && Array.isArray(chapterIds)) {
+      const titles = chapterTitles || [];
+      for (let i = 0; i < chapterIds.length; i++) {
+        const chapId = chapterIds[i];
+        const progressRef = adminDb
+          .collection('users')
+          .doc(uid)
+          .collection('progress')
+          .doc(chapId);
+
+        const existing = await progressRef.get();
+        const existingBest = existing.exists ? (existing.data()?.bestScore ?? 0) : 0;
+
+        await progressRef.set(
+          {
+            completed: true,
+            completedAt: FieldValue.serverTimestamp(),
+            bestScore: Math.max(percentage, existingBest),
+            classId,
+            subject,
+            chapterId: chapId,
+            chapterTitle: titles[i] || chapId,
+          },
+          { merge: true }
+        );
+      }
+    }
+
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('Failed to save quiz attempt:', err);

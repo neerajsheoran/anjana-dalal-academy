@@ -6,11 +6,11 @@ import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterQuizSelector from "@/components/quiz/ChapterQuizSelector";
 
-async function getReadChapters(classId: string, subject: string): Promise<Set<string>> {
+async function getChapterProgress(classId: string, subject: string): Promise<Map<string, { visited: boolean; completed: boolean }>> {
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get("session")?.value;
-    if (!session) return new Set();
+    if (!session) return new Map();
     const decoded = await adminAuth.verifySessionCookie(session);
     const snapshot = await adminDb
       .collection("users")
@@ -19,9 +19,14 @@ async function getReadChapters(classId: string, subject: string): Promise<Set<st
       .where("classId", "==", classId)
       .where("subject", "==", subject)
       .get();
-    return new Set(snapshot.docs.map((doc) => doc.id));
+    const map = new Map<string, { visited: boolean; completed: boolean }>();
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      map.set(doc.id, { visited: true, completed: data.completed === true });
+    }
+    return map;
   } catch {
-    return new Set();
+    return new Map();
   }
 }
 
@@ -34,7 +39,7 @@ export default async function ClassSubjectPage({
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
   const chapters = getChapters(classId, subject);
-  const readChapters = await getReadChapters(classId, subject);
+  const chapterProgress = await getChapterProgress(classId, subject);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -78,13 +83,28 @@ export default async function ClassSubjectPage({
                     <p className="text-lg font-semibold text-gray-800">{chapter.title}</p>
                     <p className="text-sm text-gray-500 mt-1">{chapter.description}</p>
                   </div>
-                  {readChapters.has(chapter.chapterId) && (
-                    <span className="shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center" title="Read">
-                      <svg className="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                  )}
+                  {chapterProgress.has(chapter.chapterId) && (() => {
+                    const progress = chapterProgress.get(chapter.chapterId)!;
+                    const isCompleted = progress.completed;
+                    return (
+                      <span
+                        className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${
+                          isCompleted ? "bg-green-100" : "bg-gray-100"
+                        }`}
+                        title={isCompleted ? "Completed" : "Visited"}
+                      >
+                        <svg
+                          className={`w-3.5 h-3.5 ${isCompleted ? "text-green-600" : "text-gray-400"}`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={3}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                    );
+                  })()}
                 </div>
               </Link>
             ))}

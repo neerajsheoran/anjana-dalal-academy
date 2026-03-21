@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import ProgressTracker from "@/components/progress/ProgressTracker";
 import { cookies } from "next/headers";
-import { adminAuth } from "@/lib/firebase-admin";
+import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import fs from "fs";
 import path from "path";
 
@@ -45,19 +45,37 @@ export default async function ChapterPage({
   const { classId, subject, chapter } = await params;
 
   let isLoggedIn = false;
+  let isChapterCompleted = false;
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get("session")?.value;
     if (session) {
-      await adminAuth.verifySessionCookie(session);
+      const decoded = await adminAuth.verifySessionCookie(session);
       isLoggedIn = true;
+      // Check if chapter is completed
+      const progressDoc = await adminDb
+        .collection("users")
+        .doc(decoded.uid)
+        .collection("progress")
+        .doc(chapter)
+        .get();
+      if (progressDoc.exists && progressDoc.data()?.completed === true) {
+        isChapterCompleted = true;
+      }
     }
   } catch {
     isLoggedIn = false;
   }
 
   const currentPath = `/class/${classId}/${subject}/${chapter}`;
-  const mdxComponents = { img: makeMdxImage(classId, subject, chapter) };
+
+  function MdxH2({ children }: { children?: React.ReactNode }) {
+    const text = typeof children === "string" ? children : String(children ?? "");
+    const slug = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    return <h2 id={slug}>{children}</h2>;
+  }
+
+  const mdxComponents = { img: makeMdxImage(classId, subject, chapter), h2: MdxH2 };
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
   const chapterMeta = getChapter(chapter);
@@ -71,6 +89,17 @@ export default async function ChapterPage({
   const notesRaw = hasNotes ? fs.readFileSync(notesPath, "utf8") : null;
   // Strip YAML frontmatter (--- ... ---) added by Keystatic CMS before rendering
   const notesSource = notesRaw ? notesRaw.replace(/^---[\s\S]*?---\s*\n?/, "") : null;
+
+  // Extract ## headings for in-page TOC
+  const headings: { text: string; slug: string }[] = [];
+  if (notesSource) {
+    const matches = notesSource.matchAll(/^## (.+)$/gm);
+    for (const m of matches) {
+      const text = m[1].replace(/\*\*/g, "").trim();
+      const slug = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      headings.push({ text, slug });
+    }
+  }
 
   const discussionPath = path.join(basePath, "discussion.mdx");
   const hasDiscussion = fs.existsSync(discussionPath);
@@ -111,13 +140,21 @@ export default async function ChapterPage({
               {chapterMeta.description}
             </p>
           )}
-          <div className="mt-4">
+          <div className="mt-4 flex items-center gap-3">
             <a
               href={`/quiz?class=${classId}&subject=${subject}&chapters=${chapter}`}
               className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-colors border border-white/30"
             >
               🧠 Quiz / Revision
             </a>
+            {isChapterCompleted && (
+              <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-100 font-semibold px-3 py-1.5 rounded-lg text-sm border border-green-400/30">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Completed
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -128,6 +165,8 @@ export default async function ChapterPage({
           worksheet={worksheet}
           isLoggedIn={isLoggedIn}
           currentPath={currentPath}
+          headings={headings}
+          worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
           discussionContent={
             discussionSource ? (
               <MDXRemote
