@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import WorksheetView from "./WorksheetView";
 import ContentBlur from "./ContentBlur";
 import DiscussionAudio from "./DiscussionAudio";
-import { WorksheetData } from "@/lib/types";
+import { WorksheetData, ContentAccessLevel } from "@/lib/types";
 
 interface Heading {
   text: string;
@@ -15,7 +15,7 @@ interface ChapterTabsProps {
   children: React.ReactNode; // pre-rendered MDX notes from server
   worksheet: WorksheetData | null;
   discussionContent: React.ReactNode | null;
-  isLoggedIn: boolean;
+  accessLevel: ContentAccessLevel;
   currentPath: string;
   headings?: Heading[];
   worksheetTopics?: string[];
@@ -35,7 +35,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
   return -1;
 }
 
-export default function ChapterTabs({ children, worksheet, discussionContent, isLoggedIn, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, discussionContent, accessLevel, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const discussionRef = useRef<HTMLDivElement>(null);
@@ -117,7 +117,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, is
             </nav>
           )}
           <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-            <ContentBlur isLoggedIn={isLoggedIn} currentPath={currentPath}>
+            <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
               {children}
             </ContentBlur>
           </article>
@@ -128,7 +128,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, is
         <>
           <DiscussionAudio contentRef={discussionRef} />
           <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-            <ContentBlur isLoggedIn={isLoggedIn} currentPath={currentPath}>
+            <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
               <div ref={discussionRef}>
                 {discussionContent}
               </div>
@@ -138,7 +138,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, is
       )}
 
       {activeTab === "worksheet" && (
-        <WorksheetView worksheet={worksheet} isLoggedIn={isLoggedIn} currentPath={currentPath} initialTopicIndex={jumpToTopic} />
+        <WorksheetView worksheet={worksheet} accessLevel={accessLevel} currentPath={currentPath} initialTopicIndex={jumpToTopic} />
       )}
     </div>
   );

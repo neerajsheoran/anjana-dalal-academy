@@ -1,12 +1,13 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getChapter, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
-import { ClassId, SubjectId, WorksheetData } from "@/lib/types";
+import { ClassId, SubjectId, WorksheetData, ContentAccessLevel } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import ProgressTracker from "@/components/progress/ProgressTracker";
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
+import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import fs from "fs";
 import path from "path";
 
@@ -44,27 +45,29 @@ export default async function ChapterPage({
 }) {
   const { classId, subject, chapter } = await params;
 
-  let isLoggedIn = false;
+  let accessLevel: ContentAccessLevel = "anonymous";
   let isChapterCompleted = false;
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get("session")?.value;
     if (session) {
       const decoded = await adminAuth.verifySessionCookie(session);
-      isLoggedIn = true;
-      // Check if chapter is completed
-      const progressDoc = await adminDb
-        .collection("users")
-        .doc(decoded.uid)
-        .collection("progress")
-        .doc(chapter)
-        .get();
-      if (progressDoc.exists && progressDoc.data()?.completed === true) {
-        isChapterCompleted = true;
+      accessLevel = await getContentAccessLevel(decoded.uid);
+      // Check if chapter is completed (only if user has access)
+      if (hasFullAccess(accessLevel)) {
+        const progressDoc = await adminDb
+          .collection("users")
+          .doc(decoded.uid)
+          .collection("progress")
+          .doc(chapter)
+          .get();
+        if (progressDoc.exists && progressDoc.data()?.completed === true) {
+          isChapterCompleted = true;
+        }
       }
     }
   } catch {
-    isLoggedIn = false;
+    accessLevel = "anonymous";
   }
 
   const currentPath = `/class/${classId}/${subject}/${chapter}`;
@@ -163,7 +166,7 @@ export default async function ChapterPage({
       <div className="max-w-3xl mx-auto px-6 py-8">
         <ChapterTabs
           worksheet={worksheet}
-          isLoggedIn={isLoggedIn}
+          accessLevel={accessLevel}
           currentPath={currentPath}
           headings={headings}
           worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}

@@ -1,8 +1,12 @@
 import { cookies } from 'next/headers';
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { getPlatformConfig } from '@/lib/subscription';
 import { redirect } from 'next/navigation';
 import RoleSelector from '@/components/admin/RoleSelector';
 import ApplicationActions from '@/components/admin/ApplicationActions';
+import PlatformConfigEditor from '@/components/admin/PlatformConfigEditor';
+import SubscriptionExtender from '@/components/admin/SubscriptionExtender';
+import CommissionManager from '@/components/admin/CommissionManager';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -21,11 +25,28 @@ async function getAllUsers() {
   const snapshot = await adminDb.collection('users').orderBy('createdAt', 'desc').get();
   return snapshot.docs.map((doc) => {
     const d = doc.data();
+    const now = new Date();
+
+    // Determine subscription status
+    let subStatus = 'none';
+    if (d.role === 'admin') {
+      subStatus = 'admin';
+    } else if (d.adminExtendedUntil?.toDate?.() > now) {
+      subStatus = 'extended';
+    } else if (d.subscriptionEndsAt?.toDate?.() > now) {
+      subStatus = 'active';
+    } else if (d.trialEndsAt?.toDate?.() > now) {
+      subStatus = 'trial';
+    } else if (d.trialEndsAt) {
+      subStatus = 'expired';
+    }
+
     return {
       uid: doc.id,
       name: (d.name as string) || '—',
       email: (d.email as string) || '—',
       role: (d.role as string) || 'student',
+      subStatus,
       createdAt: d.createdAt?.toDate
         ? d.createdAt.toDate().toLocaleDateString('en-IN', {
             day: 'numeric',
@@ -35,6 +56,51 @@ async function getAllUsers() {
         : '—',
     };
   });
+}
+
+async function getCommissionData() {
+  try {
+    const snap = await adminDb.collection('subscriptions').where('commissionAmountINR', '>', 0).get();
+    const partnerMap = new Map<string, {
+      partnerUid: string;
+      partnerName: string;
+      totalReferrals: number;
+      totalCommission: number;
+      unpaidAmount: number;
+      unpaidSubscriptionIds: string[];
+    }>();
+
+    for (const doc of snap.docs) {
+      const d = doc.data();
+      const pUid = d.referredByUid as string;
+      if (!pUid) continue;
+
+      if (!partnerMap.has(pUid)) {
+        // Look up partner name
+        const pDoc = await adminDb.collection('users').doc(pUid).get();
+        partnerMap.set(pUid, {
+          partnerUid: pUid,
+          partnerName: (pDoc.data()?.name as string) || pUid,
+          totalReferrals: 0,
+          totalCommission: 0,
+          unpaidAmount: 0,
+          unpaidSubscriptionIds: [],
+        });
+      }
+
+      const entry = partnerMap.get(pUid)!;
+      entry.totalReferrals++;
+      entry.totalCommission += (d.commissionAmountINR as number) || 0;
+      if (!d.commissionPaid) {
+        entry.unpaidAmount += (d.commissionAmountINR as number) || 0;
+        entry.unpaidSubscriptionIds.push(doc.id);
+      }
+    }
+
+    return Array.from(partnerMap.values());
+  } catch {
+    return [];
+  }
 }
 
 async function getAllApplications() {
@@ -75,8 +141,12 @@ async function getAllApplications() {
 
 export default async function AdminPage() {
   await requireAdmin();
-  const users = await getAllUsers();
-  const applications = await getAllApplications();
+  const [users, applications, config, commissions] = await Promise.all([
+    getAllUsers(),
+    getAllApplications(),
+    getPlatformConfig(),
+    getCommissionData(),
+  ]);
 
   const totalUsers = users.length;
   const byRole = {
@@ -85,6 +155,11 @@ export default async function AdminPage() {
     partner: users.filter((u) => u.role === 'partner').length,
     admin: users.filter((u) => u.role === 'admin').length,
   };
+  const bySub = {
+    trial: users.filter((u) => u.subStatus === 'trial').length,
+    active: users.filter((u) => u.subStatus === 'active' || u.subStatus === 'extended').length,
+    expired: users.filter((u) => u.subStatus === 'expired').length,
+  };
 
   return (
     <main className="min-h-screen bg-gray-50 py-10 px-4">
@@ -92,12 +167,29 @@ export default async function AdminPage() {
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Admin Dashboard</h1>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-4">
           <StatCard label="Total Users" value={totalUsers} />
           <StatCard label="Students" value={byRole.student} />
           <StatCard label="Teachers" value={byRole.teacher} />
           <StatCard label="Partners" value={byRole.partner} />
           <StatCard label="Applications" value={applications.total} />
+        </div>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <StatCard label="On Trial" value={bySub.trial} />
+          <StatCard label="Subscribed" value={bySub.active} />
+          <StatCard label="Expired" value={bySub.expired} />
+        </div>
+
+        {/* Platform Configuration */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Platform Configuration
+          </h2>
+          <PlatformConfigEditor initialConfig={{
+            trialDays: config.trialDays,
+            yearlyPriceINR: config.yearlyPriceINR,
+            commissionPercent: config.commissionPercent,
+          }} />
         </div>
 
         {/* User table */}
@@ -116,7 +208,8 @@ export default async function AdminPage() {
                   <th className="px-6 py-3">Name</th>
                   <th className="px-6 py-3">Email</th>
                   <th className="px-6 py-3">Role</th>
-                  <th className="px-6 py-3">Joined</th>
+                  <th className="px-6 py-3">Subscription</th>
+                  <th className="px-6 py-3">Extend</th>
                 </tr>
               </thead>
               <tbody>
@@ -131,7 +224,14 @@ export default async function AdminPage() {
                         <RoleSelector uid={user.uid} currentRole={user.role} />
                       )}
                     </td>
-                    <td className="px-6 py-3 text-gray-400">{user.createdAt}</td>
+                    <td className="px-6 py-3">
+                      <SubBadge status={user.subStatus} />
+                    </td>
+                    <td className="px-6 py-3">
+                      {user.role !== 'admin' && (
+                        <SubscriptionExtender uid={user.uid} userName={user.name} />
+                      )}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -229,8 +329,39 @@ export default async function AdminPage() {
             </div>
           </div>
         )}
+        {/* Agent Commissions */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 mt-8">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Agent Commissions
+          </h2>
+          <CommissionManager partners={commissions} />
+        </div>
       </div>
     </main>
+  );
+}
+
+function SubBadge({ status }: { status: string }) {
+  const styles: Record<string, string> = {
+    admin: 'bg-blue-50 text-blue-600',
+    active: 'bg-green-50 text-green-600',
+    extended: 'bg-green-50 text-green-600',
+    trial: 'bg-amber-50 text-amber-600',
+    expired: 'bg-red-50 text-red-500',
+    none: 'bg-gray-50 text-gray-400',
+  };
+  const labels: Record<string, string> = {
+    admin: 'Admin',
+    active: 'Active',
+    extended: 'Extended',
+    trial: 'Trial',
+    expired: 'Expired',
+    none: '—',
+  };
+  return (
+    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${styles[status] || styles.none}`}>
+      {labels[status] || '—'}
+    </span>
   );
 }
 

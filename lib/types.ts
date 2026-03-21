@@ -65,3 +65,14 @@ export interface SubjectInfo {
   icon: string;            // emoji
   color: "blue" | "green"; // used for card color coding
 }
+
+// Subscription & Payment types
+export type SubscriptionStatus = 'trial' | 'active' | 'expired' | 'none';
+export type ContentAccessLevel = 'anonymous' | 'trial' | 'subscribed' | 'expired' | 'admin';
+
+export interface PlatformConfig {
+  trialDays: number;
+  yearlyPriceINR: number;
+  commissionPercent: number;
+  razorpayEnabled: boolean;
+}

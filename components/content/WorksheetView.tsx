@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { WorksheetData, TopicWorksheet, Question, DifficultyLevel } from "@/lib/types";
+import { WorksheetData, TopicWorksheet, Question, DifficultyLevel, ContentAccessLevel } from "@/lib/types";
 import ContentBlur from "./ContentBlur";
 
 const DIFFICULTY_LABELS: Record<DifficultyLevel, string> = {
@@ -125,12 +125,12 @@ function TopicSection({ topic }: { topic: TopicWorksheet }) {
 
 export default function WorksheetView({
   worksheet,
-  isLoggedIn = true,
+  accessLevel = 'subscribed',
   currentPath = '/',
   initialTopicIndex = null,
 }: {
   worksheet: WorksheetData | null;
-  isLoggedIn?: boolean;
+  accessLevel?: ContentAccessLevel;
   currentPath?: string;
   initialTopicIndex?: number | null;
 }) {
@@ -153,8 +153,9 @@ export default function WorksheetView({
   const topics = worksheet.topics;
   const displayedTopics = activeTopicIndex === null ? topics : [topics[activeTopicIndex]];
 
-  // For anonymous users viewing all topics: show first topic, blur the rest
-  const shouldBlurRest = !isLoggedIn && activeTopicIndex === null && displayedTopics.length > 1;
+  // For anonymous/expired users viewing all topics: show first topic, blur the rest
+  const hasAccess = accessLevel === 'trial' || accessLevel === 'subscribed' || accessLevel === 'admin';
+  const shouldBlurRest = !hasAccess && activeTopicIndex === null && displayedTopics.length > 1;
   const visibleTopics = shouldBlurRest ? displayedTopics.slice(0, 1) : displayedTopics;
   const blurredTopics = shouldBlurRest ? displayedTopics.slice(1) : [];
 
@@ -195,7 +196,7 @@ export default function WorksheetView({
 
       {/* Blurred Topics (anonymous only) */}
       {blurredTopics.length > 0 && (
-        <ContentBlur isLoggedIn={false} currentPath={currentPath} maxHeight="300px">
+        <ContentBlur accessLevel={accessLevel} currentPath={currentPath} maxHeight="300px">
           {blurredTopics.map((topic, index) => (
             <TopicSection key={visibleTopics.length + index} topic={topic} />
           ))}

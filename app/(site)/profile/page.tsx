@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 async function getUser() {
   const cookieStore = await cookies();
@@ -163,20 +164,8 @@ export default async function ProfilePage() {
           </div>
         </div>
 
-        {/* Subscription (placeholder) */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Subscription
-          </h2>
-          <div className="space-y-4">
-            <Row label="Role" value={role} />
-            <Row label="Subscribed Class" value="—" />
-            <Row label="Valid Until" value="—" />
-          </div>
-          <p className="text-xs text-gray-400 mt-4">
-            Subscriptions will be available soon.
-          </p>
-        </div>
+        {/* Subscription */}
+        <SubscriptionSection profile={user.profile} role={role} />
 
         {/* Learning Stats */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
@@ -286,6 +275,76 @@ function Row({
       >
         {value}
       </span>
+    </div>
+  );
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function SubscriptionSection({ profile, role }: { profile: any; role: string }) {
+  const now = new Date();
+
+  // Determine status
+  let status: 'trial' | 'active' | 'expired' | 'none' = 'none';
+  let validUntil = '—';
+
+  if (profile?.adminExtendedUntil?.toDate?.() > now) {
+    status = 'active';
+    validUntil = new Date(profile.adminExtendedUntil.toDate()).toLocaleDateString('en-IN', {
+      day: 'numeric', month: 'long', year: 'numeric',
+    });
+  } else if (profile?.subscriptionEndsAt?.toDate?.() > now) {
+    status = 'active';
+    validUntil = new Date(profile.subscriptionEndsAt.toDate()).toLocaleDateString('en-IN', {
+      day: 'numeric', month: 'long', year: 'numeric',
+    });
+  } else if (profile?.trialEndsAt?.toDate?.() > now) {
+    status = 'trial';
+    validUntil = new Date(profile.trialEndsAt.toDate()).toLocaleDateString('en-IN', {
+      day: 'numeric', month: 'long', year: 'numeric',
+    });
+  } else if (profile?.trialEndsAt) {
+    status = 'expired';
+  }
+
+  const badgeStyles: Record<string, string> = {
+    trial: 'bg-amber-100 text-amber-700',
+    active: 'bg-green-100 text-green-700',
+    expired: 'bg-red-100 text-red-600',
+    none: 'bg-gray-100 text-gray-500',
+  };
+  const badgeLabels: Record<string, string> = {
+    trial: 'Free Trial',
+    active: 'Active',
+    expired: 'Expired',
+    none: 'No Subscription',
+  };
+
+  return (
+    <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+      <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+        Subscription
+      </h2>
+      <div className="space-y-4">
+        <Row label="Role" value={role} />
+        <div className="flex justify-between items-start gap-4 py-2 border-b border-gray-100">
+          <span className="text-sm text-gray-500 shrink-0">Status</span>
+          <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${badgeStyles[status]}`}>
+            {badgeLabels[status]}
+          </span>
+        </div>
+        {status !== 'none' && (
+          <Row label={status === 'trial' ? 'Trial Ends' : 'Valid Until'} value={validUntil} />
+        )}
+        <Row label="Access" value="All Classes (1-10)" />
+      </div>
+      {(status === 'trial' || status === 'expired' || status === 'none') && (
+        <Link
+          href="/pricing"
+          className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg text-sm transition-colors"
+        >
+          {status === 'expired' ? 'Renew Subscription' : 'Subscribe Now'}
+        </Link>
+      )}
     </div>
   );
 }

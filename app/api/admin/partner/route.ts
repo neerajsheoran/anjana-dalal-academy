@@ -1,6 +1,16 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
+
+function generateReferralCode(name: string): string {
+  const prefix = (name || 'PTR')
+    .replace(/[^a-zA-Z]/g, '')
+    .substring(0, 4)
+    .toUpperCase();
+  const suffix = Math.floor(1000 + Math.random() * 9000);
+  return `${prefix}${suffix}`;
+}
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -61,6 +71,28 @@ export async function POST(req: Request) {
 
       if (targetUid) {
         await adminDb.collection('users').doc(targetUid).update({ role: 'partner' });
+      }
+
+      // Generate referral code for the new partner
+      let code = generateReferralCode(data.name || '');
+      // Ensure uniqueness
+      const existingCode = await adminDb.collection('referralCodes').doc(code).get();
+      if (existingCode.exists) {
+        code = generateReferralCode(data.name || '') + Math.floor(Math.random() * 10);
+      }
+
+      await adminDb.collection('referralCodes').doc(code).set({
+        partnerUid: targetUid || '',
+        partnerName: data.name || '',
+        partnerEmail: data.email || '',
+        isActive: true,
+        createdAt: FieldValue.serverTimestamp(),
+        totalUses: 0,
+      });
+
+      // Store code on user doc if they have an account
+      if (targetUid) {
+        await adminDb.collection('users').doc(targetUid).update({ partnerCode: code });
       }
       // If no account yet, they'll get partner role on signup (handled in session route)
     }

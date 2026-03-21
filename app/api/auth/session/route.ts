@@ -1,4 +1,5 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { getPlatformConfig } from '@/lib/subscription';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
@@ -43,11 +44,21 @@ export async function POST(req: Request) {
           }
         }
 
+        const config = await getPlatformConfig();
+        const trialEndsAt = new Date();
+        trialEndsAt.setDate(trialEndsAt.getDate() + config.trialDays);
+
         await userRef.set({
           role,
           name: decoded.name || null,
           email: decoded.email || null,
           createdAt: new Date(),
+          trialEndsAt,
+          subscriptionStatus: 'trial',
+          subscriptionEndsAt: null,
+          referredBy: null,
+          referralCode: null,
+          adminExtendedUntil: null,
         });
       }
     } catch {
