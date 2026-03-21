@@ -68,9 +68,9 @@ Imagine three points: a tent, a tree, and a pole. The **direct path** from the t
 In a triangle, the direct path between any two vertices must be shorter than the roundabout path through the third vertex. This means:
 
 > **For any triangle with sides a, b, and c:**
-> - a < b + c
-> - b < a + c
-> - c < a + b
+> - a &lt; b + c
+> - b &lt; a + c
+> - c &lt; a + b
 >
 > Each side must be **less than** the sum of the other two sides. This is called the **triangle inequality**.
 
@@ -80,15 +80,15 @@ To check if three lengths can form a triangle, you only need to verify that the 
 
 **Example:** Can sides 10 cm, 15 cm, and 30 cm form a triangle?
 
-Check: Is 30 < 10 + 15?
-Is 30 < 25? **No!**
+Check: Is 30 &lt; 10 + 15?
+Is 30 &lt; 25? **No!**
 
 So a triangle with these sides **cannot exist**.
 
 **Example:** Can sides 4 cm, 5 cm, and 8 cm form a triangle?
 
-Check: Is 8 < 4 + 5?
-Is 8 < 9? **Yes!**
+Check: Is 8 &lt; 4 + 5?
+Is 8 &lt; 9? **Yes!**
 
 So a triangle with these sides **can exist**.
 
@@ -106,17 +106,17 @@ Three cases arise:
 |------|-----------|--------|
 | Circles intersect | Sum of two radii > AB | **Triangle exists** |
 | Circles touch at one point | Sum of two radii = AB | No triangle (points are collinear) |
-| Circles do not meet | Sum of two radii < AB | **No triangle** |
+| Circles do not meet | Sum of two radii &lt; AB | **No triangle** |
 
 When the triangle inequality is satisfied, the circles always intersect, confirming the triangle exists.
 
-| Set of Lengths | Longest < Sum of Others? | Triangle Exists? |
+| Set of Lengths | Longest &lt; Sum of Others? | Triangle Exists? |
 |:-:|:-:|:-:|
-| 2, 2, 5 | 5 < 4? No | No |
-| 3, 4, 6 | 6 < 7? Yes | Yes |
-| 5, 5, 8 | 8 < 10? Yes | Yes |
-| 10, 20, 35 | 35 < 30? No | No |
-| 1, 100, 100 | 100 < 101? Yes | Yes |
+| 2, 2, 5 | 5 &lt; 4? No | No |
+| 3, 4, 6 | 6 &lt; 7? Yes | Yes |
+| 5, 5, 8 | 8 &lt; 10? Yes | Yes |
+| 10, 20, 35 | 35 &lt; 30? No | No |
+| 1, 100, 100 | 100 &lt; 101? Yes | Yes |
 
 ## Angle Sum Property of a Triangle
 
