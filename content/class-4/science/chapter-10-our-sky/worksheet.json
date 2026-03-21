@@ -1,0 +1,217 @@
+{
+  "topics": [
+    {
+      "topic": "The Sun and Shadows",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "In which direction does the Sun rise?",
+          "options": ["West", "North", "East", "South"],
+          "answer": "East",
+          "explanation": "The Sun appears to rise in the East every morning and set in the West every evening."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "A ______ is a dark shape formed when an object blocks light.",
+          "answer": "shadow",
+          "explanation": "When the Sun shines on an object, the object blocks the light and creates a shadow on the ground."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "When are shadows the shortest during the day?",
+          "options": ["Morning", "Noon", "Evening", "Night"],
+          "answer": "Noon",
+          "explanation": "At noon, the Sun is directly overhead, so shadows are very short. In the morning and evening, the Sun is low, making shadows long."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "short",
+          "question": "Does the Sun really move across the sky? Explain.",
+          "answer": "No, the Sun does not actually move around the Earth. It is the Earth that rotates (spins), which makes the Sun appear to move across the sky.",
+          "explanation": "Although it looks like the Sun is moving, it is actually the Earth spinning on its axis that causes this illusion."
+        },
+        {
+          "id": "ch10-t1-e5",
+          "type": "mcq",
+          "question": "In the morning, shadows point towards which direction?",
+          "options": ["East", "North", "West", "South"],
+          "answer": "West",
+          "explanation": "In the morning, the Sun is in the East, so shadows point in the opposite direction, which is West."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "How do shadows change from morning to evening? Explain with the position of the Sun.",
+          "answer": "In the morning, the Sun is low in the East, so shadows are long and point towards the West. At noon, the Sun is directly overhead, making shadows very short. In the evening, the Sun is low in the West, so shadows are again long but now point towards the East.",
+          "explanation": "The direction of a shadow is always opposite to the position of the Sun. When the Sun is low, shadows are long. When the Sun is high, shadows are short."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "mcq",
+          "question": "What is a sundial?",
+          "options": ["A type of clock that uses batteries", "A device that tells time using the Sun's shadow", "A tool to measure temperature", "A type of compass"],
+          "answer": "A device that tells time using the Sun's shadow",
+          "explanation": "A sundial is an ancient device that tells time based on the shadow cast by the Sun. People noticed that shadows change position during the day and used this to track time."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "fill",
+          "question": "Raja Jai Singh of Jaipur built the famous ______ observatories to study the sky.",
+          "answer": "Jantar Mantar",
+          "explanation": "Raja Jai Singh built Jantar Mantar observatories in five cities: Jaipur, Ujjain, Delhi, Varanasi and Mathura. The largest sundial there is called the Samrat Yantra."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "Aarav noticed that his shadow was very long when he went to school in the morning, but very short during the lunch break. Explain why this happens. Also explain what would happen to his shadow in the evening.",
+          "answer": "Aarav's shadow was long in the morning because the Sun was low in the East. Light coming from a low angle creates long shadows. During lunch break (noon), the Sun was directly overhead, so the shadow was very short because light was coming from straight above. In the evening, the Sun would be low in the West, so Aarav's shadow would become long again, but this time it would point towards the East (opposite to the Sun). The length and direction of shadows change throughout the day because of the changing position of the Sun.",
+          "explanation": "Shadows change because the Sun appears to move across the sky. When the Sun is low (morning and evening), shadows are long. When the Sun is high (noon), shadows are short."
+        }
+      ]
+    },
+    {
+      "topic": "The Moon and Stars",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "The Moon does not produce its own light. What does it do instead?",
+          "options": ["It is dark always", "It reflects the light of the Sun", "It uses electricity", "It produces fire"],
+          "answer": "It reflects the light of the Sun",
+          "explanation": "The Moon does not have its own light. It looks bright because it reflects the light of the Sun."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "A full moon night is called ______ in Hindi.",
+          "answer": "Poornima",
+          "explanation": "Poornima is the Hindi name for a full moon night when the Moon appears as a complete, round circle."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "On which night is the Moon not visible at all?",
+          "options": ["Poornima", "Half Moon night", "Amavasya", "Crescent Moon night"],
+          "answer": "Amavasya",
+          "explanation": "Amavasya is the New Moon night when the Moon is not visible at all in the sky."
+        },
+        {
+          "id": "ch10-t2-e4",
+          "type": "short",
+          "question": "What is the famous star pattern called Saptarshi?",
+          "answer": "Saptarshi (the Seven Sages) is a famous star pattern in the night sky that looks like a large spoon or ladle.",
+          "explanation": "When we look at the night sky carefully, we can see patterns formed by groups of stars. Saptarshi is one such well-known pattern."
+        },
+        {
+          "id": "ch10-t2-e5",
+          "type": "mcq",
+          "question": "How often does the Moon complete its cycle of changing shapes?",
+          "options": ["Every week", "Every day", "About one month", "Every year"],
+          "answer": "About one month",
+          "explanation": "The Moon's shape changes over a period of about one month, going from Full Moon (Poornima) to New Moon (Amavasya) and back."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "Describe the different phases (shapes) of the Moon.",
+          "answer": "The Moon goes through four main phases: 1. Poornima (Full Moon) - a complete round circle. 2. Half Moon - looks like it has been cut in half. 3. Crescent Moon - a thin curved shape like the letter C. 4. Amavasya (New Moon) - the Moon is not visible at all. After the New Moon, the Moon slowly grows bigger until it becomes a Full Moon again.",
+          "explanation": "The changing shapes of the Moon are called phases. The cycle from Full Moon to New Moon and back takes about one month."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "mcq",
+          "question": "Why do stars look tiny in the night sky?",
+          "options": ["They are actually very small", "They are very far away from us", "They are hidden behind clouds", "They only come out at night"],
+          "answer": "They are very far away from us",
+          "explanation": "Stars are actually very large, but they look tiny because they are extremely far away from the Earth."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Why can we not see stars during the daytime? What do we see in the sky during the day and at night?",
+          "answer": "We cannot see stars during the daytime because the Sun is so bright that its light makes the sky bright blue, hiding the light of other stars. During the day, we see the Sun (the brightest object in our sky) and sometimes clouds. The sky changes colour from orange-pink in the morning to bright blue in the afternoon and orange-red in the evening. At night, when the Sun sets and the sky becomes dark, we can see the Moon (reflecting sunlight) and thousands of twinkling stars forming patterns like Saptarshi.",
+          "explanation": "The Sun's brightness overpowers the light from distant stars during the day. Stars are always there in the sky, but we can only see them when the sky is dark."
+        }
+      ]
+    },
+    {
+      "topic": "Sky-Based Festivals and Chandrayaan",
+      "easy": [
+        {
+          "id": "ch10-t3-e1",
+          "type": "mcq",
+          "question": "Diwali is celebrated on which type of Moon night?",
+          "options": ["Full Moon (Poornima)", "Half Moon", "Crescent Moon", "New Moon (Amavasya)"],
+          "answer": "New Moon (Amavasya)",
+          "explanation": "Diwali is celebrated on Amavasya (New Moon night) when there is no moonlight, so people light diyas and candles to brighten the night."
+        },
+        {
+          "id": "ch10-t3-e2",
+          "type": "fill",
+          "question": "India's Chandrayaan-3 mission landed on the Moon on 23 August ______.",
+          "answer": "2023",
+          "explanation": "India's Vikram Lander (Chandrayaan-3) successfully landed on the Moon on 23 August 2023, making India the fourth country to land on the Moon."
+        },
+        {
+          "id": "ch10-t3-e3",
+          "type": "mcq",
+          "question": "Which festival is dedicated to the Sun god?",
+          "options": ["Diwali", "Eid", "Chhath Puja", "Rakshabandhan"],
+          "answer": "Chhath Puja",
+          "explanation": "Chhath Puja is a festival dedicated to the Sun god, where people offer prayers to the Sun."
+        },
+        {
+          "id": "ch10-t3-e4",
+          "type": "short",
+          "question": "On which moon night is Rakshabandhan celebrated?",
+          "answer": "Rakshabandhan is celebrated on Poornima (Full Moon night).",
+          "explanation": "Many Indian festivals are connected to the phases of the Moon. Rakshabandhan is celebrated on the Full Moon night."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t3-m1",
+          "type": "short",
+          "question": "Name three Indian festivals connected to the Moon and describe the Moon phase during each.",
+          "answer": "1. Diwali is celebrated on Amavasya (New Moon night) when the Moon is not visible. 2. Rakshabandhan is celebrated on Poornima (Full Moon night) when the Moon is completely round. 3. Eid is celebrated when the crescent Moon is first seen after a New Moon.",
+          "explanation": "Many Indian festivals are based on the position of the Sun or the shape of the Moon. Ancient people used the Moon's shape to track days and create calendars."
+        },
+        {
+          "id": "ch10-t3-m2",
+          "type": "mcq",
+          "question": "What was special about India's Chandrayaan-3 Moon landing?",
+          "options": ["India was the first country to reach the Moon", "India became the first country to land near the Moon's south pole", "India built a house on the Moon", "India found water on the Sun"],
+          "answer": "India became the first country to land near the Moon's south pole",
+          "explanation": "India became the fourth country to land on the Moon and the first country to land near the Moon's south pole through the Chandrayaan-3 mission."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t3-h1",
+          "type": "long",
+          "question": "How are Indian festivals connected to the Sun and the Moon? Give at least three examples and explain the connection.",
+          "answer": "Many Indian festivals are based on what we see in the sky. 1. Diwali is celebrated on Amavasya (New Moon night) when the sky is completely dark with no moonlight. People light diyas and candles to fill the dark night with light. 2. Rakshabandhan and Guru Poornima are celebrated on Poornima (Full Moon night) when the Moon is bright and round in the sky. 3. Chhath Puja is dedicated to the Sun god, where people offer prayers directly to the rising and setting Sun near rivers. 4. Eid is celebrated when the thin crescent Moon is first spotted after a New Moon. These connections show how closely our ancestors observed the sky and made it part of our culture and celebrations.",
+          "explanation": "Ancient people used the positions of the Sun and Moon to create calendars and plan festivals. This deep connection between the sky and Indian culture continues even today."
+        },
+        {
+          "id": "ch10-t3-h2",
+          "type": "long",
+          "question": "What is shadow puppetry? How was the sundial invented? Explain how understanding shadows helped people in the past.",
+          "answer": "Shadow puppetry is an ancient Indian art where artists use cut-out figures held between a light source and a screen to create shadow shapes. They tell stories through the movement of these shadows. The sundial was invented when people noticed that shadows change position and length throughout the day as the Sun moves across the sky. They used this observation to build a device that tells time by reading the shadow cast by a stick or pointer. Raja Jai Singh built the famous Jantar Mantar observatories with the Samrat Yantra sundial that can tell time accurately. Understanding shadows helped people tell time before clocks were invented and also led to art forms like shadow puppetry.",
+          "explanation": "Shadows have been useful to humans in many ways, from telling time using sundials to creating entertainment through shadow puppetry. These are examples of how observing nature leads to useful discoveries."
+        }
+      ]
+    }
+  ]
+}

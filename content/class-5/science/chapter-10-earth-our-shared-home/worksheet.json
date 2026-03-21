@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "Global Connections and Cultural Exchange",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "Where did chillies originally come from before they reached India?",
+          "options": ["China", "Africa", "South America (near Mexico)", "Australia"],
+          "answer": "South America (near Mexico)",
+          "explanation": "Chillies were first found only in South America near Mexico. Portuguese travellers brought them to India about 400-500 years ago."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "India was the first country to discover how to make ______ from sugarcane juice.",
+          "answer": "jaggery",
+          "explanation": "India was the first place where people discovered how to make jaggery (gur) from sugarcane juice. Later, India also figured out how to turn jaggery into sugar."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "The United Nations declared 21 June as the International Day of ______.",
+          "options": ["Music", "Yoga", "Nature", "Water"],
+          "answer": "Yoga",
+          "explanation": "In 2014, the United Nations declared 21 June as the International Day of Yoga, recognising India's ancient practice that is now loved worldwide."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "mcq",
+          "question": "Which birds fly thousands of kilometres from Russia and Mongolia to India every winter?",
+          "options": ["Sparrows", "Rosy Starlings", "Crows", "Pigeons"],
+          "answer": "Rosy Starlings",
+          "explanation": "Rosy Starlings are pink and black birds that fly thousands of kilometres from southern Russia and Mongolia to India every winter to enjoy the warm weather."
+        },
+        {
+          "id": "ch10-t1-e5",
+          "type": "fill",
+          "question": "Before chillies came to India, Indians used ______ to make food spicy.",
+          "answer": "black pepper",
+          "explanation": "Before Portuguese traders brought chillies to India about 400-500 years ago, Indians used black pepper to add spiciness to their food."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "Name three things that came to India from other countries and three things India shared with the world.",
+          "answer": "Came to India: (1) Chillies, tomatoes, and potatoes from the Americas via Portuguese traders. (2) Marigold flowers from Mexico. (3) Paper from China. India shared: (1) Sugar and jaggery — the method of making sugar from sugarcane. (2) Yoga — an ancient practice for body and mind. (3) Indian cow breeds (Gir, Kankrej, Ongole) that went to Brazil.",
+          "explanation": "Throughout history, countries have exchanged foods, ideas, and traditions through trade and travel, showing how interconnected the world has always been."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "How do Rosy Starlings help Indian farmers? What does this tell us about nature's connections?",
+          "answer": "Rosy Starlings help Indian farmers by eating pests like locusts and grasshoppers from crops. This shows how nature connects different countries — a tiny bird from Russia and Mongolia travels thousands of kilometres to India, and in return for the warm weather, it helps protect Indian farms. This demonstrates that nature has no boundaries.",
+          "explanation": "The migration of Rosy Starlings is a beautiful example of how ecosystems across countries are connected and how animals can play important roles in places far from their home."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "mcq",
+          "question": "Which Indian cow breeds became so important in Brazil that their pictures appear on Brazilian stamps and coins?",
+          "options": ["Sahiwal and Red Sindhi", "Gir, Kankrej, and Ongole", "Tharparkar and Rathi", "Kangayam and Hallikar"],
+          "answer": "Gir, Kankrej, and Ongole",
+          "explanation": "Portuguese traders took Gir (Gujarat), Kankrej (Gujarat), and Ongole (Andhra Pradesh) cows to Brazil. Today, more than three-fourths of Brazil's milk comes from these Indian breeds."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "The marigold flower came from Mexico but became an important part of Indian culture. Similarly, chillies came from South America but are now essential in Indian cooking. What do these examples teach us about cultural exchange?",
+          "answer": "These examples teach us that cultural exchange enriches our lives in wonderful ways. The marigold, originally from Mexico, travelled across the world and became a beloved part of Indian weddings, temple decorations, and Diwali celebrations because Indians loved its warm, bright colours. Similarly, chillies from South America became so essential to Indian cooking that it is hard to imagine our food without them. These exchanges happened through trade and travel over hundreds of years. They show that the best parts of every culture can be shared and adopted by others, making everyone's lives richer. Just as India received these gifts, India also shared yoga, sugar, spices, and much more with the world.",
+          "explanation": "Cultural exchange is a two-way process that has been happening for centuries. It shows that the world is interconnected and that sharing enriches all cultures involved."
+        }
+      ]
+    },
+    {
+      "topic": "Earth as Our Shared Home",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "What does 'Vasudhaiva Kutumbakam' mean?",
+          "options": ["Earth is a big country", "The whole world is one family", "India is the best", "Nature is beautiful"],
+          "answer": "The whole world is one family",
+          "explanation": "Vasudhaiva Kutumbakam is an ancient Indian saying meaning 'The whole world is one family.' It teaches us that all people, animals, and nature are connected."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "______ is like a digital address that gives every small place in India its own special 10-character code.",
+          "answer": "DIGIPIN",
+          "explanation": "DIGIPIN gives every place in India a unique 10-character code, helping delivery persons, ambulances, and postmen find locations easily, even in small villages."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "Who was the first Indian to reach the International Space Station?",
+          "options": ["Rakesh Sharma", "Kalpana Chawla", "Shubhanshu Shukla", "Sunita Williams"],
+          "answer": "Shubhanshu Shukla",
+          "explanation": "Group Captain Shubhanshu Shukla was the first Indian to reach the International Space Station. He said that from space, no borders are visible — the Earth looks like one home."
+        },
+        {
+          "id": "ch10-t2-e4",
+          "type": "mcq",
+          "question": "When Rakesh Sharma was asked how India looked from space, what did he reply?",
+          "options": ["Very small", "Very blue", "Saare Jahaan Se Achcha", "Like a garden"],
+          "answer": "Saare Jahaan Se Achcha",
+          "explanation": "Wing Commander Rakesh Sharma, the first Indian to see Earth from space, replied 'Saare Jahaan Se Achcha' — meaning 'the best in the entire world.'"
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "When astronauts look at Earth from space, they see no borders between countries. What lesson does this teach us?",
+          "answer": "When astronauts see Earth from space, they see a beautiful blue planet with no borders or lines between countries — just land, water, and clouds. This teaches us that the Earth is one shared home for all of humanity. Nature has no boundaries — air, water, clouds, seeds, and animals move freely across the world. We should care for our planet together and treat everyone as part of one global family.",
+          "explanation": "The view from space reminds us that all the borders we draw are human-made. In reality, we share one planet and must take care of it together."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "Name four things India has contributed to the world, apart from food items.",
+          "answer": "1. Yoga — an ancient practice for body and mind, now practised worldwide. 2. The concept of zero — written first in India, which changed mathematics forever. 3. Ayurveda — one of the oldest systems of medicine, over 3,000 years old. 4. Chess and Snakes & Ladders — board games that originated in India. India also gave the world indigo dye.",
+          "explanation": "India's contributions to the world go far beyond food — from mathematics and medicine to games and spiritual practices, Indian knowledge has shaped the modern world."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "The chapter says 'Earth is the only planet we know that has life.' Why is it important to take care of our planet? List at least five ways we can protect the Earth.",
+          "answer": "Earth is the only planet known to support life, making it incredibly precious. For thousands of years, it has supported people, animals, and plants. It is important to take care of our planet because if we damage it, there is no other home for us. Five ways to protect the Earth: (1) Save water — every drop matters, fix leaking taps and reuse water. (2) Plant trees — they clean the air, provide homes for animals, and prevent soil erosion. (3) Reduce waste — reuse and recycle whenever possible instead of throwing things away. (4) Use clean energy — solar panels, wind power, and hydroelectricity instead of burning coal. (5) Respect all living things — animals, birds, plants, and insects are all part of our family. When we care for the Earth, we are caring for each other, because we are all part of the same family.",
+          "explanation": "Earth is our only home, and every action we take affects its health. By making small changes in our daily lives, we can help ensure that the planet remains a safe and beautiful home for future generations."
+        },
+        {
+          "id": "ch10-t2-h2",
+          "type": "long",
+          "question": "Explain the meaning of 'Vasudhaiva Kutumbakam' and describe how the stories in this chapter — about birds, food, flowers, and cows — support this idea.",
+          "answer": "Vasudhaiva Kutumbakam means 'The whole world is one family.' The stories in this chapter beautifully support this idea: Rosy Starlings travel from Russia to India every winter, helping Indian farmers by eating crop pests — showing that nature connects countries. Chillies came from South America and became essential to Indian food, while sugar from India reached the world — showing how food travels across borders and enriches cultures. Marigold flowers from Mexico became part of Indian festivals — showing how beauty is shared. Indian cow breeds (Gir, Kankrej, Ongole) went to Brazil and now produce most of Brazil's milk — showing how animals connect nations. Yoga from India is now practised worldwide — showing how knowledge unites people. All these stories prove that the world is truly one interconnected family where sharing makes everyone richer.",
+          "explanation": "Vasudhaiva Kutumbakam is not just an ancient saying — it is a living reality demonstrated through the exchange of food, knowledge, animals, and culture across the world throughout history."
+        }
+      ]
+    }
+  ]
+}

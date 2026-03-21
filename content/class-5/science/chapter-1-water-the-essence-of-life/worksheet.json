@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "Sources and Forms of Water",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following is a freshwater source?",
+          "options": ["Ocean", "Sea", "River", "Salt pan"],
+          "answer": "River",
+          "explanation": "Rivers are freshwater sources. Oceans and seas contain salty water that we cannot drink directly."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "mcq",
+          "question": "In which three forms can water exist?",
+          "options": ["Solid, liquid, gas", "Hot, cold, warm", "Sweet, salty, sour", "Clear, muddy, frozen"],
+          "answer": "Solid, liquid, gas",
+          "explanation": "Water can exist as a solid (ice), liquid (water), and gas (water vapour or steam)."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "fill",
+          "question": "Wular Lake in ______ is one of the largest freshwater lakes in Asia.",
+          "answer": "Jammu and Kashmir",
+          "explanation": "Wular Lake is located in Jammu and Kashmir and helps control river flow and prevent floods."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "mcq",
+          "question": "Which state in India is one of the largest salt-producing areas?",
+          "options": ["Kerala", "Gujarat", "Assam", "Bihar"],
+          "answer": "Gujarat",
+          "explanation": "Gujarat has vast salt pans where seawater is dried under the sun to collect salt, making it one of the largest salt-producing areas in India."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "fill",
+          "question": "When water boils, it turns into ______ (water vapour).",
+          "answer": "steam",
+          "explanation": "When water is heated to its boiling point, it changes from liquid to gas form, which we call steam or water vapour."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Why can we not use most of the water found on Earth for drinking?",
+          "answer": "Most of the water on Earth is salty ocean water, which we cannot drink directly. Only a very small part of Earth's water is freshwater that we can use for drinking and farming.",
+          "explanation": "Although most of Earth's surface is covered with water, the majority is salty ocean water. The freshwater we can actually use is very limited — like a teaspoon compared to a glass."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Name three examples of water in its solid form and three examples in its liquid form.",
+          "answer": "Solid form: ice, snow, glaciers. Liquid form: rain, river water, tap water.",
+          "explanation": "Water exists in solid form when it is frozen (ice, snow, glaciers) and in liquid form when it flows freely (rain, river water, tap water)."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "mcq",
+          "question": "Which river in Rajasthan is unique because it does not drain into any sea?",
+          "options": ["Ganga", "Yamuna", "Luni", "Godavari"],
+          "answer": "Luni",
+          "explanation": "The Luni river in Rajasthan is the only major Indian river that does not drain into any sea. It ends in the marshy lands of the Rann of Kutch in Gujarat."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Explain the water cycle in your own words. Why is it called a 'never-ending journey'?",
+          "answer": "The water cycle is the continuous movement of water in nature. The Sun heats water in rivers, lakes, and oceans, which turns into water vapour and rises into the air. High up in the sky, the vapour cools down and forms tiny droplets that make clouds. When the clouds get heavy, water falls back as rain, snow, or hail. This water flows back into rivers, lakes, and oceans, and the cycle starts again. It is called a never-ending journey because the same water keeps going around and around — it never stops.",
+          "explanation": "The water cycle has no beginning or end. Water continuously evaporates, forms clouds, falls as rain, and collects in water bodies — repeating this process endlessly in nature."
+        },
+        {
+          "id": "ch1-t1-h2",
+          "type": "long",
+          "question": "Why is it harder for groundwater to get recharged in cities compared to villages? What are some solutions?",
+          "answer": "In cities, there are many concrete roads and buildings that prevent rainwater from seeping into the ground. This stops groundwater from being recharged. In villages, there is more open, uncovered land where rainwater can soak into the ground easily. Solutions include building soak pits, creating ponds, planting trees, and using rainwater harvesting systems. In Rajasthan, people build traditional small earthen dams called Johads to collect rainwater and recharge groundwater.",
+          "explanation": "Concrete surfaces in cities block the natural process of rainwater seeping underground. Traditional and modern solutions like soak pits, Johads, and rainwater harvesting help recharge groundwater."
+        }
+      ]
+    },
+    {
+      "topic": "Life in Water and Aquatic Ecosystems",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "Which animal can live both on land and in water?",
+          "options": ["Fish", "Frog", "Dragonfly", "Pond heron"],
+          "answer": "Frog",
+          "explanation": "Frogs are amphibians — they can live both on land and in water."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "The Keibul Lamjao National Park in ______ is the only floating national park in the world.",
+          "answer": "Manipur",
+          "explanation": "Keibul Lamjao National Park in Manipur has unique floating islands called phumdis and is home to the endangered Sangai deer."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "Which water plant has broad, flat leaves that float on the surface?",
+          "options": ["Water hyacinth", "Reeds", "Lotus", "Seaweed"],
+          "answer": "Lotus",
+          "explanation": "Lotus and water lily have broad, flat leaves that float on the water surface. They are rooted floating plants."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "mcq",
+          "question": "What special feature does the Fishing Cat have?",
+          "options": ["It can fly", "It has partly webbed paws", "It can breathe underwater", "It changes colour"],
+          "answer": "It has partly webbed paws",
+          "explanation": "The Fishing Cat, found in India's wetlands, has partly webbed paws that make it an excellent swimmer. It dives into water to catch fish."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "What is a food chain in water? Give an example.",
+          "answer": "A food chain shows who eats whom in a water body. For example, small fish eat tiny plants and insects, bigger fish eat the smaller fish, and birds like herons catch the bigger fish. If one type of animal disappears, it affects all the others.",
+          "explanation": "Living things in water depend on each other for food. This chain of who-eats-whom is called a food chain, and each part is important for the ecosystem to stay balanced."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "How do water plants like lotus survive in water? Mention two special features.",
+          "answer": "Water plants like lotus have broad, flat leaves that float on the surface to get sunlight. They also have a waxy coating on their leaves that is waterproof and keeps too much water from getting inside the plant.",
+          "explanation": "Plants that live in water have developed special features over time to survive — floating leaves to catch sunlight and waxy coatings to prevent waterlogging."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "Why is it important to save water? List at least four things you can do every day to save water.",
+          "answer": "Freshwater is limited and precious — only a tiny portion of Earth's water is usable freshwater. We must save water because without it, life would not be possible. Four things we can do: (1) Turn off the tap while brushing teeth. (2) Fix leaking taps with the help of adults. (3) Reuse water — water left from washing fruits or vegetables can be used for watering plants. (4) Remind family and friends to save water too. Every drop counts!",
+          "explanation": "Since usable freshwater is such a small part of all the water on Earth, conserving water is essential for our survival. Small daily actions by each person can together make a big difference."
+        }
+      ]
+    }
+  ]
+}

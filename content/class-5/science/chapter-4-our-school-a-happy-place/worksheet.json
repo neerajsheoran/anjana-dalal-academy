@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "Waste Management and Green Schools",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "What colour bin is used for wet waste?",
+          "options": ["Blue", "Red", "Green", "Yellow"],
+          "answer": "Green",
+          "explanation": "Wet waste like food peels and leftovers goes in the green bin. Dry waste like paper and plastic goes in the blue bin."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "Wet waste like vegetable peels can be turned into ______, a natural fertiliser for plants.",
+          "answer": "compost",
+          "explanation": "Wet waste is collected in a compost pit where it breaks down naturally to become compost, which is excellent for growing plants."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is an example of dry waste?",
+          "options": ["Banana peel", "Tea leaves", "Plastic bottle", "Leftover food"],
+          "answer": "Plastic bottle",
+          "explanation": "Dry waste includes paper, plastic bottles, and wrappers. Banana peels, tea leaves, and leftover food are wet waste."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "mcq",
+          "question": "What does 'Swachh Bharat Swachh Vidyalaya' mean?",
+          "options": ["Clean India Clean Schools", "Green India Happy Schools", "Safe India Smart Schools", "Strong India Clean Water"],
+          "answer": "Clean India Clean Schools",
+          "explanation": "Swachh Bharat Swachh Vidyalaya is a government programme that focuses on clean toilets, safe drinking water, proper waste management, and hygiene in schools."
+        },
+        {
+          "id": "ch4-t1-e5",
+          "type": "fill",
+          "question": "______ in Meghalaya is celebrated as Asia's Cleanest Village.",
+          "answer": "Mawlynnong",
+          "explanation": "Mawlynnong in Meghalaya is famous for being Asia's cleanest village, where the people keep their village spotlessly clean."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "What is a green school? What are the four main things a green school focuses on?",
+          "answer": "A green school is a school where everyone works together to take care of the environment. The four main things it focuses on are: managing waste, saving water, using electricity carefully, and making the campus greener by planting trees and taking care of them.",
+          "explanation": "A green school is not just about studying — it is about making the school environment clean, safe, and sustainable through collective effort."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "Why should we respect the work of sanitation workers and recyclers (kabadiwalas)?",
+          "answer": "We should respect sanitation workers and recyclers because their hard work keeps our surroundings clean and healthy. Recyclers collect old newspapers, metal cans, glass bottles, and plastic items and take them to places where they are turned into new things, reducing waste.",
+          "explanation": "Sanitation workers and recyclers play an essential role in keeping our environment clean. Without their work, waste would pile up and our surroundings would become dirty and unhealthy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "Imagine your class forms different teams to improve the school environment. Name any three teams, explain what each team would check, and suggest one improvement each team could make.",
+          "answer": "1. Water Watchers: They check for leaking taps, water wastage, and whether water tanks are clean. They could fix leaking taps and start a rainwater collection project for the school garden. 2. Waste Warriors: They check for litter around school, dustbin usage, and waste separation. They could start a compost pit for wet waste and organise a recycling drive. 3. Green Guardians: They check the trees and plants on campus and look for birds and butterflies. They could plant more trees, create a butterfly garden, and set up a compost pit to make natural fertiliser.",
+          "explanation": "Working in teams helps students take responsibility for different parts of the school environment. Each team focuses on a specific area and can make real improvements."
+        }
+      ]
+    },
+    {
+      "topic": "Saving Water, Energy, and Staying Safe",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following helps keep a building cool?",
+          "options": ["Dark-coloured roof", "White-coloured roof", "Glass roof", "Metal roof"],
+          "answer": "White-coloured roof",
+          "explanation": "White roofs reflect the sun's heat and keep buildings cooler. Dark surfaces absorb heat and make things warmer."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "mcq",
+          "question": "What should you do first during a fire at school?",
+          "options": ["Hide in the bathroom", "Run back to get your bag", "Move quickly but calmly to the nearest exit", "Call your parents"],
+          "answer": "Move quickly but calmly to the nearest exit",
+          "explanation": "During a fire, move quickly but calmly to the nearest exit without panicking. Do not hide in closets or bathrooms, and never go back inside once you are out."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "fill",
+          "question": "Clay pots called ______ are used in India to cool drinking water without electricity.",
+          "answer": "matkas",
+          "explanation": "Matkas (clay pots) cool water through evaporation — water slowly seeps through tiny holes in the clay and evaporates, cooling the pot naturally."
+        },
+        {
+          "id": "ch4-t2-e4",
+          "type": "mcq",
+          "question": "What should you always do before crossing the road near school?",
+          "options": ["Run quickly", "Look both ways", "Close your eyes", "Wait for a car to stop"],
+          "answer": "Look both ways",
+          "explanation": "Always look both ways before crossing the road and use the pedestrian crossing. Never run across the road."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "List three simple ways to save water at school.",
+          "answer": "1. Report leaking taps immediately and turn off taps properly after use. 2. Keep water tanks clean and covered. 3. Collect rainwater for use in the school garden.",
+          "explanation": "Even small actions like fixing leaks and turning off taps properly can save a huge amount of water over time."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "short",
+          "question": "Why are trees important for a school campus? Give three reasons.",
+          "answer": "1. Trees keep the air clean by taking in carbon dioxide and giving out oxygen. 2. They provide shade and keep the area cool. 3. They give food and shelter to birds, insects, and animals, making the campus a lively place.",
+          "explanation": "Trees play a vital role in keeping the school environment clean, cool, and full of life. Water kept under a tree stays cooler than water kept in the sun."
+        },
+        {
+          "id": "ch4-t2-m3",
+          "type": "mcq",
+          "question": "In Ladakh, students help make 'ice stupas.' What are ice stupas used for?",
+          "options": ["Building houses", "Making ice cream", "Watering school gardens in summer", "Playing games"],
+          "answer": "Watering school gardens in summer",
+          "explanation": "Ice stupas are tall ice towers made in winter. They slowly melt in summer, providing water for school gardens — a clever way to store water in cold regions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "A happy school is not just about clean buildings and green gardens. What other qualities are needed to make a school truly happy? Explain with examples.",
+          "answer": "A truly happy school also needs kindness, respect, and good behaviour among everyone. This includes: (1) Waiting for your turn in queues instead of pushing. (2) Using kind words with everyone — classmates, teachers, and staff. (3) Helping someone who is new or shy to feel welcome. (4) Not teasing or bullying others. (5) Keeping shared spaces like classrooms, playgrounds, and washrooms clean. (6) Respecting everyone equally. The way we behave shows the kind of person we are, and when everyone is kind and polite, the whole school becomes a happy place.",
+          "explanation": "Physical cleanliness is important, but a school's happiness truly depends on how students treat each other. Kindness, respect, and helpfulness create a positive environment for learning and growing."
+        },
+        {
+          "id": "ch4-t2-h2",
+          "type": "long",
+          "question": "What are the important steps to follow during a fire emergency at school? Why should you never go back inside a burning building?",
+          "answer": "Important fire safety steps: (1) Move quickly but calmly to the nearest exit — do not panic or run. (2) Crawl low under smoke and cover your mouth to breathe cleaner air. (3) Do not hide in closets or bathrooms. (4) Help others if it is safe. (5) Go to the assembly point and stay with your group. (6) Tell a teacher immediately if anyone is missing or injured. You should never go back inside a burning building because fire can spread very fast, and smoke makes it difficult to see and breathe. Going back puts your life in danger.",
+          "explanation": "Knowing fire safety steps can save lives. Regular fire drills help students practise these steps so they can act calmly and quickly during a real emergency."
+        }
+      ]
+    }
+  ]
+}

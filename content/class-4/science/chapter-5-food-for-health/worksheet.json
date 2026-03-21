@@ -1,0 +1,202 @@
+{
+  "topics": [
+    {
+      "topic": "Food Groups and Balanced Diet",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "Which food group gives our body energy?",
+          "options": ["Protective foods", "Body-building foods", "Energy-giving foods", "Junk foods"],
+          "answer": "Energy-giving foods",
+          "explanation": "Energy-giving foods like rice, wheat, potato and banana give our body the energy it needs to walk, run, play and work."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "Pulses, milk, cheese and eggs are examples of ______-building foods.",
+          "answer": "body",
+          "explanation": "Body-building foods help our body grow, build muscles and become strong. Pulses, milk, cheese, eggs and nuts are examples."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "Which of these is a protective food?",
+          "options": ["Rice", "Potato", "Carrot", "Butter"],
+          "answer": "Carrot",
+          "explanation": "Protective foods like carrot, orange, spinach and guava help us fight diseases and keep our body healthy."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "short",
+          "question": "Why should we eat a variety of foods every day?",
+          "answer": "No single food item has everything our body needs. We should eat a variety of foods from all three food groups to stay healthy, energetic and strong.",
+          "explanation": "Our body needs different nutrients for energy, growth and protection from diseases, so we must eat foods from all three groups."
+        },
+        {
+          "id": "ch5-t1-e5",
+          "type": "mcq",
+          "question": "How many tastes are there according to Ayurveda (Shad Rasa)?",
+          "options": ["Four", "Five", "Six", "Seven"],
+          "answer": "Six",
+          "explanation": "In Ayurveda, there are six tastes called Shad Rasa: sweet, sour, salty, pungent, bitter and astringent."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Name the three groups of food and give two examples of each.",
+          "answer": "1. Energy-giving foods: rice, wheat. 2. Body-building foods: dal, milk. 3. Protective foods: orange, spinach.",
+          "explanation": "All food can be placed into three groups: energy-giving foods for energy, body-building foods for growth and protective foods for fighting diseases."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "mcq",
+          "question": "Ugadi Pachadi is a traditional dish that includes all six tastes. It is from which states?",
+          "options": ["Punjab and Haryana", "Andhra Pradesh, Karnataka and Telangana", "Rajasthan and Gujarat", "Kerala and Tamil Nadu"],
+          "answer": "Andhra Pradesh, Karnataka and Telangana",
+          "explanation": "Ugadi Pachadi is made during the Ugadi festival in Andhra Pradesh, Karnataka and Telangana. Each taste in it represents a different part of life."
+        },
+        {
+          "id": "ch5-t1-m3",
+          "type": "fill",
+          "question": "A balanced food plate should have the most amount of ______ and vegetables.",
+          "answer": "fruits",
+          "explanation": "A balanced plate should have most of the plate filled with fruits and vegetables (protective foods), a good portion of body-building foods, and some energy-giving foods."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "Ravi ate only rice and roti for lunch every day. Is this a balanced meal? What changes should he make and why?",
+          "answer": "No, this is not a balanced meal because rice and roti are only energy-giving foods. Ravi is missing body-building foods and protective foods. He should add dal or milk (body-building foods) and vegetables and fruits like spinach and orange (protective foods). Without all three food groups, his body will not get the nutrients it needs for growth and protection from diseases.",
+          "explanation": "A balanced meal must include foods from all three groups: energy-giving, body-building and protective. Eating from only one group is not healthy."
+        }
+      ]
+    },
+    {
+      "topic": "Healthy Eating Habits",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "Which of these is a healthy grain also called a super food?",
+          "options": ["Chips", "Pizza", "Ragi (finger millet)", "Burger"],
+          "answer": "Ragi (finger millet)",
+          "explanation": "Millets like ragi, jowar and bajra are called super foods because they are rich in nutrients and very good for health."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "Junk food is high in oil, salt and sugar but low in ______.",
+          "answer": "nutrition",
+          "explanation": "Junk food like chips, soft drinks and burgers taste good but have very little nutrition, making them unhealthy."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "mcq",
+          "question": "Which of these is a junk food?",
+          "options": ["Dal and rice", "Fruit salad", "Roti and sabzi", "Chips and cold drinks"],
+          "answer": "Chips and cold drinks",
+          "explanation": "Chips have too much oil and salt, and cold drinks have too much sugar. Both are junk foods that are unhealthy."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "short",
+          "question": "Why is water important for our body?",
+          "answer": "Water helps in digesting food, keeps our skin and body healthy, and removes waste from our body through urine, sweat and stool.",
+          "explanation": "Water is a very important part of our diet. Drinking enough water every day is a healthy habit."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "What should you check on the label of packaged food before buying it?",
+          "answer": "We should check the expiry date (do not eat food past its expiry date), the ingredients (to know what is inside) and the net weight (how much food is inside the packet).",
+          "explanation": "Reading food labels helps us make safe and healthy food choices. It is important to always check these details before buying packaged food."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "mcq",
+          "question": "What is a solar cooker?",
+          "options": ["A cooker that uses gas", "A cooker that uses sunlight to cook food", "A cooker that uses coal", "A cooker that uses electricity"],
+          "answer": "A cooker that uses sunlight to cook food",
+          "explanation": "A solar cooker uses sunlight to cook food instead of gas or electricity. It does not produce smoke or ash, so it is good for the environment."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "Your friend Ananya eats chips, burgers and cold drinks every day for lunch. What advice would you give her? Explain why junk food is harmful and what she should eat instead.",
+          "answer": "I would tell Ananya that eating junk food every day is harmful because it is high in oil, salt and sugar but has very little nutrition. Chips and burgers are over-processed and deep fried, while cold drinks have too much sugar. This can make her feel tired and fall sick often. Instead, she should eat fresh, home-cooked food with dal, roti, vegetables and fruits. She should also drink water or lassi instead of cold drinks. A balanced meal with foods from all three groups will keep her healthy and strong.",
+          "explanation": "Junk food may taste good but it does not give our body the nutrients it needs. Fresh, home-cooked food is always the healthier choice."
+        }
+      ]
+    },
+    {
+      "topic": "Cooking Methods and Millets",
+      "easy": [
+        {
+          "id": "ch5-t3-e1",
+          "type": "mcq",
+          "question": "Idli is cooked by which method?",
+          "options": ["Frying", "Baking", "Steaming", "Roasting"],
+          "answer": "Steaming",
+          "explanation": "Idli is cooked by steaming. In steaming, food is cooked using steam from boiling water."
+        },
+        {
+          "id": "ch5-t3-e2",
+          "type": "fill",
+          "question": "Jowar, bajra and ragi are types of healthy grains called ______.",
+          "answer": "millets",
+          "explanation": "Millets are grains like jowar (sorghum), bajra (pearl millet) and ragi (finger millet) that are rich in nutrients."
+        },
+        {
+          "id": "ch5-t3-e3",
+          "type": "mcq",
+          "question": "Which of these does NOT need any cooking?",
+          "options": ["Samosa", "Rice", "Fruit chaat", "Gulab jamun"],
+          "answer": "Fruit chaat",
+          "explanation": "Fruit chaat and vegetable salads do not need any cooking. They are made by mixing fresh fruits or vegetables."
+        },
+        {
+          "id": "ch5-t3-e4",
+          "type": "short",
+          "question": "Name two dishes that are made by frying.",
+          "answer": "Samosa and gulab jamun are made by frying in oil.",
+          "explanation": "Frying means cooking food in hot oil. Samosas and gulab jamuns are popular Indian fried foods."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t3-m1",
+          "type": "short",
+          "question": "Why are millets called super foods? Name any two millets.",
+          "answer": "Millets are called super foods because they are rich in nutrients and very good for health. Two examples are jowar (sorghum) and bajra (pearl millet).",
+          "explanation": "Millets were eaten regularly by our grandparents. Today, people are rediscovering these healthy grains which provide many important nutrients."
+        },
+        {
+          "id": "ch5-t3-m2",
+          "type": "mcq",
+          "question": "Which cooking method is the healthiest?",
+          "options": ["Deep frying", "Steaming", "Frying in lots of oil", "Roasting in butter"],
+          "answer": "Steaming",
+          "explanation": "Steaming is one of the healthiest cooking methods because food is cooked without oil, keeping its nutrients intact."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t3-h1",
+          "type": "long",
+          "question": "List any four methods of cooking with one example dish for each. Which method do you think is the healthiest and why?",
+          "answer": "Four methods of cooking are: 1. Steaming - Idli (cooked using steam). 2. Boiling - Dal (cooked in boiling water). 3. Frying - Samosa (cooked in hot oil). 4. Roasting - Roasted corn (cooked on dry heat). Steaming is the healthiest method because food is cooked without using oil, so it retains its nutrients and does not have extra fat.",
+          "explanation": "Different cooking methods change the taste and health value of food. Methods like steaming and boiling use less oil, making the food healthier than fried food."
+        }
+      ]
+    }
+  ]
+}

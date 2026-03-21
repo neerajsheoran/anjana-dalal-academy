@@ -1,0 +1,209 @@
+{
+  "topics": [
+    {
+      "topic": "Animals and Plants in Our Homes",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "Which of the following is an uninvited visitor that comes to our homes?",
+          "options": ["Dog", "Cat", "Lizard", "Parrot"],
+          "answer": "Lizard",
+          "explanation": "Lizards are uninvited visitors that find their way into our homes on their own. Dogs, cats, and parrots are pets we bring home on purpose."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "fill",
+          "question": "We should ______ hurt animals, even if we do not like them.",
+          "answer": "never",
+          "explanation": "We should never hurt animals. Animals generally do not hurt us unless they feel scared or threatened."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "short",
+          "question": "Name two animals we welcome at home as pets.",
+          "answer": "Dogs and cats are common pets we welcome at home.",
+          "explanation": "We bring animals like dogs, cats, parrots, and fish into our homes as pets."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "mcq",
+          "question": "Which plant is commonly found in many Indian homes and used in prayers?",
+          "options": ["Neem", "Tulsi", "Mango", "Banyan"],
+          "answer": "Tulsi",
+          "explanation": "Tulsi (Holy Basil) is commonly found in Indian homes and is used in prayers and medicine."
+        },
+        {
+          "id": "ch6-t1-e5",
+          "type": "mcq",
+          "question": "Which uninvited visitor makes webs in the corners of our homes?",
+          "options": ["Ant", "Mosquito", "Spider", "Pigeon"],
+          "answer": "Spider",
+          "explanation": "Spiders are uninvited visitors that make webs in the corners of our homes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "Name three uninvited animal visitors that come to our homes. Why should we not hurt them?",
+          "answer": "Lizards, ants, and spiders are uninvited visitors. We should not hurt them because animals generally do not harm us unless they feel scared or threatened.",
+          "explanation": "Many small animals find their way into our homes. We should be kind to all creatures, even if we do not like them."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "mcq",
+          "question": "Which animals are kept at home for milk?",
+          "options": ["Dogs and cats", "Parrots and fish", "Cows and goats", "Pigeons and sparrows"],
+          "answer": "Cows and goats",
+          "explanation": "Cows and goats are kept at home for their milk."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "Why should we be kind to all animals, including the ones we do not like? Explain with examples.",
+          "answer": "We should be kind to all animals because they are living beings that feel pain and fear, just like us. Animals generally do not hurt us unless they feel scared or threatened. For example, lizards eat mosquitoes and insects in our home, which helps us. Spiders also catch harmful insects in their webs. Even ants play an important role in nature. If we hurt or scare animals, they may react in self-defence. Being kind to animals is part of living in harmony with nature.",
+          "explanation": "All animals, even the ones that visit our homes uninvited, have a role to play in nature. We should respect and be kind to them."
+        }
+      ]
+    },
+    {
+      "topic": "How Plants and Animals Help Each Other",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "How do squirrels accidentally help new trees grow?",
+          "options": ["They water the plants", "They bury nuts and forget where they hid them", "They plant seeds carefully", "They protect the trees"],
+          "answer": "They bury nuts and forget where they hid them",
+          "explanation": "Squirrels bury nuts in the soil and forget where they hid them. These forgotten nuts grow into new trees!"
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "Bees and butterflies carry ______ from one flower to another, helping plants make fruits and seeds.",
+          "answer": "pollen",
+          "explanation": "Bees and butterflies carry pollen from one flower to another. This process helps plants make fruits and seeds."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "short",
+          "question": "What is seed dispersal?",
+          "answer": "Seed dispersal is when monkeys and birds eat fruits and throw away seeds far from the tree, and new plants grow from those seeds.",
+          "explanation": "When animals scatter seeds to new places, it is called seed dispersal. This helps new plants grow in different areas."
+        },
+        {
+          "id": "ch6-t2-e4",
+          "type": "mcq",
+          "question": "What do earthworms do that helps plants?",
+          "options": ["They eat the plants", "They make the soil fertile", "They water the plants", "They protect from insects"],
+          "answer": "They make the soil fertile",
+          "explanation": "Earthworms and insects make the soil fertile (rich and healthy) through their waste, which helps plants grow better."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "List three important things that plants give us.",
+          "answer": "Plants give us food (fruits and vegetables), fresh air to breathe, and medicine (like from neem and tulsi).",
+          "explanation": "Plants give us many important things including food, shade, wood, medicine, fibre for clothes, and fresh air."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "mcq",
+          "question": "How do monkeys help plants?",
+          "options": ["They water the plants", "They eat fruits and throw seeds far away, helping new plants grow", "They protect plants from insects", "They trim the leaves"],
+          "answer": "They eat fruits and throw seeds far away, helping new plants grow",
+          "explanation": "Monkeys eat fruits and throw away seeds far from the tree. New plants grow from these seeds. This is called seed dispersal."
+        },
+        {
+          "id": "ch6-t2-m3",
+          "type": "fill",
+          "question": "Cotton from plants is used to make ______.",
+          "answer": "clothes",
+          "explanation": "Cotton is a fibre that comes from plants and is used to make clothes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "Explain how plants, animals, and humans all depend on each other. Give at least three examples.",
+          "answer": "Plants, animals, and humans all need each other to survive. Plants give animals food, shelter, and clean air. Animals help plants by spreading seeds and making soil fertile through their waste. Humans help plants by watering them and protecting them. Humans help animals by giving them food, water, and shelter. Animals help humans by giving milk and companionship. For example, bees pollinate flowers so plants can make fruits. Squirrels plant trees by burying nuts. Cows give us milk and we take care of them in return.",
+          "explanation": "Plants, animals, and humans form a chain where everyone helps and depends on each other. This is called living in harmony."
+        },
+        {
+          "id": "ch6-t2-h2",
+          "type": "long",
+          "question": "How can you make friends with a plant? Why is it good to have a plant friend?",
+          "answer": "To make friends with a plant, you can choose a tree or shrub near your home or school. Give it a name, water it every day, and protect it. Observe its leaves, flowers, and fruits closely. You can even talk to your plant when you feel happy or sad. Having a plant friend is good because it helps you feel connected to nature. Taking care of a plant teaches us responsibility and makes us feel calm and happy.",
+          "explanation": "Making a plant friend is a wonderful way to feel connected to nature. It teaches us to care for the environment."
+        }
+      ]
+    },
+    {
+      "topic": "The Grey Wagtails and Caring for Nature",
+      "easy": [
+        {
+          "id": "ch6-t3-e1",
+          "type": "mcq",
+          "question": "What food do ants love the most?",
+          "options": ["Salty food", "Spicy food", "Sweet food", "Sour food"],
+          "answer": "Sweet food",
+          "explanation": "Ants usually love sweet things the most! If you place sugar near them, they will come quickly."
+        },
+        {
+          "id": "ch6-t3-e2",
+          "type": "fill",
+          "question": "The Grey Wagtail bird is called Vaalatti Kuruvi in ______.",
+          "answer": "Tamil",
+          "explanation": "The Grey Wagtail is known as Vaalatti Kuruvi in Tamil. These birds visit Valparai in Tamil Nadu during winter."
+        },
+        {
+          "id": "ch6-t3-e3",
+          "type": "short",
+          "question": "Why are Grey Wagtails called 'Wagtails'?",
+          "answer": "They are called Wagtails because they keep wagging their tails up and down.",
+          "explanation": "Grey Wagtails got their name because of their habit of constantly wagging their tails up and down."
+        },
+        {
+          "id": "ch6-t3-e4",
+          "type": "mcq",
+          "question": "In which town of Tamil Nadu do children celebrate when Grey Wagtails arrive?",
+          "options": ["Chennai", "Madurai", "Valparai", "Coimbatore"],
+          "answer": "Valparai",
+          "explanation": "In Valparai, Tamil Nadu, children and teachers celebrate when the Grey Wagtails arrive by putting up welcome posters and distributing sweets."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t3-m1",
+          "type": "short",
+          "question": "How do the people of Valparai celebrate the arrival of Grey Wagtails?",
+          "answer": "When the first Grey Wagtails arrive in Valparai, children and teachers celebrate by putting up welcome posters and distributing sweets to everyone.",
+          "explanation": "The Grey Wagtails fly from the mountains to warmer parts during winter. Their arrival is celebrated in Valparai."
+        },
+        {
+          "id": "ch6-t3-m2",
+          "type": "mcq",
+          "question": "Why do Grey Wagtails fly to Valparai?",
+          "options": ["To find food", "To escape cold winters in the mountains", "To lay eggs", "To build nests"],
+          "answer": "To escape cold winters in the mountains",
+          "explanation": "During cold winter months, Grey Wagtails fly from the mountains to the warmer parts of India like Valparai."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t3-h1",
+          "type": "long",
+          "question": "What does 'living in harmony' mean? How can we live in harmony with plants and animals?",
+          "answer": "Living in harmony means caring for plants and animals and letting them care for us too. We can live in harmony by planting trees and watering them, being kind to all animals including the uninvited ones in our homes, sharing water with birds by making a birdbath, not cutting trees unnecessarily, and respecting all forms of life. When we take care of nature, nature takes care of us by giving us food, clean air, medicine, and a beautiful world to live in.",
+          "explanation": "Living in harmony with nature means understanding that plants, animals, and humans all depend on each other and treating all living things with respect and kindness."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "topics": [
+    {
+      "topic": "Community and Public Places",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "What is a community?",
+          "options": ["A group of animals", "A group of people who live near each other and share resources", "A type of festival", "A big building"],
+          "answer": "A group of people who live near each other and share resources",
+          "explanation": "A community is a group of people who live near each other and share places, resources and experiences."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "mcq",
+          "question": "Which of these is a public place?",
+          "options": ["Your bedroom", "A park", "Your kitchen", "Your cupboard"],
+          "answer": "A park",
+          "explanation": "A park is a public place because it is a space that everyone can use. Bedrooms, kitchens and cupboards are private spaces."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "fill",
+          "question": "Public places are spaces that ______ can use.",
+          "answer": "everyone",
+          "explanation": "Public places like parks, libraries and bus stops are spaces that everyone in the community can use."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "short",
+          "question": "Name any three important places found in a community.",
+          "answer": "Schools, hospitals and markets",
+          "explanation": "Communities have important places like schools, hospitals, markets, parks, police stations and bus stops that help everyone live a better life."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "mcq",
+          "question": "What should we NOT do in a public place?",
+          "options": ["Play games", "Read books", "Throw garbage", "Sit on a bench"],
+          "answer": "Throw garbage",
+          "explanation": "We should not throw garbage in public places. It is our responsibility to keep public places clean and safe."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Why are public places important for a community?",
+          "answer": "Public places like parks, libraries and bus stops are important because people use them for playing, relaxing, reading, travelling and meeting others. They help everyone in the community.",
+          "explanation": "Public places serve many purposes and make daily life easier and more enjoyable for all members of the community."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "What happens when an important place like a hospital or school is missing from a community?",
+          "answer": "When an important place like a hospital or school is missing, life becomes very difficult for everyone. People cannot get treatment when they are sick or children cannot go to school nearby.",
+          "explanation": "Every important place in a community serves a purpose. Without hospitals, people cannot get medical help. Without schools, children cannot learn."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "fill",
+          "question": "Parks, playgrounds, libraries, bus stops and post offices are all examples of ______ places.",
+          "answer": "public",
+          "explanation": "These are all public places because they are open for everyone in the community to use."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Write four things you can do to keep public places in your neighbourhood clean and safe.",
+          "answer": "1. Do not throw garbage on the ground and always use a dustbin. 2. Do not break benches, swings or other things in public places. 3. Do not damage or write on walls. 4. Tell others also to keep public places clean and follow the rules.",
+          "explanation": "Taking care of public places is the responsibility of every person in the community. When everyone keeps these places clean and safe, the whole community benefits."
+        }
+      ]
+    },
+    {
+      "topic": "Van Mahotsav and Helping Hands",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "When is Van Mahotsav celebrated in India?",
+          "options": ["1st to 7th January", "1st to 7th July", "15th August", "26th January"],
+          "answer": "1st to 7th July",
+          "explanation": "Van Mahotsav is celebrated every year from 1st July to 7th July during the rainy season in India."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "Van Mahotsav is also called the ______ Festival.",
+          "answer": "Tree Planting",
+          "explanation": "Van Mahotsav is also known as the Tree Planting Festival because people plant trees across the country during this time."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "A mason uses which tool to build walls?",
+          "options": ["Hammer", "Trowel", "Spade", "Broom"],
+          "answer": "Trowel",
+          "explanation": "A mason builds and repairs walls using bricks and cement, and the main tool used is a trowel."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "short",
+          "question": "What does a carpenter do?",
+          "answer": "A carpenter makes and fixes wooden furniture and structures using tools like hammer and saw.",
+          "explanation": "Carpenters are skilled workers who work with wood to make furniture, doors, windows and other wooden structures."
+        },
+        {
+          "id": "ch1-t2-e5",
+          "type": "mcq",
+          "question": "Which person keeps streets and public places clean?",
+          "options": ["Gardener", "Electrician", "Sweeper", "Mason"],
+          "answer": "Sweeper",
+          "explanation": "A sweeper keeps streets and public places clean using a broom."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "How did the villagers prepare for Van Mahotsav? Mention any three activities.",
+          "answer": "The villagers cleaned the park, fixed broken benches, repaired the street light, brought saplings from a nursery and planted trees along the boundary.",
+          "explanation": "Van Mahotsav is celebrated by working together. Children, parents, electricians and nursery workers all helped to make the event successful."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "mcq",
+          "question": "Why is Van Mahotsav celebrated during the rainy season?",
+          "options": ["Because children have holidays", "Because rain helps the newly planted trees grow", "Because it is a national holiday", "Because the weather is cold"],
+          "answer": "Because rain helps the newly planted trees grow",
+          "explanation": "Saplings planted during the rainy season get natural water from the rain, which helps them grow well."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "Why is every worker important in a community? Explain with examples of at least three community helpers.",
+          "answer": "Every worker plays an important role in keeping the community running. A mason builds and repairs walls so we have strong houses. An electrician fixes lights and electrical equipment so we have electricity. A gardener takes care of plants and gardens to keep our surroundings green and beautiful. Without any one of them, our community would not work well.",
+          "explanation": "People with different skills and occupations all contribute to the community. Each person's work is connected to the well-being of everyone else."
+        }
+      ]
+    },
+    {
+      "topic": "Teamwork and Community Celebrations",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "Which insect is a great example of teamwork in nature?",
+          "options": ["Butterfly", "Ant", "Mosquito", "Grasshopper"],
+          "answer": "Ant",
+          "explanation": "An ant colony is a great example of teamwork. Some ants collect food, some take care of baby ants, and some protect the nest."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "In Assam, during the festival of Uruka (Magh Bihu), people build a hut called ______.",
+          "answer": "Bhela Ghar",
+          "explanation": "During Uruka (Magh Bihu) in Assam, people build a hut called Bhela Ghar using bamboo and hay. They cook, eat and dance together."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "mcq",
+          "question": "In which state of India is the festival of Khetala celebrated?",
+          "options": ["Rajasthan", "Assam", "Sikkim", "Tamil Nadu"],
+          "answer": "Sikkim",
+          "explanation": "Khetala is celebrated in Sikkim during harvest time, when people come together to help each other cut crops."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "short",
+          "question": "What happens to banana leaves when they are buried in a pit?",
+          "answer": "When banana leaves are buried in a pit, they turn into manure that makes the soil richer and healthier for plants.",
+          "explanation": "Banana leaves decompose naturally and become organic manure, which adds nutrients to the soil."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "How did the people of Kanker, Chhattisgarh show the power of teamwork?",
+          "answer": "When the Chinar river overflowed and blocked roads, the entire community came together and built a bamboo bridge in just two days using bamboo, stones and other materials. This helped students and villagers cross the river safely.",
+          "explanation": "This real-life example shows that when a community works together, even the biggest problems can be solved quickly."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "mcq",
+          "question": "Why are festivals important for a community?",
+          "options": ["They give holidays from school", "They bring people together and create strong bonds", "They are expensive", "They happen only in cities"],
+          "answer": "They bring people together and create strong bonds",
+          "explanation": "Festivals bring people together to share food, laughter and joy. This creates beautiful memories and strong bonds in the community."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Give two examples from the chapter that show how teamwork helps solve problems. What lesson do we learn from them?",
+          "answer": "Example 1: During Van Mahotsav, villagers worked together to clean the park, fix benches, repair street lights, bring saplings and plant trees. The work was done quickly and happily because everyone helped. Example 2: In Kanker, Chhattisgarh, the community built a bamboo bridge in just two days when the river blocked the road. The lesson we learn is that when people work together as a team, even big tasks and problems can be solved.",
+          "explanation": "Both examples show that teamwork makes work easier and faster. One person alone cannot do everything, but when a community comes together, great things happen."
+        }
+      ]
+    }
+  ]
+}

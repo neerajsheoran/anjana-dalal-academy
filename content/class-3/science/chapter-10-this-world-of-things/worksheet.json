@@ -1,0 +1,224 @@
+{
+  "topics": [
+    {
+      "topic": "Materials and Their Sources",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "Tables, chairs, and doors are made of which material?",
+          "options": ["Metal", "Glass", "Wood", "Plastic"],
+          "answer": "Wood",
+          "explanation": "Tables, chairs, doors, pencils, and shelves are made of wood, which comes from trees."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "Glass is mostly made from ______, which is heated to a very high temperature.",
+          "answer": "sand",
+          "explanation": "Glass is mostly made of sand. Sand is heated to a very high temperature until it melts and becomes glass."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "Which material comes from rubber trees?",
+          "options": ["Wood", "Glass", "Plastic", "Rubber"],
+          "answer": "Rubber",
+          "explanation": "Rubber comes from rubber trees. It is also made from petroleum."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "short",
+          "question": "Where does metal come from?",
+          "answer": "Metal comes from rocks deep inside the Earth, which are called ore.",
+          "explanation": "Metals are found in rocks deep inside the Earth. These rocks are called ore and are dug out through mining."
+        },
+        {
+          "id": "ch10-t1-e5",
+          "type": "mcq",
+          "question": "Erasers and tyres are made of which material?",
+          "options": ["Plastic", "Wood", "Rubber", "Glass"],
+          "answer": "Rubber",
+          "explanation": "Erasers, tyres, balls, and rubber bands are all made of rubber."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "Name three sources of cloth (fabric). Where does each come from?",
+          "answer": "Cotton comes from plants, wool comes from sheep, and silk comes from silkworms.",
+          "explanation": "Cloth can be made from different sources. Cotton is from plants, wool is from sheep, and silk is from silkworms."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "mcq",
+          "question": "Plastic is made from which substance found deep underground?",
+          "options": ["Sand", "Ore", "Petroleum", "Clay"],
+          "answer": "Petroleum",
+          "explanation": "Plastic is made from petroleum, which is a liquid found deep underground."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "fill",
+          "question": "Clay pots and bricks are made from soil and ______.",
+          "answer": "mud",
+          "explanation": "Clay comes from soil and mud. It is used to make pots, cups, bricks, and statues."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "Everything around us is made of some material. Name six common materials and give two examples of things made from each.",
+          "answer": "Six common materials are: 1) Wood - tables and pencils. 2) Metal - keys and spoons. 3) Glass - window panes and mirrors. 4) Plastic - bottles and rulers. 5) Cloth - clothes and curtains. 6) Rubber - erasers and tyres. Each material has special properties that make it useful for certain things.",
+          "explanation": "Different materials have different properties which make them suitable for making different objects."
+        }
+      ]
+    },
+    {
+      "topic": "Properties of Materials",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "Which type of material lets you see through it clearly?",
+          "options": ["Opaque", "Translucent", "Transparent", "Rough"],
+          "answer": "Transparent",
+          "explanation": "Transparent materials let you see through them clearly. Examples include glass, clean water, and clear plastic."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "Materials you cannot see through at all are called ______.",
+          "answer": "opaque",
+          "explanation": "Opaque materials block light completely. You cannot see through them at all. Examples include wood, metal, and stone."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "When you tap a metal spoon on a metal object, what kind of sound does it make?",
+          "options": ["Thak-thak", "Dub-dub", "Ting-ting", "No sound"],
+          "answer": "Ting-ting",
+          "explanation": "Metal makes a sharp, ringing 'ting-ting' sound when tapped with a metal spoon."
+        },
+        {
+          "id": "ch10-t2-e4",
+          "type": "short",
+          "question": "What is a translucent material? Give one example.",
+          "answer": "A translucent material lets you see through it only partly, making things look blurry. An example is frosted glass.",
+          "explanation": "Translucent materials let some light through but not clearly. Things look blurry when seen through them."
+        },
+        {
+          "id": "ch10-t2-e5",
+          "type": "mcq",
+          "question": "Which material is flexible and can be bent without breaking?",
+          "options": ["Glass", "Wood", "Rubber", "Stone"],
+          "answer": "Rubber",
+          "explanation": "Rubber is flexible, meaning it can be bent without breaking. This makes it useful for making balls and erasers."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "What is the difference between transparent, translucent, and opaque materials? Give one example of each.",
+          "answer": "Transparent materials let you see through them clearly (like glass). Translucent materials let you see through them only partly (like oiled paper). Opaque materials do not let you see through them at all (like wood).",
+          "explanation": "Materials are classified as transparent, translucent, or opaque based on how much light they let through."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "mcq",
+          "question": "Why are clothes made of fabric and not wood?",
+          "options": ["Wood is more expensive", "Fabric is flexible and soft, wood is rigid and stiff", "Wood is heavier", "Fabric looks better"],
+          "answer": "Fabric is flexible and soft, wood is rigid and stiff",
+          "explanation": "Fabric is soft and flexible, making it comfortable to wear. Wood is rigid and stiff. We use the right material for the right purpose."
+        },
+        {
+          "id": "ch10-t2-m3",
+          "type": "fill",
+          "question": "When you tap a spoon on wood, it makes a ______ sound.",
+          "answer": "thak-thak",
+          "explanation": "Wood makes a dull, solid 'thak-thak' sound when tapped with a metal spoon."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Why do we use different materials for different things? Explain with at least three examples.",
+          "answer": "We use different materials for different things because each material has special properties. Glass is used for windows because it is transparent and lets us see outside while keeping wind out. Wood is used for tables and chairs because it is hard and rigid, so it can support weight. Rubber is used for erasers because it is flexible and can rub off pencil marks. Fabric is used for clothes because it is soft and flexible, making it comfortable to wear. Metal is used for keys and locks because it is very hard and strong. Choosing the right material for each object makes it work better.",
+          "explanation": "Each material has unique properties like being hard, soft, transparent, or flexible. We choose materials based on what we need the object to do."
+        }
+      ]
+    },
+    {
+      "topic": "Solids, Liquids, Gases, and Natural vs Artificial",
+      "easy": [
+        {
+          "id": "ch10-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is a liquid?",
+          "options": ["Stone", "Air", "Milk", "Book"],
+          "answer": "Milk",
+          "explanation": "Milk is a liquid. Liquids flow and take the shape of the container they are poured into."
+        },
+        {
+          "id": "ch10-t3-e2",
+          "type": "fill",
+          "question": "A ______ has a fixed shape and does not flow.",
+          "answer": "solid",
+          "explanation": "A solid has a fixed shape and does not flow. Examples include stone, spoon, ice, and book."
+        },
+        {
+          "id": "ch10-t3-e3",
+          "type": "mcq",
+          "question": "Which of these is a gas?",
+          "options": ["Water", "Ice", "Honey", "Air"],
+          "answer": "Air",
+          "explanation": "Air is a gas. Gases spread out everywhere and have no fixed shape."
+        },
+        {
+          "id": "ch10-t3-e4",
+          "type": "short",
+          "question": "What is the difference between natural and artificial things?",
+          "answer": "Natural things are found in nature and not made by humans, like trees and rocks. Artificial things are made by humans, like clothes and buildings.",
+          "explanation": "Things around us can be divided into natural (found in nature) and artificial (made by humans)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t3-m1",
+          "type": "short",
+          "question": "Explain the difference between solids, liquids, and gases with one example of each.",
+          "answer": "Solids have a fixed shape and do not flow, like a stone. Liquids flow and take the shape of their container, like water. Gases spread out everywhere and have no fixed shape, like air.",
+          "explanation": "Everything around us can be classified as a solid, liquid, or gas based on its shape and ability to flow."
+        },
+        {
+          "id": "ch10-t3-m2",
+          "type": "mcq",
+          "question": "Sand looks like it flows, but what is it actually?",
+          "options": ["A liquid", "A gas", "Each grain is a tiny solid", "A mixture of liquids"],
+          "answer": "Each grain is a tiny solid",
+          "explanation": "Sand looks like it flows, but each grain is actually a tiny solid. It can be confusing!"
+        },
+        {
+          "id": "ch10-t3-m3",
+          "type": "fill",
+          "question": "Things found in nature can be alive (like plants) or not alive (like ______ and air).",
+          "answer": "rocks",
+          "explanation": "Natural things can be alive (like plants and animals) or not alive (like rocks, water, and air)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t3-h1",
+          "type": "long",
+          "question": "Classify the following into solids, liquids, and gases: water, air, ice, milk, stone, steam, honey, smoke, book, juice. Also explain how liquids are different from gases.",
+          "answer": "Solids: ice, stone, book (they have a fixed shape). Liquids: water, milk, honey, juice (they flow and take the shape of their container). Gases: air, steam, smoke (they spread out everywhere). The difference between liquids and gases is that liquids take the shape of the container they are in but stay at the bottom, while gases spread out freely and fill up the entire space. Liquids can be poured, while gases float around us.",
+          "explanation": "Solids keep their shape, liquids flow and fill containers, and gases spread freely. Understanding these states of matter helps us understand the world around us."
+        }
+      ]
+    }
+  ]
+}

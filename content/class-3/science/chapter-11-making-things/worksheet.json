@@ -1,0 +1,216 @@
+{
+  "topics": [
+    {
+      "topic": "Pottery and Clay Work",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "What does a potter make things from?",
+          "options": ["Wood", "Metal", "Clay", "Plastic"],
+          "answer": "Clay",
+          "explanation": "A potter is a person who makes things from clay, like pots, cups, and lamps."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "A potter's oven is called a ______.",
+          "answer": "kiln",
+          "explanation": "A kiln is a potter's oven where clay pots are baked. Baking in the kiln makes the pot hard and strong."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "mcq",
+          "question": "What is a kulhad?",
+          "options": ["A large pot for storing water", "A small clay cup for drinking tea", "A clay piggy bank", "A clay lamp"],
+          "answer": "A small clay cup for drinking tea",
+          "explanation": "A kulhad is a small clay cup used for drinking tea. It is a traditional Indian cup."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "short",
+          "question": "What is a gullak used for?",
+          "answer": "A gullak is a clay piggy bank used to save coins.",
+          "explanation": "A gullak is a traditional Indian piggy bank made of clay where children can save their coins."
+        },
+        {
+          "id": "ch11-t1-e5",
+          "type": "mcq",
+          "question": "What is the first step in making a clay pot?",
+          "options": ["Baking it in a kiln", "Painting patterns on it", "Taking clay and making it wet by adding water", "Drying it in the sun"],
+          "answer": "Taking clay and making it wet by adding water",
+          "explanation": "The first step is to take clay and make it wet by adding water. Then the potter pounds it to get the right softness."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "Describe the steps a potter follows to make a pot.",
+          "answer": "First, the potter takes clay and makes it wet with water. Then he pounds and kneads it. He places it on a potter's wheel and shapes it by spinning. The pot is dried in the sun, then baked in a kiln. Finally, it is decorated with patterns and colours.",
+          "explanation": "Making a pot involves several steps: wetting the clay, kneading it, shaping it on a wheel, drying, baking in a kiln, and decorating."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "mcq",
+          "question": "Why is a pot baked in a kiln?",
+          "options": ["To change its colour", "To make it hard and strong", "To make it bigger", "To make it lighter"],
+          "answer": "To make it hard and strong",
+          "explanation": "Baking the pot in a kiln (very hot oven) makes it hard and strong so it can hold water and food."
+        },
+        {
+          "id": "ch11-t1-m3",
+          "type": "fill",
+          "question": "Diyas are oil lamps made of clay and are used during ______.",
+          "answer": "Diwali",
+          "explanation": "Diyas are clay oil lamps used during the festival of Diwali to light up homes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "Name five things that potters make from clay and explain the use of each.",
+          "answer": "Potters make many useful things from clay: 1) Pot (matka) - used for storing water and keeping it cool naturally. 2) Kulhad - a small clay cup used for drinking tea. 3) Gullak - a piggy bank used to save coins. 4) Diya - an oil lamp used during Diwali. 5) Plates and bowls - used for eating food and are eco-friendly. Potters also make flower vases and birdbaths.",
+          "explanation": "Potters create many useful and beautiful objects from clay that are used in everyday life and during festivals."
+        },
+        {
+          "id": "ch11-t1-h2",
+          "type": "long",
+          "question": "India has many famous pottery traditions. Name three Indian pottery styles and where they come from.",
+          "answer": "India is famous for its beautiful pottery. Three famous styles are: 1) Blue pottery from Jaipur, Rajasthan - known for its beautiful blue colour and designs. 2) Terracotta (red clay) pottery from West Bengal - made from red-coloured clay. 3) Black pottery from Manipur - unique dark-coloured pottery. There is also Khurja pottery from Uttar Pradesh. Each style uses different colours, patterns, and techniques that have been passed down through many generations.",
+          "explanation": "Different parts of India have their own special pottery styles with unique colours, patterns, and techniques."
+        }
+      ]
+    },
+    {
+      "topic": "Bricks and Building Houses",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "What are bricks made from?",
+          "options": ["Wood", "Metal", "Mud", "Glass"],
+          "answer": "Mud",
+          "explanation": "Bricks are made from mud mixed with water. They are dried in the sun and then baked in a kiln to make them hard."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "Houseboats are found on ______ Lake in Kashmir.",
+          "answer": "Dal",
+          "explanation": "Houseboats are found on Dal Lake in Kashmir. They are made of wood and float on water."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "mcq",
+          "question": "Which type of house is found in North-East India?",
+          "options": ["Mud house", "Bamboo house", "Igloo", "Brick house"],
+          "answer": "Bamboo house",
+          "explanation": "Bamboo houses made of bamboo and thatch are found in North-East India."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "short",
+          "question": "What are wooden houses found in? Name two Indian states.",
+          "answer": "Wooden houses are found in Himachal Pradesh and Kashmir (also Assam).",
+          "explanation": "Wooden houses made from wood and timber are common in hilly regions like Himachal Pradesh, Kashmir, and Assam."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "Why do people in some villages build mud houses? What are the benefits?",
+          "answer": "People build mud houses because they are better for the environment. Mud houses stay cool inside during hot weather. Cow dung is used to make smooth walls and floors, which keeps the heat out and stops insects from entering.",
+          "explanation": "Mud houses are eco-friendly, naturally cool, and can be built from locally available materials."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "mcq",
+          "question": "Why are bricks stacked in a staggered pattern (shifted slightly in each row)?",
+          "options": ["It looks nicer", "It makes the wall much stronger", "It uses fewer bricks", "It is easier to build"],
+          "answer": "It makes the wall much stronger",
+          "explanation": "When bricks are stacked in a staggered pattern, each row shifted slightly, the wall becomes much stronger than when bricks are stacked directly on top of each other."
+        },
+        {
+          "id": "ch11-t2-m3",
+          "type": "fill",
+          "question": "In different parts of India, people use different ______ to build houses based on what is available and the weather.",
+          "answer": "materials",
+          "explanation": "Houses are built using different materials like bricks, mud, wood, bamboo, and thatch depending on the place and weather."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "Different parts of India have different types of houses. Describe at least four types and explain why they are made of different materials.",
+          "answer": "Different parts of India have different types of houses: 1) Brick houses in cities and towns - made of bricks, cement, and concrete for strength and durability. 2) Mud houses (kutcha) in villages of Rajasthan and Bihar - made of mud and cow dung, which stays cool in hot weather. 3) Wooden houses in Himachal Pradesh and Kashmir - wood is easily available in hilly areas and keeps houses warm in cold weather. 4) Bamboo houses in North-East India - bamboo grows abundantly there and is light and strong. 5) Houseboats in Kashmir - float on Dal Lake and are made of wood. People use different materials because they build with what is available nearby and what suits the local weather.",
+          "explanation": "The choice of building material depends on local availability, climate, and traditions of the region."
+        }
+      ]
+    },
+    {
+      "topic": "Patterns in Nature and Safety",
+      "easy": [
+        {
+          "id": "ch11-t3-e1",
+          "type": "mcq",
+          "question": "Which animal has stripes as a natural pattern?",
+          "options": ["Leopard", "Tiger", "Butterfly", "Fish"],
+          "answer": "Tiger",
+          "explanation": "Tigers have stripes as their natural pattern. Leopards have spots, and butterflies have designs on their wings."
+        },
+        {
+          "id": "ch11-t3-e2",
+          "type": "fill",
+          "question": "Potters get ideas for their designs from ______ found in nature.",
+          "answer": "patterns",
+          "explanation": "Patterns are repeating designs found everywhere in nature. Potters and artists are inspired by these natural patterns."
+        },
+        {
+          "id": "ch11-t3-e3",
+          "type": "short",
+          "question": "Name two safety items that workers wear at construction sites.",
+          "answer": "Workers wear a helmet with a strap and a safety vest (bright coloured jacket) at construction sites.",
+          "explanation": "Safety rules at construction sites include wearing a helmet, safety vest, and sturdy footwear."
+        },
+        {
+          "id": "ch11-t3-e4",
+          "type": "mcq",
+          "question": "Where can you find patterns in nature?",
+          "options": ["Only on animals", "Only on plants", "Only on buildings", "On animals, plants, and many other things"],
+          "answer": "On animals, plants, and many other things",
+          "explanation": "Patterns are found on animals (spots on leopards, stripes on tigers), plants (arrangement of leaves, veins on leaves), and other things (peacock feathers, spider webs)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t3-m1",
+          "type": "short",
+          "question": "Give three examples of patterns found on animals.",
+          "answer": "Spots on a leopard, stripes on a tiger and zebra, and designs on a butterfly's wings are patterns found on animals.",
+          "explanation": "Nature has beautiful patterns on animals like spots, stripes, scales, and wing designs."
+        },
+        {
+          "id": "ch11-t3-m2",
+          "type": "mcq",
+          "question": "Which of these is NOT a safety rule at a construction site?",
+          "options": ["Wear a helmet", "Wear a safety vest", "Wear slippers", "Wear sturdy footwear"],
+          "answer": "Wear slippers",
+          "explanation": "Workers should wear sturdy footwear (strong shoes or boots), not slippers, at construction sites for safety."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t3-h1",
+          "type": "long",
+          "question": "Why are safety rules important at construction sites and at home? List safety rules for both places.",
+          "answer": "Safety rules are important because building things can be dangerous. At construction sites, workers should: wear a helmet with a strap, wear a safety vest, wear sturdy footwear, and follow all rules given by the site manager. At home and school, we should: not run on wet floors, not play near electrical wires, follow fire safety rules, and walk carefully on stairs. Following these rules prevents accidents and keeps everyone safe.",
+          "explanation": "Safety rules protect workers and children from injuries and accidents. They must be followed at all times."
+        }
+      ]
+    }
+  ]
+}

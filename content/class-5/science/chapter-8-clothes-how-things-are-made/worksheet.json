@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "Fibres, Spinning, and Weaving",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "What is weaving?",
+          "options": ["Mixing colours together", "Combining threads into a patterned fabric", "Cutting cloth into pieces", "Drawing patterns on paper"],
+          "answer": "Combining threads into a patterned fabric",
+          "explanation": "Weaving means combining strips or threads of material by crossing them over and under each other to create a patterned fabric."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "The vertical threads in weaving are called the warp, and the horizontal threads are called the ______.",
+          "answer": "weft",
+          "explanation": "In weaving, the warp threads go vertically (up and down) and the weft threads go horizontally (side to side). Together they form the fabric."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "The process of twisting fibres together to make thread is called ______.",
+          "options": ["Weaving", "Stitching", "Spinning", "Dyeing"],
+          "answer": "Spinning",
+          "explanation": "Spinning is the process of twisting fibres together to make thread or yarn. A charkha (spinning wheel) helps spin thread from cotton."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "mcq",
+          "question": "Which of these is a natural fibre?",
+          "options": ["Nylon", "Polyester", "Cotton", "Rayon"],
+          "answer": "Cotton",
+          "explanation": "Cotton comes from the cotton plant and is a natural fibre. Nylon, polyester, and rayon are synthetic (human-made) fibres."
+        },
+        {
+          "id": "ch8-t1-e5",
+          "type": "fill",
+          "question": "India was the ______ country to grow cotton and use it to make clothes.",
+          "answer": "first",
+          "explanation": "India was the first country in the world to grow cotton and use it to make clothes. India is also the largest producer of jute."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Describe the journey of how silk is made, from the silk moth to silk fabric.",
+          "answer": "First, the silk moth lays eggs. These eggs hatch into tiny caterpillars called silkworms. The silkworms eat mulberry leaves and grow big. Then they spin cocoons around themselves using silk thread. The cocoons are placed in hot water, and the silk thread is gently pulled out. Finally, this thread is used to make beautiful silk fabric.",
+          "explanation": "Silk production is a fascinating process that starts with a tiny moth and ends with one of the most beautiful and valuable fabrics in the world."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "What is the difference between natural fibres and synthetic fibres? Give two examples of each.",
+          "answer": "Natural fibres come from plants or animals. Examples: cotton (from the cotton plant) and wool (from sheep or goats). Synthetic fibres are made by humans using artificial materials. Examples: nylon (strong and stretchy, used in ropes) and polyester (does not wrinkle easily, used in shirts).",
+          "explanation": "Natural fibres come from living things in nature, while synthetic fibres are manufactured in factories. Both types are used in our daily clothing."
+        },
+        {
+          "id": "ch8-t1-m3",
+          "type": "mcq",
+          "question": "What is Pashmina wool and where does it come from?",
+          "options": ["Wool from sheep in Rajasthan", "Wool from the Changthangi goat of Ladakh", "Wool from yaks in Nepal", "Wool from rabbits in Kashmir"],
+          "answer": "Wool from the Changthangi goat of Ladakh",
+          "explanation": "Pashmina wool comes from a special goat called the Changthangi, found high in the cold mountains of Ladakh. It is hand-spun and woven into very soft shawls."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "Describe the complete journey from fibre to the clothes you wear. What are the five main steps?",
+          "answer": "The five main steps are: (1) Fibre: The raw material is obtained — cotton from the cotton plant, silk from silkworm cocoons, wool from sheep, or jute from the jute plant. (2) Spinning: The fibres are twisted together to make thread or yarn, either by hand using a charkha or by machine. (3) Weaving: The threads are woven together on a loom — warp threads go vertically and weft threads go horizontally, crossing over and under each other to form cloth. (4) Stitching: The cloth is cut into pieces and stitched together using needle and thread to make clothes. (5) Decorating: Embroidery, dyeing, and printing add beautiful designs to the finished garment.",
+          "explanation": "Every piece of clothing goes through a long journey involving many skilled people — from the farmer who grows cotton to the weaver who makes cloth to the tailor who stitches it."
+        }
+      ]
+    },
+    {
+      "topic": "Indian Textile Traditions and Sustainability",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "Which famous handloom saree comes from Tamil Nadu?",
+          "options": ["Banarasi", "Patola", "Kanjeevaram", "Pashmina"],
+          "answer": "Kanjeevaram",
+          "explanation": "Kanjeevaram sarees come from Tamil Nadu. Banarasi sarees come from Uttar Pradesh, Patola from Gujarat, and Pashmina shawls from Kashmir."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "The cloth made by spinning and weaving at home, promoted by Gandhi ji, is called ______.",
+          "answer": "khadi",
+          "explanation": "Gandhi ji promoted khadi — cloth made by spinning thread from cotton on a charkha and weaving it by hand. It became a symbol of the freedom struggle and self-reliance."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "Which bird in India stitches leaves together to make its nest?",
+          "options": ["Sparrow", "Baya Weaver", "Tailorbird", "Kingfisher"],
+          "answer": "Tailorbird",
+          "explanation": "The tailorbird uses its beak like a needle to poke holes along a leaf's edge and pulls plant fibres through them, sewing the leaf edges together to make a nest."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "mcq",
+          "question": "Indian muslin cloth was so fine that it was called ______.",
+          "options": ["Golden thread", "Woven air", "Silver silk", "Cloud fabric"],
+          "answer": "Woven air",
+          "explanation": "Indian muslin was so fine and delicate that it was called 'woven air' — an entire saree could pass through a finger ring!"
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Name any three traditional embroidery styles of India and the states they come from.",
+          "answer": "1. Chikankari — from Lucknow, Uttar Pradesh. 2. Phulkari — from Punjab. 3. Kantha — from West Bengal, Odisha, and Tripura. Other examples include Banjara and Gota from Rajasthan, Kashmiri embroidery from Kashmir, and Toda from Tamil Nadu.",
+          "explanation": "India has a rich tradition of embroidery, with each region having its own unique style that tells a story about its people and culture."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "How do Indians traditionally recycle and reuse old clothes? Give three examples.",
+          "answer": "1. Clothes that no longer fit are passed on to younger siblings or others who can use them. 2. Old cloth is reused to make cleaning rags, bags, or covers. 3. There is a beautiful tradition of making quilts (called rajai or kantha) by stitching together small pieces of old cloth. Indians rarely throw away clothes.",
+          "explanation": "The Indian practice of reusing and recycling clothes reduces waste and is an excellent example of sustainable living that has been followed for generations."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Why is handloom weaving considered eco-friendly and important for India? How is it different from factory-made cloth?",
+          "answer": "Handloom weaving is eco-friendly because it uses no electricity — the weaver operates the loom by hand. It does not create pollution or waste like factory machines do. Handloom weaving is also important because it provides livelihood to over 45 lakh people in India, especially women and rural artisans. It is one of the largest cottage industries in the world. Unlike factory-made cloth which is produced in huge quantities by machines, each piece of handloom fabric is made with individual care and skill, making it unique and special. Examples include Kanjeevaram sarees, Banarasi sarees, and Patola sarees. The Patola saree from Gujarat is so complex that it takes 6 months to 1 year to weave just one!",
+          "explanation": "Handloom weaving represents India's cultural heritage and sustainable practices. It is both environmentally friendly and economically important for millions of Indian families."
+        },
+        {
+          "id": "ch8-t2-h2",
+          "type": "long",
+          "question": "Gandhi ji promoted spinning and weaving as symbols of India's freedom struggle. Why was this important? What did khadi represent?",
+          "answer": "During India's freedom struggle, most cloth was made in British factories. By encouraging Indians to spin their own thread on the charkha and weave their own cloth, Gandhi ji showed that India could be self-reliant (atmanirbhar) and did not need to depend on British goods. Khadi represented freedom, self-reliance, and dignity of labour. When Indians wore khadi instead of foreign cloth, it was a peaceful way of protesting against British rule. Gandhi ji himself always wore simple khadi clothes. Today, khadi remains a symbol of India's struggle for independence and the importance of supporting local artisans and workers.",
+          "explanation": "Khadi was more than just cloth — it was a powerful symbol of India's fight for independence. Spinning and weaving at home meant Indians did not need to buy British-made cloth, which helped the freedom movement."
+        }
+      ]
+    }
+  ]
+}

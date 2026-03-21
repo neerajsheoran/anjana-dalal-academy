@@ -1,0 +1,215 @@
+{
+  "topics": [
+    {
+      "topic": "Communication and the Post Office",
+      "easy": [
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "What does communication mean?",
+          "options": ["Cooking food", "Sharing information with others", "Playing games", "Drawing pictures"],
+          "answer": "Sharing information with others",
+          "explanation": "Communication means sharing information with others. People have been communicating in different ways throughout history."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "fill",
+          "question": "In India, letters are dropped in a ______ postbox.",
+          "answer": "red",
+          "explanation": "In the Indian postal system, letters are dropped in a red postbox, from where the postman collects them."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "mcq",
+          "question": "How did people communicate in very old times?",
+          "options": ["By mobile phones", "By emails", "By drumbeats and carvings on rocks", "By television"],
+          "answer": "By drumbeats and carvings on rocks",
+          "explanation": "Very long ago, people used drumbeats and carvings on rocks to share information with each other."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "short",
+          "question": "Name two services that a post office provides besides sending letters.",
+          "answer": "Money orders and savings accounts",
+          "explanation": "Post offices also offer services like money orders, savings accounts and speed post, besides sending and receiving letters and parcels."
+        },
+        {
+          "id": "ch2-t1-e5",
+          "type": "mcq",
+          "question": "India has one of the largest ______ networks in the world.",
+          "options": ["Railway", "Postal", "Airline", "Highway"],
+          "answer": "Postal",
+          "explanation": "India has one of the largest postal networks in the world. Post offices help people send letters, parcels and important documents."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "How has the way people communicate changed over time? Give examples from the past and present.",
+          "answer": "In the past, people used drumbeats, rock carvings, and letters carried by messengers and pigeons. Later, the postal service, telephone, radio and television were used. Today, we use mobile phones, computers and the internet to communicate instantly.",
+          "explanation": "Communication has evolved from slow methods that took weeks to fast methods that take just seconds."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "mcq",
+          "question": "What is the correct order of how a letter reaches someone through the post office?",
+          "options": [
+            "Write letter, postman collects, sorted at post office, delivered",
+            "Write letter, sorted at post office, postman collects, delivered",
+            "Postman collects, write letter, sorted at post office, delivered",
+            "Write letter, delivered, sorted at post office, postman collects"
+          ],
+          "answer": "Write letter, postman collects, sorted at post office, delivered",
+          "explanation": "First you write a letter and drop it in the postbox. The postman collects it. Then it goes to the post office where it is sorted by region and finally sent to the destination."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "Compare how people sent messages long ago with how we send messages today. Which way do you think is better and why?",
+          "answer": "Long ago, people sent letters through messengers or pigeons, which could take weeks to reach. Today, we can send messages through mobile phones and the internet in just seconds. Today's methods are better because they are much faster, easier and we can even make video calls to see the person we are talking to. However, the old postal system is still useful for sending parcels and important documents.",
+          "explanation": "Communication has improved greatly over time. Modern technology makes it faster and easier, but the postal service still has an important role in our lives."
+        }
+      ]
+    },
+    {
+      "topic": "Transport, Banks and Directions",
+      "easy": [
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "Which of these is an example of water transport?",
+          "options": ["Bus", "Train", "Boat", "Helicopter"],
+          "answer": "Boat",
+          "explanation": "Boats, ships and ferries are examples of water transport."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "fill",
+          "question": "The direction where the Sun rises is called ______.",
+          "answer": "East",
+          "explanation": "The Sun rises in the East. Once you know East, you can figure out all the other directions."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "mcq",
+          "question": "What does ATM stand for?",
+          "options": ["All Time Money", "Automated Teller Machine", "Any Time Machine", "Automatic Transaction Machine"],
+          "answer": "Automated Teller Machine",
+          "explanation": "ATM stands for Automated Teller Machine. It is a machine that lets you take out money anytime."
+        },
+        {
+          "id": "ch2-t2-e4",
+          "type": "short",
+          "question": "Name the four main directions on a map.",
+          "answer": "North, South, East and West",
+          "explanation": "On a map, North is at the top, South is at the bottom, East is on the right and West is on the left."
+        },
+        {
+          "id": "ch2-t2-e5",
+          "type": "mcq",
+          "question": "What was the barter system?",
+          "options": ["Buying things online", "Exchanging goods directly without money", "Selling things in a shop", "Keeping money in a bank"],
+          "answer": "Exchanging goods directly without money",
+          "explanation": "Long ago, people used the barter system where they exchanged goods directly. A farmer might give wheat to get milk."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "What are landmarks? How do they help us find our way?",
+          "answer": "Landmarks are well-known places or structures like a big temple, a park, a hospital or a famous shop. They help us find our way because we can use them as reference points when giving or following directions.",
+          "explanation": "When giving directions, we use landmarks along with words like left, right, forward and backward to help someone reach a place."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "mcq",
+          "question": "Why were metro trains and flyovers built in cities?",
+          "options": ["To look beautiful", "To make travel faster and easier", "To stop people from walking", "To increase pollution"],
+          "answer": "To make travel faster and easier",
+          "explanation": "Metro trains run at high speed and flyovers help vehicles move above busy roads, saving time for travellers."
+        },
+        {
+          "id": "ch2-t2-m3",
+          "type": "fill",
+          "question": "A ______ records all the money that goes in and comes out of your bank account.",
+          "answer": "bank passbook",
+          "explanation": "A bank passbook records all transactions and has details like your account number, name, address and IFSC code."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t2-h1",
+          "type": "long",
+          "question": "Name the four types of transport with one example each. Why should we think about the environment while building new roads and bridges?",
+          "answer": "The four types of transport are: 1. Road transport (bus, car, auto-rickshaw) 2. Rail transport (train, metro) 3. Water transport (boat, ship) 4. Air transport (aeroplane, helicopter). While building new roads and bridges, we should think about the environment because construction can affect animals, birds and trees. We need to balance development with protecting our environment, for example by planting more trees.",
+          "explanation": "Development and nature protection must go hand in hand. Building roads and bridges helps people travel, but we must also protect the plants, animals and birds that may be affected."
+        }
+      ]
+    },
+    {
+      "topic": "Community Services and the Hospital",
+      "easy": [
+        {
+          "id": "ch2-t3-e1",
+          "type": "mcq",
+          "question": "Who treats patients in a hospital?",
+          "options": ["Pharmacist", "Doctor", "Sweeper", "Postman"],
+          "answer": "Doctor",
+          "explanation": "A doctor treats patients and prescribes medicines in a hospital."
+        },
+        {
+          "id": "ch2-t3-e2",
+          "type": "fill",
+          "question": "An ______ driver brings patients to the hospital in emergencies.",
+          "answer": "ambulance",
+          "explanation": "An ambulance driver brings patients to the hospital quickly during emergencies."
+        },
+        {
+          "id": "ch2-t3-e3",
+          "type": "mcq",
+          "question": "Which vehicle is used by firefighters?",
+          "options": ["Ambulance", "Mail van", "Fire engine", "Patrolling jeep"],
+          "answer": "Fire engine",
+          "explanation": "Firefighters use a fire engine to rush to places where there is a fire and put it out."
+        },
+        {
+          "id": "ch2-t3-e4",
+          "type": "short",
+          "question": "What does a pharmacist do in a hospital?",
+          "answer": "A pharmacist gives medicines to patients as prescribed by the doctor.",
+          "explanation": "The pharmacist is an important person in the hospital who provides the correct medicines to patients."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t3-m1",
+          "type": "short",
+          "question": "Name any three community services and the people who work in them.",
+          "answer": "1. Police Station - police officers and constables. 2. Hospital - doctors, nurses and ward boys. 3. Fire Station - firefighters.",
+          "explanation": "Many public services keep our neighbourhood safe and running smoothly. Each has trained people and special vehicles."
+        },
+        {
+          "id": "ch2-t3-m2",
+          "type": "mcq",
+          "question": "What are health camps organised by hospitals?",
+          "options": ["Camps for camping outdoors", "Free check-up events for the community", "Camps to train doctors", "Cooking camps"],
+          "answer": "Free check-up events for the community",
+          "explanation": "Hospitals organise health camps like eye check-up camps to help the community get free or affordable health check-ups."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t3-h1",
+          "type": "long",
+          "question": "Why are community services like hospitals, police stations and fire stations important for a neighbourhood? Explain with examples.",
+          "answer": "Community services are important because they keep people safe and help them in times of need. Hospitals treat sick and injured people. When Riya fell off her bicycle, the ambulance took her to the hospital where the doctor treated her wound. Police stations keep the neighbourhood safe from crime. Fire stations send firefighters quickly when there is a fire to save people and buildings. Without these services, our daily life would be very difficult and unsafe.",
+          "explanation": "Each community service has trained people and special vehicles to help the community. They work together to make sure everyone is safe and healthy."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "topics": [
+    {
+      "topic": "Family Members and Types of Families",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "What is the name of Bela's pet dog?",
+          "options": ["Moti", "Shiru", "Tommy", "Bruno"],
+          "answer": "Shiru",
+          "explanation": "Bela's pet dog is named Shiru. The family loves and cares for Shiru."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "mcq",
+          "question": "What do we call our father's mother?",
+          "options": ["Mausi", "Nani", "Dadiji", "Mami"],
+          "answer": "Dadiji",
+          "explanation": "Father's mother is called Dadiji in Hindi."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "fill",
+          "question": "A ______ family has parents, children, grandparents, uncles, aunts, and cousins living together.",
+          "answer": "big",
+          "explanation": "A big family (also called a joint family) includes parents, children, grandparents, uncles, aunts, and cousins."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "short",
+          "question": "Name two animals that can be part of a family.",
+          "answer": "Dogs and cats",
+          "explanation": "Animals like dogs, cats, cows, parrots, and goats can also be part of a family."
+        },
+        {
+          "id": "ch1-t1-e5",
+          "type": "mcq",
+          "question": "What do we call our mother's brother?",
+          "options": ["Chacha", "Mama", "Dadaji", "Fufa"],
+          "answer": "Mama",
+          "explanation": "Mother's brother is called Mama in Hindi."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "What is the difference between a small family and a big family?",
+          "answer": "A small family has just parents and children. A big family also includes grandparents, uncles, aunts, and cousins.",
+          "explanation": "Families come in different sizes. A small family has fewer members while a big family has many members living together."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "mcq",
+          "question": "Which of the following is NOT a family member mentioned in Bela's family?",
+          "options": ["Banku Bhaiya", "Bishu", "Dadiji", "Mausi"],
+          "answer": "Mausi",
+          "explanation": "Mausi is not part of Bela's immediate family. Bela's family includes Banku Bhaiya (elder brother), Bishu (little brother), Dadiji, and Dadaji."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "fill",
+          "question": "A family is a group of people who love, care for, and ______ each other.",
+          "answer": "support",
+          "explanation": "A family is a group of people who love, care for, and support each other."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Why is every family special? Give examples of how families can be different from each other.",
+          "answer": "Every family is special because families come in many shapes and sizes. Some families are small with just parents and children, while others are big with grandparents, uncles, aunts, and cousins. Some families have pets like dogs, cats, or parrots. Each family has its own way of spending time together, sharing meals, and caring for each other.",
+          "explanation": "Families differ in size, members, traditions, and the way they show love. What makes every family special is the love and care its members share."
+        },
+        {
+          "id": "ch1-t1-h2",
+          "type": "long",
+          "question": "How should we treat animals in our family? Why is it important to be kind to them?",
+          "answer": "We should be kind and gentle with animals in our family. We should never hurt or tease them. We should share food with them and take care of them. It is important because animals also feel pain and happiness, just like us. They are part of our family and deserve love and respect.",
+          "explanation": "Just like Bela and Banku are gentle with their pet dog Shiru and share their food with him, we should always be kind and caring towards animals."
+        }
+      ]
+    },
+    {
+      "topic": "Helping and Learning from Family",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "What does Dadaji love doing?",
+          "options": ["Cooking", "Gardening", "Painting", "Reading"],
+          "answer": "Gardening",
+          "explanation": "Dadaji loves gardening. Bela helps him in the garden."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "Kusum Mausi's daughter Munni is very good at making ______.",
+          "answer": "rangoli",
+          "explanation": "Munni is very good at making rangoli using dried flower colours, leaves, and fresh flowers."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "What does Banku help with at home?",
+          "options": ["Gardening", "Cleaning and chopping vegetables", "Painting", "Washing clothes"],
+          "answer": "Cleaning and chopping vegetables",
+          "explanation": "Banku helps with cleaning and chopping vegetables at home."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "short",
+          "question": "What does Dadiji do for Bela every morning?",
+          "answer": "Dadiji oils and braids Bela's hair every morning.",
+          "explanation": "Dadiji takes care of Bela by oiling and braiding her hair in the morning."
+        },
+        {
+          "id": "ch1-t2-e5",
+          "type": "mcq",
+          "question": "What game does Bela's family play on rainy days?",
+          "options": ["Cricket", "Antakshari", "Football", "Carrom"],
+          "answer": "Antakshari",
+          "explanation": "On rainy days, the family plays antakshari and snakes and ladders."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Name two things we can learn from our grandparents.",
+          "answer": "We can learn old songs and stories from our grandparents. They also teach us traditional games.",
+          "explanation": "Grandparents teach us old songs, games, and stories that they remember from their childhood."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "fill",
+          "question": "We learn many things from our family members and ______.",
+          "answer": "neighbours",
+          "explanation": "We learn many useful things from our family members and neighbours, like making rangoli or cooking."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "How do different family members help each other at home? Give at least three examples.",
+          "answer": "In a family, everyone helps each other. Dadiji oils and braids Bela's hair. Parents help each other with cooking, cleaning, and shopping. Dadaji loves gardening. Banku helps with cleaning and chopping vegetables. Bela helps Dadaji in the garden. This way, all family members share the work and take care of each other.",
+          "explanation": "Helping each other at home is an important part of family life. When everyone does their part, the family stays happy and the work gets done easily."
+        }
+      ]
+    },
+    {
+      "topic": "Fun and Games with Family and Friends",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "In the game Pitthoo, what do you do?",
+          "options": ["Sing songs", "Stack stones and hit them with a ball", "Hide from others", "Draw pictures"],
+          "answer": "Stack stones and hit them with a ball",
+          "explanation": "Pitthoo is a game where you pile up stones and hit them with a ball."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "Chhupan-chhupai is the Hindi name for the game ______.",
+          "answer": "hide and seek",
+          "explanation": "Chhupan-chhupai means hide and seek. One person counts while others hide."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "short",
+          "question": "What does Dadiji make on rainy days?",
+          "answer": "Dadiji makes hot pakodas and tea on rainy days.",
+          "explanation": "On rainy days, Dadiji makes hot pakodas and tea while singing songs about the rain."
+        },
+        {
+          "id": "ch1-t3-e4",
+          "type": "mcq",
+          "question": "Who needs special care in a family?",
+          "options": ["Only children", "Only grandparents", "Grandparents, small children, and sick people", "Only pets"],
+          "answer": "Grandparents, small children, and sick people",
+          "explanation": "Grandparents who may be old, small children who cannot do things on their own, and someone who is sick all need special care."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "How does playing together make a family happy? Give two examples of activities families do together.",
+          "answer": "Playing together brings joy and makes a family happy. For example, families play chhupan-chhupai outside and antakshari on rainy days.",
+          "explanation": "When family members play, sing, and eat together, it creates happy memories and strengthens the bond between them."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "mcq",
+          "question": "In antakshari, what rule do you follow?",
+          "options": ["Clap your hands loudly", "Sing a song starting with the last letter of the previous song", "Count numbers quickly", "Draw pictures fast"],
+          "answer": "Sing a song starting with the last letter of the previous song",
+          "explanation": "In antakshari, each person sings a song that starts with the last letter of the song sung by the previous person."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Why should we care for our grandparents, small children, and sick family members? How can we help them?",
+          "answer": "We should care for our grandparents because they are old and may need help walking, reading, or doing daily tasks. Small children cannot do things on their own and need our help with eating, playing, and learning. Sick family members need rest and medicine. We can help grandparents by spending time with them and assisting them. We can play gently with small children and help feed them. We can give water and medicine to sick family members and let them rest.",
+          "explanation": "Caring for those who need extra help is an important part of being in a family. Everyone in a family should look after each other with love."
+        }
+      ]
+    }
+  ]
+}

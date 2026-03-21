@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "Food Spoilage and Microbes",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "What causes food to spoil?",
+          "options": ["Sunlight", "Microbes", "Water", "Air alone"],
+          "answer": "Microbes",
+          "explanation": "Microbes are tiny living things that grow on food and change its colour, taste, and smell, causing food spoilage."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "To see microbes, we need an instrument called a ______.",
+          "answer": "microscope",
+          "explanation": "Microbes are so tiny that they cannot be seen with the naked eye. We need a microscope to see them."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "Which three things do microbes need to grow on food?",
+          "options": ["Salt, sugar, oil", "Moisture, air, right temperature", "Light, soil, water", "Cold, dark, dry conditions"],
+          "answer": "Moisture, air, right temperature",
+          "explanation": "Microbes need moisture (water), air, and the right temperature (warmth) to grow. If we remove any one of these, we can stop microbes from growing."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "mcq",
+          "question": "Why does a slice of bread spoil faster than a jar of pickle?",
+          "options": ["Bread is bigger", "Bread has more moisture and air exposure", "Pickle has more sugar", "Bread is softer"],
+          "answer": "Bread has more moisture and air exposure",
+          "explanation": "Bread has moisture and is exposed to air, which helps microbes grow. Pickle is covered in oil that keeps out air, so microbes cannot grow easily."
+        },
+        {
+          "id": "ch3-t1-e5",
+          "type": "fill",
+          "question": "The coloured patches that grow on stale food are called ______.",
+          "answer": "mould",
+          "explanation": "Mould is made up of thousands of tiny microbes that grow on food and appear as coloured patches."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Not all microbes are bad. Give two examples of how helpful microbes are useful to us.",
+          "answer": "1. Good microbes are added to warm milk to change it into curd. 2. Microbes in the air help idli batter ferment and become fluffy. Good microbes in our stomach also help us digest the food we eat.",
+          "explanation": "While some microbes spoil food and make us sick, others are very helpful — they help make foods like curd and idli, and even help with digestion inside our body."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "How does putting food in the refrigerator help keep it fresh?",
+          "answer": "Putting food in the fridge lowers the temperature, making it too cold for microbes to grow quickly. This is why we store milk, vegetables, butter, and cakes in the refrigerator to keep them fresh for longer.",
+          "explanation": "Microbes need warmth to grow. Cold temperatures in a refrigerator slow down microbe growth, preserving food for a longer time."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Explain at least four different methods of food preservation used in India. For each method, explain how it stops microbes from growing and give an example.",
+          "answer": "1. Drying (removing moisture): Food is dried in the sun so all moisture goes away. Without moisture, microbes cannot grow. Examples: dried chillies, papads, aam papad. 2. Pickling and oiling (keeping out air): Oil covers the food and stops air from getting in. Without air, microbes cannot grow easily. Examples: mango pickle, lemon pickle. 3. Refrigeration (lowering temperature): The fridge makes the temperature too cold for microbes to grow quickly. Examples: milk, vegetables, cakes. 4. Adding salt (removing moisture): Salt removes moisture from food and kills microbes. Examples: salted fish, salted vegetables. Other methods include adding sugar (jams, murabbas), adding spices (pepper, turmeric), and canning (sealed airtight containers).",
+          "explanation": "Each preservation method works by removing one of the three things microbes need — moisture, air, or the right temperature. Indians have used these methods for thousands of years."
+        }
+      ]
+    },
+    {
+      "topic": "Healthy Eating, Seasonal Fruits, and Dental Care",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Which of the following is a summer fruit in India?",
+          "options": ["Guava", "Orange", "Mango", "Amla"],
+          "answer": "Mango",
+          "explanation": "Mango, lychee, watermelon, and jamun are summer fruits in India. Guava, oranges, and amla are winter fruits."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "The front teeth that cut food into pieces are called ______.",
+          "answer": "incisors",
+          "explanation": "Incisors are the front teeth that are used for cutting food into smaller pieces."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "Which type of teeth are used for grinding food?",
+          "options": ["Incisors", "Canines", "Premolars", "Molars"],
+          "answer": "Molars",
+          "explanation": "Molars are the back teeth that grind food into mush before we swallow it."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "mcq",
+          "question": "How many types of teeth do we have?",
+          "options": ["Two", "Three", "Four", "Five"],
+          "answer": "Four",
+          "explanation": "We have four types of teeth: incisors (cut food), canines (tear food), premolars (crush food), and molars (grind food)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "How can you tell if fruits and vegetables are fresh at the market? Give three tips.",
+          "answer": "1. Look at the colour — fresh vegetables have bright, natural colours. 2. Feel the firmness — fresh produce feels firm, not soft or mushy. 3. Smell the food — it should smell fresh, not sour or rotten. You should also check for any spots or mould.",
+          "explanation": "Choosing fresh produce is important for good health. Using our senses of sight, touch, and smell helps us pick the best fruits and vegetables."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "Why is it better to eat seasonal and local fruits?",
+          "answer": "Seasonal fruits taste best because they ripen naturally in their own season. Local fruits are fresher because they do not have to travel far to reach us. Eating seasonal and local food is healthier and more enjoyable.",
+          "explanation": "Fruits that are in season are naturally ripe and full of flavour. Local fruits reach us quickly without long transport, so they stay fresh and nutritious."
+        },
+        {
+          "id": "ch3-t2-m3",
+          "type": "mcq",
+          "question": "What was black pepper called in ancient times because it was so valuable?",
+          "options": ["Black diamond", "Black gold", "Black treasure", "Black pearl"],
+          "answer": "Black gold",
+          "explanation": "Black pepper was so valuable that it was called 'black gold.' Vasco da Gama crossed entire oceans just to collect it from India!"
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Why is chewing food properly important? Explain the role of each type of tooth and what happens when we chew food.",
+          "answer": "Chewing food properly is very important because it breaks food into smaller pieces, making it easier to digest. Each type of tooth has a special role: Incisors (front teeth) cut food into pieces, canines (pointed teeth) tear food, premolars crush food, and molars (back teeth) grind food into mush. When we chew, saliva is released in the mouth, which helps start the process of digestion. Chewing properly also prevents choking. We should always eat slowly, take small bites, and chew food well before swallowing.",
+          "explanation": "Our four types of teeth work together like a team to break down food step by step. Proper chewing is the first step of digestion and is essential for good health."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "What is a cavity? How can you take care of your teeth to prevent cavities?",
+          "answer": "A cavity is a small hole that forms in a tooth, usually caused by eating too many sweets and not cleaning teeth properly. To prevent cavities, we should: (1) Brush our teeth twice a day — in the morning and at night. (2) Rinse our mouth with water after eating. (3) Eat fewer sweets to protect teeth. (4) Visit a dentist regularly for check-ups. Good oral hygiene keeps our teeth strong and healthy.",
+          "explanation": "Cavities form when bacteria in the mouth feed on sugar left on teeth. Regular brushing, rinsing, limiting sweets, and dental check-ups are the best ways to prevent cavities."
+        }
+      ]
+    }
+  ]
+}

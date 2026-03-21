@@ -1,0 +1,209 @@
+{
+  "topics": [
+    {
+      "topic": "Travelling and Road Safety",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "What does the word 'Himalaya' mean?",
+          "options": ["King of mountains", "Home of snow", "Land of rivers", "Garden of flowers"],
+          "answer": "Home of snow",
+          "explanation": "The word Himalaya means 'home of snow'. The Himalayas are the most majestic mountains in the world."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "The highest peak in the world is ______, which is about 8,848 metres tall.",
+          "answer": "Mount Everest",
+          "explanation": "Mount Everest is the highest peak in the world at about 8,848 metres. It lies in Nepal."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "What does the 'School Ahead' road sign tell us?",
+          "options": ["Drive fast", "A school is nearby, slow down", "No parking allowed", "Turn right"],
+          "answer": "A school is nearby, slow down",
+          "explanation": "The 'School Ahead' sign warns drivers that a school is nearby and they should slow down for children's safety."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "short",
+          "question": "Name two safety tips to follow while travelling.",
+          "answer": "Always wear a seatbelt in a car and look both ways before crossing the road.",
+          "explanation": "Safety tips while travelling include wearing a seatbelt, wearing a helmet on a bicycle, walking on the footpath, and looking both ways before crossing."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "What does the 'Speed Breaker' road sign mean? Why is it important?",
+          "answer": "The Speed Breaker sign means there is a bump ahead on the road and drivers should slow down. It is important because it prevents accidents by warning drivers to reduce speed.",
+          "explanation": "Speed breakers are bumps built on roads to slow down vehicles. The sign warns drivers in advance so they can slow down safely."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "mcq",
+          "question": "Where are the Himalayas located in India?",
+          "options": ["Southern part", "Northern part", "Western part", "Eastern part"],
+          "answer": "Northern part",
+          "explanation": "The Himalayas lie in the northern part of India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Why are road signs important? Describe what any three road signs mean.",
+          "answer": "Road signs are important because they help keep everyone safe while travelling. The 'No Parking' sign means you cannot park your vehicle in that area. The 'Speed Breaker' sign warns that there is a bump ahead and you should slow down. The 'School Ahead' sign tells drivers that a school is nearby and they must drive carefully. These signs help prevent accidents and keep both drivers and pedestrians safe.",
+          "explanation": "Road signs provide important warnings and instructions to drivers and pedestrians, helping prevent accidents and keeping everyone safe."
+        }
+      ]
+    },
+    {
+      "topic": "Spring Festivals of India",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Which festival is known as the festival of colours?",
+          "options": ["Diwali", "Holi", "Onam", "Vishu"],
+          "answer": "Holi",
+          "explanation": "Holi is the festival of colours celebrated all over India during spring."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "The Kashmir ______ Festival happens every spring and celebrates beautiful flower gardens.",
+          "answer": "Tulip",
+          "explanation": "The Kashmir Tulip Festival happens every spring and showcases beautiful tulip gardens in Kashmir."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "In which state is the Sarhul festival celebrated?",
+          "options": ["Kerala", "Jharkhand", "Rajasthan", "Tamil Nadu"],
+          "answer": "Jharkhand",
+          "explanation": "The Sarhul festival is celebrated in the spring season in Jharkhand."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "short",
+          "question": "What happens during the Vishu Kani ritual in Kerala?",
+          "answer": "On the first day of the Malayali new year, people arrange auspicious items like yellow amaltas flowers, fruits, and vegetables at sunrise. Seeing these items is believed to bring a happy year ahead.",
+          "explanation": "Vishu Kani is a special ritual in Kerala where auspicious items are arranged at sunrise on the Malayali new year."
+        },
+        {
+          "id": "ch3-t2-e5",
+          "type": "mcq",
+          "question": "What season comes after cold winter when flowers bloom and new leaves appear?",
+          "options": ["Summer", "Monsoon", "Spring", "Autumn"],
+          "answer": "Spring",
+          "explanation": "Spring is the season when the sun shines brightly after winter, flowers bloom, and new leaves appear on trees."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "How is the Sarhul festival celebrated in Jharkhand?",
+          "answer": "People wear traditional clothes and walk in a procession to the sakhua tree. They carry freshly grown grains and sakhua flowers. Offerings are made to the Earth and the Sun. People celebrate by singing and dancing to the beat of drums like dhol and nagada.",
+          "explanation": "Sarhul is a spring festival of Jharkhand that celebrates nature with offerings to the Earth and the Sun."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "fill",
+          "question": "During the Sarhul festival, offerings of sakhua flowers and grains are made to the ______ and the Sun.",
+          "answer": "Earth",
+          "explanation": "During Sarhul, people make offerings to the Earth and the Sun with respect and thankfulness."
+        },
+        {
+          "id": "ch3-t2-m3",
+          "type": "mcq",
+          "question": "Which of these festivals is celebrated during winter?",
+          "options": ["Holi", "Sarhul", "Diwali", "Vishu"],
+          "answer": "Diwali",
+          "explanation": "Diwali is celebrated during winter, along with Christmas, Lohri, and Makar Sankranti."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "India has festivals in every season. Name one festival for each season and describe what makes it special.",
+          "answer": "In spring, Holi is celebrated as the festival of colours all over India. In summer, Rath Yatra is celebrated with grand processions. In monsoon, Onam is celebrated in Kerala with the grand feast called Sadya. In winter, Diwali is celebrated with diyas, lights, and sweets. Each festival has its own special food, clothes, and traditions that bring people together.",
+          "explanation": "India celebrates festivals in every season - spring (Holi, Vishu), summer (Rath Yatra), monsoon (Onam, Teej), and winter (Diwali, Christmas, Lohri)."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "Why is spring considered a special season in India? How do people celebrate spring across different parts of India?",
+          "answer": "Spring is special because after the cold winter, the sun shines brightly, flowers bloom, grass grows, and new leaves appear on trees. People celebrate spring differently across India. In Kashmir, the Tulip Festival showcases beautiful tulip gardens. In Jharkhand, people celebrate Sarhul by offering sakhua flowers and grains to the Earth and Sun. In Kerala, Vishu is celebrated with the Vishu Kani display. And all over India, Holi is celebrated as the festival of colours. Spring is a time of joy and new beginnings.",
+          "explanation": "Spring is a season of renewal and celebration in India, with different states having their own unique spring festivals."
+        }
+      ]
+    },
+    {
+      "topic": "Festival Food and Traditions",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "Which special food is prepared during Holi?",
+          "options": ["Thekua", "Gujiya", "Pitha", "Plum Cake"],
+          "answer": "Gujiya",
+          "explanation": "Gujiya is the special food prepared during the festival of Holi."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "During Eid-ul-Fitr, families prepare sweet ______ (vermicelli).",
+          "answer": "seviyan",
+          "explanation": "Seviyan (sweet vermicelli) is the special food prepared during Eid-ul-Fitr."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "short",
+          "question": "What special food is made during Christmas?",
+          "answer": "Plum cake is the special food made during Christmas.",
+          "explanation": "Plum cake is the special food associated with the festival of Christmas."
+        },
+        {
+          "id": "ch3-t3-e4",
+          "type": "mcq",
+          "question": "Which festival food is called Thekua?",
+          "options": ["Holi food", "Chhath Puja food", "Onam food", "Bihu food"],
+          "answer": "Chhath Puja food",
+          "explanation": "Thekua is the special food prepared during Chhath Puja."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "Match the festival with its special food: Bihu, Onam, Ugadi.",
+          "answer": "Bihu - Pitha, Onam - Sadya (grand feast), Ugadi - Holige.",
+          "explanation": "Each Indian festival has its own special food. Bihu is celebrated with Pitha, Onam with Sadya, and Ugadi with Holige."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "mcq",
+          "question": "What is the grand feast served during Onam called?",
+          "options": ["Thali", "Sadya", "Bhojan", "Bhoj"],
+          "answer": "Sadya",
+          "explanation": "The grand feast served during Onam in Kerala is called Sadya."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "How do festivals bring people together? Explain with examples.",
+          "answer": "Festivals bring people of all ages together. Families, friends, and neighbours celebrate together by cooking special food, wearing new clothes, and following traditions. For example, during Holi, people play with colours and share gujiya. During Onam, families sit together and enjoy the Sadya feast. During Eid, families prepare seviyan and share it with neighbours. Visiting relatives during festivals, like Rishi visiting his Mama's family, helps us learn about different cultures and traditions from across India.",
+          "explanation": "Festivals and celebrations help us learn about different cultures, foods, and traditions. They bring together people of all ages and strengthen bonds."
+        }
+      ]
+    }
+  ]
+}

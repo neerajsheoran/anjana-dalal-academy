@@ -1,0 +1,148 @@
+{
+  "topics": [
+    {
+      "topic": "National Symbols, Flag, and Republic Day",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "Why do we celebrate Republic Day on 26 January?",
+          "options": ["India became independent on this day", "India adopted its Constitution on this day", "India's flag was designed on this day", "India's national anthem was written on this day"],
+          "answer": "India adopted its Constitution on this day",
+          "explanation": "On 26 January 1950, India adopted its Constitution — a special book of rules for the country. That is why we celebrate Republic Day every year on this date."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "The saffron colour on the Indian flag stands for ______ and courage.",
+          "answer": "strength",
+          "explanation": "The saffron (top) band of the Indian flag represents strength and courage. The white band represents peace and truth, and the green band represents growth and prosperity."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "How many spokes does the Ashoka Chakra on the Indian flag have?",
+          "options": ["12", "18", "24", "30"],
+          "answer": "24",
+          "explanation": "The blue Ashoka Chakra in the centre of the Indian flag has 24 spokes and represents duty (dharma)."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "mcq",
+          "question": "What is the national animal of India?",
+          "options": ["Lion", "Elephant", "Tiger", "Peacock"],
+          "answer": "Tiger",
+          "explanation": "The tiger is the national animal of India. The peacock is the national bird, and the lion is the animal featured on the national emblem."
+        },
+        {
+          "id": "ch5-t1-e5",
+          "type": "fill",
+          "question": "The Ganges River Dolphin is India's national ______ animal.",
+          "answer": "aquatic",
+          "explanation": "The Ganges River Dolphin is India's national aquatic animal. It is blind and uses sound to find its way through the water."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Name the three colours of the Indian flag and what each colour represents.",
+          "answer": "The three colours are: Saffron (top band) — represents strength and courage. White (middle band) — represents peace and truth. Green (bottom band) — represents growth and prosperity. The blue Ashoka Chakra in the centre represents duty.",
+          "explanation": "Each colour and symbol on the Indian tricolour has a deep meaning that reflects the values and aspirations of our nation."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "What does the National Emblem of India show, and where can you find it?",
+          "answer": "The National Emblem of India shows three lions standing on a circular platform. It represents strength, courage, and confidence. Below the lions is the Ashoka Chakra. You can find this emblem on many official documents and on the Aadhaar card.",
+          "explanation": "The national emblem is based on the Lion Capital of Ashoka at Sarnath. It is used on all official government documents and identity cards."
+        },
+        {
+          "id": "ch5-t1-m3",
+          "type": "mcq",
+          "question": "Which monument is shown on the 500 rupee note?",
+          "options": ["Sun Temple, Konark", "Sanchi Stupa", "Red Fort", "Hampi with Chariot"],
+          "answer": "Red Fort",
+          "explanation": "The Red Fort is shown on the 500 rupee note. Other notes show different monuments — like the Sun Temple on the 10 rupee note and Hampi with Chariot on the 50 rupee note."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "Indian currency notes have many features that help people, including those who are visually impaired. Describe at least four things you can find on an Indian currency note.",
+          "answer": "On an Indian currency note, you can find: (1) The image of Mahatma Gandhi and a second hidden image visible when held up to light. (2) The value of the note and its colour. (3) Text written in multiple languages, showing India's diversity. (4) Images of famous monuments from different states — like Red Fort on 500 rupee note. (5) Small raised prints and symbols that help visually impaired people identify the note by touch. (6) Tiny round spectacles — the symbol of the Swachh Bharat Abhiyan, inspired by Gandhi ji's spectacles. The MANI app also helps visually impaired people identify notes through sounds and vibrations.",
+          "explanation": "Indian currency notes are carefully designed to include features for all citizens, including those with visual impairment, while also celebrating India's heritage and monuments."
+        }
+      ]
+    },
+    {
+      "topic": "India's Diversity and Achievements",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "Which classical dance form comes from Tamil Nadu?",
+          "options": ["Kathak", "Odissi", "Bharatanatyam", "Kathakali"],
+          "answer": "Bharatanatyam",
+          "explanation": "Bharatanatyam is a classical dance form from Tamil Nadu. Kathak comes from Uttar Pradesh, Odissi from Odisha, and Kathakali from Kerala."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "More than a ______ languages are spoken across India.",
+          "answer": "thousand",
+          "explanation": "India is one of the most multilingual countries in the world, with more than a thousand languages spoken across the country."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "mcq",
+          "question": "Where are Asiatic lions found in India today?",
+          "options": ["Sundarbans, West Bengal", "Jim Corbett, Uttarakhand", "Gir forests, Gujarat", "Kaziranga, Assam"],
+          "answer": "Gir forests, Gujarat",
+          "explanation": "Asiatic lions are found only in the Gir forests of Gujarat. Thanks to great conservation efforts, their numbers have grown from just a few dozen to several hundred."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "mcq",
+          "question": "What is UPI?",
+          "options": ["A type of currency note", "The world's largest digital payment system", "A government school programme", "An Indian dance form"],
+          "answer": "The world's largest digital payment system",
+          "explanation": "UPI (Unified Payments Interface) is the world's largest digital payment system, developed in India for easy digital transactions."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "Why is India compared to a forest? How does diversity make India strong?",
+          "answer": "India is compared to a forest because just as a forest is strong because it has many different types of plants and trees that support each other, India is strong because of its diversity. People with different languages, clothing, food, religions, and traditions live together, helping and supporting each other.",
+          "explanation": "India's strength comes from its incredible diversity — many languages, cultures, traditions, and beliefs coexisting and enriching each other, just like different species in a forest."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "short",
+          "question": "Name any three achievements of modern India mentioned in the chapter.",
+          "answer": "1. India has launched Chandrayaan missions (moon missions) showing advances in space science. 2. India developed UPI — the world's largest digital payment system. 3. India has Aadhaar — the world's largest digital ID system. Other achievements include fast trains connecting cities and the Statue of Unity (tallest statue in the world at 182 metres).",
+          "explanation": "India combines its rich ancient heritage with exciting modern achievements in technology, science, and infrastructure."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "India has a rich heritage of classical dance forms. Name at least five classical dance forms and the states they come from. Why is it important to preserve these traditions?",
+          "answer": "Five classical dance forms of India: (1) Bharatanatyam from Tamil Nadu. (2) Kathak from Uttar Pradesh. (3) Odissi from Odisha. (4) Kathakali from Kerala. (5) Manipuri from Manipur. Other forms include Kuchipudi (Andhra Pradesh), Mohiniyattam (Kerala), and Sattriya (Assam). It is important to preserve these traditions because each dance form tells the story of its region, its people, and its culture. They represent thousands of years of artistic heritage and connect us to our roots. If we do not preserve them, this rich cultural knowledge could be lost forever.",
+          "explanation": "India's classical dance forms are living traditions that carry centuries of cultural knowledge. Preserving them ensures that future generations can experience and celebrate India's artistic diversity."
+        },
+        {
+          "id": "ch5-t2-h2",
+          "type": "long",
+          "question": "India has the longest written Constitution in the world. Why was a Constitution needed after India became independent? What role does the Constitution play in our lives?",
+          "answer": "After India became independent on 15 August 1947, the country needed a set of rules to run smoothly and keep everyone safe and happy. The Constitution provides these rules. It was adopted on 26 January 1950. The Constitution plays an important role in our lives because it ensures that every citizen has certain rights, that everyone is treated fairly, and that the government works for the people. It is like a guidebook for how the country should be governed. India has the longest written Constitution of any country and is also the world's largest democracy.",
+          "explanation": "The Constitution of India is the foundation of our democracy. It sets out the rights and duties of citizens and the structure of government, ensuring justice, equality, and freedom for all."
+        }
+      ]
+    }
+  ]
+}

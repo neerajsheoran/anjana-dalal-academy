@@ -1,0 +1,210 @@
+{
+  "topics": [
+    {
+      "topic": "Nature in Indian Culture",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "Why is the Palash tree called the 'Flame of the Forest'?",
+          "options": ["Because it catches fire easily", "Because of its bright orange-red flowers", "Because it grows near volcanoes", "Because it gives out heat"],
+          "answer": "Because of its bright orange-red flowers",
+          "explanation": "When the Palash tree's bright orange-red flowers bloom, the entire forest looks reddish-orange, which is why it is called the Flame of the Forest."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "In Gujarat, the Palash tree is known as ______.",
+          "answer": "Kesuda",
+          "explanation": "Different regions of India have different local names for the same trees and flowers. In Gujarat, the Palash tree is called Kesuda."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "mcq",
+          "question": "What is Gond art?",
+          "options": ["A type of dance", "A form of painting from central India", "A cooking style", "A type of music"],
+          "answer": "A form of painting from central India",
+          "explanation": "Gond art is a famous form of painting from central India where artists paint pictures of trees, animals, birds and people using natural colours."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "short",
+          "question": "What natural materials are used to build houses in Indian villages?",
+          "answer": "Clay, hay, cow dung and wood are used to build houses in Indian villages.",
+          "explanation": "Village houses in India are often built using natural materials. These houses stay cool in summer and warm in winter."
+        },
+        {
+          "id": "ch4-t1-e5",
+          "type": "mcq",
+          "question": "Which of these can be used to make natural dye?",
+          "options": ["Plastic", "Iron nails", "Hibiscus flowers", "Stones"],
+          "answer": "Hibiscus flowers",
+          "explanation": "Natural dyes can be made from flowers, leaves and roots like beetroot, hibiscus and marigold by boiling them in water."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "Describe the steps to make a natural dye at home.",
+          "answer": "1. Collect flowers, leaves or roots with colour like beetroot or hibiscus. 2. Boil them in 1-2 litres of water for 30 minutes to an hour. 3. Strain the liquid to remove the plant parts. 4. Soak a light-coloured cloth in the dye overnight. 5. Squeeze and dry the cloth the next morning.",
+          "explanation": "Natural dyes are safe and have been used in India for centuries to colour clothes and pottery."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "mcq",
+          "question": "What materials are used to make wall paintings in Indian villages?",
+          "options": ["Chemical paints from factories", "Rice flour, coloured powdered stones and natural extracts", "Crayons and sketch pens", "Plastic colours"],
+          "answer": "Rice flour, coloured powdered stones and natural extracts",
+          "explanation": "Village house wall paintings are made using natural materials like rice flour mixed with water, coloured powdered stones, and natural extracts from flowers and leaves."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "How is nature connected to Indian culture? Give three examples from the chapter.",
+          "answer": "Nature and Indian culture are deeply connected. 1. The Palash tree (Flame of the Forest) is famous for its beautiful orange-red flowers and has different names in different regions, showing how people connect with local plants. 2. Gond art is a traditional painting form that uses natural colours to paint trees, animals and birds on walls. 3. Village houses are built using natural materials like clay, hay and cow dung, and paints for wall art are made from rice flour and plant extracts. This shows that nature is part of everything in Indian life.",
+          "explanation": "From the food we eat to the houses we build and the art we create, nature plays an important role in Indian culture."
+        }
+      ]
+    },
+    {
+      "topic": "Traditional Knowledge and Medicinal Plants",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "Which plant helps with cough and cold?",
+          "options": ["Neem", "Tulsi", "Aloe vera", "Cactus"],
+          "answer": "Tulsi",
+          "explanation": "Tulsi (Indian basil) leaves help with cough and cold. It is a common medicinal plant found in many Indian homes."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "fill",
+          "question": "Neem leaves are placed inside earthen pots to protect grains from ______.",
+          "answer": "insects",
+          "explanation": "Neem leaves keep insects away. That is why earthen pots used for storing grains are lined with neem leaves."
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "mcq",
+          "question": "What is a Tumri?",
+          "options": ["A type of flower", "A container made from a dried bottle gourd", "A musical instrument", "A type of bird"],
+          "answer": "A container made from a dried bottle gourd",
+          "explanation": "A Tumri is a traditional container used in Uttarakhand, made from a round, dried bottle gourd, used for storing grains."
+        },
+        {
+          "id": "ch4-t2-e4",
+          "type": "short",
+          "question": "What does turmeric (haldi) help with?",
+          "answer": "Turmeric helps heal wounds and reduces swelling.",
+          "explanation": "Turmeric powder, made from the root of the turmeric plant, has healing properties and has been used in India for thousands of years."
+        },
+        {
+          "id": "ch4-t2-e5",
+          "type": "mcq",
+          "question": "The Jenu Kuruba tribe collects which product from the forest?",
+          "options": ["Wood", "Honey", "Stones", "Flowers"],
+          "answer": "Honey",
+          "explanation": "The Jenu Kurubas are a tribe from Karnataka. The word 'Jenu' means honey. They collect honey from beehives in the forest."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "How do villagers protect stored grains from insects without using chemicals?",
+          "answer": "Villagers store grains in earthen pots lined with neem leaves because neem keeps insects away. They also use bamboo baskets coated with cow dung on the outside. These simple methods work very well without any chemicals.",
+          "explanation": "Traditional grain storage methods use natural materials like neem and cow dung to keep grains safe from insects and pests."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "mcq",
+          "question": "What is special about the Jenu Kuruba tribe when they collect honey?",
+          "options": ["They wear special suits", "They sing songs to apologise to the bees", "They use machines", "They collect honey at night"],
+          "answer": "They sing songs to apologise to the bees",
+          "explanation": "The Jenu Kurubas sing songs to apologise to the bees while collecting honey. This shows their deep respect for nature and all living creatures."
+        },
+        {
+          "id": "ch4-t2-m3",
+          "type": "fill",
+          "question": "Ajwain (carom seeds) helps with ______ ache.",
+          "answer": "stomach",
+          "explanation": "Ajwain or carom seeds have been used in India for a long time as a natural remedy for stomach ache."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "Name any four medicinal plants, the part of the plant used, and how each one helps our health.",
+          "answer": "1. Tulsi (Indian basil) - leaves are used to help with cough and cold. 2. Neem - leaves and oil are used to keep mosquitoes away and heal skin problems. 3. Turmeric (haldi) - root powder is used to heal wounds and reduce swelling. 4. Aloe vera - leaf gel is used for making skin and hair healthy. These plants have been used as medicine in India for thousands of years.",
+          "explanation": "Many plants around us have healing properties. Using plants as medicine is part of India's traditional knowledge passed down through generations."
+        }
+      ]
+    },
+    {
+      "topic": "Festivals and Caring for Nature",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "mcq",
+          "question": "Which festival celebrates worshipping the Banyan tree?",
+          "options": ["Pongal", "Vat Purnima", "Diwali", "Holi"],
+          "answer": "Vat Purnima",
+          "explanation": "Vat Purnima is a festival where people worship the Banyan tree, showing respect for nature."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "Solar panels use ______ to produce electricity.",
+          "answer": "sunlight",
+          "explanation": "Solar panels convert sunlight into electricity. This is clean energy that does not pollute the environment."
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "short",
+          "question": "What are Sacred Groves?",
+          "answer": "Sacred Groves are small patches of forests that local communities protect. The trees and animals within them are preserved.",
+          "explanation": "Sacred Groves are protected areas where people gather to worship and celebrate nature. The communities do not allow cutting of trees in these areas."
+        },
+        {
+          "id": "ch4-t3-e4",
+          "type": "mcq",
+          "question": "Which festival thanks nature for the harvest?",
+          "options": ["Diwali", "Holi", "Pongal", "Eid"],
+          "answer": "Pongal",
+          "explanation": "Pongal is a harvest festival where people thank nature for giving them a good crop."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "How is solar energy helpful for villages? Why is it good for the environment?",
+          "answer": "Solar panels use sunlight to produce electricity for fans, lights, TVs and other appliances in villages. It is good for the environment because it is clean energy that does not produce smoke or pollution.",
+          "explanation": "Solar energy is a renewable and clean source of energy that helps villages get electricity without harming the environment."
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "mcq",
+          "question": "Which of these is NOT a way to care for nature?",
+          "options": ["Planting trees", "Using plastic bags", "Keeping food and water for birds", "Organising clean-up drives"],
+          "answer": "Using plastic bags",
+          "explanation": "Using plastic bags harms the environment. We should say no to plastic and instead use cloth bags or paper bags."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "List any four things you can do to take care of nature in your daily life. Why is it important to protect nature?",
+          "answer": "Four things I can do: 1. Plant trees in my neighbourhood to make the area greener. 2. Keep food and water outside for birds, especially in summer. 3. Say no to plastic bags and bottles and use cloth bags instead. 4. Organise clean-up drives with friends and family to keep our surroundings clean. It is important to protect nature because all living things depend on nature for food, water, air and shelter. If we destroy nature, we harm ourselves too.",
+          "explanation": "Nature gives us everything we need to live. By taking small steps in our daily life, we can protect the environment for future generations."
+        }
+      ]
+    }
+  ]
+}

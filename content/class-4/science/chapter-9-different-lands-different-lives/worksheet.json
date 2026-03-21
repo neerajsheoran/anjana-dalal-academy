@@ -1,0 +1,217 @@
+{
+  "topics": [
+    {
+      "topic": "Life in the Plains and Desert",
+      "easy": [
+        {
+          "id": "ch9-t1-e1",
+          "type": "mcq",
+          "question": "Which state in India is one of the most important farming states?",
+          "options": ["Rajasthan", "Sikkim", "Punjab", "Odisha"],
+          "answer": "Punjab",
+          "explanation": "Punjab has flat plains with rich and fertile soil, making it one of India's most important farming states."
+        },
+        {
+          "id": "ch9-t1-e2",
+          "type": "fill",
+          "question": "The camel is called the 'Ship of the ______' because it can travel long distances on sand.",
+          "answer": "Desert",
+          "explanation": "The camel is called the Ship of the Desert because it can travel long distances on sandy land without needing much water."
+        },
+        {
+          "id": "ch9-t1-e3",
+          "type": "mcq",
+          "question": "What is the famous food of Punjab?",
+          "options": ["Thukpa and sel roti", "Dalma and pakhala", "Makki di roti and sarson da saag", "Dal-bati-churma"],
+          "answer": "Makki di roti and sarson da saag",
+          "explanation": "Makki di roti (corn flour roti) and sarson da saag (mustard leaves dish) are the famous foods of Punjab."
+        },
+        {
+          "id": "ch9-t1-e4",
+          "type": "short",
+          "question": "How does a cactus survive in the desert?",
+          "answer": "A cactus stores water in its thick stems to survive the dry weather of the desert.",
+          "explanation": "Desert plants like cactus have special features that help them survive with very little water."
+        },
+        {
+          "id": "ch9-t1-e5",
+          "type": "mcq",
+          "question": "What is the desert in Rajasthan called?",
+          "options": ["Gobi Desert", "Sahara Desert", "Thar Desert", "Atacama Desert"],
+          "answer": "Thar Desert",
+          "explanation": "The desert in Rajasthan is called the Thar Desert. It is a dry place with very little rainfall."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t1-m1",
+          "type": "short",
+          "question": "How is life in the plains different from life in the desert? Give two differences.",
+          "answer": "1. In the plains (Punjab), the land is flat and fertile, good for farming crops like wheat and rice. In the desert (Rajasthan), the land is sandy and dry with very little rain. 2. In the plains, people keep cows and buffaloes. In the desert, camels are common because they can travel on sand without needing much water.",
+          "explanation": "The type of land and climate greatly affects how people live, what they eat, what animals they keep and what crops they grow."
+        },
+        {
+          "id": "ch9-t1-m2",
+          "type": "mcq",
+          "question": "What are tankas used for in the Rajasthan desert?",
+          "options": ["Storing food", "Storing rainwater underground", "Keeping animals", "Playing music"],
+          "answer": "Storing rainwater underground",
+          "explanation": "Tankas are water tanks built underground to store rainwater in the desert, where water is very scarce."
+        },
+        {
+          "id": "ch9-t1-m3",
+          "type": "fill",
+          "question": "The Golden Temple in Amritsar runs a community kitchen called ______ that serves free meals to everyone.",
+          "answer": "langar",
+          "explanation": "The langar at the Golden Temple is one of the largest community kitchens in the world, serving free meals to all visitors regardless of their background."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t1-h1",
+          "type": "long",
+          "question": "Describe life in the Rajasthan desert. Include details about the land, plants, animals, food, houses and one interesting fact.",
+          "answer": "The Thar Desert in Rajasthan is sandy and dry with very little rainfall. Plants like cactus, khejri and babool survive on very little water. Animals include camels, lizards, wild cats and eagles. The camel is called the Ship of the Desert. People eat dal-bati-churma and ker sangri. Houses are made of mud with thatched roofs. Many houses have tankas (underground water tanks) to store rainwater. An interesting fact is that Jaisalmer Fort is made of golden-coloured sandstone and is one of the few forts where people still live inside.",
+          "explanation": "Desert life is very different from life in other regions because of the extreme dry conditions. People, plants and animals have all adapted to survive with very little water."
+        }
+      ]
+    },
+    {
+      "topic": "Life on the Coast and in the Mountains",
+      "easy": [
+        {
+          "id": "ch9-t2-e1",
+          "type": "mcq",
+          "question": "Puri is a coastal city in which state?",
+          "options": ["Kerala", "Tamil Nadu", "Odisha", "Goa"],
+          "answer": "Odisha",
+          "explanation": "Puri is a beautiful coastal city in Odisha, known for its beaches, temples and delicious food."
+        },
+        {
+          "id": "ch9-t2-e2",
+          "type": "fill",
+          "question": "Mount Kangchenjunga in Sikkim is the ______ highest peak in the world.",
+          "answer": "third",
+          "explanation": "Mount Kangchenjunga is located in Sikkim and is the third highest peak in the world."
+        },
+        {
+          "id": "ch9-t2-e3",
+          "type": "mcq",
+          "question": "Why do houses in mountain areas have slanting roofs?",
+          "options": ["To look pretty", "So rain and snow can slide off easily", "To save wood", "To keep sunlight out"],
+          "answer": "So rain and snow can slide off easily",
+          "explanation": "Mountain houses have slanting roofs so that rain and snow can slide off easily and not collect on top of the house."
+        },
+        {
+          "id": "ch9-t2-e4",
+          "type": "short",
+          "question": "What is the main occupation of people living near the sea?",
+          "answer": "The main occupation of people living near the sea is fishing. Fishermen go out in boats early in the morning to catch fish.",
+          "explanation": "Coastal regions are close to the sea, so many people depend on fishing for their livelihood."
+        },
+        {
+          "id": "ch9-t2-e5",
+          "type": "mcq",
+          "question": "Which animal is used for travel in the mountains of Sikkim?",
+          "options": ["Camel", "Horse", "Yak", "Elephant"],
+          "answer": "Yak",
+          "explanation": "The yak is a strong animal used for carrying goods and travelling in the cold mountain regions of Sikkim."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t2-m1",
+          "type": "short",
+          "question": "What are cyclones? Which state has been recognised for managing cyclones well?",
+          "answer": "Cyclones are strong, dangerous storms that come from the sea. They bring heavy rain, strong winds and flooding. The state of Odisha has won national and international awards for saving people during cyclones through early warnings and effective management.",
+          "explanation": "Coastal areas sometimes face cyclones which can damage homes, trees and crops. Advance preparation and early warnings help save lives."
+        },
+        {
+          "id": "ch9-t2-m2",
+          "type": "mcq",
+          "question": "What is thukpa?",
+          "options": ["A sweet dish from Punjab", "A hot noodle soup from Sikkim", "A fish dish from Odisha", "A desert food from Rajasthan"],
+          "answer": "A hot noodle soup from Sikkim",
+          "explanation": "Thukpa is a hot noodle soup, a famous dish from the mountain state of Sikkim. It is perfect for the cold climate there."
+        },
+        {
+          "id": "ch9-t2-m3",
+          "type": "fill",
+          "question": "The famous Rath Yatra, where huge chariots are pulled through the streets, is held in ______.",
+          "answer": "Puri",
+          "explanation": "The grand Rath Yatra is held in Puri, Odisha, where thousands of people pull the colourful chariots of Lord Jagannath, Subhadra and Balabhadra."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t2-h1",
+          "type": "long",
+          "question": "Compare life on the coast (Puri) and life in the mountains (Sikkim) in terms of climate, food, houses and animals.",
+          "answer": "Climate: Puri has a warm and humid climate near the sea, while Sikkim is cold with clean and refreshing mountain air. Food: In Puri, people eat fish, rice, dalma and pakhala. In Sikkim, people eat thukpa (hot noodle soup) and sel roti (sweet fried bread). Houses: In Puri, houses are made of concrete near the shore. In Sikkim, houses are made of wood with slanting roofs so rain and snow slide off. Animals: In Puri, you find sea creatures like turtles, crabs and dolphins. In Sikkim, yaks are used for travel in the mountains.",
+          "explanation": "The land and climate of a place greatly affects all aspects of life, from food and clothing to houses and the animals found there."
+        }
+      ]
+    },
+    {
+      "topic": "India's Four Major Landforms",
+      "easy": [
+        {
+          "id": "ch9-t3-e1",
+          "type": "mcq",
+          "question": "How many major types of landforms does India have?",
+          "options": ["Two", "Three", "Four", "Five"],
+          "answer": "Four",
+          "explanation": "India has four major landforms: plains, deserts, coastal areas and mountains."
+        },
+        {
+          "id": "ch9-t3-e2",
+          "type": "fill",
+          "question": "Coconut trees and palm trees are commonly found in ______ regions.",
+          "answer": "coastal",
+          "explanation": "Coconut trees and palm trees grow well in coastal regions near the sea because of the warm and humid climate."
+        },
+        {
+          "id": "ch9-t3-e3",
+          "type": "short",
+          "question": "What types of trees are found in the mountains?",
+          "answer": "Oak, pine, walnut and chestnut trees are found in the mountain regions.",
+          "explanation": "Mountain regions have trees that can survive the cold weather and high altitude."
+        },
+        {
+          "id": "ch9-t3-e4",
+          "type": "mcq",
+          "question": "Which landform has flat areas with rich and fertile soil?",
+          "options": ["Desert", "Mountain", "Coastal area", "Plain"],
+          "answer": "Plain",
+          "explanation": "Plains are large, flat areas with rich and fertile soil that is excellent for growing crops."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t3-m1",
+          "type": "short",
+          "question": "How does the land and climate of a place affect the food people eat? Give one example each from two different landforms.",
+          "answer": "In the plains of Punjab, the fertile soil allows farming of wheat and corn, so people eat makki di roti and sarson da saag. In coastal Puri, people live near the sea, so they eat a lot of fish along with rice and dalma. The food depends on what can be grown or found locally.",
+          "explanation": "The land and climate decide what crops can grow and what resources are available, which directly affects the food, clothing and lifestyle of people."
+        },
+        {
+          "id": "ch9-t3-m2",
+          "type": "mcq",
+          "question": "Which of these challenges is faced by mountain regions?",
+          "options": ["Cyclones", "Landslides", "Sandstorms", "Flooding from the sea"],
+          "answer": "Landslides",
+          "explanation": "Mountains often face landslides during the rainy season when heavy rain loosens the soil and rocks."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t3-h1",
+          "type": "long",
+          "question": "Fill in the comparison table for any three landforms of India (choose from plains, desert, coastal, mountains). Compare their climate, main food and type of houses.",
+          "answer": "1. Plains (Punjab): Climate is moderate. Main food is makki di roti and sarson da saag. Houses are made of brick and cement. 2. Desert (Rajasthan): Climate is hot and dry. Main food is dal-bati-churma. Houses are made of mud with thatched roofs. 3. Mountains (Sikkim): Climate is cold. Main food is thukpa and sel roti. Houses are made of wood with slanting roofs so rain and snow slide off. Each region's lifestyle is shaped by its land and weather.",
+          "explanation": "India's diversity in landforms leads to a rich variety in food, clothing, festivals and way of life. Every region has its own unique culture."
+        }
+      ]
+    }
+  ]
+}

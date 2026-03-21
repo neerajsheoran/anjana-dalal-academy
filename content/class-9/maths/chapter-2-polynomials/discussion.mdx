@@ -1,0 +1,73 @@
+---
+chapterRef: Chapter 2 — Polynomials
+---
+
+## Understanding Polynomials
+
+**Kiran:** Papa, what exactly makes an expression a polynomial? My friend wrote x plus 1/x and our teacher said it is not one.
+
+**Ravi:** A polynomial in x requires every term to have x raised to a whole number power -- 0, 1, 2, 3, and so on. The term 1/x is x to the power minus 1, and minus 1 is not a whole number. Similarly, sqrt(x) is x to the power 1/2 -- also not allowed. Think of polynomials as the "well-behaved" family of algebraic expressions.
+
+**Kiran:** So the degree is just the highest power?
+
+**Ravi:** Yes. A linear polynomial has degree 1, quadratic has degree 2, cubic has degree 3. One subtle point for exams: the degree of a non-zero constant like 7 is zero, because 7 equals 7 times x to the power 0. But the zero polynomial has no defined degree -- this is a favourite trick question.
+
+**Kiran:** What about classification by number of terms?
+
+**Ravi:** Monomial means one term, binomial means two, trinomial means three. Beyond three terms, we simply say "polynomial." In engineering, polynomials model everything from bridge curves to satellite trajectories. The degree tells you the maximum number of turning points the curve can have.
+
+---
+
+## Zeroes of a Polynomial
+
+**Kiran:** Finding zeroes seems straightforward for linear polynomials -- just solve ax plus b equals 0. But what about higher degrees?
+
+**Ravi:** For a linear polynomial ax plus b, the zero is minus b over a -- always exactly one zero. A quadratic can have at most 2 zeroes, a cubic at most 3. The key insight is: a polynomial of degree n has at most n zeroes. This is a fundamental theorem that connects algebra to geometry -- each zero is where the polynomial's graph crosses the x-axis.
+
+**Kiran:** So when the textbook asks "verify whether 2 is a zero of p(x) equals x-squared minus 4x plus 4," I just substitute x equals 2?
+
+**Ravi:** Exactly. p(2) equals 4 minus 8 plus 4 equals 0. Since p(2) equals 0, yes, 2 is a zero. For board exams, always show the substitution step clearly. Many students lose marks by skipping it.
+
+---
+
+## Remainder Theorem and Factor Theorem
+
+**Kiran:** The Remainder Theorem says that when we divide p(x) by (x minus a), the remainder is p(a). Why does this work?
+
+**Ravi:** When you divide p(x) by (x minus a), you get p(x) equals (x minus a) times q(x) plus r, where r is the remainder. Now substitute x equals a: p(a) equals (a minus a) times q(a) plus r, which simplifies to p(a) equals r. The remainder is just the value of the polynomial at x equals a. Elegant, is it not?
+
+**Kiran:** And the Factor Theorem is just a special case?
+
+**Ravi:** Precisely. If p(a) equals 0, then the remainder is 0, which means (x minus a) divides p(x) evenly -- so (x minus a) is a factor. This theorem is your primary weapon for factorising cubics. Try integer values like 1, minus 1, 2, minus 2 until you find a zero, then divide.
+
+**Kiran:** Board exam strategy -- should I always start with x equals 1 or minus 1?
+
+**Ravi:** Start with plus or minus 1 because they are the easiest to compute. If those do not work, try plus or minus 2, plus or minus 3, or factors of the constant term. The Rational Root Theorem, which you will study later in competitive maths, formalises this approach. For now, trial and error with small integers works perfectly.
+
+---
+
+## Factorisation Techniques
+
+**Kiran:** Splitting the middle term for quadratics makes sense, but I sometimes struggle to find the right pair of numbers.
+
+**Ravi:** Here is a systematic approach for ax-squared plus bx plus c. You need two numbers whose sum is b and whose product is a times c. List the factor pairs of a times c and check which pair sums to b. For example, to factorise 6x-squared plus 17x plus 5: a times c equals 30. Factor pairs of 30 include (2, 15), and 2 plus 15 equals 17. So split: 6x-squared plus 2x plus 15x plus 5, then group.
+
+**Kiran:** And for cubics, I first find one factor using the Factor Theorem, then reduce to a quadratic?
+
+**Ravi:** Exactly. Once you have (x minus a) as a factor, divide p(x) by (x minus a) to get a quadratic, then factorise that quadratic by splitting the middle term. This two-step process handles every cubic you will see in the board exam.
+
+---
+
+## Algebraic Identities
+
+**Kiran:** We have so many identities now -- the old ones like (x plus y)-squared and the new ones like (x plus y)-cubed and x-cubed plus y-cubed plus z-cubed minus 3xyz. How do I remember them all?
+
+**Ravi:** Group them. The "square" family has three identities involving (x plus y)-squared, (x minus y)-squared, and x-squared minus y-squared. The "cube" family has (x plus y)-cubed and (x minus y)-cubed. Then there is the powerful three-variable identity: x-cubed plus y-cubed plus z-cubed minus 3xyz equals (x plus y plus z)(x-squared plus y-squared plus z-squared minus xy minus yz minus zx).
+
+**Kiran:** And when x plus y plus z equals 0, the expression simplifies beautifully?
+
+**Ravi:** Yes! If x plus y plus z equals 0, then x-cubed plus y-cubed plus z-cubed equals 3xyz. This is a favourite in competitive exams. For example, find (-12)-cubed plus 7-cubed plus 5-cubed. Since minus 12 plus 7 plus 5 equals 0, the answer is 3 times (-12) times 7 times 5 equals minus 1260. No lengthy computation needed.
+
+**Kiran:** These identities also help in quick evaluation, right? Like computing 99-cubed?
+
+**Ravi:** Absolutely. Write 99 as (100 minus 1) and apply the cube identity. In JEE and olympiad preparation, this habit of converting numbers into convenient forms saves enormous time. Ramanujan was a master at seeing such shortcuts -- his notebooks are filled with identities that mathematicians are still studying today.

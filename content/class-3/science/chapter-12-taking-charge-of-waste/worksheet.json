@@ -1,0 +1,232 @@
+{
+  "topics": [
+    {
+      "topic": "Waste and Its Harmful Effects",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "Which of these is a type of waste we create at home?",
+          "options": ["Books", "Fresh fruits", "Vegetable and fruit peels", "New clothes"],
+          "answer": "Vegetable and fruit peels",
+          "explanation": "When we cook food and peel vegetables and fruits, we create waste like peels, wrappers, and old things."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "fill",
+          "question": "When people burn plastic, it releases ______ gases that cause air pollution.",
+          "answer": "harmful",
+          "explanation": "Burning plastic releases harmful gases into the air, causing air pollution."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "mcq",
+          "question": "What can happen to cows if they eat plastic mixed with food?",
+          "options": ["They grow stronger", "They can get sick and die", "Nothing happens", "They become healthier"],
+          "answer": "They can get sick and die",
+          "explanation": "Cows and other animals can get very sick and even die by eating plastic mixed with food waste."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "short",
+          "question": "Name three types of waste we create every day.",
+          "answer": "Vegetable and fruit peels, plastic wrappers and bottles, and old newspapers are types of waste we create every day.",
+          "explanation": "Our daily activities create waste like peels, wrappers, old papers, empty bottles, pencil shavings, and old batteries."
+        },
+        {
+          "id": "ch12-t1-e5",
+          "type": "mcq",
+          "question": "Dirty puddles and wastewater become breeding grounds for which insect?",
+          "options": ["Butterflies", "Bees", "Mosquitoes", "Ants"],
+          "answer": "Mosquitoes",
+          "explanation": "Dirty puddles and wastewater become breeding grounds for mosquitoes, which spread diseases."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "How does waste that is not managed properly harm the environment? Give three examples.",
+          "answer": "Unmanaged waste harms the environment in many ways: animals like cows can die from eating plastic, burning plastic causes air pollution with harmful gases, and dirty wastewater on roads breeds mosquitoes that spread diseases.",
+          "explanation": "When waste is not managed properly, it causes air pollution, water pollution, diseases, and harms animals."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "mcq",
+          "question": "What happens when waste is thrown on roads?",
+          "options": ["It disappears on its own", "It makes surroundings dirty and spreads germs", "It turns into compost automatically", "Nothing happens"],
+          "answer": "It makes surroundings dirty and spreads germs",
+          "explanation": "Waste thrown on roads makes surroundings dirty and unhealthy. Germs in waste cause diseases in people living nearby."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "Why is it important to manage our waste properly? What problems can occur if we do not?",
+          "answer": "It is very important to manage our waste properly because unmanaged waste causes many serious problems. Animals like cows can get sick and die from eating plastic. Burning plastic releases harmful gases that pollute the air we breathe. Wastewater flowing on roads carries germs and makes people sick. Dirty puddles become breeding grounds for mosquitoes that spread diseases like dengue and malaria. Waste piles near homes make surroundings dirty and smelly. Managing waste properly through the three golden rules - Reduce, Reuse, and Recycle - helps keep our environment clean and healthy.",
+          "explanation": "Proper waste management protects animals, prevents pollution, stops the spread of diseases, and keeps our surroundings clean."
+        }
+      ]
+    },
+    {
+      "topic": "Reduce, Reuse, and Recycle",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "What are the three golden rules of waste management?",
+          "options": ["Read, Write, and Draw", "Run, Jump, and Play", "Reduce, Reuse, and Recycle", "Eat, Sleep, and Exercise"],
+          "answer": "Reduce, Reuse, and Recycle",
+          "explanation": "The three golden rules of waste management are Reduce (create less waste), Reuse (use things again), and Recycle (make new things from old materials)."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "Using ______ bags instead of plastic bags for shopping is a way to reduce waste.",
+          "answer": "cloth",
+          "explanation": "Using cloth bags instead of plastic bags for shopping helps reduce the amount of plastic waste we create."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "mcq",
+          "question": "Which of these is an example of reusing?",
+          "options": ["Throwing away old newspapers", "Using the blank side of used paper for rough work", "Burning plastic bottles", "Buying new plastic bags every time"],
+          "answer": "Using the blank side of used paper for rough work",
+          "explanation": "Using the blank side of paper that has already been used on one side is a great example of reusing."
+        },
+        {
+          "id": "ch12-t2-e4",
+          "type": "short",
+          "question": "What does 'Reduce' mean in waste management?",
+          "answer": "Reduce means creating less waste in the first place. It is the most important rule of waste management.",
+          "explanation": "Reducing waste means avoiding unnecessary purchases, using cloth bags, and buying only what we truly need."
+        },
+        {
+          "id": "ch12-t2-e5",
+          "type": "mcq",
+          "question": "Old newspapers can be reused for which of the following?",
+          "options": ["Making clothes", "Gift wrapping or making paper bags", "Building houses", "Cooking food"],
+          "answer": "Gift wrapping or making paper bags",
+          "explanation": "Old newspapers can be reused for gift wrapping or making paper bags instead of being thrown away."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "Explain the difference between Reuse and Recycle with examples.",
+          "answer": "Reuse means using things again in the same or a different way, like using old newspapers for gift wrapping. Recycle means taking old materials and turning them into new things, like turning old paper into new paper and cardboard.",
+          "explanation": "Reusing keeps things as they are for another purpose. Recycling breaks down old materials and makes completely new products."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "mcq",
+          "question": "Which of these materials can be recycled?",
+          "options": ["Food waste", "Old paper", "Vegetable peels", "Egg shells"],
+          "answer": "Old paper",
+          "explanation": "Old paper can be recycled into new paper and cardboard. Food waste, vegetable peels, and egg shells rot and become compost instead."
+        },
+        {
+          "id": "ch12-t2-m3",
+          "type": "fill",
+          "question": "Our grandparents made quilts from old ______ as a way of reusing them.",
+          "answer": "sarees",
+          "explanation": "Our grandparents were experts at reusing things. They made beautiful quilts from old sarees and bags from old clothes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "Explain each of the three golden rules of waste management with two examples for each.",
+          "answer": "The three golden rules are: 1) REDUCE means creating less waste. Examples: use cloth bags instead of plastic bags, and buy only what you truly need. 2) REUSE means using things again. Examples: use old newspapers for gift wrapping, and use the blank side of used paper for rough work. 3) RECYCLE means making new things from old materials. Examples: old paper can be turned into new paper, and old metal can be turned into new metal objects. Reduce is the most important rule because it prevents waste from being created in the first place.",
+          "explanation": "Following Reduce, Reuse, and Recycle helps us manage waste wisely and protect our environment."
+        }
+      ]
+    },
+    {
+      "topic": "Separating Waste and Clean India",
+      "easy": [
+        {
+          "id": "ch12-t3-e1",
+          "type": "mcq",
+          "question": "What goes into the green dustbin?",
+          "options": ["Plastic bottles", "Metal items", "Fruit peels and vegetable waste", "Glass bottles"],
+          "answer": "Fruit peels and vegetable waste",
+          "explanation": "The green dustbin is for wet waste like fruit peels, vegetable waste, dried leaves, egg shells, and rotten food."
+        },
+        {
+          "id": "ch12-t3-e2",
+          "type": "fill",
+          "question": "The ______ dustbin is for dry waste like metal, glass, plastic, and paper.",
+          "answer": "blue",
+          "explanation": "The blue dustbin is for dry waste that does not rot but can be recycled, like metal items, glass, plastic, and paper."
+        },
+        {
+          "id": "ch12-t3-e3",
+          "type": "mcq",
+          "question": "What date is celebrated as National Cleanliness Day in India?",
+          "options": ["26 January", "15 August", "30 January", "2 October"],
+          "answer": "30 January",
+          "explanation": "30 January is celebrated as National Cleanliness Day in India."
+        },
+        {
+          "id": "ch12-t3-e4",
+          "type": "short",
+          "question": "What happens to waste in the green dustbin?",
+          "answer": "Waste in the green dustbin rots easily and becomes compost, which is food for plants and helps them grow.",
+          "explanation": "Green dustbin waste like fruit peels, leaves, and food scraps break down naturally and become compost for plants."
+        },
+        {
+          "id": "ch12-t3-e5",
+          "type": "mcq",
+          "question": "Which Indian village is known as a 'zero waste village'?",
+          "options": ["Chhota Narena", "Silluk", "Indore", "Mysuru"],
+          "answer": "Silluk",
+          "explanation": "Silluk in Arunachal Pradesh is known as a 'zero waste village' with no trash on roads or corners."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t3-m1",
+          "type": "short",
+          "question": "Why do we need to separate waste into green and blue dustbins?",
+          "answer": "We separate waste because wet waste (green dustbin) like fruit peels rots and becomes compost for plants. Dry waste (blue dustbin) like plastic and metal does not rot but can be recycled into new things. Separating makes recycling easier.",
+          "explanation": "Separating waste into wet and dry helps us manage it properly. Wet waste becomes compost and dry waste is sent for recycling."
+        },
+        {
+          "id": "ch12-t3-m2",
+          "type": "mcq",
+          "question": "Which campaign encourages all Indians to keep their surroundings clean?",
+          "options": ["Make in India", "Swachh Bharat Mission", "Digital India", "Skill India"],
+          "answer": "Swachh Bharat Mission",
+          "explanation": "The Swachh Bharat Mission (Clean India Mission) encourages all of us to keep our surroundings clean and manage waste properly."
+        },
+        {
+          "id": "ch12-t3-m3",
+          "type": "fill",
+          "question": "______ is known as one of India's cleanest cities.",
+          "answer": "Indore",
+          "explanation": "Indore in Madhya Pradesh is known as one of India's cleanest cities because of excellent waste management."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t3-h1",
+          "type": "long",
+          "question": "What can you do every day to keep your home, school, and neighbourhood clean? List at least five things.",
+          "answer": "To keep our surroundings clean, we can: 1) Keep our room tidy and put things back in their place. 2) Put waste in the correct dustbin - green for wet waste and blue for dry waste. 3) Never throw garbage on the road and always use a dustbin. 4) Wrap sharp objects like broken glass in cloth so sanitation workers are not hurt. 5) Say thank you to the people who clean our school and neighbourhood. 6) Use cloth bags instead of plastic bags. 7) Reduce waste by buying only what we need. 8) Reuse old things instead of throwing them away.",
+          "explanation": "Small actions by each person can make a big difference in keeping our surroundings clean and healthy."
+        },
+        {
+          "id": "ch12-t3-h2",
+          "type": "long",
+          "question": "Why should we be grateful to sanitation workers? How can we make their job easier?",
+          "answer": "Sanitation workers deserve our respect and gratitude because they work hard every day, often in difficult conditions, to keep our cities, schools, and neighbourhoods clean and healthy. Without them, our surroundings would be dirty and full of diseases. We can make their job easier by: not littering so they have less to clean, separating waste into green and blue dustbins, wrapping sharp objects in cloth so they do not get hurt, saying 'thank you' when we see them, and making small gifts from waste materials to give them. We should always respect their hard work.",
+          "explanation": "Sanitation workers play a vital role in keeping our environment clean. We should respect them and help make their work easier."
+        }
+      ]
+    }
+  ]
+}

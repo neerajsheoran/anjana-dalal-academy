@@ -1,0 +1,224 @@
+{
+  "topics": [
+    {
+      "topic": "Why We Need Food and Balanced Diet",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "Why do we need food?",
+          "options": ["Only for fun", "To grow, stay strong, and get energy", "Only to taste good things", "Only because our parents tell us"],
+          "answer": "To grow, stay strong, and get energy",
+          "explanation": "We eat food because our body needs it to grow, stay strong, and stay healthy. Food gives us energy to run, play, and study."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "Eating a variety of foods that give our body all the nutrients it needs is called a ______ diet.",
+          "answer": "balanced",
+          "explanation": "A balanced diet means eating different types of food so our body gets all the nutrients it needs."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which food group helps our body grow?",
+          "options": ["Grains", "Pulses (Dal)", "Fruits", "Nuts"],
+          "answer": "Pulses (Dal)",
+          "explanation": "Pulses like moong, toor, masoor, and chana help our body grow."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "short",
+          "question": "What happened to Shirin when she started eating different types of food?",
+          "answer": "Shirin felt energetic and healthy. She ran faster than ever and won a medal for her school.",
+          "explanation": "Earlier, Shirin ate only rice and potatoes and fell sick often. After eating a variety of foods, she became healthy and won a running medal."
+        },
+        {
+          "id": "ch8-t1-e5",
+          "type": "mcq",
+          "question": "Which food group gives us energy?",
+          "options": ["Pulses", "Grains like rice and wheat", "Fruits", "Milk"],
+          "answer": "Grains like rice and wheat",
+          "explanation": "Grains like rice, wheat, ragi, jowar, and bajra give us energy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "What is a balanced diet? Name the different food groups that should be part of our meals.",
+          "answer": "A balanced diet means eating different types of food. It should include grains for energy, vegetables and fruits for vitamins, pulses for growth, milk and dairy for strong bones, and nuts for good fats.",
+          "explanation": "A healthy meal should include grains, vegetables, fruits, pulses, milk products, and nuts to give our body all the nutrients it needs."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "mcq",
+          "question": "What special offering of 56 food items is prepared during festivals in India?",
+          "options": ["Thali", "Sadya", "Chhappan Bhog", "Bhoj"],
+          "answer": "Chhappan Bhog",
+          "explanation": "Chhappan Bhog is a special offering of 56 food items prepared during festivals in India. It represents all six tastes."
+        },
+        {
+          "id": "ch8-t1-m3",
+          "type": "fill",
+          "question": "Milk and dairy products like curd and paneer make our ______ and teeth strong.",
+          "answer": "bones",
+          "explanation": "Milk and dairy products like milk, curd, paneer, and lassi make our bones and teeth strong."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "Why did Shirin keep falling sick? What advice did the champion runner give her? How did it help?",
+          "answer": "Shirin kept falling sick because she was eating only rice and potatoes. She was not getting all the nutrients her body needed. The champion runner advised her to eat many different kinds of food including different vegetables and fruits, foods from different grains like ragi, jowar, and bajra, pulses and nuts, and home-cooked food. After following this advice for a few months, Shirin felt energetic and healthy. She ran faster than ever and won a medal for her school.",
+          "explanation": "Eating only one or two types of food does not give our body all the nutrients it needs. A balanced diet with different types of food keeps us healthy and strong."
+        }
+      ]
+    },
+    {
+      "topic": "Sources of Food",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "Which part of a plant do we eat when we eat spinach (palak)?",
+          "options": ["Root", "Stem", "Leaves", "Fruit"],
+          "answer": "Leaves",
+          "explanation": "When we eat spinach (palak), we eat the leaves of the plant. Other leaf vegetables include methi, cabbage, and coriander."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "Carrots, radish, and beetroot are ______ of plants that we eat.",
+          "answer": "roots",
+          "explanation": "Carrots, radish, and beetroot are roots of plants that we eat."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "From which animal do we get honey?",
+          "options": ["Cow", "Hen", "Bee", "Goat"],
+          "answer": "Bee",
+          "explanation": "Honey comes from bees. Bees collect nectar from flowers and make honey."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "short",
+          "question": "Name two foods that come from animals.",
+          "answer": "Milk comes from cows, buffaloes, and goats. Eggs come from hens.",
+          "explanation": "Some foods come from animals, including milk, curd, paneer, ghee, butter, honey, and eggs."
+        },
+        {
+          "id": "ch8-t2-e5",
+          "type": "mcq",
+          "question": "Two common cooking ingredients are neither from plants nor animals. What are they?",
+          "options": ["Oil and sugar", "Salt and water", "Ghee and butter", "Honey and curd"],
+          "answer": "Salt and water",
+          "explanation": "Salt (from the sea or mines) and water are two common cooking ingredients that come neither from plants nor from animals."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "We eat different parts of plants. Give one example of food from each: leaves, roots, stems, and seeds.",
+          "answer": "Leaves: spinach (palak). Roots: carrot. Stems: potato. Seeds: rice.",
+          "explanation": "We eat many parts of plants. Leaves (palak, methi), roots (carrot, radish), stems (potato, ginger), and seeds (rice, wheat, dal)."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "mcq",
+          "question": "Which of these foods is a stem we eat?",
+          "options": ["Carrot", "Spinach", "Potato", "Apple"],
+          "answer": "Potato",
+          "explanation": "Potato is actually a stem (underground stem) of the plant. Other stems we eat include ginger, onion, and bamboo shoots."
+        },
+        {
+          "id": "ch8-t2-m3",
+          "type": "fill",
+          "question": "Ghee and butter are made from ______.",
+          "answer": "milk",
+          "explanation": "Ghee and butter are dairy products made from milk."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Most of our food comes from plants. Explain by giving examples of foods we get from different parts of plants.",
+          "answer": "Most of our food comes from plants. We eat different parts of plants: Leaves - spinach, fenugreek, cabbage, mustard leaves, and coriander. Fruits - guava, apple, mango, and sapota (chiku). Roots - carrot, radish, and beetroot. Stems - potato, ginger, onion, and bamboo shoots. Seeds (Grains) - rice, wheat, bajra, jowar, and ragi. Seeds (Pulses) - moong dal, toor dal, and chana dal. Seeds (Dry fruits) - almonds, cashews, and walnuts. This shows that plants provide us with a huge variety of food.",
+          "explanation": "Plants are the main source of our food. We eat their leaves, fruits, roots, stems, and seeds in different forms."
+        }
+      ]
+    },
+    {
+      "topic": "Seasonal Food and Not Wasting Food",
+      "easy": [
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "Which of these is a summer fruit?",
+          "options": ["Apple", "Orange", "Watermelon", "Strawberry"],
+          "answer": "Watermelon",
+          "explanation": "Watermelon is a summer fruit. Other summer fruits include mango, muskmelon, and litchi."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "In winter, we eat warm soups and ______ to keep our body warm.",
+          "answer": "stews",
+          "explanation": "In winter, we eat warm soups, stews, hot drinks, and sesame sweets (til ladoo) to keep our body warm."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "short",
+          "question": "Why should we not waste food?",
+          "answer": "We should not waste food because food is precious and many people in the world do not get enough to eat.",
+          "explanation": "Food is precious. We should take only as much as we can eat, not throw away leftovers, and share food with those in need."
+        },
+        {
+          "id": "ch8-t3-e4",
+          "type": "mcq",
+          "question": "How many glasses of water should we drink every day?",
+          "options": ["1 to 2", "3 to 4", "6 to 8", "10 to 12"],
+          "answer": "6 to 8",
+          "explanation": "We should drink 6 to 8 glasses of water every day to keep our body healthy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t3-m1",
+          "type": "short",
+          "question": "Why do we eat different foods in different seasons? Give examples.",
+          "answer": "We eat different foods in different seasons because our body needs different things. In summer, we eat cooling foods like watermelon, kulfi, and nimbu pani to cool down. In winter, we eat warm foods like soups and til ladoo to keep warm.",
+          "explanation": "Our body's needs change with the seasons. Cooling foods help in summer and warm foods help in winter."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "mcq",
+          "question": "Which summer drink is made from raw mango?",
+          "options": ["Nimbu pani", "Aam panna", "Buttermilk", "Sugarcane juice"],
+          "answer": "Aam panna",
+          "explanation": "Aam panna is a refreshing summer drink made from raw mango."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "What are the different ways we can avoid wasting food? Why is sharing food with others important?",
+          "answer": "We can avoid wasting food by taking only as much food as we can eat, not throwing away leftover food, eating home-cooked food as much as possible, and storing food properly. Sharing food with others is important because many people do not get enough to eat. If our friend does not bring lunch to school, we should happily share our food with them. Sharing food shows kindness and care for others. It also ensures that food is not wasted.",
+          "explanation": "Food is precious and should not be wasted. Sharing food with friends and people in need is a kind and caring thing to do."
+        },
+        {
+          "id": "ch8-t3-h2",
+          "type": "long",
+          "question": "Why is water called 'life'? Name some healthy drinks for summer.",
+          "answer": "Water is called life because our body cannot survive without water. We need water for all our body functions. In summer, we sweat and lose water, so we need to drink more. Some healthy summer drinks include tender coconut water, nimbu pani (lime water), aam panna (raw mango drink), buttermilk (chaas), and sugarcane juice. These drinks help keep our body cool and hydrated during hot weather.",
+          "explanation": "Water is essential for life. We should drink plenty of water and healthy drinks, especially in summer when we lose water through sweat."
+        }
+      ]
+    }
+  ]
+}

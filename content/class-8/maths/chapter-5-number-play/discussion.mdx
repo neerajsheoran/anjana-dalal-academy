@@ -1,0 +1,81 @@
+---
+chapterRef: Chapter 5 — Number Play
+---
+
+## Parity and Even-Odd Reasoning
+
+**Kiran:** Papa, the textbook shows that if you take any 4 consecutive numbers and put plus or minus signs between them, the result is always even. That is surprising. Why?
+
+**Ravi:** It comes down to parity — the even-or-odd nature of numbers. The key insight is that switching a plus sign to a minus sign, or vice versa, changes the result by twice the number involved. Since twice any number is even, switching a sign always changes the result by an even amount. So all eight possible expressions have the same parity.
+
+**Kiran:** So the parity of a plus-or-minus b is always the same as the parity of a plus b, because their difference is 2b, which is even.
+
+**Ravi:** Exactly. This extends to any number of terms. Parity reasoning is a powerful tool in competitive mathematics. Many olympiad problems can be solved by simply checking whether something must be even or odd.
+
+**Kiran:** Like if someone asks whether 3 plus-or-minus 7 plus-or-minus 11 plus-or-minus 5 can equal 10, I can check: 3 plus 7 plus 11 plus 5 is 26, which is even. Since all expressions have the same parity, they are all even. And 10 is even, so it is possible.
+
+**Ravi:** Good reasoning. But if the target were an odd number like 11, you could immediately say it is impossible without trying all combinations.
+
+---
+
+## Divisibility Rules
+
+**Kiran:** There are so many divisibility rules — for 2, 3, 4, 5, 8, 9, 10, 11. How do I remember all of them?
+
+**Ravi:** Group them by the underlying logic. Rules for 2, 4, 5, 8, and 10 depend on the last few digits — because the higher place values are all divisible by these numbers. Rules for 3 and 9 use the digit sum — because each power of 10 leaves remainder 1 when divided by 9. The rule for 11 uses the alternating digit sum — because powers of 10 alternate between remainder 1 and remainder minus 1 when divided by 11.
+
+**Kiran:** So the digit sum works for 9 because 10 is 9 plus 1, 100 is 99 plus 1, 1000 is 999 plus 1 — each is 1 more than a multiple of 9.
+
+**Ravi:** And for 3, since 9 is a multiple of 3, the same logic applies. If the digit sum is divisible by 9, the number is divisible by 9. If the digit sum is divisible by 3 but not 9, the number is divisible by 3 but not 9.
+
+**Kiran:** The alternating sum for 11 is clever. For 82918: 8 minus 1 plus 9 minus 2 plus 8 equals 22, which is divisible by 11. So 82918 is divisible by 11.
+
+**Ravi:** In billing and accounting — which every Indian business handles — these divisibility checks help verify calculations quickly. GST computations, for instance, involve percentages that often need quick divisibility checks.
+
+---
+
+## Divisibility Properties
+
+**Kiran:** The textbook has questions about whether statements are always, sometimes, or never true. That requires careful thinking.
+
+**Ravi:** This is training you for rigorous mathematical reasoning. Take the statement "If 8 divides two numbers, it divides their sum." If the two numbers are 8a and 8b, their sum is 8a plus 8b, which equals 8 times (a plus b). Since 8 is a factor, the statement is always true.
+
+**Kiran:** But "if a number is divisible by 8, then 8 divides any two numbers that add up to it" — that is only sometimes true. Because 72 equals 48 plus 24, and both are divisible by 8, but 72 also equals 50 plus 22, and neither is divisible by 8.
+
+**Ravi:** Exactly. The distinction between "always," "sometimes," and "never" is crucial. For a statement to be "always true," it must hold for every possible case — even one counterexample makes it "sometimes true" at best.
+
+**Kiran:** And "if a number is divisible by 12, it is divisible by all factors of 12" — that is always true because 12 equals 2 times 2 times 3, and if 12 divides a number, then 1, 2, 3, 4, 6, and 12 all divide it.
+
+**Ravi:** In general, if A is divisible by k, then A is divisible by every factor of k. This is a fundamental property used throughout number theory.
+
+---
+
+## Remainders and Modular Thinking
+
+**Kiran:** The textbook says numbers leaving remainder 3 when divided by 5 can be written as 5k plus 3. This feels like algebra mixed with number theory.
+
+**Ravi:** It is. This approach is called modular arithmetic, and it is one of the most powerful ideas in modern mathematics. When you classify numbers by their remainder, you create groups that behave predictably under addition and multiplication.
+
+**Kiran:** So all numbers in the "remainder 3" group when divided by 5 are 3, 8, 13, 18, 23, and so on. They form a pattern — they differ by 5 each time.
+
+**Ravi:** And if you add two numbers from the "remainder 3" group — say 8 and 13 — you get 21, which has remainder 1 when divided by 5. So the sum of two "remainder 3" numbers is always a "remainder 1" number. The remainders follow their own arithmetic.
+
+**Kiran:** This is like a mini number system within the larger one! Is this what you use in cryptography?
+
+**Ravi:** Exactly. Modern encryption — the kind that secures your online banking and WhatsApp messages — is based on modular arithmetic with very large prime numbers. The ideas in this chapter are the foundation of digital security used by billions of people worldwide.
+
+---
+
+## Pairs to Make Fours
+
+**Kiran:** The section about when two even numbers add up to a multiple of 4 has a nice pattern. Both must be multiples of 4, or both must be non-multiples of 4 but still even.
+
+**Ravi:** Think of even numbers as coming in two types — multiples of 4 (like 4, 8, 12, 16) and non-multiples of 4 (like 2, 6, 10, 14). The first type can be written as 4p, the second as 4p plus 2.
+
+**Kiran:** If I add two numbers of the same type: 4p plus 4q equals 4 times (p plus q), which is a multiple of 4. And (4p plus 2) plus (4q plus 2) equals 4 times (p plus q plus 1), which is also a multiple of 4.
+
+**Ravi:** But if you add one of each type: 4p plus (4q plus 2) equals 4 times (p plus q) plus 2 — not a multiple of 4. This is a clean example of how algebraic reasoning proves something that would be hard to verify by testing individual numbers.
+
+**Kiran:** This pattern seems connected to the parity discussion — it is like going one level deeper, from even-odd to "multiple of 4 or not."
+
+**Ravi:** You have hit on something deep. This is exactly the idea of refining classifications — first mod 2, then mod 4, then mod 8, and so on. Each level reveals more structure.

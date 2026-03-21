@@ -1,0 +1,65 @@
+---
+chapterRef: Chapter 7 — Triangles
+---
+
+## Understanding Congruence
+
+**Kiran:** Papa, two triangles are congruent if they are exactly the same shape and size. But do we really need to check all six measurements -- three sides and three angles?
+
+**Ravi:** No, and that is precisely the power of congruence rules. You only need three specific measurements, chosen correctly, to guarantee congruence. The five rules -- SAS, ASA, AAS, SSS, and RHS -- each specify a minimal set of conditions. This saves enormous effort in proofs and practical applications.
+
+**Kiran:** Why does the order of vertices matter when writing congruence?
+
+**Ravi:** Because it specifies the correspondence. If triangle ABC is congruent to triangle PQR, it means A corresponds to P, B to Q, C to R. So AB equals PQ, angle A equals angle P, and so on. Writing triangle ABC congruent to triangle RPQ would mean something entirely different -- A corresponds to R, B to P. Board examiners penalise incorrect correspondence, so always be precise.
+
+**Kiran:** Is there an SSA rule? My friend used it in a proof.
+
+**Ravi:** No! SSA (or ASS) does not guarantee congruence -- this is one of the most common mistakes. Two different triangles can have two sides and a non-included angle equal. The angle must be the included angle (between the two sides) for SAS to work. Think of it this way: SSA gives you ambiguity -- the "swinging door" phenomenon -- while SAS locks the triangle rigidly.
+
+---
+
+## Properties of Isosceles Triangles
+
+**Kiran:** The theorem says angles opposite to equal sides are equal. How do we prove this?
+
+**Ravi:** In triangle ABC with AB equal to AC, drop a perpendicular from A to the midpoint M of BC. In triangles ABM and ACM, AB equals AC (given), AM is common, and BM equals MC (M is the midpoint). By SSS, the triangles are congruent. Therefore angle B equals angle C by CPCT. There are other proof approaches too -- some use the SAS criterion directly by considering the triangle superimposed on itself.
+
+**Kiran:** And the converse -- if two angles are equal, the opposite sides are equal?
+
+**Ravi:** Yes. If angle B equals angle C in triangle ABC, then AB equals AC. Both the theorem and its converse are regularly tested in board exams. The corollary is equally important: each angle of an equilateral triangle is 60 degrees, because all sides are equal, forcing all angles to be equal, and they must sum to 180.
+
+**Kiran:** Where do isosceles triangles appear in real life?
+
+**Ravi:** Everywhere in architecture and engineering. The India Gate in New Delhi has triangular arches. Roof trusses are often isosceles triangles because the symmetry distributes load evenly. The triangular shape is inherently rigid -- unlike a rectangle, which can be deformed into a parallelogram, a triangle maintains its shape. This is why bridge trusses and communication towers use triangular frameworks.
+
+---
+
+## Congruence Criteria in Proofs
+
+**Kiran:** In board exam proofs, how do I decide which congruence rule to use?
+
+**Ravi:** Follow a systematic checklist. Count what you know: if you have two sides and the included angle, use SAS. Two angles and the included side? ASA. Two angles and a non-included side? AAS. Three sides? SSS. Right angle, hypotenuse, and one side? RHS. The key word is "included" -- for SAS, the angle must be between the two known sides; for ASA, the side must be between the two known angles.
+
+**Kiran:** What does CPCT mean and when do I use it?
+
+**Ravi:** CPCT stands for "Corresponding Parts of Congruent Triangles." After proving two triangles congruent, you can conclude that any pair of corresponding sides or angles are equal. CPCT is always the step after establishing congruence, never before. In your proof, first prove congruence, write the congruence statement, then write "By CPCT, AB equals PQ" or whatever you need.
+
+**Kiran:** Any exam presentation tips?
+
+**Ravi:** Always draw a clear diagram first. Mark equal sides with single, double, or triple tick marks. Mark equal angles with arcs. State "Given" and "To Prove" explicitly. Write each congruence condition on a separate line: "In triangles ABC and DEF: AB equals DE (given), angle B equals angle E (proved above), BC equals EF (given). Therefore triangle ABC is congruent to triangle DEF by SAS." This structured format earns full marks consistently.
+
+---
+
+## Inequalities in a Triangle
+
+**Kiran:** The triangle inequality says the sum of any two sides must be greater than the third. How is this useful?
+
+**Ravi:** It lets you instantly check whether three lengths can form a triangle. Can 3, 4, and 8 form a triangle? Check: 3 plus 4 equals 7, which is not greater than 8. So no. Can 5, 7, and 10? Check all three: 5 plus 7 equals 12, greater than 10. Yes. This is a quick verification tool.
+
+**Kiran:** And the relationship between unequal sides and unequal angles?
+
+**Ravi:** In any triangle, the longer side is opposite the larger angle, and the larger angle is opposite the longer side. These are Theorems 7.6 and 7.7. In a right triangle, the hypotenuse is the longest side because the right angle (90 degrees) is the largest angle.
+
+**Kiran:** How does this connect to real-world applications?
+
+**Ravi:** Navigation uses the triangle inequality -- the shortest distance between two points is a straight line, and any detour is longer. In network design, engineers use this principle to optimise cable routes. The inequality is also fundamental in the mathematical field of metric spaces, which you may encounter in higher studies.

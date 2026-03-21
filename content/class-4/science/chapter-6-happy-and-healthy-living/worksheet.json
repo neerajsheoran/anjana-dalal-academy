@@ -1,0 +1,202 @@
+{
+  "topics": [
+    {
+      "topic": "Journey of a Grain and Gratitude for Food",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "What is the first step in the journey of a grain from farm to plate?",
+          "options": ["Harvesting", "Sowing", "Ploughing", "Cooking"],
+          "answer": "Ploughing",
+          "explanation": "The journey of a grain begins with ploughing, where the farmer prepares the soil using a plough."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "fill",
+          "question": "The process of separating grains from the plant is called ______.",
+          "answer": "threshing",
+          "explanation": "After the ripe crop is harvested (cut and collected), the grains are separated from the plant through a process called threshing."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "mcq",
+          "question": "Which festival is celebrated in Tamil Nadu to thank nature for the harvest?",
+          "options": ["Lohri", "Pongal", "Diwali", "Holi"],
+          "answer": "Pongal",
+          "explanation": "Pongal is a harvest festival celebrated in Tamil Nadu where people express gratitude for a good harvest."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "short",
+          "question": "Name two elements of nature that help crops grow.",
+          "answer": "Soil gives plants a place to grow and provides nutrients. Sunlight gives plants the energy they need to grow.",
+          "explanation": "Many elements of nature help crops grow, including soil, water, sunlight, air and earthworms."
+        },
+        {
+          "id": "ch6-t1-e5",
+          "type": "mcq",
+          "question": "Which animal helps in ploughing the fields?",
+          "options": ["Dog", "Cat", "Bullock (cattle)", "Hen"],
+          "answer": "Bullock (cattle)",
+          "explanation": "Bullocks (cattle) are used to pull the plough and prepare the soil for sowing seeds in many Indian farms."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "Why should we never waste food? Give two reasons.",
+          "answer": "We should never waste food because: 1. Every grain goes through a long journey involving the hard work of many people like farmers, transporters and shopkeepers. 2. Many elements of nature like soil, water, sunlight and air work together to grow the crops, making every grain precious.",
+          "explanation": "The journey of a grain from farm to plate involves many steps and many people's effort. Wasting food means wasting all that hard work."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "mcq",
+          "question": "Which festival is celebrated in Punjab to mark the harvest of rabi crops?",
+          "options": ["Onam", "Pongal", "Lohri", "Makar Sankranti"],
+          "answer": "Lohri",
+          "explanation": "Lohri is celebrated in Punjab during the harvest of rabi crops. People gather around bonfires and celebrate the harvest season."
+        },
+        {
+          "id": "ch6-t1-m3",
+          "type": "fill",
+          "question": "Onam is a harvest festival celebrated in ______.",
+          "answer": "Kerala",
+          "explanation": "Onam is the harvest season festival celebrated in Kerala with feasts, boat races and flower arrangements."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "Describe the journey of a grain of rice from the farm to your plate. Mention at least six steps.",
+          "answer": "The journey of a grain of rice: 1. Ploughing - The farmer prepares the soil using a plough. 2. Sowing - Rice seeds are planted in the soil. 3. Watering - The crops need water to grow. 4. Growing - With sunlight, soil and water, the rice plant grows. 5. Harvesting - The ripe crop is cut and collected. 6. Threshing - Grains are separated from the plant. 7. Transporting - Grains are sent to shops and markets. 8. Cooking - The rice is cooked at home and finally reaches our plate.",
+          "explanation": "The journey involves many steps and many people's hard work. Many elements of nature like soil, water, sunlight and air also help in this journey."
+        }
+      ]
+    },
+    {
+      "topic": "Exercise, Yoga and Sleep",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "Which yoga pose is also called the Tree Pose?",
+          "options": ["Tadasana", "Vrikshasana", "Bhujangasana", "Balasana"],
+          "answer": "Vrikshasana",
+          "explanation": "Vrikshasana is the Tree Pose. It helps build concentration and leg strength."
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "Children need about ______ hours of sleep every night.",
+          "answer": "9-11",
+          "explanation": "Children need about 9-11 hours of sleep every night. Getting enough sleep is important for staying healthy and active."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "mcq",
+          "question": "Which of these is an outdoor game played in India?",
+          "options": ["Chess", "Kabaddi", "Carrom", "Ludo"],
+          "answer": "Kabaddi",
+          "explanation": "Kabaddi is a popular outdoor game played in India. Playing outdoor games is a fun way to exercise and stay healthy."
+        },
+        {
+          "id": "ch6-t2-e4",
+          "type": "short",
+          "question": "What happens when we do not get enough sleep?",
+          "answer": "We feel tired, sleepy and irritable. It becomes hard to focus on work or play, and we may fall sick more easily.",
+          "explanation": "Sleep is very important for our health. Our body needs rest after a busy day of playing and studying."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "Name two yoga poses and their benefits.",
+          "answer": "1. Tadasana (Mountain Pose) improves posture and balance. 2. Bhujangasana (Cobra Pose) strengthens the back.",
+          "explanation": "Yoga is a great form of exercise that keeps our body strong and our mind calm. Regular practice has many health benefits."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "mcq",
+          "question": "Why is regular exercise important for children?",
+          "options": ["It makes us tired", "It makes us strong, energetic and happy", "It is not important", "It helps us sleep less"],
+          "answer": "It makes us strong, energetic and happy",
+          "explanation": "Regular physical activity keeps us strong, energetic and happy. It also improves our posture and helps us focus better in studies."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "Write about three things that are important for a healthy life and explain why each one matters.",
+          "answer": "Three things important for a healthy life are: 1. Good food - We should eat a balanced meal with foods from all three food groups. Good food gives us energy, helps us grow and protects us from diseases. 2. Regular exercise - Playing outdoor games, cycling, swimming and doing yoga keeps our body strong and our mind happy. It improves our posture and helps us focus in studies. 3. Enough sleep - Children need 9-11 hours of sleep every night. Sleep helps our body repair itself and our brain organise what we learned during the day. Without enough sleep, we feel tired and cannot focus.",
+          "explanation": "Good food, regular exercise and proper sleep together make up a healthy lifestyle. All three are equally important for children."
+        }
+      ]
+    },
+    {
+      "topic": "Mindful Eating and Feeling Safe",
+      "easy": [
+        {
+          "id": "ch6-t3-e1",
+          "type": "mcq",
+          "question": "What does mindful eating mean?",
+          "options": ["Eating very fast", "Eating while watching TV", "Paying full attention to what we eat", "Eating only sweets"],
+          "answer": "Paying full attention to what we eat",
+          "explanation": "Mindful eating means sitting calmly, eating slowly, chewing well and enjoying every bite of our food without rushing."
+        },
+        {
+          "id": "ch6-t3-e2",
+          "type": "fill",
+          "question": "Your ______ helps you taste the food you eat.",
+          "answer": "tongue",
+          "explanation": "The tongue helps us taste different flavours in food. Teeth break food into smaller pieces, making it easier to swallow."
+        },
+        {
+          "id": "ch6-t3-e3",
+          "type": "short",
+          "question": "Give two tips to avoid wasting food.",
+          "answer": "1. Take only as much food as you can eat. 2. Finish everything on your plate before asking for more.",
+          "explanation": "Every grain is precious because many people and elements of nature worked hard to bring it to our plate."
+        },
+        {
+          "id": "ch6-t3-e4",
+          "type": "mcq",
+          "question": "A hug from your mother is an example of a ______ touch.",
+          "options": ["Unsafe", "Bad", "Safe", "Scary"],
+          "answer": "Safe",
+          "explanation": "A safe touch makes you feel comfortable and happy, like a hug from your mother or a pat on the back from your teacher."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t3-m1",
+          "type": "short",
+          "question": "What should you do if someone's touch makes you feel uncomfortable?",
+          "answer": "1. Say 'No' firmly. 2. Move away from that person. 3. Tell a trusted adult immediately, like your parents, teacher or a family member.",
+          "explanation": "It is important to know the difference between safe and unsafe touch. You should never feel guilty about saying 'No' to anyone who makes you uncomfortable."
+        },
+        {
+          "id": "ch6-t3-m2",
+          "type": "mcq",
+          "question": "What is the benefit of mindful eating?",
+          "options": ["We eat more food", "We eat faster", "We enjoy food more and waste less", "We skip meals"],
+          "answer": "We enjoy food more and waste less",
+          "explanation": "When we eat mindfully, we enjoy our food more, make healthier choices and waste less food."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t3-h1",
+          "type": "long",
+          "question": "Explain the difference between a safe touch and an unsafe touch. What steps should a child take if they feel unsafe?",
+          "answer": "A safe touch is one that makes you feel comfortable and happy, like a warm hug from your parents, a pat on the back from your teacher, or holding hands with a friend. An unsafe touch is one that makes you feel uneasy, scared or uncomfortable. If a child feels unsafe, they should: 1. Say 'No' firmly and clearly to the person. 2. Move away from that person immediately. 3. Tell a trusted adult like their parents, teacher or a family member right away. A child should never feel guilty about saying 'No'. Their safety is most important.",
+          "explanation": "Knowing about safe and unsafe touch is important for every child. Speaking up and telling a trusted adult helps keep children safe."
+        }
+      ]
+    }
+  ]
+}

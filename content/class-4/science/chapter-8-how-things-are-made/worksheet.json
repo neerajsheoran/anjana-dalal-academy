@@ -1,0 +1,156 @@
+{
+  "topics": [
+    {
+      "topic": "Paper and How It Is Made",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "Paper is made from which natural material?",
+          "options": ["Plastic", "Metal", "Wood from trees", "Sand"],
+          "answer": "Wood from trees",
+          "explanation": "Paper is made from the wood of trees. The wood is broken into tiny pieces called wood pulp, which is then processed into paper."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "In earlier times, people in India wrote on palm leaves called ______.",
+          "answer": "talapatra",
+          "explanation": "Before paper was invented, people in India used palm leaves called talapatra to write on. People also wrote on cloth, leaves and wooden boards."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which type of paper has raised bumps that help visually challenged people read?",
+          "options": ["Chart paper", "Tissue paper", "Braille paper", "Art paper"],
+          "answer": "Braille paper",
+          "explanation": "Braille paper has tiny raised bumps that represent letters, numbers and punctuation marks. Visually challenged people read by touching these bumps."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "short",
+          "question": "Name three things that are made from paper.",
+          "answer": "Books, newspapers and greeting cards are made from paper.",
+          "explanation": "We use paper in many forms in our daily life, including notebooks, newspapers, tissue paper, greeting cards and cardboard boxes."
+        },
+        {
+          "id": "ch8-t1-e5",
+          "type": "mcq",
+          "question": "Which type of paper is thick and hard, used for making boxes?",
+          "options": ["Tissue paper", "Newspaper", "Cardboard", "Writing paper"],
+          "answer": "Cardboard",
+          "explanation": "Cardboard is thick and hard, making it perfect for boxes and packaging."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Describe how paper is made from trees in simple steps.",
+          "answer": "1. Trees are cut down and wood is collected. 2. The wood is broken into tiny pieces called wood pulp. 3. The pulp is mixed with water and chemicals. 4. The wet mixture is spread into thin sheets. 5. The sheets are dried to become paper.",
+          "explanation": "Making paper requires many trees and a lot of water and energy. That is why we should use paper carefully and not waste it."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "mcq",
+          "question": "Which natural ingredient gives a yellow colour when used as a dye for paper?",
+          "options": ["Spinach", "Beetroot", "Turmeric (haldi)", "Henna (mehndi)"],
+          "answer": "Turmeric (haldi)",
+          "explanation": "Turmeric gives a yellow colour. Other natural dyes include spinach (green), beetroot (pink/red) and henna (brown/orange)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "How can you make recycled paper at home using old newspapers? Describe the steps.",
+          "answer": "To make recycled paper at home: 1. Tear old newspapers into small pieces. 2. Soak the pieces in water with some fenugreek seeds (methi) and leave overnight. The methi seeds act as a binding material like glue. 3. Mash the soaked paper and seeds into a wet paste called paper pulp using hands or a grinder. 4. Spread the paste on a flat surface and roll it into a thin sheet. 5. Dry the sheet completely. The recycled paper is ready and can be used to make greeting cards, decorative items or paper masks.",
+          "explanation": "Recycling old paper into new paper is a great way to reduce waste and save trees. It is also a fun activity to try at home."
+        }
+      ]
+    },
+    {
+      "topic": "The 5Rs of Waste Management",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "What does the R in 'Refuse' mean in the 5Rs?",
+          "options": ["Use more things", "Say 'No' to things that create waste", "Throw things away", "Buy new things"],
+          "answer": "Say 'No' to things that create waste",
+          "explanation": "Refuse means saying 'No' to things that create waste. For example, refusing single-use paper cups and using your own reusable cup instead."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "Writing on both sides of a paper before throwing it away is an example of ______.",
+          "answer": "Reduce",
+          "explanation": "Reduce means using things carefully so that less waste is produced. Writing on both sides reduces paper waste."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "Kabir paints an old bottle and uses it as a flower vase. This is an example of which R?",
+          "options": ["Refuse", "Reduce", "Repurpose", "Recycle"],
+          "answer": "Repurpose",
+          "explanation": "Repurpose means using something in a new and creative way. Kabir gave the old bottle a new use as a flower vase."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "short",
+          "question": "What are the 5Rs of waste management?",
+          "answer": "The 5Rs are Refuse, Reduce, Reuse, Repurpose and Recycle.",
+          "explanation": "Following the 5Rs helps us manage waste and protect the environment."
+        },
+        {
+          "id": "ch8-t2-e5",
+          "type": "mcq",
+          "question": "Sara gives her old books to younger students. This is an example of which R?",
+          "options": ["Refuse", "Recycle", "Reuse", "Repurpose"],
+          "answer": "Reuse",
+          "explanation": "Reuse means using something again and again before throwing it away. Sara's old books can be read by younger students."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Give one example each for Refuse, Reuse and Repurpose from daily life.",
+          "answer": "Refuse: Say no to plastic straws when drinking coconut water. Reuse: Use a cloth bag again and again when going to the market. Repurpose: Cut old clothes and stitch them into a bag for carrying books.",
+          "explanation": "The 5Rs help us reduce waste in creative ways. Each R offers a different approach to managing waste in our daily life."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "mcq",
+          "question": "A shopkeeper turns old newspapers into paper envelopes. This is an example of which R?",
+          "options": ["Refuse", "Reduce", "Reuse", "Recycle"],
+          "answer": "Recycle",
+          "explanation": "Recycle means turning old things into something new through a special process. Making paper envelopes from old newspapers is recycling."
+        },
+        {
+          "id": "ch8-t2-m3",
+          "type": "fill",
+          "question": "Using something in a new and creative way is called ______.",
+          "answer": "Repurpose",
+          "explanation": "Repurpose means finding a new creative use for an old item. For example, using an old bottle as a flower vase."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Why is it important to save paper? How can we help save trees by following the 5Rs? Give at least four examples.",
+          "answer": "It is important to save paper because paper is made from trees. Cutting too many trees harms forests, the animals that live in them, and uses a lot of water and energy. We can help by following the 5Rs: 1. Refuse - Say no to paper cups and use our own reusable cups. 2. Reduce - Write on both sides of paper to use less. 3. Reuse - Give old textbooks to younger students instead of throwing them away. 4. Repurpose - Turn old newspapers into decorative items or paper bags. 5. Recycle - Collect old newspapers and send them for recycling into new paper. By making these small changes, we can save many trees and protect forests.",
+          "explanation": "Every small step counts. Saving paper means fewer trees are cut, less water and energy is used, and less waste goes to landfills."
+        },
+        {
+          "id": "ch8-t2-h2",
+          "type": "long",
+          "question": "Match the following situations with the correct R and explain your answer: 1. Maya does not use a plastic straw. 2. Rohan uses blank pages from old notebooks for rough work. 3. Priya cuts old clothes to make a bag.",
+          "answer": "1. Maya does not use a plastic straw - this is Refuse because she is saying 'No' to something that would create waste. 2. Rohan uses blank pages from old notebooks for rough work - this is Reduce because he is using paper carefully so that less new paper is needed. 3. Priya cuts old clothes to make a bag - this is Repurpose because she is using something old in a new and creative way instead of throwing it away.",
+          "explanation": "Each of the 5Rs helps in a different way. Refuse means not taking wasteful items, Reduce means using less, and Repurpose means finding new uses for old things."
+        }
+      ]
+    }
+  ]
+}

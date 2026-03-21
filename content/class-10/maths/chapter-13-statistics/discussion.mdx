@@ -1,0 +1,85 @@
+---
+chapterRef: Chapter 13 — Statistics
+---
+
+## Mean of Grouped Data
+
+**Kiran:** Papa, we have three methods to find the mean — direct, assumed mean, and step deviation. They all give the same answer, so why learn three?
+
+**Ravi:** Because the numbers change. When the frequencies and class marks are small, the direct method is fast. When they are large, the assumed mean method reduces the computation by working with smaller deviations. The step deviation method goes one step further by dividing those deviations by the class size, making the numbers even smaller.
+
+**Kiran:** So in the board exam, which one should I use?
+
+**Ravi:** If the question specifies a method, use that one. Otherwise, use the step deviation method — it involves the smallest numbers and the fewest arithmetic errors. The CBSE marking scheme accepts any correct method unless the question specifies.
+
+**Kiran:** The class mark is just the midpoint of each class interval?
+
+**Ravi:** Yes. Upper limit plus lower limit, divided by 2. The class mark represents all the values in that interval, which is an approximation. In real data science — the kind used at Indian tech companies like Infosys or TCS — more sophisticated methods handle this, but the class mark approach works well for CBSE-level problems.
+
+---
+
+## Mode of Grouped Data
+
+**Kiran:** The mode formula looks intimidating — l plus f1 minus f0 over 2f1 minus f0 minus f2, all times h.
+
+**Ravi:** Break it down. First, identify the modal class — the class with the highest frequency. Then l is the lower limit of that class, f1 is its frequency, f0 is the frequency of the class just before it, and f2 is the frequency of the class just after it. The formula adjusts the lower limit based on how much the modal class frequency dominates its neighbours.
+
+**Kiran:** What if two classes have the same highest frequency?
+
+**Ravi:** Then the data is bimodal, and this formula does not directly apply. However, CBSE problems are always designed to have a unique modal class, so you will not encounter this situation in the board exam.
+
+**Kiran:** When would mode be more useful than mean in real life?
+
+**Ravi:** When you want the most common or typical value. A garment shop wants to know the most popular shirt size — that is the mode. A school wants to know the most common score range — that is the mode. The mean would be skewed by extreme values, but the mode tells you what is most frequent.
+
+---
+
+## Median of Grouped Data
+
+**Kiran:** The median formula is similar to the mode formula in structure. How do I find the median class?
+
+**Ravi:** Calculate n over 2, where n is the total frequency. Then look at the cumulative frequency column. The class whose cumulative frequency first exceeds n over 2 is the median class. Then apply the formula: l plus n over 2 minus cf, divided by f, times h — where cf is the cumulative frequency of the class just before the median class.
+
+**Kiran:** Building the cumulative frequency table correctly is crucial then.
+
+**Ravi:** Absolutely. One error in the cumulative frequency column cascades through the entire calculation. Build it carefully — add each frequency to the running total and double-check that the final cumulative frequency equals n.
+
+**Kiran:** The empirical relationship — 3 median equals mode plus 2 mean — is that exact?
+
+**Ravi:** It is an approximation that works for moderately skewed distributions. Use it only when the question specifically asks or when you need to estimate one measure from the other two. The CBSE exam has asked "if mean is 24.5 and mode is 23.5, find the median" — apply the formula.
+
+---
+
+## Ogives
+
+**Kiran:** The cumulative frequency curves look elegant. The "less than" ogive rises and the "more than" ogive falls.
+
+**Ravi:** Yes. The "less than" ogive plots upper class limits against cumulative frequencies, forming an S-shaped rising curve. The "more than" ogive plots lower class limits against cumulative frequencies from the bottom, forming a falling curve. When you draw both on the same graph, they intersect — and the x-coordinate of the intersection point is the median.
+
+**Kiran:** So I can find the median graphically without the formula?
+
+**Ravi:** Exactly. This graphical method is a powerful visual check. You can also find the median from a single "less than" ogive by marking n over 2 on the y-axis, drawing a horizontal line to the curve, and dropping a vertical to the x-axis. This graphical approach is a popular 4-5 mark question in boards.
+
+---
+
+## Board Exam Strategy
+
+**Kiran:** How many marks does this chapter carry?
+
+**Ravi:** Usually 4-6 marks. Common questions include finding the mean by a specified method, finding the median, and drawing ogives. Mode questions also appear but less frequently.
+
+**Kiran:** Key mistakes to watch for?
+
+**Ravi:** First, errors in the cumulative frequency column. Second, wrong identification of the median class — it is the class where cumulative frequency first exceeds n over 2, not exactly equals it. Third, for the mode formula, mixing up f0, f1, and f2 — f0 is the class before the modal class, f2 is after. Fourth, for ogives, using the wrong class limit — "less than" uses upper limits, "more than" uses lower limits. Precision and careful tabulation are the keys to full marks.
+
+---
+
+## Statistics in Modern India
+
+**Kiran:** Is statistics used beyond exams?
+
+**Ravi:** Statistics is one of the most practically useful branches of mathematics. India's Census uses mean, median, and mode to analyse population data. The Reserve Bank of India uses statistical measures to track inflation. Election analysts use statistics to predict outcomes. Data scientists at Indian tech companies use advanced versions of these measures — including standard deviation and regression — to build recommendation engines, detect fraud, and analyse business performance.
+
+**Kiran:** P.C. Mahalanobis was a famous Indian statistician?
+
+**Ravi:** Yes. Prasanta Chandra Mahalanobis founded the Indian Statistical Institute in Kolkata and developed the Mahalanobis distance, used worldwide in statistics and machine learning. He also designed India's first Five-Year Plans using statistical analysis. India celebrates National Statistics Day on June 29, his birthday. The mean, median, and mode you learn now are the building blocks of the entire field that Mahalanobis helped shape.
