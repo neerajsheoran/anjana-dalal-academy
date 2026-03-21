@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import WorksheetView from "./WorksheetView";
 import ContentBlur from "./ContentBlur";
+import DiscussionAudio from "./DiscussionAudio";
 import { WorksheetData } from "@/lib/types";
 
 interface Heading {
@@ -37,6 +38,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
 export default function ChapterTabs({ children, worksheet, discussionContent, isLoggedIn, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
+  const discussionRef = useRef<HTMLDivElement>(null);
 
   return (
     <div>
@@ -123,11 +125,16 @@ export default function ChapterTabs({ children, worksheet, discussionContent, is
       )}
 
       {activeTab === "discussion" && discussionContent && (
-        <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-          <ContentBlur isLoggedIn={isLoggedIn} currentPath={currentPath}>
-            {discussionContent}
-          </ContentBlur>
-        </article>
+        <>
+          <DiscussionAudio contentRef={discussionRef} />
+          <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
+            <ContentBlur isLoggedIn={isLoggedIn} currentPath={currentPath}>
+              <div ref={discussionRef}>
+                {discussionContent}
+              </div>
+            </ContentBlur>
+          </article>
+        </>
       )}
 
       {activeTab === "worksheet" && (
