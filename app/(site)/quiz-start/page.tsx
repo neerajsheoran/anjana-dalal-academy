@@ -13,9 +13,9 @@ const CLASSES = [
   { id: 'class-7', label: 'Class 7' },
 ];
 
-const SUBJECTS = [
-  { id: 'science', label: 'Science', icon: '🔬' },
+const ALL_SUBJECTS = [
   { id: 'maths', label: 'Mathematics', icon: '📐' },
+  { id: 'science', label: 'Science', icon: '🔬' },
 ];
 
 export default function QuizStartPage() {
@@ -23,6 +23,13 @@ export default function QuizStartPage() {
   const [selectedSubject, setSelectedSubject] = useState('science');
   const [selectedChapters, setSelectedChapters] = useState<string[]>([]);
   const router = useRouter();
+
+  const subjects = useMemo(
+    () => ALL_SUBJECTS.filter((s) =>
+      CHAPTERS.some((c) => c.classId === selectedClass && c.subject === s.id)
+    ),
+    [selectedClass],
+  );
 
   const availableChapters = useMemo(
     () =>
@@ -35,6 +42,15 @@ export default function QuizStartPage() {
   const handleClassChange = (cls: string) => {
     setSelectedClass(cls);
     setSelectedChapters([]);
+    // Auto-select subject if only one available
+    const subs = ALL_SUBJECTS.filter((s) =>
+      CHAPTERS.some((c) => c.classId === cls && c.subject === s.id)
+    );
+    if (subs.length === 1) {
+      setSelectedSubject(subs[0].id);
+    } else if (!subs.find((s) => s.id === selectedSubject)) {
+      setSelectedSubject(subs[0]?.id ?? 'maths');
+    }
   };
 
   const handleSubjectChange = (sub: string) => {
@@ -106,7 +122,7 @@ export default function QuizStartPage() {
             Select subject
           </h2>
           <div className="flex flex-wrap gap-2.5">
-            {SUBJECTS.map((sub) => (
+            {subjects.map((sub) => (
               <button
                 key={sub.id}
                 onClick={() => handleSubjectChange(sub.id)}

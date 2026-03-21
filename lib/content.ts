@@ -1621,6 +1621,20 @@ export function getChapter(chapterId: string): ChapterMeta | undefined {
   return CHAPTERS.find((c) => c.chapterId === chapterId);
 }
 
+// Helper: get subjects that have chapters for a given class
+export function getSubjectsForClass(classId: ClassId): SubjectInfo[] {
+  return SUBJECTS.filter((s) =>
+    CHAPTERS.some((c) => c.classId === classId && c.subject === s.id)
+  );
+}
+
+// Helper: get classes that have chapters for a given subject
+export function getClassesForSubject(subjectId: SubjectId): ClassInfo[] {
+  return CLASSES.filter((cls) =>
+    CHAPTERS.some((c) => c.classId === cls.id && c.subject === subjectId)
+  );
+}
+
 // Helper: get class label from ID
 export function getClassLabel(classId: ClassId): string {
   return CLASSES.find((c) => c.id === classId)?.label ?? classId;

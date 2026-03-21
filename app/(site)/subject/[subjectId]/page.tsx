@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CLASSES, SUBJECTS, getSubjectLabel } from "@/lib/content";
+import { getClassesForSubject, SUBJECTS, getSubjectLabel } from "@/lib/content";
 import { SubjectId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
@@ -11,6 +11,7 @@ export default async function SubjectPage({
   const { subjectId } = await params;
   const subjectLabel = getSubjectLabel(subjectId);
   const subjectInfo = SUBJECTS.find((s) => s.id === subjectId);
+  const classes = getClassesForSubject(subjectId);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -24,7 +25,7 @@ export default async function SubjectPage({
         <p className="text-gray-500 mb-8">Choose a class to start learning</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-          {CLASSES.map((cls) => (
+          {classes.map((cls) => (
             <Link
               key={cls.id}
               href={`/subject/${subjectId}/${cls.id}`}

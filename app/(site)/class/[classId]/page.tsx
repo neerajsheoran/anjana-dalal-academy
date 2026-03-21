@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SUBJECTS, getClassLabel } from "@/lib/content";
+import { getSubjectsForClass, getClassLabel } from "@/lib/content";
 import { ClassId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
@@ -27,6 +27,7 @@ export default async function ClassPage({
 }) {
   const { classId } = await params;
   const classLabel = getClassLabel(classId);
+  const subjects = getSubjectsForClass(classId);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -37,7 +38,7 @@ export default async function ClassPage({
         <p className="text-gray-500 mb-8">Choose a subject to start learning</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {SUBJECTS.map((subject) => {
+          {subjects.map((subject) => {
             const styles = SUBJECT_STYLES[subject.id];
             return (
               <Link
