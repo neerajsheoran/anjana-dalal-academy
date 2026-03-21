@@ -6,19 +6,77 @@ interface DiscussionAudioProps {
   contentRef: React.RefObject<HTMLDivElement | null>;
 }
 
+// Split text into chunks small enough for Chrome's SpeechSynthesis
+// (Chrome silently fails on long text ~300+ chars)
+function splitIntoChunks(text: string, maxLen = 200): string[] {
+  const chunks: string[] = [];
+  // Split by sentences first
+  const sentences = text.split(/(?<=[.!?।])\s+/);
+  let current = "";
+
+  for (const sentence of sentences) {
+    if (current.length + sentence.length > maxLen && current.length > 0) {
+      chunks.push(current.trim());
+      current = sentence;
+    } else {
+      current += (current ? " " : "") + sentence;
+    }
+  }
+  if (current.trim()) chunks.push(current.trim());
+  return chunks.filter((c) => c.length > 0);
+}
+
 export default function DiscussionAudio({ contentRef }: DiscussionAudioProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [supported, setSupported] = useState(true);
-  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const chunksRef = useRef<string[]>([]);
+  const chunkIndexRef = useRef(0);
+  const stoppedRef = useRef(false);
 
   useEffect(() => {
     if (typeof window === "undefined" || !window.speechSynthesis) {
       setSupported(false);
     }
     return () => {
+      stoppedRef.current = true;
       window.speechSynthesis?.cancel();
     };
+  }, []);
+
+  const speakChunk = useCallback((index: number) => {
+    const synth = window.speechSynthesis;
+    const chunks = chunksRef.current;
+
+    if (stoppedRef.current || index >= chunks.length) {
+      setIsPlaying(false);
+      setIsPaused(false);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(chunks[index]);
+    utterance.lang = "en-IN";
+    utterance.rate = 0.95;
+    utterance.pitch = 1;
+
+    // Try to pick an English voice
+    const voices = synth.getVoices();
+    const enVoice = voices.find((v) => v.lang.startsWith("en-IN"))
+      || voices.find((v) => v.lang.startsWith("en"));
+    if (enVoice) utterance.voice = enVoice;
+
+    utterance.onend = () => {
+      chunkIndexRef.current = index + 1;
+      if (!stoppedRef.current) {
+        speakChunk(index + 1);
+      }
+    };
+    utterance.onerror = () => {
+      setIsPlaying(false);
+      setIsPaused(false);
+    };
+
+    synth.speak(utterance);
   }, []);
 
   const handlePlay = useCallback(() => {
@@ -33,29 +91,18 @@ export default function DiscussionAudio({ contentRef }: DiscussionAudioProps) {
     }
 
     synth.cancel();
+    stoppedRef.current = false;
 
     const text = contentRef.current.innerText;
     if (!text.trim()) return;
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-IN";
-    utterance.rate = 0.95;
-    utterance.pitch = 1;
+    chunksRef.current = splitIntoChunks(text);
+    chunkIndexRef.current = 0;
 
-    utterance.onend = () => {
-      setIsPlaying(false);
-      setIsPaused(false);
-    };
-    utterance.onerror = () => {
-      setIsPlaying(false);
-      setIsPaused(false);
-    };
-
-    utteranceRef.current = utterance;
-    synth.speak(utterance);
     setIsPlaying(true);
     setIsPaused(false);
-  }, [contentRef, isPaused]);
+    speakChunk(0);
+  }, [contentRef, isPaused, speakChunk]);
 
   const handlePause = useCallback(() => {
     window.speechSynthesis.pause();
@@ -64,7 +111,10 @@ export default function DiscussionAudio({ contentRef }: DiscussionAudioProps) {
   }, []);
 
   const handleStop = useCallback(() => {
+    stoppedRef.current = true;
     window.speechSynthesis.cancel();
+    chunksRef.current = [];
+    chunkIndexRef.current = 0;
     setIsPlaying(false);
     setIsPaused(false);
   }, []);
