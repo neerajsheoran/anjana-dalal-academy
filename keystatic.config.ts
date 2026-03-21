@@ -145,6 +145,34 @@ function makeWorksheetCollection(
   });
 }
 
+function makeDiscussionCollection(
+  classId: string,
+  subject: string,
+  label: string,
+  icon: string
+): Collection<any, any> {
+  return collection({
+    label: `${icon} ${label} — Discussions`,
+    path: `content/${classId}/${subject}/*/discussion`,
+    slugField: 'chapterRef',
+    format: { contentField: 'content' },
+    entryLayout: 'content',
+    columns: ['chapterRef'],
+    schema: {
+      chapterRef: fields.slug({
+        name: {
+          label: 'Chapter Reference',
+          description: 'This links the discussion to a chapter. Use the same slug as the chapter folder.',
+        },
+      }),
+      content: fields.mdx({
+        label: 'Discussion Content',
+        description: 'Ravi-Kiran conversation explaining concepts with Indian daily-life examples.',
+      }),
+    },
+  });
+}
+
 // ─── Build collections and navigation dynamically ─────────────────────────────
 const collections: Record<string, Collection<any, any>> = {};
 const navigation: Record<string, string[]> = {};
@@ -152,14 +180,16 @@ const navigation: Record<string, string[]> = {};
 for (const { classId, subject, label, icon } of classSubjects) {
   const notesKey = `${classId}-${subject}-notes`;
   const worksheetsKey = `${classId}-${subject}-worksheets`;
+  const discussionsKey = `${classId}-${subject}-discussions`;
 
   collections[notesKey] = makeNotesCollection(classId, subject, label, icon);
   collections[worksheetsKey] = makeWorksheetCollection(classId, subject, label, icon);
+  collections[discussionsKey] = makeDiscussionCollection(classId, subject, label, icon);
 
   // Group by class in sidebar
   const classLabel = label.replace(/ (Maths|Science)$/, '');
   if (!navigation[classLabel]) navigation[classLabel] = [];
-  navigation[classLabel].push(notesKey, worksheetsKey);
+  navigation[classLabel].push(notesKey, worksheetsKey, discussionsKey);
 }
 
 // ─── Export config ────────────────────────────────────────────────────────────
