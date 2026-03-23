@@ -16,9 +16,11 @@ export async function GET(
   { params }: { params: Promise<{ path: string[] }> },
 ) {
   const { path: segments } = await params;
+  // Decode URL-encoded segments (spaces come as %20 from browser)
+  const decoded = segments.map((s) => decodeURIComponent(s));
 
   // Prevent directory traversal attacks
-  const filePath = path.join(process.cwd(), 'content', ...segments);
+  const filePath = path.join(process.cwd(), 'content', ...decoded);
   const contentBase = path.join(process.cwd(), 'content');
   if (!filePath.startsWith(contentBase)) {
     return new Response('Forbidden', { status: 403 });

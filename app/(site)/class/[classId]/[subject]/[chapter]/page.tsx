@@ -18,15 +18,17 @@ import path from "path";
 function makeMdxImage(classId: string, subject: string, chapter: string) {
   return function MdxImage({ src, alt }: { src?: string; alt?: string }) {
     if (!src) return null;
+    // MDX URL-encodes filenames (spaces → %20), decode for filesystem checks
+    const decoded = decodeURIComponent(src);
     // Check if local image file exists before rendering
-    if (!src.startsWith("/") && !src.startsWith("http")) {
-      const filePath = path.join(process.cwd(), "content", classId, subject, chapter, "content", src);
+    if (!decoded.startsWith("/") && !decoded.startsWith("http")) {
+      const filePath = path.join(process.cwd(), "content", classId, subject, chapter, "content", decoded);
       if (!fs.existsSync(filePath)) return null;
     }
     const resolved =
-      !src.startsWith("/") && !src.startsWith("http")
-        ? `/api/content-image/${classId}/${subject}/${chapter}/content/${src}`
-        : src;
+      !decoded.startsWith("/") && !decoded.startsWith("http")
+        ? `/api/content-image/${classId}/${subject}/${chapter}/content/${encodeURIComponent(decoded)}`
+        : decoded;
     // eslint-disable-next-line @next/next/no-img-element
     return <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg my-4" />;
   };
