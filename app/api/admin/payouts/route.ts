@@ -2,6 +2,7 @@ import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
+import { logAdminAction } from '@/lib/admin-log';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -58,6 +59,14 @@ export async function POST(req: Request) {
           commissionPaidAt: FieldValue.serverTimestamp(),
         });
       }
+
+      await logAdminAction({
+        action: 'mark_commission_paid',
+        adminUid,
+        targetUid: partnerUid,
+        targetName: (partnerData.name as string) || partnerUid,
+        details: `Paid ₹${amount} for ${subscriptionIds.length} subscription(s)`,
+      });
 
       return NextResponse.json({ ok: true });
     }

@@ -1,6 +1,7 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
+import { logAdminAction } from '@/lib/admin-log';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -36,6 +37,14 @@ export async function POST(req: Request) {
       await adminDb.collection('users').doc(uid).update({
         adminExtendedUntil: extendedUntil,
       });
+      const userDoc = await adminDb.collection('users').doc(uid).get();
+      await logAdminAction({
+        action: 'extend_subscription',
+        adminUid: admin,
+        targetUid: uid,
+        targetName: (userDoc.data()?.name as string) || uid,
+        details: `Extended by ${extendDays} days until ${extendedUntil.toLocaleDateString('en-IN')}`,
+      });
       return NextResponse.json({ ok: true, extendedUntil: extendedUntil.toISOString() });
     }
 
@@ -51,6 +60,11 @@ export async function POST(req: Request) {
       }
 
       await adminDb.doc('platformConfig/settings').set(update, { merge: true });
+      await logAdminAction({
+        action: 'update_config',
+        adminUid: admin,
+        details: `Updated: ${Object.keys(update).join(', ')}`,
+      });
       return NextResponse.json({ ok: true });
     }
 

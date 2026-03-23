@@ -1,6 +1,7 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
+import { logAdminAction } from '@/lib/admin-log';
 
 const ALLOWED_ROLES = ['student', 'teacher', 'partner'];
 
@@ -37,7 +38,16 @@ export async function POST(req: Request) {
   }
 
   try {
+    const userDoc = await adminDb.collection('users').doc(uid).get();
+    const userName = (userDoc.data()?.name as string) || uid;
     await adminDb.collection('users').doc(uid).update({ role });
+    await logAdminAction({
+      action: 'change_role',
+      adminUid: callerUid,
+      targetUid: uid,
+      targetName: userName,
+      details: `Changed role to ${role}`,
+    });
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('Failed to update role:', err);

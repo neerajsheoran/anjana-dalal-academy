@@ -2,11 +2,10 @@ import { cookies } from 'next/headers';
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { getPlatformConfig } from '@/lib/subscription';
 import { redirect } from 'next/navigation';
-import RoleSelector from '@/components/admin/RoleSelector';
 import ApplicationActions from '@/components/admin/ApplicationActions';
 import PlatformConfigEditor from '@/components/admin/PlatformConfigEditor';
-import SubscriptionExtender from '@/components/admin/SubscriptionExtender';
 import CommissionManager from '@/components/admin/CommissionManager';
+import UserTable from '@/components/admin/UserTable';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -54,6 +53,7 @@ async function getAllUsers() {
             year: 'numeric',
           })
         : '—',
+      isDeleted: d.deleted === true,
     };
   });
 }
@@ -148,17 +148,18 @@ export default async function AdminPage() {
     getCommissionData(),
   ]);
 
-  const totalUsers = users.length;
+  const activeUsers = users.filter((u) => !u.isDeleted);
+  const totalUsers = activeUsers.length;
   const byRole = {
-    student: users.filter((u) => u.role === 'student').length,
-    teacher: users.filter((u) => u.role === 'teacher').length,
-    partner: users.filter((u) => u.role === 'partner').length,
-    admin: users.filter((u) => u.role === 'admin').length,
+    student: activeUsers.filter((u) => u.role === 'student').length,
+    teacher: activeUsers.filter((u) => u.role === 'teacher').length,
+    partner: activeUsers.filter((u) => u.role === 'partner').length,
+    admin: activeUsers.filter((u) => u.role === 'admin').length,
   };
   const bySub = {
-    trial: users.filter((u) => u.subStatus === 'trial').length,
-    active: users.filter((u) => u.subStatus === 'active' || u.subStatus === 'extended').length,
-    expired: users.filter((u) => u.subStatus === 'expired').length,
+    trial: activeUsers.filter((u) => u.subStatus === 'trial').length,
+    active: activeUsers.filter((u) => u.subStatus === 'active' || u.subStatus === 'extended').length,
+    expired: activeUsers.filter((u) => u.subStatus === 'expired').length,
   };
 
   return (
@@ -193,69 +194,7 @@ export default async function AdminPage() {
         </div>
 
         {/* User table */}
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-          <div className="px-6 py-4 border-b border-gray-100">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
-              All Users
-            </h2>
-          </div>
-
-          {/* Desktop table */}
-          <div className="hidden sm:block">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-gray-100 text-left text-gray-400 text-xs uppercase tracking-wider">
-                  <th className="px-6 py-3">Name</th>
-                  <th className="px-6 py-3">Email</th>
-                  <th className="px-6 py-3">Role</th>
-                  <th className="px-6 py-3">Subscription</th>
-                  <th className="px-6 py-3">Extend</th>
-                </tr>
-              </thead>
-              <tbody>
-                {users.map((user) => (
-                  <tr key={user.uid} className="border-b border-gray-50 last:border-0">
-                    <td className="px-6 py-3 font-medium text-gray-800">{user.name}</td>
-                    <td className="px-6 py-3 text-gray-500">{user.email}</td>
-                    <td className="px-6 py-3">
-                      {user.role === 'admin' ? (
-                        <span className="text-sm font-medium text-blue-600">Admin</span>
-                      ) : (
-                        <RoleSelector uid={user.uid} currentRole={user.role} />
-                      )}
-                    </td>
-                    <td className="px-6 py-3">
-                      <SubBadge status={user.subStatus} />
-                    </td>
-                    <td className="px-6 py-3">
-                      {user.role !== 'admin' && (
-                        <SubscriptionExtender uid={user.uid} userName={user.name} />
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Mobile cards */}
-          <div className="sm:hidden divide-y divide-gray-100">
-            {users.map((user) => (
-              <div key={user.uid} className="px-6 py-4">
-                <p className="font-medium text-gray-800">{user.name}</p>
-                <p className="text-xs text-gray-400 mb-2">{user.email}</p>
-                <div className="flex items-center justify-between">
-                  {user.role === 'admin' ? (
-                    <span className="text-sm font-medium text-blue-600">Admin</span>
-                  ) : (
-                    <RoleSelector uid={user.uid} currentRole={user.role} />
-                  )}
-                  <span className="text-xs text-gray-400">{user.createdAt}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <UserTable users={users} />
 
         {/* Partner Applications — Pending */}
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
@@ -338,30 +277,6 @@ export default async function AdminPage() {
         </div>
       </div>
     </main>
-  );
-}
-
-function SubBadge({ status }: { status: string }) {
-  const styles: Record<string, string> = {
-    admin: 'bg-blue-50 text-blue-600',
-    active: 'bg-green-50 text-green-600',
-    extended: 'bg-green-50 text-green-600',
-    trial: 'bg-amber-50 text-amber-600',
-    expired: 'bg-red-50 text-red-500',
-    none: 'bg-gray-50 text-gray-400',
-  };
-  const labels: Record<string, string> = {
-    admin: 'Admin',
-    active: 'Active',
-    extended: 'Extended',
-    trial: 'Trial',
-    expired: 'Expired',
-    none: '—',
-  };
-  return (
-    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${styles[status] || styles.none}`}>
-      {labels[status] || '—'}
-    </span>
   );
 }
 

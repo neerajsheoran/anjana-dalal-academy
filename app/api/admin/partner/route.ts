@@ -2,6 +2,7 @@ import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
+import { logAdminAction } from '@/lib/admin-log';
 
 function generateReferralCode(name: string): string {
   const prefix = (name || 'PTR')
@@ -96,6 +97,14 @@ export async function POST(req: Request) {
       }
       // If no account yet, they'll get partner role on signup (handled in session route)
     }
+
+    await logAdminAction({
+      action: action === 'approve' ? 'approve_application' : 'reject_application',
+      adminUid: admin,
+      targetUid: data.uid || undefined,
+      targetName: data.name || undefined,
+      details: `Application ${applicationId} ${action === 'approve' ? 'approved' : 'rejected'}`,
+    });
 
     return NextResponse.json({ ok: true });
   } catch (err) {

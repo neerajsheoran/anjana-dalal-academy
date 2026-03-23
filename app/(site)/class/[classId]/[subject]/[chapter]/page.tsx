@@ -14,10 +14,17 @@ import path from "path";
 // Keystatic stores images in content/[classId]/[subject]/[chapterId]/content/filename
 // and writes relative paths like ![](filename.png) in the MDX.
 // This factory builds a chapter-aware img component that maps those to the API route.
+// Images that don't exist on disk are silently hidden (placeholders for future content).
 function makeMdxImage(classId: string, subject: string, chapter: string) {
   return function MdxImage({ src, alt }: { src?: string; alt?: string }) {
+    if (!src) return null;
+    // Check if local image file exists before rendering
+    if (!src.startsWith("/") && !src.startsWith("http")) {
+      const filePath = path.join(process.cwd(), "content", classId, subject, chapter, "content", src);
+      if (!fs.existsSync(filePath)) return null;
+    }
     const resolved =
-      src && !src.startsWith("/") && !src.startsWith("http")
+      !src.startsWith("/") && !src.startsWith("http")
         ? `/api/content-image/${classId}/${subject}/${chapter}/content/${src}`
         : src;
     // eslint-disable-next-line @next/next/no-img-element
