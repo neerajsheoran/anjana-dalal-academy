@@ -33,14 +33,14 @@ export default async function Header() {
   return (
     <header className="relative bg-white border-b border-gray-200">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div>
-          <Link href="/" className="text-2xl font-bold text-blue-700">
-            Anjana Dalal Academy
-          </Link>
-          <p className="text-sm text-gray-500 mt-1">
-            CBSE Learning Made Simple — Class 1 to 12
-          </p>
-        </div>
+        <Link href="/" className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="CogniLift" className="h-10 w-10" />
+          <div>
+            <span className="text-2xl font-bold text-blue-700">CogniLift</span>
+            <p className="text-xs text-gray-500">Smart Learning · Strong Foundations</p>
+          </div>
+        </Link>
 
         <MobileMenu user={user} />
       </div>

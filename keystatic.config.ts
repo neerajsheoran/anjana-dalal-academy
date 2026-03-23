@@ -211,7 +211,7 @@ export default config({
 
   ui: {
     brand: {
-      name: 'Anjana Dalal Academy — Content CMS',
+      name: 'CogniLift — Content CMS',
     },
     navigation,
   },

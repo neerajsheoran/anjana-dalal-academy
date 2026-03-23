@@ -88,8 +88,10 @@ function LoginForm() {
 
         {/* Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-blue-700">Anjana Dalal Academy</h1>
-          <p className="text-gray-500 text-sm mt-1">CBSE Learning Made Simple</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="CogniLift" className="h-16 w-16 mx-auto mb-3" />
+          <h1 className="text-2xl font-bold text-blue-700">CogniLift</h1>
+          <p className="text-gray-500 text-sm mt-1">Smart Learning · Strong Foundations</p>
         </div>
 
         {/* Tab toggle */}

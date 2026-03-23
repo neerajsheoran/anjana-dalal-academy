@@ -14,7 +14,7 @@ export default function PartnerPage() {
           </h1>
           <p className="text-indigo-100 text-lg max-w-xl mx-auto">
             Help students across India learn better. Refer families to
-            Anjana Dalal Academy and grow with us.
+            CogniLift and grow with us.
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function PartnerPage() {
           <Step
             number="3"
             title="Share & Earn"
-            description="Share Anjana Dalal Academy with students and families. Earn commission on every referral."
+            description="Share CogniLift with students and families. Earn commission on every referral."
           />
         </div>
 

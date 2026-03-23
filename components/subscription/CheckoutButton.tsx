@@ -97,7 +97,7 @@ export default function CheckoutButton({ userName, userEmail, amount, isLoggedIn
         key: orderData.keyId,
         amount: orderData.amount * 100,
         currency: orderData.currency,
-        name: "Anjana Dalal Academy",
+        name: "CogniLift",
         description: "Yearly Subscription — All Classes",
         order_id: orderData.orderId,
         prefill: {

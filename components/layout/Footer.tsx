@@ -7,12 +7,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-blue-700 mb-2">
-              Anjana Dalal Academy
-            </h3>
+            <div className="flex items-center gap-2 mb-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/logo.png" alt="CogniLift" className="h-8 w-8" />
+              <h3 className="text-lg font-bold text-blue-700">CogniLift</h3>
+            </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              CBSE learning made simple. Easy explanations and real-life
-              examples for every Indian student.
+              Smart Learning · Strong Foundations. CBSE content with easy
+              explanations and real-life examples for every Indian student.
             </p>
           </div>
 
@@ -64,7 +66,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-gray-100 mt-8 pt-6 text-center">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Anjana Dalal Academy. All rights reserved.
+            © {new Date().getFullYear()} CogniLift. All rights reserved.
           </p>
         </div>
       </div>
