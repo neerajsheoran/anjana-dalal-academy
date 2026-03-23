@@ -91,7 +91,7 @@ function LoginForm() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/logo.png" alt="CogniLift" className="h-16 w-16 mx-auto mb-3" />
           <h1 className="text-2xl font-bold text-blue-700">CogniLift</h1>
-          <p className="text-gray-500 text-sm mt-1">Smart Learning · Strong Foundations</p>
+          <p className="text-gray-500 text-sm mt-1">Clear Concepts · Strong Foundations</p>
         </div>
 
         {/* Tab toggle */}

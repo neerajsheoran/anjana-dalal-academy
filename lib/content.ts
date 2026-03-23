@@ -14,8 +14,6 @@ export const CLASSES: ClassInfo[] = [
   { id: "class-8", label: "Class 8" },
   { id: "class-9", label: "Class 9" },
   { id: "class-10", label: "Class 10" },
-  { id: "class-11", label: "Class 11" },
-  { id: "class-12", label: "Class 12" },
 ];
 
 export const SUBJECTS: SubjectInfo[] = [

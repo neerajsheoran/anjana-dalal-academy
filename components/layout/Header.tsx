@@ -35,10 +35,13 @@ export default async function Header() {
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="CogniLift" className="h-10 w-10" />
+          <img src="/images/logo.png" alt="CogniLift" className="h-14 w-14 sm:h-24 sm:w-24" />
           <div>
-            <span className="text-2xl font-bold text-blue-700">CogniLift</span>
-            <p className="text-xs text-gray-500">Smart Learning · Strong Foundations</p>
+            <span className="text-2xl sm:text-4xl font-extrabold tracking-tight">
+              <span className="text-blue-700">Cogni</span>
+              <span className="text-orange-500">Lift</span>
+            </span>
+            <p className="text-[10px] sm:text-sm text-gray-400 tracking-wide">Clear Concepts · Strong Foundations</p>
           </div>
         </Link>
 

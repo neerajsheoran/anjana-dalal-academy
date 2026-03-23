@@ -81,22 +81,6 @@ const CLASS_CARDS = [
     from: 'from-red-500',
     to: 'to-rose-700',
   },
-  {
-    id: 'class-11',
-    label: 'Class 11',
-    icon: '📐',
-    desc: 'Advanced concepts begin here',
-    from: 'from-emerald-500',
-    to: 'to-green-700',
-  },
-  {
-    id: 'class-12',
-    label: 'Class 12',
-    icon: '🎓',
-    desc: 'Final year — aim for the top',
-    from: 'from-fuchsia-500',
-    to: 'to-pink-700',
-  },
 ];
 
 export default function ClassesPage() {

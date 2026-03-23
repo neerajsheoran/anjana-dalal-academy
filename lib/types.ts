@@ -11,9 +11,7 @@ export type ClassId =
   | "class-7"
   | "class-8"
   | "class-9"
-  | "class-10"
-  | "class-11"
-  | "class-12";
+  | "class-10";
 
 export type SubjectId = "maths" | "science";
 

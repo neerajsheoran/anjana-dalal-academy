@@ -9,11 +9,14 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo.png" alt="CogniLift" className="h-8 w-8" />
-              <h3 className="text-lg font-bold text-blue-700">CogniLift</h3>
+              <img src="/images/logo.png" alt="CogniLift" className="h-14 w-14" />
+              <h3 className="text-xl font-extrabold tracking-tight">
+                <span className="text-blue-700">Cogni</span>
+                <span className="text-orange-500">Lift</span>
+              </h3>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Smart Learning · Strong Foundations. CBSE content with easy
+              Clear Concepts · Strong Foundations. CBSE content with easy
               explanations and real-life examples for every Indian student.
             </p>
           </div>

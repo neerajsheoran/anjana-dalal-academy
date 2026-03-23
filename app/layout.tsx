@@ -9,7 +9,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "CogniLift — Smart Learning, Strong Foundations",
+    default: "CogniLift — Clear Concepts, Strong Foundations",
     template: "%s | CogniLift",
   },
   description:
