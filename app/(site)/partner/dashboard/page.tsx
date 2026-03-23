@@ -182,6 +182,40 @@ export default async function PartnerDashboardPage() {
           </p>
         </div>
 
+        {/* How It Works */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            How It Works
+          </h2>
+          <div className="space-y-4">
+            <Step
+              number={1}
+              title="Copy your referral code"
+              description="Click the copy button above to copy your unique code."
+            />
+            <Step
+              number={2}
+              title="Share with students"
+              description="Send the code to students via WhatsApp, SMS, or in person. Anyone can use it!"
+            />
+            <Step
+              number={3}
+              title="Student subscribes"
+              description="When a student buys a subscription, they enter your code on the payment page under 'Have a referral code?'."
+            />
+            <Step
+              number={4}
+              title="You earn commission"
+              description="Once the payment is confirmed, your commission is automatically calculated and shows up here."
+            />
+            <Step
+              number={5}
+              title="Get paid"
+              description="When your pending amount is ready, the admin processes your payout. You can track everything below."
+            />
+          </div>
+        </div>
+
         {/* Referral List */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
@@ -256,6 +290,28 @@ export default async function PartnerDashboardPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+function Step({
+  number,
+  title,
+  description,
+}: {
+  number: number;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="flex gap-3">
+      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">
+        {number}
+      </div>
+      <div>
+        <p className="text-sm font-semibold text-gray-700">{title}</p>
+        <p className="text-xs text-gray-400 mt-0.5">{description}</p>
+      </div>
+    </div>
   );
 }
 
