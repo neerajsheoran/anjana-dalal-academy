@@ -190,6 +190,7 @@ export default async function AdminPage() {
             trialDays: config.trialDays,
             yearlyPriceINR: config.yearlyPriceINR,
             commissionPercent: config.commissionPercent,
+            referralDiscountPercent: config.referralDiscountPercent,
           }} />
         </div>
 

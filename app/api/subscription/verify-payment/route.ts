@@ -65,6 +65,8 @@ export async function POST(req: Request) {
     let validReferralCode: string | null = null;
     let commissionPercent = 0;
     let commissionAmountINR = 0;
+    let discountPercent = 0;
+    let discountAmountINR = 0;
 
     // Check referral code from payment, or fall back to user's existing referredBy
     const codeToCheck = referralCode?.toUpperCase();
@@ -73,8 +75,12 @@ export async function POST(req: Request) {
       if (codeDoc.exists && codeDoc.data()?.isActive === true) {
         validReferralCode = codeToCheck;
         referredByUid = codeDoc.data()!.partnerUid;
+        discountPercent = config.referralDiscountPercent;
+        discountAmountINR = Math.round((config.yearlyPriceINR * discountPercent) / 100);
         commissionPercent = config.commissionPercent;
-        commissionAmountINR = Math.round((config.yearlyPriceINR * commissionPercent) / 100);
+        // Commission is calculated on the amount actually paid (after discount)
+        const paidAmount = config.yearlyPriceINR - discountAmountINR;
+        commissionAmountINR = Math.round((paidAmount * commissionPercent) / 100);
       }
     } else {
       // Check if user was previously referred (for renewals)
@@ -82,16 +88,24 @@ export async function POST(req: Request) {
       if (userDoc.exists && userDoc.data()?.referredBy) {
         referredByUid = userDoc.data()!.referredBy;
         validReferralCode = userDoc.data()!.referralCode || null;
+        discountPercent = config.referralDiscountPercent;
+        discountAmountINR = Math.round((config.yearlyPriceINR * discountPercent) / 100);
         commissionPercent = config.commissionPercent;
-        commissionAmountINR = Math.round((config.yearlyPriceINR * commissionPercent) / 100);
+        const paidAmount = config.yearlyPriceINR - discountAmountINR;
+        commissionAmountINR = Math.round((paidAmount * commissionPercent) / 100);
       }
     }
+
+    const finalAmountINR = config.yearlyPriceINR - discountAmountINR;
 
     // Create subscription document
     await adminDb.collection('subscriptions').add({
       uid,
       planType: 'yearly',
-      amountINR: config.yearlyPriceINR,
+      amountINR: finalAmountINR,
+      originalAmountINR: config.yearlyPriceINR,
+      discountPercent,
+      discountAmountINR,
       razorpayOrderId,
       razorpayPaymentId,
       razorpaySignature,

@@ -7,6 +7,7 @@ interface PlatformConfigEditorProps {
     trialDays: number;
     yearlyPriceINR: number;
     commissionPercent: number;
+    referralDiscountPercent: number;
   };
 }
 
@@ -14,6 +15,7 @@ export default function PlatformConfigEditor({ initialConfig }: PlatformConfigEd
   const [trialDays, setTrialDays] = useState(initialConfig.trialDays);
   const [yearlyPriceINR, setYearlyPriceINR] = useState(initialConfig.yearlyPriceINR);
   const [commissionPercent, setCommissionPercent] = useState(initialConfig.commissionPercent);
+  const [referralDiscountPercent, setReferralDiscountPercent] = useState(initialConfig.referralDiscountPercent);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
 
@@ -29,6 +31,7 @@ export default function PlatformConfigEditor({ initialConfig }: PlatformConfigEd
           trialDays,
           yearlyPriceINR,
           commissionPercent,
+          referralDiscountPercent,
         }),
       });
       if (res.ok) setSaved(true);
@@ -40,7 +43,7 @@ export default function PlatformConfigEditor({ initialConfig }: PlatformConfigEd
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div>
           <label className="block text-xs font-medium text-gray-500 mb-1">
             Trial Period (days)
@@ -71,6 +74,17 @@ export default function PlatformConfigEditor({ initialConfig }: PlatformConfigEd
             type="number"
             value={commissionPercent}
             onChange={(e) => setCommissionPercent(Number(e.target.value))}
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label className="block text-xs font-medium text-gray-500 mb-1">
+            Referral Discount (%)
+          </label>
+          <input
+            type="number"
+            value={referralDiscountPercent}
+            onChange={(e) => setReferralDiscountPercent(Number(e.target.value))}
             className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>

@@ -55,9 +55,15 @@ export async function POST(req: Request) {
   // Get price from config
   const config = await getPlatformConfig();
 
+  // Apply referral discount if valid code
+  const originalAmount = config.yearlyPriceINR;
+  const discountPercent = validReferralCode ? config.referralDiscountPercent : 0;
+  const discountAmount = Math.round((originalAmount * discountPercent) / 100);
+  const finalAmount = originalAmount - discountAmount;
+
   try {
     const order = await razorpay.orders.create({
-      amount: config.yearlyPriceINR * 100, // Razorpay expects paise
+      amount: finalAmount * 100, // Razorpay expects paise
       currency: 'INR',
       receipt: uid,
       notes: {
@@ -68,7 +74,10 @@ export async function POST(req: Request) {
 
     return NextResponse.json({
       orderId: order.id,
-      amount: config.yearlyPriceINR,
+      amount: finalAmount,
+      originalAmount,
+      discountAmount,
+      discountPercent,
       currency: 'INR',
       keyId: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
       userName,

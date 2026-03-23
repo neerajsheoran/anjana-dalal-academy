@@ -74,5 +74,6 @@ export interface PlatformConfig {
   trialDays: number;
   yearlyPriceINR: number;
   commissionPercent: number;
+  referralDiscountPercent: number;
   razorpayEnabled: boolean;
 }

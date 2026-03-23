@@ -5,6 +5,7 @@ const DEFAULT_CONFIG: PlatformConfig = {
   trialDays: 30,
   yearlyPriceINR: 999,
   commissionPercent: 10,
+  referralDiscountPercent: 10,
   razorpayEnabled: true,
 };
 
@@ -21,6 +22,7 @@ export async function getPlatformConfig(): Promise<PlatformConfig> {
       trialDays: d.trialDays ?? DEFAULT_CONFIG.trialDays,
       yearlyPriceINR: d.yearlyPriceINR ?? DEFAULT_CONFIG.yearlyPriceINR,
       commissionPercent: d.commissionPercent ?? DEFAULT_CONFIG.commissionPercent,
+      referralDiscountPercent: d.referralDiscountPercent ?? DEFAULT_CONFIG.referralDiscountPercent,
       razorpayEnabled: d.razorpayEnabled ?? DEFAULT_CONFIG.razorpayEnabled,
     };
   } catch {

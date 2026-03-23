@@ -53,6 +53,7 @@ export async function POST(req: Request) {
       if (typeof body.trialDays === 'number') update.trialDays = body.trialDays;
       if (typeof body.yearlyPriceINR === 'number') update.yearlyPriceINR = body.yearlyPriceINR;
       if (typeof body.commissionPercent === 'number') update.commissionPercent = body.commissionPercent;
+      if (typeof body.referralDiscountPercent === 'number') update.referralDiscountPercent = body.referralDiscountPercent;
       if (typeof body.razorpayEnabled === 'boolean') update.razorpayEnabled = body.razorpayEnabled;
 
       if (Object.keys(update).length === 0) {
