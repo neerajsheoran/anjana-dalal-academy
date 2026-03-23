@@ -1,7 +1,17 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { logAdminAction } from '@/lib/admin-log';
+
+function generateReferralCode(name: string): string {
+  const prefix = (name || 'PTR')
+    .replace(/[^a-zA-Z]/g, '')
+    .substring(0, 4)
+    .toUpperCase();
+  const suffix = Math.floor(1000 + Math.random() * 9000);
+  return `${prefix}${suffix}`;
+}
 
 const ALLOWED_ROLES = ['student', 'teacher', 'partner'];
 
@@ -39,8 +49,31 @@ export async function POST(req: Request) {
 
   try {
     const userDoc = await adminDb.collection('users').doc(uid).get();
-    const userName = (userDoc.data()?.name as string) || uid;
+    const userData = userDoc.data();
+    const userName = (userData?.name as string) || uid;
+    const userEmail = (userData?.email as string) || '';
     await adminDb.collection('users').doc(uid).update({ role });
+
+    // When setting role to partner, auto-generate a referral code if they don't have one
+    if (role === 'partner' && !userData?.partnerCode) {
+      let code = generateReferralCode(userName);
+      const existingCode = await adminDb.collection('referralCodes').doc(code).get();
+      if (existingCode.exists) {
+        code = generateReferralCode(userName) + Math.floor(Math.random() * 10);
+      }
+
+      await adminDb.collection('referralCodes').doc(code).set({
+        partnerUid: uid,
+        partnerName: userName,
+        partnerEmail: userEmail,
+        isActive: true,
+        createdAt: FieldValue.serverTimestamp(),
+        totalUses: 0,
+      });
+
+      await adminDb.collection('users').doc(uid).update({ partnerCode: code });
+    }
+
     await logAdminAction({
       action: 'change_role',
       adminUid: callerUid,
