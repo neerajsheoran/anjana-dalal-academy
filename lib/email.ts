@@ -1,12 +1,23 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 
 const FROM = 'CogniLift <noreply@cognilift.in>';
 
+function canSend() {
+  if (!resend) {
+    console.warn('RESEND_API_KEY not set — skipping email');
+    return false;
+  }
+  return true;
+}
+
 export async function sendWelcomeEmail(to: string, name: string, trialDays: number) {
+  if (!canSend()) return;
   try {
-    await resend.emails.send({
+    await resend!.emails.send({
       from: FROM,
       to,
       subject: 'Welcome to CogniLift!',
@@ -39,6 +50,7 @@ export async function sendSubscriptionConfirmedEmail(
   amountINR: number,
   endsAt: Date,
 ) {
+  if (!canSend()) return;
   try {
     const endDate = endsAt.toLocaleDateString('en-IN', {
       day: 'numeric',
@@ -46,7 +58,7 @@ export async function sendSubscriptionConfirmedEmail(
       year: 'numeric',
     });
 
-    await resend.emails.send({
+    await resend!.emails.send({
       from: FROM,
       to,
       subject: 'Subscription Confirmed — CogniLift',
@@ -86,8 +98,9 @@ export async function sendCommissionEarnedEmail(
   commissionINR: number,
   subscriptionAmountINR: number,
 ) {
+  if (!canSend()) return;
   try {
-    await resend.emails.send({
+    await resend!.emails.send({
       from: FROM,
       to,
       subject: 'New Referral Commission Earned — CogniLift',
@@ -126,6 +139,7 @@ export async function sendPayoutProcessedEmail(
   advisorName: string,
   amountINR: number,
 ) {
+  if (!canSend()) return;
   try {
     const date = new Date().toLocaleDateString('en-IN', {
       day: 'numeric',
@@ -133,7 +147,7 @@ export async function sendPayoutProcessedEmail(
       year: 'numeric',
     });
 
-    await resend.emails.send({
+    await resend!.emails.send({
       from: FROM,
       to,
       subject: 'Payout Processed — CogniLift',
