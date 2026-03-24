@@ -153,12 +153,6 @@ export default async function ChapterPage({
             </p>
           )}
           <div className="mt-4 flex items-center gap-3">
-            <a
-              href={`/quiz?class=${classId}&subject=${subject}&chapters=${chapter}`}
-              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-colors border border-white/30"
-            >
-              🧠 Quiz / Revision
-            </a>
             {isChapterCompleted && (
               <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-100 font-semibold px-3 py-1.5 rounded-lg text-sm border border-green-400/30">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

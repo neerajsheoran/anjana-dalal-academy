@@ -1,237 +1,197 @@
 {
   "topics": [
     {
-      "topic": "What is Science?",
+      "topic": "Where Does Science Begin?",
       "easy": [
         {
           "id": "ch1-t1-e1",
           "type": "mcq",
-          "question": "What does the word 'science' mean?",
-          "options": ["Magic", "Knowledge", "Story", "Art"],
-          "answer": "Knowledge",
-          "explanation": "The word 'science' comes from the Latin word 'scientia' which means knowledge."
+          "question": "Science is best described as —",
+          "options": ["A subject studied only in school", "A method of asking questions and finding testable answers", "A collection of facts to memorise", "Something only scientists do in laboratories"],
+          "answer": "A method of asking questions and finding testable answers",
+          "explanation": "Science is a process of investigating the natural world through questions, observations, and experiments — not just a set of facts."
         },
         {
           "id": "ch1-t1-e2",
           "type": "mcq",
-          "question": "What is the starting point of science?",
-          "options": ["A laboratory", "A textbook", "Curiosity", "A teacher"],
-          "answer": "Curiosity",
-          "explanation": "Science starts when we are curious and ask questions like 'why?' or 'how?' about things around us."
+          "question": "Which of these is a scientific question?",
+          "options": ["What is your favourite colour?", "Which cricketer is the best?", "Why do wet clothes dry faster in the sun?", "Is pizza better than biryani?"],
+          "answer": "Why do wet clothes dry faster in the sun?",
+          "explanation": "Scientific questions ask about natural events that can be observed and tested. Favourite colours and food preferences are opinions, not science."
         },
         {
           "id": "ch1-t1-e3",
           "type": "fill",
-          "question": "Science is a way of ______, observing, and doing things to understand the world.",
-          "answer": "thinking",
-          "explanation": "Science is not just facts — it is a way of thinking, observing, and exploring the world around us."
+          "question": "Every scientific discovery begins with ______.",
+          "options": [],
+          "answer": "curiosity",
+          "explanation": "Curiosity — the desire to understand why or how something happens — is the starting point of all science."
         },
         {
           "id": "ch1-t1-e4",
           "type": "mcq",
-          "question": "Which of these is an example of a scientific question?",
-          "options": ["What is your name?", "Why does a mango taste sour when raw?", "What is 2 + 2?", "What colour is your shirt?"],
-          "answer": "Why does a mango taste sour when raw?",
-          "explanation": "Scientific questions are about how or why things happen in the natural world. 'Why does a mango taste sour?' leads to exploring science."
+          "question": "The word 'science' comes from a Latin word meaning —",
+          "options": ["Power", "Knowledge", "Experiment", "Nature"],
+          "answer": "Knowledge",
+          "explanation": "The word science comes from the Latin word 'scientia' meaning knowledge."
         }
       ],
       "medium": [
         {
           "id": "ch1-t1-m1",
           "type": "short",
-          "question": "What is science? Write in your own words with one example.",
-          "answer": "Science is a way of thinking and observing carefully to understand how and why things happen. Example: Wondering why ice melts when held in the hand leads us to learn about heat and temperature.",
-          "explanation": "Science is not just school knowledge — it is a way of asking questions about everyday things and finding answers through observation and testing."
+          "question": "Explain in your own words: how is a scientific statement different from an opinion? Give one example of each.",
+          "options": [],
+          "answer": "A scientific statement can be tested and verified by anyone (e.g., 'water boils at 100°C at sea level'). An opinion is a personal belief that cannot be proven right or wrong (e.g., 'summer is the best season'). The key difference is testability — science deals with claims anyone can check.",
+          "explanation": "Science is built on testable, verifiable claims. Opinions are valid but cannot be investigated through experiments."
         },
         {
           "id": "ch1-t1-m2",
           "type": "short",
-          "question": "Give two questions from daily life that can be answered using science.",
-          "answer": "1. Why does milk turn sour if left outside overnight? 2. Why does a wet cloth dry faster in sunlight than in shade?",
-          "explanation": "Both questions involve natural events that can be observed, tested, and explained using scientific concepts like bacteria growth and evaporation."
+          "question": "Write two questions from your daily routine that could lead to a scientific investigation.",
+          "options": [],
+          "answer": "Example 1: Why does my steel water bottle feel colder than my wooden desk, even though both are at room temperature? Example 2: Why do some foods spoil in one day while others last a week in the same fridge?",
+          "explanation": "Good scientific questions arise from everyday observations. They should be specific and testable."
         }
       ],
       "hard": [
         {
           "id": "ch1-t1-h1",
-          "type": "short",
-          "question": "Science is described as a 'way of thinking' rather than just a collection of facts. What do you think this means? Explain with an example.",
-          "answer": "It means science is about the process of questioning, observing and testing — not just memorising answers. Example: Instead of just memorising that plants need sunlight, a scientist would ask 'what happens to a plant kept in the dark?' and actually test it to find out.",
-          "explanation": "Facts can change as we discover new things, but the scientific way of thinking — observe, question, test, conclude — remains the foundation of all discovery."
+          "type": "long",
+          "question": "A person says: 'Eating jaggery after a meal helps digestion. My grandmother has been doing it for 50 years.' Is this a scientific claim? What would a scientist do to test whether it is true?",
+          "options": [],
+          "answer": "It is a traditional belief, not yet a scientific claim — because it has not been tested under controlled conditions. A scientist would: (1) Form a hypothesis: jaggery aids digestion. (2) Design a controlled experiment: give jaggery after meals to one group and no jaggery to another, keeping diet, age, and health similar. (3) Measure digestion indicators (time, comfort) for both groups over several weeks. (4) Analyse data and draw conclusions. Only after this process can we know if the claim is scientifically supported.",
+          "explanation": "Traditional knowledge and science can complement each other. Many folk remedies have been scientifically validated — but the testing process is what transforms a belief into a scientific claim."
         }
       ]
     },
     {
-      "topic": "The Scientific Method",
+      "topic": "The Scientific Method — A Step-by-Step Approach",
       "easy": [
         {
           "id": "ch1-t2-e1",
           "type": "mcq",
-          "question": "What is the first step of the scientific method?",
-          "options": ["Doing an experiment", "Making a hypothesis", "Observation", "Drawing a conclusion"],
-          "answer": "Observation",
-          "explanation": "Observation — looking carefully at something — is always the first step. We can only ask a question after we notice something interesting."
+          "question": "What is the correct order of the first three steps of the scientific method?",
+          "options": ["Experiment → Observe → Conclude", "Observe → Question → Hypothesis", "Hypothesis → Observe → Question", "Conclude → Experiment → Observe"],
+          "answer": "Observe → Question → Hypothesis",
+          "explanation": "The scientific method begins with observation, then forming a question, then proposing a hypothesis (educated guess)."
         },
         {
           "id": "ch1-t2-e2",
           "type": "mcq",
-          "question": "What is a hypothesis?",
-          "options": ["A proven fact", "A random guess", "An educated guess that can be tested", "The result of an experiment"],
+          "question": "A hypothesis is —",
+          "options": ["A proven fact", "An educated guess that can be tested", "The final answer", "A question"],
           "answer": "An educated guess that can be tested",
-          "explanation": "A hypothesis is not just any guess. It is an educated guess based on what you already know, and it must be something you can test."
+          "explanation": "A hypothesis is not a random guess — it is based on what you already know and must be testable through an experiment."
         },
         {
           "id": "ch1-t2-e3",
           "type": "fill",
-          "question": "The step-by-step process scientists use to find answers is called the ______.",
-          "answer": "scientific method",
-          "explanation": "The scientific method guides scientists through observing, questioning, hypothesising, experimenting, and concluding."
+          "question": "In a fair experiment, you should change only ______ thing at a time.",
+          "options": [],
+          "answer": "one",
+          "explanation": "Changing only one variable at a time ensures you know exactly what caused the result. Changing multiple things makes the experiment unfair."
         },
         {
           "id": "ch1-t2-e4",
           "type": "mcq",
-          "question": "In an experiment, what should you change to keep the test fair?",
-          "options": ["Everything at once", "Nothing at all", "Only one thing at a time", "At least three things"],
-          "answer": "Only one thing at a time",
-          "explanation": "If you change more than one thing at a time, you won't know which change caused the result. A fair test changes only one variable."
+          "question": "If your experiment does not support your hypothesis, what should you do?",
+          "options": ["Change the results to match your guess", "Conclude that science does not work", "Revise your hypothesis and test again", "Stop experimenting immediately"],
+          "answer": "Revise your hypothesis and test again",
+          "explanation": "A result that does not match your guess is still useful — it tells you something new. Scientists update their hypothesis and test again. This is how science self-corrects."
         }
       ],
       "medium": [
         {
           "id": "ch1-t2-m1",
           "type": "short",
-          "question": "Write the 6 steps of the scientific method in the correct order.",
-          "answer": "1. Observe 2. Ask a question 3. Make a hypothesis 4. Do an experiment 5. Analyse results 6. Draw a conclusion",
-          "explanation": "These 6 steps form the scientific method. Each step builds on the previous one to help us find reliable answers."
+          "question": "Riya notices that her iron gate rusts but the stainless steel railing does not. Write a hypothesis she could test, and describe a simple experiment to test it.",
+          "options": [],
+          "answer": "Hypothesis: Iron rusts when exposed to water and air, but stainless steel does not rust because of its composition. Experiment: Place an iron nail and a stainless steel nail in separate jars with the same amount of water. Seal both jars and observe after one week. If only the iron nail rusts, the hypothesis is supported.",
+          "explanation": "A good experiment keeps all conditions the same except the one variable being tested — in this case, the type of metal."
         },
         {
           "id": "ch1-t2-m2",
           "type": "short",
-          "question": "Riya notices that her tulsi plant is leaning towards the window. Write a hypothesis she could test to explain this.",
-          "answer": "Hypothesis: The tulsi plant leans towards the window because it is growing towards sunlight. This can be tested by placing one plant near a window and another in a dark corner and observing which direction each plant grows.",
-          "explanation": "A good hypothesis is specific and testable. It says what you think is happening and gives a way to check if you are right."
+          "question": "List all six steps of the scientific method in order and write one sentence explaining each step.",
+          "options": [],
+          "answer": "1. Observe — Notice something carefully using your senses. 2. Question — Ask a specific 'why' or 'how' question. 3. Hypothesise — Propose a testable explanation. 4. Experiment — Design and conduct a fair test. 5. Analyse — Study the results and compare with your hypothesis. 6. Conclude — State what the evidence shows.",
+          "explanation": "Each step builds on the previous one to create a reliable chain from observation to knowledge."
         }
       ],
       "hard": [
         {
           "id": "ch1-t2-h1",
-          "type": "short",
-          "question": "Arjun does an experiment to see if plants grow better with fertiliser. He uses two pots — one with fertiliser and one without. But he uses different amounts of water for each pot. Is this a fair experiment? Explain why or why not and say how he should fix it.",
-          "answer": "No, it is not a fair experiment. He changed two things — the fertiliser AND the amount of water. If one plant grows better, we won't know if it was because of the fertiliser or because of the water. To fix it, he should keep the water amount exactly the same in both pots and only change whether fertiliser is added or not.",
-          "explanation": "A fair test (controlled experiment) only changes one variable at a time. All other conditions must be kept the same so the results can be trusted."
+          "type": "long",
+          "question": "Priya wants to test whether plants grow taller with music. She plays music for Plant A (placed near a window with lots of sunlight) and keeps Plant B silent (placed in a dark corner). After two weeks, Plant A is taller. She concludes that music helps plants grow. Is her conclusion valid? Explain what is wrong and how she should redesign the experiment.",
+          "options": [],
+          "answer": "Her conclusion is NOT valid. She changed two variables: music AND light. Plant A may have grown taller because of the sunlight, not the music. To fix this: both plants should be placed side by side in the same light, same temperature, same soil, and same water. The only difference should be whether music is played. If Plant A still grows taller after repeating this fair test, then she can conclude music had an effect.",
+          "explanation": "This is a classic example of an unfair experiment. When multiple variables change, you cannot identify the real cause. Fair testing requires isolating one variable at a time."
         },
         {
           "id": "ch1-t2-h2",
           "type": "short",
-          "question": "Why is drawing a conclusion the last step and not an earlier one? What could go wrong if we draw conclusions before doing the experiment?",
-          "answer": "Conclusions must be based on actual results from experiments, not on guesses. If we conclude before experimenting, we might be wrong and mislead others. For example, someone might wrongly conclude that 'eating neem leaves cures all diseases' without any testing — which could be dangerous.",
-          "explanation": "Conclusions are only reliable when backed by evidence from experiments. This is why science is trustworthy — it doesn't accept claims without proof."
+          "question": "Why is drawing a conclusion the last step and not an earlier one? What problems can occur if someone draws a conclusion before doing an experiment?",
+          "options": [],
+          "answer": "Conclusions must be based on evidence from actual experiments. If we conclude before testing, we risk believing something that is wrong. For example, ancient people concluded that heavy objects fall faster than light objects — without testing it. When Galileo actually tested it, he showed both fall at the same rate. Premature conclusions lead to myths and incorrect beliefs.",
+          "explanation": "Science insists on evidence before conclusions. This discipline is what separates reliable knowledge from guesswork and superstition."
         }
       ]
     },
     {
-      "topic": "Science in Daily Life",
+      "topic": "Science All Around You",
       "easy": [
         {
           "id": "ch1-t3-e1",
           "type": "mcq",
-          "question": "Which of these people uses scientific thinking in their work?",
-          "options": ["Only scientists in labs", "Only doctors", "Everyone including cooks, farmers and repair persons", "Only school teachers"],
-          "answer": "Everyone including cooks, farmers and repair persons",
-          "explanation": "Scientific thinking — observing, questioning, testing — is used by everyone. A cook adjusting a recipe, a farmer deciding when to water crops, all use scientific thinking."
+          "question": "A mechanic listens to a scooter engine, suspects the spark plug is faulty, replaces it, and the scooter starts. Which step of the scientific method did the mechanic use when suspecting the spark plug?",
+          "options": ["Observation", "Hypothesis", "Conclusion", "Experiment"],
+          "answer": "Hypothesis",
+          "explanation": "Suspecting the spark plug is faulty is an educated guess (hypothesis) based on the sound of the engine (observation). Replacing it is the experiment."
         },
         {
           "id": "ch1-t3-e2",
           "type": "mcq",
-          "question": "A bicycle repair person puts a tyre tube in water to find a puncture. What are they looking for?",
-          "options": ["Water entering the tube", "Air bubbles coming out", "The colour of the tube", "Rust on the tube"],
-          "answer": "Air bubbles coming out",
-          "explanation": "Air escapes from the puncture hole and forms bubbles in the water. This is a simple scientific observation to locate the exact spot of the puncture."
+          "question": "When other scientists repeat an experiment and check the results, this process is called —",
+          "options": ["Guessing", "Copying", "Peer review", "Memorising"],
+          "answer": "Peer review",
+          "explanation": "Peer review is the process where other scientists independently verify a finding by repeating the experiment and checking the results."
         },
         {
           "id": "ch1-t3-e3",
           "type": "fill",
-          "question": "A farmer decides when to sow seeds by observing the ______ and checking the soil.",
-          "answer": "weather",
-          "explanation": "Farmers use years of observation about weather patterns, soil conditions and seasons to make good decisions — this is applied scientific thinking."
+          "question": "A cook who tastes food, finds it too salty, and adds water to fix it is using ______ thinking.",
+          "options": [],
+          "answer": "scientific",
+          "explanation": "The cook observed (tasted), identified a problem (too salty), hypothesised a solution (add water), tested it, and checked the result — that is the scientific method in action."
         }
       ],
       "medium": [
         {
           "id": "ch1-t3-m1",
           "type": "short",
-          "question": "How does a doctor use the scientific method when a patient comes with a fever? Explain each step.",
-          "answer": "1. Observe: The patient has fever, headache, and body pain. 2. Question: What is causing the fever? 3. Hypothesis: It could be a viral infection. 4. Test: Blood test or examination. 5. Analyse: Check test results. 6. Conclusion: Diagnose the illness and prescribe medicine.",
-          "explanation": "Doctors follow the same steps as scientists — they observe symptoms, guess the cause, test it, and then conclude with a diagnosis."
+          "question": "Describe how a farmer uses scientific thinking when deciding when to plant wheat. Identify the observation, hypothesis, and test in the farmer's process.",
+          "options": [],
+          "answer": "Observation: The farmer checks soil moisture, watches for monsoon clouds, and notes the date. Hypothesis: If the soil is moist enough and the season is right, seeds will germinate well. Test: The farmer plants seeds and monitors germination over the next few days. If seeds sprout, the timing was correct. Over many seasons, this becomes refined knowledge.",
+          "explanation": "Farmers have been using the scientific method — observation, trial, and learning from results — for thousands of years, long before it was formally named."
         },
         {
           "id": "ch1-t3-m2",
           "type": "short",
-          "question": "Give one example from your home or school where someone uses scientific thinking without realising it.",
-          "answer": "Example: When someone cooking dal adds salt, tastes it, and adds more salt — they are observing (tasting), testing (adding salt), and adjusting based on results. This is the scientific method applied in cooking.",
-          "explanation": "We all use scientific thinking in small ways every day — tasting food and adjusting it, testing if a switch works by turning it on, or checking if a plant needs water by touching the soil."
+          "question": "Why is science called a 'team effort'? Give one real-world example where many people worked together to make a scientific achievement.",
+          "options": [],
+          "answer": "Science is a team effort because complex discoveries require different types of expertise that no single person has. Example: India's Chandrayaan-3 mission involved rocket engineers, software developers, geologists, and communication specialists — hundreds of people working together for years. No individual could have built, launched, and landed a spacecraft alone.",
+          "explanation": "Major scientific achievements are almost always collaborative. Sharing knowledge and dividing work among experts is what makes ambitious goals achievable."
         }
       ],
       "hard": [
         {
           "id": "ch1-t3-h1",
-          "type": "short",
-          "question": "A traditional Indian grandmother says 'applying turmeric on a cut heals it faster.' A scientist wants to test this claim. How would the scientist approach this using the scientific method? Write all the steps.",
-          "answer": "1. Observe: Turmeric is used traditionally on cuts and wounds. 2. Question: Does turmeric actually help wounds heal faster? 3. Hypothesis: Turmeric has antibacterial properties that may help wounds heal faster. 4. Experiment: Apply turmeric on cuts for one group (Group A) and no turmeric for another group (Group B). Keep all other conditions the same — wound size, cleaning, bandaging. 5. Analyse: Measure healing time for both groups over several days. 6. Conclusion: If Group A heals faster consistently, the hypothesis is supported. If there is no difference, the hypothesis is rejected.",
-          "explanation": "This is actually a real scientific question! Turmeric contains curcumin which does have antibacterial properties. Traditional knowledge and science can work together — but the claim must be tested properly before it is accepted."
-        }
-      ]
-    },
-    {
-      "topic": "Science is a Team Activity",
-      "easy": [
-        {
-          "id": "ch1-t4-e1",
-          "type": "mcq",
-          "question": "Why do scientists share their findings with other scientists?",
-          "options": ["To show off their work", "So others can check and verify the results", "To get more money", "Because the government forces them to"],
-          "answer": "So others can check and verify the results",
-          "explanation": "When other scientists repeat an experiment and get the same results, it makes the finding more trustworthy. This process is called peer review."
-        },
-        {
-          "id": "ch1-t4-e2",
-          "type": "fill",
-          "question": "When other scientists check and repeat an experiment, this process is called ______.",
-          "answer": "peer review",
-          "explanation": "Peer review is when fellow scientists examine and repeat each other's work to make sure the findings are correct and reliable."
-        },
-        {
-          "id": "ch1-t4-e3",
-          "type": "mcq",
-          "question": "Big discoveries in science are usually made by —",
-          "options": ["One very smart person alone", "Teams of scientists working together over many years", "Only people in rich countries", "Only very old scientists"],
-          "answer": "Teams of scientists working together over many years",
-          "explanation": "Most major discoveries — vaccines, space missions, medicines — are the result of many scientists across the world collaborating and building on each other's work."
-        }
-      ],
-      "medium": [
-        {
-          "id": "ch1-t4-m1",
-          "type": "short",
-          "question": "Why is it important for scientists to repeat an experiment more than once before accepting a result?",
-          "answer": "One result could happen by chance, by mistake, or due to some unknown factor. Repeating the experiment — and getting the same result each time — shows that the result is reliable and not just a coincidence.",
-          "explanation": "Repeatability is a core principle of science. A result that only happens once cannot be trusted. When many experiments give the same result, we can be confident it is correct."
-        },
-        {
-          "id": "ch1-t4-m2",
-          "type": "short",
-          "question": "Compare science to a cricket team. In what ways is science a 'team game'?",
-          "answer": "Just like a cricket team needs batsmen, bowlers, and fielders working together to win, science needs many people — researchers, testers, reviewers, and communicators — working together to make discoveries. No single person can know everything or do everything alone. Different scientists bring different skills and knowledge.",
-          "explanation": "The book uses the cricket team analogy to show that science is collaborative. Every player in a team has a role, just as every scientist contributes something unique to a discovery."
-        }
-      ],
-      "hard": [
-        {
-          "id": "ch1-t4-h1",
-          "type": "short",
-          "question": "A scientist claims she has found a medicine that cures the common cold. Why should we not immediately believe this claim? What process should happen before we accept it as true?",
-          "answer": "We should not immediately believe it because one person's result could have errors, biases, or could be a coincidence. Before accepting it: 1. Other scientists should repeat the same experiment independently. 2. The results should be peer reviewed by experts. 3. It should be tested on more people (clinical trials). 4. Results should be published for the entire science community to examine. Only after all this can the claim be trusted.",
-          "explanation": "Science protects us from false claims by requiring evidence that is repeatable and verified by many people. This is why we trust scientific findings more than one person's claim."
+          "type": "long",
+          "question": "A news article says: 'Scientists have discovered that drinking warm lemon water every morning prevents all diseases.' Should you immediately believe this? Explain step by step what should happen before this claim can be trusted.",
+          "options": [],
+          "answer": "No, you should not immediately believe it. Before trusting this claim: (1) Check how the study was done — was it a controlled experiment with enough participants? (2) Were there two groups — one drinking lemon water and one not — with all other conditions kept the same? (3) Has the study been peer reviewed by other scientists? (4) Have independent labs repeated the experiment and gotten the same result? (5) Is the claim reasonable — saying it prevents ALL diseases is an extremely broad claim that would require enormous evidence. Only after rigorous testing, peer review, and independent verification can a scientific claim be trusted.",
+          "explanation": "Science protects us from false or exaggerated claims by demanding repeatable evidence verified by many independent researchers. Extraordinary claims require extraordinary evidence."
         }
       ]
     }

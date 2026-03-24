@@ -53,6 +53,7 @@ export async function POST(req: Request) {
           role,
           name: decoded.name || null,
           email: decoded.email || null,
+          emailVerified: decoded.email_verified ?? false,
           createdAt: new Date(),
           trialEndsAt,
           subscriptionStatus: 'trial',
@@ -66,6 +67,11 @@ export async function POST(req: Request) {
         if (decoded.email) {
           sendWelcomeEmail(decoded.email, decoded.name || '', config.trialDays);
         }
+      } else {
+        // Sync emailVerified on every login
+        await userRef.update({
+          emailVerified: decoded.email_verified ?? false,
+        });
       }
     } catch {
       // Firestore errors should not block login

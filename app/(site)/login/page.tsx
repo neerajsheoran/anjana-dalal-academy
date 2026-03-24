@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   createUserWithEmailAndPassword,
+  sendEmailVerification,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
 
@@ -45,6 +46,10 @@ function LoginForm() {
         mode === 'login'
           ? await signInWithEmailAndPassword(auth, email, password)
           : await createUserWithEmailAndPassword(auth, email, password);
+      // Send verification email on signup (non-blocking)
+      if (mode === 'signup' && !credential.user.emailVerified) {
+        sendEmailVerification(credential.user).catch(() => {});
+      }
       const idToken = await credential.user.getIdToken();
       await createSession(idToken);
       window.location.href = from;

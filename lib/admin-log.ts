@@ -10,7 +10,8 @@ export type AdminAction =
   | 'approve_application'
   | 'reject_application'
   | 'mark_commission_paid'
-  | 'update_config';
+  | 'update_config'
+  | 'verify_phone';
 
 interface LogEntry {
   action: AdminAction;

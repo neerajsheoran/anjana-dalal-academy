@@ -38,6 +38,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
 export default function ChapterTabs({ children, worksheet, discussionContent, accessLevel, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
+  const notesRef = useRef<HTMLDivElement>(null);
   const discussionRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -81,6 +82,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, ac
       {/* Tab Content */}
       {activeTab === "notes" && (
         <>
+          <DiscussionAudio contentRef={notesRef} />
           {headings.length > 0 && (
             <nav className="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-4">
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">In this chapter</p>
@@ -118,7 +120,9 @@ export default function ChapterTabs({ children, worksheet, discussionContent, ac
           )}
           <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
             <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
-              {children}
+              <div ref={notesRef}>
+                {children}
+              </div>
             </ContentBlur>
           </article>
         </>

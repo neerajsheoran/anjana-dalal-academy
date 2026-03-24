@@ -2,338 +2,338 @@
 title: Chapter 5 Prime Time
 ---
 
-## Factors and Multiples
+## Factors, Multiples, and Divisibility
 
-Before exploring prime numbers, we need to understand two key ideas: **factors** and **multiples**.
+When you split a collection of objects into equal groups with nothing left over, the group sizes that work are called **factors** of the total count.
 
-### Factors
+### Understanding Factors
 
-A **factor** of a number is any number that divides it exactly (with no remainder).
+Suppose your family bought 30 biscuits to share equally among guests. Which group sizes would use up every biscuit?
 
-*Example:* Factors of 12:
-- 12 ÷ 1 = 12 ✓ → **1** is a factor
-- 12 ÷ 2 = 6 ✓ → **2** is a factor
-- 12 ÷ 3 = 4 ✓ → **3** is a factor
-- 12 ÷ 4 = 3 ✓ → **4** is a factor
-- 12 ÷ 5 = 2.4 ✗ → 5 is NOT a factor
-- 12 ÷ 6 = 2 ✓ → **6** is a factor
-- 12 ÷ 12 = 1 ✓ → **12** is a factor
+- 1 guest gets all 30 -- works (30 / 1 = 30)
+- 2 guests get 15 each -- works (30 / 2 = 15)
+- 3 guests get 10 each -- works (30 / 3 = 10)
+- 5 guests get 6 each -- works (30 / 5 = 6)
+- 6 guests get 5 each -- works (30 / 6 = 5)
+- 10 guests get 3 each -- works (30 / 10 = 3)
+- 15 guests get 2 each -- works (30 / 15 = 2)
+- 30 guests get 1 each -- works (30 / 30 = 1)
+- 4 guests? 30 / 4 = 7.5 -- does NOT work
 
-Factors of 12: **1, 2, 3, 4, 6, 12**
+The numbers 1, 2, 3, 5, 6, 10, 15, and 30 are the **factors** of 30. A factor divides a number exactly, leaving zero remainder.
 
-**Key properties of factors:**
+**Important properties:**
 - 1 is a factor of every number.
 - Every number is a factor of itself.
-- A factor of a number is always **less than or equal to** the number.
-- The number of factors of any number is **finite**.
+- Factors of a number are always less than or equal to that number.
+- Every number has a **finite** (limited) count of factors.
 
-### Multiples
+### Understanding Multiples
 
-A **multiple** of a number is what you get when you multiply it by any whole number (1, 2, 3, …).
+Now think in the opposite direction. A shopkeeper stocks notebooks in packs of 8. The possible quantities she can order are:
 
-*Example:* Multiples of 6:
-6 × 1 = 6, 6 × 2 = 12, 6 × 3 = 18, 6 × 4 = 24, 6 × 5 = 30, …
+8 x 1 = 8, 8 x 2 = 16, 8 x 3 = 24, 8 x 4 = 32, 8 x 5 = 40, ...
 
-Multiples of 6: **6, 12, 18, 24, 30, 36, …** (go on forever!)
+The numbers 8, 16, 24, 32, 40, ... are **multiples** of 8. You generate multiples by multiplying a number by 1, 2, 3, 4, and so on.
 
-**Key properties of multiples:**
+**Important properties:**
+- Every number is a multiple of itself (e.g. 8 = 8 x 1).
 - Every number is a multiple of 1.
-- Every number is a multiple of itself.
-- Multiples of a number are always **greater than or equal to** the number.
-- The multiples of any number are **infinite**.
+- Multiples of a number are always greater than or equal to that number.
+- Every number has **infinitely many** multiples -- the list never ends.
 
-> **Relationship:** If A is a factor of B, then B is a multiple of A.
-> - 3 is a factor of 12 ↔ 12 is a multiple of 3. ✓
+### The Factor-Multiple Connection
 
----
+Factors and multiples are two views of the same relationship:
 
-## Prime Numbers
+> If 5 is a **factor** of 30, then 30 is a **multiple** of 5 -- and vice versa.
 
-A **prime number** is a number greater than 1 that has **exactly two factors: 1 and itself**.
+### Divisibility Rules -- Quick Factor Checks
 
-*Examples:*
-- **2**: factors are 1 and 2 only → **prime** ✓
-- **3**: factors are 1 and 3 only → **prime** ✓
-- **5**: factors are 1 and 5 only → **prime** ✓
-- **7**: factors are 1 and 7 only → **prime** ✓
-- **11**: factors are 1 and 11 only → **prime** ✓
-- **13**: factors are 1 and 13 only → **prime** ✓
+Instead of dividing every time, these shortcuts tell you whether a number is divisible by small primes:
 
-First 15 prime numbers: **2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47**
+| Divisor | Rule | Example |
+|---------|------|---------|
+| **2** | Last digit is 0, 2, 4, 6, or 8 (even) | 574 ends in 4, so 2 divides 574 |
+| **3** | Sum of digits is divisible by 3 | 819: 8+1+9 = 18, and 3 divides 18, so 3 divides 819 |
+| **4** | Last two digits form a number divisible by 4 | 1,316: last two digits 16, and 4 divides 16 |
+| **5** | Last digit is 0 or 5 | 2,345 ends in 5, so 5 divides 2,345 |
+| **6** | Divisible by both 2 and 3 | 432: even and 4+3+2 = 9 (divisible by 3), so 6 divides 432 |
+| **9** | Sum of digits is divisible by 9 | 738: 7+3+8 = 18, and 9 divides 18, so 9 divides 738 |
+| **10** | Last digit is 0 | 1,280 ends in 0, so 10 divides 1,280 |
 
-### Special Note About 1 and 2
-
-- **1 is NOT a prime number** — it has only ONE factor (itself), not two.
-- **2 is the ONLY even prime number** — all other even numbers have 2 as a factor (besides 1 and themselves), so they have more than 2 factors.
+These rules become very handy when you need to quickly identify factors or perform prime factorisation of large numbers.
 
 ---
 
-## Composite Numbers
+## Prime and Composite Numbers
 
-A **composite number** is a number greater than 1 that has **more than two factors** — i.e., it has factors other than just 1 and itself.
+### What Makes a Number Prime?
+
+A **prime number** is any natural number greater than 1 whose only factors are 1 and the number itself -- exactly two factors, no more.
+
+Consider the number 17. Is there any whole number other than 1 and 17 that divides it evenly? Let us check: 17 / 2 = 8.5, 17 / 3 = 5.67, 17 / 4 = 4.25, and so on. None work. So 17 is **prime**.
+
+Now consider 15. We have 15 / 3 = 5 exactly. So 15 has factors 1, 3, 5, and 15 -- four factors. Since it has more than two factors, 15 is NOT prime.
+
+Here are the first twenty prime numbers:
+
+**2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71**
+
+### Two Special Cases
+
+- **1 is NOT prime.** It has only one factor (itself), but a prime must have exactly two distinct factors. Including 1 as a prime would also break a fundamental rule about unique factorisation that we will see shortly.
+- **2 is the only even prime.** Every other even number can be divided by 2, giving it at least three factors (1, 2, and itself). So 2 stands alone as the sole even prime.
+
+### Composite Numbers
+
+A **composite number** is any natural number greater than 1 that has **more than two factors** -- meaning it can be divided evenly by at least one number besides 1 and itself.
 
 *Examples:*
-- **4**: factors are 1, 2, 4 → **composite** (3 factors)
-- **6**: factors are 1, 2, 3, 6 → **composite** (4 factors)
-- **12**: factors are 1, 2, 3, 4, 6, 12 → **composite** (6 factors)
+- 9 has factors 1, 3, 9 -- **composite** (3 divides it)
+- 14 has factors 1, 2, 7, 14 -- **composite** (2 and 7 divide it)
+- 25 has factors 1, 5, 25 -- **composite** (5 divides it)
 
-Every counting number greater than 1 is either prime or composite — never both.
+**Classification of whole numbers:**
 
-| Number | Type | Factors |
-|--------|------|---------|
-| 1 | Neither prime nor composite | Only 1 |
-| 2 | Prime | 1, 2 |
-| 3 | Prime | 1, 3 |
-| 4 | Composite | 1, 2, 4 |
-| 5 | Prime | 1, 5 |
-| 6 | Composite | 1, 2, 3, 6 |
-| 7 | Prime | 1, 7 |
-| 8 | Composite | 1, 2, 4, 8 |
-| 9 | Composite | 1, 3, 9 |
-| 10 | Composite | 1, 2, 5, 10 |
+| Number | Category | Reason |
+|--------|----------|--------|
+| 1 | Neither prime nor composite | Has only one factor |
+| 2 | Prime | Factors: 1, 2 (exactly two) |
+| 4 | Composite | Factors: 1, 2, 4 (more than two) |
+| 11 | Prime | Factors: 1, 11 (exactly two) |
+| 15 | Composite | Factors: 1, 3, 5, 15 (more than two) |
+| 23 | Prime | Factors: 1, 23 (exactly two) |
+
+> Every natural number greater than 1 falls into exactly one of these two categories: prime or composite.
+
+### Co-prime Numbers
+
+Two numbers are **co-prime** (also called "relatively prime") when they share no common factor other than 1. Their HCF is 1.
+
+*Examples:*
+- 8 and 15 are co-prime. Factors of 8: {1, 2, 4, 8}. Factors of 15: {1, 3, 5, 15}. The only shared factor is 1.
+- 9 and 25 are co-prime. Factors of 9: {1, 3, 9}. Factors of 25: {1, 5, 25}. Only 1 in common.
+- 12 and 18 are NOT co-prime. They share factors 1, 2, 3, and 6.
+
+Note: Co-prime numbers need not be prime themselves. 8 and 15 are both composite, yet they are co-prime as a pair.
 
 ---
 
 ## The Sieve of Eratosthenes
 
-Around 240 BCE, the Greek mathematician **Eratosthenes** invented a beautiful method to find all prime numbers up to any given limit — it is called the **Sieve of Eratosthenes**.
+How do you find every prime number up to, say, 50 without testing each number one by one? Around 240 BCE, the Greek scholar **Eratosthenes** devised an elegant filtering method now called the **Sieve of Eratosthenes**.
 
-![Grid of numbers 2 to 50 with multiples of 2, 3, 5, and 7 crossed out and prime numbers circled](sieve-of-eratosthenes-grid.png)
+### Step-by-Step Process (finding all primes up to 50)
 
-### How to Find All Primes up to 50:
+1. **List** all natural numbers from 2 to 50.
+2. **Start with 2** (the smallest prime). Keep 2, and strike out every multiple of 2 after it: 4, 6, 8, 10, 12, ...
+3. **Move to 3** -- the next number not struck out. Keep 3, and strike out every multiple of 3 not already eliminated: 9, 15, 21, 27, 33, 39, 45.
+4. **Move to 5** -- still standing. Keep 5, and strike out remaining multiples of 5: 25, 35.
+5. **Move to 7** -- still standing. Keep 7, and strike out remaining multiples of 7: 49.
+6. **Stop here.** The next unmarked number is 11, and 11 x 11 = 121 > 50. Any composite number up to 50 must have a prime factor no larger than the square root of 50 (approximately 7.07). Since we have already eliminated multiples of all primes up to 7, every surviving number is guaranteed to be prime.
 
-1. Write all numbers from 2 to 50.
-2. Circle **2** (it's prime). Cross out all **multiples of 2** (4, 6, 8, 10, …).
-3. Circle **3** (it's prime). Cross out all **multiples of 3** (6, 9, 12, 15, …).
-4. Circle **5** (it's prime). Cross out all **multiples of 5** (10, 15, 20, 25, …).
-5. Circle **7** (it's prime). Cross out all **multiples of 7** (14, 21, 28, 35, …).
-6. All remaining uncrossed numbers are **prime**!
+**Result -- primes up to 50:**
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
 
-Primes up to 50: **2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47**
-
-> **Why does it work?** Any composite number up to 50 must have a prime factor ≤ √50 ≈ 7. So after crossing out multiples of 2, 3, 5, and 7, everything remaining must be prime.
+> **Why does the sieve work?** Every composite number n has at least one prime factor that is less than or equal to the square root of n. By eliminating multiples of primes up to the square root of the limit, every composite number gets caught by at least one round of elimination.
 
 ---
 
 ## Prime Factorisation
 
-Every composite number can be broken down into a product of prime numbers. This is called **prime factorisation**.
+Every composite number can be expressed as a product of prime numbers. This decomposition is called the **prime factorisation** of the number.
 
-*Example:* Prime factorisation of 36:
+### Method 1 -- Factor Tree
 
-![Factor tree for 36 branching into 4 and 9, then into prime factors 2, 2, 3, 3](factor-tree-36.png)
+Break the number into any two factors, then keep splitting until every branch ends in a prime.
 
-**Method 1 — Factor Tree:**
+*Example: Prime factorisation of 54*
+
 ```
-        36
+        54
        /   \
-      4     9
+      6     9
      / \   / \
-    2   2 3   3
+    2   3 3   3
 ```
-Prime factorisation of 36 = **2 × 2 × 3 × 3 = 2² × 3²**
 
-**Method 2 — Repeated Division (Division Ladder):**
-Divide by the smallest prime factor repeatedly:
+Reading the leaves: 54 = 2 x 3 x 3 x 3 = **2 x 3 cubed**
+
+No matter how you build the tree, the final set of prime factors is always the same. You could also split 54 as 2 x 27, then 27 as 3 x 9, then 9 as 3 x 3 -- still ending at 2 x 3 x 3 x 3.
+
+### Method 2 -- Division Ladder (Repeated Division)
+
+Divide by the smallest possible prime at each step until you reach 1.
+
+*Example: Prime factorisation of 90*
 
 ```
-2 | 36
-2 | 18
-3 |  9
-3 |  3
-  |  1
-```
-Prime factorisation = **2 × 2 × 3 × 3 = 2² × 3²**
-
-**Worked Examples:**
-
-*Find prime factorisation of 60:*
-```
-2 | 60
-2 | 30
+2 | 90
+3 | 45
 3 | 15
 5 |  5
   |  1
 ```
-60 = **2 × 2 × 3 × 5 = 2² × 3 × 5**
 
-*Find prime factorisation of 84:*
+90 = 2 x 3 x 3 x 5 = **2 x 3 squared x 5**
+
+### More Worked Examples
+
+*Prime factorisation of 108:*
 ```
-2 | 84
-2 | 42
-3 | 21
-7 |  7
-  |  1
+2 | 108
+2 |  54
+3 |  27
+3 |   9
+3 |   3
+  |   1
 ```
-84 = **2 × 2 × 3 × 7 = 2² × 3 × 7**
+108 = 2 x 2 x 3 x 3 x 3 = **2 squared x 3 cubed**
+
+*Prime factorisation of 150:*
+```
+2 | 150
+3 |  75
+5 |  25
+5 |   5
+  |   1
+```
+150 = 2 x 3 x 5 x 5 = **2 x 3 x 5 squared**
 
 ### The Fundamental Theorem of Arithmetic
 
-> **Every whole number greater than 1 can be expressed as a product of prime numbers in exactly one way** (ignoring the order of factors).
+> Every natural number greater than 1 can be written as a product of primes in **exactly one way** (apart from rearranging the order of the factors).
 
-This is one of the most important theorems in mathematics. It means prime numbers are the **"building blocks"** of all numbers — just as atoms are the building blocks of matter.
-
-*Example:* 12 = 2 × 2 × 3. No matter how you break 12 down, you always get these prime factors. There is no other prime factorisation of 12.
+This is why primes are called the building blocks of numbers. Just as every word is built from a fixed set of letters, every number is built from a fixed set of prime factors. The factorisation of 108 is always 2 squared x 3 cubed -- there is no alternative combination of primes that multiplies to give 108.
 
 ---
 
-## Highest Common Factor (HCF)
+## HCF and LCM
 
-The **Highest Common Factor (HCF)** of two or more numbers is the **largest factor** that is common to all of them.
+### Highest Common Factor (HCF)
 
-Also called: **GCD** (Greatest Common Divisor).
+The **Highest Common Factor** (also called the Greatest Common Divisor, or GCD) of two or more numbers is the **largest number that divides all of them** with zero remainder.
 
-![Venn diagram showing factors of 24 and 36 with common factors in the overlapping region and HCF of 12 highlighted](hcf-venn-diagram.png)
+**Approach 1 -- Listing factors:**
 
-### Method 1 — List all factors
+*Find HCF of 42 and 70.*
 
-*Find HCF of 24 and 36:*
+Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42
+Factors of 70: 1, 2, 5, 7, 10, 14, 35, 70
 
-Factors of 24: 1, 2, 3, **4**, **6**, **8**, **12**, 24
-Factors of 36: 1, 2, 3, **4**, **6**, **9**, **12**, 18, 36
+Common factors: 1, 2, 7, 14
+Largest common factor: **14**
 
-Common factors: 1, 2, 3, 4, 6, 12
-Highest common factor = **12**
+So HCF(42, 70) = **14**
 
-### Method 2 — Prime Factorisation
+**Approach 2 -- Using prime factorisation:**
 
-*Find HCF of 24 and 36:*
+*Find HCF of 42 and 70.*
 
-24 = 2 × 2 × 2 × 3 = **2³ × 3**
-36 = 2 × 2 × 3 × 3 = **2² × 3²**
+42 = 2 x 3 x 7
+70 = 2 x 5 x 7
 
-HCF = product of **common prime factors, each taken with the lower power**:
-= 2² × 3 = 4 × 3 = **12**
+Identify the prime factors that appear in **both** factorisations. For each, take the **lower** power:
+- 2 appears in both (power 1 in each) -- take 2 to the power 1
+- 7 appears in both (power 1 in each) -- take 7 to the power 1
+- 3 appears only in 42; 5 appears only in 70 -- skip these
 
-**Worked Example:** Find HCF of 48, 60, and 84.
+HCF = 2 x 7 = **14**
 
-48 = 2⁴ × 3
-60 = 2² × 3 × 5
-84 = 2² × 3 × 7
+**Approach 3 -- HCF of three numbers:**
 
-Common prime factors: 2 (lowest power = 2²) and 3 (lowest power = 3¹)
-HCF = 2² × 3 = **12**
+*Find HCF of 36, 54, and 90.*
 
-### Real-Life Use of HCF
+36 = 2 squared x 3 squared
+54 = 2 x 3 cubed
+90 = 2 x 3 squared x 5
 
-*Example 1:* A gardener has 36 roses and 48 marigolds. She wants to make bouquets so that each bouquet has the same number of each flower and all flowers are used. What is the maximum number of bouquets she can make?
+Common primes: 2 (lowest power = 1) and 3 (lowest power = 2)
+HCF = 2 x 9 = **18**
 
-> HCF of 36 and 48:
-> 36 = 2² × 3², 48 = 2⁴ × 3
-> HCF = 2² × 3 = **12 bouquets**
-> Each bouquet has 36÷12 = 3 roses and 48÷12 = 4 marigolds.
+**Real-life scenario:** A sweet shop owner prepares a tray of 42 kaju katli pieces and another tray of 70 peda pieces for a festival. He wants to pack them into identical gift boxes so that each box has the same number of kaju katli and the same number of peda, with no sweets left over. The maximum number of boxes is HCF(42, 70) = **14**. Each box gets 42 / 14 = 3 kaju katli and 70 / 14 = 5 peda.
 
-*Example 2:* Two ribbons are 120 cm and 180 cm long. What is the longest piece you can cut from both ribbons so that no ribbon is wasted?
+### Lowest Common Multiple (LCM)
 
-> HCF(120, 180) = ?
-> 120 = 2³ × 3 × 5
-> 180 = 2² × 3² × 5
-> HCF = 2² × 3 × 5 = **60 cm**
+The **Lowest Common Multiple** of two or more numbers is the **smallest positive number that is a multiple of all of them**.
 
----
+**Approach 1 -- Listing multiples:**
 
-## Lowest Common Multiple (LCM)
+*Find LCM of 6 and 9.*
 
-The **Lowest Common Multiple (LCM)** of two or more numbers is the **smallest multiple** that is common to all of them.
+Multiples of 6: 6, 12, **18**, 24, 30, **36**, ...
+Multiples of 9: 9, **18**, 27, **36**, ...
 
-### Method 1 — List multiples
+The smallest number appearing in both lists is **18**.
 
-*Find LCM of 4 and 6:*
+So LCM(6, 9) = **18**
 
-Multiples of 4: 4, 8, **12**, 16, 20, **24**, …
-Multiples of 6: 6, **12**, 18, **24**, 30, …
+**Approach 2 -- Using prime factorisation:**
 
-First common multiple = **12** → LCM(4, 6) = **12**
+*Find LCM of 6 and 9.*
 
-### Method 2 — Prime Factorisation
+6 = 2 x 3
+9 = 3 squared
 
-*Find LCM of 4 and 6:*
+Take **every** prime factor that appears in either factorisation, using the **higher** power:
+- 2 appears with highest power 1 -- take 2
+- 3 appears with highest power 2 -- take 9
 
-4 = **2²**
-6 = **2 × 3**
+LCM = 2 x 9 = **18**
 
-LCM = product of **all prime factors, each taken with the highest power**:
-= 2² × 3 = 4 × 3 = **12**
+**Approach 3 -- LCM of three numbers:**
 
-**Worked Example 1:** Find LCM of 12, 15, and 20.
+*Find LCM of 8, 14, and 20.*
 
-12 = 2² × 3
-15 = 3 × 5
-20 = 2² × 5
+8 = 2 cubed
+14 = 2 x 7
+20 = 2 squared x 5
 
-All prime factors: 2 (highest power = 2²), 3 (highest power = 3¹), 5 (highest power = 5¹)
-LCM = 2² × 3 × 5 = 4 × 3 × 5 = **60**
+Take the highest power of each prime: 2 cubed, 5, 7
+LCM = 8 x 5 x 7 = **280**
 
-### Real-Life Use of LCM
+**Real-life scenario:** Two city bus routes pass through the same stop. Route A arrives every 15 minutes and Route B arrives every 20 minutes. If both buses are at the stop together at 7:00 AM, when will they next be there at the same time?
 
-*Example 1:* Bus A leaves a stop every 12 minutes, Bus B every 18 minutes. If both leave at 8:00 AM, when will they next leave at the same time?
+LCM(15, 20):
+15 = 3 x 5
+20 = 2 squared x 5
+LCM = 2 squared x 3 x 5 = 4 x 3 x 5 = **60 minutes**
 
-> LCM(12, 18):
-> 12 = 2² × 3, 18 = 2 × 3²
-> LCM = 2² × 3² = 4 × 9 = **36 minutes**
-> They will next leave together at **8:36 AM**.
+Both buses will be at the stop together again at **8:00 AM**.
 
-*Example 2:* Three friends Asha, Bina, and Chitra go jogging and complete a lap in 6 minutes, 8 minutes, and 12 minutes respectively. They all start together. When will all three be at the starting point together again?
-
-> LCM(6, 8, 12):
-> 6 = 2 × 3, 8 = 2³, 12 = 2² × 3
-> LCM = 2³ × 3 = **24 minutes**
-> All three will meet at the starting point after **24 minutes**.
-
----
-
-## Relationship Between HCF and LCM
+### The HCF-LCM Relationship
 
 For any two numbers A and B:
 
-> **HCF × LCM = A × B**
+> **HCF(A, B) x LCM(A, B) = A x B**
 
-*Example:* A = 12, B = 18.
-HCF(12, 18) = 6. LCM(12, 18) = 36.
-Check: 6 × 36 = 216 = 12 × 18 ✓
+*Verification:* A = 42, B = 70.
+HCF = 14, LCM = ?
+14 x LCM = 42 x 70 = 2940
+LCM = 2940 / 14 = **210**
 
-This relationship is very useful — if you know the HCF, you can find the LCM without full factorisation!
+Cross-check by factorisation: 42 = 2 x 3 x 7, 70 = 2 x 5 x 7. LCM = 2 x 3 x 5 x 7 = 210. Correct!
 
-**Worked Example:** HCF of two numbers is 8. Their product is 384. Find their LCM.
+This formula is extremely useful: if you already know the HCF, you can find the LCM without listing multiples or performing full factorisation.
 
-> HCF × LCM = Product of numbers
-> 8 × LCM = 384
-> LCM = 384 ÷ 8 = **48**
-
----
-
-## Prime Numbers in the Real World
-
-### Why Primes Matter
-
-Prime numbers are not just a mathematical curiosity — they are the **backbone of internet security**!
-
-Modern computer encryption (used for online banking, WhatsApp, credit cards) relies on the fact that it is very easy to **multiply two large primes** but extremely **hard to factorise the result** back into primes.
-
-*Example:* It takes a fraction of a second to multiply 104,723 × 15,485,863. But given only the product (1,620,733,661,549), finding the original prime factors would take a powerful computer a very long time.
-
-### Fun Facts About Primes
-
-- There are **infinitely many prime numbers** (proved by Euclid around 300 BCE).
-- The largest known prime number (as of 2024) has over 41 million digits!
-- **Twin primes** are pairs of primes that differ by 2: (3, 5), (5, 7), (11, 13), (17, 19), (29, 31)… Are there infinitely many twin primes? Nobody knows yet!
-- **Goldbach's Conjecture** (1742, still unproved): Every even number greater than 2 can be written as the sum of two primes. E.g., 28 = 5 + 23, 100 = 3 + 97.
+> **Note:** This relationship holds only for **two** numbers. It does not extend to three or more numbers directly.
 
 ---
 
-## Key Words to Remember
+## Key Vocabulary
 
-| Word | Meaning |
+| Term | Meaning |
 |------|---------|
-| **Factor** | A number that divides another exactly (no remainder) |
-| **Multiple** | The result of multiplying a number by any whole number |
-| **Prime number** | A number > 1 with exactly two factors: 1 and itself |
-| **Composite number** | A number > 1 with more than two factors |
-| **Prime factorisation** | Expressing a number as a product of prime factors |
-| **Factor tree** | A diagram used to find the prime factorisation of a number |
-| **HCF** | Highest Common Factor — largest factor common to two or more numbers |
-| **LCM** | Lowest Common Multiple — smallest multiple common to two or more numbers |
-| **Sieve of Eratosthenes** | A method to find all primes up to a given number |
-| **Fundamental Theorem of Arithmetic** | Every number > 1 has a unique prime factorisation |
-| **Twin primes** | Pairs of prime numbers that differ by 2, e.g. (11, 13) |
-| **Goldbach's Conjecture** | Every even number > 2 is the sum of two primes (unproved) |
+| **Factor** | A whole number that divides another number exactly, with no remainder |
+| **Multiple** | The product of a number and any natural number |
+| **Prime number** | A natural number greater than 1 with exactly two factors: 1 and itself |
+| **Composite number** | A natural number greater than 1 with more than two factors |
+| **Co-prime numbers** | A pair of numbers whose only common factor is 1 |
+| **Sieve of Eratosthenes** | An ancient algorithm for finding all primes up to a given limit |
+| **Prime factorisation** | Writing a number as a product of its prime factors |
+| **Factor tree** | A branching diagram that decomposes a number into prime factors |
+| **HCF (Highest Common Factor)** | The largest factor shared by two or more numbers |
+| **LCM (Lowest Common Multiple)** | The smallest multiple shared by two or more numbers |
+| **Fundamental Theorem of Arithmetic** | Every natural number greater than 1 has a unique prime factorisation |
+| **Divisibility rules** | Quick tests to check whether a number is divisible by 2, 3, 4, 5, 6, 9, or 10 |

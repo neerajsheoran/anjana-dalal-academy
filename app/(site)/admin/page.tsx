@@ -75,6 +75,9 @@ async function getCommissionData() {
       bankAccount: string | null;
       bankIFSC: string | null;
       pan: string | null;
+      phone: string | null;
+      emailVerified: boolean;
+      phoneVerified: boolean;
       referrals: { date: string; studentName: string; amount: number; commission: number; paid: boolean; paidDate: string }[];
       payouts: { date: string; amount: number; notes: string }[];
     }>();
@@ -88,6 +91,21 @@ async function getCommissionData() {
         // Look up advisor info
         const pDoc = await adminDb.collection('users').doc(pUid).get();
         const pData = pDoc.data();
+
+        // Look up phone from partner application
+        let phone: string | null = null;
+        const pEmail = (pData?.email as string) || '';
+        if (pEmail) {
+          const appSnap = await adminDb
+            .collection('partnerApplications')
+            .where('email', '==', pEmail)
+            .limit(1)
+            .get();
+          if (!appSnap.empty) {
+            phone = (appSnap.docs[0].data().phone as string) || null;
+          }
+        }
+
         partnerMap.set(pUid, {
           partnerUid: pUid,
           partnerName: (pData?.name as string) || pUid,
@@ -100,6 +118,9 @@ async function getCommissionData() {
           bankAccount: (pData?.bankAccount as string) || null,
           bankIFSC: (pData?.bankIFSC as string) || null,
           pan: (pData?.pan as string) || null,
+          phone,
+          emailVerified: pData?.emailVerified === true,
+          phoneVerified: pData?.phoneVerified === true,
           referrals: [],
           payouts: []
         });

@@ -1,246 +1,254 @@
 {
+  "chapterRef": "Chapter 2 — Diversity in the Living World",
   "topics": [
     {
-      "topic": "Diversity in Plants and Animals Around Us",
+      "topic": "Living Things and What Makes Them Special",
       "easy": [
         {
           "id": "ch2-t1-e1",
           "type": "mcq",
-          "question": "What is biodiversity?",
-          "options": ["All the water on Earth", "The variety of all living things on Earth", "Only the animals in a forest", "The number of plants in a garden"],
-          "answer": "The variety of all living things on Earth",
-          "explanation": "Biodiversity means the variety of all living things — plants, animals, insects, birds, and tiny organisms — found on Earth."
+          "question": "Which of the following is NOT a characteristic of living things?",
+          "options": ["Growth", "Respiration", "Rusting", "Reproduction"],
+          "answer": "Rusting",
+          "explanation": "Rusting is a chemical change that happens to iron when it reacts with moisture and air. It is not a life process. Growth, respiration, and reproduction are all characteristics shared by living organisms."
         },
         {
           "id": "ch2-t1-e2",
           "type": "mcq",
-          "question": "Which of the following is one of the most biodiverse countries in the world?",
-          "options": ["Russia", "Canada", "India", "Australia"],
-          "answer": "India",
-          "explanation": "India is one of the most biodiverse countries in the world, with dense forests, cold deserts, tropical rainforests, and mangrove swamps — each home to different living things."
+          "question": "A sunflower turning its face towards the sun during the day is an example of —",
+          "options": ["Excretion", "Response to stimulus", "Reproduction", "Respiration"],
+          "answer": "Response to stimulus",
+          "explanation": "The sunflower responds to sunlight (a stimulus) by turning towards it. This is called a response to stimulus and is one of the characteristics of living things."
         },
         {
           "id": "ch2-t1-e3",
           "type": "fill",
-          "question": "The amazing variety of living things found on Earth is called ______.",
-          "answer": "biodiversity",
-          "explanation": "Biodiversity refers to all the different plants, animals, insects, birds, and organisms found on Earth."
+          "question": "The process of removing waste products from the body is called ______.",
+          "options": [],
+          "answer": "excretion",
+          "explanation": "Excretion is the removal of waste substances produced during life processes. In humans, sweating, urination, and breathing out carbon dioxide are all forms of excretion."
         },
         {
           "id": "ch2-t1-e4",
           "type": "mcq",
-          "question": "Which of these is NOT a living thing?",
-          "options": ["Ant", "Mushroom", "Stone", "Fern"],
-          "answer": "Stone",
-          "explanation": "Stones are non-living things. Ants, mushrooms, and ferns are all living organisms and part of Earth's biodiversity."
+          "question": "Which of these is a living thing?",
+          "options": ["A wooden chair", "A mushroom growing on a log", "A plastic toy", "A glass of water"],
+          "answer": "A mushroom growing on a log",
+          "explanation": "A mushroom is a living organism — it is a fungus. It grows, reproduces, respires, and responds to its environment. The wooden chair, plastic toy, and glass of water are all non-living."
+        },
+        {
+          "id": "ch2-t1-e5",
+          "type": "fill",
+          "question": "Living things break down food using oxygen to release energy in a process called ______.",
+          "options": [],
+          "answer": "respiration",
+          "explanation": "Respiration is the process by which living organisms break down food (usually glucose) using oxygen to release energy needed for all life activities."
         }
       ],
       "medium": [
         {
           "id": "ch2-t1-m1",
           "type": "short",
-          "question": "What is biodiversity? Why is India considered a biodiversity-rich country?",
-          "answer": "Biodiversity is the variety of all living things found on Earth. India is considered biodiversity-rich because it has many different types of habitats — dense forests in the Western Ghats, cold deserts in Ladakh, tropical rainforests in the Northeast, and mangrove swamps in the Sundarbans — each home to different kinds of plants and animals.",
-          "explanation": "Different habitats support different types of life. India's varied landscape across such a large country makes it one of the most biodiverse places on Earth."
+          "question": "A student says: 'A car moves, uses fuel for energy, and releases exhaust gases. So a car must be a living thing.' Is this correct? Explain why or why not.",
+          "options": [],
+          "answer": "This is not correct. Although a car moves, uses fuel, and releases waste gases, it does not possess all the characteristics of living things. A car does not grow on its own, does not reproduce (make new cars), and does not respond to stimuli by itself — a human driver controls it. An object must show ALL the characteristics of life — growth, respiration, reproduction, response to stimuli, movement, and excretion — to be considered living.",
+          "explanation": "Some non-living things may show one or two features that seem similar to life processes, but they do not show all six characteristics together. A living thing performs these processes on its own without external human control."
         },
         {
           "id": "ch2-t1-m2",
           "type": "short",
-          "question": "Why is it important to protect biodiversity? Give two reasons.",
-          "answer": "1. Forests clean the air we breathe and bring rainfall. 2. Bees and butterflies pollinate crops — without them, fruits and vegetables cannot grow. Biodiversity keeps the natural balance that all life, including humans, depends on.",
-          "explanation": "Every plant and animal plays a role in the web of life. Losing one species can affect many others. Protecting biodiversity protects our food, water, and air."
+          "question": "How do plants show movement even though they cannot walk from one place to another? Give two examples.",
+          "options": [],
+          "answer": "Plants show movement in response to stimuli. For example, the roots of a plant always grow downward towards gravity while the shoot grows upward towards light — this is directional growth movement. Another example is the touch-me-not (chui-mui) plant, whose leaves fold shut immediately when touched. A money plant on a window bends towards sunlight over time. These are all forms of movement, even though the plant stays rooted in one spot.",
+          "explanation": "Movement in biology does not only mean walking or running. Any change in position or shape caused by the organism itself counts as movement. Plants demonstrate this through growth-based movements and responses to touch, light, and gravity."
+        },
+        {
+          "id": "ch2-t1-m3",
+          "type": "mcq",
+          "question": "When you walk from a dark room into bright sunlight, your pupils become smaller. This is an example of —",
+          "options": ["Excretion", "Growth", "Response to stimulus", "Reproduction"],
+          "answer": "Response to stimulus",
+          "explanation": "Bright light is the stimulus, and the shrinking of your pupils is your body's automatic response to protect your eyes from too much light. This demonstrates that living things respond to changes in their environment."
         }
       ],
       "hard": [
         {
           "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "A crystal of copper sulphate, when placed in a saturated solution, increases in size over time. A student argues that this proves the crystal is alive because it is growing. Write a detailed response explaining why the student is wrong, and describe how the 'growth' of a crystal differs from the growth of a living organism.",
+          "options": [],
+          "answer": "The student is wrong because growth alone does not make something alive. A living thing must show ALL characteristics of life — growth, respiration, reproduction, response to stimuli, movement, and excretion. The copper sulphate crystal shows none of the other five characteristics. Furthermore, the nature of growth itself is different. A crystal grows by adding identical molecules to its outer surface from the surrounding solution — this is accumulation, not biological growth. A living organism grows by producing new cells from within through cell division. The organism's growth is internally controlled by its own biological processes, while the crystal's growth depends entirely on external conditions like the concentration of the solution. If you remove the crystal from the solution, it stops growing. A living organism continues to grow using its internal processes as long as it has nutrition.",
+          "explanation": "This question tests whether a student can distinguish between superficial similarity and true biological processes. Many non-living things show changes that look like life characteristics on the surface — but understanding the mechanism behind the change reveals the difference."
+        },
+        {
+          "id": "ch2-t1-h2",
           "type": "short",
-          "question": "Many people think that only rare or exotic animals matter for conservation. Do you agree? Use examples to explain why even 'ordinary' organisms like worms and bees are important.",
-          "answer": "This is incorrect. Even 'ordinary' organisms are vital. Earthworms break down dead organic matter and enrich the soil — without them, plants would not grow well. Bees and butterflies pollinate crops — without pollination, most fruits and vegetables cannot form. If bees disappeared, food production worldwide would collapse. Every organism, however small or 'ordinary', plays a role in maintaining the balance of nature.",
-          "explanation": "Conservation should not focus only on large or rare animals. The health of an ecosystem depends on the full web of life — from bacteria in the soil to the largest trees. Losing any part weakens the whole system."
+          "question": "Is a virus a living thing or a non-living thing? Use the characteristics of life to argue both sides.",
+          "options": [],
+          "answer": "A virus shows some characteristics of living things but not others. It can reproduce — but only inside a living host cell, never on its own. It responds to its environment by attaching to specific cells. However, it does not grow, does not respire, does not excrete, and does not show independent movement. Outside a host, a virus behaves like a non-living chemical particle and can even form crystals. Because it does not show all six characteristics of life independently, most scientists consider viruses to be on the boundary between living and non-living — they are neither fully alive nor fully non-living.",
+          "explanation": "Viruses challenge our simple definitions of life. This question encourages deeper thinking about what it truly means to be 'alive' and shows that nature does not always fit into neat categories."
         }
       ]
     },
     {
-      "topic": "How to Group Plants",
+      "topic": "Biodiversity — The Variety of Life on Earth",
       "easy": [
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
-          "question": "Which of these plants is a herb?",
-          "options": ["Mango", "Rose", "Tulsi", "Coconut"],
-          "answer": "Tulsi",
-          "explanation": "Tulsi (basil) is a herb — a small, soft-stemmed plant. Mango and coconut are trees, and rose is a shrub."
+          "question": "The term 'biodiversity' refers to —",
+          "options": ["The study of human biology", "The total variety of living organisms on Earth", "Only the animals found in forests", "The number of zoos in a country"],
+          "answer": "The total variety of living organisms on Earth",
+          "explanation": "Biodiversity (bio = life, diversity = variety) means the total variety of all living things — plants, animals, fungi, bacteria, and every other organism found on Earth."
         },
         {
           "id": "ch2-t2-e2",
           "type": "mcq",
-          "question": "A plant that spreads along the ground rather than growing upright is called a —",
-          "options": ["Climber", "Shrub", "Creeper", "Tree"],
-          "answer": "Creeper",
-          "explanation": "Creepers are plants with weak stems that spread and creep along the ground. Examples include watermelon and pumpkin."
+          "question": "Which Indian region is famous for its mangrove forests and is home to the Royal Bengal Tiger?",
+          "options": ["Thar Desert", "Western Ghats", "Sundarbans", "Ladakh"],
+          "answer": "Sundarbans",
+          "explanation": "The Sundarbans, located where the Ganga and Brahmaputra rivers meet the Bay of Bengal, have vast mangrove forests. The Royal Bengal Tiger lives here and is known to swim between the mangrove islands."
         },
         {
           "id": "ch2-t2-e3",
           "type": "fill",
-          "question": "The pattern of veins in a leaf is called ______.",
-          "answer": "venation",
-          "explanation": "Venation is the arrangement of veins in a leaf. There are two types — parallel venation and reticulate (net-like) venation."
+          "question": "A species whose numbers are so low that it is in danger of disappearing forever is called an ______ species.",
+          "options": [],
+          "answer": "endangered",
+          "explanation": "An endangered species is one that faces a high risk of extinction. Protecting their habitats and stopping hunting are important steps to save endangered species."
         },
         {
           "id": "ch2-t2-e4",
           "type": "mcq",
-          "question": "Which of these plants has parallel venation?",
-          "options": ["Mango", "Tulsi", "Grass", "Rose"],
-          "answer": "Grass",
-          "explanation": "Grass has parallel venation — all veins run side by side. Mango, tulsi, and rose have reticulate (net-like) venation."
+          "question": "Which of the following organisms helps in pollination of food crops?",
+          "options": ["Earthworm", "Honeybee", "Vulture", "Frog"],
+          "answer": "Honeybee",
+          "explanation": "Honeybees visit flowers to collect nectar and in the process carry pollen from one flower to another, enabling plants to produce fruits and seeds. This process is called pollination."
         },
         {
           "id": "ch2-t2-e5",
           "type": "mcq",
-          "question": "When you open a bean seed, it splits into two equal halves. This means the bean is a —",
-          "options": ["Monocot", "Dicot", "Fibrous plant", "Creeper"],
-          "answer": "Dicot",
-          "explanation": "Dicot seeds have two cotyledons (seed leaves) and split into two halves. Examples: bean, pea, mango, mustard."
+          "question": "The Western Ghats are called a 'biodiversity hotspot' because they —",
+          "options": ["Have very hot weather", "Contain a huge number of species, many found nowhere else", "Are located near the equator", "Have no human settlements"],
+          "answer": "Contain a huge number of species, many found nowhere else",
+          "explanation": "A biodiversity hotspot is a region with an exceptionally high number of species, many of which are endemic (found only in that region). The Western Ghats host thousands of unique plant and animal species."
         }
       ],
       "medium": [
         {
           "id": "ch2-t2-m1",
           "type": "short",
-          "question": "What is the difference between a climber and a creeper? Give one example of each.",
-          "answer": "A climber is a plant with a weak stem that climbs upward by clinging to walls, fences or other plants. Example: money plant. A creeper is a plant with a weak stem that spreads and creeps along the ground. Example: pumpkin or watermelon.",
-          "explanation": "Both climbers and creepers have weak stems and cannot stand on their own — but the direction they grow is different. Climbers go up; creepers spread on the ground."
+          "question": "Earthworms are often called 'nature's plough' by farmers. Explain why, and describe what role earthworms play in maintaining biodiversity.",
+          "options": [],
+          "answer": "Earthworms burrow through soil, creating tunnels that allow air and water to reach plant roots. As they move, they mix different layers of soil together and break down dead leaves and organic matter into nutrient-rich material called humus. This enriches the soil and helps plants grow better. Since plants are the base of most food chains, healthier soil means more plant growth, which supports more insects, birds, and animals. Earthworms thus play a foundational role in maintaining biodiversity even though they seem ordinary.",
+          "explanation": "This question highlights how even small, 'invisible' organisms play critical roles in ecosystems. Biodiversity depends not just on large, visible animals but on the countless organisms working beneath our feet."
         },
         {
           "id": "ch2-t2-m2",
           "type": "short",
-          "question": "What is the difference between taproot and fibrous root? Which type does a rice plant have?",
-          "answer": "A taproot has one main thick root growing deep into the soil with smaller roots branching off it. Examples: carrot, mustard. Fibrous roots have many thin roots of similar size spreading in all directions with no single main root. Examples: wheat, rice, grass. Rice has fibrous roots.",
-          "explanation": "Root type is one of the ways we classify plants. Taproots are good at reaching deep water sources; fibrous roots hold the soil well and prevent erosion."
+          "question": "Name three different habitats found in India and mention one unique animal found in each.",
+          "options": [],
+          "answer": "1. The Sundarbans (mangrove wetlands) — home to the Royal Bengal Tiger, which swims between islands. 2. The Western Ghats (tropical moist forests) — home to the lion-tailed macaque, a primate found nowhere else. 3. The Thar Desert (arid scrubland) — home to the Great Indian Bustard, one of the heaviest flying birds in the world.",
+          "explanation": "India's diverse geography — from coastal mangroves to mountain forests to sandy deserts — creates very different living conditions, each supporting unique animals adapted to that specific environment."
         }
       ],
       "hard": [
         {
           "id": "ch2-t2-h1",
-          "type": "short",
-          "question": "A student notices that a wheat plant and a mango tree both have roots, stems, and leaves. But their leaves look very different and so do their roots. Explain why, using the terms venation, root type, and cotyledon.",
-          "answer": "Wheat and mango belong to different plant groups. Wheat is a monocot — its seed has one cotyledon, its leaves have parallel venation (veins running side by side), and it has fibrous roots (many thin roots of equal size). Mango is a dicot — its seed has two cotyledons, its leaves have reticulate venation (net-like pattern), and it has a taproot (one main thick root). These differences are not random — they reflect the fundamental type of plant each is.",
-          "explanation": "In most plants, venation type, root type, and seed type are connected. Monocots typically have parallel venation, fibrous roots, and one cotyledon. Dicots typically have reticulate venation, taproots, and two cotyledons. This makes it easier to classify plants by looking at just one of these features."
+          "type": "long",
+          "question": "India lost most of its vulture population over a few years due to a chemical (diclofenac) used in cattle medicine. The vultures died after eating the carcasses of treated cattle. Explain how the loss of vultures — birds that most people consider ugly and unimportant — affected the environment and human health.",
+          "options": [],
+          "answer": "Vultures are nature's clean-up crew — they feed on dead animals and dispose of carcasses quickly, preventing the spread of disease. When India's vulture population crashed, dead cattle and other animal carcasses were no longer consumed rapidly. Rotting remains piled up in fields and near villages, becoming breeding grounds for bacteria and disease. Feral dog populations exploded because dogs now had easy access to carcasses that vultures previously ate. More stray dogs led to a sharp increase in rabies cases among humans. The entire chain reaction — from losing one species to increased human disease — showed that every organism, even one we consider ugly or unimportant, plays a vital role in the ecosystem. Removing one link in the chain can have devastating and unexpected consequences.",
+          "explanation": "This real-world example from India powerfully demonstrates why biodiversity conservation matters. It is not about saving 'cute' animals — it is about maintaining the balance of ecosystems that directly affect human health and well-being."
         }
       ]
     },
     {
-      "topic": "How to Group Animals",
+      "topic": "Habitats, Adaptations, and Classification",
       "easy": [
         {
           "id": "ch2-t3-e1",
           "type": "mcq",
-          "question": "Which of these animals moves by slithering?",
-          "options": ["Frog", "Butterfly", "Snake", "Fish"],
-          "answer": "Snake",
-          "explanation": "Snakes slither — they move by pushing their body along the ground on their belly. They have no legs."
+          "question": "The natural place where an organism lives and finds everything it needs to survive is called its —",
+          "options": ["Adaptation", "Habitat", "Classification", "Excretion"],
+          "answer": "Habitat",
+          "explanation": "A habitat is the natural environment where an organism lives. It provides food, water, shelter, and suitable conditions for the organism to survive and reproduce."
         },
         {
           "id": "ch2-t3-e2",
-          "type": "fill",
-          "question": "Animals that have a backbone are called ______.",
-          "answer": "vertebrates",
-          "explanation": "Vertebrates are animals with a backbone (spine). Examples include fish, frogs, birds, snakes, and humans."
+          "type": "mcq",
+          "question": "A cactus has spines instead of broad leaves. This adaptation helps the plant to —",
+          "options": ["Attract more insects", "Reduce water loss in the desert", "Grow taller", "Produce more flowers"],
+          "answer": "Reduce water loss in the desert",
+          "explanation": "Broad leaves lose water through evaporation. By having thin spines instead of leaves, the cactus minimises water loss — a crucial adaptation for surviving in a hot, dry desert where water is scarce."
         },
         {
           "id": "ch2-t3-e3",
+          "type": "fill",
+          "question": "A special body feature or behaviour that helps an organism survive in its habitat is called an ______.",
+          "options": [],
+          "answer": "adaptation",
+          "explanation": "Adaptations develop over many generations. They are specific to the habitat — a camel's adaptations help it survive in a desert, while a fish's adaptations help it survive underwater."
+        },
+        {
+          "id": "ch2-t3-e4",
           "type": "mcq",
-          "question": "Which of these is an invertebrate?",
-          "options": ["Sparrow", "Frog", "Earthworm", "Lizard"],
-          "answer": "Earthworm",
-          "explanation": "An earthworm has no backbone, so it is an invertebrate. Sparrows, frogs, and lizards all have backbones — they are vertebrates."
+          "question": "Animals that have a backbone are called —",
+          "options": ["Invertebrates", "Herbs", "Vertebrates", "Creepers"],
+          "answer": "Vertebrates",
+          "explanation": "Vertebrates are animals with a backbone (spine) running along their body. Examples include fish, frogs, lizards, birds, and humans."
+        },
+        {
+          "id": "ch2-t3-e5",
+          "type": "mcq",
+          "question": "Which of these is a shrub?",
+          "options": ["Peepal", "Wheat", "Mehendi (henna)", "Pumpkin"],
+          "answer": "Mehendi (henna)",
+          "explanation": "Mehendi (henna) is a shrub — a medium-sized plant with woody branches starting from near the base. Peepal is a tree, wheat is a herb, and pumpkin is a creeper."
         }
       ],
       "medium": [
         {
           "id": "ch2-t3-m1",
           "type": "short",
-          "question": "A duck can walk, swim, and fly. Does this make it difficult to classify? Explain.",
-          "answer": "A duck can walk, swim, and fly — it has multiple modes of movement. This shows that grouping animals by movement alone can be incomplete. Scientists use many features together (body structure, backbone, reproduction, etc.) to classify animals properly. The duck is still classified as a bird (vertebrate with wings and feathers) even though it can also swim.",
-          "explanation": "Classification in science is not always about one single feature. A complete picture uses multiple characteristics. A duck is primarily a bird, classified by its body structure, warm blood, and egg-laying, even though it shares some features with aquatic animals."
+          "question": "Explain how the snow leopard is adapted to survive in the cold, snowy mountains of the Himalayas. Mention at least three adaptations.",
+          "options": [],
+          "answer": "1. The snow leopard has very thick, dense fur that insulates its body against freezing temperatures. 2. Its wide, fur-covered paws act like natural snowshoes, spreading its weight so it does not sink into deep snow. 3. It has a long, thick, bushy tail that it wraps around its nose and face while resting to keep warm. 4. Its pale grey spotted coat provides camouflage against rocky, snowy terrain, helping it hunt prey without being seen.",
+          "explanation": "Each of the snow leopard's adaptations solves a specific challenge posed by its cold mountain habitat — extreme cold, deep snow, and the need to hunt in rocky terrain. These features developed over thousands of generations."
         },
         {
           "id": "ch2-t3-m2",
           "type": "short",
-          "question": "What is the difference between a vertebrate and an invertebrate? Give two examples of each.",
-          "answer": "Vertebrates have a backbone (spine) running along their body. Examples: fish, birds, humans, frogs. Invertebrates do not have a backbone. Examples: ants, butterflies, earthworms, jellyfish.",
-          "explanation": "Over 95% of all animal species on Earth are invertebrates. Vertebrates are fewer in number but include the largest animals like whales and elephants."
+          "question": "What is the difference between a climber and a creeper? Give one example of each that you might see in an Indian household or garden.",
+          "options": [],
+          "answer": "Both climbers and creepers have weak stems that cannot stand upright on their own. The difference is the direction they grow. A climber grows upward by wrapping around or clinging to a support such as a wall, fence, or pole — for example, the money plant commonly grown in Indian homes. A creeper spreads horizontally along the ground — for example, the pumpkin plant grown in many kitchen gardens.",
+          "explanation": "Remembering the difference is simple: climbers go UP (they climb), creepers go ALONG the ground (they creep). Both are types of plants with weak stems, but their growth direction differs."
+        },
+        {
+          "id": "ch2-t3-m3",
+          "type": "short",
+          "question": "Why do scientists classify living things into groups instead of studying each species individually?",
+          "options": [],
+          "answer": "There are millions of species on Earth. Studying each one individually without any organisation would be chaotic and inefficient. Classification groups organisms with similar features together, making it easier to study them systematically. It also helps scientists predict characteristics — for example, if a plant has parallel leaf venation, it likely has fibrous roots and monocot seeds. Classification is like organising a library into sections — it helps scientists find, study, and communicate about species efficiently.",
+          "explanation": "Classification is a fundamental tool in science. It does not change what an organism is — it simply creates an organised framework for understanding the enormous diversity of life."
         }
       ],
       "hard": [
         {
           "id": "ch2-t3-h1",
-          "type": "short",
-          "question": "A frog lives both on land and in water. A duck can walk, swim, and fly. A flying fish can jump out of water and glide. What does this tell us about classifying animals into neat groups? Is classification still useful even if many animals don't fit perfectly?",
-          "answer": "These examples show that living things are so varied that they don't always fit into neat, fixed groups. However, classification is still very useful — it helps scientists organise, study, and communicate about millions of species. Even when an animal has features from multiple groups, we classify it based on its main features. A frog is classified as an amphibian because it lives both on land and water. Classification is a tool to make sense of diversity — it doesn't need to be perfect to be helpful.",
-          "explanation": "Scientists understand that classification systems are human-made tools to study nature. Nature itself doesn't follow strict rules — there are always exceptions. Good scientists update classification systems as they learn more. This flexibility is a strength of science, not a weakness."
-        }
-      ]
-    },
-    {
-      "topic": "Habitats and Adaptations",
-      "easy": [
-        {
-          "id": "ch2-t4-e1",
-          "type": "mcq",
-          "question": "What is a habitat?",
-          "options": ["A type of food", "The natural place where a plant or animal lives", "A kind of bird", "The colour of an animal"],
-          "answer": "The natural place where a plant or animal lives",
-          "explanation": "A habitat is the natural environment where an organism lives. It provides everything the organism needs — food, water, shelter, and the right climate."
+          "type": "long",
+          "question": "A fish is taken out of a river and placed in a desert. A camel is placed in the middle of a deep lake. Explain, using the concept of adaptations, why neither animal would survive in the other's habitat. In your answer, mention at least two specific adaptations of each animal.",
+          "options": [],
+          "answer": "A fish is adapted for an aquatic habitat. It has gills that extract dissolved oxygen from water — on land, gills collapse and cannot function, so the fish suffocates. It has a streamlined body and fins designed for swimming — on dry sand, it cannot move at all. Without water surrounding its body, its skin dries out rapidly. A camel is adapted for a desert habitat. It breathes air through lungs — underwater, it would drown because it cannot extract oxygen from water. Its wide, flat feet are designed for walking on sand — they are useless for swimming. Its heavy body would sink, and its thick fur, which insulates against desert heat, would become waterlogged and drag it down. Each animal's adaptations are solutions to the problems of its own habitat. In a different habitat, those same adaptations become disadvantages. This is why habitat destruction is so dangerous — organisms cannot simply relocate to a completely different environment.",
+          "explanation": "This question tests the understanding that adaptations are habitat-specific. A feature that is an advantage in one environment can be a fatal disadvantage in another. This is the core reason why conservation of habitats is essential for species survival."
         },
         {
-          "id": "ch2-t4-e2",
-          "type": "mcq",
-          "question": "Why does a cactus have thick, fleshy stems?",
-          "options": ["To attract insects", "To store water in a dry desert", "To climb walls", "To float in water"],
-          "answer": "To store water in a dry desert",
-          "explanation": "The cactus is adapted to desert life. Its thick fleshy stem stores water so the plant can survive for long periods without rain."
-        },
-        {
-          "id": "ch2-t4-e3",
-          "type": "fill",
-          "question": "A special feature that helps an animal or plant survive in its habitat is called an ______.",
-          "answer": "adaptation",
-          "explanation": "Adaptations are special features — physical or behavioural — that help a living thing survive in its environment. They develop over thousands of years."
-        },
-        {
-          "id": "ch2-t4-e4",
-          "type": "mcq",
-          "question": "A fish has a streamlined body. This adaptation helps it —",
-          "options": ["Climb trees", "Move through water easily", "Survive in cold mountains", "Store food"],
-          "answer": "Move through water easily",
-          "explanation": "A streamlined (smooth, torpedo-shaped) body reduces resistance in water and helps fish swim efficiently."
-        }
-      ],
-      "medium": [
-        {
-          "id": "ch2-t4-m1",
+          "id": "ch2-t3-h2",
           "type": "short",
-          "question": "How is a camel adapted to live in a desert? Name at least three adaptations.",
-          "answer": "1. Stores fat in its hump, which can be used as energy when food is scarce. 2. Can go many days without water — its body is very efficient at conserving water. 3. Wide, flat feet prevent it from sinking into sand. 4. Long eyelashes and nostrils that can be closed protect against sandstorms.",
-          "explanation": "Each of a camel's adaptations solves a specific problem of desert life — extreme heat, lack of water, and sandy ground. Adaptations are never random; they are specific responses to the challenges of a habitat."
-        },
-        {
-          "id": "ch2-t4-m2",
-          "type": "short",
-          "question": "Why would a fish die if taken out of water? Why would a camel struggle to survive in a river habitat?",
-          "answer": "A fish has gills adapted to take in oxygen dissolved in water. On land, it cannot breathe air and will die. A camel is adapted for dry, hot desert conditions — it cannot breathe underwater, has no fins, and its body is not built for moving through water. Each organism is suited to its own habitat, and moving it to a completely different one would put it at risk of death.",
-          "explanation": "Adaptations make an organism well-suited to one habitat but may make it unsuitable for another. This is why habitat destruction is so dangerous — animals cannot simply 'move' to a completely different environment."
-        }
-      ],
-      "hard": [
-        {
-          "id": "ch2-t4-h1",
-          "type": "short",
-          "question": "Forests in India are being cut down to build roads and factories. Using what you know about habitats and adaptations, explain why this is a serious problem for animals like tigers and elephants.",
-          "answer": "Tigers and elephants are adapted to live in forests — they need the trees for shelter, the forest ecosystem for food, and large areas of land to roam and find mates. When forests are cut down, these animals lose their habitat. Their adaptations — camouflage in forest light, behaviour adapted to dense vegetation, food chains connected to forest prey — become useless in open land. They may not be able to find enough food, may come into conflict with humans, and their population shrinks. Eventually they could become endangered or extinct. Protecting forests means protecting the entire ecosystem these animals depend on.",
-          "explanation": "Habitat loss is the biggest cause of species extinction worldwide. When a habitat is destroyed, all the organisms adapted to live there lose their home — and adaptations that took thousands of years to develop cannot be changed overnight. This is why conservation of forests and natural habitats is so urgent."
+          "question": "More than 95% of all animal species on Earth are invertebrates, yet most people can name far more vertebrate species than invertebrate ones. Why do you think this is the case? Does this imbalance in awareness matter for biodiversity conservation?",
+          "options": [],
+          "answer": "Most invertebrates — insects, worms, spiders, snails — are small, often hidden, and do not attract as much human attention as large vertebrates like tigers, elephants, and eagles. Media and conservation campaigns tend to focus on large, visually impressive vertebrates (called 'charismatic megafauna'). However, this imbalance matters greatly for conservation. Invertebrates perform essential ecosystem services — bees pollinate crops, earthworms enrich soil, beetles decompose dead matter, and spiders control pest populations. If invertebrate species decline unnoticed because we are only paying attention to large animals, entire ecosystems could collapse. Effective biodiversity conservation must protect all species, including the small and less glamorous ones.",
+          "explanation": "This question encourages students to think critically about how human biases affect conservation priorities. True biodiversity protection requires caring about all organisms, not just the ones that appear on magazine covers."
         }
       ]
     }

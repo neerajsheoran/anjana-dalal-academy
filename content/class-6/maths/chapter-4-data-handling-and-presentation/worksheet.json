@@ -2,178 +2,259 @@
   "chapterRef": "class-6/maths/chapter-4-data-handling-and-presentation/worksheet",
   "topics": [
     {
-      "topic": "Tally Marks and Frequency Tables",
+      "topic": "Collecting and Organising Data",
       "easy": [
         {
-          "id": "m4-e1",
+          "id": "c4-e1",
           "type": "mcq",
-          "question": "In tally marks, a diagonal stroke through four vertical strokes represents —",
+          "question": "When using tally marks, a diagonal stroke drawn across four vertical strokes represents a total count of —",
           "options": ["4", "5", "6", "10"],
           "answer": "5",
-          "explanation": "In the tally mark system, four vertical strokes (||||) are followed by a diagonal stroke through them to make a group of 5. This makes counting in fives easy and fast."
+          "explanation": "In the tally system, four vertical strokes are grouped together by drawing a fifth stroke diagonally across them. This creates a bundle of 5, making it easy to count in fives."
         },
         {
-          "id": "m4-e2",
+          "id": "c4-e2",
           "type": "fill",
-          "question": "The number of times a particular value appears in a dataset is called its ______.",
+          "question": "The number of times a particular item or category appears in a dataset is called its ______.",
           "options": [],
           "answer": "frequency",
-          "explanation": "Frequency is how often a particular value or category occurs in the collected data. It is the count for each category in a frequency table."
+          "explanation": "Frequency means 'how many times.' In a frequency table, each category is listed alongside its frequency — the count of how often it occurs in the data."
         },
         {
-          "id": "m4-e3",
+          "id": "c4-e3",
           "type": "mcq",
-          "question": "A teacher records the favourite colours of 25 students. Tally marks show: Red ||||̶ |||, Blue ||||̶ ||||̶, Green |||||. How many students chose Blue?",
-          "options": ["8", "10", "5", "13"],
-          "answer": "10",
-          "explanation": "Blue: ||||̶ ||||̶ = 5 + 5 = 10 students. Red = 5+3 = 8. Green = 5. Total = 10+8+5 = 23 (only 23 if those are all the tallies shown — check the question context)."
+          "question": "In a class monitor election, the tally marks for three candidates are: Meera ||||̶ ||||̶ ||, Arjun ||||̶ |||, Fatima ||||̶ ||||. How many votes did Fatima receive?",
+          "options": ["5", "8", "9", "10"],
+          "answer": "9",
+          "explanation": "Fatima's tally: ||||̶ |||| = one group of 5 plus 4 extra strokes = 5 + 4 = 9 votes."
         },
         {
-          "id": "m4-e4",
+          "id": "c4-e4",
           "type": "mcq",
-          "question": "The following marks were obtained by 8 students: 7, 9, 8, 7, 6, 9, 7, 8. What is the frequency of the mark 7?",
-          "options": ["2", "3", "1", "4"],
-          "answer": "3",
-          "explanation": "Count how many times 7 appears in the data: 7, _, _, 7, _, _, 7, _ — it appears 3 times. So the frequency of 7 is 3."
+          "question": "A sports teacher surveyed 50 students about their favourite sport. The results were: Cricket 18, Football 12, Badminton 9, Kho-Kho 7, Swimming 4. Which sport is the least popular?",
+          "options": ["Cricket", "Kho-Kho", "Swimming", "Badminton"],
+          "answer": "Swimming",
+          "explanation": "Swimming has the lowest frequency of 4 out of 50 students, making it the least popular sport in this survey."
+        },
+        {
+          "id": "c4-e5",
+          "type": "mcq",
+          "question": "After collecting data through a survey, you add up all the tally counts and get 38, but you surveyed 40 people. What should you do?",
+          "options": [
+            "Submit the table as it is",
+            "Add 2 to the most popular category",
+            "Recount the tally marks carefully to find the error",
+            "Ignore the difference because it is small"
+          ],
+          "answer": "Recount the tally marks carefully to find the error",
+          "explanation": "The total of all frequencies must equal the total number of data points collected. A mismatch means there is a counting error somewhere. You must recheck and correct it."
         }
       ],
       "medium": [
         {
-          "id": "m4-m1",
+          "id": "c4-m1",
           "type": "short",
-          "question": "The number of goals scored by a football team in 15 matches: 2, 0, 3, 1, 2, 4, 0, 2, 1, 3, 2, 1, 0, 4, 2. Make a frequency table and state which score occurred most often.",
+          "question": "A canteen manager recorded the lunch choices of 35 students: Rajma-Chawal was chosen 12 times, Chole-Bhature 9 times, Idli-Sambhar 8 times, and Paratha-Sabzi 6 times. (a) Represent this data using tally marks. (b) Which dish should the canteen prepare in the largest quantity? (c) Verify that the total matches 35.",
           "options": [],
-          "answer": "Frequency table: Goals | Tally | Frequency. 0: ||| → 3. 1: ||| → 3. 2: ||||̶ → 5. 3: || → 2. 4: || → 2. Total: 15. The score 2 occurred most often (frequency = 5). This means in 5 out of 15 matches, the team scored exactly 2 goals.",
-          "explanation": "Organising raw data into a frequency table immediately makes patterns visible. Here the mode (most frequent value) is 2 goals."
+          "answer": "(a) Rajma-Chawal: ||||̶ ||||̶ || (12), Chole-Bhature: ||||̶ |||| (9), Idli-Sambhar: ||||̶ ||| (8), Paratha-Sabzi: ||||̶ | (6). (b) Rajma-Chawal, because it has the highest frequency (12 out of 35). (c) 12 + 9 + 8 + 6 = 35. The total matches.",
+          "explanation": "Organising choices into tally marks and a frequency table helps the canteen manager see which dish is most in demand. The verification step (checking the total) ensures no data was missed or double-counted."
+        },
+        {
+          "id": "c4-m2",
+          "type": "short",
+          "question": "The blood groups of 30 students in a class were recorded as follows: A, B, O, AB, A, O, B, A, O, A, B, O, AB, A, O, B, A, O, A, B, O, A, AB, B, O, A, B, O, A, O. Make a frequency table showing each blood group and its count. Which blood group is the most common?",
+          "options": [],
+          "answer": "Frequency table: Blood Group A: 10, Blood Group B: 7, Blood Group O: 10, Blood Group AB: 3. Total: 10 + 7 + 10 + 3 = 30. Blood groups A and O are equally common, each with a frequency of 10.",
+          "explanation": "Counting each blood group from the raw data requires careful tracking. Both A and O appear 10 times. When two categories share the highest frequency, we report both."
+        },
+        {
+          "id": "c4-m3",
+          "type": "short",
+          "question": "Explain the difference between collecting data yourself (for example, asking your classmates about their favourite festival) and using data from a newspaper article about popular festivals in India. Which type is more useful if you want to know what your own class prefers?",
+          "options": [],
+          "answer": "Collecting data yourself is called primary data — you gather it firsthand through surveys, observation, or experiments. Using data from a newspaper is called secondary data — it was collected by someone else. For knowing what your own class prefers, primary data is more useful because it directly answers your specific question about your classmates, whereas the newspaper data covers a different group of people.",
+          "explanation": "Primary data is tailored to your exact question and audience. Secondary data is convenient and already available, but may not match your specific needs."
         }
       ],
-      "hard": []
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "A school conducted a survey asking 60 students in Class 6 to name their favourite season. The results were: Summer — 8, Monsoon — 22, Winter — 18, Spring — 12. (a) Make a frequency table with tally marks. (b) What fraction of students chose Monsoon? (c) How many more students prefer Winter over Summer? (d) If 20 more students were surveyed and all 20 chose Spring, what would the new frequency of Spring be, and would it become the most popular season?",
+          "options": [],
+          "answer": "(a) Summer: ||||̶ ||| = 8, Monsoon: ||||̶ ||||̶ ||||̶ ||||̶ || = 22, Winter: ||||̶ ||||̶ ||||̶ ||| = 18, Spring: ||||̶ ||||̶ || = 12. Total = 60. (b) Fraction choosing Monsoon = 22/60 = 11/30. (c) Winter − Summer = 18 − 8 = 10 more students prefer Winter. (d) New Spring frequency = 12 + 20 = 32. New total = 80. Monsoon is still 22. Since 32 > 22, Spring would become the most popular season.",
+          "explanation": "This problem combines tally marks, fractions, subtraction, and a 'what-if' scenario. Part (d) tests whether students can update a frequency table with new data and re-evaluate which category leads."
+        }
+      ]
     },
     {
       "topic": "Pictographs",
       "easy": [
         {
-          "id": "m4-e5",
+          "id": "c4-e6",
           "type": "mcq",
-          "question": "In a pictograph, each 🌾 symbol represents 50 kg of wheat. If a row shows 6 symbols, how much wheat does it represent?",
-          "options": ["56 kg", "300 kg", "250 kg", "600 kg"],
-          "answer": "300 kg",
-          "explanation": "Each symbol = 50 kg. 6 symbols = 6 × 50 = 300 kg. This is the key rule of pictographs — always multiply the number of symbols by the scale value."
+          "question": "In a pictograph, each umbrella symbol represents 10 umbrellas sold. If the row for July shows 10 umbrella symbols, how many umbrellas were sold in July?",
+          "options": ["10", "50", "100", "110"],
+          "answer": "100",
+          "explanation": "Each symbol = 10 umbrellas. Number of symbols = 10. Total = 10 x 10 = 100 umbrellas."
         },
         {
-          "id": "m4-e6",
+          "id": "c4-e7",
           "type": "fill",
-          "question": "In a pictograph, the statement that tells you what each symbol represents is called the ______.",
+          "question": "In a pictograph, the statement that tells you how many items each symbol represents is called the ______.",
           "options": [],
-          "answer": "key (or scale)",
-          "explanation": "Every pictograph must have a key (also called scale or legend) that clearly states what each symbol represents. Without the key, the pictograph cannot be read correctly."
+          "answer": "key",
+          "explanation": "The key (also called the scale or legend) is essential in every pictograph. Without it, readers cannot interpret what the symbols mean."
+        },
+        {
+          "id": "c4-e8",
+          "type": "mcq",
+          "question": "A pictograph shows the number of books read by four students. Each book symbol represents 2 books. Priya's row has 6 symbols and Rohan's row has 4 symbols. How many more books did Priya read than Rohan?",
+          "options": ["2", "4", "6", "10"],
+          "answer": "4",
+          "explanation": "Priya read 6 x 2 = 12 books. Rohan read 4 x 2 = 8 books. Difference = 12 - 8 = 4 books."
+        },
+        {
+          "id": "c4-e9",
+          "type": "mcq",
+          "question": "When choosing a scale for a pictograph, which of the following is the best choice if your data values are 20, 30, 40, and 50?",
+          "options": [
+            "Each symbol = 3 items",
+            "Each symbol = 7 items",
+            "Each symbol = 10 items",
+            "Each symbol = 15 items"
+          ],
+          "answer": "Each symbol = 10 items",
+          "explanation": "A scale of 10 divides evenly into all the values (20/10=2, 30/10=3, 40/10=4, 50/10=5), giving whole numbers of symbols. Scales of 3, 7, or 15 would produce fractions, making the pictograph difficult to draw."
+        },
+        {
+          "id": "c4-e10",
+          "type": "fill",
+          "question": "A pictograph uses bottle symbols to show milk deliveries. Each bottle = 4 litres. On Saturday, 32 litres were delivered. The number of bottle symbols in Saturday's row is ______.",
+          "options": [],
+          "answer": "8",
+          "explanation": "Number of symbols = Total litres / Scale = 32 / 4 = 8 bottle symbols."
         }
       ],
       "medium": [
         {
-          "id": "m4-m2",
+          "id": "c4-m4",
           "type": "short",
-          "question": "The number of books read by 5 students during summer holidays: Aarav: 8, Bina: 12, Chetan: 6, Divya: 10, Esha: 4. Draw a pictograph using 📚 = 2 books. How many symbols does each student get?",
+          "question": "A housing society tracked daily milk delivery for a week: Monday 24 litres, Tuesday 20, Wednesday 28, Thursday 16, Friday 24, Saturday 32, Sunday 36. (a) Choose a suitable scale and explain why. (b) How many symbols would Thursday and Sunday each have? (c) What is the total milk delivered during the week?",
           "options": [],
-          "answer": "Scale: each 📚 = 2 books. Number of symbols: Aarav: 8÷2 = 4 symbols (📚📚📚📚). Bina: 12÷2 = 6 symbols (📚📚📚📚📚📚). Chetan: 6÷2 = 3 symbols (📚📚📚). Divya: 10÷2 = 5 symbols (📚📚📚📚📚). Esha: 4÷2 = 2 symbols (📚📚). The pictograph title could be 'Books Read During Summer Holidays'. Bina read the most books (6 symbols) and Esha read the fewest (2 symbols).",
-          "explanation": "When drawing a pictograph, first choose a scale that divides all values evenly (here, 2 divides 4, 6, 8, 10, 12 evenly). Then draw symbols for each category and include the key."
+          "answer": "(a) A suitable scale is 1 symbol = 4 litres, because 4 divides evenly into all values (24, 20, 28, 16, 24, 32, 36 are all divisible by 4). (b) Thursday: 16/4 = 4 symbols. Sunday: 36/4 = 9 symbols. (c) Total = 24+20+28+16+24+32+36 = 180 litres.",
+          "explanation": "The key skill is selecting a scale that divides into every data value without leaving remainders. Testing divisibility by 2, 4, and 5 is a good strategy."
+        },
+        {
+          "id": "c4-m5",
+          "type": "short",
+          "question": "A pictograph shows train departures from five cities. Each train symbol = 50 departures. Delhi: 8 symbols, Mumbai: 10 symbols, Chennai: 5 symbols, Kolkata: 6 symbols, Bengaluru: 7 symbols. (a) Which city has the most departures? (b) How many more departures does Mumbai have compared to Chennai? (c) Find the total number of departures across all five cities.",
+          "options": [],
+          "answer": "(a) Mumbai with 10 symbols = 10 x 50 = 500 departures. (b) Mumbai = 500, Chennai = 5 x 50 = 250. Difference = 500 - 250 = 250 more departures. (c) Total symbols = 8+10+5+6+7 = 36. Total departures = 36 x 50 = 1800.",
+          "explanation": "Reading a pictograph requires multiplying the number of symbols by the scale value. Comparisons are found by subtracting. Totals are found by adding all values."
         }
       ],
-      "hard": []
+      "hard": [
+        {
+          "id": "c4-h2",
+          "type": "long",
+          "question": "A farmer recorded his monthly harvest of wheat (in quintals): January 15, February 15, March 10, April 5, May 0, June 0, July 0, August 0, September 5, October 10, November 20, December 25. (a) Draw a pictograph using a suitable scale. State your key. (b) Which months had no harvest? Suggest a reason. (c) Which month had the largest harvest? (d) What is the total annual harvest? (e) Why might a pictograph be less suitable than a bar graph for this data?",
+          "options": [],
+          "answer": "(a) Scale: 1 symbol = 5 quintals. Jan: 3 symbols, Feb: 3, Mar: 2, Apr: 1, May: 0, Jun: 0, Jul: 0, Aug: 0, Sep: 1, Oct: 2, Nov: 4, Dec: 5. Key: Each symbol = 5 quintals. (b) May through August had no harvest — these are monsoon months when wheat is not harvested; the crop planted in October-November is harvested in March-April (Rabi season). (c) December with 25 quintals (5 symbols). (d) Total = 15+15+10+5+0+0+0+0+5+10+20+25 = 105 quintals. (e) A pictograph with 12 months uses a lot of space and several rows have zero symbols. A bar graph would be more compact and can show both zero and non-zero values clearly on a continuous scale.",
+          "explanation": "This problem tests pictograph construction, interpretation, real-world reasoning (agricultural seasons in India), and critical evaluation of when a pictograph is or is not the best choice."
+        }
+      ]
     },
     {
       "topic": "Bar Graphs",
       "easy": [
         {
-          "id": "m4-e7",
+          "id": "c4-e11",
           "type": "mcq",
-          "question": "In a bar graph, what does the height (or length) of a bar represent?",
+          "question": "In a bar graph, what does the height of a bar represent?",
           "options": [
-            "The value or frequency of that category",
             "The width of the category",
-            "The total of all categories",
-            "The number of bars in the graph"
+            "The value or frequency of that category",
+            "The total of all categories combined",
+            "The number of categories in the graph"
           ],
           "answer": "The value or frequency of that category",
-          "explanation": "In a bar graph, the height (for vertical bars) or length (for horizontal bars) of each bar shows the value or frequency for that category. Taller bar = larger value."
+          "explanation": "Each bar's height (in a vertical bar graph) or length (in a horizontal bar graph) directly represents the value or frequency for that particular category."
         },
         {
-          "id": "m4-e8",
-          "type": "mcq",
-          "question": "A bar graph shows the number of students in 4 classes. Class 6A: 38, 6B: 42, 6C: 35, 6D: 40. Which class has the fewest students?",
-          "options": ["6A", "6B", "6C", "6D"],
-          "answer": "6C",
-          "explanation": "6C has 35 students — the lowest value among 38, 42, 35, 40. In a bar graph, this would be the shortest bar."
-        },
-        {
-          "id": "m4-e9",
+          "id": "c4-e12",
           "type": "fill",
-          "question": "In a bar graph, the horizontal line at the bottom of the bars is called the ______.",
+          "question": "The horizontal line at the bottom of a vertical bar graph is called the ______.",
           "options": [],
           "answer": "X-axis",
-          "explanation": "The X-axis (horizontal axis) typically shows the categories (e.g., months, subjects, sports) in a bar graph. The Y-axis (vertical axis) shows the values or frequencies."
+          "explanation": "The X-axis (horizontal axis) typically displays the categories being compared. The Y-axis (vertical axis) displays the numerical scale."
+        },
+        {
+          "id": "c4-e13",
+          "type": "mcq",
+          "question": "A bar graph shows vegetable prices: Tomato Rs 40, Onion Rs 35, Potato Rs 25, Capsicum Rs 60. Which vegetable has the shortest bar?",
+          "options": ["Tomato", "Onion", "Potato", "Capsicum"],
+          "answer": "Potato",
+          "explanation": "Potato has the lowest price (Rs 25), so it will have the shortest bar. In a bar graph, the shortest bar always represents the smallest value."
+        },
+        {
+          "id": "c4-e14",
+          "type": "mcq",
+          "question": "Why must all bars in a bar graph have equal gaps between them?",
+          "options": [
+            "To make the bars taller",
+            "To show that categories are separate and allow easy comparison",
+            "To save paper",
+            "To make the graph colourful"
+          ],
+          "answer": "To show that categories are separate and allow easy comparison",
+          "explanation": "Equal gaps between bars ensure the graph is visually clear and balanced. Without gaps, the bars would merge together and be hard to distinguish."
+        },
+        {
+          "id": "c4-e15",
+          "type": "fill",
+          "question": "If the highest value in your data is 310 and you want the tallest bar to be about 6 cm high, a suitable scale for the Y-axis would be 1 cm = ______ units.",
+          "options": [],
+          "answer": "50",
+          "explanation": "If 1 cm = 50 units, then 310 units would give a bar about 310/50 = 6.2 cm high, which fits well on graph paper. The scale should make the graph fit neatly on the page."
         }
       ],
       "medium": [
         {
-          "id": "m4-m3",
+          "id": "c4-m6",
           "type": "short",
-          "question": "The runs scored by a batsman in 6 One Day Internationals: 72, 35, 95, 48, 110, 60. (a) Find the total runs. (b) Find the mean (average) runs per match. (c) In how many matches did he score above the average?",
+          "question": "Monthly rainfall in Bhopal: March 15 mm, April 10 mm, May 25 mm, June 180 mm, July 310 mm, August 280 mm. (a) What scale would you choose for the Y-axis? Explain. (b) Which month has the tallest bar? (c) Between which two consecutive months does the biggest jump in rainfall occur?",
           "options": [],
-          "answer": "(a) Total = 72+35+95+48+110+60 = 420 runs. (b) Mean = 420 ÷ 6 = 70 runs per match. (c) Scores above 70: 72 ✓, 95 ✓, 110 ✓ — in 3 matches he scored above the mean. (Scores at or below: 35, 48, 60.)",
-          "explanation": "This question combines data collection (cricket scores), arithmetic (sum), mean calculation, and comparison with the mean. Note that in real cricket analysis, batting average is used similarly — total runs ÷ number of dismissals."
+          "answer": "(a) A scale of 1 cm = 50 mm is suitable because the highest value (310) divided by 50 gives about 6.2 cm, which fits well on graph paper. The scale intervals would be 0, 50, 100, 150, 200, 250, 300, 350. (b) July (310 mm) has the tallest bar. (c) The biggest jump occurs between May (25 mm) and June (180 mm) — a difference of 155 mm, marking the arrival of the monsoon.",
+          "explanation": "Choosing the right scale is critical. The scale must accommodate the largest value without making the graph too tall. Identifying the biggest change between consecutive months requires comparing successive differences."
         },
         {
-          "id": "m4-m4",
+          "id": "c4-m7",
           "type": "short",
-          "question": "Monthly rainfall in a town (in mm): Jan 5, Feb 8, Mar 12, Apr 20, May 40, Jun 180, Jul 220, Aug 190, Sep 120, Oct 35, Nov 15, Dec 8. (a) Which month had the highest rainfall? (b) Find the total annual rainfall. (c) Which season had the highest rainfall? (d) What is the mean monthly rainfall?",
+          "question": "A coaching centre's exam results: Morning batch — 60 enrolled, 42 cleared. Afternoon batch — 45 enrolled, 27 cleared. Evening batch — 50 enrolled, 40 cleared. (a) If you drew a bar graph showing only the number who cleared, which batch would have the tallest bar? (b) Calculate the percentage of students who cleared in each batch. (c) Which batch actually performed best? Explain why raw numbers can be misleading.",
           "options": [],
-          "answer": "(a) July had the highest rainfall (220 mm). (b) Total = 5+8+12+20+40+180+220+190+120+35+15+8 = 853 mm. (c) June, July, August, September (monsoon season) had the highest rainfall: 180+220+190+120 = 710 mm out of 853 mm — over 83% of annual rainfall! (d) Mean = 853 ÷ 12 = 71.1 mm per month.",
-          "explanation": "This data reflects the reality of India's monsoon climate — most of the annual rainfall comes in just 4 months (June–September). This type of data analysis is used by meteorologists, farmers, and disaster management authorities."
+          "answer": "(a) Morning batch (42 cleared) would have the tallest bar. (b) Morning: 42/60 x 100 = 70%. Afternoon: 27/45 x 100 = 60%. Evening: 40/50 x 100 = 80%. (c) Evening batch performed best with an 80% success rate, even though it had fewer students clear (40) than the Morning batch (42). Raw numbers are misleading because batches had different sizes. Percentages give a fair comparison.",
+          "explanation": "This question teaches a vital lesson in data interpretation: absolute numbers can be misleading when comparing groups of different sizes. Percentages or ratios are needed for fair comparison."
         }
       ],
       "hard": [
         {
-          "id": "m4-h1",
+          "id": "c4-h3",
           "type": "long",
-          "question": "The mean score of 10 students in a science test is 72. Later, the teacher discovers an error — one student's score of 48 should actually be 84. (a) What was the original total score? (b) What is the corrected total score? (c) What is the new mean? (d) By how much did the mean increase?",
+          "question": "A school tracked daily absences for a week: Monday 18, Tuesday 9, Wednesday 7, Thursday 8, Friday 15. (a) Draw a bar graph for this data with a suitable scale. (b) On which day is attendance weakest? On which day is it strongest? (c) Suggest two possible reasons for the pattern you observe. (d) If the school has 200 students, what percentage of students were absent on Monday? (e) The principal decides to hold surprise quizzes on the days with highest absences. Do you think this will solve the problem? Give a reason for your answer.",
           "options": [],
-          "answer": "(a) Original total = Mean × Number of students = 72 × 10 = 720. (b) Corrected total = 720 − 48 + 84 = 720 + 36 = 756. (We remove the wrong score 48 and add the correct score 84.) (c) New mean = 756 ÷ 10 = 75.6. (d) Increase in mean = 75.6 − 72 = 3.6. The mean increased by 3.6 marks.",
-          "explanation": "This question shows how mean is affected by individual data changes. When one value increases by 36 (from 48 to 84), the total increases by 36, and the mean increases by 36÷10 = 3.6. This is a key insight: an error in one data point changes the mean by (error ÷ n)."
-        }
-      ]
-    },
-    {
-      "topic": "Mean (Average)",
-      "easy": [
-        {
-          "id": "m4-e10",
-          "type": "mcq",
-          "question": "Find the mean of: 15, 18, 12, 20, 25.",
-          "options": ["18", "20", "17", "19"],
-          "answer": "18",
-          "explanation": "Mean = Sum ÷ Count = (15+18+12+20+25) ÷ 5 = 90 ÷ 5 = 18."
+          "answer": "(a) X-axis: Days of the week. Y-axis: Number of absences, scale 0 to 20 with intervals of 5 (0, 5, 10, 15, 20). Bars: Monday = 18, Tuesday = 9, Wednesday = 7, Thursday = 8, Friday = 15. (b) Attendance is weakest on Monday (18 absences) and strongest on Wednesday (7 absences). (c) Possible reasons: (i) Students extend their weekend by missing Monday; (ii) Friday absences may be high because families leave early for weekend travel; (iii) Mid-week motivation is higher. (d) Monday absence percentage = 18/200 x 100 = 9%. (e) Surprise quizzes might reduce absences if students fear missing marks, but it could also penalise genuinely sick students unfairly. A better approach might be to investigate why absences are high on those days and address the root cause.",
+          "explanation": "This problem combines graph construction, pattern recognition, percentage calculation, and critical thinking. Part (e) goes beyond data reading — it asks students to evaluate a proposed solution, which is the highest level of data analysis."
         },
         {
-          "id": "m4-e11",
-          "type": "fill",
-          "question": "The mean of 6 numbers is 14. Their total sum is ______.",
+          "id": "c4-h4",
+          "type": "long",
+          "question": "The number of customers visiting a bookshop over six months: January 120, February 95, March 145, April 160, May 60, June 40. (a) Represent this data as a bar graph. State your chosen scale. (b) Calculate the total number of customers and the average (mean) number of customers per month. (c) In how many months was the customer count above the average? (d) June had the fewest customers. Give two possible explanations. (e) If the shop owner wants to run a sale to attract more customers, which month would you recommend and why?",
           "options": [],
-          "answer": "84",
-          "explanation": "Mean = Sum ÷ Count. So Sum = Mean × Count = 14 × 6 = 84."
+          "answer": "(a) X-axis: Months. Y-axis: Number of customers. Scale: 1 cm = 20 customers (intervals: 0, 20, 40, 60, 80, 100, 120, 140, 160, 180). Bars drawn at heights 120, 95, 145, 160, 60, 40. (b) Total = 120+95+145+160+60+40 = 620 customers. Mean = 620/6 = 103.3, approximately 103 customers per month. (c) Months above average (103): January (120), March (145), April (160) — 3 months. (d) Possible reasons: (i) June is the start of summer holidays, so families may be travelling rather than visiting shops; (ii) Extreme heat in June may discourage people from going out. (e) The sale should be in May or June when footfall is lowest (60 and 40). A sale during these months could attract customers who would otherwise stay away, boosting the weak months rather than adding to already-busy months.",
+          "explanation": "This comprehensive question covers bar graph construction, mean calculation, comparison with average, reasoning about real-world causes, and strategic decision-making based on data — the full cycle of data handling."
         }
-      ],
-      "medium": [
-        {
-          "id": "m4-m5",
-          "type": "short",
-          "question": "The mean temperature for 5 days in Delhi was 42°C. The temperatures on 4 of the days were 40°C, 44°C, 41°C, and 43°C. Find the temperature on the 5th day.",
-          "options": [],
-          "answer": "Total temperature for 5 days = Mean × Days = 42 × 5 = 210°C. Sum of 4 known temperatures = 40+44+41+43 = 168°C. Temperature on 5th day = 210 − 168 = 42°C.",
-          "explanation": "This is a classic 'reverse mean' problem. If you know the mean and n−1 values, you can find the missing value: Missing value = (Mean × n) − Sum of known values. Very useful in real data analysis."
-        }
-      ],
-      "hard": []
+      ]
     }
   ]
 }

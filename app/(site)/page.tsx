@@ -11,13 +11,27 @@ export default function HomePage() {
           <p className="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-3">
             Class 1 to Class 10 · CBSE · NCERT
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-3 leading-tight">
             CBSE Made Crystal Clear
           </h1>
-          <p className="text-blue-100 text-lg max-w-xl mx-auto">
-            Chapter-wise lessons, real-life examples, and 3-level worksheets
-            — from basics to brilliance.
+          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">
+            NCERT-aligned chapters with simple explanations,
+            real-life examples, and 3-level worksheets.
           </p>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <a
+              href="/login"
+              className="inline-block bg-white text-blue-700 font-bold px-8 py-3 rounded-xl text-lg hover:bg-blue-50 transition-colors shadow-lg"
+            >
+              Start Learning Free
+            </a>
+            <a
+              href="/classes"
+              className="inline-flex items-center gap-1 text-white/80 hover:text-white font-medium text-base transition-colors"
+            >
+              Browse Chapters <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
       </section>
 

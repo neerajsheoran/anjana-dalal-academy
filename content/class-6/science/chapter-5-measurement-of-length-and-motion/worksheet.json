@@ -2,201 +2,318 @@
   "chapterRef": "class-6/science/chapter-5-measurement-of-length-and-motion/worksheet",
   "topics": [
     {
-      "topic": "Measurement and Units",
+      "topic": "Measurement and Standard Units",
       "easy": [
         {
           "id": "ch5-e1",
           "type": "mcq",
-          "question": "What is the SI unit of length?",
+          "question": "Which of the following is the SI unit of length?",
           "options": [
-            "Metre",
             "Centimetre",
+            "Metre",
             "Kilometre",
             "Inch"
           ],
           "answer": "Metre",
-          "explanation": "The SI (International System of Units) unit of length is the metre (m)."
+          "explanation": "The International System of Units (SI) defines the metre (m) as the standard unit of length."
         },
         {
           "id": "ch5-e2",
           "type": "mcq",
-          "question": "How many centimetres are there in 1 metre?",
+          "question": "A handspan, a cubit, and a foot are all examples of:",
           "options": [
-            "100",
-            "10",
-            "1000",
-            "50"
+            "Non-standard units of measurement",
+            "SI units",
+            "Units of time",
+            "Units of mass"
           ],
-          "answer": "100",
-          "explanation": "1 metre = 100 centimetres. This is a fundamental conversion in the metric system."
+          "answer": "Non-standard units of measurement",
+          "explanation": "These body-based measurements vary from person to person, making them non-standard."
         },
         {
           "id": "ch5-e3",
           "type": "fill",
-          "question": "The full form of SI is ______.",
+          "question": "1 kilometre = ______ metres.",
           "options": [],
-          "answer": "International System of Units",
-          "explanation": "SI stands for Système International d’Unités, which is French for International System of Units."
+          "answer": "1000",
+          "explanation": "The prefix 'kilo' means one thousand, so 1 kilometre equals 1000 metres."
         },
         {
           "id": "ch5-e4",
           "type": "mcq",
-          "question": "Which unit would you use to measure the distance between two cities?",
+          "question": "Which unit is best suited for measuring the thickness of a coin?",
           "options": [
             "Kilometre",
+            "Metre",
             "Centimetre",
-            "Millimetre",
-            "Metre"
+            "Millimetre"
           ],
-          "answer": "Kilometre",
-          "explanation": "Large distances like those between cities are measured in kilometres (km). 1 km = 1000 m."
+          "answer": "Millimetre",
+          "explanation": "A coin is only a few millimetres thick. Millimetres are the appropriate unit for very small lengths."
         },
         {
           "id": "ch5-e5",
           "type": "short",
-          "question": "Why did early humans stop using body parts like hand span and foot length for measurement?",
+          "question": "Why are non-standard units like the handspan not suitable for scientific measurements?",
           "options": [],
-          "answer": "Because body parts vary from person to person, making measurements inconsistent. Standard units were needed so measurements could be compared and understood universally.",
-          "explanation": "A hand span of one person may be different from another’s. Standard units ensure everyone gets the same measurement for the same object."
+          "answer": "Non-standard units depend on the size of a person's body, which varies from individual to individual. Two people measuring the same object with their handspans will get different numbers, leading to confusion and inconsistency.",
+          "explanation": "Standard units like the metre give the same result regardless of who is measuring, which is essential for science and trade."
         }
       ],
       "medium": [
         {
           "id": "ch5-m1",
           "type": "mcq",
-          "question": "What error occurs when you read a ruler by looking at it from the side instead of straight on?",
+          "question": "A carpenter in Bengaluru measures a plank as 5 cubits long and tells a carpenter in Patna to cut a plank of the same length. The Patna carpenter's plank turns out shorter. What is the most likely reason?",
           "options": [
-            "Parallax error",
-            "Zero error",
-            "Random error",
-            "Scale error"
+            "The Patna carpenter's forearm is shorter, giving a smaller cubit",
+            "Wood shrinks when transported across states",
+            "The Bengaluru carpenter measured incorrectly",
+            "Cubits are larger in southern India"
           ],
-          "answer": "Parallax error",
-          "explanation": "Parallax error occurs when the line of sight is not perpendicular to the scale being read, causing an incorrect reading."
+          "answer": "The Patna carpenter's forearm is shorter, giving a smaller cubit",
+          "explanation": "A cubit is the length from the elbow to the tip of the middle finger. Since body dimensions differ between people, the cubit of one person will not match another's."
         },
         {
           "id": "ch5-m2",
           "type": "short",
-          "question": "How would you measure the length of a curved line using a thread?",
+          "question": "Convert 3.5 metres into (a) centimetres and (b) millimetres.",
           "options": [],
-          "answer": "Lay the thread carefully along the curved line, following its curves. Mark the point on the thread where the line ends. Then straighten the thread and measure the marked length with a ruler.",
-          "explanation": "A flexible thread can follow curved shapes. Once laid along the curve and straightened, its length can be measured with a ruler."
+          "answer": "(a) 3.5 m x 100 = 350 cm. (b) 3.5 m x 1000 = 3500 mm.",
+          "explanation": "Since 1 m = 100 cm, multiply by 100 to convert to centimetres. Since 1 m = 1000 mm, multiply by 1000 to convert to millimetres."
         },
         {
           "id": "ch5-m3",
           "type": "mcq",
-          "question": "1 kilometre is equal to how many metres?",
+          "question": "A highway milestone reads 'Mumbai 420 km.' Which unit conversion is correct?",
           "options": [
-            "1000 m",
-            "100 m",
-            "10 m",
-            "10000 m"
+            "420 km = 420000 m",
+            "420 km = 42000 m",
+            "420 km = 4200 m",
+            "420 km = 4200000 m"
           ],
-          "answer": "1000 m",
-          "explanation": "The prefix ‘kilo’ means 1000. So 1 kilometre = 1000 metres."
+          "answer": "420 km = 420000 m",
+          "explanation": "1 km = 1000 m, so 420 km = 420 x 1000 = 420000 m."
         }
       ],
       "hard": [
         {
           "id": "ch5-h1",
-          "type": "short",
-          "question": "A student measures the length of a table as 1.2 m. Express this length in (a) centimetres and (b) millimetres.",
+          "type": "long",
+          "question": "Riya and Aarav both measure the length of their classroom using their foot lengths. Riya gets 40 foot lengths and Aarav gets 35 foot lengths. Explain why their answers differ. If the classroom is actually 12 metres long, explain why using the metre gives a single, reliable answer.",
           "options": [],
-          "answer": "(a) 1.2 m × 100 = 120 cm. (b) 1.2 m × 1000 = 1200 mm.",
-          "explanation": "1 m = 100 cm, so 1.2 m = 120 cm. 1 m = 1000 mm, so 1.2 m = 1200 mm."
+          "answer": "Riya and Aarav get different numbers because their feet are different sizes. Riya's foot is smaller, so she needs more foot lengths to cover the classroom. Aarav's foot is larger, so he needs fewer. Neither answer tells us the true length because 'foot length' is a non-standard unit. When we use the metre — a standard unit that is the same everywhere — anyone measuring the classroom will get 12 metres, regardless of their body size. Standard units eliminate personal variation and allow measurements to be compared reliably.",
+          "explanation": "This illustrates why standard units were created: they remove dependence on the measurer's body and ensure universal consistency."
+        },
+        {
+          "id": "ch5-h2",
+          "type": "short",
+          "question": "The distance between two towns on a map is marked as 4 km 250 m. Express this distance entirely in metres and entirely in centimetres.",
+          "options": [],
+          "answer": "In metres: 4 km = 4000 m, so 4 km 250 m = 4000 + 250 = 4250 m. In centimetres: 4250 m x 100 = 425000 cm.",
+          "explanation": "First convert kilometres to metres (1 km = 1000 m), then add the remaining metres. To convert to centimetres, multiply the total metres by 100."
         }
       ]
     },
     {
-      "topic": "Types of Motion and Speed",
+      "topic": "Measuring Length Correctly",
       "easy": [
         {
           "id": "ch5-e6",
           "type": "mcq",
-          "question": "What is motion?",
+          "question": "When measuring the length of a pencil with a ruler, you should align one end of the pencil with:",
           "options": [
-            "Change in position of an object over time",
-            "Change in shape of an object",
-            "Change in colour of an object",
-            "Change in temperature of an object"
+            "The edge of the ruler",
+            "The zero mark on the ruler",
+            "The 1 cm mark on the ruler",
+            "Any convenient mark"
           ],
-          "answer": "Change in position of an object over time",
-          "explanation": "Motion means that an object’s position changes with respect to time and a reference point."
+          "answer": "The zero mark on the ruler",
+          "explanation": "Measurement must begin at the zero mark to get an accurate reading. The physical edge of a ruler may not coincide with zero."
         },
         {
           "id": "ch5-e7",
-          "type": "mcq",
-          "question": "Which of the following is an example of circular motion?",
-          "options": [
-            "Blades of a fan rotating",
-            "A ball rolling in a straight line",
-            "A child on a swing",
-            "A car moving on a highway"
-          ],
-          "answer": "Blades of a fan rotating",
-          "explanation": "Fan blades rotate around a central axis, following a circular path. A swing is oscillatory, and a car on a straight highway is linear motion."
+          "type": "fill",
+          "question": "The error caused by reading a ruler from an angle instead of from directly above is called ______ error.",
+          "options": [],
+          "answer": "parallax",
+          "explanation": "Parallax error occurs when the observer's eye is not positioned directly above the marking being read, causing an apparent shift in the reading."
         },
         {
           "id": "ch5-e8",
-          "type": "fill",
-          "question": "A pendulum swinging back and forth is an example of ______ motion.",
-          "options": [],
-          "answer": "oscillatory",
-          "explanation": "Oscillatory (or to-and-fro) motion is when an object moves repeatedly back and forth about a fixed position."
+          "type": "mcq",
+          "question": "To measure the circumference of a round bottle, which method works best?",
+          "options": [
+            "Place the bottle on a ruler and read the diameter",
+            "Wrap a thread around the bottle, mark it, then measure the thread with a ruler",
+            "Estimate using your handspan",
+            "Use a protractor"
+          ],
+          "answer": "Wrap a thread around the bottle, mark it, then measure the thread with a ruler",
+          "explanation": "A flexible thread can follow the curved surface of the bottle. After marking the length, straighten the thread against a ruler to find the circumference."
+        },
+        {
+          "id": "ch5-e9",
+          "type": "mcq",
+          "question": "Which tool is most suitable for measuring the length and width of a large room?",
+          "options": [
+            "A 15 cm ruler",
+            "A measuring tape",
+            "A handspan",
+            "A magnifying glass"
+          ],
+          "answer": "A measuring tape",
+          "explanation": "A measuring tape is long enough (usually several metres) and flexible, making it ideal for measuring large objects or rooms."
         }
       ],
       "medium": [
         {
           "id": "ch5-m4",
-          "type": "mcq",
-          "question": "A car travels 120 km in 2 hours. What is its speed?",
-          "options": [
-            "60 km/h",
-            "240 km/h",
-            "120 km/h",
-            "30 km/h"
-          ],
-          "answer": "60 km/h",
-          "explanation": "Speed = Distance ÷ Time = 120 km ÷ 2 h = 60 km/h."
+          "type": "short",
+          "question": "What is parallax error? How can it be avoided while reading a ruler?",
+          "options": [],
+          "answer": "Parallax error is the mistake in reading that occurs when the observer's eye is not directly above the point being measured on the scale. It can be avoided by keeping the eye vertically above the marking and ensuring the line of sight is perpendicular to the ruler.",
+          "explanation": "When viewed from an angle, the marking appears to shift left or right, giving an incorrect reading."
         },
         {
           "id": "ch5-m5",
-          "type": "short",
-          "question": "What is the difference between uniform and non-uniform motion? Give one example of each.",
-          "options": [],
-          "answer": "Uniform motion: an object covers equal distances in equal time intervals (e.g., a train moving at constant speed). Non-uniform motion: an object covers unequal distances in equal time intervals (e.g., a car in city traffic that stops and starts).",
-          "explanation": "Uniform motion has constant speed; non-uniform motion has changing speed."
+          "type": "mcq",
+          "question": "A student places a ribbon along a ruler but starts measuring from the 2 cm mark instead of the 0 cm mark. The other end of the ribbon falls at the 17 cm mark. What is the actual length of the ribbon?",
+          "options": [
+            "17 cm",
+            "15 cm",
+            "19 cm",
+            "2 cm"
+          ],
+          "answer": "15 cm",
+          "explanation": "Since the student started at 2 cm and ended at 17 cm, the actual length is 17 - 2 = 15 cm. Starting from a mark other than zero requires subtracting the starting value."
         },
         {
           "id": "ch5-m6",
-          "type": "mcq",
-          "question": "On a distance-time graph, a horizontal straight line means the object is:",
-          "options": [
-            "At rest",
-            "Moving at constant speed",
-            "Accelerating",
-            "Decelerating"
-          ],
-          "answer": "At rest",
-          "explanation": "A horizontal line on a distance-time graph means the distance is not changing over time, so the object is stationary (at rest)."
+          "type": "short",
+          "question": "Describe how you would measure the length of a curved line drawn on paper using a thread and a ruler.",
+          "options": [],
+          "answer": "Place one end of the thread at the beginning of the curved line. Carefully lay the thread along the curve, following every bend closely. Mark the point on the thread where the curve ends. Remove the thread, stretch it straight along a ruler starting from the zero mark, and read the length at the marked point.",
+          "explanation": "The thread is flexible enough to follow curves. Straightening it against a ruler converts the curved length into a measurable straight length."
         }
       ],
       "hard": [
         {
-          "id": "ch5-h2",
-          "type": "short",
-          "question": "Explain relative motion with an example.",
+          "id": "ch5-h3",
+          "type": "long",
+          "question": "A tailor needs to measure the waist of a customer for stitching a skirt. Explain why a rigid 30 cm ruler is unsuitable for this task, and describe the correct tool and method the tailor should use.",
           "options": [],
-          "answer": "Relative motion means that whether an object appears to be in motion or at rest depends on the observer’s position. Example: A passenger sitting in a moving train is at rest relative to other passengers in the same train, but appears to be in motion to a person standing on the platform.",
-          "explanation": "Motion is always relative to a reference point. The same object can be in motion and at rest depending on who is observing it."
+          "answer": "A rigid 30 cm ruler cannot bend around the customer's waist, so it cannot follow the curved body surface. The tailor should use a flexible measuring tape. The tape is wrapped snugly around the customer's waist — not too tight and not too loose — and the point where the tape meets its starting end gives the waist measurement directly in centimetres. This gives an accurate circumference without needing to calculate anything.",
+          "explanation": "Measuring tapes are designed for curved and large measurements. Their flexibility allows them to conform to body contours, which is why tailors rely on them."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Motion",
+      "easy": [
+        {
+          "id": "ch5-e10",
+          "type": "mcq",
+          "question": "A child sitting on a swing moves back and forth repeatedly. This is an example of:",
+          "options": [
+            "Rectilinear motion",
+            "Circular motion",
+            "Oscillatory motion",
+            "Random motion"
+          ],
+          "answer": "Oscillatory motion",
+          "explanation": "The swing moves to and fro about a central resting position, which defines oscillatory (or to-and-fro) motion."
         },
         {
-          "id": "ch5-h3",
-          "type": "short",
-          "question": "Classify each of the following as linear, circular, or oscillatory motion: (a) Earth revolving around the Sun, (b) a guitar string when plucked, (c) a train on a straight track.",
+          "id": "ch5-e11",
+          "type": "fill",
+          "question": "When an object moves along a straight path, the motion is called ______ motion.",
           "options": [],
-          "answer": "(a) Circular motion — Earth follows a roughly circular/elliptical orbit around the Sun. (b) Oscillatory motion — the guitar string vibrates back and forth. (c) Linear motion — the train moves in a straight line.",
-          "explanation": "Circular = round path; oscillatory = back and forth; linear = straight line."
+          "answer": "rectilinear",
+          "explanation": "Rectilinear motion (also called straight-line or linear motion) describes movement along a straight path without turns."
+        },
+        {
+          "id": "ch5-e12",
+          "type": "mcq",
+          "question": "The blades of a ceiling fan demonstrate which type of motion?",
+          "options": [
+            "Rectilinear motion",
+            "Oscillatory motion",
+            "Circular motion",
+            "Random motion"
+          ],
+          "answer": "Circular motion",
+          "explanation": "Each point on a fan blade traces a circular path around the central hub of the fan."
+        },
+        {
+          "id": "ch5-e13",
+          "type": "mcq",
+          "question": "A butterfly flying in a garden, constantly changing direction, shows:",
+          "options": [
+            "Uniform motion",
+            "Circular motion",
+            "Periodic motion",
+            "Random motion"
+          ],
+          "answer": "Random motion",
+          "explanation": "The butterfly's path is unpredictable and has no fixed pattern or rhythm, making it random motion."
+        },
+        {
+          "id": "ch5-e14",
+          "type": "short",
+          "question": "What is the difference between an object at rest and an object in motion?",
+          "options": [],
+          "answer": "An object is at rest when its position does not change over time with respect to its surroundings. An object is in motion when its position changes over time.",
+          "explanation": "Rest and motion are defined by whether the object's position is changing relative to a reference point."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-m7",
+          "type": "short",
+          "question": "Is the motion of a ceiling fan periodic? Explain your reasoning.",
+          "options": [],
+          "answer": "Yes, the motion of a ceiling fan is periodic because each complete rotation takes the same amount of time. The blades return to the same position after every fixed time interval, satisfying the definition of periodic motion.",
+          "explanation": "Periodic motion repeats after equal intervals of time. Although circular, the fan's rotation is also periodic since each cycle has the same duration."
+        },
+        {
+          "id": "ch5-m8",
+          "type": "mcq",
+          "question": "Which of the following statements is correct?",
+          "options": [
+            "All oscillatory motion is periodic, but not all periodic motion is oscillatory",
+            "All periodic motion is oscillatory",
+            "Oscillatory motion is never periodic",
+            "Circular motion cannot be periodic"
+          ],
+          "answer": "All oscillatory motion is periodic, but not all periodic motion is oscillatory",
+          "explanation": "Oscillatory motion always repeats at regular intervals, so it is periodic. However, periodic motion also includes circular motion (like a fan), which is not oscillatory."
+        },
+        {
+          "id": "ch5-m9",
+          "type": "short",
+          "question": "Give one example each of rectilinear, circular, oscillatory, and rotational motion from everyday life.",
+          "options": [],
+          "answer": "Rectilinear: a train moving on a straight section of track. Circular: the tip of a clock's minute hand. Oscillatory: a child on a swing. Rotational: a potter's wheel spinning on its axis.",
+          "explanation": "Each type of motion is defined by the path or pattern the object follows."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-h4",
+          "type": "long",
+          "question": "A bicycle is moving along a straight road. Identify all the types of motion present in this situation and explain each one.",
+          "options": [],
+          "answer": "The bicycle as a whole moves forward in a straight line — this is rectilinear motion. Each wheel rotates around its own axle — this is rotational motion. The rotation of the wheels is also periodic because each full turn takes the same amount of time. The pedals move in a circular path around the pedal axle — this is circular motion. Thus, a single moving bicycle demonstrates rectilinear, rotational, circular, and periodic motions occurring simultaneously.",
+          "explanation": "Many real-life situations involve a combination of different types of motion happening at the same time."
+        },
+        {
+          "id": "ch5-h5",
+          "type": "short",
+          "question": "A metro train leaves Station A and travels at a steady pace to Station B on a straight track. Between stations, it covers equal distances every minute. As it approaches Station B, it slows down and stops. Classify the motion between the two stations as uniform or non-uniform, and explain.",
+          "options": [],
+          "answer": "The overall journey is non-uniform motion. Although the train covers equal distances in equal time intervals during the middle of the journey (uniform motion), it slows down as it approaches Station B, covering smaller distances in each successive minute. Since the speed is not constant throughout the entire journey, the motion taken as a whole is non-uniform.",
+          "explanation": "Uniform motion requires equal distances in every equal time interval for the entire journey. Any change in speed — even at the end — makes the overall motion non-uniform."
         }
       ]
     }

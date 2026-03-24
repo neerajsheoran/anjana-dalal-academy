@@ -14,6 +14,9 @@ interface AdvisorCommission {
   bankAccount: string | null;
   bankIFSC: string | null;
   pan: string | null;
+  phone: string | null;
+  emailVerified: boolean;
+  phoneVerified: boolean;
   referrals: {
     date: string;
     studentName: string;
@@ -37,6 +40,8 @@ export default function CommissionManager({
   const [paying, setPaying] = useState<string | null>(null);
   const [paidPartners, setPaidPartners] = useState<Set<string>>(new Set());
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [phoneVerifying, setPhoneVerifying] = useState<string | null>(null);
+  const [phoneOverrides, setPhoneOverrides] = useState<Record<string, boolean>>({});
 
   const handleMarkPaid = async (partner: AdvisorCommission) => {
     if (!confirm(`Mark Rs ${partner.unpaidAmount} as paid to ${partner.partnerName}?`)) {
@@ -63,6 +68,23 @@ export default function CommissionManager({
       // ignore
     }
     setPaying(null);
+  };
+
+  const handlePhoneVerify = async (uid: string, verified: boolean) => {
+    setPhoneVerifying(uid);
+    try {
+      const res = await fetch("/api/admin/verify-phone", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ uid, verified }),
+      });
+      if (res.ok) {
+        setPhoneOverrides((prev) => ({ ...prev, [uid]: verified }));
+      }
+    } catch {
+      // ignore
+    }
+    setPhoneVerifying(null);
   };
 
   if (partners.length === 0) {
@@ -120,6 +142,63 @@ export default function CommissionManager({
             {/* Expanded detail */}
             {isExpanded && (
               <div className="border-t border-gray-100 bg-gray-50 px-4 py-4 space-y-4">
+                {/* Verification Status */}
+                <div>
+                  <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                    Verification Status
+                  </h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                    <div>
+                      <p className="text-xs text-gray-400">Email</p>
+                      {p.emailVerified ? (
+                        <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-2 py-0.5 rounded-full mt-1">
+                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                          Verified
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full mt-1">
+                          Not Verified
+                        </span>
+                      )}
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400">Phone {p.phone ? `(${p.phone})` : ""}</p>
+                      {(() => {
+                        const isVerified = p.partnerUid in phoneOverrides ? phoneOverrides[p.partnerUid] : p.phoneVerified;
+                        return (
+                          <div className="flex items-center gap-2 mt-1">
+                            {isVerified ? (
+                              <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
+                                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                                Verified
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full">
+                                Not Verified
+                              </span>
+                            )}
+                            <button
+                              onClick={() => handlePhoneVerify(p.partnerUid, !isVerified)}
+                              disabled={phoneVerifying === p.partnerUid}
+                              className={`text-xs px-2 py-0.5 rounded transition-colors disabled:opacity-50 ${
+                                isVerified
+                                  ? "bg-red-50 hover:bg-red-100 text-red-600"
+                                  : "bg-green-50 hover:bg-green-100 text-green-700"
+                              }`}
+                            >
+                              {phoneVerifying === p.partnerUid
+                                ? "..."
+                                : isVerified
+                                ? "Mark Unverified"
+                                : "Mark Verified"}
+                            </button>
+                          </div>
+                        );
+                      })()}
+                    </div>
+                  </div>
+                </div>
+
                 {/* Bank Details */}
                 <div>
                   <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">

@@ -6,8 +6,9 @@ export default function SystemFlows() {
         title="Student Signup"
         steps={[
           "Student visits the site and clicks Sign In",
-          "Signs in with Google account",
-          "System creates user doc in Firestore with role = 'student'",
+          "Signs in with Google or Email/Password",
+          "System creates user doc in Firestore with role = 'student' and emailVerified status",
+          "If email/password signup: Firebase sends email verification link automatically",
           "Free trial starts (configurable days from Platform Config)",
           "Welcome email sent to student",
           "Student gets full access during trial period",
@@ -57,6 +58,8 @@ export default function SystemFlows() {
           "When the approved person signs in with Google (same email), they get role = 'partner'",
           "Advisor sees their dashboard at /advisor/dashboard with referral code",
           "Advisor provides bank details (Account Holder, Bank Name, Account No., IFSC, PAN)",
+          "Advisor verifies email (Firebase sends verification link on signup; resend available from dashboard)",
+          "Admin manually verifies advisor's phone number (calls/WhatsApp, then marks verified in admin panel)",
         ]}
       />
 
@@ -66,6 +69,7 @@ export default function SystemFlows() {
         steps={[
           "Advisor logs in and goes to /advisor/dashboard",
           "Sees stats: Total Referrals, Total Earnings, Pending Payout, Paid Out",
+          "Sees verification status: Email (Verified/Not Verified with resend option) and Mobile (Verified/Pending admin verification)",
           "Sees their referral code with copy button",
           "Sees bank details section (read-only, editable on click)",
           "Sees referral history table: Date, Student Name, Amount, Commission, Status (Paid/Pending with date)",
@@ -78,6 +82,7 @@ export default function SystemFlows() {
         title="Admin Payout Process"
         steps={[
           "Admin goes to Advisors tab and clicks on an advisor row to expand",
+          "Sees verification status: Email (auto-synced from Firebase) and Phone (with Mark Verified/Unverified toggle)",
           "Sees advisor's bank details (Account Holder, Bank, Account, IFSC, PAN)",
           "Sees individual referral history with commission amounts",
           "Sees total unpaid/pending amount",
@@ -124,11 +129,17 @@ export default function SystemFlows() {
                 <td className="px-3 py-2 text-gray-500">Referred student completes payment</td>
                 <td className="px-3 py-2 text-gray-400">noreply@cognilift.in</td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-50">
                 <td className="px-3 py-2 font-medium text-gray-700">Payout Processed</td>
                 <td className="px-3 py-2 text-gray-500">Advisor</td>
                 <td className="px-3 py-2 text-gray-500">Admin clicks &quot;Mark Paid&quot;</td>
                 <td className="px-3 py-2 text-gray-400">noreply@cognilift.in</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-medium text-gray-700">Email Verification</td>
+                <td className="px-3 py-2 text-gray-500">Any user (email/password signup)</td>
+                <td className="px-3 py-2 text-gray-500">Signup or &quot;Resend&quot; from advisor dashboard</td>
+                <td className="px-3 py-2 text-gray-400">Firebase (noreply@project.firebaseapp.com)</td>
               </tr>
             </tbody>
           </table>
@@ -143,7 +154,7 @@ export default function SystemFlows() {
         <div className="space-y-3 text-sm">
           <CollectionRow
             name="users"
-            description="All user accounts — students, advisors, admins. Stores profile, role, subscription status, bank details."
+            description="All user accounts — students, advisors, admins. Stores profile, role, subscription status, bank details, emailVerified (synced from Firebase Auth), phoneVerified (set by admin)."
           />
           <CollectionRow
             name="subscriptions"

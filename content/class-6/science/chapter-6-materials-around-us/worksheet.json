@@ -2,191 +2,334 @@
   "chapterRef": "class-6/science/chapter-6-materials-around-us/worksheet",
   "topics": [
     {
-      "topic": "Types and Properties of Materials",
+      "topic": "Properties of Materials",
       "easy": [
         {
           "id": "ch6-e1",
           "type": "mcq",
-          "question": "Which of the following is a natural material?",
+          "question": "Which of these materials is transparent?",
           "options": [
-            "Plastic",
-            "Nylon",
-            "Cotton",
-            "Glass"
+            "Cardboard",
+            "Clear glass",
+            "Wooden plank",
+            "Aluminium foil"
           ],
-          "answer": "Cotton",
-          "explanation": "Cotton is obtained from the cotton plant — it is a natural material. Plastic, nylon, and glass are synthetic (man-made) materials."
+          "answer": "Clear glass",
+          "explanation": "Clear glass allows light to pass through it completely, so you can see objects on the other side. Cardboard, wood, and aluminium foil are opaque — they block light entirely."
         },
         {
           "id": "ch6-e2",
           "type": "mcq",
-          "question": "Which material allows light to pass through it completely?",
+          "question": "A brass pooja thali appears shiny when polished. Which property of materials does this demonstrate?",
           "options": [
-            "Glass",
-            "Wood",
-            "Cardboard",
-            "Brick"
+            "Hardness",
+            "Transparency",
+            "Lustre",
+            "Solubility"
           ],
-          "answer": "Glass",
-          "explanation": "Glass is transparent — it allows light to pass through clearly. Wood, cardboard, and brick are opaque."
+          "answer": "Lustre",
+          "explanation": "Lustre is the natural shine that a material's surface shows when light falls on it. Metals such as brass, gold, and copper are lustrous materials."
         },
         {
           "id": "ch6-e3",
           "type": "fill",
-          "question": "Materials that allow electricity to flow through them are called ______.",
+          "question": "A material that does not dissolve in water is called ______.",
           "options": [],
-          "answer": "conductors",
-          "explanation": "Conductors (mainly metals like copper and iron) allow electric current to flow through them easily."
+          "answer": "insoluble",
+          "explanation": "Materials like sand, iron filings, and marble chips do not dissolve in water. They are called insoluble materials. Materials that dissolve, like salt and sugar, are called soluble."
         },
         {
           "id": "ch6-e4",
           "type": "mcq",
-          "question": "Which of the following dissolves in water?",
+          "question": "Which of the following materials will float on water?",
           "options": [
-            "Salt",
-            "Sand",
-            "Chalk powder",
-            "Sawdust"
+            "Iron nail",
+            "Stone pebble",
+            "Dry cork piece",
+            "Steel coin"
           ],
-          "answer": "Salt",
-          "explanation": "Salt is soluble in water — it dissolves to form salt water. Sand, chalk, and sawdust are insoluble."
+          "answer": "Dry cork piece",
+          "explanation": "Cork is much less dense than water, so it floats on the surface. Iron nails, stone pebbles, and steel coins are denser than water and sink."
         },
         {
           "id": "ch6-e5",
           "type": "short",
-          "question": "Give two examples each of hard materials and soft materials.",
+          "question": "What is the difference between a rough surface and a smooth surface? Give one example of each.",
           "options": [],
-          "answer": "Hard materials: iron, diamond (also accept stone, glass). Soft materials: cotton, rubber (also accept clay, sponge).",
-          "explanation": "Hard materials resist scratching. Soft materials are easily deformed or compressed."
+          "answer": "A rough surface feels uneven and coarse when touched (e.g., a jute sack or a brick wall). A smooth surface feels even and flat (e.g., a stainless-steel plate or polished glass). Roughness provides grip while smoothness makes cleaning easier.",
+          "explanation": "Texture is a property of materials that describes how the surface feels. Rough surfaces have tiny bumps and ridges; smooth surfaces are level and uniform."
         }
       ],
       "medium": [
         {
           "id": "ch6-m1",
           "type": "mcq",
-          "question": "The handle of a cooking pan is made of wood or plastic because:",
+          "question": "Frosted glass in a bathroom window lets in light but you cannot see clearly through it. This type of material is called:",
           "options": [
-            "They are insulators and do not conduct heat",
-            "They are conductors of heat",
-            "They are magnetic",
-            "They are transparent"
+            "Transparent",
+            "Translucent",
+            "Opaque",
+            "Lustrous"
           ],
-          "answer": "They are insulators and do not conduct heat",
-          "explanation": "Wood and plastic are insulators — they do not conduct heat, so the handle stays cool even when the pan is hot."
+          "answer": "Translucent",
+          "explanation": "Translucent materials allow some light to pass through but scatter it, so images appear blurred. Transparent materials let light through clearly, and opaque materials block all light."
         },
         {
           "id": "ch6-m2",
           "type": "short",
-          "question": "What is the difference between transparent, translucent, and opaque materials? Give one example of each.",
+          "question": "When you stir turmeric powder into a glass of water, the water turns yellow but fine particles settle at the bottom after some time. Is turmeric soluble or insoluble in water? Explain your reasoning.",
           "options": [],
-          "answer": "Transparent: allows all light through clearly (e.g., clear glass). Translucent: allows some light through but scatters it (e.g., frosted glass, butter paper). Opaque: allows no light through (e.g., wood, metal sheet).",
-          "explanation": "The difference lies in how much and how clearly light passes through the material."
+          "answer": "Turmeric is largely insoluble in water. Although it colours the water yellow (some pigment mixes in), the solid particles do not fully dissolve — they settle at the bottom when left undisturbed. A truly soluble substance like salt disappears completely and does not settle.",
+          "explanation": "Solubility means the material completely dissolves and forms a uniform solution. If particles settle out over time, the material has not truly dissolved."
         },
         {
           "id": "ch6-m3",
           "type": "mcq",
-          "question": "Which property makes copper wire ideal for making electrical wires?",
+          "question": "Steel is used for making cooking vessels because it is:",
           "options": [
-            "It is an excellent conductor of electricity",
-            "It is transparent",
-            "It is magnetic",
-            "It is soluble in water"
+            "Transparent and lightweight",
+            "A good conductor of heat and hard",
+            "Soluble in water",
+            "Soft and flexible"
           ],
-          "answer": "It is an excellent conductor of electricity",
-          "explanation": "Copper is chosen for electrical wiring because it allows electric current to flow with very little resistance."
-        },
-        {
-          "id": "ch6-m4",
-          "type": "fill",
-          "question": "Gold and silver appear shiny because they have high ______.",
-          "options": [],
-          "answer": "lustre",
-          "explanation": "Lustre is the property of a material that makes it look shiny. Metals, especially gold and silver, have high lustre."
+          "answer": "A good conductor of heat and hard",
+          "explanation": "Steel conducts heat quickly and evenly, allowing food to cook properly. Its hardness means it resists dents and scratches during daily use in the kitchen."
         }
       ],
       "hard": [
         {
           "id": "ch6-h1",
-          "type": "short",
-          "question": "Why are different materials used for different parts of a cooking pan? Explain with reference to their properties.",
+          "type": "long",
+          "question": "A rubber chappal has a rough sole, while the top strap is smooth and flexible. Explain why different properties are needed for different parts of the same object.",
           "options": [],
-          "answer": "The base and sides of the pan are made of steel or aluminium because they are good conductors of heat, allowing heat to spread evenly for cooking. The handle is made of wood or plastic because they are insulators — they do not conduct heat, keeping the handle safe to hold. This shows how different properties of materials are used for different purposes.",
-          "explanation": "Choosing the right material for each part of an object depends on the properties needed: heat conduction for the body, heat insulation for the handle."
+          "answer": "The sole of a chappal touches the ground, so it needs a rough surface to provide friction and grip — without roughness, the wearer would slip on wet or smooth floors. The top strap rests against the foot, so it needs to be smooth (to avoid irritating the skin) and flexible (to bend comfortably as the foot moves). This shows that even within one object, different parts may require different material properties to serve their specific functions.",
+          "explanation": "Objects are designed by matching properties to the challenge each part faces. The sole faces the ground (needs grip), while the strap faces skin (needs comfort). This is the same logic behind a cooking pan having a metal body and an insulating handle."
         },
         {
           "id": "ch6-h2",
-          "type": "short",
-          "question": "List the three states of matter and one characteristic of each. Give an example for each state.",
+          "type": "long",
+          "question": "Your family is building a new house. For each of the following parts, state which material you would choose and explain which properties of that material make it suitable: (a) outer walls, (b) windows, (c) water supply pipes, (d) electrical wiring.",
           "options": [],
-          "answer": "Solid: fixed shape and fixed volume (e.g., ice). Liquid: no fixed shape but fixed volume — takes the shape of its container (e.g., water). Gas: no fixed shape and no fixed volume — spreads to fill any container (e.g., steam/water vapour).",
-          "explanation": "The state of matter depends on how closely particles are packed and how freely they can move."
+          "answer": "(a) Outer walls — brick and cement: hard, strong, opaque, weather-resistant, can bear the load of upper floors. (b) Windows — glass: transparent (lets sunlight in), hard, smooth, weather-resistant. (c) Water supply pipes — PVC plastic: waterproof, does not corrode or rust, lightweight, easy to install. (d) Electrical wiring — copper wire with plastic coating: copper is an excellent conductor of electricity; the plastic coating is an insulator that prevents electric shock.",
+          "explanation": "Each part of a house faces a different set of challenges (bearing weight, letting light in, carrying water, carrying electricity). The material chosen must have the specific properties that address those challenges."
         }
       ]
     },
     {
-      "topic": "Mixtures and Separation",
+      "topic": "Grouping Materials by Their Origin",
       "easy": [
         {
           "id": "ch6-e6",
           "type": "mcq",
-          "question": "Which method would you use to separate sand from water?",
+          "question": "Which of the following is a natural material obtained from animals?",
           "options": [
-            "Filtration",
-            "Evaporation",
-            "Magnetic separation",
-            "Sieving"
+            "Nylon",
+            "Silk",
+            "Plastic",
+            "Cement"
           ],
-          "answer": "Filtration",
-          "explanation": "Sand does not dissolve in water (it is insoluble). Filtration traps sand particles in filter paper while water passes through."
+          "answer": "Silk",
+          "explanation": "Silk is a natural fibre produced by silkworms. Nylon and plastic are synthetic materials made in factories, and cement is manufactured from limestone and clay."
         },
         {
           "id": "ch6-e7",
           "type": "fill",
-          "question": "Air is a ______ of several gases including nitrogen, oxygen, and carbon dioxide.",
+          "question": "Materials that are manufactured by humans in factories using chemical processes are called ______ materials.",
           "options": [],
-          "answer": "mixture",
-          "explanation": "Air is a mixture — it contains nitrogen (~78%), oxygen (~21%), carbon dioxide, argon, and other gases mixed together without a chemical reaction."
+          "answer": "synthetic",
+          "explanation": "Synthetic (also called human-made or man-made) materials include plastics, nylon, polyester, cement, and glass. They do not exist in nature on their own."
         },
         {
           "id": "ch6-e8",
+          "type": "mcq",
+          "question": "Jute, cotton, and wood are all examples of natural materials obtained from:",
+          "options": [
+            "Animals",
+            "The earth (minerals)",
+            "Plants",
+            "Factories"
+          ],
+          "answer": "Plants",
+          "explanation": "Jute comes from the jute plant's stem, cotton from the cotton plant's seed pod, and wood from tree trunks. All three are plant-based natural materials."
+        },
+        {
+          "id": "ch6-e9",
           "type": "short",
-          "question": "What is a mixture? Give two examples.",
+          "question": "Give two examples of natural materials and two examples of synthetic materials.",
           "options": [],
-          "answer": "A mixture is a combination of two or more substances that are not chemically combined. Examples: salt water (salt + water), air (nitrogen + oxygen + other gases), soil (sand + clay + minerals).",
-          "explanation": "In a mixture, the components retain their individual properties and can be separated by physical methods."
+          "answer": "Natural materials: wool (from sheep) and iron (from ore in the earth). Synthetic materials: plastic (made from petroleum) and nylon (made from chemicals in a factory). Other valid examples are also acceptable.",
+          "explanation": "Natural materials come from nature — plants, animals, or the earth. Synthetic materials are manufactured by humans through chemical or industrial processes."
+        },
+        {
+          "id": "ch6-e10",
+          "type": "mcq",
+          "question": "Glass is made by heating sand (silica) with other substances. Glass is therefore a:",
+          "options": [
+            "Natural material",
+            "Synthetic material",
+            "Living material",
+            "Magnetic material"
+          ],
+          "answer": "Synthetic material",
+          "explanation": "Although sand is a natural raw material, glass does not exist in nature on its own. It is manufactured by heating sand with soda ash and limestone in a furnace, making it a synthetic material."
         }
       ],
       "medium": [
         {
+          "id": "ch6-m4",
+          "type": "short",
+          "question": "A school bag has a nylon body, cotton shoulder padding, and a metal zip. Classify each of these materials as natural or synthetic and explain your reasoning.",
+          "options": [],
+          "answer": "Nylon — synthetic: it is manufactured from chemicals in a factory and does not exist in nature. Cotton — natural: it grows on the cotton plant. Metal (in the zip) — natural: metals like iron and zinc are extracted from ores found in the earth, though the zip itself is processed in a factory.",
+          "explanation": "Many everyday objects combine both natural and synthetic materials. Each component is chosen for the properties it offers for that specific part of the object."
+        },
+        {
           "id": "ch6-m5",
           "type": "mcq",
-          "question": "You have a mixture of iron filings and sand. Which method would best separate them?",
+          "question": "Which of the following statements is correct?",
           "options": [
-            "Magnetic separation",
-            "Filtration",
-            "Evaporation",
-            "Sieving"
+            "Natural materials are always better than synthetic materials",
+            "Synthetic materials are always stronger than natural materials",
+            "The choice between natural and synthetic depends on the properties needed for the job",
+            "All synthetic materials are harmful to the environment"
           ],
-          "answer": "Magnetic separation",
-          "explanation": "Iron is magnetic; sand is not. Passing a magnet through the mixture attracts iron filings, leaving sand behind."
+          "answer": "The choice between natural and synthetic depends on the properties needed for the job",
+          "explanation": "Neither category is automatically better. Cotton is breathable but tears easily; nylon is tough but can feel uncomfortable in heat. The right choice depends on the situation and the properties required."
         },
         {
           "id": "ch6-m6",
-          "type": "short",
-          "question": "How would you obtain dry salt from salt water? Name the method and explain the steps.",
+          "type": "fill",
+          "question": "Petroleum, found deep underground, is the raw material used to manufacture ______ and many types of synthetic fibres.",
           "options": [],
-          "answer": "Method: Evaporation. Steps: Pour salt water into an evaporating dish. Heat it gently. As water evaporates (turns to vapour), salt crystals are left behind in the dish. The dry salt can then be collected.",
-          "explanation": "Evaporation works because water has a much lower boiling point than salt. When heated, water turns to vapour and escapes, leaving salt behind."
+          "answer": "plastic",
+          "explanation": "Petroleum (crude oil) is refined and chemically processed to produce plastics such as polyethylene and PVC, as well as synthetic fibres like nylon and polyester."
         }
       ],
       "hard": [
         {
           "id": "ch6-h3",
-          "type": "short",
-          "question": "A mixture contains iron filings, salt, and sand. Describe step by step how you would separate all three components.",
+          "type": "long",
+          "question": "A farmer uses a bamboo basket to carry vegetables, while a factory worker uses a plastic crate for the same purpose. Compare the two materials (bamboo and plastic) in terms of their origin, at least two properties, and their impact on the environment after disposal.",
           "options": [],
-          "answer": "Step 1 — Magnetic separation: Use a magnet to remove iron filings from the mixture. Step 2 — Add water and stir: Salt dissolves in water but sand does not. Step 3 — Filtration: Filter the mixture to separate sand (stays on filter paper) from salt water (passes through). Step 4 — Evaporation: Heat the salt water to evaporate water, leaving dry salt behind. Result: Iron filings, sand, and salt are all separated.",
-          "explanation": "Each step exploits a different property: magnetism for iron, solubility for salt, insolubility for sand."
+          "answer": "Origin: Bamboo is a natural material — it grows as a plant. Plastic is a synthetic material — it is manufactured from petroleum. Properties: Bamboo is lightweight, reasonably strong, and biodegradable, but it absorbs water and can weaken over time. Plastic is waterproof, very durable, and lightweight, but it is not biodegradable. Environmental impact: After disposal, bamboo decomposes naturally and returns to the soil within a few years. Plastic can persist in the environment for hundreds of years, polluting land and water if not recycled properly.",
+          "explanation": "This question tests the ability to compare natural and synthetic materials across multiple dimensions — origin, properties, and environmental consequences — rather than simply classifying them."
+        },
+        {
+          "id": "ch6-h4",
+          "type": "long",
+          "question": "Why is it important to reduce and reuse materials before recycling them? Explain with one example of reducing and one example of reusing.",
+          "options": [],
+          "answer": "Recycling still requires energy for collection, transportation, and reprocessing. Reducing means using fewer materials in the first place — for example, carrying a cloth bag to the market instead of taking a new plastic bag each time. Reusing means using an item again for the same or a different purpose — for example, refilling a glass jam jar with homemade pickle instead of throwing it away. Both reducing and reusing save more energy and resources than recycling because they skip the reprocessing step entirely. That is why the preferred order is: reduce first, reuse second, recycle third.",
+          "explanation": "The 'reduce, reuse, recycle' hierarchy exists because each step down the list requires more energy. Prevention (reducing) is always more efficient than cure (recycling)."
+        }
+      ]
+    },
+    {
+      "topic": "Choosing the Right Material for the Right Job",
+      "easy": [
+        {
+          "id": "ch6-e11",
+          "type": "mcq",
+          "question": "Why are window panes made of glass instead of wood?",
+          "options": [
+            "Glass is cheaper than wood",
+            "Glass is transparent and lets sunlight in",
+            "Glass is softer than wood",
+            "Glass is a good conductor of electricity"
+          ],
+          "answer": "Glass is transparent and lets sunlight in",
+          "explanation": "The main purpose of a window is to let natural light into a room while keeping wind and dust out. Glass is transparent, hard, and smooth — ideal for this job. Wood is opaque and would block all light."
+        },
+        {
+          "id": "ch6-e12",
+          "type": "fill",
+          "question": "The body of an electric plug is made of hard plastic because plastic is a good ______ and prevents electric shock.",
+          "options": [],
+          "answer": "insulator",
+          "explanation": "An insulator does not allow electricity to flow through it. Hard plastic (like Bakelite) is used for the body of plugs and switches to protect users from electric current. The metal pins inside the plug are conductors that carry the current."
+        },
+        {
+          "id": "ch6-e13",
+          "type": "mcq",
+          "question": "Bicycle tyres are made of rubber because rubber is:",
+          "options": [
+            "Transparent and lustrous",
+            "Flexible, waterproof, and provides grip",
+            "A good conductor of heat",
+            "Soluble in water"
+          ],
+          "answer": "Flexible, waterproof, and provides grip",
+          "explanation": "Rubber bends without breaking (flexible), does not absorb water (waterproof), and its textured surface grips the road. These properties make it ideal for tyres."
+        },
+        {
+          "id": "ch6-e14",
+          "type": "short",
+          "question": "Why is a cooking tawa made of iron or steel rather than plastic?",
+          "options": [],
+          "answer": "A cooking tawa needs to be placed directly on a flame and must transfer heat evenly to cook food. Iron and steel are excellent conductors of heat and can withstand very high temperatures without melting or deforming. Plastic would melt on a stove because it cannot handle high heat, and it is a poor conductor so it would not cook food properly.",
+          "explanation": "Material selection depends on the conditions the object will face. A tawa faces extreme heat, so only a material that conducts heat well and has a very high melting point is suitable."
+        },
+        {
+          "id": "ch6-e15",
+          "type": "mcq",
+          "question": "A raincoat is made of PVC-coated fabric because the material needs to be:",
+          "options": [
+            "Opaque and hard",
+            "Transparent and rigid",
+            "Waterproof and flexible",
+            "Soluble and lustrous"
+          ],
+          "answer": "Waterproof and flexible",
+          "explanation": "A raincoat must stop water from reaching the body (waterproof) and must bend and move with the wearer (flexible). PVC-coated fabric has both of these properties."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-m7",
+          "type": "short",
+          "question": "An electric wire has a copper core surrounded by a plastic coating. Explain why two different materials are used in the same object.",
+          "options": [],
+          "answer": "Copper is an excellent conductor of electricity, so it carries electric current from the source to the appliance efficiently. The plastic coating is an insulator — it does not allow electricity to pass through. This prevents the current from reaching a person who touches the wire, avoiding electric shock. Two materials are needed because the wire must perform two opposite jobs at once: conduct electricity inside and block it on the outside.",
+          "explanation": "Many objects combine a conductor and an insulator because different parts of the object face different requirements. The same principle applies to a cooking pan (metal body, wooden handle)."
+        },
+        {
+          "id": "ch6-m8",
+          "type": "mcq",
+          "question": "Gold and silver are used for making jewellery primarily because they are:",
+          "options": [
+            "Good conductors of electricity",
+            "Lustrous and resistant to corrosion",
+            "Transparent and flexible",
+            "Soft and soluble"
+          ],
+          "answer": "Lustrous and resistant to corrosion",
+          "explanation": "Jewellery must look attractive and last for years without deteriorating. Gold and silver have high lustre (shine) and do not corrode or tarnish easily, keeping their beauty over time."
+        },
+        {
+          "id": "ch6-m9",
+          "type": "short",
+          "question": "A shopkeeper stores pickles in glass jars rather than plastic containers. Give two reasons based on material properties.",
+          "options": [],
+          "answer": "Reason 1: Glass is transparent, so the shopkeeper and customers can see the contents and quantity without opening the lid. Reason 2: Glass does not absorb odours or stains from spicy, oily pickles the way plastic does, so the jar stays clean and the pickle's flavour is not affected. Additionally, glass does not react with the acids in pickles.",
+          "explanation": "Material choice in daily life depends on practical property considerations like transparency, chemical resistance, and ease of cleaning."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-h5",
+          "type": "long",
+          "question": "Imagine you are designing a lunchbox for a school student. Which material(s) would you choose for the body, the lid seal, and the handle/clasp? For each part, state the material, and explain which properties make it suitable.",
+          "options": [],
+          "answer": "Body — stainless steel: hard (resists dents), does not react with food (safe for acidic items like lemon rice), easy to clean (smooth surface), durable. Lid seal — silicone rubber: flexible (bends to create an airtight fit), heat-resistant, waterproof (prevents leaks), food-safe. Handle/clasp — stainless steel or sturdy plastic: hard and rigid (holds the lid firmly in place), durable, lightweight (easy for a child to operate). Each part faces a different challenge — holding food safely, sealing against leaks, and securing the lid — so each requires a material with the matching properties.",
+          "explanation": "Good design means analysing what each component needs to do and then selecting the material whose properties meet those needs. This question tests the ability to apply material-property knowledge to a real-world design problem."
+        },
+        {
+          "id": "ch6-h6",
+          "type": "long",
+          "question": "Years ago, most water pipes in houses were made of iron. Today, PVC plastic pipes have largely replaced them. Explain why this change happened by comparing at least three properties of iron and PVC relevant to carrying water.",
+          "options": [],
+          "answer": "Property 1 — Corrosion resistance: Iron rusts when exposed to water and moisture over time, eventually causing leaks. PVC does not corrode or rust at all, making it far more durable for water supply. Property 2 — Weight: Iron pipes are heavy, making them difficult and costly to transport and install. PVC pipes are lightweight and easy to handle. Property 3 — Cost: Manufacturing and installing PVC pipes is cheaper than iron pipes. Property 4 (bonus) — Smoothness of inner surface: PVC pipes have a smoother inner surface, so water flows more freely and mineral deposits build up more slowly. Iron's rough inner surface can accumulate sediment over time, reducing water flow.",
+          "explanation": "Technological progress often involves replacing one material with another that offers superior properties for the same job. PVC outperforms iron for water pipes on corrosion resistance, weight, cost, and flow efficiency."
         }
       ]
     }

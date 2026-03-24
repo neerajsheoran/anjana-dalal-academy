@@ -2,205 +2,247 @@
   "chapterRef": "class-6/maths/chapter-2-lines-and-angles/worksheet",
   "topics": [
     {
-      "topic": "Points, Lines, Line Segments, and Rays",
+      "topic": "Points, Lines, Segments, and Rays",
       "easy": [
         {
-          "id": "m2-e1",
+          "id": "la-e1",
           "type": "mcq",
-          "question": "Which of the following has two endpoints and a definite, measurable length?",
+          "question": "Which geometric figure has exactly one endpoint and extends infinitely in one direction?",
+          "options": ["Line segment", "Line", "Ray", "Point"],
+          "answer": "Ray",
+          "explanation": "A ray begins at a single fixed point (its endpoint) and continues without end in one direction. A line segment has two endpoints. A line has no endpoints. A point has no length at all."
+        },
+        {
+          "id": "la-e2",
+          "type": "mcq",
+          "question": "The string of a kite stretched between your hand and the kite is best modelled as a —",
           "options": ["Line", "Ray", "Line segment", "Point"],
           "answer": "Line segment",
-          "explanation": "A line segment has two fixed endpoints and a definite length that can be measured. A line extends infinitely in both directions (no endpoints). A ray starts at one point and extends infinitely in one direction (one endpoint). A point has no length."
+          "explanation": "The kite string has two clear endpoints — your hand and the kite. It has a definite, measurable length. These are the defining properties of a line segment."
         },
         {
-          "id": "m2-e2",
-          "type": "mcq",
-          "question": "A torch beam is best compared to a —",
-          "options": ["Line", "Ray", "Line segment", "Point"],
-          "answer": "Ray",
-          "explanation": "A torch beam starts at a fixed point (the torch) and travels in one direction without end. This is exactly like a ray — a fixed starting point and one direction going to infinity."
-        },
-        {
-          "id": "m2-e3",
+          "id": "la-e3",
           "type": "fill",
-          "question": "The edge of a ruler is an example of a ______.",
+          "question": "A ______ extends infinitely in both directions and has no endpoints.",
           "options": [],
-          "answer": "line segment",
-          "explanation": "The edge of a ruler has two definite endpoints and a fixed, measurable length — these are the properties of a line segment."
+          "answer": "line",
+          "explanation": "A line has no endpoints and stretches infinitely in both directions. This distinguishes it from a ray (one endpoint) and a line segment (two endpoints)."
         },
         {
-          "id": "m2-e4",
+          "id": "la-e4",
           "type": "mcq",
-          "question": "How many lines can pass through two given points?",
-          "options": ["Infinitely many", "Two", "Exactly one", "Zero"],
+          "question": "How many distinct lines can be drawn through two given points?",
+          "options": ["None", "Exactly one", "Exactly two", "Infinitely many"],
           "answer": "Exactly one",
-          "explanation": "Through any two distinct points, exactly one straight line can be drawn. This is a fundamental property of Euclidean geometry."
+          "explanation": "One of the fundamental facts of geometry is that through any two distinct points, exactly one straight line can be drawn. No more, no less."
+        },
+        {
+          "id": "la-e5",
+          "type": "mcq",
+          "question": "Which of the following is NOT a property of a line segment?",
+          "options": ["It has two endpoints", "Its length can be measured", "It extends infinitely in one direction", "It is straight"],
+          "answer": "It extends infinitely in one direction",
+          "explanation": "A line segment does not extend infinitely in any direction — it is bounded by two endpoints. Extending infinitely in one direction is a property of a ray."
         }
       ],
       "medium": [
         {
-          "id": "m2-m1",
+          "id": "la-m1",
           "type": "short",
-          "question": "Explain the difference between a line, a ray, and a line segment using a real-life example for each.",
+          "question": "Give one real-life example each for a point, a line segment, a ray, and a line. For each example, explain which property of the geometric figure it demonstrates.",
           "options": [],
-          "answer": "Line segment: The edge of a book or a pencil — it has two definite endpoints and a fixed length. Ray: A beam of sunlight — it comes from the Sun (a fixed point) and travels outward in one direction without end. Line: An imaginary railway track extending in both directions forever — no endpoints, infinite in both directions. Key difference: Line has 0 endpoints, ray has 1 endpoint, line segment has 2 endpoints.",
-          "explanation": "In geometry, a 'line' is always infinite. In everyday speech, we often say 'line' for what is actually a 'line segment'. In mathematics, we must be precise about these distinctions."
+          "answer": "Point: The tip of a needle — it represents a precise location with virtually no size, like a geometric point. Line segment: One edge of a smartphone screen — it has two definite corners (endpoints) and a measurable length. Ray: A laser pointer beam — it starts at the device (one endpoint) and travels in one direction without a visible end. Line: The horizon seen from a flat plain — it appears to stretch endlessly in both directions, like a line with no endpoints. The key property each example shows: a point has no dimensions, a segment has finite length and two endpoints, a ray has one endpoint and infinite extent in one direction, and a line has no endpoints and infinite extent in both directions.",
+          "explanation": "Connecting geometric ideas to real objects helps strengthen understanding. The crucial differences lie in how many endpoints each figure has and whether its length is finite or infinite."
+        },
+        {
+          "id": "la-m2",
+          "type": "short",
+          "question": "Three points A, B, and C lie on the same straight line with B between A and C. How many different line segments can you name using these three points? List them.",
+          "options": [],
+          "answer": "Three line segments can be named: AB (from A to B), BC (from B to C), and AC (from A to C). Note that AB and BC are parts of the larger segment AC, and the length of AC equals the sum of the lengths of AB and BC.",
+          "explanation": "When multiple points lie on the same line, each pair of points defines a distinct line segment. With 3 collinear points, there are 3 possible pairs, giving 3 line segments."
         }
       ],
-      "hard": []
+      "hard": [
+        {
+          "id": "la-h1",
+          "type": "long",
+          "question": "Four distinct points P, Q, R, and S lie in a plane, and no three of them are on the same line. (a) How many distinct line segments can be drawn connecting these points? List all of them. (b) How many distinct lines can be drawn through pairs of these points? (c) Explain why the number of line segments and lines is the same in this case.",
+          "options": [],
+          "answer": "(a) Six line segments: PQ, PR, PS, QR, QS, RS. We choose 2 points out of 4 for each segment, and the number of ways to do this is 4 × 3 ÷ 2 = 6. (b) Six distinct lines — same pairs: line PQ, line PR, line PS, line QR, line QS, line RS. (c) Through any two distinct points, exactly one line can be drawn. Since no three points are collinear (on the same line), every pair of points gives a different line. Therefore the number of lines equals the number of point-pairs, which equals the number of segments — all six.",
+          "explanation": "This problem introduces combinatorial thinking in geometry. The condition 'no three points are collinear' is essential — if three points were on the same line, the pairs formed from those three points would all define the same line, reducing the total count of distinct lines."
+        }
+      ]
     },
     {
       "topic": "Types of Angles and Measurement",
       "easy": [
         {
-          "id": "m2-e5",
+          "id": "la-e6",
           "type": "mcq",
-          "question": "An angle of 135° is called a —",
+          "question": "An angle measuring 147° is classified as —",
           "options": ["Acute angle", "Right angle", "Obtuse angle", "Reflex angle"],
           "answer": "Obtuse angle",
-          "explanation": "Angles between 90° and 180° are obtuse angles. 135° is between 90° and 180°, so it is obtuse."
+          "explanation": "An obtuse angle is any angle greater than 90° but less than 180°. Since 147° falls in this range, it is obtuse."
         },
         {
-          "id": "m2-e6",
+          "id": "la-e7",
+          "type": "fill",
+          "question": "A complete angle (one full rotation) measures ______ degrees.",
+          "options": [],
+          "answer": "360",
+          "explanation": "A complete angle represents one full rotation around a point, returning to the starting position. This is defined as 360°."
+        },
+        {
+          "id": "la-e8",
           "type": "mcq",
-          "question": "The hands of a clock at 3 o'clock form what type of angle?",
-          "options": ["Acute angle", "Right angle", "Obtuse angle", "Straight angle"],
+          "question": "When a ceiling fan blade completes half a rotation, it turns through —",
+          "options": ["90°", "180°", "270°", "360°"],
+          "answer": "180°",
+          "explanation": "A full rotation is 360°. Half a rotation is 360° ÷ 2 = 180°, which is a straight angle."
+        },
+        {
+          "id": "la-e9",
+          "type": "mcq",
+          "question": "Which type of angle measures exactly 90°?",
+          "options": ["Acute angle", "Right angle", "Straight angle", "Obtuse angle"],
           "answer": "Right angle",
-          "explanation": "At 3 o'clock, the minute hand points to 12 and the hour hand points to 3. These are perpendicular to each other, forming a right angle of exactly 90°."
+          "explanation": "A right angle measures exactly 90°. It is the angle you see at the corner of a square or rectangle."
         },
         {
-          "id": "m2-e7",
-          "type": "fill",
-          "question": "A straight angle measures exactly ______ degrees.",
-          "options": [],
-          "answer": "180",
-          "explanation": "A straight angle is formed when the two arms of an angle point in exactly opposite directions, forming a straight line. It measures exactly 180°."
-        },
-        {
-          "id": "m2-e8",
+          "id": "la-e10",
           "type": "mcq",
-          "question": "An angle greater than 180° but less than 360° is called a —",
-          "options": ["Obtuse angle", "Reflex angle", "Straight angle", "Right angle"],
+          "question": "An angle measuring 215° is classified as —",
+          "options": ["Obtuse angle", "Straight angle", "Reflex angle", "Complete angle"],
           "answer": "Reflex angle",
-          "explanation": "Reflex angles are greater than 180° and less than 360°. They are the 'larger' angle when two rays form an angle — you have to go 'the long way around' to measure a reflex angle."
+          "explanation": "A reflex angle is greater than 180° but less than 360°. Since 215° falls in this range, it is a reflex angle."
         }
       ],
       "medium": [
         {
-          "id": "m2-m2",
+          "id": "la-m3",
           "type": "short",
-          "question": "Without using a protractor, classify each angle as acute, right, obtuse, straight, or reflex: (a) 89°  (b) 91°  (c) 180°  (d) 45°  (e) 270°  (f) 90°",
+          "question": "Classify each angle and state its type: (a) 12° (b) 90° (c) 175° (d) 200° (e) 360° (f) 88°",
           "options": [],
-          "answer": "(a) 89° — Acute (less than 90°). (b) 91° — Obtuse (between 90° and 180°). (c) 180° — Straight angle. (d) 45° — Acute (less than 90°). (e) 270° — Reflex (between 180° and 360°). (f) 90° — Right angle (exactly 90°).",
-          "explanation": "Classifying angles by their measure is a fundamental skill. Remember: Acute < 90° < Right = 90° < Obtuse < 180° = Straight < Reflex < 360° = Complete."
+          "answer": "(a) 12° — Acute (between 0° and 90°). (b) 90° — Right angle (exactly 90°). (c) 175° — Obtuse (between 90° and 180°). (d) 200° — Reflex (between 180° and 360°). (e) 360° — Complete angle (exactly 360°). (f) 88° — Acute (between 0° and 90°).",
+          "explanation": "The classification depends on the measure: Acute (0° < angle < 90°), Right (= 90°), Obtuse (90° < angle < 180°), Straight (= 180°), Reflex (180° < angle < 360°), Complete (= 360°)."
         },
         {
-          "id": "m2-m3",
+          "id": "la-m4",
           "type": "short",
-          "question": "The minute hand of a clock moves from 12 to 6. (a) What angle does it turn through? (b) What type of angle is this? (c) What angle does it turn through if it goes from 12 all the way around back to 12?",
+          "question": "The hour hand of a clock moves from 12 to 4. (a) How many degrees does it turn? (b) What type of angle is this? (c) What angle does the remaining sweep (from 4 back to 12, the long way around) represent, and what type is it?",
           "options": [],
-          "answer": "(a) From 12 to 6 = half a full rotation = 180°. (b) 180° is a straight angle. (c) From 12 all the way around to 12 = one full rotation = 360° = complete angle. Note: A clock face is divided into 12 equal parts (hours). Each hour mark = 360° ÷ 12 = 30°. So from 12 to 6 = 6 × 30° = 180°.",
-          "explanation": "Clock problems are a great way to think about angles as rotations. Each hour mark on a clock represents 30° (360÷12). This is used in many real-world angle problems."
-        }
-      ],
-      "hard": []
-    },
-    {
-      "topic": "Complementary, Supplementary, and Vertically Opposite Angles",
-      "easy": [
-        {
-          "id": "m2-e9",
-          "type": "mcq",
-          "question": "The complement of 38° is —",
-          "options": ["52°", "142°", "62°", "128°"],
-          "answer": "52°",
-          "explanation": "Complementary angles add up to 90°. Complement = 90° − 38° = 52°. Check: 38° + 52° = 90° ✓"
+          "answer": "(a) Each hour mark on a clock covers 360° ÷ 12 = 30°. From 12 to 4 = 4 hour marks = 4 × 30° = 120°. (b) 120° is an obtuse angle (between 90° and 180°). (c) The remaining sweep = 360° − 120° = 240°. This is a reflex angle (between 180° and 360°).",
+          "explanation": "A clock face is divided into 12 equal parts. Each part spans 30°. Counting hour marks between positions and multiplying by 30° gives the angle. The two angles formed (the smaller sweep and the larger sweep) always add to 360°."
         },
         {
-          "id": "m2-e10",
-          "type": "mcq",
-          "question": "The supplement of 115° is —",
-          "options": ["25°", "65°", "245°", "75°"],
-          "answer": "65°",
-          "explanation": "Supplementary angles add up to 180°. Supplement = 180° − 115° = 65°. Check: 115° + 65° = 180° ✓"
-        },
-        {
-          "id": "m2-e11",
-          "type": "fill",
-          "question": "When two lines intersect, the vertically opposite angles are always ______.",
-          "options": [],
-          "answer": "equal",
-          "explanation": "Vertically opposite angles are the angles across from each other at an intersection. They are always equal. This is a theorem in geometry."
-        },
-        {
-          "id": "m2-e12",
-          "type": "mcq",
-          "question": "Two angles form a linear pair. One angle is 48°. What is the other angle?",
-          "options": ["42°", "132°", "138°", "312°"],
-          "answer": "132°",
-          "explanation": "A linear pair of angles adds up to 180° (they form a straight line). Other angle = 180° − 48° = 132°. Check: 48° + 132° = 180° ✓"
-        }
-      ],
-      "medium": [
-        {
-          "id": "m2-m4",
+          "id": "la-m5",
           "type": "short",
-          "question": "Two lines intersect and one of the four angles formed is 73°. Find all four angles and name the relationship between each pair.",
+          "question": "A protractor has two scales — inner and outer. When measuring an angle, a student reads 60° from one scale and 120° from the other. The angle looks smaller than a right angle. Which reading is correct and why?",
           "options": [],
-          "answer": "One angle = 73°. Vertically opposite to it = 73° (equal). Linear pair with 73° = 180° − 73° = 107°. Vertically opposite to 107° = 107° (equal). Four angles: 73°, 107°, 73°, 107°. Relationships: The two 73° angles are vertically opposite (equal). The two 107° angles are vertically opposite (equal). Each 73° is supplementary to each adjacent 107° (they form a linear pair, sum = 180°).",
-          "explanation": "When two lines intersect, they always form two pairs of vertically opposite angles and four linear pairs. Knowing just ONE angle lets you find all four."
-        },
-        {
-          "id": "m2-m5",
-          "type": "short",
-          "question": "Angle A and angle B are complementary. Angle A is three times angle B. Find both angles.",
-          "options": [],
-          "answer": "Let angle B = x°. Then angle A = 3x°. Complementary means they add to 90°: 3x + x = 90°. 4x = 90°. x = 22.5°. So angle B = 22.5° and angle A = 3 × 22.5° = 67.5°. Check: 67.5° + 22.5° = 90° ✓",
-          "explanation": "This is a typical algebraic approach to angle problems. Set up an equation using the given relationship (complementary = sum to 90°) and the ratio condition (A = 3B). Solve for the unknown."
+          "answer": "The correct reading is 60°. Since the angle looks smaller than a right angle (90°), it must be acute — less than 90°. The reading of 120° comes from the wrong scale. The student should use the scale that starts from 0° on the arm that is aligned with the protractor's baseline.",
+          "explanation": "The dual scales on a protractor always give readings that add up to 180° (here, 60° + 120° = 180°). Visual estimation helps determine which scale is correct. An angle that appears smaller than 90° must be acute, so 60° is the answer."
         }
       ],
       "hard": [
         {
-          "id": "m2-h1",
+          "id": "la-h2",
           "type": "long",
-          "question": "A transversal crosses two parallel lines. One of the angles formed at the first intersection is 65°. Find ALL 8 angles formed, stating which rule (corresponding, alternate interior, co-interior, or linear pair) you used for each.",
+          "question": "The minute hand of a clock starts at 12 and moves clockwise. (a) What angle has it turned through when it reaches the 5? (b) At what number will the minute hand be when it has turned through exactly 270° from 12? (c) If the minute hand has turned through 210°, what is the reflex angle measured going anticlockwise from 12 to the minute hand's position?",
           "options": [],
-          "answer": "At the first intersection, the four angles are: 65° (given), 115° (linear pair: 180°−65°), 65° (vertically opposite to 65°), 115° (vertically opposite to 115°). At the second intersection (parallel line), using parallel line rules: Corresponding to the 65° at first intersection = 65° (corresponding angles — F-shape — are equal). Corresponding to the 115° = 115°. So the four angles at the second intersection are also: 65°, 115°, 65°, 115°. All 8 angles: First intersection: 65°, 115°, 65°, 115°. Second intersection: 65°, 115°, 65°, 115°. Rules used: Vertically opposite angles (equal) → from 65° to the angle across from it. Linear pair (sum = 180°) → from 65° to the adjacent 115°. Corresponding angles (equal for parallel lines) → from first intersection to second. Alternate interior angles could also be identified — these are equal (both 65° or both 115°). Co-interior angles (same side, between parallel lines) add to 180° → 65° + 115° = 180° ✓",
-          "explanation": "This question requires applying multiple angle relationships together. Knowing just ONE angle at the first intersection allows you to find all 8 angles using: vertically opposite (equal), linear pair (sum 180°), and corresponding/alternate/co-interior angle rules for parallel lines."
+          "answer": "(a) Each number on the clock = 360° ÷ 12 = 30°. From 12 to 5 = 5 positions = 5 × 30° = 150°. (b) 270° ÷ 30° = 9 positions from 12. Counting clockwise: 1, 2, 3, 4, 5, 6, 7, 8, 9. The minute hand is at the 9. (c) If the minute hand has turned 210° clockwise from 12, the anticlockwise angle from 12 to the same position = 360° − 210° = 150°. But the question asks for the reflex angle going anticlockwise. Going anticlockwise from 12 to the hand's position the short way is 150°, and the reflex (long way) anticlockwise would actually be the same as the 210° clockwise direction. So the reflex angle measured anticlockwise from 12 to the minute hand = 360° − 150° = 210°. This equals the clockwise angle, confirming the relationship.",
+          "explanation": "Clock problems combine angle measurement with logical reasoning about direction. The key insight is that any position on a clock can be described by two angles — the clockwise angle and the anticlockwise angle — and these always sum to 360°."
         }
       ]
     },
     {
-      "topic": "Angle Sum in a Triangle",
+      "topic": "Angle Relationships",
       "easy": [
         {
-          "id": "m2-e13",
+          "id": "la-e11",
           "type": "mcq",
-          "question": "The sum of all three angles in any triangle is —",
-          "options": ["90°", "180°", "270°", "360°"],
-          "answer": "180°",
-          "explanation": "The angle sum property of a triangle states that the sum of all three interior angles of any triangle is always 180°. This is true for all triangles — scalene, isosceles, equilateral, right-angled."
+          "question": "The complement of 45° is —",
+          "options": ["45°", "135°", "55°", "90°"],
+          "answer": "45°",
+          "explanation": "Complementary angles add up to 90°. Complement = 90° − 45° = 45°. Check: 45° + 45° = 90° ✓"
         },
         {
-          "id": "m2-e14",
+          "id": "la-e12",
+          "type": "mcq",
+          "question": "The supplement of 97° is —",
+          "options": ["7°", "83°", "263°", "93°"],
+          "answer": "83°",
+          "explanation": "Supplementary angles add up to 180°. Supplement = 180° − 97° = 83°. Check: 97° + 83° = 180° ✓"
+        },
+        {
+          "id": "la-e13",
           "type": "fill",
-          "question": "A triangle has angles 55° and 75°. The third angle is ______.",
+          "question": "Two angles forming a linear pair always add up to ______ degrees.",
           "options": [],
-          "answer": "50°",
-          "explanation": "Sum of angles = 180°. Third angle = 180° − 55° − 75° = 180° − 130° = 50°."
+          "answer": "180",
+          "explanation": "A linear pair consists of two adjacent angles that together form a straight line. A straight angle measures 180°, so a linear pair always sums to 180°."
+        },
+        {
+          "id": "la-e14",
+          "type": "mcq",
+          "question": "When two straight lines cross each other, the vertically opposite angles are —",
+          "options": ["Supplementary", "Complementary", "Equal", "Adding to 360°"],
+          "answer": "Equal",
+          "explanation": "Vertically opposite angles (the angles facing each other diagonally across the intersection point) are always equal. This is a fundamental theorem of geometry."
+        },
+        {
+          "id": "la-e15",
+          "type": "fill",
+          "question": "If one angle of a linear pair is 75°, the other angle is ______.",
+          "options": [],
+          "answer": "105°",
+          "explanation": "A linear pair adds to 180°. The other angle = 180° − 75° = 105°."
         }
       ],
       "medium": [
         {
-          "id": "m2-m6",
+          "id": "la-m6",
           "type": "short",
-          "question": "In an isosceles triangle, two angles are equal. If the unequal angle (the angle between the two equal sides) is 40°, find the other two angles.",
+          "question": "Two lines intersect and one of the four angles formed is 58°. Find all four angles and identify each pair of vertically opposite angles.",
           "options": [],
-          "answer": "Sum of all angles = 180°. The unequal angle = 40°. The two equal angles together = 180° − 40° = 140°. Each equal angle = 140° ÷ 2 = 70°. The triangle has angles: 40°, 70°, 70°.",
-          "explanation": "In an isosceles triangle, the two base angles (angles opposite the equal sides) are equal. Knowing one angle allows you to find all three using the angle sum property."
+          "answer": "Given angle = 58°. Its vertically opposite angle = 58° (vertically opposite angles are equal). The angle adjacent to 58° (linear pair) = 180° − 58° = 122°. The angle vertically opposite to 122° = 122°. The four angles are: 58°, 122°, 58°, 122°. First vertically opposite pair: the two 58° angles. Second vertically opposite pair: the two 122° angles.",
+          "explanation": "At any intersection of two lines, there are exactly two pairs of vertically opposite angles. Each pair consists of equal angles. Adjacent angles form a linear pair (sum = 180°). Knowing one angle is enough to determine all four."
+        },
+        {
+          "id": "la-m7",
+          "type": "short",
+          "question": "Angle X and angle Y are supplementary. Angle X is 40° more than angle Y. Find both angles.",
+          "options": [],
+          "answer": "Let angle Y = n°. Then angle X = (n + 40)°. Since they are supplementary: n + (n + 40) = 180. 2n + 40 = 180. 2n = 140. n = 70. So angle Y = 70° and angle X = 70° + 40° = 110°. Check: 70° + 110° = 180° ✓",
+          "explanation": "This problem combines the definition of supplementary angles (sum = 180°) with an algebraic relationship. Setting up the equation correctly is the key step."
+        },
+        {
+          "id": "la-m8",
+          "type": "short",
+          "question": "Can two obtuse angles be supplementary? Explain your reasoning.",
+          "options": [],
+          "answer": "No, two obtuse angles cannot be supplementary. An obtuse angle is greater than 90°. If both angles are greater than 90°, their sum would be greater than 90° + 90° = 180°. But supplementary angles must add up to exactly 180°. Since the sum of two obtuse angles always exceeds 180°, they can never be supplementary.",
+          "explanation": "This question requires logical reasoning rather than calculation. Understanding the definition of obtuse (> 90°) and supplementary (sum = 180°) leads directly to the conclusion."
         }
       ],
-      "hard": []
+      "hard": [
+        {
+          "id": "la-h3",
+          "type": "long",
+          "question": "A transversal crosses two parallel lines. One of the eight angles formed is 72°. (a) Find all eight angles. (b) For each angle you find, state which rule you used (linear pair, vertically opposite, corresponding, alternate interior, or co-interior).",
+          "options": [],
+          "answer": "At the first intersection — Given angle: 72°. Vertically opposite to given: 72° (vertically opposite angles are equal). Adjacent to given (linear pair): 180° − 72° = 108°. Vertically opposite to 108°: 108° (vertically opposite). At the second intersection — Corresponding to 72° (F-rule): 72° (corresponding angles on parallel lines are equal). Vertically opposite to that 72°: 72°. Adjacent to that 72° (linear pair): 108°. Vertically opposite to that 108°: 108°. All eight angles: First intersection: 72°, 108°, 72°, 108°. Second intersection: 72°, 108°, 72°, 108°. Additional relationships: Alternate interior angles (Z-rule): the 72° at the bottom of the first intersection and the 72° at the top of the second intersection are equal. Co-interior angles (C-rule): 72° + 108° = 180° (angles on the same side between the parallel lines are supplementary).",
+          "explanation": "When a transversal crosses two parallel lines, knowing just one angle unlocks all eight. The strategy is: use vertically opposite and linear pair rules to find all four angles at one intersection, then use corresponding (or alternate/co-interior) rules to transfer the values to the second intersection."
+        },
+        {
+          "id": "la-h4",
+          "type": "long",
+          "question": "The complement of an angle is one-fourth of its supplement. Find the angle.",
+          "options": [],
+          "answer": "Let the angle be x°. Complement = (90 − x)°. Supplement = (180 − x)°. Given: complement = one-fourth of supplement. 90 − x = (180 − x) ÷ 4. Multiply both sides by 4: 4(90 − x) = 180 − x. 360 − 4x = 180 − x. 360 − 180 = −x + 4x. 180 = 3x. x = 60°. Verification: Complement of 60° = 30°. Supplement of 60° = 120°. Is 30 = 120 ÷ 4? 120 ÷ 4 = 30. Yes ✓. The angle is 60°.",
+          "explanation": "This problem requires setting up an algebraic equation from a word statement. The key is translating 'complement' into (90 − x) and 'supplement' into (180 − x), then solving the resulting equation."
+        }
+      ]
     }
   ]
 }

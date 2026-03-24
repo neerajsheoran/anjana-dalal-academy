@@ -2,69 +2,38 @@
   "chapterRef": "class-6/science/chapter-4-exploring-magnets/worksheet",
   "topics": [
     {
-      "topic": "Magnets and Their Types",
+      "topic": "What Magnets Can Do — Properties of Magnets",
       "easy": [
         {
           "id": "ch4-e1",
           "type": "mcq",
-          "question": "What is a magnet?",
+          "question": "Which of the following materials will be attracted by a magnet?",
           "options": [
-            "An object that attracts iron and certain metals",
-            "An object that repels all metals",
-            "A type of plastic material",
-            "A material that conducts electricity"
+            "Steel safety pin",
+            "Wooden ruler",
+            "Plastic bottle cap",
+            "Rubber eraser"
           ],
-          "answer": "An object that attracts iron and certain metals",
-          "explanation": "A magnet is an object that can attract iron, nickel, cobalt, and some other metals due to its magnetic properties."
+          "answer": "Steel safety pin",
+          "explanation": "Steel contains iron, which is a magnetic material. Wood, plastic, and rubber are all non-magnetic materials and are not attracted by a magnet."
         },
         {
           "id": "ch4-e2",
           "type": "mcq",
-          "question": "Which of the following is a natural magnet?",
-          "options": [
-            "Lodestone",
-            "Bar magnet",
-            "Horseshoe magnet",
-            "Disc magnet"
-          ],
-          "answer": "Lodestone",
-          "explanation": "Lodestone is a naturally occurring rock (magnetite) that has magnetic properties. All other options are artificial magnets."
-        },
-        {
-          "id": "ch4-e3",
-          "type": "mcq",
-          "question": "How many poles does a magnet have?",
+          "question": "How many poles does every magnet have?",
           "options": [
             "Two",
             "One",
             "Three",
-            "Four"
+            "It depends on the shape of the magnet"
           ],
           "answer": "Two",
-          "explanation": "Every magnet has exactly two poles — a North Pole (N) and a South Pole (S)."
+          "explanation": "Every magnet — regardless of its shape or size — always has exactly two poles: a North Pole and a South Pole."
         },
         {
-          "id": "ch4-e4",
-          "type": "fill",
-          "question": "The two poles of a magnet are the ______ pole and the ______ pole.",
-          "options": [],
-          "answer": "North; South",
-          "explanation": "Every magnet has a North Pole and a South Pole at its two ends."
-        },
-        {
-          "id": "ch4-e5",
-          "type": "short",
-          "question": "Name any two shapes of magnets.",
-          "options": [],
-          "answer": "Bar magnet and horseshoe magnet (also accept disc magnet, rod magnet, strip magnet).",
-          "explanation": "Magnets are made in many shapes: bar, horseshoe/U-shape, disc, strip, and rod."
-        }
-      ],
-      "medium": [
-        {
-          "id": "ch4-m1",
+          "id": "ch4-e3",
           "type": "mcq",
-          "question": "What happens when the north poles of two magnets are brought close to each other?",
+          "question": "What happens when the south pole of one magnet is brought near the south pole of another magnet?",
           "options": [
             "They repel each other",
             "They attract each other",
@@ -72,121 +41,269 @@
             "They stick together permanently"
           ],
           "answer": "They repel each other",
-          "explanation": "Like poles repel each other. When two north poles (or two south poles) are brought close, they push each other away."
+          "explanation": "Like poles (south-south or north-north) always repel each other. Only unlike poles (north-south) attract."
+        },
+        {
+          "id": "ch4-e4",
+          "type": "fill",
+          "question": "The magnetic force of a magnet is strongest at its ______.",
+          "options": [],
+          "answer": "poles",
+          "explanation": "The two poles of a magnet are where the magnetic force is at its maximum. The force is weakest at the middle of the magnet."
+        },
+        {
+          "id": "ch4-e5",
+          "type": "short",
+          "question": "Give two examples of magnetic materials and two examples of non-magnetic materials.",
+          "options": [],
+          "answer": "Magnetic materials: iron nail, steel spoon (also accept cobalt, nickel). Non-magnetic materials: glass marble, wooden stick (also accept plastic, rubber, copper, aluminium).",
+          "explanation": "Magnetic materials are attracted by magnets and include iron, steel, cobalt, and nickel. Non-magnetic materials such as glass, wood, plastic, rubber, copper, and aluminium are not affected by magnets."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-m1",
+          "type": "mcq",
+          "question": "Riya holds a magnet near an aluminium spoon. What will she observe?",
+          "options": [
+            "The spoon will not be attracted to the magnet",
+            "The spoon will stick strongly to the magnet",
+            "The spoon will be weakly attracted",
+            "The spoon will become a permanent magnet"
+          ],
+          "answer": "The spoon will not be attracted to the magnet",
+          "explanation": "Aluminium is a non-magnetic material even though it is a metal. A magnet will have no attractive effect on it."
         },
         {
           "id": "ch4-m2",
-          "type": "mcq",
-          "question": "Which of these materials is attracted by a magnet?",
-          "options": [
-            "Iron nail",
-            "Plastic bottle cap",
-            "Rubber eraser",
-            "Glass piece"
-          ],
-          "answer": "Iron nail",
-          "explanation": "Iron is a magnetic material and is attracted by magnets. Plastic, rubber, and glass are non-magnetic materials."
+          "type": "short",
+          "question": "A student claims that all metals are attracted by magnets. Is this statement correct? Explain with examples.",
+          "options": [],
+          "answer": "The statement is incorrect. Only certain metals — iron, steel, cobalt, and nickel — are attracted by magnets. Many metals such as copper, aluminium, gold, and silver are non-magnetic and are not attracted by a magnet.",
+          "explanation": "Being a metal does not automatically make a substance magnetic. Magnetism depends on the internal atomic structure of the material, not simply on whether it is a metal."
         },
         {
           "id": "ch4-m3",
-          "type": "short",
-          "question": "What is the difference between magnetic and non-magnetic materials? Give one example of each.",
-          "options": [],
-          "answer": "Magnetic materials are attracted by magnets (e.g., iron nail). Non-magnetic materials are not attracted by magnets (e.g., plastic, wood, glass).",
-          "explanation": "Only materials containing iron, nickel, or cobalt are attracted to magnets. All other materials are non-magnetic."
-        },
-        {
-          "id": "ch4-m4",
           "type": "fill",
-          "question": "The name ‘magnet’ comes from a region called ______ in ancient Greece.",
+          "question": "When a north pole is brought near a south pole, they ______ each other, but when two north poles are brought together, they ______ each other.",
           "options": [],
-          "answer": "Magnesia",
-          "explanation": "The word magnet is derived from Magnesia, a region in ancient Greece where naturally magnetic rocks (lodestones) were first found."
+          "answer": "attract; repel",
+          "explanation": "Unlike poles (north and south) attract, while like poles (north-north or south-south) repel. This is a fundamental property of magnets."
         }
       ],
       "hard": [
         {
           "id": "ch4-h1",
-          "type": "short",
-          "question": "Explain why a freely suspended bar magnet always points in the north-south direction.",
+          "type": "long",
+          "question": "Ankit has a box full of iron nails mixed with wooden matchsticks and plastic buttons. Describe a method he can use to quickly separate the iron nails from the other items. Explain why this method works.",
           "options": [],
-          "answer": "The Earth behaves like a giant magnet. The Earth’s magnetic south pole is near the geographic north pole, which attracts the north pole of the suspended magnet. This is why the magnet’s north-seeking pole always points geographically north.",
-          "explanation": "Earth’s magnetic field aligns any freely suspended magnet along the geographic north-south direction."
+          "answer": "Ankit can move a strong magnet slowly over the mixture. The iron nails will be attracted to the magnet and stick to it, while the wooden matchsticks and plastic buttons will remain in the box because they are non-magnetic materials. He can then pull the nails off the magnet and collect them separately. This works because iron is a magnetic material — it responds to the magnetic force — whereas wood and plastic are non-magnetic and are completely unaffected by the magnet.",
+          "explanation": "Magnets provide a quick and efficient way to separate magnetic materials (like iron) from non-magnetic materials (like wood and plastic) in a mixture."
         },
         {
           "id": "ch4-h2",
           "type": "short",
-          "question": "Can a magnet be made to lose its magnetism? How?",
+          "question": "If you break a bar magnet exactly in half, how many poles will each piece have? Explain your reasoning.",
           "options": [],
-          "answer": "Yes, a magnet can lose its magnetism (demagnetisation) by: (1) dropping it repeatedly from a height, (2) heating it to a high temperature, (3) hammering it hard. These actions disturb the alignment of magnetic domains inside the magnet.",
-          "explanation": "Magnetic domains are tiny regions inside a magnet where atoms are aligned. Any shock or heat disrupts this alignment, causing loss of magnetism."
+          "answer": "Each piece will still have two poles — a North Pole and a South Pole. It is impossible to obtain a magnet with only one pole. No matter how many times you break a magnet, every fragment will always have both a north and a south pole.",
+          "explanation": "Magnetism arises from the alignment of tiny magnetic domains. Even the smallest fragment of a magnet contains domains with both north and south orientations at opposite ends."
         }
       ]
     },
     {
-      "topic": "Compass and Magnetic Field",
+      "topic": "Finding the Poles and Using a Compass",
       "easy": [
         {
           "id": "ch4-e6",
           "type": "mcq",
-          "question": "What is a compass used for?",
+          "question": "What is the main purpose of a magnetic compass?",
           "options": [
-            "Finding direction",
-            "Measuring temperature",
-            "Measuring length",
-            "Measuring weight"
+            "To find direction",
+            "To measure the weight of objects",
+            "To check the temperature",
+            "To measure the length of a room"
           ],
-          "answer": "Finding direction",
-          "explanation": "A compass contains a magnetised needle that always points north-south, helping us find directions."
+          "answer": "To find direction",
+          "explanation": "A compass contains a freely rotating magnetic needle that always points in the north-south direction, helping us determine which way is north, south, east, or west."
         },
         {
           "id": "ch4-e7",
-          "type": "fill",
-          "question": "The area around a magnet where its force acts is called the ______.",
-          "options": [],
-          "answer": "magnetic field",
-          "explanation": "The magnetic field is the region surrounding a magnet where its attractive or repulsive force can be experienced."
+          "type": "mcq",
+          "question": "When a bar magnet is hung freely by a thread, it settles in which direction?",
+          "options": [
+            "North-South",
+            "East-West",
+            "It keeps spinning",
+            "It points in a different direction every time"
+          ],
+          "answer": "North-South",
+          "explanation": "A freely suspended magnet always aligns itself along the north-south direction because the Earth acts as a giant magnet and attracts the poles of the hanging magnet."
         },
         {
           "id": "ch4-e8",
-          "type": "short",
-          "question": "What is an electromagnet?",
+          "type": "fill",
+          "question": "The Earth behaves like a giant ______.",
           "options": [],
-          "answer": "An electromagnet is a magnet made by passing electric current through a coil of wire wound around an iron rod. It can be switched on and off.",
-          "explanation": "Electromagnets use electric current to generate magnetic fields. They are used in cranes, electric bells, and MRI machines."
+          "answer": "magnet",
+          "explanation": "The Earth has a magnetic field generated by its molten iron-nickel core. This is why compass needles align along the north-south direction."
+        },
+        {
+          "id": "ch4-e9",
+          "type": "short",
+          "question": "Name the naturally occurring magnetic rock and the region in ancient Greece where it was first discovered.",
+          "options": [],
+          "answer": "The naturally occurring magnetic rock is called lodestone (or magnetite). It was discovered near a region called Magnesia in ancient Greece.",
+          "explanation": "The word 'magnet' itself is derived from Magnesia, the place where these naturally magnetic rocks were first found."
         }
       ],
       "medium": [
         {
-          "id": "ch4-m5",
+          "id": "ch4-m4",
           "type": "mcq",
-          "question": "Where is the magnetic field of a bar magnet the strongest?",
+          "question": "Why does the north pole of a compass needle point toward the geographic North Pole of the Earth?",
           "options": [
-            "At the poles",
-            "At the centre",
-            "Equally everywhere",
-            "Far away from the magnet"
+            "Because the geographic North Pole is near the Earth's magnetic south pole, and unlike poles attract",
+            "Because the geographic North Pole is near the Earth's magnetic north pole, and like poles attract",
+            "Because the compass needle is pushed by the Sun's rays",
+            "Because all needles naturally point north due to gravity"
           ],
-          "answer": "At the poles",
-          "explanation": "The magnetic field is strongest at the two poles of a magnet and weakens as you move toward the centre or away from the magnet."
+          "answer": "Because the geographic North Pole is near the Earth's magnetic south pole, and unlike poles attract",
+          "explanation": "The Earth's geographic North Pole lies close to its magnetic south pole. Since unlike poles attract, the north-seeking pole of the compass needle is pulled toward geographic north."
+        },
+        {
+          "id": "ch4-m5",
+          "type": "short",
+          "question": "Describe a simple method to find the North Pole and South Pole of an unmarked bar magnet.",
+          "options": [],
+          "answer": "Tie a thread around the centre of the bar magnet and let it hang freely so it can rotate without touching anything. Wait for it to stop moving. The end that points toward geographic north is the North Pole, and the opposite end is the South Pole.",
+          "explanation": "A freely suspended magnet aligns with the Earth's magnetic field. The end attracted toward geographic north is identified as the magnet's North Pole."
         },
         {
           "id": "ch4-m6",
-          "type": "short",
-          "question": "How can you use iron filings to visualise a magnetic field? What pattern do you see?",
+          "type": "fill",
+          "question": "The geographic North Pole of the Earth is actually close to the Earth's magnetic ______ pole.",
           "options": [],
-          "answer": "Place a sheet of paper over a bar magnet and sprinkle iron filings on it. Tap the paper gently. The iron filings arrange into curved lines going from the north pole to the south pole. These lines represent the magnetic field lines.",
-          "explanation": "Iron filings act like tiny compass needles and align along the magnetic field lines, revealing the field pattern around the magnet."
+          "answer": "south",
+          "explanation": "This is why the north pole of a compass needle is attracted toward the geographic north — because unlike poles attract each other."
         }
       ],
       "hard": [
         {
           "id": "ch4-h3",
-          "type": "short",
-          "question": "List any four uses of magnets in everyday life and explain briefly how magnetism helps in each case.",
+          "type": "long",
+          "question": "Meera placed a compass on a table and noticed the needle was pointing north. She then placed a strong bar magnet right next to the compass. The needle swung and pointed in a different direction. Explain why this happened.",
           "options": [],
-          "answer": "1. Compass — magnetic needle points north-south to show direction. 2. Refrigerator door seal — strip magnet keeps the door closed airtight. 3. Crane — electromagnet lifts and moves heavy iron/steel loads in factories. 4. Credit card — magnetic strip on the card stores account information.",
-          "explanation": "Magnets are used wherever attraction, direction-finding, data storage, or controllable lifting force is needed."
+          "answer": "The compass needle normally aligns with the Earth's magnetic field and points north. However, when Meera placed a strong bar magnet near the compass, the bar magnet's magnetic field overpowered the much weaker magnetic field of the Earth at that spot. The compass needle then aligned with the bar magnet's field instead of the Earth's field, causing it to point in a different direction. If Meera removes the bar magnet, the needle will return to pointing north.",
+          "explanation": "A compass needle responds to the strongest magnetic field in its surroundings. A nearby bar magnet produces a field that is much stronger than the Earth's field at close range, so the needle follows the bar magnet's field."
+        }
+      ]
+    },
+    {
+      "topic": "Making Your Own Magnet",
+      "easy": [
+        {
+          "id": "ch4-e10",
+          "type": "mcq",
+          "question": "Which of the following is a method of making a magnet?",
+          "options": [
+            "Stroking an iron nail with a magnet in one direction",
+            "Dipping an iron nail in water",
+            "Heating an iron nail on a stove",
+            "Painting an iron nail with red colour"
+          ],
+          "answer": "Stroking an iron nail with a magnet in one direction",
+          "explanation": "Repeated stroking in a single direction with one pole of a magnet aligns the magnetic domains inside the iron nail, turning it into a magnet."
+        },
+        {
+          "id": "ch4-e11",
+          "type": "mcq",
+          "question": "An electromagnet works only when ______.",
+          "options": [
+            "Electric current flows through the coil",
+            "It is placed in sunlight",
+            "It is dipped in water",
+            "It is kept in a refrigerator"
+          ],
+          "answer": "Electric current flows through the coil",
+          "explanation": "An electromagnet is a temporary magnet that functions only when electric current passes through the wire coil wrapped around the iron core."
+        },
+        {
+          "id": "ch4-e12",
+          "type": "fill",
+          "question": "The process of making a piece of iron into a magnet is called ______.",
+          "options": [],
+          "answer": "magnetisation",
+          "explanation": "Magnetisation is the process by which a non-magnetic piece of iron or steel is turned into a magnet, either by stroking or by using electric current."
+        },
+        {
+          "id": "ch4-e13",
+          "type": "short",
+          "question": "What is the difference between a permanent magnet and an electromagnet?",
+          "options": [],
+          "answer": "A permanent magnet retains its magnetism for a long time without any external source of energy. An electromagnet works only when electric current flows through it — switching off the current causes it to lose its magnetism.",
+          "explanation": "Permanent magnets (like bar magnets) keep their magnetism on their own, while electromagnets depend on electricity and can be turned on and off."
+        },
+        {
+          "id": "ch4-e14",
+          "type": "mcq",
+          "question": "Which of the following can cause a magnet to lose its magnetism?",
+          "options": [
+            "Dropping it repeatedly on a hard floor",
+            "Wrapping it in a cloth",
+            "Keeping it on a wooden shelf",
+            "Placing it next to another magnet with unlike poles touching"
+          ],
+          "answer": "Dropping it repeatedly on a hard floor",
+          "explanation": "Dropping a magnet repeatedly disturbs the alignment of its internal magnetic domains, causing it to lose its magnetism. This is called demagnetisation."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-m7",
+          "type": "short",
+          "question": "Describe the steps to make a magnet using the stroking method.",
+          "options": [],
+          "answer": "1. Hold a bar magnet in one hand and place one of its poles at one end of an iron nail. 2. Slide the magnet along the nail in one direction only — from one end to the other. 3. Lift the magnet, bring it back to the starting point, and repeat the stroke. 4. Continue for 30 to 40 strokes. 5. Test the nail by bringing it near iron filings or small pins — if they stick, the nail has been magnetised.",
+          "explanation": "Single-direction stroking aligns the magnetic domains inside the iron nail in the same direction, turning the nail into a temporary magnet."
+        },
+        {
+          "id": "ch4-m8",
+          "type": "mcq",
+          "question": "Which of these is NOT a correct way to take care of a magnet?",
+          "options": [
+            "Hammering the magnet to make it stronger",
+            "Storing bar magnets in pairs with keepers",
+            "Keeping magnets away from electronic devices",
+            "Avoiding dropping magnets on hard surfaces"
+          ],
+          "answer": "Hammering the magnet to make it stronger",
+          "explanation": "Hammering a magnet does not make it stronger — it actually weakens the magnet by disrupting the alignment of its internal magnetic domains."
+        },
+        {
+          "id": "ch4-m9",
+          "type": "short",
+          "question": "Give any three uses of magnets in everyday life.",
+          "options": [],
+          "answer": "1. Refrigerator door seal — a magnetic strip holds the door shut. 2. Speakers and earphones — magnets help convert electrical signals into sound. 3. Magnetic compass — a magnetic needle shows direction for travellers. (Also accept: MRI machines, electric motors, maglev trains, cranes at scrapyards.)",
+          "explanation": "Magnets are used in a wide variety of devices and applications in daily life, from household appliances to advanced technology."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-h4",
+          "type": "long",
+          "question": "Explain how an electromagnet is made. Why are electromagnets preferred over permanent magnets in scrapyard cranes?",
+          "options": [],
+          "answer": "An electromagnet is made by winding a coil of insulated copper wire around an iron nail or rod and connecting the wire to a battery or power source. When current flows, the iron core becomes magnetised and can attract magnetic materials. When the current is switched off, the magnetism disappears. Scrapyard cranes use electromagnets instead of permanent magnets because the crane needs to pick up heavy iron and steel loads and then release them at a different location. With an electromagnet, the operator simply switches off the current to drop the load. A permanent magnet cannot be turned off, so it would be impossible to release the scrap at the desired location.",
+          "explanation": "The ability to switch an electromagnet on and off makes it far more practical for tasks like lifting and releasing heavy iron objects in scrapyards."
+        },
+        {
+          "id": "ch4-h5",
+          "type": "long",
+          "question": "Priya's grandmother says that keeping a magnet near a mobile phone can damage it. Is this correct? Explain the science behind this advice and list two other precautions for storing magnets safely.",
+          "options": [],
+          "answer": "Yes, Priya's grandmother is correct. Strong magnets can interfere with the electronic sensors inside a mobile phone (such as the compass sensor and the display) and can potentially damage components that store data magnetically. The magnetic field may also affect the phone's speaker and other parts. Two other precautions: (1) Do not drop or hammer a magnet, as physical shocks disturb the alignment of magnetic domains and weaken the magnet. (2) Do not heat a magnet, because high temperatures scramble the domains and cause the magnet to lose its magnetism.",
+          "explanation": "Magnets produce fields that can interfere with electronic components. Proper magnet care also involves protecting the magnet itself from physical shocks and heat."
         }
       ]
     }
