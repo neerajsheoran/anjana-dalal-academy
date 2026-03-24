@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { getSubjectsForClass, getChapters } from '@/lib/content';
+import { ClassId } from '@/lib/types';
 
 const CLASS_CARDS = [
   {
@@ -104,20 +106,32 @@ export default function ClassesPage() {
       {/* Class cards */}
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {CLASS_CARDS.map((cls) => (
-            <Link
-              key={cls.id}
-              href={`/class/${cls.id}`}
-              className={`group bg-gradient-to-br ${cls.from} ${cls.to} rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200`}
-            >
-              <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl mb-4 group-hover:scale-110 transition-transform duration-200">
-                {cls.icon}
-              </div>
-              <h3 className="text-white text-2xl font-bold mb-1">{cls.label}</h3>
-              <p className="text-white/75 text-sm">{cls.desc}</p>
-              <span className="mt-5 text-white/50 text-xs font-medium">Tap to explore →</span>
-            </Link>
-          ))}
+          {CLASS_CARDS.map((cls) => {
+            const subjects = getSubjectsForClass(cls.id as ClassId);
+            const totalChapters = subjects.reduce(
+              (sum, s) => sum + getChapters(cls.id as ClassId, s.id).length,
+              0
+            );
+            return (
+              <Link
+                key={cls.id}
+                href={`/class/${cls.id}`}
+                className={`group bg-gradient-to-br ${cls.from} ${cls.to} rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200`}
+              >
+                <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl mb-4 group-hover:scale-110 transition-transform duration-200">
+                  {cls.icon}
+                </div>
+                <h3 className="text-white text-2xl font-bold mb-1">{cls.label}</h3>
+                <p className="text-white/75 text-sm">{cls.desc}</p>
+                {totalChapters > 0 && (
+                  <p className="text-white/60 text-xs mt-2">
+                    {subjects.length} {subjects.length === 1 ? 'subject' : 'subjects'} · {totalChapters} chapters
+                  </p>
+                )}
+                <span className="mt-4 text-white/50 text-xs font-medium">Tap to explore →</span>
+              </Link>
+            );
+          })}
         </div>
       </div>
 

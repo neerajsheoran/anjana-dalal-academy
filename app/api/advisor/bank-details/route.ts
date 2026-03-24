@@ -28,10 +28,11 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
-  const { accountHolder, bankName, bankAccount, bankIFSC, pan } = body;
+  const { mobile, accountHolder, bankName, bankAccount, bankIFSC, pan } = body;
 
   try {
     await adminDb.collection('users').doc(uid).update({
+      mobile: mobile?.trim() || null,
       accountHolder: accountHolder?.trim() || null,
       bankName: bankName?.trim() || null,
       bankAccount: bankAccount?.trim() || null,

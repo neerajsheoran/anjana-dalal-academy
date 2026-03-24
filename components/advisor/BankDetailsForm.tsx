@@ -1,8 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import ResendVerificationEmail from "./ResendVerificationEmail";
 
 interface BankDetailsFormProps {
+  email: string;
+  emailVerified: boolean;
+  phoneVerified: boolean;
+  mobile: string | null;
   accountHolder: string | null;
   bankName: string | null;
   bankAccount: string | null;
@@ -10,10 +15,40 @@ interface BankDetailsFormProps {
   pan: string | null;
 }
 
-export default function BankDetailsForm({ accountHolder, bankName, bankAccount, bankIFSC, pan }: BankDetailsFormProps) {
+function VerifiedBadge() {
+  return (
+    <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
+      <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+      Verified
+    </span>
+  );
+}
+
+function NotVerifiedBadge({ label }: { label?: string }) {
+  return (
+    <span className="inline-flex items-center text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full">
+      {label || "Not Verified"}
+    </span>
+  );
+}
+
+export default function BankDetailsForm({
+  email,
+  emailVerified,
+  phoneVerified,
+  mobile,
+  accountHolder,
+  bankName,
+  bankAccount,
+  bankIFSC,
+  pan,
+}: BankDetailsFormProps) {
   const hasDetails = !!(accountHolder || bankName || bankAccount || bankIFSC || pan);
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({
+    mobile: mobile || "",
     accountHolder: accountHolder || "",
     bankName: bankName || "",
     bankAccount: bankAccount || "",
@@ -45,6 +80,25 @@ export default function BankDetailsForm({ accountHolder, bankName, bankAccount, 
     if (!hasDetails && !form.accountHolder && !form.bankName) {
       return (
         <div>
+          {/* Email & Mobile (always visible) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm mb-5">
+            <div>
+              <p className="text-xs text-gray-400 uppercase tracking-wider">Email</p>
+              <div className="flex items-center gap-2 mt-0.5">
+                <p className="font-medium text-gray-700">{email}</p>
+                {emailVerified ? <VerifiedBadge /> : <NotVerifiedBadge />}
+              </div>
+              {!emailVerified && <ResendVerificationEmail />}
+            </div>
+            <div>
+              <p className="text-xs text-gray-400 uppercase tracking-wider">Mobile</p>
+              <div className="flex items-center gap-2 mt-0.5">
+                <p className="font-medium text-gray-700">{form.mobile || "Not provided"}</p>
+                {form.mobile && (phoneVerified ? <VerifiedBadge /> : <NotVerifiedBadge label="Pending verification" />)}
+              </div>
+            </div>
+          </div>
+
           <p className="text-sm text-amber-600 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-4">
             Bank details are not provided. These are required for commission payouts.
           </p>
@@ -52,7 +106,7 @@ export default function BankDetailsForm({ accountHolder, bankName, bankAccount, 
             onClick={() => setEditing(true)}
             className="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Add Bank Details
+            Add Details
           </button>
         </div>
       );
@@ -61,6 +115,24 @@ export default function BankDetailsForm({ accountHolder, bankName, bankAccount, 
     return (
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          {/* Email */}
+          <div>
+            <p className="text-xs text-gray-400 uppercase tracking-wider">Email</p>
+            <div className="flex items-center gap-2 mt-0.5">
+              <p className="font-medium text-gray-700">{email}</p>
+              {emailVerified ? <VerifiedBadge /> : <NotVerifiedBadge />}
+            </div>
+            {!emailVerified && <ResendVerificationEmail />}
+          </div>
+          {/* Mobile */}
+          <div>
+            <p className="text-xs text-gray-400 uppercase tracking-wider">Mobile</p>
+            <div className="flex items-center gap-2 mt-0.5">
+              <p className="font-medium text-gray-700">{form.mobile || "Not provided"}</p>
+              {form.mobile && (phoneVerified ? <VerifiedBadge /> : <NotVerifiedBadge label="Pending verification" />)}
+            </div>
+          </div>
+          {/* Bank fields */}
           <div>
             <p className="text-xs text-gray-400 uppercase tracking-wider">Account Holder</p>
             <p className="font-medium text-gray-700 mt-0.5">{form.accountHolder || "—"}</p>
@@ -98,6 +170,39 @@ export default function BankDetailsForm({ accountHolder, bankName, bankAccount, 
   // Edit mode
   return (
     <div className="space-y-4">
+      {/* Email - read only */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <div className="flex items-center gap-2">
+          <input
+            type="email"
+            value={email}
+            disabled
+            className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm bg-gray-50 text-gray-500 cursor-not-allowed"
+          />
+          {emailVerified ? <VerifiedBadge /> : <NotVerifiedBadge />}
+        </div>
+        {!emailVerified && <ResendVerificationEmail />}
+      </div>
+      {/* Mobile - editable */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+        <div className="flex items-center gap-2">
+          <input
+            type="tel"
+            value={form.mobile}
+            onChange={(e) => setForm({ ...form, mobile: e.target.value.replace(/[^0-9+\- ]/g, "") })}
+            className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="e.g. 9876543210"
+            maxLength={15}
+          />
+          {form.mobile && (phoneVerified ? <VerifiedBadge /> : <NotVerifiedBadge label="Pending verification" />)}
+        </div>
+        {!phoneVerified && (
+          <p className="text-xs text-gray-400 mt-1">Admin will verify your mobile via call/WhatsApp</p>
+        )}
+      </div>
+      <hr className="border-gray-100" />
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">Account Holder Name</label>
         <input
@@ -161,6 +266,7 @@ export default function BankDetailsForm({ accountHolder, bankName, bankAccount, 
         <button
           onClick={() => {
             setForm({
+              mobile: mobile || "",
               accountHolder: accountHolder || "",
               bankName: bankName || "",
               bankAccount: bankAccount || "",

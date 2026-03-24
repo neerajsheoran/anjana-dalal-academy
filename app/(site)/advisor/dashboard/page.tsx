@@ -3,7 +3,6 @@ import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 import CopyCodeButton from "@/components/advisor/CopyCodeButton";
 import BankDetailsForm from "@/components/advisor/BankDetailsForm";
-import ResendVerificationEmail from "@/components/advisor/ResendVerificationEmail";
 
 async function getAdvisor() {
   const cookieStore = await cookies();
@@ -27,7 +26,8 @@ async function getAdvisor() {
     bankAccount: (data.bankAccount as string) || null,
     bankIFSC: (data.bankIFSC as string) || null,
     pan: (data.pan as string) || null,
-    emailVerified: data.emailVerified === true,
+    mobile: (data.mobile as string) || null,
+    emailVerified: (await adminAuth.getUser(decoded.uid)).emailVerified,
     phoneVerified: data.phoneVerified === true,
   };
 }
@@ -174,46 +174,6 @@ export default async function AdvisorDashboardPage() {
           <StatCard label="Paid Out" value={`Rs ${stats.paidOut}`} color="purple" />
         </div>
 
-        {/* Verification Status */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Verification Status
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <p className="text-xs text-gray-400 mb-1">Email</p>
-              <div className="flex items-center gap-2">
-                {advisor.emailVerified ? (
-                  <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-2.5 py-1 rounded-full">
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    Verified
-                  </span>
-                ) : (
-                  <div>
-                    <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full">
-                      Not Verified
-                    </span>
-                    <ResendVerificationEmail />
-                  </div>
-                )}
-              </div>
-            </div>
-            <div>
-              <p className="text-xs text-gray-400 mb-1">Mobile</p>
-              {advisor.phoneVerified ? (
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 bg-green-50 px-2.5 py-1 rounded-full">
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                  Verified
-                </span>
-              ) : (
-                <span className="inline-flex items-center text-xs font-medium text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full">
-                  Pending admin verification
-                </span>
-              )}
-            </div>
-          </div>
-        </div>
-
         {/* Referral Code */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
@@ -248,15 +208,19 @@ export default async function AdvisorDashboardPage() {
           </p>
         </div>
 
-        {/* Bank Details */}
+        {/* Profile & Bank Details */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Bank Details
+            Profile & Bank Details
           </h2>
           <p className="text-xs text-gray-400 mb-4">
-            Provide your bank details so we can transfer your commission payouts.
+            Your contact details and bank information for commission payouts.
           </p>
           <BankDetailsForm
+            email={advisor.email}
+            emailVerified={advisor.emailVerified}
+            phoneVerified={advisor.phoneVerified}
+            mobile={advisor.mobile}
             accountHolder={advisor.accountHolder}
             bankName={advisor.bankName}
             bankAccount={advisor.bankAccount}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSubjectsForClass, getClassLabel } from "@/lib/content";
+import { getSubjectsForClass, getClassLabel, getChapters } from "@/lib/content";
 import { ClassId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
@@ -40,6 +40,7 @@ export default async function ClassPage({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {subjects.map((subject) => {
             const styles = SUBJECT_STYLES[subject.id];
+            const chapterCount = getChapters(classId, subject.id).length;
             return (
               <Link
                 key={subject.id}
@@ -52,7 +53,7 @@ export default async function ClassPage({
                     {subject.label}
                   </p>
                   <p className={`text-sm mt-1 ${styles.sub}`}>
-                    {classLabel} · NCERT
+                    {chapterCount} chapters · NCERT
                   </p>
                 </div>
               </Link>

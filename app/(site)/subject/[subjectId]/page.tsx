@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getClassesForSubject, SUBJECTS, getSubjectLabel } from "@/lib/content";
+import { getClassesForSubject, SUBJECTS, getSubjectLabel, getChapters } from "@/lib/content";
 import { SubjectId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
@@ -25,15 +25,19 @@ export default async function SubjectPage({
         <p className="text-gray-500 mb-8">Choose a class to start learning</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-          {classes.map((cls) => (
-            <Link
-              key={cls.id}
-              href={`/subject/${subjectId}/${cls.id}`}
-              className="bg-white border border-gray-200 rounded-xl p-5 text-center font-semibold text-gray-700 hover:border-blue-500 hover:text-blue-700 hover:shadow-sm transition-all"
-            >
-              {cls.label}
-            </Link>
-          ))}
+          {classes.map((cls) => {
+            const chapterCount = getChapters(cls.id, subjectId).length;
+            return (
+              <Link
+                key={cls.id}
+                href={`/subject/${subjectId}/${cls.id}`}
+                className="bg-white border border-gray-200 rounded-xl p-5 text-center hover:border-blue-500 hover:text-blue-700 hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-gray-700">{cls.label}</p>
+                <p className="text-xs text-gray-400 mt-1">{chapterCount} chapters</p>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </main>

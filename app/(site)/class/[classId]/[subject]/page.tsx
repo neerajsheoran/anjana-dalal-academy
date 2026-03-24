@@ -55,7 +55,33 @@ export default async function ClassSubjectPage({
         <h1 className="text-3xl font-bold text-gray-800 mb-1">
           {classLabel} — {subjectLabel}
         </h1>
-        <p className="text-gray-500 mb-8">NCERT · {chapters.length} chapters</p>
+
+        {/* Progress summary */}
+        {(() => {
+          const visited = chapterProgress.size;
+          const total = chapters.length;
+          const pct = total > 0 ? Math.round((visited / total) * 100) : 0;
+          return (
+            <div className="mb-8">
+              <p className="text-gray-500 mb-2">
+                NCERT · {total} chapters
+                {visited > 0 && (
+                  <span className="text-green-600 font-medium ml-2">
+                    · {visited}/{total} visited
+                  </span>
+                )}
+              </p>
+              {visited > 0 && (
+                <div className="w-full max-w-xs h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-green-500 rounded-full transition-all"
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {chapters.length > 0 && (
           <ChapterQuizSelector
