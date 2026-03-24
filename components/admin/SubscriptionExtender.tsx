@@ -29,7 +29,7 @@ export default function SubscriptionExtender({ uid, userName }: { uid: string; u
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-col items-start gap-1">
       <input
         type="number"
         value={days}
