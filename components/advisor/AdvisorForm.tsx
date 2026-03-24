@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function PartnerForm() {
+export default function AdvisorForm() {
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -17,7 +17,7 @@ export default function PartnerForm() {
     setStatus('submitting');
 
     try {
-      const res = await fetch('/api/partner/apply', {
+      const res = await fetch('/api/advisor/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -98,7 +98,7 @@ export default function PartnerForm() {
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Why do you want to become a partner? *
+          Why do you want to become an advisor? *
         </label>
         <textarea
           required

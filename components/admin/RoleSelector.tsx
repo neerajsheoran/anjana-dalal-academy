@@ -3,6 +3,11 @@
 import { useState } from 'react';
 
 const ROLES = ['student', 'teacher', 'partner'] as const;
+const ROLE_LABELS: Record<string, string> = {
+  student: 'Student',
+  teacher: 'Teacher',
+  partner: 'Advisor',
+};
 
 export default function RoleSelector({
   uid,
@@ -45,7 +50,7 @@ export default function RoleSelector({
       >
         {ROLES.map((r) => (
           <option key={r} value={r}>
-            {r.charAt(0).toUpperCase() + r.slice(1)}
+            {ROLE_LABELS[r] || r}
           </option>
         ))}
       </select>

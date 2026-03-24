@@ -1,4 +1,5 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { sendSubscriptionConfirmedEmail, sendCommissionEarnedEmail } from '@/lib/email';
 import { getPlatformConfig } from '@/lib/subscription';
 import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
@@ -138,6 +139,28 @@ export async function POST(req: Request) {
         .collection('referralCodes')
         .doc(validReferralCode)
         .update({ totalUses: FieldValue.increment(1) });
+    }
+
+    // Send emails (non-blocking)
+    const userDoc = await adminDb.collection('users').doc(uid).get();
+    const userData = userDoc.data();
+    if (userData?.email) {
+      sendSubscriptionConfirmedEmail(userData.email, userData.name || '', finalAmountINR, endsAt);
+    }
+
+    // Notify advisor about commission earned
+    if (referredByUid && commissionAmountINR > 0) {
+      const advisorDoc = await adminDb.collection('users').doc(referredByUid).get();
+      const advisorData = advisorDoc.data();
+      if (advisorData?.email) {
+        sendCommissionEarnedEmail(
+          advisorData.email,
+          advisorData.name || '',
+          userData?.name || 'Student',
+          commissionAmountINR,
+          finalAmountINR,
+        );
+      }
     }
 
     return NextResponse.json({ ok: true, subscriptionEndsAt: endsAt.toISOString() });

@@ -1,4 +1,5 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { sendPayoutProcessedEmail } from '@/lib/email';
 import { FieldValue } from 'firebase-admin/firestore';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
@@ -34,7 +35,7 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: 'Invalid payload' }, { status: 400 });
       }
 
-      // Get partner info
+      // Get advisor info
       const partnerDoc = await adminDb.collection('users').doc(partnerUid).get();
       const partnerData = partnerDoc.data() || {};
 
@@ -67,6 +68,15 @@ export async function POST(req: Request) {
         targetName: (partnerData.name as string) || partnerUid,
         details: `Paid ₹${amount} for ${subscriptionIds.length} subscription(s)`,
       });
+
+      // Notify advisor about payout (non-blocking)
+      if (partnerData.email) {
+        sendPayoutProcessedEmail(
+          partnerData.email as string,
+          (partnerData.name as string) || '',
+          amount,
+        );
+      }
 
       return NextResponse.json({ ok: true });
     }

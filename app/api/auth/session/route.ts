@@ -1,4 +1,5 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { sendWelcomeEmail } from '@/lib/email';
 import { getPlatformConfig } from '@/lib/subscription';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
       const userRef = adminDb.collection('users').doc(decoded.uid);
       const userDoc = await userRef.get();
       if (!userDoc.exists) {
-        // Check if this email has an approved partner application
+        // Check if this email has an approved advisor application
         let role = 'student';
         if (decoded.email) {
           const appSnap = await adminDb
@@ -60,6 +61,11 @@ export async function POST(req: Request) {
           referralCode: null,
           adminExtendedUntil: null,
         });
+
+        // Send welcome email (non-blocking)
+        if (decoded.email) {
+          sendWelcomeEmail(decoded.email, decoded.name || '', config.trialDays);
+        }
       }
     } catch {
       // Firestore errors should not block login

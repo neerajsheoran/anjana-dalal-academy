@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 import { logAdminAction } from '@/lib/admin-log';
 
 function generateReferralCode(name: string): string {
-  const prefix = (name || 'PTR')
+  const prefix = (name || 'ADV')
     .replace(/[^a-zA-Z]/g, '')
     .substring(0, 4)
     .toUpperCase();
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     // Update application status
     await appRef.update({ status: action === 'approve' ? 'approved' : 'rejected' });
 
-    // If approved, find the user by uid or email and upgrade to partner
+    // If approved, find the user by uid or email and upgrade to advisor role
     if (action === 'approve') {
       let targetUid: string | null = data.uid || null;
 
@@ -74,7 +74,7 @@ export async function POST(req: Request) {
         await adminDb.collection('users').doc(targetUid).update({ role: 'partner' });
       }
 
-      // Generate referral code for the new partner
+      // Generate referral code for the new advisor
       let code = generateReferralCode(data.name || '');
       // Ensure uniqueness
       const existingCode = await adminDb.collection('referralCodes').doc(code).get();
@@ -95,7 +95,7 @@ export async function POST(req: Request) {
       if (targetUid) {
         await adminDb.collection('users').doc(targetUid).update({ partnerCode: code });
       }
-      // If no account yet, they'll get partner role on signup (handled in session route)
+      // If no account yet, they'll get advisor role on signup (handled in session route)
     }
 
     await logAdminAction({
@@ -108,7 +108,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error('Failed to process partner application:', err);
+    console.error('Failed to process advisor application:', err);
     return NextResponse.json({ error: 'Update failed' }, { status: 500 });
   }
 }

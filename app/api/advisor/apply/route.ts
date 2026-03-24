@@ -38,7 +38,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error('Failed to save partner application:', err);
+    console.error('Failed to save advisor application:', err);
     return NextResponse.json({ error: 'Save failed' }, { status: 500 });
   }
 }

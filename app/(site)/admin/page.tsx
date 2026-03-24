@@ -6,6 +6,8 @@ import ApplicationActions from '@/components/admin/ApplicationActions';
 import PlatformConfigEditor from '@/components/admin/PlatformConfigEditor';
 import CommissionManager from '@/components/admin/CommissionManager';
 import UserTable from '@/components/admin/UserTable';
+import AdminTabs from '@/components/admin/AdminTabs';
+import SystemFlows from '@/components/admin/SystemFlows';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -68,6 +70,13 @@ async function getCommissionData() {
       totalCommission: number;
       unpaidAmount: number;
       unpaidSubscriptionIds: string[];
+      accountHolder: string | null;
+      bankName: string | null;
+      bankAccount: string | null;
+      bankIFSC: string | null;
+      pan: string | null;
+      referrals: { date: string; studentName: string; amount: number; commission: number; paid: boolean; paidDate: string }[];
+      payouts: { date: string; amount: number; notes: string }[];
     }>();
 
     for (const doc of snap.docs) {
@@ -76,24 +85,80 @@ async function getCommissionData() {
       if (!pUid) continue;
 
       if (!partnerMap.has(pUid)) {
-        // Look up partner name
+        // Look up advisor info
         const pDoc = await adminDb.collection('users').doc(pUid).get();
+        const pData = pDoc.data();
         partnerMap.set(pUid, {
           partnerUid: pUid,
-          partnerName: (pDoc.data()?.name as string) || pUid,
+          partnerName: (pData?.name as string) || pUid,
           totalReferrals: 0,
           totalCommission: 0,
           unpaidAmount: 0,
           unpaidSubscriptionIds: [],
+          accountHolder: (pData?.accountHolder as string) || null,
+          bankName: (pData?.bankName as string) || null,
+          bankAccount: (pData?.bankAccount as string) || null,
+          bankIFSC: (pData?.bankIFSC as string) || null,
+          pan: (pData?.pan as string) || null,
+          referrals: [],
+          payouts: []
         });
       }
 
       const entry = partnerMap.get(pUid)!;
       entry.totalReferrals++;
-      entry.totalCommission += (d.commissionAmountINR as number) || 0;
+      const commission = (d.commissionAmountINR as number) || 0;
+      entry.totalCommission += commission;
+
+      // Look up student name
+      let studentName = 'Student';
+      if (d.uid) {
+        const studentDoc = await adminDb.collection('users').doc(d.uid as string).get();
+        if (studentDoc.exists) {
+          studentName = (studentDoc.data()?.name as string) || 'Student';
+        }
+      }
+
+      entry.referrals.push({
+        date: d.createdAt?.toDate
+          ? d.createdAt.toDate().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+          : '—',
+        studentName,
+        amount: (d.amountINR as number) || 0,
+        commission,
+        paid: d.commissionPaid === true,
+        paidDate: d.commissionPaidAt?.toDate
+          ? d.commissionPaidAt.toDate().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+          : '',
+      });
+
       if (!d.commissionPaid) {
-        entry.unpaidAmount += (d.commissionAmountINR as number) || 0;
+        entry.unpaidAmount += commission;
         entry.unpaidSubscriptionIds.push(doc.id);
+      }
+    }
+
+    // Fetch payout history for each advisor
+    for (const [uid, entry] of partnerMap) {
+      try {
+        const payoutSnap = await adminDb
+          .collection('payouts')
+          .where('partnerUid', '==', uid)
+          .orderBy('createdAt', 'desc')
+          .limit(20)
+          .get();
+        entry.payouts = payoutSnap.docs.map((pd) => {
+          const p = pd.data();
+          return {
+            date: p.createdAt?.toDate
+              ? p.createdAt.toDate().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+              : '—',
+            amount: (p.amountINR as number) || 0,
+            notes: (p.notes as string) || '',
+          };
+        });
+      } catch {
+        // payouts query might fail if no index exists yet
       }
     }
 
@@ -172,7 +237,7 @@ export default async function AdminPage() {
           <StatCard label="Total Users" value={totalUsers} />
           <StatCard label="Students" value={byRole.student} />
           <StatCard label="Teachers" value={byRole.teacher} />
-          <StatCard label="Partners" value={byRole.partner} />
+          <StatCard label="Advisors" value={byRole.partner} />
           <StatCard label="Applications" value={applications.total} />
         </div>
         <div className="grid grid-cols-3 gap-4 mb-8">
@@ -181,101 +246,106 @@ export default async function AdminPage() {
           <StatCard label="Expired" value={bySub.expired} />
         </div>
 
-        {/* Platform Configuration */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-8">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Platform Configuration
-          </h2>
-          <PlatformConfigEditor initialConfig={{
-            trialDays: config.trialDays,
-            yearlyPriceINR: config.yearlyPriceINR,
-            commissionPercent: config.commissionPercent,
-            referralDiscountPercent: config.referralDiscountPercent,
-          }} />
-        </div>
-
-        {/* User table */}
-        <UserTable users={users} />
-
-        {/* Partner Applications — Pending */}
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
-          <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
-              Pending Applications
-            </h2>
-            {applications.pending.length > 0 && (
-              <span className="text-xs font-medium text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
-                {applications.pending.length} pending
-              </span>
-            )}
-          </div>
-
-          {applications.pending.length === 0 ? (
-            <div className="px-6 py-8 text-center">
-              <p className="text-sm text-gray-400">No pending applications.</p>
-            </div>
-          ) : (
-            <div className="divide-y divide-gray-100">
-              {applications.pending.map((app) => (
-                <div key={app.id} className="px-6 py-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
-                      <p className="font-medium text-gray-800">{app.name}</p>
-                      <p className="text-xs text-gray-400">
-                        {app.email} · {app.phone} · {app.city}
-                      </p>
-                      <p className="text-sm text-gray-600 mt-2">{app.reason}</p>
-                      <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
-                    </div>
-                    <div className="shrink-0">
-                      <ApplicationActions applicationId={app.id} />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Partner Applications — Processed */}
-        {applications.processed.length > 0 && (
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-8">
-            <div className="px-6 py-4 border-b border-gray-100">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
-                Application History
+        <AdminTabs
+          usersTab={<UserTable users={users} />}
+          configTab={
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+                Platform Configuration
               </h2>
+              <PlatformConfigEditor initialConfig={{
+                trialDays: config.trialDays,
+                yearlyPriceINR: config.yearlyPriceINR,
+                commissionPercent: config.commissionPercent,
+                referralDiscountPercent: config.referralDiscountPercent,
+              }} />
             </div>
-            <div className="divide-y divide-gray-100">
-              {applications.processed.map((app) => (
-                <div key={app.id} className="px-6 py-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
-                      <p className="font-medium text-gray-800">{app.name}</p>
-                      <p className="text-xs text-gray-400">
-                        {app.email} · {app.phone} · {app.city}
-                      </p>
-                      <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
-                    </div>
-                    <span className={`shrink-0 text-xs font-medium px-2 py-0.5 rounded-full ${
-                      app.status === 'approved'
-                        ? 'bg-green-50 text-green-600'
-                        : 'bg-red-50 text-red-500'
-                    }`}>
-                      {app.status === 'approved' ? 'Approved' : 'Rejected'}
+          }
+          advisorsTab={
+            <>
+              {/* Pending Applications */}
+              <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+                <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+                  <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+                    Pending Applications
+                  </h2>
+                  {applications.pending.length > 0 && (
+                    <span className="text-xs font-medium text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
+                      {applications.pending.length} pending
                     </span>
+                  )}
+                </div>
+                {applications.pending.length === 0 ? (
+                  <div className="px-6 py-8 text-center">
+                    <p className="text-sm text-gray-400">No pending applications.</p>
+                  </div>
+                ) : (
+                  <div className="divide-y divide-gray-100">
+                    {applications.pending.map((app) => (
+                      <div key={app.id} className="px-6 py-4">
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="min-w-0">
+                            <p className="font-medium text-gray-800">{app.name}</p>
+                            <p className="text-xs text-gray-400">
+                              {app.email} · {app.phone} · {app.city}
+                            </p>
+                            <p className="text-sm text-gray-600 mt-2">{app.reason}</p>
+                            <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
+                          </div>
+                          <div className="shrink-0">
+                            <ApplicationActions applicationId={app.id} />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Application History */}
+              {applications.processed.length > 0 && (
+                <div className="bg-white rounded-2xl shadow-sm overflow-hidden mt-6">
+                  <div className="px-6 py-4 border-b border-gray-100">
+                    <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
+                      Application History
+                    </h2>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    {applications.processed.map((app) => (
+                      <div key={app.id} className="px-6 py-4">
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="min-w-0">
+                            <p className="font-medium text-gray-800">{app.name}</p>
+                            <p className="text-xs text-gray-400">
+                              {app.email} · {app.phone} · {app.city}
+                            </p>
+                            <p className="text-xs text-gray-300 mt-1">{app.createdAt}</p>
+                          </div>
+                          <span className={`shrink-0 text-xs font-medium px-2 py-0.5 rounded-full ${
+                            app.status === 'approved'
+                              ? 'bg-green-50 text-green-600'
+                              : 'bg-red-50 text-red-500'
+                          }`}>
+                            {app.status === 'approved' ? 'Approved' : 'Rejected'}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
-        {/* Agent Commissions */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mt-8">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Agent Commissions
-          </h2>
-          <CommissionManager partners={commissions} />
-        </div>
+              )}
+
+              {/* Agent Commissions */}
+              <div className="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+                  Advisor Commissions
+                </h2>
+                <CommissionManager partners={commissions} />
+              </div>
+            </>
+          }
+          flowsTab={<SystemFlows />}
+        />
       </div>
     </main>
   );

@@ -59,9 +59,12 @@ export default function MobileMenu({ user }: { user: User }) {
                 <p className="text-xs text-gray-400 leading-tight">{user.email}</p>
               </div>
             </Link>
+            {(user.role === 'partner' || user.role === 'admin') && (
+              <div className="w-px h-8 bg-gray-200" />
+            )}
             {user.role === 'partner' && (
               <Link
-                href="/partner/dashboard"
+                href="/advisor/dashboard"
                 className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
               >
                 Dashboard
@@ -152,14 +155,14 @@ export default function MobileMenu({ user }: { user: User }) {
               )}
               {user?.role === 'partner' && (
                 <Link
-                  href="/partner/dashboard"
+                  href="/advisor/dashboard"
                   className={`block px-6 py-3 text-sm font-medium transition-colors ${
-                    pathname === '/partner/dashboard'
+                    pathname === '/advisor/dashboard'
                       ? 'text-blue-600 bg-blue-50'
                       : 'text-gray-700 hover:bg-gray-50'
                   }`}
                 >
-                  Partner Dashboard
+                  Advisor Dashboard
                 </Link>
               )}
               {user?.role === 'admin' && (

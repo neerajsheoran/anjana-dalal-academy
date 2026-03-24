@@ -1,9 +1,10 @@
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
-import CopyCodeButton from "@/components/partner/CopyCodeButton";
+import CopyCodeButton from "@/components/advisor/CopyCodeButton";
+import BankDetailsForm from "@/components/advisor/BankDetailsForm";
 
-async function getPartner() {
+async function getAdvisor() {
   const cookieStore = await cookies();
   const session = cookieStore.get("session")?.value;
   if (!session) redirect("/login");
@@ -17,9 +18,14 @@ async function getPartner() {
 
   return {
     uid: decoded.uid,
-    name: data.name || "Partner",
+    name: data.name || "Advisor",
     email: data.email || "",
     partnerCode: data.partnerCode || null,
+    accountHolder: (data.accountHolder as string) || null,
+    bankName: (data.bankName as string) || null,
+    bankAccount: (data.bankAccount as string) || null,
+    bankIFSC: (data.bankIFSC as string) || null,
+    pan: (data.pan as string) || null,
   };
 }
 
@@ -50,10 +56,11 @@ async function getReferralStats(uid: string) {
     let pendingPayout = 0;
     let paidOut = 0;
     const referrals: {
-      studentUid: string;
+      studentName: string;
       amount: number;
       commission: number;
       paid: boolean;
+      paidDate: string;
       date: string;
     }[] = [];
 
@@ -66,11 +73,27 @@ async function getReferralStats(uid: string) {
       } else {
         pendingPayout += commission;
       }
+
+      let studentName = "Student";
+      if (d.uid) {
+        const studentDoc = await adminDb.collection("users").doc(d.uid as string).get();
+        if (studentDoc.exists) {
+          studentName = (studentDoc.data()?.name as string) || "Student";
+        }
+      }
+
       referrals.push({
-        studentUid: d.uid as string,
+        studentName,
         amount: (d.amountINR as number) || 0,
         commission,
         paid: d.commissionPaid === true,
+        paidDate: d.commissionPaidAt?.toDate
+          ? d.commissionPaidAt.toDate().toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })
+          : "",
         date: d.createdAt?.toDate
           ? d.createdAt.toDate().toLocaleDateString("en-IN", {
               day: "numeric",
@@ -123,12 +146,12 @@ async function getPayoutHistory(uid: string) {
   }
 }
 
-export default async function PartnerDashboardPage() {
-  const partner = await getPartner();
+export default async function AdvisorDashboardPage() {
+  const advisor = await getAdvisor();
   const [codes, stats, payouts] = await Promise.all([
-    getReferralCodes(partner.uid),
-    getReferralStats(partner.uid),
-    getPayoutHistory(partner.uid),
+    getReferralCodes(advisor.uid),
+    getReferralStats(advisor.uid),
+    getPayoutHistory(advisor.uid),
   ]);
 
   return (
@@ -136,8 +159,8 @@ export default async function PartnerDashboardPage() {
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-gray-800">Partner Dashboard</h1>
-          <p className="text-gray-500 text-sm mt-1">Welcome, {partner.name}</p>
+          <h1 className="text-2xl font-bold text-gray-800">Advisor Dashboard</h1>
+          <p className="text-gray-500 text-sm mt-1">Welcome, {advisor.name}</p>
         </div>
 
         {/* Stats Cards */}
@@ -182,6 +205,23 @@ export default async function PartnerDashboardPage() {
           </p>
         </div>
 
+        {/* Bank Details */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            Bank Details
+          </h2>
+          <p className="text-xs text-gray-400 mb-4">
+            Provide your bank details so we can transfer your commission payouts.
+          </p>
+          <BankDetailsForm
+            accountHolder={advisor.accountHolder}
+            bankName={advisor.bankName}
+            bankAccount={advisor.bankAccount}
+            bankIFSC={advisor.bankIFSC}
+            pan={advisor.pan}
+          />
+        </div>
+
         {/* How It Works */}
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -192,38 +232,46 @@ export default async function PartnerDashboardPage() {
           />
         </div>
 
-        {/* Referral List */}
+        {/* Referral History */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Referrals
+            Referral History
           </h2>
           {stats.referrals.length === 0 ? (
             <p className="text-sm text-gray-400">
               No referrals yet. Share your code to start earning.
             </p>
           ) : (
-            <div className="space-y-3">
-              {stats.referrals.map((r, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0"
-                >
-                  <div className="min-w-0 mr-4">
-                    <p className="text-sm text-gray-500">{r.date}</p>
-                    <p className="text-xs text-gray-400">
-                      Subscription: Rs {r.amount}
-                    </p>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-sm font-bold text-green-600">
-                      Rs {r.commission}
-                    </p>
-                    <p className={`text-xs ${r.paid ? "text-green-500" : "text-amber-500"}`}>
-                      {r.paid ? "Paid" : "Pending"}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-gray-100 text-left text-xs text-gray-400 uppercase">
+                    <th className="px-3 py-2">Date</th>
+                    <th className="px-3 py-2">Student</th>
+                    <th className="px-3 py-2 text-right">Amount</th>
+                    <th className="px-3 py-2 text-right">Commission</th>
+                    <th className="px-3 py-2 text-right">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {stats.referrals.map((r, i) => (
+                    <tr key={i} className="border-b border-gray-50 last:border-0">
+                      <td className="px-3 py-2 text-gray-500">{r.date}</td>
+                      <td className="px-3 py-2 text-gray-700">{r.studentName}</td>
+                      <td className="px-3 py-2 text-right text-gray-500">Rs {r.amount}</td>
+                      <td className="px-3 py-2 text-right font-medium text-gray-700">Rs {r.commission}</td>
+                      <td className="px-3 py-2 text-right">
+                        <span className={`text-xs font-medium ${r.paid ? "text-green-600" : "text-amber-500"}`}>
+                          {r.paid ? "Paid" : "Pending"}
+                        </span>
+                        {r.paid && r.paidDate && (
+                          <p className="text-[10px] text-gray-400">{r.paidDate}</p>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
         </div>
@@ -291,4 +339,3 @@ function StatCard({
     </div>
   );
 }
-

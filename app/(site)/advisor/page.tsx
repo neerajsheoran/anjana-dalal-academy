@@ -1,16 +1,16 @@
-import PartnerForm from '@/components/partner/PartnerForm';
+import AdvisorForm from '@/components/advisor/AdvisorForm';
 
-export default function PartnerPage() {
+export default function AdvisorPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero */}
       <section className="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-indigo-200 text-sm font-semibold uppercase tracking-widest mb-3">
-            Partner Program
+            Advisor Program
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-            Become a Partner
+            Become an Advisor
           </h1>
           <p className="text-indigo-100 text-lg max-w-xl mx-auto">
             Help students across India learn better. Refer families to
@@ -37,7 +37,7 @@ export default function PartnerPage() {
           <Step
             number="2"
             title="Get Approved"
-            description="Once approved, you'll get partner access with your own referral tools and dashboard."
+            description="Once approved, you'll get advisor access with your own referral tools and dashboard."
           />
           <Step
             number="3"
@@ -48,10 +48,10 @@ export default function PartnerPage() {
 
         {/* Benefits */}
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
-          Why partner with us?
+          Why join as an advisor?
         </h2>
         <p className="text-gray-400 text-center text-sm mb-10">
-          Benefits of joining the partner program
+          Benefits of joining the advisor program
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
@@ -61,7 +61,7 @@ export default function PartnerPage() {
           />
           <Benefit
             title="Quality Content"
-            description="NCERT-aligned content for Classes 1-12, with worksheets and quizzes already built."
+            description="NCERT-aligned content for Classes 1-10, with worksheets and quizzes already built."
           />
           <Benefit
             title="Growing Platform"
@@ -83,7 +83,7 @@ export default function PartnerPage() {
           </p>
 
           <div className="bg-white rounded-2xl shadow-sm p-6 sm:p-8">
-            <PartnerForm />
+            <AdvisorForm />
           </div>
         </div>
       </div>

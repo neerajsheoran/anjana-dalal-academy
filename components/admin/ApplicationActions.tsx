@@ -12,7 +12,7 @@ export default function ApplicationActions({
   async function handleAction(action: 'approve' | 'reject') {
     setStatus('loading');
     try {
-      const res = await fetch('/api/admin/partner', {
+      const res = await fetch('/api/admin/advisor', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ applicationId, action }),

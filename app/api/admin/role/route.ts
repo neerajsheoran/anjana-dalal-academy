@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 import { logAdminAction } from '@/lib/admin-log';
 
 function generateReferralCode(name: string): string {
-  const prefix = (name || 'PTR')
+  const prefix = (name || 'ADV')
     .replace(/[^a-zA-Z]/g, '')
     .substring(0, 4)
     .toUpperCase();
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     const userEmail = (userData?.email as string) || '';
     await adminDb.collection('users').doc(uid).update({ role });
 
-    // When setting role to partner, auto-generate a referral code if they don't have one
+    // When setting role to advisor, auto-generate a referral code if they don't have one
     if (role === 'partner' && !userData?.partnerCode) {
       let code = generateReferralCode(userName);
       const existingCode = await adminDb.collection('referralCodes').doc(code).get();

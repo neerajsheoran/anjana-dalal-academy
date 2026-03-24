@@ -171,7 +171,7 @@ export default async function UserDetailPage({ params }: Props) {
             </div>
             {user.partnerCode && (
               <div>
-                <p className="text-xs text-gray-400 uppercase tracking-wider">Partner Code</p>
+                <p className="text-xs text-gray-400 uppercase tracking-wider">Advisor Code</p>
                 <p className="font-medium text-gray-700">{user.partnerCode}</p>
               </div>
             )}

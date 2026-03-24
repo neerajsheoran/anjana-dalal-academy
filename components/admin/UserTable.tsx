@@ -17,6 +17,8 @@ interface User {
 type SortKey = "name" | "email" | "role" | "subStatus";
 type SortDir = "asc" | "desc";
 
+const PAGE_SIZE = 20;
+
 export default function UserTable({ users }: { users: User[] }) {
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState("all");
@@ -24,6 +26,7 @@ export default function UserTable({ users }: { users: User[] }) {
   const [sortKey, setSortKey] = useState<SortKey | null>(null);
   const [sortDir, setSortDir] = useState<SortDir>("asc");
   const [showDeleted, setShowDeleted] = useState(false);
+  const [page, setPage] = useState(1);
 
   // Delete modal state
   const [modalUser, setModalUser] = useState<User | null>(null);
@@ -153,6 +156,21 @@ export default function UserTable({ users }: { users: User[] }) {
     return result;
   }, [users, search, roleFilter, subFilter, sortKey, sortDir, showDeleted, isUserDeleted, permanentlyDeletedUids]);
 
+  // Reset to page 1 when filters change
+  const filteredLength = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(filteredLength / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
+  const paginatedUsers = useMemo(
+    () => filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE),
+    [filtered, safePage]
+  );
+
+  // Reset page when filters change
+  useMemo(() => {
+    setPage(1);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search, roleFilter, subFilter, showDeleted]);
+
   const activeCount = useMemo(
     () => users.filter((u) => !isUserDeleted(u) && !permanentlyDeletedUids.has(u.uid)).length,
     [users, isUserDeleted, permanentlyDeletedUids]
@@ -210,6 +228,7 @@ export default function UserTable({ users }: { users: User[] }) {
                 {filtered.length === (showDeleted ? deletedCount : activeCount)
                   ? `${filtered.length} users`
                   : `${filtered.length} of ${showDeleted ? deletedCount : activeCount} users`}
+                {totalPages > 1 && ` · Page ${safePage} of ${totalPages}`}
               </span>
               <button
                 onClick={downloadCSV}
@@ -239,7 +258,7 @@ export default function UserTable({ users }: { users: User[] }) {
               <option value="all">All Roles</option>
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
-              <option value="partner">Partner</option>
+              <option value="partner">Advisor</option>
               <option value="admin">Admin</option>
             </select>
 
@@ -303,7 +322,7 @@ export default function UserTable({ users }: { users: User[] }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {filtered.map((user) => (
+                  {paginatedUsers.map((user) => (
                     <tr
                       key={user.uid}
                       className="border-b border-gray-50 last:border-0"
@@ -379,9 +398,50 @@ export default function UserTable({ users }: { users: User[] }) {
               </table>
             </div>
 
+            {/* Pagination — Desktop */}
+            {totalPages > 1 && (
+              <div className="px-6 py-3 border-t border-gray-100 flex items-center justify-between">
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={safePage <= 1}
+                  className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
+                >
+                  ← Previous
+                </button>
+                <div className="flex items-center gap-1">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1)
+                    .filter((p) => p === 1 || p === totalPages || Math.abs(p - safePage) <= 2)
+                    .map((p, idx, arr) => (
+                      <span key={p}>
+                        {idx > 0 && arr[idx - 1] !== p - 1 && (
+                          <span className="text-xs text-gray-300 px-1">...</span>
+                        )}
+                        <button
+                          onClick={() => setPage(p)}
+                          className={`text-xs font-medium px-2 py-1 rounded ${
+                            p === safePage
+                              ? "bg-blue-600 text-white"
+                              : "text-gray-500 hover:bg-gray-100"
+                          }`}
+                        >
+                          {p}
+                        </button>
+                      </span>
+                    ))}
+                </div>
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={safePage >= totalPages}
+                  className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
+                >
+                  Next →
+                </button>
+              </div>
+            )}
+
             {/* Mobile cards */}
             <div className="sm:hidden divide-y divide-gray-100">
-              {filtered.map((user) => (
+              {paginatedUsers.map((user) => (
                 <div key={user.uid} className="px-6 py-4">
                   <div className="flex items-start justify-between mb-1">
                     <a
@@ -451,6 +511,29 @@ export default function UserTable({ users }: { users: User[] }) {
                 </div>
               ))}
             </div>
+
+            {/* Pagination — Mobile */}
+            {totalPages > 1 && (
+              <div className="sm:hidden px-6 py-3 border-t border-gray-100 flex items-center justify-between">
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={safePage <= 1}
+                  className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
+                >
+                  ← Prev
+                </button>
+                <span className="text-xs text-gray-400">
+                  {safePage} / {totalPages}
+                </span>
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={safePage >= totalPages}
+                  className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
+                >
+                  Next →
+                </button>
+              </div>
+            )}
           </>
         )}
       </div>
