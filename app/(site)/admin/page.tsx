@@ -240,6 +240,7 @@ export default async function AdminPage() {
     student: activeUsers.filter((u) => u.role === 'student').length,
     teacher: activeUsers.filter((u) => u.role === 'teacher').length,
     partner: activeUsers.filter((u) => u.role === 'partner').length,
+    'content-author': activeUsers.filter((u) => u.role === 'content-author').length,
     admin: activeUsers.filter((u) => u.role === 'admin').length,
   };
   const bySub = {
@@ -254,11 +255,12 @@ export default async function AdminPage() {
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Admin Dashboard</h1>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-4">
+        <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 mb-4">
           <StatCard label="Total Users" value={totalUsers} />
           <StatCard label="Students" value={byRole.student} />
           <StatCard label="Teachers" value={byRole.teacher} />
           <StatCard label="Advisors" value={byRole.partner} />
+          <StatCard label="Content Authors" value={byRole['content-author']} />
           <StatCard label="Applications" value={applications.total} />
         </div>
         <div className="grid grid-cols-3 gap-4 mb-8">

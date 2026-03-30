@@ -18,7 +18,8 @@ export default async function KeystaticLayout({
     const decoded = await adminAuth.verifySessionCookie(session);
     const userDoc = await adminDb.collection('users').doc(decoded.uid).get();
 
-    if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
+    const role = userDoc.data()?.role;
+    if (!userDoc.exists || (role !== 'admin' && role !== 'content-author')) {
       redirect('/');
     }
   } catch {

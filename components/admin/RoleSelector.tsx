@@ -2,11 +2,12 @@
 
 import { useState } from 'react';
 
-const ROLES = ['student', 'teacher', 'partner'] as const;
+const ROLES = ['student', 'teacher', 'partner', 'content-author'] as const;
 const ROLE_LABELS: Record<string, string> = {
   student: 'Student',
   teacher: 'Teacher',
   partner: 'Advisor',
+  'content-author': 'Content Author',
 };
 
 export default function RoleSelector({

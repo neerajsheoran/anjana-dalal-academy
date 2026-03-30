@@ -13,7 +13,7 @@ function generateReferralCode(name: string): string {
   return `${prefix}${suffix}`;
 }
 
-const ALLOWED_ROLES = ['student', 'teacher', 'partner'];
+const ALLOWED_ROLES = ['student', 'teacher', 'partner', 'content-author'];
 
 export async function POST(req: Request) {
   const cookieStore = await cookies();
