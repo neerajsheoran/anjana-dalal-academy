@@ -79,12 +79,15 @@ export default function MobileMenu({ user }: { user: User }) {
               </Link>
             )}
             {user.role === 'admin' && (
-              <Link
-                href="/admin"
-                className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
-              >
-                Admin
-              </Link>
+              <>
+                <div className="w-px h-8 bg-gray-200" />
+                <Link
+                  href="/admin"
+                  className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
+                >
+                  Admin
+                </Link>
+              </>
             )}
             <div className="w-px h-8 bg-gray-200" />
             <LogoutButton />
