@@ -1,106 +1,110 @@
 ---
-title: Chapter 9 Circles
+title: "Understanding Circles"
+description: "Understand circle theorems, chords, arcs, angles subtended, and cyclic quadrilaterals."
+order: 9
 ---
 ## Introduction
 
-A **circle** is the collection of all points in a plane that are at a fixed distance (called the **radius**) from a fixed point (called the **centre**). You have studied circles in earlier classes. In this chapter, you will study the relationship between chords, arcs, angles subtended by chords, and properties of cyclic quadrilaterals.
+Picture a potter's wheel spinning in a Jaipur workshop. Every speck of clay on the rim traces out a perfect **circle** -- each point sitting at the same fixed distance from the hub at the centre. That fixed distance is the **radius**, and the hub itself is the **centre**. In this chapter, we explore the rich geometry hidden inside circles: how chords behave, how arcs create angles, and what happens when a quadrilateral sits snugly inside a circle.
 
 ---
 
-## Basic Terms
+## Fundamental Vocabulary
 
-* **Centre:** The fixed point from which all points on the circle are equidistant.
-* **Radius:** The fixed distance from the centre to any point on the circle.
-* **Chord:** A line segment joining any two points on the circle.
-* **Diameter:** A chord that passes through the centre. It is the **longest chord** and equals twice the radius.
-* **Arc:** A continuous piece of a circle. A chord divides the circle into a **major arc** (larger) and a **minor arc** (smaller).
-* **Semicircle:** Each of the two arcs formed when a diameter divides the circle.
-* **Segment:** The region between a chord and the arc. A chord creates a **major segment** and a **minor segment**.
-* **Sector:** The region between two radii and an arc.
+* **Centre (O):** The anchor point; every point on the circle is equally far from it.
+* **Radius (r):** The constant gap between the centre and any point on the circumference.
+* **Chord:** Any straight line segment whose both endpoints rest on the circle. Think of the string stretched across a tabla drum head.
+* **Diameter:** The special chord that passes right through the centre. It is the **longest possible chord** and measures exactly 2r.
+* **Arc:** A curved portion of the circumference. When a chord cuts a circle, the larger curve is the **major arc** and the smaller curve is the **minor arc**.
+* **Semicircle:** The arc formed when a diameter splits the circle into two equal curves.
+* **Segment:** The region trapped between a chord and its arc. The bigger region is the **major segment**; the smaller is the **minor segment**.
+* **Sector:** The "pizza-slice" region enclosed by two radii and the arc between them.
 
 ![Labeled circle diagram showing centre, radius, diameter, chord, arc, segment, and sector](circle-parts-labeled-diagram.png)
 
 ---
 
-## Angle Subtended by a Chord at a Point
+## Angles Formed by Chords at the Centre
 
-The **angle subtended by a chord PQ** at a point R is the angle PRQ formed by joining P and Q to R.
+When you join the endpoints of a chord to any other point, the lines form an angle. The **angle subtended by chord PQ at point R** is simply angle PRQ.
 
-* The angle subtended at the **centre** is called the **central angle**.
-* The longer the chord, the bigger the angle subtended at the centre.
+* When R is the centre O, the resulting angle is called the **central angle**.
+* Longer chords open up wider central angles; shorter chords produce narrower ones.
 
-> **Theorem 9.1:** Equal chords of a circle subtend **equal angles** at the centre.
+> **Theorem 9.1:** If two chords of the same circle are equal in length, they carve out **equal central angles**.
 
-**Proof:** In triangles AOB and COD (where O is the centre, AB = CD), OA = OC and OB = OD (radii), and AB = CD (given). By SSS, the triangles are congruent, so angle AOB = angle COD.
+**Why this is true:** Suppose chords AB and CD are equal and O is the centre. In triangles OAB and OCD, we have OA = OC and OB = OD (all radii), and AB = CD (given). By the SSS congruence rule, the two triangles match perfectly, which forces angle AOB = angle COD.
 
-> **Theorem 9.2 (Converse):** If the angles subtended by two chords at the centre are equal, then the chords are **equal**.
+> **Theorem 9.2 (Converse):** If two chords produce equal central angles, the chords themselves must be **equal in length**.
 
 ---
 
-## Perpendicular from the Centre to a Chord
+## The Perpendicular-Bisector Property
 
-> **Theorem 9.3:** The perpendicular from the centre of a circle to a chord **bisects** the chord.
+> **Theorem 9.3:** Drop a perpendicular from the centre of a circle onto any chord. It lands exactly at the chord's **midpoint**, splitting the chord into two equal halves.
 
-If OM is perpendicular to chord AB, then AM = MB.
+Imagine a bamboo stick placed horizontally inside a circular hoop. If you drop a plumb line from the topmost point of the hoop straight down to the stick, it will hit the stick right in the middle.
 
 ![Circle with perpendicular OM drawn from centre O to chord AB, showing that M is the midpoint of AB](perpendicular-from-centre-bisects-chord.png)
 
-> **Theorem 9.4 (Converse):** The line drawn through the centre of a circle to **bisect** a chord is **perpendicular** to the chord.
+> **Theorem 9.4 (Converse):** If a line from the centre reaches the midpoint of a chord, that line is automatically **perpendicular** to the chord.
 
 ---
 
-## Equal Chords and Distance from the Centre
+## How Far Are Equal Chords from the Centre?
 
-The **distance** of a chord from the centre is the length of the perpendicular from the centre to the chord.
+The **distance of a chord from the centre** is measured along the perpendicular from O to the chord.
 
-> **Theorem 9.5:** Equal chords of a circle are **equidistant** from the centre.
+> **Theorem 9.5:** Two chords of equal length sit at **equal distances** from the centre.
 
-> **Theorem 9.6 (Converse):** Chords equidistant from the centre are **equal** in length.
+> **Theorem 9.6 (Converse):** Two chords that are equally far from the centre must be **equal in length**.
 
-> **Key idea:** The diameter, being the longest chord, has zero distance from the centre (since the centre lies on it).
+> **Useful observation:** The diameter is the longest chord and passes through the centre, so its distance from the centre is zero. As chords grow shorter, they drift further from the centre -- like parallel cuts across a round roti: the cut through the middle is the longest, and cuts near the edge are shorter.
 
 ---
 
-## Angle Subtended by an Arc
+## The Central-Angle-to-Inscribed-Angle Relationship
 
-> **Theorem 9.7:** The angle subtended by an arc at the centre is **double** the angle subtended by it at any point on the remaining part of the circle.
+This is arguably the most powerful result in the chapter.
 
-If arc PQ subtends angle POQ at centre O and angle PRQ at point R on the circle, then angle POQ = 2 times angle PRQ.
+> **Theorem 9.7:** The angle that an arc makes at the centre is exactly **twice** the angle it makes at any point on the remaining circumference.
+
+So if arc PQ creates angle POQ at the centre and angle PRQ at a point R on the circle, then angle POQ = 2 x angle PRQ.
 
 ![Circle showing arc PQ subtending angle POQ at the centre and angle PRQ at the circumference, with the central angle being double the inscribed angle](central-angle-double-inscribed-angle.png)
 
-> **Theorem 9.8:** Angles in the **same segment** of a circle are **equal**.
+> **Theorem 9.8:** All angles standing in the **same segment** of a circle are **equal** to one another.
 
-All angles subtended by the same arc (or chord) at points on the same side of the chord are equal.
+Since each inscribed angle is half the same central angle, they must all be identical.
 
-> **Theorem 9.9 (Converse):** If a line segment joining two points subtends equal angles at two other points lying on the **same side**, then the four points are **concyclic** (lie on a circle).
+> **Theorem 9.9 (Converse):** If a line segment joining two points creates equal angles at two other points on the same side, all four points are **concyclic** (they share a common circle).
 
-> **Key idea:** The angle in a **semicircle** is a **right angle** (90 degrees). This is because the diameter subtends 180 degrees at the centre, so the angle at the circumference is 180/2 = 90 degrees.
-
-Conversely, if an angle in a segment is 90 degrees, the segment is a semicircle (and the chord is a diameter).
+> **Special case -- the semicircle rule:** A diameter subtends 180° at the centre. Half of that is 90°. Therefore the angle sitting in a semicircle is always a **right angle**. Indian temple architects historically used this property to verify right angles during construction by inscribing triangles in semicircular arches.
 
 ---
 
 ## Cyclic Quadrilaterals
 
-A **cyclic quadrilateral** is a quadrilateral whose all four vertices lie on a circle.
+A quadrilateral is called **cyclic** when all four of its vertices lie on a single circle. The circumscribed circle is sometimes called the **circumcircle**.
 
-> **Theorem 9.10:** The sum of either pair of **opposite angles** of a cyclic quadrilateral is **180 degrees** (supplementary).
+> **Theorem 9.10:** In any cyclic quadrilateral, each pair of **opposite angles** adds up to **180°** (they are supplementary).
 
-In cyclic quadrilateral ABCD: angle A + angle C = 180 degrees, and angle B + angle D = 180 degrees.
+For cyclic quadrilateral ABCD: angle A + angle C = 180°, and angle B + angle D = 180°.
 
 ![Cyclic quadrilateral ABCD inscribed in a circle with opposite angles marked as supplementary](cyclic-quadrilateral-supplementary-angles.png)
 
-> **Theorem 9.11 (Converse):** If the sum of a pair of opposite angles of a quadrilateral is 180 degrees, then the quadrilateral is **cyclic**.
+> **Theorem 9.11 (Converse):** If a quadrilateral's opposite angles sum to 180°, it must be **cyclic** -- a circle can be drawn through all four vertices.
+
+**Practical check:** Suppose you measure the four corner angles of a decorative tile as 70°, 110°, 85°, and 95°. Because 70° + 85° = 155° (not 180°), this tile is not cyclic. But if the angles were 70°, 110°, 110°, and 70°, then 70° + 110° = 180° confirms a cyclic shape.
 
 ---
 
 ## Summary
 
-1. Equal chords subtend equal angles at the centre (and conversely).
-2. The perpendicular from the centre to a chord bisects the chord (and conversely).
-3. Equal chords are equidistant from the centre (and conversely).
-4. The angle subtended by an arc at the centre is **double** the angle at the circumference.
+1. Equal chords produce equal central angles, and the reverse holds too.
+2. A perpendicular from the centre bisects the chord; a line from the centre to the midpoint of a chord is perpendicular.
+3. Equal chords are equidistant from the centre, and equidistant chords are equal.
+4. The central angle is **double** the inscribed angle for the same arc.
 5. Angles in the same segment are equal.
-6. The angle in a semicircle is **90 degrees**.
-7. Opposite angles of a cyclic quadrilateral sum to **180 degrees**.
+6. The angle in a semicircle is **90°**.
+7. Opposite angles of a cyclic quadrilateral add up to **180°**.

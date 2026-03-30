@@ -1,195 +1,195 @@
 ---
-title: "Chapter 7 — A Tale of Three Intersecting Lines"
+title: "Three Lines That Meet - A Geometric Tale"
+description: "Discover properties of triangles — side lengths, angles, and the triangle inequality through constructions."
+order: 7
 ---
 
-A triangle is the simplest closed shape -- just three line segments joining three points. Yet triangles have rich and surprising properties. In this chapter, we explore how to construct triangles, discover when triangles can (and cannot) exist, and learn about the angle sum property.
+Three straight sticks joined end to end create the simplest closed shape in geometry — a triangle. Despite this simplicity, triangles hold rich properties. This chapter covers how to build triangles, when they can and cannot exist, the angle sum property, and the exterior angle relationship.
 
-## What is a Triangle?
+## The Anatomy of a Triangle
 
-A **triangle** consists of:
-- **Three vertices** (corner points), usually labelled A, B, C
-- **Three sides** (line segments) joining pairs of vertices: AB, BC, CA
-- **Three angles** formed at each vertex: angle A, angle B, angle C
+A **triangle** is made up of:
+- **Three vertices** (corner points), typically labelled P, Q, R
+- **Three sides** (line segments) connecting these vertices: PQ, QR, RP
+- **Three interior angles** at each vertex: angle P, angle Q, angle R
 
-A triangle is denoted using the symbol with its vertices, like **triangle ABC**. The vertices can be listed in any order.
+We refer to a triangle by naming its vertices, such as **triangle PQR**. The vertices may be listed in any sequence.
 
-## Equilateral Triangles
+## The Equilateral Triangle
 
-An **equilateral triangle** has all three sides of equal length. It is the most symmetric of all triangles.
+An **equilateral triangle** has three sides of identical length — the most balanced and symmetric triangle possible.
 
 ![Step-by-step construction of an equilateral triangle using compass arcs from two endpoints](equilateral-triangle-construction.png)
 
-### Constructing an Equilateral Triangle
+### How to Construct One
 
-To construct an equilateral triangle with side 4 cm:
+To draw an equilateral triangle with each side measuring 5 cm:
 
-**Step 1:** Draw the base AB = 4 cm using a ruler.
+**Step 1:** Use a ruler to draw the base PQ = 5 cm.
 
-**Step 2:** Using a compass, draw an arc of radius 4 cm from point A.
+**Step 2:** Set the compass opening to 5 cm. Place the compass tip on P and draw an arc above the line.
 
-**Step 3:** Draw another arc of radius 4 cm from point B. The arcs will intersect at a point C.
+**Step 3:** Without changing the compass opening, place the tip on Q and draw a second arc. The two arcs meet at a point R.
 
-**Step 4:** Join AC and BC. Triangle ABC is the required equilateral triangle.
+**Step 4:** Draw line segments PR and QR. Triangle PQR is your equilateral triangle.
 
-> **Why does this work?** Point C lies on both arcs, so it is exactly 4 cm from A and exactly 4 cm from B. Combined with AB = 4 cm, all three sides are equal.
+> **Why this works:** Point R sits on both arcs, so it is exactly 5 cm from P and exactly 5 cm from Q. Along with PQ = 5 cm, every side measures the same.
 
-## Constructing a Triangle from Three Given Sides
+## Constructing a Triangle from Three Known Sides
 
-To construct a triangle with sides 4 cm, 5 cm, and 6 cm:
+To build a triangle with sides 5 cm, 7 cm, and 9 cm:
 
-**Step 1:** Draw the base AB = 4 cm (choose any one side).
+**Step 1:** Draw the base PQ = 5 cm (pick any side to start).
 
-**Step 2:** With compass centred at A, draw an arc of radius 5 cm (the second side length).
+**Step 2:** Open the compass to 7 cm and draw an arc from P.
 
-**Step 3:** With compass centred at B, draw an arc of radius 6 cm (the third side length).
+**Step 3:** Open the compass to 9 cm and draw an arc from Q.
 
-**Step 4:** The intersection point of the two arcs is vertex C. Join AC and BC to complete the triangle.
+**Step 4:** The two arcs cross at a point R. Connect PR and QR to finish the triangle.
 
-The point of intersection works because:
-- It lies on the circle of radius 5 cm centred at A, so AC = 5 cm
-- It lies on the circle of radius 6 cm centred at B, so BC = 6 cm
+This intersection point works because:
+- R lies on the arc of radius 7 cm from P, so PR = 7 cm
+- R lies on the arc of radius 9 cm from Q, so QR = 9 cm
 
 ![Three triangles side by side: equilateral, isosceles, and scalene with side lengths marked](triangle-types-by-sides.png)
 
-### Types of Triangles by Sides
+### Classifying Triangles by Their Sides
 
 | Type | Description |
 |------|-------------|
-| **Equilateral** | All three sides are equal |
-| **Isosceles** | Exactly two sides are equal |
-| **Scalene** | All three sides are different |
+| **Equilateral** | All three sides match |
+| **Isosceles** | Exactly two sides match |
+| **Scalene** | No two sides match |
 
 ## The Triangle Inequality
 
-### Can Any Three Lengths Form a Triangle?
+### Do All Triplets of Lengths Make a Triangle?
 
-Not all sets of three lengths can form a triangle! Try constructing a triangle with sides 3 cm, 4 cm, and 8 cm -- you will find it is impossible. The two shorter sides are simply not long enough to "reach" each other.
+Not every combination of three lengths can form a triangle! Attempt to build a triangle with sides 2 cm, 3 cm, and 9 cm — you will fail. The two shorter sticks cannot bridge the gap across the longest one.
 
-### The Shortest Path Principle
+### The Shortcut Principle
 
-Imagine three points: a tent, a tree, and a pole. The **direct path** from the tent to the tree is always shorter than the path that goes from the tent to the pole and then from the pole to the tree.
+Imagine walking between two bus stops. The direct footpath is always shorter than any detour through a third point. In a triangle, the straight side joining two vertices is always shorter than the two-side route through the third vertex. This gives us:
 
-In a triangle, the direct path between any two vertices must be shorter than the roundabout path through the third vertex. This means:
-
-> **For any triangle with sides a, b, and c:**
-> - a &lt; b + c
-> - b &lt; a + c
-> - c &lt; a + b
+> **For any triangle with sides p, q, and r:**
+> - p &lt; q + r
+> - q &lt; p + r
+> - r &lt; p + q
 >
-> Each side must be **less than** the sum of the other two sides. This is called the **triangle inequality**.
+> Every side must be **shorter than** the combined length of the other two. This is the **triangle inequality**.
 
-### Checking Whether a Triangle Exists
+### Testing Whether a Triangle Can Exist
 
-To check if three lengths can form a triangle, you only need to verify that the **longest side** is less than the sum of the other two.
+You only need one check: verify that the **longest side** is shorter than the sum of the remaining two.
 
-**Example:** Can sides 10 cm, 15 cm, and 30 cm form a triangle?
+**Example:** Do sides 8 cm, 12 cm, and 25 cm form a triangle?
 
-Check: Is 30 &lt; 10 + 15?
-Is 30 &lt; 25? **No!**
+Check: Is 25 &lt; 8 + 12?
+Is 25 &lt; 20? **No!**
 
-So a triangle with these sides **cannot exist**.
+So this triangle **cannot exist**.
 
-**Example:** Can sides 4 cm, 5 cm, and 8 cm form a triangle?
+**Example:** Do sides 6 cm, 7 cm, and 11 cm form a triangle?
 
-Check: Is 8 &lt; 4 + 5?
-Is 8 &lt; 9? **Yes!**
+Check: Is 11 &lt; 6 + 7?
+Is 11 &lt; 13? **Yes!**
 
-So a triangle with these sides **can exist**.
+So this triangle **can exist**.
 
-> **Quick Rule:** Given three lengths, find the longest. If the longest is less than the sum of the other two, a triangle exists. If not, it does not.
+> **Quick Test:** Identify the longest side. If it is shorter than the other two sides added together, a triangle is possible. Otherwise, it is not.
 
-### Why Does the Triangle Inequality Guarantee Existence?
+### Why Does the Inequality Guarantee a Triangle?
 
-When we construct a triangle:
-1. We draw the longest side as the base AB
-2. We draw circles centred at A and B with the other two side lengths as radii
+During construction:
+1. The longest side serves as the base PQ
+2. Arcs of the other two lengths are drawn from P and Q
 
-Three cases arise:
+Three scenarios arise:
 
-| Case | Condition | Result |
-|------|-----------|--------|
-| Circles intersect | Sum of two radii > AB | **Triangle exists** |
-| Circles touch at one point | Sum of two radii = AB | No triangle (points are collinear) |
-| Circles do not meet | Sum of two radii &lt; AB | **No triangle** |
+| Scenario | Condition | Outcome |
+|----------|-----------|---------|
+| Arcs cross each other | Sum of shorter sides > longest side | **Triangle exists** |
+| Arcs barely touch | Sum of shorter sides = longest side | No triangle (points lie on a single line) |
+| Arcs fail to meet | Sum of shorter sides &lt; longest side | **No triangle** |
 
-When the triangle inequality is satisfied, the circles always intersect, confirming the triangle exists.
+When the triangle inequality holds, the arcs always intersect, confirming the triangle can be formed.
 
-| Set of Lengths | Longest &lt; Sum of Others? | Triangle Exists? |
+| Set of Lengths | Longest &lt; Sum of Others? | Triangle Possible? |
 |:-:|:-:|:-:|
-| 2, 2, 5 | 5 &lt; 4? No | No |
-| 3, 4, 6 | 6 &lt; 7? Yes | Yes |
-| 5, 5, 8 | 8 &lt; 10? Yes | Yes |
-| 10, 20, 35 | 35 &lt; 30? No | No |
-| 1, 100, 100 | 100 &lt; 101? Yes | Yes |
+| 3, 3, 7 | 7 &lt; 6? No | No |
+| 5, 6, 9 | 9 &lt; 11? Yes | Yes |
+| 4, 4, 7 | 7 &lt; 8? Yes | Yes |
+| 8, 15, 30 | 30 &lt; 23? No | No |
+| 2, 50, 50 | 50 &lt; 52? Yes | Yes |
 
-## Angle Sum Property of a Triangle
+## The Angle Sum Property
 
-### The Sum of Angles is Always 180 Degrees
+### Interior Angles Always Total 180 Degrees
 
-One of the most important properties of triangles is:
+One of the cornerstones of triangle geometry:
 
-> **The three angles of any triangle always add up to 180 degrees.**
+> **The three interior angles of any triangle always add up to 180 degrees.**
 
 ![Triangle with three angles torn off and placed together forming a straight line of 180 degrees](angle-sum-property-triangle.png)
 
-This can be verified by:
+You can verify this by:
 
-1. **Paper tearing:** Cut out a triangle, tear off the three corners, and place them together -- they form a straight line (180 degrees)!
+1. **Paper tearing activity:** Cut a triangle from paper, tear off all three corners, and place them side by side — they form a straight line (180 degrees)!
 
-2. **Using parallel lines:** Draw a line through one vertex parallel to the opposite side. The angles formed by this line, combined with properties of alternate angles, prove the sum is 180 degrees.
+2. **Parallel line proof:** Draw a line through one vertex running parallel to the opposite side. Using alternate angle relationships with the two other sides proves the three angles sit together on a straight line.
 
-### Practical Applications
+### Worked Examples
 
-**Example:** In a triangle, if angle A = 50 degrees and angle B = 60 degrees, find angle C.
+**Example:** In a triangle, angle P = 45 degrees and angle Q = 75 degrees. Find angle R.
 
-Angle C = 180 - 50 - 60 = **70 degrees**
+Angle R = 180 − 45 − 75 = **60 degrees**
 
-**Example:** In an equilateral triangle, all angles are equal. What is each angle?
+**Example:** In an equilateral triangle, what is each angle?
 
-3 x angle = 180 degrees, so each angle = **60 degrees**
+All three angles are identical. 3 × angle = 180, so each angle = **60 degrees**
 
-**Example:** In an isosceles triangle where the two equal sides make an angle of 40 degrees at the top vertex, what are the base angles?
+**Example:** An isosceles triangle has an apex angle of 50 degrees. What are the two base angles?
 
-The two base angles are equal. Let each be x.
-40 + x + x = 180
-2x = 140
-x = **70 degrees**
+Let each base angle be x.
+50 + x + x = 180
+2x = 130
+x = **65 degrees**
 
 ![Three triangles showing acute, right, and obtuse types with angles marked](triangle-types-by-angles.png)
 
-### Types of Triangles by Angles
+### Classifying Triangles by Their Angles
 
-| Type | Description | Example |
-|------|-------------|---------|
-| **Acute triangle** | All angles less than 90 degrees | 60, 70, 50 |
-| **Right triangle** | One angle exactly 90 degrees | 90, 45, 45 |
-| **Obtuse triangle** | One angle greater than 90 degrees | 120, 30, 30 |
+| Type | Description | Example Angles |
+|------|-------------|----------------|
+| **Acute triangle** | Every angle is below 90 degrees | 55, 65, 60 |
+| **Right triangle** | One angle is exactly 90 degrees | 90, 50, 40 |
+| **Obtuse triangle** | One angle exceeds 90 degrees | 110, 40, 30 |
 
-> **Can a triangle have two right angles?** No! If two angles were 90 degrees each, their sum alone would be 180 degrees, leaving 0 degrees for the third angle, which is impossible.
+> **Can a triangle have two right angles?** No! Two angles of 90 degrees already total 180 degrees, leaving nothing for the third angle.
 
-> **Can a triangle have two obtuse angles?** No! Two obtuse angles would sum to more than 180 degrees, which violates the angle sum property.
+> **Can a triangle have two obtuse angles?** No! Two angles exceeding 90 degrees each would exceed 180 degrees, breaking the angle sum rule.
 
-## Exterior Angle of a Triangle
+## The Exterior Angle Property
 
-An **exterior angle** of a triangle is formed when one side of the triangle is extended. It is the angle between the extended side and the adjacent side.
+An **exterior angle** forms when one side of a triangle is extended outward. It is the angle between the extension and the adjacent side.
 
 > **Exterior Angle Property:** An exterior angle of a triangle equals the **sum of the two non-adjacent interior angles**.
 
-If the exterior angle is at vertex C, and the interior angles at A and B are 50 degrees and 60 degrees respectively, then the exterior angle = 50 + 60 = **110 degrees**.
+If the exterior angle is at vertex R, and the interior angles at P and Q are 45 degrees and 75 degrees, then the exterior angle = 45 + 75 = **120 degrees**.
 
-This follows directly from the angle sum property: the interior angle at C would be 180 - 50 - 60 = 70 degrees, and the exterior angle = 180 - 70 = 110 degrees.
+This follows from the angle sum property: the interior angle at R is 180 − 45 − 75 = 60 degrees, and the exterior angle = 180 − 60 = 120 degrees.
 
 ## Key Words to Remember
 
 | Word | Meaning |
 |------|---------|
-| **Triangle** | A closed figure with three sides, three vertices, and three angles |
-| **Equilateral triangle** | A triangle with all three sides (and all three angles) equal |
+| **Triangle** | A closed shape with three sides, three vertices, and three interior angles |
+| **Equilateral triangle** | A triangle whose three sides (and three angles) are all equal |
 | **Isosceles triangle** | A triangle with exactly two equal sides |
-| **Scalene triangle** | A triangle with all sides of different lengths |
-| **Triangle inequality** | The rule that each side of a triangle must be less than the sum of the other two sides |
-| **Angle sum property** | The three angles of any triangle add up to 180 degrees |
-| **Exterior angle** | The angle formed between an extended side and the adjacent side of a triangle |
-| **Acute triangle** | A triangle where all angles are less than 90 degrees |
-| **Right triangle** | A triangle with one angle equal to 90 degrees |
+| **Scalene triangle** | A triangle with three sides of different lengths |
+| **Triangle inequality** | The rule that every side of a triangle must be shorter than the sum of the other two |
+| **Angle sum property** | The three interior angles of a triangle always total 180 degrees |
+| **Exterior angle** | The angle between an extended side and the adjacent side of a triangle |
+| **Acute triangle** | A triangle where every angle is less than 90 degrees |
+| **Right triangle** | A triangle with one 90-degree angle |
 | **Obtuse triangle** | A triangle with one angle greater than 90 degrees |

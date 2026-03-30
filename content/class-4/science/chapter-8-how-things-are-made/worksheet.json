@@ -6,68 +6,89 @@
         {
           "id": "ch8-t1-e1",
           "type": "mcq",
-          "question": "Paper is made from which natural material?",
-          "options": ["Plastic", "Metal", "Wood from trees", "Sand"],
+          "question": "What natural material is used to make paper?",
+          "options": [
+            "Sand",
+            "Plastic",
+            "Wood from trees",
+            "Iron"
+          ],
           "answer": "Wood from trees",
-          "explanation": "Paper is made from the wood of trees. The wood is broken into tiny pieces called wood pulp, which is then processed into paper."
+          "explanation": "Paper is made from wood. Trees are cut and the wood is broken into tiny fibres called wood pulp, which is processed into paper sheets."
         },
         {
           "id": "ch8-t1-e2",
           "type": "fill",
-          "question": "In earlier times, people in India wrote on palm leaves called ______.",
+          "question": "In ancient India, people wrote on dried palm leaves called ______.",
           "answer": "talapatra",
-          "explanation": "Before paper was invented, people in India used palm leaves called talapatra to write on. People also wrote on cloth, leaves and wooden boards."
+          "explanation": "Before paper was available, people in India used palm leaves called talapatra as writing surfaces. They also wrote on cloth and wooden boards."
         },
         {
           "id": "ch8-t1-e3",
           "type": "mcq",
-          "question": "Which type of paper has raised bumps that help visually challenged people read?",
-          "options": ["Chart paper", "Tissue paper", "Braille paper", "Art paper"],
+          "question": "Which special type of paper uses raised dots to help visually challenged people read?",
+          "options": [
+            "Chart paper",
+            "Tissue paper",
+            "Braille paper",
+            "Art paper"
+          ],
           "answer": "Braille paper",
-          "explanation": "Braille paper has tiny raised bumps that represent letters, numbers and punctuation marks. Visually challenged people read by touching these bumps."
+          "explanation": "Braille paper has tiny raised dots arranged in patterns. Each pattern represents a letter or number, and visually challenged people read by running their fingertips over these dots."
         },
         {
           "id": "ch8-t1-e4",
           "type": "short",
-          "question": "Name three things that are made from paper.",
-          "answer": "Books, newspapers and greeting cards are made from paper.",
-          "explanation": "We use paper in many forms in our daily life, including notebooks, newspapers, tissue paper, greeting cards and cardboard boxes."
+          "question": "Name three everyday items that are made from paper.",
+          "answer": "Notebooks, newspapers and cardboard boxes are all made from paper.",
+          "explanation": "Paper is used in many forms in daily life -- for writing, reading news, packing items, wrapping gifts and cleaning."
         },
         {
           "id": "ch8-t1-e5",
           "type": "mcq",
-          "question": "Which type of paper is thick and hard, used for making boxes?",
-          "options": ["Tissue paper", "Newspaper", "Cardboard", "Writing paper"],
+          "question": "Which type of paper is very thick, rigid and used for making packing boxes?",
+          "options": [
+            "Tissue paper",
+            "Newspaper print",
+            "Cardboard",
+            "Writing paper"
+          ],
           "answer": "Cardboard",
-          "explanation": "Cardboard is thick and hard, making it perfect for boxes and packaging."
+          "explanation": "Cardboard is thick and rigid, making it perfect for packing boxes, cartons and packaging that needs to protect items inside."
         }
       ],
       "medium": [
         {
           "id": "ch8-t1-m1",
           "type": "short",
-          "question": "Describe how paper is made from trees in simple steps.",
-          "answer": "1. Trees are cut down and wood is collected. 2. The wood is broken into tiny pieces called wood pulp. 3. The pulp is mixed with water and chemicals. 4. The wet mixture is spread into thin sheets. 5. The sheets are dried to become paper.",
-          "explanation": "Making paper requires many trees and a lot of water and energy. That is why we should use paper carefully and not waste it."
+          "question": "Describe the main steps of how paper is made in a factory.",
+          "answer": "1. Trees are cut and the wood is collected. 2. Wood is broken into tiny fibres called wood pulp. 3. The pulp is mixed with water and chemicals. 4. The mixture is spread in thin layers on flat screens. 5. The wet sheets are pressed and dried using rollers and heat to become paper.",
+          "explanation": "Making paper uses many trees, a lot of water and electricity, which is why saving paper helps protect forests and the environment."
         },
         {
           "id": "ch8-t1-m2",
           "type": "mcq",
-          "question": "Which natural ingredient gives a yellow colour when used as a dye for paper?",
-          "options": ["Spinach", "Beetroot", "Turmeric (haldi)", "Henna (mehndi)"],
-          "answer": "Turmeric (haldi)",
-          "explanation": "Turmeric gives a yellow colour. Other natural dyes include spinach (green), beetroot (pink/red) and henna (brown/orange)."
+          "question": "Which kitchen ingredient gives a bright yellow colour when used as a natural dye for paper?",
+          "options": [
+            "Palak (spinach)",
+            "Chukandar (beetroot)",
+            "Haldi (turmeric)",
+            "Mehndi (henna)"
+          ],
+          "answer": "Haldi (turmeric)",
+          "explanation": "Haldi gives a bright yellow colour. Other natural dyes include palak for green, chukandar for pink and mehndi for brown."
         }
       ],
       "hard": [
         {
           "id": "ch8-t1-h1",
           "type": "long",
-          "question": "How can you make recycled paper at home using old newspapers? Describe the steps.",
-          "answer": "To make recycled paper at home: 1. Tear old newspapers into small pieces. 2. Soak the pieces in water with some fenugreek seeds (methi) and leave overnight. The methi seeds act as a binding material like glue. 3. Mash the soaked paper and seeds into a wet paste called paper pulp using hands or a grinder. 4. Spread the paste on a flat surface and roll it into a thin sheet. 5. Dry the sheet completely. The recycled paper is ready and can be used to make greeting cards, decorative items or paper masks.",
-          "explanation": "Recycling old paper into new paper is a great way to reduce waste and save trees. It is also a fun activity to try at home."
+          "question": "Explain how you can make recycled paper at home using old newspapers. List all the steps and materials needed.",
+          "answer": "Materials needed: Old newspapers, fenugreek seeds (methi dana) and water. Steps: 1. Tear old newspapers into tiny bits. 2. Soak the torn pieces in a bowl of water with a spoonful of methi seeds and leave overnight. The methi seeds act as natural glue. 3. Mash the soaked mixture into a smooth, thick paste using hands or a grinder. 4. Spread the paste thinly on a flat surface or wire mesh. 5. Let the sheet dry completely in sunlight. The recycled paper can be used for greeting cards, bookmarks, wall hangings or paper masks.",
+          "explanation": "Making recycled paper at home is a fun activity that reduces waste and saves trees. The methi seeds bind the paper fibres together."
         }
-      ]
+      ],
+      "name": "Things Around Us Are Made of Materials"
     },
     {
       "topic": "The 5Rs of Waste Management",
@@ -75,82 +96,103 @@
         {
           "id": "ch8-t2-e1",
           "type": "mcq",
-          "question": "What does the R in 'Refuse' mean in the 5Rs?",
-          "options": ["Use more things", "Say 'No' to things that create waste", "Throw things away", "Buy new things"],
-          "answer": "Say 'No' to things that create waste",
-          "explanation": "Refuse means saying 'No' to things that create waste. For example, refusing single-use paper cups and using your own reusable cup instead."
+          "question": "What does the 'Refuse' in the 5Rs mean?",
+          "options": [
+            "Buy more things",
+            "Say 'No thanks' to things that create waste",
+            "Throw things in a dustbin",
+            "Collect more waste"
+          ],
+          "answer": "Say 'No thanks' to things that create waste",
+          "explanation": "Refuse means saying no to things you do not really need, like plastic straws or extra paper napkins, so that waste is never created."
         },
         {
           "id": "ch8-t2-e2",
           "type": "fill",
-          "question": "Writing on both sides of a paper before throwing it away is an example of ______.",
+          "question": "Writing on both sides of a notebook page is an example of the R called ______.",
           "answer": "Reduce",
-          "explanation": "Reduce means using things carefully so that less waste is produced. Writing on both sides reduces paper waste."
+          "explanation": "Reduce means using things carefully so less waste is produced. Using both sides of a page means you need fewer pages overall."
         },
         {
           "id": "ch8-t2-e3",
           "type": "mcq",
-          "question": "Kabir paints an old bottle and uses it as a flower vase. This is an example of which R?",
-          "options": ["Refuse", "Reduce", "Repurpose", "Recycle"],
+          "question": "Riya paints an old tin can and grows tulsi in it. This is an example of which R?",
+          "options": [
+            "Refuse",
+            "Reduce",
+            "Repurpose",
+            "Recycle"
+          ],
           "answer": "Repurpose",
-          "explanation": "Repurpose means using something in a new and creative way. Kabir gave the old bottle a new use as a flower vase."
+          "explanation": "Repurpose means giving an old item a completely new job. The tin was for storing food, but Riya turned it into a plant pot -- a brand-new purpose."
         },
         {
           "id": "ch8-t2-e4",
           "type": "short",
-          "question": "What are the 5Rs of waste management?",
+          "question": "List all 5Rs of waste management.",
           "answer": "The 5Rs are Refuse, Reduce, Reuse, Repurpose and Recycle.",
-          "explanation": "Following the 5Rs helps us manage waste and protect the environment."
+          "explanation": "Following the 5Rs helps families produce less waste and protects the environment."
         },
         {
           "id": "ch8-t2-e5",
           "type": "mcq",
-          "question": "Sara gives her old books to younger students. This is an example of which R?",
-          "options": ["Refuse", "Recycle", "Reuse", "Repurpose"],
+          "question": "Priya passes her Class 3 textbooks to her younger cousin. This is an example of which R?",
+          "options": [
+            "Refuse",
+            "Recycle",
+            "Reuse",
+            "Repurpose"
+          ],
           "answer": "Reuse",
-          "explanation": "Reuse means using something again and again before throwing it away. Sara's old books can be read by younger students."
+          "explanation": "Reuse means using an item again for the same purpose. The textbooks are used again for reading by the younger cousin."
         }
       ],
       "medium": [
         {
           "id": "ch8-t2-m1",
           "type": "short",
-          "question": "Give one example each for Refuse, Reuse and Repurpose from daily life.",
-          "answer": "Refuse: Say no to plastic straws when drinking coconut water. Reuse: Use a cloth bag again and again when going to the market. Repurpose: Cut old clothes and stitch them into a bag for carrying books.",
-          "explanation": "The 5Rs help us reduce waste in creative ways. Each R offers a different approach to managing waste in our daily life."
+          "question": "Give one example each for Refuse, Reuse and Repurpose from everyday life.",
+          "answer": "Refuse: Say no to a plastic straw at a juice shop and drink directly from the glass. Reuse: Carry the same cloth bag to the vegetable market every time. Repurpose: Turn an old glass jar into a pencil holder for your study table.",
+          "explanation": "Each R tackles waste in a different way -- by avoiding it, using things again, or giving old items creative new uses."
         },
         {
           "id": "ch8-t2-m2",
           "type": "mcq",
-          "question": "A shopkeeper turns old newspapers into paper envelopes. This is an example of which R?",
-          "options": ["Refuse", "Reduce", "Reuse", "Recycle"],
+          "question": "The neighbourhood raddi-wala collects old newspapers and sends them to a factory to make new paper. This is an example of which R?",
+          "options": [
+            "Refuse",
+            "Reduce",
+            "Reuse",
+            "Recycle"
+          ],
           "answer": "Recycle",
-          "explanation": "Recycle means turning old things into something new through a special process. Making paper envelopes from old newspapers is recycling."
+          "explanation": "Recycle means sending old materials to a factory where they are processed and turned into new products."
         },
         {
           "id": "ch8-t2-m3",
           "type": "fill",
-          "question": "Using something in a new and creative way is called ______.",
+          "question": "Giving an old item a completely new job or purpose is called ______.",
           "answer": "Repurpose",
-          "explanation": "Repurpose means finding a new creative use for an old item. For example, using an old bottle as a flower vase."
+          "explanation": "Repurpose means using your creativity to find a new use for something old. For example, using an old saree as a kitchen duster."
         }
       ],
       "hard": [
         {
           "id": "ch8-t2-h1",
           "type": "long",
-          "question": "Why is it important to save paper? How can we help save trees by following the 5Rs? Give at least four examples.",
-          "answer": "It is important to save paper because paper is made from trees. Cutting too many trees harms forests, the animals that live in them, and uses a lot of water and energy. We can help by following the 5Rs: 1. Refuse - Say no to paper cups and use our own reusable cups. 2. Reduce - Write on both sides of paper to use less. 3. Reuse - Give old textbooks to younger students instead of throwing them away. 4. Repurpose - Turn old newspapers into decorative items or paper bags. 5. Recycle - Collect old newspapers and send them for recycling into new paper. By making these small changes, we can save many trees and protect forests.",
-          "explanation": "Every small step counts. Saving paper means fewer trees are cut, less water and energy is used, and less waste goes to landfills."
+          "question": "Why is saving paper important for the environment? How can you use the 5Rs to save paper? Give at least four examples.",
+          "answer": "Saving paper is important because paper is made from trees. Cutting too many trees destroys forests, harms wildlife, uses enormous amounts of water and electricity, and adds waste to landfills. We can use the 5Rs to save paper: 1. Refuse -- Say no to paper cups at parties and use steel glasses instead. 2. Reduce -- Write on both sides of every page in notebooks. 3. Reuse -- Pass old textbooks to younger students or cousins. 4. Repurpose -- Turn old newspapers into paper bags for the kitchen or decorative crafts. 5. Recycle -- Give old newspapers to the raddi-wala so they can be made into new paper at a factory.",
+          "explanation": "Every small effort to save paper means fewer trees cut, less water used and less waste in our environment."
         },
         {
           "id": "ch8-t2-h2",
           "type": "long",
-          "question": "Match the following situations with the correct R and explain your answer: 1. Maya does not use a plastic straw. 2. Rohan uses blank pages from old notebooks for rough work. 3. Priya cuts old clothes to make a bag.",
-          "answer": "1. Maya does not use a plastic straw - this is Refuse because she is saying 'No' to something that would create waste. 2. Rohan uses blank pages from old notebooks for rough work - this is Reduce because he is using paper carefully so that less new paper is needed. 3. Priya cuts old clothes to make a bag - this is Repurpose because she is using something old in a new and creative way instead of throwing it away.",
-          "explanation": "Each of the 5Rs helps in a different way. Refuse means not taking wasteful items, Reduce means using less, and Repurpose means finding new uses for old things."
+          "question": "Identify the correct R for each situation and explain your reasoning: 1. Ananya carries a steel bottle to school instead of buying plastic bottles. 2. Vikram writes on both sides of his rough notebook. 3. Dadi turns old cotton sarees into kitchen dusters.",
+          "answer": "1. Ananya carries a steel bottle -- this is Refuse because she is saying no to buying plastic bottles that would create waste. She avoids the waste entirely. 2. Vikram writes on both sides -- this is Reduce because he is using paper carefully so that fewer pages are needed, producing less paper waste. 3. Dadi turns old sarees into dusters -- this is Repurpose because the sarees were originally for wearing, but she gives them a completely new job as cleaning cloths instead of throwing them away.",
+          "explanation": "Understanding the difference between the 5Rs helps us choose the best way to handle waste in different situations."
         }
-      ]
+      ],
+      "name": "How Paper is Made"
     }
   ]
 }

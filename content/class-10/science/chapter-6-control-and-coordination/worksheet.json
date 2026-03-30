@@ -7,7 +7,12 @@
           "id": "ch6-t1-e1",
           "type": "mcq",
           "question": "The gap between two neurons is called a:",
-          "options": ["Dendrite", "Synapse", "Axon", "Impulse"],
+          "options": [
+            "Dendrite",
+            "Synapse",
+            "Axon",
+            "Impulse"
+          ],
           "answer": "Synapse",
           "explanation": "A synapse is the small gap between the axon ending of one neuron and the dendrite of the next neuron. Chemical substances (neurotransmitters) are released here to transmit the impulse across."
         },
@@ -15,7 +20,12 @@
           "id": "ch6-t1-e2",
           "type": "mcq",
           "question": "The brain is responsible for:",
-          "options": ["Thinking", "Regulating the heart beat", "Balancing the body", "All of the above"],
+          "options": [
+            "Thinking",
+            "Regulating the heart beat",
+            "Balancing the body",
+            "All of the above"
+          ],
           "answer": "All of the above",
           "explanation": "Thinking is controlled by the cerebrum, heart beat regulation by the medulla oblongata, and body balance by the cerebellum. These are all parts of the brain."
         },
@@ -68,13 +78,18 @@
       ]
     },
     {
-      "topic": "Plant Hormones and Coordination",
+      "topic": "Classifying Actions",
       "easy": [
         {
           "id": "ch6-t2-e1",
           "type": "mcq",
           "question": "Which of the following is a plant hormone?",
-          "options": ["Insulin", "Thyroxin", "Oestrogen", "Cytokinin"],
+          "options": [
+            "Insulin",
+            "Thyroxin",
+            "Oestrogen",
+            "Cytokinin"
+          ],
           "answer": "Cytokinin",
           "explanation": "Cytokinin is a plant hormone that promotes cell division. Insulin, thyroxin, and oestrogen are all animal hormones."
         },

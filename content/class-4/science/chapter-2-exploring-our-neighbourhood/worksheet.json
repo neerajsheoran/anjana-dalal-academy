@@ -6,73 +6,89 @@
         {
           "id": "ch2-t1-e1",
           "type": "mcq",
-          "question": "What does communication mean?",
-          "options": ["Cooking food", "Sharing information with others", "Playing games", "Drawing pictures"],
-          "answer": "Sharing information with others",
-          "explanation": "Communication means sharing information with others. People have been communicating in different ways throughout history."
+          "question": "What is communication?",
+          "options": [
+            "Building houses",
+            "Sharing thoughts, news and feelings with others",
+            "Cooking meals",
+            "Planting trees"
+          ],
+          "answer": "Sharing thoughts, news and feelings with others",
+          "explanation": "Communication is the way people share thoughts, news and feelings. Over time, the methods of communication have changed from cave carvings and drums to smartphones."
         },
         {
           "id": "ch2-t1-e2",
           "type": "fill",
-          "question": "In India, letters are dropped in a ______ postbox.",
+          "question": "In India, you drop a letter into a ______ letterbox to send it through the post office.",
           "answer": "red",
-          "explanation": "In the Indian postal system, letters are dropped in a red postbox, from where the postman collects them."
+          "explanation": "Indian letterboxes are red in colour. The postman collects letters from these boxes and takes them to the post office for sorting."
         },
         {
           "id": "ch2-t1-e3",
           "type": "mcq",
-          "question": "How did people communicate in very old times?",
-          "options": ["By mobile phones", "By emails", "By drumbeats and carvings on rocks", "By television"],
-          "answer": "By drumbeats and carvings on rocks",
-          "explanation": "Very long ago, people used drumbeats and carvings on rocks to share information with each other."
+          "question": "In ancient times, how did people send messages to faraway places?",
+          "options": [
+            "By email",
+            "By video call",
+            "By beating drums and carving symbols on walls",
+            "By text message"
+          ],
+          "answer": "By beating drums and carving symbols on walls",
+          "explanation": "In ancient times, people used drum signals and carved symbols on cave walls to share information. There were no phones or internet back then."
         },
         {
           "id": "ch2-t1-e4",
           "type": "short",
-          "question": "Name two services that a post office provides besides sending letters.",
-          "answer": "Money orders and savings accounts",
-          "explanation": "Post offices also offer services like money orders, savings accounts and speed post, besides sending and receiving letters and parcels."
+          "question": "Apart from sending letters, name two other services offered by a post office.",
+          "answer": "Post offices also offer speed post for faster delivery and money orders for sending money to people in other places.",
+          "explanation": "Indian post offices provide many services beyond letters -- speed post, money orders, savings accounts and parcel delivery are some of them."
         },
         {
           "id": "ch2-t1-e5",
           "type": "mcq",
           "question": "India has one of the largest ______ networks in the world.",
-          "options": ["Railway", "Postal", "Airline", "Highway"],
+          "options": [
+            "Metro",
+            "Postal",
+            "Airline",
+            "Highway"
+          ],
           "answer": "Postal",
-          "explanation": "India has one of the largest postal networks in the world. Post offices help people send letters, parcels and important documents."
+          "explanation": "With over 1.5 lakh post offices reaching even remote villages, India has one of the biggest postal networks on the planet."
         }
       ],
       "medium": [
         {
           "id": "ch2-t1-m1",
           "type": "short",
-          "question": "How has the way people communicate changed over time? Give examples from the past and present.",
-          "answer": "In the past, people used drumbeats, rock carvings, and letters carried by messengers and pigeons. Later, the postal service, telephone, radio and television were used. Today, we use mobile phones, computers and the internet to communicate instantly.",
-          "explanation": "Communication has evolved from slow methods that took weeks to fast methods that take just seconds."
+          "question": "Describe how communication has changed from ancient times to today. Give at least two examples from the past and two from the present.",
+          "answer": "In ancient times, people beat drums and carved symbols on cave walls. Later, they sent letters through runners and trained pigeons. Today, we send instant text messages on smartphones and make video calls over the internet. What once took weeks now happens in less than a second.",
+          "explanation": "Communication has evolved from slow, uncertain methods to fast, reliable technology. Each new invention made sharing information easier and quicker."
         },
         {
           "id": "ch2-t1-m2",
           "type": "mcq",
-          "question": "What is the correct order of how a letter reaches someone through the post office?",
+          "question": "What is the correct journey of a posted letter?",
           "options": [
-            "Write letter, postman collects, sorted at post office, delivered",
-            "Write letter, sorted at post office, postman collects, delivered",
-            "Postman collects, write letter, sorted at post office, delivered",
-            "Write letter, delivered, sorted at post office, postman collects"
+            "Written, dropped in letterbox, collected by postman, sorted at post office, delivered",
+            "Written, sorted at post office, dropped in letterbox, collected by postman, delivered",
+            "Collected by postman, written, sorted at post office, delivered",
+            "Written, delivered, collected by postman, sorted at post office"
           ],
-          "answer": "Write letter, postman collects, sorted at post office, delivered",
-          "explanation": "First you write a letter and drop it in the postbox. The postman collects it. Then it goes to the post office where it is sorted by region and finally sent to the destination."
+          "answer": "Written, dropped in letterbox, collected by postman, sorted at post office, delivered",
+          "explanation": "A letter is first written, then dropped in a red letterbox. The postman collects it, takes it to the post office where it is sorted by region, and then it travels to its destination for delivery."
         }
       ],
       "hard": [
         {
           "id": "ch2-t1-h1",
           "type": "long",
-          "question": "Compare how people sent messages long ago with how we send messages today. Which way do you think is better and why?",
-          "answer": "Long ago, people sent letters through messengers or pigeons, which could take weeks to reach. Today, we can send messages through mobile phones and the internet in just seconds. Today's methods are better because they are much faster, easier and we can even make video calls to see the person we are talking to. However, the old postal system is still useful for sending parcels and important documents.",
-          "explanation": "Communication has improved greatly over time. Modern technology makes it faster and easier, but the postal service still has an important role in our lives."
+          "question": "Compare how people communicated long ago with how we communicate today. Which way is better and why? Is the old postal system still useful?",
+          "answer": "Long ago, people used runners, trained pigeons and handwritten letters to communicate. Messages could take days or weeks to arrive, and there was always a risk of them getting lost. Today, we use mobile phones, email and video calls to communicate in seconds. Modern methods are much faster and more reliable. However, the postal system is still useful because it delivers parcels, important documents and registered letters. People in remote areas without strong internet still depend on post offices. So both old and new systems have their value.",
+          "explanation": "While technology has made communication almost instant, the postal service continues to serve important needs, especially for physical deliveries and in areas with limited internet."
         }
-      ]
+      ],
+      "name": "Our Neighbourhood"
     },
     {
       "topic": "Transport, Banks and Directions",
@@ -81,74 +97,95 @@
           "id": "ch2-t2-e1",
           "type": "mcq",
           "question": "Which of these is an example of water transport?",
-          "options": ["Bus", "Train", "Boat", "Helicopter"],
-          "answer": "Boat",
-          "explanation": "Boats, ships and ferries are examples of water transport."
+          "options": [
+            "Auto-rickshaw",
+            "Metro train",
+            "Ferry",
+            "Helicopter"
+          ],
+          "answer": "Ferry",
+          "explanation": "Ferries, boats and ships travel on water to carry people and goods from one place to another."
         },
         {
           "id": "ch2-t2-e2",
           "type": "fill",
-          "question": "The direction where the Sun rises is called ______.",
+          "question": "The Sun rises in the ______, which helps us find all four directions.",
           "answer": "East",
-          "explanation": "The Sun rises in the East. Once you know East, you can figure out all the other directions."
+          "explanation": "The Sun always rises in the East. Once you face East, your back is West, your left hand points North, and your right hand points South."
         },
         {
           "id": "ch2-t2-e3",
           "type": "mcq",
           "question": "What does ATM stand for?",
-          "options": ["All Time Money", "Automated Teller Machine", "Any Time Machine", "Automatic Transaction Machine"],
+          "options": [
+            "Any Time Money",
+            "Automated Teller Machine",
+            "All Transaction Machine",
+            "Account Transfer Method"
+          ],
           "answer": "Automated Teller Machine",
-          "explanation": "ATM stands for Automated Teller Machine. It is a machine that lets you take out money anytime."
+          "explanation": "ATM stands for Automated Teller Machine. It allows people to withdraw cash from their bank account at any time of day or night."
         },
         {
           "id": "ch2-t2-e4",
           "type": "short",
-          "question": "Name the four main directions on a map.",
-          "answer": "North, South, East and West",
-          "explanation": "On a map, North is at the top, South is at the bottom, East is on the right and West is on the left."
+          "question": "Name the four main directions shown on a map.",
+          "answer": "The four main directions are North (top), South (bottom), East (right) and West (left).",
+          "explanation": "Every standard map follows this layout. Knowing these directions helps you read maps and find places."
         },
         {
           "id": "ch2-t2-e5",
           "type": "mcq",
           "question": "What was the barter system?",
-          "options": ["Buying things online", "Exchanging goods directly without money", "Selling things in a shop", "Keeping money in a bank"],
-          "answer": "Exchanging goods directly without money",
-          "explanation": "Long ago, people used the barter system where they exchanged goods directly. A farmer might give wheat to get milk."
+          "options": [
+            "Buying things with a credit card",
+            "Swapping goods directly without using money",
+            "Ordering things online",
+            "Keeping money in a bank"
+          ],
+          "answer": "Swapping goods directly without using money",
+          "explanation": "Before money was invented, people exchanged goods directly -- a farmer might give wheat to get milk. This was called the barter system."
         }
       ],
       "medium": [
         {
           "id": "ch2-t2-m1",
           "type": "short",
-          "question": "What are landmarks? How do they help us find our way?",
-          "answer": "Landmarks are well-known places or structures like a big temple, a park, a hospital or a famous shop. They help us find our way because we can use them as reference points when giving or following directions.",
-          "explanation": "When giving directions, we use landmarks along with words like left, right, forward and backward to help someone reach a place."
+          "question": "What are landmarks? Give an example of how you would use a landmark to give directions.",
+          "answer": "Landmarks are well-known, easily recognisable places like a temple, a water tank, a petrol pump or a famous shop. For example, you might say: Walk past the Hanuman temple, turn right at the sweet shop, and the school is on your left. Landmarks make it easy for people to follow directions.",
+          "explanation": "Because landmarks stand out, they serve as reference points. Using them along with words like left, right and straight helps others find their way."
         },
         {
           "id": "ch2-t2-m2",
           "type": "mcq",
-          "question": "Why were metro trains and flyovers built in cities?",
-          "options": ["To look beautiful", "To make travel faster and easier", "To stop people from walking", "To increase pollution"],
-          "answer": "To make travel faster and easier",
-          "explanation": "Metro trains run at high speed and flyovers help vehicles move above busy roads, saving time for travellers."
+          "question": "Why were metro trains and flyovers built in busy cities?",
+          "options": [
+            "To make buildings look taller",
+            "To reduce travel time and ease traffic",
+            "To replace all buses",
+            "To increase noise"
+          ],
+          "answer": "To reduce travel time and ease traffic",
+          "explanation": "Metro trains travel fast on dedicated tracks with no traffic delays. Flyovers lift vehicles above crowded crossroads, reducing jams and saving time."
         },
         {
           "id": "ch2-t2-m3",
           "type": "fill",
-          "question": "A ______ records all the money that goes in and comes out of your bank account.",
-          "answer": "bank passbook",
-          "explanation": "A bank passbook records all transactions and has details like your account number, name, address and IFSC code."
+          "question": "A ______ is a small booklet from the bank that records all the money going in and out of your account.",
+          "answer": "passbook",
+          "explanation": "A bank passbook keeps a written record of every deposit and withdrawal, along with your account number, name and IFSC code."
         }
       ],
       "hard": [
         {
           "id": "ch2-t2-h1",
           "type": "long",
-          "question": "Name the four types of transport with one example each. Why should we think about the environment while building new roads and bridges?",
-          "answer": "The four types of transport are: 1. Road transport (bus, car, auto-rickshaw) 2. Rail transport (train, metro) 3. Water transport (boat, ship) 4. Air transport (aeroplane, helicopter). While building new roads and bridges, we should think about the environment because construction can affect animals, birds and trees. We need to balance development with protecting our environment, for example by planting more trees.",
-          "explanation": "Development and nature protection must go hand in hand. Building roads and bridges helps people travel, but we must also protect the plants, animals and birds that may be affected."
+          "question": "List the four types of transport with one example each. Why should we think about the environment while building new roads and bridges?",
+          "answer": "The four types of transport are: 1. Road transport -- bus, auto-rickshaw, bicycle. 2. Rail transport -- train, metro. 3. Water transport -- boat, ship, ferry. 4. Air transport -- aeroplane, helicopter. While building new roads and bridges, we must think about the environment because construction often requires cutting trees and disturbing animal habitats. To balance development with nature, planners should plant new trees along the new roads and protect wildlife areas nearby.",
+          "explanation": "All four types of transport help people and goods move around. However, building transport infrastructure must go hand in hand with caring for trees, birds and animals."
         }
-      ]
+      ],
+      "name": "Communication -- Then and Now"
     },
     {
       "topic": "Community Services and the Hospital",
@@ -156,49 +193,64 @@
         {
           "id": "ch2-t3-e1",
           "type": "mcq",
-          "question": "Who treats patients in a hospital?",
-          "options": ["Pharmacist", "Doctor", "Sweeper", "Postman"],
+          "question": "Who examines patients and prescribes treatment in a hospital?",
+          "options": [
+            "Pharmacist",
+            "Doctor",
+            "Postman",
+            "Librarian"
+          ],
           "answer": "Doctor",
-          "explanation": "A doctor treats patients and prescribes medicines in a hospital."
+          "explanation": "A doctor examines patients, finds out what is wrong, and prescribes the right treatment or medicine."
         },
         {
           "id": "ch2-t3-e2",
           "type": "fill",
-          "question": "An ______ driver brings patients to the hospital in emergencies.",
+          "question": "In a medical emergency, an ______ driver rushes the patient to the hospital.",
           "answer": "ambulance",
-          "explanation": "An ambulance driver brings patients to the hospital quickly during emergencies."
+          "explanation": "Ambulance drivers are trained to drive quickly and safely to get patients to the hospital as fast as possible during emergencies."
         },
         {
           "id": "ch2-t3-e3",
           "type": "mcq",
-          "question": "Which vehicle is used by firefighters?",
-          "options": ["Ambulance", "Mail van", "Fire engine", "Patrolling jeep"],
+          "question": "Which vehicle do firefighters use to reach a fire?",
+          "options": [
+            "Mail van",
+            "Patrol jeep",
+            "Fire engine",
+            "Ambulance"
+          ],
           "answer": "Fire engine",
-          "explanation": "Firefighters use a fire engine to rush to places where there is a fire and put it out."
+          "explanation": "Firefighters travel in a fire engine, which carries a large water tank, hoses and ladders needed to put out fires."
         },
         {
           "id": "ch2-t3-e4",
           "type": "short",
-          "question": "What does a pharmacist do in a hospital?",
-          "answer": "A pharmacist gives medicines to patients as prescribed by the doctor.",
-          "explanation": "The pharmacist is an important person in the hospital who provides the correct medicines to patients."
+          "question": "What is the role of a pharmacist in a hospital?",
+          "answer": "A pharmacist reads the doctor's prescription and provides the correct medicines to the patient in the right doses.",
+          "explanation": "Pharmacists make sure patients receive exactly the medicines the doctor has ordered, in the right quantity and form."
         }
       ],
       "medium": [
         {
           "id": "ch2-t3-m1",
           "type": "short",
-          "question": "Name any three community services and the people who work in them.",
-          "answer": "1. Police Station - police officers and constables. 2. Hospital - doctors, nurses and ward boys. 3. Fire Station - firefighters.",
-          "explanation": "Many public services keep our neighbourhood safe and running smoothly. Each has trained people and special vehicles."
+          "question": "Name three community services and the people who work in them.",
+          "answer": "1. Police Station -- staffed by police officers and constables who keep the neighbourhood safe. 2. Hospital -- run by doctors, nurses and lab technicians who treat patients. 3. Fire Station -- managed by firefighters who put out fires and rescue people.",
+          "explanation": "Community services are essential for safety and well-being. Each service has trained people and special vehicles ready to help at any time."
         },
         {
           "id": "ch2-t3-m2",
           "type": "mcq",
           "question": "What are health camps organised by hospitals?",
-          "options": ["Camps for camping outdoors", "Free check-up events for the community", "Camps to train doctors", "Cooking camps"],
+          "options": [
+            "Camping trips for doctors",
+            "Free check-up events for the community",
+            "Training sessions for nurses",
+            "Cooking competitions"
+          ],
           "answer": "Free check-up events for the community",
-          "explanation": "Hospitals organise health camps like eye check-up camps to help the community get free or affordable health check-ups."
+          "explanation": "Health camps are events where hospitals offer free or low-cost check-ups -- like eye tests or blood pressure checks -- to people in the community."
         }
       ],
       "hard": [
@@ -206,10 +258,11 @@
           "id": "ch2-t3-h1",
           "type": "long",
           "question": "Why are community services like hospitals, police stations and fire stations important for a neighbourhood? Explain with examples.",
-          "answer": "Community services are important because they keep people safe and help them in times of need. Hospitals treat sick and injured people. When Riya fell off her bicycle, the ambulance took her to the hospital where the doctor treated her wound. Police stations keep the neighbourhood safe from crime. Fire stations send firefighters quickly when there is a fire to save people and buildings. Without these services, our daily life would be very difficult and unsafe.",
-          "explanation": "Each community service has trained people and special vehicles to help the community. They work together to make sure everyone is safe and healthy."
+          "answer": "Community services are important because they protect people and help them during emergencies. For example, when Aman's grandfather suddenly felt chest pain, the family dialled 108 and an ambulance rushed him to the hospital where doctors saved his life. When there was a short circuit and fire in a shop on MG Road, firefighters from the fire station arrived in minutes and put out the flames before they spread. Police officers patrol streets at night to keep families safe. Without these services, people would have no quick help during dangers and emergencies.",
+          "explanation": "Hospitals, police stations and fire stations form the safety net of any neighbourhood. Their trained staff and special vehicles ensure help is always available when needed."
         }
-      ]
+      ],
+      "name": "The Post Office"
     }
   ]
 }

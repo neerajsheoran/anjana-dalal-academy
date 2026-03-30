@@ -7,7 +7,12 @@
           "id": "ch1-t1-e1",
           "type": "mcq",
           "question": "Science is best described as —",
-          "options": ["A subject studied only in school", "A method of asking questions and finding testable answers", "A collection of facts to memorise", "Something only scientists do in laboratories"],
+          "options": [
+            "A subject studied only in school",
+            "A method of asking questions and finding testable answers",
+            "A collection of facts to memorise",
+            "Something only scientists do in laboratories"
+          ],
           "answer": "A method of asking questions and finding testable answers",
           "explanation": "Science is a process of investigating the natural world through questions, observations, and experiments — not just a set of facts."
         },
@@ -15,7 +20,12 @@
           "id": "ch1-t1-e2",
           "type": "mcq",
           "question": "Which of these is a scientific question?",
-          "options": ["What is your favourite colour?", "Which cricketer is the best?", "Why do wet clothes dry faster in the sun?", "Is pizza better than biryani?"],
+          "options": [
+            "What is your favourite colour?",
+            "Which cricketer is the best?",
+            "Why do wet clothes dry faster in the sun?",
+            "Is pizza better than biryani?"
+          ],
           "answer": "Why do wet clothes dry faster in the sun?",
           "explanation": "Scientific questions ask about natural events that can be observed and tested. Favourite colours and food preferences are opinions, not science."
         },
@@ -31,7 +41,12 @@
           "id": "ch1-t1-e4",
           "type": "mcq",
           "question": "The word 'science' comes from a Latin word meaning —",
-          "options": ["Power", "Knowledge", "Experiment", "Nature"],
+          "options": [
+            "Power",
+            "Knowledge",
+            "Experiment",
+            "Nature"
+          ],
           "answer": "Knowledge",
           "explanation": "The word science comes from the Latin word 'scientia' meaning knowledge."
         }
@@ -72,7 +87,12 @@
           "id": "ch1-t2-e1",
           "type": "mcq",
           "question": "What is the correct order of the first three steps of the scientific method?",
-          "options": ["Experiment → Observe → Conclude", "Observe → Question → Hypothesis", "Hypothesis → Observe → Question", "Conclude → Experiment → Observe"],
+          "options": [
+            "Experiment → Observe → Conclude",
+            "Observe → Question → Hypothesis",
+            "Hypothesis → Observe → Question",
+            "Conclude → Experiment → Observe"
+          ],
           "answer": "Observe → Question → Hypothesis",
           "explanation": "The scientific method begins with observation, then forming a question, then proposing a hypothesis (educated guess)."
         },
@@ -80,7 +100,12 @@
           "id": "ch1-t2-e2",
           "type": "mcq",
           "question": "A hypothesis is —",
-          "options": ["A proven fact", "An educated guess that can be tested", "The final answer", "A question"],
+          "options": [
+            "A proven fact",
+            "An educated guess that can be tested",
+            "The final answer",
+            "A question"
+          ],
           "answer": "An educated guess that can be tested",
           "explanation": "A hypothesis is not a random guess — it is based on what you already know and must be testable through an experiment."
         },
@@ -96,7 +121,12 @@
           "id": "ch1-t2-e4",
           "type": "mcq",
           "question": "If your experiment does not support your hypothesis, what should you do?",
-          "options": ["Change the results to match your guess", "Conclude that science does not work", "Revise your hypothesis and test again", "Stop experimenting immediately"],
+          "options": [
+            "Change the results to match your guess",
+            "Conclude that science does not work",
+            "Revise your hypothesis and test again",
+            "Stop experimenting immediately"
+          ],
           "answer": "Revise your hypothesis and test again",
           "explanation": "A result that does not match your guess is still useful — it tells you something new. Scientists update their hypothesis and test again. This is how science self-corrects."
         }
@@ -145,7 +175,12 @@
           "id": "ch1-t3-e1",
           "type": "mcq",
           "question": "A mechanic listens to a scooter engine, suspects the spark plug is faulty, replaces it, and the scooter starts. Which step of the scientific method did the mechanic use when suspecting the spark plug?",
-          "options": ["Observation", "Hypothesis", "Conclusion", "Experiment"],
+          "options": [
+            "Observation",
+            "Hypothesis",
+            "Conclusion",
+            "Experiment"
+          ],
           "answer": "Hypothesis",
           "explanation": "Suspecting the spark plug is faulty is an educated guess (hypothesis) based on the sound of the engine (observation). Replacing it is the experiment."
         },
@@ -153,7 +188,12 @@
           "id": "ch1-t3-e2",
           "type": "mcq",
           "question": "When other scientists repeat an experiment and check the results, this process is called —",
-          "options": ["Guessing", "Copying", "Peer review", "Memorising"],
+          "options": [
+            "Guessing",
+            "Copying",
+            "Peer review",
+            "Memorising"
+          ],
           "answer": "Peer review",
           "explanation": "Peer review is the process where other scientists independently verify a finding by repeating the experiment and checking the results."
         },

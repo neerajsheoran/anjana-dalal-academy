@@ -6,67 +6,83 @@
         {
           "id": "ch4-t1-e1",
           "type": "mcq",
-          "question": "What is 1,855 + 1,862?",
-          "options": ["3,617", "3,717", "3,817", "2,717"],
-          "answer": "3,717",
-          "explanation": "Adding column by column: O: 5+2=7, T: 5+6=11 (write 1, carry 1), H: 8+8+1=17 (write 7, carry 1), Th: 1+1+1=3. Answer: 3,717."
+          "question": "What is 2,365 + 1,478?",
+          "options": [
+            "3,743",
+            "3,843",
+            "3,943",
+            "2,843"
+          ],
+          "answer": "3,843",
+          "explanation": "Adding column by column: O: 5+8=13 (write 3, carry 1), T: 6+7+1=14 (write 4, carry 1), H: 3+4+1=8, Th: 2+1=3. Answer: 3,843."
         },
         {
           "id": "ch4-t1-e2",
           "type": "fill",
-          "question": "2,700 - 1,083 = ______",
-          "answer": "1,617",
-          "explanation": "Subtract column by column with regrouping: O: 10-3=7, T: 9-8=1, H: 6-0=6, Th: 2-1=1. Answer: 1,617."
+          "question": "3,500 - 1,276 = ______",
+          "answer": "2,224",
+          "explanation": "Subtract column by column with regrouping: O: 10-6=4, T: 9-7=2, H: 4-2=2, Th: 3-1=2. Answer: 2,224."
         },
         {
           "id": "ch4-t1-e3",
           "type": "short",
-          "question": "Add: 21,880 + 38,900",
-          "answer": "60,780",
-          "explanation": "O: 0+0=0, T: 8+0=8, H: 8+9=17 (write 7, carry 1), Th: 1+8+1=10 (write 0, carry 1), TTh: 2+3+1=6. Answer: 60,780."
+          "question": "Add: 24,750 + 37,680",
+          "answer": "62,430",
+          "explanation": "O: 0+0=0, T: 5+8=13 (write 3, carry 1), H: 7+6+1=14 (write 4, carry 1), Th: 4+7+1=12 (write 2, carry 1), TTh: 2+3+1=6. Answer: 62,430."
         },
         {
           "id": "ch4-t1-e4",
           "type": "mcq",
-          "question": "What is 15,150 - 10,228?",
-          "options": ["5,922", "4,922", "4,822", "5,078"],
-          "answer": "4,922",
-          "explanation": "Subtracting with regrouping: 15,150 - 10,228 = 4,922."
+          "question": "What is 18,200 - 11,365?",
+          "options": [
+            "7,835",
+            "6,835",
+            "6,935",
+            "5,835"
+          ],
+          "answer": "6,835",
+          "explanation": "Subtracting with regrouping: 18,200 - 11,365 = 6,835."
         }
       ],
       "medium": [
         {
           "id": "ch4-t1-m1",
           "type": "short",
-          "question": "Nazrana drove from Delhi to Mumbai (1,600 km), Mumbai to Goa (590 km), Goa to Hyderabad (670 km), and Hyderabad to Puri (1,055 km). What is the total distance?",
-          "answer": "3,915 km",
-          "explanation": "1,600 + 590 + 670 + 1,055 = 3,915 km."
+          "question": "Sunita drove from Pune to Goa (450 km), Goa to Mangalore (365 km), Mangalore to Mysuru (260 km), and Mysuru to Bengaluru (145 km). What is the total distance?",
+          "answer": "1,220 km",
+          "explanation": "450 + 365 + 260 + 145 = 1,220 km."
         },
         {
           "id": "ch4-t1-m2",
           "type": "short",
-          "question": "If 46 + 21 = 67, write two subtraction facts using the same numbers.",
-          "answer": "67 - 21 = 46 and 67 - 46 = 21",
+          "question": "If 53 + 28 = 81, write two subtraction facts using the same numbers.",
+          "answer": "81 - 28 = 53 and 81 - 53 = 28",
           "explanation": "Addition and subtraction are reverse operations. From any addition fact, you can write two subtraction facts."
         },
         {
           "id": "ch4-t1-m3",
           "type": "mcq",
-          "question": "A school collected Rs 25,400 in January and Rs 18,650 in February. How much more was collected in January?",
-          "options": ["Rs 6,750", "Rs 7,750", "Rs 6,650", "Rs 44,050"],
-          "answer": "Rs 6,750",
-          "explanation": "25,400 - 18,650 = 6,750. January collection was Rs 6,750 more."
+          "question": "A charity collected Rs 32,500 in March and Rs 19,750 in April. How much more was collected in March?",
+          "options": [
+            "Rs 12,750",
+            "Rs 13,750",
+            "Rs 12,650",
+            "Rs 52,250"
+          ],
+          "answer": "Rs 12,750",
+          "explanation": "32,500 - 19,750 = 12,750. March collection was Rs 12,750 more."
         }
       ],
       "hard": [
         {
           "id": "ch4-t1-h1",
           "type": "long",
-          "question": "Mount Everest is 8,848 metres tall and Mount Annapurna is 8,091 metres tall. Find the difference in their heights. If a climber has climbed 5,500 metres up Everest, how many more metres does she need to climb to reach the summit?",
-          "answer": "Difference: 8,848 - 8,091 = 757 metres. Remaining climb: 8,848 - 5,500 = 3,348 metres.",
-          "explanation": "For the difference: 8,848 - 8,091 = 757 m. For the remaining distance: 8,848 - 5,500 = 3,348 m more to reach the summit."
+          "question": "Mount Kanchenjunga is 8,586 metres tall and Mount Nanda Devi is 7,816 metres tall. Find the difference in their heights. If a trekker has climbed 4,200 metres up Kanchenjunga, how many more metres does she need to climb to reach the summit?",
+          "answer": "Difference: 8,586 - 7,816 = 770 metres. Remaining climb: 8,586 - 4,200 = 4,386 metres.",
+          "explanation": "For the difference: 8,586 - 7,816 = 770 m. For the remaining distance: 8,586 - 4,200 = 4,386 m more to reach the summit."
         }
-      ]
+      ],
+      "name": "Adding Larger Numbers"
     },
     {
       "topic": "Consecutive Numbers and Patterns",
@@ -74,10 +90,15 @@
         {
           "id": "ch4-t2-e1",
           "type": "mcq",
-          "question": "What is the sum of 3 consecutive numbers 67, 68, 69?",
-          "options": ["195", "200", "204", "210"],
-          "answer": "204",
-          "explanation": "For 3 consecutive numbers, the sum = 3 x middle number = 3 x 68 = 204."
+          "question": "What is the sum of 3 consecutive numbers 45, 46, 47?",
+          "options": [
+            "130",
+            "132",
+            "138",
+            "140"
+          ],
+          "answer": "138",
+          "explanation": "For 3 consecutive numbers, the sum = 3 x middle number = 3 x 46 = 138."
         },
         {
           "id": "ch4-t2-e2",
@@ -89,37 +110,43 @@
         {
           "id": "ch4-t2-e3",
           "type": "short",
-          "question": "Is the number 8,558 a palindrome? Why?",
-          "answer": "Yes, 8,558 is a palindrome because it reads the same forwards (8558) and backwards (8558).",
-          "explanation": "A palindrome number reads the same in both directions. 8-5-5-8 reversed is 8-5-5-8."
+          "question": "Is the number 7,667 a palindrome? Why?",
+          "answer": "Yes, 7,667 is a palindrome because it reads the same forwards (7667) and backwards (7667).",
+          "explanation": "A palindrome number reads the same in both directions. 7-6-6-7 reversed is 7-6-6-7."
         }
       ],
       "medium": [
         {
           "id": "ch4-t2-m1",
           "type": "short",
-          "question": "Find the sum of 5 consecutive numbers: 48, 49, 50, 51, 52 using the quick trick.",
-          "answer": "250. Using the trick: sum = 5 x middle number = 5 x 50 = 250.",
-          "explanation": "For 5 consecutive numbers, the sum = 5 x the middle number. The middle number is 50, so the sum = 5 x 50 = 250."
+          "question": "Find the sum of 5 consecutive numbers: 36, 37, 38, 39, 40 using the quick trick.",
+          "answer": "190. Using the trick: sum = 5 x middle number = 5 x 38 = 190.",
+          "explanation": "For 5 consecutive numbers, the sum = 5 x the middle number. The middle number is 38, so the sum = 5 x 38 = 190."
         },
         {
           "id": "ch4-t2-m2",
           "type": "mcq",
           "question": "What happens when you add two odd numbers?",
-          "options": ["Always odd", "Always even", "Sometimes odd, sometimes even", "Always zero"],
+          "options": [
+            "Always odd",
+            "Always even",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
           "answer": "Always even",
-          "explanation": "When two odd numbers are added, the two leftover ones pair up, making the result even. Example: 5 + 7 = 12 (even)."
+          "explanation": "When two odd numbers are added, the two leftover ones pair up, making the result even. Example: 7 + 5 = 12 (even)."
         }
       ],
       "hard": [
         {
           "id": "ch4-t2-h1",
           "type": "long",
-          "question": "Group A has numbers: 1, 2, 7, 9 (sum = 19). Group B has numbers: 3, 4, 5, 9 (sum = 21). Can you swap one number from each group to make both sums equal? Show your working.",
-          "answer": "Total = 19 + 21 = 40. For equal sums, each group needs 40 / 2 = 20. Group A needs 1 more (19 to 20), Group B needs 1 less (21 to 20). Swap 2 from Group A with 3 from Group B. New Group A: 1, 3, 7, 9 = 20. New Group B: 2, 4, 5, 9 = 20.",
-          "explanation": "The difference needed is 1 (Group A needs +1, Group B needs -1). Find two numbers with a difference of 1: 2 (from A) and 3 (from B). After swapping, both groups sum to 20."
+          "question": "Group A has numbers: 2, 5, 6, 8 (sum = 21). Group B has numbers: 1, 4, 7, 11 (sum = 23). Can you swap one number from each group to make both sums equal? Show your working.",
+          "answer": "Total = 21 + 23 = 44. For equal sums, each group needs 44 / 2 = 22. Group A needs 1 more (21 to 22), Group B needs 1 less (23 to 22). Swap 6 from Group A with 7 from Group B. New Group A: 2, 5, 7, 8 = 22. New Group B: 1, 4, 6, 11 = 22.",
+          "explanation": "The difference needed is 1 (Group A needs +1, Group B needs -1). Find two numbers with a difference of 1: 6 (from A) and 7 (from B). After swapping, both groups sum to 22."
         }
-      ]
+      ],
+      "name": "Addition Using Place Value"
     },
     {
       "topic": "Quick Mental Maths Tricks",
@@ -127,52 +154,63 @@
         {
           "id": "ch4-t3-e1",
           "type": "mcq",
-          "question": "What is 67 - 9 using the quick trick?",
-          "options": ["56", "57", "58", "59"],
-          "answer": "58",
-          "explanation": "Subtracting 9 = subtract 10, then add 1. 67 - 10 = 57, then 57 + 1 = 58."
+          "question": "What is 85 - 9 using the quick trick?",
+          "options": [
+            "74",
+            "75",
+            "76",
+            "77"
+          ],
+          "answer": "76",
+          "explanation": "Subtracting 9 = subtract 10, then add 1. 85 - 10 = 75, then 75 + 1 = 76."
         },
         {
           "id": "ch4-t3-e2",
           "type": "fill",
-          "question": "59 + ______ = 100",
-          "answer": "41",
-          "explanation": "First find what makes 99: 59 + 40 = 99. Then add 1 more: 59 + 41 = 100."
+          "question": "64 + ______ = 100",
+          "answer": "36",
+          "explanation": "First find what makes 99: 64 + 35 = 99. Then add 1 more: 64 + 36 = 100."
         },
         {
           "id": "ch4-t3-e3",
           "type": "short",
-          "question": "Find 187 - 99 using the quick trick.",
-          "answer": "88",
-          "explanation": "Subtracting 99 = subtract 100, then add 1. 187 - 100 = 87, then 87 + 1 = 88."
+          "question": "Find 243 - 99 using the quick trick.",
+          "answer": "144",
+          "explanation": "Subtracting 99 = subtract 100, then add 1. 243 - 100 = 143, then 143 + 1 = 144."
         }
       ],
       "medium": [
         {
           "id": "ch4-t3-m1",
           "type": "short",
-          "question": "What number should be added to 877 to make 1,000?",
-          "answer": "123",
-          "explanation": "Think: 877 + ? = 1,000. First find 877 + 123 = 1,000. Check: 877 + 123 = 1,000. Yes!"
+          "question": "What number should be added to 738 to make 1,000?",
+          "answer": "262",
+          "explanation": "Think: 738 + ? = 1,000. 1,000 - 738 = 262. Check: 738 + 262 = 1,000. Yes!"
         },
         {
           "id": "ch4-t3-m2",
           "type": "mcq",
-          "question": "What number should be added to 4,103 to make 10,000?",
-          "options": ["5,897", "6,897", "5,997", "5,907"],
-          "answer": "5,897",
-          "explanation": "10,000 - 4,103 = 5,897. Check: 4,103 + 5,897 = 10,000."
+          "question": "What number should be added to 5,204 to make 10,000?",
+          "options": [
+            "4,796",
+            "5,796",
+            "4,896",
+            "4,706"
+          ],
+          "answer": "4,796",
+          "explanation": "10,000 - 5,204 = 4,796. Check: 5,204 + 4,796 = 10,000."
         }
       ],
       "hard": [
         {
           "id": "ch4-t3-h1",
           "type": "long",
-          "question": "A shopkeeper in a Holi mela had Rs 10,000 in the cash box. He sold colours for Rs 4,103 and water guns for Rs 3,520. How much money does he have now? How much more does he need to reach Rs 20,000?",
-          "answer": "Total money = 10,000 + 4,103 + 3,520 = Rs 17,623. Amount needed to reach Rs 20,000 = 20,000 - 17,623 = Rs 2,377.",
-          "explanation": "First add the initial amount and all sales: 10,000 + 4,103 = 14,103; 14,103 + 3,520 = 17,623. Then subtract from the target: 20,000 - 17,623 = 2,377."
+          "question": "A stall at a Dussehra mela had Rs 10,000 in the cash box. The stall earned Rs 5,204 from toy sales and Rs 2,830 from snack sales. How much money does the stall have now? How much more is needed to reach Rs 20,000?",
+          "answer": "Total money = 10,000 + 5,204 + 2,830 = Rs 18,034. Amount needed to reach Rs 20,000 = 20,000 - 18,034 = Rs 1,966.",
+          "explanation": "First add the initial amount and all sales: 10,000 + 5,204 = 15,204; 15,204 + 2,830 = 18,034. Then subtract from the target: 20,000 - 18,034 = 1,966."
         }
-      ]
+      ],
+      "name": "Subtraction Using Place Value"
     }
   ]
 }

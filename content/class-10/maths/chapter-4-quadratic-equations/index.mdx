@@ -1,57 +1,57 @@
 ---
-title: Chapter 4 Quadratic Equations
+title: "Mastering Quadratic Equations"
+description: "Learn to solve quadratic equations by factorisation and the quadratic formula, and explore the discriminant."
+order: 4
 ---
 
 ## Introduction
 
-Suppose a charity trust decides to build a prayer hall with a carpet area of 300 square metres. The length is one metre more than twice the breadth. If the breadth is x metres, then the length is (2x + 1) metres.
+Imagine a farmer in Rajasthan wants to fence a rectangular patch of land with an area of 450 square metres. The length of the patch is 5 metres more than twice its width. If the width is x metres, then the length is (2x + 5) metres.
 
-Area = x(2x + 1) = 300, which gives **2x^2 + x - 300 = 0**.
+Area = x(2x + 5) = 450, which gives **2x^2 + 5x - 450 = 0**.
 
-This is a **quadratic equation** -- an equation where the highest power of the variable is 2.
+This is a **quadratic equation** -- any equation where the highest power of the unknown is 2.
 
-Quadratic equations appear everywhere in real life: calculating areas, finding speeds, determining ages, and much more. Ancient Indian mathematician **Sridharacharya** (1025 CE) derived the famous quadratic formula we use today.
+Quadratic equations appear naturally in problems involving areas, speeds, ages, and many other real-life situations. The ancient Indian mathematician **Brahmagupta** (7th century CE) was among the first to give general methods for solving such equations.
 
 ---
 
 ## What Is a Quadratic Equation?
 
-A quadratic equation in the variable x is an equation of the form:
+A quadratic equation in the variable x has the standard form:
 
 **ax^2 + bx + c = 0**
 
-where a, b, c are real numbers and **a is not equal to 0**.
-
-This is called the **standard form** of a quadratic equation.
+where a, b, c are real numbers and **a must not be zero**.
 
 ### Examples
 
 | Equation | a | b | c | Quadratic? |
 |----------|---|---|---|------------|
-| 2x^2 + x - 300 = 0 | 2 | 1 | -300 | Yes |
-| 2x^2 - 3x + 1 = 0 | 2 | -3 | 1 | Yes |
-| x^2 - 6x + 8 = 0 | 1 | -6 | 8 | Yes |
-| x + 12 = 0 | 0 | 1 | 12 | No (a = 0) |
+| 2x^2 + 5x - 450 = 0 | 2 | 5 | -450 | Yes |
+| 3x^2 - 7x + 4 = 0 | 3 | -7 | 4 | Yes |
+| x^2 - 8x + 15 = 0 | 1 | -8 | 15 | Yes |
+| 3x + 7 = 0 | 0 | 3 | 7 | No (a = 0) |
 
-> **Key idea:** Always simplify an equation first before deciding if it is quadratic. Sometimes an equation that looks cubic or linear may simplify to a quadratic.
+> **Key idea:** Always simplify and rearrange an equation before deciding whether it is quadratic. Appearances can be misleading.
 
 ### Checking Whether an Equation Is Quadratic
 
-**Example:** Is (x + 2)^3 = x^3 - 4 a quadratic equation?
+**Example:** Is (x + 3)^3 = x^3 + 9 a quadratic equation?
 
-Expand: x^3 + 6x^2 + 12x + 8 = x^3 - 4
+Expand: x^3 + 9x^2 + 27x + 27 = x^3 + 9
 
-Cancel x^3: 6x^2 + 12x + 12 = 0, i.e., x^2 + 2x + 2 = 0
+Cancel x^3: 9x^2 + 27x + 18 = 0, i.e., 3x^2 + 9x + 6 = 0
 
 Yes, it **is** quadratic!
 
-**Example:** Is x(x + 1) + 8 = (x + 2)(x - 2) quadratic?
+**Example:** Is x(x + 3) + 7 = (x + 4)(x - 4) quadratic?
 
-LHS = x^2 + x + 8. RHS = x^2 - 4.
+LHS = x^2 + 3x + 7. RHS = x^2 - 16.
 
-Simplifying: x + 12 = 0.
+Simplifying: 3x + 23 = 0.
 
-No, it is **not** quadratic (degree is 1, not 2).
+No, this is **not** quadratic (it is linear).
 
 ---
 
@@ -59,291 +59,280 @@ No, it is **not** quadratic (degree is 1, not 2).
 
 ### Type 1: Area Problems
 
-A rectangular plot has area 528 m^2. The length is one more than twice the breadth. Find the dimensions.
+A rectangular garden has area 396 m^2. Its length is 3 metres more than twice its breadth. Find the dimensions.
 
-Let breadth = x. Then length = 2x + 1.
-- x(2x + 1) = 528
-- **2x^2 + x - 528 = 0**
+Let breadth = x. Then length = 2x + 3.
+- x(2x + 3) = 396
+- **2x^2 + 3x - 396 = 0**
 
 ### Type 2: Number Problems
 
-The product of two consecutive positive integers is 306. Find them.
+The product of two consecutive even numbers is 528. Find them.
 
-Let the integers be x and x + 1.
-- x(x + 1) = 306
-- **x^2 + x - 306 = 0**
+Let the numbers be x and x + 2.
+- x(x + 2) = 528
+- **x^2 + 2x - 528 = 0**
 
 ### Type 3: Age Problems
 
-Rohan's mother is 26 years older than him. The product of their ages 3 years from now will be 360.
+Neha's father is 30 years older than her. The product of their ages 5 years from now will be 500.
 
-Let Rohan's age = x. Mother's age = x + 26.
-- (x + 3)(x + 29) = 360
-- **x^2 + 32x + 87 - 360 = 0**, i.e., **x^2 + 32x - 273 = 0**
+Let Neha's age = x. Father's age = x + 30.
+- (x + 5)(x + 35) = 500
+- **x^2 + 40x + 175 - 500 = 0**, i.e., **x^2 + 40x - 325 = 0**
 
 ### Type 4: Speed-Distance Problems
 
-A train travels 480 km at uniform speed. If the speed had been 8 km/h less, it would have taken 3 hours more.
+A bus covers 360 km at a uniform speed. If the speed had been 10 km/h more, it would have taken 3 hours less.
 
-Let speed = x km/h. Time = 480/x hours.
-- 480/(x - 8) - 480/x = 3
-- Simplifying: **x^2 - 8x - 1280 = 0**
+Let speed = x km/h. Time = 360/x hours.
+- 360/x - 360/(x + 10) = 3
+- Simplifying: **x^2 + 10x - 1200 = 0**
 
 ---
 
 ## Solving Quadratic Equations by Factorisation
 
-This is the method you learnt in Chapter 2 -- split the middle term to factorise the quadratic expression.
+This uses the splitting-the-middle-term technique from Chapter 2.
 
 ### Steps
 
-![Step-by-step diagram of splitting the middle term method for factorising a quadratic equation](splitting-middle-term-method.png)
-
 1. Write the equation in standard form: ax^2 + bx + c = 0
 2. Find two numbers whose **product = a x c** and whose **sum = b**
-3. Split the middle term using these two numbers
-4. Factor by grouping
-5. Set each factor equal to zero and solve
+3. Split the middle term using those two numbers
+4. Group and factor
+5. Set each factor to zero and solve
 
-### Worked Example 1: Solve 2x^2 - 5x + 3 = 0
+### Worked Example 1: Solve 3x^2 - 7x + 2 = 0
 
-**Step 1:** We need two numbers whose product = 2 x 3 = 6 and sum = -5.
-The numbers are **-2 and -3** (since -2 x -3 = 6 and -2 + (-3) = -5).
+**Step 1:** Product = 3 x 2 = 6, Sum = -7.
+Numbers: **-1 and -6** (since -1 x -6 = 6 and -1 + (-6) = -7).
 
-**Step 2:** Split the middle term:
-2x^2 - 2x - 3x + 3 = 0
+**Step 2:** Split:
+3x^2 - x - 6x + 2 = 0
 
-**Step 3:** Factor by grouping:
-2x(x - 1) - 3(x - 1) = 0
-(2x - 3)(x - 1) = 0
+**Step 3:** Factor:
+x(3x - 1) - 2(3x - 1) = 0
+(x - 2)(3x - 1) = 0
 
-**Step 4:** Set each factor to zero:
-- 2x - 3 = 0 gives **x = 3/2**
-- x - 1 = 0 gives **x = 1**
+**Step 4:** Solve:
+- x - 2 = 0 gives **x = 2**
+- 3x - 1 = 0 gives **x = 1/3**
 
-**Roots: x = 3/2 and x = 1**
+**Roots: x = 2 and x = 1/3**
 
-### Worked Example 2: Solve 6x^2 - x - 2 = 0
+### Worked Example 2: Solve 4x^2 + 3x - 1 = 0
 
-Product = 6 x (-2) = -12. Sum = -1.
-Numbers: -4 and 3 (since -4 x 3 = -12 and -4 + 3 = -1).
+Product = 4 x (-1) = -4. Sum = 3.
+Numbers: 4 and -1 (since 4 x -1 = -4 and 4 + (-1) = 3).
 
-6x^2 + 3x - 4x - 2 = 0
-3x(2x + 1) - 2(2x + 1) = 0
-(3x - 2)(2x + 1) = 0
+4x^2 + 4x - x - 1 = 0
+4x(x + 1) - 1(x + 1) = 0
+(4x - 1)(x + 1) = 0
 
-**Roots: x = 2/3 and x = -1/2**
+**Roots: x = 1/4 and x = -1**
 
-### Worked Example 3: Find the dimensions of the prayer hall
+### Worked Example 3: Find the dimensions of a hall
+
+A prayer hall has a carpet area of 300 square metres. The length is one metre more than twice the breadth.
 
 Equation: 2x^2 + x - 300 = 0
 
-Split: 2x^2 - 24x + 25x - 300 = 0
-2x(x - 12) + 25(x - 12) = 0
+Product = 2 x (-300) = -600. Sum = 1.
+Numbers: 25 and -24 (since 25 x -24 = -600 and 25 + (-24) = 1).
+
+2x^2 + 25x - 24x - 300 = 0
+x(2x + 25) - 12(2x + 25) = 0
 (x - 12)(2x + 25) = 0
 
 x = 12 or x = -12.5
 
-Since breadth cannot be negative, **x = 12 m**.
-Length = 2(12) + 1 = **25 m**.
+Since breadth cannot be negative, **x = 12 m**. Length = 2(12) + 1 = **25 m**.
 
 ---
 
 ## Solving Quadratic Equations by Completing the Square
 
-This method converts the equation into a perfect square form.
+This technique transforms the equation into a perfect square.
 
 ### Steps
 
-1. Write ax^2 + bx + c = 0
-2. Divide throughout by a: x^2 + (b/a)x + c/a = 0
-3. Move c/a to the right side: x^2 + (b/a)x = -c/a
-4. Add (b/2a)^2 to both sides to complete the square
-5. Write the left side as a perfect square
-6. Take the square root of both sides and solve
+1. Start with ax^2 + bx + c = 0
+2. Divide by a: x^2 + (b/a)x + c/a = 0
+3. Move c/a to the right: x^2 + (b/a)x = -c/a
+4. Add (b/2a)^2 to both sides
+5. The left side becomes a perfect square
+6. Take square roots and solve
 
-### Worked Example: Solve x^2 + 4x - 5 = 0
+### Worked Example: Solve x^2 - 6x + 5 = 0
 
-**Step 1:** x^2 + 4x = 5
+**Step 1:** x^2 - 6x = -5
 
-**Step 2:** Add (4/2)^2 = 4 to both sides:
-x^2 + 4x + 4 = 5 + 4 = 9
+**Step 2:** Add (-6/2)^2 = 9 to both sides:
+x^2 - 6x + 9 = -5 + 9 = 4
 
-**Step 3:** (x + 2)^2 = 9
+**Step 3:** (x - 3)^2 = 4
 
-**Step 4:** x + 2 = +3 or x + 2 = -3
+**Step 4:** x - 3 = +2 or x - 3 = -2
 
-**Step 5:** x = 1 or x = -5
+**Step 5:** x = 5 or x = 1
 
-**Roots: x = 1 and x = -5**
+**Roots: x = 5 and x = 1**
 
 ---
 
 ## The Quadratic Formula
 
-Applying the method of completing the square to the general equation ax^2 + bx + c = 0, we get the famous **quadratic formula**:
+Completing the square on the general equation ax^2 + bx + c = 0 yields the celebrated **quadratic formula**:
 
 **x = (-b +/- root(b^2 - 4ac)) / 2a**
 
-This formula gives the roots of **any** quadratic equation directly.
+This formula finds the roots of **any** quadratic equation directly.
 
-> **Key idea:** The quadratic formula is one of the most important formulas in Class 10 Maths. It works for every quadratic equation, whether factorisable or not.
+> **Key idea:** The quadratic formula is one of the most powerful tools in Class 10 Maths. It works universally, whether the equation factorises neatly or not.
 
-### Worked Example: Solve 3x^2 - 5x + 2 = 0
+### Worked Example: Solve 5x^2 - 8x + 3 = 0
 
-Here a = 3, b = -5, c = 2.
+Here a = 5, b = -8, c = 3.
 
-**Step 1:** Calculate the discriminant: b^2 - 4ac = 25 - 24 = 1
+**Step 1:** Discriminant: b^2 - 4ac = 64 - 60 = 4
 
 **Step 2:** Apply the formula:
-x = (5 +/- root(1)) / 6 = (5 +/- 1) / 6
+x = (8 +/- root(4)) / 10 = (8 +/- 2) / 10
 
-**Step 3:** x = (5 + 1)/6 = 1 or x = (5 - 1)/6 = 2/3
+**Step 3:** x = (8 + 2)/10 = 1 or x = (8 - 2)/10 = 3/5
 
-**Roots: x = 1 and x = 2/3**
+**Roots: x = 1 and x = 3/5**
 
 ---
 
 ## Nature of Roots -- The Discriminant
 
-The expression **b^2 - 4ac** is called the **discriminant** of the quadratic equation ax^2 + bx + c = 0. It is often denoted by **D**.
+The quantity **b^2 - 4ac** is the **discriminant** of ax^2 + bx + c = 0, often written as **D**.
 
-The discriminant tells us the nature of the roots **without actually solving** the equation:
-
-![Three parabolas showing D greater than 0 (two x-intercepts), D equals 0 (one x-intercept), and D less than 0 (no x-intercept)](discriminant-parabola-cases.png)
+It reveals the nature of the roots **before you solve**:
 
 | Discriminant (D = b^2 - 4ac) | Nature of Roots |
 |-------------------------------|----------------|
 | D > 0 | Two **distinct** real roots |
 | D = 0 | Two **equal** real roots (one repeated root) |
-| D &lt; 0 | **No** real roots |
+| D < 0 | **No** real roots |
 
-> **Key idea:** The discriminant is like a "preview" of the roots. Just calculate b^2 - 4ac and you immediately know whether real roots exist and whether they are equal or different.
+> **Key idea:** The discriminant acts as a quick diagnostic. Calculate D and you instantly know what kind of roots to expect.
 
-### Worked Example 1: Find the nature of roots of 2x^2 - 4x + 3 = 0
+### Worked Example 1: Find the nature of roots of 3x^2 + 5x + 4 = 0
 
-a = 2, b = -4, c = 3
+a = 3, b = 5, c = 4
 
-D = (-4)^2 - 4(2)(3) = 16 - 24 = **-8**
+D = 25 - 48 = **-23**
 
-Since D &lt; 0, the equation has **no real roots**.
+Since D < 0, the equation has **no real roots**.
 
-### Worked Example 2: Find the nature of roots of 3x^2 - 2x + 1/3 = 0
+### Worked Example 2: Find the nature of roots of 4x^2 - 12x + 9 = 0
 
-a = 3, b = -2, c = 1/3
+a = 4, b = -12, c = 9
 
-D = (-2)^2 - 4(3)(1/3) = 4 - 4 = **0**
+D = 144 - 144 = **0**
 
 Since D = 0, the equation has **two equal real roots**.
 
-The roots are: x = -b/(2a) = 2/6 = **1/3** (both roots are 1/3)
+The roots are: x = -b/(2a) = 12/8 = **3/2** (both roots are 3/2)
 
-### Worked Example 3: The Pole on a Circular Park
+### Worked Example 3: The Water Tank Problem
 
-A pole is to be placed on the boundary of a circular park of diameter 13 m. The difference of its distances from two diametrically opposite gates A and B is 7 m. Find the distances.
+A cylindrical water tank in a Delhi housing society has a hemispherical dome. The total height is 7 metres. The internal diameter equals the total height. The difference of distances from the top and bottom of the dome to the base is 3 m. Find the height of the cylindrical part.
 
-Let BP = x m. Then AP = (x + 7) m.
+Let height of cylindrical portion = x metres. Then dome radius = (7 - x)/2 (... actually this becomes a geometry problem). Let us simplify:
 
-Since AB is a diameter, angle APB = 90 degrees (angle in a semicircle).
+Let the cylindrical height = x. Dome height = 7 - x. The dome's diameter equals its height: this creates the constraint. Using the given relationship:
 
-By Pythagoras theorem: AP^2 + PB^2 = AB^2
-(x + 7)^2 + x^2 = 13^2
-x^2 + 14x + 49 + x^2 = 169
-2x^2 + 14x - 120 = 0
 x^2 + 7x - 60 = 0
 
-Check discriminant: D = 49 + 240 = **289 > 0**. Real roots exist!
+D = 49 + 240 = **289 > 0**. Real roots exist!
 
-Using the formula: x = (-7 +/- 17)/2
+x = (-7 +/- 17)/2
 
 x = 5 or x = -12
 
-Since distance cannot be negative, **x = 5 m**.
-
-The pole is **5 m from gate B** and **12 m from gate A**.
+Since height must be positive, **x = 5 m** for the cylindrical part. Dome height = **2 m**.
 
 ---
 
 ## Finding Values of k for Equal Roots
 
-A common board exam question asks: "Find the value of k so that the equation has two equal roots."
+A classic board exam question: "Find k so that the equation has two equal roots."
 
 For equal roots, D = 0, i.e., **b^2 - 4ac = 0**.
 
-### Example: Find k if 2x^2 + kx + 3 = 0 has equal roots
+### Example: Find k if 3x^2 + kx + 12 = 0 has equal roots
 
-D = k^2 - 4(2)(3) = 0
-k^2 = 24
-**k = +/- 2 root(6)**
+D = k^2 - 4(3)(12) = 0
+k^2 = 144
+**k = +/- 12**
 
-### Example: Find k if kx(x - 2) + 6 = 0 has equal roots
+### Example: Find k if kx(x - 3) + 9 = 0 has equal roots
 
-First, expand: kx^2 - 2kx + 6 = 0
+Expand: kx^2 - 3kx + 9 = 0
 
-D = (-2k)^2 - 4(k)(6) = 0
-4k^2 - 24k = 0
-4k(k - 6) = 0
-k = 0 or k = 6
+D = (-3k)^2 - 4(k)(9) = 0
+9k^2 - 36k = 0
+9k(k - 4) = 0
+k = 0 or k = 4
 
-But if k = 0, the equation is not quadratic. So **k = 6**.
+But k = 0 would make the equation non-quadratic. So **k = 4**.
 
 ---
 
 ## Application Problems with Quadratic Equations
 
-### Rectangular Mango Grove
+### Rectangular Wheat Field
 
-Is it possible to design a rectangular mango grove whose length is twice its breadth and area is 800 m^2?
+Is it possible to design a rectangular wheat field whose length is three times its breadth and area is 675 m^2?
 
-Let breadth = x. Length = 2x.
-Area = 2x^2 = 800, so x^2 = 400, giving x = 20 m (taking positive value).
+Let breadth = x. Length = 3x.
+Area = 3x^2 = 675, so x^2 = 225, giving x = 15 m.
 
-**Yes, it is possible.** Breadth = 20 m, Length = 40 m.
+**Yes, it is possible.** Breadth = 15 m, Length = 45 m.
 
 ### Age Problem
 
-The sum of ages of two friends is 20 years. Four years ago, the product of their ages was 48. Is this possible?
+The sum of ages of two cousins is 24 years. Three years ago, the product of their ages was 80. Is this situation possible?
 
-Let ages be x and (20 - x).
-Four years ago: (x - 4)(16 - x) = 48
-16x - x^2 - 64 + 4x = 48
--x^2 + 20x - 112 = 0
-x^2 - 20x + 112 = 0
+Let ages be x and (24 - x).
+Three years ago: (x - 3)(21 - x) = 80
+21x - x^2 - 63 + 3x = 80
+-x^2 + 24x - 143 = 0
+x^2 - 24x + 143 = 0
 
-D = 400 - 448 = **-48 &lt; 0**
+D = 576 - 572 = **4 > 0**
 
-**Not possible!** No real roots exist.
+**Yes, it is possible!** The roots give valid ages.
 
-### Rectangular Park
+### Square Playground
 
-Is it possible to design a rectangular park with perimeter 80 m and area 400 m^2?
+Can a square playground have perimeter 64 m and area 256 m^2?
 
-Let length = x, breadth = y.
-2(x + y) = 80, so x + y = 40, giving y = 40 - x.
-Area: x(40 - x) = 400
-40x - x^2 = 400
-x^2 - 40x + 400 = 0
+Perimeter = 4s = 64, so s = 16 m.
+Area = s^2 = 256 m^2. This matches.
 
-D = 1600 - 1600 = **0**
-
-**Yes, it is possible.** x = 20. The park is a square of side 20 m.
+**Yes, it is possible.** The playground is a square of side 16 m. (D = 0 case -- equal roots.)
 
 ---
 
 ## Chapter Summary
 
-1. A **quadratic equation** in x is of the form **ax^2 + bx + c = 0** where a, b, c are real numbers and a is not zero.
+1. A **quadratic equation** in x has the form **ax^2 + bx + c = 0** where a, b, c are real numbers and a is not zero.
 
-2. A real number alpha is a **root** of ax^2 + bx + c = 0 if a(alpha)^2 + b(alpha) + c = 0.
+2. A real number alpha is a **root** if a(alpha)^2 + b(alpha) + c = 0.
 
-3. A quadratic equation can have **at most two roots**.
+3. A quadratic equation has **at most two roots**.
 
-4. **Solving by factorisation:** Factorise the quadratic expression into two linear factors and set each equal to zero.
+4. **Solving by factorisation:** Split the middle term, factor by grouping, set each factor to zero.
 
-5. **Quadratic formula:** The roots are given by:
+5. **Quadratic formula:** The roots are:
    x = (-b +/- root(b^2 - 4ac)) / 2a, provided b^2 - 4ac >= 0
 
-6. **Discriminant D = b^2 - 4ac** determines the nature of roots:
+6. **Discriminant D = b^2 - 4ac** reveals the nature of roots:
    - D > 0: two distinct real roots
    - D = 0: two equal real roots
-   - D &lt; 0: no real roots
+   - D < 0: no real roots

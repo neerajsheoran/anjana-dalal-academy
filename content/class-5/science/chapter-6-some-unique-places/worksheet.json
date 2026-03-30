@@ -1,148 +1,185 @@
 {
   "topics": [
     {
-      "topic": "Andaman and Nicobar Islands and the Sundarbans",
+      "topic": "The Andaman and Nicobar Islands and The Sundarbans -- Home of the Mangroves",
       "easy": [
         {
           "id": "ch6-t1-e1",
           "type": "mcq",
-          "question": "Where is Indira Point, the southernmost tip of India, located?",
-          "options": ["Kerala", "Tamil Nadu", "Andaman and Nicobar Islands", "Lakshadweep"],
+          "question": "Which part of India is Indira Point, the southernmost tip of the country?",
+          "options": [
+            "Lakshadweep",
+            "Kerala",
+            "Andaman and Nicobar Islands",
+            "Tamil Nadu"
+          ],
           "answer": "Andaman and Nicobar Islands",
-          "explanation": "Indira Point is located in the Andaman and Nicobar Islands, which are a chain of islands in the Bay of Bengal."
+          "explanation": "Indira Point lies at the southern end of the Andaman and Nicobar island chain in the Bay of Bengal."
         },
         {
           "id": "ch6-t1-e2",
           "type": "fill",
-          "question": "Tiny sea animals that build colourful structures underwater are called ______.",
+          "question": "Tiny sea creatures that build colourful hard structures underwater over hundreds of years are called ______.",
           "answer": "corals",
-          "explanation": "Corals are tiny sea animals that build colourful structures called coral reefs underwater. These reefs give shelter to many fish and sea creatures."
+          "explanation": "Corals are tiny living animals that build hard shells around themselves. Over centuries, millions of corals form large underwater structures called coral reefs."
         },
         {
           "id": "ch6-t1-e3",
           "type": "mcq",
-          "question": "The Sundarbans in West Bengal is the world's largest ______ forest.",
-          "options": ["Bamboo", "Pine", "Mangrove", "Tropical"],
+          "question": "The Sundarbans in West Bengal is the world's largest forest of which type of tree?",
+          "options": [
+            "Bamboo",
+            "Teak",
+            "Mangrove",
+            "Pine"
+          ],
           "answer": "Mangrove",
-          "explanation": "The Sundarbans is the largest mangrove forest in the world. Mangroves are special trees that grow in wet, muddy, and salty land where rivers meet the sea."
+          "explanation": "The Sundarbans is the largest mangrove forest on Earth. Mangroves are unique trees that grow in salty, muddy, water-logged soil where rivers meet the sea."
         },
         {
           "id": "ch6-t1-e4",
           "type": "mcq",
-          "question": "Which famous animal is the Sundarbans known for?",
-          "options": ["Asian elephant", "Snow leopard", "Royal Bengal Tiger", "Indian rhinoceros"],
+          "question": "Which animal is the Sundarbans most famous for?",
+          "options": [
+            "Snow leopard",
+            "Indian rhinoceros",
+            "Royal Bengal Tiger",
+            "Asian elephant"
+          ],
           "answer": "Royal Bengal Tiger",
-          "explanation": "The Sundarbans is famous for the Royal Bengal Tiger. These tigers are excellent swimmers."
+          "explanation": "The Sundarbans is known worldwide for its Royal Bengal Tigers, which are excellent swimmers and have adapted to life in a watery mangrove habitat."
         },
         {
           "id": "ch6-t1-e5",
           "type": "fill",
-          "question": "An ______ is land surrounded by water on all sides.",
+          "question": "A piece of land that has water all around it is called an ______.",
           "answer": "island",
-          "explanation": "An island is a piece of land that is surrounded by water on all sides. India has over a thousand islands in the seas around it."
+          "explanation": "An island is land surrounded by water on all sides. India has over a thousand islands in the seas around it."
         }
       ],
       "medium": [
         {
           "id": "ch6-t1-m1",
           "type": "short",
-          "question": "Why are some animals found only on islands and nowhere else in the world?",
-          "answer": "Islands are surrounded by water, so animals and plants there evolve separately from those on the mainland. Over thousands of years, they become unique and different. For example, the Andaman wood pigeon and the Andaman hornbill are found only in the Andaman and Nicobar Islands.",
-          "explanation": "The water surrounding islands acts as a barrier, keeping island species isolated. Over a long time, these species develop unique features not seen anywhere else."
+          "question": "Why do islands often have plants and animals that are not found anywhere else in the world?",
+          "answer": "Islands are surrounded by water, which acts like a barrier. Animals and plants on islands cannot easily travel to other places, and mainland species cannot easily reach them. Over thousands of years, the island species develop unique features and become different from their mainland relatives. This is why creatures like the Andaman wood pigeon and Andaman hornbill exist only in the Andaman Islands.",
+          "explanation": "The water barrier around islands keeps species isolated for long periods, causing them to evolve separately and become unique."
         },
         {
           "id": "ch6-t1-m2",
           "type": "short",
-          "question": "What makes mangrove trees special? How do their roots help them survive?",
-          "answer": "Mangrove trees are special because they can grow in wet, muddy, and salty land where most trees cannot survive. Their roots grow above the water to help the trees breathe in the muddy salt water. These roots also hold the soil together and prevent waves from washing the land away.",
-          "explanation": "Mangroves have adapted to survive in harsh coastal environments. Their above-water roots serve a double purpose — breathing and preventing soil erosion."
+          "question": "How are mangrove tree roots different from ordinary tree roots, and how do these roots help them survive?",
+          "answer": "Mangrove tree roots grow above the water surface, unlike ordinary trees whose roots stay underground. These raised roots help the trees breathe in the salty, muddy ground where there is very little air. The roots also grip the soil extremely tightly, preventing ocean waves and storms from washing the land away. This allows mangroves to survive in conditions where most other trees would die.",
+          "explanation": "Mangrove roots serve two purposes -- they help the tree breathe in waterlogged soil and they protect the coastline from erosion."
         },
         {
           "id": "ch6-t1-m3",
           "type": "mcq",
-          "question": "Why do people in the Sundarbans sometimes wear masks on the back of their heads?",
-          "options": ["To protect from the sun", "Because tigers usually attack from behind", "To scare away snakes", "As part of a festival tradition"],
+          "question": "Why do people in the Sundarbans sometimes wear face masks on the back of their heads?",
+          "options": [
+            "To block the sun",
+            "Because tigers usually attack from behind",
+            "To frighten away snakes",
+            "As part of a local tradition"
+          ],
           "answer": "Because tigers usually attack from behind",
-          "explanation": "Tigers usually attack from behind. The mask on the back of the head confuses the tiger into thinking the person is facing it, which can prevent an attack."
+          "explanation": "Tigers are ambush hunters that prefer to attack from behind. A face mask on the back of the head tricks the tiger into thinking the person is watching it, making the tiger hesitate."
         }
       ],
       "hard": [
         {
           "id": "ch6-t1-h1",
           "type": "long",
-          "question": "North Sentinel Island is one of the most mysterious places in India. What do we know about the people living there? How did they survive the 2004 tsunami?",
-          "answer": "The people living on North Sentinel Island follow an ancient way of life, similar to hunter-gatherers from thousands of years ago. They do not want visitors, and no one is allowed to go there. In 2004, when a tsunami hit the region, the Sentinelese people survived, possibly by reading natural signs like changes in wind, sea, and animal behaviour. Their deep connection with nature helped keep them safe. This shows how understanding nature's signs can save lives.",
-          "explanation": "The Sentinelese people's survival during the tsunami demonstrates the value of indigenous knowledge and a deep connection with the natural environment."
+          "question": "North Sentinel Island is one of the most mysterious places in India. What do we know about the people who live there, and how did they survive the 2004 tsunami?",
+          "answer": "The people of North Sentinel Island live an ancient way of life, similar to hunter-gatherers from thousands of years ago. They hunt animals, catch fish, and gather food from the forest and sea. They do not welcome outsiders, and the Indian government has made it illegal for anyone to visit the island. During the 2004 tsunami, the Sentinelese survived because they could read warning signs from nature -- shifts in the wind direction, changes in the sea, and unusual animal behaviour. Their deep knowledge of the natural world, passed down through generations, acted as their early warning system and kept them safe.",
+          "explanation": "The Sentinelese survival during the tsunami demonstrates how valuable traditional knowledge of nature can be, sometimes rivalling modern technology in effectiveness."
         }
-      ]
+      ],
+      "name": "India -- A Land of Unique Places"
     },
     {
-      "topic": "Northeast India and the Western Ghats",
+      "topic": "Northeast India -- Green Hills and Great Traditions and The Western Ghats -- A Nature Hotspot",
       "easy": [
         {
           "id": "ch6-t2-e1",
           "type": "mcq",
           "question": "How many states make up Northeast India?",
-          "options": ["Five", "Six", "Seven", "Eight"],
+          "options": [
+            "Five",
+            "Six",
+            "Seven",
+            "Eight"
+          ],
           "answer": "Eight",
-          "explanation": "Northeast India has eight states — the seven 'Seven Sisters' (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura) and Sikkim."
+          "explanation": "Northeast India has eight states -- the seven 'Seven Sisters' (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura) and Sikkim."
         },
         {
           "id": "ch6-t2-e2",
           "type": "fill",
-          "question": "The living root bridges in ______ are made from roots of rubber fig trees.",
+          "question": "The living root bridges in ______ are made by guiding the roots of rubber fig trees across streams.",
           "answer": "Meghalaya",
-          "explanation": "In Meghalaya, people guided the roots of rubber fig trees across streams over many years. The roots grew strong enough for people to walk on, forming living root bridges."
+          "explanation": "In Meghalaya, the Khasi people guide roots of rubber fig trees across streams over 15 to 20 years, creating living bridges that grow stronger with age."
         },
         {
           "id": "ch6-t2-e3",
           "type": "mcq",
-          "question": "The Western Ghats are described as one of the world's ______.",
-          "options": ["Driest deserts", "Coldest mountains", "Biodiversity hotspots", "Largest rivers"],
+          "question": "The Western Ghats are recognised as one of the world's ______.",
+          "options": [
+            "Driest deserts",
+            "Coldest mountain ranges",
+            "Biodiversity hotspots",
+            "Longest river systems"
+          ],
           "answer": "Biodiversity hotspots",
-          "explanation": "The Western Ghats are a biodiversity hotspot — a place with an extraordinary variety of plants and animals, many found nowhere else on Earth."
+          "explanation": "The Western Ghats are a biodiversity hotspot -- a region packed with an astonishing variety of plants and animals, many of which exist only here."
         },
         {
           "id": "ch6-t2-e4",
           "type": "mcq",
-          "question": "Which is the wettest inhabited place on Earth?",
-          "options": ["Cherrapunji", "Mawsynram", "Shillong", "Guwahati"],
+          "question": "Which place holds the record as the wettest inhabited place on Earth?",
+          "options": [
+            "Cherrapunji",
+            "Mawsynram",
+            "Shillong",
+            "Guwahati"
+          ],
           "answer": "Mawsynram",
-          "explanation": "Mawsynram in Meghalaya is the wettest inhabited place on Earth — it receives the most rainfall of any place where people live."
+          "explanation": "Mawsynram in Meghalaya receives more rainfall than any other place on Earth where people live, making it the wettest inhabited place."
         }
       ],
       "medium": [
         {
           "id": "ch6-t2-m1",
           "type": "short",
-          "question": "What was the Save Silent Valley Movement? Why was it important?",
-          "answer": "The Silent Valley National Park in Kerala is a precious rainforest. A dam was planned that would have flooded this entire forest. But villagers, students, and scientists joined together in the Save Silent Valley Movement and stopped the dam. It was important because it saved a unique rainforest and showed how people can protect nature when they care enough to act together.",
-          "explanation": "The Save Silent Valley Movement is an inspiring example of people coming together to protect the environment against harmful development projects."
+          "question": "What was the Save Silent Valley Movement and why did it matter?",
+          "answer": "Silent Valley in Kerala is an ancient rainforest. The government once planned to build a dam that would have flooded and destroyed this entire forest. But villagers, students, teachers, and scientists came together in the Save Silent Valley Movement to protest. Their efforts succeeded -- the dam was cancelled and Silent Valley became a protected national park. It mattered because it saved a precious ecosystem and proved that ordinary people can make a real difference when they unite for a cause.",
+          "explanation": "The Save Silent Valley Movement is a landmark example of citizens coming together to protect the environment from harmful development."
         },
         {
           "id": "ch6-t2-m2",
           "type": "short",
-          "question": "Name two unique animal species found in the Western Ghats and explain what makes them special.",
-          "answer": "1. The lion-tailed macaque is a rare monkey found only in the Western Ghats — it cannot be found anywhere else in the world. 2. The Indian giant squirrel is known for its bright colours and is also unique to this region. The Western Ghats also shelter tigers, elephants, and hornbills.",
-          "explanation": "The Western Ghats are home to many endemic species — animals found nowhere else on Earth — making it one of the world's most important regions for wildlife conservation."
+          "question": "Name two animals that are found only in the Western Ghats and explain what makes them special.",
+          "answer": "1. The lion-tailed macaque is a shy monkey that lives only in the forests of the Western Ghats -- it cannot be found anywhere else on the planet. 2. The Indian giant squirrel is famous for its striking multi-coloured fur and is unique to this region. The Western Ghats also shelter tigers, elephants, and hornbills in their protected forests.",
+          "explanation": "The Western Ghats are home to many endemic species -- animals found nowhere else on Earth -- which makes this region one of the most important areas for wildlife conservation."
         }
       ],
       "hard": [
         {
           "id": "ch6-t2-h1",
           "type": "long",
-          "question": "India has many unique places — from the Andaman Islands to the Western Ghats. Pick any two places from the chapter and explain what makes each one unique, what wildlife is found there, and why it needs to be protected.",
-          "answer": "1. Andaman and Nicobar Islands: These islands are unique because of their coral reefs underwater, which are like underwater cities sheltering many fish and sea creatures. Unique wildlife includes the Andaman wood pigeon and Andaman hornbill, found only on these islands. They need protection because coral reefs are delicate and can be destroyed by pollution and climate change. 2. Western Ghats: This long chain of forested hills is a biodiversity hotspot with species like the lion-tailed macaque and Indian giant squirrel found nowhere else. Several major rivers like Godavari, Krishna, and Kaveri begin here. The Western Ghats need protection because deforestation and development threaten the habitat of thousands of unique species. The government has created over 50 protected areas here.",
-          "explanation": "Each unique place in India has its own special ecosystems and wildlife that need protection. Understanding what makes these places special helps us appreciate why conservation is so important."
+          "question": "India has many unique regions -- from the Andaman Islands to the Western Ghats. Choose any two places from the chapter and explain what makes each one unique, what wildlife lives there, and why it needs protection.",
+          "answer": "1. Andaman and Nicobar Islands: These islands are unique because they are isolated in the Bay of Bengal, allowing animals like the Andaman wood pigeon and Andaman hornbill to evolve into species found nowhere else. The coral reefs around them create underwater habitats for thousands of marine creatures. They need protection because coral reefs are fragile and can be destroyed by pollution and rising sea temperatures. 2. Western Ghats: This ancient chain of forested hills is a biodiversity hotspot with species like the lion-tailed macaque and Indian giant squirrel that exist only here. Major rivers including the Godavari, Krishna, and Kaveri are born in these hills. The Western Ghats need protection because deforestation and development threaten thousands of unique species, and destroying these forests would disrupt water supply for millions of people.",
+          "explanation": "Each unique place in India has irreplaceable ecosystems and wildlife. Understanding what makes them special helps us appreciate why conservation efforts are vital."
         },
         {
           "id": "ch6-t2-h2",
           "type": "long",
           "question": "What are protected areas? Why does the government create national parks, wildlife sanctuaries, and tiger reserves? Give examples from the chapter.",
-          "answer": "Protected areas are special regions created by the government where trees cannot be cut and animals cannot be harmed. The government creates national parks, wildlife sanctuaries, and tiger reserves to keep animals, plants, and forests safe from human activities like deforestation and hunting. Examples from the chapter include: Kawal Tiger Reserve and Pench National Park along the Godavari, Coringa Wildlife Sanctuary in the delta region, and the Western Ghats which alone have over 50 protected areas including Silent Valley National Park in Kerala. India has around 75 per cent of the world's wild tigers thanks to such conservation efforts.",
-          "explanation": "Protected areas are essential for preserving biodiversity. By limiting human activities in these regions, the government ensures that wildlife habitats remain safe and species can thrive."
+          "answer": "Protected areas are special regions created by the government where cutting trees and harming animals is strictly forbidden. The government creates national parks, wildlife sanctuaries, and tiger reserves to safeguard precious habitats and the plants and animals that live in them. Without protection, these areas could be destroyed by logging, farming, or construction. Examples from the chapter include Silent Valley National Park in Kerala, which was saved from being flooded by a dam through the Save Silent Valley Movement. The Western Ghats alone contain over 50 protected areas. India is home to approximately 75 per cent of the world's wild tigers, and tiger reserves play a crucial role in keeping these magnificent animals safe.",
+          "explanation": "Protected areas are essential for preserving India's incredible biodiversity. By limiting human activities in these regions, the government ensures that wildlife habitats remain safe for future generations."
         }
-      ]
+      ],
+      "name": "The Andaman and Nicobar Islands"
     }
   ]
 }

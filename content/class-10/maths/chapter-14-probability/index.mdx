@@ -1,14 +1,16 @@
 ---
-title: Chapter 14 Probability
+title: "Chances and Probability"
+description: "Understand theoretical probability, compute probabilities of simple events, and solve real-life problems."
+order: 14
 ---
 
 ## Introduction
 
-In Class 9, you studied **experimental (empirical) probability** -- you actually performed experiments (like tossing a coin 100 times) and calculated probability based on the results.
+In Class 9, you explored **experimental (empirical) probability** -- you physically performed experiments (like rolling a die 50 times) and recorded what happened. The probability was based on actual observations.
 
-In this chapter, we study **theoretical (classical) probability** -- we calculate probability based on **logical reasoning**, without actually performing the experiment. This is the kind of probability used in board exams and competitive exams.
+In this chapter, you study **theoretical (classical) probability** -- probability computed through **logical reasoning** rather than actual experiments. This is the approach used in board exams, competitive exams, and most real-world applications.
 
-The study of probability began in the 16th century with the Italian mathematician **J. Cardan**, who wrote the first book on the subject. Later, **Pierre Simon Laplace** (1749-1827) made the greatest contribution to the theory.
+The formal study of probability has a fascinating history. The Italian mathematician **Gerolamo Cardano** (16th century) wrote one of the earliest treatises on it. Later, **Pierre-Simon Laplace** (1749-1827) developed much of the classical theory we use today.
 
 ---
 
@@ -16,31 +18,31 @@ The study of probability began in the 16th century with the Italian mathematicia
 
 ### Experiment and Outcomes
 
-An **experiment** is an action that produces well-defined results called **outcomes**.
+A **random experiment** is an action whose result cannot be predicted with certainty. Each possible result is called an **outcome**.
 
 **Examples:**
-- Tossing a coin: outcomes are Head (H) and Tail (T)
-- Throwing a die: outcomes are 1, 2, 3, 4, 5, 6
-- Drawing a card from a deck: outcomes are any of the 52 cards
+- Spinning a coin: outcomes are Head (H) and Tail (T)
+- Rolling a die: outcomes are 1, 2, 3, 4, 5, 6
+- Picking a card from a shuffled pack: outcomes are any of the 52 cards
 
 ### Equally Likely Outcomes
 
-Outcomes are **equally likely** if each outcome has the same chance of occurring.
+Outcomes are **equally likely** when no single outcome is favoured over another.
 
-- A fair coin: Head and Tail are equally likely
-- A fair die: 1, 2, 3, 4, 5, 6 are equally likely
-- A bag with 4 red and 1 blue ball: drawing a red ball is MORE likely than blue -- these outcomes are **not** equally likely
+- A balanced coin: Head and Tail are equally likely
+- A fair die: each face 1 through 6 is equally likely
+- A bag with 5 green and 2 yellow marbles: drawing green is more likely than yellow -- these outcomes are **not** equally likely at the individual marble level, but each marble is equally likely
 
-> **Key idea:** The probability formulas in this chapter apply ONLY when all outcomes are equally likely.
+> **Core insight:** The probability formula taught in this chapter works ONLY when all outcomes are equally likely.
 
 ### Event
 
-An **event** is a collection of one or more outcomes.
+An **event** is any collection of outcomes.
 
-- "Getting an even number on a die" is an event (outcomes 2, 4, 6)
-- "Getting a head on a coin" is an event (outcome H)
+- "Rolling an odd number on a die" is an event (outcomes 1, 3, 5)
+- "Getting tails on a coin" is an event (outcome T)
 
-An **elementary event** has only one outcome. The sum of probabilities of all elementary events is always **1**.
+An **elementary event** consists of exactly one outcome. The probabilities of all elementary events always sum to **1**.
 
 ---
 
@@ -48,65 +50,65 @@ An **elementary event** has only one outcome. The sum of probabilities of all el
 
 The **theoretical probability** of an event E is:
 
-**P(E) = Number of outcomes favourable to E / Total number of possible outcomes**
+**P(E) = Number of outcomes favourable to E / Total number of equally likely outcomes**
 
-This assumes all outcomes are equally likely.
+This definition assumes all outcomes are equally likely.
 
-> **Key idea:** Probability is always a fraction -- favourable outcomes divided by total outcomes. It tells us how likely something is to happen.
+> **Core insight:** Probability is a ratio -- favourable outcomes divided by total outcomes. It measures how likely an event is.
 
 ---
 
-## Important Rules of Probability
+## Fundamental Rules of Probability
 
-### Rule 1: Probability Range
+### Rule 1: Probability Always Lies Between 0 and 1
 
-**0 <= P(E) <= 1** for any event E.
+**0 <= P(E) <= 1** for every event E.
 
-- P(E) = 0 means the event is **impossible** (can never happen)
-- P(E) = 1 means the event is **certain** (will definitely happen)
-- Values between 0 and 1 represent varying degrees of likelihood
+- P(E) = 0 means the event is **impossible** (can never occur)
+- P(E) = 1 means the event is **certain** (will always occur)
+- Values between 0 and 1 indicate varying degrees of likelihood
 
 ### Rule 2: Complementary Events
 
 **P(E) + P(not E) = 1**
 
-or equivalently: **P(not E) = 1 - P(E)**
+which gives: **P(not E) = 1 - P(E)**
 
-"Not E" (written as E-bar) is called the **complement** of event E.
+"Not E" (denoted E-bar) is the **complement** of E -- it represents all outcomes that are not in E.
 
-**Example:** If the probability of rain is 0.3, then the probability of no rain is 1 - 0.3 = **0.7**.
+**Example:** If the probability that a train arrives on time is 0.85, the probability it is late is 1 - 0.85 = **0.15**.
 
-### Rule 3: Sum of All Elementary Events
+### Rule 3: Sum of Elementary Event Probabilities
 
-The probabilities of all elementary events add up to **1**.
+The probabilities of all elementary events always add up to **1**.
 
 ---
 
 ## Worked Examples: Coins
 
-### Example 1: Tossing One Coin
+### Example 1: Flipping One Coin
 
 Possible outcomes: {H, T}. Total = 2.
 
 - P(Head) = 1/2
 - P(Tail) = 1/2
-- P(Head) + P(Tail) = 1. Verified!
+- Verification: 1/2 + 1/2 = 1
 
-### Example 2: Tossing Two Coins
+### Example 2: Flipping Two Coins
 
 Possible outcomes: {HH, HT, TH, TT}. Total = 4.
 
-- P(at least one head) = 3/4 (favourable: HH, HT, TH)
-- P(exactly one head) = 2/4 = 1/2 (favourable: HT, TH)
-- P(no head) = 1/4 (favourable: TT)
-- P(both heads) = 1/4 (favourable: HH)
+- P(at least one tail) = 3/4 (favourable: HT, TH, TT)
+- P(exactly one tail) = 2/4 = 1/2 (favourable: HT, TH)
+- P(no tail) = 1/4 (favourable: HH)
+- P(both tails) = 1/4 (favourable: TT)
 
-### Example 3: Tossing Three Coins
+### Example 3: Flipping Three Coins
 
 Possible outcomes: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. Total = 8.
 
-- P(all same result) = 2/8 = 1/4 (favourable: HHH, TTT)
-- P(not all same) = 1 - 1/4 = **3/4**
+- P(all identical) = 2/8 = 1/4 (favourable: HHH, TTT)
+- P(not all identical) = 1 - 1/4 = **3/4**
 
 ---
 
@@ -116,45 +118,45 @@ Possible outcomes: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. Total = 8.
 
 Possible outcomes: {1, 2, 3, 4, 5, 6}. Total = 6.
 
-- P(getting 4) = 1/6
-- P(getting an even number) = 3/6 = 1/2 (favourable: 2, 4, 6)
-- P(getting a prime number) = 3/6 = 1/2 (favourable: 2, 3, 5)
-- P(number greater than 4) = 2/6 = 1/3 (favourable: 5, 6)
-- P(number less than 7) = 6/6 = **1** (certain event)
-- P(getting 8) = 0/6 = **0** (impossible event)
+- P(rolling a 3) = 1/6
+- P(even number) = 3/6 = 1/2 (favourable: 2, 4, 6)
+- P(prime number) = 3/6 = 1/2 (favourable: 2, 3, 5)
+- P(number above 3) = 3/6 = 1/2 (favourable: 4, 5, 6)
+- P(number below 7) = 6/6 = **1** (certain event)
+- P(rolling a 9) = 0/6 = **0** (impossible event)
 
 ### Two Dice
 
-When two dice are thrown, each die can show 1-6. Total outcomes = 6 x 6 = **36**.
+When two dice are rolled together, each die shows 1-6. Total outcomes = 6 x 6 = **36**.
 
 ![6 by 6 grid showing all 36 outcomes when two dice are thrown, with highlighted cells for sum equals 7](two-dice-sample-space-grid.png)
 
-The 36 outcomes can be listed as ordered pairs (die1, die2):
+The 36 outcomes as ordered pairs (die1, die2):
 (1,1), (1,2), ..., (1,6), (2,1), (2,2), ..., (6,6)
 
-**Common questions:**
+**Frequently asked probabilities:**
 
 | Event | Favourable outcomes | Count | Probability |
 |-------|-------------------|-------|-------------|
 | Sum = 7 | (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) | 6 | 6/36 = 1/6 |
-| Sum = 8 | (2,6), (3,5), (4,4), (5,3), (6,2) | 5 | 5/36 |
+| Sum = 9 | (3,6), (4,5), (5,4), (6,3) | 4 | 4/36 = 1/9 |
 | Sum = 2 | (1,1) | 1 | 1/36 |
 | Sum = 12 | (6,6) | 1 | 1/36 |
-| Sum = 13 | none | 0 | 0 (impossible) |
-| Doublet (same number) | (1,1), (2,2), ..., (6,6) | 6 | 6/36 = 1/6 |
+| Sum = 14 | none | 0 | 0 (impossible) |
+| Same number on both | (1,1), (2,2), ..., (6,6) | 6 | 6/36 = 1/6 |
 
 ---
 
 ## Worked Examples: Playing Cards
 
-A standard deck has **52 cards** divided into **4 suits** of 13 cards each:
+A standard pack contains **52 cards** in **4 suits** of 13 cards each:
 
 ![Standard deck of 52 playing cards organized by four suits: spades, clubs (black) and hearts, diamonds (red), with face cards highlighted](playing-cards-deck-layout.png)
 
-- **Spades** (black) and **Clubs** (black)
-- **Hearts** (red) and **Diamonds** (red)
+- **Spades** (black) and **Clubs** (black) -- 26 black cards
+- **Hearts** (red) and **Diamonds** (red) -- 26 red cards
 
-Each suit has: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
+Each suit contains: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
 
 **Face cards** = Jacks + Queens + Kings = 4 + 4 + 4 = **12** face cards
 
@@ -162,41 +164,41 @@ Each suit has: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
 
 | Event | Favourable | Probability |
 |-------|-----------|-------------|
-| A king | 4 | 4/52 = 1/13 |
-| Not a king | 48 | 48/52 = 12/13 |
-| A red card | 26 | 26/52 = 1/2 |
-| A face card | 12 | 12/52 = 3/13 |
-| A red king | 2 | 2/52 = 1/26 |
-| The queen of diamonds | 1 | 1/52 |
-| A spade | 13 | 13/52 = 1/4 |
 | An ace | 4 | 4/52 = 1/13 |
-| A red face card | 6 | 6/52 = 3/26 |
+| Not an ace | 48 | 48/52 = 12/13 |
+| A black card | 26 | 26/52 = 1/2 |
+| A face card | 12 | 12/52 = 3/13 |
 | A black queen | 2 | 2/52 = 1/26 |
+| The ace of hearts | 1 | 1/52 |
+| A diamond | 13 | 13/52 = 1/4 |
+| A king | 4 | 4/52 = 1/13 |
+| A red face card | 6 | 6/52 = 3/26 |
+| A club | 13 | 13/52 = 1/4 |
 
 ---
 
 ## Worked Examples: Balls and Marbles
 
-### Example: Bag of Marbles
+### Example: Bag of Coloured Balls
 
-A box contains 3 blue, 2 white, and 4 red marbles. One is drawn at random.
+A pouch holds 5 green, 3 orange, and 2 white balls. One ball is drawn at random.
 
-Total = 3 + 2 + 4 = 9
+Total = 5 + 3 + 2 = 10
 
-- P(white) = 2/9
-- P(blue) = 3/9 = 1/3
-- P(red) = 4/9
+- P(green) = 5/10 = 1/2
+- P(orange) = 3/10
+- P(white) = 2/10 = 1/5
 
-Check: 2/9 + 3/9 + 4/9 = 9/9 = 1. Verified!
+Verification: 1/2 + 3/10 + 1/5 = 5/10 + 3/10 + 2/10 = 10/10 = 1
 
-### Example: Defective Pens
+### Example: Faulty Light Bulbs
 
-12 defective pens are mixed with 132 good ones. One pen is drawn at random.
+A box contains 15 defective bulbs mixed with 135 working bulbs. One is drawn at random.
 
-Total = 12 + 132 = 144
+Total = 15 + 135 = 150
 
-- P(good pen) = 132/144 = **11/12**
-- P(defective pen) = 12/144 = 1/12
+- P(working bulb) = 135/150 = **9/10**
+- P(defective bulb) = 15/150 = 1/10
 
 ---
 
@@ -204,54 +206,54 @@ Total = 12 + 132 = 144
 
 ### Birthday Problem
 
-Two friends -- what is the probability they have different birthdays?
+Two classmates Arun and Meera -- what is the probability they share the same birthday?
 
-Assuming 365 days (ignoring leap years):
-- Total possibilities for second person's birthday = 365
+Assuming 365 days in a year:
+- Total possibilities for Meera's birthday = 365
 - Favourable outcomes for different birthday = 364
 
 P(different birthdays) = 364/365
 P(same birthday) = 1 - 364/365 = **1/365**
 
-### Defective Bulbs with Replacement Removed
+### Drawing Without Replacement
 
-A lot has 20 bulbs, 4 are defective.
+A bag has 25 balls, 5 of which are red.
 
-First draw: P(defective) = 4/20 = 1/5
+First draw: P(red) = 5/25 = 1/5
 
-If the first bulb drawn is NOT defective and is NOT replaced:
-- Remaining bulbs = 19 (4 defective, 15 good)
-- P(second bulb is good) = 15/19
+If the first ball drawn is NOT red and is NOT put back:
+- Remaining = 24 balls (5 red, 19 non-red)
+- P(second ball is non-red) = 19/24
 
-### Complementary Events in Games
+### Complementary Events in Sports
 
-Sangeeta and Reshma play tennis. P(Sangeeta wins) = 0.62.
+Virat and Rohit play a badminton match. P(Virat wins) = 0.55.
 
-P(Reshma wins) = 1 - 0.62 = **0.38**
+P(Rohit wins) = 1 - 0.55 = **0.45**
 
-(Since one of them must win, these are complementary events.)
+(Since one player must win, these are complementary events.)
 
 ---
 
-## Numbers from a Disc/Box
+## Numbers from a Container
 
-A box contains discs numbered 1 to 90. One is drawn at random.
+A jar has tokens numbered 1 to 80. One is picked at random.
 
-- P(two-digit number) = 81/90 = 9/10 (numbers 10 to 90 = 81 numbers)
-- P(perfect square) = 9/90 = 1/10 (squares: 1, 4, 9, 16, 25, 36, 49, 64, 81 = 9 numbers)
-- P(divisible by 5) = 18/90 = 1/5 (numbers: 5, 10, 15, ..., 90 = 18 numbers)
+- P(single-digit number) = 9/80 (numbers 1 to 9)
+- P(perfect square) = 8/80 = 1/10 (squares: 1, 4, 9, 16, 25, 36, 49, 64 = 8 numbers)
+- P(divisible by 4) = 20/80 = 1/4 (multiples: 4, 8, 12, ..., 80 = 20 numbers)
 
 ---
 
 ## Common Mistakes to Avoid
 
-1. **Not listing all outcomes correctly.** For two coins, the outcomes are HH, HT, TH, TT (4 outcomes), NOT "2 heads, 2 tails, 1 of each" (3 outcomes). HT and TH are different!
+1. **Listing outcomes incorrectly.** For two coins, the outcomes are HH, HT, TH, TT (4 outcomes), NOT "two heads, one of each, two tails" (3 outcomes). HT and TH are distinct!
 
-2. **Confusing "at least one" with "exactly one."** "At least one head" means 1 or more heads, which includes HH, HT, TH. "Exactly one head" means only HT and TH.
+2. **Mixing up "at least one" and "exactly one."** "At least one head" means one or more heads (HH, HT, TH). "Exactly one head" means only HT and TH.
 
-3. **Forgetting that probability cannot be negative or greater than 1.** If you get such a value, recheck your calculation.
+3. **Getting a probability outside [0,1].** If your answer is negative or exceeds 1, something has gone wrong.
 
-4. **Not checking if outcomes are equally likely.** The formula only works when all outcomes have the same chance.
+4. **Applying the formula when outcomes are not equally likely.** The formula only works when every outcome has the same chance.
 
 ---
 
@@ -260,20 +262,20 @@ A box contains discs numbered 1 to 90. One is drawn at random.
 1. **Theoretical probability** of event E:
    P(E) = (Number of favourable outcomes) / (Total number of equally likely outcomes)
 
-2. The probability of a **sure event** (certain event) is **1**.
+2. The probability of a **certain event** is **1**.
 
 3. The probability of an **impossible event** is **0**.
 
 4. For any event E: **0 <= P(E) <= 1**
 
-5. An **elementary event** has exactly one outcome. The sum of probabilities of all elementary events equals 1.
+5. An **elementary event** has exactly one outcome. All elementary event probabilities sum to 1.
 
-6. **Complementary events:** P(E) + P(not E) = 1, i.e., **P(not E) = 1 - P(E)**
+6. **Complementary events:** P(E) + P(not E) = 1, so **P(not E) = 1 - P(E)**
 
-7. Important total outcomes to remember:
+7. Key outcome counts to remember:
    - 1 coin: 2 outcomes
    - 2 coins: 4 outcomes
    - 3 coins: 8 outcomes
    - 1 die: 6 outcomes
    - 2 dice: 36 outcomes
-   - 1 card from deck: 52 outcomes
+   - 1 card from a pack: 52 outcomes

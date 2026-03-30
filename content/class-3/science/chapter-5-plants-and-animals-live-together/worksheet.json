@@ -6,38 +6,53 @@
         {
           "id": "ch5-t1-e1",
           "type": "mcq",
-          "question": "Where do squirrels hide and rest?",
-          "options": ["Under rocks", "In tree hollows", "In rivers", "On the ground"],
-          "answer": "In tree hollows",
-          "explanation": "Squirrels hide and rest in tree hollows. Trees provide shelter for many animals."
+          "question": "Where do squirrels make their homes?",
+          "options": [
+            "Under rocks",
+            "Inside tree hollows",
+            "In rivers",
+            "On the ground"
+          ],
+          "answer": "Inside tree hollows",
+          "explanation": "Squirrels store nuts and rest inside hollow tree trunks. Trees give them a safe home."
         },
         {
           "id": "ch5-t1-e2",
           "type": "fill",
-          "question": "A woodpecker ______ at tree trunks to find insects.",
-          "answer": "pecks",
-          "explanation": "A woodpecker pecks at tree trunks to find insects hidden inside the bark."
+          "question": "A woodpecker ______ tree trunks to dig out insects hidden inside the bark.",
+          "answer": "hammers",
+          "explanation": "Woodpeckers hammer at tree trunks with their strong beaks to find and eat insects."
         },
         {
           "id": "ch5-t1-e3",
           "type": "mcq",
-          "question": "Which animal builds its nest by stitching leaves together?",
-          "options": ["Crow", "Sparrow", "Tailorbird", "Pigeon"],
+          "question": "Which bird builds its nest by stitching leaves together?",
+          "options": [
+            "Crow",
+            "Sparrow",
+            "Tailorbird",
+            "Pigeon"
+          ],
           "answer": "Tailorbird",
-          "explanation": "The tailorbird stitches leaves together to build its nest. That is how it got its name."
+          "explanation": "The tailorbird uses its beak like a needle to stitch leaves together and make a cosy nest."
         },
         {
           "id": "ch5-t1-e4",
           "type": "short",
           "question": "Name two animals that eat leaves from plants.",
-          "answer": "Elephants and caterpillars eat leaves from plants.",
-          "explanation": "Elephants feed on grass and leaves. Caterpillars chew and eat tender leaves."
+          "answer": "Elephants munch on leaves and caterpillars feast on soft, tender leaves.",
+          "explanation": "Many animals depend on plant leaves for food, including elephants, caterpillars, and cows."
         },
         {
           "id": "ch5-t1-e5",
           "type": "mcq",
           "question": "What do butterflies and bees drink from flowers?",
-          "options": ["Water", "Nectar", "Juice", "Milk"],
+          "options": [
+            "Water",
+            "Nectar",
+            "Juice",
+            "Milk"
+          ],
           "answer": "Nectar",
           "explanation": "Butterflies and bees drink sweet nectar from flowers."
         }
@@ -47,23 +62,28 @@
           "id": "ch5-t1-m1",
           "type": "short",
           "question": "How do animals use plants for food? Give three examples.",
-          "answer": "Elephants eat grass and leaves. Monkeys eat fruits like bananas and mangoes. Butterflies and bees drink nectar from flowers.",
-          "explanation": "Many animals depend on plants for their food. Different animals eat different parts of plants."
+          "answer": "Elephants eat grass, leaves, and bamboo. Monkeys grab fruits like bananas and mangoes from branches. Butterflies and bees sip sweet nectar from flowers.",
+          "explanation": "Different animals eat different parts of plants -- leaves, fruits, seeds, and nectar."
         },
         {
           "id": "ch5-t1-m2",
           "type": "mcq",
           "question": "Which animal eats thorny plants in the desert?",
-          "options": ["Elephant", "Camel", "Cow", "Monkey"],
+          "options": [
+            "Elephant",
+            "Camel",
+            "Cow",
+            "Monkey"
+          ],
           "answer": "Camel",
-          "explanation": "Camels eat leaves and thorny plants in the desert."
+          "explanation": "Camels can eat thorny desert plants that most other animals cannot eat."
         },
         {
           "id": "ch5-t1-m3",
           "type": "fill",
-          "question": "Owls use tree ______ to lay eggs and raise their young.",
-          "answer": "hollows",
-          "explanation": "Owls make their homes in holes or hollows in old trees."
+          "question": "Owls settle into dark ______ in old trees to lay their eggs.",
+          "answer": "holes",
+          "explanation": "Owls make their homes in holes (hollows) in old trees, where it is dark and safe."
         }
       ],
       "hard": [
@@ -71,17 +91,18 @@
           "id": "ch5-t1-h1",
           "type": "long",
           "question": "How do animals use plants for shelter? Give at least four examples.",
-          "answer": "Animals use plants as homes in many ways. Birds build nests in tree branches using twigs, leaves, and grass. Squirrels live inside tree hollows. Owls make their homes in holes in old trees. Insects like ants and beetles live on tree bark and under leaves. Leopards rest on thick branches of tall trees. Tailorbirds stitch leaves together to build their nests.",
-          "explanation": "Plants are like homes for many animals. They provide safe places for animals to rest, sleep, raise their babies, and hide from danger."
+          "answer": "Animals use plants as safe homes in many ways. Birds weave nests from twigs, dry leaves, and grass in tree branches. Squirrels live inside hollow tree trunks. Owls settle into dark holes in old trees to lay eggs and raise their chicks. Insects like ants and beetles live on bark and under fallen leaves. Leopards stretch out on thick branches of tall trees to rest and sleep. Tailorbirds stitch leaves together with their beaks to build cosy nests.",
+          "explanation": "Plants give animals safe places to rest, sleep, raise babies, and hide from danger."
         },
         {
           "id": "ch5-t1-h2",
           "type": "long",
           "question": "Why do we find more animals where there are more plants? Explain.",
-          "answer": "Where there are more plants, there are more animals, birds, and insects. This is because plants provide food for animals like fruits, leaves, seeds, and nectar. Plants also provide shelter where animals can build nests, hide, and rest. The soil near plants is also home to earthworms, ants, and beetles. When there are fewer plants, animals lose their food and homes and move away. That is why forests have the most animals.",
-          "explanation": "Plants provide both food and shelter for animals, which is why more plants means more animals in an area."
+          "answer": "Where there are more plants, there is more food for animals -- fruits, leaves, seeds, nectar, and grass. Plants also provide shelter like nests in branches, hollows in trunks, and shade from the sun. The soil near plants is home to earthworms, ants, and beetles. When plants are cut down, animals lose both their food and their homes and must move away. That is why dense forests have the most animals, while areas with few trees have very few animals.",
+          "explanation": "Plants provide both food and shelter, so more plants always means more animals in an area."
         }
-      ]
+      ],
+      "name": "Animals and Plants Living Together"
     },
     {
       "topic": "Life in the Soil and Monsoon",
@@ -90,59 +111,75 @@
           "id": "ch5-t2-e1",
           "type": "mcq",
           "question": "What is soil made from?",
-          "options": ["Only rocks", "Only sand", "Tiny pieces of broken rocks, old leaves, and tiny creatures", "Only mud"],
-          "answer": "Tiny pieces of broken rocks, old leaves, and tiny creatures",
-          "explanation": "Soil is the topmost layer of the Earth's surface. It is made from tiny pieces of broken rocks, old leaves, roots, stems, and living and dead tiny creatures."
+          "options": [
+            "Only water",
+            "Only sand",
+            "Broken bits of rocks, decayed leaves, and tiny creatures",
+            "Only mud"
+          ],
+          "answer": "Broken bits of rocks, decayed leaves, and tiny creatures",
+          "explanation": "Soil is made from broken bits of rocks, decayed leaves and twigs, and tiny living and dead creatures."
         },
         {
           "id": "ch5-t2-e2",
           "type": "fill",
           "question": "After rain, ______ and millipedes can be found more easily in the soil.",
           "answer": "earthworms",
-          "explanation": "After it rains, you might see more earthworms and millipedes in the soil because it becomes wet and softer."
+          "explanation": "After rain, the soil becomes wet and soft, and earthworms and millipedes come closer to the surface."
         },
         {
           "id": "ch5-t2-e3",
           "type": "short",
           "question": "Name three tiny creatures you might find in the soil near a plant.",
           "answer": "Ants, earthworms, and small beetles can be found in the soil near a plant.",
-          "explanation": "The soil under our feet is full of life. You can find ants, termites, small beetles, grasshoppers, earthworms, and millipedes."
+          "explanation": "The soil is full of life. You can find ants, termites, beetles, grasshoppers, earthworms, and millipedes."
         },
         {
           "id": "ch5-t2-e4",
           "type": "mcq",
-          "question": "During which season do many more plants and animals appear?",
-          "options": ["Summer", "Winter", "Monsoon", "Spring"],
+          "question": "During which season do many new plants and hidden creatures appear?",
+          "options": [
+            "Summer",
+            "Winter",
+            "Monsoon",
+            "Spring"
+          ],
           "answer": "Monsoon",
-          "explanation": "During the monsoon season, many more plants and animals appear because of the rain."
+          "explanation": "During the monsoon, rain wakes up dormant seeds and brings out hidden creatures from underground."
         }
       ],
       "medium": [
         {
           "id": "ch5-t2-m1",
           "type": "short",
-          "question": "Why does everything look green and full of life during the rainy season?",
-          "answer": "During the rainy season, seeds that were lying in the soil start to sprout when they get water. More grasses and small plants start growing in wet soil. Some insects that were waiting underground also come out.",
-          "explanation": "The monsoon rains bring water that helps seeds grow and brings out creatures that were hiding underground."
+          "question": "Why does everything look green and alive during the rainy season?",
+          "answer": "Many seeds lie quietly in the soil for months waiting for water. When the monsoon rain falls, these seeds soak up water and sprout into tiny plants. Grasses and small plants pop up everywhere. Insects hiding underground also come out.",
+          "explanation": "The monsoon rain triggers seeds to grow and creatures to come out, making the Earth look green and alive."
         },
         {
           "id": "ch5-t2-m2",
           "type": "mcq",
-          "question": "How does the soil change after it rains?",
-          "options": ["It becomes dry and hard", "It becomes wet and softer", "It disappears", "It becomes sandy"],
-          "answer": "It becomes wet and softer",
-          "explanation": "After it rains, the soil becomes wet and softer, and you might see more creatures in it like earthworms and millipedes."
+          "question": "How does the soil feel after it rains?",
+          "options": [
+            "Dry and hard",
+            "Wet and soft",
+            "Dusty and sandy",
+            "Frozen and cold"
+          ],
+          "answer": "Wet and soft",
+          "explanation": "After rain, the soil soaks up water and becomes wet and soft, making it easier for seeds to sprout and creatures to move."
         }
       ],
       "hard": [
         {
           "id": "ch5-t2-h1",
           "type": "long",
-          "question": "What happens to plants and animals when the monsoon rains come? Explain in detail.",
-          "answer": "When the monsoon rains come, many changes happen. Seeds that were lying in the soil for a long time start to sprout when they get water. More grasses and small plants start growing in wet soil. Some insects that were waiting underground come out after the rains. Earthworms and millipedes become easier to find. The soil becomes wet and soft. Everything looks green and full of life during the rainy season.",
-          "explanation": "The monsoon brings water that triggers growth in plants and activity in animals, making nature come alive."
+          "question": "What happens to plants and animals when the monsoon rains arrive? Explain in detail.",
+          "answer": "When the monsoon rains come, many exciting changes happen. Seeds that have been lying quietly in the soil for months suddenly sprout when they get rainwater. Tiny green shoots poke out of the ground within days. New grasses and small plants pop up everywhere. Insects that were hiding underground crawl out after the first rain. Earthworms and millipedes become easier to find near the surface. The soil becomes wet and soft. Frogs come out and croak loudly. The whole Earth turns green and alive, buzzing with activity.",
+          "explanation": "The monsoon is like a switch that wakes up dormant seeds and hidden creatures, bringing the Earth to life."
         }
-      ]
+      ],
+      "name": "Life in the Soil and Monsoon"
     },
     {
       "topic": "Bird Sounds and the Life Cycle of a Butterfly",
@@ -150,60 +187,76 @@
         {
           "id": "ch5-t3-e1",
           "type": "mcq",
-          "question": "What sound does a cuckoo (koel) make?",
-          "options": ["Caw, caw", "Chirp, chirp", "Ku-hoo, ku-hoo", "Gutru gu"],
+          "question": "What sound does the koel (cuckoo) make?",
+          "options": [
+            "Kaav, kaav",
+            "Chee-chee, chee-chee",
+            "Ku-hoo, ku-hoo",
+            "Gutargu, gutargu"
+          ],
           "answer": "Ku-hoo, ku-hoo",
-          "explanation": "The cuckoo (koel) makes the sound 'Ku-hoo, ku-hoo'."
+          "explanation": "The koel (cuckoo) sings 'Ku-hoo, ku-hoo' -- a beautiful, melodious call."
         },
         {
           "id": "ch5-t3-e2",
           "type": "fill",
-          "question": "A caterpillar forms a ______ around itself before turning into a butterfly.",
+          "question": "A caterpillar wraps itself in a hard shell called a ______ before becoming a butterfly.",
           "answer": "cocoon",
-          "explanation": "The caterpillar stops eating and forms a cocoon around itself. After some time, it comes out as a beautiful butterfly."
+          "explanation": "The caterpillar forms a cocoon around itself. Inside, its body transforms completely into a butterfly."
         },
         {
           "id": "ch5-t3-e3",
           "type": "short",
           "question": "When do birds sing the most?",
-          "answer": "Birds sing the most in the early morning when they are most active.",
-          "explanation": "Birds are most active in the early morning and sing a lot. They also call out in the evening when returning to their nests."
+          "answer": "Birds sing the most in the early morning at sunrise, when they are busiest searching for food.",
+          "explanation": "Birds are most active at sunrise. They also call out in the evening as they return to their nests."
         },
         {
           "id": "ch5-t3-e4",
           "type": "mcq",
-          "question": "What sound does a pigeon make?",
-          "options": ["Caw, caw", "Chirp, chirp", "Ku-hoo, ku-hoo", "Gutru gu, gutru gu"],
-          "answer": "Gutru gu, gutru gu",
-          "explanation": "A pigeon makes the sound 'Gutru gu, gutru gu'."
+          "question": "What sound does a kabutar (pigeon) make?",
+          "options": [
+            "Kaav, kaav",
+            "Chee-chee, chee-chee",
+            "Ku-hoo, ku-hoo",
+            "Gutargu, gutargu"
+          ],
+          "answer": "Gutargu, gutargu",
+          "explanation": "A pigeon (kabutar) makes the soft cooing sound 'Gutargu, gutargu'."
         }
       ],
       "medium": [
         {
           "id": "ch5-t3-m1",
           "type": "short",
-          "question": "Describe the life cycle of a butterfly in your own words.",
-          "answer": "First, a caterpillar eats leaves continuously. Then it stops eating and forms a cocoon around itself. After some time, it comes out of the cocoon as a beautiful butterfly and flies away.",
-          "explanation": "The amazing change from caterpillar to butterfly through a cocoon is one of nature's most wonderful processes."
+          "question": "Describe the journey of a caterpillar becoming a butterfly.",
+          "answer": "First, a caterpillar eats leaves hungrily and grows bigger. Then it stops eating and wraps itself in a hard shell called a cocoon. Inside the cocoon, its body completely changes. After some days, the cocoon cracks open and a beautiful butterfly comes out, spreads its wings, and flies away.",
+          "explanation": "The change from caterpillar to butterfly through a cocoon is called metamorphosis -- one of nature's most amazing processes."
         },
         {
           "id": "ch5-t3-m2",
           "type": "mcq",
-          "question": "If you do not hear bird sounds in your area, what could be the reason?",
-          "options": ["Birds are sleeping all day", "There are not enough trees and plants", "Birds only live in forests", "It is always raining"],
-          "answer": "There are not enough trees and plants",
-          "explanation": "If there are not enough trees and plants in an area, birds will not have places to live, and you will not hear their sounds."
+          "question": "If you do not hear bird sounds in your neighbourhood, what might be the reason?",
+          "options": [
+            "Birds only live in zoos",
+            "There are not enough trees for birds to live in",
+            "Birds are always silent",
+            "It is always too cold for birds"
+          ],
+          "answer": "There are not enough trees for birds to live in",
+          "explanation": "Birds need trees for nesting and food. If there are not enough trees, birds will not live in that area."
         }
       ],
       "hard": [
         {
           "id": "ch5-t3-h1",
           "type": "long",
-          "question": "Match each bird with its sound and explain why birds are important in nature: Pigeon, Crow, Sparrow, Cuckoo.",
-          "answer": "Pigeon makes 'Gutru gu, gutru gu'. Crow makes 'Caw, caw'. Sparrow makes 'Chirp, chirp'. Cuckoo (Koel) makes 'Ku-hoo, ku-hoo'. Birds are important in nature because they help in spreading seeds, eating insects that harm plants, and pollinating flowers. Without birds, many plants would not grow and there would be too many harmful insects.",
-          "explanation": "Each bird has its unique sound. Birds play important roles in nature by spreading seeds, eating insects, and helping plants grow."
+          "question": "Match each bird with its sound and explain why birds are important in nature: Pigeon, Crow, Sparrow, Koel.",
+          "answer": "Pigeon (Kabutar) makes 'Gutargu, gutargu'. Crow (Kauwa) makes 'Kaav, kaav'. Sparrow (Gauraiya) makes 'Chee-chee, chee-chee'. Koel (Cuckoo) makes 'Ku-hoo, ku-hoo'. Birds are very important in nature because they spread seeds to new places by eating fruits and dropping seeds far away. They eat harmful insects that damage crops and plants. Some birds like sunbirds carry pollen from flower to flower, helping plants make fruits and seeds. Without birds, many plants would not grow and harmful insects would multiply.",
+          "explanation": "Every bird has its unique call. Birds play important roles in seed spreading, insect control, and pollination."
         }
-      ]
+      ],
+      "name": "Bird Sounds and the Life Cycle of a Butterfly"
     }
   ]
 }

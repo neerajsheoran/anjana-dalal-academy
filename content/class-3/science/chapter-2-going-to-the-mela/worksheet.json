@@ -6,64 +6,84 @@
         {
           "id": "ch2-t1-e1",
           "type": "mcq",
-          "question": "Which bus number did Nita's family take to go to the mela?",
-          "options": ["Bus 101", "Bus 201", "Bus 401", "Bus 501"],
-          "answer": "Bus 401",
-          "explanation": "Bus number 401 arrived at the bus stop and the family boarded it to go to the mela."
+          "question": "What type of ticket do children get on a bus?",
+          "options": [
+            "Full ticket",
+            "Half ticket",
+            "Free ticket",
+            "Special ticket"
+          ],
+          "answer": "Half ticket",
+          "explanation": "Children travel on half tickets on a bus, while adults travel on full tickets."
         },
         {
           "id": "ch2-t1-e2",
           "type": "fill",
-          "question": "Children travel on ______ tickets on a bus.",
-          "answer": "half",
-          "explanation": "Children travel on half tickets while adults travel on full tickets."
+          "question": "Buses have ______ seats for senior citizens and people who need extra help.",
+          "answer": "reserved",
+          "explanation": "Buses have reserved seats where senior citizens and people with special needs can sit comfortably."
         },
         {
           "id": "ch2-t1-e3",
           "type": "mcq",
-          "question": "Which of the following is a safety rule while travelling by bus?",
-          "options": ["Jump around inside the bus", "Put your head out of the window", "Sit properly on your seat", "Stand on the seat"],
-          "answer": "Sit properly on your seat",
-          "explanation": "We should sit properly on our seat, not jump around, and not put hands or head out of the window."
+          "question": "Which of these is a safety rule on a bus?",
+          "options": [
+            "Stand on the seat",
+            "Put your head out of the window",
+            "Sit properly in your seat",
+            "Jump around inside"
+          ],
+          "answer": "Sit properly in your seat",
+          "explanation": "We should sit properly, keep hands and head inside, and not push others on a bus."
         },
         {
           "id": "ch2-t1-e4",
           "type": "short",
-          "question": "Name two types of transport used to travel.",
-          "answer": "Bus and train",
-          "explanation": "People use many types of transport like bus, train, autorickshaw, bicycle, car, and boat to travel."
+          "question": "Name two types of transport people use to travel.",
+          "answer": "Bus and train are two types of transport.",
+          "explanation": "People use many types of transport like bus, train, auto-rickshaw, bicycle, car, and boat."
         },
         {
           "id": "ch2-t1-e5",
           "type": "mcq",
-          "question": "What type of transport is used for crossing rivers and lakes?",
-          "options": ["Bus", "Train", "Boat", "Autorickshaw"],
+          "question": "Which transport is used for crossing rivers?",
+          "options": [
+            "Bus",
+            "Auto-rickshaw",
+            "Boat",
+            "Bicycle"
+          ],
           "answer": "Boat",
-          "explanation": "A boat is used for crossing rivers and lakes."
+          "explanation": "Boats are used for crossing rivers and travelling through backwaters."
         }
       ],
       "medium": [
         {
           "id": "ch2-t1-m1",
           "type": "short",
-          "question": "How did Nita's family take care of Dadiji while travelling to the mela?",
-          "answer": "Nita held Dadiji's hand and walked slowly. Her father and the conductor helped Dadiji get on the bus. Dadiji sat in the reserved seat for older people.",
-          "explanation": "The family cared for Dadiji by helping her walk, board the bus, and making sure she had a comfortable seat."
+          "question": "How can we help our grandparents while travelling by bus?",
+          "answer": "We can hold their hand while walking to the bus stop, help them climb the bus steps, and make sure they sit in the reserved seat meant for senior citizens.",
+          "explanation": "Grandparents may have aching joints or difficulty climbing, so helping them shows care and respect."
         },
         {
           "id": "ch2-t1-m2",
           "type": "mcq",
-          "question": "How did Mohan Chacha travel to the mela?",
-          "options": ["By bus only", "By train, then city bus and autorickshaw", "By car", "By bicycle"],
-          "answer": "By train, then city bus and autorickshaw",
-          "explanation": "Mohan Chacha and his family arrived by train and then took a city bus and an autorickshaw to reach the mela ground."
+          "question": "Why should we not put our hands out of the bus window?",
+          "options": [
+            "Because it is rude",
+            "Because another vehicle or pole could hit our hand",
+            "Because the wind is cold",
+            "Because the driver says so"
+          ],
+          "answer": "Because another vehicle or pole could hit our hand",
+          "explanation": "Keeping hands and head inside the bus prevents injuries from passing vehicles, poles, or tree branches."
         },
         {
           "id": "ch2-t1-m3",
           "type": "fill",
-          "question": "Buses have ______ seats for older people and those who need extra help.",
-          "answer": "reserved",
-          "explanation": "Buses have reserved seats for older people so they can sit comfortably during the journey."
+          "question": "For quick trips inside the city, people often use an ______.",
+          "answer": "auto-rickshaw",
+          "explanation": "Auto-rickshaws are commonly used for short, quick trips within the city."
         }
       ],
       "hard": [
@@ -71,10 +91,11 @@
           "id": "ch2-t1-h1",
           "type": "long",
           "question": "Why do we need different types of transport? Give examples of when we would use different vehicles.",
-          "answer": "We need different types of transport because we travel different distances and go to different places. For short trips within a city, we use autorickshaws or bicycles. For travelling between cities, we use buses or cars. For long distances, we use trains. For crossing rivers and lakes, we use boats. Each type of transport is useful for a different purpose.",
-          "explanation": "Different types of transport serve different needs. The distance, terrain, and number of people travelling all determine which transport is best."
+          "answer": "We need different types of transport because we go to places that are near or far, and each vehicle is suited for different distances and situations. For short trips inside the city, we use auto-rickshaws or bicycles. For going to nearby towns, we take buses. For long journeys across the country, trains are best. For crossing rivers or backwaters, we use boats. For family outings, a car is convenient. Each type of transport serves a different purpose.",
+          "explanation": "The distance, the place we want to reach, and the number of people travelling all help us decide which transport to use."
         }
-      ]
+      ],
+      "name": "Travelling to the Mela"
     },
     {
       "topic": "Fun and Food at the Mela",
@@ -82,49 +103,64 @@
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
-          "question": "Which of the following foods did the children eat at the mela?",
-          "options": ["Pizza", "Gol gappas", "Pasta", "Sandwich"],
-          "answer": "Gol gappas",
-          "explanation": "At the mela, the children enjoyed Indian foods like gol gappas, chaat, chhole kulche, jalebis with rabri, and kulfi."
+          "question": "What should you do before eating food at a mela?",
+          "options": [
+            "Start eating immediately",
+            "Wash your hands properly",
+            "Blow on the food",
+            "Ask permission only"
+          ],
+          "answer": "Wash your hands properly",
+          "explanation": "We should always wash our hands before eating to remove germs that we cannot see."
         },
         {
           "id": "ch2-t2-e2",
           "type": "fill",
-          "question": "At the toy stall, children bought spinning tops, puppets, ______, and dolls.",
-          "answer": "phirkis",
-          "explanation": "The children bought spinning tops, puppets, phirkis (pinwheels), and dolls at the toy stall."
+          "question": "Gol gappe are crispy hollow shells filled with spicy ______.",
+          "answer": "water",
+          "explanation": "Gol gappe are a popular Indian snack -- crispy hollow shells filled with spicy flavoured water."
         },
         {
           "id": "ch2-t2-e3",
           "type": "short",
-          "question": "What should you do before eating food at the mela?",
-          "answer": "We should wash our hands properly before eating food.",
-          "explanation": "Mohan Chacha made sure the children washed their hands properly at the water point before eating."
+          "question": "Name two fun activities you can enjoy at a mela.",
+          "answer": "You can enjoy rides like the ferris wheel and watch a puppet show.",
+          "explanation": "A mela has many fun things -- toy stalls, rides, puppet shows, food stalls, and shopping."
         },
         {
           "id": "ch2-t2-e4",
           "type": "mcq",
-          "question": "What rides did the children enjoy at the mela?",
-          "options": ["Roller coaster and bumper cars", "Merry-go-round and giant wheel", "Water slide and train ride", "Swing and see-saw"],
-          "answer": "Merry-go-round and giant wheel",
-          "explanation": "The children rode the merry-go-round and the giant wheel at the mela."
+          "question": "What is kulfi?",
+          "options": [
+            "A type of bread",
+            "A creamy Indian frozen treat",
+            "A spicy curry",
+            "A fried snack"
+          ],
+          "answer": "A creamy Indian frozen treat",
+          "explanation": "Kulfi is a creamy Indian frozen dessert, often served on a stick at melas."
         }
       ],
       "medium": [
         {
           "id": "ch2-t2-m1",
           "type": "short",
-          "question": "What should you do with waste after eating at the mela?",
-          "answer": "We should put all the waste in the dustbin. Keeping the mela clean is everyone's responsibility.",
-          "explanation": "After eating, the family made sure to put all the waste in the dustbin to keep the mela clean."
+          "question": "Why is it important to throw waste in the dustbin at a mela?",
+          "answer": "If everyone throws rubbish on the ground, the mela will become dirty and unhealthy. Keeping the mela clean is everyone's responsibility.",
+          "explanation": "When thousands of people visit a mela, each person must do their part to keep it clean by using dustbins."
         },
         {
           "id": "ch2-t2-m2",
           "type": "mcq",
-          "question": "What is kulfi?",
-          "options": ["A type of bread", "Indian ice cream", "A spicy snack", "A fried sweet"],
-          "answer": "Indian ice cream",
-          "explanation": "Kulfi is Indian ice cream, which is a popular frozen dessert enjoyed at melas and other places."
+          "question": "Which of these foods is a popular Indian snack found at melas?",
+          "options": [
+            "Pasta",
+            "Chole bhature",
+            "Pizza",
+            "Noodles"
+          ],
+          "answer": "Chole bhature",
+          "explanation": "Chole bhature (spicy chickpea curry with fried bread) is a popular Indian food found at melas."
         }
       ],
       "hard": [
@@ -132,10 +168,11 @@
           "id": "ch2-t2-h1",
           "type": "long",
           "question": "Describe three things you can see and do at a mela.",
-          "answer": "At a mela, we can see many interesting things. First, there are toy stalls where we can buy spinning tops, puppets, and dolls. Second, there are exciting rides like the merry-go-round and the giant wheel. Third, there are food stalls where we can enjoy delicious foods like gol gappas, chaat, and jalebis. We can also watch magic shows and buy bangles and trinkets.",
-          "explanation": "A mela is a fair where people enjoy games, food, rides, and shopping. It is a place of fun for the whole family."
+          "answer": "At a mela, there are many exciting things to see and do. First, there are toy stalls selling wind-up toys, wooden puppets, clay whistles, and colourful pinwheels. Second, there are thrilling rides like the ferris wheel and the merry-go-round. Third, there are food stalls where you can eat tasty Indian snacks like gol gappe, aloo tikki, and hot jalebis. You can also watch puppet shows and buy bangles or bamboo flutes.",
+          "explanation": "A mela is a fair where the whole family can enjoy rides, food, shopping, and shows together."
         }
-      ]
+      ],
+      "name": "Fun and Food at the Mela"
     },
     {
       "topic": "Safety and Helpers at the Mela",
@@ -143,32 +180,42 @@
         {
           "id": "ch2-t3-e1",
           "type": "mcq",
-          "question": "What is the Lost and Found booth at a mela used for?",
-          "options": ["Selling toys", "Finding lost children and belongings", "Buying tickets", "Parking vehicles"],
-          "answer": "Finding lost children and belongings",
-          "explanation": "The Lost and Found booth at a mela has volunteers who help find lost children and reunite them with their families."
+          "question": "What is the Lost and Found tent at a mela used for?",
+          "options": [
+            "Selling toys",
+            "Helping lost children find their parents",
+            "Parking vehicles",
+            "Buying food"
+          ],
+          "answer": "Helping lost children find their parents",
+          "explanation": "The Lost and Found tent has volunteers who help reunite lost children with their families."
         },
         {
           "id": "ch2-t3-e2",
           "type": "fill",
-          "question": "The ______ Mela is the largest gathering of people on Earth.",
+          "question": "The ______ Mela is one of the biggest gatherings of people on our planet.",
           "answer": "Kumbh",
-          "explanation": "The Kumbh Mela is the world's biggest festival and the largest gathering of people on Earth."
+          "explanation": "The Kumbh Mela is one of the biggest gatherings of people on Earth, held on the banks of sacred rivers."
         },
         {
           "id": "ch2-t3-e3",
           "type": "short",
           "question": "Name two helpers you can find at a mela.",
-          "answer": "Police officers and medical attendants (or firefighters and volunteers)",
-          "explanation": "At a mela, police officers keep order, firefighters put out fires, medical attendants help sick people, and volunteers help find lost children."
+          "answer": "Police officers and first-aid workers help keep everyone safe at a mela.",
+          "explanation": "At a mela, police officers, firefighters, first-aid workers, and volunteers all work together for safety."
         },
         {
           "id": "ch2-t3-e4",
           "type": "mcq",
-          "question": "Which vehicles are parked at the mela entrance for safety?",
-          "options": ["Cars and buses", "Ambulance, police jeep, and fire engine", "Trucks and vans", "Bicycles and scooters"],
-          "answer": "Ambulance, police jeep, and fire engine",
-          "explanation": "An ambulance, police jeep, and fire engine are parked near the mela entrance for everyone's safety."
+          "question": "Which emergency vehicle is kept at the mela in case of a fire?",
+          "options": [
+            "Ambulance",
+            "Police van",
+            "Fire truck",
+            "School bus"
+          ],
+          "answer": "Fire truck",
+          "explanation": "A fire truck is parked at the mela so firefighters can quickly respond if a fire breaks out."
         }
       ],
       "medium": [
@@ -177,14 +224,14 @@
           "type": "short",
           "question": "Where is the Kumbh Mela held? Name any two places.",
           "answer": "The Kumbh Mela is held at Haridwar and Prayagraj (also at Nashik and Ujjain).",
-          "explanation": "The Kumbh Mela is held on the banks of holy rivers at four places: Haridwar, Prayagraj, Nashik, and Ujjain, once every 12 years."
+          "explanation": "The Kumbh Mela takes place on the banks of sacred rivers at four locations: Haridwar, Prayagraj, Nashik, and Ujjain, every 12 years."
         },
         {
           "id": "ch2-t3-m2",
           "type": "fill",
-          "question": "At the mela, a ______ was arranged for Dadiji so she could move around comfortably.",
+          "question": "A ______ was arranged for Dadi at the mela so she could move around without tiring her knees.",
           "answer": "wheelchair",
-          "explanation": "Mohan Chacha and Rohit quickly got a wheelchair for Dadiji so she could move around the mela comfortably."
+          "explanation": "Baba got a wheelchair for Dadi so she could comfortably move around the mela."
         }
       ],
       "hard": [
@@ -192,10 +239,11 @@
           "id": "ch2-t3-h1",
           "type": "long",
           "question": "Why are safety helpers important at a mela? Describe the roles of at least three types of helpers.",
-          "answer": "Safety helpers are very important at a mela because thousands of people visit and there can be emergencies. Police officers keep order and help people. Firefighters put out fires using fire engines to keep everyone safe. Medical attendants help injured or sick people with ambulances. Volunteers help find lost children at the Lost and Found booth and reunite them with their families. Without these helpers, the mela would not be safe for visitors.",
-          "explanation": "Many helpers work together to keep everyone safe at a mela. Each type of helper has an important role in managing different emergencies."
+          "answer": "Safety helpers are very important because thousands of visitors come to a mela and emergencies can happen. Police officers keep order, help with directions, and make sure no one causes trouble. Firefighters stand ready with their fire truck because food stalls use gas and open flames, which could start a fire. First-aid workers treat injuries and help people who feel unwell or faint in the heat. Volunteers at the Lost and Found tent help lost children reunite with their families. Without these helpers, the mela would not be a safe place to visit.",
+          "explanation": "Different helpers have different jobs at a mela, and together they make sure everyone has a safe and enjoyable time."
         }
-      ]
+      ],
+      "name": "Safety and Helpers at the Mela"
     }
   ]
 }

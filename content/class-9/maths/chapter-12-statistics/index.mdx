@@ -1,140 +1,131 @@
 ---
-title: Chapter 12 Statistics
+title: "Interpreting Data - Statistics"
+description: "Learn data collection, graphical representation, measures of central tendency — mean, median, mode."
+order: 12
 ---
 ## Introduction
 
-**Statistics** is the branch of mathematics that deals with the collection, organisation, analysis, interpretation, and presentation of data. The word "statistics" comes from the Latin word "status" meaning a political state -- because governments originally used it to keep records of population, income, and resources.
+Every time you check the weather forecast, look at a cricket scorecard, or read about election results, you are consuming **statistics**. The word traces back to the Latin *status* (meaning "state"), because governments were among the first to collect and organise data -- counting citizens, recording harvests, and tracking revenues. Today, statistics powers everything from medical research to app recommendations.
 
-In this chapter, you will learn how to present data graphically using **bar graphs**, **histograms**, and **frequency polygons**, and how to calculate **measures of central tendency** (mean, median, and mode).
-
----
-
-## Collection and Presentation of Data
-
-**Data** are pieces of information collected for a specific purpose. Data can be:
-
-* **Primary data:** Collected directly by the investigator for a specific purpose.
-* **Secondary data:** Obtained from sources that already have the information (books, records, websites).
-
-### Frequency Distribution
-
-When data has many values, it is organized into a **frequency distribution table**. Data can be:
-
-* **Ungrouped:** Each distinct value is listed with its frequency.
-* **Grouped:** Values are organized into **class intervals** (e.g., 0-10, 10-20, etc.) with frequencies.
-
-Key terms for grouped data:
-
-* **Class interval:** A range like 10-20, where 10 is the **lower class limit** and 20 is the **upper class limit**.
-* **Class size (width):** The difference between upper and lower limits (e.g., 20 - 10 = 10).
-* **Class mark:** The midpoint of a class interval = (lower limit + upper limit) / 2.
-* **Frequency:** The number of observations falling in a particular class interval.
+In this chapter, you will learn to organise raw data into tables, display it using **bar graphs**, **histograms**, and **frequency polygons**, and summarise it with three key numbers: the **mean**, the **median**, and the **mode**.
 
 ---
 
-## Graphical Representation of Data
+## Collecting and Organising Data
+
+**Data** refers to facts or figures gathered for a specific purpose.
+
+* **Primary data:** Information you collect yourself -- for example, surveying your classmates about how many hours they study each day.
+* **Secondary data:** Information already collected by someone else -- census reports, weather records, published studies.
+
+### Building a Frequency Distribution
+
+When a data set has many values, listing every single observation is unwieldy. Instead, we create a **frequency distribution table**.
+
+* **Ungrouped distribution:** Each distinct value appears with its count (frequency).
+* **Grouped distribution:** Values are bundled into **class intervals** (such as 0--10, 10--20, etc.), and the frequency of each interval is recorded.
+
+Important terminology for grouped data:
+
+* **Class interval:** A range like 10--20. Here 10 is the **lower class limit** and 20 is the **upper class limit**.
+* **Class size (width):** Upper limit minus lower limit (e.g., 20 - 10 = 10).
+* **Class mark (midpoint):** (Lower limit + Upper limit) / 2. For 10--20, the class mark is 15.
+* **Frequency:** How many observations fall into a given interval.
+
+---
+
+## Displaying Data Graphically
 
 ### Bar Graphs
 
-A **bar graph** uses rectangular bars of uniform width with equal spacing. The height of each bar represents the frequency (or value) of the category. Bar graphs are used for **discrete** or categorical data.
+A **bar graph** uses rectangles of equal width, separated by gaps, to represent categories. The height of each bar shows the value or frequency. Bar graphs suit **discrete** or **categorical** data -- like the number of students in each school house or the favourite sport of a class.
 
 ### Histograms
 
 ![Sample histogram with continuous class intervals on the x-axis and frequency on the y-axis, with no gaps between bars](histogram-example.png)
 
-A **histogram** is similar to a bar graph but is used for **continuous class intervals**. The key differences from bar graphs are:
+A **histogram** looks like a bar graph but has **no gaps** between the bars, because it represents **continuous** data grouped into class intervals.
 
-* There are **no gaps** between the bars (since the data is continuous).
-* The width of each bar equals the class size.
-* If class sizes are unequal, the height of the bar is adjusted: **height = frequency / class width** (frequency density).
+Key differences from a bar graph:
+* Bars touch each other (no spacing).
+* Each bar's width matches its class size.
+* When class widths vary, the bar height is set to **frequency / class width** (called **frequency density**), so that the **area** of the bar -- not just its height -- represents the frequency.
 
-> **Key idea:** When class intervals have **varying widths**, the area of the bar (not just the height) represents the frequency. The height is calculated as frequency divided by class width.
+> **Watch out:** Unequal class widths are a common exam trap. If you use raw frequency as the height when widths differ, your histogram will be misleading. Always check whether the class widths are uniform before drawing.
 
 ### Frequency Polygons
 
-A **frequency polygon** is formed by:
+A **frequency polygon** is constructed by:
 
-1. Marking the **class marks** (midpoints) on the x-axis.
-2. Plotting the frequencies against the class marks.
-3. Joining the plotted points with straight lines.
-4. Closing the polygon by connecting to the midpoints of the imaginary classes before the first and after the last class (with frequency 0).
+1. Calculating the **class mark** (midpoint) for each interval.
+2. Plotting each (class mark, frequency) pair as a point.
+3. Connecting the points with straight line segments.
+4. Closing the polygon at both ends by extending to the midpoints of imaginary classes (with frequency 0) just before the first class and just after the last class.
 
-A frequency polygon can be drawn over a histogram by joining the midpoints of the tops of the bars.
+You can also draw a frequency polygon over a histogram by simply connecting the midpoints of the top edges of adjacent bars.
 
 ![Frequency polygon overlaid on a histogram, showing how the midpoints of bar tops are connected](frequency-polygon-over-histogram.png)
 
-> **Key idea:** Frequency polygons are useful for comparing two distributions on the same graph, which is difficult to do with histograms.
+> **Advantage:** Frequency polygons make it easy to compare two different data distributions on the same axes -- something that is awkward with histograms.
 
 ---
 
 ## Measures of Central Tendency
 
-A **measure of central tendency** gives a single value that represents the entire data set. The three common measures are **mean**, **median**, and **mode**.
+A **measure of central tendency** condenses an entire data set into one representative number. The three standard measures are the **mean**, the **median**, and the **mode**.
 
 ![Comparison diagram showing mean, median, and mode marked on a data distribution](mean-median-mode-comparison.png)
 
 ### Mean (Arithmetic Average)
 
-The **mean** is the sum of all observations divided by the number of observations.
+The **mean** is the total of all observations divided by the count.
 
-**For ungrouped data:**
+**Ungrouped data:**
 
-**Mean = (sum of all observations) / (number of observations)**
+Mean = (x₁ + x₂ + ... + xₙ) / n
 
-If the data values are x\_1, x\_2, ..., x\_n, then:
+**Frequency distribution:**
 
-Mean (x-bar) = (x\_1 + x\_2 + ... + x\_n) / n
+If values x₁, x₂, ..., xₖ occur with frequencies f₁, f₂, ..., fₖ:
 
-**For a frequency distribution:**
+Mean = (f₁x₁ + f₂x₂ + ... + fₖxₖ) / (f₁ + f₂ + ... + fₖ)
 
-If values x\_1, x\_2, ..., x\_k have frequencies f\_1, f\_2, ..., f\_k, then:
+**Example:** The marks of five students are 12, 15, 18, 20, 25. Find the mean.
 
-Mean = (f\_1 x\_1 + f\_2 x\_2 + ... + f\_k x\_k) / (f\_1 + f\_2 + ... + f\_k) = (sum of f\_i x\_i) / (sum of f\_i)
+Mean = (12 + 15 + 18 + 20 + 25) / 5 = 90 / 5 = **18**
 
-**Example:** Find the mean of 4, 6, 7, 8, 10.
-
-Mean = (4 + 6 + 7 + 8 + 10) / 5 = 35 / 5 = **7**
-
-> **Key idea:** The mean uses every data value in its calculation, which means it is affected by extreme values (outliers).
+> **Keep in mind:** The mean takes every single value into account, which makes it sensitive to extreme values (outliers). One unusually large or small observation can pull the mean away from the "typical" value.
 
 ### Median
 
-The **median** is the middle value when the data is arranged in ascending (or descending) order.
+The **median** is the middle value once the data is sorted in ascending order.
 
-* If n (number of observations) is **odd**, Median = the ((n+1)/2)th observation.
-* If n is **even**, Median = average of the (n/2)th and ((n/2)+1)th observations.
+* If n is **odd**: Median = the ((n + 1) / 2)th observation.
+* If n is **even**: Median = average of the (n / 2)th and the (n / 2 + 1)th observations.
 
-**Example:** Find the median of 3, 5, 7, 9, 11.
+**Example (odd n):** Data: 11, 14, 17, 21, 30. n = 5. Median = 3rd value = **17**.
 
-n = 5 (odd). Median = (5+1)/2 = 3rd observation = **7**.
+**Example (even n):** Data: 5, 8, 12, 15. n = 4. Median = (8 + 12) / 2 = **10**.
 
-**Example:** Find the median of 2, 4, 6, 8.
-
-n = 4 (even). Median = (4/2)th and (4/2+1)th values = average of 2nd and 3rd = (4+6)/2 = **5**.
-
-> **Key idea:** The median is not affected by extreme values, making it a better measure when data has outliers.
+> **Advantage:** The median is not pulled around by outliers. If you have one extremely high income in a village, the median income stays close to what most families actually earn, while the mean shoots up.
 
 ### Mode
 
-The **mode** is the value that occurs **most frequently** in the data set.
+The **mode** is the value that appears **most often**.
 
-**Example:** Find the mode of 2, 3, 4, 5, 5, 5, 3, 2, 1.
+**Example:** Goals scored in 8 matches: 1, 2, 2, 3, 2, 4, 0, 3. The value 2 appears three times (more than any other). Mode = **2**.
 
-The value 5 occurs 3 times (most frequently). Mode = **5**.
+A data set can be **unimodal** (one mode), **bimodal** (two modes), **multimodal**, or have **no mode** if every value occurs equally often.
 
-A data set can be **unimodal** (one mode), **bimodal** (two modes), **multimodal** (more than two modes), or have **no mode** (all values appear equally often).
-
-> **Key idea:** The mode is the only measure of central tendency that can be used with **categorical** (non-numeric) data.
+> **Unique feature:** The mode is the only central tendency measure that works for **categorical** data. You can find the mode of favourite colours or preferred languages, but you cannot meaningfully compute a mean or median for them.
 
 ---
 
 ## Summary
 
-1. **Statistics** deals with collection, organisation, analysis, and presentation of data.
-2. Data can be represented using **bar graphs**, **histograms**, and **frequency polygons**.
-3. Histograms are used for continuous class intervals with no gaps between bars.
-4. For unequal class widths in histograms, use frequency density (frequency/class width) for height.
-5. **Mean** = sum of observations / number of observations.
-6. **Median** = middle value of ordered data.
-7. **Mode** = most frequently occurring value.
-8. Mean is affected by extreme values; median is not.
+1. **Statistics** is the science of collecting, organising, analysing, and presenting data.
+2. Data can be shown using **bar graphs** (discrete data), **histograms** (continuous grouped data), and **frequency polygons** (midpoints joined by lines).
+3. In histograms with unequal class widths, use **frequency density** (frequency / class width) for bar heights.
+4. **Mean** = sum of observations / number of observations. Sensitive to outliers.
+5. **Median** = middle value of sorted data. Robust against outliers.
+6. **Mode** = most frequently occurring value. Works even for non-numeric data.

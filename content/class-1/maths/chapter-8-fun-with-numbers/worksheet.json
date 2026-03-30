@@ -3,52 +3,247 @@
     {
       "topic": "Numbers 21 to 50",
       "easy": [
-        { "id": "ch8-t1-e1", "type": "mcq", "question": "What number comes after 29?", "options": ["28", "30", "31", "20"], "answer": "30", "explanation": "After 29 comes 30 (thirty)." },
-        { "id": "ch8-t1-e2", "type": "fill", "question": "25, 26, 27, ______, 29.", "answer": "28", "explanation": "The number after 27 is 28." },
-        { "id": "ch8-t1-e3", "type": "mcq", "question": "What number comes after 39?", "options": ["38", "40", "41", "30"], "answer": "40", "explanation": "After 39 comes 40 (forty)." },
-        { "id": "ch8-t1-e4", "type": "fill", "question": "43, 44, ______, 46, 47.", "answer": "45", "explanation": "The number after 44 is 45." }
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "Which number follows right after 29?",
+          "options": [
+            "28",
+            "30",
+            "31",
+            "20"
+          ],
+          "answer": "30",
+          "explanation": "29 is followed by 30. We call it thirty."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "33, 34, 35, ______, 37.",
+          "answer": "36",
+          "explanation": "The number between 35 and 37 is 36."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which number follows right after 39?",
+          "options": [
+            "38",
+            "40",
+            "41",
+            "30"
+          ],
+          "answer": "40",
+          "explanation": "39 is followed by 40, which we call forty."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "fill",
+          "question": "46, 47, ______, 49, 50.",
+          "answer": "48",
+          "explanation": "The number between 47 and 49 is 48."
+        }
       ],
       "medium": [
-        { "id": "ch8-t1-m1", "type": "short", "question": "Fill in the missing numbers: 36, 37, __, 39, __, 41.", "answer": "38 and 40.", "explanation": "Counting in order: 36, 37, 38, 39, 40, 41." },
-        { "id": "ch8-t1-m2", "type": "mcq", "question": "Which number is bigger: 34 or 43?", "options": ["34", "43", "Both are equal", "Cannot tell"], "answer": "43", "explanation": "43 has 4 tens, while 34 has only 3 tens. So 43 is bigger." }
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Write the missing numbers: 31, 32, __, 34, __, 36.",
+          "answer": "33 and 35.",
+          "explanation": "Numbers go in order: 31, 32, 33, 34, 35, 36."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "mcq",
+          "question": "Which number is greater: 27 or 42?",
+          "options": [
+            "27",
+            "42",
+            "Both are the same",
+            "Cannot tell"
+          ],
+          "answer": "42",
+          "explanation": "42 has 4 tens while 27 has only 2 tens. So 42 is greater."
+        }
       ],
       "hard": [
-        { "id": "ch8-t1-h1", "type": "short", "question": "Put these numbers in order from smallest to biggest: 45, 23, 38, 50, 31.", "answer": "23, 31, 38, 45, 50.", "explanation": "We arrange from the smallest number to the biggest." }
-      ]
+        {
+          "id": "ch8-t1-h1",
+          "type": "short",
+          "question": "Arrange from smallest to biggest: 48, 21, 35, 50, 29.",
+          "answer": "21, 29, 35, 48, 50.",
+          "explanation": "We line them up starting from the smallest tens and ones."
+        }
+      ],
+      "name": "Packing Oranges — Numbers 21 to 30"
     },
     {
-      "topic": "Tens and Ones",
+      "topic": "Understanding Tens and Ones",
       "easy": [
-        { "id": "ch8-t2-e1", "type": "mcq", "question": "The number 23 has how many tens?", "options": ["2", "3", "23", "5"], "answer": "2", "explanation": "23 has 2 tens and 3 ones." },
-        { "id": "ch8-t2-e2", "type": "fill", "question": "The number 35 has 3 tens and ______ ones.", "answer": "5", "explanation": "35 = 3 tens + 5 ones." },
-        { "id": "ch8-t2-e3", "type": "mcq", "question": "How many ones are in the number 41?", "options": ["4", "1", "41", "5"], "answer": "1", "explanation": "41 has 4 tens and 1 one." },
-        { "id": "ch8-t2-e4", "type": "fill", "question": "50 has ______ tens and 0 ones.", "answer": "5", "explanation": "50 = 5 tens + 0 ones." }
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "How many tens does the number 27 have?",
+          "options": [
+            "2",
+            "7",
+            "27",
+            "9"
+          ],
+          "answer": "2",
+          "explanation": "27 is made of 2 tens and 7 ones."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "The number 43 has 4 tens and ______ ones.",
+          "answer": "3",
+          "explanation": "43 = 4 tens + 3 ones."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "How many ones are in the number 36?",
+          "options": [
+            "3",
+            "6",
+            "36",
+            "9"
+          ],
+          "answer": "6",
+          "explanation": "36 is made of 3 tens and 6 ones."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "fill",
+          "question": "40 has ______ tens and 0 ones.",
+          "answer": "4",
+          "explanation": "40 = 4 tens + 0 ones."
+        }
       ],
       "medium": [
-        { "id": "ch8-t2-m1", "type": "short", "question": "What number has 3 tens and 8 ones?", "answer": "38.", "explanation": "3 tens = 30, plus 8 ones = 38." },
-        { "id": "ch8-t2-m2", "type": "short", "question": "Break the number 47 into tens and ones.", "answer": "47 has 4 tens and 7 ones.", "explanation": "47 = 40 + 7 = 4 tens + 7 ones." },
-        { "id": "ch8-t2-m3", "type": "mcq", "question": "Which number has 2 tens and 9 ones?", "options": ["92", "29", "11", "20"], "answer": "29", "explanation": "2 tens = 20, plus 9 ones = 29." }
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Which number has 2 tens and 6 ones?",
+          "answer": "26.",
+          "explanation": "2 tens = 20, plus 6 ones = 26."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "Split the number 49 into tens and ones.",
+          "answer": "49 has 4 tens and 9 ones.",
+          "explanation": "49 = 40 + 9 = 4 tens + 9 ones."
+        },
+        {
+          "id": "ch8-t2-m3",
+          "type": "mcq",
+          "question": "Which number has 3 tens and 7 ones?",
+          "options": [
+            "73",
+            "37",
+            "10",
+            "30"
+          ],
+          "answer": "37",
+          "explanation": "3 tens = 30, plus 7 ones = 37."
+        }
       ],
       "hard": [
-        { "id": "ch8-t2-h1", "type": "long", "question": "I am a number. I have 4 tens and 6 ones. What number am I? My friend has 3 tens and 9 ones. Who is bigger?", "answer": "I am 46. My friend is 39. I am bigger (46 > 39).", "explanation": "46 has more tens (4) than 39 (3 tens), so 46 is bigger." }
-      ]
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "I am a number with 3 tens and 5 ones. What number am I? My friend has 4 tens and 2 ones. Who is bigger?",
+          "answer": "I am 35. My friend is 42. My friend is bigger (42 > 35).",
+          "explanation": "42 has more tens (4) than 35 (3 tens), so 42 is bigger."
+        }
+      ],
+      "name": "Counting Flowers — Numbers 31 to 50"
     },
     {
       "topic": "Numbers 51 to 100",
       "easy": [
-        { "id": "ch8-t3-e1", "type": "mcq", "question": "What number comes after 59?", "options": ["58", "60", "61", "50"], "answer": "60", "explanation": "After 59 comes 60 (sixty)." },
-        { "id": "ch8-t3-e2", "type": "fill", "question": "What comes after 99?", "answer": "100", "explanation": "After 99 comes 100, which is one hundred." },
-        { "id": "ch8-t3-e3", "type": "mcq", "question": "100 is also called ______.", "options": ["Ten", "Ninety", "One Hundred", "Fifty"], "answer": "One Hundred", "explanation": "100 is called One Hundred. It is equal to 10 tens." },
-        { "id": "ch8-t3-e4", "type": "fill", "question": "75, 76, 77, ______, 79, 80.", "answer": "78", "explanation": "The number after 77 is 78." }
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "Which number follows right after 69?",
+          "options": [
+            "68",
+            "70",
+            "71",
+            "60"
+          ],
+          "answer": "70",
+          "explanation": "69 is followed by 70, which we call seventy."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "The number after 99 is ______.",
+          "answer": "100",
+          "explanation": "99 is followed by 100, which is one hundred."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "mcq",
+          "question": "100 is the same as how many tens?",
+          "options": [
+            "5 tens",
+            "8 tens",
+            "10 tens",
+            "100 tens"
+          ],
+          "answer": "10 tens",
+          "explanation": "100 = 10 groups of ten."
+        },
+        {
+          "id": "ch8-t3-e4",
+          "type": "fill",
+          "question": "82, 83, 84, ______, 86, 87.",
+          "answer": "85",
+          "explanation": "The number between 84 and 86 is 85."
+        }
       ],
       "medium": [
-        { "id": "ch8-t3-m1", "type": "short", "question": "Fill in: 95, 96, __, 98, __, 100.", "answer": "97 and 99.", "explanation": "Counting in order: 95, 96, 97, 98, 99, 100." },
-        { "id": "ch8-t3-m2", "type": "mcq", "question": "How many tens make 100?", "options": ["5", "8", "10", "100"], "answer": "10", "explanation": "100 = 10 tens." }
+        {
+          "id": "ch8-t3-m1",
+          "type": "short",
+          "question": "Write the missing numbers: 93, 94, __, 96, __, 98.",
+          "answer": "95 and 97.",
+          "explanation": "Numbers go in order: 93, 94, 95, 96, 97, 98."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "mcq",
+          "question": "How many tens are needed to make 100?",
+          "options": [
+            "5",
+            "8",
+            "10",
+            "100"
+          ],
+          "answer": "10",
+          "explanation": "100 = 10 tens."
+        }
       ],
       "hard": [
-        { "id": "ch8-t3-h1", "type": "long", "question": "Count backwards from 100 to 95. Write all the numbers.", "answer": "100, 99, 98, 97, 96, 95.", "explanation": "Counting backwards means going from bigger to smaller numbers." },
-        { "id": "ch8-t3-h2", "type": "short", "question": "What are all the 'tens family' numbers from 10 to 100? (Numbers with 0 ones.)", "answer": "10, 20, 30, 40, 50, 60, 70, 80, 90, 100.", "explanation": "These are the round numbers where the ones digit is 0." }
-      ]
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "Start at 100 and count backwards to 94. Write every number.",
+          "answer": "100, 99, 98, 97, 96, 95, 94.",
+          "explanation": "Counting backwards means going from the bigger number towards the smaller number, one step at a time."
+        },
+        {
+          "id": "ch8-t3-h2",
+          "type": "short",
+          "question": "List all the round 'Tens Family' numbers from 10 to 100. (The ones with 0 in the ones place.)",
+          "answer": "10, 20, 30, 40, 50, 60, 70, 80, 90, 100.",
+          "explanation": "These are the numbers where the ones digit is 0."
+        }
+      ],
+      "name": "Understanding Tens and Ones"
     }
   ]
 }

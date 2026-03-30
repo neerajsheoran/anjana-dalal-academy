@@ -8,7 +8,12 @@
           "id": "ch2-t1-e1",
           "type": "mcq",
           "question": "Which of the following is NOT a characteristic of living things?",
-          "options": ["Growth", "Respiration", "Rusting", "Reproduction"],
+          "options": [
+            "Growth",
+            "Respiration",
+            "Rusting",
+            "Reproduction"
+          ],
           "answer": "Rusting",
           "explanation": "Rusting is a chemical change that happens to iron when it reacts with moisture and air. It is not a life process. Growth, respiration, and reproduction are all characteristics shared by living organisms."
         },
@@ -16,7 +21,12 @@
           "id": "ch2-t1-e2",
           "type": "mcq",
           "question": "A sunflower turning its face towards the sun during the day is an example of —",
-          "options": ["Excretion", "Response to stimulus", "Reproduction", "Respiration"],
+          "options": [
+            "Excretion",
+            "Response to stimulus",
+            "Reproduction",
+            "Respiration"
+          ],
           "answer": "Response to stimulus",
           "explanation": "The sunflower responds to sunlight (a stimulus) by turning towards it. This is called a response to stimulus and is one of the characteristics of living things."
         },
@@ -32,7 +42,12 @@
           "id": "ch2-t1-e4",
           "type": "mcq",
           "question": "Which of these is a living thing?",
-          "options": ["A wooden chair", "A mushroom growing on a log", "A plastic toy", "A glass of water"],
+          "options": [
+            "A wooden chair",
+            "A mushroom growing on a log",
+            "A plastic toy",
+            "A glass of water"
+          ],
           "answer": "A mushroom growing on a log",
           "explanation": "A mushroom is a living organism — it is a fungus. It grows, reproduces, respires, and responds to its environment. The wooden chair, plastic toy, and glass of water are all non-living."
         },
@@ -66,7 +81,12 @@
           "id": "ch2-t1-m3",
           "type": "mcq",
           "question": "When you walk from a dark room into bright sunlight, your pupils become smaller. This is an example of —",
-          "options": ["Excretion", "Growth", "Response to stimulus", "Reproduction"],
+          "options": [
+            "Excretion",
+            "Growth",
+            "Response to stimulus",
+            "Reproduction"
+          ],
           "answer": "Response to stimulus",
           "explanation": "Bright light is the stimulus, and the shrinking of your pupils is your body's automatic response to protect your eyes from too much light. This demonstrates that living things respond to changes in their environment."
         }
@@ -91,13 +111,18 @@
       ]
     },
     {
-      "topic": "Biodiversity — The Variety of Life on Earth",
+      "topic": "Habitats, Adaptations, and Classification",
       "easy": [
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
           "question": "The term 'biodiversity' refers to —",
-          "options": ["The study of human biology", "The total variety of living organisms on Earth", "Only the animals found in forests", "The number of zoos in a country"],
+          "options": [
+            "The study of human biology",
+            "The total variety of living organisms on Earth",
+            "Only the animals found in forests",
+            "The number of zoos in a country"
+          ],
           "answer": "The total variety of living organisms on Earth",
           "explanation": "Biodiversity (bio = life, diversity = variety) means the total variety of all living things — plants, animals, fungi, bacteria, and every other organism found on Earth."
         },
@@ -105,7 +130,12 @@
           "id": "ch2-t2-e2",
           "type": "mcq",
           "question": "Which Indian region is famous for its mangrove forests and is home to the Royal Bengal Tiger?",
-          "options": ["Thar Desert", "Western Ghats", "Sundarbans", "Ladakh"],
+          "options": [
+            "Thar Desert",
+            "Western Ghats",
+            "Sundarbans",
+            "Ladakh"
+          ],
           "answer": "Sundarbans",
           "explanation": "The Sundarbans, located where the Ganga and Brahmaputra rivers meet the Bay of Bengal, have vast mangrove forests. The Royal Bengal Tiger lives here and is known to swim between the mangrove islands."
         },
@@ -121,7 +151,12 @@
           "id": "ch2-t2-e4",
           "type": "mcq",
           "question": "Which of the following organisms helps in pollination of food crops?",
-          "options": ["Earthworm", "Honeybee", "Vulture", "Frog"],
+          "options": [
+            "Earthworm",
+            "Honeybee",
+            "Vulture",
+            "Frog"
+          ],
           "answer": "Honeybee",
           "explanation": "Honeybees visit flowers to collect nectar and in the process carry pollen from one flower to another, enabling plants to produce fruits and seeds. This process is called pollination."
         },
@@ -129,7 +164,12 @@
           "id": "ch2-t2-e5",
           "type": "mcq",
           "question": "The Western Ghats are called a 'biodiversity hotspot' because they —",
-          "options": ["Have very hot weather", "Contain a huge number of species, many found nowhere else", "Are located near the equator", "Have no human settlements"],
+          "options": [
+            "Have very hot weather",
+            "Contain a huge number of species, many found nowhere else",
+            "Are located near the equator",
+            "Have no human settlements"
+          ],
           "answer": "Contain a huge number of species, many found nowhere else",
           "explanation": "A biodiversity hotspot is a region with an exceptionally high number of species, many of which are endemic (found only in that region). The Western Ghats host thousands of unique plant and animal species."
         }
@@ -164,13 +204,18 @@
       ]
     },
     {
-      "topic": "Habitats, Adaptations, and Classification",
+      "topic": "Key Terms at a Glance",
       "easy": [
         {
           "id": "ch2-t3-e1",
           "type": "mcq",
           "question": "The natural place where an organism lives and finds everything it needs to survive is called its —",
-          "options": ["Adaptation", "Habitat", "Classification", "Excretion"],
+          "options": [
+            "Adaptation",
+            "Habitat",
+            "Classification",
+            "Excretion"
+          ],
           "answer": "Habitat",
           "explanation": "A habitat is the natural environment where an organism lives. It provides food, water, shelter, and suitable conditions for the organism to survive and reproduce."
         },
@@ -178,7 +223,12 @@
           "id": "ch2-t3-e2",
           "type": "mcq",
           "question": "A cactus has spines instead of broad leaves. This adaptation helps the plant to —",
-          "options": ["Attract more insects", "Reduce water loss in the desert", "Grow taller", "Produce more flowers"],
+          "options": [
+            "Attract more insects",
+            "Reduce water loss in the desert",
+            "Grow taller",
+            "Produce more flowers"
+          ],
           "answer": "Reduce water loss in the desert",
           "explanation": "Broad leaves lose water through evaporation. By having thin spines instead of leaves, the cactus minimises water loss — a crucial adaptation for surviving in a hot, dry desert where water is scarce."
         },
@@ -194,7 +244,12 @@
           "id": "ch2-t3-e4",
           "type": "mcq",
           "question": "Animals that have a backbone are called —",
-          "options": ["Invertebrates", "Herbs", "Vertebrates", "Creepers"],
+          "options": [
+            "Invertebrates",
+            "Herbs",
+            "Vertebrates",
+            "Creepers"
+          ],
           "answer": "Vertebrates",
           "explanation": "Vertebrates are animals with a backbone (spine) running along their body. Examples include fish, frogs, lizards, birds, and humans."
         },
@@ -202,7 +257,12 @@
           "id": "ch2-t3-e5",
           "type": "mcq",
           "question": "Which of these is a shrub?",
-          "options": ["Peepal", "Wheat", "Mehendi (henna)", "Pumpkin"],
+          "options": [
+            "Peepal",
+            "Wheat",
+            "Mehendi (henna)",
+            "Pumpkin"
+          ],
           "answer": "Mehendi (henna)",
           "explanation": "Mehendi (henna) is a shrub — a medium-sized plant with woody branches starting from near the base. Peepal is a tree, wheat is a herb, and pumpkin is a creeper."
         }

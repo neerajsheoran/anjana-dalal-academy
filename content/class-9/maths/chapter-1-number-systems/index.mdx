@@ -1,147 +1,149 @@
 ---
-title: Chapter 1 Number Systems
+title: "Understanding Number Systems"
+description: "Explore natural numbers, integers, rational and irrational numbers, and real number operations."
+order: 1
 ---
 ## Introduction
 
-In earlier classes, you learnt about the number line and how to represent various types of numbers on it. Walking along the number line in the positive direction, you encounter natural numbers, whole numbers, integers, and rational numbers. This chapter takes you further into the world of numbers by introducing **irrational numbers** and the complete **real number system**.
+Think about counting mangoes in a basket -- you start with 1, 2, 3, and so on. These counting numbers have been with us since childhood. But as mathematics grew, so did our need for more types of numbers. What happens when the basket is empty? We need zero. What about a debt of Rs 500? We need negative numbers. What about splitting a roti equally among 3 people? We need fractions. This chapter takes you on a journey through the entire family of numbers, all the way to the **real number system**.
 
-The different sets of numbers form a hierarchy:
+The number family is like a joint family -- each generation contains the previous one:
 
 ![Venn diagram showing the nested hierarchy of number sets: natural numbers inside whole numbers inside integers inside rational numbers inside real numbers](number-sets-venn-diagram.png)
 
-* **Natural Numbers (N):** The counting numbers 1, 2, 3, 4, ... that go on forever.
-* **Whole Numbers (W):** Natural numbers together with zero: 0, 1, 2, 3, ...
-* **Integers (Z):** Whole numbers together with negative numbers: ..., -3, -2, -1, 0, 1, 2, 3, ... (The letter Z comes from the German word "zahlen", meaning "to count".)
-* **Rational Numbers (Q):** Numbers that can be written in the form p/q, where p and q are integers and q is not equal to 0. (The letter Q comes from "quotient".)
+* **Natural Numbers (N):** The counting numbers 1, 2, 3, 4, ... that stretch endlessly.
+* **Whole Numbers (W):** When we include zero with the natural numbers: 0, 1, 2, 3, ...
+* **Integers (Z):** Whole numbers along with their negatives: ..., -3, -2, -1, 0, 1, 2, 3, ... (Z stands for "Zahlen," a German word for numbers.)
+* **Rational Numbers (Q):** Any number expressible as p/q, with p and q being integers and q not zero. (Q stands for "quotient.")
 
-> **Key idea:** Every natural number is a whole number, every whole number is an integer, and every integer is a rational number. The sets N, W, Z, and Q are nested inside one another.
+> **Key idea:** Each number set nests inside the next. Every natural number is also a whole number, every whole number is also an integer, and every integer is also a rational number (since any integer n can be written as n/1).
 
 ---
 
 ## Rational Numbers
 
-A number **r** is called a **rational number** if it can be written in the form **p/q**, where p and q are integers and q is not equal to 0.
+A number **r** is **rational** if we can express it as **p/q**, where p and q are integers and q is not zero.
 
-All natural numbers, whole numbers, and integers are rational numbers. For example, -25 can be written as -25/1.
+Think of it this way: if you can write a number as one integer divided by another (non-zero) integer, it is rational. So -17 is rational (write it as -17/1), and 0.75 is rational (write it as 3/4).
 
-Rational numbers do not have a unique representation. For instance:
+A rational number does not have a single unique form. For example:
 
-1/2 = 2/4 = 10/20 = 25/50
+2/3 = 4/6 = 8/12 = 20/30
 
-When we represent p/q on the number line, we assume that p and q are **co-prime** (they share no common factor other than 1).
+When placing p/q on the number line, we typically use the **simplest form** -- where p and q share no common factor other than 1.
 
-**Finding rational numbers between two numbers:**
+**Locating rational numbers between two given numbers:**
 
-There are **infinitely many** rational numbers between any two given rational numbers. Two methods to find them:
+Between any two rational numbers, there are **infinitely many** other rational numbers. Two practical ways to find them:
 
-1. **Averaging method:** To find a rational number between r and s, compute (r + s)/2.
-2. **Common denominator method:** To find n rational numbers between two numbers, rewrite both with denominator (n + 1) and pick the numerators in between.
+1. **Mean method:** The number (r + s)/2 always lies exactly between r and s.
+2. **Equivalent fraction method:** To find n rational numbers between two values, rewrite both with a common denominator of (n + 1) or larger, then pick numerators in between.
 
-**Example:** Find five rational numbers between 1 and 2.
+**Example:** Locate four rational numbers between 2 and 3.
 
-Rewrite 1 = 6/6 and 2 = 12/6. Then the five rational numbers are 7/6, 8/6, 9/6, 10/6, and 11/6.
+Rewrite 2 = 10/5 and 3 = 15/5. The four rational numbers are 11/5, 12/5, 13/5, and 14/5.
 
 ---
 
 ## Irrational Numbers
 
-After placing all rational numbers on the number line, there are still infinitely many "gaps" left. The numbers that fill these gaps are called **irrational numbers**.
+Even after placing every rational number on the number line, countless "holes" remain. The numbers that fill these holes are called **irrational numbers**.
 
-A number **s** is called an **irrational number** if it **cannot** be written in the form p/q, where p and q are integers and q is not equal to 0.
+A number **s** is **irrational** if it **cannot** be expressed as p/q for any integers p and q (with q not zero).
 
-> **Key idea:** Irrational numbers were first discovered by the Pythagoreans around 400 BC. Hippasus of Croton is credited with proving that the square root of 2 is irrational.
+> **Key idea:** The ancient Indian text Sulbasutras (around 800 BC) contains remarkably accurate approximations of sqrt(2), needed for constructing Vedic fire altars. The Greek mathematician Hippasus is credited with the formal proof that sqrt(2) cannot be a ratio of integers.
 
-Some examples of irrational numbers:
+Some well-known irrational numbers:
 
 * Square roots of non-perfect squares: sqrt(2), sqrt(3), sqrt(5), sqrt(7), ...
-* The number pi (approximately 3.14159265...)
-* Non-terminating, non-recurring decimals like 0.10110111011110...
+* The constant pi (approximately 3.14159265...)
+* Decimals with no end and no repeating block, such as 0.20220222022220...
 
-**Locating sqrt(2) on the number line:**
+**Placing sqrt(2) on the number line:**
 
-Consider a unit square (side = 1). By the Pythagoras theorem, the diagonal has length sqrt(1^2 + 1^2) = sqrt(2). Place the square so one vertex is at the origin on the number line. Using a compass with the diagonal as radius, mark a point on the number line. This point represents sqrt(2).
+Imagine a square with each side measuring 1 unit. By the Pythagoras theorem, the diagonal measures sqrt(1^2 + 1^2) = sqrt(2). Position this square so one corner sits at the origin on the number line. Using a compass with the diagonal as radius, swing an arc to mark a point on the number line. That point is sqrt(2).
 
 ![Construction showing a unit square on the number line with its diagonal used to locate sqrt(2) using a compass arc](locating-sqrt2-number-line.png)
 
-**Locating sqrt(3) on the number line:**
+**Placing sqrt(3) on the number line:**
 
-Once sqrt(2) is located, construct a right triangle with one side = sqrt(2) and the other = 1. The hypotenuse = sqrt(2 + 1) = sqrt(3). Use a compass to transfer this length to the number line.
+After locating sqrt(2), build a right triangle with one leg = sqrt(2) and the other = 1. The hypotenuse = sqrt(2 + 1) = sqrt(3). Transfer this length to the number line using a compass.
 
 ![Successive construction of sqrt(2), sqrt(3), sqrt(4) on the number line using right triangles (spiral of Theodorus approach)](successive-square-roots-number-line.png)
 
-In general, sqrt(n) for any positive integer n can be located on the number line once sqrt(n - 1) has been located.
+By repeating this process, sqrt(n) for any positive integer n can be placed on the number line once sqrt(n - 1) is already located.
 
 ---
 
 ## Real Numbers
 
-The collection of **all rational numbers and all irrational numbers** together makes up the set of **real numbers**, denoted by **R**.
+Combine **all rational numbers** with **all irrational numbers**, and you get the set of **real numbers**, written as **R**.
 
-> **Key idea:** Every real number is represented by a unique point on the number line, and every point on the number line represents a unique real number. This is why we call it the **real number line**.
+> **Key idea:** There is a perfect one-to-one match between real numbers and points on the number line. Every real number sits at exactly one point, and every point corresponds to exactly one real number. This is why we call it the **real number line**.
 
-This fundamental result was established by the German mathematicians **Cantor** and **Dedekind** in the 1870s.
+This deep result was formalized by the German mathematicians **Cantor** and **Dedekind** around the 1870s.
 
-A real number is either rational or irrational -- there is no third option.
+Every real number falls into exactly one category -- it is either rational or irrational, with no overlap and no gaps.
 
 ---
 
 ## Decimal Expansions of Real Numbers
 
-The decimal expansion of a number provides a powerful way to distinguish between rational and irrational numbers.
+Decimals give us a powerful lens for distinguishing rational from irrational numbers.
 
-### Decimal expansions of rational numbers
+### Decimals of rational numbers
 
-When you divide p by q, one of two things happens:
+When you carry out the division p divided by q, one of two outcomes occurs:
 
-**Case 1: Terminating decimal** -- The remainder eventually becomes zero.
+**Outcome 1: Terminating decimal** -- The division ends with remainder zero.
 
-* 7/8 = 0.875
-* 1/2 = 0.5
-* 639/250 = 2.556
+* 3/8 = 0.375
+* 7/4 = 1.75
+* 141/250 = 0.564
 
-**Case 2: Non-terminating recurring (repeating) decimal** -- The remainders start repeating, causing a block of digits to repeat forever.
+**Outcome 2: Non-terminating recurring (repeating) decimal** -- At some point, a group of digits begins repeating endlessly.
 
-* 10/3 = 3.333... = 3.3 (bar over 3)
-* 1/7 = 0.142857142857... = 0.142857 (bar over 142857)
+* 7/3 = 2.333... = 2.3 (bar over 3)
+* 5/11 = 0.454545... = 0.45 (bar over 45)
 
-> **Key idea:** The decimal expansion of a rational number is either **terminating** or **non-terminating recurring**. Conversely, any number with a terminating or non-terminating recurring decimal expansion is rational.
+> **Key idea:** A rational number always produces either a terminating decimal or a non-terminating recurring decimal. And conversely, any decimal that terminates or repeats is rational.
 
-### Decimal expansions of irrational numbers
+### Decimals of irrational numbers
 
-Since irrational numbers cannot be expressed as p/q, their decimal expansions are **non-terminating and non-recurring** -- they go on forever without any repeating pattern.
+Irrational numbers produce decimals that are **non-terminating and non-recurring** -- they go on forever without ever settling into a repeating pattern.
 
-* sqrt(2) = 1.4142135623730950488...
-* pi = 3.14159265358979323846...
+* sqrt(2) = 1.41421356237...
+* pi = 3.14159265358...
 
-> **Key idea:** The decimal expansion of an irrational number is **non-terminating non-recurring**. Conversely, any number with such a decimal expansion is irrational.
+> **Key idea:** If a decimal expansion never ends and never repeats, the number is irrational. If it terminates or repeats, the number is rational.
 
-### Converting recurring decimals to fractions
+### Turning recurring decimals into fractions
 
-**Example:** Express 0.333... in the form p/q.
+**Example:** Write 0.444... as p/q.
 
-Let x = 0.333...
-Then 10x = 3.333... = 3 + x
-So 9x = 3, giving x = 3/9 = 1/3.
+Let x = 0.444...
+Then 10x = 4.444... = 4 + x
+So 9x = 4, giving x = 4/9.
 
-**Example:** Express 1.272727... in the form p/q.
+**Example:** Write 2.363636... as p/q.
 
-Let x = 1.272727...
-Then 100x = 127.2727... = 126 + x
-So 99x = 126, giving x = 126/99 = 14/11.
+Let x = 2.363636...
+Then 100x = 236.3636... = 234 + x
+So 99x = 234, giving x = 234/99 = 26/11.
 
-**Example:** Express 0.2353535... in the form p/q.
+**Example:** Write 0.7282828... as p/q.
 
-Let x = 0.2353535...
-Then 100x = 23.53535... = 23.3 + x
-So 99x = 233/10, giving x = 233/990.
+Let x = 0.7282828...
+Then 100x = 72.82828... = 72.1 + x
+So 99x = 721/10, giving x = 721/990.
 
-### An interesting result
+### A surprising fact
 
-0.9999... = 1 (exactly). Let x = 0.9999..., then 10x = 9.9999... = 9 + x, so 9x = 9, giving x = 1.
+0.9999... = 1 (exactly!). Let x = 0.9999..., then 10x = 9.9999... = 9 + x, so 9x = 9, hence x = 1.
 
-### Condition for terminating decimals
+### When does a rational number give a terminating decimal?
 
-A rational number p/q (in lowest terms) has a terminating decimal expansion if and only if the prime factorisation of q contains only powers of 2 or powers of 5 (or both).
+A rational number p/q (written in simplest form) has a terminating decimal if and only if every prime factor of q is either 2 or 5 (or both).
 
 ![Flowchart showing how to classify a decimal as terminating, non-terminating recurring, or non-terminating non-recurring](decimal-expansion-classification-flowchart.png)
 
@@ -149,22 +151,22 @@ A rational number p/q (in lowest terms) has a terminating decimal expansion if a
 
 ## Operations on Real Numbers
 
-Rational numbers are **closed** under addition, subtraction, multiplication, and division (except by zero). Irrational numbers satisfy the commutative, associative, and distributive laws, but the result of operations on two irrationals may be rational or irrational.
+Rational numbers are **closed** under addition, subtraction, multiplication, and division (except by zero). The rules for irrational numbers are a bit more nuanced.
 
-**Important results:**
+**Key results to remember:**
 
-1. The **sum or difference** of a rational and an irrational number is always **irrational**.
-2. The **product or quotient** of a non-zero rational number and an irrational number is always **irrational**.
-3. The sum, difference, product, or quotient of two irrational numbers **may be rational or irrational**.
+1. **Adding or subtracting** a rational number and an irrational number always gives an **irrational** result.
+2. **Multiplying or dividing** a non-zero rational number by an irrational number always gives an **irrational** result.
+3. When you combine two irrational numbers (add, subtract, multiply, or divide), the result **could be either** rational or irrational.
 
 **Examples:**
 
-* sqrt(6) + (-sqrt(6)) = 0 (rational)
-* sqrt(2) times sqrt(2) = 2 (rational)
-* 2 + sqrt(3) is irrational
-* 7 times sqrt(5) = 7sqrt(5) is irrational
+* sqrt(5) + (-sqrt(5)) = 0 (two irrationals giving a rational)
+* sqrt(3) times sqrt(3) = 3 (two irrationals giving a rational)
+* 3 + sqrt(7) is irrational
+* 5 times sqrt(2) = 5sqrt(2) is irrational
 
-### Identities involving square roots
+### Identities with square roots
 
 For positive real numbers a and b:
 
@@ -174,50 +176,50 @@ For positive real numbers a and b:
 4. (a + sqrt(b))(a - sqrt(b)) = a^2 - b
 5. (sqrt(a) + sqrt(b))^2 = a + 2sqrt(ab) + b
 
-**Example:** Simplify (sqrt(5) + sqrt(7))(2 + sqrt(5))
-\= 2sqrt(5) + sqrt(25) + 2sqrt(7) + sqrt(35)
-\= 2sqrt(5) + 5 + 2sqrt(7) + sqrt(35)
+**Example:** Simplify (sqrt(3) + sqrt(11))(3 + sqrt(3))
+\= 3sqrt(3) + sqrt(9) + 3sqrt(11) + sqrt(33)
+\= 3sqrt(3) + 3 + 3sqrt(11) + sqrt(33)
 
-**Example:** Simplify (sqrt(11) - sqrt(7))(sqrt(11) + sqrt(7))
-\= 11 - 7 = 4
+**Example:** Simplify (sqrt(13) - sqrt(5))(sqrt(13) + sqrt(5))
+\= 13 - 5 = 8
 
 ---
 
 ## Rationalising the Denominator
 
-When the denominator of an expression contains a square root, we convert it to an equivalent expression with a **rational denominator**. This process is called **rationalising the denominator**.
+When a denominator contains a square root, we transform the expression into an equivalent one with a **rational denominator**. This process is called **rationalising the denominator**.
 
-**Example:** Rationalise 1/sqrt(2)
+**Example:** Rationalise 1/sqrt(3)
 
-Multiply numerator and denominator by sqrt(2):
-1/sqrt(2) = sqrt(2)/2
+Multiply top and bottom by sqrt(3):
+1/sqrt(3) = sqrt(3)/3
 
-**Example:** Rationalise 1/(2 + sqrt(3))
+**Example:** Rationalise 1/(3 + sqrt(5))
 
-Multiply by (2 - sqrt(3))/(2 - sqrt(3)):
-1/(2 + sqrt(3)) = (2 - sqrt(3))/(4 - 3) = 2 - sqrt(3)
+Multiply by (3 - sqrt(5))/(3 - sqrt(5)):
+1/(3 + sqrt(5)) = (3 - sqrt(5))/(9 - 5) = (3 - sqrt(5))/4
 
-**Example:** Rationalise 1/(7 + 3sqrt(2))
+**Example:** Rationalise 1/(5 + 2sqrt(3))
 
-Multiply by (7 - 3sqrt(2))/(7 - 3sqrt(2)):
-1/(7 + 3sqrt(2)) = (7 - 3sqrt(2))/(49 - 18) = (7 - 3sqrt(2))/31
+Multiply by (5 - 2sqrt(3))/(5 - 2sqrt(3)):
+1/(5 + 2sqrt(3)) = (5 - 2sqrt(3))/(25 - 12) = (5 - 2sqrt(3))/13
 
-> **Key idea:** To rationalise 1/(a + sqrt(b)), multiply by (a - sqrt(b))/(a - sqrt(b)). The denominator becomes a^2 - b, which is rational.
+> **Key idea:** To rationalise 1/(a + sqrt(b)), multiply by (a - sqrt(b))/(a - sqrt(b)). The denominator simplifies to a^2 - b, which is rational.
 
 ---
 
 ## Laws of Exponents for Real Numbers
 
-You have already learnt the laws of exponents for natural number bases and integer exponents. These laws can be **extended to real number bases and rational exponents**.
+The exponent rules you already know for whole number powers extend naturally to **real number bases and rational exponents**.
 
 ### Definitions
 
 For a positive real number a and positive integer n:
 
-* **n-th root:** The n-th root of a, written as a^(1/n), equals b if b^n = a and b > 0.
-* **Rational exponent:** For integers m and n (n > 0, m and n co-prime), a^(m/n) = (a^(1/n))^m = (a^m)^(1/n).
+* **n-th root:** a^(1/n) is the positive number b such that b^n = a.
+* **Rational exponent:** For co-prime integers m and n (n > 0), a^(m/n) = (a^(1/n))^m = (a^m)^(1/n).
 
-### The extended laws
+### The four laws
 
 For a > 0 (a real number) and rational numbers p and q:
 
@@ -228,45 +230,45 @@ For a > 0 (a real number) and rational numbers p and q:
 
 ### Worked examples
 
-**Find 64^(1/2):**
-64 = 8^2, so 64^(1/2) = 8.
+**Find 81^(1/2):**
+81 = 9^2, so 81^(1/2) = 9.
 
-**Find 32^(1/5):**
-32 = 2^5, so 32^(1/5) = 2.
+**Find 243^(1/5):**
+243 = 3^5, so 243^(1/5) = 3.
 
-**Find 125^(1/3):**
-125 = 5^3, so 125^(1/3) = 5.
+**Find 27^(1/3):**
+27 = 3^3, so 27^(1/3) = 3.
 
-**Find 9^(3/2):**
-9^(3/2) = (9^(1/2))^3 = 3^3 = 27.
+**Find 4^(3/2):**
+4^(3/2) = (4^(1/2))^3 = 2^3 = 8.
 
-**Find 32^(2/5):**
-32^(2/5) = (32^(1/5))^2 = 2^2 = 4.
+**Find 243^(2/5):**
+243^(2/5) = (243^(1/5))^2 = 3^2 = 9.
 
-**Find 16^(3/4):**
-16^(3/4) = (16^(1/4))^3 = 2^3 = 8.
+**Find 81^(3/4):**
+81^(3/4) = (81^(1/4))^3 = 3^3 = 27.
 
-**Simplify 2^(2/3) times 2^(1/3):**
-\= 2^(2/3 + 1/3) = 2^1 = 2.
+**Simplify 3^(2/5) times 3^(3/5):**
+\= 3^(2/5 + 3/5) = 3^1 = 3.
 
-**Simplify 7^(1/5) / 7^(1/3):**
-\= 7^(1/5 - 1/3) = 7^(-2/15).
+**Simplify 5^(1/3) / 5^(1/2):**
+\= 5^(1/3 - 1/2) = 5^(-1/6).
 
-**Simplify 11^(1/2) / 11^(1/4):**
-\= 11^(1/2 - 1/4) = 11^(1/4).
+**Simplify 13^(1/4) / 13^(1/8):**
+\= 13^(1/4 - 1/8) = 13^(1/8).
 
-**Simplify 13^(1/5) times 17^(1/5):**
-\= (13 times 17)^(1/5) = 221^(1/5).
+**Simplify 7^(1/3) times 11^(1/3):**
+\= (7 times 11)^(1/3) = 77^(1/3).
 
 ---
 
 ## Summary
 
-1. A **rational number** can be written as p/q where p, q are integers and q is not 0.
+1. A **rational number** is one that can be expressed as p/q where p, q are integers and q is not 0.
 2. An **irrational number** cannot be written in the form p/q.
 3. The decimal expansion of a rational number is either **terminating** or **non-terminating recurring**.
 4. The decimal expansion of an irrational number is **non-terminating non-recurring**.
-5. All rational and irrational numbers together form the set of **real numbers (R)**.
+5. Together, all rational and irrational numbers constitute the set of **real numbers (R)**.
 6. If r is rational and s is irrational, then r + s, r - s are irrational; rs and r/s (r not 0) are irrational.
 7. For positive real numbers a and b: sqrt(ab) = sqrt(a)sqrt(b); sqrt(a/b) = sqrt(a)/sqrt(b).
 8. To rationalise 1/(a + sqrt(b)), multiply by (a - sqrt(b))/(a - sqrt(b)).

@@ -1,289 +1,294 @@
 ---
-title: "Chapter 15 — Finding the Unknown"
+title: "Solving for the Unknown"
+description: "Algebra and simple equations — use letters like x and y to find unknown values."
+order: 15
 ---
 
-In earlier chapters, we used letter-numbers (variables) to write expressions and formulas. Now we take the next big step -- using them to find **unknown** values. When we know that two quantities are equal, we get an **equation**, and solving the equation reveals the unknown. This is one of the most powerful ideas in all of mathematics.
+In previous chapters, we used letters to stand for numbers in expressions and formulas. Now comes the exciting part -- using them to **discover unknown values**. When we set two quantities equal to each other, we create an **equation**, and solving that equation reveals what the unknown must be. This is one of the most powerful ideas in all of mathematics.
 
 ## The Idea of an Unknown
 
-### Weighing Scales and Balance
+### A Weighing Scale Analogy
 
-Imagine a simple balance scale. On one side, you place an object of unknown weight. On the other, you place known weights until the scale balances. When the two sides are equal, you have found the unknown weight.
+Picture a traditional balance scale at a kirana shop. The shopkeeper places a bag of lentils on one side and keeps adding known weights on the other until the two sides are perfectly level. The moment they balance, the total of the known weights equals the weight of the lentils.
 
-**Example:** A bag of rice balances with a 2 kg weight and a 500 g weight. So the bag weighs 2 kg 500 g = **2.5 kg**.
+**Example:** A packet of spices balances with a 1 kg weight and a 250 g weight. So the packet weighs 1 kg 250 g = **1.25 kg**.
 
-This is exactly the idea behind an equation: two sides that are **equal**.
+This is the fundamental concept behind every equation: two sides that are **equal**.
 
-### Matchstick Patterns and Unknowns
+### Rangoli Dots and Unknowns
 
-Recall the matchstick patterns from Chapter 4. Suppose we arrange matchsticks in a row of triangles:
+Suppose Kavita arranges dots in a pattern of connected squares:
 
-- 1 triangle needs 3 matchsticks
-- 2 triangles (sharing a side) need 5 matchsticks
-- 3 triangles need 7 matchsticks
-- **n** triangles need **2n + 1** matchsticks
+- 1 square needs 4 dots
+- 2 squares (sharing a side) need 7 dots
+- 3 squares need 10 dots
+- **n** squares need **3n + 1** dots
 
-Now suppose we ask: **How many triangles can we make with exactly 99 matchsticks?**
+Now suppose she asks: **How many squares can I draw with exactly 76 dots?**
 
 We need to find the value of **n** such that:
 
-**2n + 1 = 99**
+**3n + 1 = 76**
 
-This is an **equation** -- a statement that two expressions are equal. Solving it means finding the value of n that makes both sides the same.
+This is an **equation** -- a statement that two expressions are equal. Solving it reveals the unknown.
 
-## What is an Equation?
+## What Exactly is an Equation?
 
-An **equation** is a mathematical statement that says two expressions are **equal**. It always contains an **equals sign (=)**.
+An **equation** is a mathematical sentence that declares two expressions are **equal**. It always features the **equals sign (=)**.
 
-Every equation has two parts:
-- **Left-Hand Side (LHS)** -- the expression on the left of the equals sign
-- **Right-Hand Side (RHS)** -- the expression on the right of the equals sign
+Every equation has two halves:
+- **Left-Hand Side (LHS)** -- the expression to the left of the equals sign
+- **Right-Hand Side (RHS)** -- the expression to the right of the equals sign
 
 **Examples of equations:**
 
 | Equation | LHS | RHS |
 |----------|-----|-----|
-| 2n + 1 = 99 | 2n + 1 | 99 |
-| 5x = 30 | 5x | 30 |
-| y - 7 = 12 | y - 7 | 12 |
-| 3m + 4 = 2m + 9 | 3m + 4 | 2m + 9 |
+| 3n + 1 = 76 | 3n + 1 | 76 |
+| 4x = 28 | 4x | 28 |
+| y - 5 = 18 | y - 5 | 18 |
+| 2m + 6 = 4m - 8 | 2m + 6 | 4m - 8 |
 
-> **Key Distinction:** An **expression** like 2n + 1 does not have an equals sign. An **equation** like 2n + 1 = 99 states that the expression equals something specific. Equations can be **true** or **false** depending on the value of the unknown.
+> **Important Distinction:** An **expression** like 3n + 1 has no equals sign -- it simply represents a quantity. An **equation** like 3n + 1 = 76 makes a claim that can be **true** or **false** depending on the value of n.
 
-### Equations vs Expressions
+### Expressions vs Equations
 
 | Feature | Expression | Equation |
 |---------|-----------|----------|
 | Has an equals sign? | No | Yes |
-| Example | 3x + 5 | 3x + 5 = 20 |
+| Example | 4x + 3 | 4x + 3 = 19 |
 | Can be simplified? | Yes | Yes, and can be **solved** |
-| Has a specific solution? | No (it takes different values) | Yes (specific value(s) make it true) |
+| Has a specific solution? | No (takes different values for different x) | Yes (a particular value makes it true) |
 
-## Solving Equations: Trial and Error
+## First Approach: Trial and Error
 
-The simplest way to solve an equation is to **try different values** of the unknown until you find one that makes the equation true.
+The most straightforward way to solve an equation is to **test different values** until one works.
 
-**Example:** Solve 2n + 1 = 99
+**Example:** Solve 3n + 1 = 76
 
-| n | LHS = 2n + 1 | RHS | Equal? |
+| n | LHS = 3n + 1 | RHS | Equal? |
 |---|:---:|:---:|:---:|
-| 10 | 21 | 99 | No (too small) |
-| 30 | 61 | 99 | No (too small) |
-| 50 | 101 | 99 | No (too big) |
-| 49 | 99 | 99 | **Yes!** |
+| 10 | 31 | 76 | No (too small) |
+| 20 | 61 | 76 | No (still small) |
+| 25 | 76 | 76 | **Yes!** |
 
-So **n = 49**. We can make 49 triangles with 99 matchsticks.
+So **n = 25**. Kavita can draw 25 squares with 76 dots.
 
-**Example:** Solve x + 8 = 15
+**Example:** Solve x + 6 = 14
 
-Try x = 5: LHS = 5 + 8 = 13 (not equal to 15)
-Try x = 7: LHS = 7 + 8 = 15 = RHS
+Try x = 5: LHS = 5 + 6 = 11 (not 14)
+Try x = 8: LHS = 8 + 6 = 14 = RHS
 
-So **x = 7**.
+So **x = 8**.
 
-> Trial and error works, but it can be slow -- especially for complicated equations. We need a more **systematic** method.
+> Trial and error gets the job done, but it can be painfully slow for tricky equations. We need a smarter approach.
 
 ## The Balance Principle
 
-Think of an equation like a perfectly balanced weighing scale. If we do the **same thing to both sides**, the scale stays balanced.
+Think of an equation as a perfectly balanced seesaw. If you do the **same thing to both ends**, it stays balanced.
 
 > **The Balance Principle:** If we add, subtract, multiply, or divide **both sides** of an equation by the **same number**, the equation remains true.
 
-This principle gives us a systematic way to solve any equation.
+This principle gives us a systematic technique for solving any equation.
 
-### Adding or Subtracting from Both Sides
+### Undoing Addition and Subtraction
 
-**Example:** Solve x - 3 = 10
+**Example:** Solve x - 5 = 14
 
-The unknown x has 3 subtracted from it. To **undo** this subtraction, we **add 3** to both sides:
+The unknown x has 5 taken away from it. To **undo** this, we **add 5** to both sides:
 
-x - 3 + 3 = 10 + 3
+x - 5 + 5 = 14 + 5
 
-x = **13**
+x = **19**
 
-**Check:** LHS = 13 - 3 = 10 = RHS. Correct!
+**Check:** LHS = 19 - 5 = 14 = RHS. Correct!
 
-**Example:** Solve y + 12 = 20
+**Example:** Solve y + 9 = 25
 
-The unknown y has 12 added to it. To undo this addition, we **subtract 12** from both sides:
+To undo the addition of 9, we **subtract 9** from both sides:
 
-y + 12 - 12 = 20 - 12
+y + 9 - 9 = 25 - 9
 
-y = **8**
+y = **16**
 
-**Check:** LHS = 8 + 12 = 20 = RHS. Correct!
+**Check:** LHS = 16 + 9 = 25 = RHS. Correct!
 
-### Multiplying or Dividing Both Sides
+### Undoing Multiplication and Division
 
-**Example:** Solve 5x = 30
+**Example:** Solve 4x = 28
 
-The unknown x is multiplied by 5. To undo this multiplication, we **divide both sides** by 5:
+The unknown x is multiplied by 4. To undo this, **divide both sides** by 4:
 
-5x / 5 = 30 / 5
-
-x = **6**
-
-**Check:** LHS = 5 x 6 = 30 = RHS. Correct!
-
-**Example:** Solve n / 4 = 7
-
-The unknown n is divided by 4. To undo this division, we **multiply both sides** by 4:
-
-(n / 4) x 4 = 7 x 4
-
-n = **28**
-
-**Check:** LHS = 28 / 4 = 7 = RHS. Correct!
-
-## Solving Two-Step Equations
-
-Many equations require **two steps** to solve -- first undo addition or subtraction, then undo multiplication or division.
-
-**Example:** Solve 5x - 4 = 16
-
-**Step 1:** Add 4 to both sides (undo the subtraction):
-
-5x - 4 + 4 = 16 + 4
-
-5x = 20
-
-**Step 2:** Divide both sides by 5 (undo the multiplication):
-
-5x / 5 = 20 / 5
-
-x = **4**
-
-**Check:** LHS = 5 x 4 - 4 = 20 - 4 = 16 = RHS. Correct!
-
-**Example:** Solve 3m + 7 = 22
-
-**Step 1:** Subtract 7 from both sides:
-
-3m + 7 - 7 = 22 - 7
-
-3m = 15
-
-**Step 2:** Divide both sides by 3:
-
-m = **5**
-
-**Check:** LHS = 3 x 5 + 7 = 15 + 7 = 22 = RHS. Correct!
-
-**Example:** Solve 2y + 1 = 99
-
-**Step 1:** Subtract 1 from both sides:
-
-2y = 98
-
-**Step 2:** Divide both sides by 2:
-
-y = **49**
-
-## Equations with the Unknown on Both Sides
-
-Sometimes the unknown appears on **both sides** of the equation. The strategy is to collect all terms with the unknown on one side.
-
-**Example:** Solve 3x + 5 = 2x + 12
-
-**Step 1:** Subtract 2x from both sides (to get x terms on one side):
-
-3x - 2x + 5 = 2x - 2x + 12
-
-x + 5 = 12
-
-**Step 2:** Subtract 5 from both sides:
+4x / 4 = 28 / 4
 
 x = **7**
 
-**Check:** LHS = 3 x 7 + 5 = 26. RHS = 2 x 7 + 12 = 26. Correct!
+**Check:** LHS = 4 x 7 = 28 = RHS. Correct!
 
-**Example:** Solve 5n - 3 = 3n + 7
+**Example:** Solve n / 6 = 5
 
-**Step 1:** Subtract 3n from both sides:
+The unknown n is divided by 6. To undo this, **multiply both sides** by 6:
 
-2n - 3 = 7
+(n / 6) x 6 = 5 x 6
 
-**Step 2:** Add 3 to both sides:
+n = **30**
 
-2n = 10
+**Check:** LHS = 30 / 6 = 5 = RHS. Correct!
+
+## Two-Step Equations
+
+Many equations need **two operations** to solve -- first undo the addition or subtraction, then undo the multiplication or division.
+
+**Example:** Solve 4x - 7 = 21
+
+**Step 1:** Add 7 to both sides (undo the subtraction):
+
+4x - 7 + 7 = 21 + 7
+
+4x = 28
+
+**Step 2:** Divide both sides by 4 (undo the multiplication):
+
+4x / 4 = 28 / 4
+
+x = **7**
+
+**Check:** LHS = 4 x 7 - 7 = 28 - 7 = 21 = RHS. Correct!
+
+**Example:** Solve 2m + 9 = 31
+
+**Step 1:** Subtract 9 from both sides:
+
+2m + 9 - 9 = 31 - 9
+
+2m = 22
+
+**Step 2:** Divide both sides by 2:
+
+m = **11**
+
+**Check:** LHS = 2 x 11 + 9 = 22 + 9 = 31 = RHS. Correct!
+
+**Example:** Solve 3y + 1 = 76
+
+**Step 1:** Subtract 1 from both sides:
+
+3y = 75
+
+**Step 2:** Divide both sides by 3:
+
+y = **25**
+
+## When the Unknown Appears on Both Sides
+
+Sometimes the unknown shows up on **both** sides of the equation. The strategy: gather all terms with the unknown on one side.
+
+**Example:** Solve 4x + 3 = 2x + 15
+
+**Step 1:** Subtract 2x from both sides (collect x terms on one side):
+
+4x - 2x + 3 = 2x - 2x + 15
+
+2x + 3 = 15
+
+**Step 2:** Subtract 3 from both sides:
+
+2x = 12
+
+**Step 3:** Divide by 2:
+
+x = **6**
+
+**Check:** LHS = 4 x 6 + 3 = 27. RHS = 2 x 6 + 15 = 27. Correct!
+
+**Example:** Solve 6n - 5 = 4n + 9
+
+**Step 1:** Subtract 4n from both sides:
+
+2n - 5 = 9
+
+**Step 2:** Add 5 to both sides:
+
+2n = 14
 
 **Step 3:** Divide both sides by 2:
 
-n = **5**
+n = **7**
 
-**Check:** LHS = 5 x 5 - 3 = 22. RHS = 3 x 5 + 7 = 22. Correct!
+**Check:** LHS = 6 x 7 - 5 = 37. RHS = 4 x 7 + 9 = 37. Correct!
 
-## Writing Equations from Word Problems
+## Turning Word Problems into Equations
 
-The real power of equations is in solving **word problems**. The key skill is **translating words into mathematical equations**.
+The real strength of equations lies in cracking **word problems**. The crucial skill is **converting words into mathematical symbols**.
 
-**Example:** Ravi thinks of a number. He multiplies it by 3 and adds 5. The result is 23. What is the number?
+**Example:** Sunita thinks of a number. She triples it and adds 7. The result is 34. What is the number?
 
 Let the number be **x**.
 
-Equation: **3x + 5 = 23**
+Equation: **3x + 7 = 34**
 
-Solving: 3x = 18, so x = **6**
+Solving: 3x = 27, so x = **9**
 
-**Example:** A number is doubled and then 9 is subtracted. The result is 15. Find the number.
+**Example:** A number is multiplied by 5, then 11 is subtracted. The result is 24. Find the number.
 
 Let the number be **n**.
 
-Equation: **2n - 9 = 15**
+Equation: **5n - 11 = 24**
 
-Solving: 2n = 24, so n = **12**
+Solving: 5n = 35, so n = **7**
 
-**Example:** The sum of three consecutive numbers is 42. Find the numbers.
+**Example:** The sum of three consecutive numbers is 54. Find the numbers.
 
-Let the smallest number be **x**. Then the three consecutive numbers are x, x + 1, and x + 2.
+Let the smallest number be **x**. The three consecutive numbers are x, x + 1, and x + 2.
 
-Equation: x + (x + 1) + (x + 2) = 42
+Equation: x + (x + 1) + (x + 2) = 54
 
-Simplify: 3x + 3 = 42
+Simplify: 3x + 3 = 54
 
-Solve: 3x = 39, so x = **13**
+Solve: 3x = 51, so x = **17**
 
-The three numbers are **13, 14, and 15**.
+The three numbers are **17, 18, and 19**.
 
-**Check:** 13 + 14 + 15 = 42. Correct!
+**Check:** 17 + 18 + 19 = 54. Correct!
 
-**Example:** Aadhira's age is 4 more than twice Bala's age. If Aadhira is 18 years old, how old is Bala?
+**Example:** Deepa is 6 years older than three times Arjun's age. If Deepa is 21 years old, how old is Arjun?
 
-Let Bala's age be **b**.
+Let Arjun's age be **a**.
 
-Equation: **2b + 4 = 18**
+Equation: **3a + 6 = 21**
 
-Solving: 2b = 14, so b = **7**
+Solving: 3a = 15, so a = **5**
 
-Bala is **7 years old**.
+Arjun is **5 years old**.
 
-## The Importance of Checking
+## Always Verify Your Answer
 
-After solving an equation, always **substitute** your answer back into the original equation to verify it is correct. This step catches errors and builds confidence in your solution.
+After solving any equation, **plug your answer back** into the original equation to make sure both sides match. This simple step catches careless errors and confirms your solution is correct.
 
-> **Always Check:** Substitute the solution back into the **original** equation. If LHS = RHS, your answer is correct.
+> **Golden Rule:** Substitute the solution back into the **original** equation. If LHS = RHS, you are right.
 
-## Summary of the Method
+## A Step-by-Step Solving Recipe
 
 To solve an equation systematically:
 
-1. **Simplify** both sides of the equation if needed (combine like terms, open brackets)
-2. **Move** all terms with the unknown to one side using addition or subtraction
-3. **Move** all constant terms to the other side
-4. **Divide** (or multiply) to find the value of the unknown
+1. **Simplify** both sides if needed (combine like terms, expand brackets)
+2. **Shift** all terms containing the unknown to one side using addition or subtraction
+3. **Shift** all constant terms to the other side
+4. **Divide** (or multiply) to isolate the unknown
 5. **Check** by substituting back into the original equation
 
-> **Did You Know?** The word "algebra" comes from the Arabic title of a book by the mathematician **al-Khwarizmi** (around 820 CE), called *Al-Kitab al-Mukhtasar fi Hisab al-Jabr wal-Muqabala*, which means "The Compendious Book on Calculation by Completion and Balancing." The "al-jabr" (completion) in the title refers to moving terms from one side of an equation to the other -- exactly the technique we use today! Indian mathematicians like **Brahmagupta** (628 CE) and **Aryabhata** (499 CE) also made significant contributions to solving equations, including methods for solving what we now call linear equations and even quadratic equations.
+> **Historical Note:** The word "algebra" comes from the Arabic title of a book by the mathematician **al-Khwarizmi** (around 820 CE), called *Al-Kitab al-Mukhtasar fi Hisab al-Jabr wal-Muqabala*. The term "al-jabr" means "completion" -- referring to the technique of moving terms from one side of an equation to the other. Indian mathematicians **Brahmagupta** (628 CE) and **Aryabhata** (499 CE) independently developed powerful methods for solving equations, including techniques for what we now call linear and quadratic equations.
 
 ## Key Words to Remember
 
 | Word | Meaning |
 |------|---------|
-| **Equation** | A mathematical statement that two expressions are equal, containing an equals sign |
-| **LHS (Left-Hand Side)** | The expression on the left side of the equals sign |
-| **RHS (Right-Hand Side)** | The expression on the right side of the equals sign |
+| **Equation** | A mathematical statement declaring two expressions equal, using the equals sign |
+| **LHS (Left-Hand Side)** | The expression on the left of the equals sign |
+| **RHS (Right-Hand Side)** | The expression on the right of the equals sign |
 | **Solution** | The value of the unknown that makes the equation true |
-| **Balance principle** | Performing the same operation on both sides of an equation keeps it true |
-| **Trial and error** | Trying different values of the unknown to find the solution |
-| **Unknown (Variable)** | The letter-number whose value we need to find |
-| **Consecutive numbers** | Numbers that follow each other in order, like 5, 6, 7 |
+| **Balance principle** | Doing the same operation on both sides of an equation keeps it true |
+| **Trial and error** | Testing different values of the unknown to find the solution |
+| **Unknown (Variable)** | The letter whose value we need to discover |
+| **Consecutive numbers** | Numbers that follow one after another in order, like 8, 9, 10 |

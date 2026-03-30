@@ -1,13 +1,18 @@
 {
   "topics": [
     {
-      "topic": "Mendel's Laws and Inheritance",
+      "topic": "Introduction — Why Do Children Resemble Their Parents?",
       "easy": [
         {
           "id": "ch8-t1-e1",
           "type": "mcq",
           "question": "A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers with short pea plants bearing white flowers. The progeny all bore violet flowers, but almost half of them were short. This suggests that the genetic make-up of the tall parent can be depicted as:",
-          "options": ["TTWW", "TTww", "TtWW", "TtWw"],
+          "options": [
+            "TTWW",
+            "TTww",
+            "TtWW",
+            "TtWw"
+          ],
           "answer": "TtWW",
           "explanation": "Since all progeny have violet flowers, the violet parent must be homozygous (WW) for flower colour. Since half the progeny are short, the tall parent must be heterozygous (Tt) for height. So the tall parent's genotype is TtWW."
         },
@@ -80,7 +85,12 @@
           "id": "ch8-t2-e3",
           "type": "mcq",
           "question": "Humans have how many pairs of autosomes?",
-          "options": ["20", "22", "23", "46"],
+          "options": [
+            "20",
+            "22",
+            "23",
+            "46"
+          ],
           "answer": "22",
           "explanation": "Humans have 23 pairs of chromosomes in total — 22 pairs of autosomes and 1 pair of sex chromosomes. The total number of individual chromosomes is 46."
         }

@@ -1,97 +1,101 @@
 ---
-title: Chapter 7 Triangles
+title: "Proving Properties of Triangles"
+description: "Learn triangle congruence rules (SSS, SAS, ASA, RHS) and properties of triangles."
+order: 7
 ---
 ## Introduction
 
-A **triangle** is a closed figure formed by three intersecting line segments. It has three sides, three angles, and three vertices. In this chapter, you will study the **congruence of triangles**, the various criteria (rules) for congruence, important properties of triangles, and inequalities in triangles.
+The **triangle** is the simplest closed figure you can make with straight lines -- just three sides, three angles, and three vertices. Despite this simplicity, triangles hold remarkable properties that make them indispensable in engineering, architecture, and mathematics. In this chapter, we explore when two triangles are identical in shape and size (**congruence**), the rules that let us verify congruence efficiently, the special behaviour of isosceles triangles, and the inequalities that govern the relationship between a triangle's sides and angles.
 
 ---
 
 ## Congruence of Triangles
 
-Two figures are **congruent** if they have the same shape and size. When one figure can be placed on the other such that they cover each other completely, they are congruent.
+Two figures are **congruent** when they match perfectly in both shape and size -- if you could lift one and place it exactly on top of the other, every edge and corner would align.
 
-Two triangles are **congruent** if all their corresponding sides and corresponding angles are equal. If triangle PQR is congruent to triangle ABC, we write:
+For triangles, congruence means that all three pairs of corresponding sides are equal and all three pairs of corresponding angles are equal. If triangle DEF is congruent to triangle XYZ, we write:
 
-**triangle PQR is congruent to triangle ABC**
+**triangle DEF is congruent to triangle XYZ**
 
-> **Key idea:** When writing congruence, the **order of vertices matters**. The correspondence must be correct: P corresponds to A, Q to B, R to C. We use **CPCT** (Corresponding Parts of Congruent Triangles) to refer to equal parts.
+> **Key idea:** The **order of letters matters**. Writing triangle DEF congruent to triangle XYZ means D matches X, E matches Y, and F matches Z. Swapping the order changes the correspondence. After establishing congruence, we use **CPCT** (Corresponding Parts of Congruent Triangles) to state that any pair of matching sides or angles are equal.
 
 ---
 
 ## Criteria for Congruence of Triangles
 
+Checking all six measurements (three sides and three angles) every time would be tedious. Fortunately, specific combinations of just three measurements are enough to guarantee congruence.
+
 ### SAS (Side-Angle-Side) Congruence Rule
 
-> **Axiom 7.1:** Two triangles are congruent if **two sides and the included angle** of one triangle are equal to the two sides and the included angle of the other triangle.
+> **Axiom 7.1:** Two triangles are congruent if **two sides and the angle between them** (the included angle) in one triangle equal the corresponding two sides and included angle in the other.
 
-The angle must be the one **between** (included by) the two sides. The SSA or ASS rule does NOT work.
+The angle must lie **between** the two sides. Note that knowing two sides and a non-included angle (SSA) does **not** guarantee congruence.
 
 ![Diagram showing two triangles with SAS congruence: two sides and the included angle marked as equal](sas-congruence-diagram.png)
 
-**Example:** In triangles AOD and BOC, if OA = OB, OD = OC, and angle AOD = angle BOC (vertically opposite), then triangle AOD is congruent to triangle BOC by SAS.
+**Illustration:** In triangles MOD and NOC, suppose OM = ON, OD = OC, and angle MOD = angle NOC (vertically opposite angles). Then triangle MOD is congruent to triangle NOC by SAS.
 
 ### ASA (Angle-Side-Angle) Congruence Rule
 
-> **Theorem 7.1:** Two triangles are congruent if **two angles and the included side** of one triangle are equal to two angles and the included side of the other triangle.
+> **Theorem 7.1:** Two triangles are congruent if **two angles and the side between them** (the included side) in one triangle equal the corresponding pair in the other.
 
 ### AAS (Angle-Angle-Side) Congruence Rule
 
-> **Theorem 7.2:** Two triangles are congruent if **two angles and a non-included side** of one triangle are equal to the corresponding two angles and side of the other triangle.
+> **Theorem 7.2:** Two triangles are congruent if **two angles and a non-included side** of one equal the corresponding elements of the other.
 
-This follows from ASA because the third angle is automatically determined (angle sum property).
+This works because once two angles are known, the third is fixed by the angle sum property, effectively reducing AAS to ASA.
 
 ### SSS (Side-Side-Side) Congruence Rule
 
-> **Theorem 7.4:** Two triangles are congruent if all **three sides** of one triangle are equal to the three sides of the other triangle.
+> **Theorem 7.4:** Two triangles are congruent if all **three sides** of one equal the three sides of the other.
 
 ### RHS (Right angle-Hypotenuse-Side) Congruence Rule
 
-> **Theorem 7.5:** Two right triangles are congruent if the **hypotenuse and one side** of one triangle are equal to the hypotenuse and one side of the other triangle.
+> **Theorem 7.5:** Two right triangles are congruent if the **hypotenuse and one other side** of one equal the hypotenuse and corresponding side of the other.
 
 ---
 
 ## Properties of Isosceles Triangles
 
-An **isosceles triangle** has at least two equal sides. The angles opposite to the equal sides have a special relationship.
+An **isosceles triangle** has at least two sides of equal length. The angles sitting opposite these equal sides exhibit a beautiful symmetry.
 
-> **Theorem 7.2 (Isosceles Triangle Theorem):** Angles opposite to equal sides of a triangle are **equal**.
+> **Theorem 7.2 (Isosceles Triangle Theorem):** The angles opposite to equal sides of a triangle are **equal**.
 
 ![Isosceles triangle with equal sides marked and the base angles shown as equal](isosceles-triangle-equal-angles.png)
 
-If AB = AC in triangle ABC, then angle B = angle C.
+If PQ = PR in triangle PQR, then angle Q = angle R.
 
-> **Theorem 7.3 (Converse):** The sides opposite to equal angles of a triangle are **equal**.
+> **Theorem 7.3 (Converse):** If two angles of a triangle are equal, the sides opposite those angles are **equal**.
 
-If angle B = angle C in triangle ABC, then AB = AC.
+If angle Q = angle R in triangle PQR, then PQ = PR.
 
-**Corollary:** Each angle of an **equilateral triangle** is **60 degrees** (since all sides are equal, all angles are equal, and they sum to 180 degrees).
+**Corollary:** In an **equilateral triangle** (all sides equal), every angle measures **60 degrees**. Since three equal angles must sum to 180 degrees, each must be 180/3 = 60.
 
 ---
 
 ## Inequalities in a Triangle
 
-> **Theorem 7.6:** If two sides of a triangle are unequal, then the angle opposite to the **longer side is larger**.
+> **Theorem 7.6:** When two sides of a triangle are unequal, the angle facing the **longer side is larger**.
 
-> **Theorem 7.7 (Converse):** In a triangle, the side opposite to the **larger angle is longer**.
+> **Theorem 7.7 (Converse):** The side facing the **larger angle is longer**.
 
 > **Theorem 7.8 (Triangle Inequality):** The sum of any two sides of a triangle is **greater** than the third side.
 
-In triangle ABC: AB + BC > AC, AB + AC > BC, and BC + AC > AB.
+For triangle PQR: PQ + QR > PR, PQ + PR > QR, and QR + PR > PQ.
 
 ![Triangle showing the triangle inequality property with all three side-sum comparisons labeled](triangle-inequality-diagram.png)
 
-**Example:** Can a triangle have sides 3, 4, and 8? Check: 3 + 4 = 7, which is NOT greater than 8. So no, such a triangle cannot exist.
+**Illustration:** Can sides of 4 cm, 5 cm, and 10 cm form a triangle? Check: 4 + 5 = 9, which is less than 10. No, such a triangle is impossible.
 
-**Example:** Can a triangle have sides 5, 7, and 10? Check: 5 + 7 = 12 > 10, 5 + 10 = 15 > 7, 7 + 10 = 17 > 5. Yes, this triangle is valid.
+**Illustration:** Can sides of 6 cm, 8 cm, and 11 cm form a triangle? Check: 6 + 8 = 14 > 11; 6 + 11 = 17 > 8; 8 + 11 = 19 > 6. Yes, this triangle is valid.
 
 ---
 
 ## Summary
 
-1. Two figures are **congruent** if they have the same shape and size.
-2. Congruence criteria: **SAS**, **ASA**, **AAS**, **SSS**, and **RHS**.
-3. In an isosceles triangle, angles opposite to equal sides are equal (and vice versa).
-4. Each angle of an equilateral triangle is **60 degrees**.
-5. The angle opposite the longer side is larger, and the side opposite the larger angle is longer.
-6. **Triangle inequality:** The sum of any two sides is greater than the third side.
+1. Two figures are **congruent** when they have identical shape and size.
+2. The five congruence criteria are: **SAS**, **ASA**, **AAS**, **SSS**, and **RHS**.
+3. In an isosceles triangle, the base angles (opposite the equal sides) are equal, and conversely.
+4. Every angle of an equilateral triangle measures **60 degrees**.
+5. The larger angle faces the longer side, and the longer side faces the larger angle.
+6. **Triangle inequality:** The sum of any two sides always exceeds the third side.

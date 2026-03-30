@@ -1,37 +1,159 @@
 {
   "topics": [
     {
-      "topic": "Symmetry and Lines of Symmetry",
+      "topic": "What is Symmetry?",
       "easy": [
-        { "id": "ch11-t1-e1", "type": "mcq", "question": "How many lines of symmetry does a square have?", "options": ["1", "2", "4", "8"], "answer": "4", "explanation": "A square has 4 lines of symmetry: 2 through the middle (horizontal and vertical) and 2 along the diagonals." },
-        { "id": "ch11-t1-e2", "type": "fill", "question": "A shape that has no line of symmetry is called ______.", "answer": "asymmetrical", "explanation": "Asymmetrical means having no symmetry at all." },
-        { "id": "ch11-t1-e3", "type": "mcq", "question": "How many lines of symmetry does a rectangle have?", "options": ["1", "2", "3", "4"], "answer": "2", "explanation": "A rectangle has 2 lines of symmetry: one horizontal and one vertical through the centre." },
-        { "id": "ch11-t1-e4", "type": "fill", "question": "A ______ has countless (infinite) lines of symmetry.", "answer": "circle", "explanation": "A circle can be divided into two equal halves along any line through its centre, giving it infinite lines of symmetry." }
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "How many lines of symmetry does a square have?",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+          ],
+          "answer": "4",
+          "explanation": "A square has 4 lines of symmetry: horizontal, vertical, and two diagonals."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "A shape with no line of symmetry is called ______.",
+          "answer": "asymmetrical",
+          "explanation": "Asymmetrical means the shape cannot be divided into two matching halves."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "mcq",
+          "question": "How many lines of symmetry does a rectangle have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "2",
+          "explanation": "A rectangle has 2 lines of symmetry: one horizontal and one vertical through its centre."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "fill",
+          "question": "A ______ has endless (infinite) lines of symmetry.",
+          "answer": "circle",
+          "explanation": "Any line passing through the centre of a circle divides it into two matching halves."
+        }
       ],
       "medium": [
-        { "id": "ch11-t1-m1", "type": "short", "question": "How can you check if a paper shape is symmetrical?", "answer": "Fold the shape along a line. If both halves match exactly when folded, the shape is symmetrical. The fold line is the line of symmetry.", "explanation": "The fold test is the simplest way to check for symmetry." },
-        { "id": "ch11-t1-m2", "type": "short", "question": "Why is the word AMBULANCE written in mirror-image on the front of ambulances?", "answer": "So that drivers can read it correctly in their rear-view mirror. A mirror reverses left and right, so mirror-writing appears normal in a mirror.", "explanation": "Drivers see the ambulance behind them through their rear-view mirror, which reverses the letters. Writing it backwards makes it readable in the mirror." },
-        { "id": "ch11-t1-m3", "type": "mcq", "question": "Which English letter is NOT symmetrical?", "options": ["A", "H", "F", "M"], "answer": "F", "explanation": "A, H, and M all have at least one line of symmetry. F does not have any line of symmetry." }
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "How can you test if a paper shape has symmetry?",
+          "answer": "Fold the shape along a line. If the two halves overlap exactly, the shape is symmetrical and the fold is the line of symmetry.",
+          "explanation": "The folding test is the simplest way to check for symmetry in paper shapes."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "short",
+          "question": "Why is the word AMBULANCE printed backwards on the front of ambulances?",
+          "answer": "So that drivers ahead can read it correctly in their rear-view mirrors. A mirror reverses left and right, so the reversed word appears normal when viewed in the mirror.",
+          "explanation": "Rear-view mirrors flip the image. Printing the word backwards cancels out the flip, making it readable."
+        },
+        {
+          "id": "ch11-t1-m3",
+          "type": "mcq",
+          "question": "Which English letter does NOT have symmetry?",
+          "options": [
+            "A",
+            "O",
+            "G",
+            "H"
+          ],
+          "answer": "G",
+          "explanation": "A has a vertical line of symmetry, O has multiple lines, H has both horizontal and vertical. G has no line of symmetry."
+        }
       ],
       "hard": [
-        { "id": "ch11-t1-h1", "type": "long", "question": "Which 3-digit numbers made only from the digits 0, 1, and 8 look the same in a mirror? List at least 5 such numbers.", "answer": "Numbers that look the same in a mirror (using only 0, 1, 8): 101, 108, 110, 111, 180, 181, 188, 800, 801, 808, 810, 811, 818, 880, 881, 888. (Any 5 from this list are correct.)", "explanation": "The digits 0, 1, and 8 look the same when reflected in a mirror. Numbers made only from these digits will appear unchanged." }
-      ]
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "Only the digits 0, 1, and 8 look the same in a mirror. List at least 5 three-digit numbers made from these digits that would look the same in a mirror.",
+          "answer": "101, 111, 181, 808, 818, 888, 100, 110, 180, 800, 810, 880, 881. (Any 5 correct answers from such numbers.)",
+          "explanation": "Numbers made only from the digits 0, 1, and 8 appear unchanged in a mirror because each of these digits is mirror-symmetrical."
+        }
+      ],
+      "name": "What is Symmetry?"
     },
     {
-      "topic": "Tiling and Paper Folding",
+      "topic": "Tiling — Covering Surfaces",
       "easy": [
-        { "id": "ch11-t2-e1", "type": "mcq", "question": "Which shape CANNOT tile a floor without gaps?", "options": ["Square", "Rectangle", "Circle", "Triangle"], "answer": "Circle", "explanation": "Circles always leave gaps between them because of their curved edges." },
-        { "id": "ch11-t2-e2", "type": "fill", "question": "Tiling means covering a surface with no ______ and no ______.", "answer": "gaps, overlaps", "explanation": "Good tiling has no empty spaces (gaps) and no tiles sitting on top of each other (overlaps)." },
-        { "id": "ch11-t2-e3", "type": "mcq", "question": "When you fold a paper once and cut a shape, the result has how many lines of symmetry?", "options": ["0", "1", "2", "4"], "answer": "1", "explanation": "One fold creates one line of symmetry. The cut shape appears on both sides of the fold." }
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "Which shape leaves gaps when you try to tile a surface with it?",
+          "options": [
+            "Square",
+            "Rectangle",
+            "Circle",
+            "Triangle"
+          ],
+          "answer": "Circle",
+          "explanation": "Circles have curved edges that always leave gaps between them."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "Tiling means covering a surface with no ______ and no ______.",
+          "answer": "gaps, overlaps",
+          "explanation": "Perfect tiling fills the entire surface without empty spaces or tiles stacked on top of each other."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "mcq",
+          "question": "If you fold a paper once and cut a shape along the fold, how many lines of symmetry does the result have?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "4"
+          ],
+          "answer": "1",
+          "explanation": "One fold creates one line of symmetry. The cut shape appears equally on both sides of the fold."
+        }
       ],
       "medium": [
-        { "id": "ch11-t2-m1", "type": "short", "question": "Can a regular hexagon tile a surface? Can a regular pentagon? Why the difference?", "answer": "A regular hexagon can tile a surface (like a honeycomb). A regular pentagon cannot tile because pentagons leave gaps when placed next to each other.", "explanation": "Hexagons fit together perfectly (3 hexagons meeting at each point make 360 degrees). Pentagons do not have the right angles to fill the space completely." },
-        { "id": "ch11-t2-m2", "type": "short", "question": "If you fold a paper twice and make a single cut, how many copies of the cut shape will appear when you unfold?", "answer": "4 copies will appear. Two folds create 2 lines of symmetry, and the cut is reflected across both fold lines.", "explanation": "Each fold doubles the number of layers. 2 folds = 4 layers, so the cut appears 4 times." }
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "Can a regular hexagon tile a surface? Can a regular pentagon? Explain the difference.",
+          "answer": "A hexagon can tile a surface — honeycombs are a natural example. A pentagon cannot tile because when you place pentagons side by side, they leave gaps. The angles of a hexagon add up nicely at meeting points (3 hexagons make 360 degrees), but pentagon angles do not.",
+          "explanation": "Tiling requires that shapes meet perfectly at each point with no leftover angles. Hexagons fit; pentagons do not."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "short",
+          "question": "If you fold a sheet of paper twice and make one cut, how many copies of the cut shape will you see when you unfold?",
+          "answer": "4 copies. Each fold doubles the layers. First fold gives 2 layers, second fold gives 4 layers. The cut appears through all 4 layers.",
+          "explanation": "Two folds create two lines of symmetry, and the single cut is reflected across both fold lines, producing 4 copies."
+        }
       ],
       "hard": [
-        { "id": "ch11-t2-h1", "type": "long", "question": "Sonia makes two paper airplanes. One is perfectly symmetrical (both wings are the same size). The other has one wing slightly bigger than the other. Which airplane will fly better? Why does symmetry matter in design?", "answer": "The symmetrical airplane will fly better. It will go straighter and farther. The asymmetrical airplane will tilt to one side because one wing creates more lift than the other. Symmetry matters in design because it ensures balanced forces, leading to stable and predictable movement.", "explanation": "Symmetry creates balance. In airplanes, equal wings mean equal lift on both sides, resulting in straight flight." },
-        { "id": "ch11-t2-h2", "type": "long", "question": "You have a square tile. You cut a semicircle from the top edge and tape it to the bottom edge. Can this new shape still tile a surface? Why?", "answer": "Yes! The new shape can still tile. The piece removed from the top fits exactly into the space at the bottom of the tile above it. Since the cut-out and the added piece are the same shape and size, the tiles still fit together perfectly with no gaps and no overlaps.", "explanation": "This is the principle of modifying tiles: cutting from one side and adding to the opposite side preserves the tiling property." }
-      ]
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "Ritu makes two paper aeroplanes. One has both wings exactly the same size. The other has one wing longer than the other. Which aeroplane will fly straighter and why? What does this tell us about the importance of symmetry?",
+          "answer": "The aeroplane with equal wings will fly straighter and farther. The unequal-wing plane will tilt and spin because one wing pushes more air than the other. Symmetry creates balance, and balance leads to steady, predictable movement. This is why real aeroplanes are designed symmetrically.",
+          "explanation": "Equal wings produce equal lift on both sides, keeping the plane balanced. Unequal wings cause uneven forces."
+        },
+        {
+          "id": "ch11-t2-h2",
+          "type": "long",
+          "question": "You start with a square tile. You cut a zigzag piece from the left side and tape it to the right side. Can this new shape still tile a flat surface without gaps? Explain why.",
+          "answer": "Yes! The new shape can still tile. The zigzag taken from the left side of one tile fits perfectly into the zigzag space on the left side of the tile next to it. Since the removed piece and the added piece are identical, the tiles still lock together with no gaps and no overlaps.",
+          "explanation": "Cutting from one side and adding the same piece to the opposite side preserves the tiling property because the shapes interlock."
+        }
+      ],
+      "name": "Line of Symmetry"
     }
   ]
 }

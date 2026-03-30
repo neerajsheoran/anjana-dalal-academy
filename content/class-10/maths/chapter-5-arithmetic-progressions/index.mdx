@@ -1,75 +1,75 @@
 ---
-title: Chapter 5 Arithmetic Progressions
+title: "Patterns in Arithmetic Progressions"
+description: "Understand AP sequences — find the nth term, sum of n terms, and solve real-life problems."
+order: 5
 ---
 
 ## Introduction
 
-Look around you -- patterns are everywhere in nature and daily life. The petals of a sunflower, the cells of a honeycomb, and even your salary increments follow patterns.
+Patterns surround us -- in the tiling of temple floors, the arrangement of seats in a cinema hall, and even the way your pocket money might grow each year.
 
-Consider these real-life examples:
+Consider these everyday situations:
 
-- **Salary pattern:** Reena gets a starting salary of Rs 8000 with an annual increment of Rs 500. Her salaries form the sequence: 8000, 8500, 9000, 9500, ...
-- **Ladder rungs:** Rungs decrease by 2 cm from bottom to top: 45, 43, 41, 39, 37, ...
-- **Money box:** Shakila puts Rs 100 on her daughter's first birthday, then increases by Rs 50 each year: 100, 150, 200, 250, ...
+- **Pocket money:** Ankit gets Rs 50 per week in Class 6, and his parents increase it by Rs 10 every year. His weekly pocket money over the years: 50, 60, 70, 80, ...
+- **Stadium seating:** A stadium has 30 seats in the front row, 33 in the next, 36 in the next, and so on: 30, 33, 36, 39, ...
+- **Savings plan:** Kavita saves Rs 200 in January, Rs 250 in February, Rs 300 in March, and adds Rs 50 each month: 200, 250, 300, 350, ...
 
-Notice that in each case, we get the next number by **adding a fixed number** to the previous one. Such sequences are called **Arithmetic Progressions (AP)**.
+In each case, the next number is obtained by **adding a fixed amount** to the previous one. Such sequences are called **Arithmetic Progressions (AP)**.
 
 ---
 
 ## What Is an Arithmetic Progression?
 
-An **Arithmetic Progression (AP)** is a list of numbers in which each term is obtained by adding a **fixed number** to the preceding term (except the first term).
+An **Arithmetic Progression (AP)** is a sequence of numbers where each term after the first is obtained by adding a **fixed number** to the preceding term.
 
-This fixed number is called the **common difference**, denoted by **d**.
+This fixed number is the **common difference**, written as **d**.
 
 ### Examples of APs
 
 | AP | First term (a) | Common difference (d) |
 |----|----------------|----------------------|
-| 1, 2, 3, 4, ... | 1 | 1 |
-| 100, 70, 40, 10, ... | 100 | -30 |
-| -3, -2, -1, 0, ... | -3 | 1 |
-| 3, 3, 3, 3, ... | 3 | 0 |
-| -1.0, -1.5, -2.0, -2.5, ... | -1.0 | -0.5 |
+| 5, 10, 15, 20, ... | 5 | 5 |
+| 80, 65, 50, 35, ... | 80 | -15 |
+| -4, -2, 0, 2, ... | -4 | 2 |
+| 7, 7, 7, 7, ... | 7 | 0 |
+| 2.5, 2.0, 1.5, 1.0, ... | 2.5 | -0.5 |
 
-> **Key idea:** The common difference d can be **positive** (increasing AP), **negative** (decreasing AP), or **zero** (constant AP).
+> **Key idea:** The common difference d can be **positive** (the AP grows), **negative** (the AP shrinks), or **zero** (every term is the same).
 
 ### General Form of an AP
-
-![Number line showing terms of an AP: a, a+d, a+2d, a+3d with equal spacing d between consecutive terms](arithmetic-progression-number-line.png)
 
 **a, a + d, a + 2d, a + 3d, ...**
 
 where **a** = first term and **d** = common difference.
 
-### How to Check if a List Is an AP
+### How to Verify Whether a List Is an AP
 
-Calculate the difference between consecutive terms. If all differences are equal, the list is an AP.
+Compute the difference between successive terms. If every difference is identical, the list is an AP.
 
-**Example:** Is 2, 4, 8, 16, ... an AP?
-- 4 - 2 = 2
-- 8 - 4 = 4
-- 16 - 8 = 8
+**Example:** Is 3, 9, 27, 81, ... an AP?
+- 9 - 3 = 6
+- 27 - 9 = 18
+- 81 - 27 = 54
 
-The differences are NOT equal (2, 4, 8). So this is **not** an AP. (It is actually a geometric progression.)
+The differences are unequal (6, 18, 54). **Not** an AP. (It is a geometric progression where each term is multiplied by 3.)
 
-**Example:** Is -1.2, -3.2, -5.2, -7.2, ... an AP?
-- -3.2 - (-1.2) = -2
-- -5.2 - (-3.2) = -2
-- -7.2 - (-5.2) = -2
+**Example:** Is 4.5, 2.5, 0.5, -1.5, ... an AP?
+- 2.5 - 4.5 = -2
+- 0.5 - 2.5 = -2
+- -1.5 - 0.5 = -2
 
-All differences are -2. So **yes**, it is an AP with d = -2.
+All differences are -2. **Yes**, it is an AP with d = -2.
 
 ### Finite and Infinite APs
 
-- A **finite AP** has a fixed number of terms: 45, 43, 41, ..., 31 (8 terms)
-- An **infinite AP** goes on forever: 1, 2, 3, 4, ...
+- A **finite AP** has a definite number of terms: 30, 33, 36, ..., 60 (11 terms)
+- An **infinite AP** continues without end: 5, 10, 15, 20, ...
 
 ---
 
 ## The nth Term of an AP
 
-This is one of the most important formulas in this chapter.
+This is one of the most important formulas you will use in this chapter.
 
 ### The Formula
 
@@ -77,7 +77,7 @@ For an AP with first term **a** and common difference **d**, the **nth term** is
 
 **a_n = a + (n - 1)d**
 
-### How It Works
+### Understanding the Pattern
 
 - 1st term: a_1 = a = a + (1 - 1)d
 - 2nd term: a_2 = a + d = a + (2 - 1)d
@@ -85,80 +85,78 @@ For an AP with first term **a** and common difference **d**, the **nth term** is
 - ...
 - nth term: a_n = a + (n - 1)d
 
-> **Key idea:** The nth term formula lets you find ANY term of an AP directly, without listing all the terms before it. You just need to know the first term and the common difference.
+> **Key idea:** This formula lets you jump directly to any term in the sequence without listing all the terms before it. You only need to know a and d.
 
-The nth term is also called the **general term** of the AP. If the AP has **m** terms in total, the last term is **a_m = l = a + (m - 1)d**.
+The nth term is also called the **general term**. If the AP has **m** terms total, the last term is **a_m = l = a + (m - 1)d**.
 
 ---
 
 ## Worked Examples on the nth Term
 
-### Example 1: Find the 10th term of 2, 7, 12, ...
+### Example 1: Find the 12th term of 5, 9, 13, ...
 
-Here a = 2, d = 7 - 2 = 5, n = 10.
+Here a = 5, d = 9 - 5 = 4, n = 12.
 
-a_10 = 2 + (10 - 1)(5) = 2 + 45 = **47**
+a_12 = 5 + (12 - 1)(4) = 5 + 44 = **49**
 
-### Example 2: Which term of 21, 18, 15, ... is -81?
+### Example 2: Which term of 25, 21, 17, ... is -55?
 
-Here a = 21, d = -3, a_n = -81.
+Here a = 25, d = -4, a_n = -55.
 
--81 = 21 + (n - 1)(-3)
--81 = 24 - 3n
--105 = -3n
-**n = 35**
+-55 = 25 + (n - 1)(-4)
+-55 = 29 - 4n
+-84 = -4n
+**n = 21**
 
-So -81 is the **35th term**.
+So -55 is the **21st term**.
 
 ### Example 3: Is 0 a term of this AP?
 
-Using the same AP: 21 + (n - 1)(-3) = 0
-3(n - 1) = 21
-n - 1 = 7
-**n = 8**
+Using the same AP 25, 21, 17, ...:
+25 + (n - 1)(-4) = 0
+29 - 4n = 0
+n = 29/4 = 7.25
 
-Yes, 0 is the **8th term**.
+Since n must be a **positive integer**, 0 is **not** a term of this AP.
 
-### Example 4: Determine the AP whose 3rd term is 5 and 7th term is 9
+### Example 4: Determine the AP whose 4th term is 11 and 8th term is 23
 
 We have two equations:
-- a + 2d = 5 ... (1)
-- a + 6d = 9 ... (2)
+- a + 3d = 11 ... (1)
+- a + 7d = 23 ... (2)
 
-Subtracting (1) from (2): 4d = 4, so **d = 1**
-Substituting: a + 2 = 5, so **a = 3**
+Subtracting (1) from (2): 4d = 12, so **d = 3**
+Substituting: a + 9 = 11, so **a = 2**
 
-The AP is **3, 4, 5, 6, 7, ...**
+The AP is **2, 5, 8, 11, 14, ...**
 
-### Example 5: Check whether 301 is a term of 5, 11, 17, 23, ...
+### Example 5: Check whether 250 is a term of 7, 15, 23, 31, ...
 
-a = 5, d = 6. If 301 is the nth term:
+a = 7, d = 8. If 250 is the nth term:
 
-301 = 5 + (n - 1)(6) = 6n - 1
-n = 302/6 = 50.33...
+250 = 7 + (n - 1)(8) = 8n - 1
+n = 251/8 = 31.375
 
-Since n must be a **positive integer**, 301 is **not** a term of this AP.
+Since n is not a positive integer, 250 is **not** a term of this AP.
 
-### Example 6: How many two-digit numbers are divisible by 3?
+### Example 6: How many three-digit numbers are divisible by 7?
 
-The two-digit multiples of 3 are: 12, 15, 18, ..., 99
+The three-digit multiples of 7 are: 105, 112, 119, ..., 994
 
-This is an AP with a = 12, d = 3, a_n = 99.
+This is an AP with a = 105, d = 7, a_n = 994.
 
-99 = 12 + (n - 1)(3)
-87 = 3(n - 1)
-n - 1 = 29
-**n = 30**
+994 = 105 + (n - 1)(7)
+889 = 7(n - 1)
+n - 1 = 127
+**n = 128**
 
-There are **30** two-digit numbers divisible by 3.
+There are **128** three-digit numbers divisible by 7.
 
 ---
 
 ## Sum of First n Terms of an AP
 
-Young Gauss was asked to find 1 + 2 + 3 + ... + 100. He paired up the numbers cleverly:
-
-![Gauss pairing method: 1+100, 2+99, 3+98 and so on, each pair summing to 101, with 50 pairs giving total 5050](gauss-pairing-method-sum.png)
+The brilliant mathematician Gauss, as a young student, was asked to find 1 + 2 + 3 + ... + 100. He noticed a clever pairing:
 
 - S = 1 + 2 + 3 + ... + 100
 - S = 100 + 99 + 98 + ... + 1
@@ -177,7 +175,7 @@ For an AP with first term **a**, common difference **d**, and **n** terms:
 
 where **l** is the last term.
 
-> **Key idea:** Use Formula 1 when you know a, d, and n. Use Formula 2 when you know the first and last terms. Both give the same answer.
+> **Key idea:** Use Formula 1 when you know a, d, and n. Use Formula 2 when you know the first and last terms. Both produce the same result.
 
 ### Special Case: Sum of First n Natural Numbers
 
@@ -187,15 +185,15 @@ where **l** is the last term.
 
 ## Worked Examples on Sum
 
-### Example 1: Find the sum of first 22 terms of 8, 3, -2, ...
+### Example 1: Find the sum of first 18 terms of 10, 6, 2, ...
 
-a = 8, d = -5, n = 22
+a = 10, d = -4, n = 18
 
-S_22 = 22/2 [2(8) + (22 - 1)(-5)]
-= 11 [16 + 21(-5)]
-= 11 [16 - 105]
-= 11(-89)
-= **-979**
+S_18 = 18/2 [2(10) + (18 - 1)(-4)]
+= 9 [20 + 17(-4)]
+= 9 [20 - 68]
+= 9(-48)
+= **-432**
 
 ### Example 2: Sum of first 14 terms is 1050, first term is 10. Find the 20th term.
 
@@ -209,82 +207,85 @@ S_14 = 1050, a = 10, n = 14.
 
 a_20 = 10 + 19(10) = **200**
 
-### Example 3: How many terms of 24, 21, 18, ... give a sum of 78?
+### Example 3: How many terms of 20, 17, 14, ... give a sum of 65?
 
-a = 24, d = -3, S_n = 78
+a = 20, d = -3, S_n = 65
 
-78 = n/2 [48 + (n - 1)(-3)]
-78 = n/2 [51 - 3n]
-156 = 51n - 3n^2
-3n^2 - 51n + 156 = 0
-n^2 - 17n + 52 = 0
-(n - 4)(n - 13) = 0
-**n = 4 or n = 13**
+65 = n/2 [40 + (n - 1)(-3)]
+65 = n/2 [43 - 3n]
+130 = 43n - 3n^2
+3n^2 - 43n + 130 = 0
 
-Both answers are valid! The sum of the first 4 terms equals the sum of the first 13 terms (= 78), because terms from the 5th to the 13th add up to zero.
+Using the formula: n = (43 +/- root(1849 - 1560)) / 6 = (43 +/- root(289)) / 6 = (43 +/- 17) / 6
 
-### Example 4: TV Set Production Problem
+n = 60/6 = 10 or n = 26/6 = 13/3
 
-A manufacturer produced 600 TV sets in the 3rd year and 700 in the 7th year. Production increases uniformly each year.
+Since n must be an integer, **n = 10**.
+
+### Example 4: Bicycle Factory Problem
+
+A factory produced 500 bicycles in the 2nd year and 700 in the 6th year. Production increases uniformly each year.
 
 **Finding a and d:**
-- a + 2d = 600 ... (1)
-- a + 6d = 700 ... (2)
+- a + d = 500 ... (1)
+- a + 5d = 700 ... (2)
 
-From (2) - (1): 4d = 100, so **d = 25**
-Then a = 600 - 50 = **550**
+From (2) - (1): 4d = 200, so **d = 50**
+Then a = 500 - 50 = **450**
 
-**Production in 10th year:** a_10 = 550 + 9(25) = **775 sets**
+**Production in 8th year:** a_8 = 450 + 7(50) = **800 bicycles**
 
-**Total production in 7 years:**
-S_7 = 7/2 [2(550) + 6(25)] = 7/2 [1100 + 150] = 7/2 (1250) = **4375 sets**
+**Total production in first 6 years:**
+S_6 = 6/2 [2(450) + 5(50)] = 3[900 + 250] = 3(1150) = **3450 bicycles**
 
 ---
 
 ## Important Relationship
 
-The **nth term** can also be found from the sum formula:
+The **nth term** can be derived from the sum formula:
 
 **a_n = S_n - S_(n-1)**
 
 This is useful when the sum formula is given directly.
 
-**Example:** If S_n = 4n - n^2, find the nth term.
+**Example:** If S_n = 3n + 2n^2, find the nth term.
 
-S_n = 4n - n^2
-S_(n-1) = 4(n-1) - (n-1)^2 = 4n - 4 - n^2 + 2n - 1 = 6n - 5 - n^2
+S_n = 3n + 2n^2
+S_(n-1) = 3(n-1) + 2(n-1)^2 = 3n - 3 + 2n^2 - 4n + 2 = 2n^2 - n - 1
 
-a_n = S_n - S_(n-1) = (4n - n^2) - (6n - 5 - n^2) = 4n - n^2 - 6n + 5 + n^2 = **5 - 2n**
+a_n = S_n - S_(n-1) = (3n + 2n^2) - (2n^2 - n - 1) = 3n + 2n^2 - 2n^2 + n + 1 = **4n + 1**
 
 ---
 
 ## Applications of AP in Daily Life
 
-### Construction Penalty Problem
+### Late Delivery Penalty
 
-A contractor faces a penalty of Rs 200 for the first day of delay, Rs 250 for the second, Rs 300 for the third, and so on (increasing by Rs 50 each day). Total penalty for 30 days delay:
+A delivery company charges a penalty of Rs 150 for the first day of delay, Rs 200 for the second day, Rs 250 for the third, and so on (increasing by Rs 50 daily). Total penalty for 25 days of delay:
 
-a = 200, d = 50, n = 30
+a = 150, d = 50, n = 25
 
-S_30 = 30/2 [2(200) + 29(50)] = 15[400 + 1450] = 15(1850) = **Rs 27,750**
+S_25 = 25/2 [2(150) + 24(50)] = 25/2 [300 + 1200] = 25/2 (1500) = **Rs 18,750**
 
-### Cash Prizes Problem
+### Prize Distribution
 
-Seven prizes totalling Rs 700, each prize Rs 20 less than the preceding one. Find each prize.
+A school gives 5 cash prizes, each Rs 30 less than the previous one. The total prize money is Rs 500. Find each prize.
 
-Let the first prize = a. Then d = -20, n = 7, S_7 = 700.
+Let the first prize = a. Then d = -30, n = 5, S_5 = 500.
 
-700 = 7/2 [2a + 6(-20)]
+500 = 5/2 [2a + 4(-30)]
 200 = 2a - 120
 2a = 320, so **a = 160**
 
-The prizes are: **Rs 160, 140, 120, 100, 80, 60, 40**
+The prizes are: **Rs 160, 130, 100, 70, 40**
 
-### Tree Planting Problem
+### Tree Plantation Drive
 
-Each section of Class 1 to 12 plants as many trees as their class number. With 3 sections per class:
+A colony has 10 blocks. Block 1 plants 5 trees, Block 2 plants 8, Block 3 plants 11, and each subsequent block plants 3 more than the previous.
 
-Total trees = 3 x (1 + 2 + 3 + ... + 12) = 3 x 12(13)/2 = 3 x 78 = **234 trees**
+a = 5, d = 3, n = 10
+
+S_10 = 10/2 [2(5) + 9(3)] = 5[10 + 27] = 5(37) = **185 trees**
 
 ---
 
@@ -294,17 +295,17 @@ If three numbers a, b, c are in AP, then **b** is the **arithmetic mean** of a a
 
 **b = (a + c)/2**
 
-For example, the arithmetic mean of 4 and 10 is (4 + 10)/2 = 7. And indeed, 4, 7, 10 form an AP.
+For example, the arithmetic mean of 6 and 14 is (6 + 14)/2 = 10. Indeed, 6, 10, 14 form an AP with d = 4.
 
 ---
 
 ## Chapter Summary
 
-1. An **Arithmetic Progression (AP)** is a list of numbers where each term is obtained by adding a fixed number (common difference d) to the preceding term.
+1. An **Arithmetic Progression (AP)** is a sequence where each term is obtained by adding a constant (the common difference d) to the preceding term.
 
 2. **General form:** a, a + d, a + 2d, a + 3d, ...
 
-3. To check if a list is an AP, verify that the difference between consecutive terms is always the same.
+3. To check if a sequence is an AP, verify that consecutive differences are all equal.
 
 4. **nth term formula:** a_n = a + (n - 1)d
 

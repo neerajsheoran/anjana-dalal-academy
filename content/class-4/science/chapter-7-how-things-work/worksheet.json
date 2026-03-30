@@ -6,68 +6,89 @@
         {
           "id": "ch7-t1-e1",
           "type": "mcq",
-          "question": "Which of these objects spins well?",
-          "options": ["Eraser", "Piece of stone", "Coin", "Pencil box"],
-          "answer": "Coin",
-          "explanation": "A coin spins well because it has a balanced, round shape. It twirls, wobbles as it slows down, and then falls flat."
+          "question": "Which of these objects spins smoothly?",
+          "options": [
+            "Rubber eraser",
+            "Irregular stone",
+            "One-rupee coin",
+            "Pencil box"
+          ],
+          "answer": "One-rupee coin",
+          "explanation": "A one-rupee coin has a balanced, round shape that allows it to spin smoothly on a flat surface."
         },
         {
           "id": "ch7-t1-e2",
           "type": "fill",
-          "question": "A traditional spinning top used in India is called a ______.",
+          "question": "A wooden spinning top used as a traditional toy in India is called a ______.",
           "answer": "lattu",
-          "explanation": "Lattu is a wooden spinning top that has been used in India for thousands of years. In earlier times, spinning tops were made of clay."
+          "explanation": "The lattu is one of India's oldest toys. In ancient times, spinning tops were made of baked clay, and later wooden tops with metal tips became popular."
         },
         {
           "id": "ch7-t1-e3",
           "type": "mcq",
-          "question": "What happens when you spin a square piece of cardboard very fast?",
-          "options": ["It breaks", "It looks circular", "It stops immediately", "It flies away"],
-          "answer": "It looks circular",
-          "explanation": "When a square piece of cardboard is spun fast, it looks circular because the corners blur together during the fast spinning motion."
+          "question": "If you spin a square piece of cardboard very fast, what shape does it appear to be?",
+          "options": [
+            "A triangle",
+            "A circle",
+            "A rectangle",
+            "A star"
+          ],
+          "answer": "A circle",
+          "explanation": "When a square piece of cardboard spins at high speed, the corners blur together and it appears perfectly circular."
         },
         {
           "id": "ch7-t1-e4",
           "type": "short",
-          "question": "What is a charkha? Who used it to promote self-reliance?",
-          "answer": "A charkha is a spinning wheel used to twist cotton fibre into thread. Mahatma Gandhi used it to promote handmade clothes and self-reliance.",
-          "explanation": "The charkha has a large wheel that spins when turned by hand, twisting cotton fibre into thread for making cloth."
+          "question": "What is a charkha and who encouraged Indians to use it?",
+          "answer": "A charkha is a spinning wheel used to twist raw cotton fibre into thread. Mahatma Gandhi encouraged Indians to use the charkha to spin their own cloth as a symbol of self-reliance.",
+          "explanation": "The charkha has a large wheel that is turned by hand, spinning cotton fibre into thread for making fabric."
         },
         {
           "id": "ch7-t1-e5",
           "type": "mcq",
-          "question": "A spinner works best when the hole is at the ______ of the cardboard.",
-          "options": ["Edge", "Corner", "Centre", "Side"],
-          "answer": "Centre",
-          "explanation": "A spinner works best when the hole is at the centre. If the hole is away from the centre, the spinner wobbles and does not spin properly."
+          "question": "Where should the toothpick go through the cardboard for a spinner to work best?",
+          "options": [
+            "At the edge",
+            "At one corner",
+            "At the exact centre",
+            "Anywhere is fine"
+          ],
+          "answer": "At the exact centre",
+          "explanation": "A spinner works best when the stick passes through the exact centre of the cardboard, because both sides are equally balanced."
         }
       ],
       "medium": [
         {
           "id": "ch7-t1-m1",
           "type": "short",
-          "question": "Name three things in our daily life that spin and explain what they do.",
-          "answer": "1. Ceiling fan - its blades spin to push air downwards and cool us. 2. Bicycle wheel - spins to move the bicycle forward. 3. Washing machine drum - spins to clean our clothes.",
-          "explanation": "Many things in our daily life work by spinning. Understanding how spinning works helps us understand how many machines and objects function."
+          "question": "Give three examples of things in daily life that work by spinning and explain what each one does.",
+          "answer": "1. A ceiling fan has blades that spin to push air downward and cool the room. 2. A bicycle wheel spins when you pedal, moving the cycle forward. 3. A mixer grinder has blades that spin fast to grind chutneys and masalas.",
+          "explanation": "Spinning is a common movement seen in many machines and tools we use every day."
         },
         {
           "id": "ch7-t1-m2",
           "type": "mcq",
-          "question": "Why does an eraser not spin well?",
-          "options": ["It is too heavy", "It is too colourful", "It is too flat and uneven", "It is too small"],
-          "answer": "It is too flat and uneven",
-          "explanation": "An eraser does not spin well because it is too flat and has an uneven shape. Objects spin best when they are balanced and round."
+          "question": "Why does a rubber eraser not spin well?",
+          "options": [
+            "It is too colourful",
+            "It is too rectangular and unbalanced",
+            "It is too heavy",
+            "It is too small"
+          ],
+          "answer": "It is too rectangular and unbalanced",
+          "explanation": "An eraser has an uneven, rectangular shape with no natural spinning point, so it tumbles and falls instead of spinning smoothly."
         }
       ],
       "hard": [
         {
           "id": "ch7-t1-h1",
           "type": "long",
-          "question": "How can you make a simple spinner at home? Describe the steps and explain what affects how well it spins.",
-          "answer": "To make a simple spinner: 1. Cut a circle from cardboard. 2. Poke a toothpick through the centre of the circle. 3. Spin it by twisting the toothpick. What affects spinning: The spinner works best when the hole is exactly at the centre of the cardboard. If the hole is away from the centre, the spinner wobbles. If you colour the spinner with different colours and spin it fast, the colours blend together and look different. Even a square piece of cardboard looks circular when spinning fast.",
-          "explanation": "Balance is the key to good spinning. When the spinning point is at the centre, the object rotates smoothly without wobbling."
+          "question": "Explain how to make a simple spinner at home. What discoveries can you make while experimenting with it?",
+          "answer": "To make a spinner: 1. Cut a circle from stiff cardboard. 2. Push a toothpick through the exact centre of the circle. 3. Hold the toothpick between your palms and twist it to spin. Discoveries: If the hole is at the exact centre, the spinner rotates smoothly and lasts longer. If the hole is off-centre, it wobbles and stops quickly. If you cut a square instead of a circle, it looks round while spinning. If you colour the spinner with different colours and spin it fast, the colours blend together and you see new shades.",
+          "explanation": "Balance is the key to good spinning. When the spinning point is at the centre, the weight is evenly distributed and the object rotates without wobbling."
         }
-      ]
+      ],
+      "name": "Exploring the World Around Us"
     },
     {
       "topic": "Floating and Sinking",
@@ -75,82 +96,103 @@
         {
           "id": "ch7-t2-e1",
           "type": "mcq",
-          "question": "Which of these objects floats in water?",
-          "options": ["Iron nail", "Stone", "Leaf", "Marble"],
-          "answer": "Leaf",
-          "explanation": "A leaf floats on water because it is light and flat. Heavy objects like iron nails and stones sink."
+          "question": "Which of these objects will float in a bucket of water?",
+          "options": [
+            "Iron nail",
+            "Stone",
+            "Dry leaf",
+            "Glass marble"
+          ],
+          "answer": "Dry leaf",
+          "explanation": "A dry leaf is very light and spreads flat on the surface of the water, so it floats easily."
         },
         {
           "id": "ch7-t2-e2",
           "type": "fill",
-          "question": "An object that goes to the bottom of water is said to ______.",
-          "answer": "sink",
-          "explanation": "When an object goes to the bottom in water, we say it sinks. When it stays on top, we say it floats."
+          "question": "When an object goes to the bottom of water, we say it has ______.",
+          "answer": "sunk",
+          "explanation": "Objects that are heavy and dense go to the bottom of water -- we say they sink. Objects that stay on top float."
         },
         {
           "id": "ch7-t2-e3",
           "type": "mcq",
-          "question": "A lemon with its peel floats, but a peeled lemon sinks. Why?",
-          "options": ["The peel is heavy", "The peel has tiny air pockets", "The peel is made of water", "The peeled lemon is lighter"],
-          "answer": "The peel has tiny air pockets",
-          "explanation": "The lemon peel has tiny air pockets that help the lemon float. Without the peel, the lemon becomes denser and sinks."
+          "question": "A lemon with its peel floats in water, but a peeled lemon sinks. What is the reason?",
+          "options": [
+            "The peel adds extra weight",
+            "The peel contains tiny air pockets",
+            "The peel absorbs water",
+            "The peeled lemon is bigger"
+          ],
+          "answer": "The peel contains tiny air pockets",
+          "explanation": "The lemon peel has many tiny air pockets that act like a life jacket, keeping the lemon afloat. Without the peel, those air pockets are gone."
         },
         {
           "id": "ch7-t2-e4",
           "type": "short",
-          "question": "Name two objects that float and two that sink in water.",
-          "answer": "Float: cork and thermocol. Sink: marble and coin.",
-          "explanation": "Light objects with air inside usually float, while heavy and dense objects usually sink in water."
+          "question": "Name two objects that float in water and two objects that sink.",
+          "answer": "Float: cork and thermocol. Sink: metal coin and stone.",
+          "explanation": "Generally, light objects or objects with air trapped inside float, while heavy, dense objects sink."
         },
         {
           "id": "ch7-t2-e5",
           "type": "mcq",
-          "question": "Does an empty plastic bottle (with cap on) float or sink?",
-          "options": ["Sinks", "Floats", "Stays in the middle", "Dissolves"],
-          "answer": "Floats",
-          "explanation": "An empty closed plastic bottle floats because it is light and has air trapped inside."
+          "question": "A sealed empty plastic bottle is placed in water. What will it do?",
+          "options": [
+            "Sink to the bottom",
+            "Float on top",
+            "Stay in the middle",
+            "Melt away"
+          ],
+          "answer": "Float on top",
+          "explanation": "An empty sealed plastic bottle has air trapped inside, making it light enough to float on the surface of water."
         }
       ],
       "medium": [
         {
           "id": "ch7-t2-m1",
           "type": "short",
-          "question": "A heavy steel ship floats on water, but a small iron nail sinks. Why is this so?",
-          "answer": "Floating and sinking depends not just on weight but also on shape. A ship is built with a wide, hollow shape that traps air inside, which helps it float. An iron nail is small, solid and dense, so it sinks.",
-          "explanation": "The shape of an object plays an important role in whether it floats or sinks. Wide, hollow shapes trap air and float, while solid, dense shapes sink."
+          "question": "A massive steel ship floats on the ocean, but a small iron nail sinks in a glass of water. How is this possible?",
+          "answer": "Floating and sinking depends on shape, not just weight. A ship has a wide, hollow shape that traps a large amount of air inside, helping it float despite being heavy. An iron nail is small, solid and dense with no air inside, so it sinks.",
+          "explanation": "The design of ships uses the principle that wide, hollow shapes trap air and stay afloat, while solid, compact shapes sink."
         },
         {
           "id": "ch7-t2-m2",
           "type": "mcq",
-          "question": "What happens when you press aluminium foil tightly into a ball and place it in water?",
-          "options": ["It floats", "It sinks", "It dissolves", "It stays in the middle"],
+          "question": "What happens when you crush aluminium foil into a tight ball and put it in water?",
+          "options": [
+            "It floats",
+            "It sinks",
+            "It dissolves",
+            "It stays in the middle"
+          ],
           "answer": "It sinks",
-          "explanation": "When aluminium foil is pressed into a ball, it becomes small and dense with no trapped air, so it sinks. But when spread flat or shaped like a cup, it floats."
+          "explanation": "When foil is crushed into a ball, all the air is squeezed out and it becomes small and dense, causing it to sink. Flat or boat-shaped foil floats because it traps air."
         },
         {
           "id": "ch7-t2-m3",
           "type": "fill",
-          "question": "Boats and ships are built with a wide, ______ shape so that trapped air helps them float.",
+          "question": "Ships are built with a wide, ______ shape so that the trapped air inside helps them float.",
           "answer": "hollow",
-          "explanation": "The wide, hollow shape of boats and ships traps air inside, which helps them float even though they are very heavy."
+          "explanation": "The hollow shape of a ship holds a large amount of air. This trapped air makes the overall ship lighter than the water it displaces, so it floats."
         }
       ],
       "hard": [
         {
           "id": "ch7-t2-h1",
           "type": "long",
-          "question": "Priya did an experiment with aluminium foil. She placed a flat piece in water (it floated), shaped it like a cup (it floated), and then crushed it into a ball (it sank). Explain why the same piece of foil floated in some shapes and sank in another.",
-          "answer": "The same piece of aluminium foil behaved differently because of its shape. When spread flat or shaped like a cup, the foil covered a large area of water and trapped air inside. This trapped air made it lighter compared to the water below it, so it floated. When crushed into a tight ball, all the air was squeezed out and the foil became very small and dense. Since it was now denser than water, it sank to the bottom. This experiment proves that whether something floats or sinks depends on its shape, not just its weight.",
-          "explanation": "Shape plays an important role in floating and sinking. This is the same principle used in building boats and ships - their wide, hollow design traps air to help them float."
+          "question": "Meena did an experiment with a piece of aluminium foil. She first laid it flat on water (it floated), then shaped it like a boat (it floated), and then crushed it into a tight ball (it sank). Explain why the same foil behaved differently in each shape.",
+          "answer": "The same piece of aluminium foil behaved differently because of its shape. When laid flat, the foil covered a large area of the water surface and trapped a thin layer of air beneath it, so it floated. When shaped like a boat, it created a hollow space filled with air, which also kept it afloat. But when crushed into a tight ball, all the trapped air was squeezed out. The foil became a small, dense lump that was heavier than the water it pushed aside, so it sank. This proves that shape, not just weight, determines whether something floats or sinks.",
+          "explanation": "This is the same idea used in building real ships. A ship's wide, hollow shape traps enough air to keep it floating even though the metal is very heavy."
         },
         {
           "id": "ch7-t2-h2",
           "type": "long",
-          "question": "You want to build a small boat using materials at home. What materials could you use? What three things should you think about while making the boat?",
-          "answer": "I could build a small boat using paper, ice-cream sticks, coconut shells, walnut shells, clay or cardboard. Three things I should think about: 1. Balance - the boat should not tip over easily, so the weight should be spread evenly. 2. Shape - the bottom should be wide enough to float and trap air inside. 3. Strength - the boat should hold together in water without breaking apart. A cardboard boat would need waterproofing to stop water from soaking through.",
-          "explanation": "Building boats helps us understand the principles of floating and sinking. Balance, shape and strength are all important factors in making a boat that works well."
+          "question": "You want to design a small boat using materials found at home. What materials could you use? What three important things must you consider while building it?",
+          "answer": "I could build a small boat using newspaper, ice-cream sticks tied together, half a coconut shell, walnut shells, shaped clay, or thermocol. Three important things to consider: 1. Balance -- the boat should not tip over to one side, so the weight must be spread evenly. 2. Shape -- the bottom should be wide and hollow enough to trap air inside, which helps it float. 3. Strength -- the material should hold together when placed in water without falling apart or soaking through.",
+          "explanation": "Building boats is a hands-on way to understand the science of floating and sinking. Good balance, a hollow shape and strong materials all matter."
         }
-      ]
+      ],
+      "name": "Spinning Objects"
     }
   ]
 }

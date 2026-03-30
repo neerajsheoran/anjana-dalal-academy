@@ -1,182 +1,179 @@
 ---
-title: Chapter 1 Real Numbers
+title: "Exploring Real Numbers"
+description: "Explore Euclid's division algorithm, the Fundamental Theorem of Arithmetic, and properties of irrational and rational numbers."
+order: 1
 ---
 
 ## Introduction
 
-In Class 9, you explored the world of real numbers and encountered irrational numbers. In this chapter, we go deeper into the properties of positive integers. We will study two very important ideas:
+Building on what you discovered about real numbers in Class 9, this chapter takes you deeper into the hidden structure of whole numbers. Two powerful mathematical ideas form the backbone of everything we explore here:
 
-- **Euclid's Division Algorithm** -- related to divisibility of integers
-- **The Fundamental Theorem of Arithmetic** -- related to multiplication and prime factorisation
+- **Euclid's Division Algorithm** -- a systematic way to understand how integers divide each other
+- **The Fundamental Theorem of Arithmetic** -- the idea that every whole number has a unique "fingerprint" made of prime numbers
 
-These concepts help us compute the HCF of two positive integers, prove irrationality of numbers like **root 2**, **root 3**, and **root 5**, and understand the decimal expansion of rational numbers.
+With these tools, we can calculate the HCF of large numbers efficiently, prove that numbers like **root 2**, **root 3**, and **root 5** cannot be written as fractions, and predict the decimal behaviour of rational numbers.
 
 ---
 
 ## The Fundamental Theorem of Arithmetic
 
-You already know that any natural number can be written as a product of its prime factors. For example:
+From your earlier classes, you know how to break a number into its prime building blocks. For instance:
 
-- 2 = 2
-- 4 = 2 x 2
-- 253 = 11 x 23
+- 3 = 3
+- 12 = 2 x 2 x 3
+- 385 = 5 x 7 x 11
 
-Now think about it the other way: if you take any collection of prime numbers and multiply them (allowing repetition), you can produce a huge collection of positive integers. The big question is -- can **every** composite number be produced this way?
+Here is the deeper question: if you pick any composite number at random -- say a number with thousands of digits -- can you always break it down into primes? And will you always get the same set of primes no matter how you go about it?
 
-The answer is **yes**, and this is precisely what the Fundamental Theorem of Arithmetic states.
+The answer to both questions is **yes**. This is the Fundamental Theorem of Arithmetic.
 
-> **Key idea:** Every composite number can be expressed (factorised) as a product of primes, and this factorisation is **unique**, apart from the order in which the prime factors occur.
+> **Key idea:** Every composite number can be written as a product of prime numbers, and this prime factorisation is **unique** -- the same primes appear with the same powers every time, regardless of the order you write them in.
 
-### What Does "Unique" Mean Here?
+### Understanding Uniqueness
 
-It means that for any composite number, there is **one and only one** way to write it as a product of primes (if we ignore the order). For example:
+Consider the number 23100. No matter which path you take to factorise it, you always arrive at:
 
-- 32760 = 2 x 2 x 2 x 3 x 3 x 5 x 7 x 13 = 2^3 x 3^2 x 5 x 7 x 13
+- 23100 = 2^2 x 3 x 5^2 x 7 x 11
 
-Whether you write it as 2 x 3 x 5 x 7 x 13 x 2 x 3 x 2 or in ascending order, the prime factors and their powers remain the same.
+You might write 3 x 7 x 11 x 2^2 x 5^2 or any other rearrangement, but the collection of primes and their powers never changes.
 
-### How to Find Prime Factorisation
+### Building a Factor Tree
 
-Use the **factor tree method**:
+The factor tree is a visual method to reach the prime factorisation:
 
-1. Start with the number
-2. Break it into any two factors
-3. Keep breaking each factor until you reach only prime numbers
-4. Write the number as a product of all the prime factors
+1. Start with your number at the top
+2. Split it into any two factors
+3. Continue splitting each branch until every leaf is a prime
+4. Collect all the primes from the leaves
 
-**Example:** Find the prime factorisation of 140.
+**Example:** Find the prime factorisation of 180.
 
-![Factor tree showing 140 broken down step by step into prime factors 2, 2, 5, and 7](factor-tree-140.png)
-
-- 140 = 2 x 70
-- 70 = 2 x 35
-- 35 = 5 x 7
-- So, **140 = 2 x 2 x 5 x 7 = 2^2 x 5 x 7**
+- 180 = 2 x 90
+- 90 = 2 x 45
+- 45 = 3 x 15
+- 15 = 3 x 5
+- So, **180 = 2 x 2 x 3 x 3 x 5 = 2^2 x 3^2 x 5**
 
 ---
 
 ## HCF and LCM Using Prime Factorisation
 
-The Fundamental Theorem of Arithmetic gives us a neat method to find the **HCF** (Highest Common Factor) and **LCM** (Least Common Multiple) of two or more numbers.
+The Fundamental Theorem gives us an elegant way to compute **HCF** (Highest Common Factor) and **LCM** (Least Common Multiple).
 
-### Rules
+### The Rules
 
-![Venn diagram showing prime factors of two numbers with common factors in the overlap region for HCF and all factors for LCM](hcf-lcm-venn-diagram.png)
+- **HCF** = Multiply together the **lowest power** of every prime that appears in **both** factorisations
+- **LCM** = Multiply together the **highest power** of every prime that appears in **either** factorisation
 
-- **HCF** = Product of the **smallest power** of each **common** prime factor
-- **LCM** = Product of the **greatest power** of each prime factor involved in the numbers
+### Worked Example 1: Find HCF and LCM of 8 and 36
 
-### Worked Example 1: Find HCF and LCM of 6 and 20
+**Step 1:** Write the prime factorisations.
+- 8 = 2^3
+- 36 = 2^2 x 3^2
 
-**Step 1:** Prime factorise both numbers.
-- 6 = 2^1 x 3^1
-- 20 = 2^2 x 5^1
+**Step 2:** For HCF, take the lowest power of each common prime.
+- Only common prime: 2. Lowest power: 2^2
+- HCF = **4**
 
-**Step 2:** Find HCF -- take the smallest power of common primes.
-- Common prime: 2
-- HCF = 2^1 = **2**
+**Step 3:** For LCM, take the highest power of every prime.
+- LCM = 2^3 x 3^2 = 8 x 9 = **72**
 
-**Step 3:** Find LCM -- take the greatest power of all primes.
-- LCM = 2^2 x 3^1 x 5^1 = 4 x 3 x 5 = **60**
+**Verification:** HCF x LCM = 4 x 72 = 288 = 8 x 36. Verified!
 
-**Verification:** HCF x LCM = 2 x 60 = 120 = 6 x 20. Verified!
+> **Key idea:** For any two positive integers a and b: **HCF(a, b) x LCM(a, b) = a x b**. This golden relationship lets you find one quantity from the other!
 
-> **Key idea:** For any two positive integers a and b: **HCF(a, b) x LCM(a, b) = a x b**. This relationship is very useful -- if you know one, you can find the other!
-
-### Worked Example 2: Find HCF of 96 and 404, then find their LCM
+### Worked Example 2: Find HCF of 84 and 360, then find their LCM
 
 **Step 1:** Prime factorise.
-- 96 = 2^5 x 3
-- 404 = 2^2 x 101
+- 84 = 2^2 x 3 x 7
+- 360 = 2^3 x 3^2 x 5
 
-**Step 2:** HCF = 2^2 = **4**
+**Step 2:** HCF = 2^2 x 3 = **12**
 
-**Step 3:** LCM = (96 x 404) / HCF = 38784 / 4 = **9696**
+**Step 3:** LCM = (84 x 360) / HCF = 30240 / 12 = **2520**
 
-### Worked Example 3: Find HCF and LCM of 6, 72, and 120
+### Worked Example 3: Find HCF and LCM of 8, 48, and 90
 
 **Step 1:** Prime factorise.
-- 6 = 2 x 3
-- 72 = 2^3 x 3^2
-- 120 = 2^3 x 3 x 5
+- 8 = 2^3
+- 48 = 2^4 x 3
+- 90 = 2 x 3^2 x 5
 
-**Step 2:** HCF = 2^1 x 3^1 = **6** (smallest powers of common factors 2 and 3)
+**Step 2:** HCF = 2^1 = **2** (only 2 is common to all three, and its smallest power is 1)
 
-**Step 3:** LCM = 2^3 x 3^2 x 5^1 = 8 x 9 x 5 = **360** (greatest powers of all prime factors)
+**Step 3:** LCM = 2^4 x 3^2 x 5 = 16 x 9 x 5 = **720** (highest powers of all primes involved)
 
-> **Key idea:** For **three** numbers, the formula HCF x LCM = product of the three numbers does **NOT** hold. It only works for two numbers.
+> **Key idea:** For **three** numbers, the formula HCF x LCM = product of the three numbers does **NOT** hold. It only works for exactly two numbers.
 
 ---
 
 ## Applications of the Fundamental Theorem
 
-### Can 4^n End with the Digit 0?
+### Can 8^n Ever End with the Digit 0?
 
-Consider the numbers 4^n, where n is a natural number. If 4^n ends with the digit 0, it must be divisible by 5. But:
+If 8^n ends in 0, it must be divisible by both 2 and 5. But:
 
-- 4^n = (2^2)^n = 2^(2n)
+- 8^n = (2^3)^n = 2^(3n)
 
-The only prime factor is 2. There is **no 5** in the factorisation. By the uniqueness of the Fundamental Theorem, no other prime can appear.
+The only prime factor is 2. There is **no factor of 5** anywhere. By the uniqueness guarantee of the Fundamental Theorem, no 5 can ever appear.
 
-**Therefore, 4^n can never end with the digit zero.**
+**Therefore, 8^n can never end with the digit zero.**
 
-### Can 6^n End with the Digit 0?
+### Can 12^n End with the Digit 0?
 
-Similarly, 6^n = (2 x 3)^n = 2^n x 3^n. Again, no factor of 5 is present, so **6^n also cannot end with digit zero**.
+Similarly, 12^n = (2^2 x 3)^n = 2^(2n) x 3^n. Once again, there is no prime factor of 5, so **12^n also cannot end with digit zero**.
 
 ### Showing Numbers Are Composite
 
-**Example:** Show that 7 x 11 x 13 + 13 is a composite number.
+**Example:** Show that 5 x 13 x 17 + 17 is a composite number.
 
-- 7 x 11 x 13 + 13 = 13(7 x 11 + 1) = 13 x 78 = 13 x 2 x 3 x 13
+- 5 x 13 x 17 + 17 = 17(5 x 13 + 1) = 17 x 66 = 17 x 2 x 3 x 11
 
-Since this number has factors other than 1 and itself, it is **composite**.
+Since this number has multiple prime factors (and is therefore not prime), it is **composite**.
 
-### Circular Path Problem
+### Jogging Track Problem
 
-**Problem:** Sonia takes 18 minutes and Ravi takes 12 minutes to complete one round of a circular sports field. If they start together from the same point and go in the same direction, after how many minutes will they meet again at the starting point?
+**Problem:** Priya completes one lap of a jogging track in 15 minutes and Arjun completes one lap in 20 minutes. If they start together from the same point, after how many minutes will they meet again at the starting point?
 
-**Solution:** They will meet at the starting point after **LCM(18, 12)** minutes.
+**Solution:** They will meet after **LCM(15, 20)** minutes.
 
-- 18 = 2 x 3^2
-- 12 = 2^2 x 3
-- LCM = 2^2 x 3^2 = 4 x 9 = **36 minutes**
+- 15 = 3 x 5
+- 20 = 2^2 x 5
+- LCM = 2^2 x 3 x 5 = 4 x 3 x 5 = **60 minutes**
 
 ---
 
 ## Revisiting Irrational Numbers
 
-Recall from Class 9 that a number is called **irrational** if it cannot be written in the form p/q, where p and q are integers and q is not zero.
+A number is **irrational** if it cannot be expressed as p/q, where p and q are integers with q not equal to zero.
 
-Some examples of irrational numbers: root 2, root 3, root 15, pi
+Familiar irrational numbers include: root 2, root 3, root 7, pi
 
 ### Important Theorem
 
-**Theorem 1.2:** Let p be a prime number. If p divides a^2, then p divides a, where a is a positive integer.
+**Theorem 1.2:** If p is a prime number and p divides a^2 (where a is a positive integer), then p must also divide a.
 
-This theorem is based on the Fundamental Theorem of Arithmetic and is used to prove that certain numbers are irrational.
+This theorem, which follows from the Fundamental Theorem of Arithmetic, is the key tool for proving irrationality.
 
 ---
 
 ## Proving Root 2 Is Irrational
 
-We use a method called **proof by contradiction**.
+We use **proof by contradiction** -- assume the opposite of what we want to prove, and show that it leads to an impossible situation.
 
-![Flowchart showing the steps of proof by contradiction for proving root 2 is irrational](proof-by-contradiction-root2-flowchart.png)
+**Step 1:** Suppose, for the sake of argument, that root 2 is rational.
 
-**Step 1:** Assume, to the contrary, that root 2 is rational.
+**Step 2:** Then root 2 = a/b, where a and b are coprime integers (they share no common factor except 1) and b is not zero.
 
-**Step 2:** Then we can write root 2 = a/b, where a and b are coprime integers (no common factor other than 1) and b is not zero.
+**Step 3:** Squaring both sides: 2 = a^2/b^2, which gives **a^2 = 2b^2**.
 
-**Step 3:** Squaring both sides: 2 = a^2/b^2, so **a^2 = 2b^2**.
+**Step 4:** Since 2 divides a^2, by Theorem 1.2, **2 must divide a**. Write a = 2k for some integer k.
 
-**Step 4:** This means 2 divides a^2. By Theorem 1.2, **2 divides a**. So we can write a = 2c for some integer c.
+**Step 5:** Substituting back: 2b^2 = (2k)^2 = 4k^2, so **b^2 = 2k^2**.
 
-**Step 5:** Substituting: 2b^2 = (2c)^2 = 4c^2, so **b^2 = 2c^2**.
+**Step 6:** Now 2 divides b^2, so by Theorem 1.2, **2 divides b**.
 
-**Step 6:** This means 2 divides b^2, so **2 divides b**.
-
-**Step 7:** But now both a and b are divisible by 2. This **contradicts** our assumption that a and b are coprime.
+**Step 7:** But we just showed 2 divides both a and b. This **contradicts** our assumption that a and b are coprime!
 
 **Conclusion:** Our assumption was wrong. Therefore, **root 2 is irrational**.
 
@@ -184,68 +181,68 @@ We use a method called **proof by contradiction**.
 
 ## Proving Root 3 Is Irrational
 
-The proof follows the same structure.
+The argument follows the identical blueprint, replacing 2 with 3.
 
-**Step 1:** Assume root 3 is rational. Then root 3 = a/b where a and b are coprime.
+**Step 1:** Assume root 3 = a/b where a and b are coprime integers.
 
-**Step 2:** Squaring: 3b^2 = a^2. So 3 divides a^2, which means 3 divides a.
+**Step 2:** Squaring: 3b^2 = a^2. So 3 divides a^2, meaning 3 divides a.
 
-**Step 3:** Let a = 3c. Then 3b^2 = 9c^2, giving b^2 = 3c^2. So 3 divides b.
+**Step 3:** Writing a = 3k: 3b^2 = 9k^2, which gives b^2 = 3k^2. So 3 divides b.
 
-**Step 4:** Both a and b are divisible by 3 -- contradiction with coprimality.
+**Step 4:** Both a and b are divisible by 3 -- this contradicts the coprimality assumption.
 
 **Conclusion: root 3 is irrational.**
 
-> **Key idea:** To prove root p is irrational (where p is prime), assume it is rational, derive that p divides both numerator and denominator, and reach a contradiction.
+> **Key idea:** For any prime number p, root p is irrational. The proof always works the same way: assume rationality, show p divides both the numerator and denominator, and reach a contradiction.
 
 ---
 
 ## Irrationality of Expressions Involving Irrational Numbers
 
-### Important Results
+### Fundamental Results
 
-- The **sum or difference** of a rational and an irrational number is **irrational**.
-- The **product or quotient** of a non-zero rational and an irrational number is **irrational**.
+- The **sum or difference** of a rational number and an irrational number is always **irrational**.
+- The **product or quotient** of a non-zero rational number and an irrational number is always **irrational**.
 
-### Worked Example: Prove 5 - root 3 is irrational
+### Worked Example: Prove 7 + root 5 is irrational
 
-**Step 1:** Assume 5 - root 3 is rational. Then 5 - root 3 = a/b for some coprime integers a, b.
+**Step 1:** Assume 7 + root 5 is rational. Then 7 + root 5 = a/b for some coprime integers a, b.
 
-**Step 2:** Rearranging: root 3 = 5 - a/b = (5b - a)/b.
+**Step 2:** Rearranging: root 5 = a/b - 7 = (a - 7b)/b.
 
-**Step 3:** Since a and b are integers, (5b - a)/b is rational. So root 3 would be rational.
+**Step 3:** Since a and b are integers, (a - 7b)/b is rational. This would make root 5 rational.
 
-**Step 4:** But we proved root 3 is irrational -- **contradiction!**
+**Step 4:** But root 5 is irrational -- **contradiction!**
 
-**Conclusion: 5 - root 3 is irrational.**
+**Conclusion: 7 + root 5 is irrational.**
 
-### Worked Example: Prove 3 root 2 is irrational
+### Worked Example: Prove 5 root 3 is irrational
 
-**Step 1:** Assume 3 root 2 is rational. Then 3 root 2 = a/b for coprime integers a, b.
+**Step 1:** Assume 5 root 3 is rational. Then 5 root 3 = a/b for coprime integers a, b.
 
-**Step 2:** Rearranging: root 2 = a/(3b).
+**Step 2:** Rearranging: root 3 = a/(5b).
 
-**Step 3:** Since a, b, and 3 are integers, a/(3b) is rational. So root 2 would be rational.
+**Step 3:** Since a, b, and 5 are integers, a/(5b) is rational. This would make root 3 rational.
 
-**Step 4:** But root 2 is irrational -- **contradiction!**
+**Step 4:** But root 3 is irrational -- **contradiction!**
 
-**Conclusion: 3 root 2 is irrational.**
+**Conclusion: 5 root 3 is irrational.**
 
 ---
 
 ## Chapter Summary
 
-1. **The Fundamental Theorem of Arithmetic:** Every composite number can be expressed as a product of primes, and this factorisation is unique (apart from the order of factors).
+1. **The Fundamental Theorem of Arithmetic:** Every composite number has a unique prime factorisation (ignoring the ordering of factors).
 
 2. **Theorem 1.2:** If p is a prime and p divides a^2, then p divides a (where a is a positive integer).
 
-3. **Irrationality proofs:** Using the Fundamental Theorem and proof by contradiction, we can prove that root 2, root 3, root 5, and similar numbers are irrational.
+3. **Irrationality proofs:** By combining the Fundamental Theorem with proof by contradiction, we can establish that root 2, root 3, root 5, and similar numbers are irrational.
 
 4. **HCF and LCM by prime factorisation:**
-   - HCF = product of smallest powers of common prime factors
-   - LCM = product of greatest powers of all prime factors
+   - HCF = product of the lowest powers of all common prime factors
+   - LCM = product of the highest powers of all prime factors appearing in either number
    - For two numbers a and b: HCF(a, b) x LCM(a, b) = a x b
 
 5. **Key relationships for three numbers p, q, r:**
-   - LCM(p, q, r) x HCF(p, q, r) is NOT equal to p x q x r
-   - Special formulas exist involving pairwise HCFs and LCMs
+   - LCM(p, q, r) x HCF(p, q, r) does NOT equal p x q x r
+   - Special formulas involving pairwise HCFs and LCMs apply instead

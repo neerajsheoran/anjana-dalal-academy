@@ -7,7 +7,12 @@
           "id": "ch6-t1-e1",
           "type": "mcq",
           "question": "Two figures having the same shape but not necessarily the same size are called:",
-          "options": ["Congruent", "Similar", "Equal", "Equivalent"],
+          "options": [
+            "Congruent",
+            "Similar",
+            "Equal",
+            "Equivalent"
+          ],
           "answer": "Similar",
           "explanation": "Similar figures have the same shape but not necessarily the same size. All congruent figures are similar, but the converse is not true."
         },
@@ -22,7 +27,12 @@
           "id": "ch6-t1-e3",
           "type": "mcq",
           "question": "All ______ triangles are similar.",
-          "options": ["Isosceles", "Right-angled", "Equilateral", "Scalene"],
+          "options": [
+            "Isosceles",
+            "Right-angled",
+            "Equilateral",
+            "Scalene"
+          ],
           "answer": "Equilateral",
           "explanation": "All equilateral triangles have angles of 60 degrees each, making them similar by the AAA criterion."
         },
@@ -30,7 +40,12 @@
           "id": "ch6-t1-e4",
           "type": "mcq",
           "question": "Two polygons of the same number of sides are similar if their corresponding angles are equal and their corresponding sides are:",
-          "options": ["Equal", "Proportional", "Parallel", "Perpendicular"],
+          "options": [
+            "Equal",
+            "Proportional",
+            "Parallel",
+            "Perpendicular"
+          ],
           "answer": "Proportional",
           "explanation": "Two polygons are similar if (i) corresponding angles are equal and (ii) corresponding sides are in the same ratio (proportional)."
         }
@@ -62,13 +77,18 @@
       ]
     },
     {
-      "topic": "Criteria for Similarity and Applications",
+      "topic": "Writing Similarity Statements Correctly",
       "easy": [
         {
           "id": "ch6-t2-e1",
           "type": "mcq",
           "question": "In triangles ABC and DEF, angle A = angle D, angle B = angle E. The triangles are similar by which criterion?",
-          "options": ["SSS", "SAS", "AA", "RHS"],
+          "options": [
+            "SSS",
+            "SAS",
+            "AA",
+            "RHS"
+          ],
           "answer": "AA",
           "explanation": "If two angles of one triangle are equal to two corresponding angles of another triangle, the triangles are similar by the AA (Angle-Angle) criterion."
         },
@@ -83,7 +103,12 @@
           "id": "ch6-t2-e3",
           "type": "mcq",
           "question": "Triangles ABC and DEF are similar. If AB = 4 cm, BC = 6 cm, EF = 9 cm, and DE = 6 cm, then the similarity is:",
-          "options": ["ABC ~ DEF", "ABC ~ FED", "ABC ~ EFD", "ABC ~ DFE"],
+          "options": [
+            "ABC ~ DEF",
+            "ABC ~ FED",
+            "ABC ~ EFD",
+            "ABC ~ DFE"
+          ],
           "answer": "ABC ~ DEF",
           "explanation": "AB/DE = 4/6 = 2/3 and BC/EF = 6/9 = 2/3. The ratio is the same, confirming ABC ~ DEF."
         }
@@ -128,7 +153,12 @@
           "id": "ch6-t3-e1",
           "type": "mcq",
           "question": "In a right triangle, the square of the hypotenuse is equal to:",
-          "options": ["The sum of the other two sides", "The product of the other two sides", "The sum of the squares of the other two sides", "The difference of the squares of the other two sides"],
+          "options": [
+            "The sum of the other two sides",
+            "The product of the other two sides",
+            "The sum of the squares of the other two sides",
+            "The difference of the squares of the other two sides"
+          ],
           "answer": "The sum of the squares of the other two sides",
           "explanation": "Pythagoras Theorem states: In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides."
         },

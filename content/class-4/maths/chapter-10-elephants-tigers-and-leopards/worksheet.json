@@ -1,38 +1,172 @@
 {
   "topics": [
     {
-      "topic": "Addition and Subtraction of 4-Digit Numbers",
+      "topic": "Addition of 4-Digit Numbers",
       "easy": [
-        { "id": "ch10-t1-e1", "type": "mcq", "question": "What is 6049 + 3054?", "options": ["9003", "9093", "9103", "9143"], "answer": "9103", "explanation": "Ones: 9+4=13, write 3, carry 1. Tens: 4+5+1=10, write 0, carry 1. Hundreds: 0+0+1=1. Thousands: 6+3=9. Answer: 9103." },
-        { "id": "ch10-t1-e2", "type": "fill", "question": "When adding, if a column totals 10 or more, we ______ 1 to the next column.", "answer": "carry", "explanation": "Carrying (regrouping) moves the extra 10 to the next higher place value." },
-        { "id": "ch10-t1-e3", "type": "mcq", "question": "5719 - 3965 = ?", "options": ["1654", "1754", "1854", "2754"], "answer": "1754", "explanation": "Ones: 9-5=4. Tens: 1<6, borrow: 11-6=5. Hundreds: 6<9, borrow: 16-9=7. Thousands: 4-3=1. Answer: 1754." },
-        { "id": "ch10-t1-e4", "type": "fill", "question": "10 Hundreds = 1 ______.", "answer": "Thousand", "explanation": "Just like 10 Ones = 1 Ten and 10 Tens = 1 Hundred, 10 Hundreds = 1 Thousand." }
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "What is 2761 + 6395?",
+          "options": [
+            "9056",
+            "9156",
+            "9256",
+            "8156"
+          ],
+          "answer": "9156",
+          "explanation": "Ones: 1+5=6. Tens: 6+9=15, write 5 carry 1. Hundreds: 7+3+1=11, write 1 carry 1. Thousands: 2+6+1=9. Answer: 9156."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "In addition, when a column adds up to 10 or more, we ______ 1 to the next column.",
+          "answer": "carry",
+          "explanation": "Carrying moves a group of 10 from one column to the next higher place value."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "4684 - 1889 = ?",
+          "options": [
+            "2695",
+            "2795",
+            "2895",
+            "3795"
+          ],
+          "answer": "2795",
+          "explanation": "Ones: 14-9=5. Tens: 17-8=9. Hundreds: 15-8=7. Thousands: 3-1=2. Answer: 2795."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "fill",
+          "question": "10 Tens = 1 ______.",
+          "answer": "Hundred",
+          "explanation": "10 Ones = 1 Ten, 10 Tens = 1 Hundred, 10 Hundreds = 1 Thousand."
+        }
       ],
       "medium": [
-        { "id": "ch10-t1-m1", "type": "short", "question": "Gujarat has 1355 leopards, Karnataka has 1131, and Madhya Pradesh has 1817. What is the total number of leopards in these three states?", "answer": "1355 + 1131 + 1817 = 4303 leopards.", "explanation": "Add all three: Ones: 5+1+7=13. Tens: 5+3+1+1=10. Hundreds: 3+1+8+1=13. Thousands: 1+1+1+1=4. Answer: 4303." },
-        { "id": "ch10-t1-m2", "type": "short", "question": "Use mental maths to solve: 8787 - 99.", "answer": "8787 - 99 = 8787 - 100 + 1 = 8687 + 1 = 8688.", "explanation": "Subtracting 99 is the same as subtracting 100 and adding 1 back." },
-        { "id": "ch10-t1-m3", "type": "mcq", "question": "Without calculating, which is bigger: 54 + 97 or 54 + 90?", "options": ["54 + 97", "54 + 90", "Both are equal", "Cannot tell"], "answer": "54 + 97", "explanation": "Same starting number (54), but 97 > 90, so adding 97 gives a bigger total." }
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "Rajasthan has 1776 leopards, Maharashtra has 1690, and Tamil Nadu has 1023. What is the total?",
+          "answer": "1776 + 1690 + 1023 = 4489 leopards.",
+          "explanation": "Ones: 6+0+3=9. Tens: 7+9+2=18 (write 8, carry 1). Hundreds: 7+6+0+1=14 (write 4, carry 1). Thousands: 1+1+1+1=4. Answer: 4489."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "Use mental maths to solve: 5555 - 99.",
+          "answer": "5555 - 99 = 5555 - 100 + 1 = 5455 + 1 = 5456.",
+          "explanation": "Subtracting 99 is the same as subtracting 100 and adding 1 back."
+        },
+        {
+          "id": "ch10-t1-m3",
+          "type": "mcq",
+          "question": "Without calculating, which is bigger: 63 + 88 or 63 + 79?",
+          "options": [
+            "63 + 88",
+            "63 + 79",
+            "Both are equal",
+            "Cannot tell"
+          ],
+          "answer": "63 + 88",
+          "explanation": "Same first number (63), but 88 > 79, so adding 88 gives a bigger total."
+        }
       ],
       "hard": [
-        { "id": "ch10-t1-h1", "type": "long", "question": "Assam has 5719 elephants. Kerala has 3054 elephants. How many more elephants does Assam have than Kerala? If 1200 baby elephants are born across both states next year, and 800 are in Assam and 400 in Kerala, what will the new totals be?", "answer": "Difference: 5719 - 3054 = 2665 more in Assam. New Assam total: 5719 + 800 = 6519. New Kerala total: 3054 + 400 = 3454.", "explanation": "First subtract to find difference. Then add new births to each state's total." }
-      ]
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "Tamil Nadu has 2761 elephants and Karnataka has 6395. How many more elephants does Karnataka have? If Tamil Nadu's elephant count grows by 500 and Karnataka's grows by 300 next year, what will the new totals be? Which state will still have more?",
+          "answer": "Difference: 6395 - 2761 = 3634 more in Karnataka. New Tamil Nadu total: 2761 + 500 = 3261. New Karnataka total: 6395 + 300 = 6695. Karnataka still has more (6695 vs 3261).",
+          "explanation": "Subtract for the difference. Then add growth to each state separately."
+        }
+      ],
+      "name": "India's Amazing Wildlife"
     },
     {
       "topic": "Reverse and Add Patterns and Money",
       "easy": [
-        { "id": "ch10-t2-e1", "type": "mcq", "question": "Take the number 27. Reverse its digits to get 72. What is 27 + 72?", "options": ["89", "95", "99", "100"], "answer": "99", "explanation": "27 + 72 = 99." },
-        { "id": "ch10-t2-e2", "type": "fill", "question": "36 reversed is 63. 36 + 63 = ______.", "answer": "99", "explanation": "36 + 63 = 99. Numbers whose digits sum to 9 (3+6=9) always give 99 when reversed and added." },
-        { "id": "ch10-t2-e3", "type": "mcq", "question": "How many Rs 500 notes are needed to make Rs 2000?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "2000 / 500 = 4 notes." }
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "Take the number 34. Reverse its digits to get 43. What is 34 + 43?",
+          "options": [
+            "67",
+            "73",
+            "77",
+            "87"
+          ],
+          "answer": "77",
+          "explanation": "34 + 43 = 77."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "49 reversed is 94. 49 + 94 = ______.",
+          "answer": "143",
+          "explanation": "49 + 94 = 143. The digits 4+9=13, and other numbers whose digits sum to 13 also give 143."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "How many Rs 200 notes are needed to make Rs 1000?",
+          "options": [
+            "2",
+            "4",
+            "5",
+            "10"
+          ],
+          "answer": "5",
+          "explanation": "1000 / 200 = 5 notes."
+        }
       ],
       "medium": [
-        { "id": "ch10-t2-m1", "type": "short", "question": "Try the reverse-and-add pattern with 23. What do you get? Now try 14. What pattern do you notice?", "answer": "23 + 32 = 55. 14 + 41 = 55. Both give 55! The pattern is that numbers whose digits sum to the same total (2+3=5, 1+4=5) give the same reverse-and-add result.", "explanation": "When digit sums are equal, the reverse-and-add results are equal." },
-        { "id": "ch10-t2-m2", "type": "short", "question": "If 354 + 167 = 521, what is 354 + 168 without calculating from scratch?", "answer": "354 + 168 = 522. Since 168 is 1 more than 167, the answer is 1 more: 521 + 1 = 522.", "explanation": "Using known facts: adding 1 more to one number adds 1 more to the answer." },
-        { "id": "ch10-t2-m3", "type": "mcq", "question": "If 456 + 209 = 665, what is 446 + 219?", "options": ["655", "665", "675", "755"], "answer": "665", "explanation": "446 is 10 less than 456, and 219 is 10 more than 209. The changes cancel out: 665." }
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "Try the reverse-and-add pattern with 46. What do you get? Now try 28. What pattern do you notice?",
+          "answer": "46 + 64 = 110. 28 + 82 = 110. Both give 110! The pattern: digits 4+6=10 and 2+8=10 — same digit sum gives same reverse-and-add answer.",
+          "explanation": "When digit sums are equal, the reverse-and-add results are equal."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "If 183 + 279 = 462, what is 183 + 280 without calculating from scratch?",
+          "answer": "183 + 280 = 463. Since 280 is 1 more than 279, the answer is 1 more: 462 + 1 = 463.",
+          "explanation": "Using known facts: adding 1 more to one number adds 1 more to the answer."
+        },
+        {
+          "id": "ch10-t2-m3",
+          "type": "mcq",
+          "question": "If 330 + 470 = 800, what is 340 + 460?",
+          "options": [
+            "790",
+            "800",
+            "810",
+            "900"
+          ],
+          "answer": "800",
+          "explanation": "340 is 10 more than 330, and 460 is 10 less than 470. The changes cancel out: still 800."
+        }
       ],
       "hard": [
-        { "id": "ch10-t2-h1", "type": "long", "question": "Rahul wants to deposit Rs 2045 at the bank. He has notes of Rs 500, Rs 100, Rs 50, and Rs 10, and coins of Rs 5, Rs 2, and Rs 1. Show one way he could make Rs 2045 using these notes and coins.", "answer": "One way: 4 notes of Rs 500 = Rs 2000. Then 4 coins of Rs 10 = Rs 40. Then 1 coin of Rs 5 = Rs 5. Total: 2000 + 40 + 5 = Rs 2045. (Other combinations are also correct.)", "explanation": "Start with the largest notes and work down. There are many valid combinations." },
-        { "id": "ch10-t2-h2", "type": "long", "question": "India has about 3/4 of the world's tiger population. If the world has about 4500 tigers, approximately how many tigers are in India? If India's tiger population grows by 500 in the next 5 years, what will the new number be?", "answer": "3/4 of 4500 = 3 x (4500/4) = 3 x 1125 = 3375 tigers in India. After growth: 3375 + 500 = 3875 tigers.", "explanation": "Find 1/4 first: 4500/4 = 1125. Then 3/4 = 3 x 1125 = 3375. Add growth: 3375 + 500 = 3875." }
-      ]
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Kavya wants to deposit Rs 1795 at the bank. She has Rs 500 notes, Rs 100 notes, Rs 20 notes, and Rs 5 coins. Show one way she could make exactly Rs 1795.",
+          "answer": "One way: 3 notes of Rs 500 = Rs 1500. 2 notes of Rs 100 = Rs 200. 4 notes of Rs 20 = Rs 80. 3 coins of Rs 5 = Rs 15. Total: 1500 + 200 + 80 + 15 = Rs 1795.",
+          "explanation": "Start with the largest notes and work down. Many valid combinations exist."
+        },
+        {
+          "id": "ch10-t2-h2",
+          "type": "long",
+          "question": "India has more than 3000 tigers today. If there were 1411 tigers in 2006 and the count rose to 3167 in 2022, how many more tigers were there in 2022 than in 2006? If the count grows by 400 more by 2030, what would the new total be?",
+          "answer": "Growth from 2006 to 2022: 3167 - 1411 = 1756 more tigers. By 2030: 3167 + 400 = 3567 tigers.",
+          "explanation": "Subtract for the difference: 3167-1411=1756. Add for the future projection: 3167+400=3567."
+        }
+      ],
+      "name": "Addition of 4-Digit Numbers"
     }
   ]
 }

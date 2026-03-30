@@ -3,37 +3,177 @@
     {
       "topic": "Repeated Addition and Multiplication",
       "easy": [
-        { "id": "ch7-t1-e1", "type": "mcq", "question": "What is 3 x 2?", "options": ["5", "6", "8", "9"], "answer": "6", "explanation": "3 x 2 means 3 groups of 2 = 2 + 2 + 2 = 6." },
-        { "id": "ch7-t1-e2", "type": "fill", "question": "4 + 4 + 4 + 4 + 4 is the same as ______ x 4 = ______.", "answer": "5, 20", "explanation": "4 is added 5 times, so 5 x 4 = 20." },
-        { "id": "ch7-t1-e3", "type": "mcq", "question": "Each rakhi needs 2 threads. How many threads are needed for 5 rakhis?", "options": ["7", "10", "12", "15"], "answer": "10", "explanation": "5 rakhis x 2 threads each = 5 x 2 = 10 threads." },
-        { "id": "ch7-t1-e4", "type": "fill", "question": "6 + 6 + 6 = 3 x ______ = ______", "answer": "6, 18", "explanation": "6 is added 3 times. 3 x 6 = 18." }
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "What is 4 x 2?",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "answer": "8",
+          "explanation": "4 x 2 means 4 groups of 2 = 2 + 2 + 2 + 2 = 8."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "5 + 5 + 5 + 5 is the same as ______ x 5 = ______.",
+          "answer": "4, 20",
+          "explanation": "5 is added 4 times, so 4 x 5 = 20."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "mcq",
+          "question": "Each gift packet needs 3 chocolates. How many chocolates are needed for 4 packets?",
+          "options": [
+            "7",
+            "10",
+            "12",
+            "15"
+          ],
+          "answer": "12",
+          "explanation": "4 packets x 3 chocolates each = 4 x 3 = 12 chocolates."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "fill",
+          "question": "4 + 4 + 4 = 3 x ______ = ______",
+          "answer": "4, 12",
+          "explanation": "4 is added 3 times. 3 x 4 = 12."
+        }
       ],
       "medium": [
-        { "id": "ch7-t1-m1", "type": "short", "question": "A box has 3 rows of laddoos with 3 laddoos in each row. How many laddoos are in the box? Write it as a multiplication.", "answer": "3 x 3 = 9 laddoos.", "explanation": "3 rows x 3 laddoos in each row = 9 laddoos." },
-        { "id": "ch7-t1-m2", "type": "short", "question": "A spider has 8 legs. How many legs do 5 spiders have?", "answer": "5 x 8 = 40 legs.", "explanation": "5 spiders, each with 8 legs = 5 x 8 = 40 legs." },
-        { "id": "ch7-t1-m3", "type": "mcq", "question": "Which is the same as 4 x 5?", "options": ["4 + 5", "5 + 5 + 5 + 5", "4 + 4 + 4 + 4 + 4", "Both B and C"], "answer": "Both B and C", "explanation": "4 x 5 means 4 groups of 5 (= 5+5+5+5) or 5 groups of 4 (= 4+4+4+4+4). Both equal 20." }
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "A plate has 4 rows of biscuits with 5 biscuits in each row. How many biscuits are on the plate? Write it as a multiplication.",
+          "answer": "4 x 5 = 20 biscuits.",
+          "explanation": "4 rows x 5 biscuits per row = 20 biscuits."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "short",
+          "question": "An octopus has 8 arms. How many arms do 4 octopuses have?",
+          "answer": "4 x 8 = 32 arms.",
+          "explanation": "4 octopuses, each with 8 arms = 4 x 8 = 32 arms."
+        },
+        {
+          "id": "ch7-t1-m3",
+          "type": "mcq",
+          "question": "Which expression equals 3 x 6?",
+          "options": [
+            "3 + 6",
+            "6 + 6 + 6",
+            "3 + 3 + 3 + 3 + 3 + 3",
+            "Both B and C"
+          ],
+          "answer": "Both B and C",
+          "explanation": "3 x 6 means 3 groups of 6 (= 6+6+6) or 6 groups of 3 (= 3+3+3+3+3+3). Both equal 18."
+        }
       ],
       "hard": [
-        { "id": "ch7-t1-h1", "type": "long", "question": "Gopal makes 8 rakhis. Each rakhi needs 1 flower, 2 threads, and 4 beads. How many flowers, threads, and beads does he need in total?", "answer": "Flowers: 8 x 1 = 8 flowers. Threads: 8 x 2 = 16 threads. Beads: 8 x 4 = 32 beads.", "explanation": "Multiply the number of rakhis (8) by the materials needed for each: 8x1=8, 8x2=16, 8x4=32." }
-      ]
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "Aarav prepares 6 gift packets. Each packet needs 1 ribbon, 3 chocolates, and 5 stars. How many ribbons, chocolates, and stars does he need altogether?",
+          "answer": "Ribbons: 6 x 1 = 6 ribbons. Chocolates: 6 x 3 = 18 chocolates. Stars: 6 x 5 = 30 stars.",
+          "explanation": "Multiply the number of packets (6) by the material needed for each: 6x1=6, 6x3=18, 6x5=30."
+        }
+      ],
+      "name": "Repeated Addition"
     },
     {
       "topic": "Division and Times Tables",
       "easy": [
-        { "id": "ch7-t2-e1", "type": "mcq", "question": "18 laddoos are shared equally among 9 people. How many does each person get?", "options": ["2", "3", "4", "9"], "answer": "2", "explanation": "18 divided by 9 = 2. Each person gets 2 laddoos." },
-        { "id": "ch7-t2-e2", "type": "fill", "question": "20 / 5 = ______", "answer": "4", "explanation": "20 shared equally among 5 = 4 each. Also, 5 x 4 = 20." },
-        { "id": "ch7-t2-e3", "type": "mcq", "question": "What is 7 x 3?", "options": ["18", "21", "24", "27"], "answer": "21", "explanation": "7 x 3 = 21. From the times-3 table." },
-        { "id": "ch7-t2-e4", "type": "fill", "question": "Skip counting by 5: 5, 10, 15, ______, 25, ______", "answer": "20, 30", "explanation": "Add 5 each time: 15 + 5 = 20, 25 + 5 = 30." }
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "24 gulab jamuns are shared equally among 6 guests. How many does each guest get?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "4",
+          "explanation": "24 divided by 6 = 4. Each guest receives 4 gulab jamuns."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "15 / 3 = ______",
+          "answer": "5",
+          "explanation": "15 shared equally among 3 = 5 each. Also, 3 x 5 = 15."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "mcq",
+          "question": "What is 6 x 4?",
+          "options": [
+            "18",
+            "20",
+            "24",
+            "28"
+          ],
+          "answer": "24",
+          "explanation": "6 x 4 = 24. From the times-4 table."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "fill",
+          "question": "Skip counting by 4: 4, 8, 12, ______, 20, ______",
+          "answer": "16, 24",
+          "explanation": "Add 4 each time: 12 + 4 = 16, 20 + 4 = 24."
+        }
       ],
       "medium": [
-        { "id": "ch7-t2-m1", "type": "short", "question": "In the times-5 table, why does every answer end in either 0 or 5?", "answer": "When you multiply 5 by an even number, the answer ends in 0. When you multiply 5 by an odd number, the answer ends in 5. So the last digit is always 0 or 5.", "explanation": "This is a pattern in the 5 times table: 5, 10, 15, 20, 25, 30..." },
-        { "id": "ch7-t2-m2", "type": "short", "question": "36 auto wheels are in a garage. Each auto has 3 wheels. How many autos are there?", "answer": "36 / 3 = 12 autos.", "explanation": "Divide total wheels by wheels per auto: 36 / 3 = 12." },
-        { "id": "ch7-t2-m3", "type": "mcq", "question": "If 5 x 4 = 20, then what is 20 / 4?", "options": ["4", "5", "10", "20"], "answer": "5", "explanation": "Division is the opposite of multiplication. If 5 x 4 = 20, then 20 / 4 = 5." }
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "In the times-5 table, every answer ends in 0 or 5. Why does this happen?",
+          "answer": "When you multiply 5 by an even number, the answer ends in 0. When you multiply 5 by an odd number, the answer ends in 5. So the last digit alternates between 0 and 5.",
+          "explanation": "This is a pattern: 5, 10, 15, 20, 25, 30... The last digit is always 0 or 5."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "There are 27 wheels in a shop. Each tricycle has 3 wheels. How many tricycles are there?",
+          "answer": "27 / 3 = 9 tricycles.",
+          "explanation": "Divide total wheels by wheels per tricycle: 27 / 3 = 9."
+        },
+        {
+          "id": "ch7-t2-m3",
+          "type": "mcq",
+          "question": "If 6 x 4 = 24, then what is 24 / 4?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "24"
+          ],
+          "answer": "6",
+          "explanation": "Division is the reverse of multiplication. If 6 x 4 = 24, then 24 / 4 = 6."
+        }
       ],
       "hard": [
-        { "id": "ch7-t2-h1", "type": "long", "question": "Bhim needs spokes for bicycle wheels. Each wheel needs 5 spokes. How many spokes does he need for 20 wheels? If he already has 60 spokes, how many more does he need?", "answer": "20 x 5 = 100 spokes needed. He has 60 spokes. He needs 100 - 60 = 40 more spokes.", "explanation": "First multiply: 20 x 5 = 100. Then subtract what he has: 100 - 60 = 40 more spokes needed." },
-        { "id": "ch7-t2-h2", "type": "long", "question": "Dhruv has 112 sea-shells. He wants to make necklaces with 28 shells each. How many necklaces can he make? Show how you can find this by repeated subtraction.", "answer": "112 - 28 = 84 (1 necklace). 84 - 28 = 56 (2 necklaces). 56 - 28 = 28 (3 necklaces). 28 - 28 = 0 (4 necklaces). He can make 4 necklaces.", "explanation": "Keep subtracting 28 until you reach 0. Count how many times you subtracted: 4 times." }
-      ]
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "A rickshaw driver needs 4 nuts for each wheel. How many nuts does he need for 30 wheels? If he already has 80 nuts, how many more does he need to buy?",
+          "answer": "30 x 4 = 120 nuts needed. He has 80. He needs 120 - 80 = 40 more nuts.",
+          "explanation": "First multiply: 30 x 4 = 120. Then subtract what he has: 120 - 80 = 40 more needed."
+        },
+        {
+          "id": "ch7-t2-h2",
+          "type": "long",
+          "question": "Kavita has 96 bindis. She packs them into packets of 24 each. How many packets can she make? Show your work using repeated subtraction.",
+          "answer": "96 - 24 = 72 (1 packet). 72 - 24 = 48 (2 packets). 48 - 24 = 24 (3 packets). 24 - 24 = 0 (4 packets). She can make 4 packets.",
+          "explanation": "Subtract 24 repeatedly until you reach 0. Count the subtractions: 4 times = 4 packets."
+        }
+      ],
+      "name": "What is Multiplication?"
     }
   ]
 }

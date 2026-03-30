@@ -1,20 +1,22 @@
 ---
-title: Chapter 12 Surface Areas and Volumes
+title: "Measuring Surface Areas and Volumes"
+description: "Find surface areas and volumes of combinations of solids — cones, cylinders, spheres, and more."
+order: 12
 ---
 
 ## Introduction
 
-In earlier classes, you learnt how to find the surface areas and volumes of basic solids -- cuboids, cylinders, cones, and spheres. In real life, however, most objects are **combinations** of these basic shapes.
+In previous classes, you learnt to calculate the surface areas and volumes of individual solids -- cuboids, cylinders, cones, and spheres. But look around you: real-world objects are rarely simple shapes. They are **combinations** of basic solids joined together.
 
-For example:
-- A **truck container** is a cylinder with two hemispherical ends
-- A **test tube** is a cylinder with a hemispherical bottom
-- An **ice cream cone** with a scoop is a cone with a hemispherical top
-- A **gulab jamun** is a cylinder with two hemispherical ends
+Consider these everyday examples:
+- A **matka** (earthen pot) resembles a sphere with a cylindrical neck
+- A **kulfi mould** is a cone with a cylindrical handle
+- A **capsule** of medicine is a cylinder capped with hemispheres on both ends
+- A **temple gopuram** can be modelled as a series of frustums stacked together
 
 ![Examples of combined solids: truck container (cylinder with hemispheres), test tube (cylinder with hemisphere), ice cream cone (cone with hemisphere)](combined-solids-examples.png)
 
-In this chapter, we learn how to find the surface areas and volumes of such **combined solids**.
+This chapter teaches you how to compute surface areas and volumes of such **composite solids**.
 
 ---
 
@@ -44,116 +46,116 @@ In this chapter, we learn how to find the surface areas and volumes of such **co
 - **TSA** = 3 pi r^2
 - **Volume** = (2/3) pi r^3
 
-> **Key idea:** Keep these formulas at your fingertips. Every problem in this chapter uses these basic formulas in combination.
+> **Core insight:** Memorise these formulas thoroughly. Every problem in this chapter applies them in combination.
 
 ---
 
 ## Surface Area of Combination of Solids
 
-When two or more basic solids are combined, the total surface area of the new object is the **sum of the curved (or flat) surfaces that are visible**.
+When basic solids are joined to form a composite shape, the total surface area equals the **sum of only the exposed surfaces**.
 
-### Important Rule
+### The Hidden Surface Rule
 
-When two solids are joined, the surfaces at the **junction are hidden** and should NOT be counted. Only count the surfaces that are **exposed**.
+At the junction where two solids are fused, the touching surfaces become **internal** and are not part of the exterior. These hidden surfaces must be **excluded** from the total surface area calculation.
 
-### Worked Example 1: Playing Top (Lattu)
+### Worked Example 1: Spinning Top (Lattu)
 
-A playing top is shaped like a cone topped by a hemisphere. Total height = 5 cm, diameter = 3.5 cm.
+A wooden spinning top is shaped like a hemisphere topped with a cone. The overall height is 7 cm and the diameter is 4 cm.
 
-**Step 1:** Identify the surfaces.
-- CSA of the hemisphere (the dome on top)
-- CSA of the cone (the body)
-- The flat circular base where they join is **hidden**
+**Step 1:** Identify visible surfaces.
+- CSA of the cone (the pointed body)
+- CSA of the hemisphere (the rounded top)
+- The flat circular face at the junction is **hidden**
 
 **Step 2:** Calculate.
-- Radius r = 3.5/2 = 1.75 cm
-- Height of hemisphere = r = 1.75 cm
-- Height of cone = 5 - 1.75 = 3.25 cm
-- Slant height of cone l = root(1.75^2 + 3.25^2) = root(3.0625 + 10.5625) = root(13.625) = 3.69 cm (approx.)
-- CSA of hemisphere = 2 pi r^2 = 2 x (22/7) x 1.75^2 = 19.25 cm^2
-- CSA of cone = pi r l = (22/7) x 1.75 x 3.69 = 20.27 cm^2 (approx.)
+- Radius r = 4/2 = 2 cm
+- Height of hemisphere = r = 2 cm
+- Height of cone = 7 - 2 = 5 cm
+- Slant height of cone l = root(2^2 + 5^2) = root(4 + 25) = root(29) = 5.39 cm (approx.)
+- CSA of hemisphere = 2 pi r^2 = 2 x (22/7) x 4 = 25.14 cm^2 (approx.)
+- CSA of cone = pi r l = (22/7) x 2 x 5.39 = 33.87 cm^2 (approx.)
 
-**Total surface area = 19.25 + 20.27 = 39.52 cm^2** (approx.)
+**Total surface area = 25.14 + 33.87 = 59.01 cm^2** (approx.)
 
-### Worked Example 2: Medicine Capsule
+### Worked Example 2: Vitamin Capsule
 
-A capsule is a cylinder with hemispherical ends. Length = 14 mm, diameter = 5 mm.
+A capsule is a cylinder with hemispherical ends. Total length = 18 mm, diameter = 6 mm.
 
-- Radius r = 2.5 mm
-- Length of cylindrical part = 14 - 2(2.5) = 9 mm
-- CSA of cylinder = 2 pi r h = 2 x pi x 2.5 x 9
-- CSA of 2 hemispheres = 2 x 2 pi r^2 = 4 pi r^2 = 4 pi x 6.25
+- Radius r = 3 mm
+- Length of cylindrical part = 18 - 2(3) = 12 mm
+- CSA of cylinder = 2 pi r h = 2 x pi x 3 x 12 = 72 pi
+- CSA of 2 hemispheres = 2 x 2 pi r^2 = 4 pi x 9 = 36 pi
 
-Total surface area = 2 pi x 2.5 x 9 + 4 pi x 6.25 = pi(45 + 25) = **70 pi mm^2** = 220 mm^2 (approx.)
+Total surface area = 72 pi + 36 pi = **108 pi mm^2** = 339.43 mm^2 (approx.)
 
 ---
 
 ## Volume of Combination of Solids
 
-The volume of a combined solid is simply the **sum of the volumes** of its individual parts.
+The volume of a composite solid is simply the **sum of the volumes** of its component parts. Unlike surface area, there are no hidden volumes to subtract.
 
 ### Worked Example 1: Toy (Cone on Hemisphere)
 
-A toy is made by mounting a cone on a hemisphere. Radius = 1 cm, height of cone = 1 cm.
+A toy consists of a cone mounted on a hemisphere. Radius = 2 cm, height of cone = 3 cm.
 
 Volume = Volume of cone + Volume of hemisphere
 = (1/3) pi r^2 h + (2/3) pi r^3
-= (1/3) pi (1)^2 (1) + (2/3) pi (1)^3
-= pi/3 + 2pi/3
-= **pi cm^3** (= 3.14 cm^3)
+= (1/3) pi (4)(3) + (2/3) pi (8)
+= 4 pi + (16/3) pi
+= **(28/3) pi cm^3** (= 29.33 cm^3 approx.)
 
-### Worked Example 2: Gulab Jamun
+### Worked Example 2: Laddu Shaped Sweet
 
-A gulab jamun is shaped like a cylinder with hemispherical ends. Length = 5 cm, diameter = 2.8 cm.
+A laddu-shaped sweet is modelled as a cylinder (height 3 cm, diameter 3 cm) with hemispherical ends.
 
-- Radius r = 1.4 cm
-- Length of cylindrical part = 5 - 2(1.4) = 2.2 cm
+- Radius r = 1.5 cm
+- Cylindrical height = 3 cm
 
-Volume of one gulab jamun = pi r^2 h + 2 x (2/3) pi r^3
-= pi(1.4)^2(2.2) + (4/3) pi (1.4)^3
-= pi x 1.96 x 2.2 + (4/3) pi x 2.744
-= pi(4.312 + 3.659)
-= **25.05 cm^3** (approx.)
+Volume = pi r^2 h + 2 x (2/3) pi r^3
+= pi(1.5)^2(3) + (4/3) pi (1.5)^3
+= pi x 2.25 x 3 + (4/3) pi x 3.375
+= 6.75 pi + 4.5 pi
+= **11.25 pi cm^3** (= 35.36 cm^3 approx.)
 
-For 45 gulab jamuns, sugar syrup at 30% of volume:
-= 45 x 25.05 x 0.30 = **338.18 cm^3** (approx.)
+For 50 such sweets dipped in sugar syrup at 25% of volume:
+= 50 x 35.36 x 0.25 = **442 cm^3** (approx.)
 
 ---
 
 ## Conversion of One Solid into Another
 
-When a solid is **melted** and **recast** into another shape, the **volume remains the same**. Only the shape changes.
+When a solid is **melted** and **reshaped**, the **volume stays constant**. Only the form changes.
 
-> **Key idea:** In conversion problems, equate the volumes of the original and new solids.
+> **Core insight:** In recasting problems, set the volume of the original solid equal to the volume of the new solid and solve for the unknown dimension.
 
-### Worked Example 1: Spherical Balls from a Cylinder
+### Worked Example 1: Sphere to Cylinder
 
-A metallic sphere of radius 4.2 cm is melted and recast into a cylinder of radius 6 cm. Find the height of the cylinder.
+A metallic sphere of radius 6.3 cm is melted and recast into a cylinder of radius 9 cm. Find the cylinder's height.
 
 Volume of sphere = Volume of cylinder
-(4/3) pi (4.2)^3 = pi (6)^2 h
-(4/3)(74.088) = 36h
-98.784 = 36h
-**h = 2.744 cm**
+(4/3) pi (6.3)^3 = pi (9)^2 h
+(4/3)(250.047) = 81h
+333.396 = 81h
+**h = 4.116 cm** (approx.)
 
-### Worked Example 2: How Many Coins from a Cuboid?
+### Worked Example 2: How Many Buttons from a Metal Block?
 
-A metallic cuboid (15 cm x 11 cm x 5 cm) is melted into circular coins of diameter 1.4 cm and thickness 0.2 cm.
+A metal block measuring 22 cm x 8 cm x 5 cm is melted into circular buttons of diameter 2 cm and thickness 0.25 cm.
 
-Volume of cuboid = 15 x 11 x 5 = 825 cm^3
+Volume of block = 22 x 8 x 5 = 880 cm^3
 
-Volume of one coin = pi x (0.7)^2 x 0.2 = (22/7) x 0.49 x 0.2 = 0.308 cm^3
+Volume of one button = pi x (1)^2 x 0.25 = (22/7) x 0.25 = 0.7857 cm^3
 
-Number of coins = 825 / 0.308 = **2678 coins** (approx.)
+Number of buttons = 880 / 0.7857 = **1120 buttons** (approx.)
 
-### Worked Example 3: Water Flow in a Pipe
+### Worked Example 3: Water Flow Through a Pipe
 
-Water flows through a cylindrical pipe of internal diameter 2 cm at 0.7 m/s into a cylindrical tank of diameter 40 cm. How long will it take to raise the water level by 24 cm?
+Water flows through a cylindrical pipe (internal diameter 3 cm) at 1.2 m/s into a cylindrical tank (diameter 60 cm). How long to raise the water level by 30 cm?
 
-Volume of water needed = pi x (20)^2 x 24 cm^3
-Volume flowing per second = pi x (1)^2 x 70 cm^3 (0.7 m = 70 cm)
+Volume needed = pi x (30)^2 x 30 = 27000 pi cm^3
+Volume per second = pi x (1.5)^2 x 120 = 270 pi cm^3 (1.2 m = 120 cm)
 
-Time = pi x 400 x 24 / (pi x 70) = 9600/70 = **137.14 seconds** (approx.)
+Time = 27000 pi / 270 pi = **100 seconds**
 
 ---
 
@@ -161,16 +163,16 @@ Time = pi x 400 x 24 / (pi x 70) = 9600/70 = **137.14 seconds** (approx.)
 
 ![Cone being cut by a plane parallel to its base, producing a frustum with labeled dimensions r1 (larger radius), r2 (smaller radius), h (height), and l (slant height)](frustum-of-cone-labeled.png)
 
-When a cone is cut by a plane parallel to its base, the part between the base and the cutting plane is called a **frustum**.
+When a cone is sliced by a plane parallel to its base, the portion between the base and the cut is called a **frustum**.
 
-Think of a bucket, a flower pot, or the lower portion of a lampshade -- these are all frustums.
+Everyday frustums include a steel bucket, a flower pot (gamla), and the shade of a table lamp.
 
 ### Dimensions of a Frustum
 
 A frustum has:
 - **r1** = radius of the larger base (bottom)
 - **r2** = radius of the smaller base (top)
-- **h** = height (perpendicular distance between the two bases)
+- **h** = perpendicular height
 - **l** = slant height = root(h^2 + (r1 - r2)^2)
 
 ### Formulas for a Frustum
@@ -179,45 +181,45 @@ A frustum has:
 - **TSA** = pi (r1 + r2) l + pi r1^2 + pi r2^2
 - **Volume** = (1/3) pi h (r1^2 + r2^2 + r1 x r2)
 
-### Worked Example: The Bucket
+### Worked Example: A Steel Bucket
 
-A bucket is in the form of a frustum with top diameter 30 cm, bottom diameter 20 cm, and height 35 cm. Find its capacity.
+A bucket shaped like a frustum has top diameter 36 cm, bottom diameter 24 cm, and height 28 cm. Find its capacity.
 
-r1 = 15 cm, r2 = 10 cm, h = 35 cm
+r1 = 18 cm, r2 = 12 cm, h = 28 cm
 
-Volume = (1/3) x (22/7) x 35 x (15^2 + 10^2 + 15 x 10)
-= (1/3) x (22/7) x 35 x (225 + 100 + 150)
-= (1/3) x (22/7) x 35 x 475
-= (22 x 5 x 475) / 3
-= **24583.33 cm^3** (approx.)
+Volume = (1/3) x (22/7) x 28 x (18^2 + 12^2 + 18 x 12)
+= (1/3) x (22/7) x 28 x (324 + 144 + 216)
+= (1/3) x (22/7) x 28 x 684
+= (22 x 4 x 684) / 3
+= **20064 cm^3** (approx.)
 
-Converting to litres: 24583.33 / 1000 = **24.58 litres** (approx.)
+Converting to litres: 20064 / 1000 = **20.064 litres** (approx.)
 
 ---
 
 ## Tips for Board Exam Problems
 
-1. **Draw a diagram** of the solid and label all dimensions clearly.
+1. **Sketch the solid** and label every dimension clearly.
 
-2. **Identify which basic solids** make up the combination.
+2. **Identify which basic solids** form the combination.
 
-3. For **surface area**: add only the **visible** surfaces (exclude joined faces).
+3. For **surface area**: sum only the **exposed** surfaces (exclude joined faces).
 
-4. For **volume**: add the volumes of all parts.
+4. For **volume**: sum the volumes of all components.
 
-5. For **conversion problems**: set volume of original = volume of new shape.
+5. For **recasting problems**: equate volume of original = volume of new shape.
 
-6. **Always check units**: if the answer is asked in litres, convert cm^3 to litres (1 litre = 1000 cm^3).
+6. **Check units**: 1 litre = 1000 cm^3, 1 m^3 = 1000 litres, 1 cm^3 = 1 ml.
 
-7. Remember: **1 m^3 = 1000 litres** and **1 cm^3 = 1 ml**.
+7. Always use the value of **pi** specified in the question.
 
 ---
 
 ## Chapter Summary
 
-1. The **surface area** of a combined solid is found by adding the surface areas of individual visible surfaces.
+1. The **surface area** of a composite solid is found by summing the visible surface areas of its parts.
 
-2. The **volume** of a combined solid is the sum of volumes of its individual parts.
+2. The **volume** of a composite solid is the sum of volumes of its parts.
 
 3. When a solid is melted and recast, **volume is conserved**.
 

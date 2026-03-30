@@ -6,75 +6,96 @@
         {
           "id": "ch2-t1-e1",
           "type": "mcq",
-          "question": "Where does the Godavari river begin its journey?",
-          "options": ["Himalayas", "Western Ghats at Trimbakeshwar, Maharashtra", "Eastern Ghats", "Nilgiri Hills"],
-          "answer": "Western Ghats at Trimbakeshwar, Maharashtra",
-          "explanation": "The Godavari begins its journey at Trimbakeshwar in Maharashtra, in the Brahmagiri Hills of the Western Ghats."
+          "question": "In which hills does the Godavari river begin its journey?",
+          "options": [
+            "Himalayan Hills",
+            "Brahmagiri Hills in Maharashtra",
+            "Nilgiri Hills",
+            "Aravalli Hills"
+          ],
+          "answer": "Brahmagiri Hills in Maharashtra",
+          "explanation": "The Godavari starts at Trimbakeshwar in the Brahmagiri Hills of Maharashtra's Western Ghats."
         },
         {
           "id": "ch2-t1-e2",
           "type": "fill",
-          "question": "The Godavari is also called ______ because it flows through southern India and is considered sacred.",
+          "question": "The Godavari is lovingly called ______ because of its great importance in southern India.",
           "answer": "Dakshina Ganga",
-          "explanation": "The Godavari is called 'Dakshina Ganga' (Ganga of the South) because of its importance and sacred nature in southern India."
+          "explanation": "People call the Godavari 'Dakshina Ganga' (Ganga of the South) because it holds the same deep importance for southern India that the Ganga holds for the north."
         },
         {
           "id": "ch2-t1-e3",
           "type": "mcq",
-          "question": "The Godavari finally meets which sea?",
-          "options": ["Arabian Sea", "Indian Ocean", "Bay of Bengal", "Pacific Ocean"],
+          "question": "Where does the Godavari river end its journey?",
+          "options": [
+            "Arabian Sea",
+            "Indian Ocean",
+            "Bay of Bengal",
+            "Gulf of Kutch"
+          ],
           "answer": "Bay of Bengal",
-          "explanation": "The Godavari travels 1,465 kilometres and finally meets the Bay of Bengal in Andhra Pradesh."
+          "explanation": "After travelling 1,465 kilometres, the Godavari reaches the Bay of Bengal on the coast of Andhra Pradesh."
         },
         {
           "id": "ch2-t1-e4",
           "type": "mcq",
-          "question": "What are the smaller streams that join a river called?",
-          "options": ["Deltas", "Tributaries", "Canals", "Reservoirs"],
+          "question": "What are the smaller streams that merge into a bigger river called?",
+          "options": [
+            "Reservoirs",
+            "Deltas",
+            "Tributaries",
+            "Canals"
+          ],
           "answer": "Tributaries",
-          "explanation": "Smaller streams that join a river and make it wider and stronger are called tributaries. Manjira, Indravati, and Sabari are tributaries of the Godavari."
+          "explanation": "Tributaries are smaller streams and rivers that join a bigger river, adding more water and making it stronger. Manjira, Indravati, and Sabari are tributaries of the Godavari."
         },
         {
           "id": "ch2-t1-e5",
           "type": "fill",
-          "question": "The Godavari is the ______ longest river in India, after the Ganga.",
+          "question": "The Godavari is the ______ longest river in India.",
           "answer": "second",
-          "explanation": "The Godavari is 1,465 kilometres long, making it the second longest river in India after the Ganga."
+          "explanation": "At 1,465 kilometres, the Godavari is the second longest river in India, after the Ganga."
         }
       ],
       "medium": [
         {
           "id": "ch2-t1-m1",
           "type": "short",
-          "question": "What is the difference between a perennial river and a seasonal river?",
-          "answer": "A perennial river flows all year round, like the Godavari. A seasonal river flows only during the rainy season when it gets water from the monsoon.",
-          "explanation": "Perennial rivers have a constant water supply throughout the year, while seasonal rivers depend entirely on monsoon rains and may dry up in other seasons."
+          "question": "How is a perennial river different from a seasonal river? Give one example of each type.",
+          "answer": "A perennial river flows throughout the year in all seasons because it gets continuous water from tributaries and rainfall. Example: Godavari. A seasonal river carries water only during and shortly after the monsoon and may dry up in other months. Example: many small rivers in dry regions of India.",
+          "explanation": "Perennial rivers have a steady water supply all year, while seasonal rivers depend entirely on monsoon rains and may shrink or dry up when rains stop."
         },
         {
           "id": "ch2-t1-m2",
           "type": "short",
-          "question": "What is a delta? How does the Godavari form one?",
-          "answer": "A delta is formed when a river reaches the sea and spreads out into many small streams. When the Godavari reaches the Bay of Bengal, it spreads out and forms the Coringa Mangrove Forests, where freshwater meets salty seawater.",
-          "explanation": "At the end of its journey, a river slows down and splits into smaller channels, depositing soil and forming a delta — a flat, fan-shaped landform near the coast."
+          "question": "What happens when the Godavari reaches the sea? What is a delta?",
+          "answer": "When the Godavari reaches the Bay of Bengal, it fans out into many smaller channels instead of ending as a single stream. This wide, flat area where the river splits into multiple channels is called a delta. The Godavari's delta includes the Coringa Mangrove Forests, where freshwater mixes with salty seawater.",
+          "explanation": "A delta forms when a river slows down near the coast and deposits soil, spreading out into multiple channels that create a fan-shaped landform."
         },
         {
           "id": "ch2-t1-m3",
           "type": "mcq",
-          "question": "Which of the following is NOT a way rivers help people?",
-          "options": ["Providing drinking water", "Growing crops through irrigation", "Creating earthquakes", "Fishing for food and livelihood"],
-          "answer": "Creating earthquakes",
-          "explanation": "Rivers help people in many ways — providing drinking water, irrigation for farming, fishing, transport, and ecotourism. Rivers do not create earthquakes."
+          "question": "Which of these is NOT a way rivers help people?",
+          "options": [
+            "Providing water for farming",
+            "Supplying drinking water",
+            "Producing earthquakes",
+            "Carrying boats for transport"
+          ],
+          "answer": "Producing earthquakes",
+          "explanation": "Rivers help people in many ways -- drinking water, farming, fishing, transport, industry, and tourism. Rivers do not produce earthquakes."
         }
       ],
       "hard": [
         {
           "id": "ch2-t1-h1",
           "type": "long",
-          "question": "Dams are built on rivers for many useful purposes, but they also cause problems. Explain both the advantages and disadvantages of dams.",
-          "answer": "Advantages of dams: (1) They store water so people can use it during dry seasons. (2) They help grow crops by providing water for irrigation. (3) They help make electricity (hydropower). Disadvantages of dams: (1) They flood large areas of land that were home to animals and people. (2) Many families have to leave their homes and move elsewhere. (3) Forests and wildlife habitats can be destroyed. The Godavari alone has more than 900 dams built on it.",
-          "explanation": "While dams are important for water storage, irrigation, and electricity, they also have a negative impact on the environment and the communities living in the flooded areas."
+          "question": "Dams built on rivers have both advantages and disadvantages. Explain at least two benefits and two problems caused by dams.",
+          "answer": "Benefits of dams: (1) They store water during rainy months and release it during dry months, ensuring water supply all year for people and farms. (2) They generate hydroelectricity -- clean energy produced by the force of flowing water. Problems caused by dams: (1) The reservoir behind a dam floods huge stretches of land, destroying forests and wildlife habitats. (2) Families living in the flooded area are forced to leave their ancestral homes and resettle elsewhere, which causes great hardship. The Godavari alone has over 900 dams built on it.",
+          "explanation": "Dams provide essential services like water storage and electricity, but they also cause displacement of people and destruction of natural habitats, making them a complex issue."
         }
-      ]
+      ],
+      "name": "Meet the Godavari"
     },
     {
       "topic": "River Pollution, Floods, and Conservation",
@@ -82,67 +103,83 @@
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
-          "question": "Which of the following pollutes rivers?",
-          "options": ["Planting trees nearby", "Throwing plastic waste into water", "Rainwater harvesting", "Fishing with nets"],
-          "answer": "Throwing plastic waste into water",
-          "explanation": "Plastic waste, factory chemicals, soapy water, and fertilisers are major causes of river pollution."
+          "question": "Which of these activities pollutes rivers?",
+          "options": [
+            "Planting trees on riverbanks",
+            "Dumping plastic waste into water",
+            "Collecting rainwater",
+            "Building check dams"
+          ],
+          "answer": "Dumping plastic waste into water",
+          "explanation": "Throwing plastic waste, factory chemicals, soapy water, and farm fertilisers into rivers causes pollution and harms aquatic life."
         },
         {
           "id": "ch2-t2-e2",
           "type": "fill",
-          "question": "The ______ programme is helping clean the Ganga river.",
+          "question": "The ______ programme is a major national effort to clean up the Ganga river.",
           "answer": "Namami Gange",
-          "explanation": "The Namami Gange programme is a government initiative to clean the Ganga river and stop waste from entering it."
+          "explanation": "The Namami Gange programme works to stop waste from entering the Ganga and restore the river's health."
         },
         {
           "id": "ch2-t2-e3",
           "type": "mcq",
-          "question": "What happens when fertilisers from farms wash into a river?",
-          "options": ["The water becomes cleaner", "Fish grow faster", "Tiny water plants grow very fast and cover the surface like a green blanket", "The river flows faster"],
-          "answer": "Tiny water plants grow very fast and cover the surface like a green blanket",
-          "explanation": "When fertilisers enter water, they make tiny water plants grow very fast. These plants block sunlight and make it hard for fish to breathe, making the water unsafe."
+          "question": "What happens when chemical fertilisers from farms wash into a river?",
+          "options": [
+            "The water becomes cleaner",
+            "Algae grow rapidly and cover the surface like a green carpet",
+            "Fish grow bigger",
+            "The river starts flowing faster"
+          ],
+          "answer": "Algae grow rapidly and cover the surface like a green carpet",
+          "explanation": "Fertilisers feed tiny water plants called algae, which grow so fast they cover the surface, blocking sunlight and using up oxygen. Fish and other creatures suffocate."
         },
         {
           "id": "ch2-t2-e4",
           "type": "mcq",
-          "question": "Which of the following helps prevent floods?",
-          "options": ["Cutting down trees", "Building more roads", "Planting trees", "Throwing waste in rivers"],
-          "answer": "Planting trees",
-          "explanation": "Trees slow down rainwater and help the soil soak it up. When forests are cut down, water runs off the land faster and causes worse flooding."
+          "question": "How do trees help prevent floods?",
+          "options": [
+            "They block the rain from falling",
+            "Their roots grip the soil and absorb water slowly",
+            "They push water back into the sky",
+            "They melt ice faster"
+          ],
+          "answer": "Their roots grip the soil and absorb water slowly",
+          "explanation": "Tree roots hold soil in place and help it absorb water like a sponge. Without trees, rain rushes off the surface into rivers, causing sudden flooding."
         }
       ],
       "medium": [
         {
           "id": "ch2-t2-m1",
           "type": "short",
-          "question": "How can floods affect people's daily lives? Give at least three examples.",
-          "answer": "Floods can affect daily lives in many ways: (1) Safe drinking water becomes unavailable because water gets dirty. (2) Roads get broken, making travel difficult. (3) Crops are lost, affecting food supply. Other effects include loss of electricity, spread of diseases, damaged homes, and schools shutting down.",
-          "explanation": "Floods cause widespread disruption — from contaminated water and damaged infrastructure to loss of crops, electricity, and shelter."
+          "question": "In what ways can floods affect people's everyday lives? Give at least three examples.",
+          "answer": "Floods affect daily life in many ways: (1) Drinking water gets contaminated because dirty floodwater mixes with clean water supplies. (2) Roads and bridges get damaged, making travel impossible. (3) Crops in fields are destroyed, causing food shortages and loss of farmers' income. Other effects include power outages, spread of diseases, homes getting flooded, and schools shutting down.",
+          "explanation": "Floods disrupt almost every aspect of life -- from water and food supply to transport, electricity, health, shelter, and education."
         },
         {
           "id": "ch2-t2-m2",
           "type": "short",
-          "question": "In 2019, Chennai faced a serious water crisis. What happened and what does it teach us?",
-          "answer": "In 2019, Chennai's reservoirs dried up because of too little rain, and the city had to run special water trains from other districts to meet people's water needs. This teaches us that both too much water (floods) and too little water (droughts) can cause big problems, and we must save and use water wisely.",
-          "explanation": "The Chennai water crisis showed how a major city can run out of water when rains fail. It highlights the importance of water conservation and rainwater harvesting."
+          "question": "What happened in Chennai in 2019 that showed the danger of too little water?",
+          "answer": "In 2019, Chennai's reservoirs dried up because the monsoon rains were very weak. The city faced such a severe water shortage that the government had to arrange special trains carrying water from other districts to supply the city. This showed that both too much water (floods) and too little water (droughts) can cause enormous problems, and we must use water wisely.",
+          "explanation": "Chennai's 2019 water crisis was a wake-up call about how a major city can run out of water when rains fail, highlighting the importance of water conservation and rainwater harvesting."
         }
       ],
       "hard": [
         {
           "id": "ch2-t2-h1",
           "type": "long",
-          "question": "Imagine you are the Godavari river telling your own story. Describe your journey from the mountains to the sea, mentioning the problems you face along the way.",
-          "answer": "I am the Godavari. I start as a small stream in the Brahmagiri Hills at Trimbakeshwar in Maharashtra. As I flow across the land, smaller streams join me and I grow wider and stronger. I travel through Maharashtra, Telangana, Chhattisgarh, Odisha, and Andhra Pradesh — passing through forests with tigers and rare wildlife. But along my journey, I face many problems. People throw plastic waste and garbage into me. Factories dump dirty chemical water. Fertilisers from farms wash into me and make harmful plants grow. Over 900 dams block my flow. After travelling 1,465 kilometres, I finally reach the Bay of Bengal, spreading out into a delta with mangrove forests. I wish people would keep me clean and protect the forests along my banks.",
-          "explanation": "This creative question helps students understand the complete journey of the Godavari while thinking about pollution and environmental challenges from the river's perspective."
+          "question": "Imagine the Godavari river is telling its own life story. Write about its journey from the mountains to the sea, including the challenges it faces.",
+          "answer": "I am the Godavari. My journey begins as a small trickle in the Brahmagiri Hills at Trimbakeshwar in Maharashtra. I am so tiny at first that a child could jump across me! But soon, other streams and rivers join me -- my tributaries Manjira, Indravati, and Sabari -- and I grow wider and mightier. I flow through five states, past dense forests where tigers roam and rare geckos bask on rocks. But my journey is not easy. Along the way, people throw plastic and garbage into me. Factories release poisonous chemicals into my waters. Over 900 dams block my natural flow. Fertilisers from farms create choking green carpets of algae on my surface. After travelling 1,465 kilometres, I finally reach the Bay of Bengal, spreading out into a delta with beautiful mangrove forests. I wish people would stop polluting me and let me flow clean and free.",
+          "explanation": "Writing from the river's perspective helps understand its complete journey and the environmental challenges it faces from human activities."
         },
         {
           "id": "ch2-t2-h2",
           "type": "long",
-          "question": "Why are trees important for rivers? What can happen to rivers if forests near them are cut down?",
-          "answer": "Trees are very important for rivers because: (1) Tree roots hold the soil together and prevent it from being washed into rivers. (2) Trees slow down rainwater and help the soil soak it up, which prevents floods. (3) Trees help recharge groundwater by allowing rain to seep into the ground. (4) Forests along rivers provide habitat for wildlife. If forests near rivers are cut down, water runs off the land faster causing worse flooding, soil gets washed into the river making it dirty, groundwater does not get recharged, and wildlife loses its habitat.",
-          "explanation": "Forests and rivers are deeply connected. Trees act as natural protectors of rivers by preventing soil erosion, controlling floods, and maintaining the water cycle."
+          "question": "Explain why trees are called 'nature's water managers.' What happens to rivers when forests near them are destroyed?",
+          "answer": "Trees are called nature's water managers because they play many roles in managing water: (1) Their roots grip the soil tightly, preventing it from being washed into rivers during rain. (2) Tree roots create pathways for rainwater to soak into the ground slowly, like a sponge, which prevents sudden flooding. (3) By helping water soak underground, trees recharge groundwater supplies. (4) Forests along rivers provide habitat for wildlife. When forests near rivers are destroyed, several bad things happen: rainwater runs off the surface too quickly, causing severe floods; loose soil washes into the river, making it dirty and shallow; groundwater stops getting refilled; and wildlife loses its home.",
+          "explanation": "Forests and rivers depend on each other. Trees control flooding, prevent soil from entering rivers, help refill underground water, and support wildlife -- making them essential partners for healthy rivers."
         }
-      ]
+      ],
+      "name": "The Godavari's Journey on the Map"
     }
   ]
 }

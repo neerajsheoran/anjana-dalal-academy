@@ -1,17 +1,19 @@
 ---
 title: "Chapter 12 — Ticking Clocks and Turning Calendar"
+description: "Tell time to 5 minutes, calculate duration, and work with calendars, days, and months."
+order: 12
 ---
 
 ## The Calendar
 
-A calendar helps us keep track of days, months, and years. Let us learn more about how calendars work.
+We use a **calendar** to keep track of which day, month, and year it is. Whether it is a school holiday, a festival, or your birthday — the calendar helps us plan everything.
 
-### Months and Days
+### Months and How Many Days Each Has
 
-There are **12 months** in a year:
+A year has **12 months**:
 
-| Month | Days |
-|-------|------|
+| Month | Number of Days |
+|-------|---------------|
 | January | 31 |
 | February | 28 (or 29 in a leap year) |
 | March | 31 |
@@ -25,180 +27,175 @@ There are **12 months** in a year:
 | November | 30 |
 | December | 31 |
 
-A regular year has **365 days**. A leap year has **366 days** (because February gets an extra day).
+An ordinary year has **365 days**. A special year called a **leap year** has **366 days** because February gets one extra day.
 
-### Days of the Week
+### The Seven Days
 
-There are **7 days** in a week:
-Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+A week has **7 days**: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.
 
 ---
 
 ## Leap Years
 
-A **leap year** is a special year that has **366 days** instead of 365. In a leap year, February has **29 days** instead of 28.
+Every **4 years**, we get a **leap year** where February has **29 days** instead of 28.
 
-Leap years happen **every 4 years**: 2016, 2020, 2024, 2028, 2032...
+Recent and upcoming leap years: 2020, 2024, 2028, 2032...
 
-> **Parv's special birthday:** Parv was born on 29 February 2016. Since 29 February only comes in leap years, his birthday date appears on the calendar only once every 4 years!
+> **Tanvi's birthday mystery:** Tanvi was born on 29 February 2020. Since that date only exists in leap years, her exact birthday appears on the calendar only once every 4 years! On other years, her family celebrates on 28 February or 1 March.
 
-### How to Check if a Year is a Leap Year
+### Quick Check: Is It a Leap Year?
 
-If the year can be divided by 4 with no remainder, it is usually a leap year.
-- 2024 / 4 = 606 (no remainder) -- leap year!
-- 2025 / 4 = 506 remainder 1 -- not a leap year
-
----
-
-## Reading and Writing Dates
-
-Dates can be written in the format: **DD/MM/YYYY**
-
-| Part | Meaning | Example |
-|------|---------|---------|
-| DD | Day of the month | 04 |
-| MM | Month number | 07 (July) |
-| YYYY | Year | 2024 |
-
-So **04/07/2024** means the **4th of July, 2024**.
-
-> **Tip:** When comparing dates to find who is older, first compare the **year**. If the years are the same, compare the **month**. If the months are also the same, compare the **day**.
+Divide the year by 4. If there is **no remainder**, it is a leap year.
+- 2028 / 4 = 507 (no remainder) — leap year!
+- 2027 / 4 = 506 remainder 3 — not a leap year
 
 ---
 
-## A Pattern in Calendar Days
+## Writing Dates
 
-Here is an interesting pattern: if you know what day a date falls on this month, you can predict the day for the same date next month!
+In India, we write dates as **DD/MM/YYYY**:
 
-For example, if July 15 is a Tuesday:
-- August 15 will be a **Friday** (because July has 31 days, and 31 = 4 weeks + 3 days, so the day shifts by 3)
-- September 15 will shift by however many days August has
+| Part | What it means | Example |
+|------|-------------|---------|
+| DD | Day of the month | 15 |
+| MM | Month (as a number) | 08 (August) |
+| YYYY | Year | 2026 |
 
-The number of days in a month determines how many days the weekday shifts.
+So **15/08/2026** means **15th August 2026** — Independence Day!
+
+> **Comparing ages:** To figure out who is older, first check the **year** of birth. If the year is the same, check the **month**. Same month? Check the **day**.
 
 ---
 
-## How Many Hours in a Day?
+## Day Patterns in the Calendar
 
-A full day has **24 hours** — from midnight to midnight.
+Here is something interesting: if you know what day of the week a date is this month, you can figure out the day for the same date next month!
 
-We can split the day into two halves:
-- **12 hours** from midnight to noon (12:00 AM to 12:00 PM)
-- **12 hours** from noon to midnight (12:00 PM to 12:00 AM)
+Since July has 31 days, and 31 = 4 full weeks + 3 extra days, the day of the week **shifts forward by 3** from July to August.
+
+So if 10 July is a Thursday, then 10 August will be a **Sunday** (3 days ahead).
+
+The shift depends on the number of days in the month:
+- 31-day month: shifts by 3
+- 30-day month: shifts by 2
+- 28-day month (February): shifts by 0
+- 29-day month (February in leap year): shifts by 1
+
+---
+
+## Hours in a Day
+
+One full day — from midnight to midnight — has **24 hours**.
+
+We divide it into two halves:
+- **First 12 hours:** midnight to noon
+- **Next 12 hours:** noon to midnight
 
 ---
 
 ## AM and PM
 
-Since a clock only shows numbers from 1 to 12, we use **AM** and **PM** to tell whether it is morning/night or afternoon/evening.
+Since a clock face only shows 1 through 12, we add **AM** or **PM** to say which half of the day we mean.
 
-| Time Period | Label | Hours |
-|------------|-------|-------|
-| Midnight to Noon | **AM** | 12:00 AM, 1:00 AM, 2:00 AM ... 11:00 AM |
-| Noon to Midnight | **PM** | 12:00 PM, 1:00 PM, 2:00 PM ... 11:00 PM |
+| Time of Day | Label | Examples |
+|------------|-------|---------|
+| Midnight to just before noon | **AM** | 6:00 AM, 10:30 AM, 11:45 AM |
+| Noon to just before midnight | **PM** | 12:30 PM, 4:00 PM, 9:15 PM |
 
-### Examples
+### Daily Routine in AM and PM
 
-| What you are doing | Time | AM or PM? |
-|-------------------|------|-----------|
-| Waking up | 6:00 | AM |
-| Going to school | 8:00 | AM |
-| Eating lunch | 12:30 | PM |
-| Playing in the evening | 5:00 | PM |
-| Going to bed | 9:00 | PM |
-| Sleeping at night | 11:00 | PM |
+| Activity | Typical Time |
+|----------|-------------|
+| Waking up | 6:30 AM |
+| Reaching school | 7:45 AM |
+| Lunch break | 12:30 PM |
+| Coming home from school | 2:00 PM |
+| Playing with friends | 5:00 PM |
+| Dinner | 8:00 PM |
+| Sleeping | 9:30 PM |
 
-> **Key idea:** 8:00 AM and 8:00 PM are **different times**! 8:00 AM is in the morning and 8:00 PM is at night.
-
-![A timeline of a full day showing AM hours from midnight to noon and PM hours from noon to midnight](am-pm-timeline.png)
+> **Be careful:** 7:00 AM (morning, time for school) and 7:00 PM (evening, time for dinner) are completely different times even though the number is the same!
 
 ---
 
-## The 24-Hour Clock (Digital Clock)
+## The 24-Hour Clock
 
-Digital clocks often use a **24-hour format** where the hours go from 00:00 to 23:59.
+Railway stations, airports, and digital devices often use a **24-hour clock** where hours go from 00:00 to 23:59.
 
-| 12-Hour (AM/PM) | 24-Hour Clock |
-|-----------------|---------------|
+| 12-Hour Time | 24-Hour Time |
+|-------------|-------------|
 | 12:00 AM (midnight) | 00:00 |
-| 1:00 AM | 01:00 |
-| 7:15 AM | 07:15 |
+| 6:30 AM | 06:30 |
 | 12:00 PM (noon) | 12:00 |
-| 1:00 PM | 13:00 |
-| 3:00 PM | 15:00 |
-| 5:20 PM | 17:20 |
-| 8:00 PM | 20:00 |
-| 11:45 PM | 23:45 |
+| 2:15 PM | 14:15 |
+| 6:00 PM | 18:00 |
+| 9:45 PM | 21:45 |
+| 11:50 PM | 23:50 |
 
-> **Tip:** For PM times, add 12 to the hour. 3:00 PM = 3 + 12 = 15:00. For AM times before noon, the number stays the same (just add a leading zero if needed).
+> **Converting PM to 24-hour:** Add 12 to the hour. 5:30 PM = 5 + 12 = 17:30. Morning AM times stay the same (just add a leading zero if needed).
 
 ---
 
 ## Hours and Minutes
 
-There are **60 minutes** in **1 hour**.
+**1 hour = 60 minutes**
 
-| Part of an Hour | Minutes |
-|----------------|---------|
-| Full hour (1 hour) | 60 minutes |
-| Half hour (1/2 hour) | 30 minutes |
-| Quarter hour (1/4 hour) | 15 minutes |
-| Three-quarters hour (3/4 hour) | 45 minutes |
+| Fraction of an Hour | Minutes |
+|---------------------|---------|
+| Full hour | 60 minutes |
+| Half hour | 30 minutes |
+| Quarter hour | 15 minutes |
+| Three-quarter hour | 45 minutes |
 
-### Calculating Time Duration
+### Finding How Much Time Passed
 
-To find how much time has passed:
+**Example:** Ananya starts her homework at 4:15 PM and finishes at 5:00 PM.
+- From 4:15 to 5:00 = **45 minutes**
 
-**Example:** Raghav leaves home at 8:20 AM and returns at 8:35 AM.
-- From 8:20 to 8:35 = **15 minutes**
+**Example:** Sahil's cricket practice:
+- 3:30 PM: Warm-up begins
+- 3:45 PM: Batting practice starts (15 minutes of warm-up)
+- 4:30 PM: Batting ends, bowling begins (45 minutes of batting)
+- 5:00 PM: Practice ends (30 minutes of bowling)
 
-**Example:** Akira's morning at school:
-- 8:00 AM: Starts for school
-- 8:15 AM: Reaches school (15 minutes travel)
-- 8:30 AM: Assembly finishes (15 minutes for assembly)
-- 8:50 AM: Dance practice ends (20 minutes)
-- 9:00 AM: Break ends (10 minutes)
-
-From 8:00 AM to 9:00 AM = **1 hour = 60 minutes**
+Total practice time: from 3:30 to 5:00 = **1 hour 30 minutes = 90 minutes**
 
 ---
 
-## Reading the Clock Correctly
+## Reading an Analogue Clock
 
-When reading an analogue clock:
-- The **short hand** (hour hand) points to the hour
-- The **long hand** (minute hand) points to the minutes
+On a clock with hands:
+- The **short fat hand** shows the **hour**
+- The **long thin hand** shows the **minutes**
 
-The minute hand moves through **small marks** on the clock face. Each small mark = 1 minute. Each number on the clock = 5 minutes.
+The minute hand moves past **small tick marks**. Each tick = 1 minute. Each number on the dial represents 5 minutes.
 
-| Long hand points to | Minutes |
-|--------------------|---------|
-| 12 | 0 (or 60) |
+| Minute hand points to | Minutes past the hour |
+|----------------------|----------------------|
+| 12 | 0 (the hour exactly) |
 | 1 | 5 |
 | 2 | 10 |
-| 3 | 15 |
+| 3 | 15 (quarter past) |
 | 4 | 20 |
 | 5 | 25 |
-| 6 | 30 |
+| 6 | 30 (half past) |
 | 7 | 35 |
 | 8 | 40 |
-| 9 | 45 |
+| 9 | 45 (quarter to the next hour) |
 | 10 | 50 |
 | 11 | 55 |
 
-> **Common mistake:** When the hour hand is between two numbers (say between 3 and 4), the hour is still **3** (not 4). The hour only changes when the minute hand reaches 12.
-
-![An analog clock face with hour hand and minute hand labeled, showing the 12 numbers](analog-clock-labeled.png)
+> **Watch out:** If the short hand is between 4 and 5, the hour is still **4**. It becomes 5 only when the minute hand reaches 12 again.
 
 ---
 
-## Expiry Dates
+## Expiry Dates on Food
 
-Many food items have a **manufacturing date** and an **expiry date** printed on them. The time between these two dates tells you how long the food is safe to eat.
+Packaged food items show a **manufacturing date** (when they were made) and an **expiry date** (after which they should not be eaten).
 
-**Example:** If a biscuit packet was made on 01/03/2025 and expires on 01/09/2025, it is safe for **6 months**.
+**Example:** A packet of chips was made on 10/01/2026 and expires on 10/07/2026. That means it stays fresh for **6 months**.
 
-> **Always check** the expiry date before eating packaged food!
+> **Always look** at the expiry date before eating anything from a packet. If the date has passed, do not eat it!
 
 ---
 
@@ -206,14 +203,14 @@ Many food items have a **manufacturing date** and an **expiry date** printed on 
 
 | Word | Meaning |
 |------|---------|
-| **Calendar** | A chart showing days, weeks, and months of a year |
-| **Leap year** | A year with 366 days (February has 29 days); occurs every 4 years |
-| **AM** | Ante Meridiem — the time from midnight to noon (morning hours) |
-| **PM** | Post Meridiem — the time from noon to midnight (afternoon/evening/night hours) |
-| **24-hour clock** | A system where hours go from 00:00 to 23:59 instead of using AM/PM |
-| **Hour** | A unit of time equal to 60 minutes |
-| **Minute** | A unit of time; 60 minutes = 1 hour |
-| **Duration** | The amount of time between two events |
-| **Manufacturing date** | The date on which a product was made |
-| **Expiry date** | The date after which a product is no longer safe to use |
-| **DD/MM/YYYY** | A format for writing dates (Day/Month/Year) |
+| **Calendar** | A chart that shows days, weeks, and months of a year |
+| **Leap year** | A year with 366 days; February has 29 days; happens every 4 years |
+| **AM** | The hours from midnight to noon (morning time) |
+| **PM** | The hours from noon to midnight (afternoon, evening, night) |
+| **24-hour clock** | A time system using hours 00 to 23, common on trains and phones |
+| **Hour** | A unit of time; 1 hour = 60 minutes |
+| **Minute** | A smaller unit of time; 60 minutes make 1 hour |
+| **Duration** | How much time passes between two events |
+| **Manufacturing date** | The date a product was made |
+| **Expiry date** | The last date a product is safe to use |
+| **DD/MM/YYYY** | The Indian way of writing dates: Day/Month/Year |

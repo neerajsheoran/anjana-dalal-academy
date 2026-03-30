@@ -1,28 +1,30 @@
 ---
-title: Chapter 7 Coordinate Geometry
+title: "Points on a Plane - Coordinate Geometry"
+description: "Find distances, midpoints, and section formulas for points in the coordinate plane."
+order: 7
 ---
 
 ## Introduction
 
-In Class 9, you learned that to locate a point on a plane, we need a pair of **coordinate axes**. The distance of a point from the y-axis is called its **x-coordinate (abscissa)**, and the distance from the x-axis is called its **y-coordinate (ordinate)**.
+In Class 9, you discovered that pinpointing a location on a flat surface requires a pair of **coordinate axes**. The horizontal distance of a point from the y-axis is its **x-coordinate (abscissa)**, and the vertical distance from the x-axis is its **y-coordinate (ordinate)**.
 
-In this chapter, we will learn three important concepts:
+In this chapter, we build on that foundation with three powerful tools:
 
-1. **Distance Formula** -- how to find the distance between two points
-2. **Section Formula** -- how to find the coordinates of a point that divides a line segment in a given ratio
-3. **Area of a Triangle** -- using coordinates of the three vertices
+1. **Distance Formula** -- calculating the straight-line gap between two points
+2. **Section Formula** -- locating a point that splits a line segment in a specific ratio
+3. **Area of a Triangle** -- computing area directly from vertex coordinates
 
-Coordinate geometry is widely used in physics, engineering, navigation, and even art!
+From Google Maps routing to satellite orbit calculations at ISRO, coordinate geometry powers the modern world!
 
 ---
 
 ## Distance Formula
 
-### The Problem
+### A Motivating Scenario
 
-A town B is located 36 km east and 15 km north of town A. What is the straight-line distance from A to B?
+Rohit's house is 20 km east and 15 km north of Amit's house. What is the straight-line distance between their homes?
 
-Using Pythagoras theorem: Distance = root(36^2 + 15^2) = root(1296 + 225) = root(1521) = **39 km**
+Using Pythagoras theorem: Distance = root(20^2 + 15^2) = root(400 + 225) = root(625) = **25 km**
 
 ### The General Formula
 
@@ -32,15 +34,15 @@ The distance between two points **P(x1, y1)** and **Q(x2, y2)** is:
 
 ![Right triangle formed by two points P and Q on a coordinate plane, with horizontal and vertical legs showing the distance formula derived from Pythagoras theorem](distance-formula-right-triangle.png)
 
-This is called the **distance formula**. It is derived from the Pythagoras theorem.
+This is the **distance formula** -- a direct application of the Pythagoras theorem on the coordinate plane.
 
 ### Special Cases
 
-- Distance of a point **P(x, y) from the origin** O(0, 0): **OP = root(x^2 + y^2)**
+- Distance from a point **P(x, y) to the origin** O(0, 0): **OP = root(x^2 + y^2)**
 - Distance between two points on the **x-axis**, say (x1, 0) and (x2, 0): **|x2 - x1|**
 - Distance between two points on the **y-axis**, say (0, y1) and (0, y2): **|y2 - y1|**
 
-> **Key idea:** The distance formula is just the Pythagoras theorem applied to coordinate geometry. The horizontal and vertical differences between the points form the two legs of a right triangle, and the distance is the hypotenuse.
+> **Key idea:** The distance formula is the Pythagoras theorem wearing a coordinate-geometry disguise. The horizontal and vertical gaps between the points form two legs of a right triangle; the distance is the hypotenuse.
 
 ---
 
@@ -48,17 +50,17 @@ This is called the **distance formula**. It is derived from the Pythagoras theor
 
 ### Example 1: Distance Between Two Points
 
-Find the distance between A(3, 2) and B(-2, -3).
+Find the distance between P(5, -1) and Q(-3, 5).
 
-AB = root[(3 - (-2))^2 + (2 - (-3))^2]
-= root[(5)^2 + (5)^2]
-= root[25 + 25]
-= root(50)
-= **5 root(2) units** (approximately 7.07 units)
+PQ = root[(5 - (-3))^2 + (-1 - 5)^2]
+= root[(8)^2 + (-6)^2]
+= root[64 + 36]
+= root(100)
+= **10 units**
 
-### Example 2: Proving a Square
+### Example 2: Verifying a Square
 
-Show that A(1, 7), B(4, 2), C(-1, -1), D(-4, 4) form a square.
+Show that the points A(0, 5), B(3, 0), C(-2, -3), D(-5, 2) form a square.
 
 - AB = root(9 + 25) = root(34)
 - BC = root(25 + 9) = root(34)
@@ -67,54 +69,54 @@ Show that A(1, 7), B(4, 2), C(-1, -1), D(-4, 4) form a square.
 - AC = root(4 + 64) = root(68) (diagonal)
 - BD = root(64 + 4) = root(68) (diagonal)
 
-All four sides are equal (root 34) and both diagonals are equal (root 68). Therefore, ABCD is a **square**.
+All four sides equal root(34) and both diagonals equal root(68). Hence ABCD is a **square**.
 
-### Example 3: Collinearity
+### Example 3: Testing Collinearity
 
-Are A(3, 1), B(6, 4), and C(8, 6) collinear (lying on the same line)?
+Are the points A(2, 3), B(5, 6), and C(9, 10) collinear (on the same line)?
 
 - AB = root(9 + 9) = root(18) = 3 root(2)
-- BC = root(4 + 4) = root(8) = 2 root(2)
-- AC = root(25 + 25) = root(50) = 5 root(2)
+- BC = root(16 + 16) = root(32) = 4 root(2)
+- AC = root(49 + 49) = root(98) = 7 root(2)
 
-Since AB + BC = 3 root(2) + 2 root(2) = 5 root(2) = AC, the points are **collinear**.
+Since AB + BC = 3 root(2) + 4 root(2) = 7 root(2) = AC, the points are **collinear**.
 
-> **Key idea:** Three points A, B, C are collinear if AB + BC = AC (or any such combination where the sum of two distances equals the third).
+> **Key idea:** Three points A, B, C are collinear when the sum of two of the pairwise distances equals the third.
 
-### Example 4: Equidistant Points
+### Example 4: Equidistant Point Condition
 
-Find a relation between x and y such that (x, y) is equidistant from (7, 1) and (3, 5).
+Find a relation between x and y such that (x, y) is equidistant from (5, -3) and (-1, 3).
 
 Set the distances equal:
-(x - 7)^2 + (y - 1)^2 = (x - 3)^2 + (y - 5)^2
+(x - 5)^2 + (y + 3)^2 = (x + 1)^2 + (y - 3)^2
 
 Expanding and simplifying:
-x^2 - 14x + 49 + y^2 - 2y + 1 = x^2 - 6x + 9 + y^2 - 10y + 25
+x^2 - 10x + 25 + y^2 + 6y + 9 = x^2 + 2x + 1 + y^2 - 6y + 9
 
--14x - 2y + 50 = -6x - 10y + 34
+-10x + 6y + 34 = 2x - 6y + 10
 
--8x + 8y = -16
+-12x + 12y = -24
 
 **x - y = 2**
 
-This is the equation of the perpendicular bisector of the line joining (7, 1) and (3, 5).
+This equation represents the perpendicular bisector of the segment joining (5, -3) and (-1, 3).
 
 ---
 
-## Applications of Distance Formula
+## Applications of the Distance Formula
 
-You can use the distance formula to:
+The distance formula helps you:
 
-1. **Find the type of triangle** formed by three points (equilateral, isosceles, right-angled)
-2. **Find the type of quadrilateral** (square, rectangle, rhombus, parallelogram)
-3. **Check collinearity** of three points
-4. **Find points on an axis** equidistant from two given points
+1. **Classify triangles** formed by three points (equilateral, isosceles, right-angled)
+2. **Identify quadrilateral types** (square, rectangle, rhombus, parallelogram)
+3. **Test collinearity** of three points
+4. **Locate points on an axis** that are equidistant from two given points
 
-### How to Identify Quadrilaterals
+### Identifying Quadrilaterals
 
-| Shape | Condition |
-|-------|-----------|
-| Parallelogram | Opposite sides equal |
+| Shape | What to Verify |
+|-------|---------------|
+| Parallelogram | Opposite sides are equal |
 | Rectangle | Opposite sides equal AND diagonals equal |
 | Rhombus | All four sides equal |
 | Square | All four sides equal AND diagonals equal |
@@ -123,11 +125,11 @@ You can use the distance formula to:
 
 ## Section Formula
 
-### The Problem
+### A Practical Situation
 
-Suppose a telephone company wants to place a relay tower P between towns A and B such that the distance from B is twice the distance from A. If A is the origin and B is at (36, 15), where should P be placed?
+A mobile tower needs to be erected between two villages A and B such that it is twice as close to A as to B. If A is at the origin and B is at (27, 12), where should the tower be placed?
 
-P divides AB in the ratio 1:2.
+The tower divides AB in the ratio 1:2.
 
 ### The General Formula
 
@@ -139,34 +141,34 @@ If point **P(x, y)** divides the line segment joining **A(x1, y1)** and **B(x2, 
 
 **y = (m1 x y2 + m2 x y1) / (m1 + m2)**
 
-This is called the **section formula**.
+This is the **section formula**.
 
-> **Key idea:** Think of it as a weighted average. The point closer to B gets more "weight" from B's coordinates, and vice versa.
+> **Key idea:** Picture it as a weighted average. The closer the point is to B, the more B's coordinates influence the result, and vice versa.
 
-### Applying to the Relay Tower Problem
+### Solving the Tower Problem
 
-P divides AB in ratio 1:2, where A(0, 0) and B(36, 15).
+P divides AB in ratio 1:2, where A(0, 0) and B(27, 12).
 
-x = (1 x 36 + 2 x 0) / (1 + 2) = 36/3 = **12**
-y = (1 x 15 + 2 x 0) / (1 + 2) = 15/3 = **5**
+x = (1 x 27 + 2 x 0) / (1 + 2) = 27/3 = **9**
+y = (1 x 12 + 2 x 0) / (1 + 2) = 12/3 = **4**
 
-The relay tower should be at **P(12, 5)**.
+The tower should stand at **P(9, 4)**.
 
 ---
 
 ## Mid-Point Formula
 
-A special case of the section formula is when the point divides the segment in the ratio **1:1** (i.e., it is the **mid-point**).
+When a point divides a segment in the ratio **1:1**, it sits at the **mid-point** -- a special case of the section formula.
 
-The mid-point of the line segment joining **A(x1, y1)** and **B(x2, y2)** is:
+The mid-point of the segment joining **A(x1, y1)** and **B(x2, y2)** is:
 
 **M = ((x1 + x2)/2, (y1 + y2)/2)**
 
 ### Worked Example
 
-Find the mid-point of A(4, -6) and B(-2, 8).
+Find the mid-point of A(6, -4) and B(-2, 10).
 
-M = ((4 + (-2))/2, (-6 + 8)/2) = (2/2, 2/2) = **(1, 1)**
+M = ((6 + (-2))/2, (-4 + 10)/2) = (4/2, 6/2) = **(2, 3)**
 
 ---
 
@@ -174,45 +176,45 @@ M = ((4 + (-2))/2, (-6 + 8)/2) = (2/2, 2/2) = **(1, 1)**
 
 ### Example 1
 
-Find the coordinates of the point which divides the line segment joining A(1, -2) and B(-3, 4) in the ratio 2:3.
+Find the coordinates of the point dividing the segment joining A(3, -4) and B(-5, 6) in the ratio 3:5.
 
-x = (2(-3) + 3(1)) / (2 + 3) = (-6 + 3)/5 = **-3/5**
-y = (2(4) + 3(-2)) / (2 + 3) = (8 - 6)/5 = **2/5**
+x = (3(-5) + 5(3)) / (3 + 5) = (-15 + 15)/8 = **0**
+y = (3(6) + 5(-4)) / (3 + 5) = (18 - 20)/8 = **-1/4**
 
-The point is **(-3/5, 2/5)**.
+The point is **(0, -1/4)**.
 
 ### Example 2
 
-Find the ratio in which the point (-1, 6) divides the line segment joining (-3, 10) and (6, -8).
+Determine the ratio in which the point (3, -2) divides the segment joining (1, 4) and (7, -14).
 
 Let the ratio be k:1.
 
-x-coordinate: -1 = (6k + (-3)) / (k + 1)
--k - 1 = 6k - 3
--7k = -2
-**k = 2/7**
+x-coordinate: 3 = (7k + 1) / (k + 1)
+3k + 3 = 7k + 1
+-4k = -2
+**k = 1/2**
 
-So the ratio is **2:7**.
+So the ratio is **1:2**.
 
-Verify with y-coordinate: y = (2(-8)/7 + 10) / (2/7 + 1) = (-16/7 + 10) / (9/7) = (54/7) / (9/7) = 6. Correct!
+Verify with y-coordinate: y = (1/2 x (-14) + 4) / (1/2 + 1) = (-7 + 4) / (3/2) = (-3) / (3/2) = -2. Correct!
 
 ### Example 3: Trisection Points
 
-Find the trisection points of the line segment joining A(2, -2) and B(-7, 4).
+Find the trisection points of the segment joining A(1, -3) and B(-8, 6).
 
-The trisection points divide AB into three equal parts. Let them be P and Q.
+The trisection points P and Q divide AB into three equal parts.
 
 - P divides AB in ratio 1:2:
-  P = ((1(-7) + 2(2))/3, (1(4) + 2(-2))/3) = (-3/3, 0/3) = **(-1, 0)**
+  P = ((1(-8) + 2(1))/3, (1(6) + 2(-3))/3) = (-6/3, 0/3) = **(-2, 0)**
 
 - Q divides AB in ratio 2:1:
-  Q = ((2(-7) + 1(2))/3, (2(4) + 1(-2))/3) = (-12/3, 6/3) = **(-4, 2)**
+  Q = ((2(-8) + 1(1))/3, (2(6) + 1(-3))/3) = (-15/3, 9/3) = **(-5, 3)**
 
 ---
 
 ## Area of a Triangle
 
-If you know the coordinates of the three vertices of a triangle, you can find its area using a formula.
+Given the coordinates of three vertices, the area can be computed with a single formula.
 
 ### The Formula
 
@@ -220,49 +222,49 @@ Area of a triangle with vertices **A(x1, y1)**, **B(x2, y2)**, and **C(x3, y3)**
 
 **Area = (1/2) |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|**
 
-We take the **absolute value** because area is always positive.
+The **absolute value** ensures the area is always positive.
 
-> **Key idea:** If the area comes out to be zero, it means the three points are **collinear** (lying on the same straight line).
+> **Key idea:** If this formula yields zero, the three points are **collinear** -- they lie on the same straight line and cannot form a triangle.
 
 ### Worked Example 1
 
-Find the area of the triangle with vertices A(1, -1), B(-4, 6), C(-3, -5).
+Find the area of the triangle with vertices A(2, 3), B(-1, 0), C(4, -2).
 
-Area = (1/2) |1(6 - (-5)) + (-4)((-5) - (-1)) + (-3)((-1) - 6)|
-= (1/2) |1(11) + (-4)(-4) + (-3)(-7)|
-= (1/2) |11 + 16 + 21|
-= (1/2) |48|
-= **24 square units**
+Area = (1/2) |2(0 - (-2)) + (-1)((-2) - 3) + 4(3 - 0)|
+= (1/2) |2(2) + (-1)(-5) + 4(3)|
+= (1/2) |4 + 5 + 12|
+= (1/2) |21|
+= **10.5 square units**
 
-### Worked Example 2: Checking Collinearity
+### Worked Example 2: Collinearity Check
 
-Are the points (1, 5), (2, 3), and (-2, -11) collinear?
+Are the points (2, 1), (4, 5), and (6, 9) collinear?
 
-Area = (1/2) |1(3 - (-11)) + 2((-11) - 5) + (-2)(5 - 3)|
-= (1/2) |1(14) + 2(-16) + (-2)(2)|
-= (1/2) |14 - 32 - 4|
-= (1/2) |-22|
-= 11
+Area = (1/2) |2(5 - 9) + 4(9 - 1) + 6(1 - 5)|
+= (1/2) |2(-4) + 4(8) + 6(-4)|
+= (1/2) |-8 + 32 - 24|
+= (1/2) |0|
+= 0
 
-Since the area is NOT zero, the points are **not collinear**.
+Since the area is zero, the points are **collinear**.
 
-### Worked Example 3: Finding Unknown Vertices
+### Worked Example 3: Finding an Unknown Coordinate
 
-Find the value of k if the points A(2, 3), B(4, k), and C(6, -3) are collinear.
+Find the value of p if the points A(1, 2), B(3, p), and C(5, -2) are collinear.
 
 For collinearity, area = 0:
 
-0 = (1/2) |2(k - (-3)) + 4((-3) - 3) + 6(3 - k)|
-0 = |2(k + 3) + 4(-6) + 6(3 - k)|
-0 = |2k + 6 - 24 + 18 - 6k|
-0 = |-4k|
-**k = 0**
+0 = (1/2) |1(p - (-2)) + 3((-2) - 2) + 5(2 - p)|
+0 = |1(p + 2) + 3(-4) + 5(2 - p)|
+0 = |p + 2 - 12 + 10 - 5p|
+0 = |-4p|
+**p = 0**
 
 ---
 
 ## Area of a Quadrilateral
 
-To find the area of a quadrilateral with given vertices, divide it into two triangles using a diagonal and add their areas.
+To find the area of a quadrilateral whose vertices are known, split it into two triangles using a diagonal and add their areas.
 
 **Area of quadrilateral ABCD = Area of triangle ABC + Area of triangle ACD**
 
@@ -273,7 +275,7 @@ To find the area of a quadrilateral with given vertices, divide it into two tria
 1. **Distance Formula:** The distance between P(x1, y1) and Q(x2, y2) is:
    PQ = root[(x2 - x1)^2 + (y2 - y1)^2]
 
-2. **Section Formula:** The point P dividing the segment joining A(x1, y1) and B(x2, y2) in ratio m1:m2 has coordinates:
+2. **Section Formula:** The point P dividing the segment from A(x1, y1) to B(x2, y2) in ratio m1:m2 has coordinates:
    ((m1.x2 + m2.x1)/(m1 + m2), (m1.y2 + m2.y1)/(m1 + m2))
 
 3. **Mid-point Formula:** Mid-point of A(x1, y1) and B(x2, y2) is:
@@ -282,4 +284,4 @@ To find the area of a quadrilateral with given vertices, divide it into two tria
 4. **Area of a Triangle** with vertices (x1, y1), (x2, y2), (x3, y3):
    Area = (1/2)|x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|
 
-5. Three points are **collinear** if the area of the triangle formed by them is zero.
+5. Three points are **collinear** if the area of the triangle they form is zero.

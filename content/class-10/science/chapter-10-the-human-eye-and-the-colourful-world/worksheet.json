@@ -7,7 +7,12 @@
           "id": "ch10-t1-e1",
           "type": "mcq",
           "question": "The human eye forms the image of an object at its:",
-          "options": ["Cornea", "Iris", "Pupil", "Retina"],
+          "options": [
+            "Cornea",
+            "Iris",
+            "Pupil",
+            "Retina"
+          ],
           "answer": "Retina",
           "explanation": "The eye lens focuses light to form a real, inverted image on the retina, which is the light-sensitive screen at the back of the eye."
         },
@@ -15,7 +20,12 @@
           "id": "ch10-t1-e2",
           "type": "mcq",
           "question": "The least distance of distinct vision for a young adult with normal vision is about:",
-          "options": ["25 m", "2.5 cm", "25 cm", "2.5 m"],
+          "options": [
+            "25 m",
+            "2.5 cm",
+            "25 cm",
+            "2.5 m"
+          ],
           "answer": "25 cm",
           "explanation": "The near point of a normal eye is 25 cm. Objects closer than this cannot be seen clearly because the eye lens cannot accommodate further."
         },
@@ -23,7 +33,12 @@
           "id": "ch10-t1-e3",
           "type": "mcq",
           "question": "The change in focal length of an eye lens is caused by the action of the:",
-          "options": ["Pupil", "Retina", "Ciliary muscles", "Iris"],
+          "options": [
+            "Pupil",
+            "Retina",
+            "Ciliary muscles",
+            "Iris"
+          ],
           "answer": "Ciliary muscles",
           "explanation": "Ciliary muscles contract or relax to change the curvature (and hence focal length) of the eye lens, enabling the eye to focus on objects at different distances."
         },
@@ -69,7 +84,7 @@
       ]
     },
     {
-      "topic": "Dispersion, Scattering, and Atmospheric Phenomena",
+      "topic": "Atmospheric Refraction",
       "easy": [
         {
           "id": "ch10-t2-e1",

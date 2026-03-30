@@ -7,39 +7,54 @@
           "id": "ch4-t1-e1",
           "type": "mcq",
           "question": "Which type of plant is the tallest?",
-          "options": ["Herb", "Shrub", "Tree", "Creeper"],
+          "options": [
+            "Herb",
+            "Shrub",
+            "Tree",
+            "Creeper"
+          ],
           "answer": "Tree",
-          "explanation": "Trees are the tallest plants. They have a big trunk made of wood and many branches."
+          "explanation": "Trees are the tallest plants. They have a thick trunk made of hard wood and many branches."
         },
         {
           "id": "ch4-t1-e2",
           "type": "fill",
-          "question": "Shrubs have many brown, woody ______ growing close to the ground.",
+          "question": "Shrubs have many woody brown ______ that branch out near the ground.",
           "answer": "stems",
-          "explanation": "Shrubs do not have one big trunk like a tree. Instead, they have many brown, woody stems growing close to the ground."
+          "explanation": "Shrubs do not have one thick trunk. Instead, many woody brown stems grow near the ground, making the plant look bushy."
         },
         {
           "id": "ch4-t1-e3",
           "type": "mcq",
           "question": "Which of these is a shrub?",
-          "options": ["Mango", "Tulsi", "Wheat", "Pumpkin"],
+          "options": [
+            "Mango",
+            "Tulsi",
+            "Wheat",
+            "Pumpkin"
+          ],
           "answer": "Tulsi",
-          "explanation": "Tulsi (Holy Basil) is a shrub found in many Indian homes. It is used in prayers and medicine."
+          "explanation": "Tulsi (Holy Basil) is a shrub found in almost every Indian home, used in prayers and as medicine."
         },
         {
           "id": "ch4-t1-e4",
           "type": "short",
           "question": "What are herbs? Give two examples.",
-          "answer": "Herbs are smaller plants with soft, green stems that do not become woody. Examples are mint (pudina) and coriander (dhaniya).",
-          "explanation": "Herbs are much shorter than trees and shrubs and have soft, green stems."
+          "answer": "Herbs are the smallest plants with soft, green stems that never turn woody. Examples are pudina (mint) and dhaniya (coriander).",
+          "explanation": "Herbs are shorter than trees and shrubs and have soft green stems that you can bend easily."
         },
         {
           "id": "ch4-t1-e5",
           "type": "mcq",
-          "question": "Which of these is the tallest grass in the world?",
-          "options": ["Wheat", "Rice", "Bamboo", "Sugarcane"],
+          "question": "Which of these is the tallest grass on Earth?",
+          "options": [
+            "Wheat",
+            "Rice",
+            "Bamboo",
+            "Sugarcane"
+          ],
           "answer": "Bamboo",
-          "explanation": "Bamboo is the tallest grass in the world. It is a type of grass even though it looks like a tree."
+          "explanation": "Bamboo is the tallest grass on Earth. Even though it looks like a tree, it is actually a type of grass."
         }
       ],
       "medium": [
@@ -47,41 +62,47 @@
           "id": "ch4-t1-m1",
           "type": "short",
           "question": "What is the difference between a tree and a shrub?",
-          "answer": "Trees are the tallest plants with one big trunk made of wood and deep roots. Shrubs are medium-sized plants with many brown, woody stems growing close to the ground. Shrubs look bushy.",
-          "explanation": "Trees have a single thick trunk while shrubs have multiple stems. Trees are taller than shrubs."
+          "answer": "Trees are the tallest plants with one thick trunk made of hard wood and deep roots. Shrubs are medium-sized plants with many woody brown stems branching out near the ground, making them look bushy.",
+          "explanation": "Trees have a single thick trunk while shrubs have multiple stems. Trees are much taller than shrubs."
         },
         {
           "id": "ch4-t1-m2",
           "type": "mcq",
-          "question": "Which tree is found in the desert areas of Rajasthan?",
-          "options": ["Coconut", "Chinar", "Khejri", "Jackfruit"],
+          "question": "Which tree survives in the hot deserts of Rajasthan?",
+          "options": [
+            "Coconut",
+            "Chinar",
+            "Khejri",
+            "Jackfruit"
+          ],
           "answer": "Khejri",
-          "explanation": "The Khejri tree is found in the desert areas of Rajasthan."
+          "explanation": "The Khejri tree is found in the hot deserts of Rajasthan, where very few plants can survive."
         },
         {
           "id": "ch4-t1-m3",
           "type": "fill",
-          "question": "The grains we eat every day like rice, wheat, and bajra are all seeds of large ______.",
+          "question": "The grains we eat daily like chawal, gehu, and bajra are all seeds of large ______.",
           "answer": "grasses",
-          "explanation": "Rice (paddy), wheat, bajra, jowar, and ragi are all seeds of large grasses. Grasses are a special type of herb."
+          "explanation": "Rice, wheat, bajra, jowar, and ragi are all seeds of tall grasses. Grasses are a special group of herbs."
         }
       ],
       "hard": [
         {
           "id": "ch4-t1-h1",
           "type": "long",
-          "question": "Explain the six types of plants with one example of each.",
-          "answer": "The six types of plants are: 1) Trees - tallest plants with a thick trunk, like mango. 2) Shrubs - medium-sized bushy plants with many woody stems, like rose. 3) Herbs - smaller plants with soft green stems, like mint. 4) Grasses - a special type of herb with thin flat leaves and hollow stems, like wheat. 5) Climbers - plants that grow upward using support, like money plant. 6) Creepers - plants that spread along the ground, like pumpkin.",
-          "explanation": "Plants can be grouped into trees, shrubs, herbs, grasses, climbers, and creepers based on their size, stem type, and how they grow."
+          "question": "Name the six types of plants and give one example of each.",
+          "answer": "The six types of plants are: 1) Trees -- the tallest plants with a thick trunk, like the mango tree. 2) Shrubs -- medium-sized bushy plants with many woody stems, like the rose plant. 3) Herbs -- the smallest plants with soft green stems, like pudina (mint). 4) Grasses -- herbs with hollow stems and narrow leaves, like wheat. 5) Climbers -- plants that grow upward by holding on to walls or poles, like the money plant. 6) Creepers -- plants that spread along the ground, like the pumpkin.",
+          "explanation": "Plants are grouped into six types based on their size, stem type, and how they grow."
         },
         {
           "id": "ch4-t1-h2",
           "type": "long",
-          "question": "What is the difference between a climber and a creeper? Give two examples of each.",
-          "answer": "Climbers are plants that grow upward by climbing walls, trees, or poles for support. Examples are money plant and jasmine. Creepers are plants that grow by spreading along the ground. Examples are pumpkin and watermelon. Some plants can behave as both climbers and creepers depending on whether they find something to climb on.",
-          "explanation": "Both climbers and creepers have thin, flexible stems. The key difference is the direction of growth - climbers go up using support while creepers spread on the ground."
+          "question": "How are climbers different from creepers? Give two examples of each.",
+          "answer": "Climbers are plants with thin stems that grow upward by holding on to walls, poles, or other plants. Examples are the money plant and chameli (jasmine). Creepers also have thin stems, but they spread sideways along the ground instead of climbing. Examples are kaddu (pumpkin) and tarbooz (watermelon). Some plants can be both -- if they find a wall they climb, if not they creep along the ground.",
+          "explanation": "Both climbers and creepers have thin, bendable stems. The main difference is the direction they grow -- up or along the ground."
         }
-      ]
+      ],
+      "name": "Types of Plants"
     },
     {
       "topic": "Parts of a Plant and Leaves",
@@ -89,40 +110,55 @@
         {
           "id": "ch4-t2-e1",
           "type": "mcq",
-          "question": "Which part of a plant makes food using sunlight?",
-          "options": ["Roots", "Stem", "Leaves", "Flowers"],
+          "question": "Which part of a plant uses sunlight to cook food?",
+          "options": [
+            "Roots",
+            "Stem",
+            "Leaves",
+            "Flowers"
+          ],
           "answer": "Leaves",
-          "explanation": "Leaves make food for the plant using sunlight."
+          "explanation": "Leaves are the kitchen of the plant. They use sunlight to cook food for the entire plant."
         },
         {
           "id": "ch4-t2-e2",
           "type": "fill",
-          "question": "The ______ hold the plant in the soil and absorb water and nutrients.",
+          "question": "The ______ grip the soil and soak up water and nutrients from the ground.",
           "answer": "roots",
-          "explanation": "Roots hold the plant firmly in the soil and absorb water and nutrients from the ground."
+          "explanation": "Roots hold the plant firmly in the soil and absorb water and nutrients needed for growth."
         },
         {
           "id": "ch4-t2-e3",
           "type": "short",
-          "question": "What does the stem of a plant do?",
-          "answer": "The stem carries water from roots to leaves and holds the plant upright.",
-          "explanation": "The stem acts as a pathway for water and nutrients and provides support to keep the plant standing."
+          "question": "What is the job of the stem?",
+          "answer": "The stem acts like a pipeline, carrying water from the roots up to the leaves. It also holds the plant upright.",
+          "explanation": "The stem transports water and nutrients and gives the plant its upright structure."
         },
         {
           "id": "ch4-t2-e4",
           "type": "mcq",
-          "question": "Which leaf is heart-shaped with a pointed tip?",
-          "options": ["Mango leaf", "Peepal leaf", "Lotus leaf", "Khejri leaf"],
+          "question": "Which leaf is shaped like a heart with a long pointed tip?",
+          "options": [
+            "Mango leaf",
+            "Peepal leaf",
+            "Lotus leaf",
+            "Khejri leaf"
+          ],
           "answer": "Peepal leaf",
-          "explanation": "The peepal leaf is heart-shaped with a pointed tip."
+          "explanation": "The peepal leaf is heart-shaped with a long pointed tip that helps rainwater drip off."
         },
         {
           "id": "ch4-t2-e5",
           "type": "mcq",
-          "question": "Which part of the plant contains and protects the seeds?",
-          "options": ["Leaves", "Flowers", "Fruits", "Stem"],
+          "question": "Which part of the plant wraps around and protects the seeds?",
+          "options": [
+            "Leaves",
+            "Flowers",
+            "Fruits",
+            "Stem"
+          ],
           "answer": "Fruits",
-          "explanation": "Fruits contain and protect the seeds of a plant."
+          "explanation": "Fruits wrap around and protect the seeds inside them."
         }
       ],
       "medium": [
@@ -130,23 +166,28 @@
           "id": "ch4-t2-m1",
           "type": "short",
           "question": "Name any three parts of a plant and describe what each part does.",
-          "answer": "Roots hold the plant in the soil and absorb water. Leaves make food for the plant using sunlight. Flowers help the plant reproduce and make new plants.",
-          "explanation": "Every plant has six important parts: roots, stem, leaves, flowers, fruits, and seeds. Each part has a specific role."
+          "answer": "Roots grip the soil and soak up water. Leaves use sunlight to cook food for the plant. Flowers help the plant make new baby plants (reproduction).",
+          "explanation": "Every plant has six important parts: roots, stem, leaves, flowers, fruits, and seeds. Each has a specific job."
         },
         {
           "id": "ch4-t2-m2",
           "type": "fill",
-          "question": "Bark is the hard outer ______ of a tree trunk.",
-          "answer": "covering",
-          "explanation": "Bark is the hard outer covering of a tree trunk. Different trees have different bark patterns."
+          "question": "Bark is the tough outer ______ of a tree trunk.",
+          "answer": "skin",
+          "explanation": "Bark is the tough outer skin of a tree trunk. Different trees have different bark patterns."
         },
         {
           "id": "ch4-t2-m3",
           "type": "mcq",
-          "question": "Which of these leaves has a nice smell when rubbed?",
-          "options": ["Lotus", "Mango", "Peepal", "Khejri"],
+          "question": "Which leaf gives off a lovely scent when rubbed gently?",
+          "options": [
+            "Lotus",
+            "Mango",
+            "Peepal",
+            "Khejri"
+          ],
           "answer": "Mango",
-          "explanation": "Mango leaves have a lovely smell when you rub them."
+          "explanation": "Mango leaves give off a lovely scent when you rub them gently."
         }
       ],
       "hard": [
@@ -154,10 +195,11 @@
           "id": "ch4-t2-h1",
           "type": "long",
           "question": "How are leaves of different plants different from each other? Give examples.",
-          "answer": "Leaves of different plants have different colours, shapes, sizes, textures, and smells. The peepal leaf is heart-shaped with a pointed tip. The mango leaf is long and smooth with a nice smell. The lotus leaf is round and large, and water rolls off it. The khejri leaf is tiny and feathery. Some leaves like tulsi and mint have a nice smell, while others are rough or smooth to touch.",
-          "explanation": "Leaves come in many different shapes, sizes, colours, textures, and smells. These differences help us identify different plants."
+          "answer": "Leaves differ in shape, size, colour, texture, and smell. The peepal leaf is heart-shaped with a pointed tip so rainwater drips off. The mango leaf is long and smooth with a nice scent when rubbed. The lotus leaf is big and round with a waxy surface, so water rolls off like tiny silver balls. The khejri leaf is very small and feathery because the tree lives in the hot desert and must not lose too much water. Some leaves like tulsi and pudina have strong smells that help us identify them.",
+          "explanation": "Leaves come in many shapes, sizes, textures, and smells. These differences help each plant survive in its own environment."
         }
-      ]
+      ],
+      "name": "Parts of a Plant and Leaves"
     },
     {
       "topic": "Fun Facts about Indian Plants",
@@ -165,60 +207,76 @@
         {
           "id": "ch4-t3-e1",
           "type": "mcq",
-          "question": "Which tree has aerial roots that hang down from its branches?",
-          "options": ["Neem", "Mango", "Banyan", "Peepal"],
+          "question": "Which tree is famous for its hanging roots that grow down from its branches?",
+          "options": [
+            "Neem",
+            "Mango",
+            "Banyan",
+            "Peepal"
+          ],
           "answer": "Banyan",
-          "explanation": "The banyan tree has aerial roots that hang down from its branches."
+          "explanation": "The banyan tree has roots that hang down from its branches, making it look very grand and ancient."
         },
         {
           "id": "ch4-t3-e2",
           "type": "fill",
-          "question": "Sugar is produced from the ______ stem.",
+          "question": "The sugar in our chai comes from the stem of ______.",
           "answer": "sugarcane",
-          "explanation": "Sugar is produced from the sugarcane stem. Sugarcane is a type of grass."
+          "explanation": "Sugar is made from the sweet juice inside the sugarcane stem. Sugarcane is a type of grass."
         },
         {
           "id": "ch4-t3-e3",
           "type": "short",
-          "question": "What is the biggest flower in the world and where is it found in India?",
-          "answer": "Rafflesia is the biggest flower in the world. It is found in Mizoram and is as big as an umbrella.",
-          "explanation": "Rafflesia is found in Mizoram. It is the biggest flower in the world and can be as big as an umbrella."
+          "question": "What is the largest flower on Earth and where is it found in India?",
+          "answer": "Rafflesia is the largest flower on Earth. It is found in Mizoram and can be as wide as an open umbrella.",
+          "explanation": "Rafflesia grows in Mizoram in Northeast India. It is the biggest flower in the world."
         },
         {
           "id": "ch4-t3-e4",
           "type": "mcq",
-          "question": "Which tree is known for its medicinal leaves?",
-          "options": ["Mango", "Neem", "Coconut", "Jackfruit"],
+          "question": "Which tree has leaves used as natural medicine?",
+          "options": [
+            "Mango",
+            "Neem",
+            "Coconut",
+            "Jackfruit"
+          ],
           "answer": "Neem",
-          "explanation": "The neem tree is very common in India and its leaves have medicinal value."
+          "explanation": "The neem tree is very common in India and its leaves are used as natural medicine."
         }
       ],
       "medium": [
         {
           "id": "ch4-t3-m1",
           "type": "short",
-          "question": "Name any four pulses (dal) that come from shrubs.",
-          "answer": "Toor (Arhar dal), Masoor (red lentils), Moong (green gram), and Urad (black gram).",
-          "explanation": "The pulses we eat come from shrubs. Common pulses include toor, masoor, moong, and urad."
+          "question": "Name four types of dal (pulses) that come from shrubs.",
+          "answer": "Arhar (toor dal), Masoor (red lentils), Moong (green gram), and Urad (black gram).",
+          "explanation": "The dal we eat every day comes from shrub plants. Common types include arhar, masoor, moong, and urad."
         },
         {
           "id": "ch4-t3-m2",
           "type": "mcq",
-          "question": "The Chinar tree is found in which part of India?",
-          "options": ["Rajasthan", "Kashmir", "Kerala", "Maharashtra"],
+          "question": "The Chinar tree is the pride of which part of India?",
+          "options": [
+            "Rajasthan",
+            "Kashmir",
+            "Kerala",
+            "Maharashtra"
+          ],
           "answer": "Kashmir",
-          "explanation": "The Chinar tree is found in Kashmir. It is known for its beautiful leaves that change colour in autumn."
+          "explanation": "The Chinar tree is the pride of Kashmir, known for its beautiful star-shaped leaves."
         }
       ],
       "hard": [
         {
           "id": "ch4-t3-h1",
           "type": "long",
-          "question": "How do plants give us many useful things? List at least five things we get from plants.",
-          "answer": "Plants give us many useful things. 1) Food - we eat fruits, vegetables, grains, and pulses from plants. 2) Sugar - produced from sugarcane stem. 3) Medicine - plants like neem and tulsi are used to make medicines. 4) Shade - trees give us cool shade on hot days. 5) Fresh air - plants clean the air we breathe. 6) Wood - used to build houses and furniture. 7) Fibre - cotton from plants is used to make clothes.",
-          "explanation": "Plants are essential for human life. They provide us with food, shade, fresh air, medicine, wood, fibre, and many other useful things."
+          "question": "Plants give us many useful things. List at least five things we get from plants.",
+          "answer": "Plants give us many important things: 1) Food -- we eat fruits, vegetables, grains, and pulses from plants. 2) Sugar -- made from the sugarcane stem. 3) Medicine -- plants like neem and tulsi are used to make medicines. 4) Shade -- trees give us cool shade on hot days. 5) Fresh air -- plants clean the air we breathe. 6) Wood -- used to build houses, furniture, and cricket bats. 7) Fibre -- cotton from plants is made into clothes. 8) Spices -- plants give us haldi, mirchi, and jeera for cooking.",
+          "explanation": "Plants are essential to our lives. They provide food, shade, fresh air, medicine, wood, fibre, spices, and much more."
         }
-      ]
+      ],
+      "name": "Fun Facts about Indian Plants"
     }
   ]
 }

@@ -1,179 +1,182 @@
 ---
-title: "Chapter 12: Tales by Dots and Lines"
+title: "Stories Told by Dots and Lines"
+description: "A new perspective on arithmetic mean and introduction to line graphs for data visualisation."
+order: 12
 ---
 
 ## 5.1 The Balancing Act
 
 ### Mean as the Centre
 
-The **mean** (or arithmetic mean/average) of a set of numbers is the sum of all values divided by the number of values.
+The **mean** (also called the arithmetic mean or average) of a collection of numbers equals the total of all values divided by how many values there are.
 
-**Example:** The mean of 3 and 7 is (3 + 7)/2 = **5**.
+**Illustration:** The mean of 5 and 11 is (5 + 11)/2 = **8**.
 
-When you plot numbers on a number line, the mean sits at the **centre** -- like a balancing point. The total distances from the mean to all values below it equals the total distances to all values above it.
+When you mark numbers on a number line, the mean sits at the **balance point** -- the spot where the combined distances on the left exactly match the combined distances on the right.
 
-**Example:** For the data 10, 10, 11, 17:
-- Mean = (10 + 10 + 11 + 17)/4 = 48/4 = **12**
-- Distances below: (12-10) + (12-10) + (12-11) = 2 + 2 + 1 = 5
-- Distances above: (17-12) = 5
-- Both sides balance at 5!
+**Illustration:** Consider the data set 7, 9, 10, 18:
+- Mean = (7 + 9 + 10 + 18)/4 = 44/4 = **11**
+- Distances below: (11-7) + (11-9) + (11-10) = 4 + 2 + 1 = 7
+- Distances above: (18-11) = 7
+- Both sides sum to 7 -- perfectly balanced!
 
-> **Key idea:** The mean is the unique point where the total distance on the left equals the total distance on the right. There is no other point with this property. This is why the mean is called a measure of **central tendency**.
-
----
-
-### How the Mean Changes
-
-**Adding a value greater than the mean:** The mean **increases** to maintain balance.
-
-**Adding a value less than the mean:** The mean **decreases**.
-
-**Adding a value equal to the mean:** The mean **stays the same**.
-
-**Removing a value greater than the mean:** The mean **decreases**.
-
-**Removing a value less than the mean:** The mean **increases**.
+> **Key idea:** The mean is the one and only point where the total gap below equals the total gap above. No other value has this balance property. This is why the mean is called a measure of **central tendency**.
 
 ---
 
-### Unchanging Mean
+### How the Mean Shifts
 
-Can you add or remove values without changing the mean?
+**Adding a value above the current mean:** The mean **rises** to restore balance.
 
-**Yes!** If you add two values -- one above and one below the mean -- such that their distances from the mean are equal, the mean stays unchanged.
+**Adding a value below the current mean:** The mean **drops**.
 
-You can also add 2 values less than the mean and 1 value greater than the mean, as long as the total distances balance out.
+**Adding a value exactly equal to the mean:** The mean **remains unchanged**.
+
+**Removing a value above the current mean:** The mean **drops**.
+
+**Removing a value below the current mean:** The mean **rises**.
 
 ---
 
-### Relatively Unchanged
+### Keeping the Mean Steady
 
-**What happens if you add a fixed number to every value?**
+Is it possible to insert or delete values without altering the mean?
 
-If every value increases by k, the mean also increases by k.
+**Absolutely!** Insert two values -- one above and one below the mean -- at equal distances from the mean, and the balance stays perfect.
 
-**Proof using algebra:** If the original mean is a = (x1 + x2 + ... + xn)/n, then after adding k to each value:
+You can even insert three values: two below the mean and one above, provided their total distances from the mean cancel out.
 
-New mean = ((x1+k) + (x2+k) + ... + (xn+k))/n = a + k
+---
 
-**What happens if you multiply every value by a fixed number?**
+### Scaling and Shifting the Mean
 
-If every value is multiplied by k, the mean also gets multiplied by k.
+**What happens when you add a fixed number to every data value?**
 
-**Proof:** New mean = (kx1 + kx2 + ... + kxn)/n = k(x1 + x2 + ... + xn)/n = ka
+If each value goes up by k, the mean also goes up by k.
 
-> **Key idea:** The mean responds proportionally to changes in the data. Adding a constant shifts the mean by that constant. Multiplying by a constant scales the mean by that constant.
+**Algebraic justification:** If the original mean is m = (x1 + x2 + ... + xn)/n, then after adding k to each:
+
+New mean = ((x1+k) + (x2+k) + ... + (xn+k))/n = m + k
+
+**What happens when you multiply every data value by a fixed number?**
+
+If each value is scaled by k, the mean is scaled by k too.
+
+**Justification:** New mean = (kx1 + kx2 + ... + kxn)/n = k(x1 + x2 + ... + xn)/n = km
+
+> **Key idea:** The mean reacts proportionally to uniform changes in the data. A constant addition shifts the mean by that constant. A constant multiplier scales the mean by that multiplier.
 
 ---
 
 ## 5.2 Median
 
-The **median** is the middle value when data is sorted in order. If there is an even number of values, the median is the average of the two middle values.
+The **median** is the middle entry once the data is sorted from smallest to largest. When the count of values is even, the median is the average of the two central entries.
 
-### How the Median Changes
+### How the Median Shifts
 
-- Adding a value **greater** than the median causes the median to **increase** (or stay the same).
-- Adding a value **less** than the median causes it to **decrease** (or stay the same).
-- The median is less affected by extreme values compared to the mean.
+- Inserting a value **above** the median pushes it up (or leaves it unchanged).
+- Inserting a value **below** the median pushes it down (or leaves it unchanged).
+- The median is far less disturbed by extreme outliers compared to the mean.
 
 ---
 
 ## Finding the Unknown
 
-### Example 1: Missing Value
+### Problem 1: A Missing Value
 
-A coach notes the weights of 10 wrestlers with a mean of 39.2 kg. The known weights are 42, 40, 39, 33, 48, 38, 42, 35, 32, and one unknown weight w.
+A sports teacher records the heights (in cm) of 8 students and finds the mean height is 143.5 cm. Seven recorded heights are 140, 148, 135, 150, 138, 145, and 142. The eighth height, h, is unknown.
 
-Sum of all weights = Mean x Number of players
-- 349 + w = 39.2 x 10 = 392
-- w = 392 - 349 = **43 kg**
+Sum of all heights = Mean x Count of students
+- (140 + 148 + 135 + 150 + 138 + 145 + 142) + h = 143.5 x 8 = 1148
+- 998 + h = 1148
+- h = **150 cm**
 
-### Example 2: Incorrect Value
+### Problem 2: A Wrongly Noted Value
 
-A farmer calculates the average coconut harvest per tree as 25.6, with 15 trees. One tree's count was recorded 3 more than the actual.
+A shopkeeper calculates her average daily sale as Rs 2,400 over 12 days. Later she realises one day's sale was noted as Rs 200 more than the actual amount.
 
-- Total from incorrect data = 25.6 x 15 = 384
-- Correct total = 384 - 3 = 381
-- Correct average = 381/15 = **25.4**
+- Incorrect total = 2400 x 12 = Rs 28,800
+- Correct total = 28,800 - 200 = Rs 28,600
+- Correct average = 28,600/12 = **Rs 2,383.33** (approx.)
 
 ---
 
 ## Mean and Median with Frequencies
 
-When data has repeated values, we use a **frequency table**.
+When certain values repeat, a **frequency table** streamlines the calculation.
 
-**Example:** Family size data:
+**Illustration:** Number of books read by students in a month:
 
-| Family Size | Frequency |
+| Books Read | Frequency |
 |---|---|
-| 3 | 3 |
-| 4 | 11 |
-| 5 | 9 |
-| 6 | 7 |
+| 2 | 5 |
+| 3 | 8 |
+| 4 | 12 |
+| 5 | 5 |
 
-**Mean = (3x3 + 4x11 + 5x9 + 6x7) / (3 + 11 + 9 + 7)**
-= (9 + 44 + 45 + 42) / 30
-= 140/30 = **4.67**
+**Mean = (2x5 + 3x8 + 4x12 + 5x5) / (5 + 8 + 12 + 5)**
+= (10 + 24 + 48 + 25) / 30
+= 107/30 = **3.57** (approx.)
 
-The mean does NOT have to be one of the values in the data. Here, 4.67 is between 4 and 5.
+The mean need not coincide with any actual data value. Here, 3.57 falls between 3 and 4, even though no student read 3.57 books.
 
 ---
 
 ## 5.3 Line Graphs
 
-A **line graph** uses points connected by lines to show how data changes over time or another variable.
+A **line graph** displays data points connected by straight lines, making it easy to spot how a quantity evolves over time or another variable.
 
-### Reading Line Graphs
+### Interpreting Line Graphs
 
-- The **horizontal axis (x-axis)** usually shows time or categories.
-- The **vertical axis (y-axis)** shows the measured quantity.
-- Points are plotted for each data pair and connected by straight lines.
-- An **upward slope** means the value is increasing; a **downward slope** means it is decreasing.
+- The **horizontal axis (x-axis)** typically represents time or ordered categories.
+- The **vertical axis (y-axis)** represents the measured quantity.
+- Each data pair is plotted as a dot, and adjacent dots are linked by straight lines.
+- A **rising segment** signals growth; a **falling segment** signals decline.
 
-### Example: Temperature Over a Day
+### Illustration: Rainfall Across Months
 
-| Time | 6 AM | 9 AM | 12 PM | 3 PM | 6 PM | 9 PM |
+| Month | Jan | Feb | Mar | Apr | May | Jun |
 |---|---|---|---|---|---|---|
-| Temperature (degrees C) | 18 | 22 | 28 | 32 | 26 | 20 |
+| Rainfall (mm) | 12 | 8 | 15 | 35 | 70 | 140 |
 
 ![Line graph showing temperature over a day with time on x-axis and temperature on y-axis, rising to a peak at 3 PM then falling](line-graph-temperature-day.png)
 
-Plot these points on a graph with time on the x-axis and temperature on the y-axis. Connect with lines. You can see the temperature rising in the morning, peaking at 3 PM, and dropping in the evening.
+Plot these values with months on the x-axis and rainfall on the y-axis. The graph reveals a gradual rise from January to March, followed by a steep climb from April to June as the monsoon approaches.
 
-### Drawing Line Graphs
+### Constructing Line Graphs
 
 **Steps:**
-1. Draw the axes and label them.
-2. Choose an appropriate scale for each axis.
-3. Plot each data point.
-4. Connect the points with straight lines.
-5. Give the graph a title.
+1. Draw and label both axes.
+2. Pick a suitable scale for each axis.
+3. Plot every data point as a dot.
+4. Connect neighbouring dots with straight lines.
+5. Add a descriptive title to the graph.
 
-> **Key idea:** Line graphs are excellent for showing **trends** -- how a quantity changes over time. The steepness of the line shows how fast the change is happening.
+> **Key idea:** Line graphs excel at revealing **trends** -- how a quantity grows, shrinks, or stays flat over time. The steepness of each segment indicates how rapidly the change is occurring.
 
 ---
 
 ## 5.4 Interpreting Data
 
-When looking at data and graphs, ask yourself:
-- What **trend** does the data show? (increasing, decreasing, stable)
-- Are there any **outliers** (unusual values)?
-- What might be the **reason** behind the pattern?
-- Can we **predict** future values based on the trend?
+When analysing data and graphs, ask yourself:
+- What **trend** does the data display? (growing, shrinking, steady)
+- Are there any **outliers** (values that stand out as unusual)?
+- What might **explain** the observed pattern?
+- Can the trend help us **forecast** future values?
 
-### Comparing Data Sets
+### Comparing Two Data Sets
 
-When comparing two data sets, look at both the **mean** (or median) and the **spread** of the data. Two sets can have the same mean but very different distributions.
+When comparing two groups, examine both the **average** (mean or median) and the **spread** of the data. Two groups can share the same average yet differ wildly in consistency.
 
-**Example:** Two cricket players both average 40 runs per match. But Player A scores between 30 and 50 consistently, while Player B sometimes scores 0 and sometimes 80. Their means are equal, but Player A is more consistent.
+**Illustration:** Two kabaddi players both average 8 raid points per match over a tournament. But Player A scores between 6 and 10 every match, while Player B swings between 2 and 14. Their averages are identical, but Player A is far more dependable.
 
 ---
 
 ## Summary
 
-- The **mean** is the balancing point of data -- total distances are equal on both sides.
-- Adding a constant k to all values increases the mean by k. Multiplying all values by k multiplies the mean by k.
-- The **median** is the middle value in sorted data and is less sensitive to extreme values than the mean.
-- **Frequency tables** help calculate the mean when values repeat: multiply each value by its frequency, add up, and divide by total frequency.
-- **Line graphs** show how data changes over time using connected points.
-- When interpreting data, look for trends, outliers, and possible explanations.
+- The **mean** is the balance point of a data set -- the total gap below equals the total gap above.
+- Adding a constant k to every value shifts the mean by k. Multiplying every value by k scales the mean by k.
+- The **median** is the central value in sorted data and resists distortion by extreme outliers more than the mean does.
+- **Frequency tables** simplify mean calculations when values repeat: multiply each value by its frequency, sum up, and divide by total frequency.
+- **Line graphs** track how a quantity changes over time by connecting plotted points.
+- When interpreting data, look for trends, outliers, and plausible explanations.

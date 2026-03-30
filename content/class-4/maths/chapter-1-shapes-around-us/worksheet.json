@@ -1,38 +1,166 @@
 {
   "topics": [
     {
-      "topic": "3D Shapes: Prisms, Pyramids, and Euler's Formula",
+      "topic": "3D Shapes — Prisms and Pyramids",
       "easy": [
-        { "id": "ch1-t1-e1", "type": "mcq", "question": "A prism has two identical flat faces called bases. What shape are the side faces of every prism?", "options": ["Triangles", "Circles", "Rectangles", "Hexagons"], "answer": "Rectangles", "explanation": "All prisms have rectangular faces on their sides. The shape of the base tells us the name of the prism." },
-        { "id": "ch1-t1-e2", "type": "fill", "question": "A cube has ______ faces, ______ edges, and ______ corners.", "answer": "6, 12, 8", "explanation": "A cube has 6 square faces, 12 edges, and 8 corners (vertices)." },
-        { "id": "ch1-t1-e3", "type": "mcq", "question": "All the side faces of a pyramid are which shape?", "options": ["Squares", "Rectangles", "Triangles", "Circles"], "answer": "Triangles", "explanation": "A pyramid has one base and all other faces are triangles that meet at a single point at the top." },
-        { "id": "ch1-t1-e4", "type": "fill", "question": "Euler's formula says F + V - E = ______.", "answer": "2", "explanation": "Euler's formula states that Faces + Vertices - Edges = 2 for any 3D shape." }
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "A prism always has rectangular faces on its sides. What determines the name of a prism?",
+          "options": [
+            "Its height",
+            "The shape of its base",
+            "The number of edges",
+            "Its colour"
+          ],
+          "answer": "The shape of its base",
+          "explanation": "The base shape gives the prism its name. A prism with a triangular base is a triangular prism, one with a hexagonal base is a hexagonal prism."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "A cuboid has ______ faces, ______ edges, and ______ corners.",
+          "answer": "6, 12, 8",
+          "explanation": "A cuboid (rectangular prism) has 6 rectangular faces, 12 edges where faces meet, and 8 corners where edges meet."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "mcq",
+          "question": "What shape are all the side faces of a pyramid?",
+          "options": [
+            "Rectangles",
+            "Squares",
+            "Triangles",
+            "Circles"
+          ],
+          "answer": "Triangles",
+          "explanation": "A pyramid has one flat base and all its other faces are triangles that slope upward and meet at a single tip on top."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "fill",
+          "question": "Euler's formula states that F + V - E = ______.",
+          "answer": "2",
+          "explanation": "Euler's formula says Faces + Vertices (corners) - Edges = 2. This works for every 3D shape with flat faces."
+        }
       ],
       "medium": [
-        { "id": "ch1-t1-m1", "type": "short", "question": "A square pyramid has 5 faces and 5 corners. Use Euler's formula (F + V - E = 2) to find the number of edges.", "answer": "F + V - E = 2, so 5 + 5 - E = 2, which means E = 8. A square pyramid has 8 edges.", "explanation": "Substitute F=5 and V=5 into the formula: 10 - E = 2, so E = 8." },
-        { "id": "ch1-t1-m2", "type": "mcq", "question": "Which 3D shape has a triangular base and 4 faces in total?", "options": ["Triangular prism", "Square pyramid", "Triangular pyramid", "Cube"], "answer": "Triangular pyramid", "explanation": "A triangular pyramid has a triangle as its base and 3 more triangular faces, totalling 4 faces." },
-        { "id": "ch1-t1-m3", "type": "short", "question": "What is a net of a 3D shape? Describe the net of a cube.", "answer": "A net is what you get when you unfold a 3D shape and lay it flat. A cube's net has 6 connected squares arranged in a cross-like pattern.", "explanation": "When you unfold a cube, you see 6 squares connected to each other. Folding the net along the lines recreates the cube." }
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "A triangular prism has 5 faces and 6 corners. Use Euler's formula (F + V - E = 2) to find the number of edges.",
+          "answer": "F + V - E = 2, so 5 + 6 - E = 2, which means 11 - E = 2, so E = 9. A triangular prism has 9 edges.",
+          "explanation": "Plug F=5 and V=6 into the formula: 5 + 6 - E = 2, so E = 9."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "mcq",
+          "question": "Which 3D shape has exactly 4 triangular faces and no rectangular face at all?",
+          "options": [
+            "Triangular prism",
+            "Square pyramid",
+            "Triangular pyramid",
+            "Cuboid"
+          ],
+          "answer": "Triangular pyramid",
+          "explanation": "A triangular pyramid has a triangular base plus 3 more triangular sides = 4 triangular faces total, and no rectangles."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "short",
+          "question": "What is a net? Describe what the net of a square pyramid looks like.",
+          "answer": "A net is the flat pattern you get when you cut open a 3D shape and lay it flat. A square pyramid's net has 1 square in the middle with 4 triangles attached to each side of the square.",
+          "explanation": "When unfolded, the square base sits at the centre and the four triangular faces fan out from its sides."
+        }
       ],
       "hard": [
-        { "id": "ch1-t1-h1", "type": "long", "question": "The Qutub Minar looks like a tall cylinder. How is a cylinder different from a prism? Why is a cylinder not usually called a prism even though it has two identical bases?", "answer": "A prism has flat rectangular side faces and a polygon (shape with straight sides) as its base. A cylinder has a curved side face and circles as its bases. Since circles are not polygons (they have no straight sides), a cylinder is not a prism.", "explanation": "Prisms require flat polygonal bases and flat rectangular sides. Cylinders have curved surfaces and circular bases." }
-      ]
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "The minarets of the Charminar look like tall cylinders. How is a cylinder different from a prism? Why can a cylinder not be called a prism even though it has two identical bases?",
+          "answer": "A prism needs flat polygonal bases (shapes with straight sides like triangles, squares, hexagons) and flat rectangular sides. A cylinder has circular bases and a curved side surface. Since a circle has no straight sides and is not a polygon, a cylinder does not qualify as a prism.",
+          "explanation": "Prisms require polygonal bases and flat rectangular side faces. Cylinders have circles (not polygons) as bases and a curved side."
+        }
+      ],
+      "name": "Shapes in Buildings"
     },
     {
-      "topic": "Angles and Circles",
+      "topic": "When Lines Meet — Angles",
       "easy": [
-        { "id": "ch1-t2-e1", "type": "mcq", "question": "What is an angle that is exactly like the corner of a book called?", "options": ["Acute angle", "Right angle", "Obtuse angle", "Straight angle"], "answer": "Right angle", "explanation": "A right angle is exactly 90 degrees, like the corner of a book or window." },
-        { "id": "ch1-t2-e2", "type": "fill", "question": "An angle smaller than a right angle is called an ______ angle.", "answer": "acute", "explanation": "An acute angle is smaller than a right angle (less than 90 degrees)." },
-        { "id": "ch1-t2-e3", "type": "mcq", "question": "If the radius of a circle is 5 cm, what is the diameter?", "options": ["2.5 cm", "5 cm", "10 cm", "15 cm"], "answer": "10 cm", "explanation": "Diameter = 2 x Radius = 2 x 5 = 10 cm." },
-        { "id": "ch1-t2-e4", "type": "fill", "question": "The distance from the centre of a circle to its edge is called the ______.", "answer": "radius", "explanation": "The radius is the distance from the centre to any point on the circle's boundary." }
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "An angle that looks exactly like the corner of your notebook is called a:",
+          "options": [
+            "Acute angle",
+            "Right angle",
+            "Obtuse angle",
+            "Straight angle"
+          ],
+          "answer": "Right angle",
+          "explanation": "A right angle measures exactly 90 degrees — the same as the corner of a notebook, a window, or a chalkboard."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "fill",
+          "question": "An angle wider than a right angle is called an ______ angle.",
+          "answer": "obtuse",
+          "explanation": "An obtuse angle is wider (bigger) than 90 degrees, like a reclining chair leaning back."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "mcq",
+          "question": "If a bangle has a radius of 3 cm, what is its diameter?",
+          "options": [
+            "1.5 cm",
+            "3 cm",
+            "6 cm",
+            "9 cm"
+          ],
+          "answer": "6 cm",
+          "explanation": "Diameter = 2 x Radius = 2 x 3 = 6 cm."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "fill",
+          "question": "The distance from the centre of a circle to its curved edge is called the ______.",
+          "answer": "radius",
+          "explanation": "The radius is the distance from the centre point to any point on the circle."
+        }
       ],
       "medium": [
-        { "id": "ch1-t2-m1", "type": "short", "question": "Why is a triangle the most rigid shape? What happens when you push a rectangle made of straws?", "answer": "A triangle does not change shape when pushed because its angles are fixed. A rectangle made of straws can be pushed into a slanted shape (parallelogram) because its angles can change.", "explanation": "Triangles keep their form, which is why they are used in bridges and buildings for strength." },
-        { "id": "ch1-t2-m2", "type": "short", "question": "A truck wheel has a radius of 50 cm and a bicycle wheel has a radius of 30 cm. What is the diameter of each? Which wheel is bigger?", "answer": "Truck wheel diameter = 2 x 50 = 100 cm. Bicycle wheel diameter = 2 x 30 = 60 cm. The truck wheel is bigger.", "explanation": "Diameter = 2 x Radius. The truck wheel has a larger radius, so it is bigger." }
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Why do engineers use triangles in bridges and electric towers instead of rectangles?",
+          "answer": "A triangle is a rigid shape — it does not change form when pushed or pulled. A rectangle, on the other hand, can tilt into a slanted shape (parallelogram) when force is applied. So triangles provide much stronger support.",
+          "explanation": "Triangles maintain their shape under pressure, making structures safer and more stable."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "A bullock cart wheel has a radius of 40 cm and a bicycle wheel has a radius of 25 cm. What is the diameter of each wheel? Which one is larger?",
+          "answer": "Bullock cart wheel diameter = 2 x 40 = 80 cm. Bicycle wheel diameter = 2 x 25 = 50 cm. The bullock cart wheel is larger.",
+          "explanation": "Diameter = 2 x Radius. The wheel with the bigger radius has the bigger diameter."
+        }
       ],
       "hard": [
-        { "id": "ch1-t2-h1", "type": "long", "question": "A pentagon has 5 sides and 5 angles. A hexagon has 6 sides. How many angles does a hexagon have? If you make a hexagonal prism, how many faces, edges, and corners will it have? Verify using Euler's formula.", "answer": "A hexagon has 6 angles (number of sides = number of angles). A hexagonal prism has 8 faces (2 hexagons + 6 rectangles), 18 edges, and 12 corners. Euler's check: 8 + 12 - 18 = 2. Correct!", "explanation": "A hexagonal prism has 2 hexagonal bases + 6 rectangular side faces = 8 faces. Each hexagon has 6 edges, plus 6 vertical edges = 18. Each hexagon has 6 corners = 12 total." },
-        { "id": "ch1-t2-h2", "type": "long", "question": "Look around your home and find one example each of an acute angle, a right angle, and an obtuse angle. Describe where you found each.", "answer": "Examples: Acute angle - the tip of a pair of scissors when slightly open. Right angle - the corner of a table or book. Obtuse angle - a reclining chair leaning back, or a fully opened door against the wall.", "explanation": "Acute angles are less than 90 degrees, right angles are exactly 90 degrees, and obtuse angles are greater than 90 degrees." }
-      ]
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "A hexagon has 6 sides and 6 angles. If you make a hexagonal prism, how many faces, edges, and corners will it have? Verify your answer using Euler's formula.",
+          "answer": "A hexagonal prism has 8 faces (2 hexagonal bases + 6 rectangular side faces), 18 edges, and 12 corners. Euler's check: F + V - E = 8 + 12 - 18 = 2. Correct!",
+          "explanation": "2 hexagonal bases + 6 side rectangles = 8 faces. Each hexagon has 6 edges (top and bottom = 12) plus 6 vertical edges = 18. Each hexagon has 6 corners = 12 total."
+        },
+        {
+          "id": "ch1-t2-h2",
+          "type": "long",
+          "question": "Look around your home and find one example of an acute angle, one right angle, and one obtuse angle. Describe exactly where you spotted each.",
+          "answer": "Examples: Acute angle — the pointed tip of a samosa or the narrow opening of partly-closed scissors. Right angle — the corner of a dining table or a book. Obtuse angle — a door opened wide against a wall, or a reclining chair tilted backwards.",
+          "explanation": "Acute angles are narrower than 90 degrees, right angles are exactly 90 degrees, and obtuse angles are wider than 90 degrees."
+        }
+      ],
+      "name": "3D Shapes — Prisms and Pyramids"
     }
   ]
 }

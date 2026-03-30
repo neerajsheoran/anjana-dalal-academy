@@ -1,112 +1,110 @@
 ---
-title: Chapter 3 Pair of Linear Equations in Two Variables
+title: "Solving Pairs of Linear Equations"
+description: "Solve pairs of linear equations using graphical, substitution, elimination, and cross-multiplication methods."
+order: 3
 ---
 
 ## Introduction
 
-Imagine this: Akhila goes to a village fair. She wants to ride the Giant Wheel and play Hoopla. The number of times she played Hoopla is half the number of rides on the Giant Wheel. Each ride costs Rs 3 and each game of Hoopla costs Rs 4. She spent Rs 20 in total. How do you find out how many rides she took and how many games she played?
+Picture this: Ramesh visits a neighbourhood bakery. He buys some samosas and some pastries. The number of pastries is three less than the number of samosas. Each samosa costs Rs 15 and each pastry costs Rs 30. His total bill is Rs 180. Can you figure out how many of each he bought?
 
-You can set up two equations:
-- y = x/2 (Hoopla games are half the rides)
-- 3x + 4y = 20 (total cost)
+Setting up the equations:
+- y = x - 3 (pastries are three less than samosas)
+- 15x + 30y = 180 (total bill)
 
-This is a **pair of linear equations in two variables**. In this chapter, we learn how to solve such pairs using graphical and algebraic methods.
+This is a **pair of linear equations in two variables**. In this chapter, we learn to solve such pairs using graphical and algebraic techniques.
 
-### What Is a Pair of Linear Equations?
+### What Exactly Is a Pair of Linear Equations?
 
-The general form of a pair of linear equations in two variables x and y is:
+Two equations of the form:
 
 - **a1x + b1y + c1 = 0**
 - **a2x + b2y + c2 = 0**
 
-where a1, a2, b1, b2, c1, c2 are real numbers such that a1^2 + b1^2 is not zero and a2^2 + b2^2 is not zero.
+where a1, a2, b1, b2, c1, c2 are real numbers with a1^2 + b1^2 not zero and a2^2 + b2^2 not zero.
 
-A **solution** of such a pair is a pair of values (x, y) that satisfies both equations simultaneously.
+A **solution** is a pair of values (x, y) that makes both equations true at the same time.
 
 ---
 
 ## Graphical Method of Solution
 
-When you draw the graphs of two linear equations on the same coordinate plane, each equation represents a **straight line**. Three cases can arise:
+Each linear equation in two variables represents a **straight line** on the coordinate plane. Drawing both lines on the same axes reveals three possible outcomes:
 
-![Three cases of pair of linear equations: intersecting lines (one solution), coincident lines (infinite solutions), and parallel lines (no solution)](linear-equations-three-cases-graph.png)
+### Case 1: The Lines Cross at One Point
+- The system has a **unique solution** (the intersection point)
+- The system is called **consistent**
 
-### Case 1: The Lines Intersect at One Point
-- The pair has a **unique solution** (the coordinates of the intersection point)
-- The pair is called **consistent**
+### Case 2: The Lines Lie on Top of Each Other (Coincident)
+- The system has **infinitely many solutions**
+- Every point on the shared line works
+- The system is **dependent** (and consistent)
 
-### Case 2: The Lines Coincide (are the same line)
-- The pair has **infinitely many solutions**
-- Every point on the line is a solution
-- The pair is called **dependent** (and consistent)
+### Case 3: The Lines Run Parallel
+- The system has **no solution** at all
+- The system is called **inconsistent**
 
-### Case 3: The Lines Are Parallel
-- The pair has **no solution**
-- The pair is called **inconsistent**
-
-> **Key idea:** The nature of the solution depends entirely on how the two lines relate to each other -- do they cross, overlap, or run parallel?
+> **Key idea:** Whether a system has one solution, infinitely many, or none depends entirely on how the two lines relate geometrically -- do they cross, overlap, or never meet?
 
 ---
 
-## Comparing Ratios to Determine the Type of Solution
+## Comparing Ratios to Predict the Solution Type
 
-For the pair of equations a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0, you can determine the type of solution **without drawing graphs** by comparing the ratios of coefficients:
+For equations a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0, you can classify the system **without plotting** by examining the ratios:
 
-| Condition | Lines | Solution |
-|-----------|-------|----------|
-| a1/a2 is not equal to b1/b2 | Intersecting | Unique solution (consistent) |
-| a1/a2 = b1/b2 = c1/c2 | Coincident | Infinitely many solutions (dependent, consistent) |
-| a1/a2 = b1/b2 but not equal to c1/c2 | Parallel | No solution (inconsistent) |
+| Condition | Geometry | Solution Type |
+|-----------|----------|---------------|
+| a1/a2 is not equal to b1/b2 | Intersecting lines | Unique solution (consistent) |
+| a1/a2 = b1/b2 = c1/c2 | Coincident lines | Infinitely many solutions (dependent) |
+| a1/a2 = b1/b2 but not equal to c1/c2 | Parallel lines | No solution (inconsistent) |
 
 ### Worked Example
 
-Check whether the following pairs of equations are consistent, inconsistent, or dependent:
+Classify these pairs of equations:
 
-**(i) x - 2y = 0 and 3x + 4y - 20 = 0**
+**(i) 2x - 5y = 0 and 3x + 7y - 31 = 0**
 
-- a1/a2 = 1/3, b1/b2 = -2/4 = -1/2
-- Since 1/3 is not equal to -1/2, the lines **intersect** -- unique solution (consistent)
+- a1/a2 = 2/3, b1/b2 = -5/7
+- Since 2/3 is not equal to -5/7, the lines **intersect** -- unique solution (consistent)
 
-**(ii) 2x + 3y - 9 = 0 and 4x + 6y - 18 = 0**
+**(ii) 3x + 4y - 12 = 0 and 6x + 8y - 24 = 0**
 
-- a1/a2 = 2/4 = 1/2, b1/b2 = 3/6 = 1/2, c1/c2 = -9/-18 = 1/2
-- Since all ratios are equal, the lines **coincide** -- infinitely many solutions (dependent)
+- a1/a2 = 3/6 = 1/2, b1/b2 = 4/8 = 1/2, c1/c2 = -12/-24 = 1/2
+- All ratios equal, so the lines **coincide** -- infinitely many solutions (dependent)
 
-**(iii) x + 2y - 4 = 0 and 2x + 4y - 12 = 0**
+**(iii) 2x + 5y - 10 = 0 and 4x + 10y - 30 = 0**
 
-- a1/a2 = 1/2, b1/b2 = 2/4 = 1/2, c1/c2 = -4/-12 = 1/3
-- Since a1/a2 = b1/b2 but not equal to c1/c2, the lines are **parallel** -- no solution (inconsistent)
+- a1/a2 = 2/4 = 1/2, b1/b2 = 5/10 = 1/2, c1/c2 = -10/-30 = 1/3
+- First two ratios match but differ from the third, so the lines are **parallel** -- no solution (inconsistent)
 
 ---
 
 ## Solving Graphically -- Step by Step
 
-To solve a pair of linear equations graphically:
+To find the solution graphically:
 
-1. **Find at least two solutions** (points) for each equation by substituting values of x
+1. **Compute at least two points** for each equation by plugging in values of x
 2. **Plot these points** on graph paper
-3. **Draw straight lines** through the points for each equation
-4. **Read the coordinates** of the point of intersection -- that is your solution
+3. **Draw straight lines** through each pair of points
+4. **Read the intersection coordinates** -- that is your answer
 
 ### Worked Example
 
-Solve graphically: x + 3y = 6 and 2x - 3y = 12
+Solve graphically: 2x + y = 8 and x - y = 1
 
-For x + 3y = 6: when x = 0, y = 2; when x = 6, y = 0
+For 2x + y = 8: when x = 0, y = 8; when x = 4, y = 0
 
-For 2x - 3y = 12: when x = 0, y = -4; when x = 3, y = -2
+For x - y = 1: when x = 0, y = -1; when x = 1, y = 0
 
-Plotting these points and drawing the lines, they intersect at **(6, 0)**.
+Plotting and drawing the lines, they meet at **(3, 2)**.
 
-![Graph showing two straight lines x + 3y = 6 and 2x - 3y = 12 intersecting at the point (6, 0)](graphical-solution-intersection-point.png)
-
-So the solution is **x = 6, y = 0**.
+So the solution is **x = 3, y = 2**.
 
 ---
 
 ## Algebraic Methods of Solving
 
-The graphical method is not always practical, especially when the solution involves fractions or decimals. Algebraic methods are more accurate. We study two main methods:
+Graphs are elegant but not always practical -- especially when solutions involve awkward fractions or decimals. Algebraic methods give exact answers. We focus on two:
 
 1. **Substitution Method**
 2. **Elimination Method**
@@ -117,184 +115,184 @@ The graphical method is not always practical, especially when the solution invol
 
 ### Steps
 
-**Step 1:** From either equation, express one variable in terms of the other (pick the simpler equation).
+**Step 1:** Pick the simpler equation and express one variable in terms of the other.
 
-**Step 2:** Substitute this expression into the other equation. This gives a single equation in one variable.
+**Step 2:** Plug this expression into the second equation. You now have a single equation in one variable.
 
-**Step 3:** Solve this equation to find the value of that variable.
+**Step 3:** Solve for that variable.
 
-**Step 4:** Substitute back to find the value of the other variable.
+**Step 4:** Substitute back to find the remaining variable.
 
 ### Worked Example 1
 
-Solve: 7x - 15y = 2 ... (1) and x + 2y = 3 ... (2)
+Solve: 5x - 3y = 1 ... (1) and x + 4y = 11 ... (2)
 
-**Step 1:** From equation (2): x = 3 - 2y
+**Step 1:** From equation (2): x = 11 - 4y
 
 **Step 2:** Substitute in equation (1):
-7(3 - 2y) - 15y = 2
-21 - 14y - 15y = 2
--29y = -19
-**y = 19/29**
+5(11 - 4y) - 3y = 1
+55 - 20y - 3y = 1
+-23y = -54
+**y = 54/23**
 
 **Step 3:** Substitute back:
-x = 3 - 2(19/29) = 3 - 38/29 = (87 - 38)/29 = **49/29**
+x = 11 - 4(54/23) = 11 - 216/23 = (253 - 216)/23 = **37/23**
 
-**Solution: x = 49/29, y = 19/29**
+**Solution: x = 37/23, y = 54/23**
 
 ### Worked Example 2: Age Problem
 
-Aftab tells his daughter, "Seven years ago, I was seven times as old as you were then. Also, three years from now, I shall be three times as old as you will be." Find their present ages.
+Deepa tells her son, "Five years ago, I was five times your age. Also, ten years from now, I will be twice your age." Find their present ages.
 
-Let Aftab's age = s years, daughter's age = t years.
+Let Deepa's age = p years, son's age = q years.
 
-**Equation 1:** s - 7 = 7(t - 7), i.e., s - 7t + 42 = 0
-**Equation 2:** s + 3 = 3(t + 3), i.e., s - 3t = 6
+**Equation 1:** p - 5 = 5(q - 5), i.e., p - 5q + 20 = 0
+**Equation 2:** p + 10 = 2(q + 10), i.e., p - 2q = 10
 
-From equation (2): s = 3t + 6
+From equation (2): p = 2q + 10
 
-Substituting in equation (1): (3t + 6) - 7t + 42 = 0
--4t + 48 = 0, so **t = 12**
+Substituting in equation (1): (2q + 10) - 5q + 20 = 0
+-3q + 30 = 0, so **q = 10**
 
-Then s = 3(12) + 6 = **42**
+Then p = 2(10) + 10 = **30**
 
-**Aftab is 42 years old and his daughter is 12 years old.**
+**Deepa is 30 years old and her son is 10 years old.**
 
 ### Special Cases in Substitution
 
 **Case 1: Infinitely many solutions**
 
-If after substitution you get a **true statement** like 18 = 18 (with no variable), the equations are dependent and have infinitely many solutions.
+If substitution produces a **universally true statement** like 24 = 24 (no variable left), the equations are dependent -- every point on the line is a solution.
 
-**Example:** 2x + 3y = 9 and 4x + 6y = 18. The second equation is just double the first. After substitution, you get 18 = 18, which is always true.
+**Example:** 3x + 5y = 15 and 6x + 10y = 30. The second is simply double the first. Substitution yields 30 = 30.
 
 **Case 2: No solution**
 
-If after substitution you get a **false statement** like -4 = 0, the equations are inconsistent and have no solution.
+If substitution yields a **false statement** like 7 = 0, the equations are inconsistent -- no solution exists.
 
-**Example:** x + 2y - 4 = 0 and 2x + 4y - 12 = 0. After substitution, you get 8 - 12 = 0, i.e., -4 = 0, which is false.
+**Example:** 2x + 3y - 6 = 0 and 4x + 6y - 18 = 0. Substitution yields 12 - 18 = 0, i.e., -6 = 0, which is impossible.
 
 ---
 
 ## Elimination Method
 
-In this method, we eliminate one variable by making its coefficients equal in both equations, then adding or subtracting.
+Here we eliminate one variable by making its coefficients match in both equations, then adding or subtracting.
 
 ### Steps
 
-**Step 1:** Multiply one or both equations by suitable numbers to make the coefficients of one variable (x or y) **numerically equal**.
+**Step 1:** Multiply one or both equations by suitable constants so that one variable has **equal coefficients** (in absolute value).
 
-**Step 2:** **Add or subtract** the equations to eliminate that variable.
+**Step 2:** **Add or subtract** the modified equations to remove that variable.
 
-**Step 3:** Solve the resulting equation in one variable.
+**Step 3:** Solve the resulting single-variable equation.
 
 **Step 4:** Substitute back to find the other variable.
 
-### Worked Example 1: Income and Expenditure
+### Worked Example 1: Savings Problem
 
-The ratio of incomes of two persons is 9:7 and the ratio of their expenditures is 4:3. Each saves Rs 2000 per month. Find their monthly incomes.
+Two friends have monthly incomes in the ratio 7:5 and monthly expenditures in the ratio 3:2. Each saves Rs 1500 per month. Find their monthly incomes.
 
-Let incomes be Rs 9x and Rs 7x, expenditures be Rs 4y and Rs 3y.
+Let incomes be Rs 7x and Rs 5x, expenditures be Rs 3y and Rs 2y.
 
-**Equation 1:** 9x - 4y = 2000
-**Equation 2:** 7x - 3y = 2000
+**Equation 1:** 7x - 3y = 1500
+**Equation 2:** 5x - 2y = 1500
 
-**Step 1:** Multiply equation (1) by 3 and equation (2) by 4:
-- 27x - 12y = 6000 ... (3)
-- 28x - 12y = 8000 ... (4)
+**Step 1:** Multiply equation (1) by 2 and equation (2) by 3:
+- 14x - 6y = 3000 ... (3)
+- 15x - 6y = 4500 ... (4)
 
 **Step 2:** Subtract (3) from (4):
-28x - 27x = 8000 - 6000
-**x = 2000**
+15x - 14x = 4500 - 3000
+**x = 1500**
 
 **Step 3:** Substitute in equation (1):
-9(2000) - 4y = 2000
-18000 - 4y = 2000
-4y = 16000
-**y = 4000**
+7(1500) - 3y = 1500
+10500 - 3y = 1500
+3y = 9000
+**y = 3000**
 
-**Monthly incomes: Rs 18,000 and Rs 14,000**
+**Monthly incomes: Rs 10,500 and Rs 7,500**
 
-**Verification:** 18000:14000 = 9:7. Expenditures: 16000:12000 = 4:3. Each saves Rs 2000. Correct!
+**Verification:** 10500:7500 = 7:5. Expenditures: 9000:6000 = 3:2. Each saves Rs 1500. Correct!
 
 ### Worked Example 2: Reversing Digits
 
-The sum of a two-digit number and the number obtained by reversing the digits is 66. If the digits differ by 2, find the number.
+The sum of a two-digit number and the number formed by swapping its digits is 110. The difference between the digits is 4. Find the number.
 
-Let the tens digit = x, units digit = y.
+Let tens digit = x, units digit = y.
 
-Original number = 10x + y. Reversed number = 10y + x.
+Original number = 10x + y. Swapped number = 10y + x.
 
-**Equation 1:** (10x + y) + (10y + x) = 66, which gives 11(x + y) = 66, so **x + y = 6**
+**Equation 1:** (10x + y) + (10y + x) = 110, giving 11(x + y) = 110, so **x + y = 10**
 
-**Equation 2:** x - y = 2 (or y - x = 2)
+**Equation 2:** x - y = 4 (or y - x = 4)
 
-**Case 1:** x + y = 6 and x - y = 2
-Adding: 2x = 8, so x = 4, y = 2. Number = **42**
+**Case 1:** x + y = 10 and x - y = 4
+Adding: 2x = 14, so x = 7, y = 3. Number = **73**
 
-**Case 2:** x + y = 6 and y - x = 2
-Adding: 2y = 8, so y = 4, x = 2. Number = **24**
+**Case 2:** x + y = 10 and y - x = 4
+Adding: 2y = 14, so y = 7, x = 3. Number = **37**
 
-Both **42 and 24** are valid answers. Verification: 42 + 24 = 66 and 4 - 2 = 2.
+Both **73 and 37** are valid. Verification: 73 + 37 = 110 and 7 - 3 = 4.
 
 ---
 
 ## Word Problems -- Setting Up Equations
 
-Here are some common types of word problems and how to set them up:
+Common problem types and how to translate them:
 
 ### Type 1: Age Problems
-- "A was n times as old as B, k years ago" becomes: (A - k) = n(B - k)
+- "M was k times as old as N, p years ago" translates to: (M - p) = k(N - p)
 
 ### Type 2: Number Problems
 - Two-digit number with tens digit x and units digit y = 10x + y
-- Reversing the digits gives: 10y + x
+- Reversing gives: 10y + x
 
 ### Type 3: Cost Problems
-- "m items of type A and n items of type B cost Rs P" becomes: ma + nb = P
+- "m items at Rs a each and n items at Rs b each cost Rs T" becomes: ma + nb = T
 
 ### Type 4: Fraction Problems
-- If the fraction is x/y, conditions like "adding 2 to numerator and denominator gives 9/11" become: (x + 2)/(y + 2) = 9/11
+- If the fraction is x/y, then "adding 3 to numerator and subtracting 1 from denominator gives 7/8" means: (x + 3)/(y - 1) = 7/8
 
 ### Type 5: Speed, Distance, Time Problems
-- Use the formula: Distance = Speed x Time
-- Upstream speed = boat speed - stream speed
-- Downstream speed = boat speed + stream speed
+- Distance = Speed x Time
+- Upstream speed = boat speed - current speed
+- Downstream speed = boat speed + current speed
 
-> **Key idea:** The trick to solving word problems is translating the English sentences into mathematical equations. Read the problem carefully, define your variables, and set up the equations step by step.
+> **Key idea:** The art of word problems lies in translating sentences into equations. Define variables clearly, set up equations systematically, and the algebra takes care of the rest.
 
 ---
 
 ## Equations Reducible to Linear Form
 
-Some equations are not linear at first glance but can be **transformed** into linear equations.
+Some equations look non-linear but can be **converted** by smart substitution.
 
-**Example:** Solve 2/x + 3/y = 13 and 5/x - 4/y = -2
+**Example:** Solve 3/x + 2/y = 9 and 7/x - 3/y = -1
 
-These are not linear in x and y. But if we substitute **u = 1/x** and **v = 1/y**, we get:
+These are not linear in x and y. But substituting **u = 1/x** and **v = 1/y** gives:
 
-- 2u + 3v = 13
-- 5u - 4v = -2
+- 3u + 2v = 9
+- 7u - 3v = -1
 
-Now solve using elimination or substitution to find u and v, then convert back to x and y.
+Solve this linear system for u and v, then recover x = 1/u and y = 1/v.
 
 ---
 
 ## Chapter Summary
 
 1. A pair of linear equations in two variables can be solved by:
-   - **Graphical method** (plotting lines and finding the intersection)
-   - **Substitution method** (express one variable in terms of the other)
-   - **Elimination method** (make coefficients equal and add/subtract)
+   - **Graphical method** (plotting and finding where lines meet)
+   - **Substitution method** (express one variable, plug into the other equation)
+   - **Elimination method** (equalise coefficients and add/subtract)
 
-2. **Graphically**, two linear equations can represent:
-   - **Intersecting lines** -- unique solution (consistent)
-   - **Coincident lines** -- infinitely many solutions (dependent, consistent)
-   - **Parallel lines** -- no solution (inconsistent)
+2. **Graphically**, two lines can be:
+   - **Intersecting** -- unique solution (consistent)
+   - **Coincident** -- infinitely many solutions (dependent, consistent)
+   - **Parallel** -- no solution (inconsistent)
 
-3. **Quick test using ratios** for a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0:
-   - a1/a2 is not equal to b1/b2 -- unique solution
+3. **Quick ratio test** for a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0:
+   - a1/a2 not equal to b1/b2 -- unique solution
    - a1/a2 = b1/b2 = c1/c2 -- infinitely many solutions
-   - a1/a2 = b1/b2 but not equal to c1/c2 -- no solution
+   - a1/a2 = b1/b2 but not c1/c2 -- no solution
 
-4. Many real-world problems involving ages, costs, digits, speeds, and fractions can be modelled as pairs of linear equations and solved using these methods.
+4. Many practical situations involving ages, costs, digits, speeds, and fractions can be modelled as pairs of linear equations and solved using these methods.

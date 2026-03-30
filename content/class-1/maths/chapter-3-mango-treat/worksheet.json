@@ -1,51 +1,228 @@
 {
   "topics": [
     {
-      "topic": "Counting 1 to 9",
+      "topic": "Counting from 1 to 9",
       "easy": [
-        { "id": "ch3-t1-e1", "type": "mcq", "question": "How many fingers are on one hand?", "options": ["3", "4", "5", "6"], "answer": "5", "explanation": "One hand has 5 fingers." },
-        { "id": "ch3-t1-e2", "type": "fill", "question": "Count: 1, 2, 3, ______, 5.", "answer": "4", "explanation": "The number after 3 is 4." },
-        { "id": "ch3-t1-e3", "type": "mcq", "question": "How many legs does a table have?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "A table has 4 legs." },
-        { "id": "ch3-t1-e4", "type": "fill", "question": "Count: 5, 6, 7, ______, 9.", "answer": "8", "explanation": "The number after 7 is 8." }
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "How many toes are on one foot?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "5",
+          "explanation": "One foot has 5 toes."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "Count: 1, 2, 3, ______, 5.",
+          "answer": "4",
+          "explanation": "The number after 3 is 4."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "How many walls does a room have?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": "4",
+          "explanation": "A room usually has 4 walls."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "fill",
+          "question": "Count: 6, 7, 8, ______, .",
+          "answer": "9",
+          "explanation": "The number after 8 is 9."
+        }
       ],
       "medium": [
-        { "id": "ch3-t1-m1", "type": "short", "question": "Fill in the missing numbers: 1, __, 3, __, 5, __, 7, __, 9.", "answer": "2, 4, 6, 8", "explanation": "Counting in order: 1, 2, 3, 4, 5, 6, 7, 8, 9." },
-        { "id": "ch3-t1-m2", "type": "mcq", "question": "Which is the BIGGEST number: 3, 7, 5, 9?", "options": ["3", "7", "5", "9"], "answer": "9", "explanation": "9 is the largest number among 3, 7, 5, and 9." }
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Fill in the missing numbers: 1, __, 3, __, 5, __, 7, __, 9.",
+          "answer": "2, 4, 6, 8",
+          "explanation": "Counting in order: 1, 2, 3, 4, 5, 6, 7, 8, 9."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "mcq",
+          "question": "Which is the BIGGEST number: 2, 8, 4, 6?",
+          "options": [
+            "2",
+            "8",
+            "4",
+            "6"
+          ],
+          "answer": "8",
+          "explanation": "8 is the largest number among 2, 8, 4, and 6."
+        }
       ],
       "hard": [
-        { "id": "ch3-t1-h1", "type": "short", "question": "Count backwards from 9 to 1. Write all the numbers.", "answer": "9, 8, 7, 6, 5, 4, 3, 2, 1", "explanation": "Counting backwards means going from the biggest to the smallest." }
-      ]
+        {
+          "id": "ch3-t1-h1",
+          "type": "short",
+          "question": "Count backwards from 9 to 1. Write all the numbers.",
+          "answer": "9, 8, 7, 6, 5, 4, 3, 2, 1",
+          "explanation": "Counting backwards means going from the biggest to the smallest."
+        }
+      ],
+      "name": "The Parrot Party"
     },
     {
-      "topic": "More, Less, and Equal",
+      "topic": "More, Less, or Equal",
       "easy": [
-        { "id": "ch3-t2-e1", "type": "mcq", "question": "Riya has 5 apples. Aman has 3 apples. Who has MORE?", "options": ["Riya", "Aman", "Both have the same", "Cannot tell"], "answer": "Riya", "explanation": "5 is more than 3, so Riya has more apples." },
-        { "id": "ch3-t2-e2", "type": "mcq", "question": "Sita has 4 flowers. Meena has 4 flowers. Their flowers are ______.", "options": ["More", "Less", "Equal", "Different"], "answer": "Equal", "explanation": "Both have 4 flowers, so they are equal." },
-        { "id": "ch3-t2-e3", "type": "fill", "question": "2 is ______ than 7. (more / less)", "answer": "less", "explanation": "2 is a smaller number than 7, so 2 is less than 7." },
-        { "id": "ch3-t2-e4", "type": "mcq", "question": "Which group has LESS: 6 bananas or 8 bananas?", "options": ["6 bananas", "8 bananas", "Both are equal", "Cannot tell"], "answer": "6 bananas", "explanation": "6 is less than 8." }
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Kavya has 6 toffees. Rohan has 4 toffees. Who has MORE?",
+          "options": [
+            "Kavya",
+            "Rohan",
+            "Both have the same",
+            "Cannot tell"
+          ],
+          "answer": "Kavya",
+          "explanation": "6 is more than 4, so Kavya has more toffees."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "mcq",
+          "question": "Isha has 5 marbles. Arjun has 5 marbles. Their marbles are ______.",
+          "options": [
+            "More",
+            "Less",
+            "Equal",
+            "Different"
+          ],
+          "answer": "Equal",
+          "explanation": "Both have 5 marbles, so they are equal."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "fill",
+          "question": "3 is ______ than 8. (more / less)",
+          "answer": "less",
+          "explanation": "3 is a smaller number than 8, so 3 is less than 8."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "mcq",
+          "question": "Which group has LESS: 5 laddus or 9 laddus?",
+          "options": [
+            "5 laddus",
+            "9 laddus",
+            "Both are equal",
+            "Cannot tell"
+          ],
+          "answer": "5 laddus",
+          "explanation": "5 is less than 9."
+        }
       ],
       "medium": [
-        { "id": "ch3-t2-m1", "type": "short", "question": "Put these numbers in order from smallest to biggest: 7, 2, 5, 1.", "answer": "1, 2, 5, 7", "explanation": "The smallest number is 1 and the biggest is 7." },
-        { "id": "ch3-t2-m2", "type": "mcq", "question": "Which number is LESS than 6?", "options": ["7", "8", "4", "9"], "answer": "4", "explanation": "4 is less than 6. The other numbers (7, 8, 9) are all more than 6." }
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Put these numbers in order from smallest to biggest: 8, 3, 6, 1.",
+          "answer": "1, 3, 6, 8",
+          "explanation": "The smallest number is 1 and the biggest is 8."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "mcq",
+          "question": "Which number is LESS than 7?",
+          "options": [
+            "8",
+            "9",
+            "5",
+            "7"
+          ],
+          "answer": "5",
+          "explanation": "5 is less than 7. The other numbers (8, 9) are more than 7, and 7 is equal to itself."
+        }
       ],
       "hard": [
-        { "id": "ch3-t2-h1", "type": "long", "question": "Aman has 3 red balls and 5 blue balls. Priya has 4 red balls and 4 blue balls. Who has more balls in total? Are their totals equal or different?", "answer": "Aman has 3 + 5 = 8 balls. Priya has 4 + 4 = 8 balls. Both have 8 balls, so their totals are equal.", "explanation": "We add each person's balls to find the total, then compare." }
-      ]
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Kavya has 4 guavas and 3 bananas. Rohan has 2 guavas and 5 bananas. Who has more fruits in total? Are their totals equal or different?",
+          "answer": "Kavya has 4 + 3 = 7 fruits. Rohan has 2 + 5 = 7 fruits. Both have 7 fruits, so their totals are equal.",
+          "explanation": "We add each person's fruits to find the total, then compare."
+        }
+      ],
+      "name": "Counting from 1 to 9"
     },
     {
-      "topic": "Counting Things Around Us",
+      "topic": "Let Us Count Things",
       "easy": [
-        { "id": "ch3-t3-e1", "type": "mcq", "question": "How many eyes do you have?", "options": ["1", "2", "3", "4"], "answer": "2", "explanation": "Every person has 2 eyes." },
-        { "id": "ch3-t3-e2", "type": "mcq", "question": "How many wheels does an auto-rickshaw have?", "options": ["2", "3", "4", "5"], "answer": "3", "explanation": "An auto-rickshaw has 3 wheels." },
-        { "id": "ch3-t3-e3", "type": "fill", "question": "A spider has ______ legs.", "answer": "8", "explanation": "A spider has 8 legs." }
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "How many noses do you have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "1",
+          "explanation": "Every person has 1 nose."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "mcq",
+          "question": "How many wheels does a bicycle have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "2",
+          "explanation": "A bicycle has 2 wheels."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "fill",
+          "question": "A beetle has ______ legs.",
+          "answer": "6",
+          "explanation": "Beetles are insects and all insects have 6 legs."
+        }
       ],
       "medium": [
-        { "id": "ch3-t3-m1", "type": "short", "question": "How many days are there in one week?", "answer": "7 days", "explanation": "There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday." },
-        { "id": "ch3-t3-m2", "type": "short", "question": "An ant has 6 legs. A spider has 8 legs. Which has more legs and by how many?", "answer": "A spider has more legs. It has 2 more legs than an ant (8 - 6 = 2).", "explanation": "We compare 8 and 6. 8 is more than 6 by 2." }
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "How many colours are there in a rainbow?",
+          "answer": "7 colours",
+          "explanation": "There are 7 colours in a rainbow: Violet, Indigo, Blue, Green, Yellow, Orange, Red."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "short",
+          "question": "A beetle has 6 legs. An octopus has 8 tentacles. Which has more and by how many?",
+          "answer": "An octopus has more. It has 2 more than a beetle (8 - 6 = 2).",
+          "explanation": "We compare 8 and 6. 8 is more than 6 by 2."
+        }
       ],
       "hard": [
-        { "id": "ch3-t3-h1", "type": "long", "question": "There are 3 mangoes and 5 bananas together. One more mango is added. Now how many mangoes are there? How many fruits are there in total?", "answer": "There are now 4 mangoes (3 + 1 = 4). Total fruits = 4 mangoes + 5 bananas = 9 fruits.", "explanation": "First we add 1 more mango to 3. Then we add all fruits together: 4 + 5 = 9." }
-      ]
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "There are 4 bananas and 3 laddus on a plate. One more laddu is added. Now how many laddus are there? How many sweets and fruits are there in total?",
+          "answer": "There are now 4 laddus (3 + 1 = 4). Total items = 4 bananas + 4 laddus = 8 items.",
+          "explanation": "First we add 1 more laddu to 3. Then we add all items together: 4 + 4 = 8."
+        }
+      ],
+      "name": "Counting with Fingers"
     }
   ]
 }

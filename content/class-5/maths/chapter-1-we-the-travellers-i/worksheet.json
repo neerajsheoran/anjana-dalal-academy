@@ -1,200 +1,243 @@
 {
   "topics": [
     {
-      "topic": "Place Value and Large Numbers",
+      "topic": "Place Value — Building Bigger Numbers",
       "easy": [
         {
           "id": "ch1-t1-e1",
           "type": "mcq",
-          "question": "What is the place value of 4 in the number 45,867?",
-          "options": ["4", "400", "4,000", "40,000"],
-          "answer": "40,000",
-          "explanation": "The digit 4 is in the Ten Thousands place, so its place value is 4 × 10,000 = 40,000."
+          "question": "What is the place value of 5 in the number 52,413?",
+          "options": [
+            "5",
+            "500",
+            "5,000",
+            "50,000"
+          ],
+          "answer": "50,000",
+          "explanation": "The digit 5 is in the Ten Thousands place, so its value is 5 x 10,000 = 50,000."
         },
         {
           "id": "ch1-t1-e2",
           "type": "fill",
-          "question": "10 Thousands = 1 ______",
-          "answer": "Ten Thousand",
-          "explanation": "When we collect 10 of one unit, we move to the next bigger unit. 10 Thousands = 1 Ten Thousand (10,000)."
+          "question": "10 Hundreds = 1 ______",
+          "answer": "Thousand",
+          "explanation": "When we collect 10 of one unit, we get the next bigger unit. 10 Hundreds = 1 Thousand (1,000)."
         },
         {
           "id": "ch1-t1-e3",
           "type": "mcq",
-          "question": "How do you read the number 13,520?",
-          "options": ["One thousand three hundred fifty-two", "Thirteen thousand five hundred twenty", "One lakh thirty-five thousand twenty", "Thirteen thousand fifty-two"],
-          "answer": "Thirteen thousand five hundred twenty",
-          "explanation": "13,520 has 1 Ten Thousand, 3 Thousands, 5 Hundreds, 2 Tens, and 0 Ones, which is read as Thirteen thousand five hundred twenty."
+          "question": "How do you read the number 14,680?",
+          "options": [
+            "One thousand four hundred sixty-eight",
+            "Fourteen thousand six hundred eighty",
+            "One lakh forty-six thousand eighty",
+            "Fourteen thousand sixty-eight"
+          ],
+          "answer": "Fourteen thousand six hundred eighty",
+          "explanation": "14,680 has 1 Ten Thousand, 4 Thousands, 6 Hundreds, 8 Tens, and 0 Ones, which reads as Fourteen thousand six hundred eighty."
         },
         {
           "id": "ch1-t1-e4",
           "type": "short",
-          "question": "Write the number name for 20,000.",
-          "answer": "Twenty thousand",
-          "explanation": "20,000 has 2 in the Ten Thousands place, so it is read as Twenty thousand."
+          "question": "Write the number name for 30,000.",
+          "answer": "Thirty thousand",
+          "explanation": "30,000 has 3 in the Ten Thousands place and zeros elsewhere, so it is read as Thirty thousand."
         },
         {
           "id": "ch1-t1-e5",
           "type": "fill",
-          "question": "The number 10,024 has ______ in the Hundreds place.",
+          "question": "The number 10,032 has ______ in the Hundreds place.",
           "answer": "0",
-          "explanation": "In 10,024: TTh=1, Th=0, H=0, T=2, O=4. The Hundreds place has 0."
+          "explanation": "In 10,032: TTh=1, Th=0, H=0, T=3, O=2. The Hundreds place has 0."
         }
       ],
       "medium": [
         {
           "id": "ch1-t1-m1",
           "type": "short",
-          "question": "Write the expanded form of 45,867.",
-          "answer": "40,000 + 5,000 + 800 + 60 + 7",
-          "explanation": "45,867 = 4 Ten Thousands + 5 Thousands + 8 Hundreds + 6 Tens + 7 Ones = 40,000 + 5,000 + 800 + 60 + 7."
+          "question": "Write the expanded form of 52,413.",
+          "answer": "50,000 + 2,000 + 400 + 10 + 3",
+          "explanation": "52,413 = 5 Ten Thousands + 2 Thousands + 4 Hundreds + 1 Ten + 3 Ones = 50,000 + 2,000 + 400 + 10 + 3."
         },
         {
           "id": "ch1-t1-m2",
           "type": "short",
-          "question": "A cricket stadium in Mumbai has a seating capacity of 33,108. Write this number in expanded form.",
-          "answer": "30,000 + 3,000 + 100 + 0 + 8",
-          "explanation": "33,108 = 3 Ten Thousands + 3 Thousands + 1 Hundred + 0 Tens + 8 Ones = 30,000 + 3,000 + 100 + 8."
+          "question": "A stadium in Ahmedabad has a seating capacity of 41,205. Write this number in expanded form.",
+          "answer": "40,000 + 1,000 + 200 + 0 + 5",
+          "explanation": "41,205 = 4 Ten Thousands + 1 Thousand + 2 Hundreds + 0 Tens + 5 Ones = 40,000 + 1,000 + 200 + 5."
         },
         {
           "id": "ch1-t1-m3",
           "type": "mcq",
-          "question": "Which number has the digit 7 in the Thousands place?",
-          "options": ["17,345", "71,345", "13,745", "13,457"],
-          "answer": "17,345",
-          "explanation": "In 17,345: TTh=1, Th=7, H=3, T=4, O=5. The digit 7 is in the Thousands place."
+          "question": "Which number has the digit 6 in the Thousands place?",
+          "options": [
+            "16,230",
+            "61,230",
+            "12,634",
+            "12,346"
+          ],
+          "answer": "16,230",
+          "explanation": "In 16,230: TTh=1, Th=6, H=2, T=3, O=0. The digit 6 is in the Thousands place."
         }
       ],
       "hard": [
         {
           "id": "ch1-t1-h1",
           "type": "long",
-          "question": "The population of town A is 48,250 and town B is 39,876. Write both numbers in expanded form and find which town has a larger population.",
-          "answer": "Town A: 48,250 = 40,000 + 8,000 + 200 + 50 + 0. Town B: 39,876 = 30,000 + 9,000 + 800 + 70 + 6. Town A has a larger population because 48,250 > 39,876 (comparing the Ten Thousands digit: 4 > 3).",
-          "explanation": "Both are 5-digit numbers, so we compare the leftmost digit (Ten Thousands). Town A has 4 and Town B has 3 in the Ten Thousands place. Since 4 > 3, Town A has the larger population."
+          "question": "The population of village A is 53,720 and village B is 47,985. Write both numbers in expanded form and find which village has a larger population.",
+          "answer": "Village A: 53,720 = 50,000 + 3,000 + 700 + 20 + 0. Village B: 47,985 = 40,000 + 7,000 + 900 + 80 + 5. Village A has a larger population because 53,720 > 47,985 (comparing the Ten Thousands digit: 5 > 4).",
+          "explanation": "Both are 5-digit numbers. Comparing the leftmost digit (Ten Thousands): Village A has 5 and Village B has 4. Since 5 > 4, Village A has the larger population."
         }
-      ]
+      ],
+      "name": "Reading and Writing Large Numbers"
     },
     {
-      "topic": "Comparing and Ordering Numbers",
+      "topic": "Comparing Numbers",
       "easy": [
         {
           "id": "ch1-t2-e1",
           "type": "mcq",
-          "question": "Which number is greater: 49,014 or 9,990?",
-          "options": ["9,990", "49,014", "Both are equal", "Cannot be determined"],
-          "answer": "49,014",
-          "explanation": "49,014 has 5 digits while 9,990 has only 4 digits. A number with more digits is always greater."
+          "question": "Which number is greater: 36,012 or 9,875?",
+          "options": [
+            "9,875",
+            "36,012",
+            "Both are equal",
+            "Cannot be determined"
+          ],
+          "answer": "36,012",
+          "explanation": "36,012 has 5 digits while 9,875 has only 4 digits. A number with more digits is always greater."
         },
         {
           "id": "ch1-t2-e2",
           "type": "fill",
-          "question": "Arranging numbers from smallest to biggest is called ______ order.",
-          "answer": "ascending",
-          "explanation": "Ascending order means arranging numbers from the smallest to the biggest (increasing order)."
+          "question": "Arranging numbers from biggest to smallest is called ______ order.",
+          "answer": "descending",
+          "explanation": "Descending order means arranging numbers from the biggest to the smallest (decreasing order)."
         },
         {
           "id": "ch1-t2-e3",
           "type": "mcq",
-          "question": "Which is the smallest number: 89,999; 90,000; 49,900; 39,999?",
-          "options": ["89,999", "90,000", "49,900", "39,999"],
-          "answer": "39,999",
-          "explanation": "All are 5-digit numbers. Comparing the Ten Thousands digits: 3 < 4 < 8 < 9. So 39,999 is the smallest."
+          "question": "Which is the smallest number: 72,500; 85,000; 45,700; 42,999?",
+          "options": [
+            "72,500",
+            "85,000",
+            "45,700",
+            "42,999"
+          ],
+          "answer": "42,999",
+          "explanation": "All are 5-digit numbers. Comparing the Ten Thousands digits: 4 < 4 but comparing further, 42,999 < 45,700. Overall order: 42,999 < 45,700 < 72,500 < 85,000."
         },
         {
           "id": "ch1-t2-e4",
           "type": "short",
-          "question": "Compare 45,867 and 45,687. Which is greater?",
-          "answer": "45,867 is greater.",
-          "explanation": "Both have same TTh (4) and Th (5). Comparing Hundreds: 8 > 6, so 45,867 > 45,687."
+          "question": "Compare 52,413 and 52,143. Which is greater?",
+          "answer": "52,413 is greater.",
+          "explanation": "Both have same TTh (5) and Th (2). Comparing Hundreds: 4 > 1, so 52,413 > 52,143."
         }
       ],
       "medium": [
         {
           "id": "ch1-t2-m1",
           "type": "short",
-          "question": "Arrange these prices of electric scooters in ascending order: 90,000; 89,999; 94,983; 49,900; 93,743; 39,999.",
-          "answer": "39,999 < 49,900 < 89,999 < 90,000 < 93,743 < 94,983",
-          "explanation": "First compare Ten Thousands digits to group: 39,999 and 49,900 (start with 3 and 4), then 89,999 and 90,000 (start with 8 and 9), then 93,743 and 94,983 (both start with 9, compare Thousands)."
+          "question": "Arrange these prices of kitchen appliances in ascending order: 85,000; 72,500; 91,300; 45,700; 88,200; 42,999.",
+          "answer": "42,999 < 45,700 < 72,500 < 85,000 < 88,200 < 91,300",
+          "explanation": "Compare Ten Thousands digits first to group them, then compare within groups. 42,999 and 45,700 (start with 4); 72,500 (start with 7); 85,000 and 88,200 (start with 8); 91,300 (starts with 9)."
         },
         {
           "id": "ch1-t2-m2",
           "type": "long",
-          "question": "Ravi says '9,990 is greater than 49,014 because 9 is greater than 4.' Is Ravi correct? Explain your answer.",
-          "answer": "No, Ravi is incorrect. 49,014 has 5 digits while 9,990 has only 4 digits. A number with more digits is always greater, regardless of the individual digits. So 49,014 > 9,990.",
-          "explanation": "When comparing numbers, always count the digits first. The number with more digits is always bigger. Only when both numbers have the same number of digits do we compare digit by digit from left to right."
+          "question": "Sahil says '8,999 is greater than 31,002 because 8 is greater than 3.' Is Sahil correct? Explain your answer.",
+          "answer": "No, Sahil is incorrect. 31,002 has 5 digits while 8,999 has only 4 digits. A number with more digits is always greater, regardless of individual digits. So 31,002 > 8,999.",
+          "explanation": "When comparing numbers, first count the digits. The number with more digits is always bigger. Only when both have the same number of digits do we compare digit by digit from left to right."
         }
       ],
       "hard": [
         {
           "id": "ch1-t2-h1",
           "type": "long",
-          "question": "Five Indian cities have these populations: Jaipur — 30,730; Udaipur — 45,100; Jodhpur — 10,980; Ajmer — 55,200; Kota — 49,900. Arrange them in descending order and find the difference between the populations of the most populated and least populated cities.",
-          "answer": "Descending order: 55,200 > 49,900 > 45,100 > 30,730 > 10,980. That is Ajmer > Kota > Udaipur > Jaipur > Jodhpur. Difference = 55,200 - 10,980 = 44,220.",
-          "explanation": "Compare Ten Thousands digits first: 5 > 4 > 4 > 3 > 1. For the two numbers starting with 4 (49,900 and 45,100), compare Thousands: 9 > 5. Then subtract: 55,200 - 10,980 = 44,220."
+          "question": "Five Indian railway stations recorded these daily passenger counts: Lucknow — 28,450; Patna — 51,300; Varanasi — 12,780; Kanpur — 62,100; Allahabad — 47,650. Arrange them in descending order and find the difference between the busiest and least busy stations.",
+          "answer": "Descending order: 62,100 > 51,300 > 47,650 > 28,450 > 12,780. That is Kanpur > Patna > Allahabad > Lucknow > Varanasi. Difference = 62,100 - 12,780 = 49,320.",
+          "explanation": "Compare Ten Thousands digits: 6 > 5 > 4 > 2 > 1. So the order is clear. Then subtract: 62,100 - 12,780 = 49,320."
         }
-      ]
+      ],
+      "name": "Place Value — Building Bigger Numbers"
     },
     {
-      "topic": "Rounding Off Numbers",
+      "topic": "Nearest Tens, Hundreds, and Thousands (Rounding Off)",
       "easy": [
         {
           "id": "ch1-t3-e1",
           "type": "mcq",
-          "question": "What is 2,346 rounded to the nearest ten?",
-          "options": ["2,340", "2,350", "2,300", "2,400"],
-          "answer": "2,350",
-          "explanation": "Look at the Ones digit (6). Since 6 >= 5, round up. The nearest ten is 2,350."
+          "question": "What is 3,674 rounded to the nearest ten?",
+          "options": [
+            "3,670",
+            "3,680",
+            "3,600",
+            "3,700"
+          ],
+          "answer": "3,670",
+          "explanation": "Look at the Ones digit (4). Since 4 < 5, round down. The nearest ten is 3,670."
         },
         {
           "id": "ch1-t3-e2",
           "type": "fill",
-          "question": "The nearest hundred of 3,176 is ______.",
-          "answer": "3,200",
-          "explanation": "Look at the Tens digit (7). Since 7 >= 5, round up from 3,100 to 3,200."
+          "question": "The nearest hundred of 4,238 is ______.",
+          "answer": "4,200",
+          "explanation": "Look at the Tens digit (3). Since 3 < 5, round down from 4,200 to 4,200."
         },
         {
           "id": "ch1-t3-e3",
           "type": "mcq",
-          "question": "What is 5,789 rounded to the nearest thousand?",
-          "options": ["5,000", "5,800", "6,000", "5,700"],
-          "answer": "6,000",
-          "explanation": "Look at the Hundreds digit (7). Since 7 >= 5, round up from 5,000 to 6,000."
+          "question": "What is 6,891 rounded to the nearest thousand?",
+          "options": [
+            "6,000",
+            "6,900",
+            "7,000",
+            "6,800"
+          ],
+          "answer": "7,000",
+          "explanation": "Look at the Hundreds digit (8). Since 8 >= 5, round up from 6,000 to 7,000."
         },
         {
           "id": "ch1-t3-e4",
           "type": "short",
-          "question": "Round 4,017 to the nearest hundred.",
-          "answer": "4,000",
-          "explanation": "Look at the Tens digit (1). Since 1 < 5, round down. The nearest hundred is 4,000."
+          "question": "Round 5,065 to the nearest hundred.",
+          "answer": "5,100",
+          "explanation": "Look at the Tens digit (6). Since 6 >= 5, round up. The nearest hundred is 5,100."
         }
       ],
       "medium": [
         {
           "id": "ch1-t3-m1",
           "type": "short",
-          "question": "A Diwali mela collected Rs 8,456 from ticket sales. Round this amount to the nearest ten, hundred, and thousand.",
-          "answer": "Nearest ten: Rs 8,460. Nearest hundred: Rs 8,500. Nearest thousand: Rs 8,000.",
-          "explanation": "Nearest ten: Ones digit is 6 (>= 5), round up to 8,460. Nearest hundred: Tens digit is 5 (>= 5), round up to 8,500. Nearest thousand: Hundreds digit is 4 (< 5), round down to 8,000."
+          "question": "A Navratri garba event collected Rs 9,374 from entry fees. Round this amount to the nearest ten, hundred, and thousand.",
+          "answer": "Nearest ten: Rs 9,370. Nearest hundred: Rs 9,400. Nearest thousand: Rs 9,000.",
+          "explanation": "Nearest ten: Ones digit is 4 (< 5), round down to 9,370. Nearest hundred: Tens digit is 7 (>= 5), round up to 9,400. Nearest thousand: Hundreds digit is 3 (< 5), round down to 9,000."
         },
         {
           "id": "ch1-t3-m2",
           "type": "mcq",
-          "question": "A school has 3,176 students. When rounded to the nearest thousand, the number becomes:",
-          "options": ["3,000", "3,100", "3,200", "4,000"],
-          "answer": "3,000",
-          "explanation": "Look at the Hundreds digit (1). Since 1 < 5, round down to 3,000."
+          "question": "A town has 4,238 households. When rounded to the nearest thousand, the number becomes:",
+          "options": [
+            "4,000",
+            "4,200",
+            "4,300",
+            "5,000"
+          ],
+          "answer": "4,000",
+          "explanation": "Look at the Hundreds digit (2). Since 2 < 5, round down to 4,000."
         }
       ],
       "hard": [
         {
           "id": "ch1-t3-h1",
           "type": "long",
-          "question": "A shopkeeper sold items worth Rs 7,548 on Monday and Rs 6,372 on Tuesday. Round each amount to the nearest hundred, then estimate the total sales. Also find the exact total and see how close your estimate is.",
-          "answer": "Rs 7,548 rounded to nearest hundred = Rs 7,500. Rs 6,372 rounded to nearest hundred = Rs 6,400. Estimated total = Rs 7,500 + Rs 6,400 = Rs 13,900. Exact total = Rs 7,548 + Rs 6,372 = Rs 13,920. The estimate is Rs 20 less than the exact total.",
-          "explanation": "For 7,548: Tens digit is 4 (< 5), round down to 7,500. For 6,372: Tens digit is 7 (>= 5), round up to 6,400. Estimated total = 13,900. Exact total = 13,920. Difference = 20."
+          "question": "A cloth merchant sold fabric worth Rs 8,637 on Saturday and Rs 5,483 on Sunday. Round each amount to the nearest hundred, then estimate the total sales. Also find the exact total and see how close your estimate is.",
+          "answer": "Rs 8,637 rounded to nearest hundred = Rs 8,600. Rs 5,483 rounded to nearest hundred = Rs 5,500. Estimated total = Rs 8,600 + Rs 5,500 = Rs 14,100. Exact total = Rs 8,637 + Rs 5,483 = Rs 14,120. The estimate is Rs 20 less than the exact total.",
+          "explanation": "For 8,637: Tens digit is 3 (< 5), round down to 8,600. For 5,483: Tens digit is 8 (>= 5), round up to 5,500. Estimated total = 14,100. Exact total = 14,120. Difference = 20."
         }
-      ]
+      ],
+      "name": "How Do We Write Numbers Beyond 9,999?"
     }
   ]
 }

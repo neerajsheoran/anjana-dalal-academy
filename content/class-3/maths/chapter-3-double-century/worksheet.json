@@ -3,36 +3,170 @@
     {
       "topic": "Understanding 100 and Making 100",
       "easy": [
-        { "id": "ch3-t1-e1", "type": "mcq", "question": "What is 99 + 1?", "options": ["98", "100", "101", "109"], "answer": "100", "explanation": "One more than 99 is 100, which is called one hundred." },
-        { "id": "ch3-t1-e2", "type": "fill", "question": "A batsman who scores 100 runs has scored a ______.", "answer": "century", "explanation": "100 is also called a century. In cricket, scoring 100 runs is a century." },
-        { "id": "ch3-t1-e3", "type": "mcq", "question": "How many bundles of 10 sticks make 100?", "options": ["5", "10", "20", "100"], "answer": "10", "explanation": "10 bundles of 10 sticks = 10 x 10 = 100 sticks." },
-        { "id": "ch3-t1-e4", "type": "fill", "question": "70 + ______ = 100", "answer": "30", "explanation": "70 + 30 = 100. You need 30 more to go from 70 to 100." }
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "What number do you get when you add 1 to 99?",
+          "options": [
+            "98",
+            "100",
+            "101",
+            "109"
+          ],
+          "answer": "100",
+          "explanation": "99 + 1 = 100, which is called one hundred."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "When a cricket player makes 100 runs, it is called a ______.",
+          "answer": "century",
+          "explanation": "Scoring 100 runs in cricket is called a century."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "How many packets of 10 toffees do you need to have 100 toffees?",
+          "options": [
+            "5",
+            "10",
+            "20",
+            "100"
+          ],
+          "answer": "10",
+          "explanation": "10 packets of 10 toffees each = 10 x 10 = 100 toffees."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "fill",
+          "question": "65 + ______ = 100",
+          "answer": "35",
+          "explanation": "65 + 35 = 100. You need 35 more to reach 100 from 65."
+        }
       ],
       "medium": [
-        { "id": "ch3-t1-m1", "type": "short", "question": "Write three different pairs of numbers that add up to 100.", "answer": "Examples: 60 + 40 = 100, 75 + 25 = 100, 55 + 45 = 100.", "explanation": "There are many pairs. Think: how far is the first number from 100? That gives the second number." },
-        { "id": "ch3-t1-m2", "type": "mcq", "question": "Which pair of numbers adds up to 100?", "options": ["45 and 65", "85 and 15", "50 and 40", "30 and 60"], "answer": "85 and 15", "explanation": "85 + 15 = 100. The other pairs add up to 110, 90, and 90." }
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Find three different pairs of numbers that add up to 100.",
+          "answer": "Examples: 72 + 28 = 100, 45 + 55 = 100, 88 + 12 = 100.",
+          "explanation": "For any number, subtract it from 100 to get its pair. There are many possible pairs."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "mcq",
+          "question": "Which pair of numbers adds up to exactly 100?",
+          "options": [
+            "55 and 55",
+            "37 and 63",
+            "48 and 62",
+            "71 and 31"
+          ],
+          "answer": "37 and 63",
+          "explanation": "37 + 63 = 100. The other pairs give 110, 110, and 102."
+        }
       ],
       "hard": [
-        { "id": "ch3-t1-h1", "type": "long", "question": "Amit collected 35 stamps on Monday and 28 stamps on Tuesday. He wants to collect 100 stamps in total by Wednesday. How many more stamps does he need on Wednesday?", "answer": "Amit has 35 + 28 = 63 stamps so far. He needs 100 - 63 = 37 more stamps on Wednesday.", "explanation": "First add what he has: 35 + 28 = 63. Then subtract from 100: 100 - 63 = 37." }
-      ]
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Priya saved 42 rupees in the first week and 31 rupees in the second week. She wants to save 100 rupees in total by the end of the third week. How much more must she save?",
+          "answer": "Priya has saved 42 + 31 = 73 rupees so far. She needs 100 - 73 = 27 more rupees in the third week.",
+          "explanation": "First add her savings: 42 + 31 = 73. Then subtract from 100: 100 - 73 = 27."
+        }
+      ],
+      "name": "The Story of Our Numbers"
     },
     {
       "topic": "Numbers from 100 to 200",
       "easy": [
-        { "id": "ch3-t2-e1", "type": "mcq", "question": "What is the number name for 115?", "options": ["One Hundred Five", "One Hundred Fifteen", "One Hundred Fifty", "Eleven Five"], "answer": "One Hundred Fifteen", "explanation": "115 = 100 + 15 = One Hundred Fifteen." },
-        { "id": "ch3-t2-e2", "type": "fill", "question": "The number 123 has ______ hundred, ______ tens, and ______ ones.", "answer": "1, 2, 3", "explanation": "123 = 1 hundred + 2 tens + 3 ones." },
-        { "id": "ch3-t2-e3", "type": "mcq", "question": "What number comes just after 149?", "options": ["148", "150", "159", "140"], "answer": "150", "explanation": "One more than 149 is 150." },
-        { "id": "ch3-t2-e4", "type": "fill", "question": "200 is called a ______ century.", "answer": "double", "explanation": "200 means two hundreds, which is called a double century." }
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "What is the number name for 118?",
+          "options": [
+            "One Hundred Eight",
+            "One Hundred Eighteen",
+            "One Hundred Eighty",
+            "Eleven Eight"
+          ],
+          "answer": "One Hundred Eighteen",
+          "explanation": "118 = 100 + 18 = One Hundred Eighteen."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "The number 137 has ______ hundred, ______ tens, and ______ ones.",
+          "answer": "1, 3, 7",
+          "explanation": "137 = 1 hundred + 3 tens + 7 ones."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "Which number comes right after 139?",
+          "options": [
+            "138",
+            "140",
+            "149",
+            "130"
+          ],
+          "answer": "140",
+          "explanation": "One more than 139 is 140."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "fill",
+          "question": "200 is called a ______ century.",
+          "answer": "double",
+          "explanation": "200 means two hundreds, which is called a double century."
+        }
       ],
       "medium": [
-        { "id": "ch3-t2-m1", "type": "short", "question": "Write the number that has 1 hundred, 4 tens, and 7 ones. What is this number in words?", "answer": "The number is 147. In words: One Hundred Forty Seven.", "explanation": "1 hundred = 100, 4 tens = 40, 7 ones = 7. So 100 + 40 + 7 = 147." },
-        { "id": "ch3-t2-m2", "type": "short", "question": "Fill in the missing numbers: 160, ___, 180, ___, 200.", "answer": "160, 170, 180, 190, 200.", "explanation": "The pattern is counting by 10s. Add 10 each time." },
-        { "id": "ch3-t2-m3", "type": "mcq", "question": "Which number is 1 less than 130?", "options": ["131", "129", "120", "139"], "answer": "129", "explanation": "1 less than 130 is 129." }
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Write the number that has 1 hundred, 5 tens, and 2 ones. What is it in words?",
+          "answer": "The number is 152. In words: One Hundred Fifty Two.",
+          "explanation": "1 hundred = 100, 5 tens = 50, 2 ones = 2. So 100 + 50 + 2 = 152."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "Fill in the gaps: 150, ___, 170, ___, 190.",
+          "answer": "150, 160, 170, 180, 190.",
+          "explanation": "The pattern adds 10 each time. 150 + 10 = 160, 170 + 10 = 180."
+        },
+        {
+          "id": "ch3-t2-m3",
+          "type": "mcq",
+          "question": "Which number is 1 less than 140?",
+          "options": [
+            "141",
+            "139",
+            "130",
+            "149"
+          ],
+          "answer": "139",
+          "explanation": "1 less than 140 is 139."
+        }
       ],
       "hard": [
-        { "id": "ch3-t2-h1", "type": "long", "question": "Start at 100 and skip count by 5. Write the first 10 numbers in this pattern. What is the 10th number? Is it more or less than 150?", "answer": "100, 105, 110, 115, 120, 125, 130, 135, 140, 145. The 10th number is 145. It is less than 150.", "explanation": "Starting at 100 and adding 5 each time: the 10th number is 100 + (9 x 5) = 100 + 45 = 145." },
-        { "id": "ch3-t2-h2", "type": "long", "question": "Sachin scored a double century (200 runs) in a cricket match. In the first half, he scored 112 runs. How many runs did he score in the second half?", "answer": "He scored 200 - 112 = 88 runs in the second half.", "explanation": "Total runs = 200. First half = 112. Second half = 200 - 112 = 88." }
-      ]
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Start at 103 and skip count by 10. Write the first 8 numbers. What is the 8th number? Is it more or less than 180?",
+          "answer": "103, 113, 123, 133, 143, 153, 163, 173. The 8th number is 173. It is less than 180.",
+          "explanation": "Starting at 103 and adding 10 each time: the 8th number is 103 + (7 x 10) = 103 + 70 = 173."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "Virat scored a double century (200 runs) in a cricket match. Before lunch, he had scored 126 runs. How many runs did he score after lunch?",
+          "answer": "He scored 200 - 126 = 74 runs after lunch.",
+          "explanation": "Total runs = 200. Before lunch = 126. After lunch = 200 - 126 = 74 runs."
+        }
+      ],
+      "name": "What is 100?"
     }
   ]
 }

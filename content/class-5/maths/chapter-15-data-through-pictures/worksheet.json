@@ -7,59 +7,75 @@
           "id": "ch15-t1-e1",
           "type": "mcq",
           "question": "What is data?",
-          "options": ["A type of graph", "Information collected about something", "A mathematical formula", "A picture on a chart"],
+          "options": [
+            "A type of graph",
+            "Information collected about something",
+            "A mathematical formula",
+            "A picture on a chart"
+          ],
           "answer": "Information collected about something",
-          "explanation": "Data is information (numbers, facts, or observations) collected about something. It needs to be organised and presented clearly to be useful."
+          "explanation": "Data is information (numbers, facts, or observations) collected about something. It needs to be organised and presented clearly to become useful."
         },
         {
           "id": "ch15-t1-e2",
           "type": "fill",
-          "question": "A table that shows how often something occurs is called a ______ table.",
+          "question": "A table that records how often something occurs is called a ______ table.",
           "answer": "frequency",
-          "explanation": "A frequency table records how many times each category or value occurs in the data."
+          "explanation": "A frequency table shows how many times each category or value appears in the collected data."
         },
         {
           "id": "ch15-t1-e3",
           "type": "short",
-          "question": "In a survey of 35 children about TV watching, 5 watch half an hour, 12 watch 1 hour, 8 watch 1.5 hours, 7 watch 2 hours, and 3 watch more than 2 hours. How many children watch more than 1 hour of TV?",
-          "answer": "18 children (8 + 7 + 3 = 18)",
-          "explanation": "Children watching more than 1 hour: 1.5 hours (8) + 2 hours (7) + more than 2 hours (3) = 18."
+          "question": "In a survey of 40 students about daily reading time, 6 read less than 15 minutes, 14 read 15-30 minutes, 10 read 30-45 minutes, 7 read 45-60 minutes, and 3 read more than 1 hour. How many students read more than 30 minutes?",
+          "answer": "20 students (10 + 7 + 3 = 20)",
+          "explanation": "Students reading more than 30 minutes: 30-45 min (10) + 45-60 min (7) + more than 1 hour (3) = 20."
         },
         {
           "id": "ch15-t1-e4",
           "type": "mcq",
-          "question": "Before you can understand data, you need to:",
-          "options": ["Draw a picture", "Collect, organise, and present it", "Memorise all the numbers", "Throw away the paper"],
+          "question": "Before data becomes useful, you need to:",
+          "options": [
+            "Draw a picture",
+            "Collect, organise, and present it",
+            "Memorise all the numbers",
+            "Ignore it"
+          ],
           "answer": "Collect, organise, and present it",
-          "explanation": "The three steps of working with data are: collect it, organise it (in tables or lists), and present it (in graphs or charts)."
+          "explanation": "The three steps for working with data: collect it, organise it (in tables or lists), and present it (in graphs or charts)."
         }
       ],
       "medium": [
         {
           "id": "ch15-t1-m1",
           "type": "short",
-          "question": "In the TV survey, how many children watch less than 2 hours? What fraction of the total (35 children) is this?",
-          "answer": "25 children watch less than 2 hours (5 + 12 + 8 = 25). Fraction = 25/35 = 5/7.",
-          "explanation": "Less than 2 hours: half hour (5) + 1 hour (12) + 1.5 hours (8) = 25. As a fraction: 25/35. Simplify by dividing both by 5: 5/7."
+          "question": "In the reading survey, how many students read less than 45 minutes? What fraction of the total (40 students) is this?",
+          "answer": "30 students read less than 45 minutes (6 + 14 + 10 = 30). Fraction = 30/40 = 3/4.",
+          "explanation": "Less than 45 minutes: less than 15 min (6) + 15-30 min (14) + 30-45 min (10) = 30. As a fraction: 30/40. Simplify by dividing both by 10: 3/4."
         },
         {
           "id": "ch15-t1-m2",
           "type": "mcq",
-          "question": "A school canteen tracks food wastage over 5 days: Monday 3 kg, Tuesday 5 kg, Wednesday 2 kg, Thursday 8 kg, Friday 4 kg. What is the total wastage?",
-          "options": ["18 kg", "20 kg", "22 kg", "24 kg"],
-          "answer": "22 kg",
-          "explanation": "3 + 5 + 2 + 8 + 4 = 22 kg of food wasted over 5 days."
+          "question": "A school tracks water usage over 5 days: Monday 150 litres, Tuesday 250 litres, Wednesday 140 litres, Thursday 200 litres, Friday 90 litres. What is the total usage?",
+          "options": [
+            "730 litres",
+            "800 litres",
+            "830 litres",
+            "850 litres"
+          ],
+          "answer": "830 litres",
+          "explanation": "150 + 250 + 140 + 200 + 90 = 830 litres of water used over 5 days."
         }
       ],
       "hard": [
         {
           "id": "ch15-t1-h1",
           "type": "long",
-          "question": "A school canteen wastes 22 kg of food in a week. If 1 kg can feed 3 children, how many children could have been fed? If the school has 200 students and each needs 250 g of food per meal, how many full meals could 22 kg of food provide?",
-          "answer": "Children that could be fed: 22 x 3 = 66 children. Full meals: 22 kg = 22,000 g. Each meal = 250 g. Number of meals = 22,000 / 250 = 88 meals.",
-          "explanation": "22 kg feeds 22 x 3 = 66 children (at 1 kg each). For 250 g meals: 22,000 g / 250 g = 88 meals."
+          "question": "A school uses 830 litres of water in a week. If each student needs about 2 litres of drinking water per day and there are 100 students, how much water goes to drinking in 5 school days? How much water is used for other purposes (cleaning, cooking, etc.)?",
+          "answer": "Drinking water: 100 students x 2 litres x 5 days = 1,000 litres. But total usage is only 830 litres, which means the 2-litre estimate may be high, or students bring their own water. If we assume 1 litre per student per day for drinking: 100 x 1 x 5 = 500 litres for drinking. Other purposes: 830 - 500 = 330 litres.",
+          "explanation": "This is an estimation problem. If drinking water = 500 litres (1 litre per student per day), then cleaning and cooking = 830 - 500 = 330 litres. Real data would need actual measurement."
         }
-      ]
+      ],
+      "name": "What Is Data?"
     },
     {
       "topic": "Pictographs",
@@ -67,67 +83,83 @@
         {
           "id": "ch15-t2-e1",
           "type": "mcq",
-          "question": "In a pictograph, if 1 icon represents 5 items and there are 6 icons for toys, how many toys are there?",
-          "options": ["5", "6", "11", "30"],
-          "answer": "30",
-          "explanation": "Number of items = number of icons x scale. 6 icons x 5 = 30 toys."
+          "question": "In a pictograph, if 1 icon represents 4 items and there are 8 icons for pencils, how many pencils are there?",
+          "options": [
+            "4",
+            "8",
+            "12",
+            "32"
+          ],
+          "answer": "32",
+          "explanation": "Number of items = number of icons x scale. 8 icons x 4 = 32 pencils."
         },
         {
           "id": "ch15-t2-e2",
           "type": "fill",
           "question": "A pictograph uses ______ to represent data.",
           "answer": "pictures (or icons)",
-          "explanation": "A pictograph uses small pictures or icons to represent data. Each picture stands for a certain number of items."
+          "explanation": "A pictograph uses small pictures or icons to show data visually. Each picture stands for a fixed number of items."
         },
         {
           "id": "ch15-t2-e3",
           "type": "short",
-          "question": "In a pictograph with scale 1 icon = 3 two-wheelers, Monday has 8 icons. How many two-wheelers passed on Monday?",
-          "answer": "24 two-wheelers (8 x 3 = 24)",
-          "explanation": "Each icon represents 3 two-wheelers. 8 icons = 8 x 3 = 24 two-wheelers."
+          "question": "In a pictograph with scale 1 icon = 4 cycles, Monday has 7 icons. How many cycles passed on Monday?",
+          "answer": "28 cycles (7 x 4 = 28)",
+          "explanation": "Each icon represents 4 cycles. 7 icons = 7 x 4 = 28 cycles."
         },
         {
           "id": "ch15-t2-e4",
           "type": "mcq",
           "question": "What does 'scale' mean in a pictograph?",
-          "options": ["The weight of the graph", "How many items each icon represents", "The size of the paper", "The colour of the icons"],
+          "options": [
+            "The weight of the graph",
+            "How many items each icon represents",
+            "The size of the paper",
+            "The colour of the icons"
+          ],
           "answer": "How many items each icon represents",
-          "explanation": "The scale tells you the value of each picture. For example, scale: 1 icon = 5 items means each picture stands for 5 items."
+          "explanation": "The scale tells you the value of each icon. For example, scale: 1 icon = 4 items means each picture stands for 4 items."
         }
       ],
       "medium": [
         {
           "id": "ch15-t2-m1",
           "type": "short",
-          "question": "In a pictograph (scale: 1 icon = 3 two-wheelers): Monday has 8 icons, Wednesday has 5 icons, Friday has 7 icons. How many more two-wheelers passed on Monday than Wednesday?",
-          "answer": "9 more. Monday: 8 x 3 = 24. Wednesday: 5 x 3 = 15. Difference: 24 - 15 = 9.",
-          "explanation": "Monday: 24, Wednesday: 15. Difference = 24 - 15 = 9 more two-wheelers."
+          "question": "In a pictograph (scale: 1 icon = 4 cycles): Monday has 7 icons, Wednesday has 4 icons, Friday has 6 icons. How many more cycles passed on Monday than Wednesday?",
+          "answer": "12 more. Monday: 7 x 4 = 28. Wednesday: 4 x 4 = 16. Difference: 28 - 16 = 12.",
+          "explanation": "Monday: 28, Wednesday: 16. Difference = 28 - 16 = 12 more cycles."
         },
         {
           "id": "ch15-t2-m2",
           "type": "mcq",
-          "question": "A toy store pictograph shows: Toys = 6 icons, Board games = 4 icons, Sports items = 5 icons (scale: 1 icon = 5 items). What is the total number of items?",
-          "options": ["15", "50", "75", "100"],
-          "answer": "75",
-          "explanation": "Toys: 6 x 5 = 30. Board games: 4 x 5 = 20. Sports items: 5 x 5 = 25. Total: 30 + 20 + 25 = 75."
+          "question": "A stationery shop pictograph shows: Pencils = 8 icons, Erasers = 5 icons, Sharpeners = 6 icons (scale: 1 icon = 4 items). What is the total number of items?",
+          "options": [
+            "19",
+            "52",
+            "76",
+            "100"
+          ],
+          "answer": "76",
+          "explanation": "Pencils: 8 x 4 = 32. Erasers: 5 x 4 = 20. Sharpeners: 6 x 4 = 24. Total: 32 + 20 + 24 = 76."
         },
         {
           "id": "ch15-t2-m3",
           "type": "short",
-          "question": "If a pictograph needs to show 35 mangoes and the scale is 1 icon = 5 mangoes, how many icons should be drawn?",
-          "answer": "7 icons (35 / 5 = 7)",
-          "explanation": "Number of icons = total items / scale = 35 / 5 = 7 icons."
+          "question": "A pictograph needs to show 48 bananas and the scale is 1 icon = 6 bananas. How many icons should be drawn?",
+          "answer": "8 icons (48 / 6 = 8)",
+          "explanation": "Number of icons = total items / scale = 48 / 6 = 8 icons."
         }
       ],
       "hard": [
         {
           "id": "ch15-t2-h1",
           "type": "long",
-          "question": "A fruit seller sold these fruits in a week: Mangoes — 45, Bananas — 90, Apples — 30, Oranges — 60. She wants to make a pictograph. (a) What scale would work best? (b) How many icons for each fruit? (c) Which fruit was sold the most and the least?",
-          "answer": "(a) Scale: 1 icon = 15 fruits works well (all numbers are divisible by 15). (b) Mangoes: 45/15 = 3 icons. Bananas: 90/15 = 6 icons. Apples: 30/15 = 2 icons. Oranges: 60/15 = 4 icons. (c) Most sold: Bananas (90). Least sold: Apples (30).",
-          "explanation": "Choose a scale that divides all values evenly. 15 divides 45, 90, 30, and 60. Icons: 3, 6, 2, 4 respectively. Bananas sold the most (90) and Apples the least (30)."
+          "question": "A vegetable seller sold these vegetables in a week: Potatoes — 60 kg, Onions — 80 kg, Tomatoes — 40 kg, Carrots — 20 kg. She wants to make a pictograph. (a) What scale would work well? (b) How many icons for each vegetable? (c) Which vegetable sold the most and the least?",
+          "answer": "(a) Scale: 1 icon = 10 kg works well (all numbers are divisible by 10). (b) Potatoes: 60/10 = 6 icons. Onions: 80/10 = 8 icons. Tomatoes: 40/10 = 4 icons. Carrots: 20/10 = 2 icons. (c) Most sold: Onions (80 kg). Least sold: Carrots (20 kg).",
+          "explanation": "Choose a scale that divides all values evenly. 10 divides 60, 80, 40, and 20. Icons: 6, 8, 4, 2 respectively. Onions sold the most (80 kg) and Carrots the least (20 kg)."
         }
-      ]
+      ],
+      "name": "Collecting and Organising Data"
     },
     {
       "topic": "Bar Graphs",
@@ -136,66 +168,82 @@
           "id": "ch15-t3-e1",
           "type": "mcq",
           "question": "In a bar graph, what does the height of each bar represent?",
-          "options": ["The colour of the category", "The name of the category", "The value or number for that category", "The number of bars"],
+          "options": [
+            "The colour of the category",
+            "The name of the category",
+            "The value or number for that category",
+            "The number of bars"
+          ],
           "answer": "The value or number for that category",
-          "explanation": "In a bar graph, the height (or length) of each bar represents the numerical value for that category."
+          "explanation": "In a bar graph, the height (or length) of each bar shows the numerical value for that category."
         },
         {
           "id": "ch15-t3-e2",
           "type": "fill",
           "question": "A bar graph has two axes: the ______ axis (bottom) shows categories and the ______ axis (side) shows values.",
           "answer": "horizontal, vertical",
-          "explanation": "The horizontal axis (bottom line) shows what is being compared (categories). The vertical axis (side line) shows the numbers/values."
+          "explanation": "The horizontal axis (bottom) displays the categories being compared. The vertical axis (side) displays the numerical values."
         },
         {
           "id": "ch15-t3-e3",
           "type": "short",
-          "question": "In Raman's daily routine bar graph: sleeping = 9 hours, school = 7 hours, studying = 2 hours, playing = 3 hours, other = 3 hours. Which activity takes the most time?",
+          "question": "In Sita's daily routine bar graph: sleeping = 9 hours, school = 6 hours, studying = 2 hours, playing and eating = 4 hours, other = 3 hours. Which activity takes the most time?",
           "answer": "Sleeping (9 hours)",
-          "explanation": "Sleeping has the highest value (9 hours), so its bar would be the tallest in the graph."
+          "explanation": "Sleeping has the highest value (9 hours), so its bar is the tallest in the graph."
         },
         {
           "id": "ch15-t3-e4",
           "type": "mcq",
           "question": "How is a bar graph different from a pictograph?",
-          "options": ["Bar graphs use icons, pictographs use bars", "Bar graphs use rectangular bars, pictographs use pictures", "They are exactly the same", "Bar graphs can only show 3 categories"],
+          "options": [
+            "Bar graphs use icons, pictographs use bars",
+            "Bar graphs use rectangular bars, pictographs use pictures",
+            "They are exactly the same",
+            "Bar graphs only show 2 categories"
+          ],
           "answer": "Bar graphs use rectangular bars, pictographs use pictures",
-          "explanation": "Bar graphs represent data with rectangular bars whose height shows the value. Pictographs use pictures/icons where each icon represents a set number of items."
+          "explanation": "Bar graphs show data with rectangular bars whose height indicates the value. Pictographs use icons where each icon represents a set number of items."
         }
       ],
       "medium": [
         {
           "id": "ch15-t3-m1",
           "type": "short",
-          "question": "A bar graph shows food wastage: Monday 3 kg, Tuesday 5 kg, Wednesday 2 kg, Thursday 8 kg, Friday 4 kg. On which day was wastage highest? On which day was it lowest? What is the difference?",
-          "answer": "Highest: Thursday (8 kg). Lowest: Wednesday (2 kg). Difference: 8 - 2 = 6 kg.",
-          "explanation": "The tallest bar (Thursday, 8 kg) shows the most wastage. The shortest bar (Wednesday, 2 kg) shows the least. Difference = 8 - 2 = 6 kg."
+          "question": "A bar graph shows water usage: Monday 150 litres, Tuesday 250 litres, Wednesday 140 litres, Thursday 200 litres, Friday 90 litres. On which day was usage highest? On which day was it lowest? What is the difference?",
+          "answer": "Highest: Tuesday (250 litres). Lowest: Friday (90 litres). Difference: 250 - 90 = 160 litres.",
+          "explanation": "The tallest bar (Tuesday, 250) shows the most usage. The shortest bar (Friday, 90) shows the least. Difference = 250 - 90 = 160 litres."
         },
         {
           "id": "ch15-t3-m2",
           "type": "mcq",
-          "question": "If you want to compare sales of 5 products easily, which is usually better?",
-          "options": ["A table", "A pictograph", "A bar graph", "Just the numbers"],
+          "question": "If you want to compare scores of 6 cricket teams at a glance, which is usually best?",
+          "options": [
+            "A plain table",
+            "A pictograph",
+            "A bar graph",
+            "Just reading out the numbers"
+          ],
           "answer": "A bar graph",
-          "explanation": "Bar graphs make comparison easy because you can see the differences in bar heights at a glance. For larger data sets with many categories, bar graphs are more practical than pictographs."
+          "explanation": "Bar graphs make visual comparison easy because differences in bar heights are immediately clear. For larger data with many categories, bar graphs are more practical than pictographs."
         },
         {
           "id": "ch15-t3-m3",
           "type": "short",
-          "question": "Raman's daily routine adds up to how many hours? Does this make sense? Why?",
-          "answer": "9 + 7 + 2 + 3 + 3 = 24 hours. Yes, this makes sense because there are exactly 24 hours in a day.",
-          "explanation": "A complete daily routine should account for all 24 hours of the day. 9 + 7 + 2 + 3 + 3 = 24 hours, which checks out."
+          "question": "Sita's daily routine adds up to how many hours? Does this make sense? Why?",
+          "answer": "9 + 6 + 2 + 4 + 3 = 24 hours. Yes, it makes sense because a day has exactly 24 hours.",
+          "explanation": "A complete daily routine should account for all 24 hours. 9 + 6 + 2 + 4 + 3 = 24 hours, which checks out perfectly."
         }
       ],
       "hard": [
         {
           "id": "ch15-t3-h1",
           "type": "long",
-          "question": "During a cricket tournament, runs scored by 5 batsmen are: Sachin — 85, Virat — 110, Rohit — 95, Dhoni — 70, Rahul — 60. (a) If you make a bar graph with scale of 1 unit = 10 runs, how tall would each bar be? (b) What is the total runs scored? (c) What is the average runs per batsman? (d) How many more runs did the highest scorer make than the lowest?",
-          "answer": "(a) Sachin: 8.5 units, Virat: 11 units, Rohit: 9.5 units, Dhoni: 7 units, Rahul: 6 units. (b) Total = 85 + 110 + 95 + 70 + 60 = 420 runs. (c) Average = 420 / 5 = 84 runs per batsman. (d) Highest (Virat, 110) - Lowest (Rahul, 60) = 50 runs difference.",
-          "explanation": "Bar heights = runs / 10. Total = 420. Average = 420/5 = 84. Difference between highest and lowest = 110 - 60 = 50 runs."
+          "question": "In a school cricket tournament, runs scored by 5 players are: Arjun — 75, Vikram — 120, Riya — 90, Deepak — 60, Sneha — 55. (a) If you make a bar graph with scale of 1 unit = 10 runs, how tall would each bar be? (b) What is the total runs scored? (c) What is the average runs per player? (d) How many more runs did the highest scorer make than the lowest?",
+          "answer": "(a) Arjun: 7.5 units, Vikram: 12 units, Riya: 9 units, Deepak: 6 units, Sneha: 5.5 units. (b) Total = 75 + 120 + 90 + 60 + 55 = 400 runs. (c) Average = 400 / 5 = 80 runs per player. (d) Highest (Vikram, 120) - Lowest (Sneha, 55) = 65 runs difference.",
+          "explanation": "Bar heights = runs / 10. Total = 400. Average = 400/5 = 80. Difference between highest and lowest = 120 - 55 = 65 runs."
         }
-      ]
+      ],
+      "name": "Pictographs"
     }
   ]
 }

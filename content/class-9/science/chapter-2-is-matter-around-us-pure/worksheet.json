@@ -7,7 +7,12 @@
           "id": "ch2-t1-e1",
           "type": "mcq",
           "question": "What is meant by a 'pure substance' in science?",
-          "options": ["A substance with no adulteration", "A substance made of a single type of particle", "Any natural substance", "A substance that is expensive"],
+          "options": [
+            "A substance with no adulteration",
+            "A substance made of a single type of particle",
+            "Any natural substance",
+            "A substance that is expensive"
+          ],
           "answer": "A substance made of a single type of particle",
           "explanation": "In science, a pure substance consists of a single type of particle with the same chemical nature throughout."
         },
@@ -22,7 +27,12 @@
           "id": "ch2-t1-e3",
           "type": "mcq",
           "question": "Which of the following is a homogeneous mixture?",
-          "options": ["Oil and water", "Soil", "Soda water", "Sand and iron filings"],
+          "options": [
+            "Oil and water",
+            "Soil",
+            "Soda water",
+            "Sand and iron filings"
+          ],
           "answer": "Soda water",
           "explanation": "Soda water is a homogeneous mixture of carbon dioxide gas dissolved in water. Oil and water, soil, and sand with iron filings are heterogeneous."
         },
@@ -30,7 +40,12 @@
           "id": "ch2-t1-e4",
           "type": "mcq",
           "question": "In a solution of sugar in water, which is the solute?",
-          "options": ["Water", "Sugar", "Both", "Neither"],
+          "options": [
+            "Water",
+            "Sugar",
+            "Both",
+            "Neither"
+          ],
           "answer": "Sugar",
           "explanation": "The solute is the component present in lesser quantity that gets dissolved. Sugar dissolves in water, so sugar is the solute and water is the solvent."
         }
@@ -76,13 +91,18 @@
       ]
     },
     {
-      "topic": "Separation Techniques",
+      "topic": "Techniques for Separating Mixtures",
       "easy": [
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
           "question": "Which technique is used to separate ammonium chloride from a mixture of ammonium chloride and sodium chloride?",
-          "options": ["Filtration", "Evaporation", "Sublimation", "Distillation"],
+          "options": [
+            "Filtration",
+            "Evaporation",
+            "Sublimation",
+            "Distillation"
+          ],
           "answer": "Sublimation",
           "explanation": "Ammonium chloride sublimes (changes directly from solid to gas) on heating, while sodium chloride does not. So sublimation can separate them."
         },
@@ -97,7 +117,12 @@
           "id": "ch2-t2-e3",
           "type": "mcq",
           "question": "Which of the following will show the Tyndall effect?",
-          "options": ["Salt solution", "Milk", "Copper sulphate solution", "Sugar solution"],
+          "options": [
+            "Salt solution",
+            "Milk",
+            "Copper sulphate solution",
+            "Sugar solution"
+          ],
           "answer": "Milk",
           "explanation": "Milk is a colloidal solution and its particles are large enough to scatter light, showing the Tyndall effect. True solutions like salt or sugar solution do not show this effect."
         },
@@ -105,7 +130,12 @@
           "id": "ch2-t2-e4",
           "type": "mcq",
           "question": "Which method is used to separate cream from milk?",
-          "options": ["Filtration", "Centrifugation", "Distillation", "Evaporation"],
+          "options": [
+            "Filtration",
+            "Centrifugation",
+            "Distillation",
+            "Evaporation"
+          ],
           "answer": "Centrifugation",
           "explanation": "Centrifugation is used to separate colloidal particles. When milk is spun rapidly, the denser milk settles and the lighter cream collects at the top."
         }
@@ -157,7 +187,12 @@
           "id": "ch2-t3-e1",
           "type": "mcq",
           "question": "Which of the following is a pure substance?",
-          "options": ["Milk", "Air", "Iron", "Soil"],
+          "options": [
+            "Milk",
+            "Air",
+            "Iron",
+            "Soil"
+          ],
           "answer": "Iron",
           "explanation": "Iron is an element and therefore a pure substance. Milk, air, and soil are all mixtures of different substances."
         },
@@ -172,7 +207,12 @@
           "id": "ch2-t3-e3",
           "type": "mcq",
           "question": "Which of the following is a chemical change?",
-          "options": ["Melting of butter", "Boiling of water", "Rusting of iron", "Dissolving salt in water"],
+          "options": [
+            "Melting of butter",
+            "Boiling of water",
+            "Rusting of iron",
+            "Dissolving salt in water"
+          ],
           "answer": "Rusting of iron",
           "explanation": "Rusting of iron is a chemical change because a new substance (iron oxide) is formed. The other options are physical changes."
         },
@@ -180,7 +220,12 @@
           "id": "ch2-t3-e4",
           "type": "mcq",
           "question": "Mercury is the only metal that is:",
-          "options": ["Solid at room temperature", "Gas at room temperature", "Liquid at room temperature", "Found in air"],
+          "options": [
+            "Solid at room temperature",
+            "Gas at room temperature",
+            "Liquid at room temperature",
+            "Found in air"
+          ],
           "answer": "Liquid at room temperature",
           "explanation": "Mercury is unique among metals as it exists in the liquid state at room temperature."
         }

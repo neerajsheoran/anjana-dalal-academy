@@ -1,79 +1,95 @@
 {
   "topics": [
     {
-      "topic": "Understanding and Equivalent Fractions",
+      "topic": "Equivalent Fractions",
       "easy": [
         {
           "id": "ch2-t1-e1",
           "type": "mcq",
-          "question": "If a roti is cut into 4 equal pieces, what fraction is each piece?",
-          "options": ["1/2", "1/3", "1/4", "1/8"],
-          "answer": "1/4",
-          "explanation": "When something is divided into 4 equal parts, each part is one-fourth or 1/4."
+          "question": "If a chapati is cut into 6 equal pieces, what fraction is each piece?",
+          "options": [
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/8"
+          ],
+          "answer": "1/6",
+          "explanation": "When something is divided into 6 equal parts, each part is one-sixth or 1/6."
         },
         {
           "id": "ch2-t1-e2",
           "type": "fill",
-          "question": "In the fraction 3/5, the number 3 is called the ______ and 5 is called the ______.",
+          "question": "In the fraction 4/7, the number 4 is called the ______ and 7 is called the ______.",
           "answer": "numerator, denominator",
-          "explanation": "The top number (numerator) tells how many parts you have, and the bottom number (denominator) tells how many equal parts the whole is divided into."
+          "explanation": "The top number (numerator) shows how many parts you have, and the bottom number (denominator) shows how many equal parts the whole is split into."
         },
         {
           "id": "ch2-t1-e3",
           "type": "mcq",
-          "question": "Which fraction is equivalent to 1/2?",
-          "options": ["2/3", "3/6", "1/4", "2/5"],
-          "answer": "3/6",
-          "explanation": "1/2 = 3/6 because if you multiply both the numerator and denominator of 1/2 by 3, you get 3/6."
+          "question": "Which fraction is equivalent to 1/3?",
+          "options": [
+            "2/5",
+            "2/6",
+            "1/6",
+            "3/5"
+          ],
+          "answer": "2/6",
+          "explanation": "1/3 = 2/6 because multiplying both the numerator and denominator of 1/3 by 2 gives 2/6."
         },
         {
           "id": "ch2-t1-e4",
           "type": "short",
-          "question": "Write two fractions equivalent to 2/5.",
-          "answer": "4/10 and 6/15",
-          "explanation": "Multiply both numerator and denominator by 2: 2/5 = 4/10. Multiply by 3: 2/5 = 6/15."
+          "question": "Write two fractions equivalent to 3/4.",
+          "answer": "6/8 and 9/12",
+          "explanation": "Multiply both numerator and denominator by 2: 3/4 = 6/8. Multiply by 3: 3/4 = 9/12."
         },
         {
           "id": "ch2-t1-e5",
           "type": "fill",
-          "question": "1/3 = 2/____",
+          "question": "1/2 = 3/____",
           "answer": "6",
-          "explanation": "To get from 1 to 2 in the numerator, we multiplied by 2. So we must also multiply the denominator by 2: 3 × 2 = 6. Therefore 1/3 = 2/6."
+          "explanation": "To get from 1 to 3 in the numerator, we multiplied by 3. So multiply the denominator by 3 too: 2 x 3 = 6. Therefore 1/2 = 3/6."
         }
       ],
       "medium": [
         {
           "id": "ch2-t1-m1",
           "type": "short",
-          "question": "Rani ate 2/8 of a pizza and Meera ate 1/4 of the same pizza. Who ate more?",
-          "answer": "They ate the same amount because 2/8 = 1/4.",
-          "explanation": "2/8 can be simplified by dividing both numerator and denominator by 2: 2/8 = 1/4. So both ate the same fraction of the pizza."
+          "question": "Pooja ate 3/9 of a cake and Nisha ate 1/3 of the same cake. Who ate more?",
+          "answer": "They ate the same amount because 3/9 = 1/3.",
+          "explanation": "3/9 can be simplified by dividing both numerator and denominator by 3: 3/9 = 1/3. So both ate the same fraction of the cake."
         },
         {
           "id": "ch2-t1-m2",
           "type": "mcq",
-          "question": "Which of these is NOT equivalent to 1/2?",
-          "options": ["2/4", "3/6", "5/10", "4/6"],
-          "answer": "4/6",
-          "explanation": "2/4 = 1/2, 3/6 = 1/2, 5/10 = 1/2. But 4/6 = 2/3 (dividing both by 2), which is not equal to 1/2."
+          "question": "Which of these is NOT equivalent to 1/4?",
+          "options": [
+            "2/8",
+            "3/12",
+            "5/20",
+            "3/8"
+          ],
+          "answer": "3/8",
+          "explanation": "2/8 = 1/4, 3/12 = 1/4, 5/20 = 1/4. But 3/8 is not equal to 1/4 because 1/4 = 2/8, not 3/8."
         },
         {
           "id": "ch2-t1-m3",
           "type": "fill",
-          "question": "2/5 = ____/100",
-          "answer": "40",
-          "explanation": "To go from 5 to 100 in the denominator, multiply by 20. So multiply the numerator by 20 too: 2 × 20 = 40. Therefore 2/5 = 40/100."
+          "question": "3/5 = ____/100",
+          "answer": "60",
+          "explanation": "To go from 5 to 100 in the denominator, multiply by 20. So multiply the numerator by 20 too: 3 x 20 = 60. Therefore 3/5 = 60/100."
         }
       ],
       "hard": [
         {
           "id": "ch2-t1-h1",
           "type": "long",
-          "question": "A farmer divides his field into 12 equal parts. He plants wheat in 4 parts, rice in 6 parts, and vegetables in the rest. Write the fraction of the field used for each crop and find which two fractions together make up 1/2 of the field.",
-          "answer": "Wheat: 4/12 = 1/3 of the field. Rice: 6/12 = 1/2 of the field. Vegetables: 2/12 = 1/6 of the field. Wheat (1/3) and vegetables (1/6) together = 4/12 + 2/12 = 6/12 = 1/2 of the field.",
-          "explanation": "Wheat = 4/12 = 1/3, Rice = 6/12 = 1/2, Vegetables = 12 - 4 - 6 = 2 parts = 2/12 = 1/6. Wheat + Vegetables = 4/12 + 2/12 = 6/12 = 1/2."
+          "question": "A gardener divides his plot into 15 equal sections. He plants roses in 5 sections, marigolds in 6 sections, and tulsi in the rest. Write the fraction for each plant and find which two fractions together make up 1/3 of the plot.",
+          "answer": "Roses: 5/15 = 1/3 of the plot. Marigolds: 6/15 = 2/5 of the plot. Tulsi: 4/15 of the plot. Marigolds (6/15) and tulsi (4/15) together = 10/15 = 2/3 of the plot. Actually, roses alone = 1/3, so no two of marigolds/tulsi make 1/3. However, roses (5/15) already equals 1/3.",
+          "explanation": "Roses = 5/15 = 1/3. Marigolds = 6/15 = 2/5. Tulsi = 15 - 5 - 6 = 4 sections = 4/15. Roses alone equals 1/3 of the plot."
         }
-      ]
+      ],
+      "name": "What Are Fractions?"
     },
     {
       "topic": "Comparing Fractions",
@@ -81,120 +97,147 @@
         {
           "id": "ch2-t2-e1",
           "type": "mcq",
-          "question": "Which is greater: 3/7 or 5/7?",
-          "options": ["3/7", "5/7", "Both are equal", "Cannot compare"],
-          "answer": "5/7",
-          "explanation": "When denominators are the same, the fraction with the bigger numerator is greater. Since 5 > 3, we have 5/7 > 3/7."
+          "question": "Which is greater: 2/9 or 7/9?",
+          "options": [
+            "2/9",
+            "7/9",
+            "Both are equal",
+            "Cannot compare"
+          ],
+          "answer": "7/9",
+          "explanation": "When denominators are the same, the fraction with the bigger numerator is greater. Since 7 > 2, we have 7/9 > 2/9."
         },
         {
           "id": "ch2-t2-e2",
           "type": "fill",
           "question": "When two fractions have the same numerator, the fraction with the ______ denominator is greater.",
           "answer": "smaller",
-          "explanation": "A smaller denominator means each piece is bigger. So with the same number of pieces, the one with bigger pieces is greater."
+          "explanation": "A smaller denominator means bigger pieces. With the same number of pieces, bigger pieces means a greater total."
         },
         {
           "id": "ch2-t2-e3",
           "type": "mcq",
-          "question": "Which is greater: 3/5 or 3/8?",
-          "options": ["3/5", "3/8", "Both are equal", "Cannot compare"],
-          "answer": "3/5",
-          "explanation": "Same numerator (3). Since 5 < 8, fifths are bigger pieces than eighths. So 3/5 > 3/8."
+          "question": "Which is greater: 4/7 or 4/11?",
+          "options": [
+            "4/7",
+            "4/11",
+            "Both are equal",
+            "Cannot compare"
+          ],
+          "answer": "4/7",
+          "explanation": "Same numerator (4). Since 7 < 11, sevenths are bigger pieces than elevenths. So 4/7 > 4/11."
         },
         {
           "id": "ch2-t2-e4",
           "type": "short",
-          "question": "Sevi ate 1/3 of a chikki bar and Shami ate 2/3 of the same bar. Who ate more?",
-          "answer": "Shami ate more because 2/3 > 1/3.",
-          "explanation": "Same denominator (3). Since 2 > 1, Shami ate more: 2/3 > 1/3."
+          "question": "Anita ate 1/5 of a ladoo tray and Kavya ate 3/5 of the same tray. Who ate more?",
+          "answer": "Kavya ate more because 3/5 > 1/5.",
+          "explanation": "Same denominator (5). Since 3 > 1, Kavya ate more: 3/5 > 1/5."
         }
       ],
       "medium": [
         {
           "id": "ch2-t2-m1",
           "type": "short",
-          "question": "Compare 7/8 and 8/6 using 1 as a reference.",
-          "answer": "7/8 < 8/6. Because 7/8 < 1 (numerator < denominator) and 8/6 > 1 (numerator > denominator).",
-          "explanation": "7/8: since 7 < 8, this fraction is less than 1. 8/6: since 8 > 6, this fraction is greater than 1. A number less than 1 is always smaller than a number greater than 1."
+          "question": "Compare 5/6 and 9/7 using 1 as a reference.",
+          "answer": "5/6 < 9/7. Because 5/6 < 1 (numerator < denominator) and 9/7 > 1 (numerator > denominator).",
+          "explanation": "5/6: since 5 < 6, this fraction is less than 1. 9/7: since 9 > 7, this fraction is greater than 1. A number less than 1 is always smaller than a number greater than 1."
         },
         {
           "id": "ch2-t2-m2",
           "type": "mcq",
           "question": "Which fraction is greater than 1/2?",
-          "options": ["3/8", "2/5", "5/8", "3/7"],
-          "answer": "5/8",
-          "explanation": "Half of 8 is 4. Since 5 > 4, the fraction 5/8 is greater than 1/2. For the others: 3/8 < 1/2 (3 < 4), 2/5 < 1/2 (2 < 2.5), 3/7 < 1/2 (3 < 3.5)."
+          "options": [
+            "2/7",
+            "3/8",
+            "5/9",
+            "2/5"
+          ],
+          "answer": "5/9",
+          "explanation": "Half of 9 is 4.5. Since 5 > 4.5, the fraction 5/9 is greater than 1/2. For the others: 2/7 < 1/2 (2 < 3.5), 3/8 < 1/2 (3 < 4), 2/5 < 1/2 (2 < 2.5)."
         }
       ],
       "hard": [
         {
           "id": "ch2-t2-h1",
           "type": "long",
-          "question": "During a festival, Arun drank 4/5 of a glass of lassi and Priya drank 4/6 of the same-sized glass. Using both the 'same numerator rule' and the '1/2 reference method', determine who drank more lassi.",
-          "answer": "Arun drank more. Method 1 (same numerator): Both have numerator 4. Since 5 < 6, fifths are bigger pieces. So 4/5 > 4/6. Method 2 (1/2 reference): 4/5 > 1/2 (since 4 > 2.5) and 4/6 > 1/2 (since 4 > 3). Both are greater than 1/2, but 4/5 is closer to 1 while 4/6 = 2/3 is further from 1.",
-          "explanation": "Using the same numerator rule is more direct here. Both fractions have 4 pieces. Fifths (1/5) are bigger pieces than sixths (1/6) because the whole is cut into fewer parts. So 4 bigger pieces > 4 smaller pieces, meaning 4/5 > 4/6."
+          "question": "At a birthday party, Rohan drank 3/5 of a glass of buttermilk and Meena drank 3/8 of the same-sized glass. Using both the 'same numerator rule' and the '1/2 reference method', determine who drank more.",
+          "answer": "Rohan drank more. Method 1 (same numerator): Both have numerator 3. Since 5 < 8, fifths are bigger pieces. So 3/5 > 3/8. Method 2 (1/2 reference): 3/5 > 1/2 (since 3 > 2.5) and 3/8 < 1/2 (since 3 < 4). One is above half and the other is below, so 3/5 > 3/8.",
+          "explanation": "Using the same numerator rule is direct: both have 3 pieces, but fifths are larger than eighths, so 3/5 > 3/8."
         },
         {
           "id": "ch2-t2-h2",
           "type": "long",
-          "question": "Arrange these fractions in ascending order: 3/4, 3/8, 5/8, 1/2. Explain your reasoning.",
-          "answer": "Ascending order: 3/8 < 1/2 < 5/8 < 3/4. Reasoning: 1/2 = 4/8. Now comparing all with denominator 8: 3/8, 4/8 (=1/2), 5/8. For 3/4 = 6/8, which is the largest.",
-          "explanation": "Convert to equivalent fractions with the same denominator (8): 3/8 = 3/8, 1/2 = 4/8, 5/8 = 5/8, 3/4 = 6/8. Now compare numerators: 3 < 4 < 5 < 6, so 3/8 < 1/2 < 5/8 < 3/4."
+          "question": "Arrange these fractions in ascending order: 5/6, 2/6, 4/6, 1/2. Explain your reasoning.",
+          "answer": "Ascending order: 2/6 < 1/2 < 4/6 < 5/6. Reasoning: 1/2 = 3/6. Now comparing all with denominator 6: 2/6, 3/6 (=1/2), 4/6, 5/6. Numerators: 2 < 3 < 4 < 5.",
+          "explanation": "Convert 1/2 to sixths: 1/2 = 3/6. Now all fractions have the same denominator (6): 2/6, 3/6, 4/6, 5/6. Compare numerators: 2 < 3 < 4 < 5."
         }
-      ]
+      ],
+      "name": "Equivalent Fractions"
     },
     {
-      "topic": "Fractions Greater Than 1 and Mixed Numbers",
+      "topic": "Fractions Greater Than 1",
       "easy": [
         {
           "id": "ch2-t3-e1",
           "type": "mcq",
           "question": "Which fraction is greater than 1?",
-          "options": ["3/4", "5/5", "7/6", "2/3"],
-          "answer": "7/6",
-          "explanation": "A fraction is greater than 1 when the numerator is bigger than the denominator. In 7/6, 7 > 6, so it is greater than 1."
+          "options": [
+            "4/5",
+            "6/6",
+            "8/5",
+            "3/4"
+          ],
+          "answer": "8/5",
+          "explanation": "A fraction is greater than 1 when the numerator is bigger than the denominator. In 8/5, 8 > 5, so it is greater than 1."
         },
         {
           "id": "ch2-t3-e2",
           "type": "fill",
-          "question": "5/2 as a mixed number is ______.",
-          "answer": "2 and 1/2",
-          "explanation": "5 ÷ 2 = 2 remainder 1. So 5/2 = 2 wholes and 1/2 left over = 2 and 1/2."
+          "question": "7/3 as a mixed number is ______.",
+          "answer": "2 and 1/3",
+          "explanation": "7 divided by 3 = 2 remainder 1. So 7/3 = 2 wholes and 1/3 left over = 2 and 1/3."
         },
         {
           "id": "ch2-t3-e3",
           "type": "short",
-          "question": "Raman ate 3 halves (3/2) of a paratha. How many parathas is that?",
-          "answer": "1 and 1/2 parathas",
-          "explanation": "3/2 = 2/2 + 1/2 = 1 whole + 1/2 = 1 and 1/2 parathas."
+          "question": "Amma made dosas cut into thirds. Ravi ate 4 pieces (4/3). How many dosas is that?",
+          "answer": "1 and 1/3 dosas",
+          "explanation": "4/3 = 3/3 + 1/3 = 1 whole + 1/3 = 1 and 1/3 dosas."
         }
       ],
       "medium": [
         {
           "id": "ch2-t3-m1",
           "type": "short",
-          "question": "Dadaji ate 9 pieces of paratha, where each piece is 1/4 of a paratha. How many whole parathas did he eat?",
-          "answer": "9/4 = 2 and 1/4 parathas. He ate 2 whole parathas and 1/4 of another.",
-          "explanation": "9/4: 9 ÷ 4 = 2 remainder 1. So 9/4 = 2 wholes and 1/4 = 2 and 1/4 parathas."
+          "question": "Dadi ate 8 pieces of barfi, where each piece is 1/6 of a whole barfi. How many whole barfis did she eat?",
+          "answer": "8/6 = 1 and 2/6 = 1 and 1/3 barfis. She ate 1 whole barfi and 1/3 of another.",
+          "explanation": "8/6: 8 divided by 6 = 1 remainder 2. So 8/6 = 1 and 2/6 = 1 and 1/3 barfis."
         },
         {
           "id": "ch2-t3-m2",
           "type": "mcq",
-          "question": "If the length of an ant is 1/4 cm, what is the total length of 16 ants walking in a line?",
-          "options": ["2 cm", "4 cm", "8 cm", "16 cm"],
-          "answer": "4 cm",
-          "explanation": "16 ants × 1/4 cm each = 16/4 cm = 4 cm."
+          "question": "If a ladybug is 1/2 cm long, what is the total length of 10 ladybugs in a line?",
+          "options": [
+            "2 cm",
+            "5 cm",
+            "10 cm",
+            "20 cm"
+          ],
+          "answer": "5 cm",
+          "explanation": "10 ladybugs x 1/2 cm each = 10/2 cm = 5 cm."
         }
       ],
       "hard": [
         {
           "id": "ch2-t3-h1",
           "type": "long",
-          "question": "During a cricket match, the snack stall cuts each sandwich into 3 equal parts. Sachin buys 7 parts, Virat buys 10 parts, and Rohit buys 5 parts. Express each person's sandwiches as a mixed number and find the total number of whole sandwiches they bought together.",
-          "answer": "Sachin: 7/3 = 2 and 1/3 sandwiches. Virat: 10/3 = 3 and 1/3 sandwiches. Rohit: 5/3 = 1 and 2/3 sandwiches. Total parts = 7 + 10 + 5 = 22 parts. 22/3 = 7 and 1/3. They bought 7 whole sandwiches altogether (with 1/3 left over).",
-          "explanation": "7 ÷ 3 = 2 R1 so 7/3 = 2 and 1/3. 10 ÷ 3 = 3 R1 so 10/3 = 3 and 1/3. 5 ÷ 3 = 1 R2 so 5/3 = 1 and 2/3. Total = 22/3 = 7 and 1/3, meaning 7 complete sandwiches with 1/3 of one more."
+          "question": "At a school fair, a sweet stall cuts each gulab jamun tray into 4 equal parts. Aisha takes 5 parts, Bilal takes 9 parts, and Chitra takes 3 parts. Express each person's share as a mixed number and find the total number of whole trays they took together.",
+          "answer": "Aisha: 5/4 = 1 and 1/4 trays. Bilal: 9/4 = 2 and 1/4 trays. Chitra: 3/4 tray. Total parts = 5 + 9 + 3 = 17 parts. 17/4 = 4 and 1/4. They took 4 whole trays altogether (with 1/4 left over).",
+          "explanation": "5 / 4 = 1 R1 so 5/4 = 1 and 1/4. 9 / 4 = 2 R1 so 9/4 = 2 and 1/4. 3/4 is less than 1. Total = 17/4 = 4 and 1/4, meaning 4 complete trays with 1/4 of one more."
         }
-      ]
+      ],
+      "name": "Comparing Fractions — Same Denominator"
     }
   ]
 }

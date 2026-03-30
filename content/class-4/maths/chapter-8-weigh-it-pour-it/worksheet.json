@@ -1,39 +1,179 @@
 {
   "topics": [
     {
-      "topic": "Weight: Kilograms and Grams",
+      "topic": "Measuring Weight",
       "easy": [
-        { "id": "ch8-t1-e1", "type": "mcq", "question": "How many grams are in 1 kilogram?", "options": ["10", "100", "500", "1000"], "answer": "1000", "explanation": "1 kilogram = 1000 grams." },
-        { "id": "ch8-t1-e2", "type": "fill", "question": "Half a kilogram = ______ grams.", "answer": "500", "explanation": "1/2 kg = 1000/2 = 500 g." },
-        { "id": "ch8-t1-e3", "type": "mcq", "question": "Which unit would you use to weigh a gold ring?", "options": ["Kilograms", "Grams", "Litres", "Metres"], "answer": "Grams", "explanation": "A gold ring is very light, so grams are the right unit." },
-        { "id": "ch8-t1-e4", "type": "fill", "question": "4 packets of 250 g = ______ g = ______ kg.", "answer": "1000, 1", "explanation": "4 x 250 = 1000 g = 1 kg." }
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "How many grams make 1 kilogram?",
+          "options": [
+            "10",
+            "100",
+            "500",
+            "1000"
+          ],
+          "answer": "1000",
+          "explanation": "1 kilogram = 1000 grams."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "A quarter of a kilogram = ______ grams.",
+          "answer": "250",
+          "explanation": "1/4 kg = 1000/4 = 250 g."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which unit would you use to weigh a gold earring?",
+          "options": [
+            "Kilograms",
+            "Grams",
+            "Litres",
+            "Metres"
+          ],
+          "answer": "Grams",
+          "explanation": "A gold earring is very light, so grams are the right unit."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "fill",
+          "question": "2 packets of 500 g = ______ g = ______ kg.",
+          "answer": "1000, 1",
+          "explanation": "2 x 500 = 1000 g = 1 kg."
+        }
       ],
       "medium": [
-        { "id": "ch8-t1-m1", "type": "short", "question": "A shopkeeper needs to pack 1 kg of kaju katli. He has 250 g boxes. How many boxes does he need?", "answer": "1 kg = 1000 g. Number of boxes = 1000 / 250 = 4 boxes.", "explanation": "Divide total weight by box size: 1000 / 250 = 4 boxes." },
-        { "id": "ch8-t1-m2", "type": "short", "question": "Mirabai Chanu lifted 202 kg at the Olympics. If a bag of rice weighs 10 kg, how many bags of rice did she lift the equivalent of?", "answer": "202 / 10 = about 20 bags of rice.", "explanation": "Divide total weight by weight of one bag: 202 / 10 = 20.2, approximately 20 bags." },
-        { "id": "ch8-t1-m3", "type": "mcq", "question": "Which of these weighs about 1 kg?", "options": ["A pen", "A 1 litre water bottle (filled)", "A leaf", "A coin"], "answer": "A 1 litre water bottle (filled)", "explanation": "A filled 1 litre water bottle weighs about 1 kg." }
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "A sweet shop is packing 1 kg of barfi into 250 g boxes for Diwali. How many boxes are needed?",
+          "answer": "1 kg = 1000 g. Number of boxes = 1000 / 250 = 4 boxes.",
+          "explanation": "Divide total weight by box size: 1000 / 250 = 4 boxes."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "Meera's school bag weighs 4 kg. Her younger brother Arjun's bag weighs 2 kg 500 g. How much heavier is Meera's bag? Give your answer in grams.",
+          "answer": "Meera's bag = 4000 g. Arjun's bag = 2500 g. Difference = 4000 - 2500 = 1500 g.",
+          "explanation": "Convert both to grams first. 4 kg = 4000 g, 2 kg 500 g = 2500 g. Then subtract: 4000 - 2500 = 1500 g."
+        },
+        {
+          "id": "ch8-t1-m3",
+          "type": "mcq",
+          "question": "Which of these weighs closest to 1 kg?",
+          "options": [
+            "A pencil",
+            "A full 1 litre water bottle",
+            "A single biscuit",
+            "A rupee coin"
+          ],
+          "answer": "A full 1 litre water bottle",
+          "explanation": "A full 1 litre water bottle weighs approximately 1 kg."
+        }
       ],
       "hard": [
-        { "id": "ch8-t1-h1", "type": "long", "question": "Amma buys 5 kg of atta, 2 kg of rice, 500 g of daal, and 250 g of tea. What is the total weight in grams? What is the total weight in kilograms and grams?", "answer": "Total in grams: 5000 + 2000 + 500 + 250 = 7750 g. In kg and g: 7 kg 750 g.", "explanation": "Convert all to grams: 5 kg = 5000 g, 2 kg = 2000 g. Add all. 7750 g = 7 kg and 750 g." }
-      ]
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "Priya's mother buys 2 kg of atta, 1 kg of rice, 500 g of toor daal, 250 g of haldi, and 100 g of jeera. What is the total weight in grams? Express the total in kilograms and grams.",
+          "answer": "Total in grams: 2000 + 1000 + 500 + 250 + 100 = 3850 g. In kg and g: 3 kg 850 g.",
+          "explanation": "Convert each to grams: 2 kg = 2000 g, 1 kg = 1000 g. Add all: 2000+1000+500+250+100 = 3850 g. Since 3000 g = 3 kg, the answer is 3 kg 850 g."
+        }
+      ],
+      "name": "Measuring Weight"
     },
     {
-      "topic": "Capacity: Litres and Millilitres",
+      "topic": "Measuring Capacity",
       "easy": [
-        { "id": "ch8-t2-e1", "type": "mcq", "question": "How many millilitres are in 1 litre?", "options": ["10", "100", "500", "1000"], "answer": "1000", "explanation": "1 litre = 1000 millilitres." },
-        { "id": "ch8-t2-e2", "type": "fill", "question": "2 bottles of 500 ml = ______ ml = ______ litre.", "answer": "1000, 1", "explanation": "2 x 500 = 1000 ml = 1 litre." },
-        { "id": "ch8-t2-e3", "type": "mcq", "question": "A teaspoon holds about how many millilitres?", "options": ["1 ml", "5 ml", "50 ml", "500 ml"], "answer": "5 ml", "explanation": "A teaspoon holds about 5 ml of liquid." },
-        { "id": "ch8-t2-e4", "type": "fill", "question": "1/4 litre = ______ ml.", "answer": "250", "explanation": "1/4 of 1000 = 250 ml." }
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "How many millilitres are in 1 litre?",
+          "options": [
+            "10",
+            "100",
+            "500",
+            "1000"
+          ],
+          "answer": "1000",
+          "explanation": "1 litre = 1000 millilitres."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "4 glasses of 250 ml = ______ ml = ______ litre.",
+          "answer": "1000, 1",
+          "explanation": "4 x 250 = 1000 ml = 1 litre."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "A chai spoon holds about how many millilitres?",
+          "options": [
+            "1 ml",
+            "5 ml",
+            "50 ml",
+            "500 ml"
+          ],
+          "answer": "5 ml",
+          "explanation": "A chai spoon (teaspoon) holds about 5 ml of liquid."
+        },
+        {
+          "id": "ch8-t2-e4",
+          "type": "fill",
+          "question": "Half a litre = ______ ml.",
+          "answer": "500",
+          "explanation": "1/2 of 1000 = 500 ml."
+        }
       ],
       "medium": [
-        { "id": "ch8-t2-m1", "type": "short", "question": "Mr Krishna sells perfumed oil. A customer wants 1 litre in 200 ml bottles. How many bottles does he need?", "answer": "1000 / 200 = 5 bottles.", "explanation": "Divide 1000 ml by 200 ml per bottle = 5 bottles." },
-        { "id": "ch8-t2-m2", "type": "short", "question": "A family drinks 2 litres of milk every day. How many 500 ml packets do they need for one week?", "answer": "Per day: 2 litres = 4 packets of 500 ml. Per week: 4 x 7 = 28 packets.", "explanation": "2 litres = 2000 ml = 4 x 500 ml. For 7 days: 4 x 7 = 28 packets." },
-        { "id": "ch8-t2-m3", "type": "mcq", "question": "Which uses more water: bathing (about 30 litres) or washing clothes (about 50 litres)?", "options": ["Bathing", "Washing clothes", "Both use the same", "Cannot tell"], "answer": "Washing clothes", "explanation": "Washing clothes uses about 50 litres, which is more than bathing (about 30 litres)." }
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Sunita Aunty is packing 1 litre of homemade pickle into 250 ml jars. How many jars does she need?",
+          "answer": "1000 / 250 = 4 jars.",
+          "explanation": "Divide 1000 ml by 250 ml per jar = 4 jars."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "The Sharma family drinks 1 litre of milk every day. They buy 500 ml packets. How many packets do they need for one week?",
+          "answer": "Per day: 1 litre = 2 packets of 500 ml. Per week: 2 x 7 = 14 packets.",
+          "explanation": "1 litre = 1000 ml = 2 x 500 ml. For 7 days: 2 x 7 = 14 packets."
+        },
+        {
+          "id": "ch8-t2-m3",
+          "type": "mcq",
+          "question": "Which uses more water: a bucket bath (about 20 litres) or running a washing machine (about 60 litres)?",
+          "options": [
+            "Bucket bath",
+            "Washing machine",
+            "Both use the same",
+            "Cannot tell"
+          ],
+          "answer": "Washing machine",
+          "explanation": "A washing machine uses about 60 litres, which is more than a bucket bath (about 20 litres)."
+        }
       ],
       "hard": [
-        { "id": "ch8-t2-h1", "type": "long", "question": "A tap drips 10 ml every minute. How much water is wasted in 1 hour? In 1 day (24 hours)? Express your answer in litres.", "answer": "Per hour: 10 x 60 = 600 ml. Per day: 600 x 24 = 14400 ml = 14 litres 400 ml. That is a lot of water wasted!", "explanation": "60 minutes x 10 ml = 600 ml per hour. 24 hours x 600 ml = 14400 ml = 14.4 litres per day." },
-        { "id": "ch8-t2-h2", "type": "long", "question": "A doctor prescribes 5 ml of cough syrup 3 times a day for 5 days. How many ml of syrup is needed in total? If the bottle contains 100 ml, will one bottle be enough?", "answer": "Per day: 5 x 3 = 15 ml. For 5 days: 15 x 5 = 75 ml. The bottle has 100 ml, so yes, one bottle is enough. She will have 100 - 75 = 25 ml left.", "explanation": "Daily dose = 5 x 3 = 15 ml. Total = 15 x 5 = 75 ml. 75 < 100, so one bottle is sufficient." }
-      ]
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "A leaking tap drips 10 ml every minute. How much water is wasted in 1 hour? In 1 full day (24 hours)? Write your answers in litres and millilitres.",
+          "answer": "Per hour: 10 x 60 = 600 ml. Per day: 600 x 24 = 14400 ml = 14 litres 400 ml. That is a huge waste!",
+          "explanation": "60 minutes x 10 ml = 600 ml per hour. 24 hours x 600 ml = 14400 ml = 14 litres and 400 ml."
+        },
+        {
+          "id": "ch8-t2-h2",
+          "type": "long",
+          "question": "A doctor tells Rohan to take 5 ml of medicine three times a day for one week (7 days). How many ml does he need in total? If the bottle holds 120 ml, will one bottle be enough? How much will be left over?",
+          "answer": "Per day: 5 x 3 = 15 ml. For 7 days: 15 x 7 = 105 ml. The bottle has 120 ml, so yes, one bottle is enough. Left over: 120 - 105 = 15 ml.",
+          "explanation": "Daily dose = 5 x 3 = 15 ml. Total = 15 x 7 = 105 ml. 105 < 120, so one bottle is enough with 15 ml remaining."
+        }
+      ],
+      "name": "Estimating Weight"
     }
   ]
 }

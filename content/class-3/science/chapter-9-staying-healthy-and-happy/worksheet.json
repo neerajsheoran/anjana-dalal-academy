@@ -1,205 +1,257 @@
 {
   "topics": [
     {
-      "topic": "Cleanliness and Healthy Habits",
+      "topic": "Keeping Our Body Clean",
       "easy": [
         {
           "id": "ch9-t1-e1",
           "type": "mcq",
           "question": "How many times a day should we brush our teeth?",
-          "options": ["Once", "Twice", "Three times", "Four times"],
+          "options": [
+            "Once",
+            "Twice",
+            "Three times",
+            "Only when they hurt"
+          ],
           "answer": "Twice",
-          "explanation": "We should brush our teeth twice a day -- after waking up and before going to bed."
+          "explanation": "We should brush our teeth twice a day -- once after waking up and once before going to sleep -- to prevent cavities and bad breath."
         },
         {
           "id": "ch9-t1-e2",
           "type": "fill",
-          "question": "The old Indian practice of cleaning teeth using neem or babool twigs is called ______.",
+          "question": "The ancient Indian practice of cleaning teeth with neem or babool twigs is called ______.",
           "answer": "datun",
-          "explanation": "Datun is the traditional Indian practice of using twigs of neem, karanj, or babool trees to clean teeth."
+          "explanation": "Datun is the thousands-of-years-old Indian practice of using twigs of neem, babool, or karanj trees to clean teeth and gums."
         },
         {
           "id": "ch9-t1-e3",
           "type": "mcq",
           "question": "When should we wash our hands with soap?",
-          "options": ["Only in the morning", "Before eating, after using the toilet, and after coming home", "Only before sleeping", "Only when they look dirty"],
-          "answer": "Before eating, after using the toilet, and after coming home",
-          "explanation": "We should wash our hands with soap before eating, after using the toilet, and after coming home from outside."
+          "options": [
+            "Only before sleeping",
+            "Before every meal, after using the toilet, and after playing outside",
+            "Only when they look dirty",
+            "Only in the morning"
+          ],
+          "answer": "Before every meal, after using the toilet, and after playing outside",
+          "explanation": "We should wash hands with soap at many points during the day -- before eating, after the toilet, after playing, and after touching pets."
         },
         {
           "id": "ch9-t1-e4",
           "type": "short",
           "question": "How many hours of sleep does a child need every night?",
-          "answer": "A child needs at least 8 hours of sleep every night.",
-          "explanation": "Getting at least 8 hours of sleep every night helps our body and mind rest and grow."
+          "answer": "A child needs at least 8 to 10 hours of sleep every night to help the body and brain recharge.",
+          "explanation": "Good sleep helps our body grow, repairs tired muscles, and lets our brain sort and store everything we learned during the day."
         },
         {
           "id": "ch9-t1-e5",
           "type": "mcq",
-          "question": "Which natural product was used to wash hair in the old days?",
-          "options": ["Shampoo", "Soap", "Reetha and shikakai", "Oil"],
-          "answer": "Reetha and shikakai",
-          "explanation": "In the old days, people used reetha (soapnut) and shikakai to wash their hair. These are natural products."
+          "question": "Which natural ingredient was traditionally used to wash hair in India?",
+          "options": [
+            "Toothpaste",
+            "Reetha (soapnut) and shikakai",
+            "Cooking oil",
+            "Salt water"
+          ],
+          "answer": "Reetha (soapnut) and shikakai",
+          "explanation": "Reetha makes foam like shampoo when rubbed in water. Along with shikakai and amla, it was used for centuries to wash and nourish hair."
         }
       ],
       "medium": [
         {
           "id": "ch9-t1-m1",
           "type": "short",
-          "question": "Name three traditional cleaning methods used in India.",
-          "answer": "Neem and babool twigs (datun) for cleaning teeth, reetha and shikakai for washing hair, and besan with haldi for cleaning the body.",
-          "explanation": "Indians have used natural cleaning methods for thousands of years using plants and natural ingredients."
+          "question": "Name three natural cleaning methods used in India for different parts of the body.",
+          "answer": "Neem or babool twigs (datun) for cleaning teeth, reetha and shikakai for washing hair, and besan with haldi for cleaning skin.",
+          "explanation": "For thousands of years, Indians used natural ingredients from plants for personal hygiene. Many of these are still used in villages today."
         },
         {
           "id": "ch9-t1-m2",
           "type": "mcq",
           "question": "How do elephants clean themselves?",
-          "options": ["They lick their body", "They spray water on themselves with their trunk", "They shake their body", "They roll in mud"],
-          "answer": "They spray water on themselves with their trunk",
-          "explanation": "Elephants spray water on themselves with their trunk to clean themselves."
+          "options": [
+            "They lick their body",
+            "They suck up water in their trunk and spray it on their body",
+            "They roll in sand",
+            "They shake their body"
+          ],
+          "answer": "They suck up water in their trunk and spray it on their body",
+          "explanation": "Elephants use their trunk like a shower -- they suck up water and spray it all over themselves. It is their own personal bath!"
         },
         {
           "id": "ch9-t1-m3",
           "type": "fill",
-          "question": "Cats lick their ______ to keep it clean.",
+          "question": "Cats spend a lot of time licking their paws and ______ to keep clean.",
           "answer": "fur",
-          "explanation": "Cats lick their fur to keep it clean. Animals also like to stay clean, just like us."
+          "explanation": "Cats are very clean animals. They lick their paws and fur regularly as their way of grooming and staying clean."
         }
       ],
       "hard": [
         {
           "id": "ch9-t1-h1",
           "type": "long",
-          "question": "Describe a healthy daily routine for a Class 3 student. Include at least five important activities.",
-          "answer": "A healthy daily routine for a Class 3 student should include: 1) Brush teeth twice a day -- after waking up and before bed. 2) Take a shower every day to keep the body clean. 3) Wash hands with soap before eating, after using the toilet, and after coming home. 4) Eat three healthy meals a day with fruits and vegetables. 5) Drink 6 to 8 glasses of water. 6) Play outside for at least 1 hour. 7) Sleep at least 8 hours every night. 8) Rinse mouth after every meal.",
-          "explanation": "Following a good routine every day keeps both our body and mind healthy and happy."
+          "question": "Describe a healthy daily routine for a Class 3 student. Include at least six important habits.",
+          "answer": "A healthy daily routine includes: 1) Brush teeth twice -- after waking up and before sleeping. 2) Take a bath every day with soap and water. 3) Wash hands with soap before meals, after using the toilet, and after playing outside. 4) Eat three nutritious meals and two healthy snacks, including fruits and vegetables. 5) Drink 6 to 8 glasses of water throughout the day. 6) Play outdoors for at least one hour. 7) Sleep 8 to 10 hours every night. 8) Rinse mouth after every meal. Following these habits every day makes our body like a strong fort that germs cannot easily attack.",
+          "explanation": "A consistent daily routine of cleanliness, good food, exercise, and sleep is the foundation of a healthy, happy life."
         },
         {
           "id": "ch9-t1-h2",
           "type": "long",
-          "question": "How did people in India clean themselves in the old days? Compare traditional and modern cleaning methods.",
-          "answer": "In the old days, Indians used many natural things for cleaning. For teeth, they used neem and babool twigs (datun). For hair, they used reetha (soapnut) and shikakai. For body, they used besan (gram flour) and haldi (turmeric). For clothes, they used soapnut water. For home floors, they used cow dung paste. Today, we use toothbrushes and toothpaste for teeth, shampoo for hair, soap for body, and detergent for clothes. The traditional methods were natural and eco-friendly.",
-          "explanation": "Traditional Indian cleaning methods used natural ingredients from plants. Many of these methods are still used today and are better for the environment."
+          "question": "How did people in India keep themselves clean before modern soaps and shampoos? Compare old and new methods.",
+          "answer": "Before modern products, Indians used natural ingredients for cleaning. For teeth, they used neem and babool twigs (datun), salt, and charcoal powder. Today we use toothbrushes and toothpaste. For hair, they used reetha (soapnut), shikakai, and amla powder. Today we use shampoo. For skin, they used besan (gram flour) with haldi and malai. Today we use soap. For clothes, they used reetha water. Today we use detergent. For floors, they used cow dung paste mixed with mud, which also kept insects away. Today we use floor cleaners. The traditional methods were all natural, eco-friendly, and worked very well.",
+          "explanation": "Ancient Indian cleaning methods used plants and natural ingredients. Many of these traditions continue in villages and are now being rediscovered for being chemical-free."
         }
-      ]
+      ],
+      "name": "Keeping Our Body Clean"
     },
     {
-      "topic": "Exercise and Outdoor Games",
+      "topic": "Running, Jumping, and Playing",
       "easy": [
         {
           "id": "ch9-t2-e1",
           "type": "mcq",
-          "question": "What happens to our body after running fast?",
-          "options": ["Nothing changes", "We breathe faster and start sweating", "We feel sleepy", "We stop breathing"],
-          "answer": "We breathe faster and start sweating",
-          "explanation": "After running fast, we breathe faster, our cheeks turn red, and we start sweating. This happens because exercise makes our heart work harder."
+          "question": "What happens to our heart when we run fast?",
+          "options": [
+            "It stops beating",
+            "It beats faster and pumps blood quickly",
+            "Nothing happens",
+            "It slows down"
+          ],
+          "answer": "It beats faster and pumps blood quickly",
+          "explanation": "When we run, our heart beats faster to pump more blood to our muscles. This is exercise for the heart and makes it stronger over time."
         },
         {
           "id": "ch9-t2-e2",
           "type": "fill",
-          "question": "Exercise keeps our heart strong, our muscles healthy, and our ______ sharp.",
-          "answer": "mind",
-          "explanation": "Exercise is very good for our body. It keeps our heart strong, muscles healthy, and mind sharp."
+          "question": "Exercise makes our heart strong, our lungs breathe deeper, and our ______ work harder.",
+          "answer": "muscles",
+          "explanation": "Exercise strengthens our heart, improves our lung capacity, and makes our muscles stronger and more flexible."
         },
         {
           "id": "ch9-t2-e3",
           "type": "mcq",
-          "question": "Which of these is an Indian outdoor game?",
-          "options": ["Chess", "Kabaddi", "Carrom", "Ludo"],
-          "answer": "Kabaddi",
-          "explanation": "Kabaddi is a popular Indian outdoor game where you tag players while holding your breath."
+          "question": "Which of these is a traditional Indian outdoor game?",
+          "options": [
+            "Chess",
+            "Kho-Kho",
+            "Carrom",
+            "Sudoku"
+          ],
+          "answer": "Kho-Kho",
+          "explanation": "Kho-Kho is a traditional Indian outdoor game where one team chases and the other dodges. It involves a lot of running and is very exciting."
         },
         {
           "id": "ch9-t2-e4",
           "type": "short",
-          "question": "Name three ways to exercise and stay fit.",
-          "answer": "Running and jumping, skipping rope, and playing outdoor games are ways to exercise and stay fit.",
-          "explanation": "We can exercise through running, jumping, skipping rope, playing outdoor games, climbing stairs, walking, cycling, and doing yoga."
+          "question": "Name three fun ways to exercise every day.",
+          "answer": "Playing catch-catch or tag with friends, skipping with a rope, and cycling around the colony are fun ways to exercise.",
+          "explanation": "Exercise can be fun! Skipping, cycling, dancing, yoga, climbing monkey bars, and playing outdoor games all count as exercise."
         }
       ],
       "medium": [
         {
           "id": "ch9-t2-m1",
           "type": "short",
-          "question": "Why is exercise important for our body? What does it do for our heart?",
-          "answer": "Exercise is important because it keeps our heart strong, muscles healthy, and mind sharp. When we exercise, our heart works harder and becomes stronger. It also helps our body stay fit and full of energy.",
-          "explanation": "Exercise makes our heart pump faster and stronger. Regular exercise keeps us healthy, happy, and full of energy."
+          "question": "Why is exercise important for our body? What happens inside our body when we exercise?",
+          "answer": "Exercise makes our heart pump faster, our lungs breathe deeper, and our muscles work harder. Over time, this makes our heart stronger, lungs more powerful, and muscles more flexible. Exercise also makes us feel happy and full of energy.",
+          "explanation": "The fast heartbeat, heavy breathing, and sweating during exercise are all signs that our body is getting stronger."
         },
         {
           "id": "ch9-t2-m2",
           "type": "mcq",
-          "question": "Which is a safe place to play?",
-          "options": ["A busy road", "A park", "A construction site", "A roof without railings"],
-          "answer": "A park",
-          "explanation": "A park is a safe place to play because it has open space with no traffic. Busy roads, construction sites, and roofs without railings are unsafe."
+          "question": "Which of these is a safe place to play?",
+          "options": [
+            "A busy main road",
+            "A park or garden",
+            "An open terrace without railing",
+            "Near a construction site"
+          ],
+          "answer": "A park or garden",
+          "explanation": "Parks, gardens, school playgrounds, and building compounds are safe places with open space and no moving vehicles."
         },
         {
           "id": "ch9-t2-m3",
           "type": "fill",
-          "question": "In the game of Kho-Kho, players ______ and tag other players.",
-          "answer": "chase",
-          "explanation": "In Kho-Kho, players chase and tag other players. It is a fun outdoor game that involves a lot of running."
+          "question": "In Lagori (Pittu), players knock down a pile of ______ with a ball and then rebuild it.",
+          "answer": "stones",
+          "explanation": "Lagori (also called Pittu) is a fun Indian game where one team throws a ball to knock down a pile of flat stones while the other team tries to rebuild it."
         }
       ],
       "hard": [
         {
           "id": "ch9-t2-h1",
           "type": "long",
-          "question": "Why should we always play in safe places? Give examples of safe and unsafe places to play.",
-          "answer": "We should always play in safe places to avoid getting hurt. Safe places to play include parks (open space with no traffic), school grounds (meant for children to play), and home gardens. Unsafe places include busy roads (moving vehicles can hurt us), roofs without railings (we could fall off), and construction sites (heavy materials and machines can be dangerous). We should always check if a place is safe before playing there.",
-          "explanation": "Playing in safe places protects us from accidents and injuries. We should always choose open spaces away from traffic and construction."
+          "question": "Why should we always play in safe places? Give examples of safe and unsafe places with reasons.",
+          "answer": "We should play in safe places to protect ourselves from accidents. Safe places include parks and gardens (open area with no vehicles), school playgrounds (designed for children with teachers nearby), and building compounds (familiar area with neighbours around). Unsafe places include busy main roads (fast-moving cars and buses can hit us), open terraces without railings (risk of falling from height), construction sites (falling bricks, sharp objects, and heavy machines), and ponds or rivers without adults (risk of drowning). We should always check if a place is safe before starting to play.",
+          "explanation": "Choosing safe places to play prevents accidents and injuries. Open spaces away from traffic and heights are the best spots."
         }
-      ]
+      ],
+      "name": "Good Habits for Every Day"
     },
     {
-      "topic": "Staying Safe and Tracking Health",
+      "topic": "Being Smart Around Strangers",
       "easy": [
         {
           "id": "ch9-t3-e1",
           "type": "mcq",
-          "question": "What should you do if a stranger offers you sweets?",
-          "options": ["Take them happily", "Say thank you and eat them", "Say 'No, thank you' and walk away", "Share them with friends"],
+          "question": "What should you do if a stranger offers you a chocolate at the park?",
+          "options": [
+            "Take it and say thank you",
+            "Eat it immediately",
+            "Say 'No, thank you' and walk away",
+            "Share it with your friend"
+          ],
           "answer": "Say 'No, thank you' and walk away",
-          "explanation": "We should never take sweets or gifts from strangers. We should politely say 'No, thank you' and walk away."
+          "explanation": "We should never accept food, sweets, or gifts from strangers. Politely say no and move to a trusted adult."
         },
         {
           "id": "ch9-t3-e2",
           "type": "fill",
-          "question": "Your parents can decide a secret ______ with you, and you should only go with someone who knows it.",
-          "answer": "password",
-          "explanation": "Parents can decide a secret password. Only go with someone who knows this password to stay safe."
+          "question": "You should create a secret ______ with your parents so you know if someone is truly sent by them.",
+          "answer": "code word",
+          "explanation": "A secret code word is a safety tool. Only go with someone who knows your family's code word -- if they do not know it, do not go with them."
         },
         {
           "id": "ch9-t3-e3",
           "type": "short",
-          "question": "Name two rules to stay safe from strangers.",
-          "answer": "Never take sweets or gifts from strangers. Never go with a stranger, even if they say your parents sent them.",
-          "explanation": "We should be careful around strangers and follow safety rules to protect ourselves."
+          "question": "Name two important rules to stay safe from strangers.",
+          "answer": "Never accept food, sweets, or gifts from strangers. Never go anywhere with a stranger, even if they say your parents sent them.",
+          "explanation": "Safety rules protect us from harm. We should also never get into a stranger's vehicle and always stay near trusted adults in public."
         },
         {
           "id": "ch9-t3-e4",
           "type": "mcq",
-          "question": "Too much of which activity is bad for our eyes and health?",
-          "options": ["Playing outside", "Reading books", "Screen time (TV/phone)", "Sleeping"],
-          "answer": "Screen time (TV/phone)",
-          "explanation": "Too much screen time (watching TV or using phones) is bad for our eyes and overall health."
+          "question": "Too much of which activity can hurt our eyes and posture?",
+          "options": [
+            "Playing outside",
+            "Reading",
+            "Screen time (TV/phone/tablet)",
+            "Drawing"
+          ],
+          "answer": "Screen time (TV/phone/tablet)",
+          "explanation": "Too much time watching TV or using phones and tablets can strain our eyes and cause bad posture from hunching over screens."
         }
       ],
       "medium": [
         {
           "id": "ch9-t3-m1",
           "type": "short",
-          "question": "What is a secret password and how does it help keep children safe?",
-          "answer": "A secret password is a special word that parents and children decide together. If someone comes to pick up the child, the child should only go with them if they know the password. This helps keep children safe from strangers.",
-          "explanation": "A secret password is a safety tool that helps children identify trusted adults. Only parents and the child know the password."
+          "question": "What is a secret code word and how does it help keep children safe?",
+          "answer": "A secret code word is a special word that only the child and parents know. If someone comes to pick up the child, the child asks for the code word. If the person does not know it, the child does not go with them and finds a trusted adult instead.",
+          "explanation": "A code word works like a key -- only someone the family trusts will know it. This helps children tell safe people from unsafe ones."
         },
         {
           "id": "ch9-t3-m2",
           "type": "mcq",
-          "question": "Why should we eat breakfast every day?",
-          "options": ["Because it tastes good", "It gives energy to start the day", "Because everyone eats it", "It is a rule"],
-          "answer": "It gives energy to start the day",
-          "explanation": "Eating breakfast gives us the energy we need to start our day. It helps us focus and learn better at school."
+          "question": "Why is eating breakfast every day important?",
+          "options": [
+            "Because it is a school rule",
+            "It gives us energy to start the day",
+            "Because everyone else eats it",
+            "It tastes the best"
+          ],
+          "answer": "It gives us energy to start the day",
+          "explanation": "After sleeping all night, our body needs fuel. Breakfast gives us the energy to focus, learn, and play throughout the morning."
         }
       ],
       "hard": [
@@ -207,17 +259,18 @@
           "id": "ch9-t3-h1",
           "type": "long",
           "question": "Why do both our body and mind need to stay active? Give examples of activities for each.",
-          "answer": "Both our body and mind need to stay active to be truly healthy. For the body, we should play outdoor games like cricket, kabaddi, and football, skip rope, run, and do yoga. These activities keep our heart strong and muscles healthy. For the mind, we should play games like chess, read books, solve puzzles, and learn new things. Even Harpreet's grandmother, who cannot move much, plays chess to keep her mind active. When we sleep well, eat well, and exercise regularly, both our body and mind stay healthy and happy.",
-          "explanation": "Being healthy means keeping both the body and mind active. Physical exercise keeps the body fit, while mental activities keep the mind sharp."
+          "answer": "Both body and mind need activity to stay healthy. For the body, we should play outdoor games like Kho-Kho, cricket, and kabaddi, skip rope, cycle, do yoga, and dance. These make our heart, lungs, and muscles strong. For the mind, we should play thinking games like chess, solve puzzles and sudoku, and read books. Even Neha's Nani, who cannot run due to knee pain, does gentle chair exercises for her body and plays carrom and sudoku for her mind. She says a lazy body and a lazy mind both get rusty. When we exercise both, we feel full of energy and happiness.",
+          "explanation": "True health means keeping both body and mind active. Physical games strengthen the body, while thinking games sharpen the mind."
         },
         {
           "id": "ch9-t3-h2",
           "type": "long",
-          "question": "List five important safety rules for children. Why is it important to follow them?",
-          "answer": "Five important safety rules for children are: 1) Never take sweets or gifts from strangers. 2) Never go with a stranger, even if they say your parents sent them. 3) Never get into a stranger's car. 4) Always stay with parents or a trusted adult in public places. 5) Play only in safe places like parks and school grounds, not on busy roads or rooftops. It is important to follow these rules because they protect us from danger and keep us safe from harm.",
-          "explanation": "Safety rules help protect children from dangers. Following them ensures that children stay safe at home, school, and in public places."
+          "question": "List five important safety rules for children. Why is each one important?",
+          "answer": "Five important safety rules: 1) Never accept food or gifts from strangers -- they might be trying to lure you away. 2) Never go with a stranger even if they say your parents sent them -- use your secret code word to check. 3) Never get into a stranger's car or auto -- always say no firmly. 4) Stay close to parents or trusted adults in crowded places like markets and fairs -- it is easy to get lost. 5) Play only in safe places like parks and playgrounds, not on busy roads or open terraces -- this prevents accidents. Following these rules protects us from danger and keeps us safe whether we are at home, school, or outside.",
+          "explanation": "Safety rules are like shields that protect children from harm. Every child should know and follow them."
         }
-      ]
+      ],
+      "name": "Cleaning Teeth -- Old and New Ways"
     }
   ]
 }

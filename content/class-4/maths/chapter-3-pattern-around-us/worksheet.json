@@ -3,35 +3,157 @@
     {
       "topic": "Counting in Groups and Patterns with Money",
       "easy": [
-        { "id": "ch3-t1-e1", "type": "mcq", "question": "If a coconut farm has 6 rows with 8 trees in each row, how many trees are there in total?", "options": ["14", "36", "48", "68"], "answer": "48", "explanation": "6 rows x 8 trees per row = 6 x 8 = 48 trees." },
-        { "id": "ch3-t1-e2", "type": "fill", "question": "3 coins of Rs 10 + 2 coins of Rs 5 + 4 coins of Rs 1 = Rs ______.", "answer": "44", "explanation": "3 x 10 = 30, 2 x 5 = 10, 4 x 1 = 4. Total: 30 + 10 + 4 = Rs 44." },
-        { "id": "ch3-t1-e3", "type": "mcq", "question": "Skip counting by 5: 5, 10, 15, 20, ___, 30. What is the missing number?", "options": ["22", "24", "25", "28"], "answer": "25", "explanation": "The pattern adds 5 each time: 20 + 5 = 25." }
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "Kavitha's banana garden has 5 rows with 7 plants in each row. How many plants are there in total?",
+          "options": [
+            "12",
+            "30",
+            "35",
+            "57"
+          ],
+          "answer": "35",
+          "explanation": "5 rows x 7 plants per row = 5 x 7 = 35 plants."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "4 coins of ₹10 + 3 coins of ₹5 + 5 coins of ₹1 = ₹______.",
+          "answer": "60",
+          "explanation": "4 x 10 = 40, 3 x 5 = 15, 5 x 1 = 5. Total: 40 + 15 + 5 = ₹60."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "Skip counting by 5: 5, 10, 15, ___, 25, 30. What is the missing number?",
+          "options": [
+            "18",
+            "19",
+            "20",
+            "22"
+          ],
+          "answer": "20",
+          "explanation": "The pattern adds 5 each time: 15 + 5 = 20."
+        }
       ],
       "medium": [
-        { "id": "ch3-t1-m1", "type": "short", "question": "Each coconut tree gives 5 coconuts. If the farm has 48 trees, how many coconuts are there?", "answer": "48 x 5 = 240 coconuts.", "explanation": "Multiply the number of trees by coconuts per tree: 48 x 5 = 240." },
-        { "id": "ch3-t1-m2", "type": "short", "question": "Raju has some coins: 5 coins of Rs 2, 3 coins of Rs 5, and 7 coins of Rs 1. What is the total amount?", "answer": "5 x 2 = 10, 3 x 5 = 15, 7 x 1 = 7. Total = Rs 32.", "explanation": "Group same coins together, multiply, then add all groups." }
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Each banana plant gives 6 bunches. If the garden has 35 plants, how many bunches are there in total?",
+          "answer": "35 x 6 = 210 bunches.",
+          "explanation": "Multiply number of plants by bunches per plant: 35 x 6 = 210."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "Sana has some coins: 6 coins of ₹2, 4 coins of ₹5, and 3 coins of ₹1. What is the total amount?",
+          "answer": "6 x 2 = 12, 4 x 5 = 20, 3 x 1 = 3. Total = ₹35.",
+          "explanation": "Group same-value coins, multiply each group, then add all groups together."
+        }
       ],
       "hard": [
-        { "id": "ch3-t1-h1", "type": "long", "question": "Muniamma arranges laddoos in trays. Each tray has 4 rows with 6 laddoos per row. She has 5 trays. How many laddoos does she have in total? If she sells each laddoo for Rs 5, how much money will she earn?", "answer": "Laddoos per tray: 4 x 6 = 24. Total laddoos: 24 x 5 = 120. Money earned: 120 x 5 = Rs 600.", "explanation": "First find laddoos per tray (24), then total (120), then multiply by price (Rs 600)." }
-      ]
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "Balu arranges gulab jamuns in trays. Each tray has 3 rows with 4 gulab jamuns per row. He prepares 8 trays for a festival. How many gulab jamuns does he have? If each gulab jamun costs ₹8, what is the total value of all the sweets?",
+          "answer": "Gulab jamuns per tray: 3 x 4 = 12. Total gulab jamuns: 12 x 8 = 96. Total value: 96 x 8 = ₹768.",
+          "explanation": "First find per tray (12), then total count (96), then multiply by price (₹768)."
+        }
+      ],
+      "name": "Counting in Groups"
     },
     {
       "topic": "Even and Odd Numbers",
       "easy": [
-        { "id": "ch3-t2-e1", "type": "mcq", "question": "Which of these is an even number?", "options": ["13", "27", "54", "81"], "answer": "54", "explanation": "54 ends in 4, which is an even digit. Even numbers end in 0, 2, 4, 6, or 8." },
-        { "id": "ch3-t2-e2", "type": "fill", "question": "A number is odd if its last digit is 1, 3, 5, 7, or ______.", "answer": "9", "explanation": "Odd numbers end in 1, 3, 5, 7, or 9." },
-        { "id": "ch3-t2-e3", "type": "mcq", "question": "Is 300 even or odd?", "options": ["Even", "Odd", "Neither", "Both"], "answer": "Even", "explanation": "300 ends in 0, which is an even digit. So 300 is even." },
-        { "id": "ch3-t2-e4", "type": "fill", "question": "The number just before and just after an odd number are always ______.", "answer": "even", "explanation": "Both neighbours of an odd number are even. For example, 6 and 8 are both even and they surround 7 (odd)." }
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Which of these is an even number?",
+          "options": [
+            "17",
+            "33",
+            "46",
+            "79"
+          ],
+          "answer": "46",
+          "explanation": "46 ends in 6, which is an even digit. Even numbers end in 0, 2, 4, 6, or 8."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "Odd numbers have a last digit of 1, 3, 5, 7, or ______.",
+          "answer": "9",
+          "explanation": "The five odd digits are 1, 3, 5, 7, and 9."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "Is 250 even or odd?",
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ],
+          "answer": "Even",
+          "explanation": "250 ends in 0, which is an even digit. So 250 is even."
+        },
+        {
+          "id": "ch3-t2-e4",
+          "type": "fill",
+          "question": "The numbers right before and right after any odd number are always ______.",
+          "answer": "even",
+          "explanation": "Both neighbours of an odd number are even. For example, 4 and 6 are both even and they sit on either side of 5 (odd)."
+        }
       ],
       "medium": [
-        { "id": "ch3-t2-m1", "type": "short", "question": "Between 1 and 100, how many even numbers and how many odd numbers are there?", "answer": "There are 50 even numbers (2, 4, 6, ... 100) and 50 odd numbers (1, 3, 5, ... 99).", "explanation": "Even and odd numbers alternate, so they split equally: 50 each." },
-        { "id": "ch3-t2-m2", "type": "mcq", "question": "In a book, left page numbers are always ______ and right page numbers are always ______.", "options": ["even, odd", "odd, even", "even, even", "odd, odd"], "answer": "even, odd", "explanation": "In books, left pages are even (2, 4, 6...) and right pages are odd (1, 3, 5...)." },
-        { "id": "ch3-t2-m3", "type": "short", "question": "All numbers in the 2 times table are even. Why is this always true?", "answer": "Because multiplying any number by 2 gives a number that can be divided into perfect pairs with nothing left over, which is the definition of an even number.", "explanation": "2 x any number = an even number, because it can always be paired perfectly." }
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Between 1 and 100, how many numbers are even and how many are odd?",
+          "answer": "There are 50 even numbers (2, 4, 6, ... 100) and 50 odd numbers (1, 3, 5, ... 99) — a perfect 50-50 split.",
+          "explanation": "Even and odd numbers alternate, so they divide equally: 50 each."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "mcq",
+          "question": "In a storybook, left page numbers are always ______ and right page numbers are always ______.",
+          "options": [
+            "even, odd",
+            "odd, even",
+            "even, even",
+            "odd, odd"
+          ],
+          "answer": "even, odd",
+          "explanation": "In books, left pages are even (2, 4, 6...) and right pages are odd (1, 3, 5...)."
+        },
+        {
+          "id": "ch3-t2-m3",
+          "type": "short",
+          "question": "Every number in the table of 2 is even. Why does this always happen?",
+          "answer": "Because multiplying any number by 2 creates a result that can be perfectly divided into pairs with nothing left over. That is the very definition of an even number.",
+          "explanation": "2 x any number = an even number, since the product always divides evenly into pairs."
+        }
       ],
       "hard": [
-        { "id": "ch3-t2-h1", "type": "long", "question": "Write all the even numbers between 45 and 65. How many are there? What pattern do you notice about the last digits?", "answer": "Even numbers: 46, 48, 50, 52, 54, 56, 58, 60, 62, 64. There are 10 even numbers. The last digits follow the pattern: 6, 8, 0, 2, 4, 6, 8, 0, 2, 4 — they repeat every 5 numbers.", "explanation": "Even numbers alternate with odd numbers. The last digits cycle through 0, 2, 4, 6, 8." },
-        { "id": "ch3-t2-h2", "type": "long", "question": "Is it possible to add two odd numbers and get an odd answer? Try with 3 + 5, 7 + 9, and 11 + 13. What do you notice?", "answer": "3 + 5 = 8 (even), 7 + 9 = 16 (even), 11 + 13 = 24 (even). The sum of two odd numbers is always even. It is not possible to get an odd answer by adding two odd numbers.", "explanation": "When you add two odd numbers, each has 1 left over from pairing. The two leftovers pair up, making the result even." }
-      ]
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "List all the even numbers between 31 and 49. How many are there? What pattern do you see in the last digits?",
+          "answer": "Even numbers: 32, 34, 36, 38, 40, 42, 44, 46, 48. There are 9 even numbers. The last digits are: 2, 4, 6, 8, 0, 2, 4, 6, 8 — they cycle through the five even digits (0, 2, 4, 6, 8) in order.",
+          "explanation": "Even numbers alternate with odd numbers. Their last digits repeat the cycle 0, 2, 4, 6, 8."
+        },
+        {
+          "id": "ch3-t2-h2",
+          "type": "long",
+          "question": "Can the sum of two odd numbers ever be odd? Test with 5 + 9, 11 + 7, and 13 + 15. What pattern do you discover?",
+          "answer": "5 + 9 = 14 (even), 11 + 7 = 18 (even), 13 + 15 = 28 (even). The sum of two odd numbers is always even. You can never get an odd sum from two odd numbers.",
+          "explanation": "Each odd number has one unpaired item. When you combine two odd numbers, the two unpaired items form a pair, making the total even."
+        }
+      ],
+      "name": "Patterns with Money"
     }
   ]
 }

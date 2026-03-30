@@ -8,7 +8,12 @@
           "id": "ch3-t1-e1",
           "type": "mcq",
           "question": "Which nutrient is the body's primary source of quick energy?",
-          "options": ["Protein", "Fat", "Carbohydrate", "Mineral"],
+          "options": [
+            "Protein",
+            "Fat",
+            "Carbohydrate",
+            "Mineral"
+          ],
           "answer": "Carbohydrate",
           "explanation": "Carbohydrates are the body's preferred fuel. When you eat rice, roti, or potato, your digestive system breaks the starch into glucose, which cells use immediately for energy."
         },
@@ -16,7 +21,12 @@
           "id": "ch3-t1-e2",
           "type": "mcq",
           "question": "Which nutrient is responsible for building and repairing muscles, skin, and hair?",
-          "options": ["Carbohydrate", "Fat", "Protein", "Dietary fibre"],
+          "options": [
+            "Carbohydrate",
+            "Fat",
+            "Protein",
+            "Dietary fibre"
+          ],
           "answer": "Protein",
           "explanation": "Proteins are the body's construction workers. Every muscle fibre, strand of hair, and layer of skin is built from protein. Dal, eggs, paneer, and pulses are excellent protein sources."
         },
@@ -24,7 +34,12 @@
           "id": "ch3-t1-e3",
           "type": "mcq",
           "question": "Which vitamin is produced by the body when sunlight falls on the skin?",
-          "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+          "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin K"
+          ],
           "answer": "Vitamin D",
           "explanation": "When ultraviolet rays from sunlight hit your skin, your body manufactures Vitamin D on its own. Vitamin D is essential for absorbing calcium and building strong bones."
         },
@@ -94,7 +109,12 @@
           "id": "ch3-t2-e1",
           "type": "mcq",
           "question": "A person whose gums bleed frequently and whose wounds heal very slowly is most likely deficient in which vitamin?",
-          "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+          "options": [
+            "Vitamin A",
+            "Vitamin B",
+            "Vitamin C",
+            "Vitamin D"
+          ],
           "answer": "Vitamin C",
           "explanation": "These are classic symptoms of scurvy, caused by prolonged Vitamin C deficiency. Vitamin C is essential for maintaining connective tissues and healing wounds. Amla, guava, and citrus fruits are excellent sources."
         },
@@ -102,7 +122,12 @@
           "id": "ch3-t2-e2",
           "type": "mcq",
           "question": "Rickets — a disease where children's bones become soft and bend — is caused by deficiency of which nutrients?",
-          "options": ["Iron and Vitamin C", "Vitamin D and Calcium", "Protein and Fat", "Iodine and Vitamin A"],
+          "options": [
+            "Iron and Vitamin C",
+            "Vitamin D and Calcium",
+            "Protein and Fat",
+            "Iodine and Vitamin A"
+          ],
           "answer": "Vitamin D and Calcium",
           "explanation": "Vitamin D helps the body absorb calcium from food. Calcium is the primary mineral in bones. When both are deficient, bones do not harden properly and can bend under the body's weight, causing rickets in children."
         },
@@ -118,7 +143,12 @@
           "id": "ch3-t2-e4",
           "type": "mcq",
           "question": "Which of these conditions is caused by iron deficiency?",
-          "options": ["Night blindness", "Scurvy", "Anaemia", "Goitre"],
+          "options": [
+            "Night blindness",
+            "Scurvy",
+            "Anaemia",
+            "Goitre"
+          ],
           "answer": "Anaemia",
           "explanation": "Iron is essential for making haemoglobin in red blood cells. When iron is deficient, haemoglobin levels drop, the blood carries less oxygen, and the person feels tired, weak, and breathless. This condition is called anaemia."
         },
@@ -126,7 +156,12 @@
           "id": "ch3-t2-e5",
           "type": "mcq",
           "question": "Kwashiorkor — a disease seen in severely malnourished children with a swollen belly and thin limbs — is caused by severe deficiency of which nutrient?",
-          "options": ["Carbohydrates", "Vitamins", "Protein", "Water"],
+          "options": [
+            "Carbohydrates",
+            "Vitamins",
+            "Protein",
+            "Water"
+          ],
           "answer": "Protein",
           "explanation": "Kwashiorkor occurs when a child gets some calories from starchy foods but almost no protein. The lack of protein causes fluid to accumulate in the abdomen (swollen belly), muscles waste away (thin limbs), and hair may lose its colour."
         }
@@ -167,7 +202,12 @@
           "id": "ch3-t3-e1",
           "type": "mcq",
           "question": "When iodine solution is dropped on a food item and the food turns blue-black, what does this indicate?",
-          "options": ["The food contains protein", "The food contains fat", "The food contains starch", "The food contains Vitamin C"],
+          "options": [
+            "The food contains protein",
+            "The food contains fat",
+            "The food contains starch",
+            "The food contains Vitamin C"
+          ],
           "answer": "The food contains starch",
           "explanation": "The iodine test is specific to starch detection. Iodine molecules fit inside the spiral structure of starch molecules, producing a characteristic blue-black colour. If no starch is present, the iodine remains its original brownish-yellow colour."
         },
@@ -196,7 +236,12 @@
           "id": "ch3-t3-e4",
           "type": "mcq",
           "question": "Which of these foods would most likely test positive for starch using the iodine test?",
-          "options": ["Cooking oil", "Boiled rice", "A slice of paneer", "A piece of tomato"],
+          "options": [
+            "Cooking oil",
+            "Boiled rice",
+            "A slice of paneer",
+            "A piece of tomato"
+          ],
           "answer": "Boiled rice",
           "explanation": "Rice is one of the richest sources of starch. When iodine solution is added to boiled rice, it turns blue-black immediately. Oil has fat but no starch. Paneer has protein and fat. Tomato has vitamins and sugars but very little starch."
         }

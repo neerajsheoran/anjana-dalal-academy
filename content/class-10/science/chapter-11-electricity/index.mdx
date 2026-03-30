@@ -1,137 +1,139 @@
 ---
-title: Electricity
+title: "Current and Circuits - Electricity"
+description: "Understand electric current, potential difference, Ohm's law, resistance, and power."
+order: 11
 ---
 
 ## Electric Current and Circuit
 
-**Electric current** is the flow of electric charge (electrons) through a conductor. By convention, the direction of current is taken opposite to the flow of electrons (from positive to negative terminal).
+Picture a crowded Mumbai local train platform at rush hour -- people stream through the gates in one direction. In a similar way, **electric current** is the steady flow of electric charge (electrons) through a conductor. By convention, we say that current flows from the positive terminal to the negative terminal of a battery, even though electrons physically move the other way.
 
-**Electric current (I) = Charge (Q) / Time (t)**, measured in **amperes (A)**. 1 A = 1 C/s.
+**Electric current (I) = Charge (Q) / Time (t)**, measured in **amperes (A)**. 1 A means 1 coulomb of charge passes through a point every second.
 
 ![Simple electric circuit diagram with a battery, switch, ammeter in series, resistor, and voltmeter connected in parallel across the resistor](simple-electric-circuit-diagram.png)
 
-An **electric circuit** is a continuous closed path for current flow, consisting of a source (battery/cell), conducting wires, a switch, and electrical components.
+An **electric circuit** is a continuous, unbroken loop that provides a pathway for current. It typically includes a power source (such as a cell or battery), conducting wires, a switch to open or close the circuit, and one or more electrical components.
 
-An **ammeter** measures current and is connected in **series** in the circuit.
+An **ammeter** is the instrument that measures current. It must be connected in **series** so that all the charge flowing through the circuit passes through it.
 
-> **Key idea:** Electric current is the rate of flow of charge. It flows from the positive to the negative terminal of a battery in a closed circuit.
+> **Key idea:** Electric current is the rate at which charge flows through a conductor. In a closed circuit, current travels from the positive to the negative terminal of the battery.
 
 ---
 
 ## Electric Potential and Potential Difference
 
-**Electric potential difference** between two points is the work done to move a unit charge from one point to the other.
+Think of water in an overhead tank: it flows down through pipes because there is a height difference. Similarly, charges flow through a circuit because of a difference in electric potential between two points. This difference is called the **potential difference**.
 
-**V = W/Q**, measured in **volts (V)**. 1 V = 1 J/C.
+**V = W / Q**, measured in **volts (V)**. 1 volt means 1 joule of work is done in moving 1 coulomb of charge between the two points.
 
-A **voltmeter** measures potential difference and is connected in **parallel** across the component.
+A **voltmeter** measures potential difference. It is connected in **parallel** across the component whose voltage you want to measure.
 
-> **Key idea:** Potential difference drives the flow of current through a circuit. A voltmeter is connected in parallel to measure it.
+> **Key idea:** Potential difference is the driving force that pushes current through a circuit. A voltmeter is always connected in parallel.
 
 ---
 
 ## Ohm's Law
 
-**Ohm's Law** states that the current flowing through a conductor is directly proportional to the potential difference across it, provided the temperature remains constant.
+**Ohm's Law** tells us that, at a constant temperature, the current through a metallic conductor is directly proportional to the potential difference applied across its ends.
 
 ![V-I graph for Ohm's law showing a straight line through the origin, with voltage on the y-axis and current on the x-axis, slope representing resistance](ohms-law-v-i-graph.png)
 
 **V = IR**
 
-Where R is the **resistance** of the conductor, measured in **ohms (Ω)**.
-
-Resistance is the opposition offered by a conductor to the flow of current. Good conductors have low resistance; insulators have very high resistance.
+Here, R is the **resistance** of the conductor, measured in **ohms** (symbol **Omega**). Resistance is the opposition that a material offers to the flow of current -- metals like copper have low resistance, while materials like rubber offer extremely high resistance.
 
 ---
 
-## Factors Affecting Resistance
+## What Determines Resistance?
 
-The resistance of a conductor depends on:
+The resistance of a conductor depends on four factors:
 
-1. **Length (l):** R is directly proportional to length. Longer wire = more resistance.
-2. **Area of cross-section (A):** R is inversely proportional to area. Thicker wire = less resistance.
-3. **Material:** Different materials have different resistivities.
-4. **Temperature:** Resistance generally increases with temperature for metals.
+1. **Length (l):** Longer the wire, greater the resistance. Think of it as a longer corridor being harder to walk through.
+2. **Cross-sectional area (A):** Thicker the wire, lower the resistance. A wider pipe lets more water through easily.
+3. **Nature of the material:** Different substances resist current differently.
+4. **Temperature:** For most metals, resistance rises as temperature increases.
 
-**R = ρl/A**, where ρ (rho) is the **resistivity** of the material, measured in Ω·m.
+These factors are captured in the formula:
 
-**Resistivity** is a characteristic property of the material — it does not change with the dimensions of the conductor but varies with temperature.
+**R = rho x l / A**
 
-Metals like copper and aluminium have **low resistivity** (good conductors). Alloys like nichrome and manganin have **high resistivity** (used in heating elements). Rubber and glass have very high resistivity (insulators).
+Here, **rho** (resistivity) is a property of the material itself, measured in ohm-metre. It does not change with the dimensions of the conductor but does depend on temperature.
 
-> **Key idea:** Resistance depends on length, cross-sectional area, and resistivity of the material. R = ρl/A.
+Copper and aluminium have very low resistivity -- they are excellent conductors. Alloys like nichrome and manganin have high resistivity -- they are used in heaters and rheostats. Rubber and glass have enormous resistivity -- they serve as insulators.
+
+> **Key idea:** Resistance is governed by the conductor's length, cross-sectional area, and the resistivity of its material. R = rho x l / A.
 
 ---
 
-## Combination of Resistors
+## Combining Resistors
 
 ![Two circuit diagrams: series combination (three resistors connected end-to-end with same current I through each) and parallel combination (three resistors connected between same two points with same voltage V across each)](series-parallel-resistor-circuits.png)
 
 ### Series Combination
 
-Resistors connected end-to-end so that the same current flows through each:
+When resistors are connected end-to-end, the same current passes through each one:
 
-**R_total = R₁ + R₂ + R₃ + ...**
+**R_total = R1 + R2 + R3 + ...**
 
-- Current is the **same** through each resistor
-- Potential difference **divides** among resistors (V = V₁ + V₂ + V₃)
-- Total resistance is always **greater** than the largest individual resistance
+- The current is **identical** through every resistor
+- The total voltage **splits** among the resistors: V = V1 + V2 + V3
+- The combined resistance is always **larger** than the biggest individual resistor
 
 ### Parallel Combination
 
-Resistors connected between the same two points:
+When resistors are connected between the same pair of points, each one receives the full supply voltage:
 
-**1/R_total = 1/R₁ + 1/R₂ + 1/R₃ + ...**
+**1/R_total = 1/R1 + 1/R2 + 1/R3 + ...**
 
-- Potential difference is the **same** across each resistor
-- Current **divides** among resistors (I = I₁ + I₂ + I₃)
-- Total resistance is always **less** than the smallest individual resistance
+- The voltage is the **same** across every resistor
+- The total current **divides** among the branches: I = I1 + I2 + I3
+- The combined resistance is always **smaller** than the smallest individual resistor
 
-> **Key idea:** In series, resistances add up and current is constant. In parallel, reciprocals of resistances add up and voltage is constant.
+> **Key idea:** In series, resistances add up and current stays constant. In parallel, the reciprocals of resistances add up and voltage stays constant.
 
 ---
 
 ## Heating Effect of Electric Current
 
-When current flows through a resistor, electrical energy is converted to **heat energy**. This is called the **heating effect** of electric current (Joule heating).
+When current pushes its way through a resistance, electrical energy transforms into **heat energy**. This is the **heating effect** of electric current, also known as Joule heating.
 
-**Heat produced: H = I²Rt** (Joule's law of heating)
+**Heat produced: H = I squared x R x t** (Joule's law of heating)
 
-Also: H = VIt = V²t/R
+Equivalently, H = V x I x t = V squared x t / R
 
-### Applications
-- Electric heaters, toasters, irons, kettles
-- Electric bulbs (filament glows white-hot)
-- Electric fuses (thin wire that melts and breaks the circuit when current exceeds safe limits)
+### Everyday Applications
+- **Cooking appliances:** Electric stoves, toasters, and kettles all use high-resistance coils to generate heat
+- **Lighting:** In an incandescent bulb, the tungsten filament heats up until it glows white-hot
+- **Safety fuses:** A thin wire of low melting point that melts and breaks the circuit when the current exceeds a safe limit
 
-### Why Alloys for Heating Devices?
-Alloys like nichrome have **high resistivity** (produce more heat) and **high melting points** (do not melt easily). They also do not oxidise easily at high temperatures.
+### Why Alloys for Heating Elements?
+Alloys such as nichrome possess **high resistivity** (to produce ample heat), **high melting points** (to avoid melting during use), and strong resistance to oxidation at elevated temperatures.
 
-### Why Tungsten for Lamp Filaments?
-Tungsten has a very **high melting point** (3380°C), allowing it to glow white-hot without melting. It also has high resistivity.
+### Why Tungsten for Bulb Filaments?
+Tungsten can withstand temperatures as high as 3380 degrees Celsius without melting, making it ideal for glowing white-hot inside a bulb. It also has high resistivity.
 
-> **Key idea:** Heat produced in a conductor is proportional to I², R, and t (H = I²Rt). Alloys with high resistivity and melting points are used in heating devices.
+> **Key idea:** The heat generated in a conductor is proportional to the square of the current, the resistance, and the time (H = I squared x R x t). Alloys with high resistivity and high melting points are chosen for heating devices.
 
 ---
 
 ## Electric Power
 
-**Electric power** is the rate at which electrical energy is consumed.
+**Electric power** is the rate at which electrical energy is consumed or transformed.
 
-**P = VI = I²R = V²/R**, measured in **watts (W)**
+**P = V x I = I squared x R = V squared / R**, measured in **watts (W)**
 
-1 watt = 1 volt × 1 ampere
+1 watt = 1 joule per second = 1 volt multiplied by 1 ampere
 
-The commercial unit of electrical energy is the **kilowatt-hour (kWh)**, commonly called a "unit."
+The commercial unit of electrical energy is the **kilowatt-hour (kWh)**, popularly called a "unit" on electricity bills.
 
-**1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J**
+**1 kWh = 1000 W x 3600 s = 3.6 x 10 to the power 6 joules**
 
-### Domestic Electric Circuits
+### Why Are Home Appliances Wired in Parallel?
 
-In homes, appliances are connected in **parallel** (not series) because:
-- Each appliance gets the **full supply voltage** (220 V)
-- Each appliance can be **independently switched** on or off
-- If one appliance fails, others continue to work
-- Parallel connection provides **lower total resistance**, allowing sufficient current
+In every Indian home, appliances are connected in **parallel** across the 220 V supply. Here is why:
+- Each device receives the **full 220 V** supply voltage
+- Each device can be **switched on or off independently** -- turning off the kitchen light does not affect the fan in the bedroom
+- If one appliance fails, the remaining ones keep working
+- Adding more appliances does not increase the resistance seen by existing ones
 
-> **Key idea:** Electric power (P = VI) is measured in watts. Domestic appliances are connected in parallel to ensure each gets full voltage and can operate independently.
+> **Key idea:** Electric power (P = V x I) is measured in watts. The kWh is the commercial unit of energy. Household appliances are wired in parallel so that each one gets the full voltage and works independently.

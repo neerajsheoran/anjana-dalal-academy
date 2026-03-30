@@ -7,7 +7,12 @@
           "id": "ch9-t1-e1",
           "type": "mcq",
           "question": "The image formed by a concave mirror is observed to be virtual, erect and larger than the object. Where should be the position of the object?",
-          "options": ["Between the principal focus and the centre of curvature", "At the centre of curvature", "Beyond the centre of curvature", "Between the pole of the mirror and its principal focus"],
+          "options": [
+            "Between the principal focus and the centre of curvature",
+            "At the centre of curvature",
+            "Beyond the centre of curvature",
+            "Between the pole of the mirror and its principal focus"
+          ],
           "answer": "Between the pole of the mirror and its principal focus",
           "explanation": "A concave mirror forms a virtual, erect, and enlarged image only when the object is placed between the pole (P) and the principal focus (F)."
         },
@@ -15,7 +20,12 @@
           "id": "ch9-t1-e2",
           "type": "mcq",
           "question": "No matter how far you stand from a mirror, your image appears erect. The mirror is likely to be:",
-          "options": ["Only plane", "Only concave", "Only convex", "Either plane or convex"],
+          "options": [
+            "Only plane",
+            "Only concave",
+            "Only convex",
+            "Either plane or convex"
+          ],
           "answer": "Either plane or convex",
           "explanation": "Both plane mirrors and convex mirrors always form erect images regardless of object distance. Concave mirrors form inverted images when the object is beyond the focus."
         },
@@ -68,13 +78,18 @@
       ]
     },
     {
-      "topic": "Refraction and Lenses",
+      "topic": "Refraction of Light",
       "easy": [
         {
           "id": "ch9-t2-e1",
           "type": "mcq",
           "question": "Where should an object be placed in front of a convex lens to get a real image of the size of the object?",
-          "options": ["At the principal focus of the lens", "At twice the focal length", "At infinity", "Between the optical centre and the principal focus"],
+          "options": [
+            "At the principal focus of the lens",
+            "At twice the focal length",
+            "At infinity",
+            "Between the optical centre and the principal focus"
+          ],
           "answer": "At twice the focal length",
           "explanation": "When an object is placed at 2F (twice the focal length) of a convex lens, the image is formed at 2F on the other side, and is real, inverted, and of the same size as the object."
         },
@@ -82,7 +97,12 @@
           "id": "ch9-t2-e2",
           "type": "mcq",
           "question": "Which of the following lenses would you prefer to use while reading small letters in a dictionary?",
-          "options": ["A convex lens of focal length 50 cm", "A concave lens of focal length 50 cm", "A convex lens of focal length 5 cm", "A concave lens of focal length 5 cm"],
+          "options": [
+            "A convex lens of focal length 50 cm",
+            "A concave lens of focal length 50 cm",
+            "A convex lens of focal length 5 cm",
+            "A concave lens of focal length 5 cm"
+          ],
           "answer": "A convex lens of focal length 5 cm",
           "explanation": "A convex lens with a short focal length (5 cm) acts as a magnifying glass, producing a large, erect, virtual image when the text is held close to it. Higher power means greater magnification."
         },
@@ -90,7 +110,12 @@
           "id": "ch9-t2-e3",
           "type": "mcq",
           "question": "A spherical mirror and a thin spherical lens have each a focal length of -15 cm. The mirror and the lens are likely to be:",
-          "options": ["Both concave", "Both convex", "The mirror is concave and the lens is convex", "The mirror is convex, but the lens is concave"],
+          "options": [
+            "Both concave",
+            "Both convex",
+            "The mirror is concave and the lens is convex",
+            "The mirror is convex, but the lens is concave"
+          ],
           "answer": "Both concave",
           "explanation": "A negative focal length indicates a concave mirror (converging, with focus in front) and a concave lens (diverging, with virtual focus). Both have negative focal length by sign convention."
         },

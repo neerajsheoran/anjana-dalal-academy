@@ -1,15 +1,20 @@
 {
   "topics": [
     {
-      "topic": "Directions (North, South, East, West)",
+      "topic": "The Four Directions",
       "easy": [
         {
           "id": "ch14-t1-e1",
           "type": "mcq",
           "question": "If you face the rising Sun, which direction are you facing?",
-          "options": ["North", "South", "East", "West"],
+          "options": [
+            "North",
+            "South",
+            "East",
+            "West"
+          ],
           "answer": "East",
-          "explanation": "The Sun rises in the East. So if you face the rising Sun, you are facing East."
+          "explanation": "The Sun rises in the East. If you face the sunrise, you are looking East."
         },
         {
           "id": "ch14-t1-e2",
@@ -22,9 +27,14 @@
           "id": "ch14-t1-e3",
           "type": "mcq",
           "question": "On most maps, which direction is at the top?",
-          "options": ["East", "West", "North", "South"],
+          "options": [
+            "East",
+            "West",
+            "North",
+            "South"
+          ],
           "answer": "North",
-          "explanation": "By convention, most maps show North at the top, South at the bottom, East on the right, and West on the left."
+          "explanation": "By convention, maps show North at the top, South at the bottom, East on the right, and West on the left."
         },
         {
           "id": "ch14-t1-e4",
@@ -38,35 +48,41 @@
         {
           "id": "ch14-t1-m1",
           "type": "short",
-          "question": "A bus starts heading North, then takes a right turn. Which direction is it now heading?",
+          "question": "A school bus starts heading North, then takes a right turn. Which direction is it heading now?",
           "answer": "East",
-          "explanation": "If you are facing North and turn right, you face East. Right turn from North = East."
+          "explanation": "Facing North and turning right means you now face East. Right turns go clockwise."
         },
         {
           "id": "ch14-t1-m2",
           "type": "mcq",
           "question": "The bus continues East, then takes a left turn. Which direction is it heading now?",
-          "options": ["North", "South", "East", "West"],
+          "options": [
+            "North",
+            "South",
+            "East",
+            "West"
+          ],
           "answer": "North",
-          "explanation": "If facing East and you turn left, you face North."
+          "explanation": "Facing East and turning left puts you facing North. Left turns go counter-clockwise."
         },
         {
           "id": "ch14-t1-m3",
           "type": "short",
-          "question": "Siberian Cranes fly from Siberia (North) to India (South) every winter. In which direction do they fly to reach India? In which direction do they return?",
-          "answer": "They fly South to reach India and North to return to Siberia.",
-          "explanation": "India is south of Siberia. The cranes fly south for winter and north when returning."
+          "question": "Migratory birds fly from colder countries in the North to warmer India in the South every winter. In which direction do they fly to reach India? In which direction do they return?",
+          "answer": "They fly South to reach India and North to return home.",
+          "explanation": "India is south of the colder northern regions. Birds fly south for winter and north when they return."
         }
       ],
       "hard": [
         {
           "id": "ch14-t1-h1",
           "type": "long",
-          "question": "Ravi starts at his house facing North. He walks straight, then takes a right turn and walks to the park. From the park, he takes a left turn and walks to the school. From the school, he takes a left turn and walks to the market. What direction does Ravi face at each stage?",
-          "answer": "Start: facing North. After right turn: facing East (walks to park). After left turn from East: facing North (walks to school). After left turn from North: facing West (walks to market). Ravi faces West when he reaches the market.",
+          "question": "Meena starts at her house facing North. She walks forward to the park, then turns right and walks to the hospital. From the hospital, she turns left and walks to the school. From the school, she turns left again and walks to the market. What direction does Meena face at each stage?",
+          "answer": "Start: facing North. After right turn: facing East (walks to hospital). After left turn from East: facing North (walks to school). After left turn from North: facing West (walks to market). Meena faces West when she reaches the market.",
           "explanation": "North + right = East. East + left = North. North + left = West."
         }
-      ]
+      ],
+      "name": "The Four Directions"
     },
     {
       "topic": "Grid Maps and Coordinates",
@@ -74,52 +90,63 @@
         {
           "id": "ch14-t2-e1",
           "type": "mcq",
-          "question": "Coordinates are written as (column, row). To find point (4, 1), which do you move first?",
-          "options": ["1 step North, then 4 steps East", "4 steps East, then 1 step North", "4 steps North, then 1 step East", "1 step East, then 4 steps North"],
-          "answer": "4 steps East, then 1 step North",
-          "explanation": "Coordinates go (across, up) — horizontal first, then vertical. Move 4 steps East (horizontal), then 1 step North (vertical)."
+          "question": "Coordinates are written as (column, row). To find point (3, 2), which do you move first?",
+          "options": [
+            "2 steps North, then 3 steps East",
+            "3 steps East, then 2 steps North",
+            "3 steps North, then 2 steps East",
+            "2 steps East, then 3 steps North"
+          ],
+          "answer": "3 steps East, then 2 steps North",
+          "explanation": "Coordinates go (across, up) — horizontal first, then vertical. Move 3 steps East, then 2 steps North."
         },
         {
           "id": "ch14-t2-e2",
           "type": "fill",
           "question": "On a grid, coordinates always go (______, ______) — horizontal first, then vertical.",
           "answer": "across, up",
-          "explanation": "Think of it as: walk along the corridor (across), then climb the stairs (up)."
+          "explanation": "Remember: walk along the corridor (across), then climb the stairs (up)."
         },
         {
           "id": "ch14-t2-e3",
           "type": "short",
-          "question": "In a zoo grid map, the Panda is at (1, 1) and the Tortoise is at (4, 1). Are they in the same row or the same column?",
-          "answer": "They are in the same row (row 1). The Panda is in column 1 and the Tortoise is in column 4.",
-          "explanation": "Both have row = 1, so they are in the same row. But their columns differ (1 and 4)."
+          "question": "In a zoo grid map, the Elephant is at (2, 1) and the Parrot is at (5, 3). Are they in the same row or the same column?",
+          "answer": "They are in different rows and different columns. The Elephant is at column 2, row 1, and the Parrot is at column 5, row 3.",
+          "explanation": "Row 1 is not equal to row 3, and column 2 is not equal to column 5, so they share neither."
         }
       ],
       "medium": [
         {
           "id": "ch14-t2-m1",
           "type": "short",
-          "question": "On a grid, an ant is at position (2, 3). It crawls 3 steps East and 2 steps North. What are its new coordinates?",
+          "question": "On a grid, an ant is at position (1, 2). It crawls 4 steps East and 3 steps North. What are its new coordinates?",
           "answer": "(5, 5)",
-          "explanation": "Starting at (2, 3). Moving 3 East: column 2 + 3 = 5. Moving 2 North: row 3 + 2 = 5. New position: (5, 5)."
+          "explanation": "Starting at (1, 2). Moving 4 East: column 1 + 4 = 5. Moving 3 North: row 2 + 3 = 5. New position: (5, 5)."
         },
         {
           "id": "ch14-t2-m2",
           "type": "mcq",
-          "question": "An ant at (0, 0) needs to reach (3, 2). What is the shortest path description?",
-          "options": ["3 East, 2 North", "2 East, 3 North", "3 North, 2 East", "5 steps in any direction"],
-          "answer": "3 East, 2 North",
-          "explanation": "From (0,0) to (3,2): move 3 steps East (column 0 to 3) and 2 steps North (row 0 to 2). Order doesn't matter for distance, but 3 East then 2 North directly matches the coordinates."
+          "question": "An ant at (0, 0) needs to reach (4, 2). What is the shortest total distance along grid lines?",
+          "options": [
+            "4 steps",
+            "6 steps",
+            "8 steps",
+            "2 steps"
+          ],
+          "answer": "6 steps",
+          "explanation": "From (0,0) to (4,2): 4 steps East + 2 steps North = 6 steps total. This is the shortest grid distance without backtracking."
         }
       ],
       "hard": [
         {
           "id": "ch14-t2-h1",
           "type": "long",
-          "question": "On a 6x6 grid, a treasure hunt has clues at these coordinates: Start (0, 0), Clue 1 at (3, 0), Clue 2 at (3, 4), Clue 3 at (5, 4), and Treasure at (5, 5). Describe the path and find the total number of grid steps if you can only move along grid lines.",
-          "answer": "Start (0,0) to Clue 1 (3,0): 3 steps East. Clue 1 (3,0) to Clue 2 (3,4): 4 steps North. Clue 2 (3,4) to Clue 3 (5,4): 2 steps East. Clue 3 (5,4) to Treasure (5,5): 1 step North. Total: 3 + 4 + 2 + 1 = 10 grid steps.",
-          "explanation": "Calculate horizontal and vertical distances between each pair: (0,0) to (3,0) = 3 East. (3,0) to (3,4) = 4 North. (3,4) to (5,4) = 2 East. (5,4) to (5,5) = 1 North. Total = 10 steps."
+          "question": "On a 7x7 grid, a treasure hunt has clues at these coordinates: Start (0, 0), Clue 1 at (2, 0), Clue 2 at (2, 3), Clue 3 at (6, 3), and Treasure at (6, 6). Describe the path and find the total number of grid steps.",
+          "answer": "Start (0,0) to Clue 1 (2,0): 2 steps East. Clue 1 (2,0) to Clue 2 (2,3): 3 steps North. Clue 2 (2,3) to Clue 3 (6,3): 4 steps East. Clue 3 (6,3) to Treasure (6,6): 3 steps North. Total: 2 + 3 + 4 + 3 = 12 grid steps.",
+          "explanation": "Calculate horizontal and vertical distances between each pair. (0,0) to (2,0) = 2 East. (2,0) to (2,3) = 3 North. (2,3) to (6,3) = 4 East. (6,3) to (6,6) = 3 North. Total = 12 steps."
         }
-      ]
+      ],
+      "name": "Using Directions in Daily Life"
     },
     {
       "topic": "Reading Maps and Routes",
@@ -128,51 +155,62 @@
           "id": "ch14-t3-e1",
           "type": "mcq",
           "question": "What is a key (legend) on a map?",
-          "options": ["A lock on the map", "A box explaining what the symbols mean", "The title of the map", "The scale of the map"],
+          "options": [
+            "A lock to open the map",
+            "A box explaining what the symbols mean",
+            "The title of the map",
+            "The compass arrow"
+          ],
           "answer": "A box explaining what the symbols mean",
-          "explanation": "A key or legend is a box on a map that explains what each symbol, colour, or marking represents."
+          "explanation": "A key or legend is a box on the map that explains what each symbol, colour, or marking represents."
         },
         {
           "id": "ch14-t3-e2",
           "type": "fill",
-          "question": "On a metro map, where two lines cross, you can change trains at an ______ station.",
+          "question": "On a metro map, where two lines cross, you can switch trains at an ______ station.",
           "answer": "interchange",
-          "explanation": "An interchange station is where two or more metro lines meet, allowing passengers to switch between lines."
+          "explanation": "An interchange station is where two or more metro lines meet, letting passengers switch between lines."
         },
         {
           "id": "ch14-t3-e3",
           "type": "short",
-          "question": "What tool always points North and helps us find directions?",
+          "question": "What instrument always points North and helps us find directions?",
           "answer": "A compass",
-          "explanation": "A compass has a magnetic needle that always points towards the North, helping us determine all four directions."
+          "explanation": "A compass has a magnetic needle that always points North, helping us figure out all four directions."
         }
       ],
       "medium": [
         {
           "id": "ch14-t3-m1",
           "type": "short",
-          "question": "On a metro map, Station A is on the Blue Line and Station B is on the Yellow Line. How would you travel from A to B?",
-          "answer": "Find an interchange station where the Blue Line and Yellow Line cross. Travel on the Blue Line to the interchange station, switch to the Yellow Line, and continue to Station B.",
-          "explanation": "When stations are on different metro lines, you must find a common station (interchange) where both lines meet, and change trains there."
+          "question": "On a metro map, Station P is on the Red Line and Station Q is on the Green Line. How would you travel from P to Q?",
+          "answer": "Find an interchange station where the Red and Green Lines cross. Travel on the Red Line to the interchange, switch to the Green Line, and continue to Station Q.",
+          "explanation": "When two stations are on different lines, you must find a shared interchange station to change trains."
         },
         {
           "id": "ch14-t3-m2",
           "type": "mcq",
-          "question": "If two possible routes exist from Station A to Station B, which route is usually better?",
-          "options": ["The one with more stations", "The one with fewer interchange (line changes)", "The one that goes North", "Both are always the same"],
-          "answer": "The one with fewer interchange (line changes)",
-          "explanation": "The best route usually has the fewest line changes, as each interchange adds waiting time and walking between platforms."
+          "question": "If two possible routes exist from Station P to Station Q, which is usually the better choice?",
+          "options": [
+            "The one with more stations",
+            "The one with fewer line changes",
+            "The one heading North",
+            "Both are always identical"
+          ],
+          "answer": "The one with fewer line changes",
+          "explanation": "Fewer interchanges usually means less waiting time and less walking between platforms, making the journey smoother."
         }
       ],
       "hard": [
         {
           "id": "ch14-t3-h1",
           "type": "long",
-          "question": "Draw a simple map of a neighbourhood (describe it in words): A school is in the centre. North of the school is a park. East of the school is a hospital. South of the school is a market. West of the school is a library. If Priya walks from the library to the hospital, describe her route using directions and state the minimum number of turns she makes.",
-          "answer": "Priya starts at the library (West of school). She walks East past the school to reach the hospital (East of school). She walks in a straight line heading East the entire way. Minimum turns: 0 (she walks straight East without turning). If roads do not allow a straight path and she must go through the school area: she could walk East to school (1 segment), then continue East to the hospital (still 0 turns, same direction).",
-          "explanation": "The library is to the West and the hospital is to the East. Walking from West to East is a straight line through the centre. No turns are needed if there is a direct East-West road."
+          "question": "Imagine a neighbourhood map: A school is in the centre. To its North is a temple. To its East is a hospital. To its South is a market. To its West is a park. If Aarav walks from the park to the hospital, describe his route using directions and state the minimum number of turns he needs.",
+          "answer": "Aarav starts at the park (West of school). He walks East, passing the school, and continues East to the hospital. He walks in a straight line heading East the entire way. Minimum turns: 0 (he walks straight East without any turning). If there is no direct road, he might go East to school (0 turns so far) and continue East to the hospital (still 0 turns).",
+          "explanation": "The park is to the West and the hospital is to the East. Going from West to East is a straight line through the centre. No turns are needed if a direct East-West road exists."
         }
-      ]
+      ],
+      "name": "Reading Maps and Routes"
     }
   ]
 }

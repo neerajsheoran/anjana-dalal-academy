@@ -1,65 +1,81 @@
 {
   "topics": [
     {
-      "topic": "Day, Night, and the Earth's Rotation",
+      "topic": "Day and Night",
       "easy": [
         {
           "id": "ch9-t1-e1",
           "type": "mcq",
-          "question": "What causes day and night on Earth?",
-          "options": ["The Sun moves around the Earth", "The Earth rotates on its axis", "The Moon blocks the Sun", "Clouds cover the Sun at night"],
+          "question": "What is the real cause of day and night on Earth?",
+          "options": [
+            "The Sun moves around the Earth",
+            "The Moon blocks the sunlight at night",
+            "The Earth rotates on its axis",
+            "Clouds cover the Sun at night"
+          ],
           "answer": "The Earth rotates on its axis",
-          "explanation": "The Sun stays in one place. It is the Earth that rotates (spins like a top). The side facing the Sun has day, and the side facing away has night."
+          "explanation": "The Sun stays in one place. It is the Earth that rotates (spins like a top). The side facing the Sun has day, while the side turned away has night."
         },
         {
           "id": "ch9-t1-e2",
           "type": "fill",
-          "question": "The Earth takes about ______ hours to complete one full rotation on its axis.",
+          "question": "The Earth completes one full rotation on its axis in about ______ hours.",
           "answer": "24",
-          "explanation": "The Earth spins on its axis once every 24 hours, which is why one complete day (day and night together) lasts 24 hours."
+          "explanation": "The Earth takes approximately 24 hours to complete one full spin on its axis. This is why one full cycle of day and night lasts 24 hours."
         },
         {
           "id": "ch9-t1-e3",
           "type": "mcq",
           "question": "Which village in Arunachal Pradesh is known as India's 'First Village of the Sunrise'?",
-          "options": ["Tawang", "Dong", "Ziro", "Pasighat"],
+          "options": [
+            "Tawang",
+            "Ziro",
+            "Dong",
+            "Pasighat"
+          ],
           "answer": "Dong",
-          "explanation": "Dong in Arunachal Pradesh is known as India's 'First Village of the Sunrise' — it is the very first place where the sun's rays touch Indian land each morning."
+          "explanation": "Dong village in Arunachal Pradesh is the first place on Indian soil to be touched by the Sun's rays each morning, earning it the title 'First Village of the Sunrise.'"
         },
         {
           "id": "ch9-t1-e4",
           "type": "mcq",
-          "question": "What do the blue parts on a globe represent?",
-          "options": ["Mountains", "Deserts", "Seas and oceans", "Forests"],
+          "question": "On a globe, what do the blue-coloured areas represent?",
+          "options": [
+            "Forests",
+            "Deserts",
+            "Seas and oceans",
+            "Mountains"
+          ],
           "answer": "Seas and oceans",
-          "explanation": "On a globe, the blue parts represent seas and oceans, which cover about three-fourths of the Earth. The remaining parts are land masses."
+          "explanation": "On a globe, blue represents seas and oceans. They cover nearly three-fourths of the Earth's surface. The remaining parts show land masses where countries are located."
         }
       ],
       "medium": [
         {
           "id": "ch9-t1-m1",
           "type": "short",
-          "question": "Explain how you can demonstrate day and night using a torch and a globe.",
-          "answer": "Shine a torch (representing the Sun) on a globe. The lit side of the globe represents day, and the dark side represents night. Slowly rotate the globe, and you will see how different parts take turns being in daylight and darkness — just like how day and night happen on Earth.",
-          "explanation": "This simple experiment shows that as the Earth rotates, different parts face the Sun at different times, creating the cycle of day and night."
+          "question": "How can you use a torch and a ball to demonstrate how day and night happen?",
+          "answer": "Hold a ball in front of a torch. The torch represents the Sun and the ball represents the Earth. The side of the ball facing the torch is bright, representing day, while the other side is dark, representing night. Now slowly spin the ball. You will see how different parts of the ball take turns being lit up and going dark -- this is exactly how day and night occur as the Earth rotates on its axis.",
+          "explanation": "This simple experiment clearly shows that as the Earth rotates, different parts face the Sun at different times, creating the repeating cycle of day and night."
         },
         {
           "id": "ch9-t1-m2",
           "type": "short",
-          "question": "When it is daytime in India, what time is it in countries on the opposite side of the Earth? Why?",
-          "answer": "When it is daytime in India, countries on the opposite side of the Earth have nighttime. This is because the Earth is shaped like a ball, and only the side facing the Sun gets sunlight (day), while the other side is in darkness (night).",
-          "explanation": "Since the Earth is a sphere, only half of it can face the Sun at any time. The other half is turned away and experiences night."
+          "question": "If it is afternoon in India, what time is it approximately in countries on the opposite side of the Earth? Explain why.",
+          "answer": "When it is afternoon in India, countries on the opposite side of the Earth are experiencing nighttime. This is because the Earth is shaped like a ball, and only the side facing the Sun receives sunlight (day). The other side, turned away from the Sun, is in shadow (night). Since India and countries directly opposite to it cannot both face the Sun at the same time, their day and night are reversed.",
+          "explanation": "Because the Earth is a sphere, only half of it can be lit by the Sun at any given moment. This means when one side has day, the opposite side must have night."
         }
       ],
       "hard": [
         {
           "id": "ch9-t1-h1",
           "type": "long",
-          "question": "The chapter says 'It may seem like the Sun moves across the sky, but actually the Sun stays in one place.' Explain what really happens and why it looks like the Sun is moving.",
-          "answer": "The Sun does not actually move across our sky. It stays in one place. It is the Earth that is rotating (spinning) on its axis. As the Earth spins from west to east, different parts of it face the Sun at different times. This makes it look like the Sun is moving from east to west across the sky. In the morning, when our part of the Earth starts facing the Sun, we see it 'rise' in the east. As the Earth continues to rotate, the Sun appears to move across the sky. In the evening, as our part turns away from the Sun, we see it 'set' in the west. One full rotation takes about 24 hours.",
-          "explanation": "Just like when you spin on a merry-go-round, the objects around you seem to move — even though you are the one moving. Similarly, the Sun appears to move because we are spinning on the Earth."
+          "question": "The chapter says that it appears as if the Sun moves across the sky, but actually it does not. Explain what really happens and why we see the Sun seeming to move from east to west.",
+          "answer": "The Sun does not actually travel across our sky. It stays fixed in its position. It is the Earth that rotates (spins) on its axis from west to east, completing one full rotation every 24 hours. As the Earth spins, different parts of it come to face the Sun at different times. In the morning, when our part of the Earth begins to face the Sun, we see the Sun appear to 'rise' in the east. As the Earth continues spinning, the Sun seems to move across the sky above us. In the evening, when our part rotates away from the Sun, we see it appear to 'set' in the west. It is similar to sitting on a merry-go-round -- the trees and buildings around you seem to move past you, but it is actually you who is spinning.",
+          "explanation": "Just like objects outside a moving merry-go-round appear to be moving when it is actually you who is spinning, the Sun appears to move across the sky because we are standing on the spinning Earth."
         }
-      ]
+      ],
+      "name": "Everything Changes"
     },
     {
       "topic": "Seasons and Their Effects on Life",
@@ -67,82 +83,103 @@
         {
           "id": "ch9-t2-e1",
           "type": "mcq",
-          "question": "How many seasons does India traditionally have?",
-          "options": ["Three", "Four", "Five", "Six"],
+          "question": "According to the ancient Indian calendar, how many seasons does India have?",
+          "options": [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
+          ],
           "answer": "Six",
-          "explanation": "India traditionally has six seasons: Spring (Vasanta), Summer (Grishma), Monsoon (Varsha), Autumn (Sharad), Pre-winter (Hemant), and Winter (Shishir)."
+          "explanation": "The ancient Indian calendar recognises six seasons: Spring (Vasanta), Summer (Grishma), Monsoon (Varsha), Autumn (Sharad), Pre-winter (Hemant), and Winter (Shishir)."
         },
         {
           "id": "ch9-t2-e2",
           "type": "fill",
-          "question": "The Sanskrit name for the monsoon season is ______.",
+          "question": "The monsoon season is called ______ in Sanskrit.",
           "answer": "Varsha",
-          "explanation": "The monsoon season is called Varsha in Sanskrit. It falls approximately in July-August and brings heavy rains that make everything green."
+          "explanation": "The monsoon season, falling approximately in July-August, is called Varsha in Sanskrit. It is the season of heavy rainfall that turns the land lush and green."
         },
         {
           "id": "ch9-t2-e3",
           "type": "mcq",
-          "question": "Which festival celebrates the arrival of spring in India?",
-          "options": ["Diwali", "Pongal", "Holi", "Onam"],
+          "question": "Which Indian festival celebrates the arrival of spring with colours?",
+          "options": [
+            "Diwali",
+            "Pongal",
+            "Holi",
+            "Onam"
+          ],
           "answer": "Holi",
-          "explanation": "Holi is celebrated in spring and marks the arrival of the season with its blooming flowers and pleasant weather."
+          "explanation": "Holi is celebrated in spring and marks the joy of colourful blossoms and the end of winter. The festival of colours mirrors the flowers blooming all around."
         },
         {
           "id": "ch9-t2-e4",
           "type": "mcq",
-          "question": "Which crop needs lots of water and is grown during the monsoon season?",
-          "options": ["Wheat", "Mustard", "Rice", "Peas"],
+          "question": "Which crop needs lots of water and is grown during the monsoon (Kharif) season?",
+          "options": [
+            "Wheat",
+            "Mustard",
+            "Rice",
+            "Peas"
+          ],
           "answer": "Rice",
-          "explanation": "Rice is a Kharif crop that needs lots of water to grow. It is planted during the monsoon season when there is plenty of rain."
+          "explanation": "Rice is a Kharif season crop that requires large amounts of water to grow. It is planted during the monsoon when there is plenty of rainfall."
         },
         {
           "id": "ch9-t2-e5",
           "type": "fill",
-          "question": "When ______ carry their eggs to higher ground, it is a natural sign that rain is coming soon.",
+          "question": "When ______ carry their eggs to higher ground in long lines, it is a sign that rain is approaching.",
           "answer": "ants",
-          "explanation": "Ants carrying their eggs to higher ground is one of nature's signs that rain is approaching. Animals can often sense weather changes before they happen."
+          "explanation": "Ants sense changes in moisture in the air before rain arrives. When they carry their eggs uphill to drier ground, villagers and farmers know rain is coming soon."
         }
       ],
       "medium": [
         {
           "id": "ch9-t2-m1",
           "type": "short",
-          "question": "How do seasons affect what we eat and wear? Give examples for summer and winter.",
-          "answer": "In summer, we eat cooling foods like watermelon, curd, and buttermilk, and wear light cotton clothes to stay cool. In winter, we eat warming foods like gajar ka halwa and dry fruits, and wear sweaters and shawls to stay warm. Our food and clothing change with the seasons to suit the weather.",
-          "explanation": "Seasons directly influence our daily choices of food and clothing. We naturally adjust what we eat and wear based on the temperature and weather."
+          "question": "How do seasons affect what we eat and what we wear? Give examples for summer and winter.",
+          "answer": "In summer, we eat cooling foods like sliced watermelon, chilled lassi, and raw mango panna to beat the heat, and we wear light cotton clothes that let air pass through. In winter, we eat warming foods like gajar ka halwa, roasted peanuts, and dry-fruit laddoos to keep our bodies warm, and we wear thick sweaters and cosy shawls. Our food and clothing choices naturally change with the seasons to keep us comfortable.",
+          "explanation": "Seasons directly shape our daily choices. We instinctively choose foods and clothing that help our bodies cope with the temperature and weather of each season."
         },
         {
           "id": "ch9-t2-m2",
           "type": "short",
-          "question": "Name two Indian festivals connected to harvest and the season they are celebrated in.",
-          "answer": "1. Pongal / Makar Sankranti — celebrated in winter as a harvest festival to celebrate the new crop. 2. Baisakhi — celebrated in spring as a harvest festival marking the new year in Punjab. Other harvest festivals include Gudi Padwa, Vishu, and Rongali Bihu.",
-          "explanation": "Many Indian festivals are deeply connected to farming and seasons. They celebrate the harvest and thank nature for providing food."
+          "question": "Name two Indian festivals that are connected to the harvest and explain which season they are celebrated in.",
+          "answer": "1. Pongal / Makar Sankranti — celebrated in winter (January) as a harvest festival where farmers express gratitude for the rice crop and the returning warmth of the Sun. 2. Baisakhi — celebrated in spring (April) to mark the wheat harvest and the new year in Punjab. Other harvest festivals include Gudi Padwa, Vishu, and Rongali Bihu.",
+          "explanation": "Many Indian festivals are deeply rooted in the agricultural calendar. They mark the completion of a harvest and offer thanks to nature for providing food."
         },
         {
           "id": "ch9-t2-m3",
           "type": "mcq",
-          "question": "In Odisha, which bird's song tells farmers that the rains are coming?",
-          "options": ["Sparrow", "Crow", "Koel (cuckoo)", "Parrot"],
+          "question": "In Odisha, the singing of which bird signals to farmers that the rains are approaching?",
+          "options": [
+            "Sparrow",
+            "Parrot",
+            "Koel (cuckoo)",
+            "Crow"
+          ],
           "answer": "Koel (cuckoo)",
-          "explanation": "In Odisha, when the koel (cuckoo) bird sings, farmers know the rains are coming and they start planting seeds."
+          "explanation": "In parts of Odisha, when the koel (cuckoo) begins its melodious call, farmers recognise it as nature's signal that the monsoon rains are near, and they start sowing seeds."
         }
       ],
       "hard": [
         {
           "id": "ch9-t2-h1",
           "type": "long",
-          "question": "Seasons are experienced differently in different parts of India. Explain with examples how winter and monsoon are different in various regions.",
-          "answer": "India's vast geography means the same season feels very different across regions. Winter in Kerala is mild and pleasant, while winter in the Kashmir Valley brings heavy snowfall and freezing temperatures. During the monsoon, Assam receives very heavy rainfall that can cause flooding, while Rajasthan (especially the Thar Desert) gets much less rain and remains dry. Mawsynram in Meghalaya is the wettest inhabited place on Earth, while the Thar Desert is one of the driest. This shows the amazing diversity of India's climate — from the wettest to the driest places, and from tropical warmth to Himalayan cold.",
-          "explanation": "India's climate diversity is remarkable. The same season can bring snow in one part and sunshine in another, demonstrating why India has such rich geographical and cultural diversity."
+          "question": "The same season can feel very different in different parts of India. Explain with examples how winter and the monsoon are experienced differently across various regions.",
+          "answer": "India's vast geography means the same season can feel completely different depending on where you are. Winter in Kerala is gentle and pleasant -- people might need just a light shawl in the evening. But winter in Kashmir brings heavy snowfall, frozen lakes, and temperatures that drop far below zero. During the monsoon, states like Assam and Meghalaya receive extremely heavy rainfall that can cause severe flooding, while the Thar Desert in Rajasthan gets very little rain and stays mostly dry and dusty. Mawsynram in Meghalaya is the wettest inhabited place on Earth, while the Thar Desert is one of the driest -- both exist within the same country! This shows India's remarkable climate diversity.",
+          "explanation": "India's geography -- from tropical coasts to Himalayan peaks, from dense forests to sandy deserts -- creates vastly different climate experiences within a single country. This diversity is what makes India unique."
         },
         {
           "id": "ch9-t2-h2",
           "type": "long",
-          "question": "What is a nature journal? What five things should you observe and record in a nature journal throughout the year?",
-          "answer": "A nature journal (or Seasons Journal) is a notebook where you record what you observe in nature throughout the year. Five things to observe and record: (1) Plant life — whether trees are flowering, fruiting, or shedding leaves, and if leaves are changing colour. (2) Birds and animals — which birds and insects are around, whether they are building nests, and if any new animals have appeared. (3) Air, heat, and light — the weather (sunny, cloudy, rainy, foggy), and what time the sun rises and sets. (4) Water — whether there is rain, if puddles are forming, and whether ponds are full or drying up. (5) Human activities — what people are wearing, what food they are eating, and which festivals are being celebrated.",
-          "explanation": "Keeping a nature journal helps us notice the rhythms and patterns of nature that we might otherwise miss. It develops observation skills and helps us understand how seasons affect everything around us."
+          "question": "What is a nature journal? List five things you should observe and record in it throughout the year.",
+          "answer": "A nature journal (also called a Seasons Journal) is a personal notebook where you write down and draw your observations of nature over time. Five things to observe and record: (1) Plant life — which trees are flowering, whether fruits are ripening, and if leaves are turning colour or falling. (2) Birds and animals — what birds are singing, whether insects are buzzing, and if birds are building nests. (3) Sky and weather — whether the day is sunny, cloudy, rainy, or foggy, and what time the Sun rises and sets. (4) Water — whether it is raining, if puddles are forming, and whether nearby ponds are full or shrinking. (5) People around you — what seasonal clothes people are wearing, what foods are available in the market, and which festivals are being celebrated.",
+          "explanation": "Keeping a nature journal builds observation skills and helps us discover nature's repeating patterns firsthand. After a full year of recording, the rhythms of nature become clearly visible."
         }
-      ]
+      ],
+      "name": "Day and Night"
     }
   ]
 }

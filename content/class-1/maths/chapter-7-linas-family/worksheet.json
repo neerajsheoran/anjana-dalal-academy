@@ -3,63 +3,283 @@
     {
       "topic": "Tall and Short, Long and Short",
       "easy": [
-        { "id": "ch7-t1-e1", "type": "mcq", "question": "Which is TALLER: a tree or a cat?", "options": ["A cat", "A tree", "Both are the same", "Cannot tell"], "answer": "A tree", "explanation": "A tree is much taller than a cat." },
-        { "id": "ch7-t1-e2", "type": "mcq", "question": "Which is SHORTER: a giraffe or a dog?", "options": ["A giraffe", "A dog", "Both are the same", "Cannot tell"], "answer": "A dog", "explanation": "A dog is shorter than a giraffe." },
-        { "id": "ch7-t1-e3", "type": "fill", "question": "A snake is ______ than a worm. (longer / shorter)", "answer": "longer", "explanation": "A snake is much longer than a small worm." },
-        { "id": "ch7-t1-e4", "type": "mcq", "question": "Which is LONGER: a bus or a car?", "options": ["A car", "A bus", "Both are the same", "A bike"], "answer": "A bus", "explanation": "A bus is longer than a car." }
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "Which is TALLER: a coconut tree or a puppy?",
+          "options": [
+            "A puppy",
+            "A coconut tree",
+            "Both are the same",
+            "Cannot tell"
+          ],
+          "answer": "A coconut tree",
+          "explanation": "A coconut tree is much taller than a puppy."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "mcq",
+          "question": "Which is SHORTER: an elephant or a hen?",
+          "options": [
+            "An elephant",
+            "A hen",
+            "Both are the same",
+            "Cannot tell"
+          ],
+          "answer": "A hen",
+          "explanation": "A hen is shorter than an elephant."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "fill",
+          "question": "A python is ______ than a garden lizard. (longer / shorter)",
+          "answer": "longer",
+          "explanation": "A python is much longer than a small garden lizard."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "mcq",
+          "question": "Which is LONGER: a train or a bike?",
+          "options": [
+            "A bike",
+            "A train",
+            "Both are the same",
+            "A car"
+          ],
+          "answer": "A train",
+          "explanation": "A train is much longer than a bike."
+        }
       ],
       "medium": [
-        { "id": "ch7-t1-m1", "type": "short", "question": "Look at a pencil and a broom. Which is longer? Which is shorter?", "answer": "The broom is longer. The pencil is shorter.", "explanation": "We compare the length of objects to say which is longer or shorter." },
-        { "id": "ch7-t1-m2", "type": "mcq", "question": "Lina's grandfather is the tallest and Shanbor is the shortest. Who is taller: grandfather or Shanbor?", "options": ["Shanbor", "Grandfather", "Both are equal", "Cannot tell"], "answer": "Grandfather", "explanation": "The tallest person is always taller than the shortest person." }
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "Look at a matchstick and a broomstick. Which is longer? Which is shorter?",
+          "answer": "The broomstick is longer. The matchstick is shorter.",
+          "explanation": "We compare the length of objects to say which is longer or shorter."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "mcq",
+          "question": "Lina's Baba is the tallest and Rit is the shortest. Who is taller: Baba or Rit?",
+          "options": [
+            "Rit",
+            "Baba",
+            "Both are equal",
+            "Cannot tell"
+          ],
+          "answer": "Baba",
+          "explanation": "The tallest person is always taller than the shortest person."
+        }
       ],
       "hard": [
-        { "id": "ch7-t1-h1", "type": "long", "question": "Put in order from shortest to tallest: a cat, a child, a tree, an ant.", "answer": "Ant, Cat, Child, Tree (from shortest to tallest).", "explanation": "An ant is the smallest, then a cat, then a child, and a tree is the tallest." }
-      ]
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "Put in order from shortest to tallest: a mushroom, a child, a banyan tree, a beetle.",
+          "answer": "Beetle, Mushroom, Child, Banyan tree (from shortest to tallest).",
+          "explanation": "A beetle is the smallest, then a mushroom, then a child, and a banyan tree is the tallest."
+        }
+      ],
+      "name": "Meet Lina's Family"
     },
     {
       "topic": "Thick and Thin, Heavy and Light",
       "easy": [
-        { "id": "ch7-t2-e1", "type": "mcq", "question": "Which is THICK: a tree trunk or a thread?", "options": ["A thread", "A tree trunk", "Both are the same", "Cannot tell"], "answer": "A tree trunk", "explanation": "A tree trunk is thick. A thread is thin." },
-        { "id": "ch7-t2-e2", "type": "fill", "question": "A feather is ______ and a brick is heavy.", "answer": "light", "explanation": "A feather weighs very little, so it is light." },
-        { "id": "ch7-t2-e3", "type": "mcq", "question": "Which is HEAVIER: a watermelon or a grape?", "options": ["A grape", "A watermelon", "Both are the same", "Cannot tell"], "answer": "A watermelon", "explanation": "A watermelon is much heavier than a small grape." },
-        { "id": "ch7-t2-e4", "type": "mcq", "question": "Which is THIN?", "options": ["Dictionary", "Tree trunk", "Thread", "Brick"], "answer": "Thread", "explanation": "A thread is very thin compared to the other objects." }
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "Which is THICK: a banyan tree trunk or a kite string?",
+          "options": [
+            "A kite string",
+            "A banyan tree trunk",
+            "Both are the same",
+            "Cannot tell"
+          ],
+          "answer": "A banyan tree trunk",
+          "explanation": "A banyan tree trunk is thick. A kite string is thin."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "A cotton ball is ______ and a sack of wheat is heavy.",
+          "answer": "light",
+          "explanation": "A cotton ball weighs very little, so it is light."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "mcq",
+          "question": "Which is HEAVIER: a pumpkin or a tomato?",
+          "options": [
+            "A tomato",
+            "A pumpkin",
+            "Both are the same",
+            "Cannot tell"
+          ],
+          "answer": "A pumpkin",
+          "explanation": "A pumpkin is much heavier than a small tomato."
+        },
+        {
+          "id": "ch7-t2-e4",
+          "type": "mcq",
+          "question": "Which is THIN?",
+          "options": [
+            "Dictionary",
+            "Banyan trunk",
+            "Kite string",
+            "Iron kadhai"
+          ],
+          "answer": "Kite string",
+          "explanation": "A kite string is very thin compared to the other objects."
+        }
       ],
       "medium": [
-        { "id": "ch7-t2-m1", "type": "short", "question": "Name one heavy thing and one light thing from your school bag.", "answer": "Heavy: a big textbook. Light: a pencil (or eraser).", "explanation": "Heavy things weigh more and light things weigh less." },
-        { "id": "ch7-t2-m2", "type": "short", "question": "Which is heavier: an empty school bag or a school bag full of books?", "answer": "A school bag full of books is heavier.", "explanation": "Adding books makes the bag much heavier than an empty bag." }
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "Name one heavy thing and one light thing from your kitchen.",
+          "answer": "Heavy: iron kadhai or bag of potatoes. Light: a spoon or a plastic plate.",
+          "explanation": "Heavy things weigh more and light things weigh less."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "Which is heavier: an empty jhola (cloth bag) or a schoolbag full of books?",
+          "answer": "A schoolbag full of books is heavier.",
+          "explanation": "A bag full of books is much heavier than an empty cloth bag."
+        }
       ],
       "hard": [
-        { "id": "ch7-t2-h1", "type": "long", "question": "Put these in order from lightest to heaviest: a leaf, a chair, a pencil, a bag of rice.", "answer": "Leaf, Pencil, Chair, Bag of rice (from lightest to heaviest).", "explanation": "A leaf is the lightest and a bag of rice is the heaviest." }
-      ]
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "Put these in order from lightest to heaviest: a cotton ball, a wooden chair, a rubber ball, a sack of wheat.",
+          "answer": "Cotton ball, Rubber ball, Wooden chair, Sack of wheat (from lightest to heaviest).",
+          "explanation": "A cotton ball is the lightest and a sack of wheat is the heaviest."
+        }
+      ],
+      "name": "Tall and Short"
     },
     {
       "topic": "Measuring with Handspans and Footspans",
       "easy": [
-        { "id": "ch7-t3-e1", "type": "mcq", "question": "A handspan is the distance from your ______ to your little finger when your hand is spread open.", "options": ["Wrist", "Thumb", "Elbow", "Palm"], "answer": "Thumb", "explanation": "A handspan goes from the tip of the thumb to the tip of the little finger." },
-        { "id": "ch7-t3-e2", "type": "fill", "question": "For measuring big distances, we can use our ______.", "answer": "footspan", "explanation": "A footspan (the length of your foot) is used for bigger distances." },
-        { "id": "ch7-t3-e3", "type": "mcq", "question": "Which would you use to measure a small eraser: handspan or footspan?", "options": ["Handspan", "Footspan", "Both", "Neither"], "answer": "Handspan", "explanation": "For small objects, a handspan (or even finger widths) works better." }
+        {
+          "id": "ch7-t3-e1",
+          "type": "mcq",
+          "question": "A handspan is the distance from your ______ to your little finger when your hand is spread open.",
+          "options": [
+            "Wrist",
+            "Thumb",
+            "Elbow",
+            "Palm"
+          ],
+          "answer": "Thumb",
+          "explanation": "A handspan goes from the tip of the thumb to the tip of the little finger."
+        },
+        {
+          "id": "ch7-t3-e2",
+          "type": "fill",
+          "question": "For measuring big distances like a room, we can use our ______.",
+          "answer": "footspan",
+          "explanation": "A footspan (the length of your foot) is used for bigger distances."
+        },
+        {
+          "id": "ch7-t3-e3",
+          "type": "mcq",
+          "question": "Which would you use to measure a small key: handspan or footspan?",
+          "options": [
+            "Handspan",
+            "Footspan",
+            "Both",
+            "Neither"
+          ],
+          "answer": "Handspan",
+          "explanation": "For small objects, a handspan (or even finger widths) works better."
+        }
       ],
       "medium": [
-        { "id": "ch7-t3-m1", "type": "short", "question": "Why might you and your friend get different answers when measuring the same table with handspans?", "answer": "Because your hands may be different sizes. A bigger hand has a bigger handspan.", "explanation": "Handspans differ from person to person based on hand size." },
-        { "id": "ch7-t3-m2", "type": "short", "question": "Would you use a handspan or a footspan to measure the length of your classroom?", "answer": "A footspan, because the classroom is very big.", "explanation": "Footspans are better for large distances. Handspans are better for small objects." }
+        {
+          "id": "ch7-t3-m1",
+          "type": "short",
+          "question": "Why might you and your Dadi get different answers when measuring the same shawl with handspans?",
+          "answer": "Because your hands are different sizes. Dadi's hand may be bigger than yours.",
+          "explanation": "Handspans differ from person to person based on hand size."
+        },
+        {
+          "id": "ch7-t3-m2",
+          "type": "short",
+          "question": "Would you use a handspan or a footspan to measure the length of the verandah?",
+          "answer": "A footspan, because the verandah is very long.",
+          "explanation": "Footspans are better for large distances. Handspans are better for small objects."
+        }
       ],
       "hard": [
-        { "id": "ch7-t3-h1", "type": "long", "question": "Riya measured her desk with her handspan and got 6 handspans. Her friend Aman measured the same desk and got 5 handspans. Why did they get different answers?", "answer": "Aman has bigger hands than Riya, so his handspan is larger. He needs fewer handspans to cover the same distance.", "explanation": "A bigger handspan covers more distance with each measure, so fewer handspans are needed." }
-      ]
+        {
+          "id": "ch7-t3-h1",
+          "type": "long",
+          "question": "Lina measured her pillow with her handspan and got 5 handspans. Her brother Rit measured the same pillow and got 7 handspans. Why did they get different answers?",
+          "answer": "Lina has bigger hands than Rit, so her handspan is larger. She needs fewer handspans to cover the same distance. Rit has smaller hands, so he needs more handspans.",
+          "explanation": "A bigger handspan covers more distance with each measure, so fewer handspans are needed."
+        }
+      ],
+      "name": "Long and Short"
     },
     {
-      "topic": "Capacity (How Much Water)",
+      "topic": "How Much Water?",
       "easy": [
-        { "id": "ch7-t4-e1", "type": "mcq", "question": "Which holds MORE water: a bucket or a glass?", "options": ["A glass", "A bucket", "Both hold the same", "Cannot tell"], "answer": "A bucket", "explanation": "A bucket is much bigger and holds more water than a glass." },
-        { "id": "ch7-t4-e2", "type": "fill", "question": "A mug holds ______ water than a bucket. (more / less)", "answer": "less", "explanation": "A mug is smaller than a bucket, so it holds less water." },
-        { "id": "ch7-t4-e3", "type": "mcq", "question": "Which holds the LEAST water?", "options": ["Bucket", "Mug", "Spoon", "Bottle"], "answer": "Spoon", "explanation": "A spoon is the smallest and holds the least water." }
+        {
+          "id": "ch7-t4-e1",
+          "type": "mcq",
+          "question": "Which holds MORE water: a balti (bucket) or a glass?",
+          "options": [
+            "A glass",
+            "A balti",
+            "Both hold the same",
+            "Cannot tell"
+          ],
+          "answer": "A balti",
+          "explanation": "A balti is much bigger and holds more water than a glass."
+        },
+        {
+          "id": "ch7-t4-e2",
+          "type": "fill",
+          "question": "A lota holds ______ water than a balti. (more / less)",
+          "answer": "less",
+          "explanation": "A lota is smaller than a balti, so it holds less water."
+        },
+        {
+          "id": "ch7-t4-e3",
+          "type": "mcq",
+          "question": "Which holds the LEAST water?",
+          "options": [
+            "Balti",
+            "Lota",
+            "Spoon",
+            "Bottle"
+          ],
+          "answer": "Spoon",
+          "explanation": "A spoon is the smallest and holds the least water."
+        }
       ],
       "medium": [
-        { "id": "ch7-t4-m1", "type": "short", "question": "Put in order from holds least to holds most: bucket, glass, spoon, mug.", "answer": "Spoon, Glass, Mug, Bucket.", "explanation": "Spoon holds the least, then glass, then mug, and bucket holds the most." }
+        {
+          "id": "ch7-t4-m1",
+          "type": "short",
+          "question": "Put in order from holds least to holds most: balti, glass, spoon, lota.",
+          "answer": "Spoon, Glass, Lota, Balti.",
+          "explanation": "Spoon holds the least, then glass, then lota, and balti holds the most."
+        }
       ],
       "hard": [
-        { "id": "ch7-t4-h1", "type": "short", "question": "Why should we not waste water? Give two ways to save water.", "answer": "Water is precious and we need it to live. Two ways to save water: use a bucket for bathing instead of a shower, and close the tap when not using water.", "explanation": "Saving water helps the environment and makes sure there is enough for everyone." }
-      ]
+        {
+          "id": "ch7-t4-h1",
+          "type": "short",
+          "question": "Why should we not waste water? Give two ways to save water.",
+          "answer": "Water is precious and we need it to live. Two ways: use a balti for bathing instead of a shower, and close the tap tightly after washing hands.",
+          "explanation": "Saving water helps the environment and makes sure there is enough for everyone."
+        }
+      ],
+      "name": "Thick and Thin"
     }
   ]
 }

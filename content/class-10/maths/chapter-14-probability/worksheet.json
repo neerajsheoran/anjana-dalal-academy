@@ -7,7 +7,12 @@
           "id": "ch14-t1-e1",
           "type": "mcq",
           "question": "The probability of an event that is certain to happen is:",
-          "options": ["0", "0.5", "1", "2"],
+          "options": [
+            "0",
+            "0.5",
+            "1",
+            "2"
+          ],
           "answer": "1",
           "explanation": "A sure or certain event has probability 1. For example, the sun will rise tomorrow has probability 1."
         },
@@ -22,7 +27,12 @@
           "id": "ch14-t1-e3",
           "type": "mcq",
           "question": "The probability of any event E satisfies:",
-          "options": ["0 <= P(E) <= 1", "-1 <= P(E) <= 1", "0 < P(E) < 1", "P(E) >= 0"],
+          "options": [
+            "0 <= P(E) <= 1",
+            "-1 <= P(E) <= 1",
+            "0 < P(E) < 1",
+            "P(E) >= 0"
+          ],
           "answer": "0 <= P(E) <= 1",
           "explanation": "The probability of any event always lies between 0 and 1, inclusive."
         },
@@ -30,7 +40,12 @@
           "id": "ch14-t1-e4",
           "type": "mcq",
           "question": "If P(E) = 0.05, what is the probability of 'not E'?",
-          "options": ["0.05", "0.5", "0.95", "1"],
+          "options": [
+            "0.05",
+            "0.5",
+            "0.95",
+            "1"
+          ],
           "answer": "0.95",
           "explanation": "P(not E) = 1 - P(E) = 1 - 0.05 = 0.95."
         },
@@ -69,13 +84,18 @@
       ]
     },
     {
-      "topic": "Probability with Coins and Dice",
+      "topic": "The Probability Formula",
       "easy": [
         {
           "id": "ch14-t2-e1",
           "type": "mcq",
           "question": "A coin is tossed once. The probability of getting a head is:",
-          "options": ["0", "1/4", "1/2", "1"],
+          "options": [
+            "0",
+            "1/4",
+            "1/2",
+            "1"
+          ],
           "answer": "1/2",
           "explanation": "A fair coin has two equally likely outcomes: Head and Tail. P(Head) = 1/2."
         },
@@ -97,7 +117,12 @@
           "id": "ch14-t2-e4",
           "type": "mcq",
           "question": "When two coins are tossed simultaneously, the probability of getting at least one head is:",
-          "options": ["1/4", "1/2", "3/4", "1"],
+          "options": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1"
+          ],
           "answer": "3/4",
           "explanation": "Total outcomes: {HH, HT, TH, TT}. At least one head: {HH, HT, TH}. P = 3/4."
         }
@@ -136,13 +161,18 @@
       ]
     },
     {
-      "topic": "Probability with Cards and Other Applications",
+      "topic": "Fundamental Rules of Probability",
       "easy": [
         {
           "id": "ch14-t3-e1",
           "type": "mcq",
           "question": "A standard deck of playing cards has how many cards?",
-          "options": ["48", "50", "52", "54"],
+          "options": [
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
           "answer": "52",
           "explanation": "A standard deck has 52 cards: 4 suits (hearts, diamonds, clubs, spades) with 13 cards each."
         },
@@ -164,7 +194,12 @@
           "id": "ch14-t3-e4",
           "type": "mcq",
           "question": "The probability of drawing a red card from a deck is:",
-          "options": ["1/4", "1/2", "1/13", "3/4"],
+          "options": [
+            "1/4",
+            "1/2",
+            "1/13",
+            "3/4"
+          ],
           "answer": "1/2",
           "explanation": "Red cards = hearts (13) + diamonds (13) = 26. P = 26/52 = 1/2."
         }

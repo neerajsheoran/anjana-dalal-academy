@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import WorksheetView from "./WorksheetView";
 import ContentBlur from "./ContentBlur";
 import DiscussionAudio from "./DiscussionAudio";
+import DiscussionChat from "./DiscussionChat";
 import { WorksheetData, ContentAccessLevel } from "@/lib/types";
 
 interface Heading {
@@ -15,6 +16,7 @@ interface ChapterTabsProps {
   children: React.ReactNode; // pre-rendered MDX notes from server
   worksheet: WorksheetData | null;
   discussionContent: React.ReactNode | null;
+  discussionSource?: string | null;
   accessLevel: ContentAccessLevel;
   currentPath: string;
   headings?: Heading[];
@@ -35,7 +37,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
   return -1;
 }
 
-export default function ChapterTabs({ children, worksheet, discussionContent, accessLevel, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const notesRef = useRef<HTMLDivElement>(null);
@@ -128,17 +130,23 @@ export default function ChapterTabs({ children, worksheet, discussionContent, ac
         </>
       )}
 
-      {activeTab === "discussion" && discussionContent && (
-        <>
-          <DiscussionAudio contentRef={discussionRef} />
-          <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-            <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
-              <div ref={discussionRef}>
-                {discussionContent}
+      {activeTab === "discussion" && (discussionSource || discussionContent) && (
+        <article className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8">
+          {discussionSource ? (
+            <DiscussionChat source={discussionSource} accessLevel={accessLevel} currentPath={currentPath} />
+          ) : (
+            <>
+              <DiscussionAudio contentRef={discussionRef} />
+              <div className="prose prose-slate max-w-none">
+                <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
+                  <div ref={discussionRef}>
+                    {discussionContent}
+                  </div>
+                </ContentBlur>
               </div>
-            </ContentBlur>
-          </article>
-        </>
+            </>
+          )}
+        </article>
       )}
 
       {activeTab === "worksheet" && (

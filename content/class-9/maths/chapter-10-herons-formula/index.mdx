@@ -1,105 +1,103 @@
 ---
-title: Chapter 10 Heron's Formula
+title: "Finding Area with Herons Formula"
+description: "Apply Heron's formula to find areas of triangles and quadrilaterals using side lengths."
+order: 10
 ---
 ## Introduction
 
-You already know that the area of a triangle with base **b** and height **h** is given by:
+You already know the basic triangle area rule: **Area = (1/2) x base x height**. It works perfectly when you can measure the height. But what if you are standing at a triangular plot of farmland near Nashik and all you have is a measuring tape? You can easily walk along the three sides and record their lengths, but measuring the perpendicular height on uneven ground is impractical. **Heron's formula** solves this problem -- it computes the area using nothing but the three side lengths.
 
-**Area = (1/2) x base x height**
-
-But what if you know only the lengths of the three sides and not the height? **Heron's formula** (also called **Hero's formula**) allows you to calculate the area of a triangle using only the lengths of its three sides.
-
-**Heron** (10 CE - 75 CE) was born in Alexandria, Egypt. He worked in applied mathematics and derived this famous formula in his geometrical works.
+**Heron** (sometimes called **Hero**) was a mathematician and inventor from Alexandria, Egypt, who lived around 10 CE -- 75 CE. Beyond this formula, he is remembered for designing one of the earliest known steam-powered devices.
 
 ---
 
-## Heron's Formula
+## The Formula
 
-For a triangle with sides **a**, **b**, and **c**, and **semi-perimeter** s:
+For a triangle whose sides measure **a**, **b**, and **c**, first compute the **semi-perimeter**:
 
 **s = (a + b + c) / 2**
 
-The area of the triangle is:
+Then the area is:
 
-**Area = sqrt(s(s - a)(s - b)(s - c))**
+**Area = sqrt( s (s - a) (s - b) (s - c) )**
 
 ![Scalene triangle with sides a, b, c labeled and the semi-perimeter formula s = (a+b+c)/2 shown](herons-formula-triangle-labeled.png)
 
-> **Key idea:** Heron's formula is particularly useful when the height of the triangle is not known or is difficult to calculate, which is common for scalene triangles.
+> **Why it matters:** Heron's formula shines for scalene triangles where no obvious base-height pair is available. It also has a built-in validity check: if any of (s - a), (s - b), or (s - c) turns out negative, the three lengths cannot form a real triangle.
 
 ---
 
 ## Worked Examples
 
-### Example 1: Scalene triangle
+### Example 1: A right-angled triangle
 
-Find the area of a triangle with sides 40 m, 24 m, and 32 m.
+A triangular garden has sides 9 m, 40 m, and 41 m. Find its area.
 
-s = (40 + 24 + 32) / 2 = 96/2 = 48 m
+s = (9 + 40 + 41) / 2 = 90 / 2 = 45 m
 
-s - a = 48 - 40 = 8 m, s - b = 48 - 24 = 24 m, s - c = 48 - 32 = 16 m
+s - a = 45 - 9 = 36, s - b = 45 - 40 = 5, s - c = 45 - 41 = 4
 
-Area = sqrt(48 x 8 x 24 x 16) = sqrt(147456) = **384 m^2**
+Area = sqrt(45 x 36 x 5 x 4) = sqrt(32400) = **180 m²**
 
-Note: We can verify this is a right triangle (24^2 + 32^2 = 576 + 1024 = 1600 = 40^2), so area = (1/2) x 24 x 32 = 384 m^2. The answers match.
+Cross-check: 9² + 40² = 81 + 1600 = 1681 = 41², so this is a right triangle with legs 9 and 40. Area = (1/2) x 9 x 40 = 180 m². The answers agree.
 
-### Example 2: Equilateral triangle
+### Example 2: An equilateral triangle
 
-Find the area of an equilateral triangle with side 10 cm.
+A rangoli border is shaped as an equilateral triangle with each side 12 cm. Find the area.
 
-s = (10 + 10 + 10) / 2 = 15 cm
+s = (12 + 12 + 12) / 2 = 18 cm
 
-Area = sqrt(15 x 5 x 5 x 5) = sqrt(1875) = 25sqrt(3) cm^2
+Area = sqrt(18 x 6 x 6 x 6) = sqrt(3888) = 36sqrt(3) cm²
 
-> **Key idea:** For an equilateral triangle with side a, the area formula simplifies to: **Area = (sqrt(3)/4) x a^2**
+> **Shortcut for equilateral triangles:** Area = (sqrt(3) / 4) x a². For a = 12: Area = (sqrt(3) / 4) x 144 = 36sqrt(3) cm². Memorise this -- it saves valuable exam time.
 
-### Example 3: Given perimeter and two sides
+### Example 3: Two sides and the perimeter known
 
-Find the area of a triangle with two sides 8 cm and 11 cm and perimeter 32 cm.
+A triangle has sides 9 cm and 14 cm, and its perimeter is 36 cm. Find the area.
 
-Third side = 32 - 8 - 11 = 13 cm
+Third side = 36 - 9 - 14 = 13 cm
 
-s = 32/2 = 16 cm
+s = 36 / 2 = 18 cm
 
-Area = sqrt(16 x 8 x 5 x 3) = sqrt(1920) = 8sqrt(30) cm^2
+Area = sqrt(18 x 9 x 4 x 5) = sqrt(3240) = 18sqrt(10) cm²
 
-### Example 4: Sides in a ratio
+### Example 4: Sides in a given ratio
 
-The sides of a triangular plot are in the ratio 3 : 5 : 7 and its perimeter is 300 m. Find its area.
+The boundary of a triangular park has sides in the ratio 5 : 7 : 8 and a perimeter of 200 m. Find its area.
 
-3x + 5x + 7x = 300, so 15x = 300, giving x = 20.
+5k + 7k + 8k = 200 => 20k = 200 => k = 10
 
-Sides: 60 m, 100 m, 140 m.
+Sides: 50 m, 70 m, 80 m
 
-s = 300/2 = 150 m
+s = 200 / 2 = 100 m
 
-Area = sqrt(150 x 90 x 50 x 10) = sqrt(6750000) = 1500sqrt(3) m^2
+Area = sqrt(100 x 50 x 30 x 20) = sqrt(3000000) = 1000sqrt(3) m²
 
 ---
 
-## Application to Quadrilaterals
+## Extending to Quadrilaterals
 
-Heron's formula can be used to find the area of a quadrilateral by dividing it into two triangles using a diagonal.
+Any quadrilateral can be split into two triangles by drawing a diagonal. Compute each triangle's area with Heron's formula and add them together.
 
 ![Quadrilateral ABCD divided into two triangles by diagonal AC, with all side lengths labeled](quadrilateral-divided-by-diagonal.png)
 
-**Example:** A quadrilateral ABCD has sides AB = 9 m, BC = 40 m, CD = 28 m, DA = 15 m, and diagonal AC = 41 m.
+**Example:** A plot PQRS has sides PQ = 7 m, QR = 24 m, RS = 20 m, SP = 15 m, and diagonal PR = 25 m.
 
-Area of triangle ABC: sides 9, 40, 41. s = 45.
-Area = sqrt(45 x 36 x 5 x 4) = sqrt(32400) = 180 m^2.
+**Triangle PQR:** sides 7, 24, 25. s = 28.
+Area = sqrt(28 x 21 x 4 x 3) = sqrt(7056) = 84 m²
 
-Area of triangle ACD: sides 41, 28, 15. s = 42.
-Area = sqrt(42 x 1 x 14 x 27) = sqrt(15876) = 126 m^2.
+**Triangle PRS:** sides 25, 20, 15. s = 30.
+Area = sqrt(30 x 5 x 10 x 15) = sqrt(22500) = 150 m²
 
-Total area of ABCD = 180 + 126 = **306 m^2**.
+Total area of PQRS = 84 + 150 = **234 m²**
 
-> **Key idea:** For any polygon, divide it into triangles (using diagonals), find the area of each triangle using Heron's formula, and add them up.
+> **General principle:** Any polygon can be triangulated using diagonals. A pentagon splits into three triangles, a hexagon into four, and so on. Land surveyors across India routinely use this technique -- measure the sides and one or more diagonals, then compute areas triangle by triangle.
 
 ---
 
 ## Summary
 
-1. **Heron's formula:** Area = sqrt(s(s-a)(s-b)(s-c)) where s = (a+b+c)/2.
-2. The formula uses only the three side lengths -- no height needed.
-3. For an equilateral triangle with side a: Area = (sqrt(3)/4) x a^2.
-4. For quadrilaterals, divide into triangles using a diagonal and apply the formula to each.
+1. **Heron's formula:** Area = sqrt(s(s - a)(s - b)(s - c)), where s = (a + b + c) / 2.
+2. The formula needs only side lengths -- no height measurement required.
+3. For an equilateral triangle with side a: Area = (sqrt(3) / 4) x a².
+4. For quadrilaterals and larger polygons, divide into triangles using diagonals and apply the formula to each piece.

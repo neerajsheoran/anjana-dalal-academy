@@ -173,6 +173,7 @@ export default async function ChapterPage({
           currentPath={currentPath}
           headings={headings}
           worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
+          discussionSource={discussionSource}
           discussionContent={
             discussionSource ? (
               <MDXRemote

@@ -6,75 +6,96 @@
         {
           "id": "ch3-t1-e1",
           "type": "mcq",
-          "question": "Pachmarhi is a hill station in which state of India?",
-          "options": ["Rajasthan", "Madhya Pradesh", "Kerala", "Punjab"],
+          "question": "Pachmarhi is a hill station located in which Indian state?",
+          "options": [
+            "Kerala",
+            "Madhya Pradesh",
+            "Assam",
+            "Gujarat"
+          ],
           "answer": "Madhya Pradesh",
-          "explanation": "Pachmarhi is a beautiful hill station in Madhya Pradesh, surrounded by thick forests filled with tall trees and chirping birds."
+          "explanation": "Pachmarhi is a green, misty hill station in the Satpura hills of Madhya Pradesh, surrounded by thick forests."
         },
         {
           "id": "ch3-t1-e2",
           "type": "fill",
-          "question": "An elephant uses its long ______ to pick up food and drink water.",
+          "question": "An elephant uses its long, flexible ______ to pick leaves, drink water and give itself a mud bath.",
           "answer": "trunk",
-          "explanation": "An elephant has a long trunk which is a special feature that helps it pick up food, drink water and even spray water on itself."
+          "explanation": "The elephant's trunk works like a hand. It can do many things -- pick food, suck up water, spray mud, and even greet other elephants."
         },
         {
           "id": "ch3-t1-e3",
           "type": "mcq",
-          "question": "Which animal is also called the Indian bison?",
-          "options": ["Tiger", "Deer", "Gaur", "Elephant"],
-          "answer": "Gaur",
-          "explanation": "The Gaur (Indian bison) has a strong body with short horns and looks like a buffalo."
+          "question": "The Gaur is another name for which animal?",
+          "options": [
+            "Indian tiger",
+            "Indian bison",
+            "Indian deer",
+            "Indian wolf"
+          ],
+          "answer": "Indian bison",
+          "explanation": "The Gaur or Indian bison is a massive, muscular animal with thick short horns, found in the dense forests of India."
         },
         {
           "id": "ch3-t1-e4",
           "type": "short",
-          "question": "Name two safety rules we should follow in a forest or zoo.",
-          "answer": "Do not tease or feed animals, and do not throw garbage or bring polythene bags.",
-          "explanation": "Following safety rules in forests and zoos keeps us safe and also protects the animals and plants."
+          "question": "Name two safety rules you should follow when visiting a forest or zoo.",
+          "answer": "Never tease or try to feed wild animals, and do not carry plastic bags or bottles into the forest.",
+          "explanation": "Safety rules protect both visitors and the animals. Teasing can anger animals, and plastic harms the forest environment."
         },
         {
           "id": "ch3-t1-e5",
           "type": "mcq",
-          "question": "Which animal has fast legs for running away from danger?",
-          "options": ["Elephant", "Deer", "Tiger", "Frog"],
+          "question": "Which animal has powerful legs built for sprinting away from predators?",
+          "options": [
+            "Turtle",
+            "Elephant",
+            "Deer",
+            "Crab"
+          ],
           "answer": "Deer",
-          "explanation": "A deer has fast legs that help it run quickly to escape from predators like tigers."
+          "explanation": "A deer has slender, powerful legs that allow it to run at high speed to escape hunters like tigers and leopards."
         }
       ],
       "medium": [
         {
           "id": "ch3-t1-m1",
           "type": "short",
-          "question": "How do a tiger and a deer survive in the forest? What special features help them?",
-          "answer": "A tiger has sharp teeth and claws that help it hunt other animals for food. A deer has fast legs that help it run away quickly from danger. These special features help both animals survive in the forest.",
-          "explanation": "Every animal has special features that help it find food and stay safe in its natural habitat."
+          "question": "How do a tiger's body features help it survive as a hunter, and how do a deer's features help it escape?",
+          "answer": "A tiger has sharp curved claws and strong jaws that help it catch and hold its prey firmly. A deer has slender, powerful legs that let it sprint away from danger in seconds. The tiger's features help it attack, while the deer's features help it escape.",
+          "explanation": "In nature, predators and prey both have special body features. These adaptations have developed over thousands of years to help each animal survive."
         },
         {
           "id": "ch3-t1-m2",
           "type": "mcq",
-          "question": "The Spectacled Monkey is the state animal of which state?",
-          "options": ["Madhya Pradesh", "Rajasthan", "Tripura", "Karnataka"],
+          "question": "The Phayre's Langur, also called the Spectacled Monkey, is the state animal of which state?",
+          "options": [
+            "Rajasthan",
+            "Madhya Pradesh",
+            "Tripura",
+            "Tamil Nadu"
+          ],
           "answer": "Tripura",
-          "explanation": "The Spectacled Monkey (Phayre's langur) is the state animal of Tripura. It has white patches around its eyes that look like spectacles."
+          "explanation": "The Phayre's Langur lives in the forests of Tripura. The pale rings around its eyes make it look like it is wearing spectacles."
         },
         {
           "id": "ch3-t1-m3",
           "type": "fill",
-          "question": "The Indian Giant Squirrel is a big, ______-coloured squirrel found in Pachmarhi.",
-          "answer": "red",
-          "explanation": "The Indian Giant Squirrel is a large squirrel with red colouring that can be found in the forests of Pachmarhi."
+          "question": "The Indian Giant Squirrel found in Pachmarhi forests has a distinctive ______-coloured fur.",
+          "answer": "rust",
+          "explanation": "The Indian Giant Squirrel is a large squirrel with rust-coloured (reddish-brown) fur that leaps between tall trees in the Satpura forests."
         }
       ],
       "hard": [
         {
           "id": "ch3-t1-h1",
           "type": "long",
-          "question": "Name any three animals that live near water and describe one special feature of each that helps them survive.",
-          "answer": "1. Fish has fins and a streamlined body that helps it swim easily in water. 2. Turtle has a strong shell that protects it from enemies and webbed feet for swimming. 3. Crocodile has powerful jaws for catching prey and a long tail for swimming.",
-          "explanation": "Animals that live near water have special body features that help them survive both in and around water."
+          "question": "Describe three animals that live in or near water. For each one, explain one special body feature that helps it survive.",
+          "answer": "1. A fish has fins and a streamlined body that lets it glide smoothly through water without much effort. 2. A turtle has a hard shell that acts like armour -- when danger comes, it pulls its head and legs inside for protection. It also has webbed feet for paddling. 3. A crocodile has a powerful tail that pushes it through water quickly and strong jaws that snap shut to catch prey. Each animal's body is perfectly suited to life in and around water.",
+          "explanation": "Water animals have special adaptations like fins, shells, webbed feet and strong tails that help them move, hunt and stay safe in their watery habitat."
         }
-      ]
+      ],
+      "name": "Nature is Full of Wonders"
     },
     {
       "topic": "Birds, Insects and Leaves",
@@ -82,75 +103,96 @@
         {
           "id": "ch3-t2-e1",
           "type": "mcq",
-          "question": "What type of beak does a sparrow have?",
-          "options": ["Long and thin", "Sharp and curved", "Short and strong", "Large and flat"],
-          "answer": "Short and strong",
-          "explanation": "A sparrow has a short and strong beak that helps it crack seeds and grains."
+          "question": "What kind of beak does a sparrow have?",
+          "options": [
+            "Long and thin",
+            "Sharp and hooked",
+            "Short, thick and cone-shaped",
+            "Flat and wide"
+          ],
+          "answer": "Short, thick and cone-shaped",
+          "explanation": "A sparrow's short, thick beak is perfectly designed for crushing hard seeds and grains."
         },
         {
           "id": "ch3-t2-e2",
           "type": "fill",
-          "question": "All insects have ______ pairs of legs, which means they have 6 legs in total.",
-          "answer": "three",
-          "explanation": "Insects have three pairs of legs (6 legs total), one pair of antennae, and many have wings."
+          "question": "Every insect has exactly ______ legs.",
+          "answer": "six",
+          "explanation": "All insects have three pairs of legs, making six legs in total. This is one of the key features that defines an insect."
         },
         {
           "id": "ch3-t2-e3",
           "type": "mcq",
-          "question": "Which bird drinks nectar from flowers using its long thin beak?",
-          "options": ["Eagle", "Sparrow", "Sunbird", "Peacock"],
+          "question": "Which bird uses its long, slender beak to sip nectar from flowers?",
+          "options": [
+            "Owl",
+            "Peacock",
+            "Sunbird",
+            "Eagle"
+          ],
           "answer": "Sunbird",
-          "explanation": "A sunbird has a long, thin beak specially made for drinking nectar from flowers."
+          "explanation": "A sunbird's long, curved beak reaches deep inside flowers to drink the sweet nectar hidden at the base."
         },
         {
           "id": "ch3-t2-e4",
           "type": "short",
-          "question": "How can you make a leaf print?",
-          "answer": "Place a leaf with the vein-side up under a plain sheet of paper and rub a crayon over it. The leaf pattern appears on the paper.",
-          "explanation": "A leaf print is made by rubbing a crayon over paper placed on top of a leaf. The veins create a beautiful pattern."
+          "question": "How can you make a leaf print at home?",
+          "answer": "Place a leaf vein-side up on a table. Lay a sheet of white paper on top. Rub a crayon sideways across the paper. The pattern of veins will appear on the paper like a beautiful print.",
+          "explanation": "Leaf printing is a fun activity that shows the vein patterns clearly. Each leaf produces a unique print based on its shape and vein arrangement."
         },
         {
           "id": "ch3-t2-e5",
           "type": "mcq",
-          "question": "What can we guess by looking at the shape of a bird's beak?",
-          "options": ["How old the bird is", "Where the bird lives", "What the bird eats", "How fast the bird flies"],
-          "answer": "What the bird eats",
-          "explanation": "We can guess what a bird eats by looking at the shape of its beak. Each type of beak is suited for a different kind of food."
+          "question": "What can you learn about a bird by looking at its beak?",
+          "options": [
+            "How old the bird is",
+            "What food it eats",
+            "Where it was born",
+            "How many eggs it lays"
+          ],
+          "answer": "What food it eats",
+          "explanation": "The shape of a bird's beak is closely linked to its diet. Seed-eaters have thick beaks, meat-eaters have hooked beaks, and nectar-drinkers have thin beaks."
         }
       ],
       "medium": [
         {
           "id": "ch3-t2-m1",
           "type": "short",
-          "question": "How are the beaks of an eagle and a sunbird different? Why?",
-          "answer": "An eagle has a sharp, curved beak with sharp claws to catch and tear its prey (other animals). A sunbird has a long, thin beak to reach inside flowers and drink nectar. Their beaks are different because they eat very different types of food.",
-          "explanation": "The shape of a bird's beak depends on what it eats. Meat-eating birds need sharp beaks, while nectar-drinking birds need long, thin beaks."
+          "question": "Compare the beaks of an eagle and a sunbird. Why are they shaped differently?",
+          "answer": "An eagle has a sharp, hooked beak and curved claws to catch and tear the flesh of animals like mice and rabbits. A sunbird has a long, slender beak that reaches deep into flowers to sip nectar. They are shaped differently because they eat completely different types of food. The beak acts like a specialised tool for each bird's diet.",
+          "explanation": "In nature, beak shape is an adaptation to diet. Hunters need sharp beaks, while nectar-feeders need long, thin ones."
         },
         {
           "id": "ch3-t2-m2",
           "type": "mcq",
-          "question": "Which of these is NOT a feature you can observe in leaves?",
-          "options": ["Colour and shape", "Taste and weight", "Texture and smell", "Veins and patterns"],
-          "answer": "Taste and weight",
-          "explanation": "When observing leaves, we can notice their colour, shape, texture (smooth or rough), smell and vein patterns."
+          "question": "Which of these is NOT something you would normally observe when studying a leaf?",
+          "options": [
+            "Its colour and shape",
+            "Its weight in grams",
+            "Its texture and smell",
+            "Its vein pattern"
+          ],
+          "answer": "Its weight in grams",
+          "explanation": "When studying leaves, we observe colour, shape, texture (smooth or rough), smell (some leaves like curry leaf have a strong aroma), and vein patterns."
         },
         {
           "id": "ch3-t2-m3",
           "type": "fill",
-          "question": "The lines on a leaf that carry water and food are called ______.",
+          "question": "The thin lines running through a leaf that carry water and nutrients are called ______.",
           "answer": "veins",
-          "explanation": "Veins are the lines visible on a leaf. They carry water and food throughout the leaf."
+          "explanation": "Leaf veins are like tiny pipelines. They transport water from the roots to the leaf and carry the food made by the leaf back to the rest of the plant."
         }
       ],
       "hard": [
         {
           "id": "ch3-t2-h1",
           "type": "long",
-          "question": "Match the following birds with their beaks and food, and explain why each beak is suitable:\n1. Sparrow 2. Eagle 3. Peacock",
-          "answer": "1. Sparrow has a short and strong beak that helps it crack hard seeds and grains. 2. Eagle has a sharp, curved beak and sharp claws that help it catch and tear the flesh of its prey like small animals. 3. Peacock has a short beak suitable for picking up grains, insects and small creatures from the ground. Each bird's beak is shaped perfectly for the type of food it eats.",
-          "explanation": "Birds have different types of beaks based on their diet. The shape of the beak is an adaptation that helps the bird eat its preferred food."
+          "question": "Match these three birds -- Sparrow, Eagle, Peacock -- with their beak types and food. Explain why each beak is suitable for that bird's diet.",
+          "answer": "1. A sparrow has a short, thick, cone-shaped beak. This shape gives it the crushing power to crack open hard seeds and grains. 2. An eagle has a sharp, hooked beak with strong curved claws. The hook lets it tear the flesh of prey like mice and rabbits. 3. A peacock has a small, pointed beak suitable for pecking at grains, worms and small insects from the ground. Each beak is shaped like a perfect tool for the food that bird eats most often.",
+          "explanation": "Beak shape is an adaptation that has developed over a very long time. Each bird's beak matches its feeding habits perfectly."
         }
-      ]
+      ],
+      "name": "A Nature Trail at Pachmarhi"
     },
     {
       "topic": "The Web of Life",
@@ -159,59 +201,75 @@
           "id": "ch3-t3-e1",
           "type": "mcq",
           "question": "What is the web of life?",
-          "options": ["A spider's web", "The internet", "The connection between all living things in nature", "A type of net"],
-          "answer": "The connection between all living things in nature",
-          "explanation": "The web of life means all living things in nature are connected to each other. Trees give fruits to animals, birds eat insects and spread seeds, and so on."
+          "options": [
+            "A fishing net",
+            "A computer network",
+            "The invisible chain that connects all living things in nature",
+            "A type of spider web"
+          ],
+          "answer": "The invisible chain that connects all living things in nature",
+          "explanation": "The web of life means that every living thing -- trees, birds, insects, animals, fish -- is linked to others. What happens to one affects the rest."
         },
         {
           "id": "ch3-t3-e2",
           "type": "fill",
-          "question": "______ make the soil healthy for plants to grow.",
+          "question": "______ tunnel through soil, making it soft and fertile so plants can grow strong roots.",
           "answer": "Earthworms",
-          "explanation": "Earthworms make the soil healthy and fertile by breaking down dead plant material, which helps plants grow well."
+          "explanation": "Earthworms are nature's soil-workers. They mix and loosen the soil, making it rich and healthy for plant roots to spread."
         },
         {
           "id": "ch3-t3-e3",
           "type": "short",
-          "question": "What is the state animal of Madhya Pradesh?",
-          "answer": "Barasingha (swamp deer)",
-          "explanation": "Every state in India has its own state animal. The Barasingha or swamp deer is the state animal of Madhya Pradesh."
+          "question": "Which animal is the state animal of Madhya Pradesh?",
+          "answer": "The Barasingha, also known as the swamp deer, is the state animal of Madhya Pradesh.",
+          "explanation": "Every Indian state has its own state animal, state bird and state tree. These symbols celebrate the unique wildlife of each region."
         },
         {
           "id": "ch3-t3-e4",
           "type": "mcq",
-          "question": "What do birds help to spread from one place to another?",
-          "options": ["Stones", "Seeds", "Mud", "Sand"],
-          "answer": "Seeds",
-          "explanation": "Birds eat fruits and carry seeds to different places, helping plants grow in new areas."
+          "question": "How do birds help plants spread to new places?",
+          "options": [
+            "By watering them",
+            "By carrying seeds in their droppings",
+            "By digging holes",
+            "By singing to them"
+          ],
+          "answer": "By carrying seeds in their droppings",
+          "explanation": "When birds eat fruits, the seeds pass through their body and come out in their droppings at different locations. New plants then grow in those spots."
         }
       ],
       "medium": [
         {
           "id": "ch3-t3-m1",
           "type": "short",
-          "question": "Why is it important to protect trees in a forest? What happens if all the trees are cut down?",
-          "answer": "Trees give fruits and shade to animals and birds. If all trees are cut down, animals lose their homes and food. Birds lose their nesting places. The soil becomes weak. The entire web of life is affected because every living thing is connected.",
-          "explanation": "Trees are an important part of the web of life. Removing them affects every other living thing that depends on them."
+          "question": "What would happen to the web of life if all the trees in a forest were cut down?",
+          "answer": "If all trees were cut, birds would lose their nests and food. Animals like deer and monkeys would have no shelter or fruits to eat. The soil would dry out because there would be no roots to hold water. Rivers and streams could shrink. The entire web of life would fall apart because every creature depends on trees in some way.",
+          "explanation": "Trees are a foundation of the web of life. Removing them causes a chain reaction that harms birds, animals, soil and water sources."
         },
         {
           "id": "ch3-t3-m2",
           "type": "mcq",
-          "question": "A frog can live both on land and in water. What special feature helps it move?",
-          "options": ["Wings", "Fins", "Strong jumping legs", "A shell"],
-          "answer": "Strong jumping legs",
-          "explanation": "A frog has strong back legs that help it jump on land and swim in water. It is an animal that lives both on land and in water."
+          "question": "A frog can survive both on land and in water. Which feature helps it jump and swim?",
+          "options": [
+            "Sharp claws",
+            "Long trunk",
+            "Strong back legs",
+            "Hard shell"
+          ],
+          "answer": "Strong back legs",
+          "explanation": "A frog's strong back legs give it the power to hop across land and kick through water. Its moist skin also helps it breathe near water."
         }
       ],
       "hard": [
         {
           "id": "ch3-t3-h1",
           "type": "long",
-          "question": "Explain the web of life with at least three examples showing how different living things are connected to each other.",
-          "answer": "The web of life shows how all living things depend on each other. 1. Trees give fruits and shade to animals and birds. Without trees, many animals would have no food or shelter. 2. Birds eat insects that may harm plants, and they also spread seeds to new places, helping new plants grow. 3. Rivers provide water to fish, frogs and many other creatures. Without water, these animals cannot survive. 4. Earthworms make the soil healthy, which helps plants grow strong. If we remove any one part of this web, it affects everything else.",
-          "explanation": "The web of life shows that nature is a connected system. Every plant, animal, bird and insect has an important role. Protecting nature means protecting this entire web."
+          "question": "Explain the web of life using at least three examples that show how different living things depend on each other.",
+          "answer": "The web of life shows how all living things are connected. 1. Trees produce fruits, shade and oxygen. Birds and animals depend on trees for food and shelter. Without trees, they would have nowhere to live. 2. Birds eat harmful insects that could destroy crops, and they spread seeds through their droppings to new locations, helping forests grow. 3. Rivers and ponds provide water to deer, elephants, fish, frogs and many other creatures. Without water, none of these animals could survive. 4. Earthworms make the soil soft and fertile, which helps plants grow strong roots and produce food. If even one part of this web is broken, it creates problems for everything else.",
+          "explanation": "Nature works like a team -- trees, birds, insects, water and soil all support each other. Protecting one part helps the entire system stay healthy."
         }
-      ]
+      ],
+      "name": "Animals on Land"
     }
   ]
 }

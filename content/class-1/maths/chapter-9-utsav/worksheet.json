@@ -3,52 +3,241 @@
     {
       "topic": "What is a Pattern",
       "easy": [
-        { "id": "ch9-t1-e1", "type": "mcq", "question": "A pattern is something that ______ in the same order.", "options": ["Stops", "Repeats", "Changes", "Hides"], "answer": "Repeats", "explanation": "A pattern is something that repeats again and again in the same order." },
-        { "id": "ch9-t1-e2", "type": "mcq", "question": "Which of these is a pattern?", "options": ["Red, Blue, Red, Blue", "Red, Green, Yellow, Pink", "Blue, Blue, Blue, Blue", "Green only"], "answer": "Red, Blue, Red, Blue", "explanation": "Red, Blue, Red, Blue repeats in the same order. That is a pattern." },
-        { "id": "ch9-t1-e3", "type": "fill", "question": "The stripes on a zebra are: black, white, black, ______.", "answer": "white", "explanation": "The pattern repeats: black, white, black, white." },
-        { "id": "ch9-t1-e4", "type": "mcq", "question": "Where can we find patterns?", "options": ["Only in books", "Only in class", "Everywhere around us", "Nowhere"], "answer": "Everywhere around us", "explanation": "Patterns are found in nature, art, clothes, tiles, and many more places." }
+        {
+          "id": "ch9-t1-e1",
+          "type": "mcq",
+          "question": "A pattern is something that ______ in the same order.",
+          "options": [
+            "Stops",
+            "Repeats",
+            "Disappears",
+            "Breaks"
+          ],
+          "answer": "Repeats",
+          "explanation": "A pattern repeats the same arrangement again and again."
+        },
+        {
+          "id": "ch9-t1-e2",
+          "type": "mcq",
+          "question": "Which of these shows a pattern?",
+          "options": [
+            "Orange, Blue, Orange, Blue",
+            "Orange, Pink, Green, White",
+            "Blue, Blue, Blue, Blue",
+            "Red only"
+          ],
+          "answer": "Orange, Blue, Orange, Blue",
+          "explanation": "Orange, Blue, Orange, Blue repeats a group of two colours. That is a pattern."
+        },
+        {
+          "id": "ch9-t1-e3",
+          "type": "fill",
+          "question": "The stripes on a tiger go: dark, light, dark, ______.",
+          "answer": "light",
+          "explanation": "The pattern repeats: dark, light, dark, light."
+        },
+        {
+          "id": "ch9-t1-e4",
+          "type": "mcq",
+          "question": "Where can we find patterns?",
+          "options": [
+            "Only in school",
+            "Only in books",
+            "All around us",
+            "Nowhere"
+          ],
+          "answer": "All around us",
+          "explanation": "Patterns appear in nature, art, tiles, fabrics, and many other places."
+        }
       ],
       "medium": [
-        { "id": "ch9-t1-m1", "type": "short", "question": "Give an example of a pattern you see in nature.", "answer": "Butterfly wings have the same pattern on both sides. Zebras have black and white stripes that repeat.", "explanation": "Nature is full of patterns in flowers, leaves, animals, and more." },
-        { "id": "ch9-t1-m2", "type": "short", "question": "What is rangoli? When do people make rangoli?", "answer": "Rangoli is a colourful pattern made on the floor. People make it during festivals like Diwali.", "explanation": "Rangoli uses coloured powder, petals, or rice to create beautiful repeating patterns." }
+        {
+          "id": "ch9-t1-m1",
+          "type": "short",
+          "question": "Give one example of a pattern found in nature.",
+          "answer": "Butterfly wings have the same design on both halves. Peacock feathers have repeating eye-shaped spots.",
+          "explanation": "Nature is full of repeating designs in animals, flowers, and leaves."
+        },
+        {
+          "id": "ch9-t1-m2",
+          "type": "short",
+          "question": "What is kolam? Where do people draw it?",
+          "answer": "Kolam is a pattern made with dots and curved lines. People draw it at their doorstep, especially in South India.",
+          "explanation": "Kolam uses dots and graceful lines that loop to form a repeating design."
+        }
       ],
       "hard": [
-        { "id": "ch9-t1-h1", "type": "short", "question": "Name two Indian art forms that use patterns.", "answer": "Rangoli and Kolam. Rangoli is popular during Diwali and Kolam is drawn at the entrance of homes in South India.", "explanation": "Both rangoli and kolam use repeating shapes and designs." }
-      ]
+        {
+          "id": "ch9-t1-h1",
+          "type": "short",
+          "question": "Name two Indian art forms that use repeating patterns.",
+          "answer": "Rangoli and Kolam. Rangoli is made during festivals like Diwali, and Kolam is drawn daily at doorsteps in South India.",
+          "explanation": "Both art forms create beautiful repeating designs using colours, powder, or lines."
+        }
+      ],
+      "name": "Festivals of India"
     },
     {
       "topic": "Colour and Shape Patterns",
       "easy": [
-        { "id": "ch9-t2-e1", "type": "fill", "question": "Red, Blue, Red, Blue, Red, ______. What comes next?", "answer": "Blue", "explanation": "The pattern repeats: Red, Blue, Red, Blue. So next is Blue." },
-        { "id": "ch9-t2-e2", "type": "mcq", "question": "Green, Yellow, Green, Yellow, Green, ______. What comes next?", "options": ["Red", "Green", "Yellow", "Blue"], "answer": "Yellow", "explanation": "The pattern is Green, Yellow repeating. After Green comes Yellow." },
-        { "id": "ch9-t2-e3", "type": "fill", "question": "Circle, Square, Circle, Square, Circle, ______.", "answer": "Square", "explanation": "The pattern alternates between Circle and Square." },
-        { "id": "ch9-t2-e4", "type": "mcq", "question": "Star, Heart, Star, Heart, Star, ______. What comes next?", "options": ["Star", "Heart", "Circle", "Square"], "answer": "Heart", "explanation": "The pattern is Star, Heart repeating. After Star comes Heart." }
+        {
+          "id": "ch9-t2-e1",
+          "type": "fill",
+          "question": "Yellow, Pink, Yellow, Pink, Yellow, ______. What comes next?",
+          "answer": "Pink",
+          "explanation": "The pattern alternates: Yellow, Pink, Yellow, Pink. After Yellow comes Pink."
+        },
+        {
+          "id": "ch9-t2-e2",
+          "type": "mcq",
+          "question": "Orange, White, Orange, White, Orange, ______. What comes next?",
+          "options": [
+            "Red",
+            "Orange",
+            "White",
+            "Green"
+          ],
+          "answer": "White",
+          "explanation": "The pattern is Orange, White repeating. After Orange comes White."
+        },
+        {
+          "id": "ch9-t2-e3",
+          "type": "fill",
+          "question": "Circle, Triangle, Circle, Triangle, Circle, ______.",
+          "answer": "Triangle",
+          "explanation": "The pattern alternates between Circle and Triangle."
+        },
+        {
+          "id": "ch9-t2-e4",
+          "type": "mcq",
+          "question": "Star, Diamond, Star, Diamond, Star, ______. What comes next?",
+          "options": [
+            "Star",
+            "Diamond",
+            "Circle",
+            "Triangle"
+          ],
+          "answer": "Diamond",
+          "explanation": "The pattern is Star, Diamond repeating. After Star comes Diamond."
+        }
       ],
       "medium": [
-        { "id": "ch9-t2-m1", "type": "short", "question": "What comes next: Red, Red, Blue, Red, Red, Blue, Red, Red, ______?", "answer": "Blue", "explanation": "The pattern group is Red, Red, Blue. It keeps repeating. After Red, Red comes Blue." },
-        { "id": "ch9-t2-m2", "type": "short", "question": "What comes next: Triangle, Triangle, Circle, Triangle, Triangle, Circle, ______?", "answer": "Triangle", "explanation": "The pattern group is Triangle, Triangle, Circle. It starts again with Triangle." },
-        { "id": "ch9-t2-m3", "type": "fill", "question": "Pink, Orange, Orange, Pink, Orange, Orange, ______.", "answer": "Pink", "explanation": "The pattern group is Pink, Orange, Orange. It starts again with Pink." }
+        {
+          "id": "ch9-t2-m1",
+          "type": "short",
+          "question": "What comes next: Blue, Blue, Green, Blue, Blue, Green, Blue, Blue, ______?",
+          "answer": "Green",
+          "explanation": "The repeating group is Blue, Blue, Green. After Blue, Blue comes Green."
+        },
+        {
+          "id": "ch9-t2-m2",
+          "type": "short",
+          "question": "What comes next: Square, Square, Circle, Square, Square, Circle, ______?",
+          "answer": "Square",
+          "explanation": "The repeating group is Square, Square, Circle. It starts again with Square."
+        },
+        {
+          "id": "ch9-t2-m3",
+          "type": "fill",
+          "question": "Red, Yellow, Yellow, Red, Yellow, Yellow, ______.",
+          "answer": "Red",
+          "explanation": "The repeating group is Red, Yellow, Yellow. It starts again with Red."
+        }
       ],
       "hard": [
-        { "id": "ch9-t2-h1", "type": "long", "question": "Create your own colour pattern using 3 colours. Write the first 9 items of the pattern.", "answer": "Example: Red, Green, Blue, Red, Green, Blue, Red, Green, Blue. (Any 3-colour repeating pattern is correct.)", "explanation": "A pattern with 3 colours repeats the group of 3 over and over." }
-      ]
+        {
+          "id": "ch9-t2-h1",
+          "type": "long",
+          "question": "Invent your own colour pattern using 3 colours. Write 9 items of the pattern.",
+          "answer": "Example: Orange, Green, Blue, Orange, Green, Blue, Orange, Green, Blue. (Any 3-colour repeating pattern works.)",
+          "explanation": "A pattern with 3 colours repeats the same group of 3 over and over."
+        }
+      ],
+      "name": "What is a Pattern?"
     },
     {
       "topic": "Number Patterns",
       "easy": [
-        { "id": "ch9-t3-e1", "type": "fill", "question": "1, 2, 3, 4, 5, ______. What comes next?", "answer": "6", "explanation": "Each number is 1 more than the one before it." },
-        { "id": "ch9-t3-e2", "type": "mcq", "question": "2, 4, 6, 8, ______. What comes next?", "options": ["9", "10", "11", "12"], "answer": "10", "explanation": "Each number is 2 more. 8 + 2 = 10." },
-        { "id": "ch9-t3-e3", "type": "fill", "question": "5, 10, 15, 20, ______.", "answer": "25", "explanation": "Each number is 5 more. 20 + 5 = 25." },
-        { "id": "ch9-t3-e4", "type": "mcq", "question": "10, 20, 30, 40, ______. What comes next?", "options": ["45", "50", "60", "41"], "answer": "50", "explanation": "Each number is 10 more. 40 + 10 = 50." }
+        {
+          "id": "ch9-t3-e1",
+          "type": "fill",
+          "question": "1, 2, 3, 4, 5, ______. What follows?",
+          "answer": "6",
+          "explanation": "Each number increases by 1. After 5 comes 6."
+        },
+        {
+          "id": "ch9-t3-e2",
+          "type": "mcq",
+          "question": "2, 4, 6, 8, ______. What follows?",
+          "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "answer": "10",
+          "explanation": "Each number goes up by 2. 8 + 2 = 10."
+        },
+        {
+          "id": "ch9-t3-e3",
+          "type": "fill",
+          "question": "5, 10, 15, 20, ______.",
+          "answer": "25",
+          "explanation": "Each number goes up by 5. 20 + 5 = 25."
+        },
+        {
+          "id": "ch9-t3-e4",
+          "type": "mcq",
+          "question": "10, 20, 30, 40, ______. What follows?",
+          "options": [
+            "45",
+            "50",
+            "60",
+            "41"
+          ],
+          "answer": "50",
+          "explanation": "Each number goes up by 10. 40 + 10 = 50."
+        }
       ],
       "medium": [
-        { "id": "ch9-t3-m1", "type": "short", "question": "Find the next number: 1, 1, 2, 2, 3, 3, ______.", "answer": "4", "explanation": "Each number is repeated twice. After 3, 3, the next number is 4." },
-        { "id": "ch9-t3-m2", "type": "mcq", "question": "In the pattern 3, 6, 9, 12, what comes next?", "options": ["13", "14", "15", "16"], "answer": "15", "explanation": "Each number is 3 more. 12 + 3 = 15." }
+        {
+          "id": "ch9-t3-m1",
+          "type": "short",
+          "question": "What follows: 1, 1, 2, 2, 3, 3, ______?",
+          "answer": "4",
+          "explanation": "Every number appears twice. After 3, 3 the next number is 4."
+        },
+        {
+          "id": "ch9-t3-m2",
+          "type": "mcq",
+          "question": "In the pattern 4, 8, 12, 16, what follows?",
+          "options": [
+            "17",
+            "18",
+            "20",
+            "24"
+          ],
+          "answer": "20",
+          "explanation": "Each number increases by 4. 16 + 4 = 20."
+        }
       ],
       "hard": [
-        { "id": "ch9-t3-h1", "type": "long", "question": "Look at this pattern: 2, 4, 6, 8, 10. What is the rule? What would be the next 3 numbers?", "answer": "The rule is: add 2 each time. The next 3 numbers are 12, 14, 16.", "explanation": "Each number in the pattern is 2 more than the one before: 10 + 2 = 12, 12 + 2 = 14, 14 + 2 = 16." },
-        { "id": "ch9-t3-h2", "type": "short", "question": "Make a number pattern that goes up by 5. Start from 5 and write 5 numbers.", "answer": "5, 10, 15, 20, 25.", "explanation": "Adding 5 each time: 5, 10, 15, 20, 25." }
-      ]
+        {
+          "id": "ch9-t3-h1",
+          "type": "long",
+          "question": "Look at: 3, 6, 9, 12, 15. What is the rule? Write the next 3 numbers.",
+          "answer": "The rule is: add 3 each time. The next 3 numbers are 18, 21, 24.",
+          "explanation": "15 + 3 = 18, 18 + 3 = 21, 21 + 3 = 24."
+        },
+        {
+          "id": "ch9-t3-h2",
+          "type": "short",
+          "question": "Create a number pattern that goes up by 10. Start from 10 and write 5 numbers.",
+          "answer": "10, 20, 30, 40, 50.",
+          "explanation": "Adding 10 each time: 10, 20, 30, 40, 50."
+        }
+      ],
+      "name": "Colour Patterns"
     }
   ]
 }

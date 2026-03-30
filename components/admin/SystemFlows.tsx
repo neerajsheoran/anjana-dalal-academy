@@ -95,6 +95,28 @@ export default function SystemFlows() {
         email="Payout processed email to advisor with amount and date"
       />
 
+      {/* Adding New Chapter */}
+      <FlowCard
+        title="Adding a New Chapter (Content)"
+        steps={[
+          { actor: "Admin", text: "Adds the Content Author as a collaborator on the GitHub repository" },
+          { actor: "Content Author", text: "Goes to /keystatic on the live site → redirected to GitHub login → signs in with their GitHub account" },
+          { actor: "Content Author", text: "Selects the correct collection — e.g., 'Class 6 Science Notes'" },
+          { actor: "Content Author", text: "Clicks 'Create' → enters chapter slug (e.g., chapter-3-fibre-to-fabric), title, description, and order number" },
+          { actor: "Content Author", text: "Writes the chapter notes using the visual MDX editor (headings, paragraphs, images)" },
+          { actor: "Content Author", text: "(Optional) Goes to 'Worksheets' collection → creates worksheet with same slug, adds topics with MCQ / Fill / Short / Long questions by difficulty" },
+          { actor: "System", text: "Practice buttons appear automatically next to chapter headings — the topic name in the worksheet must match (or closely overlap with) the ## heading in the notes. E.g., if notes have '## Fractions on a Number Line', name the worksheet topic 'Fractions on a Number Line' to get a Practice link" },
+          { actor: "Content Author", text: "(Optional) Goes to 'Discussions' collection → creates Mother-Child dialogue with same slug" },
+          { actor: "Content Author", text: "Clicks Save → Keystatic auto-creates a content branch (e.g., content/chapter-3-fibre-to-fabric) on GitHub" },
+          { actor: "Content Author", text: "Can save multiple times (each save = a commit on the same branch), logout, and come back later — branch persists on GitHub" },
+          { actor: "Content Author", text: "When all chapters are done → clicks 'Create Pull Request' in Keystatic" },
+          { actor: "System", text: "Each author gets their own branch — no conflicts since they work on different class/subject folders" },
+          { actor: "Content Author", text: "Goes to GitHub → clicks 'Merge pull request' to publish (or Admin merges if review is needed)" },
+          { actor: "System", text: "Chapters are auto-discovered from the filesystem at build time — no code changes needed" },
+          { actor: "System", text: "Vercel auto-deploys from master — chapter goes live on the site" },
+        ]}
+      />
+
       {/* Actor Legend */}
       <div className="bg-white rounded-2xl shadow-sm p-6">
         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
@@ -230,6 +252,7 @@ const actorStyles: Record<string, string> = {
   Admin: "bg-red-50 text-red-700",
   Advisor: "bg-purple-50 text-purple-700",
   System: "bg-gray-100 text-gray-700",
+  "Content Author": "bg-teal-50 text-teal-700",
   Firebase: "bg-amber-50 text-amber-700",
   Razorpay: "bg-green-50 text-green-700",
 };

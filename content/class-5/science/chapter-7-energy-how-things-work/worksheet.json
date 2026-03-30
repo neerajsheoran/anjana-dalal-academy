@@ -7,74 +7,95 @@
           "id": "ch7-t1-e1",
           "type": "mcq",
           "question": "What is energy?",
-          "options": ["A type of food", "What makes things move, light up, produce sound, and do work", "A kind of machine", "A type of weather"],
-          "answer": "What makes things move, light up, produce sound, and do work",
-          "explanation": "Energy is what makes things move, light up, produce sound, do work, and change temperature. We use energy every single day."
+          "options": [
+            "A kind of machine",
+            "The invisible force that makes things move, glow, heat up, and produce sound",
+            "A type of food",
+            "A form of weather"
+          ],
+          "answer": "The invisible force that makes things move, glow, heat up, and produce sound",
+          "explanation": "Energy is what causes changes around us -- it makes things move, light up, heat up, cool down, and produce sound. We use energy every moment of every day."
         },
         {
           "id": "ch7-t1-e2",
           "type": "fill",
-          "question": "Our body gets energy from ______.",
+          "question": "Our body gets the energy it needs from the ______ we eat.",
           "answer": "food",
-          "explanation": "When we eat food, our body gets energy from it. This energy lets us run, play, think, and do all our activities throughout the day."
+          "explanation": "When we eat food like roti, dal, or fruit, our body breaks it down and converts it into energy that powers our muscles, brain, and all activities."
         },
         {
           "id": "ch7-t1-e3",
           "type": "mcq",
-          "question": "Which type of energy does a spinning fan use?",
-          "options": ["Light energy", "Sound energy", "Movement energy", "Heat energy"],
+          "question": "A ceiling fan that is spinning is using which form of energy?",
+          "options": [
+            "Sound energy",
+            "Heat energy",
+            "Movement energy",
+            "Light energy"
+          ],
           "answer": "Movement energy",
-          "explanation": "A spinning fan converts electrical energy into movement energy to blow air."
+          "explanation": "A spinning ceiling fan converts electrical energy into movement energy, which circulates air in the room."
         },
         {
           "id": "ch7-t1-e4",
           "type": "mcq",
-          "question": "Which of the following is a fuel used for cooking in most Indian kitchens?",
-          "options": ["Petrol", "Diesel", "LPG (cooking gas)", "Kerosene"],
+          "question": "Which fuel is most commonly used for cooking in Indian kitchens?",
+          "options": [
+            "Petrol",
+            "Diesel",
+            "LPG (cooking gas)",
+            "Kerosene"
+          ],
           "answer": "LPG (cooking gas)",
-          "explanation": "LPG (Liquefied Petroleum Gas) is used in most Indian kitchens for cooking. Some villages use wood or coal, but LPG is a cleaner option."
+          "explanation": "LPG (Liquefied Petroleum Gas) is the most common kitchen fuel in Indian homes. It is cleaner and safer than wood or coal."
         },
         {
           "id": "ch7-t1-e5",
           "type": "fill",
-          "question": "Vehicles like cars and buses run on ______ such as petrol, diesel, or CNG.",
+          "question": "Cars, buses, and trucks run on ______ such as petrol, diesel, or CNG.",
           "answer": "fuel",
-          "explanation": "Vehicles need fuel to run — just like we need food for energy. Petrol, diesel, and CNG are common fuels used in vehicles."
+          "explanation": "Vehicles need fuel to operate. When fuel burns inside an engine, it releases heat and movement energy that pushes the vehicle forward."
         }
       ],
       "medium": [
         {
           "id": "ch7-t1-m1",
           "type": "short",
-          "question": "Why is burning wood or coal for cooking not good? What are better alternatives?",
-          "answer": "Burning wood or coal creates smoke and pollution, which is harmful for our health and the environment. Better alternatives include LPG (cooking gas) and electric stoves, which are cleaner fuels that produce less pollution.",
-          "explanation": "Smoke from burning wood and coal can cause breathing problems and air pollution. Cleaner fuels like LPG and electricity are safer for both people and the environment."
+          "question": "Why is cooking with wood or coal harmful? What are better alternatives?",
+          "answer": "Burning wood or coal fills the kitchen with thick smoke, which harms the lungs and eyes and pollutes the air. Better alternatives include LPG cooking gas and electric induction stoves, which produce much less smoke and are safer for both the family's health and the environment.",
+          "explanation": "Smoke from burning wood and coal causes respiratory problems and indoor air pollution. Switching to cleaner fuels like LPG or electric stoves greatly reduces these health risks."
         },
         {
           "id": "ch7-t1-m2",
           "type": "short",
-          "question": "What is energy efficiency? Give an example.",
-          "answer": "Energy efficiency means using less energy to do the same work. For example, LED bulbs give the same light as old bulbs but use much less electricity. Switching to LEDs helps save energy and reduce electricity bills.",
-          "explanation": "Being energy efficient means getting the same result while using fewer resources. This helps save money and protects the environment."
+          "question": "What does energy efficiency mean? Give one example from daily life.",
+          "answer": "Energy efficiency means getting the same result while using less energy. For example, an LED bulb gives the same brightness as an old-fashioned bulb but uses only a fraction of the electricity. By switching to LED bulbs, families can save a lot of electricity and reduce their bills.",
+          "explanation": "Being energy efficient helps save resources and money. LED bulbs are one of the easiest and most effective energy-efficient choices for any household."
         },
         {
           "id": "ch7-t1-m3",
           "type": "mcq",
-          "question": "Which safety rule should you always follow with electricity?",
-          "options": ["Touch wires with wet hands to check if they work", "Put pens into sockets to test them", "Never touch wires or plugs with wet hands", "Try to fix broken wires yourself"],
-          "answer": "Never touch wires or plugs with wet hands",
-          "explanation": "Water conducts electricity, so touching wires or plugs with wet hands can give you a dangerous electric shock. Always keep your hands dry around electrical items."
+          "question": "Which of these is an important safety rule when using electricity?",
+          "options": [
+            "Touch switches with wet hands to check if they work",
+            "Poke pencils into sockets to test them",
+            "Never touch switches or plugs with wet hands",
+            "Try to fix broken wires by yourself"
+          ],
+          "answer": "Never touch switches or plugs with wet hands",
+          "explanation": "Water helps electricity flow through your body, which can cause a dangerous shock. Always keep your hands completely dry when touching any electrical switches or plugs."
         }
       ],
       "hard": [
         {
           "id": "ch7-t1-h1",
           "type": "long",
-          "question": "Energy comes from many different sources. Name at least four sources of energy and give an example of how each one is used in daily life.",
-          "answer": "1. Sun (solar energy): Used for drying clothes in sunlight and generating electricity through solar panels on rooftops. 2. Food (chemical energy): Our body uses energy from food to run, play, think, and stay active. 3. Fuel (petrol, diesel, LPG): Used to run vehicles like cars and buses, and for cooking food at home. 4. Electricity: Used to power fans, bulbs, refrigerators, and washing machines. 5. Wind: Used to spin windmills that generate electricity. 6. Water: Used to generate hydroelectricity by building dams on rivers.",
-          "explanation": "Energy surrounds us in many forms. Understanding different energy sources helps us appreciate how much we depend on energy in every aspect of daily life."
+          "question": "Energy comes from many different sources. Name at least four sources of energy and describe how each one is used in everyday life.",
+          "answer": "1. Sun (solar energy): Used for drying clothes on a clothesline, drying pickles and papads on rooftops, and generating electricity through rooftop solar panels. 2. Food (chemical energy): Our body converts food into energy that lets us walk, run, study, and play. 3. Fuel (petrol, diesel, LPG): Petrol and diesel power vehicles like cars and buses. LPG is used in kitchens for cooking meals. 4. Electricity: Powers fans, bulbs, refrigerators, washing machines, and televisions in our homes. 5. Wind: Used to spin wind turbines that generate electricity. 6. Water: Used to produce hydroelectricity by building dams on rivers.",
+          "explanation": "We depend on many different energy sources throughout our day. Understanding where energy comes from helps us appreciate its importance and use it wisely."
         }
-      ]
+      ],
+      "name": "What is Energy?"
     },
     {
       "topic": "Clean Energy and Smart Energy Use",
@@ -83,66 +104,82 @@
           "id": "ch7-t2-e1",
           "type": "mcq",
           "question": "Which of the following is a source of clean energy?",
-          "options": ["Coal", "Petrol", "Solar panels", "Diesel"],
+          "options": [
+            "Coal",
+            "Diesel",
+            "Solar panels",
+            "Petrol"
+          ],
           "answer": "Solar panels",
-          "explanation": "Solar panels capture sunlight and turn it into electricity without producing smoke or pollution. Energy from the sun, wind, and water is called clean energy."
+          "explanation": "Solar panels capture sunlight and convert it into electricity without producing any smoke, ash, or pollution. Energy from the sun, wind, and water is called clean energy."
         },
         {
           "id": "ch7-t2-e2",
           "type": "fill",
-          "question": "The ______ Solar Park in Rajasthan is one of the largest solar power plants in the world.",
+          "question": "The ______ Solar Park in Rajasthan is among the biggest solar power stations on Earth.",
           "answer": "Bhadla",
-          "explanation": "The Bhadla Solar Park in Rajasthan is one of the largest solar power plants in the world, generating clean electricity from sunlight."
+          "explanation": "The Bhadla Solar Park in Rajasthan is one of the largest solar power plants in the world, generating enormous amounts of clean electricity from sunlight."
         },
         {
           "id": "ch7-t2-e3",
           "type": "mcq",
-          "question": "What are watermills called in hilly areas of India?",
-          "options": ["Charkhas", "Gharaats", "Matkas", "Johads"],
+          "question": "What are traditional water mills called in the hilly regions of India?",
+          "options": [
+            "Charkhas",
+            "Gharaats",
+            "Matkas",
+            "Johads"
+          ],
           "answer": "Gharaats",
-          "explanation": "Watermills, called gharaats in hilly areas like Himachal Pradesh and Uttarakhand, use the energy of flowing water to grind grains."
+          "explanation": "Water mills called gharaats have been used for centuries in Himachal Pradesh and Uttarakhand to grind wheat and rice using the force of flowing mountain streams."
         },
         {
           "id": "ch7-t2-e4",
           "type": "mcq",
-          "question": "Which of these stores energy for later use?",
-          "options": ["A window", "A battery", "A mirror", "A table"],
+          "question": "Which of these objects stores energy for later use?",
+          "options": [
+            "A mirror",
+            "A battery",
+            "A window",
+            "A chair"
+          ],
           "answer": "A battery",
-          "explanation": "Batteries store energy that can be used later for torches, toys, and remote controls. Our body and dams also store energy."
+          "explanation": "Batteries store electrical energy that can be used later in torches, toys, TV remotes, and mobile phones. Our bodies and dams also store energy for future use."
         }
       ],
       "medium": [
         {
           "id": "ch7-t2-m1",
           "type": "short",
-          "question": "Why is electricity made from burning coal harmful? What cleaner alternatives are available?",
-          "answer": "Burning coal to make electricity creates a lot of smoke and harmful gases that pollute the air and harm our health. Cleaner alternatives include solar energy (from the Sun using solar panels), wind energy (using windmills), and water energy (hydroelectricity from dams). These clean energy sources do not pollute the planet.",
-          "explanation": "While coal is widely used, it is a major source of air pollution. Switching to clean energy from the sun, wind, and water helps protect our environment."
+          "question": "Why is electricity made from burning coal harmful to the environment? What are some cleaner alternatives?",
+          "answer": "Burning coal at power stations releases enormous amounts of smoke and harmful gases that pollute the air and cause health problems. Cleaner alternatives include solar energy (from sunlight using solar panels), wind energy (from moving air using wind turbines), and water energy (hydroelectricity from dams on rivers). These clean energy sources produce electricity without creating smoke or harmful waste.",
+          "explanation": "Although coal is widely used for electricity, it is a major source of air pollution. Shifting to clean energy from the sun, wind, and water helps protect both human health and the environment."
         },
         {
           "id": "ch7-t2-m2",
           "type": "short",
-          "question": "How did people in India traditionally use energy wisely in building their homes?",
-          "answer": "In traditional Indian homes, Vaastu Shastra guided the placement of rooms, doors, and windows to make the best use of sunlight and wind. Courtyards and open spaces kept homes bright and airy. Traditional houses had small windows and thick walls that kept them cool in summer and warm in winter. In Himachal Pradesh and Ladakh, people kept cattle on the ground floor so the heat from animals warmed the rooms above in winter.",
-          "explanation": "Indian people have used smart, energy-efficient building designs for thousands of years, making the best use of natural resources without needing extra energy."
+          "question": "How did people in India traditionally design their homes to use energy wisely?",
+          "answer": "Traditional Indian homes used many clever energy-saving designs. Vaastu Shastra guided the placement of rooms, doors, and windows to maximize natural sunlight and fresh breezes. Open courtyards flooded homes with daylight without needing electric lights. Thick mud or stone walls kept rooms cool in summer and warm in winter. In hill states like Himachal Pradesh and Ladakh, families kept cattle on the ground floor so the animals' warmth rose up and heated the living rooms above during freezing winters.",
+          "explanation": "Indian people have practiced smart, energy-efficient building design for thousands of years, making the best use of natural resources and reducing the need for extra energy."
         }
       ],
       "hard": [
         {
           "id": "ch7-t2-h1",
           "type": "long",
-          "question": "List at least five simple ways you can save energy at home and school. For each action, explain how it helps.",
-          "answer": "1. Switch off lights and fans when leaving a room — this prevents wasting electricity when no one is using it. 2. Use LED bulbs instead of old bulbs — LEDs give the same light but use much less electricity, saving energy and money. 3. Use natural light during the day by opening windows and curtains — this reduces the need for electric lights. 4. Walk or cycle for short distances instead of using vehicles — this saves fuel and also keeps us healthy. 5. Choose clean energy sources like solar water heaters — these use sunlight instead of electricity or gas. 6. Dry clothes in sunlight instead of using a dryer — the Sun's heat does the work for free.",
-          "explanation": "Every small action to save energy adds up to a big difference. By using energy wisely and choosing clean sources, we protect our planet for the future."
+          "question": "List at least five simple ways you can save energy at home and at school. Explain how each action helps.",
+          "answer": "1. Turn off lights and fans when leaving a room — this prevents electricity from being wasted when nobody is using it. 2. Use LED bulbs instead of old-style bulbs — LEDs provide the same brightness but consume much less electricity, saving energy and money. 3. Open curtains during the day and use natural sunlight — this reduces the need to switch on electric lights. 4. Walk or cycle for short distances instead of asking for a car ride — this saves fuel and keeps you healthy at the same time. 5. Use solar water heaters instead of electric geysers — they use free sunlight to warm water instead of consuming electricity. 6. Dry clothes on a clothesline instead of using a machine dryer — the sun does the work without any energy cost.",
+          "explanation": "Every small energy-saving action adds up to a significant difference. By using energy wisely and choosing cleaner sources, we protect our planet for future generations."
         },
         {
           "id": "ch7-t2-h2",
           "type": "long",
-          "question": "The Sun gives more energy to Earth in one hour than all humans use in a whole year. If this is true, why do we still use coal and other fuels? What can be done to use more solar energy?",
-          "answer": "Even though the Sun provides enormous amounts of energy, we still use coal and other fuels because solar energy technology is still being developed and expanded. Not all areas get enough sunlight throughout the year, and storing solar energy for use at night or on cloudy days can be challenging. However, we can use more solar energy by: (1) Installing solar panels on rooftops of homes, schools, and offices. (2) Building more solar parks like the Bhadla Solar Park in Rajasthan. (3) Using solar water heaters and solar cookers. (4) Encouraging governments to invest in solar technology. India is already making progress — the Cochin International Airport in Kerala is the world's first airport to run entirely on solar energy.",
-          "explanation": "While solar energy has great potential, practical challenges exist. However, with advancing technology and growing awareness, India is increasingly adopting solar energy as a major power source."
+          "question": "The Sun sends more energy to Earth in one hour than all humans use in a whole year. If this is true, why do we still depend on coal and petrol? What steps can we take to use more solar energy?",
+          "answer": "Even though the Sun provides an enormous amount of energy, we still depend on coal and petrol because solar technology is still being expanded and improved. Not every region gets strong sunlight throughout the year, and storing solar energy for use at night or on cloudy days requires special batteries that are still becoming more affordable. However, we can increase solar energy use by: (1) Installing solar panels on rooftops of homes, schools, and offices. (2) Building more large-scale solar parks like the Bhadla Solar Park in Rajasthan. (3) Using solar water heaters and solar cookers at home. (4) Supporting government programs that promote clean energy adoption. India is already making excellent progress — the Cochin International Airport in Kerala became the world's first airport to run completely on solar power.",
+          "explanation": "While challenges exist in fully harnessing solar energy, technology is advancing rapidly and costs are falling. India is investing heavily in solar energy and is on track to become one of the world's leading solar power nations."
         }
-      ]
+      ],
+      "name": "Energy is Everywhere"
     }
   ]
 }

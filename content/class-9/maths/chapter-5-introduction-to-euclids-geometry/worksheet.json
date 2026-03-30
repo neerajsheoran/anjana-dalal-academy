@@ -1,13 +1,18 @@
 {
   "topics": [
     {
-      "topic": "Euclid's Definitions, Axioms and Postulates",
+      "topic": "Euclid's Definitions",
       "easy": [
         {
           "id": "ch5-t1-e1",
           "type": "mcq",
           "question": "According to Euclid, a 'terminated line' can be produced indefinitely. What do we call a 'terminated line' in modern geometry?",
-          "options": ["Ray", "Line", "Line segment", "Plane"],
+          "options": [
+            "Ray",
+            "Line",
+            "Line segment",
+            "Plane"
+          ],
           "answer": "Line segment",
           "explanation": "What Euclid called a terminated line is now called a line segment -- a part of a line with two endpoints."
         },
@@ -22,7 +27,12 @@
           "id": "ch5-t1-e3",
           "type": "mcq",
           "question": "Which of the following is TRUE according to Euclid's postulates?",
-          "options": ["Only one line can pass through a single point", "There are infinitely many lines through two distinct points", "A terminated line can be produced indefinitely on both sides", "A circle cannot be drawn with any radius"],
+          "options": [
+            "Only one line can pass through a single point",
+            "There are infinitely many lines through two distinct points",
+            "A terminated line can be produced indefinitely on both sides",
+            "A circle cannot be drawn with any radius"
+          ],
           "answer": "A terminated line can be produced indefinitely on both sides",
           "explanation": "Postulate 2 states that a terminated line (line segment) can be extended indefinitely. Through a single point, infinitely many lines can pass. Through two distinct points, exactly one line passes."
         },

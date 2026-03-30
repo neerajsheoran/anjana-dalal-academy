@@ -3,62 +3,264 @@
     {
       "topic": "Position Words",
       "easy": [
-        { "id": "ch1-t1-e1", "type": "mcq", "question": "The cat is sitting ______ the table. (The cat is on top of the table.)", "options": ["Under", "On", "Inside", "Far"], "answer": "On", "explanation": "'On' means resting on top of something." },
-        { "id": "ch1-t1-e2", "type": "mcq", "question": "The ball is ______ the box. (The ball is kept in the box.)", "options": ["On", "Under", "Inside", "Above"], "answer": "Inside", "explanation": "'Inside' means within a container or space." },
-        { "id": "ch1-t1-e3", "type": "fill", "question": "The dog is sleeping ______ the bed. (The dog is below the bed.)", "answer": "under", "explanation": "'Under' means below or beneath something." },
-        { "id": "ch1-t1-e4", "type": "mcq", "question": "The fan is ______ our head.", "options": ["Below", "Under", "Above", "Inside"], "answer": "Above", "explanation": "'Above' means higher than something." }
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "The chapati is resting ______ the tawa.",
+          "options": [
+            "Under",
+            "On",
+            "Inside",
+            "Far"
+          ],
+          "answer": "On",
+          "explanation": "'On' means resting on the surface of something."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "mcq",
+          "question": "The pickle is kept ______ the jar.",
+          "options": [
+            "On",
+            "Under",
+            "Inside",
+            "Above"
+          ],
+          "answer": "Inside",
+          "explanation": "'Inside' means within a container."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "fill",
+          "question": "The chappals are ______ the bed. (The chappals are below the bed.)",
+          "answer": "under",
+          "explanation": "'Under' means below or beneath something."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "mcq",
+          "question": "The kite is flying ______ our heads.",
+          "options": [
+            "Below",
+            "Under",
+            "Above",
+            "Inside"
+          ],
+          "answer": "Above",
+          "explanation": "'Above' means higher than something, not touching it."
+        }
       ],
       "medium": [
-        { "id": "ch1-t1-m1", "type": "short", "question": "Look at the Indian flag (Tiranga). Which colour is at the top?", "answer": "Saffron (orange) is at the top of the Indian flag.", "explanation": "The Indian flag has saffron at the top, white in the middle, and green at the bottom." },
-        { "id": "ch1-t1-m2", "type": "short", "question": "Name two things that are INSIDE your school bag.", "answer": "Books and pencils (or any two items kept inside the bag).", "explanation": "'Inside' means within a space. Things kept in your bag are inside it." },
-        { "id": "ch1-t1-m3", "type": "fill", "question": "The Ashoka Chakra is in the ______ of the white stripe on the Indian flag.", "answer": "middle", "explanation": "The Ashoka Chakra is placed in the centre (middle) of the white stripe." }
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Look at the Tiranga (Indian flag). Which colour stripe is at the bottom?",
+          "answer": "Green is at the bottom of the Indian flag.",
+          "explanation": "The Tiranga has saffron at the top, white in the middle, and green at the bottom."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Name two things that are INSIDE your lunch box.",
+          "answer": "Roti and sabzi (or any two food items kept inside the box).",
+          "explanation": "'Inside' means within a container. Food kept in your lunch box is inside it."
+        },
+        {
+          "id": "ch1-t1-m3",
+          "type": "fill",
+          "question": "The Ashoka Chakra is in the ______ of the white stripe on the Tiranga.",
+          "answer": "middle",
+          "explanation": "The Ashoka Chakra is placed at the centre (middle) of the white stripe."
+        }
       ],
       "hard": [
-        { "id": "ch1-t1-h1", "type": "long", "question": "Describe where the cat is using position words: The cat first sat ON the chair, then went ______ the table, and finally hid ______ the box. Fill in suitable position words.", "answer": "Under the table and inside the box. (Other correct position words are also acceptable.)", "explanation": "Position words like on, under, inside, outside, above, below tell us where something is." }
-      ]
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Describe where Golu the cat went using position words: Golu first sat ON the sofa, then hid ______ the big pot, and finally curled up ______ the dining table. Fill in suitable position words.",
+          "answer": "Inside the big pot and under/below the dining table. (Other correct position words are also acceptable.)",
+          "explanation": "Position words like on, under, inside, outside, above, below tell us where something is."
+        }
+      ],
+      "name": "Where Is the Cat?"
     },
     {
       "topic": "Near and Far",
       "easy": [
-        { "id": "ch1-t2-e1", "type": "mcq", "question": "Your desk is ______ you when you sit in class.", "options": ["Far from", "Near", "Above", "Under"], "answer": "Near", "explanation": "'Near' means close to. Your desk is close to you." },
-        { "id": "ch1-t2-e2", "type": "mcq", "question": "The moon is ______ from us.", "options": ["Near", "Far", "Inside", "Under"], "answer": "Far", "explanation": "The moon is very far away from us." },
-        { "id": "ch1-t2-e3", "type": "fill", "question": "Things that are close to us are called ______.", "answer": "near", "explanation": "'Near' means close by." }
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "Your water bottle is ______ you on the desk.",
+          "options": [
+            "Far from",
+            "Near",
+            "Above",
+            "Under"
+          ],
+          "answer": "Near",
+          "explanation": "'Near' means close to. Your water bottle is close to you on the desk."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "mcq",
+          "question": "The mountains are ______ from our city.",
+          "options": [
+            "Near",
+            "Far",
+            "Inside",
+            "Under"
+          ],
+          "answer": "Far",
+          "explanation": "Mountains are usually very far from where we live."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "fill",
+          "question": "Things that are close to us are called ______.",
+          "answer": "near",
+          "explanation": "'Near' means close by."
+        }
       ],
       "medium": [
-        { "id": "ch1-t2-m1", "type": "short", "question": "Give one example of something that is NEAR you and one example of something that is FAR from you.", "answer": "Near: my book or desk. Far: the playground or the sun.", "explanation": "Near means close by, and far means a long way away." }
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Give one example of something NEAR you right now and one example of something FAR from you.",
+          "answer": "Near: my chair or book. Far: the market or the hill.",
+          "explanation": "Near means close by, and far means a long way away."
+        }
       ],
       "hard": [
-        { "id": "ch1-t2-h1", "type": "short", "question": "Is the blackboard near the teacher or far from the teacher? Is the playground near your classroom or far from your classroom?", "answer": "The blackboard is near the teacher. The playground may be far from the classroom.", "explanation": "We use 'near' for things close by and 'far' for things that are a long way away." }
-      ]
+        {
+          "id": "ch1-t2-h1",
+          "type": "short",
+          "question": "Is the teacher's chair near the blackboard or far from the blackboard? Is the market near your home or far from your home?",
+          "answer": "The teacher's chair is near the blackboard. The market may be far from home (answers may vary).",
+          "explanation": "We use 'near' for things that are close by and 'far' for things that are a long way away."
+        }
+      ],
+      "name": "Position Words"
     },
     {
       "topic": "Before and After",
       "easy": [
-        { "id": "ch1-t3-e1", "type": "mcq", "question": "In a line: Aman, Riya, Priya. Who is BEFORE Riya?", "options": ["Priya", "Aman", "Nobody", "Riya"], "answer": "Aman", "explanation": "Aman comes before Riya in the line." },
-        { "id": "ch1-t3-e2", "type": "mcq", "question": "In a line: Aman, Riya, Priya. Who is AFTER Riya?", "options": ["Aman", "Riya", "Priya", "Nobody"], "answer": "Priya", "explanation": "Priya comes after Riya in the line." },
-        { "id": "ch1-t3-e3", "type": "fill", "question": "In a train, the engine comes ______ all the bogies.", "answer": "before", "explanation": "The engine is at the front, before all the bogies." }
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "In a line: Neha, Pooja, Sahil. Who is BEFORE Pooja?",
+          "options": [
+            "Sahil",
+            "Neha",
+            "Nobody",
+            "Pooja"
+          ],
+          "answer": "Neha",
+          "explanation": "Neha comes before Pooja in the line."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "mcq",
+          "question": "In a line: Neha, Pooja, Sahil. Who is AFTER Pooja?",
+          "options": [
+            "Neha",
+            "Pooja",
+            "Sahil",
+            "Nobody"
+          ],
+          "answer": "Sahil",
+          "explanation": "Sahil comes after Pooja in the line."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "fill",
+          "question": "In a train, the engine comes ______ all the coaches.",
+          "answer": "before",
+          "explanation": "The engine is at the front, before all the coaches."
+        }
       ],
       "medium": [
-        { "id": "ch1-t3-m1", "type": "short", "question": "Three animals are in a line: Cat, Dog, Rabbit. Who is before the Dog? Who is after the Dog?", "answer": "Cat is before the Dog. Rabbit is after the Dog.", "explanation": "'Before' means in front, and 'after' means behind in a line." }
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "Three birds are sitting in a line: Parrot, Sparrow, Crow. Who is before the Sparrow? Who is after the Sparrow?",
+          "answer": "Parrot is before the Sparrow. Crow is after the Sparrow.",
+          "explanation": "'Before' means in front, and 'after' means behind in a line."
+        }
       ],
       "hard": [
-        { "id": "ch1-t3-h1", "type": "long", "question": "Five children stand in a line: Meena, Rani, Sita, Gopal, Hari. Who is before Sita? Who is after Gopal? Who is in the middle?", "answer": "Rani is before Sita. Hari is after Gopal. Sita is in the middle (third position).", "explanation": "In a line of 5, the third person is in the middle. We count positions to find before and after." }
-      ]
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "Five friends stand in a line: Tara, Ananya, Vikram, Deepa, Rohit. Who is before Vikram? Who is after Deepa? Who is in the middle?",
+          "answer": "Ananya is before Vikram. Rohit is after Deepa. Vikram is in the middle (third position).",
+          "explanation": "In a line of 5, the third person is in the middle. We count positions to find before and after."
+        }
+      ],
+      "name": "Inside and Outside"
     },
     {
       "topic": "Sorting and Grouping",
       "easy": [
-        { "id": "ch1-t4-e1", "type": "mcq", "question": "If you sort buttons by colour, which buttons go together?", "options": ["All big buttons", "All red buttons", "All round buttons", "All new buttons"], "answer": "All red buttons", "explanation": "When sorting by colour, all buttons of the same colour go in one group." },
-        { "id": "ch1-t4-e2", "type": "mcq", "question": "We can sort things by their ______.", "options": ["Name", "Colour, size, or shape", "Price", "Weight"], "answer": "Colour, size, or shape", "explanation": "Things can be sorted by colour, size, or shape." },
-        { "id": "ch1-t4-e3", "type": "fill", "question": "Putting things that are alike into groups is called ______.", "answer": "sorting", "explanation": "Sorting means arranging things into groups based on what is similar." }
+        {
+          "id": "ch1-t4-e1",
+          "type": "mcq",
+          "question": "If you sort bangles by colour, which bangles go in one group?",
+          "options": [
+            "All big bangles",
+            "All green bangles",
+            "All heavy bangles",
+            "All new bangles"
+          ],
+          "answer": "All green bangles",
+          "explanation": "When sorting by colour, all bangles of the same colour go in one group."
+        },
+        {
+          "id": "ch1-t4-e2",
+          "type": "mcq",
+          "question": "We can sort things by their ______.",
+          "options": [
+            "Name",
+            "Colour, size, or shape",
+            "Price",
+            "Age"
+          ],
+          "answer": "Colour, size, or shape",
+          "explanation": "Things can be sorted by colour, size, or shape."
+        },
+        {
+          "id": "ch1-t4-e3",
+          "type": "fill",
+          "question": "Putting things that look alike into groups is called ______.",
+          "answer": "sorting",
+          "explanation": "Sorting means arranging things into groups based on what is similar."
+        }
       ],
       "medium": [
-        { "id": "ch1-t4-m1", "type": "short", "question": "You have a red ball, a blue ball, a red block, and a blue block. Sort them into two groups by colour.", "answer": "Group 1 (Red): red ball and red block. Group 2 (Blue): blue ball and blue block.", "explanation": "When sorting by colour, all red things go together and all blue things go together." },
-        { "id": "ch1-t4-m2", "type": "short", "question": "Name two different ways you can sort a collection of leaves.", "answer": "By colour (green, yellow, brown) and by size (big and small).", "explanation": "Leaves can be sorted by colour, size, shape, or type of tree." }
+        {
+          "id": "ch1-t4-m1",
+          "type": "short",
+          "question": "You have a green leaf, a brown leaf, a green seed, and a brown seed. Sort them into two groups by colour.",
+          "answer": "Group 1 (Green): green leaf and green seed. Group 2 (Brown): brown leaf and brown seed.",
+          "explanation": "When sorting by colour, all green things go together and all brown things go together."
+        },
+        {
+          "id": "ch1-t4-m2",
+          "type": "short",
+          "question": "Name two different ways you can sort a collection of bottle caps.",
+          "answer": "By colour (red caps, blue caps, white caps) and by size (big caps and small caps).",
+          "explanation": "Bottle caps can be sorted by colour, size, or even by type."
+        }
       ],
       "hard": [
-        { "id": "ch1-t4-h1", "type": "long", "question": "You have these things: a big red ball, a small red ball, a big blue block, a small blue block. Sort them first by colour, then sort them again by size.", "answer": "By colour: Red group (big red ball, small red ball), Blue group (big blue block, small blue block). By size: Big group (big red ball, big blue block), Small group (small red ball, small blue block).", "explanation": "The same objects can be sorted in different ways depending on what feature we choose." }
-      ]
+        {
+          "id": "ch1-t4-h1",
+          "type": "long",
+          "question": "You have these things: a big green bangle, a small green bangle, a big red stone, a small red stone. Sort them first by colour, then sort them again by size.",
+          "answer": "By colour: Green group (big green bangle, small green bangle), Red group (big red stone, small red stone). By size: Big group (big green bangle, big red stone), Small group (small green bangle, small red stone).",
+          "explanation": "The same objects can be sorted in different ways depending on what feature we choose."
+        }
+      ],
+      "name": "Near and Far"
     }
   ]
 }

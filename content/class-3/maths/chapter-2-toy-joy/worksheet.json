@@ -3,36 +3,170 @@
     {
       "topic": "3D Shapes and Their Properties",
       "easy": [
-        { "id": "ch2-t1-e1", "type": "mcq", "question": "Which 3D shape looks like a ball?", "options": ["Cube", "Cylinder", "Sphere", "Cone"], "answer": "Sphere", "explanation": "A sphere is perfectly round like a ball, an orange, or a marble." },
-        { "id": "ch2-t1-e2", "type": "fill", "question": "A ______ has all sides equal, like a dice.", "answer": "cube", "explanation": "A cube is a special cuboid where all six faces are equal squares." },
-        { "id": "ch2-t1-e3", "type": "mcq", "question": "Which of these is shaped like a cylinder?", "options": ["A cricket ball", "A water bottle", "A dice", "An ice-cream cone"], "answer": "A water bottle", "explanation": "A water bottle has a round tube shape like a cylinder." },
-        { "id": "ch2-t1-e4", "type": "mcq", "question": "How many faces does a cube have?", "options": ["4", "6", "8", "12"], "answer": "6", "explanation": "A cube has 6 flat square faces." },
-        { "id": "ch2-t1-e5", "type": "fill", "question": "An ice-cream cone is shaped like a ______.", "answer": "cone", "explanation": "An ice-cream cone is pointed at one end and round at the other, just like the 3D shape called a cone." }
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "Which 3D shape is perfectly round like a laddu?",
+          "options": [
+            "Cube",
+            "Cylinder",
+            "Sphere",
+            "Cone"
+          ],
+          "answer": "Sphere",
+          "explanation": "A sphere is perfectly round from every direction, just like a laddu or a cricket ball."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "fill",
+          "question": "A ______ has 6 equal square faces, like a Ludo dice.",
+          "answer": "cube",
+          "explanation": "A cube is a special cuboid where all six faces are equal squares."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "mcq",
+          "question": "Which of these objects is shaped like a cylinder?",
+          "options": [
+            "A laddu",
+            "A steel glass",
+            "A dice",
+            "A birthday cap"
+          ],
+          "answer": "A steel glass",
+          "explanation": "A steel glass has a round tube shape like a cylinder with flat circular ends."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "mcq",
+          "question": "How many flat faces does a cuboid have?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "12"
+          ],
+          "answer": "6",
+          "explanation": "A cuboid has 6 flat rectangular faces -- top, bottom, front, back, left, and right."
+        },
+        {
+          "id": "ch2-t1-e5",
+          "type": "fill",
+          "question": "A kulfi mould is shaped like a ______.",
+          "answer": "cone",
+          "explanation": "A kulfi mould is round at the bottom and pointed at the top, just like the 3D shape called a cone."
+        }
       ],
       "medium": [
-        { "id": "ch2-t1-m1", "type": "short", "question": "How are a cube and a cuboid similar? How are they different?", "answer": "Both have 6 flat faces, 12 edges, and 8 corners. But in a cube all faces are equal squares, while in a cuboid faces can be rectangles of different sizes.", "explanation": "A cube is a special type of cuboid where all sides are the same size." },
-        { "id": "ch2-t1-m2", "type": "mcq", "question": "Which 3D shape has no edges and no corners at all?", "options": ["Cube", "Cylinder", "Sphere", "Cone"], "answer": "Sphere", "explanation": "A sphere has only 1 curved face, with no edges and no corners. That is why a ball rolls so easily!" },
-        { "id": "ch2-t1-m3", "type": "short", "question": "A shape has 2 flat round faces and 1 curved face. What shape is it?", "answer": "It is a cylinder.", "explanation": "A cylinder has 2 flat circular faces (top and bottom) and 1 curved face around the side." }
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "In what ways are a cube and a cuboid similar? How do they differ?",
+          "answer": "Both have 6 flat faces, 12 edges, and 8 corners. But a cube has all faces as equal squares, while a cuboid can have rectangular faces of different sizes.",
+          "explanation": "A cube is a special type of cuboid where every side is exactly the same length."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "mcq",
+          "question": "Which 3D shape has zero edges and zero corners?",
+          "options": [
+            "Cube",
+            "Cylinder",
+            "Sphere",
+            "Cone"
+          ],
+          "answer": "Sphere",
+          "explanation": "A sphere has only 1 curved surface, with no edges and no corners. That is why a ball rolls freely!"
+        },
+        {
+          "id": "ch2-t1-m3",
+          "type": "short",
+          "question": "A shape has 2 flat circular faces and 1 curved surface. Which 3D shape is it?",
+          "answer": "It is a cylinder.",
+          "explanation": "A cylinder has 2 flat circular faces (top and bottom) and 1 curved face wrapping around the side."
+        }
       ],
       "hard": [
-        { "id": "ch2-t1-h1", "type": "long", "question": "Fill in this table for all five 3D shapes: Cube, Cuboid, Cylinder, Cone, Sphere. Write the number of flat faces, curved faces, edges, and corners for each.", "answer": "Cube: 6 flat, 0 curved, 12 edges, 8 corners. Cuboid: 6 flat, 0 curved, 12 edges, 8 corners. Cylinder: 2 flat, 1 curved, 2 edges, 0 corners. Cone: 1 flat, 1 curved, 1 edge, 1 corner. Sphere: 0 flat, 1 curved, 0 edges, 0 corners.", "explanation": "Each shape has a unique combination of faces, edges, and corners." }
-      ]
+        {
+          "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "Copy and complete this table for all five 3D shapes: Cube, Cuboid, Cylinder, Cone, Sphere. Write the number of flat faces, curved faces, edges, and corners for each.",
+          "answer": "Cube: 6 flat, 0 curved, 12 edges, 8 corners. Cuboid: 6 flat, 0 curved, 12 edges, 8 corners. Cylinder: 2 flat, 1 curved, 2 edges, 0 corners. Cone: 1 flat, 1 curved, 1 edge, 1 corner. Sphere: 0 flat, 1 curved, 0 edges, 0 corners.",
+          "explanation": "Each shape has a unique combination of faces, edges, and corners that helps identify it."
+        }
+      ],
+      "name": "3D Shapes Around Us"
     },
     {
       "topic": "Combining Shapes and Dice",
       "easy": [
-        { "id": "ch2-t2-e1", "type": "mcq", "question": "On a dice, the face opposite to 1 has which number?", "options": ["2", "4", "5", "6"], "answer": "6", "explanation": "On a dice, opposite faces always add up to 7. So opposite to 1 is 6 (1 + 6 = 7)." },
-        { "id": "ch2-t2-e2", "type": "fill", "question": "On a dice, opposite faces always add up to ______.", "answer": "7", "explanation": "1+6=7, 2+5=7, 3+4=7. Opposite faces always add up to 7." },
-        { "id": "ch2-t2-e3", "type": "mcq", "question": "When you join 2 cubes side by side, what shape do you get?", "options": ["A sphere", "A cone", "A cuboid", "A cylinder"], "answer": "A cuboid", "explanation": "Joining 2 cubes side by side gives a longer box shape, which is a cuboid." }
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "On a standard dice, which number is on the face opposite to 1?",
+          "options": [
+            "2",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": "6",
+          "explanation": "Opposite faces on a dice always add up to 7. So opposite to 1 is 6 (1 + 6 = 7)."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "fill",
+          "question": "On a standard dice, any two opposite faces always add up to ______.",
+          "answer": "7",
+          "explanation": "1+6=7, 2+5=7, 3+4=7. Opposite faces always total 7."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "mcq",
+          "question": "If you stick 2 cubes side by side, what shape do you get?",
+          "options": [
+            "A sphere",
+            "A cone",
+            "A cuboid",
+            "A cylinder"
+          ],
+          "answer": "A cuboid",
+          "explanation": "Two cubes joined side by side create a longer box shape, which is a cuboid."
+        }
       ],
       "medium": [
-        { "id": "ch2-t2-m1", "type": "short", "question": "To build a toy train, Ravi used cuboids for the body and cylinders for the wheels. What shape could he use for the chimney on top?", "answer": "He could use a cylinder or a cone for the chimney.", "explanation": "A chimney is usually a tube shape (cylinder) or pointed at the top (cone)." },
-        { "id": "ch2-t2-m2", "type": "short", "question": "On a dice, if you can see the face with 3 dots on top, which number is on the bottom face?", "answer": "The bottom face has 4 because opposite faces add up to 7. So 7 - 3 = 4.", "explanation": "Opposite faces on a dice always add up to 7." }
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "Ananya wants to build a toy rocket. She uses a cylinder for the body and a cone for the nose. What shape could she use for the fins at the bottom?",
+          "answer": "She could use small cuboids or flat triangular shapes for the fins at the bottom.",
+          "explanation": "Fins are flat and usually rectangular or triangular in shape."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "short",
+          "question": "You are playing Ludo and see 2 dots on top of the dice. What number is on the bottom face?",
+          "answer": "The bottom face shows 5 because opposite faces add up to 7. So 7 - 2 = 5.",
+          "explanation": "On a standard dice, opposite faces always add up to 7."
+        }
       ],
       "hard": [
-        { "id": "ch2-t2-h1", "type": "long", "question": "Meera wants to build a toy house using 3D shapes. She needs walls, a roof, a door, and round pillars. Which 3D shapes should she use for each part? Explain your choices.", "answer": "Walls: Cuboids (they are flat box shapes like bricks). Roof: A cone or a triangular shape on top. Door: A cuboid (flat rectangle shape). Pillars: Cylinders (round tube shapes). She could also use cubes as building blocks for the walls.", "explanation": "Different 3D shapes can represent different parts of a house based on their properties." },
-        { "id": "ch2-t2-h2", "type": "long", "question": "You have 4 cubes. Draw or describe 3 different shapes you can make by joining them together in different ways.", "answer": "Shape 1: All 4 in a straight line (a long cuboid). Shape 2: 3 in a line with 1 on top of the first cube (an L-shape). Shape 3: 2 cubes in a row with 2 cubes stacked on top (a square shape). There are many other possible arrangements.", "explanation": "Cubes can be joined in many different ways to create different shapes. Each arrangement creates a unique shape." }
-      ]
+        {
+          "id": "ch2-t2-h1",
+          "type": "long",
+          "question": "Rohan wants to make a model of his school using 3D shapes. He needs walls, a roof, a flagpole, and round pillars. Which 3D shape should he pick for each part? Give reasons.",
+          "answer": "Walls: Cuboids (flat box shapes like bricks). Roof: A cone or a triangular prism (pointed top). Flagpole: A thin cylinder (long round tube). Pillars: Cylinders (round and tall). He could also stack cubes for the walls.",
+          "explanation": "Each part of a building matches a 3D shape based on how it looks and functions."
+        },
+        {
+          "id": "ch2-t2-h2",
+          "type": "long",
+          "question": "You have 4 sugar cubes. Describe or draw 3 different shapes you can make by sticking them together in different arrangements.",
+          "answer": "Shape 1: All 4 in a straight row (a long cuboid). Shape 2: 3 in a row with 1 placed on top of the first cube (an L-shape). Shape 3: A 2x2 square arrangement (a flat square shape). Many other arrangements are possible.",
+          "explanation": "Cubes can be joined in many ways. Each different arrangement creates a unique shape."
+        }
+      ],
+      "name": "Faces, Edges, and Corners"
     }
   ]
 }

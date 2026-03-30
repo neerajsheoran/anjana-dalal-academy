@@ -1,27 +1,29 @@
 ---
-title: Chapter 13 Statistics
+title: "Making Sense of Data - Statistics"
+description: "Calculate mean, median, and mode of grouped data and draw cumulative frequency curves (ogives)."
+order: 13
 ---
 
 ## Introduction
 
-In Class 9, you studied how to classify data into ungrouped and grouped frequency distributions, draw graphs (bar graphs, histograms, frequency polygons), and calculate the mean, median, and mode of ungrouped data.
+In Class 9, you learnt how to organise data into frequency distributions, draw histograms and frequency polygons, and compute the mean, median, and mode of ungrouped data.
 
-In this chapter, we extend these concepts to **grouped data**. You will learn:
+This chapter extends those ideas to **grouped data**. You will learn:
 
-- Three methods to find the **mean** of grouped data
-- How to find the **mode** of grouped data
-- How to find the **median** of grouped data
-- How to draw **cumulative frequency curves (ogives)**
+- Three techniques to calculate the **mean** of grouped data
+- How to determine the **mode** of grouped data
+- How to determine the **median** of grouped data
+- How to construct **cumulative frequency curves (ogives)**
 
-These are called **measures of central tendency** because they represent the "centre" or "typical value" of a dataset.
+These measures are collectively known as **measures of central tendency** -- they capture the "typical" or "central" value in a dataset.
 
 ---
 
 ## Mean of Grouped Data
 
-The **mean** (or average) is the sum of all values divided by the number of values.
+The **mean** (or arithmetic average) is computed by dividing the sum of all observations by the total number of observations.
 
-For grouped data, we use the **class mark** (mid-point of each class interval) to represent all values in that class.
+For grouped data, since individual values are unknown, we use the **class mark** (midpoint of each class interval) to represent all values in that class.
 
 **Class mark = (Upper limit + Lower limit) / 2**
 
@@ -35,142 +37,141 @@ where f_i is the frequency and x_i is the class mark of each class.
 
 ### Worked Example
 
-Find the mean of the following data:
+Calculate the mean of the following distribution:
 
 | Class | Frequency (f_i) | Class mark (x_i) | f_i x x_i |
 |-------|-----------------|-------------------|-----------|
-| 10-25 | 2 | 17.5 | 35 |
-| 25-40 | 3 | 32.5 | 97.5 |
-| 40-55 | 7 | 47.5 | 332.5 |
-| 55-70 | 6 | 62.5 | 375 |
-| 70-85 | 6 | 77.5 | 465 |
-| 85-100 | 6 | 92.5 | 555 |
-| **Total** | **30** | | **1860** |
+| 5-15 | 4 | 10 | 40 |
+| 15-25 | 5 | 20 | 100 |
+| 25-35 | 10 | 30 | 300 |
+| 35-45 | 8 | 40 | 320 |
+| 45-55 | 6 | 50 | 300 |
+| 55-65 | 2 | 60 | 120 |
+| **Total** | **35** | | **1180** |
 
-Mean = 1860 / 30 = **62**
+Mean = 1180 / 35 = **33.71** (approx.)
 
 ### Method 2: Assumed Mean Method
 
-When the values of x_i and f_i are large, calculations become tedious. We simplify by choosing an **assumed mean** (a), usually a class mark near the middle of the data.
+When the class marks and frequencies are large, arithmetic gets cumbersome. We simplify by selecting an **assumed mean** (a), typically a class mark near the centre of the distribution.
 
 **Formula:**
 
 **Mean = a + (Sum of f_i x d_i) / (Sum of f_i)**
 
-where **d_i = x_i - a** (deviation from assumed mean)
+where **d_i = x_i - a** (the deviation of each class mark from the assumed mean)
 
-This method reduces the size of numbers you work with.
+This method shrinks the numbers you have to multiply.
 
 ### Method 3: Step-Deviation Method
 
-We simplify further by dividing each deviation by the class size h.
+We go one step further by dividing each deviation by the class width h.
 
 **Formula:**
 
 **Mean = a + [(Sum of f_i x u_i) / (Sum of f_i)] x h**
 
-where **u_i = (x_i - a) / h** and h is the class size.
+where **u_i = (x_i - a) / h** and h is the class width.
 
-> **Key idea:** All three methods give the **same answer**. The assumed mean and step-deviation methods just make the arithmetic easier when dealing with large numbers.
+> **Core insight:** All three methods produce the **identical answer**. The assumed mean and step-deviation methods simply make the computation lighter when numbers are large.
 
 ---
 
 ## Mode of Grouped Data
 
-The **mode** is the value that occurs most frequently. For grouped data, the **modal class** is the class with the highest frequency.
+The **mode** is the value that appears most frequently. For grouped data, the **modal class** is the class interval with the highest frequency.
 
 ### Formula
 
 **Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] x h**
 
 where:
-- **l** = lower limit of the modal class
+- **l** = lower boundary of the modal class
 - **f1** = frequency of the modal class
-- **f0** = frequency of the class **preceding** the modal class
-- **f2** = frequency of the class **succeeding** the modal class
-- **h** = class size (width of each class interval)
+- **f0** = frequency of the class **before** the modal class
+- **f2** = frequency of the class **after** the modal class
+- **h** = class width
 
-> **Key idea:** The mode formula adjusts the lower limit of the modal class based on how much higher its frequency is compared to its neighbours.
+> **Core insight:** The mode formula fine-tunes the lower boundary of the modal class by considering how much the modal frequency dominates its neighbouring frequencies.
 
 ### Worked Example
 
-Find the mode of:
+Determine the mode:
 
-| Class | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+| Class | 5-15 | 15-25 | 25-35 | 35-45 | 45-55 |
 |-------|------|-------|-------|-------|-------|
-| Frequency | 8 | 16 | **36** | 28 | 12 |
+| Frequency | 6 | 14 | **26** | 24 | 10 |
 
-The modal class is **20-30** (highest frequency = 36).
+The modal class is **25-35** (highest frequency = 26).
 
-- l = 20, f1 = 36, f0 = 16, f2 = 28, h = 10
+- l = 25, f1 = 26, f0 = 14, f2 = 24, h = 10
 
-Mode = 20 + [(36 - 16) / (2 x 36 - 16 - 28)] x 10
-= 20 + [20 / (72 - 44)] x 10
-= 20 + [20/28] x 10
-= 20 + 7.14
-= **27.14** (approx.)
+Mode = 25 + [(26 - 14) / (2 x 26 - 14 - 24)] x 10
+= 25 + [12 / (52 - 38)] x 10
+= 25 + [12/14] x 10
+= 25 + 8.57
+= **33.57** (approx.)
 
-### When to Use Mode
+### When Is Mode Most Useful?
 
-Mode is useful when you want to find the **most typical** value. For example:
-- The most common shirt size sold in a shop
-- The most frequent score in a cricket match
-- The most popular TV show in terms of viewership
+Mode is the right measure when you need the **most common** value. For instance:
+- The most popular shoe size at a Bata store
+- The most frequently ordered dish at a restaurant
+- The most common salary bracket in a company
 
 ---
 
 ## Median of Grouped Data
 
-The **median** is the middle value of the data when arranged in order. It divides the data into two equal halves.
+The **median** is the value that splits the data into two equal halves when arranged in order.
 
 ### Formula
 
 **Median = l + [(n/2 - cf) / f] x h**
 
 where:
-- **l** = lower limit of the median class
-- **n** = total frequency (sum of all frequencies)
-- **cf** = cumulative frequency of the class **preceding** the median class
+- **l** = lower boundary of the median class
+- **n** = total frequency
+- **cf** = cumulative frequency of the class **before** the median class
 - **f** = frequency of the median class
-- **h** = class size
+- **h** = class width
 
-### How to Find the Median Class
+### Identifying the Median Class
 
-1. Find **n/2**
-2. Look at the **cumulative frequency** column
-3. The class whose cumulative frequency is **just greater than** n/2 is the **median class**
+1. Compute **n/2**
+2. Build the **cumulative frequency** column
+3. The class whose cumulative frequency **first exceeds** n/2 is the **median class**
 
 ### Worked Example
 
-Find the median of:
+Find the median:
 
 | Class | Frequency | Cumulative Frequency |
 |-------|-----------|---------------------|
-| 0-10 | 5 | 5 |
-| 10-20 | 8 | 13 |
-| 20-30 | 12 | 25 |
-| 30-40 | 15 | 40 |
-| 40-50 | 10 | 50 |
+| 10-20 | 4 | 4 |
+| 20-30 | 6 | 10 |
+| 30-40 | 10 | 20 |
+| 40-50 | 14 | 34 |
+| 50-60 | 8 | 42 |
+| 60-70 | 3 | 45 |
 
-Total n = 50, so n/2 = 25.
+Total n = 45, so n/2 = 22.5.
 
-The cumulative frequency just greater than 25 is **40** (for class 30-40). So the median class is **30-40**.
+The cumulative frequency that first exceeds 22.5 is **34** (for class 40-50). So the median class is **40-50**.
 
-Wait -- actually, cf = 25 for the class 20-30, and the next cf is 40. Since we need cf just **greater** than 25, and 25 is exactly at class 20-30, the median class is **30-40**.
+- l = 40, n/2 = 22.5, cf = 20, f = 14, h = 10
 
-- l = 30, n/2 = 25, cf = 25 (cf of preceding class 20-30), f = 15, h = 10
-
-Median = 30 + [(25 - 25) / 15] x 10 = 30 + 0 = **30**
+Median = 40 + [(22.5 - 20) / 14] x 10 = 40 + [2.5/14] x 10 = 40 + 1.79 = **41.79** (approx.)
 
 ---
 
 ## Relationship Between Mean, Median, and Mode
 
-For moderately skewed (asymmetric) distributions, there is an empirical relationship:
+For distributions that are moderately asymmetric (skewed), an empirical relationship holds:
 
 **3 Median = Mode + 2 Mean**
 
-This can be useful to find one measure if the other two are known.
+This approximation lets you estimate one measure from the other two.
 
 ---
 
@@ -178,76 +179,74 @@ This can be useful to find one measure if the other two are known.
 
 ### What Is Cumulative Frequency?
 
-The **cumulative frequency** of a class is the sum of all frequencies up to and including that class.
+The **cumulative frequency** of a class is the running total of frequencies up to and including that class.
 
-- **Less than type:** Cumulative frequency increases as classes increase
-- **More than type:** Cumulative frequency decreases as classes increase
+- **Less than type:** Cumulative frequency grows as classes increase
+- **More than type:** Cumulative frequency shrinks as classes increase
 
 ### What Is an Ogive?
 
-An **ogive** (pronounced "oh-jive") is a cumulative frequency curve drawn on a graph.
+An **ogive** (pronounced "oh-jive") is the graph of cumulative frequency plotted as a smooth curve.
 
 ### Two Types of Ogives
 
 ![Graph showing less than ogive (rising curve) and more than ogive (falling curve) intersecting at the median point](less-than-more-than-ogive-median.png)
 
 **1. Less Than Ogive:**
-- Plot the upper class limits on the x-axis
-- Plot the cumulative frequencies on the y-axis
-- Connect the points with a smooth curve
-- The curve rises from left to right
+- X-axis: upper class boundaries
+- Y-axis: cumulative frequencies (less than type)
+- Join the points with a smooth rising curve
 
 **2. More Than Ogive:**
-- Plot the lower class limits on the x-axis
-- Plot the cumulative frequencies on the y-axis
-- Connect the points with a smooth curve
-- The curve falls from left to right
+- X-axis: lower class boundaries
+- Y-axis: cumulative frequencies (more than type)
+- Join the points with a smooth falling curve
 
 ### Finding Median from Ogives
 
-**Method 1:** Using a single ogive
-- Draw a "less than" ogive
-- Find n/2 on the y-axis
-- Draw a horizontal line from this point to the curve
-- Drop a vertical line from the curve to the x-axis
-- The x-coordinate is the **median**
+**Approach 1:** Using one ogive
+- Draw the "less than" ogive
+- Mark n/2 on the y-axis
+- Draw a horizontal line to meet the curve
+- Drop a perpendicular to the x-axis
+- The x-value at the foot is the **median**
 
-**Method 2:** Using both ogives
-- Draw both "less than" and "more than" ogives on the same graph
-- The two curves intersect at a point
-- The x-coordinate of the intersection point is the **median**
+**Approach 2:** Using both ogives
+- Plot both ogives on the same axes
+- They intersect at a single point
+- The x-coordinate of this intersection is the **median**
 
-> **Key idea:** The median can be found graphically from ogives without using the formula. This is one of the most elegant results in this chapter.
+> **Core insight:** The median can be read off directly from ogive graphs, providing a powerful visual alternative to the formula.
 
 ---
 
-## Comparison of Mean, Median, and Mode
+## Comparing Mean, Median, and Mode
 
-| Measure | Meaning | When to Use |
-|---------|---------|-------------|
-| **Mean** | Average value | When all values are important and there are no extreme values |
-| **Median** | Middle value | When there are extreme values (outliers) that could distort the mean |
-| **Mode** | Most frequent value | When you want the most common or popular value |
+| Measure | What It Represents | Best Used When |
+|---------|-------------------|----------------|
+| **Mean** | The arithmetic average | All values matter equally and there are no extreme outliers |
+| **Median** | The middle value | Extreme values (outliers) are present that would distort the mean |
+| **Mode** | The most frequent value | You want the most common or popular value |
 
 ---
 
 ## Important Notes for Board Exams
 
-1. **Class intervals must be continuous** before applying the formulas. If they are not (e.g., 1-10, 11-20), convert them by adjusting by 0.5 (e.g., 0.5-10.5, 10.5-20.5).
+1. **Class intervals must be continuous** before applying these formulas. If they are not (e.g., 1-10, 11-20), adjust by 0.5 to make them continuous (0.5-10.5, 10.5-20.5).
 
-2. The **assumed mean method** and **step-deviation method** give the same answer as the direct method -- choose whichever is most convenient.
+2. The three methods for mean always give the **same result** -- pick whichever the question specifies or whichever feels easiest.
 
-3. For **mode**, make sure you identify the correct modal class (the one with the **highest** frequency).
+3. For **mode**, correctly identify the modal class (highest frequency).
 
-4. For **median**, carefully construct the cumulative frequency column before identifying the median class.
+4. For **median**, carefully build the cumulative frequency column before locating the median class.
 
-5. The empirical relationship **3 Median = Mode + 2 Mean** is an approximation, not an exact result.
+5. The relationship **3 Median = Mode + 2 Mean** is an approximation, not an exact identity.
 
 ---
 
 ## Chapter Summary
 
-1. **Mean** of grouped data can be found by:
+1. **Mean** of grouped data:
    - **Direct method:** Mean = Sum(f_i x_i) / Sum(f_i)
    - **Assumed mean method:** Mean = a + Sum(f_i d_i) / Sum(f_i)
    - **Step-deviation method:** Mean = a + [Sum(f_i u_i) / Sum(f_i)] x h
@@ -255,11 +254,11 @@ An **ogive** (pronounced "oh-jive") is a cumulative frequency curve drawn on a g
 2. **Mode** of grouped data:
    Mode = l + [(f1 - f0) / (2f1 - f0 - f2)] x h
 
-3. **Cumulative frequency** of a class = sum of all frequencies up to that class.
+3. **Cumulative frequency** of a class = running total of frequencies up to that class.
 
 4. **Median** of grouped data:
    Median = l + [(n/2 - cf) / f] x h
 
-5. Median can also be found graphically from **ogives** (cumulative frequency curves).
+5. Median can also be determined graphically from **ogives**.
 
 6. Empirical relationship: **3 Median = Mode + 2 Mean**

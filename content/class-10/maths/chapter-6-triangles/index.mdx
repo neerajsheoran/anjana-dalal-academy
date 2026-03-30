@@ -1,270 +1,272 @@
 ---
-title: Chapter 6 Triangles
+title: "Similar and Congruent Triangles"
+description: "Study similarity of triangles, criteria for similarity, and apply the Pythagoras Theorem."
+order: 6
 ---
 
 ## Introduction
 
-In Class 9, you studied **congruence** of triangles -- two figures are congruent if they have the same shape AND the same size. In this chapter, we go a step further to study **similarity** -- two figures that have the same shape but not necessarily the same size.
+Back in Class 9, you explored **congruence** -- when two shapes are identical in both shape and size. Now, imagine a rangoli pattern drawn in two different sizes on the floor -- the smaller one and the larger one look the same, but one is bigger. This is the idea behind **similarity**: same shape, possibly different size.
 
-Think about how the heights of mountains like Mount Everest or the distance to the Moon have been measured. These cannot be measured directly with a tape! They were calculated using the principle of **similarity of figures** and indirect measurements.
+Have you ever wondered how architects at an Indian firm create a tiny model of a 30-storey apartment building? Or how cartographers fit the entire map of Rajasthan onto a single page? They rely on the mathematical principle of **similarity of figures** -- keeping proportions intact while changing the scale.
 
 ---
 
 ## Similar Figures
 
-Two figures are **similar** if they have the same shape, but may differ in size.
+Two figures are **similar** if they share the same shape, even though their sizes may differ.
 
-### Examples of Similar Figures
+### Everyday Examples of Similarity
 
-- All **circles** are similar (they all have the same shape -- round)
-- All **squares** are similar
-- All **equilateral triangles** are similar
+- All **circles** are similar -- a coin and a dinner plate are both round
+- All **squares** are similar -- a chess board tile and a carrom board are both square-shaped
+- All **equilateral triangles** are similar -- every equilateral triangle has the same set of angles (60 degrees each)
 
-> **Key idea:** All congruent figures are similar, but all similar figures are NOT necessarily congruent. Congruence is a special case of similarity where the size is also the same.
+> **Key idea:** Every congruent pair is also similar, but similarity does not guarantee congruence. Congruence is simply similarity with an added condition -- that the size must also match.
 
-### When Are Two Polygons Similar?
+### When Do Two Polygons Qualify as Similar?
 
-Two polygons of the same number of sides are similar if:
-1. Their **corresponding angles are equal**, AND
-2. Their **corresponding sides are in the same ratio** (proportion)
+Two polygons with the same number of sides are similar when both of these hold:
+1. Each pair of **corresponding angles is equal**, AND
+2. Each pair of **corresponding sides is in the same ratio** (i.e., proportional)
 
-Both conditions must be satisfied. For example:
-- A **square** and a **rectangle** have equal angles (all 90 degrees) but sides are not in the same ratio -- so they are NOT similar
-- A **square** and a **rhombus** have sides in the same ratio but angles may not be equal -- so they are NOT similar
+Both conditions are necessary. Consider:
+- A **rectangle** and a **square** both have 90-degree angles at every corner, but their side ratios differ -- so they are NOT similar
+- A **square** and a **rhombus** both have all four sides equal, but a rhombus can have non-right angles -- so they are NOT similar
 
-**Note:** For triangles, a special rule applies -- we do not need BOTH conditions. Either one is sufficient (as we shall see below).
+**Special note about triangles:** Triangles are unique among polygons. For triangles, satisfying just one of the two conditions automatically ensures the other holds as well.
 
 ---
 
 ## Basic Proportionality Theorem (Thales' Theorem)
 
-This is one of the most important theorems in the chapter.
+This foundational result connects parallel lines with proportional division of triangle sides.
 
-**Theorem (BPT):** If a line is drawn parallel to one side of a triangle, it divides the other two sides **in the same ratio**.
+**Theorem (BPT):** When a line is drawn parallel to one side of a triangle, it cuts the remaining two sides in an equal ratio.
 
-In triangle ABC, if DE is drawn parallel to BC such that D lies on AB and E lies on AC, then:
+Suppose in triangle PQR, a line ST is drawn parallel to QR, with S on PQ and T on PR. Then:
 
 ![Triangle ABC with line DE parallel to BC, where D is on AB and E is on AC, showing proportional segments AD, DB, AE, EC](basic-proportionality-theorem-diagram.png)
 
-**AD/DB = AE/EC**
+**PS/SQ = PT/TR**
 
-### Proof Outline
+### Outline of the Proof
 
-1. Draw DE parallel to BC in triangle ABC
-2. Join BE and CD
-3. Draw DM perpendicular to AC and EN perpendicular to AB
-4. Using the fact that triangles BDE and CDE have equal areas (same base DE, between same parallels DE and BC)
-5. Show that Area(ADE)/Area(BDE) = AD/DB and Area(ADE)/Area(CDE) = AE/EC
-6. Since Area(BDE) = Area(CDE), we get **AD/DB = AE/EC**
+1. In triangle PQR, draw ST parallel to QR
+2. Connect QT and RS
+3. Construct TN perpendicular to PQ and SM perpendicular to PR
+4. Observe that triangles QST and RST share the same base ST and lie between the same pair of parallels ST and QR, so their areas are equal
+5. Express Area(PST)/Area(QST) = PS/SQ and Area(PST)/Area(RST) = PT/TR
+6. Since Area(QST) = Area(RST), we conclude **PS/SQ = PT/TR**
 
 ### Converse of BPT
 
-If a line divides any two sides of a triangle **in the same ratio**, then the line is **parallel** to the third side.
+If a line cuts two sides of a triangle so that the resulting segments are in the **same ratio**, then that line must be **parallel** to the third side.
 
-> **Key idea:** BPT and its converse are the foundation for many problems in this chapter. If you see a line parallel to one side of a triangle, immediately think of BPT.
+> **Key idea:** Whenever you spot a line parallel to one side of a triangle in a problem, BPT should be your first instinct. Conversely, if you are given equal ratios of segments on two sides, conclude that the dividing line is parallel to the third side.
 
 ### Worked Example
 
-In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD = 4, DB = 5, and AE = 8, find EC.
+In triangle PQR, line ST is parallel to QR with S on PQ and T on PR. Given PS = 6, SQ = 9, and PT = 10, determine TR.
 
-By BPT: AD/DB = AE/EC
-4/5 = 8/EC
-EC = 8 x 5/4 = **10**
+By BPT: PS/SQ = PT/TR
+6/9 = 10/TR
+TR = 10 x 9/6 = **15**
 
 ---
 
 ## Similarity of Triangles
 
-For triangles, we have special criteria that make checking similarity easier than for general polygons.
+Triangles enjoy a privileged position among polygons -- checking similarity for triangles requires fewer conditions than for other shapes.
 
 ### Criteria for Similarity of Triangles
 
 #### 1. AAA Similarity Criterion
 
-If in two triangles, **all three corresponding angles are equal**, then the triangles are similar.
+If every pair of corresponding angles in two triangles is equal, the triangles are similar.
 
-Since the sum of angles in a triangle is always 180 degrees, if two angles are equal, the third automatically becomes equal. So we get:
+Since the three angles of any triangle always add up to 180 degrees, matching two pairs of angles forces the third pair to match as well. This gives us:
 
 #### 2. AA Similarity Criterion
 
 ![Two triangles with corresponding angles marked equal, showing similar triangles with proportional sides](aa-similarity-criterion-diagram.png)
 
-If in two triangles, **two angles of one are equal to two angles of the other**, then the triangles are similar.
+If two angles in one triangle match two angles in another triangle, the triangles are similar.
 
-> **Key idea:** AA criterion is the most commonly used similarity test. If you can show any two pairs of angles are equal, the triangles are similar!
+> **Key idea:** AA is the go-to similarity test in most problems. Establishing just two equal angle pairs is enough to declare similarity!
 
 #### 3. SSS Similarity Criterion
 
-If in two triangles, the **corresponding sides are in the same ratio**, then the triangles are similar.
+If the three pairs of corresponding sides in two triangles are in the same ratio, the triangles are similar.
 
-That is, if AB/PQ = BC/QR = CA/RP, then triangle ABC ~ triangle PQR.
+In other words, if PQ/XY = QR/YZ = RP/ZX, then triangle PQR ~ triangle XYZ.
 
 #### 4. SAS Similarity Criterion
 
-If **one angle** of a triangle is equal to one angle of another triangle, and the **sides including these angles are in the same ratio** (proportional), then the triangles are similar.
+If one pair of corresponding angles is equal and the two pairs of sides that form those angles are in the same ratio, the triangles are similar.
 
-That is, if angle A = angle P and AB/PQ = AC/PR, then triangle ABC ~ triangle PQR.
+In other words, if angle P = angle X and PQ/XY = PR/XZ, then triangle PQR ~ triangle XYZ.
 
 ---
 
-## How to Write Similarity
+## Writing Similarity Statements Correctly
 
-When we write **triangle ABC ~ triangle PQR**, the order of vertices matters! It tells us which vertices correspond to each other:
+When we write **triangle PQR ~ triangle XYZ**, the vertex order carries meaning! It tells us exactly which vertices correspond:
 
-- A corresponds to P
-- B corresponds to Q
-- C corresponds to R
+- P corresponds to X
+- Q corresponds to Y
+- R corresponds to Z
 
 This means:
-- Angle A = Angle P, Angle B = Angle Q, Angle C = Angle R
-- AB/PQ = BC/QR = CA/RP
+- Angle P = Angle X, Angle Q = Angle Y, Angle R = Angle Z
+- PQ/XY = QR/YZ = RP/ZX
 
 ---
 
 ## Worked Examples on Similarity
 
-### Example 1: Using AA Criterion
+### Example 1: Applying the AA Criterion
 
-In triangles ABC and DEF, angle A = angle D = 50 degrees and angle B = angle E = 60 degrees. Are the triangles similar?
+In triangles PQR and LMN, angle P = angle L = 45 degrees and angle Q = angle M = 75 degrees. Are they similar?
 
-Since two pairs of angles are equal, by **AA criterion**, triangle ABC ~ triangle DEF.
+Two pairs of corresponding angles are equal, so by **AA criterion**, triangle PQR ~ triangle LMN.
 
-Also, angle C = angle F = 180 - 50 - 60 = 70 degrees.
+Also, angle R = angle N = 180 - 45 - 75 = 60 degrees.
 
-### Example 2: Shadow Problem
+### Example 2: The Street Light and Shadow
 
-A girl of height 90 cm walks away from a lamp-post (height 3.6 m) at 1.2 m/s. Find the length of her shadow after 4 seconds.
+Priya is 1.2 m tall and walks away from a street lamp that stands 4.8 m high, at a speed of 0.8 m/s. What is the length of her shadow after 5 seconds?
 
-**Step 1:** Distance walked = 1.2 x 4 = 4.8 m
+**Step 1:** Distance Priya has walked = 0.8 x 5 = 4 m
 
-**Step 2:** Let shadow length = x metres.
+**Step 2:** Let shadow length = s metres.
 
-**Step 3:** The lamp-post triangle and the girl-shadow triangle are similar (AA criterion -- both have a right angle and share the angle at the shadow tip).
+**Step 3:** The triangle formed by the street lamp and the full extent of the shadow is similar to the triangle formed by Priya and her shadow (AA criterion -- both contain a right angle and share the angle at the tip of the shadow).
 
-**Step 4:** (4.8 + x)/x = 3.6/0.9 = 4
+**Step 4:** (4 + s)/s = 4.8/1.2 = 4
 
-**Step 5:** 4.8 + x = 4x, so 3x = 4.8, giving **x = 1.6 m**
+**Step 5:** 4 + s = 4s, so 3s = 4, giving **s = 4/3 m (approximately 1.33 m)**
 
-### Example 3: Pole and Tower Shadow
+### Example 3: The Pole and the Minaret Shadow
 
-A vertical pole of 6 m casts a shadow of 4 m. At the same time, a tower casts a shadow of 28 m. Find the height of the tower.
+A vertical bamboo pole 4 m tall casts a shadow of 3 m on the ground. At the same instant, a nearby minaret casts a shadow of 21 m. Calculate the height of the minaret.
 
-The triangles formed by the pole-shadow and tower-shadow are similar (same angle of elevation of the sun).
+The sun's rays arrive at the same angle for both objects, making the two shadow-triangles similar.
 
-Height of tower / 28 = 6 / 4
-Height of tower = 6 x 28 / 4 = **42 m**
+Height of minaret / 21 = 4 / 3
+Height of minaret = 4 x 21 / 3 = **28 m**
 
 ---
 
 ## Areas of Similar Triangles
 
-**Theorem:** The ratio of the areas of two similar triangles is equal to the **square of the ratio of their corresponding sides**.
+**Theorem:** The ratio of the areas of two similar triangles equals the **square of the ratio** of their corresponding sides.
 
-If triangle ABC ~ triangle PQR, then:
+If triangle PQR ~ triangle XYZ, then:
 
-**Area(ABC) / Area(PQR) = (AB/PQ)^2 = (BC/QR)^2 = (CA/RP)^2**
+**Area(PQR) / Area(XYZ) = (PQ/XY)^2 = (QR/YZ)^2 = (RP/ZX)^2**
 
 ### Worked Example
 
-If triangle ABC ~ triangle DEF and AB/DE = 3/5, find the ratio of their areas.
+If triangle PQR ~ triangle XYZ and PQ/XY = 4/7, find the ratio of their areas.
 
-Area(ABC)/Area(DEF) = (AB/DE)^2 = (3/5)^2 = **9/25**
+Area(PQR)/Area(XYZ) = (PQ/XY)^2 = (4/7)^2 = **16/49**
 
-### Also Applies to:
+### This Square-of-Ratio Rule Also Holds For:
 
 - Ratio of squares of corresponding **altitudes**
 - Ratio of squares of corresponding **medians**
 - Ratio of squares of corresponding **angle bisectors**
 
-> **Key idea:** When dealing with areas of similar triangles, always think "square of the ratio." If sides are in ratio 2:3, areas are in ratio 4:9.
+> **Key idea:** With similar triangles, whenever you move from a linear measurement (sides, altitudes, medians) to area, remember to square the ratio. Sides in ratio 3:5 give areas in ratio 9:25.
 
 ---
 
 ## Pythagoras Theorem
 
-This is perhaps the most famous theorem in all of mathematics.
+One of the most celebrated results in all of mathematics, known to civilisations across the world for thousands of years.
 
-**Theorem:** In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+**Theorem:** In any right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.
 
 ![Right triangle ABC with squares drawn on each side, showing that the area of the square on the hypotenuse equals the sum of the areas of the squares on the other two sides](pythagoras-theorem-visual-proof.png)
 
-If triangle ABC is right-angled at B, then:
+If triangle PQR has a right angle at Q, then:
 
-**AC^2 = AB^2 + BC^2**
+**PR^2 = PQ^2 + QR^2**
 
 ### Proof Using Similarity
 
-1. Draw BD perpendicular to AC (where angle B = 90 degrees)
-2. In triangle ADB and triangle ABC:
-   - Angle A is common
-   - Angle ADB = Angle ABC = 90 degrees
-   - So triangle ADB ~ triangle ABC (AA)
-   - This gives: AD/AB = AB/AC, i.e., **AB^2 = AD x AC** ... (1)
+1. Draw QS perpendicular to PR (where angle Q = 90 degrees)
+2. In triangle PQS and triangle PQR:
+   - Angle P is common
+   - Angle PSQ = Angle PQR = 90 degrees
+   - So triangle PQS ~ triangle PQR (AA)
+   - This gives: PS/PQ = PQ/PR, i.e., **PQ^2 = PS x PR** ... (1)
 
-3. Similarly, triangle BDC ~ triangle ABC
-   - This gives: CD/BC = BC/AC, i.e., **BC^2 = CD x AC** ... (2)
+3. Similarly, triangle QSR ~ triangle PQR
+   - This gives: SR/QR = QR/PR, i.e., **QR^2 = SR x PR** ... (2)
 
 4. Adding (1) and (2):
-   AB^2 + BC^2 = AD x AC + CD x AC = AC(AD + CD) = AC x AC = **AC^2**
+   PQ^2 + QR^2 = PS x PR + SR x PR = PR(PS + SR) = PR x PR = **PR^2**
 
 ### Converse of Pythagoras Theorem
 
-If in a triangle, the square of one side equals the sum of squares of the other two sides, then the angle opposite the first side is a **right angle**.
+If in a triangle, the square of one side equals the sum of the squares of the other two sides, then the angle opposite that side is a **right angle**.
 
-That is, if AC^2 = AB^2 + BC^2, then angle B = 90 degrees.
+That is, if PR^2 = PQ^2 + QR^2, then angle Q = 90 degrees.
 
-> **Key idea:** Pythagoras theorem works ONLY for right-angled triangles. The converse helps you CHECK whether a triangle is right-angled.
+> **Key idea:** The Pythagoras theorem applies exclusively to right-angled triangles. Its converse provides a quick test: given three side lengths, check whether the square of the longest side equals the sum of the squares of the other two.
 
-### Worked Example: Is It a Right Triangle?
+### Worked Example: Checking for a Right Triangle
 
-A triangle has sides 5 cm, 12 cm, and 13 cm. Is it right-angled?
+A triangle has sides measuring 8 cm, 15 cm, and 17 cm. Is it right-angled?
 
-Check: 13^2 = 169. And 5^2 + 12^2 = 25 + 144 = 169.
+Check: 17^2 = 289. And 8^2 + 15^2 = 64 + 225 = 289.
 
-Since 13^2 = 5^2 + 12^2, by the converse of Pythagoras theorem, the triangle is right-angled at the vertex opposite the 13 cm side.
+Since 17^2 = 8^2 + 15^2, the converse of Pythagoras theorem confirms the triangle is right-angled, with the right angle opposite the 17 cm side.
 
-### Worked Example: Ladder Problem
+### Worked Example: The Leaning Ladder
 
-A ladder 10 m long reaches a window 8 m above the ground. How far is the foot of the ladder from the base of the wall?
+A painter places a 13 m ladder against a wall. The top of the ladder touches the wall at a point 12 m above the ground. How far from the wall is the foot of the ladder?
 
-Let the distance from wall = x.
+Let the distance from wall = d.
 
-By Pythagoras theorem: 10^2 = 8^2 + x^2
-100 = 64 + x^2
-x^2 = 36
-**x = 6 m**
+By Pythagoras theorem: 13^2 = 12^2 + d^2
+169 = 144 + d^2
+d^2 = 25
+**d = 5 m**
 
 ---
 
-## Important Results Related to Pythagoras Theorem
+## Additional Results Connected to Pythagoras Theorem
 
-1. In an **obtuse triangle** ABC with angle B obtuse, if AD is perpendicular to CB produced:
-   AC^2 = AB^2 + BC^2 + 2BC x BD
+1. In an **obtuse-angled triangle** PQR with angle Q obtuse, if PS is perpendicular to QR produced:
+   PR^2 = PQ^2 + QR^2 + 2 x QR x QS
 
-2. In an **acute triangle** ABC, if AD is perpendicular to BC:
-   AC^2 = AB^2 + BC^2 - 2BC x BD
+2. In an **acute-angled triangle** PQR, if PS is perpendicular to QR:
+   PR^2 = PQ^2 + QR^2 - 2 x QR x QS
 
 ---
 
 ## Chapter Summary
 
-1. Two figures having the same shape but not necessarily the same size are called **similar** figures.
+1. Two figures with the same shape but not necessarily the same size are called **similar** figures.
 
-2. All congruent figures are similar but the converse is not true.
+2. All congruent figures are similar, but the reverse is not always true.
 
-3. Two polygons are similar if (i) corresponding angles are equal AND (ii) corresponding sides are in the same ratio.
+3. Two polygons are similar if (i) corresponding angles are equal AND (ii) corresponding sides are proportional.
 
-4. **Basic Proportionality Theorem (BPT):** If a line is parallel to one side of a triangle, it divides the other two sides in the same ratio.
+4. **Basic Proportionality Theorem (BPT):** A line parallel to one side of a triangle divides the other two sides in equal ratio.
 
-5. **Converse of BPT:** If a line divides two sides of a triangle in the same ratio, the line is parallel to the third side.
+5. **Converse of BPT:** A line that divides two sides of a triangle proportionally is parallel to the third side.
 
 6. **Similarity criteria for triangles:**
-   - **AA:** Two angles of one triangle equal to two angles of another
-   - **SSS:** Corresponding sides in the same ratio
-   - **SAS:** One angle equal and including sides in the same ratio
+   - **AA:** Two pairs of equal angles
+   - **SSS:** All three pairs of sides in the same ratio
+   - **SAS:** One pair of equal angles with the including sides proportional
 
-7. The ratio of **areas** of two similar triangles equals the **square** of the ratio of their corresponding sides.
+7. The ratio of **areas** of similar triangles equals the **square** of the ratio of their corresponding sides.
 
-8. **Pythagoras Theorem:** In a right triangle, hypotenuse^2 = base^2 + height^2.
+8. **Pythagoras Theorem:** In a right triangle, hypotenuse^2 = sum of squares of the other two sides.
 
-9. **Converse of Pythagoras Theorem:** If the square of one side equals the sum of squares of the other two sides, the triangle is right-angled.
+9. **Converse of Pythagoras Theorem:** If the square of one side equals the sum of squares of the other two, the triangle has a right angle.

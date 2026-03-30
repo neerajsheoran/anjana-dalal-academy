@@ -1,215 +1,217 @@
 ---
-title: "Chapter 11 — Finding Common Ground"
+title: "Finding Common Ground - LCM and HCF"
+description: "Common factors, common multiples, prime factorisation, HCF and LCM."
+order: 11
 ---
 
-When do two different quantities share something in common? In this chapter, we explore the **Highest Common Factor (HCF)** and the **Lowest Common Multiple (LCM)** -- two fundamental ideas that help us find common ground between numbers. We use **prime factorisation** as a powerful tool to compute these efficiently.
+What do two different numbers have in common? Sometimes they share factors, sometimes they share multiples. In this chapter, we discover how to find the **Highest Common Factor (HCF)** and the **Lowest Common Multiple (LCM)** -- two essential tools that help us uncover the hidden connections between numbers. We use **prime factorisation** as our go-to technique for computing these efficiently.
 
-## The Greatest of All: HCF
+## Sharing Equally: The HCF
 
-### A Tiling Problem
+### A Gift-Packing Puzzle
 
-Sameeksha wants to tile a room that is 12 ft by 16 ft with **square tiles** of the same size (whole number of feet). She wants to use as few tiles as possible, so the tiles should be as large as possible.
+Meera has 36 chocolates and 48 toffees. She wants to make gift packs for a birthday party, where every pack has the **same number** of chocolates and the **same number** of toffees, with nothing left over. She also wants to make as many packs as possible.
 
-For the tiles to fit exactly:
-- The tile side must be a **factor of 12** (to fit the breadth)
-- The tile side must be a **factor of 16** (to fit the length)
+For this to work:
+- The number of packs must be a **factor of 36** (to divide the chocolates evenly)
+- The number of packs must also be a **factor of 48** (to divide the toffees evenly)
 
-| Factors of 12 | 1, 2, 3, 4, 6, 12 |
+| Factors of 36 | 1, 2, 3, 4, 6, 9, 12, 18, 36 |
 |---|---|
-| Factors of 16 | 1, 2, 4, 8, 16 |
-| **Common factors** | **1, 2, 4** |
-
-The largest common factor is **4**. So, she should use tiles of size **4 ft x 4 ft**.
-
-### What is HCF?
-
-The **Highest Common Factor (HCF)** of two or more numbers is the **greatest** number that divides all of them exactly. It is also called the **Greatest Common Divisor (GCD)**.
-
-**Example:** A farmer buys 84 kg of rice from one farm and 108 kg from another. She wants to pack them into bags of equal weight (whole kg), using as few bags as possible.
-
-| Factors of 84 | 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84 |
-|---|---|
-| Factors of 108 | 1, 2, 3, 4, 6, 9, 12, 18, 27, 36, 54, 108 |
+| Factors of 48 | 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 |
 | **Common factors** | **1, 2, 3, 4, 6, 12** |
 
-HCF = **12**. So each bag should weigh 12 kg (giving 7 + 9 = 16 bags).
+The largest common factor is **12**. So Meera can make **12 packs**, each containing 3 chocolates and 4 toffees.
+
+### Defining HCF
+
+The **Highest Common Factor (HCF)** of two or more numbers is the **greatest** number that divides all of them without leaving a remainder. It is also called the **Greatest Common Divisor (GCD)**.
+
+**Example:** A gardener has 60 rose plants and 84 marigold plants. He wants to plant them in rows, with each row having only one type of flower, and every row having the same number of plants. What is the greatest number of plants he can put in each row?
+
+| Factors of 60 | 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60 |
+|---|---|
+| Factors of 84 | 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84 |
+| **Common factors** | **1, 2, 3, 4, 6, 12** |
+
+HCF = **12**. So each row should have 12 plants (giving 5 rows of roses and 7 rows of marigolds).
 
 ## Prime Numbers and Prime Factorisation
 
-### Primes
+### What Makes a Number Prime?
 
-A **prime number** is a number greater than 1 that has no factors other than 1 and itself.
+A **prime number** is a number greater than 1 whose only factors are 1 and itself. It cannot be broken down further.
 
 First few primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, ...
 
-### Prime Factorisation
+### Breaking Numbers into Primes
 
-Every number can be written as a **product of prime numbers**. This is called its **prime factorisation**, and it is unique (up to the order of factors).
+Every number can be expressed as a **product of prime numbers**. This breakdown is called its **prime factorisation**, and remarkably, it is unique for every number (regardless of the order you write the factors).
 
-**Example:** 90 = 2 x 3 x 3 x 5
+**Example:** 72 = 2 x 2 x 2 x 3 x 3
 
-### The Division Method
+### The Step-by-Step Division Method
 
-A systematic way to find prime factorisation:
+A neat way to find the prime factorisation is to keep dividing by the smallest possible prime:
 
 ```
-2 | 360
-2 | 180
-2 |  90
+2 | 540
+2 | 270
+3 | 135
 3 |  45
 3 |  15
 5 |   5
       1
 ```
 
-So: 360 = 2 x 2 x 2 x 3 x 3 x 5
+So: 540 = 2 x 2 x 3 x 3 x 3 x 5
 
-At each step, divide by the smallest prime factor until you reach 1.
+At every stage, divide by the smallest prime that goes in evenly. Continue until you reach 1.
 
-### Finding All Factors from Prime Factorisation
+### Discovering All Factors from Prime Factorisation
 
-Every factor of a number is formed by taking a "subpart" of its prime factorisation.
+Every factor of a number is formed by picking some (or none, or all) of its prime factors.
 
-**Example:** 225 = 3 x 3 x 5 x 5
+**Example:** 180 = 2 x 2 x 3 x 3 x 5
 
-Subparts give us all factors: 1, 3, 5, 9, 15, 25, 45, 75, 225.
+By selecting different combinations, we get all factors: 1, 2, 3, 4, 5, 6, 9, 10, 12, 15, 18, 20, 30, 36, 45, 60, 90, 180.
 
-## Finding HCF Using Prime Factorisation
+## Finding HCF Through Prime Factorisation
 
-Instead of listing all factors, we can find the HCF directly from prime factorisations.
+Instead of writing out every factor, we can jump straight to the HCF using prime factorisations.
 
-### Method
+### The Technique
 
-1. Find the prime factorisation of each number
-2. Identify the **common prime factors**
-3. For each common prime, take the **minimum** number of times it appears
+1. Write the prime factorisation of each number
+2. Spot the **common prime factors**
+3. For each common prime, pick the **smaller** count (the minimum number of times it appears)
 4. Multiply these together
 
-**Example:** Find the HCF of 45 and 75.
+**Example:** Find the HCF of 54 and 90.
 
-45 = 3 x 3 x 5
-75 = 3 x 5 x 5
+54 = 2 x 3 x 3 x 3
+90 = 2 x 3 x 3 x 5
 
-Common primes: 3 (minimum 1 time) and 5 (minimum 1 time)
+Common primes: 2 (minimum 1 time) and 3 (minimum 2 times)
 
-**HCF = 3 x 5 = 15**
+**HCF = 2 x 3 x 3 = 18**
 
-**Example:** Find the HCF of 112 and 84.
+**Example:** Find the HCF of 126 and 72.
 
-112 = 2 x 2 x 2 x 2 x 7
-84 = 2 x 2 x 3 x 7
+126 = 2 x 3 x 3 x 7
+72 = 2 x 2 x 2 x 3 x 3
 
-Common primes: 2 (minimum 2 times) and 7 (minimum 1 time)
+Common primes: 2 (minimum 1 time) and 3 (minimum 2 times)
 
-**HCF = 2 x 2 x 7 = 28**
+**HCF = 2 x 3 x 3 = 18**
 
-**Example:** HCF of 96 and 275.
+**Example:** HCF of 64 and 125.
 
-96 = 2 x 2 x 2 x 2 x 2 x 3
-275 = 5 x 5 x 11
+64 = 2 x 2 x 2 x 2 x 2 x 2
+125 = 5 x 5 x 5
 
 No common primes at all! **HCF = 1** (such numbers are called **co-prime**).
 
-## Least, but not Last: LCM
+## The Smallest Meeting Point: LCM
 
-### A Toran Problem
+### A Bell-Ringing Puzzle
 
-Anshu makes torans using 6 cm strips, Guna uses 8 cm strips. What is the shortest toran they can both make?
+At a temple in Varanasi, one bell rings every 9 minutes and another rings every 12 minutes. Both bells ring together at 6:00 AM. When will they ring together again?
 
-- Anshu's possible lengths: 6, 12, 18, **24**, 30, 36, 42, **48**, ...
-- Guna's possible lengths: 8, 16, **24**, 32, 40, **48**, 56, ...
-- Common lengths: **24**, 48, 72, ...
+- Bell 1 rings at minutes: 9, 18, 27, 36, **36**, 45, 54, 63, **72**, ...
+- Bell 2 rings at minutes: 12, 24, **36**, 48, 60, **72**, 84, ...
+- Common times: **36**, 72, 108, ...
 
-The smallest common multiple is **24 cm**.
+They will ring together after **36 minutes**, at 6:36 AM.
 
-### What is LCM?
+### Defining LCM
 
-The **Lowest Common Multiple (LCM)** of two or more numbers is the **smallest** number that is a multiple of all of them.
+The **Lowest Common Multiple (LCM)** of two or more numbers is the **smallest** positive number that is a multiple of all of them.
 
-**Example:** A sweet shop gives free gajak every Monday (every 7 days). Kabamai visits every 10 days. When will she next get free gajak?
+**Example:** Priya goes to the library every 8 days. Her friend Kavita goes every 6 days. They meet at the library today. After how many days will they next visit the library on the same day?
 
-- Free gajak days: 7, 14, 21, 28, 35, 42, 49, 56, 63, **70**, ...
-- Kabamai's visits: 10, 20, 30, 40, 50, 60, **70**, ...
+- Priya's visits (in days): 8, 16, **24**, 32, 40, **48**, ...
+- Kavita's visits (in days): 6, 12, 18, **24**, 30, 36, 42, **48**, ...
 
-LCM of 7 and 10 = **70 days**
+LCM of 8 and 6 = **24 days**
 
-## Finding LCM Using Prime Factorisation
+## Finding LCM Through Prime Factorisation
 
-### Method
+### The Technique
 
-1. Find the prime factorisation of each number
-2. Identify **all** prime factors that appear in either number
-3. For each prime, take the **maximum** number of times it appears
+1. Write the prime factorisation of each number
+2. List **every** prime factor that appears in either number
+3. For each prime, pick the **larger** count (the maximum number of times it appears)
 4. Multiply these together
 
-**Example:** Find the LCM of 14 and 35.
+**Example:** Find the LCM of 18 and 24.
 
-14 = 2 x 7
-35 = 5 x 7
+18 = 2 x 3 x 3
+24 = 2 x 2 x 2 x 3
 
-All primes: 2 (max 1), 5 (max 1), 7 (max 1)
+All primes: 2 (max 3 times) and 3 (max 2 times)
 
-**LCM = 2 x 5 x 7 = 70**
+**LCM = 2 x 2 x 2 x 3 x 3 = 72**
 
-**Example:** Find the LCM of 96 and 360.
+**Example:** Find the LCM of 75 and 120.
 
-96 = 2 x 2 x 2 x 2 x 2 x 3
-360 = 2 x 2 x 2 x 3 x 3 x 5
+75 = 3 x 5 x 5
+120 = 2 x 2 x 2 x 3 x 5
 
-All primes: 2 (max 5), 3 (max 2), 5 (max 1)
+All primes: 2 (max 3), 3 (max 1), 5 (max 2)
 
-**LCM = 2 x 2 x 2 x 2 x 2 x 3 x 3 x 5 = 1440**
+**LCM = 2 x 2 x 2 x 3 x 5 x 5 = 600**
 
-> **Comparing HCF and LCM methods:**
-> - For **HCF**: take common primes with **minimum** counts
-> - For **LCM**: take all primes with **maximum** counts
+> **Quick Comparison of the Two Methods:**
+> - For **HCF**: pick common primes with **minimum** counts
+> - For **LCM**: pick all primes with **maximum** counts
 
-## Patterns and Properties
+## Patterns Worth Knowing
 
 ### HCF Patterns
 
 | Number Pair Type | HCF |
 |-----------------|-----|
-| A number and its multiple (e.g., n and 5n) | The smaller number (n) |
-| Two consecutive numbers (e.g., 14, 15) | Always **1** |
-| Two consecutive even numbers (e.g., 8, 10) | Always **2** |
+| A number and its multiple (e.g., n and 4n) | The smaller number (n) |
+| Two consecutive numbers (e.g., 20, 21) | Always **1** |
+| Two consecutive even numbers (e.g., 14, 16) | Always **2** |
 | Two co-prime numbers | Always **1** |
 
 ### LCM Patterns
 
 | Number Pair Type | LCM |
 |-----------------|-----|
-| A number and its multiple (e.g., n and 5n) | The larger number (5n) |
-| Two consecutive numbers (e.g., 14, 15) | Their product (14 x 15 = 210) |
+| A number and its multiple (e.g., n and 4n) | The larger number (4n) |
+| Two consecutive numbers (e.g., 20, 21) | Their product (20 x 21 = 420) |
 | Two co-prime numbers | Their product |
 
-### The HCF-LCM Relationship
+### The Golden Link Between HCF and LCM
 
 For any two positive numbers **a** and **b**:
 
 > **HCF(a, b) x LCM(a, b) = a x b**
 
-**Example:** For 12 and 18:
-- HCF = 6, LCM = 36
-- HCF x LCM = 6 x 36 = 216
-- a x b = 12 x 18 = 216
+**Example:** For 15 and 20:
+- HCF = 5, LCM = 60
+- HCF x LCM = 5 x 60 = 300
+- a x b = 15 x 20 = 300
 
-This relationship can be used as a shortcut: if you know the HCF, you can find the LCM (or vice versa) using the formula:
+This relationship gives us a handy shortcut: if you already know the HCF, you can calculate the LCM without doing a full prime factorisation again:
 
 **LCM = (a x b) / HCF**
 
-### What Happens When Numbers Are Doubled?
+### Doubling Both Numbers
 
-If both numbers are doubled, the HCF also doubles and the LCM also doubles.
+If you double both numbers, both the HCF and the LCM also double.
 
-**Example:** HCF(270, 50) = 10. Then HCF(540, 100) = 20.
+**Example:** HCF(36, 90) = 18. Then HCF(72, 180) = 36.
 
-## Applications
+## Where Do We Use These?
 
-- **Tiling floors** with the largest possible square tiles (HCF)
-- **Scheduling events** that repeat at different intervals (LCM)
-- **Packing items** into equal groups (HCF)
-- **Finding when patterns align** (LCM)
+- **Packing gifts or supplies** into equal groups (HCF)
+- **Planning events** that repeat at different intervals (LCM)
+- **Cutting fabric or rope** into equal-length pieces (HCF)
+- **Synchronising schedules** -- when will two recurring events happen at the same time? (LCM)
 
 ## Key Words to Remember
 

@@ -1,216 +1,269 @@
 {
   "topics": [
     {
-      "topic": "Rain and Sources of Water",
+      "topic": "Signs of Rain",
       "easy": [
         {
           "id": "ch7-t1-e1",
           "type": "mcq",
-          "question": "What is the main source of water on Earth?",
-          "options": ["Rivers", "Wells", "Rain", "Tanks"],
-          "answer": "Rain",
-          "explanation": "Rain is the main source of water on Earth. Most of the water we use comes from rain."
+          "question": "Which of these is a sign that rain is about to come?",
+          "options": [
+            "Bright sunshine",
+            "Frogs croaking loudly",
+            "Stars twinkling",
+            "Leaves falling from trees"
+          ],
+          "answer": "Frogs croaking loudly",
+          "explanation": "Frogs croak loudly when rain is coming. Other signs include dark clouds, strong breeze, and ants marching in lines."
         },
         {
           "id": "ch7-t1-e2",
           "type": "fill",
-          "question": "When rainwater soaks into the soil and gets stored between rocks, it is called ______.",
+          "question": "Water that seeps deep into the soil and collects between layers of rock is called ______.",
           "answer": "groundwater",
-          "explanation": "Water stored underground between rocks and soil is called groundwater. We get it through wells and borewells."
+          "explanation": "Groundwater is water stored underground between layers of rock and sand. We reach it through wells and borewells."
         },
         {
           "id": "ch7-t1-e3",
           "type": "mcq",
-          "question": "Which of these is a sign that rain is coming?",
-          "options": ["Bright sunshine", "Dark clouds in the sky", "Rainbow appears", "Stars are visible"],
-          "answer": "Dark clouds in the sky",
-          "explanation": "Dark clouds appearing in the sky is one of the clues that rain is coming."
+          "question": "What happens to rainwater that falls on a cemented road?",
+          "options": [
+            "It soaks into the ground",
+            "It sits in puddles or flows away",
+            "It disappears immediately",
+            "It becomes groundwater"
+          ],
+          "answer": "It sits in puddles or flows away",
+          "explanation": "Cemented roads do not absorb water, so rainwater collects in puddles or flows along the surface into drains."
         },
         {
           "id": "ch7-t1-e4",
           "type": "short",
-          "question": "What happens to rainwater when it falls on soil?",
-          "answer": "Rainwater gets absorbed (soaked) into the ground when it falls on soil.",
-          "explanation": "When rain falls on soil, water gets absorbed into the ground. This water slowly moves underground and becomes groundwater."
+          "question": "What happens to rainwater that falls on soft garden soil?",
+          "answer": "Rainwater that falls on soft garden soil sinks slowly into the earth and becomes part of the groundwater.",
+          "explanation": "Soft soil absorbs rainwater. The water moves deeper underground and collects between layers of rock and sand as groundwater."
         },
         {
           "id": "ch7-t1-e5",
           "type": "mcq",
-          "question": "Where does rainwater eventually flow to?",
-          "options": ["Mountains", "Forests", "Seas and oceans", "Deserts"],
-          "answer": "Seas and oceans",
-          "explanation": "Rainwater flows into streams, which join rivers. Rivers eventually flow to the seas and oceans."
+          "question": "Streams join together to form rivers. Where do rivers finally carry the water?",
+          "options": [
+            "Back to the clouds",
+            "To the mountains",
+            "To the sea",
+            "To the desert"
+          ],
+          "answer": "To the sea",
+          "explanation": "Water flows from streams into rivers. Rivers carry the water to lakes and finally to the sea."
         }
       ],
       "medium": [
         {
           "id": "ch7-t1-m1",
           "type": "short",
-          "question": "Describe the journey of rainwater from the sky to underground.",
-          "answer": "Rain falls from the sky onto the ground. When it falls on soil, it gets absorbed and slowly moves underground. Some water gets stored between rocks and soil as groundwater, which we get from wells and borewells.",
-          "explanation": "Rainwater can soak into the soil, flow into streams and rivers, collect in ponds and lakes, or evaporate back into the air."
+          "question": "Describe the journey of a raindrop from the cloud to underground.",
+          "answer": "A raindrop falls from a cloud onto the ground. If it lands on soft soil, it seeps deep into the earth. It moves through layers of soil and collects between rocks and sand as groundwater. People reach this groundwater through wells and borewells.",
+          "explanation": "Rainwater follows different paths depending on where it lands -- it can soak into soil, flow into streams, or sit in puddles on hard surfaces."
         },
         {
           "id": "ch7-t1-m2",
           "type": "mcq",
-          "question": "What happens to rainwater that falls on roads and concrete?",
-          "options": ["It gets absorbed into the ground", "It collects in puddles or flows away", "It disappears immediately", "It becomes groundwater"],
-          "answer": "It collects in puddles or flows away",
-          "explanation": "Roads and concrete do not absorb water. So rainwater collects in puddles on the surface or flows away."
+          "question": "What do ants do when they sense rain is coming?",
+          "options": [
+            "They go to sleep",
+            "They rush in lines carrying food to higher ground",
+            "They start flying",
+            "They dig deeper holes"
+          ],
+          "answer": "They rush in lines carrying food to higher ground",
+          "explanation": "Ants sense rain coming and rush in long lines to move their food to higher ground so it does not get washed away."
         },
         {
           "id": "ch7-t1-m3",
           "type": "fill",
-          "question": "Water flowing in streams joins rivers. Some water gathers in ponds and ______.",
-          "answer": "lakes",
-          "explanation": "Water from streams joins rivers. Some water gathers in ponds and lakes before eventually reaching the seas and oceans."
+          "question": "When the sun heats puddle water, it turns into invisible ______ and rises into the sky.",
+          "answer": "water vapour",
+          "explanation": "Sunlight heats water in puddles, turning it into invisible water vapour. This vapour rises into the sky, forms clouds, and later falls as rain again."
         }
       ],
       "hard": [
         {
           "id": "ch7-t1-h1",
           "type": "long",
-          "question": "Describe the different ways people get water in India. Why do some people have to walk long distances for water?",
-          "answer": "People in India get water in many different ways. In cities, tap water comes through pipes from a tank. Some people use hand pumps that pump water up from underground. Others draw water from wells using a pulley or pump. In some areas, water tankers (trucks) bring water and deliver it to homes. In some villages, people have to carry water in pots from a river or lake. Some people walk long distances for water because there are no wells, pipes, or hand pumps nearby. We should always be thankful to those who bring us water.",
-          "explanation": "Not everyone has easy access to water. In many parts of India, people still have to walk long distances to get water for daily use."
+          "question": "Explain the different ways people in India get water. Why do some people have to work much harder than others to get water?",
+          "answer": "People in India get water in many ways. In cities, tap water flows through pipes connected to the city supply. Some people use hand pumps that pull water from underground. Others draw water from open wells using a bucket and rope. In areas without pipe supply, water tankers deliver water by truck. In many villages across Rajasthan and Maharashtra, women and children walk several kilometres every day to fetch water from a river or pond. Some people work much harder because there are no pipes, pumps, or wells near their homes. This shows how precious water truly is and why we should never waste it.",
+          "explanation": "Not everyone has equal access to water. While city people get water from taps, many villagers walk long distances to fetch water every single day."
         }
-      ]
+      ],
+      "name": "Signs of Rain"
     },
     {
-      "topic": "Using and Storing Water",
+      "topic": "How Water Reaches Our Homes",
       "easy": [
         {
           "id": "ch7-t2-e1",
           "type": "mcq",
-          "question": "Which of these is NOT a daily use of water?",
-          "options": ["Cooking", "Bathing", "Flying a kite", "Washing clothes"],
-          "answer": "Flying a kite",
-          "explanation": "We use water for drinking, cooking, bathing, washing clothes, cleaning, watering plants, and flushing toilets. Flying a kite does not need water."
+          "question": "What is the first step before water reaches our taps?",
+          "options": [
+            "It is stored in a tank",
+            "It is collected from a river, lake, or well",
+            "It flows through pipes",
+            "It comes from the sky directly"
+          ],
+          "answer": "It is collected from a river, lake, or well",
+          "explanation": "First, water is collected from a source like a river, lake, or underground well. Then it is cleaned, stored, and sent through pipes to our homes."
         },
         {
           "id": "ch7-t2-e2",
           "type": "fill",
-          "question": "A clay pot (matka) keeps water naturally ______.",
+          "question": "A matka is a clay pot that keeps water naturally ______.",
           "answer": "cool",
-          "explanation": "Clay pots keep water naturally cool. In the old days, people mostly used clay pots and brass vessels to store water."
+          "explanation": "A matka has tiny holes through which a little water seeps out and evaporates, making the remaining water cool without electricity."
         },
         {
           "id": "ch7-t2-e3",
           "type": "short",
-          "question": "Name three vessels used to store water.",
-          "answer": "Clay pot (matka), copper vessel, and plastic bottle are used to store water.",
-          "explanation": "People use many types of vessels to store water including clay pots, copper vessels, brass pots, steel pots, glass bottles, and plastic bottles."
+          "question": "Name three different containers used to store water in Indian homes.",
+          "answer": "A matka (clay pot), a copper lota, and a steel drum are containers used to store water in Indian homes.",
+          "explanation": "Indians have used many types of containers -- matka, surahi, copper lota, brass pot, steel drum, glass bottle, and plastic tank."
         },
         {
           "id": "ch7-t2-e4",
           "type": "mcq",
-          "question": "How does water reach the tap in our homes?",
-          "options": ["It falls from the sky directly", "Through pipes from a storage tank", "Through rivers", "Through the ground"],
-          "answer": "Through pipes from a storage tank",
-          "explanation": "Water comes from rivers or wells, is stored in big tanks, and pipes carry the water from the tanks to the taps in our homes."
+          "question": "Why is copper lota considered good for storing drinking water?",
+          "options": [
+            "It looks pretty",
+            "Copper slowly kills germs in water",
+            "It makes water taste sweet",
+            "It is the cheapest option"
+          ],
+          "answer": "Copper slowly kills germs in water",
+          "explanation": "Scientists have found that copper helps kill harmful germs in water. That is why drinking water stored overnight in a copper vessel is considered healthy."
         }
       ],
       "medium": [
         {
           "id": "ch7-t2-m1",
           "type": "short",
-          "question": "Why is it important to store water at home?",
-          "answer": "It is important to store water because water supply can stop suddenly. By storing water, we make sure we have water when the supply is not available.",
-          "explanation": "Sometimes water supply can stop without warning. Storing water in vessels ensures we have water for drinking, cooking, and other needs."
+          "question": "Describe the complete journey of water from a river to your home tap.",
+          "answer": "Water is first collected from a river, lake, or well. It goes to a treatment centre where dirt and germs are removed. Clean water is then pumped into large overhead tanks. From these tanks, it travels through underground pipes to our building. The building tank stores it until we open the tap.",
+          "explanation": "Water travels a long journey through collection, cleaning, storage, and pipes before it reaches our tap."
         },
         {
           "id": "ch7-t2-m2",
           "type": "mcq",
-          "question": "Which material were water vessels mostly made of in the old days?",
-          "options": ["Plastic and glass", "Clay and brass", "Steel and aluminium", "Paper and wood"],
-          "answer": "Clay and brass",
-          "explanation": "In the old days, people mostly used clay pots and brass vessels to store water. Clay pots keep water naturally cool."
+          "question": "Why do many Indian families store water at home?",
+          "options": [
+            "Because they enjoy collecting water",
+            "Because water supply often comes for only a few hours each day",
+            "Because stored water tastes better",
+            "Because it is a festival custom"
+          ],
+          "answer": "Because water supply often comes for only a few hours each day",
+          "explanation": "In many Indian homes, water supply is available only for a few hours daily. Families must store enough water to last the whole day."
         }
       ],
       "hard": [
         {
           "id": "ch7-t2-h1",
           "type": "long",
-          "question": "Describe the complete journey of water from a river to your tap at home.",
-          "answer": "Water starts from rivers, lakes, wells, or borewells. It is collected and sent to treatment plants where it is cleaned. The clean water is then stored in big tanks, sometimes on the roof of buildings. From these tanks, pipes carry the water to different homes and buildings. When we open the tap, the water flows out for us to use. This whole system needs many workers and machines to keep working properly.",
-          "explanation": "Water travels a long journey from its source to our taps. This process involves collection, storage, and distribution through pipes."
+          "question": "Our body is made of nearly 70% water. Why is water so important for our body and daily life? List at least five ways we use water every day.",
+          "answer": "Water makes up nearly 70% of our body and is essential for survival. Without water, a person can live only about three days. We use water in many ways every day: drinking (6-8 glasses daily), cooking food like dal and rice, bathing and washing hands, brushing teeth and rinsing the mouth, washing clothes and utensils, mopping floors, watering plants, and flushing toilets. Water is needed from the moment we wake up until we go to bed. That is why water is sometimes called liquid gold.",
+          "explanation": "Water is involved in nearly every daily activity. Our body depends on water to stay alive and healthy."
         }
-      ]
+      ],
+      "name": "The Journey of a Raindrop"
     },
     {
-      "topic": "Saving and Sharing Water",
+      "topic": "Water is Precious -- Save Every Drop!",
       "easy": [
         {
           "id": "ch7-t3-e1",
           "type": "mcq",
-          "question": "Which of these is a way to save water?",
-          "options": ["Leave the tap running while brushing", "Take very long showers", "Turn off the tap while brushing teeth", "Waste water while playing"],
-          "answer": "Turn off the tap while brushing teeth",
-          "explanation": "Turning off the tap while brushing your teeth is a simple and important way to save water."
+          "question": "Which of these is a good way to save water?",
+          "options": [
+            "Leave the tap running while brushing",
+            "Take a bucket bath instead of a long shower",
+            "Play with the garden hose",
+            "Let a dripping tap continue dripping"
+          ],
+          "answer": "Take a bucket bath instead of a long shower",
+          "explanation": "A bucket bath uses about 15 litres of water, while a 10-minute shower can use over 100 litres. Bucket baths save much more water."
         },
         {
           "id": "ch7-t3-e2",
           "type": "fill",
-          "question": "We can reuse water from washing vegetables to ______ plants.",
-          "answer": "water",
-          "explanation": "After washing vegetables, we can reuse that water to water our plants instead of throwing it away."
+          "question": "Water used for washing hands or rinsing clothes is called ______ and can be reused for watering plants.",
+          "answer": "greywater",
+          "explanation": "Greywater is water that has already been used for washing. It can be reused for watering gardens, flushing toilets, or washing courtyards."
         },
         {
           "id": "ch7-t3-e3",
           "type": "short",
-          "question": "What is a birdbath? How do you make one?",
-          "answer": "A birdbath is a shallow dish of water kept on the balcony or terrace for birds to drink. We can make one by taking a shallow bowl, placing small stones inside for birds to sit on, and filling it with fresh water.",
-          "explanation": "A birdbath is a kind way to share water with birds, especially during hot summer months."
+          "question": "How can you make a simple bird water station at home?",
+          "answer": "Take a wide flat dish, place two or three small pebbles inside for birds to stand on, fill it with clean water, and keep it in a shaded spot on your balcony. Refill it with fresh water every morning.",
+          "explanation": "A bird water station is a simple way to share water with birds, especially during hot summer months when they struggle to find water."
         },
         {
           "id": "ch7-t3-e4",
           "type": "mcq",
-          "question": "In India, people traditionally keep pots of water outside their homes during which season?",
-          "options": ["Winter", "Monsoon", "Summer", "Spring"],
+          "question": "In India, families traditionally keep a ghada with water outside their gate during which season?",
+          "options": [
+            "Winter",
+            "Monsoon",
+            "Summer",
+            "Autumn"
+          ],
           "answer": "Summer",
-          "explanation": "In India, there is a beautiful tradition of keeping pots of water outside homes during the hot summer months so that anyone feeling thirsty can drink."
+          "explanation": "During blazing summer heat, many Indian families place an earthen pot (ghada) with a glass outside their gate so that thirsty people passing by can drink cool water."
         }
       ],
       "medium": [
         {
           "id": "ch7-t3-m1",
           "type": "short",
-          "question": "Name three ways to save water in your daily life.",
-          "answer": "Turn off the tap while brushing teeth, take shorter showers, and fix leaking taps quickly.",
-          "explanation": "There are many ways to save water including turning off taps, shorter showers, fixing leaks, reusing water, and not wasting water while playing."
+          "question": "Name three ways you can save water at home every day.",
+          "answer": "Close the tap tightly while brushing teeth, take a bucket bath instead of a long shower, and use vegetable-washing water to water plants.",
+          "explanation": "Small actions like closing taps, using bucket baths, fixing leaks, and reusing water can save hundreds of litres every month."
         },
         {
           "id": "ch7-t3-m2",
           "type": "mcq",
-          "question": "Used water can be reused for which of the following?",
-          "options": ["Drinking", "Cooking", "Watering plants", "Making tea"],
-          "answer": "Watering plants",
-          "explanation": "Dirty water cannot be used for drinking or cooking, but it can be reused for watering plants, flushing toilets, and cleaning floors."
+          "question": "What can greywater be used for?",
+          "options": [
+            "Drinking",
+            "Cooking",
+            "Watering the garden",
+            "Making tea"
+          ],
+          "answer": "Watering the garden",
+          "explanation": "Greywater (water used for washing) cannot be drunk or used for cooking, but it can be reused for watering plants, flushing toilets, or cleaning floors."
         },
         {
           "id": "ch7-t3-m3",
           "type": "fill",
-          "question": "We should share water with postal workers, birds, and ______ animals.",
-          "answer": "stray",
-          "explanation": "We should share water with postal workers, sanitation workers who come to our door, birds through birdbaths, and stray animals by keeping a bowl of water outside."
+          "question": "We should offer water to workers like the postman, the vegetable seller, and the ______ collector when they visit.",
+          "answer": "garbage",
+          "explanation": "Sharing water with workers like the postman, vegetable seller, and garbage collector is a kind act, especially during hot weather."
         }
       ],
       "hard": [
         {
           "id": "ch7-t3-h1",
           "type": "long",
-          "question": "Why is water called a 'precious gift'? What can we do to protect this gift?",
-          "answer": "Water is called a precious gift because it is absolutely essential for life. We cannot live more than 3 days without drinking water. We need water for drinking, cooking, bathing, cleaning, and growing food. But many places do not get enough water. To protect this gift, we should save every drop by turning off taps, fixing leaks, and taking shorter showers. We should reuse water for watering plants. We should not add too much soap and chemicals to water. We should share water with people, birds, and animals who need it. Water is sacred and we must take care of it.",
-          "explanation": "Water is precious because all life depends on it. Since water is limited, we must save it, reuse it, and share it with all living beings."
+          "question": "Why is water called a 'precious gift'? What steps can you take to protect this gift?",
+          "answer": "Water is called a precious gift because all life depends on it. Our body is 70% water and we cannot survive more than three days without it. We need water for drinking, cooking, bathing, cleaning, and growing food. But fresh water on Earth is limited and many cities face water shortage during summer. To protect this gift, we should close taps while brushing teeth, take bucket baths, fix dripping taps quickly, reuse vegetable-washing water for plants, and avoid wasting water while playing. We should also share water with thirsty people, birds, and animals. Every drop we save today is a drop available for someone tomorrow.",
+          "explanation": "Water is limited and essential for all life. Saving, reusing, and sharing water are our responsibilities."
         },
         {
           "id": "ch7-t3-h2",
           "type": "long",
-          "question": "How can we share water with others? Why is sharing water important?",
-          "answer": "We can share water in many ways. We can keep pots of water outside our homes during summer for thirsty people to drink. We can offer water to postal workers and sanitation workers who come to our door. We can make a birdbath by placing a shallow dish of water with small stones on our balcony for birds. We can keep a bowl of water outside for stray animals. Sharing water is important because not everyone has easy access to water, and birds and animals also need water to survive, especially in hot weather.",
-          "explanation": "Sharing water is a beautiful Indian tradition that shows kindness and care for all living beings."
+          "question": "How can we share water with people, birds, and animals? Why is this important?",
+          "answer": "We can share water in many ways. For people, we can keep an earthen pot with a glass outside our gate during summer so thirsty passersby can drink. We should offer water to workers like the postman and garbage collector. For birds, we can make a bird water station by placing a shallow dish with pebbles and water on our balcony. For stray animals, we can keep a bowl of water near our gate. Sharing water is important because in summer, finding water becomes very difficult for birds and animals. Workers who spend all day outdoors also get very thirsty. Sharing water is sharing life -- it is one of the kindest things we can do.",
+          "explanation": "Sharing water with all living beings is a beautiful Indian tradition that shows care and kindness."
         }
-      ]
+      ],
+      "name": "How Water Reaches Our Homes"
     }
   ]
 }

@@ -1,13 +1,18 @@
 {
   "topics": [
     {
-      "topic": "Pairs of Angles",
+      "topic": "Basic Terms and Definitions",
       "easy": [
         {
           "id": "ch6-t1-e1",
           "type": "mcq",
           "question": "Two angles whose sum is 180 degrees are called:",
-          "options": ["Complementary angles", "Supplementary angles", "Vertically opposite angles", "Adjacent angles"],
+          "options": [
+            "Complementary angles",
+            "Supplementary angles",
+            "Vertically opposite angles",
+            "Adjacent angles"
+          ],
           "answer": "Supplementary angles",
           "explanation": "Two angles whose sum is 180 degrees are called supplementary angles. Complementary angles sum to 90 degrees."
         },
@@ -29,7 +34,12 @@
           "id": "ch6-t1-e4",
           "type": "mcq",
           "question": "Lines AB and CD intersect at O. If angle AOC = 40 degrees, what is angle BOD?",
-          "options": ["40 degrees", "140 degrees", "50 degrees", "180 degrees"],
+          "options": [
+            "40 degrees",
+            "140 degrees",
+            "50 degrees",
+            "180 degrees"
+          ],
           "answer": "40 degrees",
           "explanation": "Angle AOC and angle BOD are vertically opposite angles, so they are equal. Angle BOD = 40 degrees."
         }
@@ -61,13 +71,18 @@
       ]
     },
     {
-      "topic": "Parallel Lines and Transversal",
+      "topic": "Vertically Opposite Angles",
       "easy": [
         {
           "id": "ch6-t2-e1",
           "type": "mcq",
           "question": "When a transversal intersects two parallel lines, the corresponding angles are:",
-          "options": ["Complementary", "Supplementary", "Equal", "Unequal"],
+          "options": [
+            "Complementary",
+            "Supplementary",
+            "Equal",
+            "Unequal"
+          ],
           "answer": "Equal",
           "explanation": "By the Corresponding Angles Axiom, corresponding angles formed by a transversal cutting two parallel lines are always equal."
         },
@@ -119,7 +134,12 @@
           "id": "ch6-t3-e1",
           "type": "mcq",
           "question": "The sum of the angles of a triangle is:",
-          "options": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+          "options": [
+            "90 degrees",
+            "180 degrees",
+            "270 degrees",
+            "360 degrees"
+          ],
           "answer": "180 degrees",
           "explanation": "The angle sum property of a triangle states that the three interior angles always add up to 180 degrees."
         },
