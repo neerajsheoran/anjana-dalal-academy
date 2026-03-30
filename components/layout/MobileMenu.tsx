@@ -59,7 +59,7 @@ export default function MobileMenu({ user }: { user: User }) {
                 <p className="text-xs text-gray-400 leading-tight">{user.email}</p>
               </div>
             </Link>
-            {(user.role === 'partner' || user.role === 'admin') && (
+            {(user.role === 'partner' || user.role === 'admin' || user.role === 'content-author') && (
               <div className="w-px h-8 bg-gray-200" />
             )}
             {user.role === 'partner' && (
@@ -68,6 +68,14 @@ export default function MobileMenu({ user }: { user: User }) {
                 className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
               >
                 Dashboard
+              </Link>
+            )}
+            {(user.role === 'admin' || user.role === 'content-author') && (
+              <Link
+                href="/keystatic"
+                className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                CMS
               </Link>
             )}
             {user.role === 'admin' && (
@@ -163,6 +171,14 @@ export default function MobileMenu({ user }: { user: User }) {
                   }`}
                 >
                   Advisor Dashboard
+                </Link>
+              )}
+              {(user?.role === 'admin' || user?.role === 'content-author') && (
+                <Link
+                  href="/keystatic"
+                  className="block px-6 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  Content CMS
                 </Link>
               )}
               {user?.role === 'admin' && (
