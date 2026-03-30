@@ -87,6 +87,15 @@ function makeNotesCollection(
           description: 'The chapter title shown on the website.',
         },
       }),
+      description: fields.text({
+        label: 'Chapter Description',
+        description: 'A short summary shown on chapter cards (1-2 sentences).',
+        multiline: true,
+      }),
+      order: fields.integer({
+        label: 'Chapter Order',
+        description: 'Chapter number for sorting (e.g., 1, 2, 3). Determines display order.',
+      }),
       content: fields.mdx({
         label: 'Chapter Notes',
         description: 'Write or edit the chapter content. Use headings, bold text, and blockquotes.',
