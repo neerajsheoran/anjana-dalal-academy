@@ -55,6 +55,9 @@ export async function POST(req: Request) {
       if (typeof body.commissionPercent === 'number') update.commissionPercent = body.commissionPercent;
       if (typeof body.referralDiscountPercent === 'number') update.referralDiscountPercent = body.referralDiscountPercent;
       if (typeof body.razorpayEnabled === 'boolean') update.razorpayEnabled = body.razorpayEnabled;
+      if (body.contentAuthorPermissions && typeof body.contentAuthorPermissions === 'object') {
+        update.contentAuthorPermissions = body.contentAuthorPermissions;
+      }
 
       if (Object.keys(update).length === 0) {
         return NextResponse.json({ error: 'Nothing to update' }, { status: 400 });

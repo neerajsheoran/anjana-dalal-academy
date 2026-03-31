@@ -74,4 +74,13 @@ export interface PlatformConfig {
   commissionPercent: number;
   referralDiscountPercent: number;
   razorpayEnabled: boolean;
+  contentAuthorPermissions?: ContentAuthorPermissions;
+}
+
+export interface ContentAuthorPermissions {
+  viewUsers: boolean;
+  manageUsers: boolean;
+  viewSystemFlows: boolean;
+  viewConfiguration: boolean;
+  viewAdvisors: boolean;
 }

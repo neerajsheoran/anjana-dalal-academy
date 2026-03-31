@@ -19,7 +19,7 @@ type SortDir = "asc" | "desc";
 
 const PAGE_SIZE = 20;
 
-export default function UserTable({ users }: { users: User[] }) {
+export default function UserTable({ users, readOnly = false }: { users: User[]; readOnly?: boolean }) {
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState("all");
   const [subFilter, setSubFilter] = useState("all");
@@ -208,7 +208,7 @@ export default function UserTable({ users }: { users: User[] }) {
               <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
                 {showDeleted ? "Deleted Users" : "All Users"}
               </h2>
-              {deletedCount > 0 && (
+              {!readOnly && deletedCount > 0 && (
                 <button
                   onClick={() => setShowDeleted(!showDeleted)}
                   className={`text-xs font-medium px-2 py-0.5 rounded-full ${
@@ -317,8 +317,8 @@ export default function UserTable({ users }: { users: User[] }) {
                       Subscription
                       <SortArrow col="subStatus" />
                     </th>
-                    {!showDeleted && <th className="px-6 py-3">Extend</th>}
-                    <th className="px-6 py-3"></th>
+                    {!readOnly && !showDeleted && <th className="px-6 py-3">Extend</th>}
+                    {!readOnly && <th className="px-6 py-3"></th>}
                   </tr>
                 </thead>
                 <tbody>
@@ -341,8 +341,10 @@ export default function UserTable({ users }: { users: User[] }) {
                           <span className="text-sm font-medium text-blue-600">
                             Admin
                           </span>
-                        ) : showDeleted ? (
-                          <span className="text-sm text-gray-400 capitalize">{user.role}</span>
+                        ) : readOnly || showDeleted ? (
+                          <span className="text-sm text-gray-400 capitalize">
+                            {user.role === "content-author" ? "Content Author" : user.role}
+                          </span>
                         ) : (
                           <RoleSelector
                             uid={user.uid}
@@ -353,7 +355,7 @@ export default function UserTable({ users }: { users: User[] }) {
                       <td className="px-6 py-3">
                         <SubBadge status={user.subStatus} />
                       </td>
-                      {!showDeleted && (
+                      {!readOnly && !showDeleted && (
                         <td className="px-6 py-3">
                           {user.role !== "admin" &&
                             user.subStatus !== "active" &&
@@ -365,33 +367,35 @@ export default function UserTable({ users }: { users: User[] }) {
                           )}
                         </td>
                       )}
-                      <td className="px-6 py-3">
-                        {showDeleted ? (
-                          <div className="flex items-center gap-2">
-                            <button
-                              onClick={() => handleRestore(user.uid)}
-                              className="text-xs font-medium text-green-500 hover:text-green-700"
-                            >
-                              Restore
-                            </button>
-                            <button
-                              onClick={() => setModalUser(user)}
-                              className="text-xs font-medium text-red-400 hover:text-red-600"
-                            >
-                              Permanent
-                            </button>
-                          </div>
-                        ) : (
-                          user.role !== "admin" && (
-                            <button
-                              onClick={() => setModalUser(user)}
-                              className="text-xs font-medium text-red-400 hover:text-red-600"
-                            >
-                              Delete
-                            </button>
-                          )
-                        )}
-                      </td>
+                      {!readOnly && (
+                        <td className="px-6 py-3">
+                          {showDeleted ? (
+                            <div className="flex items-center gap-2">
+                              <button
+                                onClick={() => handleRestore(user.uid)}
+                                className="text-xs font-medium text-green-500 hover:text-green-700"
+                              >
+                                Restore
+                              </button>
+                              <button
+                                onClick={() => setModalUser(user)}
+                                className="text-xs font-medium text-red-400 hover:text-red-600"
+                              >
+                                Permanent
+                              </button>
+                            </div>
+                          ) : (
+                            user.role !== "admin" && (
+                              <button
+                                onClick={() => setModalUser(user)}
+                                className="text-xs font-medium text-red-400 hover:text-red-600"
+                              >
+                                Delete
+                              </button>
+                            )
+                          )}
+                        </td>
+                      )}
                     </tr>
                   ))}
                 </tbody>
@@ -458,8 +462,10 @@ export default function UserTable({ users }: { users: User[] }) {
                       <span className="text-sm font-medium text-blue-600">
                         Admin
                       </span>
-                    ) : showDeleted ? (
-                      <span className="text-sm text-gray-400 capitalize">{user.role}</span>
+                    ) : readOnly || showDeleted ? (
+                      <span className="text-sm text-gray-400 capitalize">
+                        {user.role === "content-author" ? "Content Author" : user.role}
+                      </span>
                     ) : (
                       <RoleSelector
                         uid={user.uid}
@@ -470,7 +476,7 @@ export default function UserTable({ users }: { users: User[] }) {
                       {user.createdAt}
                     </span>
                   </div>
-                  {!showDeleted &&
+                  {!readOnly && !showDeleted &&
                     user.role !== "admin" &&
                     user.subStatus !== "active" &&
                     user.subStatus !== "extended" && (
@@ -481,33 +487,35 @@ export default function UserTable({ users }: { users: User[] }) {
                       />
                     </div>
                   )}
-                  <div className="mt-2 flex justify-end">
-                    {showDeleted ? (
-                      <div className="flex items-center gap-3">
-                        <button
-                          onClick={() => handleRestore(user.uid)}
-                          className="text-xs font-medium text-green-500 hover:text-green-700"
-                        >
-                          Restore
-                        </button>
-                        <button
-                          onClick={() => setModalUser(user)}
-                          className="text-xs font-medium text-red-400 hover:text-red-600"
-                        >
-                          Permanent Delete
-                        </button>
-                      </div>
-                    ) : (
-                      user.role !== "admin" && (
-                        <button
-                          onClick={() => setModalUser(user)}
-                          className="text-xs font-medium text-red-400 hover:text-red-600"
-                        >
-                          Delete
-                        </button>
-                      )
-                    )}
-                  </div>
+                  {!readOnly && (
+                    <div className="mt-2 flex justify-end">
+                      {showDeleted ? (
+                        <div className="flex items-center gap-3">
+                          <button
+                            onClick={() => handleRestore(user.uid)}
+                            className="text-xs font-medium text-green-500 hover:text-green-700"
+                          >
+                            Restore
+                          </button>
+                          <button
+                            onClick={() => setModalUser(user)}
+                            className="text-xs font-medium text-red-400 hover:text-red-600"
+                          >
+                            Permanent Delete
+                          </button>
+                        </div>
+                      ) : (
+                        user.role !== "admin" && (
+                          <button
+                            onClick={() => setModalUser(user)}
+                            className="text-xs font-medium text-red-400 hover:text-red-600"
+                          >
+                            Delete
+                          </button>
+                        )
+                      )}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -78,14 +78,14 @@ export default function MobileMenu({ user }: { user: User }) {
                 CMS
               </Link>
             )}
-            {user.role === 'admin' && (
+            {(user.role === 'admin' || user.role === 'content-author') && (
               <>
                 <div className="w-px h-8 bg-gray-200" />
                 <Link
                   href="/admin"
                   className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
                 >
-                  Admin
+                  {user.role === 'admin' ? 'Admin' : 'Dashboard'}
                 </Link>
               </>
             )}
@@ -184,7 +184,7 @@ export default function MobileMenu({ user }: { user: User }) {
                   Content CMS
                 </Link>
               )}
-              {user?.role === 'admin' && (
+              {(user?.role === 'admin' || user?.role === 'content-author') && (
                 <Link
                   href="/admin"
                   className={`block px-6 py-3 text-sm font-medium transition-colors ${
@@ -193,7 +193,7 @@ export default function MobileMenu({ user }: { user: User }) {
                       : 'text-gray-700 hover:bg-gray-50'
                   }`}
                 >
-                  Admin Dashboard
+                  {user?.role === 'admin' ? 'Admin Dashboard' : 'Dashboard'}
                 </Link>
               )}
             </nav>

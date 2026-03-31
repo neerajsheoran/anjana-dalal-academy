@@ -1,5 +1,13 @@
 import { adminDb } from './firebase-admin';
-import type { PlatformConfig, ContentAccessLevel } from './types';
+import type { PlatformConfig, ContentAccessLevel, ContentAuthorPermissions } from './types';
+
+const DEFAULT_CONTENT_AUTHOR_PERMISSIONS: ContentAuthorPermissions = {
+  viewUsers: true,
+  manageUsers: false,
+  viewSystemFlows: true,
+  viewConfiguration: false,
+  viewAdvisors: false,
+};
 
 const DEFAULT_CONFIG: PlatformConfig = {
   trialDays: 30,
@@ -7,6 +15,7 @@ const DEFAULT_CONFIG: PlatformConfig = {
   commissionPercent: 10,
   referralDiscountPercent: 10,
   razorpayEnabled: true,
+  contentAuthorPermissions: DEFAULT_CONTENT_AUTHOR_PERMISSIONS,
 };
 
 /**
@@ -24,6 +33,10 @@ export async function getPlatformConfig(): Promise<PlatformConfig> {
       commissionPercent: d.commissionPercent ?? DEFAULT_CONFIG.commissionPercent,
       referralDiscountPercent: d.referralDiscountPercent ?? DEFAULT_CONFIG.referralDiscountPercent,
       razorpayEnabled: d.razorpayEnabled ?? DEFAULT_CONFIG.razorpayEnabled,
+      contentAuthorPermissions: {
+        ...DEFAULT_CONTENT_AUTHOR_PERMISSIONS,
+        ...(d.contentAuthorPermissions ?? {}),
+      },
     };
   } catch {
     return DEFAULT_CONFIG;

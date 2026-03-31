@@ -9,17 +9,20 @@ import UserTable from '@/components/admin/UserTable';
 import AdminTabs from '@/components/admin/AdminTabs';
 import SystemFlows from '@/components/admin/SystemFlows';
 
-async function requireAdmin() {
+async function requireAdminOrContentAuthor(): Promise<string> {
   const cookieStore = await cookies();
   const session = cookieStore.get('session')?.value;
   if (!session) redirect('/login');
 
   const decoded = await adminAuth.verifySessionCookie(session);
   const userDoc = await adminDb.collection('users').doc(decoded.uid).get();
+  const role = userDoc.data()?.role;
 
-  if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
+  if (!userDoc.exists || (role !== 'admin' && role !== 'content-author')) {
     redirect('/');
   }
+
+  return role as string;
 }
 
 async function getAllUsers() {
@@ -226,12 +229,28 @@ async function getAllApplications() {
 }
 
 export default async function AdminPage() {
-  await requireAdmin();
-  const [users, applications, config, commissions] = await Promise.all([
-    getAllUsers(),
-    getAllApplications(),
-    getPlatformConfig(),
-    getCommissionData(),
+  const role = await requireAdminOrContentAuthor();
+  const isAdmin = role === 'admin';
+
+  const config = await getPlatformConfig();
+  const permissions = config.contentAuthorPermissions ?? {
+    viewUsers: true,
+    manageUsers: false,
+    viewSystemFlows: true,
+    viewConfiguration: false,
+    viewAdvisors: false,
+  };
+
+  // Only fetch data the user has permission to see
+  const showUsers = isAdmin || permissions.viewUsers;
+  const showConfig = isAdmin;
+  const showAdvisors = isAdmin || permissions.viewAdvisors;
+  const showFlows = isAdmin || permissions.viewSystemFlows;
+
+  const [users, applications, commissions] = await Promise.all([
+    showUsers ? getAllUsers() : Promise.resolve([]),
+    showAdvisors ? getAllApplications() : Promise.resolve({ pending: [], processed: [], total: 0 }),
+    showAdvisors ? getCommissionData() : Promise.resolve([]),
   ]);
 
   const activeUsers = users.filter((u) => !u.isDeleted);
@@ -252,25 +271,36 @@ export default async function AdminPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">Admin Dashboard</h1>
+        <h1 className="text-2xl font-bold text-gray-800 mb-6">
+          {isAdmin ? 'Admin Dashboard' : 'Dashboard'}
+        </h1>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 mb-4">
-          <StatCard label="Total Users" value={totalUsers} />
-          <StatCard label="Students" value={byRole.student} />
-          <StatCard label="Teachers" value={byRole.teacher} />
-          <StatCard label="Advisors" value={byRole.partner} />
-          <StatCard label="Content Authors" value={byRole['content-author']} />
-          <StatCard label="Applications" value={applications.total} />
-        </div>
-        <div className="grid grid-cols-3 gap-4 mb-8">
-          <StatCard label="On Trial" value={bySub.trial} />
-          <StatCard label="Subscribed" value={bySub.active} />
-          <StatCard label="Expired" value={bySub.expired} />
-        </div>
+        {/* Stats — only for admin or content-author with viewUsers */}
+        {showUsers && (
+          <>
+            <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 mb-4">
+              <StatCard label="Total Users" value={totalUsers} />
+              <StatCard label="Students" value={byRole.student} />
+              <StatCard label="Teachers" value={byRole.teacher} />
+              <StatCard label="Advisors" value={byRole.partner} />
+              <StatCard label="Content Authors" value={byRole['content-author']} />
+              <StatCard label="Applications" value={applications.total} />
+            </div>
+            <div className="grid grid-cols-3 gap-4 mb-8">
+              <StatCard label="On Trial" value={bySub.trial} />
+              <StatCard label="Subscribed" value={bySub.active} />
+              <StatCard label="Expired" value={bySub.expired} />
+            </div>
+          </>
+        )}
 
         <AdminTabs
-          usersTab={<UserTable users={users} />}
+          role={role}
+          showUsers={showUsers}
+          showConfig={showConfig}
+          showAdvisors={showAdvisors}
+          showFlows={showFlows}
+          usersTab={<UserTable users={users} readOnly={!isAdmin && !permissions.manageUsers} />}
           configTab={
             <div className="bg-white rounded-2xl shadow-sm p-6">
               <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
@@ -281,6 +311,7 @@ export default async function AdminPage() {
                 yearlyPriceINR: config.yearlyPriceINR,
                 commissionPercent: config.commissionPercent,
                 referralDiscountPercent: config.referralDiscountPercent,
+                contentAuthorPermissions: permissions,
               }} />
             </div>
           }
