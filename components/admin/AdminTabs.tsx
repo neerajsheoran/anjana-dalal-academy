@@ -12,9 +12,10 @@ interface AdminTabsProps {
   configTab: React.ReactNode;
   advisorsTab: React.ReactNode;
   flowsTab: React.ReactNode;
+  decisionsTab: React.ReactNode;
 }
 
-type TabKey = "users" | "config" | "advisors" | "flows";
+type TabKey = "users" | "config" | "advisors" | "flows" | "decisions";
 
 export default function AdminTabs({
   showUsers,
@@ -25,12 +26,14 @@ export default function AdminTabs({
   configTab,
   advisorsTab,
   flowsTab,
+  decisionsTab,
 }: AdminTabsProps) {
   const allTabs: { key: TabKey; label: string; visible: boolean }[] = [
     { key: "users", label: "Users", visible: showUsers },
     { key: "config", label: "Configuration", visible: showConfig },
     { key: "advisors", label: "Advisors", visible: showAdvisors },
     { key: "flows", label: "System Flows", visible: showFlows },
+    { key: "decisions", label: "Technical Decisions", visible: showFlows },
   ];
 
   const visibleTabs = allTabs.filter((t) => t.visible);
@@ -62,6 +65,7 @@ export default function AdminTabs({
       {safeTab === "config" && configTab}
       {safeTab === "advisors" && advisorsTab}
       {safeTab === "flows" && flowsTab}
+      {safeTab === "decisions" && decisionsTab}
     </div>
   );
 }

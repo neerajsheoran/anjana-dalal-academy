@@ -8,6 +8,7 @@ import CommissionManager from '@/components/admin/CommissionManager';
 import UserTable from '@/components/admin/UserTable';
 import AdminTabs from '@/components/admin/AdminTabs';
 import SystemFlows from '@/components/admin/SystemFlows';
+import TechnicalDecisions from '@/components/admin/TechnicalDecisions';
 
 async function requireAdminOrContentAuthor(): Promise<string> {
   const cookieStore = await cookies();
@@ -399,6 +400,7 @@ export default async function AdminPage() {
             </>
           }
           flowsTab={<SystemFlows />}
+          decisionsTab={<TechnicalDecisions />}
         />
       </div>
     </main>

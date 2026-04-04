@@ -12,6 +12,7 @@ interface BookmarkButtonProps {
 export default function BookmarkButton({ classId, subject, chapterId, chapterTitle }: BookmarkButtonProps) {
   const [bookmarked, setBookmarked] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   // Check if this chapter is already bookmarked
   useEffect(() => {
@@ -24,27 +25,31 @@ export default function BookmarkButton({ classId, subject, chapterId, chapterTit
         setBookmarked(bookmarks.some((b) => b.chapterId === chapterId));
       })
       .catch(() => {
-        // Not logged in or error — hide loading
+        // Not logged in or error — just hide loading
       })
       .finally(() => setLoading(false));
   }, [chapterId]);
 
   const toggle = async () => {
     setLoading(true);
+    setError(false);
     try {
       if (bookmarked) {
-        await fetch(`/api/bookmarks?chapterId=${encodeURIComponent(chapterId)}`, { method: "DELETE" });
+        const res = await fetch(`/api/bookmarks?chapterId=${encodeURIComponent(chapterId)}`, { method: "DELETE" });
+        if (!res.ok) throw new Error();
         setBookmarked(false);
       } else {
-        await fetch("/api/bookmarks", {
+        const res = await fetch("/api/bookmarks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ classId, subject, chapterId, chapterTitle }),
         });
+        if (!res.ok) throw new Error();
         setBookmarked(true);
       }
     } catch {
-      // silently fail
+      setError(true);
+      setTimeout(() => setError(false), 3000);
     } finally {
       setLoading(false);
     }
@@ -57,7 +62,9 @@ export default function BookmarkButton({ classId, subject, chapterId, chapterTit
       onClick={toggle}
       disabled={loading}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
-        bookmarked
+        error
+          ? "bg-red-50 text-red-600 border border-red-300"
+          : bookmarked
           ? "bg-yellow-50 text-yellow-700 border border-yellow-300 hover:bg-yellow-100"
           : "bg-white/10 text-white/80 border border-white/30 hover:bg-white/20 hover:text-white"
       } ${loading ? "opacity-50 cursor-wait" : ""}`}
@@ -72,7 +79,7 @@ export default function BookmarkButton({ classId, subject, chapterId, chapterTit
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
       </svg>
-      {bookmarked ? "Bookmarked" : "Bookmark"}
+      {error ? "Failed — tap to retry" : bookmarked ? "Bookmarked" : "Bookmark"}
     </button>
   );
 }

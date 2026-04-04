@@ -93,9 +93,6 @@ export function getAllChapters(): ChapterMeta[] {
   return _chapters;
 }
 
-// Keep CHAPTERS export for backward compatibility
-export const CHAPTERS: ChapterMeta[] = discoverChapters();
-
 // Helper: get all chapters for a specific class + subject
 export function getChapters(classId: ClassId, subject: SubjectId): ChapterMeta[] {
   return getAllChapters()
