@@ -32,7 +32,7 @@
         {
           "id": "ch1-t1-e3",
           "type": "fill",
-          "question": "The chappals are ______ the bed. (The chappals are below the bed.)",
+          "question": "The shoes are ______ the bed. (The shoes are below the bed.)",
           "answer": "under",
           "explanation": "'Under' means below or beneath something."
         },
@@ -77,12 +77,12 @@
         {
           "id": "ch1-t1-h1",
           "type": "long",
-          "question": "Describe where Golu the cat went using position words: Golu first sat ON the sofa, then hid ______ the big pot, and finally curled up ______ the dining table. Fill in suitable position words.",
+          "question": "Describe where Puffy the dog went using position words: Puffy first sat ON the sofa, then hid ______ the big pot, and finally curled up ______ the dining table. Fill in suitable position words.",
           "answer": "Inside the big pot and under/below the dining table. (Other correct position words are also acceptable.)",
           "explanation": "Position words like on, under, inside, outside, above, below tell us where something is."
         }
       ],
-      "name": "Where Is the Cat?"
+      "name": "Where Is the Dog?"
     },
     {
       "topic": "Near and Far",

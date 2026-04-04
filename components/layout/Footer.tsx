@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Browse by Subject */}
+          {/* Browse by Subject + Links */}
           <div>
             <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
               Browse by Subject
@@ -59,6 +59,28 @@ export default function Footer() {
                   className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
                 >
                   Mathematics
+                </Link>
+              </li>
+            </ul>
+
+            <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3 mt-6">
+              Quick Links
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/pricing"
+                  className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/advisor"
+                  className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
+                >
+                  Become an Advisor
                 </Link>
               </li>
             </ul>

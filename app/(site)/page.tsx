@@ -5,42 +5,27 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50">
 
-      {/* ── Hero ───────────────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 px-6">
+      {/* ── Compact Hero ─────────────────────────────────────────────────── */}
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-8 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-3">
-            Class 1 to Class 10 · CBSE · NCERT
+          <p className="text-blue-200 text-xs font-semibold uppercase tracking-widest mb-2">
+            Class 1 to Class 10
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-3 leading-tight">
-            CBSE Made Crystal Clear
+          <h1 className="text-2xl sm:text-3xl font-extrabold mb-2 leading-tight">
+            Made to Make Learning Easy
           </h1>
-          <p className="text-blue-100 text-lg max-w-xl mx-auto mb-8">
-            NCERT-aligned chapters with simple explanations,
-            real-life examples, and 3-level worksheets.
+          <p className="text-blue-100 text-sm max-w-lg mx-auto">
+            Simple explanations, real-life examples, and 3-level worksheets.
           </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap">
-            <a
-              href="/login"
-              className="inline-block bg-white text-blue-700 font-bold px-8 py-3 rounded-xl text-lg hover:bg-blue-50 transition-colors shadow-lg"
-            >
-              Start Learning Free
-            </a>
-            <a
-              href="/classes"
-              className="inline-flex items-center gap-1 text-white/80 hover:text-white font-medium text-base transition-colors"
-            >
-              Browse Chapters <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
         </div>
       </section>
 
       {/* ── 3 Learning Cards ───────────────────────────────────────────────── */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="max-w-5xl mx-auto px-6 py-10">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
           How do you want to learn today?
         </h2>
-        <p className="text-gray-400 text-center text-sm mb-10">
+        <p className="text-gray-400 text-center text-sm mb-8">
           Choose one of the options below to get started
         </p>
 
@@ -95,6 +80,26 @@ export default function HomePage() {
       </div>
 
       <ContinueLearning />
+
+      {/* ── Advisor CTA ──────────────────────────────────────────────────── */}
+      <section className="max-w-5xl mx-auto px-6 pb-12">
+        <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
+          <div className="flex-1 text-center sm:text-left">
+            <h3 className="text-lg font-bold text-gray-800 mb-1">
+              Join the CogniLift Advisor Program
+            </h3>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Become a trusted learning partner — guide families to the right resources.
+            </p>
+          </div>
+          <Link
+            href="/advisor"
+            className="shrink-0 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors shadow-md"
+          >
+            Become an Advisor
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

@@ -75,7 +75,7 @@
           "explanation": "We line them up starting from the smallest tens and ones."
         }
       ],
-      "name": "Packing Oranges — Numbers 21 to 30"
+      "name": "Place Value — Numbers 21 to 30 (Packing Laddoos)"
     },
     {
       "topic": "Understanding Tens and Ones",
@@ -159,7 +159,7 @@
           "explanation": "42 has more tens (4) than 35 (3 tens), so 42 is bigger."
         }
       ],
-      "name": "Counting Flowers — Numbers 31 to 50"
+      "name": "Counting Flowers — Numbers 31 to 40"
     },
     {
       "topic": "Numbers 51 to 100",
@@ -243,7 +243,7 @@
           "explanation": "These are the numbers where the ones digit is 0."
         }
       ],
-      "name": "Understanding Tens and Ones"
+      "name": "Numbers 51 to 100"
     }
   ]
 }
