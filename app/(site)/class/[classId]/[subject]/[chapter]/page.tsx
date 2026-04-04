@@ -1,10 +1,12 @@
+import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
-import { getChapter, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
+import { getChapter, getChapters, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
 import { ClassId, SubjectId, WorksheetData, ContentAccessLevel } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import ProgressTracker from "@/components/progress/ProgressTracker";
+import BookmarkButton from "@/components/content/BookmarkButton";
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
@@ -94,6 +96,12 @@ export default async function ChapterPage({
   const subjectInfo = SUBJECTS.find((s) => s.id === subject);
   const banner = SUBJECT_BANNER[subject] ?? SUBJECT_BANNER["science"];
 
+  // Prev / Next chapter navigation
+  const allChapters = getChapters(classId, subject);
+  const currentIndex = allChapters.findIndex((c) => c.chapterId === chapter);
+  const prevChapter = currentIndex > 0 ? allChapters[currentIndex - 1] : null;
+  const nextChapter = currentIndex < allChapters.length - 1 ? allChapters[currentIndex + 1] : null;
+
   const basePath = path.join(process.cwd(), "content", classId, subject, chapter);
 
   const notesPath = path.join(basePath, "index.mdx");
@@ -152,7 +160,13 @@ export default async function ChapterPage({
               {chapterMeta.description}
             </p>
           )}
-          <div className="mt-4 flex items-center gap-3">
+          <div className="mt-4 flex items-center gap-3 flex-wrap">
+            <BookmarkButton
+              classId={classId}
+              subject={subject}
+              chapterId={chapter}
+              chapterTitle={chapterMeta?.title ?? chapter}
+            />
             {isChapterCompleted && (
               <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-100 font-semibold px-3 py-1.5 rounded-lg text-sm border border-green-400/30">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -164,6 +178,44 @@ export default async function ChapterPage({
           </div>
         </div>
       </div>
+
+      {/* Prev / Next Chapter Navigation — Top */}
+      {(prevChapter || nextChapter) && (
+        <div className="max-w-3xl mx-auto px-6 pt-6">
+          <div className="flex items-stretch gap-4">
+            {prevChapter ? (
+              <Link
+                href={`/class/${classId}/${subject}/${prevChapter.chapterId}`}
+                className="flex-1 group bg-white border border-gray-200 rounded-xl p-3 hover:border-blue-300 hover:shadow-md transition-all text-left"
+              >
+                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  ← Previous
+                </span>
+                <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
+                  {prevChapter.title}
+                </p>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+            {nextChapter ? (
+              <Link
+                href={`/class/${classId}/${subject}/${nextChapter.chapterId}`}
+                className="flex-1 group bg-white border border-gray-200 rounded-xl p-3 hover:border-blue-300 hover:shadow-md transition-all text-right"
+              >
+                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  Next →
+                </span>
+                <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
+                  {nextChapter.title}
+                </p>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-6 py-8">
@@ -195,6 +247,44 @@ export default async function ChapterPage({
           )}
         </ChapterTabs>
       </div>
+
+      {/* Prev / Next Chapter Navigation */}
+      {(prevChapter || nextChapter) && (
+        <div className="max-w-3xl mx-auto px-6 pb-8">
+          <div className="flex items-stretch gap-4">
+            {prevChapter ? (
+              <Link
+                href={`/class/${classId}/${subject}/${prevChapter.chapterId}`}
+                className="flex-1 group bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-300 hover:shadow-md transition-all text-left"
+              >
+                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  ← Previous
+                </span>
+                <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
+                  {prevChapter.title}
+                </p>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+            {nextChapter ? (
+              <Link
+                href={`/class/${classId}/${subject}/${nextChapter.chapterId}`}
+                className="flex-1 group bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-300 hover:shadow-md transition-all text-right"
+              >
+                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  Next →
+                </span>
+                <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
+                  {nextChapter.title}
+                </p>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+          </div>
+        </div>
+      )}
 
       <ProgressTracker
         classId={classId}

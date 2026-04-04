@@ -77,6 +77,29 @@ async function getQuizStats(uid: string) {
   }
 }
 
+async function getBookmarks(uid: string) {
+  try {
+    const snapshot = await adminDb
+      .collection("users")
+      .doc(uid)
+      .collection("bookmarks")
+      .orderBy("createdAt", "desc")
+      .get();
+
+    return snapshot.docs.map((doc) => {
+      const d = doc.data();
+      return {
+        chapterId: d.chapterId as string,
+        classId: d.classId as string,
+        subject: d.subject as string,
+        chapterTitle: (d.chapterTitle || d.chapterId) as string,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
 async function getQuizHistory(uid: string) {
   try {
     const snapshot = await adminDb
@@ -114,10 +137,11 @@ async function getQuizHistory(uid: string) {
 
 export default async function ProfilePage() {
   const user = await getUser();
-  const [quizHistory, progressStats, quizStats] = await Promise.all([
+  const [quizHistory, progressStats, quizStats, bookmarks] = await Promise.all([
     getQuizHistory(user.uid),
     getProgressStats(user.uid),
     getQuizStats(user.uid),
+    getBookmarks(user.uid),
   ]);
 
   const name = user.name || "—";
@@ -212,6 +236,44 @@ export default async function ProfilePage() {
             </div>
           )}
         </div>
+
+        {/* Bookmarked Chapters */}
+        {bookmarks.length > 0 && (
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+              Bookmarked Chapters
+            </h2>
+            <div className="space-y-2">
+              {bookmarks.map((b) => {
+                const classLabel = b.classId.replace("class-", "Class ");
+                const subjectLabel = b.subject === "maths" ? "Maths" : "Science";
+                const subjectColor = b.subject === "maths" ? "bg-blue-50 text-blue-600" : "bg-green-50 text-green-600";
+                return (
+                  <Link
+                    key={b.chapterId}
+                    href={`/class/${b.classId}/${b.subject}/${b.chapterId}`}
+                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group"
+                  >
+                    <svg className="w-4 h-4 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-medium text-gray-800 group-hover:text-blue-600 truncate">
+                        {b.chapterTitle}
+                      </p>
+                      <div className="flex items-center gap-2 mt-0.5">
+                        <span className={`text-xs font-medium px-1.5 py-0.5 rounded ${subjectColor}`}>
+                          {subjectLabel}
+                        </span>
+                        <span className="text-xs text-gray-400">{classLabel}</span>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Quiz History */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">

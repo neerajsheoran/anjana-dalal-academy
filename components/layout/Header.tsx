@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import MobileMenu from "./MobileMenu";
+import SearchModal from "./SearchModal";
 
 async function getUser() {
   try {
@@ -45,7 +46,10 @@ export default async function Header() {
           </div>
         </Link>
 
-        <MobileMenu user={user} />
+        <div className="flex items-center gap-3">
+          <SearchModal />
+          <MobileMenu user={user} />
+        </div>
       </div>
     </header>
   );
