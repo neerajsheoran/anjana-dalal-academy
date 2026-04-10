@@ -379,16 +379,16 @@ export default function QuizController({
         <div className="h-4 bg-gray-200 rounded-full overflow-hidden max-w-xs mx-auto mb-4">
           <div className={`h-full rounded-full ${barColor}`} style={{ width: `${pct}%` }} />
         </div>
-        {pct >= 60 ? (
+        {pct >= 80 ? (
           <div className="bg-green-50 border border-green-200 rounded-xl px-4 py-3 mb-4 max-w-sm mx-auto">
             <p className="text-sm text-green-800 font-semibold">
-              Chapter Completed! Great job!
+              Quiz Passed! Great job!
             </p>
           </div>
         ) : (
           <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 max-w-sm mx-auto">
             <p className="text-sm text-amber-800">
-              Score 60%+ to mark this chapter as completed.
+              Score 80%+ to mark this chapter as quiz passed.
             </p>
           </div>
         )}

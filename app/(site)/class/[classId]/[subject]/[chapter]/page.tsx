@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
 import ProgressTracker from "@/components/progress/ProgressTracker";
 import BookmarkButton from "@/components/content/BookmarkButton";
+import MarkCompleteButton from "@/components/progress/MarkCompleteButton";
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
@@ -58,11 +59,14 @@ export default async function ChapterPage({
 
   let accessLevel: ContentAccessLevel = "anonymous";
   let isChapterCompleted = false;
+  let completedBy: string | null = null;
+  let isLoggedIn = false;
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get("session")?.value;
     if (session) {
       const decoded = await adminAuth.verifySessionCookie(session);
+      isLoggedIn = true;
       accessLevel = await getContentAccessLevel(decoded.uid);
       // Check if chapter is completed (only if user has access)
       if (hasFullAccess(accessLevel)) {
@@ -74,6 +78,7 @@ export default async function ChapterPage({
           .get();
         if (progressDoc.exists && progressDoc.data()?.completed === true) {
           isChapterCompleted = true;
+          completedBy = (progressDoc.data()?.completedBy as string) || "quiz";
         }
       }
     }
@@ -135,7 +140,7 @@ export default async function ChapterPage({
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Chapter Title Banner */}
-      <div className={`${banner.bg} text-white px-6 py-8`}>
+      <div className={`${banner.bg} text-white px-6 py-6`}>
         <div className="max-w-3xl mx-auto">
           <Breadcrumb
             light
@@ -146,35 +151,41 @@ export default async function ChapterPage({
               { label: chapterMeta?.title ?? chapter },
             ]}
           />
-          <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">{subjectInfo?.icon}</span>
-            <span className={`text-sm font-semibold uppercase tracking-wide ${banner.text}`}>
-              {classLabel} · {subjectLabel} · NCERT
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-2xl">{subjectInfo?.icon}</span>
+            <span className={`text-xs font-semibold uppercase tracking-wide ${banner.text}`}>
+              {classLabel} · {subjectLabel}
             </span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
-            {chapterMeta?.title ?? chapter}
-          </h1>
-          {chapterMeta?.description && (
-            <p className={`mt-2 text-sm ${banner.text}`}>
-              {chapterMeta.description}
-            </p>
-          )}
-          <div className="mt-4 flex items-center gap-3 flex-wrap">
-            <BookmarkButton
-              classId={classId}
-              subject={subject}
-              chapterId={chapter}
-              chapterTitle={chapterMeta?.title ?? chapter}
-            />
-            {isChapterCompleted && (
-              <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-100 font-semibold px-3 py-1.5 rounded-lg text-sm border border-green-400/30">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Completed
-              </span>
-            )}
+          <div className="flex items-start justify-between gap-4 flex-wrap">
+            <div className="min-w-0 flex-1">
+              <h1 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
+                {chapterMeta?.title ?? chapter}
+              </h1>
+              {chapterMeta?.description && (
+                <p className={`mt-1 text-sm ${banner.text}`}>
+                  {chapterMeta.description}
+                </p>
+              )}
+            </div>
+            <div className="flex items-center gap-2 shrink-0 mt-1">
+              <BookmarkButton
+                classId={classId}
+                subject={subject}
+                chapterId={chapter}
+                chapterTitle={chapterMeta?.title ?? chapter}
+              />
+              {isLoggedIn && hasFullAccess(accessLevel) && (
+                <MarkCompleteButton
+                  classId={classId}
+                  subject={subject}
+                  chapterId={chapter}
+                  chapterTitle={chapterMeta?.title ?? chapter}
+                  initialCompleted={isChapterCompleted}
+                  completedBy={completedBy}
+                />
+              )}
+            </div>
           </div>
         </div>
       </div>

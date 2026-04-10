@@ -33,6 +33,22 @@ async function deleteSubcollection(docPath: string, subcollection: string) {
   await batchDelete(snap.docs.map((doc) => doc.ref));
 }
 
+async function anonymizeSupportRequests(uid: string) {
+  const snap = await adminDb.collection('supportRequests').where('uid', '==', uid).get();
+  for (let i = 0; i < snap.docs.length; i += 500) {
+    const chunk = snap.docs.slice(i, i + 500);
+    const batch = adminDb.batch();
+    chunk.forEach((doc) => {
+      batch.update(doc.ref, {
+        userName: 'Deleted User',
+        userEmail: '',
+        uid: `deleted_${uid}`,
+      });
+    });
+    await batch.commit();
+  }
+}
+
 async function batchDelete(refs: FirebaseFirestore.DocumentReference[]) {
   for (let i = 0; i < refs.length; i += 500) {
     const chunk = refs.slice(i, i + 500);
@@ -66,10 +82,13 @@ export async function POST(req: Request) {
       // Permanent delete — remove everything
       await deleteSubcollection(`users/${uid}`, 'progress');
       await deleteSubcollection(`users/${uid}`, 'quizAttempts');
+      await deleteSubcollection(`users/${uid}`, 'bookmarks');
+      await deleteSubcollection(`users/${uid}`, 'notifications');
       await deleteDocs('subscriptions', 'uid', uid);
       await deleteDocs('referralCodes', 'partnerUid', uid);
       await deleteDocs('payouts', 'partnerUid', uid);
       await deleteDocs('partnerApplications', 'uid', uid);
+      await anonymizeSupportRequests(uid);
       await adminDb.collection('users').doc(uid).delete();
 
       try {

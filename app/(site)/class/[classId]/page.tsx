@@ -53,7 +53,7 @@ export default async function ClassPage({
                     {subject.label}
                   </p>
                   <p className={`text-sm mt-1 ${styles.sub}`}>
-                    {chapterCount} chapters · NCERT
+                    {chapterCount} chapters
                   </p>
                 </div>
               </Link>

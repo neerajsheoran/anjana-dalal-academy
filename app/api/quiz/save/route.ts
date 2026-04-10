@@ -50,8 +50,8 @@ export async function POST(req: Request) {
         timestamp: FieldValue.serverTimestamp(),
       });
 
-    // Mark chapters as completed when score >= 60%
-    if (percentage >= 60 && Array.isArray(chapterIds)) {
+    // Mark chapters as quiz-passed when score >= 80%
+    if (percentage >= 80 && Array.isArray(chapterIds)) {
       const titles = chapterTitles || [];
       for (let i = 0; i < chapterIds.length; i++) {
         const chapId = chapterIds[i];
@@ -67,6 +67,7 @@ export async function POST(req: Request) {
         await progressRef.set(
           {
             completed: true,
+            completedBy: 'quiz',
             completedAt: FieldValue.serverTimestamp(),
             bestScore: Math.max(percentage, existingBest),
             classId,

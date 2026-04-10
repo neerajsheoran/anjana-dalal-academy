@@ -6,7 +6,7 @@ import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterQuizSelector from "@/components/quiz/ChapterQuizSelector";
 
-async function getChapterProgress(classId: string, subject: string): Promise<Map<string, { visited: boolean; completed: boolean }>> {
+async function getChapterProgress(classId: string, subject: string): Promise<Map<string, { visited: boolean; completed: boolean; completedBy: string | null }>> {
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get("session")?.value;
@@ -19,10 +19,10 @@ async function getChapterProgress(classId: string, subject: string): Promise<Map
       .where("classId", "==", classId)
       .where("subject", "==", subject)
       .get();
-    const map = new Map<string, { visited: boolean; completed: boolean }>();
+    const map = new Map<string, { visited: boolean; completed: boolean; completedBy: string | null }>();
     for (const doc of snapshot.docs) {
       const data = doc.data();
-      map.set(doc.id, { visited: true, completed: data.completed === true });
+      map.set(doc.id, { visited: true, completed: data.completed === true, completedBy: data.completedBy || null });
     }
     return map;
   } catch {
@@ -64,7 +64,7 @@ export default async function ClassSubjectPage({
           return (
             <div className="mb-8">
               <p className="text-gray-500 mb-2">
-                NCERT · {total} chapters
+                {total} chapters
                 {visited > 0 && (
                   <span className="text-green-600 font-medium ml-2">
                     · {visited}/{total} visited
@@ -117,7 +117,7 @@ export default async function ClassSubjectPage({
                         className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${
                           isCompleted ? "bg-green-100" : "bg-gray-100"
                         }`}
-                        title={isCompleted ? "Completed" : "Visited"}
+                        title={isCompleted ? (progress.completedBy === "quiz" ? "Quiz Passed" : "Marked Complete") : "Visited"}
                       >
                         <svg
                           className={`w-3.5 h-3.5 ${isCompleted ? "text-green-600" : "text-gray-400"}`}

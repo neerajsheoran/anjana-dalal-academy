@@ -66,7 +66,7 @@ export default function BookmarkButton({ classId, subject, chapterId, chapterTit
           ? "bg-red-50 text-red-600 border border-red-300"
           : bookmarked
           ? "bg-yellow-50 text-yellow-700 border border-yellow-300 hover:bg-yellow-100"
-          : "bg-white/10 text-white/80 border border-white/30 hover:bg-white/20 hover:text-white"
+          : "bg-white text-gray-700 border border-white hover:bg-gray-100"
       } ${loading ? "opacity-50 cursor-wait" : ""}`}
       title={bookmarked ? "Remove bookmark" : "Bookmark this chapter"}
     >

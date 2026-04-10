@@ -61,7 +61,7 @@ export default function AdvisorPage() {
           />
           <Benefit
             title="Quality Content"
-            description="NCERT-aligned content for Classes 1-10, with worksheets and quizzes already built."
+            description="CBSE-aligned content for Classes 1-10, with worksheets and quizzes already built."
           />
           <Benefit
             title="Growing Platform"
