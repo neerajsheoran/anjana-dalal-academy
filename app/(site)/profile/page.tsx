@@ -3,6 +3,7 @@ import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 
+
 async function getUser() {
   const cookieStore = await cookies();
   const session = cookieStore.get("session")?.value;

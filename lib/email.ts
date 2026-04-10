@@ -179,3 +179,43 @@ export async function sendPayoutProcessedEmail(
     console.error('Failed to send payout email:', err);
   }
 }
+
+export async function sendSupportRequestEmail(
+  ticketNumber: string,
+  userName: string,
+  userEmail: string,
+  category: string,
+  message: string,
+) {
+  if (!canSend()) return;
+  try {
+    await resend!.emails.send({
+      from: FROM,
+      to: 'neerajsheoran87@gmail.com',
+      subject: `New Support Request ${ticketNumber} — ${category}`,
+      html: `
+        <div style="font-family: sans-serif; max-width: 520px; margin: 0 auto; padding: 24px;">
+          <h2 style="color: #1e293b;">New Support Request ${ticketNumber}</h2>
+          <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 12px; padding: 16px; margin: 16px 0;">
+            <p style="margin: 0; color: #92400e; font-size: 14px;">
+              <strong>From:</strong> ${userName} (${userEmail})<br/>
+              <strong>Category:</strong> ${category}<br/>
+              <strong>Ticket:</strong> ${ticketNumber}
+            </p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 16px 0;">
+            <p style="margin: 0; color: #334155; font-size: 14px; white-space: pre-wrap;">${message}</p>
+          </div>
+          <div style="margin: 24px 0;">
+            <a href="https://cognilift.in/admin" style="background: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+              View in Admin Dashboard
+            </a>
+          </div>
+          <p style="color: #94a3b8; font-size: 13px;">— CogniLift System</p>
+        </div>
+      `,
+    });
+  } catch (err) {
+    console.error('Failed to send support request email:', err);
+  }
+}

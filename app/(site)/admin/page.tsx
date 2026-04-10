@@ -9,6 +9,7 @@ import UserTable from '@/components/admin/UserTable';
 import AdminTabs from '@/components/admin/AdminTabs';
 import SystemFlows from '@/components/admin/SystemFlows';
 import TechnicalDecisions from '@/components/admin/TechnicalDecisions';
+import SupportManager from '@/components/admin/SupportManager';
 
 async function requireAdminOrContentAuthor(): Promise<string> {
   const cookieStore = await cookies();
@@ -247,6 +248,7 @@ export default async function AdminPage() {
   const showConfig = isAdmin;
   const showAdvisors = isAdmin || permissions.viewAdvisors;
   const showFlows = isAdmin || permissions.viewSystemFlows;
+  const showSupport = isAdmin;
 
   const [users, applications, commissions] = await Promise.all([
     showUsers ? getAllUsers() : Promise.resolve([]),
@@ -301,6 +303,7 @@ export default async function AdminPage() {
           showConfig={showConfig}
           showAdvisors={showAdvisors}
           showFlows={showFlows}
+          showSupport={showSupport}
           usersTab={<UserTable users={users} readOnly={!isAdmin && !permissions.manageUsers} />}
           configTab={
             <div className="bg-white rounded-2xl shadow-sm p-6">
@@ -398,6 +401,14 @@ export default async function AdminPage() {
                 <CommissionManager partners={commissions} />
               </div>
             </>
+          }
+          supportTab={
+            <div className="bg-white rounded-2xl shadow-sm p-6">
+              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+                Support Requests
+              </h2>
+              <SupportManager />
+            </div>
           }
           flowsTab={<SystemFlows />}
           decisionsTab={<TechnicalDecisions />}

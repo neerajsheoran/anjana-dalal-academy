@@ -8,30 +8,35 @@ interface AdminTabsProps {
   showConfig: boolean;
   showAdvisors: boolean;
   showFlows: boolean;
+  showSupport: boolean;
   usersTab: React.ReactNode;
   configTab: React.ReactNode;
   advisorsTab: React.ReactNode;
   flowsTab: React.ReactNode;
   decisionsTab: React.ReactNode;
+  supportTab: React.ReactNode;
 }
 
-type TabKey = "users" | "config" | "advisors" | "flows" | "decisions";
+type TabKey = "users" | "config" | "advisors" | "support" | "flows" | "decisions";
 
 export default function AdminTabs({
   showUsers,
   showConfig,
   showAdvisors,
   showFlows,
+  showSupport,
   usersTab,
   configTab,
   advisorsTab,
   flowsTab,
   decisionsTab,
+  supportTab,
 }: AdminTabsProps) {
   const allTabs: { key: TabKey; label: string; visible: boolean }[] = [
     { key: "users", label: "Users", visible: showUsers },
     { key: "config", label: "Configuration", visible: showConfig },
     { key: "advisors", label: "Advisors", visible: showAdvisors },
+    { key: "support", label: "Support", visible: showSupport },
     { key: "flows", label: "System Flows", visible: showFlows },
     { key: "decisions", label: "Technical Decisions", visible: showFlows },
   ];
@@ -64,6 +69,7 @@ export default function AdminTabs({
       {safeTab === "users" && usersTab}
       {safeTab === "config" && configTab}
       {safeTab === "advisors" && advisorsTab}
+      {safeTab === "support" && supportTab}
       {safeTab === "flows" && flowsTab}
       {safeTab === "decisions" && decisionsTab}
     </div>

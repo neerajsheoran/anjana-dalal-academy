@@ -90,6 +90,13 @@ export default function MobileMenu({ user }: { user: User }) {
               </>
             )}
             <div className="w-px h-8 bg-gray-200" />
+            <Link
+              href="/support"
+              className="text-xs font-medium text-gray-500 hover:text-blue-600 transition-colors"
+            >
+              Help
+            </Link>
+            <div className="w-px h-8 bg-gray-200" />
             <LogoutButton />
           </>
         ) : (
@@ -162,6 +169,18 @@ export default function MobileMenu({ user }: { user: User }) {
                   }`}
                 >
                   My Profile
+                </Link>
+              )}
+              {user && (
+                <Link
+                  href="/support"
+                  className={`block px-6 py-3 text-sm font-medium transition-colors ${
+                    pathname === '/support'
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Help & Support
                 </Link>
               )}
               {user?.role === 'partner' && (
