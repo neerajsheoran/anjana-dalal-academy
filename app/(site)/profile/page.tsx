@@ -2,6 +2,8 @@ import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import EditableName from "@/components/profile/EditableName";
+import PasswordReset from "@/components/profile/PasswordReset";
 
 
 async function getUser() {
@@ -145,10 +147,11 @@ export default async function ProfilePage() {
     getBookmarks(user.uid),
   ]);
 
-  const name = user.name || "—";
+  const name = (user.profile?.name as string) || user.name || "";
   const email = user.email || "—";
-  const initial = (user.name || user.email || "U")[0].toUpperCase();
+  const initial = (name || user.email || "U")[0].toUpperCase();
   const provider = user.firebase?.sign_in_provider === "google.com" ? "Google" : "Email & Password";
+  const isEmailProvider = provider === "Email & Password";
   const uid = user.uid;
   const role = user.profile?.role
     ? user.profile.role.charAt(0).toUpperCase() + user.profile.role.slice(1)
@@ -171,7 +174,7 @@ export default async function ProfilePage() {
           <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4">
             {initial}
           </div>
-          <h1 className="text-2xl font-bold text-gray-800">{name}</h1>
+          <h1 className="text-2xl font-bold text-gray-800">{name || "—"}</h1>
           <p className="text-gray-500 text-sm mt-1">{email}</p>
         </div>
 
@@ -181,9 +184,10 @@ export default async function ProfilePage() {
             Account Details
           </h2>
           <div className="space-y-4">
-            <Row label="Full Name" value={name} />
+            <EditableName currentName={name} />
             <Row label="Email" value={email} />
             <Row label="Sign-in Method" value={provider} />
+            {isEmailProvider && <PasswordReset email={email} />}
             <Row label="Member Since" value={memberSince} />
             <Row label="User ID" value={uid} mono />
           </div>

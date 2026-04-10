@@ -29,14 +29,18 @@ export default function SubscriptionExtender({ uid, userName }: { uid: string; u
   };
 
   return (
-    <div className="flex flex-col items-start gap-1">
-      <input
-        type="number"
+    <div className="flex items-center gap-1.5">
+      <select
         value={days}
         onChange={(e) => setDays(Number(e.target.value))}
-        className="w-16 border border-gray-300 rounded px-2 py-1 text-xs"
-        min={1}
-      />
+        className="border border-gray-300 rounded px-1.5 py-1 text-xs bg-white"
+      >
+        <option value={7}>7d</option>
+        <option value={15}>15d</option>
+        <option value={30}>30d</option>
+        <option value={60}>60d</option>
+        <option value={90}>90d</option>
+      </select>
       <button
         onClick={handleExtend}
         disabled={saving}

@@ -9,6 +9,7 @@ import UserTable from '@/components/admin/UserTable';
 import AdminTabs from '@/components/admin/AdminTabs';
 import SystemFlows from '@/components/admin/SystemFlows';
 import TechnicalDecisions from '@/components/admin/TechnicalDecisions';
+import TestCases from '@/components/admin/TestCases';
 import SupportManager from '@/components/admin/SupportManager';
 
 async function requireAdminOrContentAuthor(): Promise<string> {
@@ -412,6 +413,7 @@ export default async function AdminPage() {
           }
           flowsTab={<SystemFlows />}
           decisionsTab={<TechnicalDecisions />}
+          testCasesTab={<TestCases />}
         />
       </div>
     </main>

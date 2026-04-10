@@ -7,6 +7,7 @@ import {
   signInWithPopup,
   createUserWithEmailAndPassword,
   sendEmailVerification,
+  sendPasswordResetEmail,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
 
@@ -27,6 +28,7 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -82,6 +84,23 @@ function LoginForm() {
       if (!msg.includes('popup-closed-by-user')) {
         setError('Google sign-in failed. Please try again.');
       }
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleForgotPassword() {
+    if (!email.trim()) {
+      setError('Enter your email address first.');
+      return;
+    }
+    setLoading(true);
+    setError('');
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setResetSent(true);
+    } catch {
+      setError('Could not send reset email. Check your email address.');
     } finally {
       setLoading(false);
     }
@@ -159,6 +178,24 @@ function LoginForm() {
             required
             className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+
+          {mode === 'login' && (
+            <div className="text-right -mt-2">
+              <button
+                type="button"
+                onClick={handleForgotPassword}
+                className="text-xs text-blue-500 hover:text-blue-700 hover:underline"
+              >
+                Forgot Password?
+              </button>
+            </div>
+          )}
+
+          {resetSent && (
+            <p className="text-green-600 text-sm text-center">
+              Password reset link sent to {email}
+            </p>
+          )}
 
           {error && (
             <p className="text-red-500 text-sm text-center">{error}</p>

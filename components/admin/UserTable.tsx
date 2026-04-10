@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import RoleSelector from "@/components/admin/RoleSelector";
 import SubscriptionExtender from "@/components/admin/SubscriptionExtender";
 
@@ -20,6 +21,7 @@ type SortDir = "asc" | "desc";
 const PAGE_SIZE = 20;
 
 export default function UserTable({ users, readOnly = false }: { users: User[]; readOnly?: boolean }) {
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState("all");
   const [subFilter, setSubFilter] = useState("all");
@@ -36,7 +38,6 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
   const [deletedUids, setDeletedUids] = useState<Set<string>>(new Set());
   const [restoredUids, setRestoredUids] = useState<Set<string>>(new Set());
   const [permanentlyDeletedUids, setPermanentlyDeletedUids] = useState<Set<string>>(new Set());
-
   const handleDelete = async (uid: string, permanent = false) => {
     setDeleting(true);
     try {
@@ -61,6 +62,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
         });
       }
       setModalUser(null);
+      router.refresh();
     } catch {
       alert("Failed to delete user");
     } finally {
@@ -86,6 +88,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
         next.delete(uid);
         return next;
       });
+      router.refresh();
     } catch {
       alert("Failed to restore user");
     }
@@ -231,6 +234,15 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                 {totalPages > 1 && ` · Page ${safePage} of ${totalPages}`}
               </span>
               <button
+                onClick={() => router.refresh()}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+                title="Refresh users"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </button>
+              <button
                 onClick={downloadCSV}
                 className="text-xs font-medium text-blue-500 hover:text-blue-700"
               >
@@ -259,6 +271,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
               <option value="partner">Advisor</option>
+              <option value="content-author">Content Author</option>
               <option value="admin">Admin</option>
             </select>
 
@@ -293,15 +306,8 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                       className="px-6 py-3 cursor-pointer hover:text-gray-600 select-none"
                       onClick={() => handleSort("name")}
                     >
-                      Name
+                      User
                       <SortArrow col="name" />
-                    </th>
-                    <th
-                      className="px-6 py-3 cursor-pointer hover:text-gray-600 select-none"
-                      onClick={() => handleSort("email")}
-                    >
-                      Email
-                      <SortArrow col="email" />
                     </th>
                     <th
                       className="px-6 py-3 cursor-pointer hover:text-gray-600 select-none"
@@ -318,7 +324,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                       <SortArrow col="subStatus" />
                     </th>
                     {!readOnly && !showDeleted && <th className="px-6 py-3">Extend</th>}
-                    {!readOnly && <th className="px-6 py-3"></th>}
+                    {!readOnly && <th className="px-3 py-3"></th>}
                   </tr>
                 </thead>
                 <tbody>
@@ -327,15 +333,17 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                       key={user.uid}
                       className="border-b border-gray-50 last:border-0"
                     >
-                      <td className="px-6 py-3 font-medium text-gray-800">
+                      <td className="px-6 py-3">
                         <a
                           href={`/admin/users/${user.uid}`}
-                          className="hover:text-blue-600 hover:underline"
+                          className="group"
                         >
-                          {user.name}
+                          <span className="font-medium text-blue-600 group-hover:text-blue-800 group-hover:underline">
+                            {user.name}
+                          </span>
+                          <span className="block text-xs text-gray-400">{user.email}</span>
                         </a>
                       </td>
-                      <td className="px-6 py-3 text-gray-500">{user.email}</td>
                       <td className="px-6 py-3">
                         {user.role === "admin" ? (
                           <span className="text-sm font-medium text-blue-600">
@@ -368,29 +376,38 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                         </td>
                       )}
                       {!readOnly && (
-                        <td className="px-6 py-3">
+                        <td className="px-3 py-3">
                           {showDeleted ? (
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-1.5">
                               <button
                                 onClick={() => handleRestore(user.uid)}
-                                className="text-xs font-medium text-green-500 hover:text-green-700"
+                                className="text-gray-400 hover:text-green-600 transition-colors"
+                                title="Restore user"
                               >
-                                Restore
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
                               </button>
                               <button
                                 onClick={() => setModalUser(user)}
-                                className="text-xs font-medium text-red-400 hover:text-red-600"
+                                className="text-gray-400 hover:text-red-500 transition-colors"
+                                title="Delete permanently"
                               >
-                                Permanent
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
                               </button>
                             </div>
                           ) : (
                             user.role !== "admin" && (
                               <button
                                 onClick={() => setModalUser(user)}
-                                className="text-xs font-medium text-red-400 hover:text-red-600"
+                                className="text-gray-400 hover:text-red-500 transition-colors"
+                                title="Delete user"
                               >
-                                Delete
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
                               </button>
                             )
                           )}

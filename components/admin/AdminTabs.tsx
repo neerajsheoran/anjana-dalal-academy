@@ -15,9 +15,11 @@ interface AdminTabsProps {
   flowsTab: React.ReactNode;
   decisionsTab: React.ReactNode;
   supportTab: React.ReactNode;
+  testCasesTab?: React.ReactNode;
 }
 
-type TabKey = "users" | "config" | "advisors" | "support" | "flows" | "decisions";
+type TabKey = "users" | "config" | "advisors" | "support" | "docs";
+type DocsSubTab = "flows" | "decisions" | "testcases";
 
 export default function AdminTabs({
   showUsers,
@@ -31,26 +33,33 @@ export default function AdminTabs({
   flowsTab,
   decisionsTab,
   supportTab,
+  testCasesTab,
 }: AdminTabsProps) {
   const allTabs: { key: TabKey; label: string; visible: boolean }[] = [
     { key: "users", label: "Users", visible: showUsers },
     { key: "config", label: "Configuration", visible: showConfig },
     { key: "advisors", label: "Advisors", visible: showAdvisors },
     { key: "support", label: "Support", visible: showSupport },
-    { key: "flows", label: "System Flows", visible: showFlows },
-    { key: "decisions", label: "Technical Decisions", visible: showFlows },
+    { key: "docs", label: "Docs", visible: showFlows },
   ];
 
   const visibleTabs = allTabs.filter((t) => t.visible);
-  const defaultTab = visibleTabs[0]?.key ?? "flows";
+  const defaultTab = visibleTabs[0]?.key ?? "docs";
 
   const [activeTab, setActiveTab] = useState<TabKey>(defaultTab);
+  const [docsSubTab, setDocsSubTab] = useState<DocsSubTab>("flows");
 
   const safeTab = visibleTabs.some((t) => t.key === activeTab) ? activeTab : defaultTab;
 
+  const docsSubTabs: { key: DocsSubTab; label: string }[] = [
+    { key: "flows", label: "System Flows" },
+    { key: "decisions", label: "Technical Decisions" },
+    { key: "testcases", label: "Test Cases" },
+  ];
+
   return (
     <div>
-      <div className="flex gap-1 mb-6 border-b border-gray-200 overflow-x-auto">
+      <div className="flex flex-wrap gap-1 mb-6 border-b border-gray-200">
         {visibleTabs.map((tab) => (
           <button
             key={tab.key}
@@ -70,8 +79,30 @@ export default function AdminTabs({
       {safeTab === "config" && configTab}
       {safeTab === "advisors" && advisorsTab}
       {safeTab === "support" && supportTab}
-      {safeTab === "flows" && flowsTab}
-      {safeTab === "decisions" && decisionsTab}
+      {safeTab === "docs" && (
+        <div>
+          {/* Sub-tabs */}
+          <div className="flex gap-1 mb-5">
+            {docsSubTabs.map((sub) => (
+              <button
+                key={sub.key}
+                onClick={() => setDocsSubTab(sub.key)}
+                className={`px-4 py-1.5 text-xs font-semibold rounded-lg transition-colors ${
+                  docsSubTab === sub.key
+                    ? "bg-gray-800 text-white"
+                    : "text-gray-400 bg-gray-100 hover:bg-gray-200 hover:text-gray-600"
+                }`}
+              >
+                {sub.label}
+              </button>
+            ))}
+          </div>
+
+          {docsSubTab === "flows" && flowsTab}
+          {docsSubTab === "decisions" && decisionsTab}
+          {docsSubTab === "testcases" && testCasesTab}
+        </div>
+      )}
     </div>
   );
 }

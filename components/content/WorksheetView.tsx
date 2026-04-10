@@ -321,31 +321,34 @@ export default function WorksheetView({
   return (
     <div>
       {/* Topic Filter */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        <button
-          onClick={() => setActiveTopicIndex(null)}
-          className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
-            activeTopicIndex === null
-              ? "bg-gray-800 text-white border-gray-800"
-              : "text-gray-600 border-gray-200 hover:border-gray-400"
-          }`}
-        >
-          All Topics
-          <span className="ml-1.5 text-xs opacity-70">({topics.length})</span>
-        </button>
-        {topics.map((topic, index) => (
+      <div className="mb-6">
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2 px-1">Choose TOPICS</p>
+        <div className="flex flex-col gap-1 bg-gray-50 rounded-xl p-3">
           <button
-            key={index}
-            onClick={() => setActiveTopicIndex(index)}
-            className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
-              activeTopicIndex === index
-                ? "bg-gray-800 text-white border-gray-800"
-                : "text-gray-600 border-gray-200 hover:border-gray-400"
+            onClick={() => setActiveTopicIndex(null)}
+            className={`text-left px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+              activeTopicIndex === null
+                ? "bg-gray-800 text-white"
+                : "text-gray-600 hover:bg-gray-100"
             }`}
           >
-            {topic.topic}
+            All {topics.length} Topics
           </button>
-        ))}
+          {topics.map((topic, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTopicIndex(index)}
+              className={`text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-baseline gap-2 ${
+                activeTopicIndex === index
+                  ? "bg-gray-800 text-white font-semibold"
+                  : "text-gray-600 hover:bg-gray-100"
+              }`}
+            >
+              <span className={`text-xs font-bold min-w-[1.25rem] ${activeTopicIndex === index ? "text-gray-400" : "text-gray-300"}`}>{index + 1}.</span>
+              {topic.topic}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Visible Topics */}

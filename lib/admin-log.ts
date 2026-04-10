@@ -11,7 +11,8 @@ export type AdminAction =
   | 'reject_application'
   | 'mark_commission_paid'
   | 'update_config'
-  | 'verify_phone';
+  | 'verify_phone'
+  | 'send_password_reset';
 
 interface LogEntry {
   action: AdminAction;

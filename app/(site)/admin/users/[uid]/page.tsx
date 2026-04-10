@@ -2,6 +2,7 @@ import { cookies } from 'next/headers';
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
+import AdminPasswordReset from '@/components/admin/AdminPasswordReset';
 
 async function requireAdmin() {
   const cookieStore = await cookies();
@@ -64,6 +65,15 @@ export default async function UserDetailPage({ params }: Props) {
       : null,
     partnerCode: (d.partnerCode as string) || null,
   };
+
+  // Check sign-in provider from Firebase Auth
+  let hasPasswordProvider = false;
+  try {
+    const authUser = await adminAuth.getUser(uid);
+    hasPasswordProvider = authUser.providerData.some((p) => p.providerId === 'password');
+  } catch {
+    // User may not exist in Auth
+  }
 
   // Determine subscription status
   let subStatus = 'none';
@@ -198,6 +208,13 @@ export default async function UserDetailPage({ params }: Props) {
                   <p className="font-medium text-gray-700">{user.adminExtendedUntil}</p>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Admin Actions */}
+          {hasPasswordProvider && (
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <AdminPasswordReset uid={uid} userEmail={user.email} />
             </div>
           )}
         </div>
