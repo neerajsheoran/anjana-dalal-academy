@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import WorksheetView from "./WorksheetView";
 import ContentBlur from "./ContentBlur";
 import DiscussionAudio from "./DiscussionAudio";
@@ -43,23 +43,8 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
   const notesRef = useRef<HTMLDivElement>(null);
   const discussionRef = useRef<HTMLDivElement>(null);
 
-  // Block Ctrl+P (print) and Ctrl+S (save)
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "s")) {
-        e.preventDefault();
-      }
-    };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, []);
-
   return (
-    <div
-      onContextMenu={(e) => e.preventDefault()}
-      onCopy={(e) => e.preventDefault()}
-      onDragStart={(e) => e.preventDefault()}
-    >
+    <div>
       {/* Tab Buttons */}
       <div className="flex gap-2 mb-6 border-b border-gray-200">
         <button
@@ -135,7 +120,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
               </ul>
             </nav>
           )}
-          <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none select-none">
+          <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
             <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
               <div ref={notesRef}>
                 {children}
@@ -146,7 +131,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
       )}
 
       {activeTab === "discussion" && (discussionSource || discussionContent) && (
-        <article className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 select-none">
+        <article className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8">
           {discussionSource ? (
             <DiscussionChat source={discussionSource} accessLevel={accessLevel} currentPath={currentPath} />
           ) : (
