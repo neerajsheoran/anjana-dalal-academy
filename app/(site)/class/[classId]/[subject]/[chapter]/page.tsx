@@ -32,8 +32,12 @@ function makeMdxImage(classId: string, subject: string, chapter: string) {
       !decoded.startsWith("/") && !decoded.startsWith("http")
         ? `/api/content-image/${classId}/${subject}/${chapter}/content/${encodeURIComponent(decoded)}`
         : decoded;
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg my-4" />;
+    return (
+      <figure className="flex justify-center my-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg" />
+      </figure>
+    );
   };
 }
 
@@ -107,6 +111,12 @@ export default async function ChapterPage({
   const prevChapter = currentIndex > 0 ? allChapters[currentIndex - 1] : null;
   const nextChapter = currentIndex < allChapters.length - 1 ? allChapters[currentIndex + 1] : null;
 
+  // Ensure titles always show "Chapter N — Title"
+  const formatChapterTitle = (ch: { title: string; order: number }) =>
+    /^chapter\s+\d/i.test(ch.title) ? ch.title : `Chapter ${ch.order} — ${ch.title}`;
+
+  const displayTitle = chapterMeta ? formatChapterTitle(chapterMeta) : chapter;
+
   const basePath = path.join(process.cwd(), "content", classId, subject, chapter);
 
   const notesPath = path.join(basePath, "index.mdx");
@@ -148,7 +158,7 @@ export default async function ChapterPage({
               { label: "Home", href: "/" },
               { label: classLabel, href: `/class/${classId}` },
               { label: subjectLabel, href: `/class/${classId}/${subject}` },
-              { label: chapterMeta?.title ?? chapter },
+              { label: displayTitle },
             ]}
           />
           <div className="flex items-center gap-2 mb-1">
@@ -157,35 +167,31 @@ export default async function ChapterPage({
               {classLabel} · {subjectLabel}
             </span>
           </div>
-          <div className="flex items-start justify-between gap-4 flex-wrap">
-            <div className="min-w-0 flex-1">
-              <h1 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
-                {chapterMeta?.title ?? chapter}
-              </h1>
-              {chapterMeta?.description && (
-                <p className={`mt-1 text-sm ${banner.text}`}>
-                  {chapterMeta.description}
-                </p>
-              )}
-            </div>
-            <div className="flex items-center gap-2 shrink-0 mt-1">
-              <BookmarkButton
+          <h1 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
+            {displayTitle}
+          </h1>
+          {chapterMeta?.description && (
+            <p className={`mt-1 text-sm ${banner.text}`}>
+              {chapterMeta.description}
+            </p>
+          )}
+          <div className="flex items-center gap-2 mt-3">
+            <BookmarkButton
+              classId={classId}
+              subject={subject}
+              chapterId={chapter}
+              chapterTitle={displayTitle}
+            />
+            {isLoggedIn && hasFullAccess(accessLevel) && (
+              <MarkCompleteButton
                 classId={classId}
                 subject={subject}
                 chapterId={chapter}
-                chapterTitle={chapterMeta?.title ?? chapter}
+                chapterTitle={displayTitle}
+                initialCompleted={isChapterCompleted}
+                completedBy={completedBy}
               />
-              {isLoggedIn && hasFullAccess(accessLevel) && (
-                <MarkCompleteButton
-                  classId={classId}
-                  subject={subject}
-                  chapterId={chapter}
-                  chapterTitle={chapterMeta?.title ?? chapter}
-                  initialCompleted={isChapterCompleted}
-                  completedBy={completedBy}
-                />
-              )}
-            </div>
+            )}
           </div>
         </div>
       </div>
@@ -203,7 +209,7 @@ export default async function ChapterPage({
                   ← Previous
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
-                  {prevChapter.title}
+                  {formatChapterTitle(prevChapter)}
                 </p>
               </Link>
             ) : (
@@ -218,7 +224,7 @@ export default async function ChapterPage({
                   Next →
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
-                  {nextChapter.title}
+                  {formatChapterTitle(nextChapter)}
                 </p>
               </Link>
             ) : (
@@ -272,7 +278,7 @@ export default async function ChapterPage({
                   ← Previous
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
-                  {prevChapter.title}
+                  {formatChapterTitle(prevChapter)}
                 </p>
               </Link>
             ) : (
@@ -287,7 +293,7 @@ export default async function ChapterPage({
                   Next →
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
-                  {nextChapter.title}
+                  {formatChapterTitle(nextChapter)}
                 </p>
               </Link>
             ) : (
@@ -301,7 +307,7 @@ export default async function ChapterPage({
         classId={classId}
         subject={subject}
         chapterId={chapter}
-        chapterTitle={chapterMeta?.title ?? chapter}
+        chapterTitle={displayTitle}
       />
     </main>
   );

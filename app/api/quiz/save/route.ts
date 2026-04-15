@@ -19,7 +19,7 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
-  const { score, total, percentage, classId, subject, chapterIds, chapterTitles, difficulty } = body;
+  const { score, total, percentage, classId, subject, chapterIds, chapterTitles, difficulty, timeTaken } = body;
 
   if (
     typeof score !== 'number' ||
@@ -47,6 +47,7 @@ export async function POST(req: Request) {
         chapterIds,
         chapterTitles: chapterTitles || [],
         difficulty,
+        ...(typeof timeTaken === 'number' ? { timeTaken } : {}),
         timestamp: FieldValue.serverTimestamp(),
       });
 

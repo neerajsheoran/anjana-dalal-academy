@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
   sendEmailVerification,
   sendPasswordResetEmail,
+  fetchSignInMethodsForEmail,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
 
@@ -60,7 +61,17 @@ function LoginForm() {
       if (msg.includes('user-not-found') || msg.includes('wrong-password') || msg.includes('invalid-credential')) {
         setError('Incorrect email or password.');
       } else if (msg.includes('email-already-in-use')) {
-        setError('This email is already registered. Please log in.');
+        // Check which provider the email is registered with
+        try {
+          const methods = await fetchSignInMethodsForEmail(auth, email);
+          if (methods.includes('google.com')) {
+            setError('This email is already registered via Google. Please use the "Continue with Google" button above.');
+          } else {
+            setError('This email is already registered. Please log in.');
+          }
+        } catch {
+          setError('This email is already registered. Please log in.');
+        }
       } else if (msg.includes('weak-password')) {
         setError('Password must be at least 6 characters.');
       } else {

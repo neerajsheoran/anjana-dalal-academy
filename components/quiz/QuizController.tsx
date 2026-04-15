@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   QuizQuestion,
@@ -36,6 +36,12 @@ const DIFF_STARS: Record<string, string> = {
   hard: '★★★',
 };
 
+function formatTime(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
 export default function QuizController({
   classLabel,
   subjectLabel,
@@ -58,6 +64,20 @@ export default function QuizController({
   const [printWithAnswers, setPrintWithAnswers] = useState(false);
   const [saved, setSaved] = useState(false);
   const [saveAttempted, setSaveAttempted] = useState(false);
+  const [elapsed, setElapsed] = useState(0);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Timer — ticks every second while quiz is active
+  useEffect(() => {
+    if (phase === 'quiz') {
+      timerRef.current = setInterval(() => setElapsed((s) => s + 1), 1000);
+    } else {
+      if (timerRef.current) clearInterval(timerRef.current);
+    }
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [phase]);
 
   // Save quiz result to Firestore when quiz is completed
   useEffect(() => {
@@ -77,6 +97,7 @@ export default function QuizController({
         chapterIds,
         chapterTitles,
         difficulty,
+        timeTaken: elapsed,
       }),
     })
       .then((res) => {
@@ -86,6 +107,7 @@ export default function QuizController({
       .catch(() => {
         setSaveAttempted(true);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, saved, score, activeQuestions.length, classId, subject, chapterIds, chapterTitles, difficulty]);
 
   const availableOnline = useMemo(
@@ -119,6 +141,7 @@ export default function QuizController({
     setSelectedAnswer(null);
     setAnswered(false);
     setScore(0);
+    setElapsed(0);
     setPhase(mode === 'online' ? 'quiz' : 'print');
   }
 
@@ -151,6 +174,7 @@ export default function QuizController({
     setScore(0);
     setSaved(false);
     setSaveAttempted(false);
+    setElapsed(0);
     setPhase('quiz');
   }
 
@@ -288,9 +312,12 @@ export default function QuizController({
             <span>
               Question {currentIndex + 1} of {activeQuestions.length}
             </span>
-            <span>
-              Score: {score}/{currentIndex + (answered ? 1 : 0)}
-            </span>
+            <div className="flex gap-3">
+              <span className="tabular-nums">{formatTime(elapsed)}</span>
+              <span>
+                Score: {score}/{currentIndex + (answered ? 1 : 0)}
+              </span>
+            </div>
           </div>
           <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
@@ -370,11 +397,14 @@ export default function QuizController({
       <div className="max-w-2xl mx-auto px-6 py-16 text-center">
         <div className="text-6xl mb-4">{emoji}</div>
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Quiz Complete!</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-2">
           You got{' '}
           <span className="font-bold text-blue-600">{score}</span> out of{' '}
           <span className="font-bold">{activeQuestions.length}</span> correct —{' '}
           <span className="font-bold">{pct}%</span>
+        </p>
+        <p className="text-sm text-gray-500 mb-6">
+          Time taken: {formatTime(elapsed)}
         </p>
         <div className="h-4 bg-gray-200 rounded-full overflow-hidden max-w-xs mx-auto mb-4">
           <div className={`h-full rounded-full ${barColor}`} style={{ width: `${pct}%` }} />
