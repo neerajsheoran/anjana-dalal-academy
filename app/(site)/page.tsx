@@ -12,7 +12,7 @@ export default function HomePage() {
             Class 1 to Class 10
           </p>
           <h1 className="text-2xl sm:text-3xl font-extrabold mb-2 leading-tight">
-            Made to Make Learning Easy
+            Build Strong Concepts. Think Smarter Every Day.
           </h1>
           <p className="text-blue-100 text-sm max-w-lg mx-auto">
             Simple explanations, real-life examples, and 3-level worksheets.
@@ -39,11 +39,13 @@ export default function HomePage() {
             <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
               <span className="text-5xl animate-bounce">🎒</span>
             </div>
-            <h3 className="text-white text-xl font-bold mb-2">Browse by Class</h3>
+            <h3 className="text-white text-xl font-bold mb-2">Start with Your Class</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
-              Pick your class, then explore subjects and chapters at your own pace
+              Follow your school journey step by step
             </p>
-            <span className="mt-6 text-white/60 text-sm font-medium">Tap to get started →</span>
+            <span className="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+              Get Started
+            </span>
           </Link>
 
           {/* ── Browse by Subject ─────────────────────────────────────────── */}
@@ -54,11 +56,13 @@ export default function HomePage() {
             <div className="mb-5 group-hover:scale-110 transition-transform duration-200">
               <img src="/icons/subjects-icon.svg" alt="" className="w-24 h-24 animate-wiggle" />
             </div>
-            <h3 className="text-white text-xl font-bold mb-2">Browse by Subject</h3>
+            <h3 className="text-white text-xl font-bold mb-2">Explore by Subject</h3>
             <p className="text-green-100 text-sm leading-relaxed">
-              Choose a subject you love, then pick your class to explore chapters
+              Jump into any topic you want
             </p>
-            <span className="mt-6 text-white/60 text-sm font-medium">Tap to get started →</span>
+            <span className="mt-6 inline-block bg-white text-green-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+              Get Started
+            </span>
           </Link>
 
           {/* ── Quiz & Revision ───────────────────────────────────────────── */}
@@ -69,37 +73,19 @@ export default function HomePage() {
             <div className="mb-5 group-hover:scale-110 transition-transform duration-200">
               <img src="/icons/quiz-icon.svg" alt="" className="w-24 h-24 animate-heartbeat" />
             </div>
-            <h3 className="text-white text-xl font-bold mb-2">Quiz &amp; Revision</h3>
+            <h3 className="text-white text-xl font-bold mb-2">Test Yourself</h3>
             <p className="text-purple-100 text-sm leading-relaxed">
-              Practice with MCQ quizzes or print question papers for any chapter
+              Quizzes, worksheets &amp; revision
             </p>
-            <span className="mt-6 text-white/60 text-sm font-medium">Tap to get started →</span>
+            <span className="mt-6 inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+              Get Started
+            </span>
           </Link>
 
         </div>
       </div>
 
       <ContinueLearning />
-
-      {/* ── Advisor CTA ──────────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-6 pb-12">
-        <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
-          <div className="flex-1 text-center sm:text-left">
-            <h3 className="text-lg font-bold text-gray-800 mb-1">
-              Join the CogniLift Advisor Program
-            </h3>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Become a trusted learning partner — guide families to the right resources.
-            </p>
-          </div>
-          <Link
-            href="/advisor"
-            className="shrink-0 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors shadow-md"
-          >
-            Become an Advisor
-          </Link>
-        </div>
-      </section>
     </main>
   );
 }

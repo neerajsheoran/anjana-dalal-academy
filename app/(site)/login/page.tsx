@@ -30,6 +30,7 @@ function LoginForm() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
+  const [verificationSent, setVerificationSent] = useState(false);
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -45,13 +46,24 @@ function LoginForm() {
     setError('');
     setLoading(true);
     try {
-      const credential =
-        mode === 'login'
-          ? await signInWithEmailAndPassword(auth, email, password)
-          : await createUserWithEmailAndPassword(auth, email, password);
-      // Send verification email on signup (non-blocking)
-      if (mode === 'signup' && !credential.user.emailVerified) {
-        sendEmailVerification(credential.user).catch(() => {});
+      if (mode === 'signup') {
+        const credential = await createUserWithEmailAndPassword(auth, email, password);
+        await sendEmailVerification(credential.user);
+        // Sign out immediately — don't create session until email is verified
+        await auth.signOut();
+        setVerificationSent(true);
+        setLoading(false);
+        return;
+      }
+      // Login flow
+      const credential = await signInWithEmailAndPassword(auth, email, password);
+      if (!credential.user.emailVerified) {
+        // Email not verified yet — resend verification and block login
+        await sendEmailVerification(credential.user);
+        await auth.signOut();
+        setError('Please verify your email first. We\'ve sent a new verification link to ' + email + '.');
+        setLoading(false);
+        return;
       }
       const idToken = await credential.user.getIdToken();
       await createSession(idToken);
@@ -107,9 +119,17 @@ function LoginForm() {
     }
     setLoading(true);
     setError('');
+    setResetSent(false);
     try {
-      await sendPasswordResetEmail(auth, email);
-      setResetSent(true);
+      const methods = await fetchSignInMethodsForEmail(auth, email);
+      if (methods.length === 0) {
+        setError('No account found with this email address.');
+      } else if (methods.includes('google.com') && !methods.includes('password')) {
+        setError('This account uses Google Sign-In. Please use the "Continue with Google" button above.');
+      } else {
+        await sendPasswordResetEmail(auth, email);
+        setResetSent(true);
+      }
     } catch {
       setError('Could not send reset email. Check your email address.');
     } finally {
@@ -129,8 +149,33 @@ function LoginForm() {
           <p className="text-gray-500 text-sm mt-1">Clear Concepts · Strong Foundations</p>
         </div>
 
+        {/* Verification sent screen */}
+        {verificationSent && (
+          <div className="text-center space-y-4">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+              <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h2 className="text-lg font-bold text-gray-800">Check your email</h2>
+            <p className="text-sm text-gray-500">
+              We&apos;ve sent a verification link to <span className="font-semibold text-gray-700">{email}</span>.
+              Click the link to activate your account.
+            </p>
+            <p className="text-xs text-gray-400">
+              After verifying, come back here and log in.
+            </p>
+            <button
+              onClick={() => { setVerificationSent(false); setMode('login'); }}
+              className="mt-4 bg-blue-600 text-white rounded-xl py-3 px-6 text-sm font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Go to Log In
+            </button>
+          </div>
+        )}
+
         {/* Tab toggle */}
-        <div className="flex rounded-xl bg-gray-100 p-1 mb-6">
+        {!verificationSent && <><div className="flex rounded-xl bg-gray-100 p-1 mb-6">
           <button
             onClick={() => { setMode('login'); setError(''); }}
             className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-all ${
@@ -220,6 +265,7 @@ function LoginForm() {
             {loading ? 'Please wait…' : mode === 'login' ? 'Log In' : 'Create Account'}
           </button>
         </form>
+        </>}
       </div>
     </main>
   );

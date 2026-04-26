@@ -219,3 +219,39 @@ export async function sendSupportRequestEmail(
     console.error('Failed to send support request email:', err);
   }
 }
+
+export async function sendExtensionRequestEmail(
+  userName: string,
+  userEmail: string,
+) {
+  if (!canSend()) return;
+  try {
+    await resend!.emails.send({
+      from: FROM,
+      to: 'neerajsheoran87@gmail.com',
+      subject: `Trial Extension Request — ${userName}`,
+      html: `
+        <div style="font-family: sans-serif; max-width: 520px; margin: 0 auto; padding: 24px;">
+          <h2 style="color: #1e293b;">Trial Extension Request</h2>
+          <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 12px; padding: 16px; margin: 16px 0;">
+            <p style="margin: 0; color: #92400e; font-size: 14px;">
+              <strong>${userName}</strong> (${userEmail}) is requesting more time to evaluate the platform.
+            </p>
+          </div>
+          <p style="color: #64748b; font-size: 14px;">
+            Their free trial has ended and they clicked "Request an extension" instead of subscribing.
+            This is a retention opportunity — consider extending their access by 7-15 days.
+          </p>
+          <div style="margin: 24px 0;">
+            <a href="https://cognilift.in/admin" style="background: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+              Go to Admin → Extend Access
+            </a>
+          </div>
+          <p style="color: #94a3b8; font-size: 13px;">— CogniLift System</p>
+        </div>
+      `,
+    });
+  } catch (err) {
+    console.error('Failed to send extension request email:', err);
+  }
+}

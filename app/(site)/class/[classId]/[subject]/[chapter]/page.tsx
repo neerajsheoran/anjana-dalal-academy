@@ -158,7 +158,7 @@ export default async function ChapterPage({
               { label: "Home", href: "/" },
               { label: classLabel, href: `/class/${classId}` },
               { label: subjectLabel, href: `/class/${classId}/${subject}` },
-              { label: displayTitle },
+              { label: chapterMeta ? `Chapter ${chapterMeta.order}` : chapter },
             ]}
           />
           <div className="flex items-center gap-2 mb-1">
@@ -242,6 +242,7 @@ export default async function ChapterPage({
           currentPath={currentPath}
           headings={headings}
           worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
+          chapterOrder={chapterMeta?.order}
           discussionSource={discussionSource}
           discussionContent={
             discussionSource ? (

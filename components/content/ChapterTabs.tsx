@@ -21,6 +21,7 @@ interface ChapterTabsProps {
   currentPath: string;
   headings?: Heading[];
   worksheetTopics?: string[];
+  chapterOrder?: number;
 }
 
 function findMatchingTopicIndex(heading: string, topics: string[]): number {
@@ -37,7 +38,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
   return -1;
 }
 
-export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [] }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const notesRef = useRef<HTMLDivElement>(null);
@@ -121,7 +122,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
             </nav>
           )}
           <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
-            <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
+            <ContentBlur accessLevel={accessLevel} currentPath={currentPath} chapterOrder={chapterOrder}>
               <div ref={notesRef}>
                 {children}
               </div>
@@ -138,7 +139,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
             <>
               <DiscussionAudio contentRef={discussionRef} />
               <div className="prose prose-slate max-w-none">
-                <ContentBlur accessLevel={accessLevel} currentPath={currentPath}>
+                <ContentBlur accessLevel={accessLevel} currentPath={currentPath} chapterOrder={chapterOrder}>
                   <div ref={discussionRef}>
                     {discussionContent}
                   </div>

@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { getChapters, getClassLabel, getSubjectLabel } from "@/lib/content";
 import { ClassId, SubjectId } from "@/lib/types";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
+import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterQuizSelector from "@/components/quiz/ChapterQuizSelector";
 
@@ -40,6 +41,20 @@ export default async function ClassSubjectPage({
   const subjectLabel = getSubjectLabel(subject);
   const chapters = getChapters(classId, subject);
   const chapterProgress = await getChapterProgress(classId, subject);
+
+  // Check user access level for chapter badges
+  let userHasAccess = false;
+  try {
+    const cookieStore = await cookies();
+    const session = cookieStore.get("session")?.value;
+    if (session) {
+      const decoded = await adminAuth.verifySessionCookie(session);
+      const accessLevel = await getContentAccessLevel(decoded.uid);
+      userHasAccess = hasFullAccess(accessLevel);
+    }
+  } catch {
+    userHasAccess = false;
+  }
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -106,7 +121,21 @@ export default async function ClassSubjectPage({
                     {String(chapter.order).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <p className="text-lg font-semibold text-gray-800">{chapter.title}</p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-lg font-semibold text-gray-800">{chapter.title}</p>
+                      {chapter.order <= 2 ? (
+                        <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
+                          Free
+                        </span>
+                      ) : !userHasAccess && (
+                        <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full flex items-center gap-1">
+                          <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                          </svg>
+                          Login
+                        </span>
+                      )}
+                    </div>
                     <p className="text-sm text-gray-500 mt-1">{chapter.description}</p>
                   </div>
                   {chapterProgress.has(chapter.chapterId) && (() => {

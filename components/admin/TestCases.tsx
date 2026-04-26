@@ -25,22 +25,46 @@ const TEST_SECTIONS: TestSection[] = [
     cases: [
       {
         id: "auth-1",
-        title: "Sign up with email/password",
+        title: "Sign up with email/password (verification flow)",
         steps: [
           "Go to /login",
+          "Switch to 'Sign Up' tab",
           "Enter a new email and password",
-          "Click 'Sign Up'",
+          "Click 'Create Account'",
         ],
         expected:
-          "Account created, redirected to home. Welcome email received. Email verification link sent to inbox.",
+          "Verification email sent. 'Check your email' screen shown with the email address. User is NOT logged in. 'Go to Log In' button shown.",
+      },
+      {
+        id: "auth-1b",
+        title: "Verify email and log in",
+        steps: [
+          "Open verification email in inbox",
+          "Click the verification link",
+          "Return to /login",
+          "Enter the same email and password",
+          "Click 'Log In'",
+        ],
+        expected:
+          "Logged in successfully, redirected to home. Avatar appears in header.",
+      },
+      {
+        id: "auth-1c",
+        title: "Try to log in before email verification",
+        steps: [
+          "Sign up with email/password (do NOT click verification link)",
+          "Go to /login and try to log in with same email/password",
+        ],
+        expected:
+          "Error: 'Please verify your email first. We've sent a new verification link to [email].' User NOT logged in. New verification email sent.",
       },
       {
         id: "auth-2",
-        title: "Sign in with existing email/password",
+        title: "Sign in with existing verified email/password",
         steps: [
           "Go to /login",
-          "Enter existing email and password",
-          "Click 'Sign In'",
+          "Enter existing verified email and password",
+          "Click 'Log In'",
         ],
         expected:
           "Logged in successfully, redirected to home. Avatar appears in header.",
@@ -51,9 +75,9 @@ const TEST_SECTIONS: TestSection[] = [
         steps: [
           "Go to /login",
           "Enter existing email with wrong password",
-          "Click 'Sign In'",
+          "Click 'Log In'",
         ],
-        expected: "Error message shown. Not logged in.",
+        expected: "Error: 'Incorrect email or password.' Not logged in.",
       },
       {
         id: "auth-4",
@@ -75,6 +99,47 @@ const TEST_SECTIONS: TestSection[] = [
         ],
         expected: "Session cleared. Redirected to login page. Protected pages no longer accessible.",
       },
+      {
+        id: "auth-6",
+        title: "Forgot password — valid email/password account",
+        steps: [
+          "Go to /login",
+          "Enter an email that has an email/password account",
+          "Click 'Forgot Password?'",
+        ],
+        expected: "Success message: 'Password reset link sent to [email]'. Reset email received in inbox.",
+      },
+      {
+        id: "auth-7",
+        title: "Forgot password — Google-only account",
+        steps: [
+          "Go to /login",
+          "Enter an email that only has Google Sign-In",
+          "Click 'Forgot Password?'",
+        ],
+        expected: "Error: 'This account uses Google Sign-In. Please use the Continue with Google button above.' No reset email sent.",
+      },
+      {
+        id: "auth-8",
+        title: "Forgot password — email not registered",
+        steps: [
+          "Go to /login",
+          "Enter an email that is not registered",
+          "Click 'Forgot Password?'",
+        ],
+        expected: "Error: 'No account found with this email address.' No reset email sent.",
+      },
+      {
+        id: "auth-9",
+        title: "Sign up with email already registered via Google",
+        steps: [
+          "Go to /login",
+          "Switch to 'Sign Up' tab",
+          "Enter an email that already has a Google account",
+          "Click 'Create Account'",
+        ],
+        expected: "Error: 'This email is already registered via Google. Please use the Continue with Google button above.'",
+      },
     ],
   },
 
@@ -95,13 +160,34 @@ const TEST_SECTIONS: TestSection[] = [
       },
       {
         id: "trial-2",
-        title: "Trial expiry blocks access",
+        title: "Trial expiry blocks access (chapter 3+)",
         steps: [
           "Use a student account whose trial has expired",
-          "Navigate to any chapter",
+          "Navigate to chapter 3 or higher of any subject",
         ],
         expected:
-          "Content is blurred/restricted. Subscribe prompt shown. Quiz and worksheet may be limited.",
+          "Content is blurred/restricted. Subscribe prompt shown with 'Request Extension' link below.",
+      },
+      {
+        id: "trial-3",
+        title: "Free chapters accessible after trial expiry",
+        steps: [
+          "Use a student account whose trial has expired",
+          "Navigate to chapter 1 or chapter 2 of any subject",
+        ],
+        expected:
+          "Full content visible. No blur. No paywall. Chapters 1 and 2 are always free.",
+      },
+      {
+        id: "trial-4",
+        title: "Request extension after trial expiry",
+        steps: [
+          "Use an expired account",
+          "Navigate to chapter 3+",
+          "Click 'Need more time? Request an extension'",
+        ],
+        expected:
+          "Success message: 'Extension request sent! We'll review it shortly.' Admin receives notification (bell icon) and email. Only one request allowed.",
       },
     ],
   },
@@ -830,21 +916,39 @@ const TEST_SECTIONS: TestSection[] = [
     cases: [
       {
         id: "access-1",
-        title: "Anonymous user sees limited content",
+        title: "Anonymous user — chapter 1 & 2 fully open",
         steps: [
           "Open site without logging in",
-          "Navigate to a chapter",
+          "Navigate to chapter 1 or 2 of any class/subject",
         ],
-        expected: "First topic visible, rest blurred. Sign-in prompt shown. No quiz/bookmark/progress features.",
+        expected: "Full content visible. No blur. No login prompt. Notes, discussion visible.",
+      },
+      {
+        id: "access-1b",
+        title: "Anonymous user — chapter 3+ shows login prompt",
+        steps: [
+          "Open site without logging in",
+          "Navigate to chapter 3 or higher",
+        ],
+        expected: "Content blurred. 'This chapter is available with a free account' prompt shown. Sign Up Free button.",
+      },
+      {
+        id: "access-1c",
+        title: "Chapter listing shows Free/Login badges",
+        steps: [
+          "Open site without logging in",
+          "Go to any class → subject chapter list",
+        ],
+        expected: "Chapter 1 & 2 show green 'Free' badge. Chapter 3+ show lock icon with 'Login' badge. All chapters listed (not hidden).",
       },
       {
         id: "access-2",
-        title: "Expired user sees subscribe prompt",
+        title: "Expired user — chapter 3+ shows subscribe + extension request",
         steps: [
           "Login as user with expired trial/subscription",
-          "Navigate to a chapter",
+          "Navigate to chapter 3+",
         ],
-        expected: "Content blurred. Subscribe prompt shown with link to /pricing.",
+        expected: "Content blurred. Subscribe prompt shown. 'Need more time? Request an extension' link visible below subscribe button.",
       },
       {
         id: "access-3",
