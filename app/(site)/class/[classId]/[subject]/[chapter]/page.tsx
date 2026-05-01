@@ -33,10 +33,10 @@ function makeMdxImage(classId: string, subject: string, chapter: string) {
         ? `/api/content-image/${classId}/${subject}/${chapter}/content/${encodeURIComponent(decoded)}`
         : decoded;
     return (
-      <figure className="flex justify-center my-4">
+      <div className="flex justify-center my-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg" />
-      </figure>
+      </div>
     );
   };
 }
