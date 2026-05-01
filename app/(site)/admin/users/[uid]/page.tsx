@@ -64,6 +64,7 @@ export default async function UserDetailPage({ params }: Props) {
       ? d.adminExtendedUntil.toDate().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
       : null,
     partnerCode: (d.partnerCode as string) || null,
+    provider: (d.provider as string) || null,
   };
 
   // Check sign-in provider from Firebase Auth
@@ -174,6 +175,12 @@ export default async function UserDetailPage({ params }: Props) {
             <div>
               <p className="text-xs text-gray-400 uppercase tracking-wider">Joined</p>
               <p className="font-medium text-gray-700">{user.createdAt}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-400 uppercase tracking-wider">Login Method</p>
+              <p className="font-medium text-gray-700">
+                {user.provider === 'google.com' ? 'Google' : user.provider === 'password' ? 'Email' : user.provider || '—'}
+              </p>
             </div>
             <div>
               <p className="text-xs text-gray-400 uppercase tracking-wider">UID</p>

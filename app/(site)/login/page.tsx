@@ -33,6 +33,7 @@ function LoginForm() {
   const [loading, setLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [verificationSent, setVerificationSent] = useState(false);
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -76,7 +77,17 @@ function LoginForm() {
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Something went wrong';
       if (msg.includes('user-not-found') || msg.includes('wrong-password') || msg.includes('invalid-credential')) {
-        setError('Incorrect email or password.');
+        // Check if this email is registered via Google only
+        try {
+          const methods = await fetchSignInMethodsForEmail(auth, email);
+          if (methods.includes('google.com') && !methods.includes('password')) {
+            setError('This account uses Google Sign-In. Please use the "Continue with Google" button above.');
+          } else {
+            setError('Incorrect email or password.');
+          }
+        } catch {
+          setError('Incorrect email or password.');
+        }
       } else if (msg.includes('email-already-in-use')) {
         // Check which provider the email is registered with
         try {
@@ -268,13 +279,30 @@ function LoginForm() {
             </p>
           )}
 
+          {mode === 'signup' && (
+            <label className="flex items-start gap-2 cursor-pointer -mt-1">
+              <input
+                type="checkbox"
+                checked={agreedToTerms}
+                onChange={e => setAgreedToTerms(e.target.checked)}
+                className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+              />
+              <span className="text-xs text-gray-500 leading-relaxed">
+                I agree to the{' '}
+                <a href="/terms" target="_blank" className="text-blue-600 hover:underline">Terms of Service</a>
+                {' '}and{' '}
+                <a href="/privacy" target="_blank" className="text-blue-600 hover:underline">Privacy Policy</a>
+              </span>
+            </label>
+          )}
+
           {error && (
             <p className="text-red-500 text-sm text-center">{error}</p>
           )}
 
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || (mode === 'signup' && !agreedToTerms)}
             className="w-full bg-blue-600 text-white rounded-xl py-3 text-sm font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50"
           >
             {loading ? 'Please wait…' : mode === 'login' ? 'Log In' : 'Create Account'}

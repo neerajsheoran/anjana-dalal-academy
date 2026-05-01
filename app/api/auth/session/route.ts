@@ -49,11 +49,13 @@ export async function POST(req: Request) {
         const trialEndsAt = new Date();
         trialEndsAt.setDate(trialEndsAt.getDate() + config.trialDays);
 
+        const provider = decoded.firebase?.sign_in_provider || 'unknown';
         await userRef.set({
           role,
           name: decoded.name || null,
           email: decoded.email || null,
           emailVerified: decoded.email_verified ?? false,
+          provider,
           createdAt: new Date(),
           trialEndsAt,
           subscriptionStatus: 'trial',
@@ -68,9 +70,10 @@ export async function POST(req: Request) {
           sendWelcomeEmail(decoded.email, decoded.name || '', config.trialDays);
         }
       } else {
-        // Sync emailVerified on every login
+        // Sync emailVerified and provider on every login
         await userRef.update({
           emailVerified: decoded.email_verified ?? false,
+          provider: decoded.firebase?.sign_in_provider || 'unknown',
         });
       }
     } catch {

@@ -93,8 +93,9 @@ export async function POST(req: Request) {
 
       try {
         await adminAuth.deleteUser(uid);
-      } catch {
-        // User might not exist in Auth
+      } catch (authErr) {
+        console.error('Failed to delete user from Firebase Auth:', uid, authErr);
+        // Continue — Firestore data is already cleaned up
       }
 
       await logAdminAction({
