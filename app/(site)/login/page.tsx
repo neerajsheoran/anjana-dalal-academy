@@ -9,6 +9,7 @@ import {
   sendEmailVerification,
   sendPasswordResetEmail,
   fetchSignInMethodsForEmail,
+  updateProfile,
 } from 'firebase/auth';
 import { auth, googleProvider } from '@/lib/firebase';
 
@@ -25,6 +26,7 @@ function LoginForm() {
   const from = searchParams.get('from') || '/';
 
   const [mode, setMode] = useState<'login' | 'signup'>('login');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -48,6 +50,9 @@ function LoginForm() {
     try {
       if (mode === 'signup') {
         const credential = await createUserWithEmailAndPassword(auth, email, password);
+        if (name.trim()) {
+          await updateProfile(credential.user, { displayName: name.trim() });
+        }
         await sendEmailVerification(credential.user);
         // Sign out immediately — don't create session until email is verified
         await auth.signOut();
@@ -218,6 +223,16 @@ function LoginForm() {
 
         {/* Email form */}
         <form onSubmit={handleEmailAuth} className="space-y-4">
+          {mode === 'signup' && (
+            <input
+              type="text"
+              placeholder="Your name"
+              value={name}
+              onChange={e => setName(e.target.value)}
+              required
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          )}
           <input
             type="email"
             placeholder="Email address"

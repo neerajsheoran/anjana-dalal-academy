@@ -22,6 +22,7 @@ interface ChapterTabsProps {
   headings?: Heading[];
   worksheetTopics?: string[];
   chapterOrder?: number;
+  classId?: string;
 }
 
 function findMatchingTopicIndex(heading: string, topics: string[]): number {
@@ -38,7 +39,7 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
   return -1;
 }
 
-export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder, classId }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const notesRef = useRef<HTMLDivElement>(null);
@@ -90,10 +91,8 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
             <nav className="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-4">
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">In this chapter</p>
               <ul className="space-y-1">
-                {headings.map((h) => {
-                  const topicIdx = findMatchingTopicIndex(h.text, worksheetTopics);
-                  return (
-                    <li key={h.slug} className="flex items-center justify-between gap-2">
+                {headings.map((h) => (
+                    <li key={h.slug}>
                       <a
                         href={`#${h.slug}`}
                         className="text-sm text-blue-600 hover:text-blue-800 hover:underline truncate"
@@ -104,20 +103,8 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
                       >
                         {h.text}
                       </a>
-                      {topicIdx >= 0 && (
-                        <button
-                          onClick={() => {
-                            setJumpToTopic(topicIdx);
-                            setActiveTab("worksheet");
-                          }}
-                          className="shrink-0 text-xs text-purple-600 hover:text-purple-800 font-medium px-2 py-0.5 rounded bg-purple-50 hover:bg-purple-100 transition-colors"
-                        >
-                          Practice
-                        </button>
-                      )}
                     </li>
-                  );
-                })}
+                  ))}
               </ul>
             </nav>
           )}
@@ -151,7 +138,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
       )}
 
       {activeTab === "worksheet" && (
-        <WorksheetView worksheet={worksheet} accessLevel={accessLevel} currentPath={currentPath} initialTopicIndex={jumpToTopic} />
+        <WorksheetView worksheet={worksheet} accessLevel={accessLevel} currentPath={currentPath} initialTopicIndex={jumpToTopic} classId={classId} />
       )}
     </div>
   );

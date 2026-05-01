@@ -151,7 +151,7 @@ export default async function ChapterPage({
     <main className="min-h-screen bg-gray-50">
       {/* Chapter Title Banner */}
       <div className={`${banner.bg} text-white px-6 py-6`}>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Breadcrumb
             light
             items={[
@@ -198,7 +198,7 @@ export default async function ChapterPage({
 
       {/* Prev / Next Chapter Navigation — Top */}
       {(prevChapter || nextChapter) && (
-        <div className="max-w-3xl mx-auto px-6 pt-6">
+        <div className="max-w-5xl mx-auto px-6 pt-6">
           <div className="flex items-stretch gap-4">
             {prevChapter ? (
               <Link
@@ -235,7 +235,7 @@ export default async function ChapterPage({
       )}
 
       {/* Content */}
-      <div className="max-w-3xl mx-auto px-6 py-8">
+      <div className="max-w-5xl mx-auto px-6 py-8">
         <ChapterTabs
           worksheet={worksheet}
           accessLevel={accessLevel}
@@ -243,6 +243,7 @@ export default async function ChapterPage({
           headings={headings}
           worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
           chapterOrder={chapterMeta?.order}
+          classId={classId}
           discussionSource={discussionSource}
           discussionContent={
             discussionSource ? (
@@ -268,7 +269,7 @@ export default async function ChapterPage({
 
       {/* Prev / Next Chapter Navigation */}
       {(prevChapter || nextChapter) && (
-        <div className="max-w-3xl mx-auto px-6 pb-8">
+        <div className="max-w-5xl mx-auto px-6 pb-8">
           <div className="flex items-stretch gap-4">
             {prevChapter ? (
               <Link

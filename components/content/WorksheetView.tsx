@@ -235,10 +235,11 @@ function QuestionCard({ question, index }: { question: Question; index: number }
   );
 }
 
-function TopicSection({ topic }: { topic: TopicWorksheet }) {
+function TopicSection({ topic, hideDifficulty }: { topic: TopicWorksheet; hideDifficulty?: boolean }) {
   const [activeDifficulty, setActiveDifficulty] = useState<DifficultyLevel>("easy");
-  const questions = topic[activeDifficulty];
-  const totalQuestions = topic.easy.length + topic.medium.length + topic.hard.length;
+  const allQuestions = [...topic.easy, ...topic.medium, ...topic.hard];
+  const questions = hideDifficulty ? allQuestions : topic[activeDifficulty];
+  const totalQuestions = allQuestions.length;
 
   return (
     <div className="border border-gray-200 rounded-2xl overflow-hidden mb-6">
@@ -249,23 +250,25 @@ function TopicSection({ topic }: { topic: TopicWorksheet }) {
       </div>
 
       <div className="p-6">
-        {/* Difficulty Tabs */}
-        <div className="flex gap-2 mb-5">
-          {(["easy", "medium", "hard"] as DifficultyLevel[]).map((level) => (
-            <button
-              key={level}
-              onClick={() => setActiveDifficulty(level)}
-              className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
-                activeDifficulty === level
-                  ? DIFFICULTY_COLORS[level].tab
-                  : "text-gray-500 border-gray-200 hover:border-gray-300"
-              }`}
-            >
-              {DIFFICULTY_LABELS[level]}
-              <span className="ml-1.5 text-xs opacity-70">({topic[level].length})</span>
-            </button>
-          ))}
-        </div>
+        {/* Difficulty Tabs — hidden for Class 1-5 */}
+        {!hideDifficulty && (
+          <div className="flex gap-2 mb-5">
+            {(["easy", "medium", "hard"] as DifficultyLevel[]).map((level) => (
+              <button
+                key={level}
+                onClick={() => setActiveDifficulty(level)}
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
+                  activeDifficulty === level
+                    ? DIFFICULTY_COLORS[level].tab
+                    : "text-gray-500 border-gray-200 hover:border-gray-300"
+                }`}
+              >
+                {DIFFICULTY_LABELS[level]}
+                <span className="ml-1.5 text-xs opacity-70">({topic[level].length})</span>
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Questions */}
         {questions.length > 0 ? (
@@ -275,7 +278,7 @@ function TopicSection({ topic }: { topic: TopicWorksheet }) {
             ))}
           </div>
         ) : (
-          <p className="text-gray-400 text-sm">No {activeDifficulty} questions for this topic yet.</p>
+          <p className="text-gray-400 text-sm">No questions for this topic yet.</p>
         )}
       </div>
     </div>
@@ -287,12 +290,17 @@ export default function WorksheetView({
   accessLevel = 'subscribed',
   currentPath = '/',
   initialTopicIndex = null,
+  classId,
 }: {
   worksheet: WorksheetData | null;
   accessLevel?: ContentAccessLevel;
   currentPath?: string;
   initialTopicIndex?: number | null;
+  classId?: string;
 }) {
+  // Hide difficulty tabs for Class 1-5
+  const classNum = classId ? parseInt(classId.replace('class-', ''), 10) : 0;
+  const hideDifficulty = classNum >= 1 && classNum <= 5;
   const [activeTopicIndex, setActiveTopicIndex] = useState<number | null>(null);
 
   useEffect(() => {
@@ -353,14 +361,14 @@ export default function WorksheetView({
 
       {/* Visible Topics */}
       {visibleTopics.map((topic, index) => (
-        <TopicSection key={index} topic={topic} />
+        <TopicSection key={index} topic={topic} hideDifficulty={hideDifficulty} />
       ))}
 
       {/* Blurred Topics (anonymous only) */}
       {blurredTopics.length > 0 && (
         <ContentBlur accessLevel={accessLevel} currentPath={currentPath} maxHeight="300px">
           {blurredTopics.map((topic, index) => (
-            <TopicSection key={visibleTopics.length + index} topic={topic} />
+            <TopicSection key={visibleTopics.length + index} topic={topic} hideDifficulty={hideDifficulty} />
           ))}
         </ContentBlur>
       )}
