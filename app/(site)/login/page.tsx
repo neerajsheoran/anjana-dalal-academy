@@ -224,6 +224,12 @@ function LoginForm() {
           </svg>
           Continue with Google
         </button>
+        <p className="text-[11px] text-gray-400 text-center -mt-2 mb-2">
+          By continuing, you agree to our{' '}
+          <a href="/terms" target="_blank" className="text-blue-500 hover:underline">Terms</a>
+          {' '}and{' '}
+          <a href="/privacy" target="_blank" className="text-blue-500 hover:underline">Privacy Policy</a>
+        </p>
 
         {/* Divider */}
         <div className="flex items-center gap-3 mb-4">

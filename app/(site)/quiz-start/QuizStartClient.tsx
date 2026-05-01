@@ -86,7 +86,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
       {/* Hero */}
       <section className="bg-gradient-to-br from-purple-600 via-violet-700 to-indigo-800 text-white py-14 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_60%)]" />
-        <div className="max-w-3xl mx-auto text-center relative">
+        <div className="max-w-5xl mx-auto text-center relative">
           <Link href="/" className="inline-flex items-center gap-1.5 text-purple-200 hover:text-white text-sm mb-6 transition-colors group">
             <span className="group-hover:-translate-x-0.5 transition-transform">&larr;</span> Back to Home
           </Link>
@@ -98,7 +98,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
         </div>
       </section>
 
-      <div className="max-w-2xl mx-auto px-6 py-10 space-y-5">
+      <div className="max-w-4xl mx-auto px-6 py-10 space-y-5">
 
         {/* Step 1 — Class */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 transition-shadow hover:shadow-md">
@@ -108,7 +108,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
             }`}>
               {stepComplete(1) ? '✓' : '1'}
             </span>
-            Select your class
+            Step 1: Select your class
           </h2>
           <div className="flex flex-wrap gap-2">
             {CLASSES.map((cls) => {
@@ -144,7 +144,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
             }`}>
               {stepComplete(2) ? '✓' : '2'}
             </span>
-            Select subject
+            Step 2: Select subject
             {!selectedClass && <span className="text-xs font-normal text-gray-400 ml-1">(select a class first)</span>}
           </h2>
           {!selectedClass ? (
@@ -181,7 +181,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
               }`}>
                 {stepComplete(3) ? '✓' : '3'}
               </span>
-              Select chapters
+              Step 3: Select chapters
               {!selectedSubject && <span className="text-xs font-normal text-gray-400 ml-1">(select a subject first)</span>}
             </h2>
             {availableChapters.length > 0 && (

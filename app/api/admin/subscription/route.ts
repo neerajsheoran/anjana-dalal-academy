@@ -28,12 +28,21 @@ export async function POST(req: Request) {
 
   try {
     if (action === 'extendTrial') {
-      const { uid, extendDays } = body;
-      if (!uid || !extendDays || typeof extendDays !== 'number') {
+      const { uid, extendDays, extendUntil } = body;
+      if (!uid) {
         return NextResponse.json({ error: 'Invalid payload' }, { status: 400 });
       }
-      const extendedUntil = new Date();
-      extendedUntil.setDate(extendedUntil.getDate() + extendDays);
+      let extendedUntil: Date;
+      if (extendUntil && typeof extendUntil === 'string') {
+        // Date picker: "2026-06-15" format
+        extendedUntil = new Date(extendUntil + 'T23:59:59');
+      } else if (extendDays && typeof extendDays === 'number') {
+        // Legacy: days-based extension
+        extendedUntil = new Date();
+        extendedUntil.setDate(extendedUntil.getDate() + extendDays);
+      } else {
+        return NextResponse.json({ error: 'Provide extendUntil or extendDays' }, { status: 400 });
+      }
       await adminDb.collection('users').doc(uid).update({
         adminExtendedUntil: extendedUntil,
       });
@@ -43,7 +52,7 @@ export async function POST(req: Request) {
         adminUid: admin,
         targetUid: uid,
         targetName: (userDoc.data()?.name as string) || uid,
-        details: `Extended by ${extendDays} days until ${extendedUntil.toLocaleDateString('en-IN')}`,
+        details: `Extended until ${extendedUntil.toLocaleDateString('en-IN')}`,
       });
       return NextResponse.json({ ok: true, extendedUntil: extendedUntil.toISOString() });
     }

@@ -186,7 +186,7 @@ export default function QuizController({
   // ─── SETUP ───────────────────────────────────────────────────────────────
   if (phase === 'setup') {
     return (
-      <div className="max-w-2xl mx-auto px-6 py-10">
+      <div className="max-w-4xl mx-auto px-6 py-10">
         <div className="mb-8">
           <p className="text-sm text-gray-500 mb-1">
             {classLabel} · {subjectLabel}
@@ -305,7 +305,7 @@ export default function QuizController({
     const progress = ((currentIndex + 1) / activeQuestions.length) * 100;
 
     return (
-      <div className="max-w-2xl mx-auto px-6 py-10">
+      <div className="max-w-4xl mx-auto px-6 py-10">
         {/* Progress bar */}
         <div className="mb-6">
           <div className="flex justify-between text-sm text-gray-500 mb-1">
@@ -394,7 +394,7 @@ export default function QuizController({
     const barColor =
       pct >= 80 ? 'bg-green-500' : pct >= 60 ? 'bg-blue-500' : 'bg-amber-500';
     return (
-      <div className="max-w-2xl mx-auto px-6 py-16 text-center">
+      <div className="max-w-4xl mx-auto px-6 py-16 text-center">
         <div className="text-6xl mb-4">{emoji}</div>
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Quiz Complete!</h2>
         <p className="text-gray-600 mb-2">
@@ -474,7 +474,7 @@ export default function QuizController({
     let globalNum = 0;
 
     return (
-      <div className="max-w-3xl mx-auto px-6 py-10">
+      <div className="max-w-5xl mx-auto px-6 py-10">
         {/* Screen-only controls */}
         <div className="print:hidden mb-8">
           <button

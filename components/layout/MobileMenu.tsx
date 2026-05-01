@@ -162,7 +162,7 @@ export default function MobileMenu({ user }: { user: User }) {
             href="/login"
             className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Sign In
+            Sign Up Free
           </Link>
         )}
       </div>
@@ -282,7 +282,7 @@ export default function MobileMenu({ user }: { user: User }) {
                   href="/login"
                   className="block w-full text-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  Sign In
+                  Sign Up Free
                 </Link>
               )}
             </div>

@@ -3,9 +3,17 @@
 import { useState } from "react";
 
 export default function SubscriptionExtender({ uid, userName }: { uid: string; userName: string }) {
-  const [days, setDays] = useState(30);
+  // Default to 30 days from today
+  const defaultDate = new Date();
+  defaultDate.setDate(defaultDate.getDate() + 30);
+  const [extendDate, setExtendDate] = useState(defaultDate.toISOString().split("T")[0]);
   const [saving, setSaving] = useState(false);
   const [result, setResult] = useState<string | null>(null);
+
+  // Minimum date is tomorrow
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const minDate = tomorrow.toISOString().split("T")[0];
 
   const handleExtend = async () => {
     setSaving(true);
@@ -14,11 +22,11 @@ export default function SubscriptionExtender({ uid, userName }: { uid: string; u
       const res = await fetch("/api/admin/subscription", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "extendTrial", uid, extendDays: days }),
+        body: JSON.stringify({ action: "extendTrial", uid, extendUntil: extendDate }),
       });
       if (res.ok) {
         const data = await res.json();
-        setResult(`Extended until ${new Date(data.extendedUntil).toLocaleDateString("en-IN")}`);
+        setResult(`Until ${new Date(data.extendedUntil).toLocaleDateString("en-IN")}`);
       } else {
         setResult("Failed");
       }
@@ -30,17 +38,13 @@ export default function SubscriptionExtender({ uid, userName }: { uid: string; u
 
   return (
     <div className="flex items-center gap-1.5">
-      <select
-        value={days}
-        onChange={(e) => setDays(Number(e.target.value))}
+      <input
+        type="date"
+        value={extendDate}
+        min={minDate}
+        onChange={(e) => setExtendDate(e.target.value)}
         className="border border-gray-300 rounded px-1.5 py-1 text-xs bg-white"
-      >
-        <option value={7}>7d</option>
-        <option value={15}>15d</option>
-        <option value={30}>30d</option>
-        <option value={60}>60d</option>
-        <option value={90}>90d</option>
-      </select>
+      />
       <button
         onClick={handleExtend}
         disabled={saving}

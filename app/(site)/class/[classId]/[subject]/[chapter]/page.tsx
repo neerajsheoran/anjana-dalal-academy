@@ -151,7 +151,7 @@ export default async function ChapterPage({
     <main className="min-h-screen bg-gray-50">
       {/* Chapter Title Banner */}
       <div className={`${banner.bg} text-white px-6 py-6`}>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <Breadcrumb
             light
             items={[
