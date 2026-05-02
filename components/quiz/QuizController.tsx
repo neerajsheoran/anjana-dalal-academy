@@ -185,116 +185,152 @@ export default function QuizController({
 
   // ─── SETUP ───────────────────────────────────────────────────────────────
   if (phase === 'setup') {
+    const quickCounts = [10, 20, available].filter((n, i, a) => n > 0 && (i < 2 ? n <= available : true) && a.indexOf(n) === i);
+
     return (
       <div className="max-w-4xl mx-auto px-6 py-10">
-        <div className="mb-8">
-          <p className="text-sm text-gray-500 mb-1">
-            {classLabel} · {subjectLabel}
-          </p>
-          <h1 className="text-2xl font-bold text-gray-800">Quiz / Revision</h1>
-          <p className="text-sm text-gray-500 mt-1">
-            {chapterTitles.length === 1
+        {/* Header */}
+        <div className="text-center mb-10">
+          <span className="text-4xl mb-3 block">🧠</span>
+          <h1 className="text-2xl font-bold text-gray-800 mb-1">Ready to Test Yourself?</h1>
+          <p className="text-sm text-gray-500">
+            {classLabel} · {subjectLabel} · {chapterTitles.length === 1
               ? chapterTitles[0]
-              : `${chapterTitles.length} chapters selected`}
+              : `${chapterTitles.length} chapters`}
           </p>
         </div>
 
-        {/* Difficulty */}
-        <div className="mb-6">
-          <p className="text-sm font-semibold text-gray-700 mb-2">Difficulty</p>
-          <div className="flex gap-2 flex-wrap">
-            {(['easy', 'mixed', 'hard'] as QuizDifficulty[]).map((d) => (
+        <div className="space-y-6">
+          {/* Difficulty Cards */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <p className="text-sm font-semibold text-gray-700 mb-3">Choose your challenge</p>
+            <div className="grid grid-cols-3 gap-3">
+              {([
+                { key: 'easy' as QuizDifficulty, icon: '⭐', label: 'Easy', desc: 'Build confidence', color: 'green' },
+                { key: 'mixed' as QuizDifficulty, icon: '⭐⭐', label: 'Mixed', desc: 'Best of both', color: 'blue' },
+                { key: 'hard' as QuizDifficulty, icon: '⭐⭐⭐', label: 'Hard', desc: 'Push your limits', color: 'red' },
+              ]).map((d) => (
+                <button
+                  key={d.key}
+                  onClick={() => setDifficulty(d.key)}
+                  className={`p-4 rounded-xl border-2 text-center transition-all ${
+                    difficulty === d.key
+                      ? d.color === 'green' ? 'border-green-500 bg-green-50'
+                        : d.color === 'blue' ? 'border-blue-500 bg-blue-50'
+                        : 'border-red-500 bg-red-50'
+                      : 'border-gray-200 hover:border-gray-300 bg-white'
+                  }`}
+                >
+                  <span className="text-lg block mb-1">{d.icon}</span>
+                  <span className={`text-sm font-bold block ${
+                    difficulty === d.key
+                      ? d.color === 'green' ? 'text-green-700'
+                        : d.color === 'blue' ? 'text-blue-700'
+                        : 'text-red-700'
+                      : 'text-gray-700'
+                  }`}>{d.label}</span>
+                  <span className="text-[11px] text-gray-400 block">{d.desc}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Mode Cards */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <p className="text-sm font-semibold text-gray-700 mb-3">How do you want to practice?</p>
+            <div className="grid grid-cols-2 gap-3">
               <button
-                key={d}
-                onClick={() => setDifficulty(d)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
-                  difficulty === d
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                onClick={() => setMode('online')}
+                className={`p-4 rounded-xl border-2 text-left transition-all ${
+                  mode === 'online'
+                    ? 'border-green-500 bg-green-50'
+                    : 'border-gray-200 hover:border-gray-300 bg-white'
                 }`}
               >
-                {d === 'easy' ? 'Easy Only' : d === 'hard' ? 'Hard Only' : 'Mixed'}
+                <span className="text-2xl block mb-2">📱</span>
+                <span className={`text-sm font-bold block ${mode === 'online' ? 'text-green-700' : 'text-gray-700'}`}>
+                  Take a Quiz
+                </span>
+                <span className="text-[11px] text-gray-400 block mt-0.5">
+                  Answer on screen, get instant results
+                </span>
               </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Mode */}
-        <div className="mb-6">
-          <p className="text-sm font-semibold text-gray-700 mb-2">Mode</p>
-          <div className="flex gap-2 flex-wrap">
-            <button
-              onClick={() => setMode('online')}
-              className={`px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
-                mode === 'online'
-                  ? 'bg-green-600 text-white border-green-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-green-400'
-              }`}
-            >
-              Online Quiz (Students)
-            </button>
-            <button
-              onClick={() => setMode('print')}
-              className={`px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
-                mode === 'print'
-                  ? 'bg-purple-600 text-white border-purple-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-purple-400'
-              }`}
-            >
-              Question Paper (Teachers)
-            </button>
-          </div>
-          <p className="text-xs text-gray-400 mt-1.5">
-            {mode === 'online'
-              ? 'MCQ questions only · Automatic scoring · Score shown at end'
-              : 'All question types · Print questions + separate answer key'}
-          </p>
-        </div>
-
-        {/* Count */}
-        <div className="mb-8">
-          <p className="text-sm font-semibold text-gray-700 mb-2">
-            {available} questions available
-          </p>
-          {available > 0 ? (
-            <div className="flex items-center gap-3">
-              <label className="text-sm text-gray-600">How many questions?</label>
-              <input
-                type="number"
-                min={1}
-                max={available}
-                value={count > 0 ? count : available}
-                onChange={(e) => {
-                  const v = parseInt(e.target.value) || 1;
-                  setCount(Math.min(available, Math.max(1, v)));
-                }}
-                className="w-20 border border-gray-300 rounded-lg px-3 py-1.5 text-center text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+              <button
+                onClick={() => setMode('print')}
+                className={`p-4 rounded-xl border-2 text-left transition-all ${
+                  mode === 'print'
+                    ? 'border-purple-500 bg-purple-50'
+                    : 'border-gray-200 hover:border-gray-300 bg-white'
+                }`}
+              >
+                <span className="text-2xl block mb-2">🖨️</span>
+                <span className={`text-sm font-bold block ${mode === 'print' ? 'text-purple-700' : 'text-gray-700'}`}>
+                  Print Paper
+                </span>
+                <span className="text-[11px] text-gray-400 block mt-0.5">
+                  Download and print for classroom use
+                </span>
+              </button>
             </div>
-          ) : (
-            <p className="text-amber-600 text-sm">
-              No questions available for this difficulty selection.
+          </div>
+
+          {/* Question Count */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <p className="text-sm font-semibold text-gray-700 mb-1">
+              How many questions?
             </p>
+            {available > 0 ? (
+              <>
+                <p className="text-xs text-gray-400 mb-3">{available} questions ready</p>
+                <div className="flex gap-2 flex-wrap">
+                  {quickCounts.map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => setCount(n)}
+                      className={`px-5 py-2.5 rounded-xl text-sm font-semibold border-2 transition-all ${
+                        count === n
+                          ? 'border-blue-500 bg-blue-50 text-blue-700'
+                          : 'border-gray-200 text-gray-600 hover:border-gray-300 bg-white'
+                      }`}
+                    >
+                      {n === available ? `All ${n}` : n}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <p className="text-amber-600 text-sm mt-2">
+                No questions available for this difficulty. Try a different level.
+              </p>
+            )}
+          </div>
+
+          {/* Start Button */}
+          {available > 0 && (
+            <div className="text-center pt-2">
+              {mode === 'online' ? (
+                <button
+                  onClick={handleStart}
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-10 py-3.5 rounded-xl transition-colors shadow-lg shadow-green-200 text-base"
+                >
+                  Start Quiz →
+                </button>
+              ) : (
+                <button
+                  onClick={handleStart}
+                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-10 py-3.5 rounded-xl transition-colors shadow-lg shadow-purple-200 text-base"
+                >
+                  Preview &amp; Print →
+                </button>
+              )}
+              {mode === 'online' && count > 0 && (
+                <p className="text-xs text-gray-400 mt-2">
+                  ~{Math.ceil(count * 0.5)} min for {count} questions
+                </p>
+              )}
+            </div>
           )}
         </div>
-
-        {/* Action */}
-        {available > 0 &&
-          (mode === 'online' ? (
-            <button
-              onClick={handleStart}
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
-            >
-              Start Quiz →
-            </button>
-          ) : (
-            <button
-              onClick={handleStart}
-              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
-            >
-              Preview &amp; Print →
-            </button>
-          ))}
       </div>
     );
   }

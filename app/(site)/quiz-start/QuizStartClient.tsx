@@ -93,8 +93,8 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
           <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-5xl mx-auto mb-5 shadow-lg">
             🧠
           </div>
-          <h1 className="text-4xl font-extrabold mb-3 tracking-tight">Quiz & Revision</h1>
-          <p className="text-purple-200 text-lg">Set up your quiz in 3 simple steps</p>
+          <h1 className="text-4xl font-extrabold mb-3 tracking-tight">Set Up Your Quiz</h1>
+          <p className="text-purple-200 text-lg">Choose your class, subject, and chapters to begin</p>
         </div>
       </section>
 
@@ -110,27 +110,57 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
             </span>
             Step 1: Select your class
           </h2>
-          <div className="flex flex-wrap gap-2">
-            {CLASSES.map((cls) => {
-              const hasContent = classesWithContent.some((c) => c.id === cls.id);
-              return (
-                <button
-                  key={cls.id}
-                  onClick={() => handleClassChange(cls.id)}
-                  disabled={!hasContent}
-                  title={!hasContent ? 'No chapters available yet' : undefined}
-                  className={`px-4 py-2.5 rounded-xl font-semibold text-sm border transition-all ${
-                    selectedClass === cls.id
-                      ? 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-200'
-                      : hasContent
-                        ? 'bg-gray-50 text-gray-700 border-gray-200 hover:border-purple-400 hover:bg-purple-50'
-                        : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
-                  }`}
-                >
-                  {cls.label}
-                </button>
-              );
-            })}
+          <div className="space-y-3">
+            <div>
+              <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-2">Primary</p>
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                {CLASSES.filter((_, i) => i < 5).map((cls) => {
+                  const hasContent = classesWithContent.some((c) => c.id === cls.id);
+                  return (
+                    <button
+                      key={cls.id}
+                      onClick={() => handleClassChange(cls.id)}
+                      disabled={!hasContent}
+                      title={!hasContent ? 'No chapters available yet' : undefined}
+                      className={`px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition-all ${
+                        selectedClass === cls.id
+                          ? 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-200'
+                          : hasContent
+                            ? 'bg-white text-gray-700 border-gray-200 hover:border-purple-400 hover:bg-purple-50'
+                            : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
+                      }`}
+                    >
+                      {cls.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-2">Secondary</p>
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                {CLASSES.filter((_, i) => i >= 5).map((cls) => {
+                  const hasContent = classesWithContent.some((c) => c.id === cls.id);
+                  return (
+                    <button
+                      key={cls.id}
+                      onClick={() => handleClassChange(cls.id)}
+                      disabled={!hasContent}
+                      title={!hasContent ? 'No chapters available yet' : undefined}
+                      className={`px-5 py-2.5 rounded-xl font-semibold text-sm border-2 transition-all ${
+                        selectedClass === cls.id
+                          ? 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-200'
+                          : hasContent
+                            ? 'bg-white text-gray-700 border-gray-200 hover:border-purple-400 hover:bg-purple-50'
+                            : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
+                      }`}
+                    >
+                      {cls.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -148,22 +178,30 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
             {!selectedClass && <span className="text-xs font-normal text-gray-400 ml-1">(select a class first)</span>}
           </h2>
           {!selectedClass ? (
-            <p className="text-gray-400 text-sm py-2">Please select a class above to see available subjects.</p>
+            <div className="flex items-center gap-2 py-3 text-gray-400 text-sm">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              Pick a class to unlock
+            </div>
           ) : subjects.length === 0 ? (
             <p className="text-gray-400 text-sm py-2">No subjects available for this class yet.</p>
           ) : (
-            <div className="flex flex-wrap gap-2.5">
+            <div className="grid grid-cols-2 gap-3">
               {subjects.map((sub) => (
                 <button
                   key={sub.id}
                   onClick={() => handleSubjectChange(sub.id)}
-                  className={`px-5 py-2.5 rounded-xl font-semibold text-sm border transition-all flex items-center gap-2 ${
+                  className={`p-4 rounded-xl border-2 text-left transition-all flex items-center gap-3 ${
                     selectedSubject === sub.id
-                      ? 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-200'
-                      : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-purple-400 hover:bg-purple-50'
+                      ? 'border-purple-500 bg-purple-50'
+                      : 'border-gray-200 hover:border-purple-300 bg-white'
                   }`}
                 >
-                  <span className="text-lg">{sub.icon}</span> {sub.label}
+                  <span className="text-2xl">{sub.icon}</span>
+                  <span className={`text-sm font-bold ${selectedSubject === sub.id ? 'text-purple-700' : 'text-gray-700'}`}>
+                    {sub.label}
+                  </span>
                 </button>
               ))}
             </div>
@@ -205,9 +243,12 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
           </div>
 
           {!selectedSubject ? (
-            <p className="text-gray-400 text-sm py-4 text-center">
-              Please select a class and subject above to see chapters.
-            </p>
+            <div className="flex items-center justify-center gap-2 py-4 text-gray-400 text-sm">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              Pick a class and subject to unlock
+            </div>
           ) : availableChapters.length === 0 ? (
             <p className="text-gray-400 text-sm py-4 text-center">
               No chapters available for this class and subject yet. Try a different combination.
