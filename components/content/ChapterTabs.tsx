@@ -15,6 +15,7 @@ interface Heading {
 interface ChapterTabsProps {
   children: React.ReactNode; // pre-rendered MDX notes from server
   worksheet: WorksheetData | null;
+  reviewContent: React.ReactNode | null;
   discussionContent: React.ReactNode | null;
   discussionSource?: string | null;
   accessLevel: ContentAccessLevel;
@@ -39,8 +40,8 @@ function findMatchingTopicIndex(heading: string, topics: string[]): number {
   return -1;
 }
 
-export default function ChapterTabs({ children, worksheet, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder, classId }: ChapterTabsProps) {
-  const [activeTab, setActiveTab] = useState<"notes" | "discussion" | "worksheet">("notes");
+export default function ChapterTabs({ children, worksheet, reviewContent, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder, classId }: ChapterTabsProps) {
+  const [activeTab, setActiveTab] = useState<"notes" | "review" | "discussion" | "worksheet">("notes");
   const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const notesRef = useRef<HTMLDivElement>(null);
   const discussionRef = useRef<HTMLDivElement>(null);
@@ -57,8 +58,20 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
               : "text-gray-500 hover:text-gray-700"
           }`}
         >
-          Notes
+          Concepts
         </button>
+        {reviewContent && (
+          <button
+            onClick={() => setActiveTab("review")}
+            className={`px-5 py-2.5 text-sm font-semibold rounded-t-lg transition-colors ${
+              activeTab === "review"
+                ? "bg-white border border-b-white border-gray-200 text-green-700 -mb-px"
+                : "text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            Quick Review
+          </button>
+        )}
         {discussionContent && (
           <button
             onClick={() => setActiveTab("discussion")}
@@ -68,7 +81,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            Discussion
+            Let&apos;s Discuss
           </button>
         )}
         <button
@@ -79,7 +92,7 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
               : "text-gray-500 hover:text-gray-700"
           }`}
         >
-          Worksheet
+          Practice
         </button>
       </div>
 
@@ -116,6 +129,14 @@ export default function ChapterTabs({ children, worksheet, discussionContent, di
             </ContentBlur>
           </article>
         </>
+      )}
+
+      {activeTab === "review" && reviewContent && (
+        <article className="bg-white border border-gray-200 rounded-xl p-8 prose prose-slate max-w-none">
+          <ContentBlur accessLevel={accessLevel} currentPath={currentPath} chapterOrder={chapterOrder}>
+            {reviewContent}
+          </ContentBlur>
+        </article>
       )}
 
       {activeTab === "discussion" && (discussionSource || discussionContent) && (

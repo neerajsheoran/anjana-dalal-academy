@@ -1,0 +1,40 @@
+---
+title: "Quick Review"
+---
+
+## Key Concepts
+
+- Standard triangle area formula: **Area = (1/2) × base × height** (requires height)
+- **Heron's formula** computes area using only the **three side lengths** -- no height needed
+- First compute the **semi-perimeter:** **s = (a + b + c) / 2**
+- Then: **Area = √(s(s - a)(s - b)(s - c))**
+- If any of (s - a), (s - b), (s - c) is negative, the three sides **cannot** form a triangle
+- For an **equilateral triangle** with side a: **Area = (√3 / 4) × a²** (shortcut)
+- To find the area of a **quadrilateral**, divide it into two triangles using a diagonal
+- Apply Heron's formula to each triangle and add the areas
+- Any polygon can be split into triangles using diagonals for area calculation
+- Heron's formula works for all triangle types: scalene, isosceles, equilateral, right-angled
+
+## Important Definitions
+
+| Term | Meaning |
+|------|---------|
+| **Semi-perimeter (s)** | Half the perimeter: s = (a + b + c) / 2 |
+| **Heron's formula** | Area = √(s(s - a)(s - b)(s - c)) |
+| **Scalene triangle** | A triangle with all three sides of different lengths |
+
+## Key Formulas
+
+| Shape | Formula |
+|-------|---------|
+| Any triangle (sides a, b, c) | Area = √(s(s - a)(s - b)(s - c)), where s = (a+b+c)/2 |
+| Equilateral triangle (side a) | Area = (√3 / 4) × a² |
+| Quadrilateral | Split into 2 triangles using a diagonal, apply Heron's to each |
+
+## Remember These
+
+- Always compute **s** first, then find (s - a), (s - b), (s - c) separately before multiplying -- avoid calculation errors
+- The **equilateral triangle shortcut** (√3/4 × a²) saves significant time -- memorise it
+- For quadrilateral problems, you need the **diagonal length** along with the four sides
+- Heron's formula also serves as a **validity check** -- negative values under the root mean no triangle exists
+- When sides are given in a ratio with perimeter, find actual sides first using the ratio, then apply the formula

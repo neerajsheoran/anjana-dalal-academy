@@ -136,6 +136,11 @@ export default async function ChapterPage({
     }
   }
 
+  const reviewPath = path.join(basePath, "review.mdx");
+  const hasReview = fs.existsSync(reviewPath);
+  const reviewRaw = hasReview ? fs.readFileSync(reviewPath, "utf8") : null;
+  const reviewSource = reviewRaw ? reviewRaw.replace(/^---[\s\S]*?---\s*\n?/, "") : null;
+
   const discussionPath = path.join(basePath, "discussion.mdx");
   const hasDiscussion = fs.existsSync(discussionPath);
   const discussionRaw = hasDiscussion ? fs.readFileSync(discussionPath, "utf8") : null;
@@ -244,6 +249,15 @@ export default async function ChapterPage({
           worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
           chapterOrder={chapterMeta?.order}
           classId={classId}
+          reviewContent={
+            reviewSource ? (
+              <MDXRemote
+                source={reviewSource}
+                components={mdxComponents}
+                options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+              />
+            ) : null
+          }
           discussionSource={discussionSource}
           discussionContent={
             discussionSource ? (
