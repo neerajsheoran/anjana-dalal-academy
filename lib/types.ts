@@ -25,6 +25,7 @@ export interface ChapterMeta {
   title: string;           // e.g. "Food: Where Does It Come From?"
   description: string;     // Short summary shown in chapter cards
   order: number;           // Chapter number for sorting
+  questionCount?: number;  // Total questions in worksheet.json
 }
 
 // A single question

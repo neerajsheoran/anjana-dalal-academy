@@ -189,6 +189,37 @@ export default function QuizController({
 
     return (
       <div className="max-w-4xl mx-auto px-6 py-10">
+        {/* Top action bar */}
+        <div className="flex justify-between gap-3 mb-8">
+          <Link
+            href="/quiz-start"
+            className="flex-1 text-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 rounded-xl transition-colors text-sm"
+          >
+            ← Back to Chapters
+          </Link>
+          {available > 0 ? (
+            mode === 'online' ? (
+              <button
+                onClick={handleStart}
+                className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-xl transition-colors text-sm shadow-md shadow-green-200"
+              >
+                Start Quiz →
+              </button>
+            ) : (
+              <button
+                onClick={handleStart}
+                className="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl transition-colors text-sm shadow-md shadow-purple-200"
+              >
+                Preview &amp; Print →
+              </button>
+            )
+          ) : (
+            <span className="flex-1 text-center bg-gray-100 text-gray-400 font-semibold py-3 rounded-xl text-sm cursor-not-allowed">
+              Select difficulty first
+            </span>
+          )}
+        </div>
+
         {/* Header */}
         <div className="text-center mb-10">
           <span className="text-4xl mb-3 block">🧠</span>
@@ -281,7 +312,11 @@ export default function QuizController({
             </p>
             {available > 0 ? (
               <>
-                <p className="text-xs text-gray-400 mb-3">{available} questions ready</p>
+                <p className="text-xs text-gray-400 mb-3">
+                  {mode === 'online'
+                    ? `${available} MCQ questions ready`
+                    : `${available} questions ready (all types)`}
+                </p>
                 <div className="flex gap-2 flex-wrap">
                   {quickCounts.map((n) => (
                     <button
@@ -305,30 +340,40 @@ export default function QuizController({
             )}
           </div>
 
-          {/* Start Button */}
-          {available > 0 && (
-            <div className="text-center pt-2">
-              {mode === 'online' ? (
+          {/* Bottom action bar */}
+          <div className="flex justify-between gap-3 pt-4">
+            <Link
+              href="/quiz-start"
+              className="flex-1 text-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3.5 rounded-xl transition-colors text-sm"
+            >
+              ← Back to Chapters
+            </Link>
+            {available > 0 ? (
+              mode === 'online' ? (
                 <button
                   onClick={handleStart}
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-10 py-3.5 rounded-xl transition-colors shadow-lg shadow-green-200 text-base"
+                  className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-green-200"
                 >
                   Start Quiz →
                 </button>
               ) : (
                 <button
                   onClick={handleStart}
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-10 py-3.5 rounded-xl transition-colors shadow-lg shadow-purple-200 text-base"
+                  className="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-purple-200"
                 >
                   Preview &amp; Print →
                 </button>
-              )}
-              {mode === 'online' && count > 0 && (
-                <p className="text-xs text-gray-400 mt-2">
-                  ~{Math.ceil(count * 0.5)} min for {count} questions
-                </p>
-              )}
-            </div>
+              )
+            ) : (
+              <span className="flex-1 text-center bg-gray-100 text-gray-400 font-semibold py-3.5 rounded-xl text-sm cursor-not-allowed">
+                Select difficulty first
+              </span>
+            )}
+          </div>
+          {mode === 'online' && count > 0 && available > 0 && (
+            <p className="text-xs text-gray-400 text-center mt-2">
+              ~{Math.ceil(count * 0.5)} min for {count} questions
+            </p>
           )}
         </div>
       </div>
@@ -515,27 +560,35 @@ export default function QuizController({
         <div className="print:hidden mb-8">
           <button
             onClick={() => setPhase('setup')}
-            className="text-sm text-gray-500 hover:text-gray-700 mb-4 flex items-center gap-1"
+            className="text-sm text-gray-500 hover:text-gray-700 mb-6 flex items-center gap-1"
           >
             ← Back to Setup
           </button>
-          <h1 className="text-2xl font-bold text-gray-800 mb-1">Question Paper Preview</h1>
-          <p className="text-gray-500 text-sm mb-6">
-            {activeQuestions.length} questions · {classLabel} {subjectLabel}
-          </p>
-          <div className="flex gap-3 flex-wrap">
-            <button
-              onClick={() => handlePrint(false)}
-              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
-            >
-              Print Questions Only
-            </button>
-            <button
-              onClick={() => handlePrint(true)}
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
-            >
-              Print with Answer Key
-            </button>
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <div className="flex items-center gap-3 mb-1">
+              <span className="text-3xl">🖨️</span>
+              <h1 className="text-2xl font-bold text-gray-800">Question Paper Preview</h1>
+            </div>
+            <p className="text-gray-500 text-sm mb-5 ml-12">
+              {classLabel} · {subjectLabel} · {activeQuestions.length} questions
+            </p>
+            <div className="flex gap-3 flex-wrap ml-12">
+              <button
+                onClick={() => handlePrint(false)}
+                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors flex items-center gap-2"
+              >
+                <span>📄</span> Questions Only
+              </button>
+              <button
+                onClick={() => handlePrint(true)}
+                className="bg-purple-100 hover:bg-purple-200 text-purple-700 font-semibold px-6 py-3 rounded-xl transition-colors flex items-center gap-2"
+              >
+                <span>📄</span> With Answers
+              </button>
+            </div>
+            <p className="text-xs text-gray-400 mt-3 ml-12">
+              💡 Choose &quot;Save as PDF&quot; in the print dialog to download the paper
+            </p>
           </div>
         </div>
 
@@ -567,10 +620,14 @@ export default function QuizController({
               globalNum += 1;
               const num = globalNum;
               return (
-                <div key={q.id} className="mb-6">
-                  <div className="flex gap-2 text-xs text-gray-400 mb-0.5">
-                    <span>[{TYPE_LABEL[q.type] ?? q.type}]</span>
-                    <span>{DIFF_STARS[q.difficulty]}</span>
+                <div key={q.id} className="mb-6 pb-5 border-b border-gray-100 last:border-b-0">
+                  <div className="flex gap-2 mb-1">
+                    <span className="text-[10px] font-semibold uppercase tracking-wide bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">
+                      {TYPE_LABEL[q.type] ?? q.type}
+                    </span>
+                    <span className="text-[10px] font-semibold uppercase tracking-wide bg-amber-50 text-amber-600 px-2 py-0.5 rounded-full">
+                      {q.difficulty === 'easy' ? 'Easy' : q.difficulty === 'hard' ? 'Hard' : 'Medium'}
+                    </span>
                   </div>
                   <p className="font-medium text-gray-800">
                     {num}. {q.question}

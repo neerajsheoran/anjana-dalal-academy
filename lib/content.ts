@@ -64,6 +64,22 @@ function discoverChapters(): ChapterMeta[] {
           .replace(/-/g, " ")
           .replace(/\b\w/g, (c) => c.toUpperCase());
 
+        // Count questions from worksheet.json if it exists
+        let questionCount = 0;
+        const worksheetPath = path.join(subjectDir, entry.name, "worksheet.json");
+        if (fs.existsSync(worksheetPath)) {
+          try {
+            const ws = JSON.parse(fs.readFileSync(worksheetPath, "utf8"));
+            if (ws.topics && Array.isArray(ws.topics)) {
+              for (const t of ws.topics) {
+                questionCount += (t.easy?.length || 0) + (t.medium?.length || 0) + (t.hard?.length || 0);
+              }
+            }
+          } catch {
+            // ignore parse errors
+          }
+        }
+
         chapters.push({
           classId: cls.id as ClassId,
           subject: subj.id as SubjectId,
@@ -71,6 +87,7 @@ function discoverChapters(): ChapterMeta[] {
           title,
           description: fm.description || "",
           order,
+          questionCount: questionCount || undefined,
         });
       }
     }

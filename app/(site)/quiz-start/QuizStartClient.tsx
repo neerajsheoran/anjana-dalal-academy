@@ -254,6 +254,20 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
               No chapters available for this class and subject yet. Try a different combination.
             </p>
           ) : (
+            <>
+            {selectedChapters.length > 0 && (
+              <div className="mb-4">
+                <p className="text-center text-sm text-gray-500 mb-2">
+                  {selectedChapters.length} chapter{selectedChapters.length > 1 ? 's' : ''} selected from {CLASSES.find(c => c.id === selectedClass)?.label}
+                </p>
+                <button
+                  onClick={handleStart}
+                  className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white shadow-lg shadow-purple-200 transition-all"
+                >
+                  Start Quiz →
+                </button>
+              </div>
+            )}
             <div className="space-y-2">
               {availableChapters.map((ch, i) => (
                 <label
@@ -279,9 +293,15 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
                       <p className="text-gray-400 text-xs mt-0.5 line-clamp-1">{ch.description}</p>
                     )}
                   </div>
+                  {ch.questionCount && (
+                    <span className="shrink-0 text-[11px] font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+                      {ch.questionCount} Qs
+                    </span>
+                  )}
                 </label>
               ))}
             </div>
+            </>
           )}
         </div>
 
