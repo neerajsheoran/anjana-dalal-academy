@@ -16,8 +16,8 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Clear Concepts · Strong Foundations. CBSE content with easy
-              explanations and real-life examples for every Indian student.
+              Train how your child thinks, not just what they learn. Brain
+              training games for kids 5–15 — Memory, Focus, Thinking.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
                   href="/advisor"
                   className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
                 >
-                  Become an Advisor
+                  Become a Partner
                 </Link>
               </li>
             </ul>

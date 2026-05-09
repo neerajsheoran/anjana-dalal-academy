@@ -9,11 +9,11 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "CogniLift — Clear Concepts, Strong Foundations",
+    default: "CogniLift — Train how your child thinks",
     template: "%s | CogniLift",
   },
   description:
-    "CBSE learning made simple. Easy explanations, real-life examples, and structured content for Class 1 to 12.",
+    "CogniLift trains your child's brain — Memory, Focus, Thinking — through games that use school content as the playground.",
 };
 
 export default function RootLayout({

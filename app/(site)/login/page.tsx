@@ -34,6 +34,7 @@ function LoginForm() {
   const [resetSent, setResetSent] = useState(false);
   const [verificationSent, setVerificationSent] = useState(false);
   const [agreedToTerms, setAgreedToTerms] = useState(false);
+  const [confirmedAdult, setConfirmedAdult] = useState(false);
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -162,7 +163,7 @@ function LoginForm() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/logo.png" alt="CogniLift" className="h-16 w-16 mx-auto mb-3" />
           <h1 className="text-2xl font-bold text-blue-700">CogniLift</h1>
-          <p className="text-gray-500 text-sm mt-1">Clear Concepts · Strong Foundations</p>
+          <p className="text-gray-500 text-sm mt-1">Train how your child thinks</p>
         </div>
 
         {/* Verification sent screen */}
@@ -286,20 +287,33 @@ function LoginForm() {
           )}
 
           {mode === 'signup' && (
-            <label className="flex items-start gap-2 cursor-pointer -mt-1">
-              <input
-                type="checkbox"
-                checked={agreedToTerms}
-                onChange={e => setAgreedToTerms(e.target.checked)}
-                className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              />
-              <span className="text-xs text-gray-500 leading-relaxed">
-                I agree to the{' '}
-                <a href="/terms" target="_blank" className="text-blue-600 hover:underline">Terms of Service</a>
-                {' '}and{' '}
-                <a href="/privacy" target="_blank" className="text-blue-600 hover:underline">Privacy Policy</a>
-              </span>
-            </label>
+            <>
+              <label className="flex items-start gap-2 cursor-pointer -mt-1">
+                <input
+                  type="checkbox"
+                  checked={confirmedAdult}
+                  onChange={e => setConfirmedAdult(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span className="text-xs text-gray-500 leading-relaxed">
+                  I am 18 or older and the parent/guardian of any child whose profile I create
+                </span>
+              </label>
+              <label className="flex items-start gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={agreedToTerms}
+                  onChange={e => setAgreedToTerms(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span className="text-xs text-gray-500 leading-relaxed">
+                  I agree to the{' '}
+                  <a href="/terms" target="_blank" className="text-blue-600 hover:underline">Terms of Service</a>
+                  {' '}and{' '}
+                  <a href="/privacy" target="_blank" className="text-blue-600 hover:underline">Privacy Policy</a>
+                </span>
+              </label>
+            </>
           )}
 
           {error && (
@@ -308,7 +322,7 @@ function LoginForm() {
 
           <button
             type="submit"
-            disabled={loading || (mode === 'signup' && !agreedToTerms)}
+            disabled={loading || (mode === 'signup' && (!agreedToTerms || !confirmedAdult))}
             className="w-full bg-blue-600 text-white rounded-xl py-3 text-sm font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50"
           >
             {loading ? 'Please wait…' : mode === 'login' ? 'Log In' : 'Create Account'}
