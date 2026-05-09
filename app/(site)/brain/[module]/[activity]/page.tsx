@@ -10,6 +10,8 @@ import {
   type ModuleKey,
 } from "@/lib/brain-modules";
 import PatternRecallActivity from "@/components/brain/PatternRecallActivity";
+import FindTheObjectActivity from "@/components/brain/FindTheObjectActivity";
+import PatternLogicActivity from "@/components/brain/PatternLogicActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -58,6 +60,22 @@ export default async function ActivityPage({
   if (activityKey === "pattern-recall") {
     return (
       <PatternRecallActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+      />
+    );
+  }
+  if (activityKey === "find-the-object") {
+    return (
+      <FindTheObjectActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+      />
+    );
+  }
+  if (activityKey === "pattern-logic") {
+    return (
+      <PatternLogicActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
       />

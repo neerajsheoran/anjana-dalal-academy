@@ -70,7 +70,7 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     skill: "Visual scanning",
     minAge: 5,
     maxAge: 15,
-    available: false, // Stubbed for MVP — wired in next iteration
+    available: true,
   },
   "pattern-logic": {
     key: "pattern-logic",
@@ -79,7 +79,7 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     skill: "Logical reasoning",
     minAge: 7,
     maxAge: 15,
-    available: false, // Stubbed for MVP — wired in next iteration
+    available: true,
   },
 };
 
