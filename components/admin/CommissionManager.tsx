@@ -88,7 +88,7 @@ export default function CommissionManager({
   };
 
   if (partners.length === 0) {
-    return <p className="text-sm text-gray-400">No advisor commissions yet.</p>;
+    return <p className="text-sm text-gray-400">No partner commissions yet.</p>;
   }
 
   return (
@@ -228,7 +228,7 @@ export default function CommissionManager({
                       </div>
                     </div>
                   ) : (
-                    <p className="text-sm text-gray-400">Not provided by advisor</p>
+                    <p className="text-sm text-gray-400">Not provided by partner</p>
                   )}
                 </div>
 

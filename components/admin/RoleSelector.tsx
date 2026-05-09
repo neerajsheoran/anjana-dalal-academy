@@ -6,7 +6,7 @@ const ROLES = ['student', 'teacher', 'partner', 'content-author'] as const;
 const ROLE_LABELS: Record<string, string> = {
   student: 'Student',
   teacher: 'Teacher',
-  partner: 'Advisor',
+  partner: 'Partner',
   'content-author': 'Content Author',
 };
 

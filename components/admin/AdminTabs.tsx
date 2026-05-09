@@ -38,7 +38,7 @@ export default function AdminTabs({
   const allTabs: { key: TabKey; label: string; visible: boolean }[] = [
     { key: "users", label: "Users", visible: showUsers },
     { key: "config", label: "Configuration", visible: showConfig },
-    { key: "advisors", label: "Advisors", visible: showAdvisors },
+    { key: "advisors", label: "Partners", visible: showAdvisors },
     { key: "support", label: "Support", visible: showSupport },
     { key: "docs", label: "Docs", visible: showFlows },
   ];

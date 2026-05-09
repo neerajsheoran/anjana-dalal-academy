@@ -108,7 +108,7 @@ export async function sendCommissionEarnedEmail(
         <div style="font-family: sans-serif; max-width: 520px; margin: 0 auto; padding: 24px;">
           <h2 style="color: #1e293b;">You earned a commission!</h2>
           <p style="color: #475569; line-height: 1.6;">
-            Hi ${advisorName || 'Advisor'}, a student you referred has subscribed.
+            Hi ${advisorName || 'Partner'}, a student you referred has subscribed.
           </p>
           <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 16px; margin: 16px 0;">
             <p style="margin: 0; color: #166534; font-size: 14px;">
@@ -155,7 +155,7 @@ export async function sendPayoutProcessedEmail(
         <div style="font-family: sans-serif; max-width: 520px; margin: 0 auto; padding: 24px;">
           <h2 style="color: #1e293b;">Payout Processed!</h2>
           <p style="color: #475569; line-height: 1.6;">
-            Hi ${advisorName || 'Advisor'}, your commission payout has been processed.
+            Hi ${advisorName || 'Partner'}, your commission payout has been processed.
           </p>
           <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 16px; margin: 16px 0;">
             <p style="margin: 0; color: #166534; font-size: 14px;">
@@ -164,7 +164,7 @@ export async function sendPayoutProcessedEmail(
             </p>
           </div>
           <p style="color: #475569; line-height: 1.6;">
-            The amount will be credited to your registered bank account. Check your advisor dashboard for details.
+            The amount will be credited to your registered bank account. Check your Partner Dashboard for details.
           </p>
           <div style="margin: 24px 0;">
             <a href="https://cognilift.in/advisor/dashboard" style="background: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">

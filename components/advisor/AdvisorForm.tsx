@@ -98,7 +98,7 @@ export default function AdvisorForm() {
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
-          Why do you want to become an advisor? *
+          Why do you want to become a Partner? *
         </label>
         <textarea
           required

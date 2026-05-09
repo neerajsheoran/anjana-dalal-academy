@@ -213,12 +213,12 @@ const TEST_SECTIONS: TestSection[] = [
         title: "Subscribe with valid referral code",
         steps: [
           "Go to /pricing",
-          "Enter a valid advisor referral code (e.g. ADV-XXXXX)",
+          "Enter a valid partner referral code (e.g. ADV-XXXXX)",
           "Verify discount is applied to price",
           "Complete Razorpay payment",
         ],
         expected:
-          "Discount applied to total. Payment processed at reduced amount. Advisor gets commission email. Subscription active for 1 year.",
+          "Discount applied to total. Payment processed at reduced amount. Partner gets commission email. Subscription active for 1 year.",
       },
       {
         id: "sub-3",
@@ -494,75 +494,75 @@ const TEST_SECTIONS: TestSection[] = [
 
   // ─── ADVISOR ───
   {
-    title: "Advisor — Application & Onboarding",
-    role: "Advisor",
+    title: "Partner — Application & Onboarding",
+    role: "Partner",
     cases: [
       {
-        id: "advisor-1",
-        title: "Submit advisor application",
+        id: "partner-1",
+        title: "Submit partner application",
         steps: [
           "Go to /advisor",
           "Fill in name, email, phone, city, reason",
           "Click Apply",
         ],
         expected:
-          "Application submitted. Status: pending. Shown in admin's Advisors tab.",
+          "Application submitted. Status: pending. Shown in admin's Partners tab.",
       },
       {
-        id: "advisor-2",
+        id: "partner-2",
         title: "Login after admin approval",
         steps: [
           "Wait for admin to approve application",
           "Sign in with the same email used in application",
         ],
         expected:
-          "Role auto-set to 'partner'. Advisor Dashboard link visible in avatar dropdown. Referral code generated.",
+          "Role auto-set to 'partner'. Partner Dashboard link visible in avatar dropdown. Referral code generated.",
       },
       {
-        id: "advisor-3",
-        title: "View advisor dashboard",
+        id: "partner-3",
+        title: "View partner dashboard",
         steps: [
-          "Login as approved advisor",
+          "Login as approved partner",
           "Go to /advisor/dashboard",
         ],
         expected:
           "Dashboard shows: referral code (with copy button), stats (Total Referrals, Total Earnings, Pending Payout, Paid Out), verification status, bank details section, referral history table.",
       },
       {
-        id: "advisor-4",
+        id: "partner-4",
         title: "Copy referral code",
         steps: [
-          "On advisor dashboard",
+          "On partner dashboard",
           "Click copy button next to referral code",
         ],
         expected: "Code copied to clipboard. Confirmation shown.",
       },
       {
-        id: "advisor-5",
+        id: "partner-5",
         title: "Add/edit bank details",
         steps: [
-          "On advisor dashboard, find bank details section",
+          "On partner dashboard, find bank details section",
           "Enter: Account Holder, Bank Name, Account No., IFSC, PAN",
           "Save",
         ],
-        expected: "Bank details saved. Shown in read-only mode. Admin can see them in Advisors tab.",
+        expected: "Bank details saved. Shown in read-only mode. Admin can see them in Partners tab.",
       },
       {
-        id: "advisor-6",
+        id: "partner-6",
         title: "Referral code used by student",
         steps: [
           "Share referral code with a student",
           "Student subscribes using the code",
-          "Check advisor dashboard",
+          "Check partner dashboard",
         ],
         expected:
           "New entry in referral history. Commission amount shown as 'Pending'. Stats updated. Commission email received.",
       },
       {
-        id: "advisor-7",
+        id: "partner-7",
         title: "Email verification (resend)",
         steps: [
-          "On advisor dashboard (email not verified)",
+          "On partner dashboard (email not verified)",
           "Click 'Resend verification email'",
           "Check inbox and click verification link",
           "Login again",
@@ -600,7 +600,7 @@ const TEST_SECTIONS: TestSection[] = [
         id: "admin-user-3",
         title: "Filter by role and subscription",
         steps: [
-          "Use Role dropdown (Student/Teacher/Advisor/Admin)",
+          "Use Role dropdown (Student/Teacher/Partner/Admin)",
           "Use Subscription dropdown (Trial/Active/Expired/None)",
         ],
         expected: "Table filters correctly. Count updates. Filters can be combined.",
@@ -692,21 +692,21 @@ const TEST_SECTIONS: TestSection[] = [
 
   // ─── ADMIN — ADVISORS ───
   {
-    title: "Admin — Advisor Management",
+    title: "Admin — Partner Management",
     role: "Admin",
     cases: [
       {
         id: "admin-adv-1",
         title: "View pending applications",
         steps: [
-          "Go to /admin → Advisors tab",
+          "Go to /admin → Partners tab",
           "Check 'Pending Applications' section",
         ],
-        expected: "All pending advisor applications listed with name, email, phone, city, reason, date.",
+        expected: "All pending partner applications listed with name, email, phone, city, reason, date.",
       },
       {
         id: "admin-adv-2",
-        title: "Approve advisor application",
+        title: "Approve partner application",
         steps: [
           "Find a pending application",
           "Click 'Approve'",
@@ -716,7 +716,7 @@ const TEST_SECTIONS: TestSection[] = [
       },
       {
         id: "admin-adv-3",
-        title: "Reject advisor application",
+        title: "Reject partner application",
         steps: [
           "Find a pending application",
           "Click 'Reject'",
@@ -725,19 +725,19 @@ const TEST_SECTIONS: TestSection[] = [
       },
       {
         id: "admin-adv-4",
-        title: "View advisor commissions",
+        title: "View partner commissions",
         steps: [
-          "In Advisors tab, scroll to 'Advisor Commissions'",
-          "Click on an advisor row to expand",
+          "In Partners tab, scroll to 'Partner Commissions'",
+          "Click on an partner row to expand",
         ],
         expected:
           "Expanded view shows: verification status (email + phone), bank details, referral history with amounts, total pending/paid.",
       },
       {
         id: "admin-adv-5",
-        title: "Verify advisor phone",
+        title: "Verify partner phone",
         steps: [
-          "Expand an advisor in Commissions section",
+          "Expand an partner in Commissions section",
           "Click 'Mark Phone Verified' toggle",
         ],
         expected: "Phone status changes to 'Verified' (green badge).",
@@ -746,13 +746,13 @@ const TEST_SECTIONS: TestSection[] = [
         id: "admin-adv-6",
         title: "Process payout",
         steps: [
-          "Expand an advisor with pending commissions",
+          "Expand an partner with pending commissions",
           "Verify bank details are correct",
           "Transfer money manually (outside system)",
           "Click 'Mark Paid'",
         ],
         expected:
-          "All pending commissions marked as paid. Payout record created. Payout email sent to advisor. Dashboard stats updated.",
+          "All pending commissions marked as paid. Payout record created. Payout email sent to partner. Dashboard stats updated.",
       },
     ],
   },
@@ -904,7 +904,7 @@ const TEST_SECTIONS: TestSection[] = [
           "Go to /admin",
         ],
         expected:
-          "Only sees tabs allowed by permissions (e.g., Users read-only, System Flows). Cannot see Configuration or Advisors unless permitted.",
+          "Only sees tabs allowed by permissions (e.g., Users read-only, System Flows). Cannot see Configuration or Partners unless permitted.",
       },
     ],
   },
@@ -980,7 +980,7 @@ const TEST_SECTIONS: TestSection[] = [
       },
       {
         id: "access-6",
-        title: "Non-advisor cannot access /advisor/dashboard",
+        title: "Non-partner cannot access /advisor/dashboard",
         steps: [
           "Login as student",
           "Navigate to /advisor/dashboard directly",
@@ -1048,19 +1048,19 @@ const TEST_SECTIONS: TestSection[] = [
       },
       {
         id: "email-3",
-        title: "Commission earned email to advisor",
+        title: "Commission earned email to partner",
         steps: [
-          "Student subscribes using advisor's referral code",
-          "Check advisor's inbox",
+          "Student subscribes using partner's referral code",
+          "Check partner's inbox",
         ],
         expected: "Commission earned email with student name, subscription amount, and commission amount.",
       },
       {
         id: "email-4",
-        title: "Payout processed email to advisor",
+        title: "Payout processed email to partner",
         steps: [
-          "Admin clicks 'Mark Paid' for an advisor's commissions",
-          "Check advisor's inbox",
+          "Admin clicks 'Mark Paid' for an partner's commissions",
+          "Check partner's inbox",
         ],
         expected: "Payout email with amount and date.",
       },

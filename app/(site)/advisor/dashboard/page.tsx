@@ -18,7 +18,7 @@ async function getAdvisor() {
 
   return {
     uid: decoded.uid,
-    name: data.name || "Advisor",
+    name: data.name || "Partner",
     email: data.email || "",
     partnerCode: data.partnerCode || null,
     accountHolder: (data.accountHolder as string) || null,
@@ -162,7 +162,7 @@ export default async function AdvisorDashboardPage() {
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-gray-800">Advisor Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Partner Dashboard</h1>
           <p className="text-gray-500 text-sm mt-1">Welcome, {advisor.name}</p>
         </div>
 

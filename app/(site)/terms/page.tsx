@@ -42,9 +42,9 @@ export default function TermsPage() {
             login or subscription. This free access may be modified at our discretion.
           </p>
 
-          <h2>6. Advisor Program</h2>
+          <h2>6. Partner Program</h2>
           <p>
-            Advisors are independent referral partners. CogniLift reserves the right to approve or reject advisor
+            Partners are independent referrers. CogniLift reserves the right to approve or reject partner
             applications and to modify commission structures with reasonable notice.
           </p>
 

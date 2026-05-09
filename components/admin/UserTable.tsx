@@ -270,7 +270,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
               <option value="all">All Roles</option>
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
-              <option value="partner">Advisor</option>
+              <option value="partner">Partner</option>
               <option value="content-author">Content Author</option>
               <option value="admin">Admin</option>
             </select>

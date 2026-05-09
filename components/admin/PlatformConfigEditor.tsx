@@ -18,7 +18,7 @@ const PERMISSION_LABELS: { key: keyof ContentAuthorPermissions; label: string; d
   { key: "manageUsers", label: "Manage Users", description: "Can change roles, delete, and extend subscriptions" },
   { key: "viewSystemFlows", label: "View System Flows", description: "Can see the System Flows documentation tab" },
   { key: "viewConfiguration", label: "View Configuration", description: "Can see the Configuration tab" },
-  { key: "viewAdvisors", label: "View Advisors", description: "Can see the Advisors tab" },
+  { key: "viewAdvisors", label: "View Partners", description: "Can see the Partners tab" },
 ];
 
 export default function PlatformConfigEditor({ initialConfig }: PlatformConfigEditorProps) {

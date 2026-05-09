@@ -286,7 +286,7 @@ export default async function AdminPage() {
               <StatCard label="Total Users" value={totalUsers} />
               <StatCard label="Students" value={byRole.student} />
               <StatCard label="Teachers" value={byRole.teacher} />
-              <StatCard label="Advisors" value={byRole.partner} />
+              <StatCard label="Partners" value={byRole.partner} />
               <StatCard label="Content Authors" value={byRole['content-author']} />
               <StatCard label="Applications" value={applications.total} />
             </div>
@@ -397,7 +397,7 @@ export default async function AdminPage() {
               {/* Agent Commissions */}
               <div className="bg-white rounded-2xl shadow-sm p-6 mt-6">
                 <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-                  Advisor Commissions
+                  Partner Commissions
                 </h2>
                 <CommissionManager partners={commissions} />
               </div>

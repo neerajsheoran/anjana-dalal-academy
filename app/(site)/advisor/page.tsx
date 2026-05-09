@@ -7,10 +7,10 @@ export default function AdvisorPage() {
       <section className="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-indigo-200 text-sm font-semibold uppercase tracking-widest mb-3">
-            Advisor Program
+            Partner Program
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-            Become an Advisor
+            Become a Partner
           </h1>
           <p className="text-indigo-100 text-lg max-w-xl mx-auto">
             Help students across India learn better. Refer families to
@@ -37,7 +37,7 @@ export default function AdvisorPage() {
           <Step
             number="2"
             title="Get Approved"
-            description="Once approved, you'll get advisor access with your own referral tools and dashboard."
+            description="Once approved, you'll get partner access with your own referral tools and dashboard."
           />
           <Step
             number="3"
@@ -48,10 +48,10 @@ export default function AdvisorPage() {
 
         {/* Benefits */}
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
-          Why join as an advisor?
+          Why join as a Partner?
         </h2>
         <p className="text-gray-400 text-center text-sm mb-10">
-          Benefits of joining the advisor program
+          Benefits of joining the Partner program
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">

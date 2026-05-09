@@ -36,44 +36,44 @@ export default function SystemFlows() {
       <FlowCard
         title="Referral & Commission"
         steps={[
-          { actor: "Student", text: "Uses an advisor's referral code while subscribing" },
+          { actor: "Student", text: "Uses a partner's referral code while subscribing" },
           { actor: "System", text: "Applies discount to student (configured in Platform Config)" },
           { actor: "System", text: "Calculates commission on the paid amount (% from Platform Config)" },
           { actor: "System", text: "Saves commission record with the subscription (commissionPaid = false)" },
-          { actor: "System", text: "Sends email notification to advisor about new commission earned" },
-          { actor: "Advisor", text: "Sees commission as 'Pending' on their dashboard" },
+          { actor: "System", text: "Sends email notification to partner about new commission earned" },
+          { actor: "Partner", text: "Sees commission as 'Pending' on their dashboard" },
         ]}
-        email="Commission earned email to advisor with student name and amount"
+        email="Commission earned email to partner with student name and amount"
       />
 
-      {/* Advisor Onboarding */}
+      {/* Partner Onboarding */}
       <FlowCard
-        title="Advisor Onboarding"
+        title="Partner Onboarding"
         steps={[
-          { actor: "Advisor", text: "Visits /advisor and fills the application form (name, email, phone, city, reason)" },
+          { actor: "Partner", text: "Visits /advisor and fills the application form (name, email, phone, city, reason)" },
           { actor: "System", text: "Saves application in Firestore as 'pending'" },
-          { actor: "Admin", text: "Sees the application in Advisors tab under 'Pending Applications'" },
+          { actor: "Admin", text: "Sees the application in Partners tab under 'Pending Applications'" },
           { actor: "Admin", text: "Clicks Approve or Reject" },
           { actor: "System", text: "If approved: generates a unique referral code (ADV-XXXXX)" },
           { actor: "System", text: "When the approved person signs in (same email), they get role = 'partner'" },
-          { actor: "Advisor", text: "Sees their dashboard at /advisor/dashboard with referral code" },
-          { actor: "Advisor", text: "Provides bank details (Account Holder, Bank Name, Account No., IFSC, PAN)" },
+          { actor: "Partner", text: "Sees their dashboard at /advisor/dashboard with referral code" },
+          { actor: "Partner", text: "Provides bank details (Account Holder, Bank Name, Account No., IFSC, PAN)" },
           { actor: "Firebase", text: "Sends email verification link on signup; resend available from dashboard" },
-          { actor: "Admin", text: "Manually verifies advisor's phone number (calls/WhatsApp, then marks verified in admin panel)" },
+          { actor: "Admin", text: "Manually verifies partner's phone number (calls/WhatsApp, then marks verified in admin panel)" },
         ]}
       />
 
-      {/* Advisor Dashboard */}
+      {/* Partner Dashboard */}
       <FlowCard
-        title="Advisor Dashboard"
+        title="Partner Dashboard"
         steps={[
-          { actor: "Advisor", text: "Logs in and goes to /advisor/dashboard" },
-          { actor: "Advisor", text: "Sees stats: Total Referrals, Total Earnings, Pending Payout, Paid Out" },
-          { actor: "Advisor", text: "Sees verification status: Email (Verified/Not Verified with resend option) and Mobile (Verified/Pending)" },
-          { actor: "Advisor", text: "Sees their referral code with copy button" },
-          { actor: "Advisor", text: "Sees bank details section (read-only, editable on click)" },
-          { actor: "Advisor", text: "Sees referral history table: Date, Student Name, Amount, Commission, Status" },
-          { actor: "Advisor", text: "Sees payout history: past payouts processed by admin" },
+          { actor: "Partner", text: "Logs in and goes to /advisor/dashboard" },
+          { actor: "Partner", text: "Sees stats: Total Referrals, Total Earnings, Pending Payout, Paid Out" },
+          { actor: "Partner", text: "Sees verification status: Email (Verified/Not Verified with resend option) and Mobile (Verified/Pending)" },
+          { actor: "Partner", text: "Sees their referral code with copy button" },
+          { actor: "Partner", text: "Sees bank details section (read-only, editable on click)" },
+          { actor: "Partner", text: "Sees referral history table: Date, Student Name, Amount, Commission, Status" },
+          { actor: "Partner", text: "Sees payout history: past payouts processed by admin" },
         ]}
       />
 
@@ -81,18 +81,18 @@ export default function SystemFlows() {
       <FlowCard
         title="Admin Payout Process"
         steps={[
-          { actor: "Admin", text: "Goes to Advisors tab and clicks on an advisor row to expand" },
+          { actor: "Admin", text: "Goes to Partners tab and clicks on a partner row to expand" },
           { actor: "Admin", text: "Sees verification status: Email (auto-synced) and Phone (with Mark Verified/Unverified toggle)" },
-          { actor: "Admin", text: "Sees advisor's bank details (Account Holder, Bank, Account, IFSC, PAN)" },
+          { actor: "Admin", text: "Sees partner's bank details (Account Holder, Bank, Account, IFSC, PAN)" },
           { actor: "Admin", text: "Sees individual referral history with commission amounts" },
           { actor: "Admin", text: "Sees total unpaid/pending amount" },
-          { actor: "Admin", text: "Transfers money manually to advisor's bank account" },
+          { actor: "Admin", text: "Transfers money manually to partner's bank account" },
           { actor: "Admin", text: "Clicks 'Mark Paid' to record the payout" },
-          { actor: "System", text: "Marks all pending commissions for that advisor as paid with timestamp" },
+          { actor: "System", text: "Marks all pending commissions for that partner as paid with timestamp" },
           { actor: "System", text: "Creates payout record in Firestore" },
-          { actor: "System", text: "Sends payout processed email to advisor" },
+          { actor: "System", text: "Sends payout processed email to partner" },
         ]}
-        email="Payout processed email to advisor with amount and date"
+        email="Payout processed email to partner with amount and date"
       />
 
       {/* Adding New Chapter */}
@@ -161,20 +161,20 @@ export default function SystemFlows() {
               </tr>
               <tr className="border-b border-gray-50">
                 <td className="px-3 py-2 font-medium text-gray-700">Commission Earned</td>
-                <td className="px-3 py-2 text-gray-500">Advisor</td>
+                <td className="px-3 py-2 text-gray-500">Partner</td>
                 <td className="px-3 py-2 text-gray-500">Referred student completes payment</td>
                 <td className="px-3 py-2 text-gray-400">noreply@cognilift.in</td>
               </tr>
               <tr className="border-b border-gray-50">
                 <td className="px-3 py-2 font-medium text-gray-700">Payout Processed</td>
-                <td className="px-3 py-2 text-gray-500">Advisor</td>
+                <td className="px-3 py-2 text-gray-500">Partner</td>
                 <td className="px-3 py-2 text-gray-500">Admin clicks &quot;Mark Paid&quot;</td>
                 <td className="px-3 py-2 text-gray-400">noreply@cognilift.in</td>
               </tr>
               <tr>
                 <td className="px-3 py-2 font-medium text-gray-700">Email Verification</td>
                 <td className="px-3 py-2 text-gray-500">Any user (email/password signup)</td>
-                <td className="px-3 py-2 text-gray-500">Signup or &quot;Resend&quot; from advisor dashboard</td>
+                <td className="px-3 py-2 text-gray-500">Signup or &quot;Resend&quot; from Partner Dashboard</td>
                 <td className="px-3 py-2 text-gray-400">Firebase (noreply@project.firebaseapp.com)</td>
               </tr>
             </tbody>
@@ -190,7 +190,7 @@ export default function SystemFlows() {
         <div className="space-y-3 text-sm">
           <CollectionRow
             name="users"
-            description="All user accounts — students, advisors, admins. Stores profile, role, subscription status, bank details, emailVerified (synced from Firebase Auth), phoneVerified (set by admin)."
+            description="All user accounts — students, partners, admins. Stores profile, role, subscription status, bank details, emailVerified (synced from Firebase Auth), phoneVerified (set by admin)."
           />
           <CollectionRow
             name="subscriptions"
@@ -198,15 +198,15 @@ export default function SystemFlows() {
           />
           <CollectionRow
             name="referralCodes"
-            description="Advisor referral codes (e.g., ADV-AB12X). Links to advisor UID, tracks total uses and active status."
+            description="Partner referral codes (e.g., ADV-AB12X). Links to partner UID, tracks total uses and active status."
           />
           <CollectionRow
             name="partnerApplications"
-            description="Advisor applications. Stores name, email, phone, city, reason, status (pending/approved/rejected)."
+            description="Partner applications. Stores name, email, phone, city, reason, status (pending/approved/rejected)."
           />
           <CollectionRow
             name="payouts"
-            description="Payout records when admin marks commissions as paid. Links to advisor, stores amount, subscription IDs, and timestamps."
+            description="Payout records when admin marks commissions as paid. Links to partner, stores amount, subscription IDs, and timestamps."
           />
           <CollectionRow
             name="platformConfig"
@@ -231,7 +231,7 @@ export default function SystemFlows() {
           </div>
           <div className="flex items-start gap-3 py-2 border-b border-gray-50">
             <span className="text-xs font-medium bg-purple-50 text-purple-600 px-2 py-0.5 rounded shrink-0">partner</span>
-            <p className="text-gray-500">Advisor role (displayed as &quot;Advisor&quot; in UI). Can access advisor dashboard, share referral codes, earn commissions.</p>
+            <p className="text-gray-500">Partner role (displayed as &quot;Partner&quot; in UI). Can access partner dashboard, share referral codes, earn commissions.</p>
           </div>
           <div className="flex items-start gap-3 py-2 border-b border-gray-50">
             <span className="text-xs font-medium bg-green-50 text-green-600 px-2 py-0.5 rounded shrink-0">teacher</span>
@@ -250,7 +250,7 @@ export default function SystemFlows() {
 const actorStyles: Record<string, string> = {
   Student: "bg-blue-50 text-blue-700",
   Admin: "bg-red-50 text-red-700",
-  Advisor: "bg-purple-50 text-purple-700",
+  Partner: "bg-purple-50 text-purple-700",
   System: "bg-gray-100 text-gray-700",
   "Content Author": "bg-teal-50 text-teal-700",
   Firebase: "bg-amber-50 text-amber-700",
