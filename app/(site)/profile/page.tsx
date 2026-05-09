@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
+import ChildrenSection from "@/components/profile/ChildrenSection";
 
 
 async function getUser() {
@@ -192,6 +193,9 @@ export default async function ProfilePage() {
             <Row label="User ID" value={uid} mono />
           </div>
         </div>
+
+        {/* Brain training: child profiles */}
+        <ChildrenSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
 
         {/* Subscription */}
         <SubscriptionSection profile={user.profile} role={role} />

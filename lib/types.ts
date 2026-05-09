@@ -85,3 +85,23 @@ export interface ContentAuthorPermissions {
   viewConfiguration: boolean;
   viewAdvisors: boolean;
 }
+
+// ── Brain training: child profiles ─────────────────────────────────────
+// Per cognilift-privacy-consent.md: parent-owned account model.
+// Kids 5–15 never have their own Firebase Auth account.
+
+export type AgeGroup =
+  | "foundation"     // 5–6: simplest activities
+  | "early-builder"  // 7–8: pattern recognition starts
+  | "skill-builder"  // 9–12: logical reasoning
+  | "advanced-thinker"; // 13–15: decision making, multi-step
+
+export interface ChildProfile {
+  id: string;            // Firestore doc ID
+  name: string;          // First name only — no last name (data minimisation)
+  age: number;           // 5–15
+  ageGroup: AgeGroup;    // Derived from age, stored for fast filtering
+  consentGiven: boolean; // Required true on creation per DPDP
+  consentAt: Date | null;
+  createdAt: Date | null;
+}

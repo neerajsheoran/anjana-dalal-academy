@@ -39,11 +39,55 @@ export default function PrivacyPage() {
             security practices.
           </p>
 
-          <h2>5. Children&apos;s Privacy</h2>
+          <h2>5. Children&apos;s Data and Parental Consent</h2>
           <p>
-            CogniLift is designed for students of all ages, including children under 13. We collect only the minimum
-            information necessary for the service to function. If you are a parent or guardian and believe your child
-            has provided personal information without your consent, please contact us and we will delete it promptly.
+            CogniLift offers brain training for kids aged 5–15 through a{' '}
+            <strong>parent-owned account model</strong>. Children do <strong>not</strong> create
+            their own accounts. The parent or legal guardian (18 or older) holds the account
+            and is the data controller for their child&apos;s data, in line with India&apos;s
+            Digital Personal Data Protection Act (DPDP).
+          </p>
+          <p>For each child profile created under a parent account, we store only:</p>
+          <ul>
+            <li>First name (no surname)</li>
+            <li>Age</li>
+            <li>Activity attempts and brain-training scores (Phase 2 onward)</li>
+            <li>A timestamp confirming the parent&apos;s consent at profile creation</li>
+          </ul>
+          <p>We do <strong>not</strong> collect or store:</p>
+          <ul>
+            <li>Photographs or images of children</li>
+            <li>School name, class, or contact information for children</li>
+            <li>Behavioural profiles for any purpose other than brain training</li>
+            <li>Any data that is shared with third parties or used for advertising</li>
+          </ul>
+          <p>
+            Profile switching is gated by a 4-digit Parent PIN set on first child profile
+            creation. This prevents the child from changing settings, switching profiles, or
+            accessing payment screens.
+          </p>
+          <p>
+            <strong>Your rights as parent or guardian:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Right to access:</strong> view all data stored about your child via your
+              profile dashboard
+            </li>
+            <li>
+              <strong>Right to delete:</strong> remove a child&apos;s profile (and all their
+              attempts/scores) at any time from your profile dashboard
+            </li>
+            <li>
+              <strong>Right to withdraw consent:</strong> deleting the profile is treated as
+              full withdrawal of consent
+            </li>
+          </ul>
+          <p>
+            If you believe a child&apos;s profile has been created without verified parental
+            consent, contact us at{' '}
+            <a href="mailto:support@cognilift.in">support@cognilift.in</a> and we will delete
+            it within 30 days.
           </p>
 
           <h2>6. Cookies</h2>
