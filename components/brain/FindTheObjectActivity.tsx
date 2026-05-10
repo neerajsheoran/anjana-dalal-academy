@@ -5,28 +5,28 @@
 // First tap ends the round (no submit button) — accuracy + time scored.
 // Reuses the same scoring/insight/persistence pipeline as PatternRecallActivity.
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { ModuleKey } from '@/lib/brain-modules';
+import {
+  FIND_OBJECT_CONFIG,
+  ANIMAL_POOL_LARGE,
+  DIFFICULTY_LABEL,
+  DIFFICULTY_BADGE_BG,
+  type Difficulty,
+} from '@/lib/difficulty';
+import type { AdaptiveSource } from '@/lib/adaptive';
+import AdaptiveBanner from '@/components/brain/AdaptiveBanner';
 
-// ── Game config ──────────────────────────────────────────────────────────
-const GRID_SIZE = 3;
-const TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
 const TOTAL_ROUNDS = 3;
-const EXPECTED_TIME_SECONDS = 5; // Finding should be quick
-
-// 20 visually distinct animal emojis to draw from
-const ANIMAL_POOL = [
-  '🐶', '🐱', '🐰', '🦁', '🐸', '🐻', '🐼', '🦊', '🐨', '🐵',
-  '🐯', '🐮', '🐷', '🐔', '🦄', '🐢', '🐘', '🐧', '🐳', '🐝',
-];
 
 type Phase =
   | 'instruction'
   | 'playing'
+  | 'roundResult'
   | 'reflection'
-  | 'result'
+  | 'submitting'
   | 'summary';
 
 interface ReflectionOption {
@@ -51,9 +51,16 @@ interface RoundResult {
   insightMessage: string;
 }
 
+interface RoundData {
+  setup: RoundSetup;
+  tappedIndex: number;
+  isCorrect: boolean;
+  timeTakenSeconds: number;
+}
+
 // Pick `count` distinct animals from the pool
 function pickAnimals(count: number): string[] {
-  const shuffled = [...ANIMAL_POOL];
+  const shuffled = [...ANIMAL_POOL_LARGE];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -62,29 +69,38 @@ function pickAnimals(count: number): string[] {
 }
 
 interface RoundSetup {
-  cells: string[];      // 9 distinct animal emojis
+  cells: string[];      // distinct animal emojis (length = totalCells)
   target: string;       // one of cells[]
   targetIndex: number;  // index in cells[] for verification
 }
 
-function generateRound(): RoundSetup {
-  const cells = pickAnimals(TOTAL_CELLS);
-  const targetIndex = Math.floor(Math.random() * TOTAL_CELLS);
+function generateRound(totalCells: number): RoundSetup {
+  const cells = pickAnimals(totalCells);
+  const targetIndex = Math.floor(Math.random() * totalCells);
   return { cells, target: cells[targetIndex], targetIndex };
 }
 
 export default function FindTheObjectActivity({
   moduleKey,
   childName,
+  difficulty,
+  adaptiveSource,
+  previousLevel,
 }: {
   moduleKey: ModuleKey;
   childName: string;
+  difficulty: Difficulty;
+  adaptiveSource?: AdaptiveSource;
+  previousLevel?: Difficulty;
 }) {
+  const config = FIND_OBJECT_CONFIG[difficulty];
+  const TOTAL_CELLS = config.gridSize * config.gridSize;
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('instruction');
   const [round, setRound] = useState(1);
   const [setup, setSetup] = useState<RoundSetup | null>(null);
   const [tappedIndex, setTappedIndex] = useState<number | null>(null);
+  const [roundData, setRoundData] = useState<RoundData[]>([]);
   const [results, setResults] = useState<RoundResult[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
@@ -92,7 +108,7 @@ export default function FindTheObjectActivity({
   const timeTakenRef = useRef<number>(0);
 
   function startRound() {
-    setSetup(generateRound());
+    setSetup(generateRound(TOTAL_CELLS));
     setTappedIndex(null);
     setError('');
     startTimeRef.current = Date.now();
@@ -103,74 +119,97 @@ export default function FindTheObjectActivity({
     if (phase !== 'playing' || !setup) return;
     timeTakenRef.current = (Date.now() - startTimeRef.current) / 1000;
     setTappedIndex(index);
-    setPhase('reflection');
+    const isCorrect = index === setup.targetIndex;
+    setRoundData((prev) => [
+      ...prev,
+      {
+        setup,
+        tappedIndex: index,
+        isCorrect,
+        timeTakenSeconds: timeTakenRef.current,
+      },
+    ]);
+    setPhase('roundResult');
+  }
+
+  function advanceFromRoundResult() {
+    if (round < TOTAL_ROUNDS) {
+      setRound(round + 1);
+      startRound();
+    } else {
+      setPhase('reflection');
+    }
   }
 
   async function handleReflectionPick(opt: ReflectionOption) {
-    if (!setup || tappedIndex === null) return;
     setSubmitting(true);
     setError('');
-
-    const isCorrect = tappedIndex === setup.targetIndex;
+    setPhase('submitting');
 
     try {
-      const res = await fetch('/api/attempts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          activityKey: 'find-the-object',
-          moduleKey,
-          difficultyLevel: 'easy',
-          contentVariant: 'abstract',
-          isCorrect,
-          accuracyPercent: isCorrect ? 100 : 0,
-          timeTakenSeconds: timeTakenRef.current,
-          expectedTimeSeconds: EXPECTED_TIME_SECONDS,
-          confidence: opt.confidence,
-          reflection: opt.reflection,
-          answerJson: { tappedIndex, tappedEmoji: setup.cells[tappedIndex] },
-          correctAnswerJson: { targetIndex: setup.targetIndex, targetEmoji: setup.target },
+      const responses = await Promise.all(
+        roundData.map((r) =>
+          fetch('/api/attempts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              activityKey: 'find-the-object',
+              moduleKey,
+              difficultyLevel: difficulty,
+              contentVariant: 'abstract',
+              isCorrect: r.isCorrect,
+              accuracyPercent: r.isCorrect ? 100 : 0,
+              timeTakenSeconds: r.timeTakenSeconds,
+              expectedTimeSeconds: config.expectedTimeSeconds,
+              confidence: opt.confidence,
+              reflection: opt.reflection,
+              answerJson: {
+                tappedIndex: r.tappedIndex,
+                tappedEmoji: r.setup.cells[r.tappedIndex],
+                gridSize: config.gridSize,
+              },
+              correctAnswerJson: {
+                targetIndex: r.setup.targetIndex,
+                targetEmoji: r.setup.target,
+              },
+            }),
+          }),
+        ),
+      );
+
+      const parsed = await Promise.all(
+        responses.map(async (res, i) => {
+          if (!res.ok) {
+            const data = await res.json().catch(() => ({}));
+            throw new Error(data.error || `Failed to save round ${i + 1}`);
+          }
+          return res.json() as Promise<{
+            scores: { finalActivityScore: number };
+            insight: { title: string; message: string };
+          }>;
         }),
-      });
+      );
 
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || 'Failed to save attempt');
-      }
-
-      const data = (await res.json()) as {
-        scores: { finalActivityScore: number };
-        insight: { title: string; message: string };
-      };
-
-      setResults((prev) => [
-        ...prev,
-        {
-          isCorrect,
+      setResults(
+        parsed.map((data, i) => ({
+          isCorrect: roundData[i].isCorrect,
           finalScore: data.scores.finalActivityScore,
           insightTitle: data.insight.title,
           insightMessage: data.insight.message,
-        },
-      ]);
-      setPhase('result');
+        })),
+      );
+      setPhase('summary');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Could not save round');
+      setError(err instanceof Error ? err.message : 'Could not save attempts');
+      setPhase('reflection');
     } finally {
       setSubmitting(false);
     }
   }
 
-  function handleContinue() {
-    if (round < TOTAL_ROUNDS) {
-      setRound(round + 1);
-      startRound();
-    } else {
-      setPhase('summary');
-    }
-  }
-
   function handleRestart() {
     setRound(1);
+    setRoundData([]);
     setResults([]);
     setTappedIndex(null);
     setSetup(null);
@@ -178,7 +217,7 @@ export default function FindTheObjectActivity({
     setPhase('instruction');
   }
 
-  const lastResult = results[results.length - 1];
+  const lastRoundData = roundData[roundData.length - 1];
   const correctCount = results.filter((r) => r.isCorrect).length;
   const avgScore =
     results.length > 0
@@ -199,7 +238,7 @@ export default function FindTheObjectActivity({
           >
             ← Exit
           </Link>
-          {phase !== 'instruction' && phase !== 'summary' && (
+          {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
             <p className="text-xs font-semibold text-green-600 uppercase tracking-widest">
               Round {round} / {TOTAL_ROUNDS}
             </p>
@@ -214,9 +253,21 @@ export default function FindTheObjectActivity({
               🎯
             </div>
             <h1 className="text-xl font-bold text-gray-800 mb-1">Find the Object</h1>
-            <p className="text-green-600 text-xs font-semibold mb-4">
+            <p className="text-green-600 text-xs font-semibold mb-3">
               A Focus game · {TOTAL_ROUNDS} rounds
             </p>
+            <span
+              className={`inline-block text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4 ${DIFFICULTY_BADGE_BG[difficulty]}`}
+            >
+              {DIFFICULTY_LABEL[difficulty]} mode · {config.gridSize}×{config.gridSize} grid
+            </span>
+            {adaptiveSource && (
+              <AdaptiveBanner
+                source={adaptiveSource}
+                current={difficulty}
+                previous={previousLevel}
+              />
+            )}
             <ol className="text-left text-sm text-gray-600 space-y-2 mb-6">
               <li>
                 <strong className="text-gray-800">1.</strong> You&apos;ll see a target animal at the top
@@ -247,30 +298,92 @@ export default function FindTheObjectActivity({
               <p className="text-xs text-gray-500 mb-1">Find this:</p>
               <div className="text-5xl">{setup.target}</div>
             </div>
-            <div className="grid grid-cols-3 gap-2.5">
-              {setup.cells.map((emoji, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => handleCellTap(i)}
-                  className="aspect-square rounded-xl bg-gray-50 hover:bg-green-50 active:bg-green-100 active:scale-95 border-2 border-gray-100 hover:border-green-200 flex items-center justify-center text-4xl transition-all"
-                  aria-label={`Cell ${i + 1}`}
-                >
-                  {emoji}
-                </button>
-              ))}
+            <div
+              className="grid gap-2"
+              style={{ gridTemplateColumns: `repeat(${config.gridSize}, minmax(0, 1fr))` }}
+            >
+              {setup.cells.map((emoji, i) => {
+                // Scale emoji size down as grid grows so they still fit
+                const emojiSize =
+                  config.gridSize <= 3 ? 'text-4xl' : config.gridSize === 4 ? 'text-3xl' : 'text-2xl';
+                return (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => handleCellTap(i)}
+                    className={`aspect-square rounded-lg bg-gray-50 hover:bg-green-50 active:bg-green-100 active:scale-95 border-2 border-gray-100 hover:border-green-200 flex items-center justify-center transition-all ${emojiSize}`}
+                    aria-label={`Cell ${i + 1}`}
+                  >
+                    {emoji}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}
 
-        {/* ── Phase: Reflection ──────────────────────────────────────── */}
+        {/* ── Phase: Round result (between-round feedback) ─────────────── */}
+        {phase === 'roundResult' && lastRoundData && (
+          <div className="bg-white rounded-2xl shadow-lg p-5 text-center">
+            <div
+              className={`w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl ${
+                lastRoundData.isCorrect
+                  ? 'bg-green-100 text-green-600'
+                  : 'bg-amber-100 text-amber-600'
+              }`}
+            >
+              {lastRoundData.isCorrect ? '✓' : '○'}
+            </div>
+            <h2 className="text-lg font-bold text-gray-800 mb-3">
+              {lastRoundData.isCorrect ? 'Got it!' : 'Not quite'}
+            </h2>
+
+            {/* Reveal target vs your tap */}
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <div className="text-center">
+                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">
+                  Target
+                </p>
+                <div className="w-16 h-16 rounded-xl bg-green-100 border-2 border-green-300 flex items-center justify-center text-3xl">
+                  {lastRoundData.setup.target}
+                </div>
+              </div>
+              <div className="text-2xl text-gray-300">→</div>
+              <div className="text-center">
+                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">
+                  You tapped
+                </p>
+                <div
+                  className={`w-16 h-16 rounded-xl border-2 flex items-center justify-center text-3xl ${
+                    lastRoundData.isCorrect
+                      ? 'bg-green-100 border-green-300'
+                      : 'bg-red-100 border-red-300'
+                  }`}
+                >
+                  {lastRoundData.setup.cells[lastRoundData.tappedIndex]}
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={advanceFromRoundResult}
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
+            >
+              {round < TOTAL_ROUNDS
+                ? `Next round (${round + 1}/${TOTAL_ROUNDS}) →`
+                : 'How did that go? →'}
+            </button>
+          </div>
+        )}
+
+        {/* ── Phase: Reflection (single picker after round 3) ──────────── */}
         {phase === 'reflection' && (
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <h2 className="text-base font-bold text-gray-800 text-center mb-1">
-              How did that go?
+              How did the whole thing feel?
             </h2>
             <p className="text-xs text-gray-500 text-center mb-5">
-              Tap the one that fits best
+              {childName}, pick the one that fits best
             </p>
             <div className="grid grid-cols-2 gap-3">
               {REFLECTION_OPTIONS.map((opt) => (
@@ -286,72 +399,15 @@ export default function FindTheObjectActivity({
               ))}
             </div>
             {error && <p className="text-red-500 text-xs text-center mt-3">{error}</p>}
-            {submitting && (
-              <p className="text-xs text-green-600 text-center mt-3 animate-pulse">
-                Saving…
-              </p>
-            )}
           </div>
         )}
 
-        {/* ── Phase: Result + Insight ────────────────────────────────── */}
-        {phase === 'result' && lastResult && setup && tappedIndex !== null && (
-          <div className="bg-white rounded-2xl shadow-lg p-5 text-center">
-            <div
-              className={`w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl ${
-                lastResult.isCorrect
-                  ? 'bg-green-100 text-green-600'
-                  : 'bg-amber-100 text-amber-600'
-              }`}
-            >
-              {lastResult.isCorrect ? '✓' : '○'}
-            </div>
-            <h2 className="text-lg font-bold text-gray-800 mb-1">
-              {lastResult.insightTitle}
-            </h2>
-            <p className="text-sm text-gray-500 mb-4 px-2 leading-relaxed">
-              {lastResult.insightMessage}
-            </p>
-
-            {/* Reveal target vs your tap */}
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <div className="text-center">
-                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">
-                  Target
-                </p>
-                <div className="w-16 h-16 rounded-xl bg-green-100 border-2 border-green-300 flex items-center justify-center text-3xl">
-                  {setup.target}
-                </div>
-              </div>
-              <div className="text-2xl text-gray-300">→</div>
-              <div className="text-center">
-                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">
-                  You tapped
-                </p>
-                <div
-                  className={`w-16 h-16 rounded-xl border-2 flex items-center justify-center text-3xl ${
-                    lastResult.isCorrect
-                      ? 'bg-green-100 border-green-300'
-                      : 'bg-red-100 border-red-300'
-                  }`}
-                >
-                  {setup.cells[tappedIndex]}
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-green-50 rounded-xl p-2 mb-4">
-              <p className="text-xs text-green-700">
-                Round score: <strong>{lastResult.finalScore}/100</strong>
-              </p>
-            </div>
-
-            <button
-              onClick={handleContinue}
-              className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
-            >
-              {round < TOTAL_ROUNDS ? `Next round (${round + 1}/${TOTAL_ROUNDS}) →` : 'See summary'}
-            </button>
+        {/* ── Phase: Submitting ───────────────────────────────────────── */}
+        {phase === 'submitting' && (
+          <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+            <div className="w-12 h-12 border-4 border-green-200 border-t-green-600 rounded-full animate-spin mx-auto mb-4" />
+            <p className="text-sm font-semibold text-gray-700">Saving your results…</p>
+            <p className="text-xs text-gray-400 mt-1">This takes a few seconds</p>
           </div>
         )}
 
@@ -372,25 +428,32 @@ export default function FindTheObjectActivity({
               <p className="text-[10px] text-gray-400">out of 100</p>
             </div>
 
-            <div className="space-y-2 mb-5 text-left">
+            <div className="space-y-3 mb-5 text-left">
               {results.map((r, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2"
-                >
-                  <span className="text-xs text-gray-500">Round {i + 1}</span>
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`text-xs font-semibold ${
-                        r.isCorrect ? 'text-green-600' : 'text-amber-600'
-                      }`}
-                    >
-                      {r.isCorrect ? 'Correct' : 'Missed'}
+                <div key={i} className="bg-gray-50 rounded-xl p-3">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-xs font-semibold text-gray-500">
+                      Round {i + 1}
                     </span>
-                    <span className="text-xs font-bold text-green-600">
-                      {r.finalScore}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`text-xs font-semibold ${
+                          r.isCorrect ? 'text-green-600' : 'text-amber-600'
+                        }`}
+                      >
+                        {r.isCorrect ? 'Correct' : 'Missed'}
+                      </span>
+                      <span className="text-xs font-bold text-green-600">
+                        {r.finalScore}/100
+                      </span>
+                    </div>
                   </div>
+                  <p className="text-xs font-semibold text-gray-800 mt-1">
+                    {r.insightTitle}
+                  </p>
+                  <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">
+                    {r.insightMessage}
+                  </p>
                 </div>
               ))}
             </div>

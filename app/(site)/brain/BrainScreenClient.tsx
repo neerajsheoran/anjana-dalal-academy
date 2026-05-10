@@ -39,14 +39,14 @@ export default function BrainScreenClient({ childName }: { childName: string }) 
 
         {/* Brain visual: 4 stacked images, only active is visible. Hot-spots overlay. */}
         <div className="relative aspect-square w-full">
-          {/* Base — always rendered (loads first), fades to 0 once a zone is picked */}
+          {/* Base — transparent PNG, always rendered behind variants */}
           <Image
-            src="/images/brain/brain_base.png"
+            src="/images/brain/brain_base_transparent.png"
             alt="Brain"
             fill
             priority
             sizes="(max-width: 448px) 100vw, 448px"
-            className="object-contain transition-opacity duration-300 opacity-0"
+            className="object-contain"
           />
           {/* Highlighted variants — each visible only when its zone is selected */}
           {(['thinking', 'focus', 'memory'] as ModuleKey[]).map((zone) => (

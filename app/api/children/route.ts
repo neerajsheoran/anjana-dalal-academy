@@ -6,7 +6,11 @@
 // explicit parental consent at creation time (DPDP).
 
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
-import { deriveAgeGroup, isValidAge } from "@/lib/age-group";
+import {
+  deriveAgeGroup,
+  isValidAge,
+  isValidClassId,
+} from "@/lib/age-group";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
@@ -43,6 +47,7 @@ export async function GET() {
         name: (d.name as string) || "",
         age: (d.age as number) || 0,
         ageGroup: (d.ageGroup as string) || "foundation",
+        classId: (d.classId as string) || null,
         createdAt: d.createdAt?.toDate?.()?.toISOString?.() || null,
       };
     });
@@ -59,7 +64,12 @@ export async function POST(req: Request) {
   if (typeof auth !== "string") return auth;
   const uid = auth;
 
-  let body: { name?: unknown; age?: unknown; consent?: unknown };
+  let body: {
+    name?: unknown;
+    age?: unknown;
+    classId?: unknown;
+    consent?: unknown;
+  };
   try {
     body = await req.json();
   } catch {
@@ -69,12 +79,29 @@ export async function POST(req: Request) {
   const name = typeof body.name === "string" ? body.name.trim() : "";
   const age = typeof body.age === "number" ? body.age : NaN;
   const consent = body.consent === true;
+  // Optional. Empty string / undefined / null → no class set.
+  const rawClass = body.classId;
+  const classId =
+    typeof rawClass === "string" && rawClass !== "" && isValidClassId(rawClass)
+      ? rawClass
+      : null;
 
   if (!name || name.length > 50) {
     return NextResponse.json({ error: "Name is required (max 50 chars)" }, { status: 400 });
   }
   if (!isValidAge(age)) {
     return NextResponse.json({ error: "Age must be a whole number 5–15" }, { status: 400 });
+  }
+  if (
+    rawClass !== undefined &&
+    rawClass !== null &&
+    rawClass !== "" &&
+    !isValidClassId(rawClass)
+  ) {
+    return NextResponse.json(
+      { error: "Invalid class. Must be class-1 through class-10." },
+      { status: 400 },
+    );
   }
   if (!consent) {
     return NextResponse.json(
@@ -92,6 +119,7 @@ export async function POST(req: Request) {
         name,
         age,
         ageGroup: deriveAgeGroup(age),
+        ...(classId ? { classId } : {}),
         consentGiven: true,
         consentAt: FieldValue.serverTimestamp(),
         createdAt: FieldValue.serverTimestamp(),

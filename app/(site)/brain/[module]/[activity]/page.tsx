@@ -9,9 +9,13 @@ import {
   BRAIN_MODULES,
   type ModuleKey,
 } from "@/lib/brain-modules";
+import { getAdaptiveDifficulty, type AdaptiveSource } from "@/lib/adaptive";
+import type { Difficulty } from "@/lib/difficulty";
 import PatternRecallActivity from "@/components/brain/PatternRecallActivity";
 import FindTheObjectActivity from "@/components/brain/FindTheObjectActivity";
 import PatternLogicActivity from "@/components/brain/PatternLogicActivity";
+import NumberRecallActivity from "@/components/brain/NumberRecallActivity";
+import NumberSequenceActivity from "@/components/brain/NumberSequenceActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -56,12 +60,25 @@ export default async function ActivityPage({
     );
   }
 
+  const adaptive = await getAdaptiveDifficulty(
+    activeChild.parentUid,
+    activeChild.id,
+    activityKey,
+    activeChild.age,
+  );
+  const difficulty: Difficulty = adaptive.difficulty;
+  const adaptiveSource: AdaptiveSource = adaptive.source;
+  const previousLevel: Difficulty | undefined = adaptive.previousLevel;
+
   // Route to the right activity component
   if (activityKey === "pattern-recall") {
     return (
       <PatternRecallActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
       />
     );
   }
@@ -70,6 +87,9 @@ export default async function ActivityPage({
       <FindTheObjectActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
       />
     );
   }
@@ -78,6 +98,31 @@ export default async function ActivityPage({
       <PatternLogicActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "number-recall") {
+    return (
+      <NumberRecallActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "number-sequence") {
+    return (
+      <NumberSequenceActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
       />
     );
   }

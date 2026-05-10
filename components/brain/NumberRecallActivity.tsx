@@ -1,15 +1,15 @@
 'use client';
 
-// Pattern Recall — Memory module MVP activity for the brain training flow.
-// Different from /try (the no-signup demo): saves attempts to Firestore via
-// /api/attempts, captures reflection + confidence, shows insight per round.
+// Number Recall — Memory module, elder-kid activity.
+// Show a digit sequence for a few seconds, then the kid types it back via
+// an on-screen numpad. Tests numerical working memory (digit span).
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
-  PATTERN_RECALL_CONFIG,
+  NUMBER_RECALL_CONFIG,
   DIFFICULTY_LABEL,
   DIFFICULTY_BADGE_BG,
   type Difficulty,
@@ -23,28 +23,24 @@ type Phase =
   | 'instruction'
   | 'showing'
   | 'recalling'
-  | 'roundResult'  // brief between-round feedback (no insight/score yet)
-  | 'reflection'   // single picker after all rounds, before summary
-  | 'submitting'   // posting all 3 attempts to API
+  | 'roundResult'
+  | 'reflection'
+  | 'submitting'
   | 'summary';
 
 interface ReflectionOption {
-  key: 'felt-easy' | 'felt-tricky' | 'guessed' | 'rushed';
+  key: 'felt-easy' | 'felt-tricky' | 'rushed' | 'guessed';
   label: string;
   emoji: string;
   confidence: 'low' | 'medium' | 'high';
-  reflection:
-    | 'understood'
-    | 'looked-carefully'
-    | 'guessed'
-    | 'distracted';
+  reflection: 'understood' | 'looked-carefully' | 'guessed' | 'distracted';
 }
 
 const REFLECTION_OPTIONS: ReflectionOption[] = [
-  { key: 'felt-easy', label: 'Felt easy', emoji: '😊', confidence: 'high', reflection: 'understood' },
+  { key: 'felt-easy',   label: 'Felt easy',   emoji: '😊', confidence: 'high',   reflection: 'understood' },
   { key: 'felt-tricky', label: 'Felt tricky', emoji: '🤔', confidence: 'medium', reflection: 'looked-carefully' },
-  { key: 'rushed', label: 'I rushed', emoji: '⚡', confidence: 'medium', reflection: 'distracted' },
-  { key: 'guessed', label: 'I guessed', emoji: '🎲', confidence: 'low', reflection: 'guessed' },
+  { key: 'rushed',      label: 'I rushed',    emoji: '⚡', confidence: 'medium', reflection: 'distracted' },
+  { key: 'guessed',     label: 'I guessed',   emoji: '🎲', confidence: 'low',    reflection: 'guessed' },
 ];
 
 interface RoundResult {
@@ -54,23 +50,25 @@ interface RoundResult {
   insightMessage: string;
 }
 
-// Snapshot of one round, captured immediately so the next round can overwrite
-// the live state without losing what to send to the API later.
 interface RoundData {
-  pattern: number[];
-  selected: number[];
+  digits: number[];
+  entered: number[];
   isCorrect: boolean;
   accuracyPercent: number;
   timeTakenSeconds: number;
 }
 
-function generatePattern(totalCells: number, cellsToRemember: number): number[] {
-  const all = Array.from({ length: totalCells }, (_, i) => i);
-  for (let i = all.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [all[i], all[j]] = [all[j], all[i]];
+function generateDigits(count: number): number[] {
+  // No leading-zero concern (we render as a sequence, not a single number),
+  // but avoid 3+ repeats in a row to keep it interesting.
+  const out: number[] = [];
+  while (out.length < count) {
+    const d = Math.floor(Math.random() * 10);
+    const last2 = out.slice(-2);
+    if (last2.length === 2 && last2[0] === d && last2[1] === d) continue;
+    out.push(d);
   }
-  return all.slice(0, cellsToRemember).sort((a, b) => a - b);
+  return out;
 }
 
 function arrayEquals(a: number[], b: number[]): boolean {
@@ -78,7 +76,7 @@ function arrayEquals(a: number[], b: number[]): boolean {
   return a.every((v, i) => v === b[i]);
 }
 
-export default function PatternRecallActivity({
+export default function NumberRecallActivity({
   moduleKey,
   childName,
   difficulty,
@@ -91,13 +89,12 @@ export default function PatternRecallActivity({
   adaptiveSource?: AdaptiveSource;
   previousLevel?: Difficulty;
 }) {
-  const config = PATTERN_RECALL_CONFIG[difficulty];
-  const TOTAL_CELLS = config.gridSize * config.gridSize;
+  const config = NUMBER_RECALL_CONFIG[difficulty];
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('instruction');
   const [round, setRound] = useState(1);
-  const [pattern, setPattern] = useState<number[]>([]);
-  const [selected, setSelected] = useState<Set<number>>(new Set());
+  const [digits, setDigits] = useState<number[]>([]);
+  const [entered, setEntered] = useState<number[]>([]);
   const [roundData, setRoundData] = useState<RoundData[]>([]);
   const [results, setResults] = useState<RoundResult[]>([]);
   const [submitting, setSubmitting] = useState(false);
@@ -117,35 +114,35 @@ export default function PatternRecallActivity({
   }, [phase, config.showDurationMs]);
 
   function startRound() {
-    setPattern(generatePattern(TOTAL_CELLS, config.cellsToRemember));
-    setSelected(new Set());
+    setDigits(generateDigits(config.digitCount));
+    setEntered([]);
     setError('');
     setPhase('showing');
   }
 
-  function toggleCell(i: number) {
+  function handleDigitTap(d: number) {
     if (phase !== 'recalling') return;
-    setSelected((prev) => {
-      const next = new Set(prev);
-      if (next.has(i)) next.delete(i);
-      else next.add(i);
-      return next;
-    });
+    if (entered.length >= config.digitCount) return;
+    setEntered((prev) => [...prev, d]);
   }
 
-  function handleSubmitRecall() {
+  function handleBackspace() {
+    if (phase !== 'recalling') return;
+    setEntered((prev) => prev.slice(0, -1));
+  }
+
+  function handleSubmit() {
+    if (entered.length === 0) return;
     timeTakenRef.current = (Date.now() - startTimeRef.current) / 1000;
-    const userArr = Array.from(selected).sort((a, b) => a - b);
-    const isCorrect = arrayEquals(userArr, pattern);
-    const correctOverlap = userArr.filter((c) => pattern.includes(c)).length;
-    const accuracyPercent = Math.round(
-      (correctOverlap / pattern.length) * 100,
-    );
+    const isCorrect = arrayEquals(entered, digits);
+    // Partial credit: positionally correct digits / total
+    const positionalMatches = entered.filter((d, i) => d === digits[i]).length;
+    const accuracyPercent = Math.round((positionalMatches / digits.length) * 100);
     setRoundData((prev) => [
       ...prev,
       {
-        pattern: [...pattern],
-        selected: userArr,
+        digits: [...digits],
+        entered: [...entered],
         isCorrect,
         accuracyPercent,
         timeTakenSeconds: timeTakenRef.current,
@@ -175,7 +172,7 @@ export default function PatternRecallActivity({
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              activityKey: 'pattern-recall',
+              activityKey: 'number-recall',
               moduleKey,
               difficultyLevel: difficulty,
               contentVariant: 'abstract',
@@ -185,8 +182,8 @@ export default function PatternRecallActivity({
               expectedTimeSeconds: config.expectedTimeSeconds,
               confidence: opt.confidence,
               reflection: opt.reflection,
-              answerJson: { selectedCells: r.selected, gridSize: config.gridSize },
-              correctAnswerJson: { correctCells: r.pattern },
+              answerJson: { entered: r.entered, digitCount: config.digitCount },
+              correctAnswerJson: { digits: r.digits },
             }),
           }),
         ),
@@ -226,12 +223,12 @@ export default function PatternRecallActivity({
     setRound(1);
     setRoundData([]);
     setResults([]);
-    setSelected(new Set());
+    setEntered([]);
+    setDigits([]);
     setError('');
     setPhase('instruction');
   }
 
-  // For roundResult: read the last captured round (just-completed)
   const lastRoundData = roundData[roundData.length - 1];
   const correctCount = results.filter((r) => r.isCorrect).length;
   const avgScore =
@@ -241,16 +238,15 @@ export default function PatternRecallActivity({
         )
       : 0;
 
+  const numpad = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-8 px-4">
       <div className="max-w-sm mx-auto">
 
-        {/* Top bar: round counter + exit */}
+        {/* Top bar */}
         <div className="flex items-center justify-between mb-4">
-          <Link
-            href={`/brain/${moduleKey}`}
-            className="text-xs text-gray-500 hover:text-gray-700"
-          >
+          <Link href={`/brain/${moduleKey}`} className="text-xs text-gray-500 hover:text-gray-700">
             ← Exit
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
@@ -261,38 +257,28 @@ export default function PatternRecallActivity({
           <div className="w-12" />
         </div>
 
-        {/* ── Phase: Instruction ─────────────────────────────────────── */}
+        {/* Instruction */}
         {phase === 'instruction' && (
           <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
             <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl mx-auto mb-3">
-              🧠
+              🔢
             </div>
-            <h1 className="text-xl font-bold text-gray-800 mb-1">Pattern Recall</h1>
+            <h1 className="text-xl font-bold text-gray-800 mb-1">Number Recall</h1>
             <p className="text-purple-600 text-xs font-semibold mb-3">
               A Memory game · {TOTAL_ROUNDS} rounds
             </p>
             <span
               className={`inline-block text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4 ${DIFFICULTY_BADGE_BG[difficulty]}`}
             >
-              {DIFFICULTY_LABEL[difficulty]} mode · {config.gridSize}×{config.gridSize} · remember {config.cellsToRemember}
+              {DIFFICULTY_LABEL[difficulty]} mode · {config.digitCount} digits
             </span>
             {adaptiveSource && (
-              <AdaptiveBanner
-                source={adaptiveSource}
-                current={difficulty}
-                previous={previousLevel}
-              />
+              <AdaptiveBanner source={adaptiveSource} current={difficulty} previous={previousLevel} />
             )}
             <ol className="text-left text-sm text-gray-600 space-y-2 mb-6">
-              <li>
-                <strong className="text-gray-800">1.</strong> Watch the highlighted boxes
-              </li>
-              <li>
-                <strong className="text-gray-800">2.</strong> They disappear in {(config.showDurationMs / 1000).toFixed(1)} seconds
-              </li>
-              <li>
-                <strong className="text-gray-800">3.</strong> Tap the same boxes you remember
-              </li>
+              <li><strong className="text-gray-800">1.</strong> Watch the digits flash for {(config.showDurationMs / 1000).toFixed(1)} seconds</li>
+              <li><strong className="text-gray-800">2.</strong> They disappear</li>
+              <li><strong className="text-gray-800">3.</strong> Tap the digits in the same order</li>
             </ol>
             <button
               onClick={startRound}
@@ -300,56 +286,87 @@ export default function PatternRecallActivity({
             >
               Start round 1 →
             </button>
-            <p className="text-[11px] text-gray-400 mt-3">
-              Hi {childName} — give it your best!
-            </p>
+            <p className="text-[11px] text-gray-400 mt-3">Hi {childName} — focus on the order!</p>
           </div>
         )}
 
-        {/* ── Phase: Showing or Recalling ────────────────────────────── */}
-        {(phase === 'showing' || phase === 'recalling') && (
-          <div className="bg-white rounded-2xl shadow-lg p-5">
-            <p className="text-center text-sm font-semibold text-gray-600 mb-4">
-              {phase === 'showing' ? 'Watch carefully…' : 'Tap the boxes you remember'}
+        {/* Showing */}
+        {phase === 'showing' && (
+          <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+            <p className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+              Memorize this
             </p>
-            <div
-              className="grid gap-2 mb-5"
-              style={{ gridTemplateColumns: `repeat(${config.gridSize}, minmax(0, 1fr))` }}
-            >
-              {Array.from({ length: TOTAL_CELLS }).map((_, i) => {
-                const isHighlighted = phase === 'showing' && pattern.includes(i);
-                const isSelected = phase === 'recalling' && selected.has(i);
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => toggleCell(i)}
-                    disabled={phase === 'showing'}
-                    className={`aspect-square rounded-lg transition-all ${
-                      isHighlighted
-                        ? 'bg-purple-500 shadow-[0_0_30px_rgba(168,85,247,0.6)]'
-                        : isSelected
-                        ? 'bg-purple-400 ring-4 ring-purple-200'
-                        : 'bg-gray-100 hover:bg-gray-200 active:bg-gray-300'
-                    }`}
-                    aria-label={`Cell ${i + 1}`}
-                  />
-                );
-              })}
+            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3">
+              {digits.map((d, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-12 sm:w-12 sm:h-14 rounded-lg bg-purple-100 text-purple-800 text-2xl sm:text-3xl font-bold flex items-center justify-center shadow-sm"
+                >
+                  {d}
+                </div>
+              ))}
             </div>
-            {phase === 'recalling' && (
-              <button
-                onClick={handleSubmitRecall}
-                disabled={selected.size === 0}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Submit
-              </button>
-            )}
+            <p className="text-[11px] text-gray-400 animate-pulse">Disappearing soon…</p>
           </div>
         )}
 
-        {/* ── Phase: Round result (between-round feedback, no insight/score) ── */}
+        {/* Recalling */}
+        {phase === 'recalling' && (
+          <div className="bg-white rounded-2xl shadow-lg p-5">
+            <p className="text-center text-sm font-semibold text-gray-600 mb-3">
+              Type what you saw
+            </p>
+            {/* Entry boxes */}
+            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-5">
+              {Array.from({ length: config.digitCount }).map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-10 h-12 sm:w-12 sm:h-14 rounded-lg text-2xl sm:text-3xl font-bold flex items-center justify-center border-2 ${
+                    i < entered.length
+                      ? 'bg-purple-100 text-purple-800 border-purple-200'
+                      : 'bg-gray-50 text-gray-300 border-gray-200'
+                  }`}
+                >
+                  {i < entered.length ? entered[i] : '·'}
+                </div>
+              ))}
+            </div>
+            {/* Numpad */}
+            <div className="grid grid-cols-3 gap-2 mb-3">
+              {numpad.slice(0, 9).map((d) => (
+                <button
+                  key={d}
+                  onClick={() => handleDigitTap(d)}
+                  className="h-12 rounded-xl bg-gray-100 hover:bg-purple-100 active:bg-purple-200 text-gray-800 text-xl font-bold transition-colors"
+                >
+                  {d}
+                </button>
+              ))}
+              <button
+                onClick={handleBackspace}
+                disabled={entered.length === 0}
+                className="h-12 rounded-xl bg-gray-100 hover:bg-amber-100 text-gray-700 text-sm font-semibold transition-colors disabled:opacity-30"
+              >
+                ⌫
+              </button>
+              <button
+                onClick={() => handleDigitTap(0)}
+                className="h-12 rounded-xl bg-gray-100 hover:bg-purple-100 active:bg-purple-200 text-gray-800 text-xl font-bold transition-colors"
+              >
+                0
+              </button>
+              <button
+                onClick={handleSubmit}
+                disabled={entered.length === 0}
+                className="h-12 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold transition-colors disabled:opacity-40"
+              >
+                ✓
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Round result */}
         {phase === 'roundResult' && lastRoundData && (
           <div className="bg-white rounded-2xl shadow-lg p-5 text-center">
             <div
@@ -364,37 +381,44 @@ export default function PatternRecallActivity({
             <h2 className="text-lg font-bold text-gray-800 mb-3">
               {lastRoundData.isCorrect ? 'Got it!' : 'Not quite'}
             </h2>
-
-            {/* Visual diff: correct vs your answer */}
-            <div
-              className="grid gap-1.5 mb-3 px-4"
-              style={{ gridTemplateColumns: `repeat(${config.gridSize}, minmax(0, 1fr))` }}
-            >
-              {Array.from({ length: TOTAL_CELLS }).map((_, i) => {
-                const isCorrectCell = pattern.includes(i);
-                const wasSelected = selected.has(i);
-                let bg = 'bg-gray-100';
-                if (isCorrectCell && wasSelected) bg = 'bg-green-400';
-                else if (isCorrectCell && !wasSelected) bg = 'bg-amber-300';
-                else if (!isCorrectCell && wasSelected) bg = 'bg-red-300';
-                return <div key={i} className={`aspect-square rounded-md ${bg}`} />;
-              })}
+            <div className="space-y-2 mb-4">
+              <div>
+                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">Correct</p>
+                <div className="flex items-center justify-center gap-1.5">
+                  {lastRoundData.digits.map((d, i) => (
+                    <div
+                      key={i}
+                      className="w-8 h-10 rounded-lg bg-green-100 text-green-800 text-lg font-bold flex items-center justify-center"
+                    >
+                      {d}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">You</p>
+                <div className="flex items-center justify-center gap-1.5">
+                  {lastRoundData.digits.map((_, i) => {
+                    const v = lastRoundData.entered[i];
+                    const ok = v === lastRoundData.digits[i];
+                    return (
+                      <div
+                        key={i}
+                        className={`w-8 h-10 rounded-lg text-lg font-bold flex items-center justify-center ${
+                          v === undefined
+                            ? 'bg-gray-100 text-gray-300'
+                            : ok
+                            ? 'bg-green-100 text-green-800'
+                            : 'bg-red-100 text-red-700'
+                        }`}
+                      >
+                        {v ?? '·'}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-            <div className="flex justify-center gap-3 text-[10px] text-gray-500 mb-4">
-              <span className="flex items-center gap-1">
-                <span className="inline-block w-2 h-2 bg-green-400 rounded" />
-                Correct
-              </span>
-              <span className="flex items-center gap-1">
-                <span className="inline-block w-2 h-2 bg-amber-300 rounded" />
-                Missed
-              </span>
-              <span className="flex items-center gap-1">
-                <span className="inline-block w-2 h-2 bg-red-300 rounded" />
-                Wrong
-              </span>
-            </div>
-
             <button
               onClick={advanceFromRoundResult}
               className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
@@ -406,7 +430,7 @@ export default function PatternRecallActivity({
           </div>
         )}
 
-        {/* ── Phase: Reflection (single picker after round 3) ──────────── */}
+        {/* Reflection */}
         {phase === 'reflection' && (
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <h2 className="text-base font-bold text-gray-800 text-center mb-1">
@@ -432,7 +456,7 @@ export default function PatternRecallActivity({
           </div>
         )}
 
-        {/* ── Phase: Submitting ───────────────────────────────────────── */}
+        {/* Submitting */}
         {phase === 'submitting' && (
           <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
             <div className="w-12 h-12 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin mx-auto mb-4" />
@@ -441,7 +465,7 @@ export default function PatternRecallActivity({
           </div>
         )}
 
-        {/* ── Phase: Summary ─────────────────────────────────────────── */}
+        {/* Summary */}
         {phase === 'summary' && (
           <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
             <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl mx-auto mb-3">
@@ -451,23 +475,16 @@ export default function PatternRecallActivity({
             <p className="text-sm text-gray-500 mb-4">
               {childName} got {correctCount} out of {TOTAL_ROUNDS} correct
             </p>
-
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 mb-5">
               <p className="text-xs text-gray-500 mb-1">Average score</p>
               <p className="text-3xl font-bold text-purple-700">{avgScore}</p>
               <p className="text-[10px] text-gray-400">out of 100</p>
             </div>
-
             <div className="space-y-3 mb-5 text-left">
               {results.map((r, i) => (
-                <div
-                  key={i}
-                  className="bg-gray-50 rounded-xl p-3"
-                >
+                <div key={i} className="bg-gray-50 rounded-xl p-3">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-semibold text-gray-500">
-                      Round {i + 1}
-                    </span>
+                    <span className="text-xs font-semibold text-gray-500">Round {i + 1}</span>
                     <div className="flex items-center gap-2">
                       <span
                         className={`text-xs font-semibold ${
@@ -476,21 +493,14 @@ export default function PatternRecallActivity({
                       >
                         {r.isCorrect ? 'Correct' : 'Missed'}
                       </span>
-                      <span className="text-xs font-bold text-purple-600">
-                        {r.finalScore}/100
-                      </span>
+                      <span className="text-xs font-bold text-purple-600">{r.finalScore}/100</span>
                     </div>
                   </div>
-                  <p className="text-xs font-semibold text-gray-800 mt-1">
-                    {r.insightTitle}
-                  </p>
-                  <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">
-                    {r.insightMessage}
-                  </p>
+                  <p className="text-xs font-semibold text-gray-800 mt-1">{r.insightTitle}</p>
+                  <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">{r.insightMessage}</p>
                 </div>
               ))}
             </div>
-
             <div className="space-y-2">
               <button
                 onClick={handleRestart}

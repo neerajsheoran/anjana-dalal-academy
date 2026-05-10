@@ -81,6 +81,24 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     maxAge: 15,
     available: true,
   },
+  "number-recall": {
+    key: "number-recall",
+    name: "Number Recall",
+    module: "memory",
+    skill: "Numerical working memory",
+    minAge: 9,
+    maxAge: 15,
+    available: true,
+  },
+  "number-sequence": {
+    key: "number-sequence",
+    name: "Number Sequence",
+    module: "thinking",
+    skill: "Mathematical reasoning",
+    minAge: 11,
+    maxAge: 15,
+    available: true,
+  },
 };
 
 export function getActivitiesForModule(moduleKey: ModuleKey): BrainActivity[] {

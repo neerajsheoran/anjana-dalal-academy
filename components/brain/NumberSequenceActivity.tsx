@@ -1,16 +1,16 @@
 'use client';
 
-// Pattern Logic — Thinking module MVP activity.
-// Mechanic: show an A-B-A-B-? alternating colour sequence; kid picks the
-// correct continuation from 3 multiple-choice options.
-// Reuses the same scoring/insight/persistence pipeline as the other activities.
+// Number Sequence — Thinking module, elder-kid activity.
+// Show 5 numbers following a pattern; kid picks what comes next.
+// Easy: arithmetic (e.g. 2,4,6,8,?). Medium: geometric (e.g. 2,4,8,16,?).
+// Hard: mixed (e.g. squared, Fibonacci-like, alternating ops).
 
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
-  PATTERN_LOGIC_CONFIG,
+  NUMBER_SEQUENCE_CONFIG,
   DIFFICULTY_LABEL,
   DIFFICULTY_BADGE_BG,
   type Difficulty,
@@ -19,9 +19,6 @@ import type { AdaptiveSource } from '@/lib/adaptive';
 import AdaptiveBanner from '@/components/brain/AdaptiveBanner';
 
 const TOTAL_ROUNDS = 3;
-
-// 6 distinct coloured circle emojis. Visually clear; works on all devices.
-const COLOR_POOL = ['🔴', '🔵', '🟡', '🟢', '🟣', '🟠'];
 
 type Phase =
   | 'instruction'
@@ -53,86 +50,106 @@ interface RoundResult {
   insightMessage: string;
 }
 
+interface RoundSetup {
+  sequence: number[];      // numbers shown
+  correct: number;         // the next number
+  options: number[];       // shuffled multiple choice (includes correct)
+  hint: string;            // human-readable pattern hint, shown after answer
+}
+
 interface RoundData {
   setup: RoundSetup;
-  picked: string;
+  picked: number;
   isCorrect: boolean;
   timeTakenSeconds: number;
 }
 
-interface RoundSetup {
-  sequence: string[];     // SEQUENCE_LENGTH alternating colours, e.g. [A, B, A, B]
-  correct: string;        // the continuation (A)
-  options: string[];      // 3 MC options, shuffled (includes correct, B, and 1 distractor)
-}
-
-function pickN<T>(arr: T[], n: number): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
+function shuffle<T>(arr: T[]): T[] {
+  const c = [...arr];
+  for (let i = c.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
+    [c[i], c[j]] = [c[j], c[i]];
   }
-  return copy.slice(0, n);
+  return c;
 }
 
-// Build a round per difficulty. Pattern shapes:
-//   ABAB    → 4 long, next is A (length-even ⇒ continues with A)
-//   AABAAB  → 6 long with 3-step (A,A,B) repeating, next is A
-//   ABCABC  → 6 long with 3-colour cycle, next is A
+function rng(min: number, max: number): number {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function generateRound(
-  patternKind: "ABAB" | "AABAAB" | "ABCABC",
-  sequenceLength: number,
+  patternKind: 'arithmetic' | 'geometric' | 'mixed',
+  showCount: number,
   optionCount: number,
 ): RoundSetup {
-  // Pick enough distinct colours to build the pattern + at least 1 distractor
-  const colorsNeeded =
-    patternKind === "ABCABC" ? 3 : 2; // ABCABC uses 3, ABAB/AABAAB uses 2
-  const distractorCount = Math.max(1, optionCount - colorsNeeded);
-  const picks = pickN(COLOR_POOL, colorsNeeded + distractorCount);
-  const a = picks[0];
-  const b = picks[1];
-  const c = colorsNeeded === 3 ? picks[2] : null;
-  const distractors = picks.slice(colorsNeeded);
+  let sequence: number[] = [];
+  let correct = 0;
+  let hint = '';
 
-  const sequence: string[] = [];
-  let correct = a;
-  if (patternKind === "ABAB") {
-    for (let i = 0; i < sequenceLength; i++) sequence.push(i % 2 === 0 ? a : b);
-    // Even length ⇒ next is A
-    correct = sequenceLength % 2 === 0 ? a : b;
-  } else if (patternKind === "AABAAB") {
-    // Repeating triplet [A, A, B]
-    const triplet = [a, a, b];
-    for (let i = 0; i < sequenceLength; i++) sequence.push(triplet[i % 3]);
-    correct = triplet[sequenceLength % 3];
+  if (patternKind === 'arithmetic') {
+    const start = rng(1, 12);
+    const d = rng(2, 9);
+    sequence = Array.from({ length: showCount }, (_, i) => start + i * d);
+    correct = start + showCount * d;
+    hint = `+${d} each step`;
+  } else if (patternKind === 'geometric') {
+    const start = rng(2, 5);
+    const r = rng(2, 3);
+    sequence = Array.from({ length: showCount }, (_, i) => start * Math.pow(r, i));
+    correct = start * Math.pow(r, showCount);
+    hint = `×${r} each step`;
   } else {
-    // ABCABC — repeating triplet [A, B, C]
-    const triplet = [a, b, c!];
-    for (let i = 0; i < sequenceLength; i++) sequence.push(triplet[i % 3]);
-    correct = triplet[sequenceLength % 3];
+    // mixed: pick one of {squared, fibonacci, alternating-ops}
+    const kind = rng(0, 2);
+    if (kind === 0) {
+      // n² style: 1, 4, 9, 16, 25, ?
+      const start = rng(1, 3);
+      sequence = Array.from({ length: showCount }, (_, i) => Math.pow(start + i, 2));
+      correct = Math.pow(start + showCount, 2);
+      hint = 'each is the next number squared';
+    } else if (kind === 1) {
+      // Fibonacci-like: a, b, a+b, a+2b, 2a+3b, …
+      const a = rng(1, 4);
+      const b = rng(2, 6);
+      sequence = [a, b];
+      while (sequence.length < showCount) {
+        sequence.push(sequence[sequence.length - 2] + sequence[sequence.length - 1]);
+      }
+      correct = sequence[sequence.length - 2] + sequence[sequence.length - 1];
+      hint = 'add the previous two';
+    } else {
+      // alternating ops: +d, ×2, +d, ×2, …
+      const start = rng(1, 5);
+      const d = rng(2, 5);
+      sequence = [start];
+      for (let i = 1; i < showCount; i++) {
+        if (i % 2 === 1) sequence.push(sequence[i - 1] + d);
+        else sequence.push(sequence[i - 1] * 2);
+      }
+      correct =
+        showCount % 2 === 1
+          ? sequence[showCount - 1] + d
+          : sequence[showCount - 1] * 2;
+      hint = `alternates +${d} and ×2`;
+    }
   }
 
-  // Build option set: correct + remaining colours used + distractors,
-  // shuffled, deduped, trimmed to optionCount.
-  const optionSeed = [
-    correct,
-    ...(patternKind === "ABCABC" ? [a, b, c!] : [a, b]),
-    ...distractors,
-  ];
-  const unique: string[] = [];
-  for (const item of optionSeed) {
-    if (!unique.includes(item)) unique.push(item);
+  // Build distractors: nearby numbers that look plausible
+  const distractors = new Set<number>();
+  while (distractors.size < optionCount - 1) {
+    // ±d / ±1 / ±2 around correct
+    const offset = [-2, -1, 1, 2, -3, 3].sort(() => Math.random() - 0.5)[0];
+    const candidate = correct + offset * Math.max(1, Math.floor(correct * 0.05));
+    if (candidate !== correct && candidate > 0 && !distractors.has(candidate)) {
+      distractors.add(candidate);
+    }
+    if (distractors.size > 200) break; // safety
   }
-  // Top up from COLOR_POOL if we somehow don't have enough
-  for (const colour of COLOR_POOL) {
-    if (unique.length >= optionCount) break;
-    if (!unique.includes(colour)) unique.push(colour);
-  }
-  const options = pickN(unique.slice(0, optionCount), optionCount);
-  return { sequence, correct, options };
+  const options = shuffle([correct, ...Array.from(distractors)]);
+  return { sequence, correct, options, hint };
 }
 
-export default function PatternLogicActivity({
+export default function NumberSequenceActivity({
   moduleKey,
   childName,
   difficulty,
@@ -145,12 +162,12 @@ export default function PatternLogicActivity({
   adaptiveSource?: AdaptiveSource;
   previousLevel?: Difficulty;
 }) {
-  const config = PATTERN_LOGIC_CONFIG[difficulty];
+  const config = NUMBER_SEQUENCE_CONFIG[difficulty];
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('instruction');
   const [round, setRound] = useState(1);
   const [setup, setSetup] = useState<RoundSetup | null>(null);
-  const [picked, setPicked] = useState<string | null>(null);
+  const [picked, setPicked] = useState<number | null>(null);
   const [roundData, setRoundData] = useState<RoundData[]>([]);
   const [results, setResults] = useState<RoundResult[]>([]);
   const [submitting, setSubmitting] = useState(false);
@@ -159,14 +176,14 @@ export default function PatternLogicActivity({
   const timeTakenRef = useRef<number>(0);
 
   function startRound() {
-    setSetup(generateRound(config.patternKind, config.sequenceLength, config.optionCount));
+    setSetup(generateRound(config.patternKind, config.showCount, config.optionCount));
     setPicked(null);
     setError('');
     startTimeRef.current = Date.now();
     setPhase('playing');
   }
 
-  function handlePick(option: string) {
+  function handlePick(option: number) {
     if (phase !== 'playing' || !setup) return;
     timeTakenRef.current = (Date.now() - startTimeRef.current) / 1000;
     setPicked(option);
@@ -204,7 +221,7 @@ export default function PatternLogicActivity({
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              activityKey: 'pattern-logic',
+              activityKey: 'number-sequence',
               moduleKey,
               difficultyLevel: difficulty,
               contentVariant: 'abstract',
@@ -219,7 +236,7 @@ export default function PatternLogicActivity({
                 sequence: r.setup.sequence,
                 patternKind: config.patternKind,
               },
-              correctAnswerJson: { correct: r.setup.correct },
+              correctAnswerJson: { correct: r.setup.correct, hint: r.setup.hint },
             }),
           }),
         ),
@@ -278,12 +295,9 @@ export default function PatternLogicActivity({
     <main className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 py-8 px-4">
       <div className="max-w-sm mx-auto">
 
-        {/* Top bar: round counter + exit */}
+        {/* Top bar */}
         <div className="flex items-center justify-between mb-4">
-          <Link
-            href={`/brain/${moduleKey}`}
-            className="text-xs text-gray-500 hover:text-gray-700"
-          >
+          <Link href={`/brain/${moduleKey}`} className="text-xs text-gray-500 hover:text-gray-700">
             ← Exit
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
@@ -294,57 +308,47 @@ export default function PatternLogicActivity({
           <div className="w-12" />
         </div>
 
-        {/* ── Phase: Instruction ─────────────────────────────────────── */}
+        {/* Instruction */}
         {phase === 'instruction' && (
           <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
             <div className="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-3xl mx-auto mb-3">
-              💡
+              🔢
             </div>
-            <h1 className="text-xl font-bold text-gray-800 mb-1">Pattern Logic</h1>
+            <h1 className="text-xl font-bold text-gray-800 mb-1">Number Sequence</h1>
             <p className="text-orange-600 text-xs font-semibold mb-3">
               A Thinking game · {TOTAL_ROUNDS} rounds
             </p>
             <span
               className={`inline-block text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4 ${DIFFICULTY_BADGE_BG[difficulty]}`}
             >
-              {DIFFICULTY_LABEL[difficulty]} mode · {config.patternKind} pattern
+              {DIFFICULTY_LABEL[difficulty]} mode · {config.patternKind}
             </span>
             {adaptiveSource && (
-              <AdaptiveBanner
-                source={adaptiveSource}
-                current={difficulty}
-                previous={previousLevel}
-              />
+              <AdaptiveBanner source={adaptiveSource} current={difficulty} previous={previousLevel} />
             )}
-            <ol className="text-left text-sm text-gray-600 space-y-2 mb-6">
-              <li>
-                <strong className="text-gray-800">1.</strong> You&apos;ll see a pattern of colours
-              </li>
-              <li>
-                <strong className="text-gray-800">2.</strong> Figure out what comes next
-              </li>
-              <li>
-                <strong className="text-gray-800">3.</strong> Pick the right answer
-              </li>
+            <ol className="text-left text-sm text-gray-600 space-y-2 mb-5">
+              <li><strong className="text-gray-800">1.</strong> Look at the numbers</li>
+              <li><strong className="text-gray-800">2.</strong> Figure out the pattern</li>
+              <li><strong className="text-gray-800">3.</strong> Pick the next number</li>
             </ol>
-            <div className="bg-orange-50 rounded-lg p-3 mb-6 text-xs text-gray-600">
+            <div className="bg-orange-50 rounded-lg p-3 mb-5 text-xs text-gray-600 text-left">
               <p className="font-semibold mb-1">Example:</p>
-              {config.patternKind === 'ABAB' && (
+              {config.patternKind === 'arithmetic' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔵 🔴 🔵 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴</p>
+                  <p className="font-mono">2, 4, 6, 8, ?</p>
+                  <p className="text-[11px] text-gray-500">Answer: 10 (+2 each step)</p>
                 </>
               )}
-              {config.patternKind === 'AABAAB' && (
+              {config.patternKind === 'geometric' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔴 🔵 🔴 🔴 🔵 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴 (the triplet repeats)</p>
+                  <p className="font-mono">2, 4, 8, 16, ?</p>
+                  <p className="text-[11px] text-gray-500">Answer: 32 (×2 each step)</p>
                 </>
               )}
-              {config.patternKind === 'ABCABC' && (
+              {config.patternKind === 'mixed' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔵 🟡 🔴 🔵 🟡 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴 (3-colour cycle)</p>
+                  <p className="font-mono">1, 1, 2, 3, 5, ?</p>
+                  <p className="text-[11px] text-gray-500">Answer: 8 (add the previous two)</p>
                 </>
               )}
             </div>
@@ -354,40 +358,37 @@ export default function PatternLogicActivity({
             >
               Start round 1 →
             </button>
-            <p className="text-[11px] text-gray-400 mt-3">
-              Hi {childName} — think it through!
-            </p>
+            <p className="text-[11px] text-gray-400 mt-3">Hi {childName} — think it through!</p>
           </div>
         )}
 
-        {/* ── Phase: Playing ─────────────────────────────────────────── */}
+        {/* Playing */}
         {phase === 'playing' && setup && (
           <div className="bg-white rounded-2xl shadow-lg p-5">
             <p className="text-center text-sm font-semibold text-gray-600 mb-4">
               What comes next?
             </p>
-            {/* Sequence — wraps if long */}
-            <div className="flex items-center justify-center flex-wrap gap-1.5 mb-6 text-3xl sm:text-4xl">
-              {setup.sequence.map((c, i) => (
-                <span key={i}>{c}</span>
+            <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-6">
+              {setup.sequence.map((n, i) => (
+                <div
+                  key={i}
+                  className="min-w-[2.5rem] px-2 py-2 rounded-lg bg-orange-100 text-orange-800 text-xl sm:text-2xl font-bold text-center"
+                >
+                  {n}
+                </div>
               ))}
-              <span className="text-gray-400">❓</span>
+              <div className="min-w-[2.5rem] px-2 py-2 rounded-lg bg-gray-100 text-gray-300 text-xl sm:text-2xl font-bold text-center">
+                ?
+              </div>
             </div>
-            {/* Multiple choice */}
-            <p className="text-center text-xs text-gray-400 mb-3">
-              Pick one
-            </p>
-            <div
-              className="grid gap-3"
-              style={{ gridTemplateColumns: `repeat(${Math.min(config.optionCount, 4)}, minmax(0, 1fr))` }}
-            >
-              {setup.options.map((opt, i) => (
+            <p className="text-center text-xs text-gray-400 mb-3">Pick the answer</p>
+            <div className="grid grid-cols-2 gap-3">
+              {setup.options.map((opt) => (
                 <button
-                  key={`${opt}-${i}`}
+                  key={opt}
                   type="button"
                   onClick={() => handlePick(opt)}
-                  className="aspect-square rounded-xl bg-gray-50 hover:bg-orange-50 active:bg-orange-100 active:scale-95 border-2 border-gray-100 hover:border-orange-200 flex items-center justify-center text-3xl sm:text-4xl transition-all"
-                  aria-label={`Option ${i + 1}`}
+                  className="rounded-xl bg-gray-50 hover:bg-orange-50 active:bg-orange-100 active:scale-95 border-2 border-gray-100 hover:border-orange-200 py-4 text-2xl font-bold text-gray-800 transition-all"
                 >
                   {opt}
                 </button>
@@ -396,7 +397,7 @@ export default function PatternLogicActivity({
           </div>
         )}
 
-        {/* ── Phase: Round result (between-round feedback) ─────────────── */}
+        {/* Round result */}
         {phase === 'roundResult' && lastRoundData && (
           <div className="bg-white rounded-2xl shadow-lg p-5 text-center">
             <div
@@ -411,31 +412,29 @@ export default function PatternLogicActivity({
             <h2 className="text-lg font-bold text-gray-800 mb-3">
               {lastRoundData.isCorrect ? 'Got it!' : 'Not quite'}
             </h2>
-
-            {/* Reveal: show sequence + correct vs picked */}
             <div className="bg-gray-50 rounded-xl p-3 mb-4">
               <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">
                 The pattern
               </p>
-              <div className="flex items-center justify-center flex-wrap gap-1 text-2xl sm:text-3xl mb-3">
-                {lastRoundData.setup.sequence.map((c, i) => (
-                  <span key={i}>{c}</span>
+              <div className="flex items-center justify-center flex-wrap gap-1.5 mb-2">
+                {lastRoundData.setup.sequence.map((n, i) => (
+                  <span key={i} className="font-mono text-base sm:text-lg text-gray-700">
+                    {n}
+                  </span>
                 ))}
                 <span className="text-gray-300">→</span>
-                <span className="ring-4 ring-green-300 rounded-full">
+                <span className="font-mono text-base sm:text-lg ring-2 ring-green-300 rounded-md px-1.5 text-green-700">
                   {lastRoundData.setup.correct}
                 </span>
               </div>
+              <p className="text-[11px] text-gray-500 italic">{lastRoundData.setup.hint}</p>
               {!lastRoundData.isCorrect && (
-                <p className="text-xs text-gray-500">
-                  You picked{' '}
-                  <span className="text-2xl align-middle">{lastRoundData.picked}</span> — correct
-                  was{' '}
-                  <span className="text-2xl align-middle">{lastRoundData.setup.correct}</span>
+                <p className="text-xs text-gray-500 mt-2">
+                  You picked <strong>{lastRoundData.picked}</strong> — correct was{' '}
+                  <strong>{lastRoundData.setup.correct}</strong>
                 </p>
               )}
             </div>
-
             <button
               onClick={advanceFromRoundResult}
               className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
@@ -447,7 +446,7 @@ export default function PatternLogicActivity({
           </div>
         )}
 
-        {/* ── Phase: Reflection (single picker after round 3) ──────────── */}
+        {/* Reflection */}
         {phase === 'reflection' && (
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <h2 className="text-base font-bold text-gray-800 text-center mb-1">
@@ -473,7 +472,7 @@ export default function PatternLogicActivity({
           </div>
         )}
 
-        {/* ── Phase: Submitting ───────────────────────────────────────── */}
+        {/* Submitting */}
         {phase === 'submitting' && (
           <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
             <div className="w-12 h-12 border-4 border-orange-200 border-t-orange-600 rounded-full animate-spin mx-auto mb-4" />
@@ -482,7 +481,7 @@ export default function PatternLogicActivity({
           </div>
         )}
 
-        {/* ── Phase: Summary ─────────────────────────────────────────── */}
+        {/* Summary */}
         {phase === 'summary' && (
           <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
             <div className="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-3xl mx-auto mb-3">
@@ -492,20 +491,16 @@ export default function PatternLogicActivity({
             <p className="text-sm text-gray-500 mb-4">
               {childName} got {correctCount} out of {TOTAL_ROUNDS} correct
             </p>
-
             <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-4 mb-5">
               <p className="text-xs text-gray-500 mb-1">Average score</p>
               <p className="text-3xl font-bold text-orange-700">{avgScore}</p>
               <p className="text-[10px] text-gray-400">out of 100</p>
             </div>
-
             <div className="space-y-3 mb-5 text-left">
               {results.map((r, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-3">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-semibold text-gray-500">
-                      Round {i + 1}
-                    </span>
+                    <span className="text-xs font-semibold text-gray-500">Round {i + 1}</span>
                     <div className="flex items-center gap-2">
                       <span
                         className={`text-xs font-semibold ${
@@ -514,21 +509,14 @@ export default function PatternLogicActivity({
                       >
                         {r.isCorrect ? 'Correct' : 'Missed'}
                       </span>
-                      <span className="text-xs font-bold text-orange-600">
-                        {r.finalScore}/100
-                      </span>
+                      <span className="text-xs font-bold text-orange-600">{r.finalScore}/100</span>
                     </div>
                   </div>
-                  <p className="text-xs font-semibold text-gray-800 mt-1">
-                    {r.insightTitle}
-                  </p>
-                  <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">
-                    {r.insightMessage}
-                  </p>
+                  <p className="text-xs font-semibold text-gray-800 mt-1">{r.insightTitle}</p>
+                  <p className="text-[11px] text-gray-500 leading-relaxed mt-0.5">{r.insightMessage}</p>
                 </div>
               ))}
             </div>
-
             <div className="space-y-2">
               <button
                 onClick={handleRestart}

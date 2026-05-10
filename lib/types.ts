@@ -101,6 +101,7 @@ export interface ChildProfile {
   name: string;          // First name only — no last name (data minimisation)
   age: number;           // 5–15
   ageGroup: AgeGroup;    // Derived from age, stored for fast filtering
+  classId?: ClassId;     // Optional CBSE class — used to route academic content
   consentGiven: boolean; // Required true on creation per DPDP
   consentAt: Date | null;
   createdAt: Date | null;

@@ -12,9 +12,11 @@ export const ACTIVE_CHILD_COOKIE = "activeChild";
 
 export interface ActiveChild {
   id: string;
+  parentUid: string;
   name: string;
   age: number;
   ageGroup: string;
+  classId: string | null;
 }
 
 export async function getActiveChild(): Promise<ActiveChild | null> {
@@ -35,9 +37,11 @@ export async function getActiveChild(): Promise<ActiveChild | null> {
     const d = childDoc.data()!;
     return {
       id: childDoc.id,
+      parentUid: decoded.uid,
       name: (d.name as string) || "",
       age: (d.age as number) || 0,
       ageGroup: (d.ageGroup as string) || "foundation",
+      classId: (d.classId as string) || null,
     };
   } catch {
     return null;
@@ -59,5 +63,27 @@ export async function hasChildren(): Promise<boolean> {
     return !snap.empty;
   } catch {
     return false;
+  }
+}
+
+export interface ParentInfo {
+  uid: string;
+  firstName: string;
+}
+
+// Returns the logged-in parent's first name (from Firebase Auth displayName).
+// Returns null when not signed in or session is invalid.
+export async function getParent(): Promise<ParentInfo | null> {
+  const cookieStore = await cookies();
+  const session = cookieStore.get("session")?.value;
+  if (!session) return null;
+  try {
+    const decoded = await adminAuth.verifySessionCookie(session);
+    const user = await adminAuth.getUser(decoded.uid);
+    const display = (user.displayName || "").trim();
+    const firstName = display ? display.split(/\s+/)[0] : "";
+    return { uid: decoded.uid, firstName };
+  } catch {
+    return null;
   }
 }

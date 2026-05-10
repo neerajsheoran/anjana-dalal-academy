@@ -4,14 +4,23 @@
 // Per cognilift-privacy-consent.md: parent owns the account, kids never log in.
 
 import { useEffect, useState } from 'react';
+import {
+  CLASS_OPTIONS,
+  suggestClassFromAge,
+} from '@/lib/age-group';
 
 interface Child {
   id: string;
   name: string;
   age: number;
   ageGroup: string;
+  classId: string | null;
   createdAt: string | null;
 }
+
+const CLASS_LABEL: Record<string, string> = Object.fromEntries(
+  CLASS_OPTIONS.map((o) => [o.id, o.label]),
+);
 
 const AGE_GROUP_LABEL: Record<string, string> = {
   foundation: 'Foundation',
@@ -29,6 +38,8 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   // Add-form state
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
+  const [classId, setClassId] = useState('');
+  const [classManuallyChanged, setClassManuallyChanged] = useState(false);
   const [consent, setConsent] = useState(false);
   const [pin, setPin] = useState('');
   const [pinConfirm, setPinConfirm] = useState('');
@@ -59,11 +70,25 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   function resetForm() {
     setName('');
     setAge('');
+    setClassId('');
+    setClassManuallyChanged(false);
     setConsent(false);
     setPin('');
     setPinConfirm('');
     setError('');
     setShowAdd(false);
+  }
+
+  function handleAgeChange(value: string) {
+    setAge(value);
+    // Auto-suggest class from age unless the parent has already picked one
+    if (!classManuallyChanged) {
+      const ageNum = parseInt(value, 10);
+      if (Number.isInteger(ageNum)) {
+        const suggested = suggestClassFromAge(ageNum);
+        setClassId(suggested);
+      }
+    }
   }
 
   async function handleAdd(e: React.FormEvent) {
@@ -100,7 +125,12 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
       const res = await fetch('/api/children', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name.trim(), age: ageNum, consent }),
+        body: JSON.stringify({
+          name: name.trim(),
+          age: ageNum,
+          classId: classId || null,
+          consent,
+        }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -171,7 +201,10 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-semibold text-gray-800 truncate">{child.name}</p>
                   <p className="text-xs text-gray-400">
-                    Age {child.age} · {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
+                    Age {child.age}
+                    {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
+                    {' · '}
+                    {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
                   </p>
                 </div>
                 <button
@@ -220,7 +253,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
             <input
               type="number"
               value={age}
-              onChange={(e) => setAge(e.target.value)}
+              onChange={(e) => handleAgeChange(e.target.value)}
               min={5}
               max={15}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white"
@@ -229,6 +262,30 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
             />
             <p className="text-[11px] text-gray-400 mt-1">
               Must be between 5 and 15. Used to choose age-appropriate games.
+            </p>
+          </div>
+
+          <div>
+            <label className="block text-xs font-medium text-gray-700 mb-1">
+              School class <span className="text-gray-400">(optional)</span>
+            </label>
+            <select
+              value={classId}
+              onChange={(e) => {
+                setClassId(e.target.value);
+                setClassManuallyChanged(true);
+              }}
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white"
+            >
+              <option value="">Not in CBSE / homeschooled</option>
+              {CLASS_OPTIONS.map((o) => (
+                <option key={o.id} value={o.id}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+            <p className="text-[11px] text-gray-400 mt-1">
+              We&apos;ll suggest matching academic content for this class.
             </p>
           </div>
 

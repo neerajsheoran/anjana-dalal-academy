@@ -1,7 +1,7 @@
 // Age group derivation for child profiles.
 // Coarse buckets for messaging/UX. Activity-level filtering uses minAge/maxAge directly.
 
-import type { AgeGroup } from "./types";
+import type { AgeGroup, ClassId } from "./types";
 
 export function deriveAgeGroup(age: number): AgeGroup {
   if (age <= 6) return "foundation";
@@ -19,4 +19,29 @@ export const AGE_GROUP_LABELS: Record<AgeGroup, string> = {
 
 export function isValidAge(age: number): boolean {
   return Number.isInteger(age) && age >= 5 && age <= 15;
+}
+
+// CBSE class typically starts at age 6 (Class 1). Used as the default in the
+// add-child form; parent can always override.
+export function suggestClassFromAge(age: number): ClassId | "" {
+  const cls = age - 5;
+  if (cls < 1 || cls > 10) return "";
+  return `class-${cls}` as ClassId;
+}
+
+export const CLASS_OPTIONS: { id: ClassId; label: string }[] = [
+  { id: "class-1", label: "Class 1" },
+  { id: "class-2", label: "Class 2" },
+  { id: "class-3", label: "Class 3" },
+  { id: "class-4", label: "Class 4" },
+  { id: "class-5", label: "Class 5" },
+  { id: "class-6", label: "Class 6" },
+  { id: "class-7", label: "Class 7" },
+  { id: "class-8", label: "Class 8" },
+  { id: "class-9", label: "Class 9" },
+  { id: "class-10", label: "Class 10" },
+];
+
+export function isValidClassId(value: unknown): value is ClassId {
+  return CLASS_OPTIONS.some((o) => o.id === value);
 }
