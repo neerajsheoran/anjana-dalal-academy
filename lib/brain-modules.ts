@@ -77,7 +77,7 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     name: "Pattern Logic",
     module: "thinking",
     skill: "Logical reasoning",
-    minAge: 7,
+    minAge: 5,
     maxAge: 15,
     available: true,
   },

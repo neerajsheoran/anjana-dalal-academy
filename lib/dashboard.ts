@@ -1,0 +1,250 @@
+// Server-side helpers for the parent brain-training dashboard.
+// Aggregates a child's `attempts` subcollection into something the dashboard
+// component can render directly.
+
+import { adminAuth, adminDb } from "./firebase-admin";
+import { cookies } from "next/headers";
+import {
+  summarizeProgress,
+  type AttemptForSummary,
+  type ProgressInsight,
+} from "./insights";
+import {
+  BRAIN_ACTIVITIES,
+  BRAIN_MODULES,
+  type ModuleKey,
+} from "./brain-modules";
+import { type Difficulty } from "./difficulty";
+
+export interface DashboardChild {
+  id: string;
+  name: string;
+  age: number;
+  classId: string | null;
+  ageGroup: string;
+}
+
+export interface PillarSummary {
+  pillar: ModuleKey;
+  attempts: number;
+  avgScore: number | null;       // null when no attempts
+  trend: "up" | "down" | "flat" | "n/a"; // last 3 vs prior 3
+}
+
+export interface ActivityProgress {
+  activityKey: string;
+  activityName: string;
+  pillar: ModuleKey;
+  currentDifficulty: Difficulty | null;
+  attemptCount: number;
+  bestScore: number | null;
+  available: boolean;
+  ageGated: boolean;             // true if outside the activity's minAge/maxAge
+}
+
+export interface ChildDashboard {
+  child: DashboardChild;
+  totalAttempts: number;
+  trainingDays7d: number;        // distinct days in last 7 days
+  trainingDays30d: number;
+  lastSessionAt: Date | null;
+  pillars: PillarSummary[];
+  activities: ActivityProgress[];
+  insights: ProgressInsight[];
+}
+
+const PILLARS: ModuleKey[] = ["memory", "focus", "thinking"];
+
+// Server-only — verifies the parent's session and returns their UID.
+export async function getParentUid(): Promise<string | null> {
+  const cookieStore = await cookies();
+  const session = cookieStore.get("session")?.value;
+  if (!session) return null;
+  try {
+    const decoded = await adminAuth.verifySessionCookie(session);
+    return decoded.uid;
+  } catch {
+    return null;
+  }
+}
+
+export async function loadDashboardChildren(
+  parentUid: string,
+): Promise<DashboardChild[]> {
+  const snap = await adminDb
+    .collection("users")
+    .doc(parentUid)
+    .collection("children")
+    .orderBy("createdAt", "asc")
+    .get();
+  return snap.docs.map((doc) => {
+    const d = doc.data();
+    return {
+      id: doc.id,
+      name: (d.name as string) || "",
+      age: (d.age as number) || 0,
+      classId: (d.classId as string) || null,
+      ageGroup: (d.ageGroup as string) || "foundation",
+    };
+  });
+}
+
+interface RawAttempt {
+  activityKey?: string;
+  moduleKey?: string;
+  difficultyLevel?: string;
+  isCorrect?: boolean;
+  scores?: { finalActivityScore?: number };
+  createdAt?: { toDate?: () => Date };
+}
+
+function isModuleKey(v: unknown): v is ModuleKey {
+  return v === "memory" || v === "focus" || v === "thinking";
+}
+function isDifficulty(v: unknown): v is Difficulty {
+  return v === "easy" || v === "medium" || v === "hard";
+}
+
+export async function loadChildDashboard(
+  parentUid: string,
+  child: DashboardChild,
+): Promise<ChildDashboard> {
+  const snap = await adminDb
+    .collection("users")
+    .doc(parentUid)
+    .collection("children")
+    .doc(child.id)
+    .collection("attempts")
+    .orderBy("createdAt", "desc")
+    .limit(200)
+    .get();
+
+  const rawAttempts: AttemptForSummary[] = [];
+  let lastSessionAt: Date | null = null;
+
+  for (const doc of snap.docs) {
+    const d = doc.data() as RawAttempt;
+    if (!isModuleKey(d.moduleKey)) continue;
+    if (!isDifficulty(d.difficultyLevel)) continue;
+    const createdAt = d.createdAt?.toDate?.();
+    if (!createdAt) continue;
+    if (!lastSessionAt || createdAt > lastSessionAt) lastSessionAt = createdAt;
+    rawAttempts.push({
+      activityKey: d.activityKey || "",
+      moduleKey: d.moduleKey,
+      difficultyLevel: d.difficultyLevel,
+      isCorrect: d.isCorrect === true,
+      finalActivityScore: d.scores?.finalActivityScore ?? 0,
+      createdAt,
+    });
+  }
+
+  const totalAttempts = rawAttempts.length;
+
+  // Distinct training days
+  const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000);
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 3600 * 1000);
+  const days7 = new Set<string>();
+  const days30 = new Set<string>();
+  for (const a of rawAttempts) {
+    const day = a.createdAt.toISOString().slice(0, 10);
+    if (a.createdAt >= thirtyDaysAgo) days30.add(day);
+    if (a.createdAt >= sevenDaysAgo) days7.add(day);
+  }
+
+  // Per-pillar summary
+  const pillars: PillarSummary[] = PILLARS.map((p) => {
+    const inPillar = rawAttempts.filter((a) => a.moduleKey === p);
+    if (inPillar.length === 0) {
+      return { pillar: p, attempts: 0, avgScore: null, trend: "n/a" };
+    }
+    const sum = inPillar.reduce((s, a) => s + a.finalActivityScore, 0);
+    const avgScore = Math.round(sum / inPillar.length);
+
+    // Trend: avg of most recent 3 vs prior 3 attempts in this pillar
+    let trend: PillarSummary["trend"] = "flat";
+    if (inPillar.length >= 6) {
+      const recent3 =
+        inPillar.slice(0, 3).reduce((s, a) => s + a.finalActivityScore, 0) / 3;
+      const prior3 =
+        inPillar.slice(3, 6).reduce((s, a) => s + a.finalActivityScore, 0) / 3;
+      if (recent3 - prior3 >= 8) trend = "up";
+      else if (prior3 - recent3 >= 8) trend = "down";
+      else trend = "flat";
+    } else {
+      trend = "n/a";
+    }
+
+    return { pillar: p, attempts: inPillar.length, avgScore, trend };
+  });
+
+  // Per-activity progression
+  const activities: ActivityProgress[] = Object.values(BRAIN_ACTIVITIES).map(
+    (act) => {
+      const myAttempts = rawAttempts.filter((a) => a.activityKey === act.key);
+      const bestScore =
+        myAttempts.length > 0
+          ? myAttempts.reduce(
+              (b, a) => Math.max(b, a.finalActivityScore),
+              0,
+            )
+          : null;
+      // Most recent difficulty for this activity (attempts already desc)
+      const currentDifficulty =
+        myAttempts.length > 0 ? myAttempts[0].difficultyLevel : null;
+      const ageGated =
+        child.age < act.minAge || child.age > act.maxAge;
+      return {
+        activityKey: act.key,
+        activityName: act.name,
+        pillar: act.module,
+        currentDifficulty,
+        attemptCount: myAttempts.length,
+        bestScore,
+        available: act.available,
+        ageGated,
+      };
+    },
+  );
+
+  const insights = summarizeProgress(rawAttempts);
+
+  return {
+    child,
+    totalAttempts,
+    trainingDays7d: days7.size,
+    trainingDays30d: days30.size,
+    lastSessionAt,
+    pillars,
+    activities,
+    insights,
+  };
+}
+
+// Helpers reused by the dashboard component
+export const PILLAR_META: Record<
+  ModuleKey,
+  { label: string; emoji: string; chip: string; bar: string; soft: string }
+> = {
+  memory: {
+    label: BRAIN_MODULES.memory.name,
+    emoji: BRAIN_MODULES.memory.emoji,
+    chip: "bg-purple-100 text-purple-700",
+    bar: "bg-purple-500",
+    soft: "bg-purple-50",
+  },
+  focus: {
+    label: BRAIN_MODULES.focus.name,
+    emoji: BRAIN_MODULES.focus.emoji,
+    chip: "bg-green-100 text-green-700",
+    bar: "bg-green-500",
+    soft: "bg-green-50",
+  },
+  thinking: {
+    label: BRAIN_MODULES.thinking.name,
+    emoji: BRAIN_MODULES.thinking.emoji,
+    chip: "bg-orange-100 text-orange-700",
+    bar: "bg-orange-500",
+    soft: "bg-orange-50",
+  },
+};

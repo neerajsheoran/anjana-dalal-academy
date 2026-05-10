@@ -180,6 +180,25 @@ export default async function ProfilePage() {
           <p className="text-gray-500 text-sm mt-1">{email}</p>
         </div>
 
+        {/* Dashboard shortcut */}
+        <Link
+          href="/dashboard"
+          className="block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-2xl shadow-md p-5 mb-6 transition-colors"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-2xl shrink-0">
+              📊
+            </div>
+            <div className="flex-1 min-w-0 text-white">
+              <p className="text-base font-bold leading-tight">Parent Dashboard</p>
+              <p className="text-xs text-white/85 mt-0.5">
+                See your kids&rsquo; brain training progress, scores, and insights
+              </p>
+            </div>
+            <span className="text-2xl text-white/80 shrink-0">→</span>
+          </div>
+        </Link>
+
         {/* Account details */}
         <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
@@ -204,51 +223,60 @@ export default async function ProfilePage() {
         {/* Subscription */}
         <SubscriptionSection profile={user.profile} role={role} />
 
-        {/* Learning Stats */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Learning Stats
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-blue-50 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-blue-600">{progressStats.chaptersRead}</p>
-              <p className="text-xs text-gray-500 mt-1">Chapters Read</p>
+        {/* Learning Stats — only render if the parent themselves has legacy
+            academic activity. Most post-pivot parents will have zero here
+            (kids in kid mode generate brain attempts under children/, not these
+            parent-level fields). Section is rebranded so it's clear this is
+            the parent's OWN history, not their kid's. */}
+        {(progressStats.chaptersRead > 0 || quizStats.quizzesTaken > 0) && (
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-1">
+              Your Own Learning History
+            </h2>
+            <p className="text-[11px] text-gray-400 mb-4">
+              From quizzes/chapters you tried before adding child profiles. For
+              your kids&rsquo; progress, see the dashboard.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-blue-50 rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-blue-600">{progressStats.chaptersRead}</p>
+                <p className="text-xs text-gray-500 mt-1">Chapters Read</p>
+              </div>
+              <div className="bg-green-50 rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-green-600">{progressStats.chaptersCompleted}</p>
+                <p className="text-xs text-gray-500 mt-1">Chapters Completed</p>
+              </div>
+              <div className="bg-purple-50 rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-purple-600">{quizStats.quizzesTaken}</p>
+                <p className="text-xs text-gray-500 mt-1">Quizzes Taken</p>
+              </div>
+              <div className="bg-amber-50 rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-amber-600">{quizStats.avgScore}%</p>
+                <p className="text-xs text-gray-500 mt-1">Average Score</p>
+              </div>
             </div>
-            <div className="bg-green-50 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-green-600">{progressStats.chaptersCompleted}</p>
-              <p className="text-xs text-gray-500 mt-1">Chapters Completed</p>
-            </div>
-            <div className="bg-purple-50 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-purple-600">{quizStats.quizzesTaken}</p>
-              <p className="text-xs text-gray-500 mt-1">Quizzes Taken</p>
-            </div>
-            <div className="bg-amber-50 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-amber-600">{quizStats.avgScore}%</p>
-              <p className="text-xs text-gray-500 mt-1">Average Score</p>
-            </div>
-          </div>
 
-          {/* Subject Progress Bars */}
-          {progressStats.bySubject.size > 0 && (
-            <div className="mt-6 space-y-3">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Subject Progress</p>
-              {Array.from(progressStats.bySubject.entries()).map(([subj, data]) => {
-                const pct = data.total > 0 ? Math.round((data.completed / data.total) * 100) : 0;
-                return (
-                  <div key={subj}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium text-gray-700 capitalize">{subj}</span>
-                      <span className="text-gray-400">{data.completed}/{data.total} completed</span>
+            {progressStats.bySubject.size > 0 && (
+              <div className="mt-6 space-y-3">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Subject Progress</p>
+                {Array.from(progressStats.bySubject.entries()).map(([subj, data]) => {
+                  const pct = data.total > 0 ? Math.round((data.completed / data.total) * 100) : 0;
+                  return (
+                    <div key={subj}>
+                      <div className="flex justify-between text-sm mb-1">
+                        <span className="font-medium text-gray-700 capitalize">{subj}</span>
+                        <span className="text-gray-400">{data.completed}/{data.total} completed</span>
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                        <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
+                      </div>
                     </div>
-                    <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Bookmarked Chapters */}
         {bookmarks.length > 0 && (
@@ -288,16 +316,13 @@ export default async function ProfilePage() {
           </div>
         )}
 
-        {/* Quiz History */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Quiz History
-          </h2>
-          {quizHistory.length === 0 ? (
-            <p className="text-sm text-gray-400">
-              No quiz attempts yet. Take a quiz to see your scores here.
-            </p>
-          ) : (
+        {/* Quiz History — parent's own legacy quiz attempts. Hidden when empty
+            so post-pivot parents don't see a noisy "no quizzes yet" block. */}
+        {quizHistory.length > 0 && (
+          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+              Your Past Quiz Attempts
+            </h2>
             <div className="space-y-3">
               {quizHistory.map((attempt) => (
                 <div
@@ -323,8 +348,8 @@ export default async function ProfilePage() {
                 </div>
               ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
 
       </div>
     </main>
