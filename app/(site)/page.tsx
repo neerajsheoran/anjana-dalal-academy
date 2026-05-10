@@ -3,6 +3,7 @@ import ContinueLearning from '@/components/progress/ContinueLearning';
 import { getActiveChild, getParent, hasChildren } from '@/lib/active-child';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
 import KidHomepage from '@/components/brain/KidHomepage';
+import ParentSetupHero from '@/components/brain/ParentSetupHero';
 
 export default async function HomePage() {
   const [parent, activeChild, parentHasChildren] = await Promise.all([
@@ -17,26 +18,11 @@ export default async function HomePage() {
   }
 
   const showPickerBanner = parentHasChildren;
-  const showAddChildBanner = parent && !parentHasChildren;
+  // Logged-in parent with no kids → setup hero replaces the marketing hero
+  const showSetupHero = parent && !parentHasChildren;
 
   return (
     <main className="min-h-screen bg-gray-50">
-
-      {/* ── Logged-in parent, no children yet — personalized prompt ────── */}
-      {showAddChildBanner && (
-        <Link
-          href="/profile#children"
-          className="block bg-gradient-to-r from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 border-b border-amber-200 transition-colors"
-        >
-          <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-center gap-3 text-center">
-            <span className="text-xl">👋</span>
-            <span className="text-sm font-medium text-amber-900">
-              {parent.firstName ? `Hi ${parent.firstName}!` : 'Welcome!'} Add your first child profile to start training
-            </span>
-            <span className="text-xs text-amber-700 hidden sm:inline">→</span>
-          </div>
-        </Link>
-      )}
 
       {/* ── Picker prompt: parent has children but isn't in kid mode ──── */}
       {showPickerBanner && (
@@ -54,8 +40,12 @@ export default async function HomePage() {
         </Link>
       )}
 
-      {/* ── HERO — Brain Training (dominant) ────────────────────────────── */}
-      <section className="bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-700 text-white py-14 px-6">
+      {/* ── Parent setup hero: replaces marketing hero when logged in + no kids ── */}
+      {showSetupHero && <ParentSetupHero firstName={parent.firstName} />}
+
+      {/* ── HERO — Brain Training (only for logged-out / picker-banner users) ── */}
+      {!showSetupHero && (
+      <section className="bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-700 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
           {/* Left: copy + CTA */}
@@ -63,62 +53,41 @@ export default async function HomePage() {
             <p className="text-blue-200 text-xs font-semibold uppercase tracking-widest mb-3">
               Brain Training for Kids 5–15
             </p>
-            <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 leading-tight">
-              Train how your child thinks,
-              <br />
-              <span className="text-purple-200">not just what they learn.</span>
+            <h1 className="text-3xl sm:text-5xl font-extrabold mb-5 leading-tight">
+              Train how your child thinks, not just what they learn.
             </h1>
-            <p className="text-blue-100 text-base sm:text-lg max-w-xl lg:mx-0 mx-auto mb-6">
-              Memory · Focus · Thinking — three brain skills your child uses every
-              day in school and life. Train them with short, fun games.
-            </p>
 
-            {/* Outcome promise */}
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 text-sm text-blue-50">
+            {/* Outcome promise — promoted to subtitle position */}
+            <div className="inline-flex items-center gap-2 bg-white/15 border border-white/25 rounded-full px-4 py-2 mb-7 text-sm sm:text-base text-blue-50 font-medium">
               <span className="text-base">✨</span>
               <span>10 minutes a day. Sharper focus and recall in 4 weeks.</span>
             </div>
 
-            {/* 3 Pillar pills */}
-            <div className="flex justify-center lg:justify-start gap-4 sm:gap-6 mb-8">
-              <div className="text-center">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-purple-500/30 border-2 border-purple-300 flex items-center justify-center mb-1.5 mx-auto shadow-[0_0_24px_rgba(168,85,247,0.5)]">
-                  <span className="text-2xl sm:text-3xl">🧠</span>
-                </div>
-                <p className="text-purple-200 text-xs sm:text-sm font-semibold">Memory</p>
-              </div>
-              <div className="text-center">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-green-500/30 border-2 border-green-300 flex items-center justify-center mb-1.5 mx-auto shadow-[0_0_24px_rgba(34,197,94,0.5)]">
-                  <span className="text-2xl sm:text-3xl">🎯</span>
-                </div>
-                <p className="text-green-200 text-xs sm:text-sm font-semibold">Focus</p>
-              </div>
-              <div className="text-center">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-orange-500/30 border-2 border-orange-300 flex items-center justify-center mb-1.5 mx-auto shadow-[0_0_24px_rgba(251,146,60,0.5)]">
-                  <span className="text-2xl sm:text-3xl">💡</span>
-                </div>
-                <p className="text-orange-200 text-xs sm:text-sm font-semibold">Thinking</p>
-              </div>
-            </div>
-
             {/* Primary CTA */}
-            <Link
-              href="/try"
-              className="inline-block bg-white text-blue-800 font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-            >
-              Try a brain game now →
-            </Link>
-            <p className="text-blue-200 text-xs mt-3">
-              No signup required. Takes 2 minutes.
-            </p>
+            <div>
+              <Link
+                href="/try"
+                className="inline-block bg-white text-blue-800 font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+              >
+                Try a brain game now →
+              </Link>
+              <p className="text-blue-200 text-xs mt-3">
+                No signup required. Takes 2 minutes.
+              </p>
+            </div>
           </div>
 
-          {/* Right: live demo */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Right: live demo with identity label */}
+          <div className="flex flex-col items-center lg:items-end gap-3">
+            <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-blue-100">
+              <span>👀</span>
+              <span>Live preview</span>
+            </span>
             <PatternRecallDemo />
           </div>
         </div>
       </section>
+      )}
 
       {/* ── BRIDGE — How it helps in school (smaller, secondary) ────────── */}
       <section className="bg-white py-10 px-6 border-b border-gray-200">
@@ -149,7 +118,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── HOW IT WORKS — 5-step Loop ──────────────────────────────────── */}
-      <section className="bg-gray-50 py-14 px-6">
+      <section id="how-it-works" className="bg-gray-50 py-14 px-6 scroll-mt-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">

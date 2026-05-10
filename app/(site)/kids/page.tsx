@@ -5,6 +5,7 @@
 import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
+import { ACTIVE_CHILD_COOKIE } from "@/lib/active-child";
 import KidsPickerClient from "./KidsPickerClient";
 
 interface ChildLite {
@@ -17,6 +18,7 @@ interface ChildLite {
 async function loadKidsData(): Promise<{
   children: ChildLite[];
   hasPin: boolean;
+  activeChildId: string | null;
 }> {
   const cookieStore = await cookies();
   const session = cookieStore.get("session")?.value;
@@ -24,6 +26,7 @@ async function loadKidsData(): Promise<{
 
   const decoded = await adminAuth.verifySessionCookie(session);
   const uid = decoded.uid;
+  const activeChildId = cookieStore.get(ACTIVE_CHILD_COOKIE)?.value || null;
 
   const [userDoc, childrenSnap] = await Promise.all([
     adminDb.collection("users").doc(uid).get(),
@@ -49,11 +52,11 @@ async function loadKidsData(): Promise<{
     typeof userDoc.data()?.childPinHash === "string" &&
     (userDoc.data()?.childPinHash as string).length > 0;
 
-  return { children, hasPin };
+  return { children, hasPin, activeChildId };
 }
 
 export default async function KidsPage() {
-  const { children, hasPin } = await loadKidsData();
+  const { children, hasPin, activeChildId } = await loadKidsData();
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-12 px-4">
@@ -67,7 +70,11 @@ export default async function KidsPage() {
           </p>
         </div>
 
-        <KidsPickerClient children={children} hasPin={hasPin} />
+        <KidsPickerClient
+          children={children}
+          hasPin={hasPin}
+          activeChildId={activeChildId}
+        />
       </div>
     </main>
   );

@@ -148,7 +148,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
   async function handleDelete(child: Child) {
     const confirmed = window.confirm(
-      `Remove ${child.name}'s profile? All their progress will be permanently deleted. This cannot be undone.`
+      `Permanently delete ${child.name}'s profile and all training history? This cannot be undone.`
     );
     if (!confirmed) return;
 
@@ -158,6 +158,23 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
       await refresh();
     } catch {
       window.alert('Failed to remove profile. Please try again.');
+    }
+  }
+
+  async function handleReset(child: Child) {
+    const confirmed = window.confirm(
+      `Clear all training history for ${child.name}? Their profile stays — progress just starts fresh.`
+    );
+    if (!confirmed) return;
+
+    try {
+      const res = await fetch(`/api/children/${child.id}/attempts`, {
+        method: 'DELETE',
+      });
+      if (!res.ok) throw new Error();
+      await refresh();
+    } catch {
+      window.alert('Failed to reset progress. Please try again.');
     }
   }
 
@@ -207,13 +224,25 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                     {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
                   </p>
                 </div>
-                <button
-                  onClick={() => handleDelete(child)}
-                  className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 transition-colors"
-                  aria-label={`Remove ${child.name}`}
-                >
-                  Remove
-                </button>
+                <div className="flex items-center gap-1 shrink-0">
+                  <button
+                    onClick={() => handleReset(child)}
+                    className="text-xs text-amber-600 hover:text-amber-800 font-medium px-2 py-1 transition-colors"
+                    aria-label={`Reset progress for ${child.name}`}
+                    title="Clear training history, keep profile"
+                  >
+                    Reset
+                  </button>
+                  <span className="text-xs text-gray-300">·</span>
+                  <button
+                    onClick={() => handleDelete(child)}
+                    className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 transition-colors"
+                    aria-label={`Remove ${child.name}`}
+                    title="Permanently delete profile + history"
+                  >
+                    Remove
+                  </button>
+                </div>
               </div>
             ))}
           </div>

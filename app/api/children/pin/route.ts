@@ -20,12 +20,17 @@ async function authUid(): Promise<string | NextResponse> {
   }
 }
 
+// Set or change the parent's child-switch PIN.
+//   First-time setup:   body = { pin }
+//   Change existing:    body = { pin, currentPin }   (currentPin required to prevent
+//                                                     a kid in kid mode from silently
+//                                                     overwriting the PIN)
 export async function POST(req: Request) {
   const auth = await authUid();
   if (typeof auth !== "string") return auth;
   const uid = auth;
 
-  let body: { pin?: unknown };
+  let body: { pin?: unknown; currentPin?: unknown };
   try {
     body = await req.json();
   } catch {
@@ -33,11 +38,25 @@ export async function POST(req: Request) {
   }
 
   const pin = typeof body.pin === "string" ? body.pin : "";
+  const currentPin = typeof body.currentPin === "string" ? body.currentPin : "";
   if (!isValidPin(pin)) {
     return NextResponse.json({ error: "PIN must be 4 digits" }, { status: 400 });
   }
 
   try {
+    const userDoc = await adminDb.collection("users").doc(uid).get();
+    const existingHash = userDoc.data()?.childPinHash as string | undefined;
+
+    // Changing an existing PIN — must verify the current one first
+    if (existingHash) {
+      if (!currentPin || !verifyPin(currentPin, uid, existingHash)) {
+        return NextResponse.json(
+          { error: "Current PIN is incorrect" },
+          { status: 401 },
+        );
+      }
+    }
+
     await adminDb.collection("users").doc(uid).update({
       childPinHash: hashPin(pin, uid),
     });

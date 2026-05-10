@@ -5,6 +5,7 @@ import Link from "next/link";
 import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
 import ChildrenSection from "@/components/profile/ChildrenSection";
+import PinSection from "@/components/profile/PinSection";
 
 
 async function getUser() {
@@ -193,6 +194,9 @@ export default async function ProfilePage() {
             <Row label="User ID" value={uid} mono />
           </div>
         </div>
+
+        {/* Parent PIN management */}
+        <PinSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
 
         {/* Brain training: child profiles */}
         <ChildrenSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />

@@ -33,6 +33,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Missing childId" }, { status: 400 });
   }
 
+  // PIN is required only at the kid/parent boundary (parent → kid).
+  // Switching between two kid profiles (kid → kid) is free, since both sides
+  // are already inside kid mode and the PIN's purpose is to gate the
+  // PARENT layer, not sibling-vs-sibling privacy on a shared device.
+  const alreadyInKidMode = !!cookieStore.get(ACTIVE_CHILD_COOKIE)?.value;
+
   try {
     // 1. Verify the child belongs to this parent
     const childDoc = await adminDb
@@ -45,12 +51,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Child not found" }, { status: 404 });
     }
 
-    // 2. Verify the parent's PIN if one is set
-    const userDoc = await adminDb.collection("users").doc(uid).get();
-    const expectedHash = userDoc.data()?.childPinHash as string | undefined;
-    if (expectedHash) {
-      if (!pin || !verifyPin(pin, uid, expectedHash)) {
-        return NextResponse.json({ error: "Incorrect PIN" }, { status: 401 });
+    // 2. Verify the parent's PIN — only when entering kid mode from parent mode
+    if (!alreadyInKidMode) {
+      const userDoc = await adminDb.collection("users").doc(uid).get();
+      const expectedHash = userDoc.data()?.childPinHash as string | undefined;
+      if (expectedHash) {
+        if (!pin || !verifyPin(pin, uid, expectedHash)) {
+          return NextResponse.json({ error: "Incorrect PIN" }, { status: 401 });
+        }
       }
     }
 
@@ -69,8 +77,41 @@ export async function POST(req: Request) {
   }
 }
 
-export async function DELETE() {
+export async function DELETE(req: Request) {
   const cookieStore = await cookies();
-  cookieStore.delete(ACTIVE_CHILD_COOKIE);
-  return NextResponse.json({ ok: true });
+  const session = cookieStore.get("session")?.value;
+  if (!session) return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
+
+  let uid: string;
+  try {
+    const decoded = await adminAuth.verifySessionCookie(session);
+    uid = decoded.uid;
+  } catch {
+    return NextResponse.json({ error: "Invalid session" }, { status: 401 });
+  }
+
+  // PIN body is optional only when no PIN has been set on the parent yet.
+  let body: { pin?: unknown } = {};
+  try {
+    body = await req.json();
+  } catch {
+    // Empty body is fine when there's no PIN to verify
+  }
+  const pin = typeof body.pin === "string" ? body.pin : "";
+
+  try {
+    const userDoc = await adminDb.collection("users").doc(uid).get();
+    const expectedHash = userDoc.data()?.childPinHash as string | undefined;
+    if (expectedHash) {
+      if (!pin || !verifyPin(pin, uid, expectedHash)) {
+        return NextResponse.json({ error: "Incorrect PIN" }, { status: 401 });
+      }
+    }
+
+    cookieStore.delete(ACTIVE_CHILD_COOKIE);
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Failed to exit kid mode:", err);
+    return NextResponse.json({ error: "Failed to exit kid mode" }, { status: 500 });
+  }
 }

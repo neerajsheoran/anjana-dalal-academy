@@ -13,6 +13,9 @@ interface ChildLite {
   ageGroup: string;
 }
 
+// What the user is trying to switch INTO. `parent` means exit kid mode.
+type Target = { kind: 'child'; child: ChildLite } | { kind: 'parent' };
+
 const AGE_GROUP_LABEL: Record<string, string> = {
   foundation: 'Foundation',
   'early-builder': 'Early Builder',
@@ -23,12 +26,15 @@ const AGE_GROUP_LABEL: Record<string, string> = {
 export default function KidsPickerClient({
   children,
   hasPin,
+  activeChildId,
 }: {
   children: ChildLite[];
   hasPin: boolean;
+  activeChildId: string | null;
 }) {
   const router = useRouter();
-  const [selectedChild, setSelectedChild] = useState<ChildLite | null>(null);
+  const inKidMode = !!activeChildId;
+  const [target, setTarget] = useState<Target | null>(null);
   const [pin, setPin] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
@@ -36,12 +42,32 @@ export default function KidsPickerClient({
   function pickChild(child: ChildLite) {
     setError('');
     setPin('');
-    if (hasPin) {
-      // Open PIN modal
-      setSelectedChild(child);
-    } else {
-      // No PIN set yet — switch immediately
+    // Already on this child — just continue training, no swap needed
+    if (child.id === activeChildId) {
+      router.push('/brain');
+      return;
+    }
+    // Already in kid mode → kid-to-kid switch is free (no PIN)
+    if (inKidMode) {
       submitSwitch(child.id, '');
+      return;
+    }
+    // Entering kid mode from parent mode → PIN gate (if one is set)
+    if (hasPin) {
+      setTarget({ kind: 'child', child });
+    } else {
+      submitSwitch(child.id, '');
+    }
+  }
+
+  function pickParentMode() {
+    setError('');
+    setPin('');
+    if (hasPin) {
+      setTarget({ kind: 'parent' });
+    } else {
+      // No PIN — exit immediately
+      submitExit('');
     }
   }
 
@@ -67,18 +93,44 @@ export default function KidsPickerClient({
     }
   }
 
+  async function submitExit(pinValue: string) {
+    setSubmitting(true);
+    setError('');
+    try {
+      const res = await fetch('/api/children/active', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pin: pinValue }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Failed to exit kid mode');
+      }
+      // Success — clear active-child, return to the parent homepage.
+      router.push('/');
+      router.refresh();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong');
+      setSubmitting(false);
+    }
+  }
+
   function handlePinSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!selectedChild) return;
+    if (!target) return;
     if (!/^\d{4}$/.test(pin)) {
       setError('PIN must be 4 digits');
       return;
     }
-    submitSwitch(selectedChild.id, pin);
+    if (target.kind === 'child') {
+      submitSwitch(target.child.id, pin);
+    } else {
+      submitExit(pin);
+    }
   }
 
   function closePinModal() {
-    setSelectedChild(null);
+    setTarget(null);
     setPin('');
     setError('');
   }
@@ -107,38 +159,54 @@ export default function KidsPickerClient({
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        {children.map((child) => (
-          <button
-            key={child.id}
-            onClick={() => pickChild(child)}
-            disabled={submitting}
-            className="bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 p-6 text-center transition-all hover:scale-105 hover:border-purple-300 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-3 shadow-md">
-              {child.name[0]?.toUpperCase() || '?'}
-            </div>
-            <p className="font-bold text-gray-800 mb-0.5">{child.name}</p>
-            <p className="text-xs text-gray-400">
-              Age {child.age} · {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
-            </p>
-          </button>
-        ))}
+        {children.map((child) => {
+          const isActive = child.id === activeChildId;
+          return (
+            <button
+              key={child.id}
+              onClick={() => pickChild(child)}
+              disabled={submitting}
+              className={`relative bg-white rounded-2xl shadow-sm hover:shadow-lg p-6 text-center transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${
+                isActive
+                  ? 'border-2 border-purple-500 ring-2 ring-purple-200'
+                  : 'border border-gray-100 hover:border-purple-300'
+              }`}
+            >
+              {isActive && (
+                <span className="absolute top-2 right-2 bg-purple-600 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                  Active
+                </span>
+              )}
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-3 shadow-md">
+                {child.name[0]?.toUpperCase() || '?'}
+              </div>
+              <p className="font-bold text-gray-800 mb-0.5">{child.name}</p>
+              <p className="text-xs text-gray-400">
+                Age {child.age} · {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
+              </p>
+            </button>
+          );
+        })}
 
-        {/* Stay in parent mode */}
-        <Link
-          href="/"
-          className="bg-gray-50 rounded-2xl shadow-sm hover:shadow-md border border-dashed border-gray-300 p-6 text-center transition-all hover:border-gray-400"
+        {/* Stay in / exit to parent mode (requires PIN if one is set) */}
+        <button
+          type="button"
+          onClick={pickParentMode}
+          disabled={submitting}
+          className="bg-gray-50 rounded-2xl shadow-sm hover:shadow-md border border-dashed border-gray-300 p-6 text-center transition-all hover:border-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <div className="w-20 h-20 rounded-full bg-gray-200 text-gray-500 text-3xl flex items-center justify-center mx-auto mb-3">
             👤
           </div>
           <p className="font-bold text-gray-700 mb-0.5">Parent Mode</p>
-          <p className="text-xs text-gray-400">Stay logged in as parent</p>
-        </Link>
+          <p className="text-xs text-gray-400">
+            {hasPin ? 'PIN required' : 'Stay logged in as parent'}
+          </p>
+        </button>
       </div>
 
       {/* PIN modal */}
-      {selectedChild && (
+      {target && (
         <div
           className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50"
           onClick={closePinModal}
@@ -149,11 +217,19 @@ export default function KidsPickerClient({
             className="bg-white rounded-2xl shadow-xl p-6 max-w-sm w-full"
           >
             <div className="text-center mb-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-3">
-                {selectedChild.name[0]?.toUpperCase() || '?'}
-              </div>
+              {target.kind === 'child' ? (
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-3">
+                  {target.child.name[0]?.toUpperCase() || '?'}
+                </div>
+              ) : (
+                <div className="w-16 h-16 rounded-full bg-gray-200 text-gray-600 text-2xl flex items-center justify-center mx-auto mb-3">
+                  👤
+                </div>
+              )}
               <h3 className="text-lg font-bold text-gray-800">
-                Switch to {selectedChild.name}
+                {target.kind === 'child'
+                  ? `Switch to ${target.child.name}`
+                  : 'Exit to Parent Mode'}
               </h3>
               <p className="text-xs text-gray-500 mt-1">
                 Enter your 4-digit Parent PIN
@@ -191,7 +267,9 @@ export default function KidsPickerClient({
                 disabled={submitting || pin.length !== 4}
                 className="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl text-sm transition-colors disabled:opacity-50"
               >
-                {submitting ? 'Switching…' : 'Continue'}
+                {submitting
+                  ? target.kind === 'child' ? 'Switching…' : 'Exiting…'
+                  : 'Continue'}
               </button>
             </div>
           </form>
