@@ -9,7 +9,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import {
   PILLAR_META,
   type ChildDashboard,
-} from '@/lib/dashboard';
+} from '@/lib/dashboard-types';
 import {
   DIFFICULTY_LABEL,
   DIFFICULTY_BADGE_BG,

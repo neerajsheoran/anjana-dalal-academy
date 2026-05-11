@@ -1,61 +1,39 @@
-// Server-side helpers for the parent brain-training dashboard.
-// Aggregates a child's `attempts` subcollection into something the dashboard
-// component can render directly.
+// Server-only helpers for the parent brain-training dashboard.
+// Loads + aggregates a child's `attempts` subcollection into a ChildDashboard.
+//
+// Types + constants live in `lib/dashboard-types.ts` so client components can
+// import them without dragging `next/headers` / `firebase-admin` into the bundle.
+
+import "server-only";
 
 import { adminAuth, adminDb } from "./firebase-admin";
 import { cookies } from "next/headers";
 import {
   summarizeProgress,
   type AttemptForSummary,
-  type ProgressInsight,
 } from "./insights";
 import {
   BRAIN_ACTIVITIES,
-  BRAIN_MODULES,
   type ModuleKey,
 } from "./brain-modules";
 import { type Difficulty } from "./difficulty";
+import type {
+  ActivityProgress,
+  ChildDashboard,
+  DashboardChild,
+  PillarSummary,
+} from "./dashboard-types";
 
-export interface DashboardChild {
-  id: string;
-  name: string;
-  age: number;
-  classId: string | null;
-  ageGroup: string;
-}
-
-export interface PillarSummary {
-  pillar: ModuleKey;
-  attempts: number;
-  avgScore: number | null;       // null when no attempts
-  trend: "up" | "down" | "flat" | "n/a"; // last 3 vs prior 3
-}
-
-export interface ActivityProgress {
-  activityKey: string;
-  activityName: string;
-  pillar: ModuleKey;
-  currentDifficulty: Difficulty | null;
-  attemptCount: number;
-  bestScore: number | null;
-  available: boolean;
-  ageGated: boolean;             // true if outside the activity's minAge/maxAge
-}
-
-export interface ChildDashboard {
-  child: DashboardChild;
-  totalAttempts: number;
-  trainingDays7d: number;        // distinct days in last 7 days
-  trainingDays30d: number;
-  lastSessionAt: Date | null;
-  pillars: PillarSummary[];
-  activities: ActivityProgress[];
-  insights: ProgressInsight[];
-}
+// Re-export types so callers can import from either location during refactors.
+export type {
+  DashboardChild,
+  PillarSummary,
+  ActivityProgress,
+  ChildDashboard,
+} from "./dashboard-types";
 
 const PILLARS: ModuleKey[] = ["memory", "focus", "thinking"];
 
-// Server-only — verifies the parent's session and returns their UID.
 export async function getParentUid(): Promise<string | null> {
   const cookieStore = await cookies();
   const session = cookieStore.get("session")?.value;
@@ -141,7 +119,6 @@ export async function loadChildDashboard(
 
   const totalAttempts = rawAttempts.length;
 
-  // Distinct training days
   const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000);
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 3600 * 1000);
   const days7 = new Set<string>();
@@ -152,7 +129,6 @@ export async function loadChildDashboard(
     if (a.createdAt >= sevenDaysAgo) days7.add(day);
   }
 
-  // Per-pillar summary
   const pillars: PillarSummary[] = PILLARS.map((p) => {
     const inPillar = rawAttempts.filter((a) => a.moduleKey === p);
     if (inPillar.length === 0) {
@@ -161,7 +137,6 @@ export async function loadChildDashboard(
     const sum = inPillar.reduce((s, a) => s + a.finalActivityScore, 0);
     const avgScore = Math.round(sum / inPillar.length);
 
-    // Trend: avg of most recent 3 vs prior 3 attempts in this pillar
     let trend: PillarSummary["trend"] = "flat";
     if (inPillar.length >= 6) {
       const recent3 =
@@ -178,22 +153,16 @@ export async function loadChildDashboard(
     return { pillar: p, attempts: inPillar.length, avgScore, trend };
   });
 
-  // Per-activity progression
   const activities: ActivityProgress[] = Object.values(BRAIN_ACTIVITIES).map(
     (act) => {
       const myAttempts = rawAttempts.filter((a) => a.activityKey === act.key);
       const bestScore =
         myAttempts.length > 0
-          ? myAttempts.reduce(
-              (b, a) => Math.max(b, a.finalActivityScore),
-              0,
-            )
+          ? myAttempts.reduce((b, a) => Math.max(b, a.finalActivityScore), 0)
           : null;
-      // Most recent difficulty for this activity (attempts already desc)
       const currentDifficulty =
         myAttempts.length > 0 ? myAttempts[0].difficultyLevel : null;
-      const ageGated =
-        child.age < act.minAge || child.age > act.maxAge;
+      const ageGated = child.age < act.minAge || child.age > act.maxAge;
       return {
         activityKey: act.key,
         activityName: act.name,
@@ -220,31 +189,3 @@ export async function loadChildDashboard(
     insights,
   };
 }
-
-// Helpers reused by the dashboard component
-export const PILLAR_META: Record<
-  ModuleKey,
-  { label: string; emoji: string; chip: string; bar: string; soft: string }
-> = {
-  memory: {
-    label: BRAIN_MODULES.memory.name,
-    emoji: BRAIN_MODULES.memory.emoji,
-    chip: "bg-purple-100 text-purple-700",
-    bar: "bg-purple-500",
-    soft: "bg-purple-50",
-  },
-  focus: {
-    label: BRAIN_MODULES.focus.name,
-    emoji: BRAIN_MODULES.focus.emoji,
-    chip: "bg-green-100 text-green-700",
-    bar: "bg-green-500",
-    soft: "bg-green-50",
-  },
-  thinking: {
-    label: BRAIN_MODULES.thinking.name,
-    emoji: BRAIN_MODULES.thinking.emoji,
-    chip: "bg-orange-100 text-orange-700",
-    bar: "bg-orange-500",
-    soft: "bg-orange-50",
-  },
-};
