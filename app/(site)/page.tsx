@@ -5,6 +5,7 @@ import { getActiveChild, getParent, hasChildren } from '@/lib/active-child';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
 import KidHomepage from '@/components/brain/KidHomepage';
 import ParentSetupHero from '@/components/brain/ParentSetupHero';
+import ParentChooser from '@/components/brain/ParentChooser';
 
 export default async function HomePage() {
   const [parent, activeChild, parentHasChildren] = await Promise.all([
@@ -18,15 +19,20 @@ export default async function HomePage() {
     return <KidHomepage child={activeChild} />;
   }
 
-  const showPickerBanner = parentHasChildren;
+  // Activated parent (logged in + has kids, not in kid mode) → chooser view
+  // replaces the marketing hero. Cold prospects still see the marketing hero.
+  const showChooser = parentHasChildren;
   // Logged-in parent with no kids → setup hero replaces the marketing hero
   const showSetupHero = parent && !parentHasChildren;
+  // Cold prospect → keep the existing marketing hero + bridge card
+  const showMarketingHero = !showSetupHero && !showChooser;
 
   return (
     <main className="min-h-screen bg-gray-50">
 
-      {/* ── Picker prompt: parent has children but isn't in kid mode ──── */}
-      {showPickerBanner && (
+      {/* ── Picker prompt: thin reminder shown to activated parents only.
+            Kept lightweight since the chooser below is the primary CTA. */}
+      {showChooser && (
         <Link
           href="/kids"
           className="block bg-cream hover:bg-cream-section border-b border-warm-line transition-colors"
@@ -44,8 +50,12 @@ export default async function HomePage() {
       {/* ── Parent setup hero: replaces marketing hero when logged in + no kids ── */}
       {showSetupHero && <ParentSetupHero firstName={parent.firstName} />}
 
-      {/* ── HERO — Brain Training (only for logged-out / picker-banner users) ── */}
-      {!showSetupHero && (
+      {/* ── Parent chooser: state-aware utility view for activated parents.
+            "How would you like to start?" + Brain / School / Dashboard cards. */}
+      {showChooser && <ParentChooser firstName={parent?.firstName || ''} />}
+
+      {/* ── HERO — Brain Training (only for cold prospects: not setup, not chooser) ── */}
+      {showMarketingHero && (
       <section className="bg-white py-14 px-6 border-b border-cool-line">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
@@ -93,7 +103,9 @@ export default async function HomePage() {
       </section>
       )}
 
-      {/* ── BRIDGE — How it helps in school (smaller, secondary) ────────── */}
+      {/* ── BRIDGE — How it helps in school (only for cold prospects; the
+            chooser covers this destination for activated parents) ───────── */}
+      {showMarketingHero && (
       <section className="bg-white py-10 px-6 border-b border-cool-line">
         <div className="max-w-3xl mx-auto">
           <Link
@@ -121,6 +133,7 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
+      )}
 
       {/* ── HOW IT WORKS — 5-step Loop ──────────────────────────────────── */}
       <section id="how-it-works" className="bg-cream py-14 px-6 scroll-mt-4">
