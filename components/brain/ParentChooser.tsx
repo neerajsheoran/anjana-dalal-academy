@@ -81,15 +81,15 @@ export default function ParentChooser({ firstName }: { firstName: string }) {
               <Link
                 key={card.href}
                 href={card.href}
-                className="group bg-white border border-cool-line hover:border-brand hover:shadow-md rounded-2xl p-6 transition-all"
+                className="group bg-white border border-cool-line hover:border-brand hover:shadow-md rounded-2xl p-6 transition-all flex flex-col items-center text-center h-full"
               >
                 <div
-                  className={`w-14 h-14 rounded-xl border flex items-center justify-center mb-4 ${card.iconBg} ${card.iconBorder}`}
+                  className={`w-20 h-20 rounded-2xl border flex items-center justify-center mb-4 ${card.iconBg} ${card.iconBorder}`}
                 >
-                  <Icon className={`w-7 h-7 ${card.iconColor}`} strokeWidth={2} />
+                  <Icon className={`w-10 h-10 ${card.iconColor}`} strokeWidth={2} />
                 </div>
-                <h3 className="text-lg font-bold text-ink mb-1">{card.title}</h3>
-                <p className="text-sm text-ink-soft leading-relaxed mb-5">
+                <h3 className="text-lg font-bold text-ink mb-2">{card.title}</h3>
+                <p className="text-sm text-ink-soft leading-relaxed mb-5 flex-1">
                   {card.description}
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-brand font-semibold text-sm group-hover:gap-2 transition-all">
