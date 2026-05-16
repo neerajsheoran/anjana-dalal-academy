@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ChevronRight } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import {
   BRAIN_MODULES,
@@ -144,7 +144,7 @@ function ActivityCard({
         <p className="text-xs text-gray-500">{skill} · {ageRange}</p>
       </div>
       {href && (
-        <ArrowRight className="w-5 h-5 text-gray-400 shrink-0" strokeWidth={2} />
+        <ChevronRight className="w-7 h-7 text-gray-500 shrink-0" strokeWidth={3} />
       )}
     </div>
   );
