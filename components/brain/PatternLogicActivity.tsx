@@ -8,7 +8,18 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  Heart,
+  Star,
+  Sun,
+  Sparkles,
+  Crown,
+  Flame,
+  HelpCircle,
+  type LucideIcon,
+} from 'lucide-react';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
   PATTERN_LOGIC_CONFIG,
@@ -26,8 +37,47 @@ import { useCelebration } from '@/lib/use-celebration';
 
 const TOTAL_ROUNDS = 3;
 
-// 6 distinct coloured circle emojis. Visually clear; works on all devices.
-const COLOR_POOL = ['🔴', '🔵', '🟡', '🟢', '🟣', '🟠'];
+// 6 distinct color-icon pairs. The pattern is still color-based (each item
+// has a stable color identity), and the paired icon adds a redundant visual
+// cue — clearer than plain colored circles AND a quiet accessibility win
+// for color-blind kids (shape works as backup).
+const COLOR_KEYS = ['red', 'blue', 'yellow', 'green', 'purple', 'orange'] as const;
+type ColorKey = (typeof COLOR_KEYS)[number];
+
+const COLOR_META: Record<ColorKey, { icon: LucideIcon; hex: string }> = {
+  red:    { icon: Heart,    hex: '#ef4444' },
+  blue:   { icon: Star,     hex: '#3b82f6' },
+  yellow: { icon: Sun,      hex: '#eab308' },
+  green:  { icon: Sparkles, hex: '#10b981' },
+  purple: { icon: Crown,    hex: '#a855f7' },
+  orange: { icon: Flame,    hex: '#f97316' },
+};
+
+// Renders a color-item with its Lucide icon at the given size. Used in both
+// the playing sequence and the multiple-choice options.
+function ColorItem({
+  ckey,
+  size = 'md',
+}: {
+  ckey: ColorKey;
+  size?: 'sm' | 'md' | 'lg';
+}) {
+  const meta = COLOR_META[ckey];
+  const Icon = meta.icon;
+  const cls =
+    size === 'lg'
+      ? 'w-10 h-10 sm:w-14 sm:h-14'
+      : size === 'sm'
+        ? 'w-6 h-6 sm:w-8 sm:h-8'
+        : 'w-8 h-8 sm:w-10 sm:h-10';
+  return (
+    <Icon
+      className={cls}
+      style={{ color: meta.hex, fill: meta.hex }}
+      strokeWidth={1.5}
+    />
+  );
+}
 
 type Phase =
   | 'instruction'
@@ -47,18 +97,18 @@ interface RoundResult {
 
 interface RoundData {
   setup: RoundSetup;
-  picked: string;
+  picked: ColorKey;
   isCorrect: boolean;
   timeTakenSeconds: number;
 }
 
 interface RoundSetup {
-  sequence: string[];     // SEQUENCE_LENGTH alternating colours, e.g. [A, B, A, B]
-  correct: string;        // the continuation (A)
-  options: string[];      // 3 MC options, shuffled (includes correct, B, and 1 distractor)
+  sequence: ColorKey[];   // sequence length items, e.g. [A, B, A, B]
+  correct: ColorKey;      // the continuation (A)
+  options: ColorKey[];    // 3-4 MC options, shuffled (includes correct + distractors)
 }
 
-function pickN<T>(arr: T[], n: number): T[] {
+function pickN<T>(arr: readonly T[], n: number): T[] {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -80,14 +130,14 @@ function generateRound(
   const colorsNeeded =
     patternKind === "ABCABC" ? 3 : 2; // ABCABC uses 3, ABAB/AABAAB uses 2
   const distractorCount = Math.max(1, optionCount - colorsNeeded);
-  const picks = pickN(COLOR_POOL, colorsNeeded + distractorCount);
+  const picks = pickN(COLOR_KEYS, colorsNeeded + distractorCount);
   const a = picks[0];
   const b = picks[1];
   const c = colorsNeeded === 3 ? picks[2] : null;
   const distractors = picks.slice(colorsNeeded);
 
-  const sequence: string[] = [];
-  let correct = a;
+  const sequence: ColorKey[] = [];
+  let correct: ColorKey = a;
   if (patternKind === "ABAB") {
     for (let i = 0; i < sequenceLength; i++) sequence.push(i % 2 === 0 ? a : b);
     // Even length ⇒ next is A
@@ -106,17 +156,17 @@ function generateRound(
 
   // Build option set: correct + remaining colours used + distractors,
   // shuffled, deduped, trimmed to optionCount.
-  const optionSeed = [
+  const optionSeed: ColorKey[] = [
     correct,
     ...(patternKind === "ABCABC" ? [a, b, c!] : [a, b]),
     ...distractors,
   ];
-  const unique: string[] = [];
+  const unique: ColorKey[] = [];
   for (const item of optionSeed) {
     if (!unique.includes(item)) unique.push(item);
   }
-  // Top up from COLOR_POOL if we somehow don't have enough
-  for (const colour of COLOR_POOL) {
+  // Top up from COLOR_KEYS if we somehow don't have enough
+  for (const colour of COLOR_KEYS) {
     if (unique.length >= optionCount) break;
     if (!unique.includes(colour)) unique.push(colour);
   }
@@ -142,7 +192,7 @@ export default function PatternLogicActivity({
   const [phase, setPhase] = useState<Phase>('instruction');
   const [round, setRound] = useState(1);
   const [setup, setSetup] = useState<RoundSetup | null>(null);
-  const [picked, setPicked] = useState<string | null>(null);
+  const [picked, setPicked] = useState<ColorKey | null>(null);
   const [roundData, setRoundData] = useState<RoundData[]>([]);
   const [results, setResults] = useState<RoundResult[]>([]);
   const [submitting, setSubmitting] = useState(false);
@@ -158,7 +208,7 @@ export default function PatternLogicActivity({
     setPhase('playing');
   }
 
-  function handlePick(option: string) {
+  function handlePick(option: ColorKey) {
     if (phase !== 'playing' || !setup) return;
     timeTakenRef.current = (Date.now() - startTimeRef.current) / 1000;
     setPicked(option);
@@ -328,23 +378,51 @@ export default function PatternLogicActivity({
               </li>
             </ol>
             <div className="bg-orange-50 rounded-lg p-3 mb-6 text-xs text-gray-600">
-              <p className="font-semibold mb-1">Example:</p>
+              <p className="font-semibold mb-2">Example:</p>
               {config.patternKind === 'ABAB' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔵 🔴 🔵 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴</p>
+                  <div className="flex items-center justify-center gap-1.5 mb-1.5">
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <HelpCircle className="w-6 h-6 sm:w-8 sm:h-8 text-orange-400" strokeWidth={2} />
+                  </div>
+                  <p className="text-[11px] text-gray-500 inline-flex items-center gap-1 justify-center w-full">
+                    Answer: <ColorItem ckey="red" size="sm" />
+                  </p>
                 </>
               )}
               {config.patternKind === 'AABAAB' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔴 🔵 🔴 🔴 🔵 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴 (the triplet repeats)</p>
+                  <div className="flex items-center justify-center gap-1.5 mb-1.5 flex-wrap">
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <HelpCircle className="w-6 h-6 sm:w-8 sm:h-8 text-orange-400" strokeWidth={2} />
+                  </div>
+                  <p className="text-[11px] text-gray-500 inline-flex items-center gap-1 justify-center w-full">
+                    Answer: <ColorItem ckey="red" size="sm" /> <span>(the triplet repeats)</span>
+                  </p>
                 </>
               )}
               {config.patternKind === 'ABCABC' && (
                 <>
-                  <p className="text-2xl tracking-wider">🔴 🔵 🟡 🔴 🔵 🟡 ❓</p>
-                  <p className="mt-1 text-[11px] text-gray-500">Answer: 🔴 (3-colour cycle)</p>
+                  <div className="flex items-center justify-center gap-1.5 mb-1.5 flex-wrap">
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <ColorItem ckey="yellow" size="sm" />
+                    <ColorItem ckey="red" size="sm" />
+                    <ColorItem ckey="blue" size="sm" />
+                    <ColorItem ckey="yellow" size="sm" />
+                    <HelpCircle className="w-6 h-6 sm:w-8 sm:h-8 text-orange-400" strokeWidth={2} />
+                  </div>
+                  <p className="text-[11px] text-gray-500 inline-flex items-center gap-1 justify-center w-full">
+                    Answer: <ColorItem ckey="red" size="sm" /> <span>(3-colour cycle)</span>
+                  </p>
                 </>
               )}
             </div>
@@ -368,11 +446,11 @@ export default function PatternLogicActivity({
               What comes next?
             </p>
             {/* Sequence — wraps if long */}
-            <div className="flex items-center justify-center flex-wrap gap-1.5 mb-6 text-3xl sm:text-4xl">
+            <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-6">
               {setup.sequence.map((c, i) => (
-                <span key={i}>{c}</span>
+                <ColorItem key={i} ckey={c} size="lg" />
               ))}
-              <span className="text-gray-400">❓</span>
+              <HelpCircle className="w-10 h-10 sm:w-14 sm:h-14 text-orange-400" strokeWidth={2} />
             </div>
             {/* Multiple choice */}
             <p className="text-center text-xs text-gray-400 mb-3">
@@ -387,10 +465,10 @@ export default function PatternLogicActivity({
                   key={`${opt}-${i}`}
                   type="button"
                   onClick={() => handlePick(opt)}
-                  className="aspect-square rounded-xl bg-gray-50 hover:bg-orange-50 active:bg-orange-100 active:scale-95 border-2 border-gray-100 hover:border-orange-200 flex items-center justify-center text-3xl sm:text-4xl transition-all"
+                  className="aspect-square rounded-xl bg-gray-50 hover:bg-orange-50 active:bg-orange-100 hover:scale-105 active:scale-95 border-2 border-gray-100 hover:border-orange-300 flex items-center justify-center transition-all"
                   aria-label={`Option ${i + 1}`}
                 >
-                  {opt}
+                  <ColorItem ckey={opt} size="lg" />
                 </button>
               ))}
             </div>
@@ -418,22 +496,22 @@ export default function PatternLogicActivity({
               <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">
                 The pattern
               </p>
-              <div className="flex items-center justify-center flex-wrap gap-1 text-2xl sm:text-3xl mb-3">
+              <div className="flex items-center justify-center flex-wrap gap-1.5 mb-3">
                 {lastRoundData.setup.sequence.map((c, i) => (
-                  <span key={i}>{c}</span>
+                  <ColorItem key={i} ckey={c} size="md" />
                 ))}
-                <span className="text-gray-300">→</span>
-                <span className="ring-4 ring-green-300 rounded-full">
-                  {lastRoundData.setup.correct}
+                <ArrowRight className="w-5 h-5 text-gray-300" strokeWidth={2.5} />
+                <span className="inline-flex p-1 rounded-xl ring-4 ring-green-300">
+                  <ColorItem ckey={lastRoundData.setup.correct} size="md" />
                 </span>
               </div>
               {!lastRoundData.isCorrect && (
-                <p className="text-xs text-gray-500">
-                  You picked{' '}
-                  <span className="text-2xl align-middle">{lastRoundData.picked}</span> — correct
-                  was{' '}
-                  <span className="text-2xl align-middle">{lastRoundData.setup.correct}</span>
-                </p>
+                <div className="flex items-center justify-center gap-2 text-xs text-gray-500 flex-wrap">
+                  <span>You picked</span>
+                  <ColorItem ckey={lastRoundData.picked} size="sm" />
+                  <span>— correct was</span>
+                  <ColorItem ckey={lastRoundData.setup.correct} size="sm" />
+                </div>
               )}
             </div>
 
