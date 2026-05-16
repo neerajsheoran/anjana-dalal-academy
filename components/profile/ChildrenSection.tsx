@@ -5,6 +5,13 @@
 
 import { useEffect, useState } from 'react';
 import {
+  Users,
+  UserPlus,
+  RotateCcw,
+  Trash2,
+  Brain as BrainIcon,
+} from 'lucide-react';
+import {
   CLASS_OPTIONS,
   suggestClassFromAge,
 } from '@/lib/age-group';
@@ -179,26 +186,30 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-      <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-        Your Children
-      </h2>
+    <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+      <div className="flex items-center gap-2 mb-4">
+        <Users className="w-4 h-4 text-brand" strokeWidth={2} />
+        <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+          Your Children
+        </h2>
+      </div>
 
-      {loading && <p className="text-sm text-gray-400">Loading…</p>}
+      {loading && <p className="text-sm text-ink-light">Loading…</p>}
 
       {!loading && children !== null && children.length === 0 && !showAdd && (
         <div className="text-center py-6">
-          <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center text-2xl mx-auto mb-3">
-            🧠
+          <div className="w-14 h-14 rounded-xl bg-cream border border-warm-line flex items-center justify-center mx-auto mb-3">
+            <BrainIcon className="w-6 h-6 text-brand" strokeWidth={2} />
           </div>
-          <p className="text-sm text-gray-600 mb-1">No children added yet</p>
-          <p className="text-xs text-gray-400 mb-4">
+          <p className="text-sm text-ink mb-1">No children added yet</p>
+          <p className="text-xs text-ink-light mb-4">
             Add your first child to start brain training
           </p>
           <button
             onClick={() => setShowAdd(true)}
-            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
+            className="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
           >
+            <UserPlus className="w-4 h-4" strokeWidth={2.5} />
             Add your first child
           </button>
         </div>
@@ -210,14 +221,14 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
             {children.map((child) => (
               <div
                 key={child.id}
-                className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
+                className="flex items-center gap-3 p-3 rounded-xl bg-white border border-cool-line"
               >
-                <div className="w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-cream border border-warm-line text-brand font-bold flex items-center justify-center shrink-0">
                   {child.name[0]?.toUpperCase() || '?'}
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="text-sm font-semibold text-gray-800 truncate">{child.name}</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-sm font-semibold text-ink truncate">{child.name}</p>
+                  <p className="text-xs text-ink-light">
                     Age {child.age}
                     {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
                     {' · '}
@@ -227,20 +238,19 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 <div className="flex items-center gap-1 shrink-0">
                   <button
                     onClick={() => handleReset(child)}
-                    className="text-xs text-amber-600 hover:text-amber-800 font-medium px-2 py-1 transition-colors"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-amber-600 hover:bg-amber-50 transition-colors"
                     aria-label={`Reset progress for ${child.name}`}
                     title="Clear training history, keep profile"
                   >
-                    Reset
+                    <RotateCcw className="w-4 h-4" strokeWidth={2.25} />
                   </button>
-                  <span className="text-xs text-gray-300">·</span>
                   <button
                     onClick={() => handleDelete(child)}
-                    className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 transition-colors"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
                     aria-label={`Remove ${child.name}`}
                     title="Permanently delete profile + history"
                   >
-                    Remove
+                    <Trash2 className="w-4 h-4" strokeWidth={2.25} />
                   </button>
                 </div>
               </div>
@@ -250,18 +260,19 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
           {!showAdd && (
             <button
               onClick={() => setShowAdd(true)}
-              className="w-full text-purple-600 hover:text-purple-700 hover:bg-purple-50 font-medium text-sm py-2 rounded-lg transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 text-brand hover:bg-cream font-medium text-sm py-2 rounded-lg transition-colors border border-dashed border-warm-line"
             >
-              + Add another child
+              <UserPlus className="w-4 h-4" strokeWidth={2.25} />
+              Add another child
             </button>
           )}
         </>
       )}
 
       {showAdd && (
-        <form onSubmit={handleAdd} className="mt-4 space-y-3 bg-purple-50 p-4 rounded-xl">
+        <form onSubmit={handleAdd} className="mt-4 space-y-3 bg-cream border border-warm-line p-4 rounded-xl">
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">
+            <label className="block text-xs font-medium text-ink mb-1">
               First name
             </label>
             <input
@@ -269,14 +280,14 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               value={name}
               onChange={(e) => setName(e.target.value)}
               maxLength={50}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white"
+              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
               placeholder="e.g. Aanya"
               required
             />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">
+            <label className="block text-xs font-medium text-ink mb-1">
               Age
             </label>
             <input
@@ -285,18 +296,18 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               onChange={(e) => handleAgeChange(e.target.value)}
               min={5}
               max={15}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white"
+              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
               placeholder="5–15"
               required
             />
-            <p className="text-[11px] text-gray-400 mt-1">
+            <p className="text-[11px] text-ink-light mt-1">
               Must be between 5 and 15. Used to choose age-appropriate games.
             </p>
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">
-              School class <span className="text-gray-400">(optional)</span>
+            <label className="block text-xs font-medium text-ink mb-1">
+              School class <span className="text-ink-light">(optional)</span>
             </label>
             <select
               value={classId}
@@ -304,7 +315,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 setClassId(e.target.value);
                 setClassManuallyChanged(true);
               }}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white"
+              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
             >
               <option value="">Not in CBSE / homeschooled</option>
               {CLASS_OPTIONS.map((o) => (
@@ -313,17 +324,17 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 </option>
               ))}
             </select>
-            <p className="text-[11px] text-gray-400 mt-1">
+            <p className="text-[11px] text-ink-light mt-1">
               We&apos;ll suggest matching academic content for this class.
             </p>
           </div>
 
           {!hasPin && (
-            <div className="bg-white p-3 rounded-lg border border-purple-200 space-y-2">
-              <p className="text-xs font-semibold text-purple-700">
+            <div className="bg-white p-3 rounded-lg border border-warm-line space-y-2">
+              <p className="text-xs font-semibold text-brand">
                 Set a 4-digit Parent PIN
               </p>
-              <p className="text-[11px] text-gray-500 leading-relaxed">
+              <p className="text-[11px] text-ink-soft leading-relaxed">
                 Used when switching to a child profile. Prevents your child from
                 changing settings or accessing payment screens.
               </p>
@@ -333,7 +344,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 pattern="\d{4}"
                 value={pin}
                 onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                 placeholder="4-digit PIN"
                 required
                 maxLength={4}
@@ -344,7 +355,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                 pattern="\d{4}"
                 value={pinConfirm}
                 onChange={(e) => setPinConfirm(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
                 placeholder="Confirm PIN"
                 required
                 maxLength={4}
@@ -357,26 +368,26 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               type="checkbox"
               checked={consent}
               onChange={(e) => setConsent(e.target.checked)}
-              className="mt-0.5 h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+              className="mt-0.5 h-4 w-4 rounded border-cool-line text-brand focus:ring-brand"
               required
             />
-            <span className="text-[11px] text-gray-600 leading-relaxed">
+            <span className="text-[11px] text-ink-soft leading-relaxed">
               I am the parent or guardian of this child and consent to processing
               their data per CogniLift&apos;s{' '}
-              <a href="/privacy" target="_blank" className="text-purple-700 hover:underline">
+              <a href="/privacy" target="_blank" className="text-brand hover:underline">
                 Privacy Policy
               </a>
               .
             </span>
           </label>
 
-          {error && <p className="text-red-500 text-xs">{error}</p>}
+          {error && <p className="text-red-600 text-xs">{error}</p>}
 
           <div className="flex gap-2">
             <button
               type="submit"
               disabled={submitting}
-              className="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
+              className="flex-1 bg-brand hover:bg-brand-hover text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
             >
               {submitting ? 'Saving…' : 'Save profile'}
             </button>
@@ -384,7 +395,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               type="button"
               onClick={resetForm}
               disabled={submitting}
-              className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              className="px-4 py-2 text-sm text-ink-soft hover:text-ink transition-colors"
             >
               Cancel
             </button>

@@ -53,21 +53,21 @@ export default async function DashboardPage({
 
 function NoChildrenState() {
   return (
-    <main className="min-h-screen bg-gray-50 py-12 px-6">
-      <div className="max-w-md mx-auto bg-white rounded-2xl shadow-sm p-8 text-center">
-        <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl mx-auto mb-4">
+    <main className="min-h-screen bg-white py-12 px-6">
+      <div className="max-w-md mx-auto bg-cream border border-warm-line rounded-2xl shadow-sm p-8 text-center">
+        <div className="w-16 h-16 rounded-xl bg-white border border-warm-line flex items-center justify-center text-3xl mx-auto mb-4">
           🧠
         </div>
-        <h1 className="text-xl font-bold text-gray-800 mb-2">
+        <h1 className="text-xl font-bold text-ink mb-2">
           No children added yet
         </h1>
-        <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+        <p className="text-sm text-ink-soft mb-6 leading-relaxed">
           Add a child profile first — once they start training, this dashboard
           will show their progress, scores, and personalised insights.
         </p>
         <a
           href="/profile#children"
-          className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
+          className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
         >
           Add a child profile →
         </a>

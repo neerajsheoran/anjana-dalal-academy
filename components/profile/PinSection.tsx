@@ -10,6 +10,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { Lock, CheckCircle2, KeyRound, ShieldAlert } from 'lucide-react';
 
 export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }) {
   const router = useRouter();
@@ -78,33 +79,39 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-      <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-        Parent PIN
-      </h2>
+    <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+      <div className="flex items-center gap-2 mb-4">
+        <Lock className="w-4 h-4 text-brand" strokeWidth={2} />
+        <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+          Parent PIN
+        </h2>
+      </div>
 
       <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-lg shrink-0">
-          🔒
+        <div className="w-10 h-10 rounded-lg bg-cream border border-warm-line flex items-center justify-center shrink-0">
+          {hasPin ? (
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" strokeWidth={2} />
+          ) : (
+            <ShieldAlert className="w-5 h-5 text-amber-600" strokeWidth={2} />
+          )}
         </div>
         <div className="min-w-0 flex-1">
           {hasPin ? (
             <>
-              <p className="text-sm font-semibold text-gray-800 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-green-500" />
+              <p className="text-sm font-semibold text-ink">
                 PIN is active
               </p>
-              <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+              <p className="text-xs text-ink-soft mt-1 leading-relaxed">
                 Required when switching between profiles or exiting kid mode.
                 Stops your child from changing settings.
               </p>
             </>
           ) : (
             <>
-              <p className="text-sm font-semibold text-gray-800">
+              <p className="text-sm font-semibold text-ink">
                 No PIN set
               </p>
-              <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+              <p className="text-xs text-ink-soft mt-1 leading-relaxed">
                 Set a 4-digit PIN to gate switching between profiles. Without
                 it, anyone using this device can enter any child profile or exit
                 kid mode.
@@ -116,15 +123,17 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors shrink-0"
+            className="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors shrink-0"
           >
+            <KeyRound className="w-3.5 h-3.5" strokeWidth={2.5} />
             {hasPin ? 'Change PIN' : 'Set PIN'}
           </button>
         )}
       </div>
 
       {successMessage && (
-        <p className="mt-3 text-xs text-green-600 font-medium">
+        <p className="mt-3 text-xs text-emerald-600 font-medium flex items-center gap-1.5">
+          <CheckCircle2 className="w-3.5 h-3.5" strokeWidth={2.5} />
           {successMessage}
         </p>
       )}
@@ -132,11 +141,11 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
       {open && (
         <form
           onSubmit={handleSubmit}
-          className="mt-4 space-y-3 bg-purple-50 p-4 rounded-xl"
+          className="mt-4 space-y-3 bg-cream border border-warm-line p-4 rounded-xl"
         >
           {hasPin && (
             <div>
-              <label className="block text-xs font-medium text-gray-700 mb-1">
+              <label className="block text-xs font-medium text-ink mb-1">
                 Current PIN
               </label>
               <input
@@ -147,7 +156,7 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
                 onChange={(e) =>
                   setCurrentPin(e.target.value.replace(/\D/g, '').slice(0, 4))
                 }
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white tracking-widest"
+                className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white tracking-widest"
                 placeholder="••••"
                 maxLength={4}
                 required
@@ -155,7 +164,7 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
             </div>
           )}
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">
+            <label className="block text-xs font-medium text-ink mb-1">
               New PIN
             </label>
             <input
@@ -166,7 +175,7 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
               onChange={(e) =>
                 setNewPin(e.target.value.replace(/\D/g, '').slice(0, 4))
               }
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white tracking-widest"
+              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white tracking-widest"
               placeholder="4-digit PIN"
               maxLength={4}
               required
@@ -174,7 +183,7 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
             />
           </div>
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">
+            <label className="block text-xs font-medium text-ink mb-1">
               Confirm new PIN
             </label>
             <input
@@ -185,20 +194,20 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
               onChange={(e) =>
                 setNewPinConfirm(e.target.value.replace(/\D/g, '').slice(0, 4))
               }
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white tracking-widest"
+              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white tracking-widest"
               placeholder="4-digit PIN"
               maxLength={4}
               required
             />
           </div>
 
-          {error && <p className="text-red-500 text-xs">{error}</p>}
+          {error && <p className="text-red-600 text-xs">{error}</p>}
 
           <div className="flex gap-2">
             <button
               type="submit"
               disabled={submitting}
-              className="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
+              className="flex-1 bg-brand hover:bg-brand-hover text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
             >
               {submitting ? 'Saving…' : hasPin ? 'Update PIN' : 'Save PIN'}
             </button>
@@ -206,7 +215,7 @@ export default function PinSection({ hasPinInitial }: { hasPinInitial: boolean }
               type="button"
               onClick={reset}
               disabled={submitting}
-              className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              className="px-4 py-2 text-sm text-ink-soft hover:text-ink transition-colors"
             >
               Cancel
             </button>

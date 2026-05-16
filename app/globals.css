@@ -1,6 +1,22 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* ── Parent-mode palette (Option 1: white body + cream accents) ─────────
+   Apply to professional / parent-facing surfaces only. Kid-mode surfaces
+   keep their playful gradients (see `/design/palette` for the spec).
+   Use as Tailwind utilities: bg-cream, text-ink, border-warm, etc. */
+@theme {
+  --color-cream: #faf7f2;        /* warm accent background */
+  --color-cream-section: #f9f5ee; /* slightly deeper cream for section breaks */
+  --color-warm-line: #e8e2d7;     /* warm border (on cream surfaces) */
+  --color-cool-line: #e5e7eb;     /* cool border (on white surfaces) */
+  --color-ink: #1f2937;           /* primary text */
+  --color-ink-soft: #4b5563;      /* secondary text */
+  --color-ink-light: #9ca3af;     /* tertiary text */
+  --color-brand: #2563eb;         /* primary brand blue */
+  --color-brand-hover: #1d4ed8;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;

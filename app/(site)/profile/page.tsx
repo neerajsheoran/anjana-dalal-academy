@@ -2,6 +2,15 @@ import { cookies } from "next/headers";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import {
+  LayoutDashboard,
+  ChevronRight,
+  User,
+  CreditCard,
+  History,
+  Bookmark,
+  BarChart3,
+} from "lucide-react";
 import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
 import ChildrenSection from "@/components/profile/ChildrenSection";
@@ -168,42 +177,40 @@ export default async function ProfilePage() {
     : "—";
 
   return (
-    <main className="min-h-screen bg-gray-50 py-10 px-4">
+    <main className="min-h-screen bg-white py-10 px-4">
       <div className="max-w-xl mx-auto">
 
         {/* Avatar + name */}
-        <div className="bg-white rounded-2xl shadow-sm p-8 text-center mb-6">
-          <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4">
+        <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-8 text-center mb-6">
+          <div className="w-20 h-20 rounded-full bg-brand flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4">
             {initial}
           </div>
-          <h1 className="text-2xl font-bold text-gray-800">{name || "—"}</h1>
-          <p className="text-gray-500 text-sm mt-1">{email}</p>
+          <h1 className="text-2xl font-bold text-ink">{name || "—"}</h1>
+          <p className="text-ink-soft text-sm mt-1">{email}</p>
         </div>
 
         {/* Dashboard shortcut */}
         <Link
           href="/dashboard"
-          className="block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-2xl shadow-md p-5 mb-6 transition-colors"
+          className="block bg-white hover:border-brand rounded-2xl shadow-sm hover:shadow-md border border-cool-line p-4 mb-6 transition-all"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-2xl shrink-0">
-              📊
+            <div className="w-12 h-12 rounded-xl bg-cream border border-warm-line flex items-center justify-center shrink-0">
+              <LayoutDashboard className="w-6 h-6 text-brand" strokeWidth={2} />
             </div>
-            <div className="flex-1 min-w-0 text-white">
-              <p className="text-base font-bold leading-tight">Parent Dashboard</p>
-              <p className="text-xs text-white/85 mt-0.5">
+            <div className="flex-1 min-w-0">
+              <p className="text-base font-bold leading-tight text-ink">Parent Dashboard</p>
+              <p className="text-xs text-ink-soft mt-0.5">
                 See your kids&rsquo; brain training progress, scores, and insights
               </p>
             </div>
-            <span className="text-2xl text-white/80 shrink-0">→</span>
+            <ChevronRight className="w-5 h-5 text-ink-light shrink-0" strokeWidth={2} />
           </div>
         </Link>
 
         {/* Account details */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-            Account Details
-          </h2>
+        <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+          <SectionHeading icon={User} title="Account Details" />
           <div className="space-y-4">
             <EditableName currentName={name} />
             <Row label="Email" value={email} />
@@ -229,46 +236,44 @@ export default async function ProfilePage() {
             parent-level fields). Section is rebranded so it's clear this is
             the parent's OWN history, not their kid's. */}
         {(progressStats.chaptersRead > 0 || quizStats.quizzesTaken > 0) && (
-          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-1">
-              Your Own Learning History
-            </h2>
-            <p className="text-[11px] text-gray-400 mb-4">
+          <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+            <SectionHeading icon={BarChart3} title="Your Own Learning History" />
+            <p className="text-[11px] text-ink-light mb-4">
               From quizzes/chapters you tried before adding child profiles. For
               your kids&rsquo; progress, see the dashboard.
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-blue-50 rounded-xl p-4 text-center">
-                <p className="text-2xl font-bold text-blue-600">{progressStats.chaptersRead}</p>
-                <p className="text-xs text-gray-500 mt-1">Chapters Read</p>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="bg-cream border border-warm-line rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-brand">{progressStats.chaptersRead}</p>
+                <p className="text-xs text-ink-soft mt-1">Chapters Read</p>
               </div>
-              <div className="bg-green-50 rounded-xl p-4 text-center">
-                <p className="text-2xl font-bold text-green-600">{progressStats.chaptersCompleted}</p>
-                <p className="text-xs text-gray-500 mt-1">Chapters Completed</p>
+              <div className="bg-cream border border-warm-line rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-brand">{progressStats.chaptersCompleted}</p>
+                <p className="text-xs text-ink-soft mt-1">Chapters Completed</p>
               </div>
-              <div className="bg-purple-50 rounded-xl p-4 text-center">
-                <p className="text-2xl font-bold text-purple-600">{quizStats.quizzesTaken}</p>
-                <p className="text-xs text-gray-500 mt-1">Quizzes Taken</p>
+              <div className="bg-cream border border-warm-line rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-brand">{quizStats.quizzesTaken}</p>
+                <p className="text-xs text-ink-soft mt-1">Quizzes Taken</p>
               </div>
-              <div className="bg-amber-50 rounded-xl p-4 text-center">
-                <p className="text-2xl font-bold text-amber-600">{quizStats.avgScore}%</p>
-                <p className="text-xs text-gray-500 mt-1">Average Score</p>
+              <div className="bg-cream border border-warm-line rounded-xl p-4 text-center">
+                <p className="text-2xl font-bold text-brand">{quizStats.avgScore}%</p>
+                <p className="text-xs text-ink-soft mt-1">Average Score</p>
               </div>
             </div>
 
             {progressStats.bySubject.size > 0 && (
               <div className="mt-6 space-y-3">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Subject Progress</p>
+                <p className="text-xs font-bold text-ink-light uppercase tracking-wide">Subject Progress</p>
                 {Array.from(progressStats.bySubject.entries()).map(([subj, data]) => {
                   const pct = data.total > 0 ? Math.round((data.completed / data.total) * 100) : 0;
                   return (
                     <div key={subj}>
                       <div className="flex justify-between text-sm mb-1">
-                        <span className="font-medium text-gray-700 capitalize">{subj}</span>
-                        <span className="text-gray-400">{data.completed}/{data.total} completed</span>
+                        <span className="font-medium text-ink capitalize">{subj}</span>
+                        <span className="text-ink-light">{data.completed}/{data.total} completed</span>
                       </div>
                       <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                        <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
+                        <div className="h-full bg-brand rounded-full transition-all" style={{ width: `${pct}%` }} />
                       </div>
                     </div>
                   );
@@ -280,33 +285,28 @@ export default async function ProfilePage() {
 
         {/* Bookmarked Chapters */}
         {bookmarks.length > 0 && (
-          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-              Bookmarked Chapters
-            </h2>
+          <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+            <SectionHeading icon={Bookmark} title="Bookmarked Chapters" />
             <div className="space-y-2">
               {bookmarks.map((b) => {
                 const classLabel = b.classId.replace("class-", "Class ");
                 const subjectLabel = b.subject === "maths" ? "Maths" : "Science";
-                const subjectColor = b.subject === "maths" ? "bg-blue-50 text-blue-600" : "bg-green-50 text-green-600";
                 return (
                   <Link
                     key={b.chapterId}
                     href={`/class/${b.classId}/${b.subject}/${b.chapterId}`}
-                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group"
+                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-cream transition-colors group"
                   >
-                    <svg className="w-4 h-4 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                    </svg>
+                    <Bookmark className="w-4 h-4 text-brand shrink-0" strokeWidth={2} />
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-medium text-gray-800 group-hover:text-blue-600 truncate">
+                      <p className="text-sm font-medium text-ink group-hover:text-brand truncate">
                         {b.chapterTitle}
                       </p>
                       <div className="flex items-center gap-2 mt-0.5">
-                        <span className={`text-xs font-medium px-1.5 py-0.5 rounded ${subjectColor}`}>
+                        <span className="text-xs font-medium px-1.5 py-0.5 rounded bg-cream border border-warm-line text-ink-soft">
                           {subjectLabel}
                         </span>
-                        <span className="text-xs text-gray-400">{classLabel}</span>
+                        <span className="text-xs text-ink-light">{classLabel}</span>
                       </div>
                     </div>
                   </Link>
@@ -319,29 +319,27 @@ export default async function ProfilePage() {
         {/* Quiz History — parent's own legacy quiz attempts. Hidden when empty
             so post-pivot parents don't see a noisy "no quizzes yet" block. */}
         {quizHistory.length > 0 && (
-          <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-              Your Past Quiz Attempts
-            </h2>
+          <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+            <SectionHeading icon={History} title="Your Past Quiz Attempts" />
             <div className="space-y-3">
               {quizHistory.map((attempt) => (
                 <div
                   key={attempt.id}
-                  className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0"
+                  className="flex items-center justify-between py-2 border-b border-cool-line last:border-0"
                 >
                   <div className="min-w-0 mr-4">
-                    <p className="text-sm font-medium text-gray-800 truncate">
+                    <p className="text-sm font-medium text-ink truncate">
                       {attempt.chapterTitles.join(", ") || attempt.classId}
                     </p>
-                    <p className="text-xs text-gray-400">
+                    <p className="text-xs text-ink-light">
                       {attempt.subject} · {attempt.difficulty} · {attempt.timestamp}
                     </p>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="text-sm font-bold text-blue-600">
+                    <p className="text-sm font-bold text-brand">
                       {attempt.percentage}%
                     </p>
-                    <p className="text-xs text-gray-400">
+                    <p className="text-xs text-ink-light">
                       {attempt.score}/{attempt.total}
                     </p>
                   </div>
@@ -356,6 +354,24 @@ export default async function ProfilePage() {
   );
 }
 
+function SectionHeading({
+  icon: Icon,
+  title,
+}: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon: any;
+  title: string;
+}) {
+  return (
+    <div className="flex items-center gap-2 mb-4">
+      <Icon className="w-4 h-4 text-brand" strokeWidth={2} />
+      <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+        {title}
+      </h2>
+    </div>
+  );
+}
+
 function Row({
   label,
   value,
@@ -366,11 +382,11 @@ function Row({
   mono?: boolean;
 }) {
   return (
-    <div className="flex justify-between items-start gap-4 py-2 border-b border-gray-100 last:border-0">
-      <span className="text-sm text-gray-500 shrink-0">{label}</span>
+    <div className="flex justify-between items-start gap-4 py-2 border-b border-cool-line last:border-0">
+      <span className="text-sm text-ink-soft shrink-0">{label}</span>
       <span
-        className={`text-sm text-gray-800 text-right break-all ${
-          mono ? "font-mono text-xs text-gray-400" : "font-medium"
+        className={`text-sm text-ink text-right break-all ${
+          mono ? "font-mono text-xs text-ink-light" : "font-medium"
         }`}
       >
         {value}
@@ -420,14 +436,12 @@ function SubscriptionSection({ profile, role }: { profile: any; role: string }) 
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
-      <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-        Subscription
-      </h2>
+    <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+      <SectionHeading icon={CreditCard} title="Subscription" />
       <div className="space-y-4">
         <Row label="Role" value={role} />
-        <div className="flex justify-between items-start gap-4 py-2 border-b border-gray-100">
-          <span className="text-sm text-gray-500 shrink-0">Status</span>
+        <div className="flex justify-between items-start gap-4 py-2 border-b border-cool-line">
+          <span className="text-sm text-ink-soft shrink-0">Status</span>
           <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${badgeStyles[status]}`}>
             {badgeLabels[status]}
           </span>
@@ -440,9 +454,10 @@ function SubscriptionSection({ profile, role }: { profile: any; role: string }) 
       {(status === 'trial' || status === 'expired' || status === 'none') && (
         <Link
           href="/pricing"
-          className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg text-sm transition-colors"
+          className="inline-flex items-center gap-2 mt-4 bg-brand hover:bg-brand-hover text-white font-medium px-6 py-2 rounded-lg text-sm transition-colors"
         >
           {status === 'expired' ? 'Renew Subscription' : 'Subscribe Now'}
+          <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
         </Link>
       )}
     </div>

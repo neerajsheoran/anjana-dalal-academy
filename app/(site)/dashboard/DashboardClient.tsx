@@ -7,6 +7,17 @@
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
+  ArrowRight,
+  Activity,
+  Clock,
+  Flame,
+  Lock,
+  Sparkles,
+  TrendingUp,
+  TrendingDown,
+  Minus,
+} from 'lucide-react';
+import {
   PILLAR_META,
   type ChildDashboard,
 } from '@/lib/dashboard-types';
@@ -30,17 +41,25 @@ interface ChildLite {
 }
 
 const TREND_LABEL: Record<'up' | 'down' | 'flat' | 'n/a', string> = {
-  up: '↑ trending up',
-  down: '↓ slipping',
-  flat: '→ steady',
+  up: 'trending up',
+  down: 'slipping',
+  flat: 'steady',
   'n/a': '',
 };
 
 const TREND_COLOR: Record<'up' | 'down' | 'flat' | 'n/a', string> = {
-  up: 'text-green-600',
+  up: 'text-emerald-600',
   down: 'text-amber-600',
-  flat: 'text-gray-400',
-  'n/a': 'text-gray-300',
+  flat: 'text-ink-light',
+  'n/a': 'text-ink-light',
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const TREND_ICON: Record<'up' | 'down' | 'flat' | 'n/a', any> = {
+  up: TrendingUp,
+  down: TrendingDown,
+  flat: Minus,
+  'n/a': Minus,
 };
 
 function formatRelativeTime(d: Date | null): string {
@@ -78,18 +97,18 @@ export default function DashboardClient({
   const noData = data.totalAttempts === 0;
 
   return (
-    <main className="min-h-screen bg-gray-50 py-8 px-4">
+    <main className="min-h-screen bg-white py-8 px-4">
       <div className="max-w-2xl mx-auto">
 
         {/* Header */}
         <div className="mb-6">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">
+          <p className="text-xs font-bold text-brand uppercase tracking-widest mb-1">
             Parent Dashboard
           </p>
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold text-ink">
             How {data.child.name} is doing
           </h1>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-ink-soft mt-1">
             Age {data.child.age} · {AGE_GROUP_LABEL[data.child.ageGroup] || data.child.ageGroup}
             {data.child.classId && ` · ${data.child.classId.replace('class-', 'Class ')}`}
           </p>
@@ -106,8 +125,8 @@ export default function DashboardClient({
                   onClick={() => selectKid(c.id)}
                   className={`shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition-all ${
                     active
-                      ? 'bg-purple-600 text-white shadow-md'
-                      : 'bg-white text-gray-600 border border-gray-200 hover:border-purple-300'
+                      ? 'bg-brand text-white shadow-sm'
+                      : 'bg-white text-ink-soft border border-cool-line hover:border-brand'
                   }`}
                 >
                   {c.name}
@@ -125,17 +144,17 @@ export default function DashboardClient({
             {/* Top stats strip */}
             <div className="grid grid-cols-3 gap-3 mb-5">
               <Stat
-                emoji="🔥"
+                icon={Flame}
                 value={`${data.trainingDays7d}`}
                 label={`day${data.trainingDays7d === 1 ? '' : 's'} this week`}
               />
               <Stat
-                emoji="📊"
+                icon={Activity}
                 value={`${totalSessions}`}
                 label={`session${totalSessions === 1 ? '' : 's'}`}
               />
               <Stat
-                emoji="⏱"
+                icon={Clock}
                 value={formatRelativeTime(data.lastSessionAt)}
                 label="last played"
                 small
@@ -144,22 +163,25 @@ export default function DashboardClient({
 
             {/* Insights */}
             {data.insights.length > 0 && (
-              <section className="bg-white rounded-2xl shadow-sm p-5 mb-5">
-                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
-                  Latest Insights
-                </h2>
+              <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <Sparkles className="w-4 h-4 text-brand" strokeWidth={2} />
+                  <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+                    Latest Insights
+                  </h2>
+                </div>
                 <div className="space-y-3">
                   {data.insights.map((ins, i) => (
                     <div
                       key={i}
-                      className="flex items-start gap-3 bg-gray-50 rounded-xl p-3"
+                      className="flex items-start gap-3 bg-cream border border-warm-line rounded-xl p-3"
                     >
                       <span className="text-2xl shrink-0">{ins.emoji}</span>
                       <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-gray-800">
+                        <p className="text-sm font-semibold text-ink">
                           {ins.title}
                         </p>
-                        <p className="text-xs text-gray-500 leading-relaxed mt-0.5">
+                        <p className="text-xs text-ink-soft leading-relaxed mt-0.5">
                           {ins.message}
                         </p>
                       </div>
@@ -170,26 +192,26 @@ export default function DashboardClient({
             )}
 
             {/* Pillar scores */}
-            <section className="bg-white rounded-2xl shadow-sm p-5 mb-5">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-1">
+            <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
+              <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest mb-1">
                 Pillar Scores
               </h2>
-              <p className="text-xs text-gray-400 mb-4">
+              <p className="text-xs text-ink-light mb-4">
                 All-time average across {data.totalAttempts} round{data.totalAttempts === 1 ? '' : 's'}
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {data.pillars.map((p) => {
                   const meta = PILLAR_META[p.pillar];
                   if (p.attempts === 0) {
                     return (
-                      <div key={p.pillar} className="bg-gray-50 rounded-xl p-4">
+                      <div key={p.pillar} className="bg-white border border-cool-line rounded-xl p-4">
                         <div className="flex items-center gap-3 mb-1">
                           <span className="text-2xl">{meta.emoji}</span>
                           <div className="flex-1 min-w-0">
-                            <p className="text-sm font-bold text-gray-700">
+                            <p className="text-sm font-bold text-ink">
                               {meta.label}
                             </p>
-                            <p className="text-xs text-gray-400">
+                            <p className="text-xs text-ink-light">
                               No sessions yet — try a {meta.label} game to unlock this score
                             </p>
                           </div>
@@ -198,28 +220,32 @@ export default function DashboardClient({
                     );
                   }
                   const avg = p.avgScore ?? 0;
+                  const TrendIcon = TREND_ICON[p.trend];
                   return (
-                    <div key={p.pillar} className={`rounded-xl p-4 ${meta.soft}`}>
+                    <div key={p.pillar} className="rounded-xl p-4 bg-white border border-cool-line">
                       <div className="flex items-center gap-3 mb-2">
                         <span className="text-2xl">{meta.emoji}</span>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-bold text-gray-800">
+                          <p className="text-sm font-bold text-ink">
                             {meta.label}
                           </p>
-                          <p className="text-[11px] text-gray-500">
-                            {p.attempts} round{p.attempts === 1 ? '' : 's'}
+                          <p className="text-[11px] text-ink-soft flex items-center gap-1.5">
+                            <span>
+                              {p.attempts} round{p.attempts === 1 ? '' : 's'}
+                            </span>
                             {p.trend !== 'n/a' && (
-                              <span className={`ml-2 ${TREND_COLOR[p.trend]}`}>
+                              <span className={`inline-flex items-center gap-0.5 ${TREND_COLOR[p.trend]}`}>
+                                <TrendIcon className="w-3 h-3" strokeWidth={2.5} />
                                 {TREND_LABEL[p.trend]}
                               </span>
                             )}
                           </p>
                         </div>
-                        <p className="text-xl font-bold text-gray-800 shrink-0">
-                          {avg}<span className="text-xs text-gray-400">/100</span>
+                        <p className="text-xl font-bold text-ink shrink-0">
+                          {avg}<span className="text-xs text-ink-light">/100</span>
                         </p>
                       </div>
-                      <div className="h-1.5 bg-white rounded-full overflow-hidden">
+                      <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
                         <div
                           className={`h-full ${meta.bar} rounded-full transition-all`}
                           style={{ width: `${Math.min(100, Math.max(2, avg))}%` }}
@@ -232,8 +258,8 @@ export default function DashboardClient({
             </section>
 
             {/* Activity progression */}
-            <section className="bg-white rounded-2xl shadow-sm p-5 mb-5">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+            <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
+              <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest mb-4">
                 Activity Progression
               </h2>
               <div className="space-y-3">
@@ -242,19 +268,22 @@ export default function DashboardClient({
                   return (
                     <div
                       key={a.activityKey}
-                      className="flex items-center gap-3 py-2 border-b border-gray-100 last:border-0"
+                      className="flex items-center gap-3 py-2 border-b border-cool-line last:border-0"
                     >
                       <span className="text-xl shrink-0">{meta.emoji}</span>
                       <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-gray-800">
+                        <p className="text-sm font-semibold text-ink flex items-center flex-wrap gap-2">
                           {a.activityName}
                           <span
-                            className={`ml-2 inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${meta.chip}`}
+                            className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${meta.chip}`}
                           >
                             {meta.label}
                           </span>
                         </p>
-                        <p className="text-[11px] text-gray-500 mt-0.5">
+                        <p className="text-[11px] text-ink-soft mt-0.5 inline-flex items-center gap-1">
+                          {a.ageGated && (
+                            <Lock className="w-3 h-3 text-ink-light" strokeWidth={2.5} />
+                          )}
                           {a.ageGated
                             ? `Locked — for ages ${BRAIN_AGE_RANGE(a)} (${data.child.name} is ${data.child.age})`
                             : a.attemptCount === 0
@@ -281,13 +310,14 @@ export default function DashboardClient({
         <div className="mt-6 flex flex-wrap gap-2 justify-center">
           <Link
             href="/kids"
-            className="text-sm bg-purple-600 hover:bg-purple-700 text-white font-semibold px-5 py-2.5 rounded-full transition-colors"
+            className="inline-flex items-center gap-2 text-sm bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2.5 rounded-full transition-colors"
           >
-            Switch to {data.child.name}&rsquo;s training →
+            Switch to {data.child.name}&rsquo;s training
+            <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
           </Link>
           <Link
             href="/profile"
-            className="text-sm bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 font-semibold px-5 py-2.5 rounded-full transition-colors"
+            className="text-sm bg-white border border-cool-line hover:border-brand text-ink font-semibold px-5 py-2.5 rounded-full transition-colors"
           >
             Manage profiles
           </Link>
@@ -313,23 +343,26 @@ function BRAIN_AGE_RANGE(a: { activityKey: string }): string {
 }
 
 function Stat({
-  emoji,
+  icon: Icon,
   value,
   label,
   small = false,
 }: {
-  emoji: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon: any;
   value: string;
   label: string;
   small?: boolean;
 }) {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-3 text-center">
-      <p className="text-xl mb-0.5">{emoji}</p>
-      <p className={`font-bold text-gray-800 ${small ? 'text-xs' : 'text-lg'}`}>
+    <div className="bg-white rounded-xl shadow-sm border border-cool-line p-3 text-center">
+      <div className="flex items-center justify-center mb-1 h-6">
+        <Icon className="w-5 h-5 text-brand" strokeWidth={2} />
+      </div>
+      <p className={`font-bold text-ink ${small ? 'text-xs' : 'text-lg'}`}>
         {value}
       </p>
-      <p className="text-[10px] text-gray-500 uppercase tracking-wide leading-tight">
+      <p className="text-[10px] text-ink-light uppercase tracking-wide leading-tight">
         {label}
       </p>
     </div>
@@ -338,15 +371,15 @@ function Stat({
 
 function FirstSessionEmptyState({ childName }: { childName: string }) {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 mb-6">
+    <div className="bg-cream border border-warm-line rounded-2xl shadow-sm p-6 mb-6">
       <div className="text-center mb-5">
-        <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl mx-auto mb-3">
+        <div className="w-16 h-16 rounded-xl bg-white border border-warm-line flex items-center justify-center text-3xl mx-auto mb-3">
           🌱
         </div>
-        <h2 className="text-lg font-bold text-gray-800 mb-1">
+        <h2 className="text-lg font-bold text-ink mb-1">
           {childName} hasn&rsquo;t trained yet
         </h2>
-        <p className="text-sm text-gray-500 leading-relaxed">
+        <p className="text-sm text-ink-soft leading-relaxed">
           Once they play a session, this dashboard will fill with scores, trends,
           and personalised insights.
         </p>
@@ -354,13 +387,14 @@ function FirstSessionEmptyState({ childName }: { childName: string }) {
       <div className="space-y-2">
         <Link
           href="/kids"
-          className="block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-center font-semibold py-3 rounded-xl transition-colors shadow-md"
+          className="inline-flex items-center justify-center gap-2 w-full bg-brand hover:bg-brand-hover text-white font-semibold py-3 rounded-xl transition-colors shadow-sm"
         >
-          Start training as {childName} →
+          Start training as {childName}
+          <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
         </Link>
         <Link
           href="/try"
-          className="block bg-gray-50 hover:bg-gray-100 text-gray-700 text-center font-medium py-2.5 rounded-xl transition-colors text-sm"
+          className="block bg-white border border-cool-line hover:border-brand text-ink-soft text-center font-medium py-2.5 rounded-xl transition-colors text-sm"
         >
           Or try a game yourself first (no signup)
         </Link>
