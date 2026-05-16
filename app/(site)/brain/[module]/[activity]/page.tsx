@@ -17,6 +17,9 @@ import FindTheObjectActivity from "@/components/brain/FindTheObjectActivity";
 import PatternLogicActivity from "@/components/brain/PatternLogicActivity";
 import NumberRecallActivity from "@/components/brain/NumberRecallActivity";
 import NumberSequenceActivity from "@/components/brain/NumberSequenceActivity";
+import SpotTheDifferenceActivity from "@/components/brain/SpotTheDifferenceActivity";
+import StroopActivity from "@/components/brain/StroopActivity";
+import ColorSequenceActivity from "@/components/brain/ColorSequenceActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -119,6 +122,39 @@ export default async function ActivityPage({
   if (activityKey === "number-sequence") {
     return (
       <NumberSequenceActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "spot-the-difference") {
+    return (
+      <SpotTheDifferenceActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "stroop-task") {
+    return (
+      <StroopActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "color-sequence") {
+    return (
+      <ColorSequenceActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
         difficulty={difficulty}

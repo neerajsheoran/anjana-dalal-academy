@@ -99,6 +99,33 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     maxAge: 15,
     available: true,
   },
+  "spot-the-difference": {
+    key: "spot-the-difference",
+    name: "Spot the Difference",
+    module: "focus",
+    skill: "Visual attention to detail",
+    minAge: 5,
+    maxAge: 15,
+    available: true,
+  },
+  "stroop-task": {
+    key: "stroop-task",
+    name: "Color Catch",
+    module: "focus",
+    skill: "Inhibition control",
+    minAge: 8,
+    maxAge: 15,
+    available: true,
+  },
+  "color-sequence": {
+    key: "color-sequence",
+    name: "Color Sequence",
+    module: "memory",
+    skill: "Sequential memory",
+    minAge: 5,
+    maxAge: 15,
+    available: true,
+  },
 };
 
 export function getActivitiesForModule(moduleKey: ModuleKey): BrainActivity[] {

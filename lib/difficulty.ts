@@ -102,3 +102,42 @@ export const NUMBER_SEQUENCE_CONFIG: Record<Difficulty, NumberSequenceConfig> = 
   medium: { patternKind: "geometric",  showCount: 5, optionCount: 4, expectedTimeSeconds: 12 },
   hard:   { patternKind: "mixed",      showCount: 5, optionCount: 4, expectedTimeSeconds: 15 },
 };
+
+// ── Spot the Difference (Focus, age 5+) ──────────────────────────────────
+export interface SpotDifferenceConfig {
+  gridSize: number;          // 3, 4, or 5 — the grid of shapes on each side
+  differences: number;       // how many cells differ between left and right
+  expectedTimeSeconds: number;
+}
+
+export const SPOT_DIFFERENCE_CONFIG: Record<Difficulty, SpotDifferenceConfig> = {
+  easy:   { gridSize: 3, differences: 1, expectedTimeSeconds: 8 },
+  medium: { gridSize: 4, differences: 2, expectedTimeSeconds: 12 },
+  hard:   { gridSize: 5, differences: 3, expectedTimeSeconds: 15 },
+};
+
+// ── Stroop Task / Color Catch (Focus, age 8+) ────────────────────────────
+export interface StroopConfig {
+  optionCount: number;       // how many colour buttons to choose from
+  expectedTimeSeconds: number;
+}
+
+export const STROOP_CONFIG: Record<Difficulty, StroopConfig> = {
+  easy:   { optionCount: 4, expectedTimeSeconds: 4 },
+  medium: { optionCount: 5, expectedTimeSeconds: 3.5 },
+  hard:   { optionCount: 6, expectedTimeSeconds: 3 },
+};
+
+// ── Color Sequence / Simon Says (Memory, age 5+) ─────────────────────────
+export interface ColorSequenceConfig {
+  sequenceLength: number;    // how many colors flash in order
+  flashDurationMs: number;   // how long each color lights up
+  gapMs: number;             // pause between flashes
+  expectedTimeSeconds: number;
+}
+
+export const COLOR_SEQUENCE_CONFIG: Record<Difficulty, ColorSequenceConfig> = {
+  easy:   { sequenceLength: 3, flashDurationMs: 700, gapMs: 350, expectedTimeSeconds: 6 },
+  medium: { sequenceLength: 4, flashDurationMs: 600, gapMs: 300, expectedTimeSeconds: 8 },
+  hard:   { sequenceLength: 5, flashDurationMs: 500, gapMs: 250, expectedTimeSeconds: 10 },
+};

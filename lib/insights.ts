@@ -115,6 +115,9 @@ const ACTIVITY_LABEL: Record<string, string> = {
   "pattern-logic": "Pattern Logic",
   "number-recall": "Number Recall",
   "number-sequence": "Number Sequence",
+  "spot-the-difference": "Spot the Difference",
+  "stroop-task": "Color Catch",
+  "color-sequence": "Color Sequence",
 };
 
 export interface AttemptForSummary {
