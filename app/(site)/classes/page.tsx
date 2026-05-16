@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { getSubjectsForClass, getChapters } from '@/lib/content';
 import { ClassId } from '@/lib/types';
 
@@ -94,7 +94,7 @@ export default function ClassesPage() {
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Link href="/" className="inline-flex items-center gap-1 text-blue-200 hover:text-white text-sm mb-4 transition-colors">
-<ArrowLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Home
+<ChevronLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Home
           </Link>
           <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
             📘
@@ -129,7 +129,7 @@ export default function ClassesPage() {
                     {subjects.length} {subjects.length === 1 ? 'subject' : 'subjects'} · {totalChapters} chapters
                   </p>
                 )}
-                <span className="inline-flex items-center gap-1 mt-4 text-white/50 text-xs font-medium">Tap to explore <ArrowRight className="w-3 h-3" strokeWidth={2.5} /></span>
+                <span className="inline-flex items-center gap-1 mt-4 text-white/50 text-xs font-medium">Tap to explore <ChevronRight className="w-3 h-3" strokeWidth={2.5} /></span>
               </Link>
             );
           })}

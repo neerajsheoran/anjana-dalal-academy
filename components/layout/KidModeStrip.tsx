@@ -4,7 +4,7 @@
 // Renders nothing in parent mode (no active child).
 
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { getActiveChild } from '@/lib/active-child';
 
 export default async function KidModeStrip() {
@@ -27,7 +27,7 @@ export default async function KidModeStrip() {
           </span>
           <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 bg-white/15 hover:bg-white/25 px-3 py-1 rounded-full shrink-0 transition-colors">
             Switch
-            <ArrowRight className="w-3.5 h-3.5" strokeWidth={2.5} />
+            <ChevronRight className="w-3.5 h-3.5" strokeWidth={2.5} />
           </span>
         </div>
       </Link>

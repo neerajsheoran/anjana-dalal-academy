@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Eye, Sparkles, Users } from 'lucide-react';
+import { ChevronRight, Eye, Sparkles, Users } from 'lucide-react';
 import ContinueLearning from '@/components/progress/ContinueLearning';
 import { getActiveChild, getParent, hasChildren } from '@/lib/active-child';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
@@ -42,7 +42,7 @@ export default async function HomePage() {
             <span className="text-sm font-medium text-ink">
               {parent?.firstName ? `Welcome back, ${parent.firstName} — pick` : 'Pick'} a profile to start training
             </span>
-            <ArrowRight className="w-3.5 h-3.5 text-ink-light hidden sm:inline-block" strokeWidth={2.5} />
+            <ChevronRight className="w-3.5 h-3.5 text-ink-light hidden sm:inline-block" strokeWidth={2.5} />
           </div>
         </Link>
       )}
@@ -81,7 +81,7 @@ export default async function HomePage() {
                 className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-md hover:shadow-lg transition-all"
               >
                 Try a brain game now
-                <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
+                <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
               </Link>
               <p className="text-ink-light text-xs mt-3">
                 No signup required. Takes 2 minutes.
@@ -127,7 +127,7 @@ export default async function HomePage() {
               </div>
               <span className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-brand text-white font-semibold px-5 py-3 sm:py-2 rounded-full text-sm group-hover:bg-brand-hover transition-colors sm:shrink-0">
                 Explore
-                <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+                <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
               </span>
             </div>
           </Link>

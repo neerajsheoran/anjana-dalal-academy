@@ -4,7 +4,7 @@ import { QuizQuestion } from '@/lib/quiz';
 import { ClassId, SubjectId } from '@/lib/types';
 import QuizController from '@/components/quiz/QuizController';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 export default async function QuizPage({
   searchParams,
@@ -32,7 +32,7 @@ export default async function QuizPage({
       <main className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <p className="text-gray-500 mb-4">No chapters selected for the quiz.</p>
-          <Link href="/" className="inline-flex items-center gap-1 text-blue-600 hover:underline"><ArrowLeft className="w-4 h-4" strokeWidth={2} />Back to Home</Link>
+          <Link href="/" className="inline-flex items-center gap-1 text-blue-600 hover:underline"><ChevronLeft className="w-4 h-4" strokeWidth={2} />Back to Home</Link>
         </div>
       </main>
     );

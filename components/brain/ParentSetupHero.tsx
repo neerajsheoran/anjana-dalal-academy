@@ -7,7 +7,7 @@
 
 import Link from 'next/link';
 import {
-  ArrowRight,
+  ChevronRight,
   BarChart3,
   Brain,
   ChevronDown,
@@ -69,7 +69,7 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
             className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-7 py-3.5 rounded-full text-base shadow-md hover:shadow-lg transition-all"
           >
             Add your child
-            <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
+            <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
           </Link>
 
           {/* Secondary "just exploring" link */}

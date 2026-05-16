@@ -7,7 +7,7 @@
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
-  ArrowRight,
+  ChevronRight,
   Activity,
   Clock,
   Flame,
@@ -313,7 +313,7 @@ export default function DashboardClient({
             className="inline-flex items-center gap-2 text-sm bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2.5 rounded-full transition-colors"
           >
             Switch to {data.child.name}&rsquo;s training
-            <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+            <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
           </Link>
           <Link
             href="/profile"
@@ -399,7 +399,7 @@ function FirstSessionEmptyState({ childName }: { childName: string }) {
           className="inline-flex items-center justify-center gap-2 w-full bg-brand hover:bg-brand-hover text-white font-semibold py-3 rounded-xl transition-colors shadow-sm"
         >
           Start training as {childName}
-          <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+          <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
         </Link>
         <Link
           href="/try"

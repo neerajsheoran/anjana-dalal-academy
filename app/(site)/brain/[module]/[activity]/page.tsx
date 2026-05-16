@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import {
   BRAIN_ACTIVITIES,
@@ -256,7 +256,7 @@ function NotAvailable({
           href={backHref}
           className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
         >
-          <ArrowLeft className="w-4 h-4" strokeWidth={2} />
+          <ChevronLeft className="w-4 h-4" strokeWidth={2} />
           Back
         </Link>
         <div className="bg-white rounded-2xl shadow-sm p-8 text-center">

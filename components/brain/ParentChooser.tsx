@@ -11,7 +11,7 @@
 // parent-mode palette (no rainbow gradients — that's kid-mode).
 
 import Link from 'next/link';
-import { ArrowRight, Brain, BookOpen, LayoutDashboard } from 'lucide-react';
+import { ChevronRight, Brain, BookOpen, LayoutDashboard } from 'lucide-react';
 
 interface ChooserCard {
   href: string;
@@ -94,7 +94,7 @@ export default function ParentChooser({ firstName }: { firstName: string }) {
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-brand font-semibold text-sm group-hover:gap-2 transition-all">
                   {card.ctaLabel}
-                  <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+                  <ChevronRight className="w-5 h-5" strokeWidth={3} />
                 </span>
               </Link>
             );

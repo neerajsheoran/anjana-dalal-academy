@@ -8,7 +8,7 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
   FIND_OBJECT_CONFIG,
@@ -235,7 +235,7 @@ export default function FindTheObjectActivity({
             href={`/brain/${moduleKey}`}
             className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700"
           >
-            <ArrowLeft className="w-3.5 h-3.5" strokeWidth={2} />
+            <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2} />
             Exit
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
@@ -284,7 +284,7 @@ export default function FindTheObjectActivity({
               className="inline-flex items-center justify-center gap-2 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl text-base transition-colors shadow-md"
             >
               Start round 1
-              <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+              <ChevronRight className="w-5 h-5" strokeWidth={3} />
             </button>
             <p className="text-[11px] text-gray-400 mt-3">
               Hi {childName} — focus and tap quick!
@@ -373,7 +373,7 @@ export default function FindTheObjectActivity({
               {round < TOTAL_ROUNDS
                 ? `Next round (${round + 1}/${TOTAL_ROUNDS})`
                 : 'How did that go?'}
-              <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+              <ChevronRight className="w-5 h-5" strokeWidth={3} />
             </button>
           </div>
         )}
@@ -482,7 +482,7 @@ export default function FindTheObjectActivity({
                 onClick={() => router.push('/brain')}
                 className="inline-flex items-center justify-center gap-1 w-full text-gray-500 hover:text-gray-700 text-xs py-1 transition-colors"
               >
-                <ArrowLeft className="w-3 h-3" strokeWidth={2} />
+                <ChevronLeft className="w-3 h-3" strokeWidth={2} />
                 Back to Brain
               </button>
             </div>

@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ArrowLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import {
   BRAIN_MODULES,
@@ -40,7 +40,7 @@ export default async function ModulePage({
           href="/brain"
           className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
         >
-          <ArrowLeft className="w-4 h-4" strokeWidth={2} />
+          <ChevronLeft className="w-4 h-4" strokeWidth={2} />
           Brain
         </Link>
 

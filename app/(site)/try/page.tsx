@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ── Game config ──────────────────────────────────────────────────────────
 const GRID_SIZE = 3;
@@ -225,7 +225,7 @@ export default function TryPage() {
               className="inline-flex items-center justify-center gap-2 w-full bg-purple-600 text-white font-bold py-3 rounded-xl text-base hover:bg-purple-700 transition-colors"
             >
               {round < TOTAL_ROUNDS ? 'Next round' : 'See results'}
-              {round < TOTAL_ROUNDS && <ArrowRight className="w-4 h-4" strokeWidth={2.5} />}
+              {round < TOTAL_ROUNDS && <ChevronRight className="w-4 h-4" strokeWidth={2.5} />}
             </button>
           </div>
         )}
@@ -271,7 +271,7 @@ export default function TryPage() {
                 href="/"
                 className="inline-flex items-center justify-center gap-1 w-full text-gray-500 text-xs hover:text-gray-700 transition-colors pt-1"
               >
-                <ArrowLeft className="w-3.5 h-3.5" strokeWidth={2} />
+                <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2} />
                 Back to home
               </Link>
             </div>

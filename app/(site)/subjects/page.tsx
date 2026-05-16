@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const SUBJECT_CARDS = [
   {
@@ -28,7 +28,7 @@ export default function SubjectsPage() {
       <section className="bg-gradient-to-br from-emerald-600 to-green-800 text-white py-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Link href="/" className="inline-flex items-center gap-1 text-green-200 hover:text-white text-sm mb-4 transition-colors">
-<ArrowLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Home
+<ChevronLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Home
           </Link>
           <div className="w-16 h-16 bg-white/25 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
             🔬
@@ -52,7 +52,7 @@ export default function SubjectsPage() {
               </div>
               <h3 className="text-white text-2xl font-bold mb-2">{sub.label}</h3>
               <p className="text-white/75 text-sm leading-relaxed">{sub.desc}</p>
-              <span className="inline-flex items-center gap-1 mt-6 text-white/50 text-xs font-medium">Tap to explore <ArrowRight className="w-3 h-3" strokeWidth={2.5} /></span>
+              <span className="inline-flex items-center gap-1 mt-6 text-white/50 text-xs font-medium">Tap to explore <ChevronRight className="w-3 h-3" strokeWidth={2.5} /></span>
             </Link>
           ))}
         </div>

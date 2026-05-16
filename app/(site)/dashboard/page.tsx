@@ -3,7 +3,7 @@
 // dashboard data, hands off to a client component for tab interaction.
 
 import { redirect } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import {
   getParentUid,
   loadChildDashboard,
@@ -71,7 +71,7 @@ function NoChildrenState() {
           className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
         >
           Add a child profile
-          <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+          <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
         </a>
       </div>
     </main>

@@ -9,7 +9,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  ArrowRight,
+  ChevronRight,
   Brain,
   Target,
   Lightbulb,
@@ -175,7 +175,7 @@ export default function BrainScreenClient({ childName }: { childName: string }) 
                       {mod.shortDescription}
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-white/70 shrink-0" strokeWidth={2.5} />
+                  <ChevronRight className="w-6 h-6 text-white/70 shrink-0" strokeWidth={2.5} />
                 </div>
               </Link>
             );

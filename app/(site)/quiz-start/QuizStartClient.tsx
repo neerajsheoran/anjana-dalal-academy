@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { ChapterMeta, ClassInfo, SubjectInfo } from '@/lib/types';
 import { CLASSES, SUBJECTS } from '@/lib/content-static';
 
@@ -266,7 +266,7 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
                   className="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white shadow-lg shadow-purple-200 transition-all"
                 >
                   Start Quiz
-                  <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+                  <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
                 </button>
               </div>
             )}
