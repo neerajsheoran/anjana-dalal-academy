@@ -123,6 +123,7 @@ const ACTIVITY_LABEL: Record<string, string> = {
   "analogies": "Analogies",
   "whack-a-target": "Whack-a-Target",
   "mini-sudoku": "Mini Sudoku",
+  "memory-match": "Memory Match",
 };
 
 export interface AttemptForSummary {

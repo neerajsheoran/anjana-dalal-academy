@@ -171,6 +171,15 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     maxAge: 15,
     available: true,
   },
+  "memory-match": {
+    key: "memory-match",
+    name: "Memory Match",
+    module: "memory",
+    skill: "Recognition memory",
+    minAge: 5,
+    maxAge: 15,
+    available: true,
+  },
 };
 
 export function getActivitiesForModule(moduleKey: ModuleKey): BrainActivity[] {

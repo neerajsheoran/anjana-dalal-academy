@@ -25,6 +25,7 @@ import OddOneOutActivity from "@/components/brain/OddOneOutActivity";
 import AnalogiesActivity from "@/components/brain/AnalogiesActivity";
 import WhackTargetActivity from "@/components/brain/WhackTargetActivity";
 import MiniSudokuActivity from "@/components/brain/MiniSudokuActivity";
+import MemoryMatchActivity from "@/components/brain/MemoryMatchActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -215,6 +216,17 @@ export default async function ActivityPage({
   if (activityKey === "mini-sudoku") {
     return (
       <MiniSudokuActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "memory-match") {
+    return (
+      <MemoryMatchActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
         difficulty={difficulty}

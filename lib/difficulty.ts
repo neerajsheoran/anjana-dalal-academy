@@ -201,6 +201,24 @@ export const WHACK_CONFIG: Record<Difficulty, WhackConfig> = {
   hard:   { gridSize: 4, durationMs: 16000, spawnIntervalMs: 850,  itemLifetimeMs: 1000, distractorCount: 3, expectedTimeSeconds: 16 },
 };
 
+// ── Memory Match / Concentration (Memory, age 5+) ────────────────────────
+// Grid of face-down cards. Tap two to flip; if they match, they stay up.
+// Tests visual-spatial recognition memory — distinct from Pattern Recall
+// (one-shot memorize) and Color Sequence (temporal sequence).
+export interface MemoryMatchConfig {
+  pairs: number;                 // number of distinct pairs
+  cols: number;                  // layout grid columns
+  rows: number;                  // layout grid rows (cols * rows = pairs * 2)
+  peekDurationMs: number;        // how long mismatched cards stay shown
+  expectedTimeSeconds: number;
+}
+
+export const MEMORY_MATCH_CONFIG: Record<Difficulty, MemoryMatchConfig> = {
+  easy:   { pairs: 3, cols: 3, rows: 2, peekDurationMs: 900, expectedTimeSeconds: 15 },
+  medium: { pairs: 6, cols: 4, rows: 3, peekDurationMs: 800, expectedTimeSeconds: 30 },
+  hard:   { pairs: 8, cols: 4, rows: 4, peekDurationMs: 700, expectedTimeSeconds: 50 },
+};
+
 // ── Mini Sudoku 4×4 (Thinking, age 8+) ───────────────────────────────────
 export interface MiniSudokuConfig {
   cellsToFill: number;            // how many empty cells in the puzzle
