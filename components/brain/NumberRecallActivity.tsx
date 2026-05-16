@@ -17,6 +17,10 @@ import {
 } from '@/lib/difficulty';
 import type { AdaptiveSource } from '@/lib/adaptive';
 import AdaptiveBanner from '@/components/brain/AdaptiveBanner';
+import {
+  REFLECTION_OPTIONS,
+  type ReflectionOption,
+} from '@/components/brain/reflection-options';
 
 const TOTAL_ROUNDS = 3;
 
@@ -29,20 +33,6 @@ type Phase =
   | 'submitting'
   | 'summary';
 
-interface ReflectionOption {
-  key: 'felt-easy' | 'felt-tricky' | 'rushed' | 'guessed';
-  label: string;
-  emoji: string;
-  confidence: 'low' | 'medium' | 'high';
-  reflection: 'understood' | 'looked-carefully' | 'guessed' | 'distracted';
-}
-
-const REFLECTION_OPTIONS: ReflectionOption[] = [
-  { key: 'felt-easy',   label: 'Felt easy',   emoji: '😊', confidence: 'high',   reflection: 'understood' },
-  { key: 'felt-tricky', label: 'Felt tricky', emoji: '🤔', confidence: 'medium', reflection: 'looked-carefully' },
-  { key: 'rushed',      label: 'I rushed',    emoji: '⚡', confidence: 'medium', reflection: 'distracted' },
-  { key: 'guessed',     label: 'I guessed',   emoji: '🎲', confidence: 'low',    reflection: 'guessed' },
-];
 
 interface RoundResult {
   isCorrect: boolean;
@@ -444,17 +434,20 @@ export default function NumberRecallActivity({
               {childName}, pick the one that fits best
             </p>
             <div className="grid grid-cols-2 gap-3">
-              {REFLECTION_OPTIONS.map((opt) => (
-                <button
-                  key={opt.key}
-                  onClick={() => handleReflectionPick(opt)}
-                  disabled={submitting}
-                  className="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-300 rounded-xl p-4 text-center transition-all disabled:opacity-50"
-                >
-                  <div className="text-2xl mb-1">{opt.emoji}</div>
-                  <div className="text-xs font-semibold text-gray-700">{opt.label}</div>
-                </button>
-              ))}
+              {REFLECTION_OPTIONS.map((opt) => {
+                const Icon = opt.icon;
+                return (
+                  <button
+                    key={opt.key}
+                    onClick={() => handleReflectionPick(opt)}
+                    disabled={submitting}
+                    className="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-300 rounded-xl p-4 text-center transition-all disabled:opacity-50 flex flex-col items-center gap-1.5"
+                  >
+                    <Icon className="w-6 h-6 text-purple-600" strokeWidth={2} />
+                    <div className="text-xs font-semibold text-gray-700">{opt.label}</div>
+                  </button>
+                );
+              })}
             </div>
             {error && <p className="text-red-500 text-xs text-center mt-3">{error}</p>}
           </div>

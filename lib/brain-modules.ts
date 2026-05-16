@@ -126,6 +126,15 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     maxAge: 15,
     available: true,
   },
+  "tap-back": {
+    key: "tap-back",
+    name: "Tap-Back",
+    module: "memory",
+    skill: "Spatial-sequential memory",
+    minAge: 7,
+    maxAge: 15,
+    available: true,
+  },
 };
 
 export function getActivitiesForModule(moduleKey: ModuleKey): BrainActivity[] {

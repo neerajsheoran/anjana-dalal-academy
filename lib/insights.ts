@@ -118,6 +118,7 @@ const ACTIVITY_LABEL: Record<string, string> = {
   "spot-the-difference": "Spot the Difference",
   "stroop-task": "Color Catch",
   "color-sequence": "Color Sequence",
+  "tap-back": "Tap-Back",
 };
 
 export interface AttemptForSummary {

@@ -141,3 +141,20 @@ export const COLOR_SEQUENCE_CONFIG: Record<Difficulty, ColorSequenceConfig> = {
   medium: { sequenceLength: 4, flashDurationMs: 600, gapMs: 300, expectedTimeSeconds: 8 },
   hard:   { sequenceLength: 5, flashDurationMs: 500, gapMs: 250, expectedTimeSeconds: 10 },
 };
+
+// ── Tap-Back / Corsi Blocks (Memory, age 7+) ─────────────────────────────
+// Combines Pattern Recall's spatial position memory with Color Sequence's
+// order memory. Cells light up one-at-a-time on a grid; reproduce the order.
+export interface TapBackConfig {
+  gridSize: number;          // N×N grid (3, 4, or 5)
+  sequenceLength: number;    // how many cells flash in the sequence
+  flashDurationMs: number;
+  gapMs: number;
+  expectedTimeSeconds: number;
+}
+
+export const TAP_BACK_CONFIG: Record<Difficulty, TapBackConfig> = {
+  easy:   { gridSize: 3, sequenceLength: 3, flashDurationMs: 700, gapMs: 350, expectedTimeSeconds: 7 },
+  medium: { gridSize: 4, sequenceLength: 4, flashDurationMs: 600, gapMs: 300, expectedTimeSeconds: 10 },
+  hard:   { gridSize: 5, sequenceLength: 5, flashDurationMs: 500, gapMs: 250, expectedTimeSeconds: 13 },
+};

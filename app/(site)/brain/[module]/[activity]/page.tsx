@@ -20,6 +20,7 @@ import NumberSequenceActivity from "@/components/brain/NumberSequenceActivity";
 import SpotTheDifferenceActivity from "@/components/brain/SpotTheDifferenceActivity";
 import StroopActivity from "@/components/brain/StroopActivity";
 import ColorSequenceActivity from "@/components/brain/ColorSequenceActivity";
+import TapBackActivity from "@/components/brain/TapBackActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -155,6 +156,17 @@ export default async function ActivityPage({
   if (activityKey === "color-sequence") {
     return (
       <ColorSequenceActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "tap-back") {
+    return (
+      <TapBackActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
         difficulty={difficulty}

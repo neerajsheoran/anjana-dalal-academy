@@ -339,6 +339,7 @@ const ACTIVITY_AGE: Record<string, [number, number]> = {
   'spot-the-difference': [5, 15],
   'stroop-task': [8, 15],
   'color-sequence': [5, 15],
+  'tap-back': [7, 15],
 };
 function BRAIN_AGE_RANGE(a: { activityKey: string }): string {
   const r = ACTIVITY_AGE[a.activityKey];

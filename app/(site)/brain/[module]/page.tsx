@@ -60,30 +60,33 @@ export default async function ModulePage({
           Activities for {activeChild.name}
         </h2>
 
+        {/* Filter out activities the child can't play (age-gated).
+            Parents see the full catalog on /dashboard; on the kid's module
+            page, hide locked content rather than show "WRONG AGE" badges —
+            no point teasing what they can't try. */}
         <div className="space-y-3">
-          {activities.map((activity) => {
-            const ageOk =
-              activeChild.age >= activity.minAge &&
-              activeChild.age <= activity.maxAge;
-            const playable = activity.available && ageOk;
-
-            return (
+          {activities
+            .filter(
+              (activity) =>
+                activeChild.age >= activity.minAge &&
+                activeChild.age <= activity.maxAge,
+            )
+            .map((activity) => (
               <ActivityCard
                 key={activity.key}
                 href={
-                  playable
+                  activity.available
                     ? `/brain/${moduleKey}/${activity.key}`
                     : undefined
                 }
                 name={activity.name}
                 skill={activity.skill}
                 ageRange={`Age ${activity.minAge}–${activity.maxAge}`}
-                ageOk={ageOk}
+                ageOk={true}
                 available={activity.available}
                 color={mod.zoneColor}
               />
-            );
-          })}
+            ))}
         </div>
 
         {/* Footer note */}
