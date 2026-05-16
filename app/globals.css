@@ -41,6 +41,10 @@ body {
   42%       { transform: scale(1.25); }
   70%       { transform: scale(1); }
 }
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.025); }
+}
 
 @utility animate-wiggle {
   animation: wiggle 1.8s ease-in-out infinite;
@@ -49,6 +53,9 @@ body {
 @utility animate-heartbeat {
   animation: heartbeat 1.4s ease-in-out infinite;
   display: inline-block;
+}
+@utility animate-breathe {
+  animation: breathe 5s ease-in-out infinite;
 }
 
 @media print {
