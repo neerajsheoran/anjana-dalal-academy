@@ -422,8 +422,10 @@ export default function TapBackActivity({
                     disabled={submitting}
                     className="bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-300 rounded-xl p-4 text-center transition-all disabled:opacity-50 flex flex-col items-center gap-1.5"
                   >
-                    <Icon className="w-6 h-6 text-purple-600" strokeWidth={2} />
-                    <div className="text-xs font-semibold text-gray-700">{opt.label}</div>
+                    <div className="w-12 h-12 rounded-full bg-purple-500 shadow-md flex items-center justify-center mb-1">
+                      <Icon className="w-7 h-7 text-white" strokeWidth={2.5} fill="currentColor" fillOpacity={0.15} />
+                    </div>
+                    <div className="text-sm font-semibold text-gray-700">{opt.label}</div>
                   </button>
                 );
               })}
