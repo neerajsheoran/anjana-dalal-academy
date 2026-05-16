@@ -158,3 +158,57 @@ export const TAP_BACK_CONFIG: Record<Difficulty, TapBackConfig> = {
   medium: { gridSize: 4, sequenceLength: 4, flashDurationMs: 600, gapMs: 300, expectedTimeSeconds: 10 },
   hard:   { gridSize: 5, sequenceLength: 5, flashDurationMs: 500, gapMs: 250, expectedTimeSeconds: 13 },
 };
+
+// ── Odd One Out (Thinking, age 5+) ───────────────────────────────────────
+export interface OddOneOutConfig {
+  categoryDistance: "far" | "near" | "very-near";
+  optionCount: number;
+  expectedTimeSeconds: number;
+}
+
+export const ODD_ONE_OUT_CONFIG: Record<Difficulty, OddOneOutConfig> = {
+  easy:   { categoryDistance: "far",       optionCount: 4, expectedTimeSeconds: 7 },
+  medium: { categoryDistance: "near",      optionCount: 4, expectedTimeSeconds: 9 },
+  hard:   { categoryDistance: "very-near", optionCount: 4, expectedTimeSeconds: 12 },
+};
+
+// ── Analogies (Thinking, age 9+) ─────────────────────────────────────────
+export interface AnalogiesConfig {
+  bank: "easy" | "medium" | "hard"; // which subset of the analogies bank to draw from
+  optionCount: number;
+  expectedTimeSeconds: number;
+}
+
+export const ANALOGIES_CONFIG: Record<Difficulty, AnalogiesConfig> = {
+  easy:   { bank: "easy",   optionCount: 3, expectedTimeSeconds: 10 },
+  medium: { bank: "medium", optionCount: 4, expectedTimeSeconds: 12 },
+  hard:   { bank: "hard",   optionCount: 4, expectedTimeSeconds: 15 },
+};
+
+// ── Whack-a-Target (Focus, age 8+) ───────────────────────────────────────
+export interface WhackConfig {
+  gridSize: number;
+  durationMs: number;             // round length
+  spawnIntervalMs: number;        // how often a new item appears
+  itemLifetimeMs: number;         // how long an item stays before disappearing
+  distractorCount: number;        // how many non-target icon types
+  expectedTimeSeconds: number;    // for the time-score component
+}
+
+export const WHACK_CONFIG: Record<Difficulty, WhackConfig> = {
+  easy:   { gridSize: 3, durationMs: 12000, spawnIntervalMs: 1400, itemLifetimeMs: 1600, distractorCount: 1, expectedTimeSeconds: 12 },
+  medium: { gridSize: 4, durationMs: 14000, spawnIntervalMs: 1100, itemLifetimeMs: 1300, distractorCount: 2, expectedTimeSeconds: 14 },
+  hard:   { gridSize: 4, durationMs: 16000, spawnIntervalMs: 850,  itemLifetimeMs: 1000, distractorCount: 3, expectedTimeSeconds: 16 },
+};
+
+// ── Mini Sudoku 4×4 (Thinking, age 8+) ───────────────────────────────────
+export interface MiniSudokuConfig {
+  cellsToFill: number;            // how many empty cells in the puzzle
+  expectedTimeSeconds: number;
+}
+
+export const MINI_SUDOKU_CONFIG: Record<Difficulty, MiniSudokuConfig> = {
+  easy:   { cellsToFill: 4,  expectedTimeSeconds: 30 },
+  medium: { cellsToFill: 7,  expectedTimeSeconds: 60 },
+  hard:   { cellsToFill: 10, expectedTimeSeconds: 90 },
+};

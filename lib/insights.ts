@@ -119,6 +119,10 @@ const ACTIVITY_LABEL: Record<string, string> = {
   "stroop-task": "Color Catch",
   "color-sequence": "Color Sequence",
   "tap-back": "Tap-Back",
+  "odd-one-out": "Odd One Out",
+  "analogies": "Analogies",
+  "whack-a-target": "Whack-a-Target",
+  "mini-sudoku": "Mini Sudoku",
 };
 
 export interface AttemptForSummary {

@@ -21,6 +21,10 @@ import SpotTheDifferenceActivity from "@/components/brain/SpotTheDifferenceActiv
 import StroopActivity from "@/components/brain/StroopActivity";
 import ColorSequenceActivity from "@/components/brain/ColorSequenceActivity";
 import TapBackActivity from "@/components/brain/TapBackActivity";
+import OddOneOutActivity from "@/components/brain/OddOneOutActivity";
+import AnalogiesActivity from "@/components/brain/AnalogiesActivity";
+import WhackTargetActivity from "@/components/brain/WhackTargetActivity";
+import MiniSudokuActivity from "@/components/brain/MiniSudokuActivity";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -167,6 +171,50 @@ export default async function ActivityPage({
   if (activityKey === "tap-back") {
     return (
       <TapBackActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "odd-one-out") {
+    return (
+      <OddOneOutActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "analogies") {
+    return (
+      <AnalogiesActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "whack-a-target") {
+    return (
+      <WhackTargetActivity
+        moduleKey={moduleKey}
+        childName={activeChild.name}
+        difficulty={difficulty}
+        adaptiveSource={adaptiveSource}
+        previousLevel={previousLevel}
+      />
+    );
+  }
+  if (activityKey === "mini-sudoku") {
+    return (
+      <MiniSudokuActivity
         moduleKey={moduleKey}
         childName={activeChild.name}
         difficulty={difficulty}

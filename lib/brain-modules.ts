@@ -135,6 +135,42 @@ export const BRAIN_ACTIVITIES: Record<string, BrainActivity> = {
     maxAge: 15,
     available: true,
   },
+  "odd-one-out": {
+    key: "odd-one-out",
+    name: "Odd One Out",
+    module: "thinking",
+    skill: "Categorization",
+    minAge: 5,
+    maxAge: 15,
+    available: true,
+  },
+  "analogies": {
+    key: "analogies",
+    name: "Analogies",
+    module: "thinking",
+    skill: "Analogical reasoning",
+    minAge: 9,
+    maxAge: 15,
+    available: true,
+  },
+  "whack-a-target": {
+    key: "whack-a-target",
+    name: "Whack-a-Target",
+    module: "focus",
+    skill: "Sustained attention",
+    minAge: 8,
+    maxAge: 15,
+    available: true,
+  },
+  "mini-sudoku": {
+    key: "mini-sudoku",
+    name: "Mini Sudoku",
+    module: "thinking",
+    skill: "Constraint reasoning",
+    minAge: 8,
+    maxAge: 15,
+    available: true,
+  },
 };
 
 export function getActivitiesForModule(moduleKey: ModuleKey): BrainActivity[] {
