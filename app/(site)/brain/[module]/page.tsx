@@ -3,16 +3,16 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Play } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import {
   BRAIN_MODULES,
   getActivitiesForModule,
-  ZONE_BG,
   ZONE_BG_SOFT,
   ZONE_TEXT,
   type ModuleKey,
 } from "@/lib/brain-modules";
+import ActivityPreview from "@/components/brain/ActivityPreview";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -79,6 +79,7 @@ export default async function ModulePage({
                     ? `/brain/${moduleKey}/${activity.key}`
                     : undefined
                 }
+                activityKey={activity.key}
                 name={activity.name}
                 skill={activity.skill}
                 ageRange={`Age ${activity.minAge}–${activity.maxAge}`}
@@ -100,6 +101,7 @@ export default async function ModulePage({
 
 function ActivityCard({
   href,
+  activityKey,
   name,
   skill,
   ageRange,
@@ -108,6 +110,7 @@ function ActivityCard({
   color,
 }: {
   href?: string;
+  activityKey: string;
   name: string;
   skill: string;
   ageRange: string;
@@ -121,11 +124,9 @@ function ActivityCard({
         href
           ? "border-gray-200 hover:border-gray-300 hover:shadow-md cursor-pointer"
           : "border-gray-100 opacity-60"
-      } p-5 transition-all flex items-center gap-4`}
+      } p-4 transition-all flex items-center gap-4`}
     >
-      <div className={`w-12 h-12 rounded-xl ${ZONE_BG[color]} flex items-center justify-center text-white shrink-0`}>
-        <Play className="w-5 h-5 fill-white" strokeWidth={2} />
-      </div>
+      <ActivityPreview activityKey={activityKey} color={color} />
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5 flex-wrap">
           <h3 className="font-bold text-gray-800 text-base">{name}</h3>
