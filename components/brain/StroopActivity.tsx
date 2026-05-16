@@ -24,6 +24,7 @@ import {
   REFLECTION_OPTIONS,
   type ReflectionOption,
 } from '@/components/brain/reflection-options';
+import { useCelebration } from '@/lib/use-celebration';
 
 const TOTAL_ROUNDS = 3;
 
@@ -214,6 +215,13 @@ export default function StroopActivity({
 
   const lastRoundData = roundData[roundData.length - 1];
   const correctCount = results.filter((r) => r.isCorrect).length;
+
+  useCelebration({
+    phase,
+    lastRoundCorrect: lastRoundData?.isCorrect ?? false,
+    perfectSession: results.length > 0 && results.every((r) => r.isCorrect),
+  });
+
   const avgScore =
     results.length > 0 ? Math.round(results.reduce((sum, r) => sum + r.finalScore, 0) / results.length) : 0;
 

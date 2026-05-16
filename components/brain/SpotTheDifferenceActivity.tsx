@@ -10,7 +10,23 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  Star,
+  Heart,
+  Smile,
+  Sun,
+  Moon,
+  Cloud,
+  Flower2,
+  Leaf,
+  Snowflake,
+  Crown,
+  Bell,
+  Sparkles,
+  type LucideIcon,
+} from 'lucide-react';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
   SPOT_DIFFERENCE_CONFIG,
@@ -24,17 +40,36 @@ import {
   REFLECTION_OPTIONS,
   type ReflectionOption,
 } from '@/components/brain/reflection-options';
+import { useCelebration } from '@/lib/use-celebration';
 
 const TOTAL_ROUNDS = 3;
 
-// Each cell shows one of these shape+color combos
-const SHAPE_PALETTE: { shape: 'circle' | 'square' | 'triangle' | 'star' | 'diamond'; color: string }[] = [
-  { shape: 'circle',   color: '#3b82f6' }, // blue
-  { shape: 'square',   color: '#f97316' }, // orange
-  { shape: 'triangle', color: '#10b981' }, // green
-  { shape: 'star',     color: '#a855f7' }, // purple
-  { shape: 'diamond',  color: '#ef4444' }, // red
-  { shape: 'circle',   color: '#eab308' }, // yellow
+// 12 universally-recognizable Lucide icons. Kid-friendly + varied silhouettes
+// so the grid never feels repetitive. Mix of natural / celebratory / playful.
+const ICON_POOL: LucideIcon[] = [
+  Star,
+  Heart,
+  Smile,
+  Sun,
+  Moon,
+  Cloud,
+  Flower2,
+  Leaf,
+  Snowflake,
+  Crown,
+  Bell,
+  Sparkles,
+];
+
+// 6 distinct colors. Pillar identity stays out of these — purely the
+// kid's "spot the change" palette.
+const COLOR_POOL = [
+  '#ef4444', // red
+  '#3b82f6', // blue
+  '#10b981', // emerald
+  '#eab308', // yellow
+  '#a855f7', // purple
+  '#f97316', // orange
 ];
 
 type Phase =
@@ -54,7 +89,7 @@ interface RoundResult {
 }
 
 interface CellContent {
-  shape: typeof SHAPE_PALETTE[number]['shape'];
+  icon: LucideIcon;
   color: string;
 }
 
@@ -76,13 +111,65 @@ function randItem<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function generateRound(gridSize: number, differences: number): RoundSetup {
+// Difficulty-tuned difference generation:
+//   easy   → diff cell has DIFFERENT icon AND DIFFERENT color (very obvious)
+//   medium → 50% chance icon-only, 50% chance color-only (one dimension changes)
+//   hard   → 70% chance icon-only with SAME color (very tricky — eyes naturally
+//            group by color, so spotting an icon swap inside the same hue is
+//            genuinely hard); 30% color-only fallback
+function pickDifferentCell(
+  original: CellContent,
+  difficulty: Difficulty,
+): CellContent {
+  let mutateIcon: boolean;
+  let mutateColor: boolean;
+  if (difficulty === 'easy') {
+    mutateIcon = true;
+    mutateColor = true;
+  } else if (difficulty === 'medium') {
+    const coin = Math.random() < 0.5;
+    mutateIcon = coin;
+    mutateColor = !coin;
+  } else {
+    // hard: prefer icon-only change (same color) — much harder to spot
+    const r = Math.random();
+    if (r < 0.7) {
+      mutateIcon = true;
+      mutateColor = false;
+    } else {
+      mutateIcon = false;
+      mutateColor = true;
+    }
+  }
+
+  let newIcon = original.icon;
+  let newColor = original.color;
+  if (mutateIcon) {
+    let candidate = randItem(ICON_POOL);
+    let safety = 0;
+    while (candidate === original.icon && ++safety < 20) candidate = randItem(ICON_POOL);
+    newIcon = candidate;
+  }
+  if (mutateColor) {
+    let candidate = randItem(COLOR_POOL);
+    let safety = 0;
+    while (candidate === original.color && ++safety < 20) candidate = randItem(COLOR_POOL);
+    newColor = candidate;
+  }
+  return { icon: newIcon, color: newColor };
+}
+
+function generateRound(
+  gridSize: number,
+  differences: number,
+  difficulty: Difficulty,
+): RoundSetup {
   const totalCells = gridSize * gridSize;
-  // Build LEFT grid first
-  const left: CellContent[] = Array.from({ length: totalCells }, () => {
-    const item = randItem(SHAPE_PALETTE);
-    return { shape: item.shape, color: item.color };
-  });
+  // Build LEFT grid first — random icon + color per cell
+  const left: CellContent[] = Array.from({ length: totalCells }, () => ({
+    icon: randItem(ICON_POOL),
+    color: randItem(COLOR_POOL),
+  }));
 
   // Pick `differences` unique cells to modify on the right side
   const indices = Array.from({ length: totalCells }, (_, i) => i);
@@ -94,32 +181,10 @@ function generateRound(gridSize: number, differences: number): RoundSetup {
 
   const right: CellContent[] = left.map((c) => ({ ...c }));
   for (const idx of differentIndices) {
-    // Force a real change (different shape or color)
-    let next = randItem(SHAPE_PALETTE);
-    let safety = 0;
-    while (next.shape === left[idx].shape && next.color === left[idx].color) {
-      next = randItem(SHAPE_PALETTE);
-      if (++safety > 20) break;
-    }
-    right[idx] = { shape: next.shape, color: next.color };
+    right[idx] = pickDifferentCell(left[idx], difficulty);
   }
 
   return { left, right, differentIndices };
-}
-
-function Shape({ shape, color, size = 28 }: { shape: CellContent['shape']; color: string; size?: number }) {
-  switch (shape) {
-    case 'circle':
-      return <svg width={size} height={size} viewBox="0 0 32 32"><circle cx={16} cy={16} r={12} fill={color} /></svg>;
-    case 'square':
-      return <svg width={size} height={size} viewBox="0 0 32 32"><rect x={6} y={6} width={20} height={20} rx={3} fill={color} /></svg>;
-    case 'triangle':
-      return <svg width={size} height={size} viewBox="0 0 32 32"><polygon points="16,5 28,26 4,26" fill={color} /></svg>;
-    case 'star':
-      return <svg width={size} height={size} viewBox="0 0 32 32"><polygon points="16,4 19.5,12.5 28.5,13 21.5,19 23.5,28 16,23 8.5,28 10.5,19 3.5,13 12.5,12.5" fill={color} /></svg>;
-    case 'diamond':
-      return <svg width={size} height={size} viewBox="0 0 32 32"><polygon points="16,4 28,16 16,28 4,16" fill={color} /></svg>;
-  }
 }
 
 export default function SpotTheDifferenceActivity({
@@ -149,7 +214,7 @@ export default function SpotTheDifferenceActivity({
   const startTimeRef = useRef<number>(0);
 
   function startRound() {
-    setSetup(generateRound(config.gridSize, config.differences));
+    setSetup(generateRound(config.gridSize, config.differences, difficulty));
     setTapped(new Set());
     setError('');
     startTimeRef.current = Date.now();
@@ -267,6 +332,13 @@ export default function SpotTheDifferenceActivity({
       ? Math.round(results.reduce((sum, r) => sum + r.finalScore, 0) / results.length)
       : 0;
 
+  // Confetti on successful round + on perfect-3 summary
+  useCelebration({
+    phase,
+    lastRoundCorrect: lastRoundData?.isCorrect ?? false,
+    perfectSession: results.length > 0 && results.every((r) => r.isCorrect),
+  });
+
   function GridDisplay({
     cells,
     interactive,
@@ -278,14 +350,28 @@ export default function SpotTheDifferenceActivity({
     onTap?: (i: number) => void;
     highlight?: { correct?: Set<number>; tapped?: Set<number> };
   }) {
-    const cellSize = config.gridSize <= 3 ? 'w-12 h-12' : config.gridSize === 4 ? 'w-10 h-10' : 'w-8 h-8';
-    const shapeSize = config.gridSize <= 3 ? 28 : config.gridSize === 4 ? 22 : 18;
+    // Responsive sizes — bigger on tablets/desktops, comfortably tappable on
+    // mobile. Lucide icons scale crisply at all sizes.
+    const cellClass =
+      config.gridSize <= 3
+        ? 'w-16 h-16 sm:w-20 sm:h-20'
+        : config.gridSize === 4
+          ? 'w-12 h-12 sm:w-16 sm:h-16'
+          : 'w-10 h-10 sm:w-12 sm:h-12';
+    const iconClass =
+      config.gridSize <= 3
+        ? 'w-9 h-9 sm:w-11 sm:h-11'
+        : config.gridSize === 4
+          ? 'w-7 h-7 sm:w-9 sm:h-9'
+          : 'w-5 h-5 sm:w-7 sm:h-7';
+
     return (
       <div
         className="grid gap-1.5 p-2 bg-gray-50 rounded-xl"
         style={{ gridTemplateColumns: `repeat(${config.gridSize}, minmax(0, 1fr))` }}
       >
         {cells.map((cell, i) => {
+          const Icon = cell.icon;
           const isCorrectDiff = highlight?.correct?.has(i);
           const wasTapped = highlight?.tapped?.has(i);
           let cellBg = 'bg-white';
@@ -293,17 +379,21 @@ export default function SpotTheDifferenceActivity({
           else if (isCorrectDiff) cellBg = 'bg-amber-100 ring-2 ring-amber-400';
           else if (wasTapped) cellBg = 'bg-red-100 ring-2 ring-red-400';
           const tappedActive = interactive && tapped.has(i);
-          if (tappedActive) cellBg = 'bg-green-100 ring-2 ring-green-500';
+          if (tappedActive) cellBg = 'bg-green-100 ring-2 ring-green-500 scale-105';
           return (
             <button
               key={i}
               type="button"
               disabled={!interactive}
               onClick={() => onTap?.(i)}
-              className={`${cellSize} ${cellBg} rounded-md flex items-center justify-center transition-all ${interactive ? 'cursor-pointer active:scale-95' : 'cursor-default'}`}
+              className={`${cellClass} ${cellBg} rounded-lg flex items-center justify-center transition-all ${interactive ? 'cursor-pointer hover:scale-105 active:scale-95' : 'cursor-default'}`}
               aria-label={`Cell ${i + 1}`}
             >
-              <Shape shape={cell.shape} color={cell.color} size={shapeSize} />
+              <Icon
+                className={iconClass}
+                style={{ color: cell.color }}
+                strokeWidth={2}
+              />
             </button>
           );
         })}
