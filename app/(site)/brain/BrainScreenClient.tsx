@@ -8,6 +8,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 import { BRAIN_MODULES, type ModuleKey } from '@/lib/brain-modules';
 
 // Each lobe's tap zone (rectangular, percentages relative to the brain image)
@@ -137,7 +138,7 @@ export default function BrainScreenClient({ childName }: { childName: string }) 
                       {mod.shortDescription}
                     </p>
                   </div>
-                  <span className="text-2xl text-white/70 shrink-0">→</span>
+                  <ArrowRight className="w-6 h-6 text-white/70 shrink-0" strokeWidth={2.5} />
                 </div>
               </Link>
             );
