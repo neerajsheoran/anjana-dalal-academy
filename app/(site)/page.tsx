@@ -96,7 +96,7 @@ export default async function HomePage() {
             href="/learn"
             className="group block bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-md transition-all border border-blue-200 hover:border-blue-300"
           >
-            <div className="flex items-center justify-between flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
                   Bridge to school
@@ -109,7 +109,7 @@ export default async function HomePage() {
                   Science and Maths — browse by class, by subject, or take a quiz.
                 </p>
               </div>
-              <span className="bg-blue-600 text-white font-semibold px-5 py-2 rounded-full text-sm group-hover:bg-blue-700 transition-colors shrink-0">
+              <span className="block sm:inline-block w-full sm:w-auto text-center bg-blue-600 text-white font-semibold px-5 py-3 sm:py-2 rounded-full text-sm group-hover:bg-blue-700 transition-colors sm:shrink-0">
                 Explore →
               </span>
             </div>
