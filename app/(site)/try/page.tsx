@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 // ── Game config ──────────────────────────────────────────────────────────
 const GRID_SIZE = 3;
@@ -221,9 +222,10 @@ export default function TryPage() {
 
             <button
               onClick={handleContinue}
-              className="w-full bg-purple-600 text-white font-bold py-3 rounded-xl text-base hover:bg-purple-700 transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-full bg-purple-600 text-white font-bold py-3 rounded-xl text-base hover:bg-purple-700 transition-colors"
             >
-              {round < TOTAL_ROUNDS ? 'Next round →' : 'See results'}
+              {round < TOTAL_ROUNDS ? 'Next round' : 'See results'}
+              {round < TOTAL_ROUNDS && <ArrowRight className="w-4 h-4" strokeWidth={2.5} />}
             </button>
           </div>
         )}
@@ -267,9 +269,10 @@ export default function TryPage() {
               </button>
               <Link
                 href="/"
-                className="block text-gray-500 text-xs hover:text-gray-700 transition-colors pt-1"
+                className="inline-flex items-center justify-center gap-1 w-full text-gray-500 text-xs hover:text-gray-700 transition-colors pt-1"
               >
-                ← Back to home
+                <ArrowLeft className="w-3.5 h-3.5" strokeWidth={2} />
+                Back to home
               </Link>
             </div>
           </div>

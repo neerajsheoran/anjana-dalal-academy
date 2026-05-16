@@ -5,6 +5,7 @@
 // Rendered from app/(site)/page.tsx based on getActiveChild().
 
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import type { ActiveChild } from '@/lib/active-child';
 
 const CLASS_LABEL: Record<string, string> = {
@@ -56,7 +57,7 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
                 Memory · Focus · Thinking — pick a part to play
               </p>
             </div>
-            <span className="text-2xl text-white/70">→</span>
+            <ArrowRight className="w-6 h-6 text-white/70" strokeWidth={2.5} />
           </div>
         </Link>
 
@@ -106,7 +107,7 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
                   Maths and Science from your class
                 </p>
               </div>
-              <span className="text-xl text-white/60">→</span>
+              <ArrowRight className="w-5 h-5 text-white/60" strokeWidth={2.5} />
             </div>
           </Link>
         )}
@@ -127,7 +128,7 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
                   Browse Class 1–10 Maths and Science
                 </p>
               </div>
-              <span className="text-lg text-white/40">→</span>
+              <ArrowRight className="w-4 h-4 text-white/40" strokeWidth={2.5} />
             </div>
           </Link>
         )}

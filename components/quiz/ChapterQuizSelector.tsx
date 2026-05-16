@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface Chapter {
   chapterId: string;
@@ -57,7 +58,11 @@ export default function ChapterQuizSelector({ classId, subject, chapters }: Prop
           onClick={() => setShowSelector((v) => !v)}
           className="inline-flex items-center gap-2 border border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors bg-white"
         >
-          {showSelector ? 'Hide Chapter Selector ↑' : 'Select Chapters for Quiz ↓'}
+          {showSelector ? (
+            <>Hide Chapter Selector <ChevronUp className="w-4 h-4" strokeWidth={2.5} /></>
+          ) : (
+            <>Select Chapters for Quiz <ChevronDown className="w-4 h-4" strokeWidth={2.5} /></>
+          )}
         </button>
       </div>
 
@@ -112,7 +117,8 @@ export default function ChapterQuizSelector({ classId, subject, chapters }: Prop
               href={quizHref}
               className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors"
             >
-              Start Quiz — {selected.size} chapter{selected.size > 1 ? 's' : ''} →
+              Start Quiz — {selected.size} chapter{selected.size > 1 ? 's' : ''}
+              <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
             </Link>
           ) : (
             <p className="text-xs text-purple-400">Select at least one chapter to start.</p>

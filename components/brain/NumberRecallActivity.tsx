@@ -7,6 +7,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { ModuleKey } from '@/lib/brain-modules';
 import {
   NUMBER_RECALL_CONFIG,
@@ -246,8 +247,9 @@ export default function NumberRecallActivity({
 
         {/* Top bar */}
         <div className="flex items-center justify-between mb-4">
-          <Link href={`/brain/${moduleKey}`} className="text-xs text-gray-500 hover:text-gray-700">
-            ← Exit
+          <Link href={`/brain/${moduleKey}`} className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700">
+            <ArrowLeft className="w-3.5 h-3.5" strokeWidth={2} />
+            Exit
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
             <p className="text-xs font-semibold text-purple-600 uppercase tracking-widest">
@@ -282,9 +284,10 @@ export default function NumberRecallActivity({
             </ol>
             <button
               onClick={startRound}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors shadow-md"
+              className="inline-flex items-center justify-center gap-2 w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors shadow-md"
             >
-              Start round 1 →
+              Start round 1
+              <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
             </button>
             <p className="text-[11px] text-gray-400 mt-3">Hi {childName} — focus on the order!</p>
           </div>
@@ -421,11 +424,12 @@ export default function NumberRecallActivity({
             </div>
             <button
               onClick={advanceFromRoundResult}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
+              className="inline-flex items-center justify-center gap-2 w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-base transition-colors"
             >
               {round < TOTAL_ROUNDS
-                ? `Next round (${round + 1}/${TOTAL_ROUNDS}) →`
-                : 'How did that go? →'}
+                ? `Next round (${round + 1}/${TOTAL_ROUNDS})`
+                : 'How did that go?'}
+              <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
             </button>
           </div>
         )}
@@ -516,9 +520,10 @@ export default function NumberRecallActivity({
               </button>
               <button
                 onClick={() => router.push('/brain')}
-                className="w-full text-gray-500 hover:text-gray-700 text-xs py-1 transition-colors"
+                className="inline-flex items-center justify-center gap-1 w-full text-gray-500 hover:text-gray-700 text-xs py-1 transition-colors"
               >
-                ← Back to Brain
+                <ArrowLeft className="w-3 h-3" strokeWidth={2} />
+                Back to Brain
               </button>
             </div>
           </div>

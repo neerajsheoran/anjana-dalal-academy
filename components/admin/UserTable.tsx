@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import RoleSelector from "@/components/admin/RoleSelector";
 import SubscriptionExtender from "@/components/admin/SubscriptionExtender";
 
@@ -427,7 +428,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                   disabled={safePage <= 1}
                   className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
                 >
-                  ← Previous
+<ArrowLeft className="w-3.5 h-3.5 inline-block mr-1" strokeWidth={2} />Previous
                 </button>
                 <div className="flex items-center gap-1">
                   {Array.from({ length: totalPages }, (_, i) => i + 1)
@@ -455,7 +456,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                   disabled={safePage >= totalPages}
                   className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
                 >
-                  Next →
+Next<ArrowRight className="w-3.5 h-3.5 inline-block ml-1" strokeWidth={2} />
                 </button>
               </div>
             )}
@@ -545,7 +546,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                   disabled={safePage <= 1}
                   className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
                 >
-                  ← Prev
+<ArrowLeft className="w-3.5 h-3.5 inline-block mr-1" strokeWidth={2} />Prev
                 </button>
                 <span className="text-xs text-gray-400">
                   {safePage} / {totalPages}
@@ -555,7 +556,7 @@ export default function UserTable({ users, readOnly = false }: { users: User[]; 
                   disabled={safePage >= totalPages}
                   className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:text-gray-300 disabled:cursor-not-allowed"
                 >
-                  Next →
+Next<ArrowRight className="w-3.5 h-3.5 inline-block ml-1" strokeWidth={2} />
                 </button>
               </div>
             )}

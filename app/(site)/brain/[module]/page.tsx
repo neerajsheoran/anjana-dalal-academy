@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
+import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import {
   BRAIN_MODULES,
@@ -39,7 +40,8 @@ export default async function ModulePage({
           href="/brain"
           className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
         >
-          ← Brain
+          <ArrowLeft className="w-4 h-4" strokeWidth={2} />
+          Brain
         </Link>
 
         {/* Module header */}
@@ -118,8 +120,8 @@ function ActivityCard({
           : "border-gray-100 opacity-60"
       } p-5 transition-all flex items-center gap-4`}
     >
-      <div className={`w-12 h-12 rounded-xl ${ZONE_BG[color]} flex items-center justify-center text-white text-xl font-bold shrink-0`}>
-        ▶
+      <div className={`w-12 h-12 rounded-xl ${ZONE_BG[color]} flex items-center justify-center text-white shrink-0`}>
+        <Play className="w-5 h-5 fill-white" strokeWidth={2} />
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5 flex-wrap">
@@ -138,7 +140,7 @@ function ActivityCard({
         <p className="text-xs text-gray-500">{skill} · {ageRange}</p>
       </div>
       {href && (
-        <span className="text-gray-400 text-xl shrink-0">→</span>
+        <ArrowRight className="w-5 h-5 text-gray-400 shrink-0" strokeWidth={2} />
       )}
     </div>
   );

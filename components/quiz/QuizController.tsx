@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import {
   QuizQuestion,
   QuizDifficulty,
@@ -195,7 +196,7 @@ export default function QuizController({
             href="/quiz-start"
             className="flex-1 text-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 rounded-xl transition-colors text-sm"
           >
-            ← Back to Chapters
+<ArrowLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Chapters
           </Link>
           {available > 0 ? (
             mode === 'online' ? (
@@ -203,14 +204,14 @@ export default function QuizController({
                 onClick={handleStart}
                 className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-xl transition-colors text-sm shadow-md shadow-green-200"
               >
-                Start Quiz →
+                <span className="inline-flex items-center gap-1.5">Start Quiz<ArrowRight className="w-4 h-4" strokeWidth={2.5} /></span>
               </button>
             ) : (
               <button
                 onClick={handleStart}
                 className="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl transition-colors text-sm shadow-md shadow-purple-200"
               >
-                Preview &amp; Print →
+                <span className="inline-flex items-center gap-1.5">Preview &amp; Print<ArrowRight className="w-4 h-4" strokeWidth={2.5} /></span>
               </button>
             )
           ) : (
@@ -346,7 +347,7 @@ export default function QuizController({
               href="/quiz-start"
               className="flex-1 text-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3.5 rounded-xl transition-colors text-sm"
             >
-              ← Back to Chapters
+  <ArrowLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Chapters
             </Link>
             {available > 0 ? (
               mode === 'online' ? (
@@ -354,14 +355,14 @@ export default function QuizController({
                   onClick={handleStart}
                   className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-green-200"
                 >
-                  Start Quiz →
+                  <span className="inline-flex items-center gap-1.5">Start Quiz<ArrowRight className="w-4 h-4" strokeWidth={2.5} /></span>
                 </button>
               ) : (
                 <button
                   onClick={handleStart}
                   className="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm shadow-lg shadow-purple-200"
                 >
-                  Preview &amp; Print →
+                  <span className="inline-flex items-center gap-1.5">Preview &amp; Print<ArrowRight className="w-4 h-4" strokeWidth={2.5} /></span>
                 </button>
               )
             ) : (
@@ -461,7 +462,7 @@ export default function QuizController({
             onClick={handleNext}
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
           >
-            {currentIndex < activeQuestions.length - 1 ? 'Next Question →' : 'See Results →'}
+            <span className="inline-flex items-center gap-1.5">{currentIndex < activeQuestions.length - 1 ? 'Next Question' : 'See Results'}<ArrowRight className="w-4 h-4" strokeWidth={2.5} /></span>
           </button>
         )}
       </div>
@@ -562,7 +563,7 @@ export default function QuizController({
             onClick={() => setPhase('setup')}
             className="text-sm text-gray-500 hover:text-gray-700 mb-6 flex items-center gap-1"
           >
-            ← Back to Setup
+<ArrowLeft className="w-4 h-4 inline-block mr-1" strokeWidth={2} />Back to Setup
           </button>
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <div className="flex items-center gap-3 mb-1">

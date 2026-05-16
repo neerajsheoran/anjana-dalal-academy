@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getChapter, getChapters, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
@@ -210,8 +211,9 @@ export default async function ChapterPage({
                 href={`/class/${classId}/${subject}/${prevChapter.chapterId}`}
                 className="flex-1 group bg-white border border-gray-200 rounded-xl p-3 hover:border-blue-300 hover:shadow-md transition-all text-left"
               >
-                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
-                  ← Previous
+                <span className="inline-flex items-center gap-1 text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  <ArrowLeft className="w-3 h-3" strokeWidth={2.5} />
+                  Previous
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
                   {formatChapterTitle(prevChapter)}
@@ -225,8 +227,9 @@ export default async function ChapterPage({
                 href={`/class/${classId}/${subject}/${nextChapter.chapterId}`}
                 className="flex-1 group bg-white border border-gray-200 rounded-xl p-3 hover:border-blue-300 hover:shadow-md transition-all text-right"
               >
-                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
-                  Next →
+                <span className="inline-flex items-center justify-end gap-1 text-xs text-gray-400 font-medium uppercase tracking-wide w-full">
+                  Next
+                  <ArrowRight className="w-3 h-3" strokeWidth={2.5} />
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-0.5 leading-snug">
                   {formatChapterTitle(nextChapter)}
@@ -290,8 +293,9 @@ export default async function ChapterPage({
                 href={`/class/${classId}/${subject}/${prevChapter.chapterId}`}
                 className="flex-1 group bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-300 hover:shadow-md transition-all text-left"
               >
-                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
-                  ← Previous
+                <span className="inline-flex items-center gap-1 text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  <ArrowLeft className="w-3 h-3" strokeWidth={2.5} />
+                  Previous
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
                   {formatChapterTitle(prevChapter)}
@@ -305,8 +309,9 @@ export default async function ChapterPage({
                 href={`/class/${classId}/${subject}/${nextChapter.chapterId}`}
                 className="flex-1 group bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-300 hover:shadow-md transition-all text-right"
               >
-                <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">
-                  Next →
+                <span className="inline-flex items-center justify-end gap-1 text-xs text-gray-400 font-medium uppercase tracking-wide w-full">
+                  Next
+                  <ArrowRight className="w-3 h-3" strokeWidth={2.5} />
                 </span>
                 <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-600 mt-1 leading-snug">
                   {formatChapterTitle(nextChapter)}

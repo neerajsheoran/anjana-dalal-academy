@@ -10,6 +10,7 @@ import {
   ArrowRight,
   BarChart3,
   Brain,
+  ChevronDown,
   Target,
 } from 'lucide-react';
 
@@ -76,9 +77,10 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
             Just exploring?{' '}
             <a
               href="#how-it-works"
-              className="underline hover:text-brand transition-colors"
+              className="inline-flex items-center gap-1 underline hover:text-brand transition-colors"
             >
-              See how it works ↓
+              See how it works
+              <ChevronDown className="w-3 h-3" strokeWidth={2.5} />
             </a>
           </p>
         </div>
