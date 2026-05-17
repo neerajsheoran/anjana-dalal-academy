@@ -1,0 +1,220 @@
+{
+  "chapterRef": "class-6/social-science/chapter-1-finding-our-place-on-earth/worksheet",
+  "topics": [
+    {
+      "topic": "Maps and Their Components",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "A book or collection of maps is called a:",
+          "options": ["Encyclopedia", "Atlas", "Dictionary", "Globe"],
+          "answer": "Atlas",
+          "explanation": "An atlas is a book containing many maps — physical, political, thematic — usually grouped by region or theme."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which type of map would show the height of mountains and the flow of rivers?",
+          "options": ["Political map", "Physical map", "Thematic map", "Road map"],
+          "answer": "Physical map",
+          "explanation": "Physical maps show natural features like mountains, rivers, deserts and oceans. Political maps show country borders and cities; thematic maps focus on one specific topic."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Fill in the blank: A map showing the borders of India's states and the location of their capitals is called a _______ map.",
+          "answer": "political",
+          "explanation": "Political maps focus on countries, states, cities and their boundaries."
+        },
+        {
+          "id": "c1-e4",
+          "type": "mcq",
+          "question": "What does the letter 'N' marked with an arrow on a map usually indicate?",
+          "options": ["The name of the mapmaker", "The North direction", "A new city", "A national highway"],
+          "answer": "The North direction",
+          "explanation": "Almost every map has an arrow with 'N' to show which direction is north. Once you know north, you can figure out east, south and west."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "mcq",
+          "question": "If a map scale is 1 cm = 50 km, and two cities are 4 cm apart on the map, what is the real distance between them?",
+          "options": ["50 km", "100 km", "150 km", "200 km"],
+          "answer": "200 km",
+          "explanation": "Real distance = map distance × scale = 4 × 50 = 200 km."
+        },
+        {
+          "id": "c1-m2",
+          "type": "short",
+          "question": "Name the three main components of every map.",
+          "answer": "Distance (scale), Direction, and Symbols",
+          "explanation": "These three together let any map represent a real place accurately. Without scale you cannot measure, without direction you do not know which way to go, and without symbols a small map cannot fit much information."
+        },
+        {
+          "id": "c1-m3",
+          "type": "mcq",
+          "question": "Why do mapmakers use symbols instead of detailed drawings?",
+          "options": [
+            "Because they cannot draw well",
+            "Because they want to save ink",
+            "Because real drawings would not fit in the limited space of a map",
+            "Because symbols are colourful"
+          ],
+          "answer": "Because real drawings would not fit in the limited space of a map",
+          "explanation": "A map of a whole city or country cannot show every real building. Symbols compress information so a large area fits on a small piece of paper."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain why we cannot perfectly flatten the Earth onto a paper map. Use a real-life example to support your answer.",
+          "answer": "The Earth is shaped almost like a sphere. A sphere cannot be flattened onto paper without tearing or stretching. For example, if you peel an orange in three or four big pieces and try to press them flat on a table, the pieces crack at the edges or stretch in the middle. The same problem happens with the Earth. To make a world map fit on paper, mapmakers have to stretch or squash some parts. That is why Greenland looks much bigger on most world maps than it really is — even though India is far larger.",
+          "explanation": "This explains both the geometric reason (sphere cannot become flat) and the consequence (distortion on flat maps). A globe avoids this distortion because it is also spherical."
+        }
+      ]
+    },
+    {
+      "topic": "Latitude, Longitude and the Globe",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "What is the value of latitude at the Equator?",
+          "options": ["0°", "45°", "90°", "180°"],
+          "answer": "0°",
+          "explanation": "The Equator is the starting line for measuring latitude, so it has a value of 0°. The poles are at 90°N and 90°S."
+        },
+        {
+          "id": "c2-e2",
+          "type": "fill",
+          "question": "The line of 0° longitude is called the _______ Meridian.",
+          "answer": "Prime",
+          "explanation": "The Prime Meridian (also called Greenwich Meridian) passes through Greenwich, London, and is the starting line for measuring longitude."
+        },
+        {
+          "id": "c2-e3",
+          "type": "mcq",
+          "question": "Which Indian city was the ancient prime meridian of India?",
+          "options": ["Delhi", "Mumbai", "Ujjayini (Ujjain)", "Varanasi"],
+          "answer": "Ujjayini (Ujjain)",
+          "explanation": "The ancient Indian prime meridian was called madhya rekha and passed through Ujjayini (modern Ujjain), a famous centre of Indian astronomy."
+        },
+        {
+          "id": "c2-e4",
+          "type": "mcq",
+          "question": "Lines of latitude run in which direction?",
+          "options": ["North to South", "East to West", "Pole to Pole", "From the Equator to the North Pole only"],
+          "answer": "East to West",
+          "explanation": "Latitude lines (also called parallels) run east-to-west around the Earth, parallel to the Equator. Longitude lines run north-to-south, from pole to pole."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What two numbers do you need to locate any place on Earth, and what does each one tell you?",
+          "answer": "Latitude and Longitude. Latitude tells you how far north or south you are from the Equator. Longitude tells you how far east or west you are from the Prime Meridian.",
+          "explanation": "Together, latitude and longitude form a 'coordinate' — like row and seat number in a cinema — that pins down one exact spot on the planet."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Delhi is at approximately 29°N, 77°E. What do these numbers tell you?",
+          "options": [
+            "Delhi is 29 km north of the Equator and 77 km east of Greenwich",
+            "Delhi is at 29 degrees north of the Equator and 77 degrees east of the Prime Meridian",
+            "Delhi is at 29 degrees east of Mumbai and 77 degrees north of Chennai",
+            "Delhi is the 29th city east of Greenwich and the 77th city north of the Equator"
+          ],
+          "answer": "Delhi is at 29 degrees north of the Equator and 77 degrees east of the Prime Meridian",
+          "explanation": "Coordinates are measured in degrees, not kilometres. 29°N means 29 degrees of arc north of the Equator; 77°E means 77 degrees east of Greenwich."
+        },
+        {
+          "id": "c2-m3",
+          "type": "fill",
+          "question": "The famous Indian astronomer who worked at Ujjayini around 1,500 years ago was _______.",
+          "answer": "Varahamihira",
+          "explanation": "Varahamihira was one of India's most celebrated ancient astronomers. He worked at Ujjayini (Ujjain), which was a major centre of astronomy in ancient India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain the link between latitude and climate. Why is it generally hot near the Equator and cold near the poles?",
+          "answer": "Places near the Equator are hot because the Sun's rays fall on them almost straight, concentrating heat over a small area. As we move away from the Equator (latitude increases), the same Sun's rays spread out over a larger area, so each square metre gets less heat. Near the poles (90°N and 90°S), the rays fall at a very slanted angle, spreading thin and giving little warmth. That is why places at the Equator like Kanyakumari are warm all year, places in moderate latitudes like Delhi have changing seasons, and places near the poles or at high latitudes like Ladakh in the Himalayas can be freezing.",
+          "explanation": "Latitude and climate are linked because the angle at which sunlight hits the Earth depends on latitude. This is one of the most important real-world uses of understanding latitude."
+        }
+      ]
+    },
+    {
+      "topic": "Time Zones and the Date Line",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "How many hours does the Earth take to complete one full rotation on its axis?",
+          "options": ["12 hours", "24 hours", "30 hours", "365 hours"],
+          "answer": "24 hours",
+          "explanation": "The Earth spins once on its axis every 24 hours, which is why we have one day-and-night cycle every 24 hours."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "By how many degrees does the Earth rotate in one hour?",
+          "options": ["10°", "15°", "30°", "60°"],
+          "answer": "15°",
+          "explanation": "A full rotation is 360°. Divided by 24 hours, that gives 15° per hour (360 ÷ 24 = 15)."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "Indian Standard Time is _____ hours and _____ minutes ahead of Greenwich Mean Time.",
+          "answer": "5 hours 30 minutes",
+          "explanation": "IST is 5 hours 30 minutes ahead of GMT. When it is 12 noon in London, it is 5:30 pm in India."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "If it is 12 noon at Greenwich (0° longitude), what is the approximate local time at 60°E?",
+          "answer": "4 pm",
+          "explanation": "Each 15° of longitude eastward adds 1 hour. 60° ÷ 15° = 4 hours. So local time at 60°E is 12 noon + 4 hours = 4 pm."
+        },
+        {
+          "id": "c3-m2",
+          "type": "mcq",
+          "question": "What is the difference between local time and Indian Standard Time?",
+          "options": [
+            "Local time is the same everywhere in India",
+            "Local time is what a place's actual longitude says, while Indian Standard Time is the one common time chosen for the whole country",
+            "Standard time is faster than local time",
+            "There is no difference"
+          ],
+          "answer": "Local time is what a place's actual longitude says, while Indian Standard Time is the one common time chosen for the whole country",
+          "explanation": "Each place has its own local time based on where the Sun is. India uses one Standard Time across all states for convenience, even though Assam's real local time is well ahead of Gujarat's."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Why does the International Date Line zigzag instead of running in a straight line at 180°?",
+          "answer": "The International Date Line is roughly at 180° longitude, but it does not run perfectly straight. It zigzags to keep small islands and small countries on the same date. If the line ran straight, some islands would have one date on their eastern half and a different date on their western half — splitting families and villages between two days. To avoid this confusion, the line bends to keep entire countries and island groups on one side. This is a practical compromise: the date line follows political and human boundaries rather than a perfect line of longitude.",
+          "explanation": "This question tests understanding of both the geographic concept (180° meridian) and the practical reason for adjusting it (political and social convenience)."
+        },
+        {
+          "id": "c3-h2",
+          "type": "long",
+          "question": "Two friends are talking on the phone in late afternoon. One is in Porbandar (Gujarat, about 70°E) and the other in Tinsukia (Assam, about 95°E). The friend in Tinsukia says the Sun has set, but the friend in Porbandar says it is still daylight. Explain why, and calculate the approximate difference in local time between the two cities.",
+          "answer": "Tinsukia is about 25° east of Porbandar (95° − 70° = 25°). Since the Earth rotates 15° per hour, the time difference is 25 ÷ 15, which is about 1 hour and 40 minutes. Tinsukia is further east, so the Sun rises and sets there earlier. When it is evening (Sun has set) in Tinsukia, it is still afternoon in Porbandar. Both cities, however, show the same time on their clocks because all of India uses Indian Standard Time. The official clock is the same, but the actual position of the Sun is very different.",
+          "explanation": "This combines two ideas: (1) longitude determines when the Sun rises and sets in real time, and (2) a single Standard Time hides this real difference from the clock."
+        }
+      ]
+    }
+  ]
+}

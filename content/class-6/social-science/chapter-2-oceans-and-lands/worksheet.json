@@ -1,0 +1,182 @@
+{
+  "chapterRef": "class-6/social-science/chapter-2-oceans-and-lands/worksheet",
+  "topics": [
+    {
+      "topic": "Oceans of the Earth",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Approximately how much of Earth's surface is covered with water?",
+          "options": ["One-fourth", "Half", "Three-fourths", "Almost all of it"],
+          "answer": "Three-fourths",
+          "explanation": "About 71% of Earth's surface (roughly three-fourths) is covered with water, which is why Earth appears blue from space."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which is the largest ocean on Earth?",
+          "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+          "answer": "Pacific Ocean",
+          "explanation": "The Pacific Ocean is the largest ocean — bigger than all the continents combined! It is followed by the Atlantic and then the Indian Ocean."
+        },
+        {
+          "id": "c1-e3",
+          "type": "mcq",
+          "question": "On India's western coast, the Indian Ocean is known as:",
+          "options": ["Bay of Bengal", "Arabian Sea", "Pacific Sea", "Indian Bay"],
+          "answer": "Arabian Sea",
+          "explanation": "The Arabian Sea is on India's west; the Bay of Bengal is on India's east. Both are parts of the larger Indian Ocean."
+        },
+        {
+          "id": "c1-e4",
+          "type": "fill",
+          "question": "Earth is called the _______ Planet because so much of it is covered with water.",
+          "answer": "Blue",
+          "explanation": "Astronauts who saw Earth from space gave it this nickname because the dominant colour from far away is blue — the colour of the oceans."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Name India's two important island groups and the ocean/sea where each is found.",
+          "answer": "Andaman and Nicobar Islands — in the Bay of Bengal. Lakshadweep Islands — in the Arabian Sea.",
+          "explanation": "These two island groups are important Indian territories with their own people, culture and economy. Both lie in different parts of the Indian Ocean around India."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "Although Earth has lots of water, why is there often talk of a 'water crisis'?",
+          "options": [
+            "Because the oceans are shrinking every year",
+            "Because most of Earth's water is salty and not fit to drink, and fresh water is rare",
+            "Because rain has completely stopped in India",
+            "Because we use water mostly for electricity"
+          ],
+          "answer": "Because most of Earth's water is salty and not fit to drink, and fresh water is rare",
+          "explanation": "About 97% of all Earth's water is salty ocean water. Only about 3% is fresh, and most of that is locked in ice. The water humans can actually drink is a tiny fraction — that is why saving water matters."
+        },
+        {
+          "id": "c1-m3",
+          "type": "fill",
+          "question": "The plant life found in the oceans is called marine _______ and the animal life is called marine _______.",
+          "answer": "flora; fauna",
+          "explanation": "Flora refers to plant life of a region; fauna refers to animal life. So marine flora = ocean plants like algae and seaweed, and marine fauna = ocean animals like fish, whales, dolphins, and corals."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Even though we have five named oceans, they are actually one connected body of water. Explain this idea and give one reason why it matters.",
+          "answer": "The five oceans — Pacific, Atlantic, Indian, Southern, and Arctic — are not really separated by physical barriers. The lines we draw between them on maps are just human conventions used to give each region a name. Seawater flows freely from one ocean to another. This matters because many marine animals like whales, tuna, and turtles travel huge distances across multiple oceans during their lifetimes. Ocean currents also carry warm water from one region to colder regions, which affects the climate and weather of distant countries. If the oceans were truly separate, marine life and weather patterns would be very different.",
+          "explanation": "The key insight is that named oceans are human-imposed labels, but the underlying water system is one global ocean. Currents, migration, and weather all depend on this connection."
+        }
+      ]
+    },
+    {
+      "topic": "Continents",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which is the largest continent?",
+          "options": ["Africa", "Asia", "Antarctica", "North America"],
+          "answer": "Asia",
+          "explanation": "Asia is the largest continent both in area and population. India is part of Asia."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which continent has no permanent human population?",
+          "options": ["Australia", "Antarctica", "Africa", "South America"],
+          "answer": "Antarctica",
+          "explanation": "Antarctica is covered with ice and is too cold for permanent human settlement. Only scientists visit on short research missions."
+        },
+        {
+          "id": "c2-e3",
+          "type": "mcq",
+          "question": "What does the five-ring Olympic symbol represent?",
+          "options": [
+            "Five sporting events",
+            "Five inhabited continents",
+            "Five colours of medals",
+            "Five different countries"
+          ],
+          "answer": "Five inhabited continents",
+          "explanation": "The five rings stand for Africa, America (counted as one), Asia, Australia, and Europe — the five continents where people live. Antarctica is excluded because no one permanently lives there."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Why do different sources count different numbers of continents (4, 5, 6, or 7)?",
+          "answer": "It depends on how you group the landmasses. North America and South America are physically joined, so some count them as one continent (America). Europe and Asia are physically joined, so some count them as one continent (Eurasia). When you separate every distinct landmass culturally or historically, you get 7 continents — the count most commonly used in Indian schools.",
+          "explanation": "The number depends on whether you draw the line based on physical geography or on culture and history. There is no single 'right' answer — different systems are used for different purposes."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Which continent is the smallest?",
+          "options": ["Antarctica", "Europe", "Australia", "Africa"],
+          "answer": "Australia",
+          "explanation": "Australia is the smallest of the seven continents. Antarctica is bigger than Australia. Europe is also smaller than Antarctica."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Imagine that the oceans suddenly disappeared. Describe at least three ways life on Earth would change.",
+          "answer": "Without oceans, the consequences would be enormous. (1) No clouds and no rain — water evaporates from the oceans to form clouds. Without that, there would be no monsoon, no rivers, and no agriculture. Crops would fail and humans would starve. (2) Extreme weather — oceans help spread heat around the planet. Without them, some places would become unbearably hot and others freezing cold. (3) Loss of marine life — millions of species of fish, whales, dolphins, corals, and microscopic organisms would all vanish. (4) Loss of food and livelihood — millions of people who fish for a living, especially in coastal areas of India like Tamil Nadu, Kerala, and West Bengal, would lose their food source. Life as we know it would not survive.",
+          "explanation": "This question helps students see oceans not just as scenery but as an active part of the planet's life-support system. It connects geography to weather, food, and human society."
+        }
+      ]
+    },
+    {
+      "topic": "Oceans and Disasters",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "A tsunami is usually caused by:",
+          "options": [
+            "A strong wind",
+            "An earthquake or volcanic eruption under the sea",
+            "Heavy rainfall",
+            "Large ships colliding"
+          ],
+          "answer": "An earthquake or volcanic eruption under the sea",
+          "explanation": "When the seafloor moves suddenly because of an earthquake or volcanic eruption, it displaces a huge amount of water, creating a tsunami — a fast-moving, powerful wave."
+        },
+        {
+          "id": "c3-e2",
+          "type": "fill",
+          "question": "The Indian government body that handles disasters like floods, cyclones, and tsunamis is the _______ Disaster Management Authority.",
+          "answer": "National",
+          "explanation": "The National Disaster Management Authority (NDMA) coordinates India's response to all kinds of disasters."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "What lesson did the 2004 Indian Ocean tsunami teach us, and how did India respond?",
+          "answer": "The 2004 tsunami showed that the Indian Ocean had no warning system, and over 2 lakh people died across 14 countries because no one was alerted in time. After this disaster, India and other Indian Ocean countries set up the Indian Ocean Tsunami Warning System. Today, sensors in the ocean can detect a tsunami soon after an earthquake and warn coastal areas in time to save lives.",
+          "explanation": "This question connects a disaster to the protective system it led to — showing how societies learn from tragedy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Why does the east coast of India face more cyclones than the west coast? Explain the geographical reason.",
+          "answer": "The east coast of India faces the Bay of Bengal, which is generally warmer and shaped in a way that funnels cyclones towards land. Warm ocean water gives storms more energy, so cyclones form more easily here. The Bay of Bengal is also narrower and more enclosed by surrounding land, so storms develop and travel quickly towards the coast. The west coast faces the Arabian Sea, which is also warm but generally produces fewer cyclones because of differences in wind patterns and ocean temperatures. As a result, Odisha, Andhra Pradesh, Tamil Nadu and West Bengal on the east coast face cyclones more often, while Gujarat, Maharashtra and Kerala on the west coast face them less often (though it does happen).",
+          "explanation": "This connects geography (shape of the sea, water temperature) with weather patterns and disaster risk. It shows why some regions need stronger disaster preparedness."
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ export type ClassId =
   | "class-9"
   | "class-10";
 
-export type SubjectId = "maths" | "science";
+export type SubjectId = "maths" | "science" | "social-science";
 
 export type DifficultyLevel = "easy" | "medium" | "hard";
 
@@ -62,7 +62,7 @@ export interface SubjectInfo {
   id: SubjectId;
   label: string;           // "Mathematics"
   icon: string;            // emoji
-  color: "blue" | "green"; // used for card color coding
+  color: "blue" | "green" | "amber"; // used for card color coding
 }
 
 // Subscription & Payment types

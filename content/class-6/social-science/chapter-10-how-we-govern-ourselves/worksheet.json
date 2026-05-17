@@ -1,0 +1,179 @@
+{
+  "chapterRef": "class-6/social-science/chapter-10-how-we-govern-ourselves/worksheet",
+  "topics": [
+    {
+      "topic": "Why Government and Rules",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which of these is the BEST reason for having rules in society?",
+          "options": [
+            "To restrict people's freedom",
+            "To help people live together peacefully",
+            "To increase taxes",
+            "To make life boring"
+          ],
+          "answer": "To help people live together peacefully",
+          "explanation": "Rules make freedom possible by giving everyone a shared understanding of what is fair. Without rules, society would face chaos."
+        },
+        {
+          "id": "c1-e2",
+          "type": "fill",
+          "question": "The most important and binding rules in a country are called _______ .",
+          "answer": "laws",
+          "explanation": "Laws are formal rules made by the legislature and enforced by the executive. Breaking them carries consequences decided by the judiciary."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Explain the difference between 'governance' and 'government'.",
+          "answer": "Governance is the process — the activity of making rules, taking decisions, and ensuring rules are followed. Government is the group of people or the system that does this. So governance is the activity; government is the body that carries it out.",
+          "explanation": "Important distinction that students often confuse."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why are unfair rules better changed through proper discussion than simply broken? Explain.",
+          "answer": "When someone breaks a rule, even an unfair one, several problems arise. (1) They show that rules don't matter — others may then break good rules too. (2) They may face punishment, putting themselves at risk without changing anything. (3) The rule still stands and continues to harm others. (4) Society loses trust in the rule-of-law itself. On the other hand, when people work to change an unfair rule through proper discussion — by petitioning the government, voting for representatives who promise change, joining peaceful campaigns, going to court — they fix the rule for everyone. Mahatma Gandhi's freedom movement is a great example. He did not advocate breaking British laws randomly. He used **non-violent disobedience** as a specific protest while constantly negotiating for legal change. His method preserved respect for justice and the rule-of-law while changing the system. Democracy gives us tools — voting, free speech, courts, protest — to change rules without breaking the social fabric. Using those tools is more effective and more responsible.",
+          "explanation": "Connects civic responsibility with practical effectiveness — a sophisticated question for Class 6 but well within reach."
+        }
+      ]
+    },
+    {
+      "topic": "The Three Organs",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which organ of government makes the laws?",
+          "options": ["Executive", "Judiciary", "Legislature", "Police"],
+          "answer": "Legislature",
+          "explanation": "The legislature (Parliament at national level, Vidhan Sabha at state level) is the law-making organ. The executive implements laws and the judiciary interprets them."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "The Prime Minister of India is the real executive head, while the President is the:",
+          "options": ["Nominal head", "Law-maker", "Chief Justice", "Speaker"],
+          "answer": "Nominal head",
+          "explanation": "In India, the President is the nominal (title-only) head, with mostly ceremonial powers. The Prime Minister is the real executive head who runs the government."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The highest court in India is the _______ Court.",
+          "answer": "Supreme",
+          "explanation": "The Supreme Court of India is the highest court in the country. Each state has a High Court, and below them are district and local courts."
+        },
+        {
+          "id": "c2-e4",
+          "type": "mcq",
+          "question": "What are the two houses of Indian Parliament?",
+          "options": [
+            "House of Lords and House of Commons",
+            "Lok Sabha and Rajya Sabha",
+            "Vidhan Sabha and Vidhan Parishad",
+            "Senate and Congress"
+          ],
+          "answer": "Lok Sabha and Rajya Sabha",
+          "explanation": "Lok Sabha (House of the People, directly elected) and Rajya Sabha (Council of States, indirectly elected) together form Parliament — India's national legislature."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Why is it important to keep the three organs of government separate?",
+          "answer": "Keeping the three organs separate prevents any one group from holding too much power. If the same group made laws, enforced them, and judged disputes, there would be no fairness — that group could unfairly target someone and have no checks on it. With separation: the legislature makes laws, the executive implements them, the judiciary interprets them and decides cases. Each organ can 'check' the others. The courts can strike down unfair laws. Parliament can question government actions. The executive cannot govern without the legislature's approval. This system of 'checks and balances' protects citizens from abuse of power.",
+          "explanation": "Tests understanding of why separation matters — fairness and protection from abuse."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "When a cybercriminal is caught and convicted, all three organs of government play a role. Which best describes the judiciary's role?",
+          "options": [
+            "Passing the law against cybercrime",
+            "Catching the criminal",
+            "Deciding whether the person is guilty and assigning punishment",
+            "Collecting evidence"
+          ],
+          "answer": "Deciding whether the person is guilty and assigning punishment",
+          "explanation": "The judiciary (courts) decides guilt and punishment based on evidence presented. The legislature passes the law; the executive (police) catches the criminal and presents the evidence."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain how 'checks and balances' work in a democracy with an example.",
+          "answer": "Checks and balances mean that each of the three organs of government can keep an eye on the others and prevent them from acting beyond their proper role. Here is how it works in practice. Suppose Parliament passes a law that an Indian citizen believes is unfair — say, a law that restricts the right to speak freely. The citizen can challenge this law in court. The Supreme Court can review the law against the Constitution. If the Court finds that the law violates the Constitution (which guarantees free speech), it can **strike down the law**. This is the judiciary checking the legislature. Similarly, if the executive (a minister or a police force) does something unfair — say arrests journalists without proper grounds — the courts can order their release. This is the judiciary checking the executive. On the other side, Parliament can pass new laws that limit how the executive operates — for example, requiring the government to follow certain procedures before raiding a home. This is the legislature checking the executive. And Parliament can pass new constitutional amendments (with very strict requirements) that may modify how the judiciary works. So each organ has its own powers but each also faces limits from the others. No single organ can do whatever it wants. This keeps power balanced and protects citizens from abuse. It is one of the deepest ideas of modern democracy.",
+          "explanation": "Tests the deeper understanding of how separation of powers works in practice — crucial to understanding modern government."
+        }
+      ]
+    },
+    {
+      "topic": "Three Levels, and Democracy",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which is the correct order of levels of government in India from highest to most local?",
+          "options": [
+            "Local → State → Central",
+            "Central → State → Local",
+            "State → Central → Local",
+            "Central → Local → State"
+          ],
+          "answer": "Central → State → Local",
+          "explanation": "Central (Union) government is at the national level. State governments are at the state level. Local governments (panchayats, municipalities) handle village/town matters."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which level of government would primarily handle India's foreign affairs and defence?",
+          "options": ["Local", "State", "Central", "Village panchayat"],
+          "answer": "Central",
+          "explanation": "Defence and foreign affairs are national matters handled by the central government. State and local governments handle their own areas of responsibility."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "The word 'democracy' comes from two Greek words: 'demos' meaning _______ and 'kratos' meaning rule or power.",
+          "answer": "people",
+          "explanation": "'Demos' means people, 'kratos' means rule. Together: rule of the people. Democracy = government in which the people hold the power."
+        },
+        {
+          "id": "c3-e4",
+          "type": "mcq",
+          "question": "Approximately how many voters does India have, making it the world's largest democracy?",
+          "options": ["About 10 million", "About 100 million", "About 970 million", "About 5 billion"],
+          "answer": "About 970 million",
+          "explanation": "India had about 970 million eligible voters in 2024. That is more than the entire population of Europe — making India the largest democracy in the world."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "What is the difference between representative democracy and direct democracy? Give one example of each.",
+          "answer": "Representative democracy: People vote for representatives who govern on their behalf. Example: Indian elections — voters choose MPs and MLAs, who then make laws. Direct democracy: People decide on issues themselves by direct vote, without representatives. Example: A classroom voting by show of hands on which place to go for the picnic; or a village gram sabha voting directly on community matters.",
+          "explanation": "Tests the understanding of two important variations of democracy and their practical differences."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Dr. A.P.J. Abdul Kalam said: 'Dream is not that which you see while sleeping; it is something that does not let you sleep.' Explain what this means and how it applies to a citizen's role in democracy.",
+          "answer": "Dr. Kalam was saying that real dreams — meaningful goals — are not casual fantasies that come during sleep. They are deep aspirations that fill our waking life. A real dream keeps you up at night thinking about how to achieve it; it pulls you out of bed in the morning to work towards it. It is not a vague wish; it is a powerful drive. Applied to democracy and citizenship: a citizen who deeply cares about their country doesn't just complain and go to sleep. They get up — they vote, they volunteer, they ask questions, they help solve problems in their community, they work hard at their job, they raise their children with good values. Democracy works when many citizens have such 'dreams' that they live for — not just dream about. India became free because freedom was a dream that did not let Indian leaders sleep. India progresses today because of many citizens who work tirelessly for change. So Dr. Kalam was telling young Indians: don't just consume content about your country. Dream big, then work hard. Dream of a better India and never let that dream sleep until it becomes real. That is the kind of citizenship that builds great democracies.",
+          "explanation": "Connects a famous quote to citizenship — making the abstract personal and inspiring."
+        }
+      ]
+    }
+  ]
+}

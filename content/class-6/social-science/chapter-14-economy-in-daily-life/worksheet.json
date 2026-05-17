@@ -1,0 +1,159 @@
+{
+  "chapterRef": "class-6/social-science/chapter-14-economy-in-daily-life/worksheet",
+  "topics": [
+    {
+      "topic": "The Three Sectors",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which of these is a primary sector activity?",
+          "options": ["Making cars in a factory", "Growing rice in a paddy field", "Teaching in a school", "Selling clothes in a shop"],
+          "answer": "Growing rice in a paddy field",
+          "explanation": "Primary sector activities involve working directly with natural resources — farming, fishing, mining, forestry. Making cars is secondary; teaching and selling are tertiary."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "A factory that turns cotton into shirts is part of which sector?",
+          "options": ["Primary", "Secondary", "Tertiary", "Cooperative"],
+          "answer": "Secondary",
+          "explanation": "The secondary sector takes raw materials (like cotton) from the primary sector and turns them into finished goods (like shirts) in factories and workshops."
+        },
+        {
+          "id": "c1-e3",
+          "type": "mcq",
+          "question": "An IT software company is part of which sector?",
+          "options": ["Primary", "Secondary", "Tertiary", "Manufacturing"],
+          "answer": "Tertiary",
+          "explanation": "Software development is a service — tertiary sector. IT services include programming, support, design, and management of digital products."
+        },
+        {
+          "id": "c1-e4",
+          "type": "fill",
+          "question": "Mining of coal from a mine is an example of _______ sector activity.",
+          "answer": "primary",
+          "explanation": "Mining involves extracting raw materials directly from nature — a primary sector activity."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Give two examples of each — primary, secondary, and tertiary sector activities.",
+          "answer": "Primary: (1) Farmer growing wheat in Punjab; (2) Fisherwoman catching fish in Kerala. Secondary: (1) Workers making mobile phones in a factory; (2) Construction workers building houses or roads. Tertiary: (1) A doctor treating patients; (2) A truck driver carrying goods to a market.",
+          "explanation": "Concrete examples help cement the distinction between the three sectors."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "Which sector currently contributes the LARGEST share to India's national income?",
+          "options": ["Primary", "Secondary", "Tertiary", "All equal"],
+          "answer": "Tertiary",
+          "explanation": "The tertiary (services) sector contributes over 50% of India's national income, even though the primary sector (especially agriculture) still employs the most people."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Trace the journey of a chappati from the farm to your plate, mentioning which sectors are involved at each step.",
+          "answer": "A chappati's journey involves all three sectors working together. (1) PRIMARY SECTOR — The farmer grows wheat in his field. He prepares the soil, plants the seeds, waters the crop, protects it from pests, and harvests the wheat. He earns from selling the raw wheat. (2) SECONDARY SECTOR (Part 1) — The wheat goes to a mill, where it is ground into flour (atta). This is manufacturing. (3) TERTIARY SECTOR (Part 1) — Trucks transport the flour from the mill to wholesalers, and then to retail shops. This is transport service. (4) TERTIARY SECTOR (Part 2) — Your local kirana shop or supermarket sells the flour to your family. This is retail service. (5) SECONDARY SECTOR (Part 2) — In your home, your mother (or a cook in a restaurant) turns the flour into dough, then rolls it and cooks it on a tawa to make the chappati. (Or in a restaurant, this would be considered tertiary food service.) So even a single roti involves: a farmer (primary), a miller (secondary), truck drivers and shopkeepers (tertiary), and possibly a cook (secondary or tertiary). Each adds value. Each is paid. Each is essential. This is the magic of an interconnected economy — many strangers cooperating to put a hot chappati on your plate.",
+          "explanation": "Synthesises the chapter's central ideas through a real-world example accessible to every Class 6 student."
+        }
+      ]
+    },
+    {
+      "topic": "AMUL and Cooperatives",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "AMUL was founded in which Indian state?",
+          "options": ["Punjab", "Maharashtra", "Gujarat", "Karnataka"],
+          "answer": "Gujarat",
+          "explanation": "AMUL — Anand Milk Union Limited — was founded in 1946 in Anand district, Gujarat. It is one of India's most famous success stories."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which national leader advised Gujarat farmers to form a milk cooperative?",
+          "options": ["Mahatma Gandhi", "Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Bhimrao Ambedkar"],
+          "answer": "Sardar Vallabhbhai Patel",
+          "explanation": "Sardar Vallabhbhai Patel, the great national leader from Gujarat, advised dairy farmers to form a cooperative to free themselves from exploitation by middlemen. AMUL was the result."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "India is currently the world's _______ producer of milk, thanks largely to cooperatives like AMUL.",
+          "answer": "largest",
+          "explanation": "India is the world's largest milk-producing country. Cooperatives like AMUL led the 'White Revolution' that made this possible."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What is a cooperative, and how is it different from a regular business?",
+          "answer": "A cooperative is a special kind of business owned by its members (the workers or producers, not outside shareholders). The members elect a board to run it. Profits go back to the members rather than to outside investors. Decisions are made democratically — one member, one vote. AMUL is a famous example — it is owned by the dairy farmers themselves, not by outside investors. This is different from a regular company, which is usually owned by a few founders or many outside shareholders who buy shares. In a regular company, decisions are based on how much money each owner has invested. In a cooperative, every member has equal say regardless of how much they have contributed.",
+          "explanation": "Explains the distinctive feature of cooperatives — democratic ownership by members."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain how AMUL transformed the lives of Indian dairy farmers and which sectors of the economy it involved.",
+          "answer": "Before AMUL, dairy farmers in Anand were poor and dependent on middlemen who paid them very little. The farmers were trapped — they couldn't reach city markets directly because milk spoils quickly, and they didn't have the trucks, refrigeration, processing, or marketing to do it themselves. The middlemen took most of the profit. In 1946, on Sardar Vallabhbhai Patel's advice, farmers formed AMUL — Anand Milk Union Limited — a cooperative owned by themselves. AMUL involves all three economic sectors: (1) PRIMARY: Farmers milk their cows and buffaloes early each morning and bring milk to village collection centres. This is primary sector work. (2) SECONDARY: AMUL dairies test, pasteurise, and process the milk into many products — butter, ghee, cheese, paneer, ice cream, milk powder, chocolate, sweets. This is manufacturing — the secondary sector. (3) TERTIARY: AMUL transports its products by truck across India, advertises them (the famous AMUL girl on billboards and TV), and sells them through millions of retail shops. This is the tertiary sector. The transformation has been enormous: (1) Farmers now own the company and share the profits. (2) Farmers earn fair prices, not exploitation rates. (3) AMUL is one of the world's largest dairy cooperatives. (4) Over 36 lakh farmers are members in Gujarat alone; many lakhs more across India through similar cooperatives. (5) India became the world's largest milk-producing country — the 'White Revolution.' (6) The AMUL model has been copied for other products (sugar cooperatives, fishermen's cooperatives, weavers' cooperatives) across India. AMUL proves that ordinary people, organised together, can build world-class businesses that benefit themselves and serve crores of customers. It is one of India's greatest economic success stories.",
+          "explanation": "A comprehensive answer that brings together the sector concept, cooperatives, transformation of lives, and Indian success."
+        }
+      ]
+    },
+    {
+      "topic": "India's Economy Today",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which sector employs the largest number of people in India today?",
+          "options": ["Primary", "Secondary", "Tertiary", "All equal"],
+          "answer": "Primary",
+          "explanation": "About 40% of Indian workers are still in primary activities (mostly agriculture). However, the tertiary sector contributes more to national income — over 50%."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which Indian initiative aims to boost manufacturing in the country?",
+          "options": ["Digital India", "Make in India", "Swachh Bharat", "Skill India"],
+          "answer": "Make in India",
+          "explanation": "Make in India is a government initiative to encourage manufacturing in India — creating jobs, reducing imports, and making India a global manufacturing hub."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "The wise ancient Indian thinker who wrote in the Arthashastra that 'the root of prosperity is economic activity' was _______ .",
+          "answer": "Kautilya",
+          "explanation": "Kautilya (also known as Chanakya) wrote the Arthashastra about 2,300 years ago. Among many topics, he wrote about how the economy is the foundation of a country's prosperity."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Why has India's tertiary (services) sector grown so rapidly in recent decades?",
+          "answer": "Several reasons together: (1) IT and software boom — Indian companies like TCS, Infosys, and Wipro work for clients worldwide. India became known globally for software services. (2) Educated workforce — millions of educated young people graduate every year and find services-sector jobs. (3) English language advantage — many Indians speak English, making services exportable. (4) Demographic dividend — India has a young population, flexible for services-sector work. (5) Urbanisation — as cities grow, demand for services like restaurants, healthcare, transport, and entertainment grows. (6) Digital transformation — UPI, e-commerce, food delivery apps, ride-sharing, edu-tech — all are services-sector innovations.",
+          "explanation": "Multi-factor explanation showing how many forces work together to create a major economic trend."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "India's primary sector (agriculture) employs about 40% of workers but produces only about 20% of national income. What does this mean for farmers, and what can be done to improve their situation?",
+          "answer": "This statistic shows that farmers, on average, produce less income per person than workers in the secondary or tertiary sectors. The average farmer earns much less than the average factory worker or service-sector worker. This is a major reason why rural India remains poorer than urban India and why many young people leave villages for cities. Reasons for low farmer incomes: (1) Small farm sizes — most farmers have very little land. (2) Outdated methods — many farmers still use traditional techniques. (3) Climate dependence — bad monsoons can destroy incomes. (4) Middlemen take a large share of profits between the farm and the city consumer. (5) Lack of value addition — most farmers sell raw produce, while processors and traders earn much more. (6) Price volatility — sometimes prices crash when too much is grown. What can be done: (1) Better seeds and irrigation to increase yields per hectare. (2) Cooperatives like AMUL allow farmers to process and sell directly, cutting out middlemen. (3) Food processing units in rural areas — farmers earn from biscuits, ice cream, sauces, not just raw wheat or milk. (4) Direct market access through apps and online platforms. (5) Crop insurance to protect against bad weather. (6) Diversification — encouraging farmers to grow high-value crops, raise livestock, or do beekeeping. (7) Government support — minimum support prices, subsidies for tractors and seeds, agricultural extension education. (8) Better infrastructure — cold storage, transport, marketing. (9) Education and skill training for farmers and their children. Improving farmer incomes is one of India's most important national challenges. Hundreds of millions of Indians depend on it. Without progress here, India cannot become a fully developed country.",
+          "explanation": "A serious civics question about an important development challenge. Encourages students to think about national problems and possible solutions."
+        }
+      ]
+    }
+  ]
+}

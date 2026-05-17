@@ -1,0 +1,154 @@
+{
+  "chapterRef": "class-6/social-science/chapter-11-village-government/worksheet",
+  "topics": [
+    {
+      "topic": "The Panchayati Raj System",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Approximately how many villages does India have?",
+          "options": ["6,000", "60,000", "6 lakh", "60 lakh"],
+          "answer": "6 lakh",
+          "explanation": "India has about 6 lakh (6,00,000) villages. Roughly two-thirds of India's population lives in these villages."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The three tiers of Panchayati Raj from village level upward are:",
+          "options": [
+            "Zila Parishad → Panchayat Samiti → Gram Panchayat",
+            "Gram Panchayat → Panchayat Samiti → Zila Parishad",
+            "Gram Panchayat → Zila Parishad → Panchayat Samiti",
+            "Panchayat Samiti → Gram Panchayat → Zila Parishad"
+          ],
+          "answer": "Gram Panchayat → Panchayat Samiti → Zila Parishad",
+          "explanation": "The Gram Panchayat is at the village level (lowest). Panchayat Samiti is at the block level (middle). Zila Parishad is at the district level (highest)."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The head of a Gram Panchayat is called the _______ or Pradhan.",
+          "answer": "Sarpanch",
+          "explanation": "Sarpanch is the most common name for the head of the Gram Panchayat. In some regions it is called Pradhan or other regional names."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What is the Gram Sabha and what is its role?",
+          "answer": "The Gram Sabha is the assembly of all adult villagers (men and women) registered as voters in a village. It is the foundation of the entire panchayati raj system. The Gram Sabha discusses all matters important to the village, takes major decisions, and elects the members of the Gram Panchayat. So while the Gram Panchayat does the day-to-day governance, the Gram Sabha is the source of its authority — the actual democratic body of villagers.",
+          "explanation": "Critical distinction — the Gram Sabha is the people; the Gram Panchayat is their elected representatives."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "Which of these is NOT typically a function of the Gram Panchayat?",
+          "options": [
+            "Maintaining village roads",
+            "Running the village primary school",
+            "Conducting national elections for the Prime Minister",
+            "Managing local water resources"
+          ],
+          "answer": "Conducting national elections for the Prime Minister",
+          "explanation": "National elections are conducted by the Election Commission of India, not by local panchayats. Panchayats handle local matters like roads, schools, and water."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why is local government important for a country as large and diverse as India? Give three reasons.",
+          "answer": "Local government is essential for India for several reasons. (1) Scale — India is enormous, with 6 lakh villages, 8,000 towns, and 4,000+ cities spread across 28 states and 8 union territories. No single national or state government can manage every local problem. Local governments handle local matters efficiently. (2) Knowledge — people who live in a village understand it best. They know which road floods every monsoon, which families need help, what their children's school is missing. A government in Delhi cannot know these details. Local government brings decisions to those who have direct knowledge. (3) Ownership and participation — when villagers themselves decide where to dig a well or which road to repair, they take ownership of the work. They watch over it. Quality is higher. Corruption is harder. Citizens become active partners in development, not just passive receivers. (4) Diversity — India has many languages, religions, cultures, climates, and agricultural patterns. A single national policy cannot fit all. Local government allows decisions to match local circumstances — a hill village can plan differently from a coastal one. (5) Speed — local governments can act quickly on local problems. They don't have to wait for orders from far away. Together, these reasons make local government not just useful but essential for a country like India.",
+          "explanation": "Connects the scale of India to the necessity of decentralised governance — a sophisticated civics question."
+        }
+      ]
+    },
+    {
+      "topic": "Inspiring Sarpanchs and Bal Panchayats",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Who transformed the village of Hiware Bazar through rainwater harvesting and tree planting?",
+          "options": ["Vandana Maida", "Popatrao Pawar", "Dnyaneshwar Kamble", "Bunker Roy"],
+          "answer": "Popatrao Pawar",
+          "explanation": "Popatrao Pawar became Sarpanch of Hiware Bazar in Maharashtra and led a remarkable transformation through traditional water conservation. He was awarded the Padma Shri in 2020."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "The Children's Parliament initiative was started by Bunker Roy as part of which institution in Rajasthan?",
+          "options": ["The Doon School", "Barefoot College", "Rishi Valley School", "Sevagram Ashram"],
+          "answer": "Barefoot College",
+          "explanation": "Barefoot College in Rajasthan, founded by Bunker Roy, started the Children's Parliament. It received the World's Children's Honorary Award in 2001."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "Vandana Bahadur Maida from the _______ community became the first female Sarpanch of her village in Madhya Pradesh.",
+          "answer": "Bhil",
+          "explanation": "The Bhil community is one of India's largest tribal groups. Vandana Maida defied old norms to become a Sarpanch and worked on education and sanitation."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Describe one concrete way in which Bal Panchayats have helped children in their villages.",
+          "answer": "Bal Panchayats in Maharashtra have helped end child marriage. When they hear of a young girl being married off (sometimes as young as 12 or 13), Bal Panchayat members go to her parents — often with the support of teachers, the Sarpanch, or other adults — and explain why early marriage harms the girl's health and education. By combining children's voices with adult support, many child marriages have been prevented. Some Bal Panchayats have also brought children who were doing child labour back into school by convincing parents and arranging support.",
+          "explanation": "Concrete example of children's collective action — and shows that grassroots democracy works at every age."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why is it important that one-third (or in some states, half) of seats in panchayats are reserved for women?",
+          "answer": "For centuries, women in many parts of India have been excluded from formal leadership. They were not given the right to vote in most countries until the 20th century. They were rarely elected to public office. Even today, social habits and expectations often prevent women from being chosen as leaders, even when they are completely capable. Reserving one-third (or half) of seats for women solves this by guaranteeing women a substantial share of leadership roles. The benefits have been remarkable: (1) Lakhs of women have been elected to panchayats since the reservation began in the 1990s. (2) Studies show that women Sarpanchs often focus more on education, sanitation, water, and children's welfare — issues that male Sarpanchs may neglect. (3) Women leaders inspire other women in their villages to participate more actively in decisions. (4) Cases like Vandana Maida from the Bhil community show that women from historically excluded groups can also become leaders. (5) The visible presence of women in leadership slowly changes social attitudes — making it easier for the next generation to accept women as natural leaders. Without this reservation, traditional habits would have continued to keep women out. The reservation is not 'unfair' to men — it corrects a historical injustice. Once equality is established, reservation may no longer be necessary. For now, it is essential.",
+          "explanation": "Tests deeper understanding of gender, social change, and policy as a tool for transformation."
+        }
+      ]
+    },
+    {
+      "topic": "History and Practice of Local Government",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Mahatma Gandhi famously said: 'The real India lives in its _______ .'",
+          "options": ["cities", "temples", "villages", "schools"],
+          "answer": "villages",
+          "explanation": "Gandhi believed that India's strength and soul lay in its villages. He championed Gram Swaraj — village self-rule — as his vision for India."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Who wrote the Arthashastra, an ancient Indian text that described a multi-tier government system?",
+          "options": ["Aryabhata", "Kalidasa", "Kautilya (Chanakya)", "Patanjali"],
+          "answer": "Kautilya (Chanakya)",
+          "explanation": "Kautilya (also known as Chanakya) wrote the Arthashastra about 2,300 years ago. It described a sophisticated system of governance including local levels."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "List three qualities a good Sarpanch should have, and explain why each matters.",
+          "answer": "(1) Honesty — money flows through panchayats for development projects. A dishonest Sarpanch can steal a village's future; an honest one can build it. (2) Listening — a Sarpanch must hear everyone, including the poor, the women, and the children. Even the quietest villager has problems worth knowing and solutions worth considering. (3) Knowledge — a Sarpanch should know about government schemes like Pradhan Mantri Gram Sadak Yojana and MGNREGA, so they can bring those benefits to their village. Other important qualities: patience (problems take time), care for the people, negotiation skills, and integrity in small things. A village's progress depends heavily on the quality of its Sarpanch.",
+          "explanation": "Asks students to think about what qualities make a good leader — a question they will face many times in life."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "The chapter shows that India's local self-government is rooted in ancient traditions but also in modern democratic ideals. Discuss how Panchayati Raj combines both.",
+          "answer": "India's modern Panchayati Raj system is a unique blend of ancient Indian tradition and modern democratic ideals. From ancient tradition: (1) The idea of village councils — small groups of elders settling disputes, managing water, organising harvest — goes back thousands of years in India. (2) Kautilya's Arthashastra (~2,300 years ago) described a multi-tier governance structure that strikingly resembles modern panchayati raj. (3) Villages have always been close-knit communities with their own informal systems of self-governance, especially in tribal areas. (4) Gandhi's vision of Gram Swaraj (village self-rule) built directly on this tradition, urging that India's future lies in strong, self-reliant villages. From modern democratic ideals: (1) Today's panchayats are formed through regular elections with secret ballots — a modern democratic practice. (2) Reservation of seats for women, SCs, and STs is a modern policy designed to address historical inequalities. (3) The three-tier system is constitutionally protected — written into law since the 73rd Constitutional Amendment in 1992. (4) Modern panchayats coordinate with state and central governments on development schemes — something old village councils never had to do. (5) Bal Panchayats are a modern innovation, giving even children democratic experience. The result is a system that respects India's deep cultural traditions of village self-governance while bringing them into the modern democratic framework. It is one of the world's largest experiments in grassroots democracy — and one that other countries study to learn from.",
+          "explanation": "A capstone question that connects history, culture, and modern democratic theory. Suitable as a senior-level question for Class 6."
+        }
+      ]
+    }
+  ]
+}

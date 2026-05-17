@@ -1,0 +1,138 @@
+{
+  "chapterRef": "class-6/social-science/chapter-9-living-together/worksheet",
+  "topics": [
+    {
+      "topic": "Types of Family",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "A family that includes grandparents, parents, uncles, aunts, and cousins living together is called a:",
+          "options": ["Nuclear family", "Joint family", "Single family", "Modern family"],
+          "answer": "Joint family",
+          "explanation": "A joint family includes several generations living together. A nuclear family is smaller — usually a couple with their children."
+        },
+        {
+          "id": "c1-e2",
+          "type": "fill",
+          "question": "A family that consists of parents and their children living together is called a _______ family.",
+          "answer": "nuclear",
+          "explanation": "Nuclear families are smaller, usually two parents (or one parent) with their children. They have become more common in modern cities."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Name two advantages of joint families and two advantages of nuclear families.",
+          "answer": "Joint family advantages: (1) Many people share work and responsibilities. (2) Grandparents are available to care for children and share wisdom. Nuclear family advantages: (1) More privacy and independence for decision-making. (2) Easier to relocate when work demands move to a new city.",
+          "explanation": "Both forms have benefits. The 'right' family form depends on each family's situation."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "Why has the nuclear family become more common in modern Indian cities?",
+          "options": [
+            "Because joint families are illegal",
+            "Because young couples don't love their parents",
+            "Because of factors like distant jobs, smaller apartments, and different lifestyles",
+            "Because cities have no space"
+          ],
+          "answer": "Because of factors like distant jobs, smaller apartments, and different lifestyles",
+          "explanation": "Modern jobs scatter family members across cities. Apartments are smaller and expensive. Different schedules and lifestyles also make joint living harder. None of these mean joint families are 'bad' — they just suit different situations."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Most Indian languages do not have a separate word for 'cousin' — cousins are called brothers and sisters. What does this tell us about how Indians have traditionally viewed family?",
+          "answer": "The absence of a separate word for 'cousin' in most Indian languages tells us that Indians have traditionally viewed family bonds as **wide and inclusive**. Cousins are not distant relatives — they are practically siblings. The same language that has many specific words for relatives (bua, chacha, mausi, tau, mama) also includes cousins as 'brother' and 'sister' rather than as a separate category. This reflects a culture where: (1) Joint families were common, so cousins often grew up together like siblings. (2) Family loyalty extended widely — to all relatives, not just immediate family. (3) Responsibilities towards cousins were strong — you would help your cousin's wedding, support them in trouble, share what you had. The closeness of the relationship is reflected in the words used. By contrast, English has a separate word 'cousin' partly because English-speaking cultures historically had smaller, more isolated nuclear families. The vocabulary of a language always reflects the relationships its speakers value. India's language reflects a culture of wide, generous family bonds.",
+          "explanation": "Connects language with culture — a sophisticated observation but accessible for Class 6."
+        }
+      ]
+    },
+    {
+      "topic": "Roles, Values, and Stories",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which Indian value involves helping others without expecting anything back?",
+          "options": ["Tyaga", "Seva", "Dana", "Dharma"],
+          "answer": "Seva",
+          "explanation": "Seva means selfless service — helping others without expecting payment or reward. All four words are important Indian values, but each has its own meaning."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which value involves giving up something for the sake of others?",
+          "options": ["Dana", "Ahimsa", "Tyaga", "Dharma"],
+          "answer": "Tyaga",
+          "explanation": "Tyaga means sacrifice — giving up one's own wants for the family or community. In Shalini's story, she practiced tyaga by accepting a simpler dress."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The Hindi word for 'father's elder brother's wife' is _______ .",
+          "answer": "tai",
+          "explanation": "Tai is the father's elder brother's wife. Tau is the father's elder brother himself. Indian languages distinguish between elder and younger brothers' wives."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Explain what Shalini's family did during Onam, and what value she learned.",
+          "answer": "Shalini's uncle (Chittappa) had lost his job and could not afford new clothes for the festival of Onam. Shalini's parents bought new clothes for Chittappa's family as well as their own. Because they spent more money, Shalini had to choose a simpler cotton dress instead of the silk one she had wanted. Her grandmother explained that this is how families support each other. Shalini learned the values of tyaga (sacrifice) and dana (giving) — that sometimes we accept less so that others in our family can share in joy. She also learned that family closeness is more valuable than individual wishes.",
+          "explanation": "Combines specific story details with the broader values being taught."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why is the family called the 'first school' for children?",
+          "answer": "The family is called the 'first school' because children learn their most important life lessons there, long before they enter any formal school. (1) They learn values like ahimsa (non-violence), dana (giving), seva (service), tyaga (sacrifice), and dharma (right duty) — not through textbooks but through daily observation of how their parents and elders behave. (2) They learn how to share, how to be patient, how to deal with disagreement, how to forgive — by living closely with siblings, parents, and grandparents. (3) They learn family traditions, songs, prayers, stories, and customs that connect them to their culture and heritage. (4) They learn language — their mother tongue — which shapes how they think for the rest of their lives. (5) They learn emotional skills — how to express love, how to comfort someone, how to listen patiently — by watching how the family members treat each other. Unlike a formal school which has set lessons, the family teaches through life itself. Every meal, every conversation, every conflict, every celebration is a lesson. The values learned at home stay with a person for life — they shape how that person treats friends, colleagues, strangers, and one day their own family. That is why the quality of family life matters so deeply for society.",
+          "explanation": "Tests understanding of family's role beyond just biology — as the primary place of moral education."
+        }
+      ]
+    },
+    {
+      "topic": "Community and Mutual Help",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which of these is NOT a feature of a strong community?",
+          "options": [
+            "Helping each other during illness or emergencies",
+            "Celebrating festivals together",
+            "Sharing resources like water and grazing land",
+            "Never speaking to neighbours"
+          ],
+          "answer": "Never speaking to neighbours",
+          "explanation": "A community is built on connection, mutual help, and shared experiences. Living next to people without talking to them does not create a community."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Give two examples of how communities traditionally helped each other in Indian villages.",
+          "answer": "(1) During the agricultural calendar, families helped each other with land preparation, sowing, and harvesting. Today's helper would receive help in turn next month. The system ran on reciprocity and trust without money changing hands. (2) In emergencies like illness, accident, or death, neighbours came together to support the affected family. They brought food, helped with arrangements, shared grief, and provided practical help. (3) For weddings and festivals, the entire community would help with cooking, decorating, and hosting. (4) Shared resources like water bodies, grazing lands, and forests were managed by community rules — often unwritten — that ensured everyone had access without overuse.",
+          "explanation": "Real examples of community in action, showing why community matters."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Many tribal communities had unwritten rules for managing shared resources like water, grazing lands, and forests. How did this system work, and what can we learn from it today?",
+          "answer": "Tribal communities developed their resource-management systems over generations. The rules were not written but passed down through everyday practice. Children watched their elders. They learned by example what amount of fish to take from a river, which seasons to harvest forest fruits, how to avoid over-grazing a meadow. The rules were enforced not by police but by social pressure — anyone who broke the rules was disapproved of by elders and the community. This system worked because: (1) Everyone understood that overuse harms everyone in the long run. (2) Each generation had a stake in the long-term health of resources because they would pass them to their children. (3) Communities were small enough that everyone knew everyone, so accountability was easy. (4) Customs and rituals reinforced respect for nature — many tribal traditions consider rivers, mountains, and forests sacred. What we can learn today: (1) Sustainable management of natural resources is possible — humans did it for thousands of years before modern environmental laws. (2) Local communities, when given control, often manage resources better than distant governments. (3) Cultural respect for nature (treating rivers and forests as sacred) is a powerful conservation tool. (4) Modern problems like water scarcity and deforestation could benefit from reviving some of this wisdom — empowering local communities, respecting traditional knowledge, and building environmental ethics into culture, not just law.",
+          "explanation": "Connects ancient practice to modern environmental concerns. A sophisticated but accessible question."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "chapterRef": "class-6/social-science/chapter-5-the-land-we-call-india/worksheet",
+  "topics": [
+    {
+      "topic": "Names of India",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "What are the two names of our country used in the Indian Constitution?",
+          "options": ["India and Hindustan", "Bharat and India", "Bharat and Aryavarta", "India and Jambudvipa"],
+          "answer": "Bharat and India",
+          "explanation": "The Constitution opens with the phrase 'India, that is Bharat...' — using both names as the official names of the country."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which ancient text uses the name 'Sapta Sindhava' for the northwest region of the Subcontinent?",
+          "options": ["Mahabharata", "Ramayana", "Rig Veda", "Vishnu Purana"],
+          "answer": "Rig Veda",
+          "explanation": "The Rig Veda, India's oldest text, calls the northwest region (Indus river system) 'Sapta Sindhava' — the land of seven rivers."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The name 'Jambudvipa' comes from the _______ tree, which is native to India.",
+          "answer": "jamun",
+          "explanation": "Jambudvipa means 'island of the jamun tree.' The jamun (also called jambul or Indian blackberry) is a fruit tree found across India."
+        },
+        {
+          "id": "c1-e4",
+          "type": "mcq",
+          "question": "The English name 'India' originally comes from which Sanskrit word?",
+          "options": ["Bharata", "Sindhu", "Jambu", "Aryavarta"],
+          "answer": "Sindhu",
+          "explanation": "Sindhu (the Indus River) → Hindu (in Persian) → Indoi (in Greek) → India (in Latin/English). A 2,500-year journey across multiple languages."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Trace the journey of the word 'India' from Sanskrit to English.",
+          "answer": "Sanskrit 'Sindhu' (the Indus River) → Persian 'Hindhu' or 'Hindu' (the S became H in Persian) → Greek 'Indoi' or 'Indike' (the H was dropped because Greek did not start words with H) → Latin 'India' → English 'India'.",
+          "explanation": "A word that travelled through five languages over 2,500 years. Each language modified it according to its own sounds and rules."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "In which inscription do we find the name 'Jambudvipa' being used for the entire Indian Subcontinent?",
+          "options": [
+            "An inscription of Chandragupta Maurya",
+            "An inscription of Emperor Ashoka, around 250 BCE",
+            "A Greek inscription from Alexander's time",
+            "A Persian inscription"
+          ],
+          "answer": "An inscription of Emperor Ashoka, around 250 BCE",
+          "explanation": "Ashoka's stone inscriptions are some of the earliest written records that refer to the entire Subcontinent as Jambudvipa, including parts of today's Pakistan, Bangladesh and Afghanistan."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "The chapter says the word 'Hindu' in ancient Persian was purely geographical and did not mean a religion. Explain what the word meant then, and how its meaning changed over time.",
+          "answer": "In ancient Persian, around 2,500 years ago, the word 'Hindu' (from Sanskrit 'Sindhu') simply meant 'the land near or east of the Indus river' or 'a person who lived there.' It was a geographic and cultural label, exactly like how we say 'European' or 'Asian' today — describing where someone is from, not what they believe. In medieval times, when Persian-speaking and Arabic-speaking invaders entered India, they continued to use 'Hindu' for the people they encountered. Since most Indians at the time followed practices we now call Hindu, Jain, or Buddhist, the word gradually became associated with these religions, especially in contrast with the foreigners' own religions like Islam. Over centuries, the word narrowed further to mean specifically a person who follows Hindu religious traditions. Today, that is its most common meaning. Knowing the original meaning helps us understand old texts correctly — when an ancient Persian source talks of 'Hindus,' it is talking about Indians in general, not just followers of one religion.",
+          "explanation": "Develops critical thinking about word meanings changing over time. Important for understanding both history and modern debates about Indian identity."
+        }
+      ]
+    },
+    {
+      "topic": "Boundaries and Geography",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which mountain range forms the northern boundary of the Indian Subcontinent?",
+          "options": ["Aravalli", "Vindhya", "Himalayas", "Western Ghats"],
+          "answer": "Himalayas",
+          "explanation": "The Himalayas form a giant wall along India's north, marking the boundary between the Indian Subcontinent and the rest of Asia."
+        },
+        {
+          "id": "c2-e2",
+          "type": "fill",
+          "question": "The southernmost tip of mainland India is called Cape _______ .",
+          "answer": "Kanyakumari",
+          "explanation": "Cape Kanyakumari is the southern tip of mainland India, where the Arabian Sea, the Indian Ocean, and the Bay of Bengal meet. Ancient Tamil poetry called it 'Cape Kumari.'"
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Quote and explain the line from the Vishnu Purana that describes the boundaries of Bharata.",
+          "answer": "The verse says: 'The country that lies north of the ocean and south of the snowy mountains is called Bharata.' This means the country between the Indian Ocean (to the south) and the Himalayas (the snowy mountains, to the north) is called Bharata. It captures the natural boundaries of the Subcontinent — the same boundaries that define India today.",
+          "explanation": "Shows that ancient texts described India using clear geographic markers — mountains and oceans that still define the country."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Ancient Tamil poetry from 2,000 years ago described India as stretching from Cape Kumari to the great northern mountain. How could ancient Indians, living in different regions, share such a unified geographic vision of one country?",
+          "answer": "Even before modern transport and communication, ancient Indians had several ways of building a shared geographic vision: (1) Pilgrimage networks — Hindus, Buddhists, and Jains travelled across vast distances to visit sacred sites. A pilgrim from Tamil Nadu might walk all the way to Kedarnath or Varanasi, sharing knowledge along the way. (2) Trade routes — sea routes from Tamil ports to Bengal to Gujarat, and overland routes through Central India, carried merchants, goods, and stories. (3) Sacred geography in literature — the Mahabharata, Ramayana, and Puranas listed hundreds of places across the Subcontinent. Anyone reading these texts encountered a vision of one large land with many regions. (4) Shared cultural elements — Sanskrit as a learned language, similar religious practices, shared epics — knit different regions together. So even without a single political ruler, ancient Indians thought of themselves as part of one larger land — Bharata or Jambudvipa.",
+          "explanation": "Connects cultural unity with practical means of communication. Shows that 'India' as an idea is older than 'India' as a political state."
+        }
+      ]
+    },
+    {
+      "topic": "Foreign Contact and Travellers",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Xuanzang, a famous foreign visitor to India, came from which country?",
+          "options": ["Persia", "Greece", "China", "Egypt"],
+          "answer": "China",
+          "explanation": "Xuanzang was a Chinese Buddhist pilgrim who travelled to India in the 7th century CE. He stayed 17 years and took many Buddhist texts back to China."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which Chinese name for India also means 'Heavenly Master,' showing the respect Chinese had for India?",
+          "options": ["Yintu", "Tianzhu", "Sindhu", "Hindu"],
+          "answer": "Tianzhu",
+          "explanation": "Tianzhu was a Chinese name that sounded like 'Sindhu' but also meant 'Heavenly Master' in Chinese — reflecting respect for India as the land of the Buddha."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Name three reasons why people from other lands visited or wrote about India in ancient and medieval times.",
+          "answer": "(1) Trade — India produced spices, textiles, gemstones, and other goods the world wanted. (2) Religion and learning — India was the birthplace of Buddhism, Jainism, and Hinduism; Buddhist monks and scholars came to study at universities like Nalanda. (3) Knowledge — India's advances in mathematics, astronomy, medicine, and grammar attracted scholars from across Asia and the Middle East. (Also: curiosity, adventure, and at times conquest.)",
+          "explanation": "Shows that India was a major attraction in the ancient and medieval world for many reasons — not just one."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Xuanzang travelled to India in the 7th century CE and stayed for 17 years. Why was such a long stay important, and what did he take back to China?",
+          "answer": "Xuanzang's 17-year stay was important for several reasons. First, it gave him time to learn Sanskrit deeply — the language of Buddhist texts in India. Translating from a language you only partly understand produces poor translations, so mastery was essential. Second, he visited many parts of India, met many scholars, and studied at the great Buddhist university of Nalanda. This broad experience let him understand different schools of Buddhist thought, not just one. Third, he took part in debates with Indian scholars, sharpening his understanding. When he finally returned to China, he carried hundreds of Buddhist manuscripts collected during his travels. Back in China, he spent the rest of his life translating these texts from Sanskrit into Chinese. His translations became some of the most important sources of Buddhist learning in East Asia and helped spread Buddhism in China, Korea, and Japan. Xuanzang's detailed travel records are also one of the most valuable foreign sources for ancient Indian history — telling us about cities, kingdoms, customs, and people of his time.",
+          "explanation": "Shows the deep cultural exchange between India and China in ancient times — an early example of international scholarly cooperation."
+        }
+      ]
+    }
+  ]
+}

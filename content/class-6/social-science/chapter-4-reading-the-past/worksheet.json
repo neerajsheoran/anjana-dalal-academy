@@ -1,0 +1,198 @@
+{
+  "chapterRef": "class-6/social-science/chapter-4-reading-the-past/worksheet",
+  "topics": [
+    {
+      "topic": "Who Studies the Past?",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which specialist would dig up ancient pottery and tools to learn about old civilisations?",
+          "options": ["Geologist", "Palaeontologist", "Archaeologist", "Anthropologist"],
+          "answer": "Archaeologist",
+          "explanation": "Archaeologists study the human past by digging up and analysing objects people left behind — pots, tools, bones, walls, jewellery."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "A scientist who studies fossils of ancient plants and animals is called a:",
+          "options": ["Historian", "Palaeontologist", "Epigraphist", "Anthropologist"],
+          "answer": "Palaeontologist",
+          "explanation": "Palaeontologists study fossils — preserved remains of plants and animals from millions of years ago. They tell us about life before humans existed."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "A person who reads old inscriptions on stone, copper plates, or coins is called an _______ .",
+          "answer": "epigraphist",
+          "explanation": "Epigraphists specialise in reading and interpreting old inscriptions — like Ashoka's edicts carved on stone pillars."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Compare a historian to a detective. Why is the comparison useful?",
+          "answer": "Both follow clues, weigh evidence, and try to reach the most likely conclusion. A detective uses fingerprints, witnesses and motives to solve a crime. A historian uses inscriptions, coins, monuments, manuscripts and excavated objects to figure out what happened in the past. Both must judge which sources are trustworthy. Both must accept that they sometimes have incomplete evidence and may never know the full truth.",
+          "explanation": "This question develops the analogy in the chapter — investigation and judgment are central to both roles."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Suppose two historical sources give conflicting information about a king — one inscription calls him generous and just, while a foreign traveller's account calls him cruel. How should a historian deal with this?",
+          "answer": "A careful historian should not simply pick one and discard the other. They should examine both sources critically. Who wrote the inscription? Probably someone working for the king himself, so it might exaggerate his virtues to please him. Who was the foreign traveller? When did they visit, and did they actually meet the king, or were they reporting hearsay? Did they have a reason to dislike the king or his people? The historian would then look for other sources — coins, monuments, accounts from independent observers — to see which version fits the overall pattern. Often the truth is somewhere in the middle, or it varies depending on whom the king was dealing with. In such cases, the historian writes carefully, presenting both views, and admits that we may never know for sure. Acknowledging uncertainty is part of honest history.",
+          "explanation": "Tests critical thinking about sources — that they have authors, audiences, biases, and limitations. A real-world skill not just for history but for reading news today."
+        }
+      ]
+    },
+    {
+      "topic": "Measuring Time in History",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "What does CE stand for in dates like '1947 CE'?",
+          "options": ["Christian Era", "Common Era", "Current Era", "Calendar Era"],
+          "answer": "Common Era",
+          "explanation": "CE stands for Common Era. It replaced the older term AD and is now used worldwide because it does not refer to any specific religion."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "How many years are in a millennium?",
+          "options": ["100", "500", "1,000", "10,000"],
+          "answer": "1,000",
+          "explanation": "A millennium is 1,000 years. We are currently in the 3rd millennium CE (2001 to 3000 CE)."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The current century is the _____ century CE.",
+          "answer": "21st",
+          "explanation": "The 21st century CE runs from 2001 to 2100. Years from 2001 onwards belong to the 21st century."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "How many years are there between 200 BCE and 200 CE? Show your calculation.",
+          "answer": "200 + 200 − 1 = 399 years",
+          "explanation": "Because there is no Year Zero in the Gregorian calendar, we add the two values and subtract 1. The −1 accounts for the missing year zero."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "If Gautama Buddha was born around 560 BCE, and the current year is 2025 CE, approximately how many years ago was he born?",
+          "options": ["1,465", "2,025", "2,584", "560"],
+          "answer": "2,584",
+          "explanation": "560 + 2025 − 1 = 2,584 years. Always remember the −1 when crossing from BCE to CE."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Many calendars are used in India alongside the Gregorian calendar. Name three Indian calendars and explain why they are still important.",
+          "answer": "Three commonly used Indian calendars are: (1) Vikram Samvat, an ancient calendar starting from about 57 BCE, used in north and central India for festivals and marriages. (2) Shaka Samvat, starting from 78 CE, recognised as the national calendar of India alongside the Gregorian. (3) The traditional Hindu panchanga, a detailed almanac that lists daily astronomical data — sunrise, sunset, eclipses, moon phases — and is used to choose auspicious times for important events. These calendars are still important because they connect Indians to thousands of years of cultural and religious tradition. They are based on careful observations of the sun, moon, and stars by ancient Indian astronomers like Aryabhata and Varahamihira. Most Indian festivals, weddings, and family rituals are scheduled by these calendars rather than the Gregorian one. The Gregorian calendar runs offices and schools, while the Indian calendars run cultural and religious life. Both coexist.",
+          "explanation": "Connects time measurement (a technical topic) with culture and identity (its deeper meaning in Indian society)."
+        }
+      ]
+    },
+    {
+      "topic": "Sources of History",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which of these is a literary source of history?",
+          "options": ["Excavated pottery", "Ramayana", "Coins of a king", "A foreign traveller's diary"],
+          "answer": "Ramayana",
+          "explanation": "The Ramayana is an epic — a literary source. Pottery is archaeological, coins are written (numismatic), and a traveller's diary is a foreign account."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "The famous Bhimbetka cave paintings are an example of which kind of source?",
+          "options": ["Literary source", "Oral source", "Artistic/archaeological source", "Foreign account"],
+          "answer": "Artistic/archaeological source",
+          "explanation": "Cave paintings are artistic sources, found through archaeology. The Bhimbetka paintings in Madhya Pradesh are some of the oldest known in India, made over thousands of years."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Give three examples of archaeological sources and explain what each tells us about the past.",
+          "answer": "(1) Pottery — tells us about daily life: what people cooked, stored, and ate; the level of craftsmanship; and trade if pots are found far from where they were made. (2) Tools and weapons — show what materials people worked with (stone, copper, iron) and how advanced their technology was. (3) Burial sites with grave goods (objects buried with the dead) — show what people valued, what they believed about life after death, and their social status (rich burials had many objects, poor ones had few).",
+          "explanation": "Each archaeological object can answer different questions, which is why a wide variety of evidence is needed."
+        },
+        {
+          "id": "c3-m2",
+          "type": "mcq",
+          "question": "Which of these is NOT a source of history?",
+          "options": ["An old family genealogy", "A coin from an ancient kingdom", "A guess made by a historian", "A folk song passed down by grandparents"],
+          "answer": "A guess made by a historian",
+          "explanation": "A guess is not a source — it is just an opinion. Sources are evidence (written, oral, material) that historians use to support or test their ideas. A genealogy, a coin, and a folk song are all real sources."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Modern science has added new ways of studying the past. Give two examples of scientific techniques used by historians today and explain what each reveals.",
+          "answer": "(1) Carbon dating — a chemical technique that measures how much of a radioactive form of carbon (carbon-14) is left in organic remains like wood, bone, or cloth. The amount tells us approximately how old the object is, sometimes to within a few hundred years. This has revolutionised history by giving reliable dates to objects when written records don't exist. (2) Genetic studies — by extracting and analysing DNA from ancient bones, scientists can trace where people migrated from, how different populations are related, and even what diseases ancient people had. For example, genetic studies have helped us understand how the people of the Indian Subcontinent are connected to other populations across Asia and Europe over thousands of years. These scientific methods have not replaced traditional historical sources but added powerful new tools that confirm, contradict, or refine what we know.",
+          "explanation": "Shows that history is not a frozen field — it keeps evolving with new tools. Both methods make the past more knowable than ever before."
+        }
+      ]
+    },
+    {
+      "topic": "The Story of Early Humans",
+      "easy": [
+        {
+          "id": "c4-e1",
+          "type": "mcq",
+          "question": "For most of human history, how did people get their food?",
+          "options": ["By farming", "By hunting animals and gathering plants", "By trading with cities", "By raising cattle in pens"],
+          "answer": "By hunting animals and gathering plants",
+          "explanation": "For about 290,000 of the 300,000 years humans have existed, we were hunter-gatherers. Farming only began about 10,000 years ago."
+        },
+        {
+          "id": "c4-e2",
+          "type": "fill",
+          "question": "Some of the oldest rock paintings in India are found at _______ in Madhya Pradesh.",
+          "answer": "Bhimbetka",
+          "explanation": "The Bhimbetka rock shelters in Madhya Pradesh contain paintings made over tens of thousands of years. It is a UNESCO World Heritage Site."
+        },
+        {
+          "id": "c4-e3",
+          "type": "mcq",
+          "question": "Approximately how many years ago did the last Ice Age end and farming begin?",
+          "options": ["1,000 years ago", "5,000 years ago", "12,000 years ago", "100,000 years ago"],
+          "answer": "12,000 years ago",
+          "explanation": "The last Ice Age ended about 12,000 years ago. As the climate warmed, humans began to settle and grow crops — the agricultural revolution."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c4-m1",
+          "type": "short",
+          "question": "Name two things that changed in human society after farming began about 10,000 years ago.",
+          "answer": "(1) People stopped moving and started settling in one place — leading to permanent houses, villages, and eventually towns and cities. (2) Surplus food could be grown and stored, which led to specialisation: some people farmed, others made pots or tools, and some traded — laying the foundation for complex society.",
+          "explanation": "Settled life and surplus food are the two biggest revolutions that came from farming. Everything else — writing, religion, kingdoms — came later because of these."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "Why did early human settlements usually appear near rivers? Give at least three reasons.",
+          "answer": "Early settlements appeared near rivers for several powerful reasons: (1) Water for drinking, cooking, washing, and watering crops. Without a reliable water source, no settlement could survive. (2) Fertile soil — rivers deposit silt and sediments along their banks, creating very fertile land ideal for growing crops like wheat, barley, and rice. The Gangetic, Indus-Sarasvati, Nile, and Mesopotamian civilisations all rose along rivers for this reason. (3) Transport — rivers acted like natural highways. Boats could carry goods and people far more easily than walking. This helped early trade between settlements. (4) Animals also came to the river to drink, making hunting easier. (5) Fish provided protein. These factors together made riverbanks the most attractive places for early human communities — which is why all the world's earliest civilisations emerged near major rivers.",
+          "explanation": "Connects geography (river systems) with civilisation (where humans built their first great societies). A foundational pattern in world history."
+        }
+      ]
+    }
+  ]
+}

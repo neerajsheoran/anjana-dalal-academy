@@ -1,0 +1,224 @@
+{
+  "chapterRef": "class-6/social-science/chapter-3-landforms-mountains-to-plains/worksheet",
+  "topics": [
+    {
+      "topic": "Mountains and Their Life",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which of these is a 'young' mountain range that is still growing in height?",
+          "options": ["Aravalli", "Western Ghats", "Himalayas", "Vindhya"],
+          "answer": "Himalayas",
+          "explanation": "The Himalayas are still growing as the Indian plate continues to push into Asia. The Aravallis are very old mountains that have been worn down over hundreds of millions of years."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The highest mountain peak in southern India is:",
+          "options": ["Mount Everest", "Anamudi", "Kanchenjunga", "Mont Blanc"],
+          "answer": "Anamudi",
+          "explanation": "Anamudi in Kerala is the highest peak in southern India. Mount Everest and Kanchenjunga are in the Himalayas; Mont Blanc is in the Alps in Europe."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Cutting steps into a mountain slope to grow crops is called _______ farming.",
+          "answer": "terrace",
+          "explanation": "Terrace farming creates flat steps along the slope, allowing farmers to grow crops on otherwise unusable steep land. Common in Himachal Pradesh, Uttarakhand, Sikkim and the Nilgiris."
+        },
+        {
+          "id": "c1-e4",
+          "type": "mcq",
+          "question": "Who was the first Indian woman to climb Mount Everest?",
+          "options": ["Arunima Sinha", "Bachendri Pal", "Indira Gandhi", "Sarla Thakral"],
+          "answer": "Bachendri Pal",
+          "explanation": "Bachendri Pal climbed Mount Everest in 1984 and received the Padma Shri the same year. She later trained other mountaineers, including Arunima Sinha."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Name three challenges and three opportunities of living in mountainous regions.",
+          "answer": "Challenges: landslides, flash floods, avalanches, cloudbursts, bitter cold, difficulty farming on slopes. Opportunities: tourism income from hill stations, pure mountain air, scenic beauty, pilgrimage sites bringing visitors, unique culture and traditions.",
+          "explanation": "Mountain life balances real hardships with real rewards. Understanding both sides is important to appreciate why people choose to live there."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "What is Mount Everest called in the Tibetan language?",
+          "options": ["Sagarmatha", "Chomolungma", "Devagiri", "Kailash"],
+          "answer": "Chomolungma",
+          "explanation": "In Tibetan, Mount Everest is called Chomolungma — meaning 'Mother Goddess of the World.' In Nepali, it is Sagarmatha — 'Goddess of the Sky.'"
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain why young mountains like the Himalayas look very different from old mountains like the Aravallis.",
+          "answer": "Young mountains like the Himalayas formed relatively recently — about 50 million years ago — when the Indian plate collided with the Asian plate. They are tall, with sharp pointed peaks, deep valleys, and steep slopes. They are still growing because the plates keep pushing. Old mountains like the Aravalli Range formed hundreds of millions of years earlier. Over that vast time, wind, rain, ice and rivers have slowly worn them down — a process called erosion. As a result, the Aravallis are short, with rounded tops and gentle slopes. The Himalayas today look like the Aravallis once did. Given enough time, even the Himalayas will be worn down. This contrast shows how landforms are not fixed — they change slowly over geological time.",
+          "explanation": "This question connects two ideas: (1) tectonic plates form mountains, and (2) erosion slowly destroys them. Together they explain the appearance of any mountain range."
+        }
+      ]
+    },
+    {
+      "topic": "Plateaus and Their Wealth",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which is the largest and highest plateau in the world?",
+          "options": ["Deccan Plateau", "Chhota Nagpur Plateau", "Tibetan Plateau", "East African Plateau"],
+          "answer": "Tibetan Plateau",
+          "explanation": "The Tibetan Plateau, with an average altitude of about 4,500 metres, is nicknamed the 'Roof of the World.' The Deccan and Chhota Nagpur are Indian plateaus; the East African is also smaller."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Plateaus are sometimes called 'storehouses of minerals' because:",
+          "options": [
+            "They are made of pure minerals",
+            "Many of the world's largest mineral mines are located on plateaus",
+            "Minerals are stored there by humans",
+            "They are formed from melted minerals"
+          ],
+          "answer": "Many of the world's largest mineral mines are located on plateaus",
+          "explanation": "Plateaus are formed of old, hard rock that often contains valuable minerals. Iron, coal, manganese, gold, and diamonds are mined on plateaus around the world."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The _______ Plateau in India is rich in iron, coal and manganese, and supports much of India's steel industry.",
+          "answer": "Chhota Nagpur",
+          "explanation": "The Chhota Nagpur Plateau in Jharkhand and neighbouring states has India's largest reserves of iron ore, coal and manganese. Steel cities like Jamshedpur, Bokaro and Rourkela were built around this wealth."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "How was the Deccan Plateau formed and what kind of soil does it have?",
+          "answer": "The Deccan Plateau was formed by huge volcanic eruptions about 65 million years ago. Layer after layer of lava cooled and built up the plateau. The lava-formed black soil is very fertile, especially for crops like cotton. That is why Maharashtra and parts of Madhya Pradesh grow so much cotton.",
+          "explanation": "Connects geology (volcanic formation) with practical use (cotton farming)."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Which famous Indian waterfall, dropping 340 metres, is found on the Cherrapunji Plateau in Meghalaya?",
+          "options": ["Jog Falls", "Hundru Falls", "Nohkalikai Falls", "Dudhsagar Falls"],
+          "answer": "Nohkalikai Falls",
+          "explanation": "Nohkalikai Falls in Meghalaya drops 340 metres from the Cherrapunji Plateau. Jog Falls is in Karnataka; Hundru Falls is on the Chhota Nagpur Plateau."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "If a region has rich mineral resources on a plateau, what kinds of industries usually develop there? Give Indian examples.",
+          "answer": "When a plateau is rich in minerals like iron ore, coal and manganese, mining develops first — pits and quarries to extract the minerals. Then steel and metal industries develop nearby to use these minerals. Power plants are often set up using coal as fuel. Then transport infrastructure — railways and roads — is built to move the minerals and the steel. Cities grow around these industries. The Chhota Nagpur Plateau is a clear Indian example. Mining of iron and coal led to steel cities like Jamshedpur (Tata Steel), Bokaro (SAIL), and Rourkela. Thermal power plants run on the coal mined there. Major rail lines were built to connect these industries to ports and other cities. The wealth of a single plateau has shaped the economy of eastern India for over a century.",
+          "explanation": "Connects natural resources to industrial development to urban growth. Helps students see why some regions are more industrial than others."
+        }
+      ]
+    },
+    {
+      "topic": "Plains and Rivers",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which of these is India's most populous plain?",
+          "options": ["Coastal Plain", "Deccan Plain", "Gangetic Plain", "Thar Plain"],
+          "answer": "Gangetic Plain",
+          "explanation": "About 40 crore Indians live in the Gangetic Plain, making it one of the most densely populated regions in the world."
+        },
+        {
+          "id": "c3-e2",
+          "type": "fill",
+          "question": "Rocks, sand and silt carried by a river and deposited in the plains are called _______ .",
+          "answer": "sediments",
+          "explanation": "Rivers pick up sediments from the mountains and drop them downstream. Over thousands of years, these sediments build up to form fertile floodplains."
+        },
+        {
+          "id": "c3-e3",
+          "type": "mcq",
+          "question": "Which of these is NOT typically grown in the Gangetic plains?",
+          "options": ["Rice", "Wheat", "Apple", "Sugarcane"],
+          "answer": "Apple",
+          "explanation": "Apples need a cold mountain climate and are grown in Himachal Pradesh, Kashmir, Uttarakhand. Rice, wheat and sugarcane all grow well in the warm fertile Gangetic plains."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Why is the Gangetic Plain considered very fertile?",
+          "answer": "The Gangetic Plain is fertile because the Ganga and its many tributaries (like Yamuna, Ghagara, Son) carry sediments from the Himalayas downstream and deposit them in the plains over thousands of years. These sediments build up rich, deep soil that holds water and nutrients well, perfect for growing many kinds of crops.",
+          "explanation": "Connects the river's mountain source to its role in feeding India's population in the plains."
+        },
+        {
+          "id": "c3-m2",
+          "type": "mcq",
+          "question": "What is one of the biggest modern challenges for farming in the Gangetic Plain?",
+          "options": [
+            "Lack of fertile soil",
+            "Groundwater depletion due to over-irrigation",
+            "Too cold for crops",
+            "Mountains have appeared in the plains"
+          ],
+          "answer": "Groundwater depletion due to over-irrigation",
+          "explanation": "Pumping huge amounts of water from underground to grow crops faster than rain can refill it is causing the water table to fall in Punjab, Haryana and other parts of north India. This threatens future agriculture."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Why do so many Indian festivals and rituals happen at the source or confluence of rivers? Give two examples.",
+          "answer": "Rivers in India are not just water sources — they are seen as sacred and life-giving. Their sources (where they emerge from mountains) and confluences (where they meet other rivers) have been considered especially holy for thousands of years. People believe these spots have special spiritual power, perhaps because they mark the river's birth or the meeting of energies. Two examples: (1) Triveni Sangam at Prayagraj, where the Ganga, Yamuna, and the mythical Saraswati meet — site of the Kumbh Mela, one of the world's largest gatherings of pilgrims. (2) Gangotri in Uttarakhand, the source of the Ganga, a major Hindu pilgrimage destination. Similar reverence is found at other river sources like Yamunotri (Yamuna) and Mansarovar (Sutlej / Brahmaputra).",
+          "explanation": "Connects geography (rivers and confluences) with culture (festivals and pilgrimages), showing why Indian society honours rivers so deeply."
+        }
+      ]
+    },
+    {
+      "topic": "Deserts and the Five Tinais",
+      "easy": [
+        {
+          "id": "c4-e1",
+          "type": "mcq",
+          "question": "The Thar Desert is found in:",
+          "options": ["Tamil Nadu and Kerala", "Rajasthan and Gujarat", "Assam and Manipur", "Punjab and Haryana"],
+          "answer": "Rajasthan and Gujarat",
+          "explanation": "The Thar Desert covers most of Rajasthan and the western parts of Gujarat. It is one of the world's largest hot deserts."
+        },
+        {
+          "id": "c4-e2",
+          "type": "mcq",
+          "question": "The 'ship of the desert' is the:",
+          "options": ["Horse", "Camel", "Yak", "Elephant"],
+          "answer": "Camel",
+          "explanation": "The camel is called the ship of the desert because it can travel long distances over hot sand without water, carrying heavy loads. Essential for desert trade routes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c4-m1",
+          "type": "short",
+          "question": "Name the five tinais of ancient Tamil poetry and the landscape each represents.",
+          "answer": "Kurinji — hilly or mountainous regions. Mullai — grassland and forest. Marudam — fertile farmland. Neydal — coastal regions. Palai — dry, desert-like regions.",
+          "explanation": "Each tinai represented not just a landscape but also a way of life, a typical occupation, and a poetic mood. A beautiful Indian way of classifying landforms."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "Despite the harsh climate, communities have thrived in the Thar Desert. Describe two ways they have adapted to life there.",
+          "answer": "(1) Water conservation: People in the Thar developed clever ways to save every drop of water. They built underground tanks called 'tankas' under house rooftops to collect rainwater for use throughout the year. Step-wells called 'baolis' stored monsoon water for the dry months. Every traditional house was designed to handle the scarce rainfall. (2) Transport and trade with camels: The camel — the 'ship of the desert' — became the heart of desert life. Camels can survive days without water, walk long distances on hot sand, and carry heavy loads. This allowed desert communities to become traders connecting India with Central Asia, carrying spices, cloth, gemstones and salt. Trade made cities like Jaisalmer and Bikaner wealthy despite the desert. Beyond water and camels, communities also adapted through clothing (loose, light cotton), home design (thick mud walls to stay cool), food (millets, dal-baati-churma — long-lasting and nutritious), and rich folk culture (music, festivals like the Pushkar Fair).",
+          "explanation": "Tests whether students can connect harsh geography with creative human adaptation — water systems, transportation, trade, and culture."
+        }
+      ]
+    }
+  ]
+}

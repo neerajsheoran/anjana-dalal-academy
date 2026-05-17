@@ -1,0 +1,203 @@
+{
+  "chapterRef": "class-6/social-science/chapter-7-roots-of-our-culture/worksheet",
+  "topics": [
+    {
+      "topic": "The Vedas and Vedic Thought",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "How many Vedas are there?",
+          "options": ["Three", "Four", "Five", "Seven"],
+          "answer": "Four",
+          "explanation": "The four Vedas are Rig Veda, Yajur Veda, Sama Veda, and Atharva Veda. The Rig Veda is the oldest."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The word 'Veda' comes from the Sanskrit root 'vid' meaning:",
+          "options": ["Wisdom", "Knowledge", "Faith", "Worship"],
+          "answer": "Knowledge",
+          "explanation": "Veda means 'knowledge'. The same root gives us the modern word 'vidya' (learning)."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Female seers who composed Vedic hymns are called _______ .",
+          "answer": "rishikas",
+          "explanation": "Rishis were male seers; rishikas were female seers. Both contributed to the Vedas."
+        },
+        {
+          "id": "c1-e4",
+          "type": "mcq",
+          "question": "The Vedic verse 'ekam sat vipra bahudha vadanti' means:",
+          "options": [
+            "There are many gods, each different",
+            "The Existent is one, but sages give it many names",
+            "Truth is unknowable",
+            "Only one religion is correct"
+          ],
+          "answer": "The Existent is one, but sages give it many names",
+          "explanation": "This verse expresses the Vedic idea that the divine is ultimately one, though people approach it through many forms and names. A central idea of Indian thought."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "How were the Vedas preserved before they were written down?",
+          "answer": "The Vedas were preserved through careful oral transmission for thousands of years. Students learned from teachers (gurus) in gurukulas, memorising not just the words but the exact pitch, pronunciation, and pauses. They used multiple methods of recitation (forward, backward, jumbled in patterns) so that any error could be caught by cross-checking. UNESCO has recognised this Vedic chanting tradition as a 'masterpiece of intangible human heritage.'",
+          "explanation": "Shows how careful oral training preserved texts across thousands of years — a remarkable system unique to ancient India."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "What do the Upanishads call the divine essence that resides in every being?",
+          "options": ["Brahma", "Atman", "Karma", "Dharma"],
+          "answer": "Atman",
+          "explanation": "Atman is the 'self' or divine essence within each being. The Upanishads teach that atman is ultimately one with brahman (the universal reality)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain the Vedanta idea of the unity of all existence using one of the Upanishadic stories from the chapter.",
+          "answer": "Vedanta teaches that everything — humans, animals, plants, nature, the universe — is at heart one divine reality called brahman. This is shown beautifully in the Shvetaketu story from the Chandogya Upanishad. The rishi Uddalaka asks his proud son Shvetaketu about brahman. When Shvetaketu cannot answer, his father shows him a banyan seed and asks what is inside. The seed looks nearly empty, yet from it grows a whole banyan tree. Similarly, says the father, brahman is the subtle invisible essence inside everything — though we cannot see it, it makes everything possible. He concludes with the great teaching 'tat tvam asi' — 'You are That.' The lesson is that the same divine essence flowing through the universe also flows through every individual being. Everything is connected, everything is interdependent. This is why a common Vedantic prayer is 'sarve bhavantu sukhinah' — 'May all beings be happy' — because all beings share the same essence.",
+          "explanation": "Connects an abstract philosophical idea (oneness of existence) with a concrete teaching story. Shows how Indian thought used stories to make profound ideas accessible."
+        }
+      ]
+    },
+    {
+      "topic": "Buddhism",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "What was the original name of the Buddha before he attained enlightenment?",
+          "options": ["Ashoka", "Siddhartha Gautama", "Mahavira", "Vardhamana"],
+          "answer": "Siddhartha Gautama",
+          "explanation": "Siddhartha Gautama was the prince's birth name. After his awakening, he became known as 'The Buddha' — 'The Awakened One.'"
+        },
+        {
+          "id": "c2-e2",
+          "type": "fill",
+          "question": "The Buddha attained enlightenment under a pipal tree at _______ in modern Bihar.",
+          "answer": "Bodh Gaya",
+          "explanation": "Bodh Gaya in Bihar is where Siddhartha Gautama meditated and attained enlightenment. The original pipal tree (Bodhi tree) is still there as a sacred pilgrimage site."
+        },
+        {
+          "id": "c2-e3",
+          "type": "mcq",
+          "question": "The Buddha was born in which place?",
+          "options": ["Lumbini", "Sarnath", "Bodh Gaya", "Kushinagar"],
+          "answer": "Lumbini",
+          "explanation": "The Buddha was born in Lumbini, located in modern-day Nepal, around 560 BCE (the exact year is debated)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What did the Buddha realise was the cause of human suffering?",
+          "answer": "The Buddha realised that the root cause of suffering is avidya (ignorance) and attachment (clinging to what cannot last). We suffer because we don't see things as they really are, and because we cling to things and people that must eventually change or pass away. The way to end suffering is through understanding and through following a balanced way of life — what he called the Middle Path.",
+          "explanation": "Shows the Buddha's core diagnosis of the human condition — important not just historically but as a way of thinking about life."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "What community of monks and nuns did the Buddha found to spread his teachings?",
+          "options": ["Vihara", "Sangha", "Math", "Ashram"],
+          "answer": "Sangha",
+          "explanation": "The Sangha is the Buddhist community of monks (bhikkhus) and nuns (bhikkhunis). It carried Buddhist teachings across India and later to many parts of Asia."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "The Buddha said: 'Conquering oneself is greater than conquering a thousand men on the battlefield a thousand times.' Explain what he meant and why this teaching is still relevant.",
+          "answer": "The Buddha was contrasting two types of conquest. The first is external — defeating enemies in battle, gaining territory, accumulating wealth and power. The second is internal — overcoming one's own anger, fear, greed, jealousy, pride, and ignorance. He taught that internal conquest is the greater and more difficult one. A king may defeat thousands of soldiers and still be a slave to his own fears or hatreds. A monk who masters his own mind achieves something deeper than any military victory. This teaching is still relevant because the basic challenge has not changed. Modern life gives us many external achievements — degrees, jobs, money, social media followers — but inner peace doesn't follow automatically from these. We still need to learn to manage our anger, kindness, fear, attachment. The Buddha's insight is that real strength is not power over others — it is power over oneself. Schools, families, and meditation traditions continue to teach this idea today.",
+          "explanation": "A deep teaching presented through a memorable quotation. Tests the student's ability to understand and apply ethical philosophy."
+        }
+      ]
+    },
+    {
+      "topic": "Jainism",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Who founded Jainism in its widespread form?",
+          "options": ["Siddhartha Gautama", "Vardhamana (Mahavira)", "Ashoka", "Patanjali"],
+          "answer": "Vardhamana (Mahavira)",
+          "explanation": "Vardhamana, born in the 6th century BCE near Vaishali in Bihar, attained supreme wisdom after 12 years of asceticism and became known as Mahavira — 'the Great Hero.'"
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "The word 'Jain' comes from 'jina' meaning:",
+          "options": ["Wise one", "Conqueror", "Ascetic", "Holy person"],
+          "answer": "Conqueror",
+          "explanation": "Jina means 'conqueror' — but it refers to conquering one's own ignorance and attachments, not external enemies."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Name and briefly explain the three central teachings of Jainism.",
+          "answer": "(1) Ahimsa — non-violence in body, speech, and thought. Mahavira said no living being should be slain, harmed, or driven away. (2) Anekantavada — 'not just one perspective.' The truth has many aspects and cannot be fully grasped from one viewpoint. Listen to other views with respect. (3) Aparigraha — non-possession. Don't cling to material things. Use only what is truly necessary for life.",
+          "explanation": "These three together form the heart of Jain philosophy — and they continue to influence how many Indians think about ethics today."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Both Buddhism and Jainism emerged around the same time. Compare their similarities and differences.",
+          "answer": "Similarities: Both emerged in the same region (northern India) at roughly the same time (around 6th-5th century BCE). Both did not accept the authority of the Vedas as the sole source of truth. Both were founded by men from royal families (Siddhartha Gautama and Vardhamana) who left their palaces to seek spiritual truth. Both placed great importance on ahimsa (non-violence). Both shared key Indian concepts like dharma, karma, rebirth, and the search for liberation. Both attracted followers from all castes and backgrounds. Differences: Buddhism focused on the Middle Path — neither extreme luxury nor extreme self-denial. Jainism placed more emphasis on strict asceticism — fasting, owning little, sometimes wearing no clothes. Jainism took ahimsa to a more extreme degree — Jain monks may wear mouth-cloths and sweep the ground to avoid harming tiny creatures. Buddhism spread far beyond India (to Sri Lanka, Tibet, China, Japan, Southeast Asia). Jainism stayed largely within India, especially among the merchant communities of Gujarat, Rajasthan, and Karnataka. Today there are about 500 million Buddhists worldwide and about 5 million Jains, mostly in India. Despite different paths, both shaped Indian thought and ethics in lasting ways.",
+          "explanation": "Tests the ability to compare and contrast — a key skill in social studies."
+        }
+      ]
+    },
+    {
+      "topic": "Tribal Traditions and Shared Concepts",
+      "easy": [
+        {
+          "id": "c4-e1",
+          "type": "mcq",
+          "question": "Approximately how many tribal communities does India have according to the 2011 Census?",
+          "options": ["50", "200", "705", "5,000"],
+          "answer": "705",
+          "explanation": "India has about 705 tribal communities with around 10.4 crore tribal people — more than the combined population of Australia and the UK."
+        },
+        {
+          "id": "c4-e2",
+          "type": "fill",
+          "question": "The famous deity _______ of Puri (Odisha) has tribal origins.",
+          "answer": "Jagannath",
+          "explanation": "Lord Jagannath of Puri originally came from tribal traditions and was later embraced into the mainstream Hindu pantheon. The Rath Yatra at Puri is one of India's largest festivals."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c4-m1",
+          "type": "short",
+          "question": "Why is Indian culture compared to a tree with many branches but one trunk?",
+          "answer": "Because Indian culture has many different branches — Hinduism, Buddhism, Jainism, folk traditions, tribal traditions, regional traditions. These look different on the surface. But they share many common concepts at their root — like dharma, karma, ahimsa, rebirth, search for liberation, respect for nature, and acceptance of many paths to truth. These shared concepts are the 'trunk' from which all the branches grow. So Indian culture is not one single tradition; it is a tree with many beautiful branches sharing a common trunk.",
+          "explanation": "A powerful metaphor that captures both the diversity and the deep unity of Indian culture."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "Explain how folk and tribal traditions have interacted with mainstream Indian culture over thousands of years. Give specific examples.",
+          "answer": "Folk and tribal traditions have not stood apart from mainstream Indian culture — they have constantly exchanged ideas, deities, festivals, and stories with it. This interaction has flowed in both directions. From tribal to mainstream: (1) Lord Jagannath of Puri, one of India's most worshipped deities, originally came from tribal traditions. (2) Many forms of the Mother Goddess (Devi) worshipped across India have tribal origins. (3) Various local village deities have become part of larger Hindu worship. (4) Folk music, dance, painting, weaving, and craft traditions have enriched mainstream Indian art. (5) Festivals like Holi have roots in folk celebrations. From mainstream to tribal: (1) Many tribes adopted Hindu deities and stories over time. (2) Tribes have their own versions of the Ramayana and Mahabharata, from the northeast to Tamil Nadu — showing how widely the epics travelled. (3) Some tribes have taken on Hindu names for their gods over centuries. The sociologist Andre Beteille summarised this well: 'Tribal religions have been influenced by Hinduism, but Hinduism has also been influenced by tribal religions.' This mutual enrichment is one of the most beautiful features of Indian culture — many threads weaving together to make a single rich cloth.",
+          "explanation": "Connects abstract ideas (cultural exchange) with concrete examples (Jagannath, Mother Goddess, Ramayana versions). Shows that Indian culture is not a single 'pure' tradition but the result of many traditions enriching each other."
+        }
+      ]
+    }
+  ]
+}

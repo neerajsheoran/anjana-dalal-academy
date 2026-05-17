@@ -1,0 +1,145 @@
+{
+  "chapterRef": "class-6/social-science/chapter-13-why-work-matters/worksheet",
+  "topics": [
+    {
+      "topic": "Economic vs Non-Economic Activities",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which of these is an economic activity?",
+          "options": [
+            "A mother cooking dinner for her family",
+            "A child helping with homework at home",
+            "A doctor treating a patient and receiving a fee",
+            "A young person volunteering at a NGO"
+          ],
+          "answer": "A doctor treating a patient and receiving a fee",
+          "explanation": "Economic activities involve money. A doctor charging a fee is paid for their work. The other examples are non-economic — done out of love, care, or service."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "A fixed regular monthly payment from an employer to an employee is called:",
+          "options": ["Wage", "Salary", "Fee", "Profit"],
+          "answer": "Salary",
+          "explanation": "A salary is a fixed, regular (usually monthly) payment. A wage is usually for a specific period (daily, hourly). A fee is for professional services."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "When a farm labourer receives mangoes as part of his payment, it is called payment _______ .",
+          "answer": "in kind",
+          "explanation": "Payment in kind means non-cash payment — receiving goods (like mangoes, grain, or services) instead of money."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Distinguish between economic and non-economic activities. Give two examples of each.",
+          "answer": "Economic activities involve money — they are done in exchange for some kind of payment (salary, wage, fee, or payment in kind). Examples: a software engineer earning a salary, a farmer selling vegetables in the market. Non-economic activities do not involve money — they are done out of love, care, duty, or service. Examples: a parent cooking dinner for the family, a young person volunteering to teach poor children. Both types of activity are valuable. Economic activities create the income society needs; non-economic activities create the love, care, and community that hold society together.",
+          "explanation": "Tests understanding of the distinction and the ability to give examples of each."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why is non-economic work (like household work) just as important as economic work, even though it doesn't involve money?",
+          "answer": "Non-economic work is just as important — and sometimes more important — than paid economic work. Here is why: (1) Care work keeps families together. Parents cooking for children, taking care of elderly relatives, helping with homework, listening to family members in difficulty — none of this is paid, but without it families would collapse. Children would be unhealthy and uneducated. Old people would be neglected. The next generation would not have the values and skills needed for adulthood. (2) Community work builds society. Volunteers at gurudwaras serving free meals, neighbours helping each other in emergencies, citizens participating in tree-planting drives, devotees doing seva at temples — none of this is paid but it creates the social fabric we all depend on. (3) Volunteer work fills gaps. Many problems that the government cannot solve — like teaching slum children, caring for orphaned animals, cleaning rivers — are addressed by volunteers. Without their unpaid work, society would be worse off. (4) Care and service give meaning to life. Studies show that people who volunteer and serve others are happier and live longer than those who don't. (5) Many essential things have no market value. The love between a mother and child, the comfort of a friend during sadness, the dignity of caring for an aging parent — these cannot be bought. If we only valued what can be paid for, life would be poorer. Economic work earns the money we need. Non-economic work creates the meaning, care, and connections that make life worth living. We need both. A society that respects only paid work loses its soul. A society that honours both paid and unpaid work flourishes.",
+          "explanation": "A deep, multi-part answer that recognises the social, emotional, and economic importance of unpaid work."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Economic Activities and Value Addition",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Farming is an example of which type of economic activity?",
+          "options": ["Primary", "Secondary", "Tertiary", "Quaternary"],
+          "answer": "Primary",
+          "explanation": "Primary activities involve working directly with natural resources — farming, fishing, mining, forestry. Secondary turns these into goods. Tertiary provides services."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Teaching is an example of which type of economic activity?",
+          "options": ["Primary", "Secondary", "Tertiary", "None of these"],
+          "answer": "Tertiary",
+          "explanation": "Teaching is a service — tertiary activity. Tertiary activities provide services rather than making goods or extracting raw materials."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "When a carpenter buys wood for ₹600 and sells a chair made from it for ₹1,000, the ₹400 difference is called _______ .",
+          "answer": "value addition",
+          "explanation": "Value addition is the increase in value created by economic activity. The carpenter added ₹400 of value through skill, time, tools, and effort."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Explain 'value addition' using an example from the chapter or your own life.",
+          "answer": "Value addition means that economic work transforms something into a more valuable form, and the increase in value is what the worker is paid for. Example from the chapter: Rajesh the carpenter buys wood for ₹600. He uses his tools, skill, time, and effort to make a chair. He sells the chair for ₹1,000. The chair is worth more (₹1,000) than the raw wood (₹600) because it is more useful to a buyer. The ₹400 difference is the value Rajesh added through his work. Every economic activity adds value at some step. A farmer adds value by growing crops from seeds. A baker adds value by turning flour into bread. A trader adds value by carrying bread to a place where buyers want it. Each step adds value, and each step is paid because each step is valuable to someone.",
+          "explanation": "Tests understanding of a fundamental economic concept through a concrete example."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain how a single shirt that you wear involves people from primary, secondary, and tertiary economic activities.",
+          "answer": "A single cotton shirt involves people from all three types of economic activities — primary, secondary, and tertiary — working in a long chain. (1) Primary activities (working with natural resources): A farmer grows cotton in fields. They prepare the land, plant the seeds, water the crop, protect it from pests, and harvest the cotton at the right time. They earn from selling the raw cotton. (2) Secondary activities (turning raw materials into goods): The raw cotton goes to a ginning factory where seeds are separated from fibre. Then it goes to a spinning mill where fibres are spun into yarn (thread). The yarn goes to a weaving factory where it is woven into cloth. The cloth is then dyed and printed in another factory. Finally, it goes to a garment factory where workers cut and stitch the cloth into a shirt. Each step adds value. (3) Tertiary activities (services): The shirt is transported by truck drivers, trains, or ships from the factory to wholesalers, and then to retail shops. Marketing teams advertise the shirt. The shopkeeper sells the shirt to you. Bankers handle the financial transactions. Customer service deals with returns and complaints. So the price of one shirt — say ₹500 — is split among many people who each added value to it. The farmer earns a small share. The factory workers each earn a small share. The shopkeepers and transporters earn shares. Together, they all contribute to making that one shirt available to you. Without any one of them, the chain would break. This is the magic of an economy — strangers cooperating in long invisible chains to bring useful things to each of us.",
+          "explanation": "Synthesises the chapter's ideas into a real-world example — connecting primary, secondary, tertiary, value addition, and the cooperation that makes an economy work."
+        }
+      ]
+    },
+    {
+      "topic": "Seva, Vivekananda, and Work as Worship",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "What is a 'langar' in Sikh tradition?",
+          "options": [
+            "A type of clothing",
+            "A free community kitchen serving meals to anyone",
+            "A musical instrument",
+            "A holy book"
+          ],
+          "answer": "A free community kitchen serving meals to anyone",
+          "explanation": "Langars at gurudwaras serve free food to everyone who comes — regardless of caste, religion, or status. The largest is at the Golden Temple in Amritsar, where about 50,000 people are fed every day."
+        },
+        {
+          "id": "c3-e2",
+          "type": "fill",
+          "question": "The Indian word for selfless service to others is _______ .",
+          "answer": "seva",
+          "explanation": "Seva is the Indian tradition of selfless service — helping others without expecting anything in return. Seen at temples, gurudwaras, mosques, and in community work."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "What did Swami Vivekananda mean when he said work should be done 'as worship'?",
+          "answer": "Swami Vivekananda meant that any work, when done with full attention and care, becomes sacred. He was teaching that we should not divide our lives into 'important' sacred work and 'unimportant' daily work. Every action — cooking dinner, sweeping a floor, teaching a child, helping a neighbour, even doing homework — can be lifted to the highest level when we give it our complete focus, effort, and love. In this view, work itself is a form of worship — not less important than prayer or rituals. The person who gives their best to every task, however small, builds a meaningful and beautiful life. The quality of attention we bring to work matters more than how prestigious the work is.",
+          "explanation": "Captures Vivekananda's teaching that the manner of work matters as much as the work itself."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Why is seva (selfless service) such an important part of Indian culture? Give examples and explain its significance.",
+          "answer": "Seva — selfless service to others — has been a central part of Indian culture for thousands of years because Indian thought recognised that happiness from giving is often deeper than happiness from receiving. Examples of seva in India: (1) Langars at gurudwaras: Sikhs serve free meals to anyone who comes, regardless of caste, religion, status. The Golden Temple at Amritsar serves about 50,000 free meals every day. (2) Prasad at temples: Food blessed by deities and distributed to all devotees. (3) Volunteer service: Devotees at temples, gurudwaras, and mosques cleaning, organising festivals, helping pilgrims — all without payment. (4) Dana: The practice of giving (food, money, clothes, knowledge) to those who need it — considered one of the highest spiritual practices in Hinduism, Buddhism, and Jainism. (5) Hospitality (atithi devo bhava): Guests treated as gods. (6) Modern community service: NGO volunteers, blood donation drives, free schools, langar during COVID-19, disaster relief work. Significance: (1) Spiritual: Many Indian traditions teach that selfless service purifies the giver and develops virtues like humility, compassion, and gratitude. (2) Social: Seva creates strong communities where people support each other. The wealthy serve the poor; the strong help the weak; the educated teach the unlettered. This reduces social inequality and builds bonds. (3) Personal happiness: People who serve others report deep satisfaction and meaning — beyond what material possessions can provide. (4) Cultural continuity: Generation after generation, seva is taught at home, in temples, at gurudwaras. It connects modern Indians to ancient wisdom. (5) National strength: A country where citizens regularly help each other has more resilience during crises — pandemics, floods, droughts. The Indian response to COVID-19 saw vast amounts of unpaid seva work, which helped many vulnerable people. Seva is one of India's most beautiful cultural contributions — a reminder that life is not just about taking but about giving, not just about earning but about serving, not just about success but about meaning.",
+          "explanation": "Capstone question on a key cultural value — seva. Tests understanding of how culture, spirituality, and social good are woven together."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "chapterRef": "class-6/social-science/chapter-12-town-and-city-government/worksheet",
+  "topics": [
+    {
+      "topic": "Types of Urban Local Bodies",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Cities with a population above 10 lakhs are governed by:",
+          "options": ["Nagar Panchayat", "Municipal Council", "Municipal Corporation", "Gram Panchayat"],
+          "answer": "Municipal Corporation",
+          "explanation": "Cities with populations above 10 lakhs (1 million) have a Municipal Corporation. 1 to 10 lakhs has a Municipal Council. Smaller towns have a Nagar Panchayat."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The oldest municipal institution in India is in which city?",
+          "options": ["Delhi", "Kolkata", "Mumbai", "Chennai (Madras)"],
+          "answer": "Chennai (Madras)",
+          "explanation": "The Madras Corporation (now Greater Chennai Corporation) was established on 29 September 1688 — making it the oldest municipal institution in India."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Cities are divided into smaller units called _______ for governance purposes.",
+          "answer": "wards",
+          "explanation": "A ward is a smaller neighbourhood unit. Each ward elects a councillor to represent it in the Municipal Corporation or Council."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What is the difference between a Mayor and a Municipal Commissioner?",
+          "answer": "The Mayor is the elected political head of a city. They are usually chosen by the elected councillors. They represent the people, speak for the city in public, and preside over council meetings. The Municipal Commissioner is the appointed administrative head — usually a senior civil servant (often IAS). They run the day-to-day operations of the corporation, managing staff and implementing decisions. The Mayor provides political direction; the Commissioner provides administrative execution. Both work together to run the city.",
+          "explanation": "Important distinction — students often think one person runs the city. Actually, two complementary roles do."
+        },
+        {
+          "id": "c1-m2",
+          "type": "mcq",
+          "question": "Which constitutional amendment gave constitutional status to urban local bodies?",
+          "options": ["73rd Amendment", "74th Amendment", "75th Amendment", "82nd Amendment"],
+          "answer": "74th Amendment",
+          "explanation": "The 74th Constitutional Amendment (1992) gave constitutional status to urban local bodies. The 73rd Amendment (1992) did the same for rural panchayats. Together, they strengthened local self-government in India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Compare a Municipal Corporation with a Gram Panchayat. How are they similar and how are they different?",
+          "answer": "Similarities: (1) Both are forms of local government — the lowest tier of governance closest to citizens. (2) Both have elected representatives chosen by direct voting. (3) Both handle local matters in their area — water, roads, sanitation, local disputes. (4) Both have reservations for women, SCs, and STs to ensure representation. (5) Both depend on citizen cooperation to function well. (6) Both are protected by the Indian Constitution (73rd Amendment for panchayats, 74th Amendment for ULBs). Differences: (1) Scale — a Gram Panchayat manages a village of perhaps 500–2,000 people. A Municipal Corporation may manage millions. (2) Complexity — a city has tall buildings, water systems running for kilometres, traffic, complex infrastructure. A village has simpler needs. (3) Diversity — cities have people from all over India and beyond; villages tend to be more uniform. (4) Money — Municipal Corporations handle vastly more money than Gram Panchayats. (5) Departments — Corporations have many departments (water, fire, health, town planning); a Gram Panchayat may have just a few. (6) Structure — a ULB has wards, councillors, a Mayor, and a Commissioner. A Panchayat has Gram Sabha, Gram Panchayat, and a Sarpanch. Different settings call for different structures, but both serve the same purpose — bringing democracy close to the people.",
+          "explanation": "A capstone comparison that demands understanding of both Chapters 11 and 12. Excellent for synthesising knowledge."
+        }
+      ]
+    },
+    {
+      "topic": "Services and Citizen Duties",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which of these is NOT typically a service provided by a Municipal Corporation?",
+          "options": ["Garbage collection", "Water supply", "Defending the country's borders", "Property tax collection"],
+          "answer": "Defending the country's borders",
+          "explanation": "Defence is a central government responsibility. Municipal Corporations handle local services like water, garbage, taxes, building permits, and so on."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which Indian city has been rated India's cleanest city for 7 years in a row?",
+          "options": ["Mysuru", "Indore", "Chandigarh", "Surat"],
+          "answer": "Indore",
+          "explanation": "Indore in Madhya Pradesh has been India's cleanest city for 7 consecutive years in the Swachh Survekshan rankings. Its success is due to BOTH the Municipal Corporation AND active citizen cooperation."
+        },
+        {
+          "id": "c2-e3",
+          "type": "mcq",
+          "question": "Citizens of Indore keep their city clean partly by:",
+          "options": [
+            "Hiring private cleaners",
+            "Segregating waste at home into wet and dry",
+            "Burning all their garbage at home",
+            "Sending garbage to other cities"
+          ],
+          "answer": "Segregating waste at home into wet and dry",
+          "explanation": "Indore's citizens separate wet waste (food, vegetable peels) from dry waste (paper, plastic) at home. The truck refuses to collect mixed waste. This habit is key to the city's cleanliness."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "List four duties of citizens to keep their cities running well.",
+          "answer": "(1) Don't litter — put garbage in bins, not on streets. (2) Save water and electricity — don't waste these precious resources. (3) Report problems promptly — a water leak ignored today wastes thousands of litres tomorrow. (4) Pay taxes honestly — municipal bodies need money to provide services. (Also: use public transport when possible, vote in local elections, attend ward meetings, care for public spaces, respect neighbours.)",
+          "explanation": "Citizens have duties, not just rights. A clean, well-run city is the result of citizens doing their part."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain why Indore has become India's cleanest city for 7 years in a row. What can other cities learn from it?",
+          "answer": "Indore's success comes from a combination of strong government action and active citizen cooperation. (1) Door-to-door garbage collection: Trucks visit every house every day. People don't have to carry garbage to community bins. (2) Strict waste segregation: Each household keeps wet waste (food, vegetable peels) and dry waste (paper, plastic) in separate bins. Trucks refuse to take mixed waste. Slowly this became habit. (3) Waste processing: Wet waste is turned into compost for farms. Dry waste is recycled. Almost nothing goes to landfills. (4) Continuous awareness campaigns: The city ran songs, dances, posters, and mobile vans to teach people how to manage waste. (5) Penalties for littering: Throwing garbage on streets earns a fine. After a few public fines, people stopped littering. (6) Public toilets: Free, clean public toilets so people don't urinate or defecate in the open. (7) Citizen pride: Once Indore became famous as the cleanest city, citizens themselves became its protectors. They felt proud and embarrassed by any litter. Lessons for other cities: A clean city needs BOTH a determined municipal government AND cooperating citizens. Government alone cannot keep a city clean. Citizens alone cannot fix the system. Indore proved that if government provides good services and citizens cooperate, even a large Indian city can become very clean. Other cities can adopt these practices — door-to-door collection, mandatory segregation, awareness, enforcement, and recognition that builds pride.",
+          "explanation": "Comprehensive answer that connects practical methods with civic principles. Practical lessons for any future city manager — or citizen."
+        }
+      ]
+    }
+  ]
+}

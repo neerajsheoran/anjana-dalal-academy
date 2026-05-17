@@ -1,0 +1,147 @@
+{
+  "chapterRef": "class-6/social-science/chapter-8-one-country-many-cultures/worksheet",
+  "topics": [
+    {
+      "topic": "Scale of Indian Diversity",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Approximately what percentage of the world's population lives in India?",
+          "options": ["5%", "10%", "18%", "30%"],
+          "answer": "18%",
+          "explanation": "India is home to about 1.4 billion people — roughly 18% of the world's population. One out of every six people on Earth lives in India."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "How many languages did the People of India project identify in everyday use?",
+          "options": ["50", "150", "325", "1,000"],
+          "answer": "325",
+          "explanation": "The Anthropological Survey of India's People of India project identified 325 languages in use across the country, written in 25 different scripts."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Explain what 'unity in diversity' means in the Indian context.",
+          "answer": "'Unity in diversity' means that India has enormous variety — in languages, food, dress, festivals, customs, religions — but at the same time has a deep underlying unity. Indians may live very different lives in different regions, yet they share many cultural values, stories, and practices that connect them as one people. Diversity is not seen as something that divides India but as something that enriches it. The phrase captures the idea that 'the Many in the One' is possible — many different cultures coexisting harmoniously within one country.",
+          "explanation": "Core concept of the chapter — important to express in their own words."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why has India not split into separate countries despite its enormous diversity, while some less diverse countries have broken apart? Give at least three reasons.",
+          "answer": "India has stayed together for several deep reasons: (1) Shared values across traditions — Hindu, Buddhist, Jain, Sikh, Muslim, Christian, tribal, and folk traditions share many core values: respect for elders, family bonds, ahimsa (non-violence), the idea of dharma (right conduct), respect for nature. (2) Shared sacred geography — pilgrimage routes connect India end-to-end. People from south India go to Varanasi, people from Punjab go to Rameswaram. The whole Subcontinent has long been thought of as one sacred land. (3) Shared stories — the Ramayana, Mahabharata, Panchatantra, Jataka tales are known across every region in countless versions. Tribal communities have their own versions of these epics. So everyone shares a common imagination. (4) Shared festivals — events like Makara Sankranti are celebrated almost simultaneously across India under many local names (Pongal, Lohri, Bihu, etc.). (5) A culture of acceptance — Indian thought has always recognised that 'Truth is one, but sages call it by many names.' This worldview allows different traditions to coexist without one trying to destroy another. (6) Constant cultural exchange — Indians have intermarried, traded, migrated and exchanged ideas across regions for thousands of years. Diversity is not separated into sealed boxes — it flows. Together, these reasons have kept India one country: not by suppressing differences but by celebrating them. As Sri Aurobindo put it, India is 'the Many in the One.'",
+          "explanation": "Encourages students to think about what holds a country together — a key civics question, not just a history one."
+        }
+      ]
+    },
+    {
+      "topic": "Food, Clothing, and Festivals",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which of these is NOT a name for the harvest festival around January 14?",
+          "options": ["Pongal", "Lohri", "Onam", "Bihu"],
+          "answer": "Onam",
+          "explanation": "Pongal, Lohri, Bihu, Uttarayan are all names for the same festival around January 14. Onam is a different festival celebrated in Kerala, usually in August-September."
+        },
+        {
+          "id": "c2-e2",
+          "type": "fill",
+          "question": "The famous Indian printed cotton that became so popular in 17th-century Europe was called _______ .",
+          "answer": "chintz",
+          "explanation": "Chintz was so popular that England and France actually banned its import to protect their own textile industries."
+        },
+        {
+          "id": "c2-e3",
+          "type": "mcq",
+          "question": "Which of these is a famous silk sari type from Tamil Nadu?",
+          "options": ["Banarasi", "Kanjivaram", "Patola", "Paithani"],
+          "answer": "Kanjivaram",
+          "explanation": "Kanjivaram (or Kanchipuram) silk saris are made in Tamil Nadu and are famous worldwide. Banarasi is from UP, Patola from Gujarat, Paithani from Maharashtra."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Explain how the sari demonstrates 'unity in diversity' with at least two examples.",
+          "answer": "The sari is a single unstitched length of cloth — that is the unity. But it has been transformed into endless diversity. (1) Different fabrics across regions: cotton in many areas, Kanjivaram silk in Tamil Nadu, Banarasi silk in UP, Patola in Gujarat, Muga silk in Assam — each region's tradition. (2) Different ways of draping: the Nivi style (most common), the Bengali style, the Maharashtrian nauvari (nine yards), the Coorgi style, and many more. So one basic idea — a long piece of cloth — has become hundreds of variations in fabric, weave, design, colour, and drape. Same unity, endless diversity.",
+          "explanation": "Concrete application of the chapter's central concept."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Around what date does Makara Sankranti (and its regional equivalents like Pongal, Lohri, Bihu) usually fall?",
+          "options": ["October 14", "December 14", "January 14", "March 14"],
+          "answer": "January 14",
+          "explanation": "Makara Sankranti is celebrated around January 14 every year. It marks the day the sun enters the zodiac sign of Capricorn (Makara) and the start of the harvest season."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why do you think the same festival has so many different names in different parts of India? What does this tell us about Indian culture?",
+          "answer": "The same festival has many names because each region of India developed its own language, agriculture, and customs while celebrating shared events. Take Makara Sankranti — astronomically, it is the same day (around January 14) when the sun enters Capricorn and the harvest begins. But because each region grew its own crops, spoke its own language, and developed its own customs, they gave the day their own name: Pongal in Tamil Nadu (named after the special rice dish), Lohri in Punjab (linked to bonfires), Bihu in Assam, Uttarayan in Gujarat. This tells us that Indian culture allows many local expressions of shared experiences. The underlying reality (the harvest, the astronomical event, the gratitude to the sun) is one. But the cultural expression of that reality varies. This is the essence of unity in diversity — same root, many flowers. It also shows that Indian culture is not centrally controlled or rigidly defined. Each community contributes its own colour, and the whole picture is richer for it.",
+          "explanation": "Connects the example (festivals) to the larger principle (culture allows many expressions of shared experience)."
+        }
+      ]
+    },
+    {
+      "topic": "The Epics and Indian Stories",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which two epics together total about 7,000 pages in their original Sanskrit versions?",
+          "options": [
+            "Panchatantra and Jataka tales",
+            "Ramayana and Mahabharata",
+            "Vedas and Upanishads",
+            "Ramcharitmanas and Bhagavad Gita"
+          ],
+          "answer": "Ramayana and Mahabharata",
+          "explanation": "The Ramayana and Mahabharata are India's two great epics. Together they fill about 7,000 pages in their original Sanskrit versions. Both have been retold in countless ways across India and Asia."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "The Panchatantra is best described as:",
+          "options": [
+            "A collection of religious hymns",
+            "A collection of animal-based moral stories",
+            "A book of mathematical puzzles",
+            "A historical chronicle"
+          ],
+          "answer": "A collection of animal-based moral stories",
+          "explanation": "The Panchatantra is a 2,200+ year old Sanskrit collection of stories where animals teach moral lessons. It is one of the most influential collections of stories in world literature."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Why do scholars say the Panchatantra is one of the most travelled story collections in world history?",
+          "answer": "The Panchatantra originated in Sanskrit in India over 2,200 years ago. From there, it was translated into Pahlavi (Old Persian), then Arabic (where it became famous as 'Kalila wa Dimna'), then Hebrew, Greek, Latin, and various European languages. There are about 200 adaptations of the Panchatantra in more than 50 languages today. European writers like La Fontaine borrowed Panchatantra stories. Many tales known in European fable collections actually have Indian roots. No other ancient story collection has been translated into so many languages or influenced so many cultures.",
+          "explanation": "Tells the remarkable story of how Indian creativity shaped world storytelling."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "A scholar found about 100 versions of the Mahabharata in Tamil Nadu alone, and tribal communities across India have their own versions of the epics. What does this tell us about how Indians have treated their great stories?",
+          "answer": "It tells us that Indians have treated their great stories as living, growing things — not as fixed museum pieces. The Mahabharata and Ramayana were not seen as belonging only to one author or one community. Every region, every language, every storyteller felt free to retell them in their own way, with their own emphasis. The Tamil Kamba Ramayanam (12th century) is different from the Awadhi Ramcharitmanas (16th century, by Tulsidas), which is different from the Sanskrit Valmiki Ramayana. Tribal versions of the Ramayana and Mahabharata often connect the epic heroes to local mountains, forests, and traditions — Pandavas are said to have rested under certain trees, Sita is said to have walked through certain valleys. Some tribes (Bhils, Gonds, Mundas, tribes of the Northeast) have entirely oral versions. None of these versions are 'wrong' — they are different ways of carrying the same stories forward, suited to different communities. This approach to stories also shows something important about Indian culture: it values local voice and local meaning. The epics were not imposed top-down — they were absorbed bottom-up, with each community adding its own touch. That is why the epics still feel alive today, 2,000+ years later, while many ancient stories of other cultures have faded away.",
+          "explanation": "Connects literary diversity to cultural philosophy — Indians treated stories as living traditions, not fixed texts."
+        }
+      ]
+    }
+  ]
+}

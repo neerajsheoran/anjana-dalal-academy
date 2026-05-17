@@ -1,0 +1,219 @@
+{
+  "chapterRef": "class-6/social-science/chapter-6-where-it-all-began/worksheet",
+  "topics": [
+    {
+      "topic": "Civilisation and Its Features",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which of these is NOT a feature of a civilisation?",
+          "options": ["Government and administration", "Cities and town planning", "Hunting wild animals as the only food source", "Trade with other regions"],
+          "answer": "Hunting wild animals as the only food source",
+          "explanation": "Civilisations are built on settled life with productive agriculture, not pure hunting. The other features — government, town planning, trade — are essential to all civilisations."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which civilisation is older — the Egyptian or the Indus-Sarasvati?",
+          "options": ["Egyptian", "Indus-Sarasvati", "Both began at the same time", "Neither existed in ancient times"],
+          "answer": "Egyptian",
+          "explanation": "Egyptian civilisation began around 3500 BCE. Indus-Sarasvati civilisation reached its urban stage around 2600 BCE — a few centuries later."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "List four key features of a civilisation.",
+          "answer": "(1) Government and administration to manage many activities. (2) Cities with town planning, including water supply and drainage. (3) Specialised crafts using raw materials like stone or metal. (4) Trade — local and long-distance — to exchange goods. (Also: writing, cultural ideas, and productive agriculture.)",
+          "explanation": "Any combination of these defining features turns a society from a collection of villages into a true civilisation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why is 'productive agriculture' considered the most fundamental feature of a civilisation? Explain your answer.",
+          "answer": "Productive agriculture means farms produce more food than the farmers themselves need to eat — a 'surplus.' This surplus is the foundation on which all other features of civilisation rest. Without surplus food, no one can specialise in crafts, trade, or administration — everyone has to farm just to survive. With surplus food, some people can become potters, weavers, traders, builders, scribes, priests, or rulers, because farmers grow enough to feed them too. Cities can only exist when nearby farms produce enough to feed thousands of non-farmers. Trade depends on having something to exchange — and food is often the basic exchange item. Writing developed partly to keep track of grain stored in warehouses. So agriculture is the engine that drives every other feature of civilisation. If farms fail, the city dies — which is exactly what happened to the Harappans when climate change and the drying of the Sarasvati reduced their food supply.",
+          "explanation": "Connects agriculture to all aspects of civilised life — economy, specialisation, urban growth, and even the rise and fall of civilisations."
+        }
+      ]
+    },
+    {
+      "topic": "The Indus-Sarasvati Civilisation",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The Indus-Sarasvati civilisation flourished approximately between:",
+          "options": ["2600 BCE and 1900 BCE", "1000 BCE and 500 BCE", "300 BCE and 200 CE", "1000 CE and 1500 CE"],
+          "answer": "2600 BCE and 1900 BCE",
+          "explanation": "The mature, urban phase of the Indus-Sarasvati civilisation lasted from about 2600 BCE to 1900 BCE — roughly 700 years."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which of these cities of the Indus-Sarasvati civilisation is located in modern Gujarat, India?",
+          "options": ["Mohenjo-daro", "Harappa", "Dholavira", "Ganweriwala"],
+          "answer": "Dholavira",
+          "explanation": "Dholavira is in Gujarat, India. Mohenjo-daro and Harappa are in Pakistan; Ganweriwala is in the Cholistan desert of Pakistan."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The first city of this civilisation to be discovered was _______ , in 1920–21.",
+          "answer": "Harappa",
+          "explanation": "Harappa, in today's Punjab in Pakistan, was the first city excavated. That is why the entire civilisation is also called 'Harappan.'"
+        },
+        {
+          "id": "c2-e4",
+          "type": "mcq",
+          "question": "Why is the term 'Indus Valley civilisation' considered outdated today?",
+          "options": [
+            "Because it sounds too old",
+            "Because we now know the civilisation extended far beyond the Indus valley",
+            "Because there is no Indus river anymore",
+            "Because no excavations happen there now"
+          ],
+          "answer": "Because we now know the civilisation extended far beyond the Indus valley",
+          "explanation": "The term 'Indus Valley' suggests the civilisation was limited to the Indus river area. We now know it spread far east along the Sarasvati River, into Haryana, Rajasthan, and Gujarat — well outside the Indus valley."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Why are there many names for this civilisation — Indus, Harappan, Indus-Sarasvati?",
+          "answer": "Each name reflects a different aspect or stage of discovery. 'Harappan' is named after the first excavated city (Harappa). 'Indus' or 'Indus Valley' reflected the early view that the civilisation was limited to the Indus river region. 'Indus-Sarasvati' or 'Sindhu-Sarasvati' is used today because we now know it also flourished along the Sarasvati river, well beyond the Indus.",
+          "explanation": "The name evolved as more was learned. Today, 'Indus-Sarasvati' is the most accurate."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Match: The Sarasvati River today is known as _______ in India and _______ in Pakistan.",
+          "options": [
+            "Sutlej in India and Indus in Pakistan",
+            "Ghaggar in India and Hakra in Pakistan",
+            "Yamuna in India and Jhelum in Pakistan",
+            "Beas in India and Chenab in Pakistan"
+          ],
+          "answer": "Ghaggar in India and Hakra in Pakistan",
+          "explanation": "The Sarasvati of ancient texts is identified with today's Ghaggar (India) and Hakra (Pakistan) — together called the Ghaggar-Hakra river. It now flows only seasonally."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Describe at least three remarkable features of Harappan town planning that show how advanced this civilisation was.",
+          "answer": "(1) Grid-pattern streets: The streets of major Harappan cities ran in a planned grid — wide main roads crossed by smaller lanes at right angles, often aligned with the cardinal directions. This is unusual for ancient cities and shows deliberate planning, not random growth. (2) Two-part city structure: Most cities had a clear separation between an 'Upper Town' (Citadel) and a 'Lower Town.' The Upper Town had thick walls, public buildings, and probably housed the elite. The Lower Town housed common people. This separation suggests careful zoning. (3) Standardised brick sizes: The same dimensions of bricks were used across all cities, hundreds of kilometres apart. This indicates a standard system was followed across a huge region. (4) Quality of construction: Even small houses had bathrooms and access to drains. (5) The Great Bath at Mohenjo-daro: A 12-by-7 metre tank, carefully waterproofed with natural tar. It shows skilled engineering and that water held a special place — religious or otherwise — in their culture. These features together make Harappan cities more advanced in some ways than any other ancient civilisation of their time.",
+          "explanation": "Tests detailed knowledge of urban planning and connects it to the bigger picture of an advanced, organised society."
+        }
+      ]
+    },
+    {
+      "topic": "Water Management, Crafts, and Trade",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Approximately how many brick-lined wells have been counted at Mohenjo-daro?",
+          "options": ["100", "300", "700", "5,000"],
+          "answer": "700",
+          "explanation": "About 700 wells have been counted at Mohenjo-daro, supplying drinking water to the city's homes. A remarkable density of water infrastructure for any ancient city."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which Harappan city had a 217-metre-long brick basin, believed to be a dockyard?",
+          "options": ["Mohenjo-daro", "Lothal", "Dholavira", "Rakhigarhi"],
+          "answer": "Lothal",
+          "explanation": "Lothal in Gujarat had a huge brick-lined basin widely believed to be a dockyard — one of the earliest known dockyards in the world."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "The Harappans were the first people in Eurasia to grow _______ , which they wove into cloth.",
+          "answer": "cotton",
+          "explanation": "Cotton was first cultivated in the Indian Subcontinent and Harappan textiles were exported to other ancient civilisations. Indian cotton would remain world-famous for thousands of years."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Why are Harappan drains considered very advanced for their time?",
+          "answer": "Almost every house was connected to covered drains that ran beneath the streets. Wastewater from baths and kitchens flowed into these drains, then into larger covered channels, and out of the city. No other ancient civilisation — including Egypt, Mesopotamia, and Greece — had a citywide drainage system this organised until many centuries later. The Harappans' attention to public health and sanitation was thousands of years ahead of its time.",
+          "explanation": "Sanitation engineering is one of the strongest indicators of how advanced a civilisation is. The Harappans were extraordinary in this respect."
+        },
+        {
+          "id": "c3-m2",
+          "type": "mcq",
+          "question": "Harappan carnelian beads have been found in distant ancient civilisations like Mesopotamia. What does this tell us?",
+          "options": [
+            "Harappans imported these beads",
+            "Harappans had long-distance trade contacts with other civilisations",
+            "Mesopotamians invaded Harappan cities",
+            "Harappans gave the beads as gifts to passing travellers"
+          ],
+          "answer": "Harappans had long-distance trade contacts with other civilisations",
+          "explanation": "Finding Harappan beads in Mesopotamia and other distant lands is solid evidence of active long-distance trade. Such finds let us reconstruct ancient trade networks."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "The Harappans built large reservoirs at Dholavira, in a dry, desert-like region. What does this tell us about their society and their leaders?",
+          "answer": "Building large reservoirs in a dry place requires several things working together. First, there must be a strong central authority — someone who can decide where to build, how big, and to give orders to many workers. Second, there must be skilled engineers who understand how rainwater collects, how channels work, and how to cut large basins into rock. Third, there must be a large workforce — hundreds or thousands of people willing to work together over many years. Fourth, there must be a system to feed and support these workers — they cannot dig reservoirs while also farming for their own meals. Fifth, there must be a culture that values the welfare of the whole community — because reservoirs benefit everyone, not just the rulers. The reservoirs of Dholavira tell us the Harappans had organised leadership, scientific knowledge, social cooperation, productive agriculture, and a sense of collective welfare. Without any of these, the reservoirs could not have been built. This is why archaeologists call them one of the great achievements of the ancient world.",
+          "explanation": "Connects engineering with the social and political structure needed to make it happen. Helps students see how physical infrastructure reflects the society behind it."
+        }
+      ]
+    },
+    {
+      "topic": "Decline of the Civilisation",
+      "easy": [
+        {
+          "id": "c4-e1",
+          "type": "mcq",
+          "question": "Around what year did the Harappan civilisation begin to decline?",
+          "options": ["2600 BCE", "1900 BCE", "1000 BCE", "500 BCE"],
+          "answer": "1900 BCE",
+          "explanation": "Cities began to be abandoned around 1900 BCE. By about 1300 BCE, the urban Harappan culture had disappeared, although people continued in rural settlements."
+        },
+        {
+          "id": "c4-e2",
+          "type": "mcq",
+          "question": "What is the OLD theory about the decline of the Harappan civilisation that has now been ruled out?",
+          "options": [
+            "That they were invaded and destroyed in war",
+            "That a flood washed away the cities",
+            "That a disease killed them all",
+            "That they migrated to South India"
+          ],
+          "answer": "That they were invaded and destroyed in war",
+          "explanation": "Earlier scholars thought invasion or warfare destroyed the cities, but no archaeological evidence of warfare has ever been found. The Harappans seem to have been a relatively peaceful society."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c4-m1",
+          "type": "short",
+          "question": "What two main factors are believed to have caused the decline of the Indus-Sarasvati civilisation?",
+          "answer": "(1) Climate change from about 2200 BCE — the region became progressively drier, with less rainfall. This made agriculture more difficult and reduced the food supply that fed the cities. (2) The Sarasvati River dried up in its central basin, causing cities along its banks (like Kalibangan and Banawali) to be abandoned. Together, these environmental changes broke the food and water systems that the cities depended on.",
+          "explanation": "Both reasons are environmental, not military. A useful reminder that civilisations can fall because of nature, not just war."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "How does the decline of the Harappan civilisation hold a lesson for modern India and the world?",
+          "answer": "The Harappans were one of the most advanced civilisations of their time. They had cities, sanitation, planning, trade, crafts, and culture. Yet their civilisation declined — slowly but unstoppably — because of environmental changes they could not overcome. The lessons for us are several: (1) Even great civilisations can fall if their environment fails. Modern climate change, water scarcity, and rising groundwater depletion are exactly the same kinds of problems the Harappans faced. (2) Rivers and water systems must be protected. The drying of the Sarasvati helped destroy a great civilisation. Today, many of our rivers are polluted, dammed, or shrinking — a warning sign. (3) Cities depend on the countryside. Without the farms around them, cities cannot survive. We must care for our farming regions and water sources. (4) Environmental change can be slow. The Harappans probably didn't notice their decline until it was too late. Modern problems like climate change are also slow — easy to ignore until they become unstoppable. The Harappans' fate reminds us to take care of our planet, our rivers, and our farming lands, so that India's modern civilisation does not face the same end. History often repeats — unless we choose to learn from it.",
+          "explanation": "Connects ancient history to modern environmental concerns — making history feel directly relevant, not just past."
+        }
+      ]
+    }
+  ]
+}
