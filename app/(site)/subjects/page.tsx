@@ -18,6 +18,14 @@ const SUBJECT_CARDS = [
     from: 'from-blue-500',
     to: 'to-blue-700',
   },
+  {
+    id: 'social-science',
+    label: 'Social Science',
+    icon: '🌍',
+    desc: 'History, geography, civics, and the story of how we live together',
+    from: 'from-amber-500',
+    to: 'to-amber-700',
+  },
 ];
 
 export default function SubjectsPage() {
