@@ -2,6 +2,7 @@ import { cookies } from "next/headers";
 import { adminAuth } from "@/lib/firebase-admin";
 import { redirect } from "next/navigation";
 import SupportPageClient from "@/components/support/SupportPageClient";
+import { redirectIfInKidMode } from "@/lib/active-child";
 
 export const metadata = {
   title: "Help & Support — CogniLift",
@@ -20,6 +21,8 @@ async function requireAuth() {
 }
 
 export default async function SupportPage() {
+  // Kid-mode sandbox: support tickets are parent-authored.
+  await redirectIfInKidMode();
   await requireAuth();
 
   return (

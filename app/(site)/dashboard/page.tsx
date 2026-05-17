@@ -9,6 +9,7 @@ import {
   loadChildDashboard,
   loadDashboardChildren,
 } from "@/lib/dashboard";
+import { redirectIfInKidMode } from "@/lib/active-child";
 import DashboardClient from "./DashboardClient";
 
 interface SearchParams {
@@ -20,6 +21,10 @@ export default async function DashboardPage({
 }: {
   searchParams: Promise<SearchParams>;
 }) {
+  // Kid-mode sandbox: dashboard shows aggregated insights across ALL kids;
+  // not appropriate for a kid in kid mode to view. Send them to /brain.
+  await redirectIfInKidMode();
+
   const parentUid = await getParentUid();
   if (!parentUid) redirect("/login?from=/dashboard");
 

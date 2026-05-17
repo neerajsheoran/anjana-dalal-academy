@@ -6,6 +6,7 @@
 //   if (active) { /* in kid mode */ }
 
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { adminAuth, adminDb } from "./firebase-admin";
 
 export const ACTIVE_CHILD_COOKIE = "activeChild";
@@ -63,6 +64,18 @@ export async function hasChildren(): Promise<boolean> {
     return !snap.empty;
   } catch {
     return false;
+  }
+}
+
+// Kid-mode sandbox guard. Call at the top of any server component that
+// represents parent-only surface area (account, billing, dashboard, admin)
+// — when a child profile is active, redirect them to /brain instead of
+// rendering parent content. The PIN gates the parent → kid boundary, but
+// without this check a kid could just type the URL.
+export async function redirectIfInKidMode(): Promise<void> {
+  const activeChild = await getActiveChild();
+  if (activeChild) {
+    redirect("/brain");
   }
 }
 

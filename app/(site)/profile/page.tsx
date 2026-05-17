@@ -15,6 +15,7 @@ import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
 import ChildrenSection from "@/components/profile/ChildrenSection";
 import PinSection from "@/components/profile/PinSection";
+import { redirectIfInKidMode } from "@/lib/active-child";
 
 
 async function getUser() {
@@ -150,6 +151,9 @@ async function getQuizHistory(uid: string) {
 }
 
 export default async function ProfilePage() {
+  // Kid-mode sandbox: if a child profile is active, a curious kid shouldn't
+  // be able to land on parent settings by typing /profile in the URL.
+  await redirectIfInKidMode();
   const user = await getUser();
   const [quizHistory, progressStats, quizStats, bookmarks] = await Promise.all([
     getQuizHistory(user.uid),

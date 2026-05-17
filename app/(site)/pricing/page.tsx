@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { adminAuth } from "@/lib/firebase-admin";
 import { getPlatformConfig, getContentAccessLevel } from "@/lib/subscription";
+import { redirectIfInKidMode } from "@/lib/active-child";
 import type { ContentAccessLevel } from "@/lib/types";
 import CheckoutButton from "@/components/subscription/CheckoutButton";
 
@@ -25,6 +26,8 @@ async function getUserInfo() {
 }
 
 export default async function PricingPage() {
+  // Kid-mode sandbox: payment/subscription is parent-only.
+  await redirectIfInKidMode();
   const [user, config] = await Promise.all([getUserInfo(), getPlatformConfig()]);
 
   const accessLevel: ContentAccessLevel = user?.accessLevel ?? "anonymous";
