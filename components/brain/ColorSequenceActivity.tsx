@@ -24,6 +24,7 @@ import {
   type ReflectionOption,
 } from '@/components/brain/reflection-options';
 import { useCelebration } from '@/lib/use-celebration';
+import { useAutoAdvance } from '@/lib/use-auto-advance';
 
 const TOTAL_ROUNDS = 3;
 
@@ -236,6 +237,12 @@ export default function ColorSequenceActivity({
   const lastRoundData = roundData[roundData.length - 1];
   const correctCount = results.filter((r) => r.isCorrect).length;
 
+  const autoAdvanceSecondsLeft = useAutoAdvance({
+    phase,
+    isCorrect: lastRoundData?.isCorrect ?? false,
+    onAdvance: advanceFromRoundResult,
+  });
+
   useCelebration({
     phase,
     lastRoundCorrect: lastRoundData?.isCorrect ?? false,
@@ -393,6 +400,11 @@ export default function ColorSequenceActivity({
               {round < TOTAL_ROUNDS ? `Next round (${round + 1}/${TOTAL_ROUNDS})` : 'How did that go?'}
               <ChevronRight className="w-5 h-5" strokeWidth={3} />
             </button>
+            {autoAdvanceSecondsLeft !== null && (
+              <p className="text-[10px] text-gray-400 mt-2 text-center">
+                Auto-continues in {autoAdvanceSecondsLeft}s · tap above to skip
+              </p>
+            )}
           </div>
         )}
 

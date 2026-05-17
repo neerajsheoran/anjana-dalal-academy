@@ -41,6 +41,7 @@ import {
   type ReflectionOption,
 } from '@/components/brain/reflection-options';
 import { useCelebration } from '@/lib/use-celebration';
+import { useAutoAdvance } from '@/lib/use-auto-advance';
 
 const TOTAL_ROUNDS = 3;
 
@@ -333,6 +334,12 @@ export default function SpotTheDifferenceActivity({
       : 0;
 
   // Confetti on successful round + on perfect-3 summary
+  const autoAdvanceSecondsLeft = useAutoAdvance({
+    phase,
+    isCorrect: lastRoundData?.isCorrect ?? false,
+    onAdvance: advanceFromRoundResult,
+  });
+
   useCelebration({
     phase,
     lastRoundCorrect: lastRoundData?.isCorrect ?? false,
@@ -519,6 +526,11 @@ export default function SpotTheDifferenceActivity({
               {round < TOTAL_ROUNDS ? `Next round (${round + 1}/${TOTAL_ROUNDS})` : 'How did that go?'}
               <ChevronRight className="w-5 h-5" strokeWidth={3} />
             </button>
+            {autoAdvanceSecondsLeft !== null && (
+              <p className="text-[10px] text-gray-400 mt-2 text-center">
+                Auto-continues in {autoAdvanceSecondsLeft}s · tap above to skip
+              </p>
+            )}
           </div>
         )}
 

@@ -23,6 +23,7 @@ import {
   type ReflectionOption,
 } from '@/components/brain/reflection-options';
 import { useCelebration } from '@/lib/use-celebration';
+import { useAutoAdvance } from '@/lib/use-auto-advance';
 
 const TOTAL_ROUNDS = 3;
 
@@ -276,6 +277,12 @@ export default function NumberSequenceActivity({
 
   const lastRoundData = roundData[roundData.length - 1];
   const correctCount = results.filter((r) => r.isCorrect).length;
+
+  const autoAdvanceSecondsLeft = useAutoAdvance({
+    phase,
+    isCorrect: lastRoundData?.isCorrect ?? false,
+    onAdvance: advanceFromRoundResult,
+  });
 
   useCelebration({
     phase,
