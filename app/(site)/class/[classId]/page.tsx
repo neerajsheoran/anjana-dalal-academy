@@ -18,6 +18,23 @@ const SUBJECT_STYLES: Record<string, { bg: string; border: string; hover: string
     text: "text-green-800",
     sub: "text-green-500",
   },
+  "social-science": {
+    bg: "bg-amber-50",
+    border: "border-amber-200",
+    hover: "hover:bg-amber-100 hover:border-amber-400",
+    text: "text-amber-800",
+    sub: "text-amber-600",
+  },
+};
+
+// Defensive fallback so adding a future subject to the registry without
+// also updating this style map doesn't crash on `styles.bg`.
+const FALLBACK_SUBJECT_STYLE = {
+  bg: "bg-gray-50",
+  border: "border-gray-200",
+  hover: "hover:bg-gray-100 hover:border-gray-400",
+  text: "text-gray-800",
+  sub: "text-gray-500",
 };
 
 export default async function ClassPage({
@@ -39,7 +56,7 @@ export default async function ClassPage({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {subjects.map((subject) => {
-            const styles = SUBJECT_STYLES[subject.id];
+            const styles = SUBJECT_STYLES[subject.id] ?? FALLBACK_SUBJECT_STYLE;
             const chapterCount = getChapters(classId, subject.id).length;
             return (
               <Link

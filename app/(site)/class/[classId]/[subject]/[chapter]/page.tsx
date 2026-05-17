@@ -53,6 +53,11 @@ const SUBJECT_BANNER: Record<string, { bg: string; text: string; badge: string }
     text: "text-blue-100",
     badge: "bg-blue-500 text-white",
   },
+  "social-science": {
+    bg: "bg-gradient-to-r from-amber-600 to-amber-700",
+    text: "text-amber-100",
+    badge: "bg-amber-500 text-white",
+  },
 };
 
 export default async function ChapterPage({
