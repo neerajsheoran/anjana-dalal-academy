@@ -21,6 +21,9 @@ export interface PillarSummary {
   attempts: number;
   avgScore: number | null;
   trend: "up" | "down" | "flat" | "n/a";
+  // Last ~10 attempt scores in chronological order (oldest first → newest
+  // last). Used to render an inline sparkline inside the pillar card.
+  recentScores: number[];
 }
 
 export interface ActivityProgress {
@@ -40,6 +43,13 @@ export interface ChildDashboard {
   trainingDays7d: number;
   trainingDays30d: number;
   lastSessionAt: Date | null;
+  // Current consecutive-days streak. Grace rule: if the kid hasn't trained
+  // today yet, the streak still counts back from yesterday (so the streak
+  // doesn't "die" mid-day until tomorrow rolls over). 0 means no streak.
+  streakDays: number;
+  // 7-element array, index 0 = today, index 6 = 6 days ago. true = trained.
+  // Used by the heatmap strip at the top of the dashboard.
+  weekdayPattern: boolean[];
   pillars: PillarSummary[];
   activities: ActivityProgress[];
   insights: ProgressInsight[];
@@ -47,7 +57,7 @@ export interface ChildDashboard {
 
 export const PILLAR_META: Record<
   ModuleKey,
-  { label: string; emoji: string; chip: string; bar: string; soft: string }
+  { label: string; emoji: string; chip: string; bar: string; soft: string; line: string }
 > = {
   memory: {
     label: BRAIN_MODULES.memory.name,
@@ -55,6 +65,7 @@ export const PILLAR_META: Record<
     chip: "bg-purple-100 text-purple-700",
     bar: "bg-purple-500",
     soft: "bg-purple-50",
+    line: "text-purple-500",
   },
   focus: {
     label: BRAIN_MODULES.focus.name,
@@ -62,6 +73,7 @@ export const PILLAR_META: Record<
     chip: "bg-green-100 text-green-700",
     bar: "bg-green-500",
     soft: "bg-green-50",
+    line: "text-green-500",
   },
   thinking: {
     label: BRAIN_MODULES.thinking.name,
@@ -69,5 +81,6 @@ export const PILLAR_META: Record<
     chip: "bg-orange-100 text-orange-700",
     bar: "bg-orange-500",
     soft: "bg-orange-50",
+    line: "text-orange-500",
   },
 };

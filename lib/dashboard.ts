@@ -123,16 +123,51 @@ export async function loadChildDashboard(
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 3600 * 1000);
   const days7 = new Set<string>();
   const days30 = new Set<string>();
+  const allTrainingDays = new Set<string>();
   for (const a of rawAttempts) {
     const day = a.createdAt.toISOString().slice(0, 10);
+    allTrainingDays.add(day);
     if (a.createdAt >= thirtyDaysAgo) days30.add(day);
     if (a.createdAt >= sevenDaysAgo) days7.add(day);
+  }
+
+  // ── Streak ────────────────────────────────────────────────────────────
+  // Count consecutive trained days ending today (or yesterday if today
+  // hasn't been trained yet — gives the kid a grace day so streak doesn't
+  // "die" mid-day before bedtime).
+  const todayLocal = new Date();
+  todayLocal.setHours(0, 0, 0, 0);
+  const dayKey = (d: Date): string => d.toISOString().slice(0, 10);
+
+  let streakDays = 0;
+  const cursor = new Date(todayLocal);
+  if (allTrainingDays.has(dayKey(cursor))) {
+    while (allTrainingDays.has(dayKey(cursor))) {
+      streakDays += 1;
+      cursor.setDate(cursor.getDate() - 1);
+    }
+  } else {
+    // Grace: today not trained yet, count back from yesterday
+    cursor.setDate(cursor.getDate() - 1);
+    while (allTrainingDays.has(dayKey(cursor))) {
+      streakDays += 1;
+      cursor.setDate(cursor.getDate() - 1);
+    }
+  }
+
+  // ── 7-day heatmap pattern ────────────────────────────────────────────
+  // Index 0 = today, 6 = 6 days ago. true means trained that day.
+  const weekdayPattern: boolean[] = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(todayLocal);
+    d.setDate(todayLocal.getDate() - i);
+    weekdayPattern.push(allTrainingDays.has(dayKey(d)));
   }
 
   const pillars: PillarSummary[] = PILLARS.map((p) => {
     const inPillar = rawAttempts.filter((a) => a.moduleKey === p);
     if (inPillar.length === 0) {
-      return { pillar: p, attempts: 0, avgScore: null, trend: "n/a" };
+      return { pillar: p, attempts: 0, avgScore: null, trend: "n/a", recentScores: [] };
     }
     const sum = inPillar.reduce((s, a) => s + a.finalActivityScore, 0);
     const avgScore = Math.round(sum / inPillar.length);
@@ -150,7 +185,14 @@ export async function loadChildDashboard(
       trend = "n/a";
     }
 
-    return { pillar: p, attempts: inPillar.length, avgScore, trend };
+    // rawAttempts (and therefore inPillar) is ordered newest-first. The
+    // sparkline wants chronological (oldest → newest) so we reverse.
+    const recentScores = inPillar
+      .slice(0, 10)
+      .map((a) => a.finalActivityScore)
+      .reverse();
+
+    return { pillar: p, attempts: inPillar.length, avgScore, trend, recentScores };
   });
 
   const activities: ActivityProgress[] = Object.values(BRAIN_ACTIVITIES).map(
@@ -184,6 +226,8 @@ export async function loadChildDashboard(
     trainingDays7d: days7.size,
     trainingDays30d: days30.size,
     lastSessionAt,
+    streakDays,
+    weekdayPattern,
     pillars,
     activities,
     insights,

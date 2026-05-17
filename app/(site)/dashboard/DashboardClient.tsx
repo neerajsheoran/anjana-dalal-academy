@@ -16,6 +16,7 @@ import {
   TrendingUp,
   TrendingDown,
   Minus,
+  Calendar,
 } from 'lucide-react';
 import {
   PILLAR_META,
@@ -141,12 +142,21 @@ export default function DashboardClient({
           <FirstSessionEmptyState childName={data.child.name} />
         ) : (
           <>
-            {/* Top stats strip */}
+            {/* 7-day training heatmap — the visual answer to "is my kid
+                actually using this?" Shown as a row of dots, one per day. */}
+            <WeekHeatmap
+              pattern={data.weekdayPattern}
+              streakDays={data.streakDays}
+              childName={data.child.name}
+            />
+
+            {/* Top stats strip. Swapped "days this week" for "current streak"
+                since the heatmap above already shows the days info. */}
             <div className="grid grid-cols-3 gap-3 mb-5">
               <Stat
                 icon={Flame}
-                value={`${data.trainingDays7d}`}
-                label={`day${data.trainingDays7d === 1 ? '' : 's'} this week`}
+                value={`${data.streakDays}`}
+                label={`day streak${data.streakDays === 1 ? '' : ''}`}
               />
               <Stat
                 icon={Activity}
@@ -241,6 +251,9 @@ export default function DashboardClient({
                             )}
                           </p>
                         </div>
+                        {p.recentScores.length >= 2 && (
+                          <Sparkline scores={p.recentScores} colorClass={meta.line} />
+                        )}
                         <p className="text-xl font-bold text-ink shrink-0">
                           {avg}<span className="text-xs text-ink-light">/100</span>
                         </p>
@@ -349,6 +362,132 @@ const ACTIVITY_AGE: Record<string, [number, number]> = {
 function BRAIN_AGE_RANGE(a: { activityKey: string }): string {
   const r = ACTIVITY_AGE[a.activityKey];
   return r ? `${r[0]}–${r[1]}` : '?–?';
+}
+
+// ── WeekHeatmap ──────────────────────────────────────────────────────────
+// 7-day visual: filled dot if trained, empty dot if not. Today is on the
+// right (most recent), 6 days ago on the left. Single-letter day labels;
+// today's column is bolded so the orientation is obvious.
+function WeekHeatmap({
+  pattern,
+  streakDays,
+  childName,
+}: {
+  pattern: boolean[];      // index 0 = today, 6 = 6 days ago
+  streakDays: number;
+  childName: string;
+}) {
+  // Display order: left → right reads oldest → today. Reverse the input.
+  const cells = [...pattern].reverse();
+
+  // Single-letter day labels for the last 7 days, derived from today.
+  const today = new Date();
+  const dayLabels: string[] = [];
+  const isToday: boolean[] = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const letter = d.toLocaleDateString('en', { weekday: 'narrow' });
+    dayLabels.push(letter);
+    isToday.push(i === 0);
+  }
+
+  const daysTrained = pattern.filter(Boolean).length;
+  const trainedToday = pattern[0];
+
+  return (
+    <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
+      <div className="flex items-center gap-2 mb-4">
+        <Calendar className="w-4 h-4 text-brand" strokeWidth={2} />
+        <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+          This Week
+        </h2>
+      </div>
+      <div className="flex items-end justify-between gap-1 mb-3">
+        {cells.map((trained, i) => (
+          <div key={i} className="flex-1 flex flex-col items-center gap-1.5 min-w-0">
+            <div
+              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full transition-colors ${
+                trained
+                  ? 'bg-brand ring-2 ring-brand/30'
+                  : 'bg-cool-line'
+              } ${isToday[i] ? 'ring-2 ring-offset-1 ring-brand' : ''}`}
+              aria-label={trained ? 'trained' : 'no session'}
+            />
+            <span
+              className={`text-[10px] ${
+                isToday[i] ? 'font-bold text-ink' : 'text-ink-light'
+              }`}
+            >
+              {dayLabels[i]}
+            </span>
+          </div>
+        ))}
+      </div>
+      <p className="text-xs text-ink-soft text-center leading-relaxed">
+        {childName} trained <strong className="text-ink">{daysTrained} of 7 days</strong>
+        {streakDays > 0 && (
+          <>
+            {' · '}
+            <span className="inline-flex items-center gap-1 text-orange-600 font-semibold">
+              <Flame className="w-3.5 h-3.5" strokeWidth={2.5} fill="currentColor" />
+              {streakDays}-day streak
+            </span>
+          </>
+        )}
+        {!trainedToday && streakDays > 0 && (
+          <span className="block text-[11px] text-ink-light mt-1">
+            No session today yet — train to keep the streak alive
+          </span>
+        )}
+      </p>
+    </section>
+  );
+}
+
+// ── Sparkline ────────────────────────────────────────────────────────────
+// Tiny inline SVG line chart. Takes 2+ scores (0-100 scale) and renders a
+// ~64×20 polyline. No axes / labels — purely the trend shape, embedded in
+// the pillar card next to the average score.
+function Sparkline({
+  scores,
+  colorClass,
+}: {
+  scores: number[];   // chronological, length >= 2
+  colorClass: string; // tailwind text-color, e.g. "text-purple-500"
+}) {
+  const w = 64;
+  const h = 20;
+  const pad = 1;
+  const max = 100;
+  const min = 0;
+  const range = max - min;
+  const step = (w - pad * 2) / (scores.length - 1);
+  const points = scores
+    .map((s, i) => {
+      const x = pad + i * step;
+      const y = h - pad - ((s - min) / range) * (h - pad * 2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(' ');
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox={`0 0 ${w} ${h}`}
+      className={`shrink-0 ${colorClass}`}
+      aria-hidden="true"
+    >
+      <polyline
+        points={points}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 }
 
 function Stat({
