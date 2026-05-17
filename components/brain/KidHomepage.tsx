@@ -86,11 +86,14 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
           </Link>
         </div>
 
-        {/* Class shortcut — only when classId is set */}
+        {/* School cards. When the kid has a classId we surface BOTH:
+              1. Their class (primary, 90% case)
+              2. Explore all classes & subjects (browsing, 10% case)
+            When no classId is set, only the Explore card shows. */}
         {child.classId && (
           <Link
             href={`/class/${child.classId}`}
-            className="block bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-5 mb-4 transition-colors"
+            className="block bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-5 mb-3 transition-colors"
           >
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl bg-blue-400/20 flex items-center justify-center text-2xl shrink-0">
@@ -98,7 +101,7 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-blue-200 text-[11px] font-semibold uppercase tracking-wider mb-0.5">
-                  School
+                  Your School Work
                 </p>
                 <h3 className="text-base font-bold">
                   {CLASS_LABEL[child.classId] || child.classId} practice
@@ -112,26 +115,33 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
           </Link>
         )}
 
-        {/* No class set — gentle prompt to add one (parent only) */}
-        {!child.classId && (
-          <Link
-            href="/learn"
-            className="block bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-4 mb-4 transition-colors"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-blue-400/20 flex items-center justify-center text-xl shrink-0">
-                📚
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold">School practice</p>
-                <p className="text-blue-100/60 text-[11px]">
-                  Browse Class 1–10 Maths and Science
-                </p>
-              </div>
-              <ChevronRight className="w-4 h-4 text-white/40" strokeWidth={2.5} />
+        {/* Explore card — always shown. Same visual weight as the School
+            card above, distinct accent color so the two are easy to tell
+            apart at a glance. Tappable for curiosity-driven browsing. */}
+        <Link
+          href="/learn"
+          className="block bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-5 mb-4 transition-colors"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-emerald-400/20 flex items-center justify-center text-2xl shrink-0">
+              🧭
             </div>
-          </Link>
-        )}
+            <div className="flex-1 min-w-0">
+              <p className="text-emerald-200 text-[11px] font-semibold uppercase tracking-wider mb-0.5">
+                Explore
+              </p>
+              <h3 className="text-base font-bold">
+                {child.classId
+                  ? 'See other classes & subjects'
+                  : 'Browse all classes & subjects'}
+              </h3>
+              <p className="text-emerald-100/70 text-xs">
+                Peek at Maths and Science from any class, 1 to 10
+              </p>
+            </div>
+            <ChevronRight className="w-5 h-5 text-white/60" strokeWidth={2.5} />
+          </div>
+        </Link>
 
         <p className="text-center text-[11px] text-blue-200/50 mt-6">
           Use the avatar at the top right to switch profiles
