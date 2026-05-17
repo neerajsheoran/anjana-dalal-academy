@@ -4,12 +4,16 @@
 // Per cognilift-privacy-consent.md: parent owns the account, kids never log in.
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Users,
   UserPlus,
   RotateCcw,
   Trash2,
   Brain as BrainIcon,
+  LogIn,
+  CheckCircle2,
+  X,
 } from 'lucide-react';
 import {
   CLASS_OPTIONS,
@@ -37,10 +41,20 @@ const AGE_GROUP_LABEL: Record<string, string> = {
 };
 
 export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: boolean }) {
+  const router = useRouter();
   const [children, setChildren] = useState<Child[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [showAdd, setShowAdd] = useState(false);
   const [hasPin, setHasPin] = useState(hasPinInitial);
+  const [justAddedChildName, setJustAddedChildName] = useState<string | null>(null);
+  const [justAddedChildId, setJustAddedChildId] = useState<string | null>(null);
+
+  // Switch-to-child state. When `switchTarget` is set, an inline PIN prompt
+  // appears below the children list (only needed when a PIN is set).
+  const [switchTarget, setSwitchTarget] = useState<Child | null>(null);
+  const [switchPin, setSwitchPin] = useState('');
+  const [switchSubmitting, setSwitchSubmitting] = useState(false);
+  const [switchError, setSwitchError] = useState('');
 
   // Add-form state
   const [name, setName] = useState('');
@@ -153,6 +167,13 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
         throw new Error(data.error || 'Failed to save profile');
       }
 
+      // Capture the new child so we can offer a one-tap "Switch to {name}"
+      // banner. Without this, the parent has to navigate to /kids to start
+      // training the kid they just added.
+      const data = (await res.json().catch(() => ({}))) as { id?: string };
+      setJustAddedChildName(name.trim());
+      setJustAddedChildId(data.id || null);
+
       resetForm();
       await refresh();
     } catch (err) {
@@ -160,6 +181,52 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     } finally {
       setSubmitting(false);
     }
+  }
+
+  // Triggered by the "Switch" row button OR the post-add banner CTA. If no
+  // PIN is set, the swap is immediate. Otherwise we surface an inline PIN
+  // prompt (same flow as /kids).
+  function handleSwitchClick(child: Child) {
+    setSwitchError('');
+    setSwitchPin('');
+    if (!hasPin) {
+      doSwitch(child.id, '');
+      return;
+    }
+    setSwitchTarget(child);
+  }
+
+  async function doSwitch(childId: string, pinValue: string) {
+    setSwitchSubmitting(true);
+    setSwitchError('');
+    try {
+      const res = await fetch('/api/children/active', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ childId, pin: pinValue }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Failed to switch profile');
+      }
+      // Success → land on /brain where training happens. Refresh so the
+      // server components see the new active-child cookie.
+      router.push('/brain');
+      router.refresh();
+    } catch (err) {
+      setSwitchError(err instanceof Error ? err.message : 'Something went wrong');
+      setSwitchSubmitting(false);
+    }
+  }
+
+  function handleSwitchPinSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!switchTarget) return;
+    if (!/^\d{4}$/.test(switchPin)) {
+      setSwitchError('PIN must be 4 digits');
+      return;
+    }
+    doSwitch(switchTarget.id, switchPin);
   }
 
   async function handleDelete(child: Child) {
@@ -205,6 +272,95 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
       {loading && <p className="text-sm text-ink-light">Loading…</p>}
 
+      {/* Post-add success banner: one-tap switch into the kid we just made */}
+      {justAddedChildName && justAddedChildId && (
+        <div className="mb-4 bg-emerald-50 border border-emerald-200 rounded-xl p-3 flex items-center gap-3">
+          <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" strokeWidth={2.5} />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold text-emerald-900">
+              Added {justAddedChildName}
+            </p>
+            <p className="text-xs text-emerald-700">
+              Switch to their profile to start training, or stay here to add more.
+            </p>
+          </div>
+          <button
+            onClick={() => {
+              const child = children?.find((c) => c.id === justAddedChildId);
+              if (child) handleSwitchClick(child);
+            }}
+            disabled={switchSubmitting}
+            className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-3 py-1.5 rounded-lg text-xs transition-colors shrink-0 disabled:opacity-50"
+          >
+            <LogIn className="w-3.5 h-3.5" strokeWidth={2.5} />
+            Switch
+          </button>
+          <button
+            onClick={() => {
+              setJustAddedChildName(null);
+              setJustAddedChildId(null);
+            }}
+            className="text-emerald-700 hover:bg-emerald-100 rounded p-1 shrink-0"
+            aria-label="Dismiss"
+          >
+            <X className="w-3.5 h-3.5" strokeWidth={2.5} />
+          </button>
+        </div>
+      )}
+
+      {/* Inline PIN prompt for switching (only shown if a PIN is set) */}
+      {switchTarget && (
+        <form
+          onSubmit={handleSwitchPinSubmit}
+          className="mb-4 bg-cream border border-warm-line rounded-xl p-4"
+        >
+          <p className="text-sm font-semibold text-ink mb-1">
+            Enter your parent PIN to switch to {switchTarget.name}
+          </p>
+          <p className="text-xs text-ink-soft mb-3">
+            Kid mode hides parent settings and payment screens.
+          </p>
+          <input
+            type="password"
+            inputMode="numeric"
+            pattern="\d{4}"
+            value={switchPin}
+            onChange={(e) =>
+              setSwitchPin(e.target.value.replace(/\D/g, '').slice(0, 4))
+            }
+            className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white tracking-widest mb-2"
+            placeholder="••••"
+            maxLength={4}
+            autoFocus
+            required
+          />
+          {switchError && (
+            <p className="text-red-600 text-xs mb-2">{switchError}</p>
+          )}
+          <div className="flex gap-2">
+            <button
+              type="submit"
+              disabled={switchSubmitting}
+              className="flex-1 bg-brand hover:bg-brand-hover text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
+            >
+              {switchSubmitting ? 'Switching…' : `Switch to ${switchTarget.name}`}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSwitchTarget(null);
+                setSwitchPin('');
+                setSwitchError('');
+              }}
+              disabled={switchSubmitting}
+              className="px-4 py-2 text-sm text-ink-soft hover:text-ink transition-colors"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      )}
+
       {!loading && children !== null && children.length === 0 && !showAdd && (
         <div className="text-center py-6">
           <div className="w-14 h-14 rounded-xl bg-cream border border-warm-line flex items-center justify-center mx-auto mb-3">
@@ -245,6 +401,15 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                   </p>
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
+                  <button
+                    onClick={() => handleSwitchClick(child)}
+                    disabled={switchSubmitting}
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-brand hover:bg-cream transition-colors disabled:opacity-40"
+                    aria-label={`Switch to ${child.name}'s profile`}
+                    title="Switch to this child's profile"
+                  >
+                    <LogIn className="w-4 h-4" strokeWidth={2.25} />
+                  </button>
                   <button
                     onClick={() => handleReset(child)}
                     className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-amber-600 hover:bg-amber-50 transition-colors"
