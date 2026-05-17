@@ -111,6 +111,25 @@ export async function POST(req: Request) {
   }
 
   try {
+    // Reject duplicate names within the same parent — two profiles called
+    // "Aanya" would make the kid picker ambiguous. Case-insensitive.
+    const siblingsSnap = await adminDb
+      .collection("users")
+      .doc(uid)
+      .collection("children")
+      .get();
+    const nameLower = name.toLowerCase();
+    const duplicate = siblingsSnap.docs.find(
+      (d) =>
+        ((d.data().name as string) || "").trim().toLowerCase() === nameLower,
+    );
+    if (duplicate) {
+      return NextResponse.json(
+        { error: `You already have a child named ${name}.` },
+        { status: 409 },
+      );
+    }
+
     const docRef = await adminDb
       .collection("users")
       .doc(uid)

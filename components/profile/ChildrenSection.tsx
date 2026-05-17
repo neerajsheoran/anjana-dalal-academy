@@ -14,6 +14,7 @@ import {
   LogIn,
   CheckCircle2,
   X,
+  Pencil,
 } from 'lucide-react';
 import {
   CLASS_OPTIONS,
@@ -55,6 +56,15 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   const [switchPin, setSwitchPin] = useState('');
   const [switchSubmitting, setSwitchSubmitting] = useState(false);
   const [switchError, setSwitchError] = useState('');
+
+  // Edit-child state. The row whose id matches `editingChildId` renders an
+  // inline edit form instead of the normal display.
+  const [editingChildId, setEditingChildId] = useState<string | null>(null);
+  const [editName, setEditName] = useState('');
+  const [editAge, setEditAge] = useState('');
+  const [editClassId, setEditClassId] = useState('');
+  const [editSubmitting, setEditSubmitting] = useState(false);
+  const [editError, setEditError] = useState('');
 
   // Add-form state
   const [name, setName] = useState('');
@@ -216,6 +226,57 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     } catch (err) {
       setSwitchError(err instanceof Error ? err.message : 'Something went wrong');
       setSwitchSubmitting(false);
+    }
+  }
+
+  function startEdit(child: Child) {
+    setEditingChildId(child.id);
+    setEditName(child.name);
+    setEditAge(String(child.age));
+    setEditClassId(child.classId || '');
+    setEditError('');
+  }
+
+  function cancelEdit() {
+    setEditingChildId(null);
+    setEditName('');
+    setEditAge('');
+    setEditClassId('');
+    setEditError('');
+  }
+
+  async function saveEdit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!editingChildId) return;
+    setEditError('');
+
+    const ageNum = parseInt(editAge, 10);
+    if (!editName.trim()) return setEditError('Name is required.');
+    if (!Number.isInteger(ageNum) || ageNum < 5 || ageNum > 15) {
+      return setEditError('Age must be a whole number between 5 and 15.');
+    }
+
+    setEditSubmitting(true);
+    try {
+      const res = await fetch(`/api/children/${editingChildId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: editName.trim(),
+          age: ageNum,
+          classId: editClassId || null,
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Failed to update profile');
+      }
+      cancelEdit();
+      await refresh();
+    } catch (err) {
+      setEditError(err instanceof Error ? err.message : 'Something went wrong');
+    } finally {
+      setEditSubmitting(false);
     }
   }
 
@@ -383,52 +444,135 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
       {!loading && children && children.length > 0 && (
         <>
           <div className="space-y-2 mb-4">
-            {children.map((child) => (
-              <div
-                key={child.id}
-                className="flex items-center gap-3 p-3 rounded-xl bg-white border border-cool-line"
-              >
-                <div className="w-10 h-10 rounded-full bg-cream border border-warm-line text-brand font-bold flex items-center justify-center shrink-0">
-                  {child.name[0]?.toUpperCase() || '?'}
+            {children.map((child) =>
+              editingChildId === child.id ? (
+                <form
+                  key={child.id}
+                  onSubmit={saveEdit}
+                  className="bg-cream border border-warm-line rounded-xl p-4 space-y-3"
+                >
+                  <div>
+                    <label className="block text-xs font-medium text-ink mb-1">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      value={editName}
+                      onChange={(e) => setEditName(e.target.value)}
+                      maxLength={50}
+                      className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+                      required
+                      autoFocus
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-ink mb-1">
+                      Age
+                    </label>
+                    <input
+                      type="number"
+                      value={editAge}
+                      onChange={(e) => setEditAge(e.target.value)}
+                      min={5}
+                      max={15}
+                      className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+                      required
+                    />
+                    <p className="text-[11px] text-ink-light mt-1">
+                      Used to choose age-appropriate games.
+                    </p>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-ink mb-1">
+                      School class <span className="text-ink-light">(optional)</span>
+                    </label>
+                    <select
+                      value={editClassId}
+                      onChange={(e) => setEditClassId(e.target.value)}
+                      className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+                    >
+                      <option value="">Not in CBSE / homeschooled</option>
+                      {CLASS_OPTIONS.map((o) => (
+                        <option key={o.id} value={o.id}>
+                          {o.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  {editError && <p className="text-red-600 text-xs">{editError}</p>}
+                  <div className="flex gap-2">
+                    <button
+                      type="submit"
+                      disabled={editSubmitting}
+                      className="flex-1 bg-brand hover:bg-brand-hover text-white font-semibold py-2 rounded-lg text-sm transition-colors disabled:opacity-50"
+                    >
+                      {editSubmitting ? 'Saving…' : 'Save changes'}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={cancelEdit}
+                      disabled={editSubmitting}
+                      className="px-4 py-2 text-sm text-ink-soft hover:text-ink transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              ) : (
+                <div
+                  key={child.id}
+                  className="flex items-center gap-3 p-3 rounded-xl bg-white border border-cool-line"
+                >
+                  <div className="w-10 h-10 rounded-full bg-cream border border-warm-line text-brand font-bold flex items-center justify-center shrink-0">
+                    {child.name[0]?.toUpperCase() || '?'}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-semibold text-ink truncate">{child.name}</p>
+                    <p className="text-xs text-ink-light">
+                      Age {child.age}
+                      {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
+                      {' · '}
+                      {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-1 shrink-0">
+                    <button
+                      onClick={() => handleSwitchClick(child)}
+                      disabled={switchSubmitting}
+                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-brand hover:bg-cream transition-colors disabled:opacity-40"
+                      aria-label={`Switch to ${child.name}'s profile`}
+                      title="Switch to this child's profile"
+                    >
+                      <LogIn className="w-4 h-4" strokeWidth={2.25} />
+                    </button>
+                    <button
+                      onClick={() => startEdit(child)}
+                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-ink-soft hover:bg-cream transition-colors"
+                      aria-label={`Edit ${child.name}`}
+                      title="Edit name, age, or class"
+                    >
+                      <Pencil className="w-4 h-4" strokeWidth={2.25} />
+                    </button>
+                    <button
+                      onClick={() => handleReset(child)}
+                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-amber-600 hover:bg-amber-50 transition-colors"
+                      aria-label={`Reset progress for ${child.name}`}
+                      title="Clear training history, keep profile"
+                    >
+                      <RotateCcw className="w-4 h-4" strokeWidth={2.25} />
+                    </button>
+                    <button
+                      onClick={() => handleDelete(child)}
+                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
+                      aria-label={`Remove ${child.name}`}
+                      title="Permanently delete profile + history"
+                    >
+                      <Trash2 className="w-4 h-4" strokeWidth={2.25} />
+                    </button>
+                  </div>
                 </div>
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-semibold text-ink truncate">{child.name}</p>
-                  <p className="text-xs text-ink-light">
-                    Age {child.age}
-                    {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
-                    {' · '}
-                    {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
-                  </p>
-                </div>
-                <div className="flex items-center gap-1 shrink-0">
-                  <button
-                    onClick={() => handleSwitchClick(child)}
-                    disabled={switchSubmitting}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-brand hover:bg-cream transition-colors disabled:opacity-40"
-                    aria-label={`Switch to ${child.name}'s profile`}
-                    title="Switch to this child's profile"
-                  >
-                    <LogIn className="w-4 h-4" strokeWidth={2.25} />
-                  </button>
-                  <button
-                    onClick={() => handleReset(child)}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-amber-600 hover:bg-amber-50 transition-colors"
-                    aria-label={`Reset progress for ${child.name}`}
-                    title="Clear training history, keep profile"
-                  >
-                    <RotateCcw className="w-4 h-4" strokeWidth={2.25} />
-                  </button>
-                  <button
-                    onClick={() => handleDelete(child)}
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
-                    aria-label={`Remove ${child.name}`}
-                    title="Permanently delete profile + history"
-                  >
-                    <Trash2 className="w-4 h-4" strokeWidth={2.25} />
-                  </button>
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
 
           {!showAdd && (
