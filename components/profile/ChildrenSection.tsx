@@ -521,53 +521,59 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               ) : (
                 <div
                   key={child.id}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white border border-cool-line"
+                  className="rounded-xl bg-white border border-cool-line overflow-hidden"
                 >
-                  <div className="w-10 h-10 rounded-full bg-cream border border-warm-line text-brand font-bold flex items-center justify-center shrink-0">
-                    {child.name[0]?.toUpperCase() || '?'}
+                  {/* Top: avatar + identity (info only, no actions) */}
+                  <div className="flex items-center gap-3 p-3">
+                    <div className="w-10 h-10 rounded-full bg-cream border border-warm-line text-brand font-bold flex items-center justify-center shrink-0">
+                      {child.name[0]?.toUpperCase() || '?'}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold text-ink truncate">{child.name}</p>
+                      <p className="text-xs text-ink-light">
+                        Age {child.age}
+                        {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
+                        {' · '}
+                        {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
+                      </p>
+                    </div>
                   </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-semibold text-ink truncate">{child.name}</p>
-                    <p className="text-xs text-ink-light">
-                      Age {child.age}
-                      {child.classId && ` · ${CLASS_LABEL[child.classId] || child.classId}`}
-                      {' · '}
-                      {AGE_GROUP_LABEL[child.ageGroup] || child.ageGroup}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-1 shrink-0">
+                  {/* Bottom: 4-column action row (icon + label).
+                      Labels are always visible — readable on mobile/tablet
+                      where hover tooltips don't exist. */}
+                  <div className="grid grid-cols-4 border-t border-cool-line text-[11px] sm:text-xs">
                     <button
                       onClick={() => handleSwitchClick(child)}
                       disabled={switchSubmitting}
-                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-brand hover:bg-cream transition-colors disabled:opacity-40"
+                      className="flex items-center justify-center gap-1.5 py-2.5 font-semibold text-brand hover:bg-cream transition-colors border-r border-cool-line disabled:opacity-40"
                       aria-label={`Switch to ${child.name}'s profile`}
-                      title="Switch to this child's profile"
                     >
-                      <LogIn className="w-4 h-4" strokeWidth={2.25} />
+                      <LogIn className="w-4 h-4 shrink-0" strokeWidth={2.25} />
+                      Switch
                     </button>
                     <button
                       onClick={() => startEdit(child)}
-                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-ink-soft hover:bg-cream transition-colors"
+                      className="flex items-center justify-center gap-1.5 py-2.5 font-semibold text-ink-soft hover:bg-cream transition-colors border-r border-cool-line"
                       aria-label={`Edit ${child.name}`}
-                      title="Edit name, age, or class"
                     >
-                      <Pencil className="w-4 h-4" strokeWidth={2.25} />
+                      <Pencil className="w-4 h-4 shrink-0" strokeWidth={2.25} />
+                      Edit
                     </button>
                     <button
                       onClick={() => handleReset(child)}
-                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-amber-600 hover:bg-amber-50 transition-colors"
+                      className="flex items-center justify-center gap-1.5 py-2.5 font-semibold text-amber-600 hover:bg-amber-50 transition-colors border-r border-cool-line"
                       aria-label={`Reset progress for ${child.name}`}
-                      title="Clear training history, keep profile"
                     >
-                      <RotateCcw className="w-4 h-4" strokeWidth={2.25} />
+                      <RotateCcw className="w-4 h-4 shrink-0" strokeWidth={2.25} />
+                      Reset
                     </button>
                     <button
                       onClick={() => handleDelete(child)}
-                      className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
+                      className="flex items-center justify-center gap-1.5 py-2.5 font-semibold text-red-600 hover:bg-red-50 transition-colors"
                       aria-label={`Remove ${child.name}`}
-                      title="Permanently delete profile + history"
                     >
-                      <Trash2 className="w-4 h-4" strokeWidth={2.25} />
+                      <Trash2 className="w-4 h-4 shrink-0" strokeWidth={2.25} />
+                      Remove
                     </button>
                   </div>
                 </div>
