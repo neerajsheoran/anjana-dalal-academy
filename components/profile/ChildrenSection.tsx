@@ -219,9 +219,10 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error || 'Failed to switch profile');
       }
-      // Success → land on /brain where training happens. Refresh so the
-      // server components see the new active-child cookie.
-      router.push('/brain');
+      // Success → land on / (KidHomepage), the kid's single home base.
+      // Same destination as tapping the site logo in kid mode, so there's
+      // one consistent landing screen in kid mode.
+      router.push('/');
       router.refresh();
     } catch (err) {
       setSwitchError(err instanceof Error ? err.message : 'Something went wrong');

@@ -42,9 +42,10 @@ export default function KidsPickerClient({
   function pickChild(child: ChildLite) {
     setError('');
     setPin('');
-    // Already on this child — just continue training, no swap needed
+    // Already on this child — just send them home so they pick what to do next.
+    // We land on / (KidHomepage) consistently so kid mode always has one home.
     if (child.id === activeChildId) {
-      router.push('/brain');
+      router.push('/');
       return;
     }
     // Already in kid mode → kid-to-kid switch is free (no PIN)
@@ -84,8 +85,10 @@ export default function KidsPickerClient({
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error || 'Failed to switch profile');
       }
-      // Success — go straight to the brain screen (where training happens).
-      router.push('/brain');
+      // Success — land on / (KidHomepage). It's the kid's single "home base"
+      // and surfaces both brain training and academic shortcuts. One extra tap
+      // to reach /brain, but consistent with tapping the logo while in kid mode.
+      router.push('/');
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
