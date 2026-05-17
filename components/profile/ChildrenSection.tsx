@@ -57,6 +57,15 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     refresh();
   }, []);
 
+  // Sync local hasPin with the prop. When PinSection sets a PIN and calls
+  // router.refresh(), the parent server component re-renders with the new
+  // hasPinInitial value — without this sync, ChildrenSection's local state
+  // stays stale and the add-child form would re-prompt for a PIN that's
+  // already set (which the API then rejects, blocking child creation).
+  useEffect(() => {
+    setHasPin(hasPinInitial);
+  }, [hasPinInitial]);
+
   async function refresh() {
     setLoading(true);
     try {

@@ -47,9 +47,18 @@ export async function POST(req: Request) {
     const userDoc = await adminDb.collection("users").doc(uid).get();
     const existingHash = userDoc.data()?.childPinHash as string | undefined;
 
-    // Changing an existing PIN — must verify the current one first
+    // Changing an existing PIN — must verify the current one first.
+    // Distinguish "no currentPin provided" (UI thinks no PIN exists, but one
+    // does — likely a stale-state bug) from "wrong currentPin" (real auth
+    // failure) so client + dashboard logs can react differently.
     if (existingHash) {
-      if (!currentPin || !verifyPin(currentPin, uid, existingHash)) {
+      if (!currentPin) {
+        return NextResponse.json(
+          { error: "A PIN is already set. Use the change-PIN flow with your current PIN.", code: "pin-already-set" },
+          { status: 409 },
+        );
+      }
+      if (!verifyPin(currentPin, uid, existingHash)) {
         return NextResponse.json(
           { error: "Current PIN is incorrect" },
           { status: 401 },
