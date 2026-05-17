@@ -6,7 +6,9 @@
 
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useState } from 'react';
 import {
+  ChevronLeft,
   ChevronRight,
   Activity,
   Clock,
@@ -143,9 +145,10 @@ export default function DashboardClient({
         ) : (
           <>
             {/* 7-day training heatmap — the visual answer to "is my kid
-                actually using this?" Shown as a row of dots, one per day. */}
+                actually using this?" Shown as a row of dots, one per day.
+                The user can navigate back up to 4 weeks using the < > arrows. */}
             <WeekHeatmap
-              pattern={data.weekdayPattern}
+              trainingDayKeys={data.trainingDayKeys}
               streakDays={data.streakDays}
               childName={data.child.name}
             />
@@ -156,7 +159,7 @@ export default function DashboardClient({
               <Stat
                 icon={Flame}
                 value={`${data.streakDays}`}
-                label={`day streak${data.streakDays === 1 ? '' : ''}`}
+                label={data.streakDays === 1 ? 'day in a row' : 'days in a row'}
               />
               <Stat
                 icon={Activity}
@@ -206,8 +209,10 @@ export default function DashboardClient({
               <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest mb-1">
                 Pillar Scores
               </h2>
-              <p className="text-xs text-ink-light mb-4">
-                All-time average across {data.totalAttempts} round{data.totalAttempts === 1 ? '' : 's'}
+              <p className="text-xs text-ink-light mb-4 leading-relaxed">
+                How {data.child.name} is doing in each brain skill area.
+                Average score (0-100) across {data.totalAttempts} round{data.totalAttempts === 1 ? '' : 's'}.
+                Each card shows a mini trend line of the last 10 scores.
               </p>
               <div className="space-y-3">
                 {data.pillars.map((p) => {
@@ -365,82 +370,154 @@ function BRAIN_AGE_RANGE(a: { activityKey: string }): string {
 }
 
 // ── WeekHeatmap ──────────────────────────────────────────────────────────
-// 7-day visual: filled dot if trained, empty dot if not. Today is on the
-// right (most recent), 6 days ago on the left. Single-letter day labels;
-// today's column is bolded so the orientation is obvious.
+// 7-day visual: filled blue dot if the child trained at least one round
+// that day, empty grey dot otherwise. Left → right reads oldest → most
+// recent in the displayed window. Navigation: <  > arrows scroll back up
+// to 4 weeks. The CURRENT week's "today" column gets a ring highlight so
+// orientation is obvious; older weeks have no highlight.
+
+const MAX_WEEKS_BACK = 4;
+
 function WeekHeatmap({
-  pattern,
+  trainingDayKeys,
   streakDays,
   childName,
 }: {
-  pattern: boolean[];      // index 0 = today, 6 = 6 days ago
+  trainingDayKeys: string[];   // all ISO dates the kid trained in the last 35 days
   streakDays: number;
   childName: string;
 }) {
-  // Display order: left → right reads oldest → today. Reverse the input.
-  const cells = [...pattern].reverse();
+  const [weekOffset, setWeekOffset] = useState(0); // 0 = current week, 1 = last, ...
+  const trainedSet = new Set(trainingDayKeys);
 
-  // Single-letter day labels for the last 7 days, derived from today.
+  // Compute the 7 days to show for the given offset. The rightmost cell is
+  // "today minus (offset × 7)". So offset 0 → window ends today; offset 1 →
+  // window ends 7 days ago; etc.
   const today = new Date();
-  const dayLabels: string[] = [];
-  const isToday: boolean[] = [];
+  today.setHours(0, 0, 0, 0);
+
+  interface Cell {
+    date: Date;
+    iso: string;
+    trained: boolean;
+    isToday: boolean;
+    label: string;       // single-letter weekday
+    dayNum: number;      // day-of-month for tooltip
+  }
+  const cells: Cell[] = [];
   for (let i = 6; i >= 0; i--) {
     const d = new Date(today);
-    d.setDate(today.getDate() - i);
-    const letter = d.toLocaleDateString('en', { weekday: 'narrow' });
-    dayLabels.push(letter);
-    isToday.push(i === 0);
+    d.setDate(today.getDate() - i - weekOffset * 7);
+    const iso = d.toISOString().slice(0, 10);
+    cells.push({
+      date: d,
+      iso,
+      trained: trainedSet.has(iso),
+      isToday: weekOffset === 0 && i === 0,
+      label: d.toLocaleDateString('en', { weekday: 'narrow' }),
+      dayNum: d.getDate(),
+    });
   }
 
-  const daysTrained = pattern.filter(Boolean).length;
-  const trainedToday = pattern[0];
+  const daysTrained = cells.filter((c) => c.trained).length;
+  const trainedToday = weekOffset === 0 && cells[6].trained;
+
+  // Header label: "This Week" / "Last Week" / date range for older windows.
+  let weekLabel: string;
+  if (weekOffset === 0) {
+    weekLabel = 'This Week';
+  } else if (weekOffset === 1) {
+    weekLabel = 'Last Week';
+  } else {
+    const first = cells[0].date;
+    const last = cells[6].date;
+    const fmt = (d: Date) =>
+      d.toLocaleDateString('en', { day: 'numeric', month: 'short' });
+    weekLabel = `${fmt(first)} – ${fmt(last)}`;
+  }
+
+  const canPrev = weekOffset < MAX_WEEKS_BACK;
+  const canNext = weekOffset > 0;
 
   return (
     <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
-      <div className="flex items-center gap-2 mb-4">
-        <Calendar className="w-4 h-4 text-brand" strokeWidth={2} />
-        <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
-          This Week
-        </h2>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <Calendar className="w-4 h-4 text-brand" strokeWidth={2} />
+          <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+            {weekLabel}
+          </h2>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            type="button"
+            onClick={() => canPrev && setWeekOffset(weekOffset + 1)}
+            disabled={!canPrev}
+            aria-label="Previous week"
+            className="inline-flex items-center justify-center w-7 h-7 rounded-lg text-ink-soft hover:bg-cream transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <ChevronLeft className="w-4 h-4" strokeWidth={2.5} />
+          </button>
+          <button
+            type="button"
+            onClick={() => canNext && setWeekOffset(weekOffset - 1)}
+            disabled={!canNext}
+            aria-label="Next week"
+            className="inline-flex items-center justify-center w-7 h-7 rounded-lg text-ink-soft hover:bg-cream transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
+          </button>
+        </div>
       </div>
       <div className="flex items-end justify-between gap-1 mb-3">
-        {cells.map((trained, i) => (
+        {cells.map((c, i) => (
           <div key={i} className="flex-1 flex flex-col items-center gap-1.5 min-w-0">
             <div
+              title={`${c.iso}${c.trained ? ' — trained' : ' — no session'}`}
               className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full transition-colors ${
-                trained
+                c.trained
                   ? 'bg-brand ring-2 ring-brand/30'
                   : 'bg-cool-line'
-              } ${isToday[i] ? 'ring-2 ring-offset-1 ring-brand' : ''}`}
-              aria-label={trained ? 'trained' : 'no session'}
+              } ${c.isToday ? 'ring-2 ring-offset-1 ring-brand' : ''}`}
+              aria-label={
+                c.trained
+                  ? `Trained on ${c.iso}`
+                  : `No session on ${c.iso}`
+              }
             />
             <span
               className={`text-[10px] ${
-                isToday[i] ? 'font-bold text-ink' : 'text-ink-light'
+                c.isToday ? 'font-bold text-ink' : 'text-ink-light'
               }`}
             >
-              {dayLabels[i]}
+              {c.label}
             </span>
           </div>
         ))}
       </div>
       <p className="text-xs text-ink-soft text-center leading-relaxed">
-        {childName} trained <strong className="text-ink">{daysTrained} of 7 days</strong>
-        {streakDays > 0 && (
+        {childName} did at least one session on{' '}
+        <strong className="text-ink">{daysTrained} of 7 days</strong>
+        {weekOffset === 0 && streakDays > 0 && (
           <>
             {' · '}
             <span className="inline-flex items-center gap-1 text-orange-600 font-semibold">
               <Flame className="w-3.5 h-3.5" strokeWidth={2.5} fill="currentColor" />
-              {streakDays}-day streak
+              {streakDays} day{streakDays === 1 ? '' : 's'} in a row
             </span>
           </>
         )}
-        {!trainedToday && streakDays > 0 && (
+        {weekOffset === 0 && !trainedToday && streakDays > 0 && (
           <span className="block text-[11px] text-ink-light mt-1">
-            No session today yet — train to keep the streak alive
+            No session today yet — train to keep the run going
           </span>
         )}
       </p>
+      {weekOffset === 0 && (
+        <p className="text-[10px] text-ink-light text-center mt-2 leading-relaxed">
+          Blue dot = at least one brain-game session that day · grey = none
+        </p>
+      )}
     </section>
   );
 }

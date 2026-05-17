@@ -164,6 +164,14 @@ export async function loadChildDashboard(
     weekdayPattern.push(allTrainingDays.has(dayKey(d)));
   }
 
+  // ── Training-day keys for the heatmap's week-back navigation ─────────
+  // Only the last 35 days (5 weeks) — the heatmap caps navigation at 4
+  // weeks back, and we don't need history older than that for this widget.
+  const thirtyFiveDaysAgo = new Date(Date.now() - 35 * 24 * 3600 * 1000);
+  const trainingDayKeys = Array.from(allTrainingDays).filter((key) => {
+    return new Date(key).getTime() >= thirtyFiveDaysAgo.getTime();
+  });
+
   const pillars: PillarSummary[] = PILLARS.map((p) => {
     const inPillar = rawAttempts.filter((a) => a.moduleKey === p);
     if (inPillar.length === 0) {
@@ -228,6 +236,7 @@ export async function loadChildDashboard(
     lastSessionAt,
     streakDays,
     weekdayPattern,
+    trainingDayKeys,
     pillars,
     activities,
     insights,

@@ -50,6 +50,10 @@ export interface ChildDashboard {
   // 7-element array, index 0 = today, index 6 = 6 days ago. true = trained.
   // Used by the heatmap strip at the top of the dashboard.
   weekdayPattern: boolean[];
+  // All ISO date strings (YYYY-MM-DD) within the last 35 days on which the
+  // child trained. Lets the heatmap navigate back up to 4 weeks without
+  // refetching data — the client picks any 7-day window from this set.
+  trainingDayKeys: string[];
   pillars: PillarSummary[];
   activities: ActivityProgress[];
   insights: ProgressInsight[];
