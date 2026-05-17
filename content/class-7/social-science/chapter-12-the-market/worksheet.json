@@ -1,0 +1,107 @@
+{
+  "chapterRef": "class-7/social-science/chapter-12-the-market/worksheet",
+  "topics": [
+    {
+      "topic": "What is a Market and How Prices Form",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "A periodic rural market (often weekly) is commonly called a:",
+          "options": ["Mall", "Haat", "Mandi", "Bazaar"],
+          "answer": "Haat",
+          "explanation": "A haat is a periodic rural market (usually weekly) in many parts of India. Mandis are typically wholesale markets (especially for food), and malls are large multi-store shopping complexes."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The price at which a buyer is willing to buy and a seller is willing to sell is determined by:",
+          "options": [
+            "The government only",
+            "The interaction of supply and demand",
+            "The buyer alone",
+            "The seller alone"
+          ],
+          "answer": "The interaction of supply and demand",
+          "explanation": "Prices in a market are settled through the interaction of supply (what sellers offer) and demand (what buyers want). At the right price, both sides are satisfied enough for trade to happen."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Goods sold by an Indian seller to a buyer in another country are called _______ .",
+          "answer": "exports",
+          "explanation": "Exports are goods or services sold to buyers in other countries. Imports are goods or services bought from sellers in other countries."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Explain why fruits and vegetables become cheaper at the weekly market late in the evening.",
+          "answer": "Fruits and vegetables become cheaper late in the evening for a simple economic reason: they are PERISHABLE. Unlike clothes or electronics, fresh produce cannot be stored for long without losing value. By evening, sellers know that whatever they don't sell tonight will likely rot or lose quality by tomorrow. Their choice is: (1) sell now at a low price and get some money, OR (2) hold out for full price and risk getting NOTHING tomorrow. Most sellers choose (1) — better some money than none. So they reduce prices, sometimes drastically. This is supply and demand at work: the supply remains high (lots of vegetables still in stock), but as the closing hour approaches, the demand falls (most shoppers have gone home). The price adjusts downward to clear the remaining stock. Smart shoppers know this and buy late for discounts, accepting that the produce is less fresh. The same logic explains why woollen clothes get cheaper at the end of winter — demand falls when warm weather arrives, so prices fall to clear inventory. This is why bakery items are cheaper near closing time, and why airlines drop unsold seat prices near departure (or sometimes raise them — both happen depending on demand patterns). Markets respond to time and perishability through prices.",
+          "explanation": "Tests understanding of how time and perishability affect market prices."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Imagine a guava seller offers guavas at three different prices: ₹80, ₹20, ₹40 per kg. Explain what would happen at each price and why ₹40 might be the right price.",
+          "answer": "Each price would lead to a different market outcome, demonstrating how supply and demand find a balance. SCENARIO 1: PRICE TOO HIGH (₹80/KG). At ₹80, most buyers think guavas are overpriced. Some refuse to buy at all. Others walk to a different seller. A few customers — maybe wealthy ones or those who urgently need guavas — might still buy. The seller ends the day with most guavas UNSOLD. He takes them home. Some rot by morning. Even though the per-kg price was high, he made less money than expected because he sold so few. Next time, he may drop the price. SCENARIO 2: PRICE TOO LOW (₹20/KG). At ₹20, buyers swarm in. Everyone wants guavas at this bargain price. The stock sells out within hours. But the seller barely covers his costs — he bought the guavas from a wholesaler at maybe ₹18/kg. After paying for transport and labour, he loses money. He goes home empty-handed in another sense — pockets are full of cash but it's barely his cost. He may stop selling guavas next time, or he may switch to a different fruit. SCENARIO 3: PRICE JUST RIGHT (₹40/KG). At ₹40, several things happen well. (a) Buyers see it as fair: more expensive than the bargain ₹20 but much cheaper than the inflated ₹80. Most willing customers buy. (b) The seller makes a decent profit: he bought at ₹18, sells at ₹40, makes ₹22 profit per kg before expenses, leaving him with reasonable earnings. (c) Most of his stock sells by evening. (d) Both buyer and seller are satisfied — buyer doesn't feel cheated, seller doesn't lose. The market has reached EQUILIBRIUM. WHY ₹40 IS THE 'RIGHT' PRICE: Economists call this the equilibrium price — the price at which the quantity sellers want to supply equals the quantity buyers want to demand. At ₹80, supply > demand → unsold stock. At ₹20, demand > supply → stock sells out too fast at a loss. At ₹40, supply ≈ demand → balance. HOW THE MARKET FINDS THIS PRICE: Markets find it through trial and error. Day 1, the seller tries ₹80 — fails. Day 2, tries ₹50 — better but not great. Day 3, tries ₹40 — works. He settles there. Meanwhile other sellers do the same. Buyers also adjust — comparing prices across sellers, walking to cheaper ones. Over many days, all sellers converge on similar prices. The 'right' price is what enough buyers will pay AND that lets sellers profit reasonably. This is one of the great insights of economics: markets self-organise. No central planner sets prices. Through millions of small decisions by buyers and sellers, prices find their natural level. When demand changes (e.g., a festival approaches), prices adjust. When supply changes (e.g., bumper crop), prices adjust. The market is a constantly moving balance. This is why economies that allow markets to function tend to allocate resources more efficiently than those where one authority sets all prices (which often leads to shortages, surpluses, or black markets). The seller learning to price at ₹40 is doing what entire economies do — finding balance through small adjustments.",
+          "explanation": "Capstone question on how market equilibrium emerges through pricing experimentation."
+        }
+      ]
+    },
+    {
+      "topic": "Types of Markets and India's Trade",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The famous 16th-century bazaar that the Portuguese traveller Domingos Paes called 'the best-provided city in the world' was in:",
+          "options": ["Madurai", "Hampi", "Surat", "Delhi"],
+          "answer": "Hampi",
+          "explanation": "Hampi was the capital of the Vijayanagara Empire. Its bazaar, opposite the Virupaksha Temple, was famed for its abundance of goods — grains, silks, gold, diamonds, horses, spices — and traders from Persia, Arabia, China, and Europe."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which of these is NOT a major export from India?",
+          "options": [
+            "Software services",
+            "Pharmaceuticals",
+            "Crude oil",
+            "Textiles"
+          ],
+          "answer": "Crude oil",
+          "explanation": "Crude oil is one of India's biggest IMPORTS (we import 80-85% of our oil needs). Software services, pharmaceuticals, textiles, and engineering goods are major exports."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "Buying and selling in large quantities, typically by traders or shops rather than final consumers, is called _______ trade.",
+          "answer": "wholesale",
+          "explanation": "Wholesale trade involves selling large quantities at lower per-unit prices, usually to other businesses or retailers. Retail trade involves selling smaller quantities at higher per-unit prices to final consumers."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What are the advantages and disadvantages of online markets compared to physical markets?",
+          "answer": "Online markets (Amazon, Flipkart, Myntra, etc.) have transformed shopping in India and worldwide. Compared to physical markets, they have several advantages and disadvantages. ADVANTAGES of online markets: (1) Wide selection — millions of products available, far more than any physical shop. (2) Easy price comparison — you can check prices across sellers in seconds. (3) Customer reviews and ratings — see what others thought before buying. (4) Convenience — shop from home, anytime, day or night. (5) Delivery — goods come to your door. (6) Access for remote areas — even villagers can buy products available only in cities. (7) Often cheaper — online sellers have lower overhead than physical stores. DISADVANTAGES of online markets: (1) Cannot physically examine — no touch, smell, or trial before buying. (2) Delivery time — must wait days for goods. (3) Fraud and fake products — counterfeits, scams are real risks. (4) Returns can be inconvenient — packaging, scheduling pickup, waiting for refund. (5) Personal data is collected — companies track your every purchase. (6) Hurts local shops — kirana stores and small businesses struggle to compete on price. (7) Environmental cost — extra packaging waste, more delivery emissions. (8) Loss of personal relationships — no chat with the shopkeeper. (9) Requires smartphone and internet — excludes the poorest. (10) Tech failure can lock you out — if app or payment fails, you're stuck. ADVANTAGES of physical markets: trust, immediate possession, personal relationships, bargaining, no need for internet, immediate gratification, sensory experience. CONCLUSION: Both have their place. Most Indians use both — buying fresh food, urgent needs, or specific items locally, and books, electronics, branded goods online. A smart consumer uses each for what it does best.",
+          "explanation": "Tests comparative understanding of online vs physical markets."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain how markets can sometimes fail, and why government regulation is often necessary. Give examples.",
+          "answer": "Markets are powerful tools for organising economic activity, but they are not perfect. 'Market failure' refers to situations where free markets — left alone — produce bad outcomes. Understanding market failure helps us see why government regulation, consumer protection laws, and social policy matter. (1) MONOPOLY. When one seller dominates a market, customers have no real choice. The monopolist can charge unfair prices, give poor service, or sell low-quality products without losing business. Examples: a single phone company in a small town, a single hospital in an area, or one supplier of a critical drug. FIX: Competition law. India's Competition Commission investigates and breaks up monopolies. Anti-trust laws prevent companies from forming cartels. (2) HIDDEN INFORMATION (ASYMMETRIC INFORMATION). When one side of a transaction knows much more than the other, the less-informed side loses. The classic example: used cars — sellers know problems buyers can't see. Other examples: complicated insurance contracts, medical treatments where doctors know more than patients, food products with hidden ingredients. FIX: Disclosure laws (mandatory labelling), consumer protection regulations, professional standards, ratings/reviews. India's Food Safety and Standards Act requires labels on packaged food. (3) EXTERNALITIES. Sometimes a market transaction has costs (or benefits) on third parties not involved in the deal. NEGATIVE EXTERNALITIES: a factory makes cheap clothes but pollutes the river — downstream villagers pay the cost in poor health, but they were never part of the cloth-buying transaction. POSITIVE EXTERNALITIES: an educated workforce benefits the whole economy, but individuals don't capture all the value of their own education. FIX: For negative externalities — pollution laws, environmental taxes (carbon tax, plastic tax), penalties on polluters, mandatory treatment plants. For positive — government investment in education, health, research. (4) PUBLIC GOODS. Some things benefit everyone but no one wants to pay individually — streetlights, national defence, clean air, basic research, public parks. The market won't provide them because no individual buyer captures the full benefit. FIX: Government provides them, paid for through taxes. (5) INEQUALITY. Markets give more to those who already have more. A rich person can outbid a poor person for everything — including housing, education, healthcare. Without intervention, the poor get poorer over time, and society becomes more divided. FIX: Progressive taxation (rich pay more), minimum wages, free public education, free or subsidised healthcare, food security programmes, reservations to help disadvantaged groups. (6) SHORT-TERMISM. Markets often optimise for next quarter's profit, not next century's wellbeing. A company may use polluting technology that's profitable now but harmful long-term. FIX: Long-term regulations, climate policies, sustainability requirements, future-oriented planning. (7) CONSUMER VULNERABILITY. Some buyers are vulnerable — children, the elderly, the disabled. Without protection, they can be exploited (e.g., misleading ads, predatory loans, unsafe products). FIX: Consumer Protection Act, restrictions on ads to children, regulations on financial products. WHY INDIA HAS A MIXED ECONOMY: India is neither pure capitalism (let markets do everything) nor pure socialism (government does everything). It is a MIXED ECONOMY: (a) markets handle most production and exchange — far more efficient than central planning; (b) government regulates markets, protects consumers, provides public goods, and helps the poor; (c) civil society and ethics fill in additional gaps. This combination has worked well: India has grown its economy massively since 1991 reforms (when markets were given more space) while still providing food security, public healthcare, free schools, and social programmes for the poor. The lesson: markets are tools — incredibly powerful, but not the answer to everything. Use them where they work; regulate them where they fail; supplement them with public services where they cannot reach. The wisest economies — like India's — find a balance.",
+          "explanation": "Capstone question on the foundations of mixed-economy policy, applicable to India's actual economic model."
+        }
+      ]
+    }
+  ]
+}

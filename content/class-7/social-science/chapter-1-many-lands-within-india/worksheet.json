@@ -1,0 +1,156 @@
+{
+  "chapterRef": "class-7/social-science/chapter-1-many-lands-within-india/worksheet",
+  "topics": [
+    {
+      "topic": "The Five Regions of India",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Which is the seventh-largest country in the world by area?",
+          "options": ["China", "India", "USA", "Australia"],
+          "answer": "India",
+          "explanation": "India is the seventh-largest country in the world by area and the most populous. China, USA, and Australia are larger by area."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which of these is NOT one of the five geographical regions of India?",
+          "options": ["Himalayas", "Northern Plains", "Sahara", "Thar Desert"],
+          "answer": "Sahara",
+          "explanation": "The Sahara is in Africa. The five regions of India are: Himalayas, Northern Plains, Thar Desert, Peninsular South, and Islands."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "When asked how India looked from space, astronaut _______ replied, 'Sare jahan se achchha.'",
+          "answer": "Rakesh Sharma",
+          "explanation": "Rakesh Sharma, India's first astronaut, said this in a live broadcast in 1984 when speaking with PM Indira Gandhi."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Name the four natural boundaries of the Indian Subcontinent.",
+          "answer": "Himalayas in the north, Thar Desert and Arabian Sea in the west, Indian Ocean in the south, and Bay of Bengal in the east.",
+          "explanation": "These natural boundaries make the Subcontinent geographically distinct from the rest of Asia. They have shaped India's climate, culture, and history."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why is India called a 'subcontinent' instead of a separate continent?",
+          "answer": "India is called a subcontinent because, although it is geographically distinct from the rest of Asia due to natural barriers like the Himalayas, the Thar Desert, and the Indian Ocean, it sits on its own tectonic plate but is now part of the Asian continent (since the Indian plate collided with the Eurasian plate ~50 million years ago). Geographically, it has its own physical features and unique climate. Culturally, it developed its own distinct civilisations, languages, and traditions. So 'sub' means it is large enough to be like a continent in its own right, but technically part of the larger Asian continent. The term recognises both India's special character and its membership in Asia.",
+          "explanation": "This is both a geological and cultural classification — the term captures both India's tectonic origin and its civilisational distinctness."
+        }
+      ]
+    },
+    {
+      "topic": "The Himalayas",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The word 'Himalaya' comes from two Sanskrit words meaning:",
+          "options": ["High mountain", "Snow and abode", "Big and tall", "Cold and dry"],
+          "answer": "Snow and abode",
+          "explanation": "Himalaya = hima (snow) + alaya (abode), so 'abode of snow.'"
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which is the highest range of the Himalayas?",
+          "options": ["Shivalik", "Himachal", "Himadri (Greater Himalayas)", "Aravalli"],
+          "answer": "Himadri (Greater Himalayas)",
+          "explanation": "The Himadri or Greater Himalayas are the highest range, with peaks like Mount Everest and Kanchenjunga, snow-covered year-round."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The Ganga originates from the Gangotri Glacier at a place called _______ in Uttarakhand.",
+          "answer": "Gaumukh",
+          "explanation": "Gaumukh means 'Cow's Mouth' and is the edge of the Gangotri Glacier. The Bhagirathi River begins here and later becomes the Ganga."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Name the three parallel ranges of the Himalayas and one feature of each.",
+          "answer": "(1) Himadri (Greater Himalayas) — highest range, snow-covered year-round, home to Everest and Kanchenjunga. (2) Himachal (Lower Himalayas) — moderate climate, popular hill stations like Shimla, Manali, Nainital, Darjeeling. (3) Shivalik (Outer Himalayas) — lowest range, rolling hills and dense forests, transition zone to the plains.",
+          "explanation": "The three ranges have very different elevations, climates, and human uses — a beautiful example of how altitude affects life."
+        },
+        {
+          "id": "c2-m2",
+          "type": "mcq",
+          "question": "Why are the Himalayas called the 'Water Tower of Asia'?",
+          "options": [
+            "Because they have many tall buildings",
+            "Because their snow and glaciers feed major rivers like the Ganga, Indus, and Brahmaputra",
+            "Because they have many wells",
+            "Because rainwater is stored there in tanks"
+          ],
+          "answer": "Because their snow and glaciers feed major rivers like the Ganga, Indus, and Brahmaputra",
+          "explanation": "The melted snow and glacier water of the Himalayas form the major rivers that sustain crores of people across India, Pakistan, Nepal, Bangladesh, and beyond."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Explain how the Himalayas formed and why they are still growing.",
+          "answer": "About 200 million years ago, India was part of a giant southern landmass called Gondwana, with Africa as its neighbour. The Indian plate broke off and began drifting northward, very slowly — about 5 cm per year, slower than human hair grows. About 50 million years ago, the Indian plate collided with the Eurasian plate. The sediments and rocks between them got crumpled and pushed upward — like a carpet wrinkling when you push it. This is how the Himalayas were born. They are still growing because India has not stopped pushing into Asia. The plate continues to move at about 5 cm per year, lifting the Himalayas by about 5 mm per year — over a millennium, that adds 5 metres of new height. The Himalayas are the only major mountain range in the world that is still being created. The downside: this geological pressure also causes earthquakes — like the 2005 Kashmir earthquake and the 2015 Nepal earthquake — which release the built-up stress suddenly and tragically.",
+          "explanation": "Tests understanding of plate tectonics and connects geological process with real-world consequences (earthquakes)."
+        }
+      ]
+    },
+    {
+      "topic": "Plains, Desert, Peninsula, and Islands",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which is India's main desert?",
+          "options": ["Gobi", "Sahara", "Thar", "Atacama"],
+          "answer": "Thar",
+          "explanation": "The Thar Desert lies in Rajasthan and parts of Gujarat. It is one of the world's largest hot deserts."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which of these is one of the major rivers of the Peninsular South?",
+          "options": ["Ganga", "Yamuna", "Kaveri", "Brahmaputra"],
+          "answer": "Kaveri",
+          "explanation": "The major rivers of the Peninsular South are Godavari, Krishna, and Kaveri. The Ganga, Yamuna, and Brahmaputra are northern (Himalayan) rivers."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "The _______ and Nicobar Islands lie in the Bay of Bengal, while the Lakshadweep Islands lie in the Arabian Sea.",
+          "answer": "Andaman",
+          "explanation": "India has two main island groups: Andaman & Nicobar (Bay of Bengal) and Lakshadweep (Arabian Sea)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "Why are the Northern Plains of India so fertile?",
+          "answer": "The Northern Plains were formed by the Ganga, Yamuna, Brahmaputra, and their tributaries depositing rich sediments over thousands of years. These sediments contain minerals washed down from the Himalayas, creating a deep, fertile soil. The plains are also nearly flat, making them easy to plough and irrigate. Combined with the monsoon rains and the rivers' water, this fertile soil supports vast wheat, rice, sugarcane, and vegetable production. That is why the Northern Plains are one of the most productive agricultural regions in the world and home to two-thirds of India's population.",
+          "explanation": "Connects geographical formation to economic and demographic significance."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "How did desert communities of Rajasthan adapt to the harsh climate of the Thar? Give at least three examples.",
+          "answer": "Rajasthani communities developed remarkable adaptations to thrive in the Thar Desert. (1) Water conservation — they built 'tankas,' underground rainwater storage tanks under the roofs of their homes that captured monsoon rain and supplied the family with water through the rest of the year. They also built 'baolis' (step-wells) for community use. (2) Architecture — houses had thick mud or sandstone walls that stayed cool inside even when outside temperatures were extreme. Inner courtyards provided shade and ventilation. Cities like Jaisalmer used yellow sandstone that reflected heat. (3) Trade and the camel — they made the desert work for them by becoming traders between India and Central Asia, using camels (the 'ship of the desert') that could travel days without water. Cities like Jaisalmer, Bikaner, and Jodhpur grew wealthy from this trade. (4) Clothing — loose, light-coloured cotton clothes reflected heat. (5) Food — millets like bajra and jowar, which grow in dry conditions, became staples. (6) Festivals — the Pushkar Camel Fair celebrates the desert's most important animal. Together, these adaptations show that humans can flourish anywhere with creativity and wisdom.",
+          "explanation": "Tests understanding of human-geography interaction — how culture and economy adapt to environmental challenges."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "chapterRef": "class-7/social-science/chapter-6-a-time-of-renewal/worksheet",
+  "topics": [
+    {
+      "topic": "Post-Mauryan Powers",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "The last Mauryan emperor was assassinated by his commander:",
+          "options": ["Bindusara", "Pushyamitra Shunga", "Kanishka", "Menander"],
+          "answer": "Pushyamitra Shunga",
+          "explanation": "Pushyamitra Shunga assassinated the last Mauryan emperor around 185 BCE and founded the Shunga dynasty."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which great Kushan emperor convened the Fourth Buddhist Council?",
+          "options": ["Menander", "Kanishka", "Rudradaman", "Gautamiputra"],
+          "answer": "Kanishka",
+          "explanation": "Kanishka the Great (~127-150 CE) was a Kushan emperor who patronised Buddhism and held the Fourth Buddhist Council."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The greatest Satavahana king who ruled the Deccan was _______ Satakarni.",
+          "answer": "Gautamiputra",
+          "explanation": "Gautamiputra Satakarni (~early 2nd century CE) was the most famous Satavahana ruler. The Satavahanas controlled most of the Deccan and traded with Rome."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Why is the period 185 BCE - 320 CE called the 'Age of Reorganisation'?",
+          "answer": "After the fall of the Mauryan Empire in 185 BCE, India did not collapse — it reorganised. Many smaller kingdoms emerged, and the political map of India was redrawn. Former Mauryan tributary kingdoms declared independence; new dynasties rose; foreign invaders (Greeks, Shakas, Kushans) entered through the northwest. Different regions competed and innovated. Despite the fragmentation, this period saw extraordinary cultural achievements — Gandhara art, Sangam literature, Sanskrit revival, Buddhism spreading abroad. The term 'Age of Reorganisation' captures both the political fragmentation and the cultural creativity of this 500-year period.",
+          "explanation": "Tests understanding of both the political reality and the cultural significance of this period."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Foreign invaders — Indo-Greeks, Shakas, Kushans — entered India during this period. How did Indian civilisation respond to them, and what was the result?",
+          "answer": "Indian civilisation responded to foreign invaders through ASSIMILATION — absorbing them rather than being destroyed by them. This happened through several processes over generations: (1) Marriage — foreign rulers married into Indian families. Their children grew up Indian. (2) Religion — many adopted Indian religions, especially Buddhism. Greek king Menander converted to Buddhism. Kushan emperor Kanishka was a great Buddhist patron. (3) Language — within a generation or two, foreign rulers used Prakrit or Sanskrit. The Shaka king Rudradaman wrote a beautiful Sanskrit inscription at Junagadh. (4) Culture — they patronised Indian art, music, philosophy; built temples and stupas; followed Indian festivals. (5) Practical attraction — Indian civilisation was sophisticated and offered skilled administrators, scholars, and artists. Adopting Indian ways gave foreign rulers access to this wealth of knowledge. The result was CULTURAL CONFLUENCE — new forms of art (Gandhara school combined Greek techniques with Buddhist themes; the first Buddha statues), new trade networks (Silk Route flourished), new coinage (portrait coins from the Greeks adopted by Indians), and new ideas. India was enriched by foreign influences without losing its identity. This pattern — absorbing rather than rejecting foreign elements — is sometimes called the genius of Indian civilisation. Modern India continues this pattern, integrating global influences while remaining recognisably Indian.",
+          "explanation": "Capstone question on cultural assimilation, a recurring theme in Indian history."
+        }
+      ]
+    },
+    {
+      "topic": "Cultural Achievements and the Sangam Age",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The Gandhara school of art is famous for which innovation?",
+          "options": [
+            "First copper coins",
+            "First Buddha statues",
+            "First Sanskrit drama",
+            "First panchanga"
+          ],
+          "answer": "First Buddha statues",
+          "explanation": "The Gandhara school created the first statues of the Buddha, blending Greek artistic techniques with Buddhist themes. Before this, Buddhists used symbols (like a bodhi tree or footprint) rather than human images."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "The Sangam Age of south India was dominated by which three Tamil dynasties?",
+          "options": [
+            "Cholas, Cheras, Pandyas",
+            "Mauryas, Guptas, Cholas",
+            "Mughals, Vijayanagar, Rashtrakutas",
+            "Chalukyas, Pallavas, Cholas"
+          ],
+          "answer": "Cholas, Cheras, Pandyas",
+          "explanation": "The Sangam Age (roughly 300 BCE - 300 CE) was dominated by the Cholas (capital Uraiyur/Kaveripattanam), Cheras (capital Vanji), and Pandyas (capital Madurai)."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The Sangam poems mention 'Yavanas' — foreign traders who came to Tamil ports — likely referring to Greeks and _______.",
+          "answer": "Romans",
+          "explanation": "Yavanas in Sangam literature included Greeks and Romans who came to south Indian ports to buy spices, gemstones, and pearls. Archaeologists have found Roman gold coins in southern India confirming this trade."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What is the Sangam literature and why is it important?",
+          "answer": "Sangam literature is a body of over 2,000 ancient Tamil poems composed between roughly 300 BCE and 300 CE. It is one of the oldest classical literatures in any Dravidian language. The poems describe everyday life in remarkable detail — farmers, fishermen, soldiers, lovers, kings. They classify life into five tinai (landscapes), each with its own moods, occupations, and themes. The Sangam literature is important because: (1) It is among the earliest classical Indian literatures. (2) It gives us a vivid window into ancient Tamil society. (3) It proves that south India developed its own great classical tradition independent of north Indian Sanskrit culture. (4) It is a source of immense pride for Tamil speakers as evidence of their language's deep heritage.",
+          "explanation": "Establishes the significance of Tamil classical literature alongside Sanskrit."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "The first statues of the Buddha appeared in Gandhara. Why did this happen there, and not earlier elsewhere?",
+          "answer": "For about 500 years after the Buddha's death, Buddhists did NOT depict him as a human figure. They used symbols — a bodhi tree (where he attained enlightenment), an empty throne, a footprint, the dhamma wheel. There were several reasons: (1) The Buddha himself didn't promote personal worship. (2) Early Buddhists felt nirvana couldn't be captured in human form. (3) Indian artistic traditions used symbols rather than realistic figures for holy beings. What changed in Gandhara? Two things came together. (1) Greek artistic tradition — Greek sculptors had long carved their gods and heroes as realistic humans (think Apollo, Zeus statues). They brought this skill to India during and after Alexander's conquests, eventually working under Indo-Greek and Kushan patronage. (2) Cultural blending — Indo-Greeks and Kushans patronised Buddhism. Greek-trained sculptors began making Buddha statues in Greek style. The result: Greco-Buddhist art, featuring the Buddha as a serene, beautifully proportioned human figure with flowing robes, curly hair, and realistic facial features. Once Gandhara started this trend, it spread across India and Asia. The Mathura school developed an Indian variation. Buddhist Asia adopted the practice. Today, every Buddha statue in temples from Sri Lanka to Japan traces its iconographic roots to Gandhara — Greek artistic techniques applied to Indian religious themes 2,000 years ago. It is a beautiful example of how cultural blending can produce something completely new — neither pure Greek nor pure Indian, but a fusion that became the standard for Buddhist art worldwide.",
+          "explanation": "Connects art history, religion, and cultural exchange — showing how three civilisations can create something none could have created alone."
+        }
+      ]
+    }
+  ]
+}

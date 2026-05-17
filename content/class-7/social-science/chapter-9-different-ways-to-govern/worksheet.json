@@ -1,0 +1,112 @@
+{
+  "chapterRef": "class-7/social-science/chapter-9-different-ways-to-govern/worksheet",
+  "topics": [
+    {
+      "topic": "Democracy and Its Forms",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "The word 'democracy' comes from Greek words meaning:",
+          "options": [
+            "Religion + leader",
+            "People + power",
+            "City + state",
+            "Justice + rule"
+          ],
+          "answer": "People + power",
+          "explanation": "Democracy comes from 'demos' (people) and 'kratos' (power/rule) — literally 'rule of the people.'"
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "In a parliamentary democracy like India, the real head of government is the:",
+          "options": ["President", "Prime Minister", "Supreme Court Chief Justice", "Speaker"],
+          "answer": "Prime Minister",
+          "explanation": "In parliamentary democracies, the PM is the real head of government. The President is the nominal/ceremonial head."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Every adult citizen having the right to vote regardless of caste, gender, or property is called universal adult _______ .",
+          "answer": "franchise",
+          "explanation": "Universal adult franchise (or universal suffrage) gives every adult citizen the right to vote. India established it from its very first election in 1951-52."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What is the difference between parliamentary and presidential democracy?",
+          "answer": "Both are forms of representative democracy but differ in how the executive is structured. In a PARLIAMENTARY democracy (India, UK, Canada, Australia): (1) People vote for the legislature (Parliament). (2) The leader of the majority party in Parliament becomes the Prime Minister. (3) The PM and ministers are members of Parliament. (4) The PM stays in power only as long as Parliament has confidence in them — if Parliament passes a 'no-confidence' motion, the PM must resign. (5) The President is a ceremonial head. In a PRESIDENTIAL democracy (USA, South Korea, Brazil): (1) People vote separately for the legislature AND for the President. (2) The President is the head of government with executive power. (3) The President is NOT a member of the legislature. (4) The President serves a fixed term and cannot be removed by a vote of the legislature alone (only by impeachment for serious wrongdoing). (5) There is stricter separation between legislature and executive. The parliamentary system tends to be more flexible; the presidential system tends to be more stable but can lead to deadlock between branches.",
+          "explanation": "Tests understanding of two major forms of representative democracy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why was India's choice of democracy in 1947 considered both bold and risky? What helped it succeed?",
+          "answer": "India's choice of democracy in 1947 was unusual and risky for several reasons. (1) Conditions seemed hostile: India was poor (per capita income very low), mostly rural (over 80% lived in villages), largely illiterate (only about 12% literacy), and just emerging from a bloody Partition. Most observers said India would fail. (2) Diversity could be a problem: hundreds of languages, multiple religions, deep caste divisions, princely states with their own rulers — many predicted democracy would collapse into chaos or fragmentation. (3) The world's expectation: at the time, the dominant idea was that 'people need to be ready' for democracy — economic prosperity first, then political rights. Indian leaders rejected this. (4) Universal adult franchise was given from DAY ONE: every adult Indian, regardless of caste, gender, religion, or property, got the right to vote. This was revolutionary. Many older democracies (USA, UK, Switzerland) had taken 100+ years to do what India did from the start. Why did it work? Several factors: (1) Brilliant constitutional design: Dr. B.R. Ambedkar and the Constituent Assembly created one of the most thoughtful constitutions in history — federal structure, separation of powers, fundamental rights, secularism, independent judiciary. (2) Strong founding leaders: Nehru, Patel, Ambedkar, Rajendra Prasad, Maulana Azad — committed democrats who set good precedents. Nehru as PM allowed criticism in Parliament; he respected the Election Commission and judiciary. (3) Existing democratic experience: the Congress and Muslim League had operated democratically during the freedom struggle, so Indians already had practice. (4) Indian traditions: from the Vajji republic to Uttaramerur to rajadharma, India had its own threads of collective decision-making and accountability to draw on. (5) Free elections held continuously: the 1951-52 election worked, set the pattern, and elections have continued without interruption since. (6) Resilient institutions: the Election Commission, Supreme Court, Comptroller and Auditor General, and others have functioned with reasonable independence. (7) Active citizens: voters have rejected dynasties (defeating Indira Gandhi in 1977 after the Emergency), rejected corruption, demanded accountability. Indian democracy has survived and grown despite challenges. Today, India is the largest democracy in the world with about 970 million voters. The bet of 1947 paid off — and remains one of the great political success stories of the 20th century. But it isn't automatic — each generation has to work to preserve it.",
+          "explanation": "Capstone question requiring synthesis of conditions, design choices, and ongoing maintenance of democracy."
+        }
+      ]
+    },
+    {
+      "topic": "Other Forms of Government and India's Heritage",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The UK has a king but real power lies with the elected Parliament and PM. This is called:",
+          "options": [
+            "Absolute monarchy",
+            "Constitutional monarchy",
+            "Theocracy",
+            "Direct democracy"
+          ],
+          "answer": "Constitutional monarchy",
+          "explanation": "In a constitutional monarchy, there is still a king/queen but they have only ceremonial power. Real power lies with elected representatives. UK, Japan, Sweden, Norway, Netherlands are examples."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which of these is NOT a feature of dictatorship?",
+          "options": [
+            "Free and fair elections",
+            "Suppression of opposition",
+            "Censored media",
+            "Power held by force"
+          ],
+          "answer": "Free and fair elections",
+          "explanation": "Free and fair elections are a hallmark of democracy, not dictatorship. Dictatorships either have no elections or hold rigged 'elections' where the outcome is predetermined."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The 10th-century _______ inscription in Tamil Nadu describes sophisticated village elections with sealed ballots and anti-corruption rules.",
+          "answer": "Uttaramerur",
+          "explanation": "The Uttaramerur inscription, found on the walls of the Vaikuntha Perumal temple, describes Chola-era village elections including sealed palm-leaf ballots, candidate qualifications, and disqualification for corruption — 1,000 years before modern democracy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What is rajadharma, and why is it important in the Indian political tradition?",
+          "answer": "Rajadharma is the ancient Indian concept of the 'duties of a king' or 'righteous rule.' It is one of the most important contributions of Indian political thought. According to rajadharma: (1) A king is NOT just a ruler with unlimited power — his highest duty is the welfare of his people (yogakshema). (2) The king must apply the law impartially, without favouring his friends or punishing his enemies unjustly. (3) The king himself is subject to dharma (the moral law) — he cannot do anything he likes. (4) He must seek advice from wise counsellors and not act on ego or impulse. (5) Power is temporary and should not corrupt the ruler. The Mahabharata's Shanti Parva is the great text of rajadharma, where the dying Bhishma teaches Yudhishthira about good kingship. Why is this important? (1) It limits absolute power. Even ancient Indian kings couldn't claim to be above the law — they had to follow rajadharma. (2) It creates a moral framework for politics. Power must serve people, not the other way around. (3) It echoes in modern Indian democracy — public servants are expected to serve the public, not themselves. (4) Stories like the Rajatarangini show that even kings sometimes had to apologise to ordinary citizens (like the cobbler whose hut blocked a temple). Rajadharma anticipated by 2,000 years the modern democratic principle that 'no one is above the law.' It is one of India's gifts to political thought — that real authority is moral, not just military or hereditary.",
+          "explanation": "Tests understanding of an important Indian political concept and its modern relevance."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why is it considered dangerous to mix religion and government? Discuss with examples and India's choice of secularism.",
+          "answer": "Mixing religion and government — known as theocracy or state religion — is considered dangerous for several reasons, even though religion itself can be a source of values and meaning. (1) WHOSE RELIGION? In a multi-religious country, only one religion can become official. Others become second-class. India has Hindus (~80%), Muslims (~14%), Christians, Sikhs, Buddhists, Jains, Parsis, and tribal religions. A theocracy of any one would marginalise the others. (2) WHOSE INTERPRETATION? Even within one religion, there are many schools. If Hinduism became state religion, would it be Vedanta, Shaiva, Vaishnava, Shakta? If Islam, would it be Sunni, Shia, Sufi? The state would have to choose one and suppress others. (3) NO ROOM FOR CHANGE: Religious laws are based on ancient texts. Changing them is hard. Should women have equal rights? Should there be free speech to criticise religious leaders? Democracies can debate and update such questions; theocracies cannot. (4) RELIGIOUS LEADERS LACK GOVERNANCE TRAINING: Running a country requires expertise in economics, infrastructure, defence, foreign policy. Religious training prepares people for spiritual matters, not these. Iran's clerics, the Vatican's cardinals, the Taliban's mullahs are wise about scripture but often poor at running economies, building schools, or managing infrastructure. (5) BOTH RELIGION AND GOVERNMENT GET CORRUPTED: When mixed, religion becomes a tool of state power (obey out of fear, not faith); and government becomes unaccountable (claims divine authority — how do you argue with god?). EXAMPLES: Iran since 1979 — declining freedoms for women, persecution of minorities (Baha'is, Sunnis), brutal crackdown on dissent. Afghanistan under Taliban — girls banned from school, women from work, music banned, minorities killed. Saudi Arabia — women had no right to drive until 2018; religious minorities cannot worship publicly. Pakistan's drift toward Islamic law — minorities (Hindus, Christians, Ahmadis) increasingly persecuted; blasphemy laws used against personal enemies. INDIA'S CHOICE OF SECULARISM: India's founders, having seen the horrors of Partition (religious violence killing over 1 million people), explicitly chose SECULARISM — the state has no official religion, all religions are equally respected, and no religious body can make state law. Why this was wise: (a) India is too diverse for any one religion to dominate. (b) Indian tradition itself includes many religions — Hindus, Muslims, Christians, Sikhs, Jains, Buddhists, Parsis have coexisted for centuries. (c) Religious freedom became a fundamental right in the Constitution. (d) Citizens of every faith can practise their religion AND be equal citizens. (e) Religious bodies have spiritual authority but no legal authority over the state. SECULARISM IS NOT ANTI-RELIGION: India's Constitution doesn't hate religion. Religious festivals are celebrated, religious freedom is protected, places of worship are not interfered with. What it does is keep religious authority OUT of state law. This is called 'principled distance' — the state respects all religions but governs by secular law. The result: India is one of the most religiously diverse functioning democracies in the world. Imperfect, with tensions, but stable. Compare to neighbours that became theocracies — minorities have suffered there far more than in India. So the wise distinction is: RELIGION IN THE HEART, SECULARISM IN THE STATE. Each person free to follow their own path to god, while state laws apply equally to all. India's founders made this bet. Each generation has to keep it.",
+          "explanation": "Capstone question on a fundamental modern political issue with deep relevance to Indian democracy."
+        }
+      ]
+    }
+  ]
+}

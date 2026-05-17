@@ -1,0 +1,102 @@
+{
+  "chapterRef": "class-7/social-science/chapter-7-the-gupta-age/worksheet",
+  "topics": [
+    {
+      "topic": "The Gupta Dynasty and Its Rulers",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Who founded the Gupta dynasty around 320 CE?",
+          "options": ["Samudragupta", "Chandragupta I", "Chandragupta II", "Skandagupta"],
+          "answer": "Chandragupta I",
+          "explanation": "Chandragupta I founded the Gupta dynasty around 320 CE. He strengthened his position through marriage alliance with the Lichchhavis."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which Gupta ruler is often called the 'Napoleon of India' for his military conquests?",
+          "options": ["Chandragupta I", "Samudragupta", "Chandragupta II", "Kumaragupta"],
+          "answer": "Samudragupta",
+          "explanation": "Samudragupta (~335-380 CE) was a brilliant warrior who expanded the empire across most of north India and parts of the south. His conquests are recorded in the Allahabad Pillar inscription."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Chandragupta II is also famously known by his title _______ , meaning 'Sun of Valour'.",
+          "answer": "Vikramaditya",
+          "explanation": "Chandragupta II adopted the title Vikramaditya ('Sun of Valour'). His court is said to have included the navaratnas — nine gems — among them the poet Kalidasa."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What were the major achievements of Samudragupta?",
+          "answer": "Samudragupta (~335-380 CE) was the second great Gupta ruler and one of India's most successful military leaders. His main achievements were: (1) Military expansion — he defeated numerous kings of north India and brought them under direct rule, then marched south reaching as far as the Pallava kingdom near present-day Tamil Nadu, where he accepted tribute rather than annexing territory. (2) Political settlement — he used both conquest and diplomacy wisely, annexing close kingdoms while leaving distant ones as tributaries, creating a manageable empire. (3) Cultural patronage — he was himself a musician (coins show him playing the veena) and patronised poets, scholars, and Brahmins. (4) The Allahabad Prashasti — a long Sanskrit inscription on a pillar at Prayagraj, composed by his court poet Harishena, lists his conquests and is one of the most important records of ancient Indian history.",
+          "explanation": "Tests understanding of both military and cultural dimensions of Samudragupta's reign."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Compare the Mauryan and Gupta empires. Which was 'greater' and why?",
+          "answer": "Both the Mauryan (~322-185 BCE) and Gupta (~320-550 CE) empires were great, but in different ways. Comparing them: (1) Size: The Mauryans under Ashoka controlled a larger territory — almost all of the Indian subcontinent except the deep south. The Guptas controlled most of north and central India, with the south as tributary or independent. So the Mauryan empire was geographically larger. (2) Administration: The Mauryans had a more centralised administration with a large bureaucracy, spies, and direct rule. The Guptas had a looser system — local rulers retained autonomy as long as they paid tribute and accepted Gupta supremacy. (3) Cultural achievements: This is where the Guptas shine. The Gupta period produced Aryabhata's mathematics, Kalidasa's literature, the development of decimal system and zero, Ayurveda texts, Gupta art (Ajanta paintings, sculpture), and political-philosophical works. The Mauryan period produced Ashoka's edicts and Buddhist art but did not match Gupta cultural output. (4) Religious atmosphere: Mauryan India was dominated by Buddhism (after Ashoka). Gupta India saw Hindu revival but with tolerance for Buddhism and Jainism. (5) Economic prosperity: Both were prosperous, but Gupta India was more so — Fa-Hien (Chinese traveller) described abundance, low taxes, peace, and prosperity. Which was 'greater'? It depends on what you measure. Mauryan = larger empire, stronger administration, single moral vision (under Ashoka). Gupta = greater cultural achievements, longer-lasting intellectual contributions to humanity (zero, decimal system, Kalidasa). Most historians say the Mauryans were politically greater, but the Guptas were culturally greater — and we still use their gifts (zero!) today.",
+          "explanation": "Comparative question that tests synthesis across two periods."
+        }
+      ]
+    },
+    {
+      "topic": "Gupta Cultural Achievements",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Who was Aryabhata?",
+          "options": [
+            "A famous Gupta king",
+            "A great mathematician and astronomer of the Gupta age",
+            "A Buddhist monk who travelled to China",
+            "The court poet of Chandragupta II"
+          ],
+          "answer": "A great mathematician and astronomer of the Gupta age",
+          "explanation": "Aryabhata (~476-550 CE) was a brilliant mathematician and astronomer. At just 23 years old, he wrote the Aryabhatiya, which introduced ideas about Earth's rotation, calculated pi, and used place-value notation."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "The Sushruta Samhita is a famous ancient Indian text on:",
+          "options": ["Mathematics", "Astronomy", "Surgery and medicine", "Drama"],
+          "answer": "Surgery and medicine",
+          "explanation": "The Sushruta Samhita describes over 300 surgical procedures, including cataract surgery and early plastic surgery. The Charaka Samhita complements it on internal medicine."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "Kalidasa's most famous play is _______ , the story of a forest-raised young woman who falls in love with a king.",
+          "answer": "Abhijnanashakuntalam",
+          "explanation": "Abhijnanashakuntalam tells the story of Shakuntala. It has been performed continuously for about 1,600 years and was praised by the German poet Goethe as a masterpiece of world literature."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Why did India give the world the decimal system and the concept of zero?",
+          "answer": "Indian mathematicians, especially during the Gupta and post-Gupta period, made two related breakthroughs: place-value notation and the concept of zero. (1) Place-value: Instead of using different symbols for tens, hundreds, thousands (as the Romans did), Indians used just 10 digits (0-9) and let the POSITION of each digit tell its value. So '2' in 245 means two hundreds, while '2' in 25 means two tens. This made arithmetic vastly simpler. (2) Zero: For place-value to work, you need a symbol for 'nothing in this place' — to write 205, for instance. Indians called this shunya (emptiness). More importantly, they treated zero not just as a placeholder but as a NUMBER that you could do arithmetic with (0+n=n, 0×n=0). Aryabhata, Brahmagupta, and other Indian mathematicians worked out the rules. The system travelled to the Arab world around 770 CE (Arabs called them 'Indian numerals') and then to Europe in the 12th century (where they got renamed 'Arabic numerals'). Today every computer, every calculator, every scientific computation uses this Indian invention. Modern science and technology would not exist without Indian zero and decimal place value.",
+          "explanation": "Tests understanding of India's most consequential intellectual contribution."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "What made the Gupta period a 'Golden Age' for India? Discuss with reference to politics, science, literature, and religion.",
+          "answer": "The Gupta period (~320-550 CE) is called India's Golden Age because multiple positive developments came together at the same time — a rare alignment of conditions. (1) Politics: The Guptas brought relative political stability after centuries of regional fragmentation. Strong rulers like Samudragupta and Chandragupta II created a peaceful empire across north India. Peace allowed economy and culture to flourish. (2) Science and mathematics: Aryabhata at age 23 wrote a book that changed mathematics — he proposed Earth's rotation, calculated pi accurately, used place-value notation. The decimal system and zero, which the modern world depends on, were developed and refined during this period. Astronomers tracked planets with remarkable accuracy. (3) Medicine: The Sushruta Samhita described over 300 surgeries, including cataract and plastic surgery. The Charaka Samhita systematised internal medicine. These texts influenced medicine across Asia and the Arab world for centuries. (4) Literature: Kalidasa, considered the greatest Sanskrit poet of all time, lived under Chandragupta II's patronage. His play Abhijnanashakuntalam, poem Meghaduta, and epics Raghuvamsa and Kumarasambhava set the gold standard for Sanskrit literature. The Puranas were compiled. Sanskrit prose and drama reached their peak. (5) Religion: The period saw the revival of Hinduism but with religious tolerance — Buddhism and Jainism continued to flourish. The Chinese traveller Fa-Hien specifically remarked on the peaceful coexistence of religions. Beautiful temples were built and Hindu iconography developed. (6) Art and architecture: Gupta sculpture set the classical standard for Indian art. The cave paintings of Ajanta reached their peak. The Iron Pillar of Delhi — made from rust-resistant iron using techniques modern scientists still study — was built. (7) Economic prosperity: Fa-Hien described a prosperous, peaceful land with low taxes and high quality of life. Why does the alignment of all these factors matter? Civilisations have golden ages only when political stability, economic prosperity, intellectual freedom, and cultural patronage all come together. In the Gupta period, India achieved this rare combination. The breakthroughs of this era — especially zero and decimal — became gifts to all of humanity. That is why we look back at the Guptas not just as another empire but as a civilisational peak.",
+          "explanation": "Capstone question synthesising the full multi-dimensional achievement of the Gupta age."
+        }
+      ]
+    }
+  ]
+}

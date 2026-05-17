@@ -26,6 +26,14 @@ const SUBJECT_CARDS = [
     from: 'from-amber-500',
     to: 'to-amber-700',
   },
+  {
+    id: 'political-science',
+    label: 'Political Science',
+    icon: '🏛️',
+    desc: 'Power-sharing, federalism, democracy, and the political life of India',
+    from: 'from-indigo-500',
+    to: 'to-indigo-700',
+  },
 ];
 
 export default function SubjectsPage() {

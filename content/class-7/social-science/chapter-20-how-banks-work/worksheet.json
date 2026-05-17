@@ -1,0 +1,107 @@
+{
+  "chapterRef": "class-7/social-science/chapter-20-how-banks-work/worksheet",
+  "topics": [
+    {
+      "topic": "Bank Basics and Interest",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "A bank's main function is to:",
+          "options": [
+            "Print money",
+            "Collect deposits and give loans",
+            "Set interest rates",
+            "Run the stock market"
+          ],
+          "answer": "Collect deposits and give loans",
+          "explanation": "A bank's core function is to take deposits from savers and give loans to borrowers, connecting the two and earning interest spread. Printing money is the RBI's job. Setting policy interest rates is also the RBI's job. Stock markets are separate institutions."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which type of bank account is most appropriate for a small business with frequent daily transactions?",
+          "options": ["Savings", "Current", "Fixed deposit", "Recurring deposit"],
+          "answer": "Current",
+          "explanation": "Current accounts are designed for businesses with frequent transactions. They have no withdrawal limits but typically pay no interest. Savings accounts pay interest but have limits on withdrawals."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Using the Rule of 72, at 8% interest your money will roughly double in _______ years.",
+          "answer": "9",
+          "explanation": "Rule of 72: divide 72 by the interest rate to find years to double. 72 ÷ 8 = 9 years. This rule helps in mental math for compound growth."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Explain the magic of compound interest and why starting to save early is so important.",
+          "answer": "Compound interest is the process where interest earns interest. Unlike simple interest (which only pays on the original amount), compound interest pays on both the original amount AND accumulated interest. This makes money grow exponentially over time. EXAMPLE: ₹1,000 at 6% interest. Simple interest pays ₹60/year. After 10 years: ₹1,600. Compound interest reinvests the ₹60 too. After 10 years: ₹1,790. After 30 years: ₹5,743. After 50 years: ₹18,420! Each year, the interest amount itself earns interest. The longer you save, the more dramatic the effect. RULE OF 72: divide 72 by interest rate = years to double money. At 6%: 12 years. At 8%: 9 years. At 12%: 6 years. WHY STARTING EARLY MATTERS: Consider two friends saving for retirement. AARAV starts at age 12, saves ₹500/month for 48 years (until age 60), at 8% return. Total saved: ₹2.88 lakh. Value at 60: about ₹35 lakh. BHARAT starts at age 30, saves ₹2,000/month for 30 years (4 times as much!), at 8% return. Total saved: ₹7.2 lakh. Value at 60: about ₹30 lakh. AARAV WINS despite saving much less! Time did the work. THE LESSON: starting early matters more than saving more. Even small amounts saved for long periods become large because compound interest accelerates dramatically in later years. Einstein supposedly called compound interest 'the eighth wonder of the world.' WHY THIS APPLIES TO YOU: Even at age 12, you receive birthday money, festival gifts, possibly pocket money. Save some of it. Open a junior savings account. Add to it regularly. The habits you form now will determine your financial future more than your eventual salary. The student who saves ₹100/month from age 12 will be richer at 60 than one who tries to save ₹10,000/month from age 40. Time + Interest = Wealth. Use this formula. Start now.",
+          "explanation": "Tests understanding of one of the most important financial concepts."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain what loans are, the different types, how EMIs work, and the difference between 'good debt' and 'bad debt.'",
+          "answer": "Loans are one of the most important services banks provide. Used wisely, they can build wealth and opportunity. Used unwisely, they can destroy financial futures. WHAT IS A LOAN? When a bank gives you money you promise to pay back with interest. The bank takes a risk (you might not repay); you get to use money you don't yet have; you pay interest as compensation for the bank's risk. TYPES OF LOANS: (1) HOME LOAN: to buy a house. Terms: 15-30 years. Interest: 8-10% (lower because the house itself is collateral). (2) CAR LOAN: to buy a vehicle. Terms: 5-7 years. Interest: 9-12%. (3) EDUCATION LOAN: for school/college, especially abroad. Long terms with grace period (no payment while studying). Interest: 8-12%. (4) PERSONAL LOAN: for any purpose, unsecured (no collateral). Short term: 1-5 years. Interest: 10-20%. (5) BUSINESS LOAN: for business needs. Various terms. (6) CREDIT CARD: short-term loan with VERY HIGH interest if not paid on time: 24-40% per year! (7) GOLD LOAN: gold as collateral. Lower interest (8-12%). (8) MUDRA LOAN: small business loans up to ₹10 lakh under government scheme; lower interest. HOW EMI WORKS: EMI = Equated Monthly Instalment. Each month, you pay the bank a FIXED amount. Part goes to interest, part to principal (the original amount). Example: ₹10,00,000 home loan at 9% for 20 years. EMI: about ₹9,000/month. Total paid over 20 years: about ₹21.6 lakh. Of this: ₹10 lakh repays principal; ₹11.6 lakh is interest. Interest exceeds the loan itself! Longer loans pay MUCH more interest. A 30-year loan at the same rate would cost even more in interest. This shows the cost of borrowing — a borrowed rupee is much more expensive than a saved rupee. GOOD DEBT VS BAD DEBT: GOOD DEBT — borrows that build wealth or income. (1) HOME LOAN — if the house's value rises over time, and rent saved exceeds interest paid, the loan helps build wealth. (2) EDUCATION LOAN — if education leads to higher income that exceeds interest cost, it's an investment. (3) BUSINESS LOAN — if business succeeds and profits exceed interest, you build wealth. BAD DEBT — borrows for consumption or things that lose value. (1) CREDIT CARD DEBT — buying things you can't really afford. At 30%+ interest, this is destructive. (2) PERSONAL LOANS FOR LUXURIES — vacations, fancy phones, weddings can trap people in cycles of debt. (3) PAYDAY LOANS — short-term high-interest loans that turn small problems into big crises. (4) LOANS FOR DEPRECIATING ASSETS — like cars beyond your needs. KEY PRINCIPLES: (1) DON'T BORROW MORE THAN YOU CAN REPAY. Banks may offer you large loans, but only take what you can comfortably repay. (2) UNDERSTAND THE TOTAL COST. A loan's true cost is the total interest paid, not just the EMI. (3) PAY OFF HIGH-INTEREST DEBT FIRST. Credit card debt eats away at wealth fast. Pay it off urgently. (4) AVOID UNNECESSARY DEBT. Just because you can borrow doesn't mean you should. (5) BUILD SAVINGS BEFORE BORROWING. Try to have 3-6 months of expenses saved before taking on big loans. (6) NEGOTIATE INTEREST RATES. Banks often have flexibility. Ask. Compare offers from different banks. (7) READ THE FINE PRINT. Hidden fees, prepayment penalties, variable rates — all matter. (8) PROTECT YOUR CREDIT SCORE. Late payments hurt your future ability to borrow. THE BIGGER PICTURE: Borrowing is neither good nor bad in itself — it depends on what you borrow for. A young couple borrowing to buy a home in a growing city: GOOD DEBT. A young couple borrowing to buy a luxury car they can't really afford: BAD DEBT. The Indian tradition of avoiding debt has wisdom — being debt-free reduces stress and risk. But modern life sometimes requires borrowing (housing, education). Learn the difference between necessary borrowing for genuine investment and unnecessary borrowing for consumption. CONCLUSION: When you grow up and start earning, you'll face decisions about loans. The same person can become wealthy by using good debt strategically, or poor by drowning in bad debt. Knowing the difference is one of the most valuable financial skills you can develop. Start by learning now. Watch how your family handles loans. Ask questions. Read about personal finance. The decisions you make in your 20s will shape your 60s.",
+          "explanation": "Capstone question on loans, debt, and financial wisdom."
+        }
+      ]
+    },
+    {
+      "topic": "RBI, Banks, and India's Digital Banking Revolution",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The Reserve Bank of India (RBI) was founded in:",
+          "options": ["1947", "1935", "1956", "1991"],
+          "answer": "1935",
+          "explanation": "The RBI was founded in 1935 during British rule, but is now India's central bank. It is headquartered in Mumbai. It issues currency, regulates banks, and sets interest rates."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Pradhan Mantri Jan Dhan Yojana (launched in 2014) aimed to:",
+          "options": [
+            "Build rural roads",
+            "Provide cooking gas connections",
+            "Open bank accounts for all Indian households",
+            "Distribute mobile phones"
+          ],
+          "answer": "Open bank accounts for all Indian households",
+          "explanation": "Pradhan Mantri Jan Dhan Yojana (PMJDY, 2014) aimed to provide a bank account for every Indian household. It opened over 500 million zero-balance accounts with free RuPay debit cards — one of the largest financial inclusion drives in human history."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The combination of Jan Dhan + Aadhaar + Mobile that transformed Indian banking is called the _______ Trinity.",
+          "answer": "JAM",
+          "explanation": "The JAM Trinity (Jan Dhan + Aadhaar + Mobile) is one of the great Indian digital infrastructure achievements. Together, these three created world-class financial inclusion. The government, IMF, World Bank, and many countries cite India's JAM model as a model for financial inclusion."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What are the main functions of the Reserve Bank of India (RBI), and why is its independence important?",
+          "answer": "The Reserve Bank of India (RBI) is India's central bank — the most important financial institution in the country. Founded in 1935 and headquartered in Mumbai. MAIN FUNCTIONS: (1) ISSUES CURRENCY. RBI is the ONLY institution that can print Indian rupees. Every banknote is signed by the RBI Governor. (2) MANAGES MONEY SUPPLY. Too much money causes inflation; too little causes recession. RBI tries to balance. (3) SETS INTEREST RATES. RBI sets the repo rate (rate at which it lends to other banks). This influences ALL interest rates in the economy — bank loans, savings rates, bond yields. (4) REGULATES BANKS. RBI supervises all Indian banks — public, private, foreign, cooperative. Sets rules for lending, capital requirements, risk management. Can act against banks that misbehave. (5) BANKER TO THE GOVERNMENT. Handles government accounts and debt issuance. (6) MANAGES FOREIGN EXCHANGE. Keeps the rupee stable. Manages India's $600+ billion foreign exchange reserves. (7) MAINTAINS FINANCIAL STABILITY. Acts as 'lender of last resort' if banks face liquidity problems. Prevents banking crises. (8) RUNS PAYMENT SYSTEMS. UPI, NEFT, RTGS, IMPS — all under RBI oversight. (9) DEVELOPS FINANCIAL MARKETS. Government bonds, foreign exchange, etc. (10) CONSUMER PROTECTION. Sets rules for banking customer rights, grievance redressal. WHY INDEPENDENCE IS IMPORTANT: The RBI is independent — the government can advise but cannot directly control its day-to-day decisions on interest rates and bank regulation. This matters for several reasons. (1) POLITICIANS HAVE SHORT-TERM INCENTIVES. They want low interest rates before elections to look good. But this can cause high inflation and currency collapse. (2) RBI THINKS LONG-TERM. Stable prices, sustainable growth, healthy banks. Sometimes this means painful decisions (raising rates during a slowdown). Politicians can't easily make such decisions. (3) HISTORICAL DISASTERS WITHOUT INDEPENDENCE. Argentina, Turkey, Zimbabwe, Venezuela — countries whose central banks lost independence have suffered currency collapses, hyperinflation, economic disasters. (4) FINANCIAL MARKETS NEED PREDICTABILITY. Investors want to know the rules won't change based on election results. Independent central banks build trust. (5) PROFESSIONAL DECISION-MAKING. Central banking requires technical expertise. Political interference can lead to poor decisions. INDIA'S RECORD: India has been wise. The RBI has generally maintained its independence (with occasional government pressure). Inflation has stayed mostly under control (rarely going wild). The rupee has gradually weakened over decades but never collapsed. The banking system has weathered storms (2008 global crisis, COVID, etc.). This is far better than many emerging market countries. Recent debates: Some argue RBI has become too close to government. Some argue it needs more independence. These debates are healthy — they show citizens taking RBI seriously. RBI GOVERNORS: The Governor is one of the most important officials in India. Past famous governors include Dr. Manmohan Singh (1982-85), C. Rangarajan, Bimal Jalan, Y.V. Reddy, Raghuram Rajan, Urjit Patel, Shaktikanta Das. CONCLUSION: A boring RBI is a successful RBI. When central banks make headlines for crisis management, things have gone badly. RBI in India has mostly been boring — and that's good. It quietly does its job, keeps the rupee stable, regulates banks, manages payments — and most Indians don't notice. That is the mark of a well-functioning institution.",
+          "explanation": "Tests understanding of central banking and institutional independence."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Describe how India's digital banking revolution (Jan Dhan + Aadhaar + Mobile + UPI) has transformed daily life for ordinary Indians, especially the poor.",
+          "answer": "India's digital banking revolution over the past decade has been one of the most dramatic transformations in any country. It has fundamentally changed how money moves, how government delivers services, and how poor Indians access financial tools. THE STARTING POINT (Before 2014): Banking was difficult for most Indians. Only about half of adults had bank accounts. Rural Indians traveled hours to reach branches. Paperwork was complex. Minimum balance requirements excluded the poor. Sending money required forms, queues, days. Cash dominated. Government schemes leaked massively — middlemen and corrupt officials stole subsidies meant for the poor. THE THREE PILLARS — JAM TRINITY: (1) JAN DHAN YOJANA (August 2014). Goal: bank account for every Indian. Features: zero-balance accounts (no minimum); free RuPay debit card with ₹2 lakh accident insurance; easy KYC through Aadhaar; opens in 6 days. Results: over 500 million accounts opened — the largest financial inclusion drive in human history. (2) AADHAAR (Continuing development). India's unique digital ID system. 1.3+ billion people enrolled. Biometric (fingerprint + iris). Used to authenticate identity. Linked to bank accounts. Creates the identity infrastructure. (3) MOBILE REVOLUTION (Especially post-2016). Jio launched, dropping data prices to world's cheapest. Cheap smartphones flooded the market. By 2020, most adults had smartphones and internet. Creates the delivery infrastructure. JAM TRINITY = J + A + M = Jan Dhan + Aadhaar + Mobile. Together, these created an unprecedented digital financial infrastructure. WHAT THIS ENABLED: (1) DIRECT BENEFIT TRANSFER (DBT). Government can send money directly to citizen accounts. Examples: pension payments; cooking gas subsidies (LPG); crop insurance (Pradhan Mantri Fasal Bima Yojana); MGNREGA wages (rural employment); COVID relief packages; education scholarships; farmer support (PM-KISAN ₹6,000/year directly to 11+ crore farmers). RESULTS: by 2024, DBT has saved India about ₹2.7 lakh crore in leakages. Money previously stolen now reaches the poor. (2) UPI PAYMENTS (Launched 2016). UPI lets anyone send money instantly using phone number or QR code. Free for most transactions. Works across all banks. Used by everyone from tea sellers to large corporations. 150+ billion transactions in 2024 — more than entire rest of the world combined. India is the world leader in real-time digital payments. (3) MICRO-LOANS. Small loans through mobile apps now reach the poor. Banks like Bandhan, Ujjivan, AU Small Finance give loans of ₹5,000-50,000 to small businesses, women entrepreneurs, farmers. Previously, the poor borrowed from moneylenders at 30-50% interest; now they borrow at 12%. (4) INSURANCE. Pradhan Mantri Jeevan Jyoti Bima Yojana — ₹436/year for ₹2 lakh life insurance. Pradhan Mantri Suraksha Bima Yojana — ₹20/year for ₹2 lakh accident insurance. Hundreds of millions now have basic insurance for the first time. (5) ATAL PENSION YOJANA. Small monthly contributions get pension after age 60. Social security for the unorganised sector. (6) MUDRA LOANS. Small business loans up to ₹10 lakh without collateral. 35+ crore loans disbursed. Empowers women entrepreneurs especially. (7) FORMAL CREDIT REPLACES MONEYLENDERS. Where previously the rural poor were trapped by moneylenders at 30-50% interest, formal credit at 10-12% is now available. A PERSONAL STORY — LAKSHMI: Lakshmi, a vegetable vendor in a small UP town, PRE-2014: no bank account; all cash; money stolen often; no insurance; no pension; couldn't take loans from banks; borrowed from local moneylenders at 50% interest; caught in debt trap. POST-2024: Jan Dhan account with RuPay card; Aadhaar linked; UPI-enabled smartphone; receives government subsidies in account; has life insurance (₹436/year for ₹2 lakh cover); has accident insurance; Atal Pension Yojana for old age; can take Mudra loan; borrows at 12% instead of 50%; saves regularly; can transfer money to her relatives instantly. Multiply Lakshmi by hundreds of millions. That is the scale of transformation. GLOBAL RECOGNITION: IMF, World Bank, and other global bodies cite India's digital financial inclusion as a model. Many developing countries now want to copy 'India Stack': Indonesia, Brazil, Mexico, Singapore, Nigeria, Egypt, Sri Lanka. India is offering UPI technology to other countries. CHALLENGES: (1) Account dormancy — many Jan Dhan accounts have little money or are inactive. (2) Digital divide — some elderly, disabled, very poor still struggle with smartphones. (3) Cybercrime — UPI fraud, OTP scams, phishing have grown. (4) Privacy — vast data collection, how it's used is concerning. (5) Concentration risk — if UPI fails, millions of transactions stop. THE BIGGER LESSON: Public goods, well-built, can transform societies. India built three foundational public goods (Jan Dhan, Aadhaar, UPI) and connected them. Result: one of the most powerful financial inclusion engines in human history. This is what governments can do — not by giving handouts, but by building infrastructure that enables people to help themselves. CONCLUSION: When you grow up and meet people from other countries — especially developing countries — you may meet citizens using systems inspired by India. UPI-like systems are spreading globally. This is a quiet kind of soft power and a genuine Indian contribution to humanity. For now, appreciate that digital banking isn't just convenient for you. It is reshaping life for hundreds of millions of poor Indians who finally have access to financial tools previously denied them. The 21st century has many Indian stories; the digital banking revolution is one of the most positive. Be proud of it. Tell others about it. Help extend it further — to those still excluded, to those still vulnerable to fraud, to those still missing out. India's financial transformation is one of the great stories of our time.",
+          "explanation": "Capstone question on one of India's greatest modern transformations."
+        }
+      ]
+    }
+  ]
+}

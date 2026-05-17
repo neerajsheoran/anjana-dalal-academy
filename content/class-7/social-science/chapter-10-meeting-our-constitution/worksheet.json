@@ -1,0 +1,112 @@
+{
+  "chapterRef": "class-7/social-science/chapter-10-meeting-our-constitution/worksheet",
+  "topics": [
+    {
+      "topic": "The Making of the Constitution",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "The Indian Constitution came into effect on:",
+          "options": [
+            "15 August 1947",
+            "26 January 1950",
+            "26 November 1949",
+            "2 October 1950"
+          ],
+          "answer": "26 January 1950",
+          "explanation": "The Constitution was ADOPTED on 26 November 1949 but came INTO EFFECT on 26 January 1950 — celebrated as Republic Day."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
+          "options": [
+            "Dr. Rajendra Prasad",
+            "Jawaharlal Nehru",
+            "Dr. B.R. Ambedkar",
+            "Sardar Vallabhbhai Patel"
+          ],
+          "answer": "Dr. B.R. Ambedkar",
+          "explanation": "Dr. B.R. Ambedkar chaired the Drafting Committee and is honoured as the chief architect of the Indian Constitution. Dr. Rajendra Prasad was Chairman of the Constituent Assembly itself."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The Indian Constitution was prepared by the _______ Assembly, which met from December 1946 to November 1949.",
+          "answer": "Constituent",
+          "explanation": "The Constituent Assembly was the body specifically convened to write the Constitution. It had 389 members originally, reduced to 299 after Partition, including 15 women."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What were the three main sources of influence on the Indian Constitution?",
+          "answer": "The Indian Constitution drew from three main sources. (1) The IDEALS OF THE INDIAN FREEDOM MOVEMENT — over 60+ years of struggle, the freedom movement had developed deep commitment to equality, justice, freedom, fraternity, and self-rule. These ideals were embedded in the Constitution. Many Constituent Assembly members had been freedom fighters. (2) INDIA'S OWN CIVILISATIONAL HERITAGE — concepts like Vasudhaiva Kutumbakam ('the world is one family'), Sarve Bhavantu Sukhinah ('may all be happy'), the tradition of pluralism in religion and philosophy, rajadharma (the moral duties of rulers), the panchayat tradition of village governance, and ancient democratic experiences like the Vajji republic and Uttaramerur. (3) LESSONS FROM OTHER COUNTRIES' CONSTITUTIONS — the framers carefully studied the constitutions of the UK (parliamentary system), USA (fundamental rights, judicial review), Ireland (directive principles), Canada (federal structure), Australia (concurrent list), Germany (emergency provisions), and others. This was not copying — it was learning from best practices and adapting them for India. The result is a unique constitution that is unmistakably Indian, drawing on both ancient wisdom and modern practice.",
+          "explanation": "Tests understanding of the multiple influences that shaped the Constitution."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Tell the life story of Dr. B.R. Ambedkar and explain why he is called the chief architect of the Indian Constitution.",
+          "answer": "Dr. Bhimrao Ramji Ambedkar (1891-1956) is one of the greatest Indians of all time, and his story is one of overcoming the worst obstacles to deliver one of the country's greatest gifts. (1) HIS BEGINNINGS: Born into the Mahar caste, considered 'untouchable' in the rigid caste system, he faced terrible humiliation as a child. In school, he sat on the floor while other children sat on benches. Teachers refused to teach him; classmates refused to play with him. Barbers refused to cut his hair. Public wells were forbidden to him. Even temples were closed to his community. Despite all this, his father insisted on his education. (2) HIS EDUCATION: He excelled in studies. Through scholarships, he reached Bombay (now Mumbai), then Columbia University (USA), then the London School of Economics. He earned a Master's, a PhD in Economics (Columbia), a second PhD (LSE), and qualified as a barrister in London. At a time when most Indians had no higher education, Ambedkar held some of the highest qualifications in the world. (3) HIS WORK FOR DALITS: Returning to India, he became the foremost leader of the Dalit community. He fought for: temple entry (Mahad Satyagraha 1927, where he led Dalits to drink from a public water tank), education for Dalit children, reservations in government jobs and education, abolition of untouchability. He publicly burned the Manusmriti — a Hindu text used to justify caste discrimination — an act of profound courage. (4) HIS DEBATES WITH GANDHI: Ambedkar disagreed with Gandhi on caste — Gandhi wanted reform from within, Ambedkar wanted abolition. They debated fiercely, sometimes bitterly. But both worked together when needed; Gandhi insisted Ambedkar be Law Minister after independence. (5) THE CONSTITUTION: When the Constituent Assembly was formed, Ambedkar was the natural choice as Chairman of the Drafting Committee. He had: deep knowledge of constitutional law worldwide; lived experience of injustice; fierce commitment to equality; brilliance to design solutions. For three years, he led the drafting. He spoke in the Assembly explaining clauses, defending principles, accepting amendments. He gave India a Constitution that protects the weakest — because he had been the weakest. Article 32 (right to constitutional remedies), which he called 'the heart and soul of the Constitution,' lets any citizen approach the Supreme Court directly. The abolition of untouchability (Article 17), reservations for Dalits and tribals, fundamental rights for all, women's equality — all bear his imprint. (6) HIS LATER YEARS: He served as Law Minister, then resigned over delays in Hindu women's rights legislation. In 1956, shortly before his death, he and approximately 500,000 of his followers converted to Buddhism — a peaceful religion without caste hierarchy. He died on 6 December 1956. (7) WHY HE IS THE CHIEF ARCHITECT: Even though many people contributed, Ambedkar: (a) Headed the Drafting Committee that produced the actual text. (b) Was the most knowledgeable member on constitutional law. (c) Insisted on key protections for the weak — Article 32, abolition of untouchability, women's rights, reservations. (d) Defended the Constitution clause by clause in the Assembly. (e) Saw further than most members on issues like caste, women's rights, religious minorities. WHAT MAKES HIS STORY GREAT: He could have been bitter. He had every reason to hate the country that humiliated him. Instead, he built it. He could have asked for revenge against upper castes. Instead, he wrote a Constitution that treats all Indians equally. That is the mark of greatness — not just intelligence or courage but moral nobility. Today his birthday (14 April) is Ambedkar Jayanti. His statues stand across India. His face is on currency. Every Dalit child going to school freely, every woman who inherits property, every citizen who can vote regardless of caste — all owe something to him.",
+          "explanation": "Capstone biographical question that humanises the Constitution by understanding its chief architect."
+        }
+      ]
+    },
+    {
+      "topic": "Key Features of the Constitution",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The Preamble of the Indian Constitution describes India as a 'Sovereign, Socialist, Secular, _______ Republic'.",
+          "options": ["Modern", "Independent", "Democratic", "Federal"],
+          "answer": "Democratic",
+          "explanation": "The Preamble declares India a 'Sovereign, Socialist, Secular, Democratic Republic.' The words 'Socialist' and 'Secular' were added by the 42nd Amendment in 1976."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which fundamental right did Dr. Ambedkar call 'the heart and soul of the Constitution'?",
+          "options": [
+            "Right to Equality",
+            "Right to Freedom",
+            "Right to Freedom of Religion",
+            "Right to Constitutional Remedies"
+          ],
+          "answer": "Right to Constitutional Remedies",
+          "explanation": "Article 32 — the Right to Constitutional Remedies — allows any citizen to approach the Supreme Court directly when fundamental rights are violated. Ambedkar called it the heart and soul because without remedies, the other rights would be meaningless."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The Indian Constitution divides subjects between the Centre and States through the Union List, State List, and _______ List.",
+          "answer": "Concurrent",
+          "explanation": "The Concurrent List contains subjects where both the Centre and States can make laws (e.g., education, criminal law). The Union List is centre-only, the State List is state-only."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What are the six categories of Fundamental Rights in the Indian Constitution?",
+          "answer": "The Indian Constitution guarantees six categories of fundamental rights to every citizen. (1) RIGHT TO EQUALITY (Articles 14-18) — equality before law, no discrimination on grounds of religion/race/caste/sex/birthplace, equal opportunity in government jobs, abolition of untouchability, abolition of titles. (2) RIGHT TO FREEDOM (Articles 19-22) — freedom of speech, assembly, association, movement, residence, profession; right to life and personal liberty; protection in arrest and trial. (3) RIGHT AGAINST EXPLOITATION (Articles 23-24) — prohibition of human trafficking, forced labour (begar), and child labour in hazardous industries. (4) RIGHT TO FREEDOM OF RELIGION (Articles 25-28) — freedom to practise, profess, and propagate any religion; freedom for religious groups to manage their affairs; no religious instruction in fully government-funded schools. (5) CULTURAL AND EDUCATIONAL RIGHTS (Articles 29-30) — minorities can preserve their language, script, and culture; minorities can establish their own educational institutions. (6) RIGHT TO CONSTITUTIONAL REMEDIES (Article 32) — every citizen can directly approach the Supreme Court if any fundamental right is violated. The Court can issue writs (habeas corpus, mandamus, prohibition, certiorari, quo warranto) to enforce these rights. These six rights together form a wall of dignity that even the government cannot cross.",
+          "explanation": "Tests knowledge of the comprehensive set of fundamental rights."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why is the Indian Constitution called a 'living document'? Explain with examples.",
+          "answer": "The Indian Constitution is called a 'living document' because it can grow and adapt to changing times without being abandoned or rewritten. There are several ways it evolves. (1) FORMAL AMENDMENTS: The Constitution has been amended over 105 times since 1950. Major amendments include: 42nd Amendment (1976) added 'Socialist' and 'Secular' to the Preamble plus Fundamental Duties; 44th Amendment (1978) restored civil liberties after the Emergency; 73rd and 74th Amendments (1992) strengthened panchayats and municipalities; 86th Amendment (2002) made education a fundamental right for children 6-14; 101st Amendment (2017) introduced GST; 103rd Amendment (2019) added economic-based reservation. Amendments require special majorities — usually two-thirds of Parliament, sometimes also state legislatures' approval — making change possible but not casual. (2) JUDICIAL INTERPRETATION: The Supreme Court interprets the Constitution, and over decades has expanded the meaning of rights. Article 21 (right to life) has been interpreted to include the right to: clean environment, privacy, education, dignity, livelihood, speedy trial, food, shelter. The Right to Privacy was recognised as fundamental in 2017. The right to die with dignity (passive euthanasia) was recognised in 2018. None of these are explicitly in the original text — they grew from judicial interpretation. (3) STRIKING DOWN OUTDATED LAWS: The Supreme Court has used the Constitution to strike down old laws that don't match modern values. Section 377 of the Indian Penal Code, which criminalised homosexuality, was read down in 2018. Triple talaq was struck down in 2017 as violating women's equality. Adultery laws that punished only men were struck down in 2018. (4) CONVENTIONS AND PRACTICES: Many important practices have grown around the Constitution without being formally written into it — coalition government norms, ministerial portfolios, parliamentary courtesies, Election Commission practices for free and fair elections. (5) THE BASIC STRUCTURE DOCTRINE: In the landmark Kesavananda Bharati case (1973), the Supreme Court ruled that even Parliament cannot amend the BASIC STRUCTURE of the Constitution — features like democracy, secularism, federal structure, independent judiciary, rule of law, fundamental rights (core). This protects the soul of the Constitution while allowing amendments at the edges. WHY THIS MATTERS: A constitution that cannot change becomes outdated and is eventually abandoned or violated. A constitution that changes too easily loses its protective force. The Indian Constitution achieves a remarkable balance: STABLE IN ITS CORE, FLEXIBLE AT ITS EDGES. The Preamble's ideals don't change. The basic structure doctrine protects the heart. But specific provisions can be updated, and interpretations can evolve. This is one reason Indian democracy has survived for 77+ years while many other young democracies have failed. The Constitution is a living tree — same trunk, but new leaves and branches every season. Every generation rediscovers it. Every Supreme Court bench may find new meaning in old words. The Indian Constitution at 77 is not a museum piece — it is alive, working, growing.",
+          "explanation": "Capstone question on how a written constitution stays relevant across generations."
+        }
+      ]
+    }
+  ]
+}

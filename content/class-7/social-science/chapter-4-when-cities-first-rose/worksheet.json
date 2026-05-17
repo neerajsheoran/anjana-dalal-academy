@@ -1,0 +1,97 @@
+{
+  "chapterRef": "class-7/social-science/chapter-4-when-cities-first-rose/worksheet",
+  "topics": [
+    {
+      "topic": "First and Second Urbanisation",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "India's First Urbanisation was the:",
+          "options": ["Mauryan Empire", "Indus-Sarasvati civilisation", "Mahajanapada period", "Gupta Era"],
+          "answer": "Indus-Sarasvati civilisation",
+          "explanation": "The Indus-Sarasvati (Harappan) civilisation (2600-1900 BCE) was India's First Urbanisation. After it declined, India had no major cities for about 1,000 years."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "The Second Urbanisation of India happened mainly in which region?",
+          "options": ["Thar Desert", "Ganga Plains", "Western Ghats", "Andaman Islands"],
+          "answer": "Ganga Plains",
+          "explanation": "The Second Urbanisation rose in the Ganga plains and surrounding regions in the 1st millennium BCE, helped by fertile soil, river transport, and iron tools."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The word 'janapada' literally means 'the land where the _______ have set foot.'",
+          "answer": "people",
+          "explanation": "Janapada = jana (people) + pada (foot). It means the land where a community has settled."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Why did the Second Urbanisation happen in the Ganga plains rather than in the Indus region again?",
+          "answer": "Three reasons: (1) Climate change made the northwest drier — the Sarasvati had dried up. (2) Iron tools allowed clearing of the thick Ganga forests, opening up vast new farmland. (3) Population had migrated eastward over centuries. The Ganga plains, with fertile soil and reliable rivers, were the natural place for urban civilisation to revive.",
+          "explanation": "Connects climate, technology, and human migration as combined causes."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "List four factors that drove India's Second Urbanisation, and explain each briefly.",
+          "answer": "(1) Agricultural surplus — the fertile Ganga plains, combined with new iron tools for clearing forests and ploughing, allowed farmers to produce far more food than their families needed. Surplus food fed city dwellers who didn't farm. (2) Iron technology — iron axes cleared forests, iron ploughs broke heavier soils, iron weapons gave kingdoms military strength. This single technology transformed Indian society around 1000 BCE. (3) Trade networks — rivers like the Ganga and Yamuna allowed easy transport; roads connected regions. Long-distance trade brought wealth and ideas, and merchants became wealthy and influential. (4) Coinage — for the first time in India, coins (punch-marked silver pieces) were minted. Coins made trade easier than barter; people could accumulate wealth, lend money, and pay taxes more easily. (5) Specialisation — in cities, people could focus on a single craft (pottery, weaving, metalwork) and trade for what they needed. This created high-quality goods and economic diversity. Together, these factors made cities not just possible but inevitable.",
+          "explanation": "Synthesises multiple economic and technological factors — a good practice for connecting causes."
+        }
+      ]
+    },
+    {
+      "topic": "Janapadas, Mahajanapadas, and Governance",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Approximately how many mahajanapadas are commonly listed in ancient texts?",
+          "options": ["4", "8", "16", "30"],
+          "answer": "16",
+          "explanation": "Ancient texts most commonly list 16 mahajanapadas. There may have been a few more, plus smaller janapadas that remained independent."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "The most powerful mahajanapada that eventually gave rise to the Mauryan Empire was:",
+          "options": ["Kosala", "Magadha", "Avanti", "Vatsa"],
+          "answer": "Magadha",
+          "explanation": "Magadha (capitals Rajagriha, then Pataliputra) became the most powerful mahajanapada and eventually became the Mauryan Empire under Chandragupta Maurya."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The Buddha praised the council-based government called the _______ -sangha, of which the Vajji confederacy was a famous example.",
+          "answer": "gana",
+          "explanation": "Gana-sanghas were council-based governments where leading family heads ruled together — early forms of republic. The Vajji/Licchavi gana-sangha at Vaishali was the most famous."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What were sabha and samiti, and what do they tell us about early Indian governance?",
+          "answer": "Sabha was a council of senior or respected members. Samiti was a larger gathering of all the people. Both were assemblies where a raja (king) would discuss important matters before making decisions. They first appear in the Vedas — India's oldest texts. They tell us that even in early times, Indian rulers were not absolute — they had to consult their people. The idea of collective decision-making and limits on royal power is one of the oldest features of Indian political tradition.",
+          "explanation": "Important to recognise that consultative governance in India is thousands of years old, predating modern democracy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Compare gana-sanghas with monarchies. What were the differences, and why did monarchies eventually win out?",
+          "answer": "Gana-sanghas were council-based governments where leading family heads ruled together. Decisions were made by discussion, debate, and majority vote in assemblies. No single king had absolute power. The Vajji confederacy (with the Licchavi clan) was the most famous example. The Buddha visited Vaishali and praised the gana-sangha system. Monarchies, by contrast, concentrated power in a single king. The king made final decisions, often after advice from ministers but without needing council approval. Examples include Magadha, Kosala, Avanti. Differences: gana-sanghas were more inclusive (within the elite); decisions were collective; abuse of power was harder. Monarchies could act faster, plan over longer terms, and concentrate resources. Why monarchies won out: (1) Speed of decision — a king could declare war, mobilise armies, and act quickly. Gana-sanghas needed time for discussion. (2) Resource concentration — kings could tax, build armies, and fund military campaigns more easily. (3) Unity of purpose — a kingdom had clear leadership; gana-sanghas could be divided. (4) Military advantage — well-organised monarchies had stronger armies. Magadhan kings like Ajatashatru and Mahapadma Nanda gradually conquered the gana-sanghas. This is a recurring pattern in history — divided republics often lose to united monarchies in the short term. However, the democratic ideas of the gana-sanghas didn't die — they survived in Indian thought and have flowered again in modern India's democracy.",
+          "explanation": "Comparison + reasoning about historical change. The pattern (divided republics vs unified monarchies) appears throughout world history."
+        }
+      ]
+    }
+  ]
+}

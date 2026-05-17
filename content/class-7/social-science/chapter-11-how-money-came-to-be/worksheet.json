@@ -1,0 +1,107 @@
+{
+  "chapterRef": "class-7/social-science/chapter-11-how-money-came-to-be/worksheet",
+  "topics": [
+    {
+      "topic": "Barter and the Need for Money",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Direct exchange of goods and services without using money is called:",
+          "options": ["Trade", "Barter", "Auction", "Sale"],
+          "answer": "Barter",
+          "explanation": "Barter is the direct exchange of goods or services. It was the original form of trade before money was invented."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "If you want to buy shoes with cattle, you need to find someone who wants cattle AND has shoes to spare. This problem is called:",
+          "options": [
+            "Divisibility problem",
+            "Double coincidence of wants",
+            "Storage problem",
+            "Inflation"
+          ],
+          "answer": "Double coincidence of wants",
+          "explanation": "Double coincidence of wants is the requirement that two parties each have something the other wants AND each be willing to trade. This is the main weakness of barter."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Money's role in allowing you to save for later use makes it a _______ of value.",
+          "answer": "store",
+          "explanation": "Store of value is one of the four functions of money. Unlike wheat that rots, money can be kept for the future."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What are the four basic functions of money?",
+          "answer": "Money performs four basic functions: (1) MEDIUM OF EXCHANGE — money is universally accepted in exchange for goods and services. You can buy almost anything with money, removing the need to find a person who happens to want what you have. (2) COMMON MEASURE OF VALUE (Unit of Account) — money provides a common unit to measure the value of all goods and services. We can say a shirt costs ₹500 and a chair costs ₹2,000, easily comparing their values. (3) STORE OF VALUE — money can be saved and used later. Unlike wheat which rots or fruit which spoils, money can be kept safely (in cash, bank, or other forms) for future use. (4) STANDARD OF DEFERRED PAYMENT — money allows you to buy now and pay later. Loans, credit, and 'pay-after-delivery' arrangements all depend on money being a recognised way to settle future payments. Together, these four functions are what define money. Anything that performs all four — gold coins, paper notes, digital balances in UPI — counts as money.",
+          "explanation": "Tests knowledge of money's four basic functions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Imagine a farmer who has an ox and needs shoes, a sweater, and medicines. Explain all the problems he would face in a barter economy and how money would solve each.",
+          "answer": "The farmer faces multiple serious problems trying to obtain shoes, a sweater, and medicines through barter. PROBLEM 1: DOUBLE COINCIDENCE OF WANTS. To trade his ox for shoes, he needs to find a shoemaker who (a) has shoes to spare AND (b) actually wants an ox. Most shoemakers don't want an ox — they might want grain, cloth, or money. The farmer may travel days looking for the right match. He then has the same problem for the sweater seller and the medicine seller. Three matches, all needing perfect coincidence. PROBLEM 2: NO COMMON MEASURE OF VALUE. Even if he finds a shoemaker willing to take an ox, how many pairs of shoes is an ox worth? Two? Twenty? There's no agreed standard, so they have to argue every time. The farmer might feel cheated. The shoemaker might feel he overpaid. Without a common unit (like rupees), every transaction becomes a negotiation. PROBLEM 3: DIVISIBILITY. The farmer cannot trade HALF an ox for shoes and the other half for medicines. The ox is one whole thing. He has to either trade the whole ox for one item (losing value) or somehow exchange it for multiple things — much harder. PROBLEM 4: PORTABILITY. He must take the ox with him to find buyers. An ox is large, heavy, slow, and needs feeding. Travel becomes difficult. He might lose the ox to thieves, predators, or accidents along the way. PROBLEM 5: DURABILITY. If he can't make a direct trade and instead exchanges the ox for wheat (a more divisible item), now he has bags of wheat. But wheat rots, gets eaten by rats, attracts insects, and can't be stored long. He must spend or trade it quickly, or lose value. HOW MONEY SOLVES EACH: (1) Universal acceptance solves the double coincidence problem — he sells his ox once to anyone who wants an ox (or wheat, or any item), receives money, then uses money to buy shoes, sweater, medicines from three different sellers who all accept money. Three trades become easy. (2) Common measure of value — money provides a unit. The ox might be worth ₹50,000, shoes ₹2,000, sweater ₹1,500, medicines ₹500. The farmer can easily decide what he can afford. (3) Divisibility — money comes in different amounts (₹1, ₹10, ₹100, ₹500). He can pay exactly what each item costs. (4) Portability — money is light. ₹50,000 fits in a wallet or a phone screen. He carries it easily on his journey. (5) Durability — money doesn't rot, get eaten, or spoil. He can keep it for weeks, months, years if needed. ADDITIONAL BENEFITS: With money, he can also: (a) save part of the ox's value for future emergencies; (b) lend money to a friend; (c) take a loan from someone else; (d) buy from people far away (using UPI today); (e) compare prices easily across many sellers; (f) buy something today and have time to think before deciding. This is why money was such a revolutionary invention. Every problem of barter is solved. The economy can grow far beyond what barter allows. Cities, trade, complex civilisations — all became possible because of money.",
+          "explanation": "Capstone question that systematically applies all the chapter concepts to one practical scenario."
+        }
+      ]
+    },
+    {
+      "topic": "The Journey of Money — Coins, Paper, Digital",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Early Indian coins were called:",
+          "options": ["Mohurs", "Karshapanas", "Rupees", "Dinars"],
+          "answer": "Karshapanas",
+          "explanation": "Karshapanas (also called panas) were the earliest Indian coins, dating from around 600 BCE. The word 'pana' survives today in Tamil/Telugu/Malayalam (panam) and Kannada (hana) meaning money."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Roman gold coins found in Pudukkottai (Tamil Nadu) prove that:",
+          "options": [
+            "Romans conquered south India",
+            "South India traded with the Roman Empire 2,000 years ago",
+            "Indians invented Roman coins",
+            "Pudukkottai was a Roman colony"
+          ],
+          "answer": "South India traded with the Roman Empire 2,000 years ago",
+          "explanation": "Roman coins in south Indian archaeological sites prove that ancient Rome bought Indian spices, pearls, and cotton, paying in gold. India was a major trading nation 2,000 years ago."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "India's revolutionary digital payment system, launched in 2016, is called _______ .",
+          "answer": "UPI",
+          "explanation": "UPI (Unified Payments Interface) lets anyone send money instantly to anyone else using just a phone number or QR code. India is now the world's leader in real-time digital payments, largely because of UPI."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Why is paper money valuable even though paper itself is worth almost nothing?",
+          "answer": "Paper money is valuable because of TRUST, not because of the paper itself. A ₹500 note costs maybe ₹3 to print — the paper, ink, and security features are inexpensive. Yet it can buy goods worth ₹500. Three pillars hold paper money up: (1) THE GOVERNMENT ACCEPTS IT FOR TAXES — when the Indian government says citizens must pay taxes in rupees, every Indian needs rupees. This creates universal demand for the rupee. (2) OTHER PEOPLE ACCEPT IT — shops, employers, friends, family all accept rupees for goods and services. Once everyone accepts it, it works everywhere. (3) THE RESERVE BANK OF INDIA (RBI) BACKS IT — the central bank guarantees the rupee, manages its supply, and prevents inflation (too much money) or deflation (too little). Together, these three create what economists call 'fiat money' — money that has value by social agreement, not by intrinsic worth. Modern paper money works as long as TRUST is maintained. If trust breaks (like in 1920s Germany or modern Zimbabwe), paper money becomes worthless and societies collapse into hyperinflation. So while a ₹500 note is just paper, it carries the trust of 1.4 billion Indians, the Indian government, and the RBI. That trust is what gives it value.",
+          "explanation": "Tests understanding of how fiat money works through social trust."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "How has UPI transformed India? What conditions made this transformation possible, and what are the risks?",
+          "answer": "UPI (Unified Payments Interface), launched by NPCI in 2016, is one of the most important Indian innovations of the 21st century. It transformed India in several ways. (1) BROUGHT MILLIONS INTO THE FINANCIAL SYSTEM. Before UPI, hundreds of millions of poor Indians had no real way to use bank accounts — banks were far, paperwork confusing, fees high. UPI made banking accessible from a basic smartphone. A street vendor in Bihar can now receive payments, save in a bank, even take small loans. (2) MADE SMALL PAYMENTS POSSIBLE. You can pay ₹10 to a paanwala or ₹5 to a chai shop using UPI — unimaginable before. Tiny transactions left the cash-only world and entered the formal economy. (3) CUT TRANSACTION COSTS. A typical UPI transaction costs essentially zero. Compare to credit cards which cost shops 2-3% of every transaction. India now has one of the cheapest payment systems in the world. (4) ENABLED NEW BUSINESSES. Delivery services, mobile ordering, ride sharing, online education — many new Indian startups exist only because UPI exists. They rely on tiny, instant, cheap payments. (5) SCALED MASSIVELY. UPI now processes about 150 billion transactions a year — more than the credit card networks of the entire world combined. (6) BECAME A GLOBAL MODEL. Singapore, UAE, France, and other countries are now adopting UPI-like systems built with Indian help. CONDITIONS THAT MADE THIS POSSIBLE: (1) OPEN STANDARDS — UPI is run by NPCI (National Payments Corporation of India) as a public utility, not a private company. All banks must support it. No single company can dominate. (2) AADHAAR — India's unique digital ID system gave every Indian a verifiable identity, making bank accounts and KYC easier. (3) SMARTPHONE EXPLOSION — cheap smartphones (₹5,000-15,000) reached every Indian village around 2015-18; internet became cheap (Jio's 2016 launch was crucial). (4) DEMONETISATION PUSH (2016) — when high-value notes were withdrawn, UPI suddenly looked very attractive. Many cash-only users learned digital payments. (5) NO LEGACY SYSTEMS — richer countries already had credit cards and had no urgent need for UPI. India was leapfrogging from cash directly to mobile payments, skipping the credit card era. (6) GOVERNMENT SUPPORT — successive governments backed UPI as national policy. RISKS: (1) FRAUD — scammers trick people into approving fake payments by impersonating bank staff, posing as buyers, or using social engineering. You should never share your UPI PIN. (2) PRIVACY — UPI generates vast data about who pays whom for what. Who has access to this data, and how is it protected? Real concerns. (3) DEPENDENCY ON PHONE — if your phone is lost, stolen, or broken, you may be locked out of your own money. (4) INTERNET OUTAGES — UPI doesn't work offline. Power cuts, network failures, or service downtime can leave you stuck. (5) CONCENTRATION RISK — if NPCI's central systems go down, the country's payments freeze. This is a single point of failure for hundreds of millions. (6) EXCLUSION RISK — those without smartphones (especially the elderly and very poor) may be left behind as cash shrinks. CONCLUSION: UPI is a remarkable Indian achievement — a combination of public policy, technology, and timing. It has improved daily life for hundreds of millions. But like any powerful tool, it requires vigilance — against fraud, privacy abuse, technical failures, and exclusion. The next decade will tell whether India can build on this success while addressing the risks. Either way, UPI has changed how Indians think about money — making digital payments the new normal, faster than anywhere else in the world.",
+          "explanation": "Capstone question on a major Indian innovation, requiring synthesis of economic, technological, and social factors."
+        }
+      ]
+    }
+  ]
+}

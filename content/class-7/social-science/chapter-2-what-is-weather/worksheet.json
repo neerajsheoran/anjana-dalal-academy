@@ -1,0 +1,89 @@
+{
+  "chapterRef": "class-7/social-science/chapter-2-what-is-weather/worksheet",
+  "topics": [
+    {
+      "topic": "What is Weather?",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Weather is the state of the atmosphere at:",
+          "options": ["A particular time and place", "Always summer", "The North Pole only", "Sea level only"],
+          "answer": "A particular time and place",
+          "explanation": "Weather changes from place to place and time to time. Climate, on the other hand, is the average pattern of weather over many years."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which layer of the atmosphere contains most weather phenomena?",
+          "options": ["Stratosphere", "Mesosphere", "Troposphere", "Exosphere"],
+          "answer": "Troposphere",
+          "explanation": "The troposphere is the lowest layer of the atmosphere, where we live and breathe. Almost all weather happens here, 6-18 km up from the ground."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The amount of water vapour in the air is called _______.",
+          "answer": "humidity",
+          "explanation": "Humidity is measured by a hygrometer. High humidity makes you feel sticky and uncomfortable."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Name the five elements of weather and one instrument used to measure each.",
+          "answer": "(1) Temperature — thermometer. (2) Precipitation (rain, snow, etc.) — rain gauge. (3) Atmospheric pressure — barometer. (4) Wind — anemometer (speed) and wind vane (direction). (5) Humidity — hygrometer.",
+          "explanation": "Each element of weather has its own measuring instrument. Together they give a complete picture of weather conditions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Why is it important for people from different places to use the same standard units when measuring weather?",
+          "answer": "Without standard units, people from different places cannot meaningfully communicate about weather. For example, if Krishnan in Chennai tells Amir in Kashmir that it is 'chilly' after rain, Amir cannot know exactly how cold that means. What feels chilly to a Chennai resident might feel pleasant to a Kashmir resident who is used to colder temperatures. By using standard units like degrees Celsius for temperature, millimeters for rainfall, and kilometers per hour for wind speed, we can compare weather across places and over time. Standard units also let scientists track changes accurately — like noticing that average temperatures have risen by 1°C over the past century, which would be impossible to measure without standards. International cooperation in disasters (like cyclone warnings shared between India and Bangladesh) also needs standard units. Standardisation makes science possible.",
+          "explanation": "Connects abstract measurement to real-world communication and decision-making. Why standards matter is a recurring theme in science and society."
+        }
+      ]
+    },
+    {
+      "topic": "Traditional and Modern Weather Prediction",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which ancient Indian text by Varahamihira has detailed sections on rainfall prediction?",
+          "options": ["Arthashastra", "Brihat Samhita", "Mahabharata", "Rig Veda"],
+          "answer": "Brihat Samhita",
+          "explanation": "The Brihat Samhita by Varahamihira (6th century CE) contains detailed observations on weather, eclipses, earthquakes, and crop forecasts — early Indian weather science."
+        },
+        {
+          "id": "c2-e2",
+          "type": "fill",
+          "question": "The government body that issues weather forecasts in India is the India _______ Department, abbreviated as IMD.",
+          "answer": "Meteorological",
+          "explanation": "The India Meteorological Department (IMD) is the official government agency for weather forecasting in India. It uses satellites, radars, instruments, and computer models."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "Give two traditional Indian ways to predict rain, and explain why they often worked.",
+          "answer": "(1) Ants moving their eggs to higher ground — ants can sense the drop in atmospheric pressure that precedes rain, and they instinctively move to protect their eggs from flooding. (2) Frogs croaking loudly — frogs are more active in humid conditions before rain, so increased croaking signals high humidity. (Other examples: birds flying low, certain plants opening/closing, smoke patterns.) These traditional signs often worked because animals and plants are more sensitive than humans to changes in atmospheric pressure, humidity, and other weather signals. Modern science calls this 'biometeorology' — studying how living things respond to weather.",
+          "explanation": "Connects folk wisdom to modern science — showing that careful observation by ancestors had real biological basis."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Compare the death tolls of the 1999 Odisha super-cyclone (~10,000 deaths) and the 2020 Cyclone Amphan (~100 deaths in India) — both extremely powerful storms. What changed?",
+          "answer": "The dramatic reduction in deaths from cyclones in coastal India is one of the great success stories of weather science and disaster management. Several improvements made the difference: (1) Better forecasting — the IMD's cyclone predictions are now accurate to within hours of landfall, with 72 hours of advance notice. Satellites and radars track storms continuously. (2) Cyclone shelters — Odisha and other coastal states have built thousands of cyclone-resistant shelters within walking distance of vulnerable communities. (3) Mass evacuation — millions of people are moved to safety days before a major cyclone arrives. (4) Pre-positioned supplies — food, water, and medicine stockpiles are placed in safe zones beforehand. (5) Local volunteers — trained communities help with rescue and evacuation. (6) Communication — mobile phones, radio, TV, and social media broadcast warnings to remote villages. The contrast shows what good science combined with good governance can achieve. The cyclones are not weaker — in fact, climate change may be making them stronger. But human preparation has improved enormously. Every Indian life saved during recent cyclones is a victory of science, policy, and citizen cooperation working together.",
+          "explanation": "Demonstrates how weather science directly saves lives — a powerful argument for the importance of public investment in scientific institutions like the IMD."
+        }
+      ]
+    }
+  ]
+}

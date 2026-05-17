@@ -1,0 +1,117 @@
+{
+  "chapterRef": "class-7/social-science/chapter-5-early-indian-empires/worksheet",
+  "topics": [
+    {
+      "topic": "The Mauryan Empire",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Who founded the Mauryan Empire?",
+          "options": ["Bindusara", "Chandragupta Maurya", "Ashoka", "Pushyamitra"],
+          "answer": "Chandragupta Maurya",
+          "explanation": "Chandragupta Maurya founded the Mauryan Empire around 321 BCE by overthrowing the Nanda dynasty, with guidance from his teacher Kautilya."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Who was Chandragupta Maurya's famous advisor who wrote the Arthashastra?",
+          "options": ["Aryabhata", "Patanjali", "Kautilya (Chanakya)", "Varahamihira"],
+          "answer": "Kautilya (Chanakya)",
+          "explanation": "Kautilya, also known as Chanakya or Vishnugupta, was the brilliant strategist who guided Chandragupta. His book Arthashastra is one of the most important political texts in history."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "The Mauryan capital was at _______, near modern Patna.",
+          "answer": "Pataliputra",
+          "explanation": "Pataliputra was the Mauryan capital. According to the Greek ambassador Megasthenes, it was one of the largest cities in the world at the time."
+        },
+        {
+          "id": "c1-e4",
+          "type": "mcq",
+          "question": "Which Greek ruler did Chandragupta defeat and then make peace with?",
+          "options": ["Alexander the Great", "Seleucus", "Julius Caesar", "Plato"],
+          "answer": "Seleucus",
+          "explanation": "Chandragupta defeated Seleucus (one of Alexander's successors) in northwest India. They made peace, with Seleucus giving his daughter in marriage."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "What is an empire? How is it different from a kingdom?",
+          "answer": "An empire is a collection of many kingdoms and territories under one supreme ruler — the emperor. The smaller kingdoms (called tributaries or vassals) keep their own rulers but pay tribute (money, goods, gold) to the emperor and accept his overlordship. A kingdom, by contrast, is just one state under one king. So an empire is much larger and more complex — it includes many kingdoms but coordinates them under one supreme authority. The word 'empire' comes from the Latin 'imperium' meaning 'supreme power.'",
+          "explanation": "Important distinction in political vocabulary that recurs throughout history."
+        },
+        {
+          "id": "c1-m2",
+          "type": "short",
+          "question": "Name three Mauryan emperors in chronological order, and one key achievement of each.",
+          "answer": "(1) Chandragupta Maurya (321-297 BCE) — founded the empire by overthrowing the Nandas and pushing back the Greeks. (2) Bindusara (297-273 BCE) — extended Mauryan rule into south India. (3) Ashoka the Great (268-232 BCE) — conquered Kalinga, then renounced violence and promoted dhamma (non-violence, tolerance, welfare). The Sarnath Lion Capital from Ashoka's pillar is India's National Emblem today.",
+          "explanation": "Tests basic chronology and ability to summarise each emperor's contribution."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain how the Mauryans managed to govern such a vast empire without modern technology.",
+          "answer": "The Mauryans developed sophisticated administration through several mechanisms. (1) Hierarchy — the empire was divided into provinces (led by governors, often royal princes), provinces into districts, districts into villages. Each level handled what it could; bigger matters went up the chain. (2) Roads — a major Royal Highway from Pataliputra to Taxila (over 1,500 km) connected key parts of the empire. Rest houses, wells, milestones, and police posts dotted the road. The modern Grand Trunk Road runs roughly along the same path. (3) Espionage — Kautilya's Arthashastra describes a sophisticated spy system. Spies watched governors, officials, and even the king's family, keeping the king informed about everything in the empire. (4) Standardisation — coins, weights, measures, and tax rules were uniform across the empire. (5) Documentation — government decisions were recorded on palm leaves and birch bark. (6) Local autonomy — villages handled local matters themselves; only big issues went up. This kept governance manageable. (7) Departments — separate departments for revenue, treasury, army, justice, public works, welfare. Combined, these systems allowed the Mauryans to coordinate millions of people across thousands of kilometres — a remarkable achievement using only horseback messengers, written records, and human organisation. Many of these patterns (hierarchy, infrastructure, documentation, standardisation) still form the basis of modern governments.",
+          "explanation": "Tests understanding of administrative principles that scale beyond ancient times."
+        }
+      ]
+    },
+    {
+      "topic": "Ashoka and His Legacy",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "Which battle changed Ashoka's life and led him to renounce violent conquest?",
+          "options": ["Battle of Hydaspes", "Battle of Plassey", "Kalinga War", "Battle of Talikota"],
+          "answer": "Kalinga War",
+          "explanation": "Around 261 BCE, Ashoka invaded Kalinga (modern Odisha). The terrible loss of life — 100,000 killed, 150,000 captured — transformed him completely."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "What is the source of India's National Emblem (the four-lion symbol)?",
+          "options": [
+            "A Gupta-era coin",
+            "A Mughal monument",
+            "Ashoka's Sarnath pillar",
+            "An Aravalli rock carving"
+          ],
+          "answer": "Ashoka's Sarnath pillar",
+          "explanation": "The Sarnath Lion Capital — four lions back-to-back from the top of Ashoka's pillar at Sarnath — is India's National Emblem. The wheel below it is the Ashoka Chakra on the national flag."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "Ashoka carved his messages of dhamma on rocks and pillars in _______ — the language of common people — not in Sanskrit.",
+          "answer": "Prakrit",
+          "explanation": "Prakrit was the everyday language. Ashoka wanted ordinary people to understand his messages, so he used their language, not the scholarly Sanskrit."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "What were the key elements of Ashoka's 'dhamma'?",
+          "answer": "Ashoka's dhamma was a broad ethical philosophy, not just religion-specific. It included: (1) Ahimsa — non-violence toward all living beings. (2) Religious tolerance — respect for all religions. (3) Compassion for the poor, sick, elderly, and helpless. (4) Honest and fair administration. (5) Welfare of subjects as the king's duty. (6) Care for animals — including building animal hospitals. (7) Honouring parents, elders, teachers. He promoted these as shared values that Buddhists, Jains, Hindus, and others could all follow.",
+          "explanation": "Tests understanding of dhamma as broader than personal religion."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "Why did India's founders choose Ashoka's symbols (the lion capital and the chakra) for the national emblem and flag? What did Ashoka represent to them?",
+          "answer": "India's founders (especially Nehru and Ambedkar) chose Ashoka's symbols because Ashoka represented the best of what India could aspire to be. (1) Unity — he was the first ruler to unify most of the Subcontinent. Modern India also aims for unity despite immense diversity. (2) Tolerance — Ashoka's dhamma respected all religions. Modern India is constitutionally secular. (3) Peace and non-violence — after Kalinga, Ashoka rejected conquest. Modern India advocates peace globally, including supporting UN peacekeeping. (4) Welfare — Ashoka built hospitals, dug wells, planted trees, cared for the poor. Modern India aspires to be a welfare state. (5) Authentically Indian — they wanted symbols from India's own history, not borrowed from other cultures. Ashoka belonged to India's deep past. (6) The symbols are beautiful — the Sarnath Lion Capital is one of the finest pieces of ancient art; the Chakra is elegant. (7) Ashoka represents 'righteous power' — a ruler who used his strength for good. The emblem and flag remind India of this ideal every day. They are not just decoration but promises India makes to itself about who we want to be. We have not always lived up to Ashoka's example — we have had violence, intolerance, corruption, inequality. But the symbols set the direction. Every time the flag flies, we are reminded of the kind of country we are trying to build.",
+          "explanation": "Connects ancient history to modern national identity. A reflective question that asks students to think about symbols and their meaning."
+        }
+      ]
+    }
+  ]
+}

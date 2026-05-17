@@ -20,4 +20,5 @@ export const SUBJECTS: SubjectInfo[] = [
   { id: "maths", label: "Mathematics", icon: "📐", color: "blue" },
   { id: "science", label: "Science", icon: "🔬", color: "green" },
   { id: "social-science", label: "Social Science", icon: "🌍", color: "amber" },
+  { id: "political-science", label: "Political Science", icon: "🏛️", color: "indigo" },
 ];

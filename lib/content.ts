@@ -80,6 +80,13 @@ function discoverChapters(): ChapterMeta[] {
           }
         }
 
+        // Optional: which volume of a multi-part textbook this chapter
+        // came from. Frontmatter `part: 1` or `part: 2` triggers a small
+        // pill badge ("P1" / "P2") on the chapter list page.
+        let part: 1 | 2 | undefined;
+        const partRaw = parseInt(fm.part, 10);
+        if (partRaw === 1 || partRaw === 2) part = partRaw;
+
         chapters.push({
           classId: cls.id as ClassId,
           subject: subj.id as SubjectId,
@@ -88,6 +95,7 @@ function discoverChapters(): ChapterMeta[] {
           description: fm.description || "",
           order,
           questionCount: questionCount || undefined,
+          ...(part ? { part } : {}),
         });
       }
     }

@@ -121,7 +121,26 @@ export default async function ClassSubjectPage({
                     {String(chapter.order).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      {/* Volume marker for multi-part textbooks (e.g. Class 7
+                          Social Science Part 1/Part 2). Only renders when the
+                          chapter sets `part: 1` or `part: 2` in frontmatter. */}
+                      {chapter.part === 1 && (
+                        <span
+                          className="shrink-0 text-[10px] font-bold uppercase tracking-wide bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full"
+                          title="From Part 1 of the textbook"
+                        >
+                          P1
+                        </span>
+                      )}
+                      {chapter.part === 2 && (
+                        <span
+                          className="shrink-0 text-[10px] font-bold uppercase tracking-wide bg-sky-100 text-sky-800 px-2 py-0.5 rounded-full"
+                          title="From Part 2 of the textbook"
+                        >
+                          P2
+                        </span>
+                      )}
                       <p className="text-lg font-semibold text-gray-800">{chapter.title}</p>
                       {chapter.order <= 2 ? (
                         <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide bg-green-100 text-green-700 px-2 py-0.5 rounded-full">

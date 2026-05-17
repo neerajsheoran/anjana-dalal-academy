@@ -25,6 +25,13 @@ const SUBJECT_STYLES: Record<string, { bg: string; border: string; hover: string
     text: "text-amber-800",
     sub: "text-amber-600",
   },
+  "political-science": {
+    bg: "bg-indigo-50",
+    border: "border-indigo-200",
+    hover: "hover:bg-indigo-100 hover:border-indigo-400",
+    text: "text-indigo-800",
+    sub: "text-indigo-600",
+  },
 };
 
 // Defensive fallback so adding a future subject to the registry without

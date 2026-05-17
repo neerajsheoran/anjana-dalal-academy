@@ -13,7 +13,7 @@ export type ClassId =
   | "class-9"
   | "class-10";
 
-export type SubjectId = "maths" | "science" | "social-science";
+export type SubjectId = "maths" | "science" | "social-science" | "political-science";
 
 export type DifficultyLevel = "easy" | "medium" | "hard";
 
@@ -26,6 +26,11 @@ export interface ChapterMeta {
   description: string;     // Short summary shown in chapter cards
   order: number;           // Chapter number for sorting
   questionCount?: number;  // Total questions in worksheet.json
+  // For subjects whose source textbook is split into multiple physical
+  // volumes (e.g. Class 7 Social Science with Part 1 + Part 2). Optional —
+  // single-volume subjects leave this unset. When set, a small "P1" / "P2"
+  // pill renders next to the chapter title on the chapter list page.
+  part?: 1 | 2;
 }
 
 // A single question
@@ -62,7 +67,7 @@ export interface SubjectInfo {
   id: SubjectId;
   label: string;           // "Mathematics"
   icon: string;            // emoji
-  color: "blue" | "green" | "amber"; // used for card color coding
+  color: "blue" | "green" | "amber" | "indigo"; // used for card color coding
 }
 
 // Subscription & Payment types

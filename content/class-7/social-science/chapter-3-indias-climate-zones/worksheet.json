@@ -1,0 +1,97 @@
+{
+  "chapterRef": "class-7/social-science/chapter-3-indias-climate-zones/worksheet",
+  "topics": [
+    {
+      "topic": "Indian Seasons and Climate Types",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Traditional India divides the year into how many seasons (ritus)?",
+          "options": ["3", "4", "5", "6"],
+          "answer": "6",
+          "explanation": "The six Indian ritus are Vasanta (spring), Grishma (summer), Varsha (monsoon), Sharad (autumn), Hemanta (pre-winter), and Shishir (winter)."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which climate type is found in the Thar Desert?",
+          "options": ["Tropical wet", "Alpine", "Arid", "Temperate"],
+          "answer": "Arid",
+          "explanation": "The Thar Desert has an arid climate — very hot days, cool nights, and very little rainfall."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "Cherrapunji and _______ in Meghalaya are among the wettest places on Earth.",
+          "answer": "Mawsynram",
+          "explanation": "Both Cherrapunji and Mawsynram in Meghalaya receive about 11-12 meters of rain per year — among the wettest places on Earth."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Distinguish between weather, seasons, and climate.",
+          "answer": "Weather is what we experience day-to-day or hour-to-hour — it might be sunny, rainy, windy. Seasons are yearly recurring patterns of weather (summer, monsoon, winter, etc.). Climate is the long-term weather pattern of a region over many decades. A single day's rain is weather; the monsoon is a season; India's tropical monsoon climate is its long-term pattern.",
+          "explanation": "Three related but distinct concepts that students often confuse."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Explain why India has so many different climate types. Give at least four reasons.",
+          "answer": "India has many climate types because of its size, geography, and position on Earth. (1) Size and latitude range — India stretches from about 8°N (Kanyakumari) to 37°N (Kashmir), spanning tropical, subtropical, and even alpine zones. (2) Mountains — the Himalayas in the north create a unique alpine climate; the Western Ghats and Vindhyas create different climates on different sides. (3) Coastline — India has long coastlines on both sides, creating tropical wet climates along coasts and different patterns inland. (4) Monsoon — the southwest monsoon dumps heavy rain on western coast and Northeast, while leaving central plateau drier. (5) Distance from sea — areas far from the ocean (like central India) have more extreme summer-winter differences (continental climate), while coastal areas have moderate temperatures (maritime climate). (6) Altitude — climate varies with height. Ladakh (very high) is cold; Kerala (low coast) is warm. Together, these factors create alpine, temperate, subtropical, arid, tropical wet, semi-arid, and tropical wet-and-dry climates — all within one country. Few countries in the world have such climatic diversity.",
+          "explanation": "Tests synthesis of geographical factors — students should connect mountains, latitude, ocean, monsoon, and altitude into one explanation."
+        }
+      ]
+    },
+    {
+      "topic": "The Monsoon",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "The word 'monsoon' comes from the Arabic word 'mausim' meaning:",
+          "options": ["Wind", "Rain", "Season", "Storm"],
+          "answer": "Season",
+          "explanation": "Mausim means 'season' in Arabic. The monsoon is essentially the seasonal reversal of winds that brings rain."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Approximately what percentage of India's annual rainfall comes from the southwest monsoon?",
+          "options": ["25%", "50%", "75%", "95%"],
+          "answer": "75%",
+          "explanation": "About 75% of India's rain falls during the June-September southwest monsoon. This makes India's agriculture and economy highly dependent on this single season."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "The southwest monsoon usually first hits the Indian coast at _______ around June 1.",
+          "answer": "Kerala",
+          "explanation": "The southwest monsoon arrives in Kerala first, around June 1 each year. From there, it sweeps across India over the next 4-6 weeks."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "How is the southwest monsoon formed? Explain in 3-4 sentences.",
+          "answer": "In summer, the Indian landmass heats up rapidly, especially the Tibetan Plateau. The hot air rises and creates a low pressure area over land. The Indian Ocean, being cooler, has higher air pressure. Air naturally flows from high pressure to low pressure, so moist winds rush from the ocean toward the land. As these moisture-laden winds rise over the Western Ghats and Himalayas, the water vapour cools, condenses, and falls as rain — the southwest monsoon.",
+          "explanation": "Tests understanding of cause-effect chain: temperature difference → pressure difference → wind movement → rain."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "The monsoon is sometimes called 'the heartbeat of the Indian economy.' Explain why.",
+          "answer": "The monsoon is called the heartbeat of the Indian economy because almost every part of the economy depends on it directly or indirectly. (1) Agriculture: About 60% of India's farmland depends on rainfall, not irrigation. A good monsoon means bountiful harvests of wheat, rice, sugarcane, and pulses; a bad monsoon means crop failure and farmer distress. (2) Food prices: When crops fail, food prices rise nationally. Vegetables, grains, milk — all become expensive, affecting every household budget. (3) Inflation: Food price rises drive overall inflation, which affects interest rates, business costs, and even the value of the rupee. (4) Rural employment: India has hundreds of millions of agricultural workers. A poor monsoon means lost work and income for them. (5) Hydropower: Dams generate electricity from monsoon-fed water. Less rain means less power, which slows industry. (6) Drinking water: Most lakes and reservoirs that supply cities refill during monsoon. A poor monsoon can cause urban water shortages. (7) Industry: Many industries (cement, fertilizer, transport) feel ripple effects when farms slow down. (8) GDP: A poor monsoon can shrink India's GDP by 1-2%. A great monsoon can boost it by similar amounts. Because everything connects to the monsoon, the entire country waits anxiously each June. The IMD's monsoon forecast is one of the most-watched economic indicators in India.",
+          "explanation": "Forces students to connect environmental, agricultural, economic, and social systems into one explanation — true synthesis."
+        }
+      ]
+    }
+  ]
+}
