@@ -26,11 +26,59 @@ const DIFFICULTY_COLORS: Record<DifficultyLevel, { tab: string; badge: string }>
   },
 };
 
-function QuestionCard({ question, index }: { question: Question; index: number }) {
+interface QuestionContext {
+  classId?: string;
+  subject?: string;
+  chapterId?: string;
+}
+
+function QuestionCard({
+  question,
+  index,
+  context,
+}: {
+  question: Question;
+  index: number;
+  context: QuestionContext;
+}) {
   const [selected, setSelected] = useState<number | null>(null);
   const [fillAnswer, setFillAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
+  // Review-flag state: 'idle' → 'sending' → 'sent' | 'error'.
+  // Persists per-question for the rendered lifetime; refreshing the page
+  // resets it (which is fine — the kid is unlikely to want to flag twice).
+  const [flagState, setFlagState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  async function handleFlag() {
+    if (flagState === "sending" || flagState === "sent") return;
+    setFlagState("sending");
+    try {
+      const res = await fetch("/api/answer-flags", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          questionId: question.id,
+          userAnswer: fillAnswer,
+          expectedAnswer: question.answer,
+          questionText: question.question,
+          chapterId: context.chapterId,
+          classId: context.classId,
+          subject: context.subject,
+        }),
+      });
+      if (res.ok) {
+        setFlagState("sent");
+      } else if (res.status === 401) {
+        // Anonymous trial user can't flag — tell them why without alarm.
+        setFlagState("error");
+      } else {
+        setFlagState("error");
+      }
+    } catch {
+      setFlagState("error");
+    }
+  }
 
   const isMcq = question.type === "mcq" && question.options;
   const isFill = question.type === "fill";
@@ -217,6 +265,34 @@ function QuestionCard({ question, index }: { question: Question; index: number }
           </button>
         )}
 
+        {/* "I think my answer was right" — only for fill-in-blank that was
+            marked incorrect. Goes to /api/answer-flags for review. */}
+        {isFill && isAnswered && !isCorrect && fillAnswer.trim() && (
+          <button
+            onClick={handleFlag}
+            disabled={flagState === "sending" || flagState === "sent"}
+            className={`text-xs transition-colors ${
+              flagState === "sent"
+                ? "text-green-600 cursor-default"
+                : flagState === "error"
+                ? "text-red-500 hover:text-red-700"
+                : "text-blue-600 hover:text-blue-800"
+            }`}
+            title={
+              flagState === "sent"
+                ? "Thanks — we'll review this answer soon."
+                : flagState === "error"
+                ? "Could not send — please log in or try again."
+                : "Tell us you think your answer was actually right"
+            }
+          >
+            {flagState === "sending" && "Sending…"}
+            {flagState === "sent" && "Flagged for review ✓"}
+            {flagState === "error" && "Could not send — retry?"}
+            {flagState === "idle" && "I think my answer was right"}
+          </button>
+        )}
+
         {!isAnswered && (
           <button
             onClick={() => setShowAnswer(!showAnswer)}
@@ -243,7 +319,15 @@ function QuestionCard({ question, index }: { question: Question; index: number }
   );
 }
 
-function TopicSection({ topic, hideDifficulty }: { topic: TopicWorksheet; hideDifficulty?: boolean }) {
+function TopicSection({
+  topic,
+  hideDifficulty,
+  context,
+}: {
+  topic: TopicWorksheet;
+  hideDifficulty?: boolean;
+  context: QuestionContext;
+}) {
   const [activeDifficulty, setActiveDifficulty] = useState<DifficultyLevel>("easy");
   const allQuestions = [...topic.easy, ...topic.medium, ...topic.hard];
   const questions = hideDifficulty ? allQuestions : topic[activeDifficulty];
@@ -282,7 +366,7 @@ function TopicSection({ topic, hideDifficulty }: { topic: TopicWorksheet; hideDi
         {questions.length > 0 ? (
           <div className="flex flex-col gap-4">
             {questions.map((question, index) => (
-              <QuestionCard key={question.id} question={question} index={index} />
+              <QuestionCard key={question.id} question={question} index={index} context={context} />
             ))}
           </div>
         ) : (
@@ -291,6 +375,32 @@ function TopicSection({ topic, hideDifficulty }: { topic: TopicWorksheet; hideDi
       </div>
     </div>
   );
+}
+
+// Best-effort extraction of subject + chapter from the page URL. The chapter
+// URL is one of:
+//   /class/{classId}/{subject}/{chapterId}
+//   /subject/{subject}/{classId}/{chapterId}
+// We use this to give the answer-flag API enough context to surface the
+// flagged question in the review queue without an extra lookup.
+function parseChapterContext(path: string, fallbackClassId?: string): QuestionContext {
+  const classRouteMatch = path.match(/^\/class\/([^/]+)\/([^/]+)\/([^/?#]+)/);
+  if (classRouteMatch) {
+    return {
+      classId: classRouteMatch[1],
+      subject: classRouteMatch[2],
+      chapterId: classRouteMatch[3],
+    };
+  }
+  const subjectRouteMatch = path.match(/^\/subject\/([^/]+)\/([^/]+)\/([^/?#]+)/);
+  if (subjectRouteMatch) {
+    return {
+      subject: subjectRouteMatch[1],
+      classId: subjectRouteMatch[2],
+      chapterId: subjectRouteMatch[3],
+    };
+  }
+  return { classId: fallbackClassId };
 }
 
 export default function WorksheetView({
@@ -310,6 +420,8 @@ export default function WorksheetView({
   const classNum = classId ? parseInt(classId.replace('class-', ''), 10) : 0;
   const hideDifficulty = classNum >= 1 && classNum <= 5;
   const [activeTopicIndex, setActiveTopicIndex] = useState<number | null>(null);
+
+  const context = parseChapterContext(currentPath, classId);
 
   useEffect(() => {
     if (initialTopicIndex !== null && initialTopicIndex !== undefined) {
@@ -369,14 +481,14 @@ export default function WorksheetView({
 
       {/* Visible Topics */}
       {visibleTopics.map((topic, index) => (
-        <TopicSection key={index} topic={topic} hideDifficulty={hideDifficulty} />
+        <TopicSection key={index} topic={topic} hideDifficulty={hideDifficulty} context={context} />
       ))}
 
       {/* Blurred Topics (anonymous only) */}
       {blurredTopics.length > 0 && (
         <ContentBlur accessLevel={accessLevel} currentPath={currentPath} maxHeight="300px">
           {blurredTopics.map((topic, index) => (
-            <TopicSection key={visibleTopics.length + index} topic={topic} hideDifficulty={hideDifficulty} />
+            <TopicSection key={visibleTopics.length + index} topic={topic} hideDifficulty={hideDifficulty} context={context} />
           ))}
         </ContentBlur>
       )}
