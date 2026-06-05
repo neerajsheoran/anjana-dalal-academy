@@ -7,6 +7,7 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import type { ActiveChild } from '@/lib/active-child';
+import { isTrainEligible } from '@/lib/train-eligibility';
 
 const CLASS_LABEL: Record<string, string> = {
   'class-1': 'Class 1',
@@ -22,6 +23,10 @@ const CLASS_LABEL: Record<string, string> = {
 };
 
 export default function KidHomepage({ child }: { child: ActiveChild }) {
+  // Class 9+ kids are in board-prep mode — Train surfaces are hidden so
+  // school work is the visible default. See cognilift-three-pillar-roadmap.md.
+  const showTrain = isTrainEligible(child.classId);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white">
       <section className="max-w-md mx-auto px-5 pt-10 pb-12">
@@ -35,56 +40,60 @@ export default function KidHomepage({ child }: { child: ActiveChild }) {
             Hi {child.name}! 👋
           </h1>
           <p className="text-blue-200 text-sm">
-            What do you want to train today?
+            {showTrain ? 'What do you want to train today?' : 'Ready to study?'}
           </p>
         </div>
 
-        {/* Big primary CTA: Train your brain */}
-        <Link
-          href="/brain"
-          className="block bg-gradient-to-br from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:scale-[0.98] rounded-3xl p-6 mb-4 shadow-xl transition-all"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-4xl shrink-0">
-              🧠
+        {/* Big primary CTA: Train your brain (hidden Class 9+) */}
+        {showTrain && (
+          <Link
+            href="/brain"
+            className="block bg-gradient-to-br from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:scale-[0.98] rounded-3xl p-6 mb-4 shadow-xl transition-all"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-4xl shrink-0">
+                🧠
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-0.5">
+                  Brain training
+                </p>
+                <h2 className="text-xl font-bold mb-0.5">Train your brain</h2>
+                <p className="text-white/80 text-xs">
+                  Memory · Focus · Thinking — pick a part to play
+                </p>
+              </div>
+              <ChevronRight className="w-6 h-6 text-white/70" strokeWidth={2.5} />
             </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-0.5">
-                Brain training
-              </p>
-              <h2 className="text-xl font-bold mb-0.5">Train your brain</h2>
-              <p className="text-white/80 text-xs">
-                Memory · Focus · Thinking — pick a part to play
-              </p>
-            </div>
-            <ChevronRight className="w-6 h-6 text-white/70" strokeWidth={2.5} />
-          </div>
-        </Link>
+          </Link>
+        )}
 
-        {/* 3 pillar quick-tap cards (also go to /brain but kid sees what's inside) */}
-        <div className="grid grid-cols-3 gap-2.5 mb-6">
-          <Link
-            href="/brain/memory"
-            className="bg-purple-500/20 hover:bg-purple-500/30 active:scale-95 border border-purple-300/40 rounded-2xl p-3 text-center transition-all"
-          >
-            <div className="text-3xl mb-1">🧠</div>
-            <p className="text-purple-100 text-xs font-bold">Memory</p>
-          </Link>
-          <Link
-            href="/brain/focus"
-            className="bg-green-500/20 hover:bg-green-500/30 active:scale-95 border border-green-300/40 rounded-2xl p-3 text-center transition-all"
-          >
-            <div className="text-3xl mb-1">🎯</div>
-            <p className="text-green-100 text-xs font-bold">Focus</p>
-          </Link>
-          <Link
-            href="/brain/thinking"
-            className="bg-orange-500/20 hover:bg-orange-500/30 active:scale-95 border border-orange-300/40 rounded-2xl p-3 text-center transition-all"
-          >
-            <div className="text-3xl mb-1">💡</div>
-            <p className="text-orange-100 text-xs font-bold">Thinking</p>
-          </Link>
-        </div>
+        {/* 3 pillar quick-tap cards (hidden Class 9+) */}
+        {showTrain && (
+          <div className="grid grid-cols-3 gap-2.5 mb-6">
+            <Link
+              href="/brain/memory"
+              className="bg-purple-500/20 hover:bg-purple-500/30 active:scale-95 border border-purple-300/40 rounded-2xl p-3 text-center transition-all"
+            >
+              <div className="text-3xl mb-1">🧠</div>
+              <p className="text-purple-100 text-xs font-bold">Memory</p>
+            </Link>
+            <Link
+              href="/brain/focus"
+              className="bg-green-500/20 hover:bg-green-500/30 active:scale-95 border border-green-300/40 rounded-2xl p-3 text-center transition-all"
+            >
+              <div className="text-3xl mb-1">🎯</div>
+              <p className="text-green-100 text-xs font-bold">Focus</p>
+            </Link>
+            <Link
+              href="/brain/thinking"
+              className="bg-orange-500/20 hover:bg-orange-500/30 active:scale-95 border border-orange-300/40 rounded-2xl p-3 text-center transition-all"
+            >
+              <div className="text-3xl mb-1">💡</div>
+              <p className="text-orange-100 text-xs font-bold">Thinking</p>
+            </Link>
+          </div>
+        )}
 
         {/* School cards. When the kid has a classId we surface BOTH:
               1. Their class (primary, 90% case)

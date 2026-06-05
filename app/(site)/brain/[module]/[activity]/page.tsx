@@ -5,6 +5,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
+import { isTrainEligible } from "@/lib/train-eligibility";
 import {
   BRAIN_ACTIVITIES,
   BRAIN_MODULES,
@@ -40,6 +41,10 @@ export default async function ActivityPage({
 
   const activeChild = await getActiveChild();
   if (!activeChild) redirect("/kids");
+  // Class 9+ is in board-prep mode (cognilift-three-pillar-roadmap.md).
+  if (!isTrainEligible(activeChild.classId)) {
+    redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
+  }
 
   const activity = BRAIN_ACTIVITIES[activityKey];
   if (!activity || activity.module !== moduleKey) notFound();
