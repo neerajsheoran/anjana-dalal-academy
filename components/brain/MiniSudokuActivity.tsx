@@ -97,6 +97,7 @@ interface RoundData {
   isCorrect: boolean;
   accuracyPercent: number;
   timeTakenSeconds: number;
+  conflictIndices: number[];
 }
 
 function pickN<T>(arr: T[], n: number): T[] {
@@ -106,6 +107,54 @@ function pickN<T>(arr: T[], n: number): T[] {
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy.slice(0, n);
+}
+
+// A 4×4 sudoku has multiple valid solutions for any given set of clues.
+// The kid's answer is correct as long as their grid satisfies the sudoku
+// rules — not whether it matches the specific stored solution. Returns
+// the set of cell indices that conflict with row/col/box constraints so
+// the UI can highlight them.
+function checkSudokuValidity(grid: number[]): {
+  isValid: boolean;
+  conflictIndices: Set<number>;
+} {
+  const conflicts = new Set<number>();
+  const checkGroup = (indices: number[]) => {
+    const firstSeenAt = new Map<number, number>();
+    for (const idx of indices) {
+      const v = grid[idx];
+      if (v < 1 || v > 4) continue;
+      const prior = firstSeenAt.get(v);
+      if (prior !== undefined) {
+        conflicts.add(idx);
+        conflicts.add(prior);
+      } else {
+        firstSeenAt.set(v, idx);
+      }
+    }
+  };
+  // Rows
+  for (let r = 0; r < 4; r++) {
+    checkGroup([0, 1, 2, 3].map((c) => r * 4 + c));
+  }
+  // Columns
+  for (let c = 0; c < 4; c++) {
+    checkGroup([0, 1, 2, 3].map((r) => r * 4 + c));
+  }
+  // 2×2 boxes
+  for (let br = 0; br < 2; br++) {
+    for (let bc = 0; bc < 2; bc++) {
+      const boxIndices: number[] = [];
+      for (let dr = 0; dr < 2; dr++) {
+        for (let dc = 0; dc < 2; dc++) {
+          boxIndices.push((br * 2 + dr) * 4 + (bc * 2 + dc));
+        }
+      }
+      checkGroup(boxIndices);
+    }
+  }
+  const allFilled = grid.every((v) => v >= 1 && v <= 4);
+  return { isValid: allFilled && conflicts.size === 0, conflictIndices: conflicts };
 }
 
 function generateRound(cellsToFill: number, exclude: Set<number>): { setup: RoundSetup; solIndex: number } {
@@ -190,13 +239,22 @@ export default function MiniSudokuActivity({
   function handleSubmit() {
     if (!setup) return;
     const timeTaken = (Date.now() - startTimeRef.current) / 1000;
-    // Compare entered to solution
-    const matches = entered.filter((v, i) => v === setup.solution[i]).length;
-    const accuracyPercent = Math.round((matches / TOTAL_CELLS) * 100);
-    const isCorrect = matches === TOTAL_CELLS;
+    // A 4×4 sudoku can have multiple valid solutions for the same givens.
+    // Validate against sudoku rules, not against the stored solution, so
+    // any rules-consistent grid the kid produces is accepted.
+    const { isValid, conflictIndices } = checkSudokuValidity(entered);
+    const cleanCells = TOTAL_CELLS - conflictIndices.size;
+    const accuracyPercent = Math.round((cleanCells / TOTAL_CELLS) * 100);
     setRoundData((prev) => [
       ...prev,
-      { setup, entered: [...entered], isCorrect, accuracyPercent, timeTakenSeconds: timeTaken },
+      {
+        setup,
+        entered: [...entered],
+        isCorrect: isValid,
+        accuracyPercent,
+        timeTakenSeconds: timeTaken,
+        conflictIndices: Array.from(conflictIndices),
+      },
     ]);
     setPhase('roundResult');
   }
@@ -303,13 +361,15 @@ export default function MiniSudokuActivity({
     givens,
     selectedIndex,
     onSelect,
-    overlay, // when in roundResult, color cells correct/wrong
+    conflictSet, // when in roundResult: cells that violate sudoku rules
+    showResult,  // true when displaying the post-submit overlay
   }: {
     cells: number[];
     givens: number[];
     selectedIndex: number | null;
     onSelect?: (i: number) => void;
-    overlay?: number[];  // solution; cells matching => green, wrong => red
+    conflictSet?: Set<number>;
+    showResult?: boolean;
   }) {
     return (
       <div
@@ -330,15 +390,18 @@ export default function MiniSudokuActivity({
 
           let bg = isGiven ? 'bg-orange-50' : 'bg-white';
           let textColor = isGiven ? 'text-orange-800 font-bold' : 'text-orange-600 font-semibold';
-          if (overlay) {
-            if (cells[i] === overlay[i] && cells[i] > 0) {
-              if (!isGiven) bg = 'bg-green-100';
-            } else if (cells[i] > 0 && cells[i] !== overlay[i]) {
-              bg = 'bg-red-100';
-              textColor = 'text-red-700 font-bold';
-            } else if (cells[i] === 0) {
+          if (showResult) {
+            if (v === 0) {
+              // Empty / unfilled
               bg = 'bg-amber-100';
               textColor = 'text-amber-700';
+            } else if (conflictSet?.has(i)) {
+              // Rule violation (row, col, or box has a duplicate)
+              bg = 'bg-red-100';
+              textColor = 'text-red-700 font-bold';
+            } else if (!isGiven) {
+              // Filled by kid AND satisfies sudoku rules — credit the answer
+              bg = 'bg-green-100';
             }
           } else if (isSelected) {
             bg = 'bg-orange-200 ring-2 ring-orange-500';
@@ -349,11 +412,11 @@ export default function MiniSudokuActivity({
               key={i}
               type="button"
               onClick={() => onSelect?.(i)}
-              disabled={isGiven || !!overlay}
-              className={`aspect-square ${bg} ${textColor} ${borderRight} ${borderBottom} flex items-center justify-center text-xl sm:text-2xl transition-colors ${!isGiven && !overlay ? 'cursor-pointer hover:bg-orange-100' : 'cursor-default'}`}
+              disabled={isGiven || showResult}
+              className={`aspect-square ${bg} ${textColor} ${borderRight} ${borderBottom} flex items-center justify-center text-xl sm:text-2xl transition-colors ${!isGiven && !showResult ? 'cursor-pointer hover:bg-orange-100' : 'cursor-default'}`}
               aria-label={`Row ${row + 1}, column ${col + 1}`}
             >
-              {v > 0 ? v : overlay && cells[i] === 0 ? overlay[i] : ''}
+              {v > 0 ? v : ''}
             </button>
           );
         })}
@@ -462,30 +525,40 @@ export default function MiniSudokuActivity({
               {lastRoundData.isCorrect ? '✓' : '○'}
             </div>
             <h2 className="text-lg font-bold text-gray-800 mb-3">
-              {lastRoundData.isCorrect ? 'Solved it!' : 'Close — see the answer'}
+              {lastRoundData.isCorrect ? 'Solved it!' : 'Check the marked cells'}
             </h2>
             <div className="mb-4">
-              <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">Solution overlay</p>
+              <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">
+                {lastRoundData.isCorrect ? 'Your solution' : 'Rule check'}
+              </p>
               <SudokuGrid
                 cells={lastRoundData.entered}
                 givens={lastRoundData.setup.givens}
                 selectedIndex={null}
-                overlay={lastRoundData.setup.solution}
+                conflictSet={new Set(lastRoundData.conflictIndices)}
+                showResult
               />
               <div className="flex justify-center gap-3 text-[10px] text-gray-500 mt-3">
                 <span className="flex items-center gap-1">
-                  <span className="inline-block w-2 h-2 bg-green-400 rounded" /> Correct
+                  <span className="inline-block w-2 h-2 bg-green-400 rounded" /> Rule-valid
                 </span>
                 <span className="flex items-center gap-1">
-                  <span className="inline-block w-2 h-2 bg-red-300 rounded" /> Wrong
+                  <span className="inline-block w-2 h-2 bg-red-300 rounded" /> Conflict
                 </span>
                 <span className="flex items-center gap-1">
-                  <span className="inline-block w-2 h-2 bg-amber-300 rounded" /> Missed
+                  <span className="inline-block w-2 h-2 bg-amber-300 rounded" /> Empty
                 </span>
               </div>
               <p className="text-xs text-gray-600 mt-2">
-                {lastRoundData.accuracyPercent}% of cells correct
+                {lastRoundData.isCorrect
+                  ? 'Every row, column, and 2×2 box has 1–4 with no repeats.'
+                  : `${lastRoundData.accuracyPercent}% of cells satisfy the rules.`}
               </p>
+              {lastRoundData.isCorrect && (
+                <p className="text-[11px] text-gray-400 mt-1 italic">
+                  Any valid arrangement counts — you didn&apos;t have to match a specific answer.
+                </p>
+              )}
             </div>
             <button
               onClick={advanceFromRoundResult}
