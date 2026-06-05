@@ -41,6 +41,12 @@ export interface Question {
   options?: string[];       // Only for MCQ
   answer: string;
   explanation: string;
+  // Optional per-question accepted variants for fill-in-the-blank grading
+  // (e.g. ["colour"] when the canonical answer is "color"). The layered
+  // matcher already handles case, punctuation, context-word repetition, and
+  // single-character typos automatically — only list alternatives here when
+  // the variation is semantic (synonym, regional spelling, unit format).
+  acceptedAlternatives?: string[];
 }
 
 // Questions grouped by difficulty within a topic

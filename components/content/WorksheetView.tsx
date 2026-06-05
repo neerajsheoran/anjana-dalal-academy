@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { WorksheetData, TopicWorksheet, Question, DifficultyLevel, ContentAccessLevel } from "@/lib/types";
+import { matchAnswer } from "@/lib/answer-matcher";
 import ContentBlur from "./ContentBlur";
 
 const DIFFICULTY_LABELS: Record<DifficultyLevel, string> = {
@@ -39,10 +40,17 @@ function QuestionCard({ question, index }: { question: Question; index: number }
     ? question.options[selected].trim().toLowerCase() === question.answer.trim().toLowerCase()
     : false;
 
-  // For Fill: normalize and compare
-  const isCorrectFill = isFill && checked
-    ? fillAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase()
-    : false;
+  // For Fill: use the layered matcher (exact → context-stripped → alternatives
+  // → fuzzy). The matcher accepts "Obtuse angle" when the canonical answer
+  // is "obtuse" and the question says "_____ angle", catches single-character
+  // typos, and respects optional acceptedAlternatives from content authors.
+  const fillMatch = isFill && checked
+    ? matchAnswer(fillAnswer, question.answer, {
+        questionContext: question.question,
+        alternatives: question.acceptedAlternatives,
+      })
+    : null;
+  const isCorrectFill = fillMatch?.isCorrect ?? false;
 
   const handleMcqSelect = (optionIndex: number) => {
     if (selected !== null) return; // already answered
