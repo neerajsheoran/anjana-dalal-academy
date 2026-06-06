@@ -1,0 +1,176 @@
+{
+  "topics": [
+    {
+      "topic": "Distance, Displacement, Speed, and Velocity",
+      "easy": [
+        {
+          "id": "ch4-t1-e1",
+          "type": "mcq",
+          "question": "Distance is a:",
+          "options": ["Scalar quantity", "Vector quantity", "Negative number", "Unit of time"],
+          "answer": "Scalar quantity",
+          "explanation": "Distance has only magnitude (a number), no direction. It is a scalar quantity. Displacement, in contrast, has both magnitude and direction, making it a vector."
+        },
+        {
+          "id": "ch4-t1-e2",
+          "type": "fill",
+          "question": "The SI unit of speed is ______ per second.",
+          "answer": "metre",
+          "explanation": "Speed = distance ÷ time. With distance in metres and time in seconds, the SI unit of speed is metres per second (m/s)."
+        },
+        {
+          "id": "ch4-t1-e3",
+          "type": "mcq",
+          "question": "A car completes one lap of a 4 km circular track and returns to its starting point. What is its displacement?",
+          "options": ["4 km", "0 km", "2 km", "8 km"],
+          "answer": "0 km",
+          "explanation": "Displacement is the straight-line gap between start and end positions. Since the car returns to where it started, its net displacement is zero — even though the distance covered is 4 km."
+        },
+        {
+          "id": "ch4-t1-e4",
+          "type": "mcq",
+          "question": "Which of these is a vector quantity?",
+          "options": ["Distance", "Speed", "Velocity", "Time"],
+          "answer": "Velocity",
+          "explanation": "Velocity has both magnitude and direction. Distance, speed, and time have only magnitudes — they are scalars."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t1-m1",
+          "type": "short",
+          "question": "A student walks 3 km north to the school, then 4 km east to a friend's house. Calculate the total distance and the total displacement.",
+          "answer": "Distance is the total path length: 3 km + 4 km = 7 km. Displacement is the straight-line gap from start to end. Using the Pythagorean theorem on a right-angled triangle with sides 3 km and 4 km, the displacement = √(3² + 4²) = √25 = 5 km, in a direction north-east of the starting point.",
+          "explanation": "Distance always equals the total path; displacement uses the straight line between endpoints."
+        },
+        {
+          "id": "ch4-t1-m2",
+          "type": "short",
+          "question": "Explain the difference between average speed and average velocity using one example.",
+          "answer": "Average speed = total distance ÷ total time, with no direction involved. Average velocity = total displacement ÷ total time, including direction. Example: A jogger runs 100 m east in 25 seconds, then 100 m west back to the starting point in another 25 seconds. Total distance = 200 m, total time = 50 s. Average speed = 200/50 = 4 m/s. Total displacement = 0 (started and ended at the same point). Average velocity = 0/50 = 0 m/s. So same journey, two very different answers depending on which is asked.",
+          "explanation": "When net displacement is zero, average velocity is zero — even though average speed can be high."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t1-h1",
+          "type": "long",
+          "question": "An athlete completes one round of a circular track of radius 100 m in 40 seconds. Calculate (a) the distance covered, (b) the displacement, (c) the average speed, and (d) the average velocity.",
+          "answer": "(a) Distance = circumference of the circle = 2 × π × r = 2 × 3.14 × 100 ≈ 628 m. (b) Displacement = 0 m (the athlete ends at the starting point). (c) Average speed = total distance ÷ total time = 628 / 40 ≈ 15.7 m/s. (d) Average velocity = total displacement ÷ total time = 0 / 40 = 0 m/s. So although the athlete is clearly moving, the average velocity for a complete loop is zero — a striking demonstration of why physics needs both distance/speed and displacement/velocity.",
+          "explanation": "Circular motion provides a clean way to show how distance and displacement differ."
+        }
+      ]
+    },
+    {
+      "topic": "Acceleration",
+      "easy": [
+        {
+          "id": "ch4-t2-e1",
+          "type": "mcq",
+          "question": "Acceleration is the rate of change of:",
+          "options": ["Position", "Distance", "Speed", "Velocity"],
+          "answer": "Velocity",
+          "explanation": "Acceleration is defined as the change in velocity per unit time. Note that this includes both speeding up, slowing down, AND changing direction."
+        },
+        {
+          "id": "ch4-t2-e2",
+          "type": "fill",
+          "question": "The SI unit of acceleration is m/s² (also written as metre per second squared). The numerical value of acceleration due to gravity at the Earth's surface is approximately ______ m/s².",
+          "answer": "9.8",
+          "explanation": "g ≈ 9.8 m/s² downward at the Earth's surface. (Often approximated as 10 m/s² in school problems.)"
+        },
+        {
+          "id": "ch4-t2-e3",
+          "type": "mcq",
+          "question": "A car accelerates from 10 m/s to 30 m/s in 5 seconds. Its acceleration is:",
+          "options": ["2 m/s²", "4 m/s²", "20 m/s²", "40 m/s²"],
+          "answer": "4 m/s²",
+          "explanation": "Acceleration = (final velocity − initial velocity) ÷ time = (30 − 10) ÷ 5 = 20 ÷ 5 = 4 m/s²."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t2-m1",
+          "type": "short",
+          "question": "A train travelling at 72 km/h applies brakes and comes to rest in 20 seconds. Calculate its acceleration.",
+          "answer": "First convert speed to SI units: 72 km/h × (1000 m / 1 km) × (1 h / 3600 s) = 20 m/s. Initial velocity u = 20 m/s, final velocity v = 0 m/s, time t = 20 s. Acceleration a = (v − u) / t = (0 − 20) / 20 = −1 m/s². The negative sign means the train is decelerating (slowing down).",
+          "explanation": "Negative acceleration means slowing down. Unit conversion (km/h to m/s) is always required first."
+        },
+        {
+          "id": "ch4-t2-m2",
+          "type": "short",
+          "question": "Can an object move at constant speed but still be accelerating? Explain with one example.",
+          "answer": "Yes. Acceleration is the rate of change of VELOCITY, and velocity has both magnitude (speed) and direction. If an object moves in a circle at constant speed, its direction is changing constantly — therefore its velocity is changing — therefore it is accelerating. Example: A car moving at a steady 30 km/h along a curved road is accelerating because its direction of motion is constantly changing. The ceiling fan blade at constant rotational speed is similarly always accelerating.",
+          "explanation": "Constant speed plus changing direction equals changing velocity equals acceleration."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t2-h1",
+          "type": "long",
+          "question": "A bus starts from rest at a traffic signal. After 10 seconds it has a velocity of 20 m/s. (a) What is its acceleration, assuming it is uniform? (b) How far has it travelled in those 10 seconds? Use the equations of motion.",
+          "answer": "Given: u = 0 (starts from rest), v = 20 m/s, t = 10 s. (a) Using v = u + at: 20 = 0 + a × 10, so a = 2 m/s². (b) Using s = ut + ½at²: s = 0 × 10 + ½ × 2 × 10² = 0 + 100 = 100 m. So the bus travels 100 metres in those 10 seconds. (Alternatively, you could use the average velocity = (0 + 20)/2 = 10 m/s; distance = 10 × 10 = 100 m. Same answer.)",
+          "explanation": "When acceleration is constant, the equations of motion give exact answers from any three knowns."
+        }
+      ]
+    },
+    {
+      "topic": "Equations of Motion and Motion Graphs",
+      "easy": [
+        {
+          "id": "ch4-t3-e1",
+          "type": "mcq",
+          "question": "On a position-time graph, what does a horizontal straight line represent?",
+          "options": [
+            "Uniform motion",
+            "Non-uniform motion",
+            "An object at rest",
+            "An accelerating object"
+          ],
+          "answer": "An object at rest",
+          "explanation": "A horizontal line means the position is not changing over time — the object is stationary. A slanting line would mean uniform motion."
+        },
+        {
+          "id": "ch4-t3-e2",
+          "type": "fill",
+          "question": "On a velocity-time graph, the area enclosed under the curve gives the ______ travelled.",
+          "answer": "distance",
+          "explanation": "The area under a velocity-time graph equals distance covered. (Area = velocity × time, which is exactly the definition of distance for uniform motion.)"
+        },
+        {
+          "id": "ch4-t3-e3",
+          "type": "mcq",
+          "question": "On a velocity-time graph, what does the slope of the line represent?",
+          "options": ["Speed", "Distance", "Acceleration", "Displacement"],
+          "answer": "Acceleration",
+          "explanation": "The slope of a velocity-time graph = change in velocity ÷ change in time = acceleration. (For a position-time graph, the slope gives velocity.)"
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch4-t3-m1",
+          "type": "short",
+          "question": "A car starts from rest and reaches a speed of 30 m/s in 15 seconds. Assuming uniform acceleration, calculate the distance covered using v² = u² + 2as.",
+          "answer": "Given: u = 0, v = 30 m/s, t = 15 s. First, find acceleration: a = (v − u) / t = 30 / 15 = 2 m/s². Now use v² = u² + 2as: 30² = 0² + 2 × 2 × s → 900 = 4s → s = 225 m. So the car covers 225 m in 15 seconds.",
+          "explanation": "v² = u² + 2as lets you find distance without needing the time, once you know acceleration."
+        },
+        {
+          "id": "ch4-t3-m2",
+          "type": "short",
+          "question": "How would you use a velocity-time graph to find the distance covered by a car between time t=2 s and t=8 s?",
+          "answer": "On a velocity-time graph, the area enclosed between the curve and the time axis, bounded by t=2 s on one side and t=8 s on the other, gives the distance covered between those two times. If the velocity is constant, this region is a rectangle (area = velocity × time interval). If velocity is increasing linearly (uniform acceleration), the region is a trapezium. Calculate its area using the appropriate geometry formula. The numerical value of the area equals the distance covered in metres.",
+          "explanation": "Area under velocity-time curve between two times = distance covered in that interval."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch4-t3-h1",
+          "type": "long",
+          "question": "A ball is dropped from a height of 80 m. Take g = 10 m/s² (downward) and assume no air resistance. Calculate (a) the velocity of the ball just before it hits the ground, and (b) the time taken to reach the ground.",
+          "answer": "The ball falls under gravity from rest. Given: u = 0, a = g = 10 m/s², s = 80 m. (a) Using v² = u² + 2as: v² = 0 + 2 × 10 × 80 = 1600. So v = √1600 = 40 m/s. The ball hits the ground at 40 m/s. (b) Using v = u + at: 40 = 0 + 10 × t, so t = 4 s. The ball takes 4 seconds to fall 80 m. (Verify: using s = ut + ½at², s = 0 + ½ × 10 × 4² = 80 m ✓.)",
+          "explanation": "Free fall under gravity is a classic application of constant-acceleration equations. The ball gains 10 m/s of speed every second."
+        }
+      ]
+    }
+  ]
+}
