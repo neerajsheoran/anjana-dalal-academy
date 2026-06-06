@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "topic": "Atomic Theory and Subatomic Particles",
+      "easy": [
+        {
+          "id": "ch8-t1-e1",
+          "type": "mcq",
+          "question": "The electron was discovered by:",
+          "options": ["Dalton", "Thomson", "Rutherford", "Bohr"],
+          "answer": "Thomson",
+          "explanation": "J.J. Thomson discovered the electron in 1897 while studying cathode rays in gas discharge tubes."
+        },
+        {
+          "id": "ch8-t1-e2",
+          "type": "fill",
+          "question": "The dense centre of an atom that contains protons and neutrons is called the ______.",
+          "answer": "nucleus",
+          "explanation": "Rutherford discovered the nucleus through his gold foil experiment in 1911."
+        },
+        {
+          "id": "ch8-t1-e3",
+          "type": "mcq",
+          "question": "Which subatomic particle has NO electric charge?",
+          "options": ["Proton", "Electron", "Neutron", "All have charge"],
+          "answer": "Neutron",
+          "explanation": "Neutrons are electrically neutral (no charge). Protons are positive, electrons are negative."
+        },
+        {
+          "id": "ch8-t1-e4",
+          "type": "mcq",
+          "question": "Rutherford's gold foil experiment showed that:",
+          "options": [
+            "Atoms are uniform spheres",
+            "Most of the atom is empty space, with a tiny dense nucleus",
+            "Electrons move in circular orbits",
+            "Neutrons exist"
+          ],
+          "answer": "Most of the atom is empty space, with a tiny dense nucleus",
+          "explanation": "Most alpha particles passed straight through, indicating empty space; a few bounced back, indicating a tiny dense nucleus."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t1-m1",
+          "type": "short",
+          "question": "Why was Rutherford surprised that some alpha particles bounced back from the gold foil?",
+          "answer": "Rutherford expected the alpha particles to pass through with at most small deflections, because the prevailing 'plum pudding' model said positive charge was spread evenly through the atom. Some alpha particles bouncing back implied they had hit something extremely small but extremely dense and concentrated. Rutherford famously said it was 'as if you fired a 15-inch artillery shell at a piece of tissue paper and it bounced back at you'. This forced him to conclude that the atom has a tiny, dense, positively charged nucleus at its centre, with most of the rest of the atom being empty space.",
+          "explanation": "The unexpected bouncing was inconsistent with Thomson's plum pudding — it required a concentrated dense centre."
+        },
+        {
+          "id": "ch8-t1-m2",
+          "type": "short",
+          "question": "Compare the charges and masses of protons, neutrons, and electrons.",
+          "answer": "PROTON: charge = +1 (positive), mass = approximately 1 unit (1 amu). Found in the nucleus. NEUTRON: charge = 0 (no charge), mass = approximately 1 unit (slightly more than a proton). Found in the nucleus. ELECTRON: charge = −1 (negative), mass = approximately 1/1836 of a proton (essentially negligible). Found in shells outside the nucleus. So protons and neutrons have nearly identical mass; the electron is about 2000 times lighter and the only one orbiting outside.",
+          "explanation": "The mass of an atom is essentially the mass of its protons and neutrons combined."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t1-h1",
+          "type": "long",
+          "question": "Describe at least three different atomic models in chronological order, and explain how each was an improvement over the previous.",
+          "answer": "(1) DALTON'S MODEL (1808): Atoms are indivisible solid spheres of pure matter. Each element has its own type of atom. Improvement: First scientific model based on chemical combining ratios; explained why elements combine in fixed proportions. (2) THOMSON'S PLUM PUDDING MODEL (1897): Atom is a sphere of positive charge with negatively charged electrons embedded throughout, like raisins in a pudding. Improvement: Incorporated Thomson's discovery of the electron; explained that atoms contain smaller particles. (3) RUTHERFORD'S NUCLEAR MODEL (1911): Atom has a tiny dense positive nucleus at the centre with electrons orbiting at a distance; most of the atom is empty space. Improvement: Explained gold foil experiment results that Thomson's model couldn't. (4) BOHR'S MODEL (1913): Like Rutherford's, but electrons can only orbit in specific allowed shells/energy levels. Improvement: Explained the line spectra of atoms and the stability of atoms. Modern quantum mechanics has refined Bohr's model further into a 'cloud' or 'orbital' picture, but Bohr's shells are still useful at school level.",
+          "explanation": "Each model was forced to improve when new experimental evidence (like the gold foil result or atomic spectra) couldn't be explained by the previous one."
+        }
+      ]
+    },
+    {
+      "topic": "Atomic Number, Mass Number, and Electron Shells",
+      "easy": [
+        {
+          "id": "ch8-t2-e1",
+          "type": "mcq",
+          "question": "The atomic number of an element is equal to:",
+          "options": [
+            "Number of protons",
+            "Number of neutrons",
+            "Sum of protons and neutrons",
+            "Number of electrons in the outer shell"
+          ],
+          "answer": "Number of protons",
+          "explanation": "Atomic number (Z) = number of protons in the nucleus. This number defines what element the atom is."
+        },
+        {
+          "id": "ch8-t2-e2",
+          "type": "fill",
+          "question": "An oxygen atom has 8 protons and 8 neutrons. Its mass number is ______.",
+          "answer": "16",
+          "explanation": "Mass number = protons + neutrons = 8 + 8 = 16."
+        },
+        {
+          "id": "ch8-t2-e3",
+          "type": "mcq",
+          "question": "The maximum number of electrons that can be held in the L shell (second shell) is:",
+          "options": ["2", "8", "18", "32"],
+          "answer": "8",
+          "explanation": "Maximum per shell = 2n². For n = 2 (L shell), maximum = 2 × 2² = 8."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t2-m1",
+          "type": "short",
+          "question": "Sodium has atomic number 11. Write out its electron arrangement and explain.",
+          "answer": "Atomic number 11 means sodium has 11 protons and (in a neutral atom) 11 electrons. Filling shells from inside out: K shell takes 2 electrons (maximum). L shell takes 8 electrons (maximum). That leaves 11 − 2 − 8 = 1 electron, which goes into the M shell. Electron arrangement: 2, 8, 1. The single electron in the outer shell explains why sodium readily loses it (becoming Na⁺) and is so reactive.",
+          "explanation": "Fill shells from the innermost; outer shell determines chemistry."
+        },
+        {
+          "id": "ch8-t2-m2",
+          "type": "short",
+          "question": "Chlorine has atomic number 17 and mass number 35. Calculate the number of protons, neutrons, and electrons in a neutral chlorine atom.",
+          "answer": "Protons = atomic number = 17. Electrons in a neutral atom = number of protons = 17. Neutrons = mass number − atomic number = 35 − 17 = 18. So a neutral ³⁵Cl atom contains 17 protons, 17 electrons, and 18 neutrons.",
+          "explanation": "Standard formula: protons = Z, electrons = Z (in a neutral atom), neutrons = A − Z."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t2-h1",
+          "type": "long",
+          "question": "Calcium has atomic number 20. Determine (a) its electron arrangement, (b) the number of electrons in its outermost shell, (c) its valency, and (d) the formula of the compound it forms with chlorine (valency 1).",
+          "answer": "(a) Calcium has 20 electrons. Filling: K = 2, L = 8, M = 8 (the M shell can hold 18 but is capped at 8 in the outer position until we have more electrons), N = 2. So the arrangement is 2, 8, 8, 2. (b) The outermost shell (N shell) holds 2 electrons. (c) Valency: calcium has 2 outer electrons; it loses both to become Ca²⁺ and achieve a stable octet. So valency = 2. (d) With chlorine (valency 1, gains 1 electron to become Cl⁻), calcium combines as: each Ca²⁺ balances two Cl⁻ ions. Formula: CaCl₂.",
+          "explanation": "Electron arrangement → outermost electrons → valency → formula. This is the core flow of basic chemistry."
+        }
+      ]
+    },
+    {
+      "topic": "Valency and Isotopes",
+      "easy": [
+        {
+          "id": "ch8-t3-e1",
+          "type": "mcq",
+          "question": "The combining capacity of an atom is called its:",
+          "options": ["Mass number", "Atomic number", "Valency", "Isotope number"],
+          "answer": "Valency",
+          "explanation": "Valency is the number of electrons an atom gains, loses, or shares to achieve a stable outer shell (typically 8 electrons)."
+        },
+        {
+          "id": "ch8-t3-e2",
+          "type": "fill",
+          "question": "Atoms of the same element that have different numbers of neutrons are called ______.",
+          "answer": "isotopes",
+          "explanation": "Isotopes have the same atomic number (Z) but different mass numbers (A). Same chemistry, different mass."
+        },
+        {
+          "id": "ch8-t3-e3",
+          "type": "mcq",
+          "question": "Why do noble gases like helium, neon, and argon have valency zero?",
+          "options": [
+            "They are too small",
+            "They have no electrons",
+            "Their outermost shells are already full",
+            "They are too heavy"
+          ],
+          "answer": "Their outermost shells are already full",
+          "explanation": "Noble gases have completely full outer shells (helium has 2, others have 8), so they have no need to gain, lose, or share electrons. Hence valency = 0."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch8-t3-m1",
+          "type": "short",
+          "question": "An element X has electron arrangement 2, 8, 6. (a) What is its atomic number? (b) What is its valency? (c) What type of ion will it form? (d) Identify X.",
+          "answer": "(a) Atomic number = total electrons = 2 + 8 + 6 = 16. (b) Outer shell has 6 electrons; it needs 2 more to complete an octet. So it will GAIN 2 electrons, giving valency = 2. (c) It will form a negative ion (anion) with charge −2. (d) Element with Z = 16 is sulphur (S). It commonly forms the S²⁻ ion.",
+          "explanation": "Reading the electron arrangement gives atomic number and valency directly."
+        },
+        {
+          "id": "ch8-t3-m2",
+          "type": "short",
+          "question": "Explain why all isotopes of the same element have identical chemical properties but different physical properties.",
+          "answer": "Chemical properties of an atom depend on its electron configuration, especially the number of electrons in the outermost shell. In neutral isotopes of the same element, the number of protons (atomic number Z) is the same, so the number of electrons is also the same — they have identical electron arrangements and react chemically the same way. The difference between isotopes is in their number of neutrons, which affects mass (and thus density, diffusion rate, and rate of motion) but not chemistry. So isotopes share chemical behaviour (the same chemical reactions) but have different masses and slightly different physical behaviour.",
+          "explanation": "Electrons determine chemistry; neutrons determine mass."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch8-t3-h1",
+          "type": "long",
+          "question": "Describe one practical application each of the isotopes carbon-14, cobalt-60, and iodine-131.",
+          "answer": "CARBON-14: Used in radiocarbon dating. Carbon-14 is a radioactive isotope of carbon that decays with a half-life of about 5,730 years. Living organisms absorb a roughly constant proportion of carbon-14 from the environment. When they die, the carbon-14 in their remains starts to decay. By measuring how much carbon-14 is left in an old object (like a piece of wood, a bone, or charcoal), archaeologists can estimate its age. This dating method has helped date Indus Valley artefacts, ancient temple wood, prehistoric tools, and bones up to ~50,000 years old. COBALT-60: Used in cancer radiotherapy. It emits high-energy gamma rays that destroy cancer cells. Tata Memorial Hospital and many cancer centres across India use cobalt-60 therapy. IODINE-131: Used to treat thyroid cancer and overactive thyroid. The thyroid gland naturally absorbs iodine, so radioactive iodine-131 given orally concentrates in the thyroid and destroys malignant tissue selectively.",
+          "explanation": "Each isotope's specific decay properties make it useful for very different applications."
+        }
+      ]
+    }
+  ]
+}
