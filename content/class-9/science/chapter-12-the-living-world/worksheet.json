@@ -1,0 +1,184 @@
+{
+  "topics": [
+    {
+      "topic": "Biodiversity and Classification",
+      "easy": [
+        {
+          "id": "ch12-t1-e1",
+          "type": "mcq",
+          "question": "Biodiversity refers to:",
+          "options": [
+            "The number of plants only",
+            "The variety of living organisms on Earth",
+            "The number of animals in a zoo",
+            "The number of bacteria in your body"
+          ],
+          "answer": "The variety of living organisms on Earth",
+          "explanation": "Biodiversity is the total variety of life — from bacteria to whales, on every part of the planet."
+        },
+        {
+          "id": "ch12-t1-e2",
+          "type": "fill",
+          "question": "The two-word scientific naming system for species is called binomial ______.",
+          "answer": "nomenclature",
+          "explanation": "Binomial nomenclature was developed by Carolus Linnaeus. Each species has a unique two-word name (genus + species)."
+        },
+        {
+          "id": "ch12-t1-e3",
+          "type": "mcq",
+          "question": "The broadest level of classification is the:",
+          "options": ["Species", "Family", "Kingdom", "Genus"],
+          "answer": "Kingdom",
+          "explanation": "The classification hierarchy from broadest to most specific: Kingdom → Phylum → Class → Order → Family → Genus → Species."
+        },
+        {
+          "id": "ch12-t1-e4",
+          "type": "mcq",
+          "question": "The scientific name of the mango tree is *Mangifera indica*. In this name, *Mangifera* is the:",
+          "options": ["Family", "Genus", "Species", "Kingdom"],
+          "answer": "Genus",
+          "explanation": "In binomial nomenclature, the first word (capitalised) is the genus; the second word (lowercase) is the species."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t1-m1",
+          "type": "short",
+          "question": "Why do scientists need to classify living organisms? Give at least three reasons.",
+          "answer": "Classification is essential for at least four reasons: (1) ORGANISATION — millions of species would be unmanageable without grouping by similarities; it is biology's filing system. (2) CLEAR COMMUNICATION — scientific names mean the same thing in every language and country. A scientist in Brazil and India can both say 'Panthera tigris' and refer to the same animal. (3) RELATIONSHIPS — organisms grouped together usually share a common evolutionary ancestor; classification reflects how life is related. (4) PREDICTING PROPERTIES — knowing a new species is a bird tells you it has feathers, lays eggs, flies, etc., even before detailed study. (5) FOUNDATION OF BIOLOGY — every branch (ecology, evolution, genetics, conservation) builds on knowing what species we are dealing with.",
+          "explanation": "Classification is a tool for understanding, not just an academic exercise."
+        },
+        {
+          "id": "ch12-t1-m2",
+          "type": "short",
+          "question": "List the seven levels of biological classification in order from broadest to most specific.",
+          "answer": "From broadest to most specific: KINGDOM → PHYLUM (in animals) or DIVISION (in plants) → CLASS → ORDER → FAMILY → GENUS → SPECIES. A mnemonic: 'King Philip Came Over For Good Soup'. Each level is more specific than the one above it. So a 'species' refers to one specific kind of organism; a 'kingdom' includes millions of species.",
+          "explanation": "The standard hierarchy lets biologists place any organism in increasingly specific groups."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t1-h1",
+          "type": "long",
+          "question": "Classify a tiger (*Panthera tigris*) at each level of the standard biological hierarchy, explaining what group each level includes.",
+          "answer": "KINGDOM: Animalia — all animals, including everything from sponges to humans. PHYLUM: Chordata — all animals with a backbone or a notochord. CLASS: Mammalia — all mammals: warm-blooded, hair/fur, mammary glands, give birth to live young (mostly). ORDER: Carnivora — all flesh-eating mammals (cats, dogs, bears, weasels, etc.). FAMILY: Felidae — the cat family (lions, tigers, leopards, jaguars, domestic cats, lynx, cheetahs). GENUS: Panthera — the 'great cats' that can roar: lion, tiger, leopard, jaguar, snow leopard. SPECIES: tigris — the tiger specifically, distinguished from other Panthera species by stripes, build, behaviour, and habitat. The complete classification — Animalia → Chordata → Mammalia → Carnivora → Felidae → Panthera → tigris — places the tiger uniquely among all life. Its scientific name *Panthera tigris* uses just the genus and species (always italicised, species lowercase).",
+          "explanation": "Following the hierarchy from broad to specific shows exactly which other organisms share traits with the tiger and at what level."
+        }
+      ]
+    },
+    {
+      "topic": "The Five Kingdoms",
+      "easy": [
+        {
+          "id": "ch12-t2-e1",
+          "type": "mcq",
+          "question": "Bacteria belong to which kingdom?",
+          "options": ["Plantae", "Protista", "Fungi", "Monera"],
+          "answer": "Monera",
+          "explanation": "Monera consists of all bacteria — unicellular, prokaryotic (no nucleus) organisms."
+        },
+        {
+          "id": "ch12-t2-e2",
+          "type": "fill",
+          "question": "The kingdom of multicellular organisms with cell walls made of cellulose, which make their own food via photosynthesis, is ______.",
+          "answer": "Plantae",
+          "explanation": "Plantae is the plant kingdom. Cellulose cell walls and photosynthesis are key defining features."
+        },
+        {
+          "id": "ch12-t2-e3",
+          "type": "mcq",
+          "question": "Yeast (used in idli batter) belongs to which kingdom?",
+          "options": ["Monera", "Protista", "Fungi", "Plantae"],
+          "answer": "Fungi",
+          "explanation": "Yeast is a single-celled fungus. The fungi kingdom includes yeast, mushrooms, and moulds — all heterotrophic with chitin cell walls."
+        },
+        {
+          "id": "ch12-t2-e4",
+          "type": "mcq",
+          "question": "The largest phylum in the animal kingdom is:",
+          "options": ["Mollusca", "Chordata", "Annelida", "Arthropoda"],
+          "answer": "Arthropoda",
+          "explanation": "Arthropoda (insects, spiders, crustaceans) contains about 80% of all known animal species — over a million identified species."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t2-m1",
+          "type": "short",
+          "question": "Distinguish between the kingdoms Plantae and Fungi.",
+          "answer": "PLANTAE: Multicellular eukaryotes. Cell walls made of CELLULOSE. Have CHLOROPHYLL and are AUTOTROPHIC — they make their own food via photosynthesis using sunlight. Examples: mango trees, rose, paddy. FUNGI: Mostly multicellular eukaryotes (yeast is unicellular). Cell walls made of CHITIN (not cellulose). NO chlorophyll. HETEROTROPHIC — they absorb nutrients from their surroundings, often by decomposing dead organisms. Examples: mushrooms, bread mould, yeast. So fungi differ from plants in cell wall composition, mode of nutrition (no photosynthesis), and ecological role (decomposers rather than producers).",
+          "explanation": "Cell wall material and mode of nutrition are the key differences."
+        },
+        {
+          "id": "ch12-t2-m2",
+          "type": "short",
+          "question": "Why is the arthropod phylum so successful, with so many species?",
+          "answer": "Arthropods (insects, spiders, crustaceans) succeed for several reasons. (1) EXOSKELETON — the hard outer covering protects them and prevents water loss, allowing colonisation of dry land. (2) SIZE — being small, they can find food and shelter in places larger animals cannot, and a single tree can host many species without competition. (3) RAPID REPRODUCTION — most lay many eggs and reproduce quickly, allowing rapid population growth and adaptation. (4) FLIGHT — many insects can fly, helping them escape predators, find new habitats, and disperse widely. (5) METAMORPHOSIS — different larval and adult stages eat different foods, so a single species can exploit two food niches. The result: over 1 million named arthropod species, with probably several million more undiscovered, making them the most successful phylum on Earth.",
+          "explanation": "Multiple biological advantages combine to make arthropods the most diverse animal phylum."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t2-h1",
+          "type": "long",
+          "question": "A scientist isolates an unknown organism. It is single-celled, has a nucleus, has chlorophyll-containing organelles, lives in pond water, and can swim using a whip-like structure. Suggest the kingdom to which it most likely belongs, and explain your reasoning.",
+          "answer": "Most likely kingdom: PROTISTA. REASONING: (1) SINGLE-CELLED — eliminates Plantae, Fungi (mostly), and Animalia (which are typically multicellular). (2) HAS A NUCLEUS (eukaryotic) — eliminates Monera (bacteria), which are prokaryotic and have no nucleus. (3) HAS CHLOROPHYLL-CONTAINING ORGANELLES — this could suggest plant-like, but in a single-celled organism, it strongly suggests Protista (specifically the 'plant-like protists' such as Euglena). (4) LIVES IN POND WATER — many protists are aquatic. (5) SWIMS USING A WHIP-LIKE STRUCTURE — this is a flagellum, common in protists like Euglena. CONCLUSION: The organism is almost certainly a member of Protista, most likely from the algae-like protists. A specific candidate matching all the clues is Euglena — a single-celled organism with chloroplasts that can photosynthesise but also swim using its flagellum. Euglena are common in Indian ponds and have features that bridge plant and animal characteristics — exactly why they belong to Protista, the 'in-between' kingdom for organisms that don't fit cleanly elsewhere.",
+          "explanation": "Single-celled + eukaryotic + chlorophyll + flagellum = classic protist (likely Euglena)."
+        }
+      ]
+    },
+    {
+      "topic": "Indian Biodiversity",
+      "easy": [
+        {
+          "id": "ch12-t3-e1",
+          "type": "mcq",
+          "question": "India holds approximately what fraction of the world's known species?",
+          "options": ["2%", "5%", "8%", "20%"],
+          "answer": "8%",
+          "explanation": "India holds about 8% of all known species while occupying only about 2.4% of the world's land area — a remarkable concentration of biodiversity."
+        },
+        {
+          "id": "ch12-t3-e2",
+          "type": "fill",
+          "question": "The mountain chain along India's west coast, a famous biodiversity hotspot, is called the Western ______.",
+          "answer": "Ghats",
+          "explanation": "The Western Ghats run from Gujarat down to Kerala along India's west coast. A UNESCO World Heritage Site and home to thousands of endemic species."
+        },
+        {
+          "id": "ch12-t3-e3",
+          "type": "mcq",
+          "question": "Project Tiger, launched in 1973 to protect the Indian tiger population, has helped raise tiger numbers from about 1,800 to:",
+          "options": ["Fewer than 500", "About 1000", "Over 3,000", "Over 30,000"],
+          "answer": "Over 3,000",
+          "explanation": "Project Tiger is widely considered one of the most successful conservation efforts in the world. India now hosts about 70% of the world's wild tigers."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch12-t3-m1",
+          "type": "short",
+          "question": "Why is India one of the most biodiverse countries in the world despite its relatively small land area?",
+          "answer": "Several factors contribute to India's exceptional biodiversity: (1) CLIMATIC VARIETY — India has every climate from cold Himalayan highlands to hot Thar desert to humid tropical rainforests. Each climate supports its own species. (2) LANDFORM VARIETY — mountains, plains, plateaus, coasts, deserts, wetlands, mangroves — each landform creates different habitats. (3) ISOLATION — India was a separate continent that drifted into Asia about 50 million years ago. During its drift, many species evolved in isolation and are now found only in India (endemic species). (4) LONG EVOLUTIONARY HISTORY — life has been evolving on the Indian peninsula for tens of millions of years, producing many specialised forms. The Western Ghats and Northeast India are particularly rich because they have tropical conditions that have been stable for very long periods, allowing endemic species to evolve and persist.",
+          "explanation": "Multiple climates + multiple landforms + evolutionary isolation = high biodiversity."
+        },
+        {
+          "id": "ch12-t3-m2",
+          "type": "short",
+          "question": "List at least four major threats to biodiversity in India and one specific action being taken to address them.",
+          "answer": "FOUR MAJOR THREATS: (1) HABITAT LOSS — forests cleared for agriculture, cities, roads, mining. (2) POLLUTION — chemicals from industry, plastics in rivers and oceans, pesticides from farms. (3) CLIMATE CHANGE — warmer temperatures shift the timing of seasonal events, force species to migrate, and disrupt ecosystems. (4) POACHING AND HUNTING — tigers, rhinos, pangolins, elephants, and sandalwood smuggling. ACTIONS BEING TAKEN: India has established a network of national parks and wildlife sanctuaries (such as Kaziranga, Jim Corbett, Ranthambore, Bandipur, Sundarbans). Project Tiger (1973) and Project Elephant (1992) protect specific keystone species. The Wildlife Protection Act and Biodiversity Act provide legal frameworks. International cooperation through CITES (Convention on International Trade in Endangered Species) prevents trafficking. Community-based conservation in places like the Western Ghats involves local people in protection. These efforts have succeeded in some areas (tiger numbers up to over 3,000) and failed in others (cheetahs went extinct in India; some species are reintroduced from Africa).",
+          "explanation": "Both threats and responses are real and varied; combined action is needed."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch12-t3-h1",
+          "type": "long",
+          "question": "Choose one Indian biodiversity hotspot (Western Ghats, Eastern Himalayas, Indo-Burma, or Sundarbans) and describe in detail: (a) the unique ecosystem, (b) at least three iconic species found there, and (c) the main threats it faces.",
+          "answer": "Choosing the WESTERN GHATS. (a) UNIQUE ECOSYSTEM: The Western Ghats are a mountain chain running about 1,600 km along India's western coast, from Gujarat to Kerala. They intercept the moisture-laden southwest monsoon, creating dense tropical rainforests on the western slopes and a dry rainshadow on the eastern slopes. The result is enormous habitat variety in a small geographic area — evergreen forests, deciduous forests, grasslands, and rivers all within a few kilometres. The Western Ghats are estimated to contain about 7,400 species of flowering plants, 139 mammal species, 508 bird species, and over 100 amphibian species — many found nowhere else on Earth. (b) ICONIC SPECIES: (1) MALABAR GIANT SQUIRREL — a large, multi-coloured squirrel that lives in the canopy. (2) LION-TAILED MACAQUE — a primate with a striking grey mane and a tufted tail; only about 4,000 remain in the wild. (3) NILGIRI TAHR — a wild goat found only in the higher elevations of the southern Western Ghats. Other notable species include the Indian frogmouth bird, the Malabar pit viper, and the Travancore tortoise. (c) MAIN THREATS: Forest clearing for plantations (tea, coffee, cardamom), illegal logging, mining, hydroelectric projects (which dam rivers and submerge habitats), invasive species, and poaching. Climate change is causing rainfall pattern shifts that affect the ecosystem. UNESCO recognised the Western Ghats as a World Heritage Site in 2012, but the threats continue. Protected areas like Periyar Tiger Reserve, Silent Valley National Park, and Mudumalai Tiger Reserve provide refuges, but a more comprehensive conservation strategy is needed.",
+          "explanation": "Each hotspot has its own ecosystem, species, and threats; preserving them requires understanding both the biology and the social/economic context."
+        }
+      ]
+    }
+  ]
+}
