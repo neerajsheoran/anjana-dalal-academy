@@ -19,7 +19,18 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
-  const { score, total, percentage, classId, subject, chapterIds, chapterTitles, difficulty, timeTaken } = body;
+  const {
+    score,
+    total,
+    percentage,
+    classId,
+    subject,
+    chapterIds,
+    chapterKeys,
+    chapterTitles,
+    difficulty,
+    timeTaken,
+  } = body;
 
   if (
     typeof score !== 'number' ||
@@ -34,6 +45,12 @@ export async function POST(req: Request) {
   }
 
   try {
+    // chapterIds[] stays for backward compatibility with the existing
+    // history UI. chapterKeys[] is the new canonical reference — both
+    // are written when the client provides them. Older clients that
+    // don't yet send chapterKeys still work; their attempts just lack
+    // the stable reference (a Firestore migration script can backfill
+    // those later — see scripts/backfill-firestore-chapter-keys.ts).
     await adminDb
       .collection('users')
       .doc(uid)
@@ -45,6 +62,7 @@ export async function POST(req: Request) {
         classId,
         subject,
         chapterIds,
+        ...(Array.isArray(chapterKeys) ? { chapterKeys } : {}),
         chapterTitles: chapterTitles || [],
         difficulty,
         ...(typeof timeTaken === 'number' ? { timeTaken } : {}),
@@ -54,6 +72,7 @@ export async function POST(req: Request) {
     // Mark chapters as quiz-passed when score >= 80%
     if (percentage >= 80 && Array.isArray(chapterIds)) {
       const titles = chapterTitles || [];
+      const keys: string[] = Array.isArray(chapterKeys) ? chapterKeys : [];
       for (let i = 0; i < chapterIds.length; i++) {
         const chapId = chapterIds[i];
         const progressRef = adminDb
@@ -74,6 +93,7 @@ export async function POST(req: Request) {
             classId,
             subject,
             chapterId: chapId,
+            ...(keys[i] ? { chapterKey: keys[i] } : {}),
             chapterTitle: titles[i] || chapId,
           },
           { merge: true }

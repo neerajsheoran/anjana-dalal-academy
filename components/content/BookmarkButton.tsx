@@ -6,10 +6,12 @@ interface BookmarkButtonProps {
   classId: string;
   subject: string;
   chapterId: string;
+  // Stable identifier — survives slug changes when content gets updated.
+  chapterKey?: string;
   chapterTitle: string;
 }
 
-export default function BookmarkButton({ classId, subject, chapterId, chapterTitle }: BookmarkButtonProps) {
+export default function BookmarkButton({ classId, subject, chapterId, chapterKey, chapterTitle }: BookmarkButtonProps) {
   const [bookmarked, setBookmarked] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -42,7 +44,7 @@ export default function BookmarkButton({ classId, subject, chapterId, chapterTit
         const res = await fetch("/api/bookmarks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ classId, subject, chapterId, chapterTitle }),
+          body: JSON.stringify({ classId, subject, chapterId, chapterKey, chapterTitle }),
         });
         if (!res.ok) throw new Error();
         setBookmarked(true);

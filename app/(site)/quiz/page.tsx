@@ -26,6 +26,10 @@ export default async function QuizPage({
   });
 
   const chapterTitles = chapterIds.map((id) => getChapter(id)?.title ?? id);
+  // chapterKeys is the stable identifier sent alongside chapterIds when
+  // saving a quiz attempt. Missing keys (legacy chapters not yet
+  // backfilled) fall back to the slug so the array is parallel.
+  const chapterKeys = chapterIds.map((id) => getChapter(id)?.chapterKey ?? id);
 
   if (!classId || !subject || chapterIds.length === 0) {
     return (
@@ -48,6 +52,7 @@ export default async function QuizPage({
         classId={classId}
         subject={subject}
         chapterIds={chapterIds}
+        chapterKeys={chapterKeys}
       />
     </main>
   );

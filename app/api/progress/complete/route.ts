@@ -19,7 +19,7 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
-  const { classId, subject, chapterId, chapterTitle, completed } = body;
+  const { classId, subject, chapterId, chapterKey, chapterTitle, completed } = body;
 
   if (!classId || !subject || !chapterId) {
     return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
@@ -47,6 +47,7 @@ export async function POST(req: Request) {
           classId,
           subject,
           chapterId,
+          ...(chapterKey ? { chapterKey } : {}),
           chapterTitle: chapterTitle || chapterId,
         },
         { merge: true }

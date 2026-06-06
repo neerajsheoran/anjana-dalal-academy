@@ -34,11 +34,14 @@ export async function POST(req: NextRequest) {
   if (!uid) return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
 
   const body = await req.json();
-  const { classId, subject, chapterId, chapterTitle } = body;
+  const { classId, subject, chapterId, chapterKey, chapterTitle } = body;
   if (!classId || !subject || !chapterId) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
+  // Doc ID stays as chapterId (slug) for now to keep existing bookmark
+  // lookups working. chapterKey is stored as a field so we can re-key
+  // by chapterKey in a future migration when ready.
   await adminDb
     .collection("users")
     .doc(uid)
@@ -48,6 +51,7 @@ export async function POST(req: NextRequest) {
       classId,
       subject,
       chapterId,
+      ...(chapterKey ? { chapterKey } : {}),
       chapterTitle: chapterTitle || chapterId,
       createdAt: new Date().toISOString(),
     });

@@ -19,13 +19,17 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json();
-  const { classId, subject, chapterId, chapterTitle } = body;
+  const { classId, subject, chapterId, chapterKey, chapterTitle } = body;
 
   if (!classId || !subject || !chapterId || !chapterTitle) {
     return NextResponse.json({ error: 'Invalid payload' }, { status: 400 });
   }
 
   try {
+    // Doc ID stays as chapterId (slug) for now to avoid disrupting
+    // existing progress lookups. The chapterKey is added as a field so
+    // future migrations can re-key by chapterKey when ready. See the
+    // memory file `chapter-key-architecture.md` for the rollout plan.
     await adminDb
       .collection('users')
       .doc(uid)
@@ -36,6 +40,7 @@ export async function POST(req: Request) {
           classId,
           subject,
           chapterId,
+          ...(chapterKey ? { chapterKey } : {}),
           chapterTitle,
           lastVisitedAt: FieldValue.serverTimestamp(),
         },

@@ -87,10 +87,25 @@ function discoverChapters(): ChapterMeta[] {
         const partRaw = parseInt(fm.part, 10);
         if (partRaw === 1 || partRaw === 2) part = partRaw;
 
+        // chapterKey is the stable identifier used by Firestore (quiz
+        // attempts, progress, bookmarks). It is added once at chapter
+        // creation and never changes. The backfill script
+        // scripts/backfill-chapter-keys.ts ensures every existing
+        // chapter has one. If somehow missing (e.g. a fresh chapter
+        // authored without it), fall back to the slug so the system
+        // doesn't crash — but log a warning so it gets fixed.
+        const chapterKey = fm.chapterKey;
+        if (!chapterKey) {
+          console.warn(
+            `[content] Chapter ${cls.id}/${subj.id}/${entry.name} has no chapterKey in frontmatter. Add one (UUID v4) — using slug as a temporary fallback.`,
+          );
+        }
+
         chapters.push({
           classId: cls.id as ClassId,
           subject: subj.id as SubjectId,
           chapterId: entry.name,
+          chapterKey: chapterKey || entry.name,
           title,
           description: fm.description || "",
           order,
@@ -125,9 +140,17 @@ export function getChapters(classId: ClassId, subject: SubjectId): ChapterMeta[]
     .sort((a, b) => a.order - b.order);
 }
 
-// Helper: get a single chapter by its ID
+// Helper: get a single chapter by its (slug-based) ID
 export function getChapter(chapterId: string): ChapterMeta | undefined {
   return getAllChapters().find((c) => c.chapterId === chapterId);
+}
+
+// Helper: get a single chapter by its stable key. Use this when
+// resolving references stored in Firestore (quiz attempts, progress,
+// bookmarks). The key never changes even when the slug does.
+export function getChapterByKey(chapterKey: string): ChapterMeta | undefined {
+  if (!chapterKey) return undefined;
+  return getAllChapters().find((c) => c.chapterKey === chapterKey);
 }
 
 // Helper: get subjects that have chapters for a given class

@@ -22,6 +22,11 @@ interface Props {
   classId: string;
   subject: string;
   chapterIds: string[];
+  // Stable identifiers (UUIDs) for the chapters being quizzed. Same
+  // index order as chapterIds. Optional for backward compatibility with
+  // any caller that hasn't been updated yet; the save API tolerates
+  // missing chapterKeys.
+  chapterKeys?: string[];
 }
 
 const TYPE_LABEL: Record<string, string> = {
@@ -51,6 +56,7 @@ export default function QuizController({
   classId,
   subject,
   chapterIds,
+  chapterKeys,
 }: Props) {
   const [phase, setPhase] = useState<Phase>('setup');
   const [difficulty, setDifficulty] = useState<QuizDifficulty>('mixed');
@@ -96,6 +102,7 @@ export default function QuizController({
         classId,
         subject,
         chapterIds,
+        ...(Array.isArray(chapterKeys) ? { chapterKeys } : {}),
         chapterTitles,
         difficulty,
         timeTaken: elapsed,

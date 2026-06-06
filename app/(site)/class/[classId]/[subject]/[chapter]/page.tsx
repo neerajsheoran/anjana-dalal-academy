@@ -203,6 +203,7 @@ export default async function ChapterPage({
               classId={classId}
               subject={subject}
               chapterId={chapter}
+              chapterKey={chapterMeta?.chapterKey}
               chapterTitle={displayTitle}
             />
             {isLoggedIn && hasFullAccess(accessLevel) && (
@@ -210,6 +211,7 @@ export default async function ChapterPage({
                 classId={classId}
                 subject={subject}
                 chapterId={chapter}
+                chapterKey={chapterMeta?.chapterKey}
                 chapterTitle={displayTitle}
                 initialCompleted={isChapterCompleted}
                 completedBy={completedBy}
@@ -345,6 +347,7 @@ export default async function ChapterPage({
         classId={classId}
         subject={subject}
         chapterId={chapter}
+        chapterKey={chapterMeta?.chapterKey}
         chapterTitle={displayTitle}
       />
     </main>

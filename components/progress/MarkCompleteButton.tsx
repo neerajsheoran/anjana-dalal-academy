@@ -6,6 +6,8 @@ interface Props {
   classId: string;
   subject: string;
   chapterId: string;
+  // Stable identifier — survives slug changes when content gets updated.
+  chapterKey?: string;
   chapterTitle: string;
   initialCompleted: boolean;
   completedBy: string | null; // "quiz" | "manual" | null
@@ -15,6 +17,7 @@ export default function MarkCompleteButton({
   classId,
   subject,
   chapterId,
+  chapterKey,
   chapterTitle,
   initialCompleted,
   completedBy,
@@ -45,6 +48,7 @@ export default function MarkCompleteButton({
           classId,
           subject,
           chapterId,
+          chapterKey,
           chapterTitle,
           completed: !completed,
         }),

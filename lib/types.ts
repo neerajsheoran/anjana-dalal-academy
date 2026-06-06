@@ -21,7 +21,15 @@ export type DifficultyLevel = "easy" | "medium" | "hard";
 export interface ChapterMeta {
   classId: ClassId;
   subject: SubjectId;
+  // URL slug — cosmetic only. Can change when a chapter's content gets
+  // updated (e.g. NCERT releases a new book). Add a redirect from the
+  // old slug to the new one if you change this; never use it as a
+  // persistent reference key.
   chapterId: string;       // e.g. "chapter-1-food-where-does-it-come-from"
+  // Stable identifier, never changes once assigned. Use this when
+  // writing references to a chapter from Firestore (quiz attempts,
+  // progress, bookmarks, etc.). UUID v4.
+  chapterKey: string;
   title: string;           // e.g. "Food: Where Does It Come From?"
   description: string;     // Short summary shown in chapter cards
   order: number;           // Chapter number for sorting
