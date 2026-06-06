@@ -27,3 +27,14 @@ export function isTrainEligible(classId?: string | null): boolean {
   if (n === null) return true; // No class info ⇒ include
   return n <= TRAIN_MAX_CLASS;
 }
+
+// Class 1–4 see the existing cartoon/icon games. Class 5–8 get the Senior
+// re-skin: same mechanics, academic content (state↔capital, element↔symbol),
+// less candy-bright visuals. Decision: cognilift-senior-tier-spec.md.
+export type TrainingTier = "junior" | "senior";
+
+export function getTrainingTier(classId?: string | null): TrainingTier {
+  const n = classNumber(classId);
+  if (n !== null && n >= 5 && n <= TRAIN_MAX_CLASS) return "senior";
+  return "junior";
+}

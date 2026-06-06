@@ -5,7 +5,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
-import { isTrainEligible } from "@/lib/train-eligibility";
+import { isTrainEligible, getTrainingTier } from "@/lib/train-eligibility";
 import {
   BRAIN_ACTIVITIES,
   BRAIN_MODULES,
@@ -84,6 +84,7 @@ export default async function ActivityPage({
   const difficulty: Difficulty = adaptive.difficulty;
   const adaptiveSource: AdaptiveSource = adaptive.source;
   const previousLevel: Difficulty | undefined = adaptive.previousLevel;
+  const tier = getTrainingTier(activeChild.classId);
 
   // Route to the right activity component
   if (activityKey === "pattern-recall") {
@@ -237,6 +238,7 @@ export default async function ActivityPage({
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
+        tier={tier}
       />
     );
   }

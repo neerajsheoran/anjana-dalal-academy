@@ -42,6 +42,11 @@ import {
   type Difficulty,
 } from '@/lib/difficulty';
 import type { AdaptiveSource } from '@/lib/adaptive';
+import type { TrainingTier } from '@/lib/train-eligibility';
+import {
+  pickMemoryMatchSeniorDeck,
+  type MemoryMatchSeniorDeck,
+} from '@/lib/brain-content';
 import AdaptiveBanner from '@/components/brain/AdaptiveBanner';
 import {
   REFLECTION_OPTIONS,
@@ -52,8 +57,14 @@ import { useAutoAdvance } from '@/lib/use-auto-advance';
 
 const TOTAL_ROUNDS = 3;
 
-// Pool of icon+color pairs. Each pair is a unique combination, so we have
-// plenty to pull from for the hardest 8-pair grid.
+// Each card has a "face" — what shows when flipped or matched. Junior tier
+// uses icon faces (both cards in a pair show the SAME icon). Senior tier
+// uses text-pair faces (the two cards show DIFFERENT but related text,
+// e.g. Maharashtra ↔ Mumbai).
+type CardFace =
+  | { kind: 'icon'; icon: LucideIcon; color: string; bg: string; name: string }
+  | { kind: 'text'; text: string; label: string };
+
 interface IconCard {
   icon: LucideIcon;
   color: string;     // tailwind text color
@@ -101,7 +112,7 @@ interface RoundResult {
 
 interface CardState {
   pairId: number;        // 0..pairs-1
-  card: IconCard;
+  face: CardFace;
   isMatched: boolean;
   isFlipped: boolean;
 }
@@ -124,12 +135,36 @@ function shuffle<T>(arr: T[]): T[] {
   return copy;
 }
 
-function buildBoard(pairs: number): CardState[] {
+function buildJuniorBoard(pairs: number): CardState[] {
   const chosen = shuffle(ICON_POOL).slice(0, pairs);
   const cards: CardState[] = [];
   chosen.forEach((card, pairId) => {
-    cards.push({ pairId, card, isMatched: false, isFlipped: false });
-    cards.push({ pairId, card, isMatched: false, isFlipped: false });
+    const face: CardFace = { kind: 'icon', ...card };
+    cards.push({ pairId, face, isMatched: false, isFlipped: false });
+    cards.push({ pairId, face, isMatched: false, isFlipped: false });
+  });
+  return shuffle(cards);
+}
+
+function buildSeniorBoard(
+  pairs: number,
+  deck: MemoryMatchSeniorDeck,
+): CardState[] {
+  const chosen = shuffle(deck.pairs).slice(0, pairs);
+  const cards: CardState[] = [];
+  chosen.forEach((pair, pairId) => {
+    cards.push({
+      pairId,
+      face: { kind: 'text', text: pair.left, label: deck.leftLabel },
+      isMatched: false,
+      isFlipped: false,
+    });
+    cards.push({
+      pairId,
+      face: { kind: 'text', text: pair.right, label: deck.rightLabel },
+      isMatched: false,
+      isFlipped: false,
+    });
   });
   return shuffle(cards);
 }
@@ -140,18 +175,21 @@ export default function MemoryMatchActivity({
   difficulty,
   adaptiveSource,
   previousLevel,
+  tier = 'junior',
 }: {
   moduleKey: ModuleKey;
   childName: string;
   difficulty: Difficulty;
   adaptiveSource?: AdaptiveSource;
   previousLevel?: Difficulty;
+  tier?: TrainingTier;
 }) {
   const config = MEMORY_MATCH_CONFIG[difficulty];
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('instruction');
   const [round, setRound] = useState(1);
   const [board, setBoard] = useState<CardState[]>([]);
+  const [activeDeck, setActiveDeck] = useState<MemoryMatchSeniorDeck | null>(null);
   const [flippedIndices, setFlippedIndices] = useState<number[]>([]);
   const [moves, setMoves] = useState(0);
   const [isPeeking, setIsPeeking] = useState(false);  // briefly true while showing a non-match pair before re-hiding
@@ -162,7 +200,14 @@ export default function MemoryMatchActivity({
   const startTimeRef = useRef<number>(0);
 
   function startRound() {
-    setBoard(buildBoard(config.pairs));
+    if (tier === 'senior') {
+      const deck = pickMemoryMatchSeniorDeck();
+      setActiveDeck(deck);
+      setBoard(buildSeniorBoard(config.pairs, deck));
+    } else {
+      setActiveDeck(null);
+      setBoard(buildJuniorBoard(config.pairs));
+    }
     setFlippedIndices([]);
     setMoves(0);
     setIsPeeking(false);
@@ -270,7 +315,7 @@ export default function MemoryMatchActivity({
               activityKey: 'memory-match',
               moduleKey,
               difficultyLevel: difficulty,
-              contentVariant: 'abstract',
+              contentVariant: tier === 'senior' ? (activeDeck?.key ?? 'senior') : 'abstract',
               isCorrect: r.isCorrect,
               accuracyPercent: r.efficiencyPercent,
               timeTakenSeconds: r.timeTakenSeconds,
@@ -344,8 +389,24 @@ export default function MemoryMatchActivity({
   });
 
   function Card({ card, index }: { card: CardState; index: number }) {
-    const Icon = card.card.icon;
     const showFace = card.isFlipped || card.isMatched;
+    const face = card.face;
+    const ringClass = card.isMatched
+      ? 'ring-emerald-400 opacity-70'
+      : tier === 'senior'
+        ? 'ring-slate-400 scale-105'
+        : 'ring-purple-400 scale-105';
+    const faceBg = face.kind === 'icon'
+      ? face.bg
+      : tier === 'senior'
+        ? 'bg-slate-50'
+        : 'bg-purple-50';
+    const backBg = tier === 'senior'
+      ? 'bg-gradient-to-br from-slate-700 to-slate-900 hover:from-slate-800 hover:to-slate-950 ring-slate-600'
+      : 'bg-gradient-to-br from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 ring-purple-300';
+    const ariaLabel = showFace
+      ? (face.kind === 'icon' ? face.name : `${face.label}: ${face.text}`)
+      : 'face down card';
     return (
       <button
         type="button"
@@ -353,13 +414,24 @@ export default function MemoryMatchActivity({
         disabled={card.isMatched || card.isFlipped || isPeeking}
         className={`aspect-square rounded-xl flex items-center justify-center transition-all duration-200 ${
           showFace
-            ? `${card.card.bg} ring-2 ${card.isMatched ? 'ring-emerald-400 opacity-70' : 'ring-purple-400 scale-105'}`
-            : 'bg-gradient-to-br from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 cursor-pointer ring-2 ring-purple-300 active:scale-95'
+            ? `${faceBg} ring-2 ${ringClass}`
+            : `${backBg} cursor-pointer ring-2 active:scale-95`
         } disabled:cursor-default`}
-        aria-label={showFace ? card.card.name : 'face down card'}
+        aria-label={ariaLabel}
       >
         {showFace ? (
-          <Icon className={`w-7 h-7 sm:w-8 sm:h-8 ${card.card.color}`} strokeWidth={2} />
+          face.kind === 'icon' ? (
+            <face.icon className={`w-7 h-7 sm:w-8 sm:h-8 ${face.color}`} strokeWidth={2} />
+          ) : (
+            <span className="flex flex-col items-center justify-center gap-0.5 px-1 text-center leading-tight">
+              <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">
+                {face.label}
+              </span>
+              <span className="text-[11px] sm:text-xs font-semibold text-slate-800 break-words">
+                {face.text}
+              </span>
+            </span>
+          )
         ) : (
           <span className="text-white text-xl sm:text-2xl font-bold opacity-50">?</span>
         )}
@@ -367,8 +439,13 @@ export default function MemoryMatchActivity({
     );
   }
 
+  const mainBg =
+    tier === 'senior'
+      ? 'bg-gradient-to-br from-slate-100 to-slate-50'
+      : 'bg-gradient-to-br from-purple-50 to-fuchsia-50';
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-50 to-fuchsia-50 py-8 px-4">
+    <main data-tier={tier} className={`min-h-screen ${mainBg} py-8 px-4`}>
       <div className="max-w-md mx-auto">
 
         <div className="flex items-center justify-between mb-4">
@@ -410,7 +487,11 @@ export default function MemoryMatchActivity({
               Start round 1
               <ChevronRight className="w-5 h-5" strokeWidth={3} />
             </button>
-            <p className="text-[11px] text-gray-400 mt-3">Hi {childName} — remember where the pairs hide!</p>
+            <p className="text-[11px] text-gray-400 mt-3">
+              {tier === 'senior'
+                ? `Hi ${childName} — match each pair (state ↔ capital, element ↔ symbol).`
+                : `Hi ${childName} — remember where the pairs hide!`}
+            </p>
           </div>
         )}
 
