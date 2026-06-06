@@ -1,0 +1,189 @@
+{
+  "topics": [
+    {
+      "topic": "Solutions, Suspensions, and Colloids",
+      "easy": [
+        {
+          "id": "ch5-t1-e1",
+          "type": "mcq",
+          "question": "Which of these is a homogeneous mixture?",
+          "options": ["Sand and water", "Oil and water", "Sugar dissolved in water", "Salt and pepper grains"],
+          "answer": "Sugar dissolved in water",
+          "explanation": "A homogeneous mixture (solution) has uniform composition throughout. Once sugar fully dissolves in water, the solution looks the same from any sample point."
+        },
+        {
+          "id": "ch5-t1-e2",
+          "type": "fill",
+          "question": "In a solution, the substance that dissolves is called the ______.",
+          "answer": "solute",
+          "explanation": "The solute is the dissolving substance; the solvent is what dissolves it. In sugar water, sugar is the solute and water is the solvent."
+        },
+        {
+          "id": "ch5-t1-e3",
+          "type": "mcq",
+          "question": "Which of these does NOT show the Tyndall effect?",
+          "options": ["Milk", "Fog", "Sugar solution", "Smoke"],
+          "answer": "Sugar solution",
+          "explanation": "Sugar solution is a true solution — its particles are too small to scatter light. Milk, fog, and smoke are colloids and DO show the Tyndall effect."
+        },
+        {
+          "id": "ch5-t1-e4",
+          "type": "mcq",
+          "question": "Particles in a colloid are typically:",
+          "options": [
+            "Smaller than 1 nm",
+            "Between 1 nm and 1000 nm",
+            "Larger than 1000 nm",
+            "Visible to the naked eye"
+          ],
+          "answer": "Between 1 nm and 1000 nm",
+          "explanation": "Colloidal particles are too small to settle but large enough to scatter light. True solutions have smaller particles (< 1 nm); suspensions have larger particles (> 1000 nm)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t1-m1",
+          "type": "short",
+          "question": "Distinguish between a solution, a suspension, and a colloid in terms of particle size and Tyndall effect.",
+          "answer": "Solution: particles smaller than 1 nm, completely uniform, does NOT show Tyndall effect, does NOT settle. Colloid: particles between 1 nm and 1000 nm, appears uniform to the eye but is heterogeneous at microscopic level, SHOWS Tyndall effect, does NOT settle. Suspension: particles larger than 1000 nm, visibly heterogeneous, shows Tyndall effect, particles SETTLE on standing.",
+          "explanation": "The three types lie on a continuum of particle size, with corresponding differences in appearance and behaviour."
+        },
+        {
+          "id": "ch5-t1-m2",
+          "type": "short",
+          "question": "Give one common example each of (a) a solution, (b) a colloid, and (c) a suspension found in an Indian kitchen.",
+          "answer": "(a) Solution: SUGAR DISSOLVED IN TEA, or salt water for cooking. (b) Colloid: MILK, or rasam (the liquid kept after dal cooking has fine particles dispersed). (c) Suspension: WATER WITH FINE SAND or with stirred-up haldi (turmeric) powder — particles settle if left undisturbed.",
+          "explanation": "Indian kitchens are full of all three types of mixtures."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t1-h1",
+          "type": "long",
+          "question": "Calculate the mass percentage of solute in a solution prepared by dissolving 20 g of salt in 180 g of water.",
+          "answer": "Mass of solute = 20 g. Mass of solvent (water) = 180 g. Mass of solution = mass of solute + mass of solvent = 20 + 180 = 200 g. Mass percentage of solute = (mass of solute ÷ mass of solution) × 100% = (20 ÷ 200) × 100% = 10%. So the solution is 10% salt by mass.",
+          "explanation": "Mass percentage uses the total mass of solution as the denominator, not just the solvent."
+        }
+      ]
+    },
+    {
+      "topic": "Separation Techniques",
+      "easy": [
+        {
+          "id": "ch5-t2-e1",
+          "type": "mcq",
+          "question": "The technique used to separate sand from water is:",
+          "options": ["Distillation", "Filtration", "Chromatography", "Centrifugation"],
+          "answer": "Filtration",
+          "explanation": "Sand is an insoluble solid in water. Filtration through filter paper traps the sand while letting water pass through."
+        },
+        {
+          "id": "ch5-t2-e2",
+          "type": "fill",
+          "question": "To separate salt from sea water on an industrial scale, the technique used is ______.",
+          "answer": "evaporation",
+          "explanation": "Indian saltpans along the Gujarat and Tamil Nadu coast use solar evaporation to remove water from sea water, leaving salt crystals behind."
+        },
+        {
+          "id": "ch5-t2-e3",
+          "type": "mcq",
+          "question": "Two immiscible liquids (like oil and water) are best separated using a:",
+          "options": ["Filter paper", "Distillation column", "Separating funnel", "Centrifuge"],
+          "answer": "Separating funnel",
+          "explanation": "A separating funnel lets the denser liquid (water) settle at the bottom, where it can be drained off through the tap, leaving the lighter liquid (oil) behind."
+        },
+        {
+          "id": "ch5-t2-e4",
+          "type": "mcq",
+          "question": "Crude oil is separated into petrol, diesel, kerosene, etc., using:",
+          "options": ["Filtration", "Simple distillation", "Fractional distillation", "Sublimation"],
+          "answer": "Fractional distillation",
+          "explanation": "Crude oil contains many liquids with close boiling points. Fractional distillation in tall columns separates them based on their different boiling points."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t2-m1",
+          "type": "short",
+          "question": "How would you separate a mixture of sand, salt, and water?",
+          "answer": "Step 1: Filter the mixture through filter paper. The sand stays on the paper; the salt solution (salt dissolved in water) passes through. Step 2: Heat the filtered salt solution (evaporation) until the water evaporates. Salt is left behind in the container. Result: sand collected on filter paper, water can be condensed if needed, salt recovered from evaporation.",
+          "explanation": "Two-step technique: filtration separates insoluble solid; evaporation recovers dissolved solid."
+        },
+        {
+          "id": "ch5-t2-m2",
+          "type": "short",
+          "question": "Why is crystallisation considered a better technique than simple evaporation when we want pure solids?",
+          "answer": "Simple evaporation leaves behind EVERYTHING that was dissolved, including any impurities. The result is a messy mixture, not a pure solid. Crystallisation works differently: the impure solid is dissolved in a hot solvent; as the solution cools slowly, the desired substance crystallises out in pure form, while most impurities stay behind in the remaining solution (which is then discarded). The crystals you collect are much purer. Sugar refining and salt purification in Indian industries rely on this principle.",
+          "explanation": "Crystallisation is selective; evaporation is not."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t2-h1",
+          "type": "long",
+          "question": "You are given a mixture of common salt, sand, and naphthalene balls. Describe step by step how you would separate all three components, naming the technique used at each step and explaining why it works.",
+          "answer": "Step 1: SUBLIMATION. Heat the mixture gently in a china dish covered with an inverted funnel. Naphthalene sublimes (changes directly from solid to gas), and the vapours cool and condense on the cooler walls of the funnel as solid naphthalene. You collect the pure naphthalene from the funnel. Why it works: naphthalene sublimes; salt and sand do not. Step 2: DISSOLUTION + FILTRATION. The remaining solid is salt + sand. Add water and stir. Salt dissolves; sand does not. Filter the mixture through filter paper. The sand is left on the filter paper; the salt solution passes through. Why it works: salt is soluble, sand is not. Step 3: EVAPORATION. Heat the salt solution (filtrate) until the water evaporates, leaving pure salt behind. Why it works: salt is non-volatile; water evaporates. End result: three pure components recovered — naphthalene, sand, and salt — each by a different separation technique chosen for that component's property.",
+          "explanation": "This is a classic three-step separation problem combining sublimation, dissolution+filtration, and evaporation."
+        }
+      ]
+    },
+    {
+      "topic": "Distillation, Chromatography, and Centrifugation",
+      "easy": [
+        {
+          "id": "ch5-t3-e1",
+          "type": "mcq",
+          "question": "Distillation works best when:",
+          "options": [
+            "The two substances are insoluble in each other",
+            "The two liquids have very different boiling points",
+            "The mixture is a suspension",
+            "The substances are coloured"
+          ],
+          "answer": "The two liquids have very different boiling points",
+          "explanation": "Distillation separates miscible liquids by boiling. It works best when their boiling points differ significantly — the liquid with the lower boiling point evaporates first."
+        },
+        {
+          "id": "ch5-t3-e2",
+          "type": "fill",
+          "question": "Cream is separated from milk in dairies using a technique called ______.",
+          "answer": "centrifugation",
+          "explanation": "Centrifugation spins the milk rapidly so that the denser components (skimmed milk) move outward and the lighter cream stays at the centre, where it can be drawn off."
+        },
+        {
+          "id": "ch5-t3-e3",
+          "type": "mcq",
+          "question": "Different colours of ink can be separated using:",
+          "options": ["Filtration", "Chromatography", "Sublimation", "Centrifugation"],
+          "answer": "Chromatography",
+          "explanation": "Chromatography separates components based on how strongly they stick to a stationary medium (like filter paper) vs how strongly they dissolve in a moving solvent. Different ink components travel different distances and show as separate colours."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch5-t3-m1",
+          "type": "short",
+          "question": "Explain the basic principle of chromatography and one practical use of it.",
+          "answer": "Chromatography separates the components of a mixture based on how strongly each one sticks to a stationary medium (like filter paper) versus how well each one dissolves in a moving solvent. When a drop of mixture is placed on the paper and a solvent climbs up by capillary action, each component is carried up at a different speed — those that dissolve more readily in the solvent move faster; those that stick to the paper more move slower. The result is the components spread out into bands at different heights. PRACTICAL USE: The Food Safety and Standards Authority of India uses chromatography to test ghee, edible oils, and spices for adulteration. Each genuine and adulterant chemical shows up at a different position on the paper.",
+          "explanation": "Differential travel through a paper or column is the principle; one practical use is enough."
+        },
+        {
+          "id": "ch5-t3-m2",
+          "type": "short",
+          "question": "Why does centrifugation separate cream from milk faster than simply letting milk stand for hours?",
+          "answer": "Cream is less dense than the rest of the milk. If milk is left undisturbed, gravity slowly pulls denser components down and cream rises to the top — but this can take hours. Centrifugation uses rapid spinning to create a much stronger effective force outward, called centrifugal force. The denser parts move outward (further from the axis) much faster than gravity alone would carry them down. So a centrifuge accomplishes in seconds what gravity does in hours. Indian dairies process millions of litres of milk a day this way.",
+          "explanation": "Centrifugation amplifies the natural density separation by using strong rotational force."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch5-t3-h1",
+          "type": "long",
+          "question": "Petroleum (crude oil) is a mixture of many hydrocarbons. Describe how fractional distillation is used to separate it, and name at least three useful products that result.",
+          "answer": "Crude oil is heated in a furnace at the bottom of a tall column called a fractional distillation tower. The mixture vaporises completely. The vapours rise up the column. As they rise, they cool gradually because the column is hotter at the bottom and cooler at the top. At each level, the substance whose boiling point matches that temperature condenses back into liquid and is collected through a tray. Substances with HIGHER boiling points condense LOWER in the tower (closer to the heat source); substances with LOWER boiling points rise HIGHER before condensing. PRODUCTS, from top (lowest boiling) to bottom (highest boiling): (1) PETROLEUM GAS — used as LPG for cooking. (2) PETROL — vehicle fuel. (3) KEROSENE — once widely used for lamps and stoves; now for jet fuel. (4) DIESEL — fuel for trucks, buses, generators. (5) LUBRICATING OIL — for engines and machines. (6) BITUMEN/ASPHALT — for road surfacing. The Reliance Jamnagar refinery is one of the world's largest examples of this process.",
+          "explanation": "Each fraction has industrial uses; the principle is the different boiling points of the hydrocarbons."
+        }
+      ]
+    }
+  ]
+}
