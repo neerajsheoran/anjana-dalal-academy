@@ -121,8 +121,29 @@ export async function getAdaptiveDifficulty(
 
     return { difficulty: currentLevel, source: "stable" };
   } catch (err) {
-    // If anything goes wrong (missing index, transient error), fall back gracefully.
-    console.error("[adaptive] failed, falling back to age default:", err);
+    // The most common failure here is a missing composite Firestore index
+    // (Firestore code 9, FAILED_PRECONDITION). It's a one-time setup: click
+    // the "create index" link in the Firebase console message and wait ~2
+    // min. Until then the engine falls back to the age-default difficulty
+    // — activities still work, they just don't adapt yet.
+    //
+    // We log this case at warn-level so it doesn't trigger the Next.js dev
+    // error overlay on every page load. Any *other* failure (transient
+    // network, auth, etc.) still goes to console.error so it's visible.
+    const code = (err as { code?: number | string } | null)?.code;
+    const message = err instanceof Error ? err.message : String(err);
+    const isMissingIndex =
+      code === 9 ||
+      code === "failed-precondition" ||
+      message.includes("FAILED_PRECONDITION") ||
+      message.includes("requires an index");
+    if (isMissingIndex) {
+      console.warn(
+        "[adaptive] missing Firestore composite index — falling back to age default. Create the index from the link in the Firebase console error to enable adaptive difficulty.",
+      );
+    } else {
+      console.error("[adaptive] failed, falling back to age default:", err);
+    }
     return { difficulty: baseline, source: "age-default" };
   }
 }

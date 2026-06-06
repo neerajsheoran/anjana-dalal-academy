@@ -33,11 +33,18 @@ function makeMdxImage(classId: string, subject: string, chapter: string) {
       !decoded.startsWith("/") && !decoded.startsWith("http")
         ? `/api/content-image/${classId}/${subject}/${chapter}/content/${encodeURIComponent(decoded)}`
         : decoded;
+    // Render just the <img> (no wrapping <div>): when markdown writes the
+    // image on its own line, remark wraps it in a <p>, and a <div> inside a
+    // <p> is invalid HTML and triggers React's hydration error. <img> is a
+    // phrasing element that <p> accepts. Centering and spacing apply to the
+    // img directly via Tailwind utilities.
     return (
-      <div className="flex justify-center my-4">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={resolved} alt={alt ?? ""} className="max-w-full rounded-lg" />
-      </div>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={resolved}
+        alt={alt ?? ""}
+        className="block mx-auto my-4 max-w-full rounded-lg"
+      />
     );
   };
 }
