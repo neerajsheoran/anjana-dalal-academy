@@ -1,0 +1,189 @@
+{
+  "topics": [
+    {
+      "topic": "Production and Travel of Sound",
+      "easy": [
+        {
+          "id": "ch10-t1-e1",
+          "type": "mcq",
+          "question": "Sound is produced by:",
+          "options": ["Light sources", "Vibrating objects", "Hot objects", "Magnets"],
+          "answer": "Vibrating objects",
+          "explanation": "All sounds — from a drum to vocal cords to a sitar string — are produced by vibrations."
+        },
+        {
+          "id": "ch10-t1-e2",
+          "type": "fill",
+          "question": "Sound waves are ______ waves because particles vibrate parallel to the direction of propagation.",
+          "answer": "longitudinal",
+          "explanation": "In longitudinal waves (like sound), particle motion is parallel to wave direction. In transverse waves (like light), particle motion is perpendicular."
+        },
+        {
+          "id": "ch10-t1-e3",
+          "type": "mcq",
+          "question": "Sound cannot travel through:",
+          "options": ["Air", "Water", "Steel", "Vacuum"],
+          "answer": "Vacuum",
+          "explanation": "Sound is a vibration of a medium. Without a medium (vacuum), there is nothing to vibrate, so no sound travels."
+        },
+        {
+          "id": "ch10-t1-e4",
+          "type": "mcq",
+          "question": "Sound travels fastest in:",
+          "options": ["Air", "Water", "Steel", "Vacuum"],
+          "answer": "Steel",
+          "explanation": "Sound travels fastest in solids (steel: ~6000 m/s), slower in liquids (water: ~1500 m/s), slowest in gases (air: ~343 m/s)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t1-m1",
+          "type": "short",
+          "question": "Why does sound travel faster in solids than in liquids and gases?",
+          "answer": "In a solid, the particles are very tightly packed together. When one particle vibrates, it almost immediately collides with the next, transferring the vibration. The energy passes from particle to particle quickly. In a gas, the particles are far apart, so the disturbance takes much longer to travel from one particle to the next. Liquids are in between. So sound travels fastest in solids (e.g., steel at ~6000 m/s), then liquids (water at ~1500 m/s), then gases (air at ~343 m/s).",
+          "explanation": "Particle proximity and bonding determine how quickly a disturbance propagates."
+        },
+        {
+          "id": "ch10-t1-m2",
+          "type": "short",
+          "question": "Astronauts on the surface of the Moon cannot hear each other directly even when standing close together. Why?",
+          "answer": "The Moon has essentially no atmosphere — its surface is in near-vacuum. Sound is a vibration that requires a medium (air, water, or solid) to travel through. With no air molecules between the two astronauts, there is nothing to carry the sound vibrations. Their voices vibrate in their own helmets, but the vibrations cannot cross the empty space to reach the other astronaut. That is why they communicate via radio (electromagnetic waves, which CAN travel through vacuum) instead.",
+          "explanation": "No medium = no sound transmission. Radio waves are electromagnetic, not sound."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t1-h1",
+          "type": "long",
+          "question": "A worker hammering a railway track is 1000 m away. Estimate (a) how long it takes for the sound to reach you through the steel rail (sound speed = 5960 m/s), and (b) how long it takes through the air (sound speed = 343 m/s). (c) What is the time difference?",
+          "answer": "(a) Time through steel = distance ÷ speed = 1000 ÷ 5960 = 0.168 seconds ≈ 0.17 seconds. (b) Time through air = 1000 ÷ 343 = 2.92 seconds ≈ 2.9 seconds. (c) Time difference = 2.92 − 0.17 = 2.75 seconds. So if you pressed your ear against the steel rail, you would hear the hammer about 2.75 seconds before you heard it through the air. This is why railway safety lessons in India warn people not to walk on tracks — you can often 'hear' the approaching train through the rails before you hear it through the air, giving you time to step away.",
+          "explanation": "The same distance is covered in very different times depending on the medium."
+        }
+      ]
+    },
+    {
+      "topic": "Frequency, Pitch, and Loudness",
+      "easy": [
+        {
+          "id": "ch10-t2-e1",
+          "type": "mcq",
+          "question": "The number of vibrations per second is called:",
+          "options": ["Amplitude", "Wavelength", "Frequency", "Period"],
+          "answer": "Frequency",
+          "explanation": "Frequency = number of vibrations per second. SI unit: hertz (Hz)."
+        },
+        {
+          "id": "ch10-t2-e2",
+          "type": "fill",
+          "question": "The SI unit of frequency is the ______, abbreviated Hz.",
+          "answer": "hertz",
+          "explanation": "Named after Heinrich Hertz, the German physicist who first produced and detected electromagnetic waves."
+        },
+        {
+          "id": "ch10-t2-e3",
+          "type": "mcq",
+          "question": "The audible range of frequencies for the human ear is approximately:",
+          "options": [
+            "0 Hz to 100 Hz",
+            "20 Hz to 20,000 Hz",
+            "100 Hz to 1,000 Hz",
+            "10,000 Hz to 100,000 Hz"
+          ],
+          "answer": "20 Hz to 20,000 Hz",
+          "explanation": "Humans hear sounds from about 20 Hz (lowest pitch) to about 20,000 Hz (highest pitch). Below is infrasound; above is ultrasound."
+        },
+        {
+          "id": "ch10-t2-e4",
+          "type": "mcq",
+          "question": "If you increase the amplitude of a sound wave (without changing its frequency), the sound becomes:",
+          "options": ["Higher in pitch", "Lower in pitch", "Louder", "Softer"],
+          "answer": "Louder",
+          "explanation": "Amplitude controls loudness; frequency controls pitch. Bigger amplitude = louder sound at the same pitch."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t2-m1",
+          "type": "short",
+          "question": "What is the difference between pitch and loudness? How are they related to frequency and amplitude?",
+          "answer": "PITCH refers to how 'high' or 'low' a sound seems. It is determined by the FREQUENCY of the sound wave — higher frequency = higher pitch. A whistle has high pitch (high frequency); a drum bass has low pitch (low frequency). LOUDNESS refers to how 'soft' or 'loud' a sound seems. It is determined by the AMPLITUDE of the sound wave — larger amplitude = louder sound. So pitch and loudness are independent: you can have a loud high-pitched sound (a sharp whistle) or a soft low-pitched sound (a gentle hum). The two qualities can vary completely separately.",
+          "explanation": "Frequency → pitch; amplitude → loudness. They are independent properties."
+        },
+        {
+          "id": "ch10-t2-m2",
+          "type": "short",
+          "question": "What is the difference between infrasound and ultrasound? Give one application of ultrasound.",
+          "answer": "INFRASOUND is sound with frequency BELOW 20 Hz — below the lower limit of human hearing. Elephants, whales, and some birds produce and detect infrasound for long-distance communication. ULTRASOUND is sound with frequency ABOVE 20,000 Hz — above the upper limit of human hearing. Bats and dolphins navigate using ultrasound. APPLICATION OF ULTRASOUND: Medical imaging — pregnancy scans (sonography) use ultrasound waves to make images of the foetus inside the womb. The waves reflect off internal structures, and the echoes are converted into images. Other applications: cleaning delicate items (jewellery, dental tools), breaking kidney stones (lithotripsy), and SONAR for submarine navigation.",
+          "explanation": "Both are outside the audible range, but in opposite directions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t2-h1",
+          "type": "long",
+          "question": "Bats use ultrasound to navigate and hunt in complete darkness. Explain how this works, mentioning the relevant physics ideas from this chapter.",
+          "answer": "Bats emit very high-frequency ultrasound pulses (typically 20,000–200,000 Hz, far above human hearing). These pulses travel outward through the air. When the pulse hits an object — a moth, a tree branch, a cave wall — it REFLECTS back as an echo. The bat's specially adapted ears detect the echo. The bat's brain calculates: (1) DIRECTION of the object from where the echo came; (2) DISTANCE of the object from the TIME between sending the pulse and receiving the echo (using speed of sound = ~343 m/s, distance = speed × time / 2); (3) NATURE of the object from the PATTERN of the echo (a leaf rustling sounds different from a hard rock). Modern bats can resolve objects as small as a human hair in complete darkness. This biological SONAR is so effective that the same principle was eventually used by humans for submarine SONAR and for medical ultrasound. Three physics concepts work together: ultrasound (high frequency to give fine detail), reflection of sound (echoes carry information), and the speed of sound (used to calculate distance from time).",
+          "explanation": "Bats use sound reflection and timing to build a sound-based 'image' of their surroundings — the natural origin of SONAR technology."
+        }
+      ]
+    },
+    {
+      "topic": "Reflection, Echoes, and Applications",
+      "easy": [
+        {
+          "id": "ch10-t3-e1",
+          "type": "mcq",
+          "question": "A sound that reaches your ear after reflecting off a surface is called:",
+          "options": ["A wave", "An echo", "A frequency", "An octave"],
+          "answer": "An echo",
+          "explanation": "An echo is a distinct reflected sound. Multiple overlapping echoes are called reverberation."
+        },
+        {
+          "id": "ch10-t3-e2",
+          "type": "fill",
+          "question": "The technology used by submarines to detect underwater objects using sound is called ______.",
+          "answer": "SONAR",
+          "explanation": "SONAR stands for SOund Navigation And Ranging. Used by submarines, fishing boats, and oceanographers."
+        },
+        {
+          "id": "ch10-t3-e3",
+          "type": "mcq",
+          "question": "Which of these is NOT a common use of ultrasound in medicine?",
+          "options": [
+            "Pregnancy scans",
+            "Detection of broken bones",
+            "Breaking kidney stones",
+            "Cleaning dental instruments"
+          ],
+          "answer": "Detection of broken bones",
+          "explanation": "Broken bones are usually detected with X-rays (not ultrasound). Ultrasound is used for soft tissue imaging (organs, pregnancy scans), cleaning, and lithotripsy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch10-t3-m1",
+          "type": "short",
+          "question": "Why must a reflecting surface be at least about 17 m away from the source for a clear echo to be heard?",
+          "answer": "The human ear can distinguish two separate sounds only if they arrive at least about 0.1 seconds (100 ms) apart. For an echo to be heard separately from the original sound, it must reach the listener at least 0.1 seconds after the original. Sound travels in air at ~343 m/s, so in 0.1 seconds it covers 34.3 m. For an echo, the sound has to travel TO the reflecting wall AND back, so the total distance is 2× the distance to the wall. So 2 × distance = 34.3 m → distance = 17.15 m. If the reflecting wall is closer than 17 m, the echo arrives too quickly and our brain merges it with the original sound, so we cannot hear it as a distinct echo.",
+          "explanation": "17 m comes from speed of sound and the human ear's time resolution."
+        },
+        {
+          "id": "ch10-t3-m2",
+          "type": "short",
+          "question": "Describe how a SONAR system measures the depth of the ocean floor.",
+          "answer": "A SONAR device sends out a pulse of sound (usually ultrasound) downward from a ship or submarine. The sound travels through water at about 1500 m/s. When the pulse hits the ocean floor, it reflects back to the device. The SONAR records the TIME between sending the pulse and receiving the echo. Calculation: total distance travelled = speed × time. Since the sound went DOWN to the floor AND back UP to the device, depth = (speed × time) ÷ 2. For example, if the echo takes 4 seconds to return, depth = (1500 × 4) / 2 = 3000 m. The Indian Navy and oceanographic research vessels use this method to map the seabed.",
+          "explanation": "Standard SONAR calculation: depth = (speed × echo time) / 2."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch10-t3-h1",
+          "type": "long",
+          "question": "A ship sends a SONAR pulse straight down. The echo returns after 3 seconds. (a) Calculate the depth of the water. (Speed of sound in seawater = 1500 m/s.) (b) If the speed of sound were instead 1450 m/s (slightly colder, less salty water), what would the calculated depth be? (c) Explain why getting the speed of sound right matters for SONAR.",
+          "answer": "(a) Depth = (speed × time) ÷ 2 = (1500 × 3) ÷ 2 = 4500 ÷ 2 = 2250 m. (b) Depth = (1450 × 3) ÷ 2 = 4350 ÷ 2 = 2175 m. (c) The two answers differ by 75 m — a 3.3% difference. For naval submarines, fishing boats trying to locate fish, or oceanographers measuring underwater terrain, this matters enormously. Submarines navigating in tight underwater spaces need to know the depth accurately. Oceanographers mapping the sea floor must use the precise local speed of sound (which varies with temperature, salinity, and pressure). Indian Navy submarines and research vessels carry instruments to measure these properties and apply the correct speed of sound for their location. Getting it wrong by even a few percent can put a vessel at risk.",
+          "explanation": "Real-world SONAR requires careful adjustment for the local speed of sound, which varies with water conditions."
+        }
+      ]
+    }
+  ]
+}
