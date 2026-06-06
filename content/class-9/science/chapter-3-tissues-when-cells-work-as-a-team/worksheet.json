@@ -1,0 +1,176 @@
+{
+  "topics": [
+    {
+      "topic": "Plant Tissues — Meristems and Permanent Tissues",
+      "easy": [
+        {
+          "id": "ch3-t1-e1",
+          "type": "mcq",
+          "question": "Plant growth in length happens at the:",
+          "options": ["Lateral meristem", "Apical meristem", "Phloem", "Sclerenchyma"],
+          "answer": "Apical meristem",
+          "explanation": "Apical meristem is found at the tips of roots and shoots and is responsible for increases in length."
+        },
+        {
+          "id": "ch3-t1-e2",
+          "type": "fill",
+          "question": "The tissue responsible for the increase in girth (thickness) of a stem is the ______ meristem.",
+          "answer": "lateral",
+          "explanation": "Lateral meristem, also called cambium, lies along the sides of stems and roots and produces new cells outward, increasing thickness."
+        },
+        {
+          "id": "ch3-t1-e3",
+          "type": "mcq",
+          "question": "Grass continues to grow even after being cut or grazed because of the:",
+          "options": ["Apical meristem", "Lateral meristem", "Intercalary meristem", "Sclerenchyma"],
+          "answer": "Intercalary meristem",
+          "explanation": "Intercalary meristem is located at the base of leaves or above nodes (typical of grasses), allowing regrowth after cutting or grazing."
+        },
+        {
+          "id": "ch3-t1-e4",
+          "type": "mcq",
+          "question": "Xylem in plants transports:",
+          "options": [
+            "Sugars from leaves",
+            "Water and minerals from roots",
+            "Oxygen from air",
+            "Hormones between cells"
+          ],
+          "answer": "Water and minerals from roots",
+          "explanation": "Xylem carries water and dissolved minerals upward from roots to leaves, often using a system of dead hollow tubes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t1-m1",
+          "type": "short",
+          "question": "Distinguish between meristematic and permanent tissues in plants.",
+          "answer": "Meristematic tissues are made of small, thin-walled cells that are constantly dividing. They are responsible for plant growth. Permanent tissues are made of cells that have stopped dividing and have specialised for a specific function (storage, transport, support, protection). Once meristematic cells finish dividing, they mature into permanent tissues.",
+          "explanation": "Meristem = growth; permanent = specialised function."
+        },
+        {
+          "id": "ch3-t1-m2",
+          "type": "short",
+          "question": "What is the difference between xylem and phloem in plants?",
+          "answer": "Xylem transports water and dissolved minerals UPWARD from the roots to all other parts of the plant. Most of its cells are DEAD at maturity (hollow tubes called vessels). Phloem transports food (sugars from photosynthesis) from the leaves to wherever it is needed — could be roots, fruits, or growing buds. Its cells are LIVING because moving sugars actively requires living cellular machinery. Xylem is essentially one-way (up); phloem can change direction with the seasons.",
+          "explanation": "Xylem = water UP, dead cells; phloem = food anywhere, living cells."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t1-h1",
+          "type": "long",
+          "question": "A 30-metre tall coconut palm needs water to reach the very top leaves. Explain how the plant achieves this without any pump.",
+          "answer": "Water travels up the xylem of the coconut palm through a combination of three forces. (1) ROOT PRESSURE: Water enters root cells from soil by osmosis (because root cells have more dissolved substances than soil water), which pushes water slightly upward into the xylem. (2) CAPILLARY ACTION: Xylem vessels are extremely narrow hollow tubes; water can climb a small distance by capillary action due to adhesion to the tube walls. (3) TRANSPIRATION PULL: Water continuously evaporates from leaves through stomata. As each water molecule leaves, it pulls up the next one through the xylem like a chain — water molecules stick to each other (cohesion) and to the xylem walls (adhesion). This transpiration pull is the most important force in tall plants, pulling water up 30 metres against gravity without any active pumping. Indian palmyra and coconut palms run this process every day in the heat of South Indian summers.",
+          "explanation": "The combination of root pressure, capillary action, and especially transpiration pull lifts water in tall plants. No pump required."
+        }
+      ]
+    },
+    {
+      "topic": "Animal Tissues — Epithelial and Connective",
+      "easy": [
+        {
+          "id": "ch3-t2-e1",
+          "type": "mcq",
+          "question": "Tissues that form coverings and linings of organs are called:",
+          "options": ["Muscular", "Connective", "Epithelial", "Nervous"],
+          "answer": "Epithelial",
+          "explanation": "Epithelial tissues form the outer skin and line the inside of organs like the stomach, intestines, and blood vessels."
+        },
+        {
+          "id": "ch3-t2-e2",
+          "type": "fill",
+          "question": "Blood is classified as a ______ tissue because its cells are suspended in a liquid matrix called plasma.",
+          "answer": "connective",
+          "explanation": "Connective tissues have cells separated by a non-living matrix. In blood, the matrix is the liquid plasma."
+        },
+        {
+          "id": "ch3-t2-e3",
+          "type": "mcq",
+          "question": "Which connective tissue connects muscle to bone?",
+          "options": ["Ligament", "Tendon", "Cartilage", "Plasma"],
+          "answer": "Tendon",
+          "explanation": "Tendons connect muscle to bone. Ligaments connect bone to bone."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t2-m1",
+          "type": "short",
+          "question": "Why are the cells of the alveoli (in the lungs) made of squamous epithelium and not columnar epithelium?",
+          "answer": "Squamous epithelium consists of thin, flat cells. The alveoli are the site of gas exchange — oxygen from inhaled air must pass into the blood, and carbon dioxide must pass out. Thin walls let gases cross quickly by diffusion. Columnar epithelium has tall cells that would slow this exchange and make breathing inefficient. So the structure of the cell (thin and flat) matches the function (rapid gas exchange).",
+          "explanation": "Form fits function — thin squamous cells make gas exchange efficient."
+        },
+        {
+          "id": "ch3-t2-m2",
+          "type": "short",
+          "question": "Compare and contrast ligaments and tendons.",
+          "answer": "Both ligaments and tendons are tough fibrous CONNECTIVE TISSUES made mostly of collagen fibres. DIFFERENCE: Ligaments connect BONE to BONE — they hold the skeleton together at joints. Tendons connect MUSCLE to BONE — they transmit the pulling force of a contracting muscle to the bone, causing movement. Without ligaments, your joints would fall apart; without tendons, your muscles could not move your bones.",
+          "explanation": "Both are fibrous connective tissues, but their attachment points differ: ligament bone-bone, tendon muscle-bone."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t2-h1",
+          "type": "long",
+          "question": "Adipose tissue (fat) is often viewed negatively by people trying to lose weight. From a biology perspective, what important functions does adipose tissue actually perform?",
+          "answer": "Adipose tissue performs several essential functions: (1) ENERGY STORAGE: Fat is the body's most efficient long-term energy store. One gram of fat contains more than twice the energy of one gram of carbohydrate. (2) INSULATION: A layer of fat under the skin reduces heat loss, helping the body maintain core temperature — crucial in cold environments. (3) PROTECTION: Fat pads cushion internal organs (kidneys, heart) against physical shock. (4) HORMONE PRODUCTION: Adipose tissue produces hormones like leptin that signal hunger and satiety to the brain. (5) ESSENTIAL FAT-SOLUBLE VITAMIN STORAGE: Vitamins A, D, E, and K are stored in fat. So while too much fat is unhealthy, completely lacking adipose tissue would also be dangerous. The goal is balance, not elimination.",
+          "explanation": "Adipose tissue is essential — the goal is balance, not elimination."
+        }
+      ]
+    },
+    {
+      "topic": "Animal Tissues — Muscular and Nervous",
+      "easy": [
+        {
+          "id": "ch3-t3-e1",
+          "type": "mcq",
+          "question": "The muscle tissue found only in the heart is called:",
+          "options": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Tendon"],
+          "answer": "Cardiac muscle",
+          "explanation": "Cardiac muscle is found exclusively in the heart and contracts rhythmically throughout life without rest."
+        },
+        {
+          "id": "ch3-t3-e2",
+          "type": "fill",
+          "question": "A single nerve cell is called a ______.",
+          "answer": "neuron",
+          "explanation": "A neuron is the basic unit of nervous tissue. It has a cell body, branched dendrites, and a long axon."
+        },
+        {
+          "id": "ch3-t3-e3",
+          "type": "mcq",
+          "question": "Muscles that move when you consciously decide (like lifting an arm) are:",
+          "options": ["Smooth muscles", "Cardiac muscles", "Skeletal muscles", "Sphincter muscles"],
+          "answer": "Skeletal muscles",
+          "explanation": "Skeletal muscles are attached to bones and are under conscious (voluntary) control. Smooth and cardiac muscles work without conscious effort."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch3-t3-m1",
+          "type": "short",
+          "question": "Why does the heart muscle never tire while a skeletal muscle (like the biceps) can quickly become exhausted?",
+          "answer": "Cardiac muscle is structurally and chemically built for endurance. It contains a very high density of mitochondria, providing constant ATP supply. It has its own electrical pacemaker that triggers rhythmic contractions, with built-in rest pauses between beats. Cardiac muscle relies almost entirely on aerobic respiration, avoiding the buildup of lactic acid. Skeletal muscle, by contrast, is built for short bursts of strong action. When pushed hard, it switches to anaerobic respiration, which produces lactic acid (causing cramps). Skeletal muscles need actual rest periods after intense use. The heart was designed for sustained moderate work for an entire lifetime; biceps were designed for occasional bursts of strength.",
+          "explanation": "Different muscle types are engineered for different activity patterns."
+        },
+        {
+          "id": "ch3-t3-m2",
+          "type": "short",
+          "question": "Trace the path of a signal from your fingertip touching a hot pan to your hand jerking away.",
+          "answer": "(1) Heat sensors in the EPITHELIAL tissue of your skin detect the high temperature. (2) The signal travels along sensory NEURONS up your arm to the spinal cord. (3) In the spinal cord, the signal jumps to a motor neuron (this is a reflex arc — the signal does not need to reach the brain to trigger the response). (4) The motor neuron carries the signal back down the arm to the SKELETAL MUSCLE. (5) The muscle contracts, jerking your hand away from the pan. The entire process takes less than half a second.",
+          "explanation": "A reflex arc involves epithelial, nervous, and muscular tissues working together via the spinal cord."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch3-t3-h1",
+          "type": "long",
+          "question": "A neuron has a very distinctive shape — a small cell body with branched dendrites and a long thin axon. Explain how this shape matches the function of a neuron.",
+          "answer": "The structure of a neuron is perfectly matched to its function of transmitting electrical signals over long distances. (1) The DENDRITES are short, highly branched, and extend in many directions from the cell body. This shape lets a single neuron receive signals from many other neurons simultaneously — like a tree's branches catching sunlight from many angles. (2) The CELL BODY contains the nucleus and most organelles. It processes the incoming signals from dendrites and decides whether to fire. (3) The AXON is a single long thin extension — sometimes over a metre long in humans (the axon from the spinal cord to your toe is nearly that long). Its length allows a signal generated in the cell body to be carried far away without being repeatedly processed. The thinness lets the signal travel efficiently. (4) The end of the axon BRANCHES again so the signal can be passed to many target cells. So the neuron is essentially a one-way signalling cable with many input antennae at one end, central processing in the middle, and many output ports at the other end. Its shape is a beautiful example of form fitting function.",
+          "explanation": "Dendrites receive, cell body processes, axon transmits — the shape of the neuron is purpose-built."
+        }
+      ]
+    }
+  ]
+}
