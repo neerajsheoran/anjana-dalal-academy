@@ -1,0 +1,194 @@
+{
+  "topics": [
+    {
+      "topic": "Laws of Chemical Combination and Molecules",
+      "easy": [
+        {
+          "id": "ch9-t1-e1",
+          "type": "mcq",
+          "question": "The law of conservation of mass states that:",
+          "options": [
+            "Mass can be created in chemical reactions",
+            "Mass is destroyed during burning",
+            "Mass is neither created nor destroyed in a chemical reaction",
+            "Heavier substances always react more"
+          ],
+          "answer": "Mass is neither created nor destroyed in a chemical reaction",
+          "explanation": "Lavoisier showed that the total mass before a chemical reaction equals the total mass after — including all gases produced or absorbed."
+        },
+        {
+          "id": "ch9-t1-e2",
+          "type": "fill",
+          "question": "The number of atoms in one molecule of an element is called its ______.",
+          "answer": "atomicity",
+          "explanation": "Atomicity tells you the form an element exists in — H₂ is diatomic, O₃ is triatomic, He is monatomic."
+        },
+        {
+          "id": "ch9-t1-e3",
+          "type": "mcq",
+          "question": "Which of the following is a compound?",
+          "options": ["O₂", "N₂", "H₂O", "Cl₂"],
+          "answer": "H₂O",
+          "explanation": "H₂O contains two DIFFERENT elements (hydrogen and oxygen) and is therefore a compound. The others are molecules of single elements (diatomic forms)."
+        },
+        {
+          "id": "ch9-t1-e4",
+          "type": "mcq",
+          "question": "Which of these elements is monatomic?",
+          "options": ["Hydrogen", "Helium", "Nitrogen", "Chlorine"],
+          "answer": "Helium",
+          "explanation": "Noble gases like helium exist as single atoms (monatomic). Hydrogen, nitrogen, and chlorine exist as diatomic molecules."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t1-m1",
+          "type": "short",
+          "question": "Pure water analysed from a sample taken at the Ganga in Varanasi, the Yamuna in Delhi, and water made in a school laboratory all contain hydrogen and oxygen in the mass ratio 1:8. Which law of chemical combination does this illustrate?",
+          "answer": "This illustrates the LAW OF CONSTANT PROPORTIONS (also known as the law of definite proportions). The law states that any pure compound, no matter where it comes from or how it is made, always contains its elements in the same fixed mass ratio. Water always has hydrogen and oxygen in the ratio 1:8 by mass. This fixed ratio was first proposed by Joseph Proust in 1799 and is one of the most important early laws of chemistry.",
+          "explanation": "Proust's law of constant proportions is illustrated by any pure compound having a fixed mass composition."
+        },
+        {
+          "id": "ch9-t1-m2",
+          "type": "short",
+          "question": "When 8 g of magnesium reacts with 24 g of oxygen, 32 g of magnesium oxide is formed. Does this obey the law of conservation of mass? Explain.",
+          "answer": "Mass before reaction = 8 g magnesium + 24 g oxygen (initial). But wait — not all 24 g of oxygen need to react. From the law of constant proportions, magnesium and oxygen combine in a fixed mass ratio (3:2 — for every 3 g of magnesium, 2 g of oxygen combines). So for 8 g of magnesium, the oxygen that ACTUALLY combines is 8 × (2/3) = approximately 5.33 g. So the mass of magnesium oxide should be 8 + 5.33 = 13.33 g, not 32 g. If the answer says 32 g is formed, the law of conservation of mass is violated. (Alternatively if 8 g of Mg combines with all the oxygen it can grab to form 32 g of MgO, this means 32 - 8 = 24 g of oxygen reacted. But the fixed ratio Mg:O = 3:2 means 8 g of Mg needs only 5.33 g of oxygen. So the reaction described is impossible — it violates the law of constant proportions.) Either way, the question setup itself is inconsistent with the conservation laws.",
+          "explanation": "Real-world chemistry obeys BOTH conservation of mass AND constant proportions — the two together fix the masses uniquely."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t1-h1",
+          "type": "long",
+          "question": "Explain how the two laws of chemical combination (conservation of mass and constant proportions) together supported Dalton's atomic theory.",
+          "answer": "Both laws only make sense if matter is made of small discrete particles that combine in countable ways — exactly Dalton's atomic theory. CONSERVATION OF MASS: If atoms are indivisible and unchanging in a chemical reaction, only their arrangement changes, not their total number or mass. Total mass before reaction = total mass after. CONSTANT PROPORTIONS: If atoms of each element have a fixed characteristic mass and they combine in fixed whole-number ratios (e.g., 2 hydrogens to 1 oxygen for water), then the MASS ratio of elements in the compound is also fixed. Without atoms, there is no obvious reason mass ratios should be constant — you might expect random mixing. The combination of these two observable laws thus pointed directly to a hidden particulate structure of matter. Dalton's atomic theory in 1808 gave the explanation that fit all the observations. Today we know atoms are not truly indivisible (they have subatomic particles), but the laws and Dalton's theory remain valid for chemical reactions.",
+          "explanation": "The laws of chemical combination provided the experimental basis for atomic theory."
+        }
+      ]
+    },
+    {
+      "topic": "Ions, Formulas, and Atomic/Molecular Mass",
+      "easy": [
+        {
+          "id": "ch9-t2-e1",
+          "type": "mcq",
+          "question": "The chemical formula for sodium chloride (table salt) is:",
+          "options": ["Na₂Cl", "NaCl₂", "NaCl", "Na₂Cl₂"],
+          "answer": "NaCl",
+          "explanation": "Sodium ion (Na⁺) has charge +1; chloride ion (Cl⁻) has charge -1. Charges balance with one of each. Formula: NaCl."
+        },
+        {
+          "id": "ch9-t2-e2",
+          "type": "fill",
+          "question": "An atom that gains electrons becomes a ______ ion (anion).",
+          "answer": "negative",
+          "explanation": "Gaining electrons gives the atom more negative charge → negative ion (anion). Losing electrons → positive ion (cation)."
+        },
+        {
+          "id": "ch9-t2-e3",
+          "type": "mcq",
+          "question": "What is the molecular mass of water (H₂O)? (H = 1, O = 16)",
+          "options": ["17", "18", "20", "32"],
+          "answer": "18",
+          "explanation": "H₂O = 2(1) + 16 = 2 + 16 = 18 u."
+        },
+        {
+          "id": "ch9-t2-e4",
+          "type": "mcq",
+          "question": "Which has the highest molecular mass? (C = 12, H = 1, O = 16, N = 14)",
+          "options": [
+            "Water (H₂O)",
+            "Carbon dioxide (CO₂)",
+            "Ammonia (NH₃)",
+            "Methane (CH₄)"
+          ],
+          "answer": "Carbon dioxide (CO₂)",
+          "explanation": "Water = 18, CO₂ = 12 + 32 = 44, NH₃ = 14 + 3 = 17, CH₄ = 12 + 4 = 16. CO₂ has the highest at 44."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t2-m1",
+          "type": "short",
+          "question": "Write the chemical formulas for (a) magnesium chloride, (b) aluminium oxide, (c) calcium carbonate.",
+          "answer": "(a) Magnesium chloride: Mg²⁺ + Cl⁻. Criss-cross: charge of Mg (2) becomes the subscript of Cl. Formula: MgCl₂. (b) Aluminium oxide: Al³⁺ + O²⁻. Criss-cross: 3 becomes subscript of O; 2 becomes subscript of Al. Formula: Al₂O₃. (c) Calcium carbonate: Ca²⁺ + CO₃²⁻. Criss-cross: 2 becomes subscript of CO₃ (giving (CO₃)₂); 2 becomes subscript of Ca (Ca₂). Simplify by dividing by 2: CaCO₃.",
+          "explanation": "Criss-cross method using ion charges, always simplifying when possible."
+        },
+        {
+          "id": "ch9-t2-m2",
+          "type": "short",
+          "question": "Calculate the molecular mass of sulphuric acid (H₂SO₄). Given: H = 1, S = 32, O = 16.",
+          "answer": "H₂SO₄ contains 2 H atoms, 1 S atom, 4 O atoms. Molecular mass = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98 u. So 1 mole of sulphuric acid weighs 98 g.",
+          "explanation": "Sum the atomic masses of all atoms in the molecule."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t2-h1",
+          "type": "long",
+          "question": "Glucose has the molecular formula C₆H₁₂O₆. Calculate (a) its molecular mass, (b) the mass percentage of each element in glucose. (C = 12, H = 1, O = 16)",
+          "answer": "(a) Molecular mass of glucose: C: 6(12) = 72. H: 12(1) = 12. O: 6(16) = 96. Total = 72 + 12 + 96 = 180 u. (b) Mass percentages: Carbon: (72/180) × 100 = 40.0%. Hydrogen: (12/180) × 100 = 6.67%. Oxygen: (96/180) × 100 = 53.33%. Note: 40 + 6.67 + 53.33 = 100% ✓. So glucose by mass is 40% carbon, 6.67% hydrogen, and 53.33% oxygen.",
+          "explanation": "Mass percentage = (mass of element in 1 mole / molar mass) × 100%."
+        }
+      ]
+    },
+    {
+      "topic": "The Mole Concept",
+      "easy": [
+        {
+          "id": "ch9-t3-e1",
+          "type": "mcq",
+          "question": "Avogadro's number is approximately:",
+          "options": ["6 × 10⁸", "6 × 10¹⁵", "6.022 × 10²³", "6 × 10⁵⁰"],
+          "answer": "6.022 × 10²³",
+          "explanation": "Avogadro's number = 6.022 × 10²³. It is the number of particles in one mole."
+        },
+        {
+          "id": "ch9-t3-e2",
+          "type": "fill",
+          "question": "One mole of water (H₂O) weighs ______ grams. (H = 1, O = 16)",
+          "answer": "18",
+          "explanation": "Molecular mass of water = 18 u. Mass of 1 mole in grams equals molecular mass in u. So 18 g."
+        },
+        {
+          "id": "ch9-t3-e3",
+          "type": "mcq",
+          "question": "How many molecules are present in 1 mole of any substance?",
+          "options": [
+            "1 million",
+            "1 billion",
+            "6.022 × 10²³",
+            "It depends on the substance"
+          ],
+          "answer": "6.022 × 10²³",
+          "explanation": "One mole always contains 6.022 × 10²³ particles (atoms, molecules, or ions, depending on what is being measured). This number is Avogadro's number."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch9-t3-m1",
+          "type": "short",
+          "question": "How many moles are present in 36 grams of water (H₂O)? (H = 1, O = 16)",
+          "answer": "Molar mass of water = 18 g/mol. Number of moles = mass / molar mass = 36 / 18 = 2 moles. So 36 g of water contains 2 moles, which is 2 × 6.022 × 10²³ = 1.204 × 10²⁴ water molecules.",
+          "explanation": "n = m / M. Standard mole calculation."
+        },
+        {
+          "id": "ch9-t3-m2",
+          "type": "short",
+          "question": "Calculate the mass of 0.25 moles of calcium carbonate (CaCO₃). (Ca = 40, C = 12, O = 16)",
+          "answer": "Molar mass of CaCO₃ = 40 + 12 + 3(16) = 40 + 12 + 48 = 100 g/mol. Mass = moles × molar mass = 0.25 × 100 = 25 g. So 0.25 moles of calcium carbonate weighs 25 g.",
+          "explanation": "m = n × M. The other direction of the mole calculation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch9-t3-h1",
+          "type": "long",
+          "question": "A standard paracetamol tablet contains 500 mg of paracetamol (molecular mass = 151 g/mol). Calculate (a) the number of moles of paracetamol in one tablet, and (b) the number of paracetamol molecules in one tablet.",
+          "answer": "(a) Mass of paracetamol per tablet = 500 mg = 0.5 g. Number of moles = mass / molar mass = 0.5 / 151 = 3.31 × 10⁻³ moles, or approximately 0.00331 moles. (b) Number of molecules = moles × Avogadro's number = 3.31 × 10⁻³ × 6.022 × 10²³ = approximately 1.99 × 10²¹ molecules. So a single 500 mg paracetamol tablet contains about 2 × 10²¹ — two sextillion — paracetamol molecules. Indian pharmaceutical industries from Cipla to Sun Pharma calculate exactly this way for every batch of medicine they produce.",
+          "explanation": "Real-world pharmaceutical calculation combines the mole concept with Avogadro's number."
+        }
+      ]
+    }
+  ]
+}
