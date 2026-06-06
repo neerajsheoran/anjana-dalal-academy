@@ -1,0 +1,197 @@
+{
+  "topics": [
+    {
+      "topic": "Asexual and Sexual Reproduction",
+      "easy": [
+        {
+          "id": "ch11-t1-e1",
+          "type": "mcq",
+          "question": "In asexual reproduction:",
+          "options": [
+            "Two parents contribute genes",
+            "Only one parent is needed",
+            "Sperm and egg combine",
+            "Pollination occurs"
+          ],
+          "answer": "Only one parent is needed",
+          "explanation": "Asexual reproduction requires only one parent. The offspring are genetically (almost) identical clones of the parent."
+        },
+        {
+          "id": "ch11-t1-e2",
+          "type": "fill",
+          "question": "When a parent cell divides into two roughly equal daughter cells, the process is called ______ fission.",
+          "answer": "binary",
+          "explanation": "Binary fission is the asexual reproduction method used by bacteria and amoeba."
+        },
+        {
+          "id": "ch11-t1-e3",
+          "type": "mcq",
+          "question": "Yeast reproduces asexually by:",
+          "options": ["Binary fission", "Budding", "Fragmentation", "Spore formation"],
+          "answer": "Budding",
+          "explanation": "Yeast produces small buds that grow on the parent cell and eventually detach to form new yeast cells."
+        },
+        {
+          "id": "ch11-t1-e4",
+          "type": "mcq",
+          "question": "Which of these is an example of vegetative propagation?",
+          "options": [
+            "A bean seed sprouting",
+            "A mango tree grown from seed",
+            "A rose grown from a stem cutting",
+            "A papaya tree from a seed"
+          ],
+          "answer": "A rose grown from a stem cutting",
+          "explanation": "Vegetative propagation uses non-reproductive parts (stems, roots, leaves) to grow new plants. Stem cuttings, grafting, layering, and tubers are all examples."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t1-m1",
+          "type": "short",
+          "question": "Compare the advantages and disadvantages of asexual and sexual reproduction.",
+          "answer": "ASEXUAL REPRODUCTION: Advantages — fast (one cell or organism can produce many offspring quickly), reliable (when conditions are good, identical offspring should also do well), no need to find a mate. Disadvantage — NO GENETIC VARIETY; all offspring are identical, so if the environment changes (e.g., a new disease), all offspring may suffer together. SEXUAL REPRODUCTION: Advantages — produces VARIETY (offspring inherit a mix of both parents' genes); variety helps the species adapt to changing environments; combining traits from two parents can give new useful combinations. Disadvantages — slower (requires finding a mate), produces fewer offspring per attempt, takes more energy and time.",
+          "explanation": "Asexual = speed + identical copies; sexual = slower + variety."
+        },
+        {
+          "id": "ch11-t1-m2",
+          "type": "short",
+          "question": "Why is vegetative propagation so widely used in Indian agriculture for crops like banana, sugarcane, and mango?",
+          "answer": "Vegetative propagation guarantees GENETIC IDENTITY. A banana grown from a sucker of a high-yielding mother plant produces bananas of the same flavour, size, and ripening time. A mango grafted from an Alphonso tree produces Alphonso mangoes. With seeds, the offspring inherit mixed genes from two parents (and the fruit they produce may differ from the original variety). Farmers cannot risk this for commercial crops. Vegetative propagation is also FASTER — a grafted mango tree fruits in 3-4 years; a seedling takes 7-10 years. Indian banana plantations, sugarcane fields, and mango orchards are almost entirely the result of vegetative propagation.",
+          "explanation": "Commercial agriculture values predictability over variety — exactly what vegetative propagation provides."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t1-h1",
+          "type": "long",
+          "question": "Indian banana plantations almost entirely use one variety (Cavendish) propagated vegetatively. Explain why this creates both an opportunity and a risk.",
+          "answer": "OPPORTUNITY: Genetic identity means every banana produced is the same flavour, ripens at the same time, has the same shelf life, and can be sold uniformly. This standardisation makes commercial shipping, ripening, and selling far easier and more profitable. India's banana industry can supply consistent fruit to markets and even export. RISK: All plants in a Cavendish plantation are genetic clones. They share the same susceptibilities. If a new disease, fungus, or pest emerges that the Cavendish variety cannot resist, the disease could spread rapidly through all plants without resistance — wiping out entire plantations. This is not a theoretical risk: in the mid-20th century, the previously dominant Gros Michel banana was nearly wiped out by Panama disease and was replaced by Cavendish. Now Cavendish faces a new strain of the same fungus (TR4). The trade-off between commercial advantage and biological vulnerability is one of modern agriculture's hardest problems. Indian researchers at ICAR and the National Research Centre for Banana in Tiruchirappalli are working on disease-resistant banana varieties using both selective breeding and genetic engineering.",
+          "explanation": "Monoculture from vegetative propagation is efficient but biologically vulnerable — the central tension of modern commercial agriculture."
+        }
+      ]
+    },
+    {
+      "topic": "Sexual Reproduction in Plants",
+      "easy": [
+        {
+          "id": "ch11-t2-e1",
+          "type": "mcq",
+          "question": "The male reproductive organ of a flower is the:",
+          "options": ["Stigma", "Stamen", "Petal", "Ovary"],
+          "answer": "Stamen",
+          "explanation": "The stamen produces pollen. It consists of an anther (where pollen is made) and a filament (which supports it)."
+        },
+        {
+          "id": "ch11-t2-e2",
+          "type": "fill",
+          "question": "The transfer of pollen from the anther to the stigma is called ______.",
+          "answer": "pollination",
+          "explanation": "Pollination is the transfer of pollen. It is the first step toward fertilisation in flowering plants."
+        },
+        {
+          "id": "ch11-t2-e3",
+          "type": "mcq",
+          "question": "After fertilisation in a flower, the ovule develops into the:",
+          "options": ["Fruit", "Flower", "Seed", "Stem"],
+          "answer": "Seed",
+          "explanation": "Each ovule, after fertilisation, develops into a seed. The ovary (containing the ovules) develops into a fruit."
+        },
+        {
+          "id": "ch11-t2-e4",
+          "type": "mcq",
+          "question": "Which of these is a pollinator?",
+          "options": ["Snake", "Honey bee", "Spider", "Frog"],
+          "answer": "Honey bee",
+          "explanation": "Honey bees, butterflies, beetles, certain birds (sunbirds, hummingbirds), and bats are common pollinators."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t2-m1",
+          "type": "short",
+          "question": "Distinguish between pollination and fertilisation.",
+          "answer": "POLLINATION is the transfer of pollen from the male part of a flower (anther) to the female part (stigma). It is the FIRST step in reproduction in flowering plants. Pollination can happen by wind, water, insects, or other animals. FERTILISATION is the FUSION of the male reproductive cell (from the pollen, which has grown a tube down through the style to reach the ovule) with the female egg cell inside the ovule. Pollination has to happen first; fertilisation follows. After fertilisation, the ovule develops into a seed and the ovary into a fruit. So pollination is just the transport step; fertilisation is the union of the actual reproductive cells.",
+          "explanation": "Pollination = pollen transfer (no union yet); fertilisation = actual union of male and female cells."
+        },
+        {
+          "id": "ch11-t2-m2",
+          "type": "short",
+          "question": "Why are flowers so colourful and fragrant?",
+          "answer": "Bright colours and fragrant smells exist to ATTRACT POLLINATORS — bees, butterflies, beetles, certain birds, and bats. Different colours attract different pollinators: bright yellows and blues attract bees; reds and oranges attract birds; whites and pale colours often attract bats and night-flying moths. Fragrance helps insects locate flowers from a distance. The flower offers nectar (sugary liquid) and sometimes pollen as a reward for the pollinator. The pollinator inadvertently picks up pollen on its body and transfers it to the next flower it visits. So the flower's appearance is essentially an advertising strategy refined over millions of years of co-evolution with its pollinators.",
+          "explanation": "Flowers and pollinators have co-evolved into a beneficial partnership — appearance is the marketing."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t2-h1",
+          "type": "long",
+          "question": "Describe in detail the sequence of events from pollination to germination in a flowering plant, naming the parts and structures involved at each stage.",
+          "answer": "(1) POLLINATION: Pollen grains from the anther of a flower's STAMEN are carried by wind, water, insects, or other pollinators to the STIGMA of the same or another flower's PISTIL. (2) POLLEN TUBE GROWTH: The pollen grain on the moist stigma germinates and grows a thin tube downward through the STYLE, carrying the male reproductive cells. (3) FERTILISATION: The pollen tube reaches the OVARY and enters an OVULE. One of the male cells fuses with the EGG cell inside the ovule. This fusion is FERTILISATION; a zygote is formed. (4) SEED FORMATION: The fertilised ovule develops into a SEED. The seed contains the embryo (the next generation), seed leaves (cotyledons that store food), and a protective coat. (5) FRUIT FORMATION: The ovary wall thickens around the seeds, forming the FRUIT. A mango, an apple, or a tomato is the swollen ovary wall protecting the seeds inside. (6) SEED DISPERSAL: Fruits help disperse seeds — animals eat the fruit, drop the seeds elsewhere; some fruits split open and scatter seeds; some have hooks that stick to animal fur. (7) GERMINATION: Once a seed lands in soil with adequate water, warmth, and oxygen, it germinates. The seed coat splits; the root emerges first and grows downward; the shoot emerges and grows upward toward light. The cotyledons (or endosperm) provide food until the new plant has leaves and can do photosynthesis. The cycle of life continues.",
+          "explanation": "Each stage has specific structures; the seven-stage sequence is the complete life cycle of a flowering plant."
+        }
+      ]
+    },
+    {
+      "topic": "Human Reproduction and Adolescence",
+      "easy": [
+        {
+          "id": "ch11-t3-e1",
+          "type": "mcq",
+          "question": "Sperm cells are produced in the:",
+          "options": ["Ovaries", "Uterus", "Testes", "Penis"],
+          "answer": "Testes",
+          "explanation": "Testes are the male reproductive organs that produce sperm cells and the hormone testosterone. They are housed in the scrotum."
+        },
+        {
+          "id": "ch11-t3-e2",
+          "type": "fill",
+          "question": "Fertilisation in humans usually occurs in the ______ tubes.",
+          "answer": "fallopian",
+          "explanation": "Also called oviducts. The sperm meets the egg here; the fertilised egg then travels to the uterus to implant."
+        },
+        {
+          "id": "ch11-t3-e3",
+          "type": "mcq",
+          "question": "The female reproductive hormone primarily responsible for puberty changes in girls is:",
+          "options": ["Testosterone", "Adrenaline", "Oestrogen", "Insulin"],
+          "answer": "Oestrogen",
+          "explanation": "Oestrogen, produced by the ovaries, drives most of the female puberty changes (breast development, menstrual cycle, etc.)."
+        },
+        {
+          "id": "ch11-t3-e4",
+          "type": "mcq",
+          "question": "Pregnancy in humans lasts approximately:",
+          "options": ["3 months", "6 months", "9 months", "12 months"],
+          "answer": "9 months",
+          "explanation": "Human pregnancy typically lasts about 9 months (280 days). The fertilised egg implants in the uterus and develops into a baby over this time."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch11-t3-m1",
+          "type": "short",
+          "question": "Describe the role of the placenta during pregnancy.",
+          "answer": "The PLACENTA is an organ that develops in the uterus during pregnancy. It forms the connection between the mother's body and the developing baby. ROLES: (1) NUTRITION — the placenta transfers nutrients (sugars, amino acids, fats) from the mother's blood to the baby's blood. (2) OXYGEN — it transfers oxygen from the mother's blood to the baby; the baby's blood, now oxygen-rich, returns through the umbilical cord. (3) WASTE REMOVAL — carbon dioxide and other waste products from the baby pass back through the placenta into the mother's blood, which then removes them via her own breathing and kidneys. (4) BARRIER — the placenta acts as a partial barrier preventing many harmful substances from reaching the baby. (5) HORMONE PRODUCTION — the placenta produces hormones that sustain pregnancy and prepare the mother's body for childbirth. After birth, the placenta is expelled along with the umbilical cord.",
+          "explanation": "The placenta is essentially a temporary organ supporting the baby's growth from mother's body."
+        },
+        {
+          "id": "ch11-t3-m2",
+          "type": "short",
+          "question": "Why does menstruation occur, and what does its occurrence indicate?",
+          "answer": "Each month after puberty, the lining of a girl's uterus thickens with blood and nutrients in preparation for a possible pregnancy. If a sperm meets an egg and fertilisation occurs, the fertilised egg implants in this thickened lining and pregnancy begins. If NO fertilisation occurs (which is the case most months), the thickened lining is no longer needed. It breaks down and is shed through the vagina along with some blood — this is MENSTRUATION. Menstruation typically lasts 3-7 days and the cycle repeats roughly every 28 days. WHAT IT INDICATES: Regular menstruation is a sign that the reproductive system is functioning healthily — the ovaries are producing eggs, the hormones are working in their normal cycles, and the uterus is responding correctly. Menstruation is a normal, healthy biological process, not a disease or impurity, despite myths that have surrounded it in many cultures.",
+          "explanation": "Menstruation is the body's monthly reset when pregnancy does not occur."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch11-t3-h1",
+          "type": "long",
+          "question": "Discuss the importance of reproductive health education for adolescents in India, including at least three specific points.",
+          "answer": "Reproductive health education is critical for several reasons. (1) PREVENTING UNWANTED PREGNANCIES AND STIs: Many Indian teenagers receive incomplete or inaccurate information about their bodies. Comprehensive sex education has been shown to delay first sexual activity and increase use of safe practices when activity does begin. This reduces teenage pregnancies and the transmission of HIV, hepatitis, syphilis, and other STIs. (2) MENSTRUAL HYGIENE: India still has many myths surrounding menstruation. Schools providing education and free menstrual pads (under the National Health Mission and many state programmes) help girls stay in school during their periods, reducing school dropouts. (3) HPV VACCINATION AND CANCER PREVENTION: The HPV vaccine prevents cervical cancer, the second-most-common cancer in Indian women. Adolescent girls receiving HPV vaccination through school programmes (as in Sikkim and Punjab) build immunity before exposure. (4) MENTAL HEALTH: Adolescence is emotionally turbulent. Understanding the biological reasons for mood swings, body changes, and emotional reactions helps adolescents accept these as normal and seek help when needed. (5) RESPECT AND CONSENT: Reproductive health education teaches respect for one's own body and others'. This shapes attitudes toward consent, gender equality, and healthy relationships throughout life. Without reproductive health education, India faces higher rates of teenage pregnancies, STIs, cervical cancer mortality, and reproductive ignorance. With it, generations grow up making informed choices about their bodies and their futures.",
+          "explanation": "Reproductive health education has measurable benefits across multiple public health indicators."
+        }
+      ]
+    }
+  ]
+}
