@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "topic": "Forces and Newton's First Law",
+      "easy": [
+        {
+          "id": "ch6-t1-e1",
+          "type": "mcq",
+          "question": "The SI unit of force is the:",
+          "options": ["Joule", "Newton", "Pascal", "Watt"],
+          "answer": "Newton",
+          "explanation": "The newton (N) is the SI unit of force, named after Sir Isaac Newton. One newton gives a 1 kg mass an acceleration of 1 m/s²."
+        },
+        {
+          "id": "ch6-t1-e2",
+          "type": "fill",
+          "question": "Newton's first law of motion is also called the law of ______.",
+          "answer": "inertia",
+          "explanation": "Inertia is the tendency of an object to resist any change in its state of motion. Newton's first law captures this property."
+        },
+        {
+          "id": "ch6-t1-e3",
+          "type": "mcq",
+          "question": "An object will continue moving in a straight line at constant velocity unless:",
+          "options": [
+            "It gets tired",
+            "An unbalanced force acts on it",
+            "Gravity disappears",
+            "Time runs out"
+          ],
+          "answer": "An unbalanced force acts on it",
+          "explanation": "This is Newton's first law. Without an unbalanced force, the object's state of motion does not change."
+        },
+        {
+          "id": "ch6-t1-e4",
+          "type": "mcq",
+          "question": "When you suddenly press the brakes in a car, your body lurches forward. This is because of:",
+          "options": [
+            "Friction with the seat",
+            "Gravity",
+            "Your body's inertia of motion",
+            "The car pushing you"
+          ],
+          "answer": "Your body's inertia of motion",
+          "explanation": "Your body was moving forward with the car. When the car decelerates, your body's inertia tries to keep moving forward — so you lurch forward against the seatbelt."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t1-m1",
+          "type": "short",
+          "question": "Distinguish between balanced and unbalanced forces with one example each.",
+          "answer": "Balanced forces: The forces on an object cancel each other out, giving zero net force. The object's state of motion does not change. Example: A book lying still on a table — gravity pulls it down, the table pushes it up with an equal force. Unbalanced forces: There is a net force in some direction. The object accelerates in that direction. Example: A ball rolling on a floor slows down and stops because the friction from the floor acts unbalanced against its motion.",
+          "explanation": "Balanced = no change in motion; unbalanced = acceleration."
+        },
+        {
+          "id": "ch6-t1-m2",
+          "type": "short",
+          "question": "Why is it easier to push an empty cart than a fully loaded one?",
+          "answer": "An empty cart has less mass and therefore less inertia. According to Newton's second law (F = m × a), to give the cart any chosen acceleration you need a force proportional to its mass. With less mass, less force is needed. A loaded cart has much more mass and therefore more inertia — it resists any change in motion. You need a larger force to give it the same acceleration. This is why a small child can push an empty shopping cart but struggles with a full one.",
+          "explanation": "More mass = more inertia = more force needed for the same acceleration."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t1-h1",
+          "type": "long",
+          "question": "A passenger inside a moving bus suddenly jumps off the bus on a curve. Use ideas of inertia and Newton's first law to explain why this is dangerous.",
+          "answer": "Before jumping, the passenger and the bus are moving together — both have a velocity directed along the bus's path. By Newton's first law, an object continues in its state of motion unless acted on by an unbalanced force. When the passenger jumps off, their feet leave the bus floor (which was providing forward force through friction). With no horizontal force on them, they continue moving in a STRAIGHT LINE in their current direction (tangent to the curve at the moment they jumped). The bus, meanwhile, continues to follow the curve. So the passenger flies forward and outward, often colliding with the road, a wall, or another vehicle. This inertia is also why race-car drivers tell beginners 'don't fight the corner' — the car wants to go straight by inertia; only the friction from tyres turns it.",
+          "explanation": "Inertia carries the passenger in a straight tangent line, but the bus follows the curve — a dangerous mismatch."
+        }
+      ]
+    },
+    {
+      "topic": "Newton's Second Law (F = ma)",
+      "easy": [
+        {
+          "id": "ch6-t2-e1",
+          "type": "mcq",
+          "question": "Newton's second law of motion is mathematically expressed as:",
+          "options": ["F + m = a", "F = m × a", "F = m / a", "F = m² × a"],
+          "answer": "F = m × a",
+          "explanation": "Force equals mass times acceleration. This is the central equation of classical mechanics."
+        },
+        {
+          "id": "ch6-t2-e2",
+          "type": "fill",
+          "question": "If a 5 kg ball accelerates at 2 m/s², the force applied on it is ______ N.",
+          "answer": "10",
+          "explanation": "F = m × a = 5 × 2 = 10 N."
+        },
+        {
+          "id": "ch6-t2-e3",
+          "type": "mcq",
+          "question": "If the mass of an object is doubled while keeping the applied force constant, its acceleration will:",
+          "options": ["Double", "Halve", "Stay the same", "Quadruple"],
+          "answer": "Halve",
+          "explanation": "Since F = m × a, a = F/m. If m doubles, a halves (assuming F is constant)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t2-m1",
+          "type": "short",
+          "question": "A force of 20 N is applied to a 4 kg object initially at rest. Calculate its acceleration and its velocity after 5 seconds.",
+          "answer": "Acceleration: a = F/m = 20/4 = 5 m/s². Velocity after 5 seconds: using v = u + at with u = 0, v = 0 + 5 × 5 = 25 m/s. So the object accelerates at 5 m/s² and reaches a velocity of 25 m/s after 5 seconds.",
+          "explanation": "F = ma gives acceleration; then use the equations of motion from Chapter 4 to find velocity."
+        },
+        {
+          "id": "ch6-t2-m2",
+          "type": "short",
+          "question": "Why are airbags installed in modern cars?",
+          "answer": "Newton's second law can be expressed in terms of momentum: Force = change in momentum / time. In a sudden crash, your body's momentum changes from 'fast' to 'zero' in a very short time, producing a large force on your body — enough to cause serious injury. An airbag stretches the time over which your momentum changes, from a few milliseconds (hitting a hard dashboard) to many hundredths of a second (cushioning against the airbag). The SAME change of momentum, distributed over a LONGER time, produces a much SMALLER force. So airbags reduce the peak force on your body and reduce injury.",
+          "explanation": "Airbags work by extending the time of momentum change."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t2-h1",
+          "type": "long",
+          "question": "A 1000 kg car is travelling at 20 m/s. The driver applies brakes and the car comes to rest in 5 seconds. Calculate (a) the acceleration, (b) the force exerted by the brakes, and (c) the distance the car travels while braking.",
+          "answer": "(a) Acceleration: a = (v - u) / t = (0 - 20) / 5 = -4 m/s². (Negative means the car is decelerating.) (b) Force: F = m × a = 1000 × (-4) = -4000 N. The negative sign indicates the force is opposite to the car's motion — that is the braking force. Its magnitude is 4000 N or 4 kN. (c) Distance: using v² = u² + 2as, 0 = 20² + 2 × (-4) × s → 0 = 400 - 8s → s = 50 m. So the car travels 50 metres before stopping.",
+          "explanation": "Combines F = ma with the kinematic equations to give a complete picture of braking."
+        }
+      ]
+    },
+    {
+      "topic": "Newton's Third Law, Friction, and Momentum",
+      "easy": [
+        {
+          "id": "ch6-t3-e1",
+          "type": "mcq",
+          "question": "Newton's third law states that:",
+          "options": [
+            "Force equals mass times acceleration",
+            "An object at rest stays at rest",
+            "For every action, there is an equal and opposite reaction",
+            "Friction opposes motion"
+          ],
+          "answer": "For every action, there is an equal and opposite reaction",
+          "explanation": "Newton's third law: action and reaction forces are equal in size and opposite in direction. They act on different objects."
+        },
+        {
+          "id": "ch6-t3-e2",
+          "type": "fill",
+          "question": "Friction is the force that opposes the relative ______ of two surfaces in contact.",
+          "answer": "motion",
+          "explanation": "Friction always opposes relative motion (or attempted motion) between two surfaces in contact."
+        },
+        {
+          "id": "ch6-t3-e3",
+          "type": "mcq",
+          "question": "The momentum of an object is given by:",
+          "options": ["m × v", "m + v", "m / v", "m × v²"],
+          "answer": "m × v",
+          "explanation": "Momentum p = mass × velocity. SI unit: kg·m/s. A heavy slow truck can have more momentum than a fast bicycle."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch6-t3-m1",
+          "type": "short",
+          "question": "If action and reaction forces are equal and opposite, why doesn't everything cancel out and stay still?",
+          "answer": "Because action and reaction forces act on DIFFERENT objects, not on the same one. When you push a wall, you exert a force on the wall (action) and the wall exerts a force on you (reaction). The action affects the wall's motion; the reaction affects yours. They cannot cancel each other because each acts on a different object. This is also why rockets work — the rocket pushes hot gases down (action); the gases push the rocket up (reaction). The rocket and the gas move in opposite directions because the forces act on different objects.",
+          "explanation": "Action and reaction always act on different objects — they never cancel."
+        },
+        {
+          "id": "ch6-t3-m2",
+          "type": "short",
+          "question": "Why does a girl on roller skates move backward when she throws a heavy ball forward?",
+          "answer": "Before she throws, the total momentum of girl + ball = 0 (everyone is stationary). By the law of conservation of momentum, in the absence of external forces, total momentum stays at zero. When she throws the ball forward, the ball acquires forward momentum. So she must acquire equal backward momentum. Since the girl is much heavier than the ball, her backward velocity is small but enough to roll her backwards slowly. This is a clean example of momentum conservation in action.",
+          "explanation": "Total momentum is conserved; the ball's forward momentum is balanced by the girl's backward momentum."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch6-t3-h1",
+          "type": "long",
+          "question": "A 50 g bullet is fired with a velocity of 400 m/s from a 5 kg gun. Calculate the recoil velocity of the gun.",
+          "answer": "Convert units: mass of bullet = 50 g = 0.05 kg. Mass of gun = 5 kg. By the law of conservation of momentum, total momentum before firing = total momentum after firing. Before: both the bullet and the gun are at rest, so total momentum = 0. After: bullet has momentum = 0.05 × 400 = 20 kg·m/s forward. For the total to remain zero, the gun must have momentum 20 kg·m/s backward. Recoil velocity = 20 / 5 = 4 m/s backward. So the gun recoils at 4 m/s in the opposite direction of the bullet.",
+          "explanation": "Conservation of momentum gives the recoil velocity directly. Note the gun's recoil is far slower than the bullet because its mass is much greater."
+        }
+      ]
+    }
+  ]
+}
