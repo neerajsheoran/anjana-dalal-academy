@@ -1,0 +1,329 @@
+{
+  "topics": [
+    {
+      "topic": "Scientific Thinking and Models",
+      "easy": [
+        {
+          "id": "ch1-t1-e1",
+          "type": "mcq",
+          "question": "A model in science is best described as:",
+          "options": [
+            "A miniature physical replica of an object",
+            "A simplified picture of a real system that keeps only what matters for the question",
+            "A famous scientist worth imitating",
+            "A photograph of an experiment"
+          ],
+          "answer": "A simplified picture of a real system that keeps only what matters for the question",
+          "explanation": "A scientific model is a deliberate simplification — it ignores details that are unimportant for the question being asked so that the system can be analysed clearly."
+        },
+        {
+          "id": "ch1-t1-e2",
+          "type": "fill",
+          "question": "The two tools the chapter uses as symbols of scientific exploration are a magnifying glass and a ______.",
+          "answer": "compass",
+          "explanation": "The magnifying glass stands for careful observation; the compass stands for choosing the right direction and knowing the limits of a model."
+        },
+        {
+          "id": "ch1-t1-e3",
+          "type": "mcq",
+          "question": "When modelling a cricket ball being hit for a six, which detail is MOST important to include?",
+          "options": [
+            "The brand of the bat",
+            "The colour of the ball",
+            "The speed and angle of the ball when hit",
+            "The temperature of the field"
+          ],
+          "answer": "The speed and angle of the ball when hit",
+          "explanation": "Speed and angle directly determine how far the ball travels. The brand, colour, or field temperature have negligible effect on whether it clears the boundary."
+        },
+        {
+          "id": "ch1-t1-e4",
+          "type": "fill",
+          "question": "Indian physicist Meghnad Saha simplified the inside of a star into a hot ______ to derive his famous equation.",
+          "answer": "gas",
+          "explanation": "Saha treated the inside of a star as a hot gas and focused on temperature, pressure, and how atoms form ions — a powerful simplification that connected stars' colours to their temperatures."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t1-m1",
+          "type": "short",
+          "question": "Why is deliberately ignoring details in a scientific model NOT considered careless?",
+          "answer": "Because the choice of what to ignore is made on purpose, for a specific question, and the scientist is fully aware of what was left out. Including every detail would make the model so complex it could not be used. Smart simplification keeps only the details that matter for the question being asked.",
+          "explanation": "Modelling is about useful abstraction. The same physicist may ignore air resistance for a falling stone (where it is tiny) but must include it for a parachute jump (where it dominates)."
+        },
+        {
+          "id": "ch1-t1-m2",
+          "type": "short",
+          "question": "Suggest two details a student would IGNORE and two details a student would INCLUDE when modelling how long it takes to cycle from school to home.",
+          "answer": "Include: the distance from school to home, and your average cycling speed. Ignore: the colour of the cycle, and the songs you listen to during the ride. (Other valid pairs are acceptable.)",
+          "explanation": "Distance and speed directly determine time. The colour or music have no effect on travel time, so they are safely ignored."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t1-h1",
+          "type": "long",
+          "question": "Choose any everyday situation (for example, predicting how long a phone battery will last, or how long it will take a kettle of water to boil). Describe one simple model you could build for it, listing 3 details you would keep, 2 details you would deliberately ignore, and explain why your choices are reasonable.",
+          "answer": "Example using a kettle of water. KEEP: (1) Amount of water in the kettle, (2) Power rating of the kettle in watts, (3) Initial temperature of the water. IGNORE: (1) Colour of the kettle, (2) Brand or model name. WHY: The amount of water, the power, and the starting temperature directly determine how much energy is needed and how fast it is supplied. The colour and brand do not change these quantities meaningfully. (A wide range of similar valid answers should be accepted.)",
+          "explanation": "There is no single correct answer — the assessment is on whether the student picks scientifically relevant variables and can justify the simplification."
+        }
+      ]
+    },
+    {
+      "topic": "Units, Symbols, and the Language of Science",
+      "easy": [
+        {
+          "id": "ch1-t2-e1",
+          "type": "mcq",
+          "question": "The SI unit of mass is:",
+          "options": ["pound", "gram", "kilogram", "tonne"],
+          "answer": "kilogram",
+          "explanation": "The kilogram (kg) is the SI base unit of mass. Pounds and grams are other units; the tonne is a multiple of the kilogram."
+        },
+        {
+          "id": "ch1-t2-e2",
+          "type": "mcq",
+          "question": "In scientific notation, the speed of light is denoted by the symbol 'c' because:",
+          "options": [
+            "It stands for constant",
+            "It is the third letter of the alphabet",
+            "It comes from the Latin word celeritas, meaning speed",
+            "It was chosen randomly"
+          ],
+          "answer": "It comes from the Latin word celeritas, meaning speed",
+          "explanation": "Many scientific symbols come from historical or international conventions. 'c' is derived from celeritas."
+        },
+        {
+          "id": "ch1-t2-e3",
+          "type": "fill",
+          "question": "The full form of SI in 'SI units' is ______ International (a French phrase meaning 'International System').",
+          "answer": "Système",
+          "explanation": "SI stands for Système International d'unités. It is the worldwide standard system of measurement units."
+        },
+        {
+          "id": "ch1-t2-e4",
+          "type": "mcq",
+          "question": "Which of these symbols stands for force?",
+          "options": ["m", "v", "F", "I"],
+          "answer": "F",
+          "explanation": "F is the standard symbol for force. m is mass, v is velocity, I is electric current."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t2-m1",
+          "type": "short",
+          "question": "Why is it important that scientists everywhere use the same units of measurement?",
+          "answer": "Standard units let scientists across the world communicate their results without confusion. If different countries used different units, comparing observations, repeating experiments, and trusting reported numbers would all become difficult. Standard units also prevent costly errors — for example, the 1983 Air Canada incident, where mixing up pounds and kilograms left a passenger plane mid-flight with less than half the fuel needed.",
+          "explanation": "Shared units are a form of scientific etiquette that prevents misunderstanding and real-world harm."
+        },
+        {
+          "id": "ch1-t2-m2",
+          "type": "short",
+          "question": "Many students feel intimidated by equations in science. How does the chapter suggest you approach them?",
+          "answer": "Think of an equation as a compact sentence describing how two or more quantities are related. Try to read each equation aloud in plain English first — for example, 'Distance = Speed × Time' means 'if you know how fast something is moving and for how long, you can figure out how far it has gone'. Once you can express the equation as a sentence, you understand it; the mathematics is just the precision tool, not the meaning itself.",
+          "explanation": "Translating equations into everyday sentences makes them less intimidating and supports genuine understanding."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t2-h1",
+          "type": "long",
+          "question": "The 1983 Air Canada incident showed what happens when units are confused. Imagine you are giving a 5-minute talk to your school about why students should care about SI units. Outline the talk in 4–5 points, using at least one example from daily life and one from science or engineering.",
+          "answer": "Sample outline (other valid talks accepted): (1) Open with the Air Canada incident — a passenger plane nearly crashed because pounds were used instead of kilograms. (2) Explain SI units as the global standard, agreed by scientists and engineers everywhere. (3) Give an everyday example — a kilogram of dal means the same thing in every shop in India, no matter which state. (4) Give an engineering example — a Mumbai metro train's brake system relies on engineers in different cities using identical units in calculations. (5) Conclude — standard units are not a school requirement, they are a safety system the modern world runs on. Encourage classmates to always write units alongside numbers.",
+          "explanation": "The aim is to assess whether students grasp the practical importance of unit consistency, not memorise a model answer."
+        }
+      ]
+    },
+    {
+      "topic": "Laws, Theories, and Predictions",
+      "easy": [
+        {
+          "id": "ch1-t3-e1",
+          "type": "mcq",
+          "question": "In science, the word 'theory' means:",
+          "options": [
+            "A wild guess",
+            "An untested idea",
+            "A well-tested explanation supported by evidence",
+            "A made-up story"
+          ],
+          "answer": "A well-tested explanation supported by evidence",
+          "explanation": "A scientific theory is the opposite of a guess — it is a thorough explanation supported by extensive evidence and testing."
+        },
+        {
+          "id": "ch1-t3-e2",
+          "type": "fill",
+          "question": "A statement that describes a regular pattern in nature, often as a mathematical relationship, is called a ______.",
+          "answer": "law",
+          "explanation": "A scientific law describes WHAT happens. A theory explains WHY it happens."
+        },
+        {
+          "id": "ch1-t3-e3",
+          "type": "mcq",
+          "question": "The principle of conservation of energy is an example of a:",
+          "options": [
+            "Specific equation that applies only to one situation",
+            "Broad guiding idea that applies across many situations",
+            "Wild guess",
+            "Theory that has been disproved"
+          ],
+          "answer": "Broad guiding idea that applies across many situations",
+          "explanation": "A principle is a broad idea that holds across many specific situations — like conservation of energy, which applies to climbing stairs, a rolling ball, or a chemical reaction."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t3-m1",
+          "type": "short",
+          "question": "Distinguish between a scientific 'law', a 'theory', and a 'principle' with one example of each.",
+          "answer": "A law DESCRIBES a regular pattern in nature — example: Newton's second law of motion, F = ma, describes how force, mass, and acceleration are related. A theory EXPLAINS why a pattern occurs based on evidence — example: the atomic theory explains why elements combine in fixed ratios because they are made of atoms. A principle is a BROAD guiding idea that applies across many situations — example: the principle of conservation of energy, which says energy is never created or destroyed, only transformed.",
+          "explanation": "Law = what, Theory = why, Principle = broad rule across many cases."
+        },
+        {
+          "id": "ch1-t3-m2",
+          "type": "short",
+          "question": "What is the difference between a scientific prediction and a guess?",
+          "answer": "A guess is a hopeful claim with little or no reasoning behind it. A scientific prediction is a reasoned expectation that follows from a model, law, or theory — it identifies what conditions are involved and what could be measured to check the prediction. A guess simply disappears when proven wrong, but a failed prediction tells scientists where their model needs improvement.",
+          "explanation": "Predictions leave a useful trail behind them — failures point toward better models."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t3-h1",
+          "type": "long",
+          "question": "A friend tells you, 'It will rain tomorrow because the clouds look dark today.' Reframe this as a properly testable scientific prediction. List 3 questions or measurements you would gather to support or refute the claim.",
+          "answer": "The original statement is a guess based on appearance only. To make it testable: (1) Measure today's humidity — historical data shows that monsoon rains often follow days when humidity exceeds 80%. (2) Note the current wind speed and direction, then check whether it matches the wind pattern observed before previous rains in your area. (3) Look at satellite or weather-app data to see if a low-pressure system is moving toward your region. With these measurements, the prediction becomes testable: 'If humidity, wind direction, and satellite data all match the conditions before recent rains, then it is reasonable to predict rain tomorrow.' (Other valid sets of questions/measurements should be accepted.)",
+          "explanation": "Good scientific predictions identify measurable evidence and historical patterns, not just appearances."
+        }
+      ]
+    },
+    {
+      "topic": "Estimation and Critical Thinking",
+      "easy": [
+        {
+          "id": "ch1-t4-e1",
+          "type": "mcq",
+          "question": "Estimation in science is best described as:",
+          "options": [
+            "Memorising exact numbers",
+            "Getting a reasonable, approximate answer using simple reasoning",
+            "Avoiding mathematics altogether",
+            "Predicting the future with complete accuracy"
+          ],
+          "answer": "Getting a reasonable, approximate answer using simple reasoning",
+          "explanation": "Estimation is the skill of arriving at 'good enough' answers using available information and simple multiplication or division — used by scientists, engineers, doctors, and chefs every day."
+        },
+        {
+          "id": "ch1-t4-e2",
+          "type": "fill",
+          "question": "The number of litres of air an average person breathes in one day is roughly ______ (to one significant figure).",
+          "answer": "10000",
+          "explanation": "Roughly 15 breaths per minute × 1,440 minutes per day × 0.5 litres per breath ≈ 10,000 litres."
+        },
+        {
+          "id": "ch1-t4-e3",
+          "type": "mcq",
+          "question": "The chapter argues that scientific thinking helps you evaluate viral claims. Which of these is the BEST first question to ask about a surprising claim online?",
+          "options": [
+            "Who posted it?",
+            "Does it have many likes?",
+            "What evidence supports the claim and is there a plausible mechanism?",
+            "Is the language confident?"
+          ],
+          "answer": "What evidence supports the claim and is there a plausible mechanism?",
+          "explanation": "Evidence and mechanism are the heart of scientific evaluation — far more reliable than popularity or confidence."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t4-m1",
+          "type": "short",
+          "question": "Estimate (showing your steps) how many cricket balls would fit in a typical school classroom of about 7 m × 6 m × 3 m. A cricket ball is roughly the size of a small fist.",
+          "answer": "Classroom volume = 7 × 6 × 3 = 126 cubic metres. A cricket ball is about 7 cm in diameter, so it fits in a small cube of about 7 cm × 7 cm × 7 cm ≈ 343 cubic cm = 0.000343 cubic metres. Number that fit = 126 / 0.000343 ≈ 367,000 balls. Even allowing for packing inefficiency, the answer is on the order of a few hundred thousand. The exact number is not the point — the estimate tells us the answer is in hundreds of thousands, not hundreds or millions.",
+          "explanation": "Estimation is about establishing the order of magnitude — useful for any spatial or quantitative problem."
+        },
+        {
+          "id": "ch1-t4-m2",
+          "type": "short",
+          "question": "A WhatsApp forward claims that eating food during a solar eclipse makes it harmful. Apply scientific thinking — what three questions would you ask, and what would the answers tell you?",
+          "answer": "(1) What physical or chemical change happens to food during an eclipse? Answer: Essentially none — temperature does not change sharply, no harmful chemicals enter the food. (2) If shadows made food harmful, would all food kept indoors during a normal evening also be dangerous? Answer: No, indoor food is in shadow daily for hours. (3) Has any scientist or laboratory ever measured this claim and shown evidence of harm? Answer: No verifiable evidence exists. The claim cannot survive these questions — there is no physical, chemical, or biological mechanism by which it could be true.",
+          "explanation": "Asking for evidence, a mechanism, and verifiable testing usually exposes weak claims very quickly."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t4-h1",
+          "type": "long",
+          "question": "Estimate (showing reasoning) the total number of school students in India. Then describe two ways in which a rough estimate like this could be useful for someone making real-world decisions.",
+          "answer": "Rough estimate: India's population is about 140 crore (1.4 billion). Roughly 20% are school-aged (5–17 years), giving about 28 crore school-aged children. Allowing for some who do not attend school, the total enrolled student population is around 24–26 crore. Why an estimate like this is useful: (1) A textbook publisher deciding how many copies to print of a new Class 9 science book uses such estimates to plan production and pricing. (2) The Ministry of Education planning a national exam, a vaccination drive, or a free-uniform scheme uses estimates to decide budgets and logistics — exact numbers come later from detailed surveys, but the estimate sets the order of magnitude. (Other thoughtful uses are equally valid.)",
+          "explanation": "Estimation supports planning and decision-making across publishing, government, manufacturing, healthcare, and many other fields."
+        }
+      ]
+    },
+    {
+      "topic": "The Human Side of Science",
+      "easy": [
+        {
+          "id": "ch1-t5-e1",
+          "type": "mcq",
+          "question": "Which of these is described in the chapter as a strength, not a weakness, of science?",
+          "options": [
+            "Every theory must be permanent and unchangeable",
+            "Scientific theories are open to revision when new evidence appears",
+            "Scientists never make mistakes",
+            "Science is restricted to one country"
+          ],
+          "answer": "Scientific theories are open to revision when new evidence appears",
+          "explanation": "The openness to being corrected by evidence is what makes science reliable. A theory that refuses to change in the face of evidence is no longer scientific."
+        },
+        {
+          "id": "ch1-t5-e2",
+          "type": "fill",
+          "question": "Indian physicist Sir ______ Raman won the Nobel Prize for discovering why the sea looks blue.",
+          "answer": "C.V.",
+          "explanation": "Sir C.V. Raman (Chandrasekhara Venkata Raman) won the 1930 Nobel Prize in Physics for the Raman Effect, the scattering of light by molecules."
+        },
+        {
+          "id": "ch1-t5-e3",
+          "type": "mcq",
+          "question": "Why does the chapter argue that real-world problems usually need ideas from multiple branches of science?",
+          "options": [
+            "Because each branch is too weak to solve a problem alone",
+            "Because nature does not respect chapter boundaries",
+            "Because students must be tested on all branches",
+            "Because scientists like to make problems harder"
+          ],
+          "answer": "Because nature does not respect chapter boundaries",
+          "explanation": "The chapter divisions in textbooks are conveniences for learning, but a single problem (like understanding a virus, or climate change) often needs physics, chemistry, biology, and earth science together."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch1-t5-m1",
+          "type": "short",
+          "question": "Newton's laws of motion were the gold standard of physics for over 200 years, and then Einstein's relativity replaced them in extreme cases. Was Newton 'wrong'? Explain.",
+          "answer": "Newton was not wrong — his laws describe nearly all everyday motion (cricket balls, cars, planets) extremely accurately. But every theory has a limit. Newton's laws fail when objects move at speeds close to the speed of light, where relativity takes over. Saying Newton was 'wrong' misses the point — Newton's laws have a region of validity, and within that region, they are still perfectly used today. This is how science grows: better theories extend or replace older ones for new conditions, while the older theories often remain useful within their original range.",
+          "explanation": "Theories have limits. Newton's laws are still taught and used because they work brilliantly for everyday speeds."
+        },
+        {
+          "id": "ch1-t5-m2",
+          "type": "short",
+          "question": "Give one example each, drawn from real life, of a problem that needs ideas from at least three branches of science to solve.",
+          "answer": "Example: Understanding how the COVID-19 mask works. Physics: how tiny droplets of saliva move through the air and stick to the mask's fibres. Chemistry: the polymer of the mask material and its electrostatic properties. Biology: the size of the virus and how it spreads. Mathematics is also used to model the filtration efficiency. (Other examples — air pollution in Delhi, predicting the monsoon, designing a solar cooker — are equally valid.)",
+          "explanation": "Looking at real problems naturally encourages thinking across the artificial boundaries of school subjects."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch1-t5-h1",
+          "type": "long",
+          "question": "The chapter ends with the statement, 'Science is a human activity shaped by curiosity, creativity, collaboration, and careful questioning.' Choose any Indian scientist you have read about (in this chapter or otherwise) and describe two specific moments in their work that illustrate at least two of these four qualities.",
+          "answer": "Example: Meghnad Saha. Curiosity — he asked the unusual question, 'Why do stars have different colours?' instead of taking it as a given. Creativity — he made the bold simplification of treating the inside of a star as a hot gas, ignoring most details to focus on temperature, pressure, and atomic behaviour. Both qualities together let him derive an equation that connected stars' colours to their temperatures, which is still used today. Other valid examples: C.V. Raman (curiosity about the colour of the sea, careful questioning of the textbook explanation), Tessy Thomas (collaboration leading a large defence team, creativity in solving novel engineering problems), or any other named Indian scientist with two illustrative moments.",
+          "explanation": "The aim is to assess whether the student grasps that science is fundamentally human — driven by character traits, not just intellect."
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getChapter, getChapters, getClassLabel, getSubjectLabel, SUBJECTS } from "@/lib/content";
+import { findRedirect } from "@/lib/slug-redirects";
 import { ClassId, SubjectId, WorksheetData, ContentAccessLevel } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import ChapterTabs from "@/components/content/ChapterTabs";
@@ -119,7 +121,20 @@ export default async function ChapterPage({
   const mdxComponents = { img: makeMdxImage(classId, subject, chapter), h2: MdxH2 };
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
-  const chapterMeta = getChapter(chapter);
+  let chapterMeta = getChapter(chapter);
+
+  // If the requested slug doesn't resolve to a chapter, check the
+  // slug-redirect map BEFORE giving up. NCERT book updates change
+  // chapter names, and the map keeps old bookmarks alive. A matched
+  // redirect issues a permanent (308 in App Router) redirect to the
+  // current canonical URL.
+  if (!chapterMeta) {
+    const newSlug = findRedirect(classId, subject, chapter);
+    if (newSlug) {
+      redirect(`/class/${classId}/${subject}/${newSlug}`);
+    }
+  }
+  chapterMeta = getChapter(chapter);
   const subjectInfo = SUBJECTS.find((s) => s.id === subject);
   const banner = SUBJECT_BANNER[subject] ?? SUBJECT_BANNER["science"];
 
