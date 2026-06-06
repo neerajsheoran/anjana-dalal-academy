@@ -13,14 +13,27 @@ export type ClassId =
   | "class-9"
   | "class-10";
 
-export type SubjectId = "maths" | "science" | "social-science" | "political-science";
+export type SubjectId = "maths" | "science" | "social-science";
 
 export type DifficultyLevel = "easy" | "medium" | "hard";
+
+// Metadata about a "book" — a level between subject and chapter. Used
+// when a subject's NCERT source material is split across multiple physical
+// books (e.g. Class 10 Social Science has History / Geography / Political
+// Science / Economics). Flat subjects (Maths, Science) have no books.
+export interface BookInfo {
+  id: string;          // URL slug, e.g. "history"
+  label: string;       // Display name, e.g. "History"
+  order: number;       // Sort order on the book picker
+}
 
 // Metadata stored at the top of every content file
 export interface ChapterMeta {
   classId: ClassId;
   subject: SubjectId;
+  // When the chapter lives inside a multi-book subject (e.g. Class 10
+  // Social Science → History → chapter-1). Undefined for flat subjects.
+  book?: string;
   // URL slug — cosmetic only. Can change when a chapter's content gets
   // updated (e.g. NCERT releases a new book). Add a redirect from the
   // old slug to the new one if you change this; never use it as a

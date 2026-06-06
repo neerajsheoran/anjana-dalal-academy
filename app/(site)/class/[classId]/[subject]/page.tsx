@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
-import { getChapters, getClassLabel, getSubjectLabel } from "@/lib/content";
+import { redirect } from "next/navigation";
+import {
+  chapterUrl,
+  getChapters,
+  getChaptersInBook,
+  getClassLabel,
+  getSubjectLabel,
+} from "@/lib/content";
+import { getBooks, hasBooks } from "@/lib/books";
 import { ClassId, SubjectId } from "@/lib/types";
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
@@ -37,10 +45,78 @@ export default async function ClassSubjectPage({
   params: Promise<{ classId: ClassId; subject: SubjectId }>;
 }) {
   const { classId, subject } = await params;
+
+  // Class 10 Political Science is now a book under Social Science. Old
+  // bookmarks land here; bounce them to the new path.
+  if (classId === "class-10" && (subject as string) === "political-science") {
+    redirect(`/class/class-10/social-science/political-science`);
+  }
+
   const classLabel = getClassLabel(classId);
   const subjectLabel = getSubjectLabel(subject);
+  const multiBook = hasBooks(classId, subject);
   const chapters = getChapters(classId, subject);
   const chapterProgress = await getChapterProgress(classId, subject);
+
+  // Multi-book subjects render a book picker instead of a chapter list.
+  // Each book card shows its chapter count + the user's progress through
+  // that book.
+  if (multiBook) {
+    const books = getBooks(classId, subject);
+    return (
+      <main className="min-h-screen bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 py-10">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: classLabel, href: `/class/${classId}` },
+              { label: subjectLabel },
+            ]}
+          />
+          <h1 className="text-3xl font-bold text-gray-800 mb-1">
+            {classLabel} — {subjectLabel}
+          </h1>
+          <p className="text-gray-500 mb-8">
+            {books.length} books · pick one to begin
+          </p>
+
+          {books.length === 0 ? (
+            <p className="text-gray-400">Books coming soon...</p>
+          ) : (
+            <div className="grid sm:grid-cols-2 gap-4">
+              {books.map((book) => {
+                const bookChapters = getChaptersInBook(classId, subject, book.id);
+                const visited = bookChapters.filter((c) =>
+                  chapterProgress.has(c.chapterId),
+                ).length;
+                return (
+                  <Link
+                    key={book.id}
+                    href={`/class/${classId}/${subject}/${book.id}`}
+                    className="bg-white border border-gray-200 rounded-xl p-5 hover:border-amber-400 hover:shadow-sm transition-all"
+                  >
+                    <p className="text-lg font-semibold text-gray-800 leading-snug">
+                      {book.label}
+                    </p>
+                    <p className="text-sm text-gray-500 mt-2">
+                      {bookChapters.length === 0
+                        ? "Coming soon"
+                        : `${bookChapters.length} chapters`}
+                      {visited > 0 && (
+                        <span className="text-green-600 font-medium ml-2">
+                          · {visited} visited
+                        </span>
+                      )}
+                    </p>
+                  </Link>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </main>
+    );
+  }
 
   // Check user access level for chapter badges
   let userHasAccess = false;
