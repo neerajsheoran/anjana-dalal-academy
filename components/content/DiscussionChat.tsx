@@ -5,9 +5,13 @@ import DiscussionAudio from "./DiscussionAudio";
 import ContentBlur from "./ContentBlur";
 import { ContentAccessLevel } from "@/lib/types";
 
-type Speaker = "Mother" | "Child" | "Mentor" | "Student";
-const GUIDE_SPEAKERS = new Set<Speaker>(["Mother", "Mentor"]);
-const SPEAKER_RE = /^\*\*(Mother|Child|Mentor|Student):\*\*\s*(.+)/;
+type Speaker = "Mother" | "Child" | "Mentor" | "Student" | "Meera" | "Arjun";
+// Speakers rendered on the left side of the chat with amber bubbles.
+// (Right-side speakers — Child / Student / Arjun — get green bubbles.)
+// Meera and Arjun are equal peers, not a teacher/student pair — the
+// left/right split is purely for visual flow, like a WhatsApp thread.
+const GUIDE_SPEAKERS = new Set<Speaker>(["Mother", "Mentor", "Meera"]);
+const SPEAKER_RE = /^\*\*(Mother|Child|Mentor|Student|Meera|Arjun):\*\*\s*(.+)/;
 
 interface ChatLine {
   speaker: Speaker;
@@ -84,6 +88,8 @@ function avatarFor(speaker: Speaker): string {
     case "Child": return "🧒";
     case "Mentor": return "🧑‍🏫";
     case "Student": return "🧑‍🎓";
+    case "Meera": return "👧";
+    case "Arjun": return "👦";
   }
 }
 
