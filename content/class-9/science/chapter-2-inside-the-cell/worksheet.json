@@ -1,0 +1,247 @@
+{
+  "topics": [
+    {
+      "topic": "The Cell and Microscopy",
+      "easy": [
+        {
+          "id": "ch2-t1-e1",
+          "type": "mcq",
+          "question": "The basic structural and functional unit of life is:",
+          "options": ["The tissue", "The organ", "The cell", "The atom"],
+          "answer": "The cell",
+          "explanation": "Every living organism is built from cells. The cell is the smallest level at which life exists."
+        },
+        {
+          "id": "ch2-t1-e2",
+          "type": "mcq",
+          "question": "Who first observed cells in 1665?",
+          "options": ["Louis Pasteur", "Robert Hooke", "Charles Darwin", "Gregor Mendel"],
+          "answer": "Robert Hooke",
+          "explanation": "Robert Hooke observed box-like compartments in a slice of cork using his own microscope and named them 'cells' from the Latin cellulae (small rooms)."
+        },
+        {
+          "id": "ch2-t1-e3",
+          "type": "fill",
+          "question": "The limit of resolution of the human eye is about ______ mm.",
+          "answer": "0.1",
+          "explanation": "Two points closer than 0.1 mm look like one to the unaided eye. Cells are usually smaller than this, so microscopes are needed."
+        },
+        {
+          "id": "ch2-t1-e4",
+          "type": "mcq",
+          "question": "Which microscope uses a beam of electrons instead of light?",
+          "options": ["Hand lens", "Light microscope", "Electron microscope", "Telescope"],
+          "answer": "Electron microscope",
+          "explanation": "Electron microscopes use a beam of electrons to achieve much higher magnification than light microscopes, revealing structures down to the nanometre scale."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t1-m1",
+          "type": "short",
+          "question": "Why did Robert Hooke name the box-like compartments he saw 'cells'?",
+          "answer": "Robert Hooke saw the rows of small compartments in cork under his microscope. They reminded him of the small rooms (called cellulae in Latin) in which monks lived. He borrowed the word and the name has stuck ever since.",
+          "explanation": "The name reflects a visual analogy rather than any scientific property of cells."
+        },
+        {
+          "id": "ch2-t1-m2",
+          "type": "short",
+          "question": "A microscope shows the visible field of view to be 5 mm wide, and you can count 50 onion cells across it. Estimate the size of one onion cell.",
+          "answer": "5 mm = 5000 micrometres. 5000 / 50 = 100 micrometres per cell. So each onion cell is about 100 micrometres across.",
+          "explanation": "Dividing the field width by the number of cells gives the size of each cell. This is a standard estimation method used in school labs."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t1-h1",
+          "type": "long",
+          "question": "The discovery of the cell required a tool — the microscope. Discuss how the invention of new scientific instruments changes what we can know. Give one example beyond microscopes (e.g., telescopes, X-rays, MRI machines).",
+          "answer": "The invention of new scientific instruments has repeatedly opened up entire fields that were previously invisible. Before microscopes, cells were unknown — and so were the bacteria that cause many diseases. Once microscopes existed, scientists could see bacteria and understand infection. Beyond microscopes: telescopes revealed that the Milky Way is a galaxy of billions of stars, and that there are billions of other galaxies. X-rays let doctors see broken bones inside a living body without surgery. MRI machines let doctors see soft tissues and brain activity. Each new instrument acted as a new sense organ for science. (Other valid examples are acceptable.)",
+          "explanation": "The key idea is that tools determine what we can observe, and new tools open new fields of knowledge."
+        }
+      ]
+    },
+    {
+      "topic": "Cell Membrane and Osmosis",
+      "easy": [
+        {
+          "id": "ch2-t2-e1",
+          "type": "mcq",
+          "question": "Osmosis is the movement of:",
+          "options": [
+            "Salt molecules through a membrane",
+            "Water through a selectively permeable membrane",
+            "Air through plant leaves",
+            "Light through a microscope"
+          ],
+          "answer": "Water through a selectively permeable membrane",
+          "explanation": "Osmosis is specifically the diffusion of water through a selectively permeable membrane. Salt or sugar cannot cross — only the water moves."
+        },
+        {
+          "id": "ch2-t2-e2",
+          "type": "fill",
+          "question": "The cell membrane is described as ______ permeable because it lets some substances through and blocks others.",
+          "answer": "selectively",
+          "explanation": "A selectively permeable membrane allows water and certain substances to cross while blocking others. This is essential for the cell to control its internal environment."
+        },
+        {
+          "id": "ch2-t2-e3",
+          "type": "mcq",
+          "question": "A piece of potato placed in strong salt water will:",
+          "options": [
+            "Swell and gain weight",
+            "Stay exactly the same",
+            "Shrink and lose weight",
+            "Turn green"
+          ],
+          "answer": "Shrink and lose weight",
+          "explanation": "Salt water has less water (more solute) than the inside of the potato cells. Water moves out of the potato by osmosis, so the potato shrinks."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t2-m1",
+          "type": "short",
+          "question": "Distinguish between osmosis and diffusion.",
+          "answer": "Diffusion is the movement of any particles (gas, dissolved substances, etc.) from a region of higher concentration to a region of lower concentration. It does not require a membrane — for example, the smell of biryani diffuses through a room. Osmosis is a specific kind of diffusion — only of water, and only across a selectively permeable membrane. So all osmosis is diffusion, but not all diffusion is osmosis.",
+          "explanation": "Osmosis is a special case of diffusion limited to water through a membrane."
+        },
+        {
+          "id": "ch2-t2-m2",
+          "type": "short",
+          "question": "When grandmothers soak chana (chickpeas) overnight in water before cooking, the chana swells up. Explain using the idea of osmosis.",
+          "answer": "Dry chana contains little water but many dissolved substances inside its cells. When placed in water, the surrounding water has much more water (and fewer solutes) than the inside of the chana cells. Water enters the chana cells by osmosis through their cell membranes until the concentrations balance. As the cells take up water, they swell, and the chana grows visibly larger and softer.",
+          "explanation": "This is a daily kitchen example of osmosis."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t2-h1",
+          "type": "long",
+          "question": "A child eats a very salty snack and then drinks plain water. Explain at the cellular level what is happening to the cells lining their stomach and intestines.",
+          "answer": "When the child eats salty food, the contents of the stomach and intestines become high in salt, lowering the water concentration outside the cells lining the gut. By osmosis, water leaves the gut cells through their selectively permeable membranes, moving toward the saltier interior. This is why salty food can make us feel thirsty — the body has lost water from cells. When the child drinks plain water afterwards, the water dilutes the salt in the gut. Now the water concentration outside the cells is higher than inside, so water moves back into the cells by osmosis, restoring their normal size. This is why we naturally drink water after salty food.",
+          "explanation": "This connects daily experience (thirst after salty food) to the underlying cellular process."
+        }
+      ]
+    },
+    {
+      "topic": "Organelles and Their Functions",
+      "easy": [
+        {
+          "id": "ch2-t3-e1",
+          "type": "mcq",
+          "question": "The organelle that produces energy (ATP) for the cell is the:",
+          "options": ["Nucleus", "Mitochondrion", "Golgi apparatus", "Ribosome"],
+          "answer": "Mitochondrion",
+          "explanation": "Mitochondria are often called the 'power plants' of the cell because they generate ATP — the cell's energy currency — from glucose and oxygen."
+        },
+        {
+          "id": "ch2-t3-e2",
+          "type": "fill",
+          "question": "The control centre of the cell, which contains DNA, is the ______.",
+          "answer": "nucleus",
+          "explanation": "The nucleus holds the DNA and directs the cell's activities by controlling which proteins are made and when."
+        },
+        {
+          "id": "ch2-t3-e3",
+          "type": "mcq",
+          "question": "Which of these is found in plant cells but NOT in animal cells?",
+          "options": ["Nucleus", "Mitochondria", "Cell wall", "Ribosomes"],
+          "answer": "Cell wall",
+          "explanation": "The rigid cellulose cell wall is unique to plant cells. Both plant and animal cells have nucleus, mitochondria, and ribosomes."
+        },
+        {
+          "id": "ch2-t3-e4",
+          "type": "mcq",
+          "question": "Photosynthesis happens in which organelle?",
+          "options": ["Mitochondrion", "Chloroplast", "Lysosome", "Ribosome"],
+          "answer": "Chloroplast",
+          "explanation": "Chloroplasts contain the green pigment chlorophyll, which captures sunlight and powers photosynthesis. Found only in plant cells."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t3-m1",
+          "type": "short",
+          "question": "Compare the structure of a plant cell with that of an animal cell. Mention at least three differences.",
+          "answer": "Differences between plant and animal cells: (1) Plant cells have a rigid CELL WALL made of cellulose outside the cell membrane; animal cells do not. (2) Plant cells have a LARGE CENTRAL VACUOLE that stores water and helps the cell stay firm; animal cells have only small vacuoles. (3) Plant cells contain CHLOROPLASTS for photosynthesis; animal cells do not have chloroplasts. (Both cell types have a nucleus, mitochondria, ribosomes, endoplasmic reticulum, and Golgi apparatus.)",
+          "explanation": "Three key distinctions: cell wall, large vacuole, and chloroplasts — all in plant cells, none in animal cells."
+        },
+        {
+          "id": "ch2-t3-m2",
+          "type": "short",
+          "question": "Muscle cells contain far more mitochondria than skin cells. Explain why.",
+          "answer": "Muscle cells contract and relax constantly to produce movement. Contraction requires large amounts of energy in the form of ATP. Mitochondria are the organelles that produce ATP from glucose and oxygen, so muscle cells need many mitochondria to meet their high energy demands. Skin cells, in contrast, mainly form a protective layer and require much less ATP, so they have fewer mitochondria.",
+          "explanation": "The number of mitochondria in a cell type matches its energy needs."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t3-h1",
+          "type": "long",
+          "question": "Pick any one organelle (other than the nucleus) and explain in detail what would happen to the cell if that organelle stopped working. Use specific examples to illustrate.",
+          "answer": "Example: If MITOCHONDRIA stopped working, the cell would lose its ability to produce ATP. Without ATP, the cell could not perform any energy-requiring task: it could not move, contract (in muscle), pump ions (in nerve cells), build proteins, or even maintain its own structure. The cell would shut down within minutes and die soon after. In a multicellular organism, if many mitochondria stop working at once (as in some inherited diseases called mitochondrial disorders), the patient feels weak, tires easily, and the most energy-hungry tissues (muscle, heart, brain) are affected first. (Other valid organelles: lysosomes — recycling stops, the cell fills with damaged components; Golgi apparatus — proteins are not packaged and shipped; ribosomes — no proteins are built. Each is acceptable with appropriate reasoning.)",
+          "explanation": "This question tests whether the student understands the link between organelle function and overall cell survival."
+        }
+      ]
+    },
+    {
+      "topic": "Cell Division and Levels of Organisation",
+      "easy": [
+        {
+          "id": "ch2-t4-e1",
+          "type": "mcq",
+          "question": "Cell division that produces two identical daughter cells for growth and repair is called:",
+          "options": ["Meiosis", "Mitosis", "Osmosis", "Diffusion"],
+          "answer": "Mitosis",
+          "explanation": "Mitosis produces two identical daughter cells and is used for growth and tissue repair throughout the body."
+        },
+        {
+          "id": "ch2-t4-e2",
+          "type": "fill",
+          "question": "The kind of cell division that produces sex cells (sperm and eggs) and halves the chromosome number is called ______.",
+          "answer": "meiosis",
+          "explanation": "Meiosis halves the chromosome number so that when a sperm and egg combine, the offspring has the right total. It also shuffles genes, which is why siblings differ."
+        },
+        {
+          "id": "ch2-t4-e3",
+          "type": "mcq",
+          "question": "The correct order of levels of organisation in a multicellular organism is:",
+          "options": [
+            "Organ → Tissue → Cell → Organism → Organ System",
+            "Cell → Tissue → Organ → Organ System → Organism",
+            "Organism → Organ → Tissue → Cell → Organ System",
+            "Tissue → Cell → Organ → Organ System → Organism"
+          ],
+          "answer": "Cell → Tissue → Organ → Organ System → Organism",
+          "explanation": "Cells form tissues, tissues form organs, organs form organ systems, and all systems together form the organism."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch2-t4-m1",
+          "type": "short",
+          "question": "Why are unicellular organisms like amoeba able to perform all life functions with just one cell, while humans need trillions?",
+          "answer": "A single amoeba cell is large enough and complex enough to do all the necessary life functions itself — it moves by changing shape, captures food by engulfing smaller organisms, digests food in vacuoles, and exchanges gases through its membrane. Its small body size allows enough surface area for these direct exchanges. In contrast, a human body is far too large for any single cell to support — different functions need specialised cells (nerve cells, muscle cells, immune cells, etc.). So humans evolved trillions of specialised cells organised into tissues, organs, and systems.",
+          "explanation": "Size and complexity drive the need for specialisation."
+        },
+        {
+          "id": "ch2-t4-m2",
+          "type": "short",
+          "question": "Explain how a single fertilised egg eventually becomes a complete human being.",
+          "answer": "The fertilised egg divides by mitosis into two daughter cells. These divide again to form four, then eight, then sixteen, and so on. As the number grows into the millions and billions, the cells begin to SPECIALISE — some become muscle, some become bone, some become skin, some become nerve cells. Specialised cells of the same type cluster to form TISSUES; tissues join to form ORGANS; organs work together as ORGAN SYSTEMS; and all systems together make up the complete ORGANISM. Every cell starts with the same DNA, but different cells use different parts of that DNA to become what they need to be.",
+          "explanation": "This is the foundation of developmental biology — repeated mitosis plus specialisation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch2-t4-h1",
+          "type": "long",
+          "question": "You and your brother have the same parents but look different from each other. Using the ideas of meiosis and fertilisation, explain why this is the case.",
+          "answer": "When your father's sperm cells were made, the cells in his body underwent meiosis. Meiosis shuffles the chromosomes — some of his mother's chromosomes get mixed with some of his father's chromosomes in each sperm cell. So every sperm contains a different mixture. The same happens with your mother's egg cells — each egg is a unique random mix of her parents' chromosomes. When a sperm met an egg to make you, it was a particular random combination. When a different sperm met a different egg to make your brother, it was a completely different combination. So you and your brother both received DNA from the same parents, but the specific MIX of genes you each inherited is different. That is why you look related but not identical. This shuffling by meiosis is one of the engines of genetic variety, and over many generations, it helps species adapt to changing environments.",
+          "explanation": "Meiosis-driven shuffling plus random fertilisation explains why siblings differ."
+        }
+      ]
+    }
+  ]
+}
