@@ -1,0 +1,402 @@
+{
+  "topics": [
+    {
+      "topic": "What is Development — Different Goals for Different People",
+      "easy": [
+        {
+          "id": "T-D-1",
+          "type": "mcq",
+          "question": "Which of the following is most likely to be the development goal of a landless agricultural labourer?",
+          "options": ["A foreign vacation every year", "More days of work and a higher daily wage", "A bigger sugarcane crop", "An expressway from Delhi to Mumbai"],
+          "answer": "More days of work and a higher daily wage",
+          "explanation": "Different people have different development goals. For a landless labourer, the most immediate goal is steady employment and a fair wage so that the family can eat and the children can stay in school."
+        },
+        {
+          "id": "T-D-2",
+          "type": "mcq",
+          "question": "What might development mean for a prosperous farmer in Punjab?",
+          "options": ["More days of work as a daily wage labourer", "A higher Minimum Support Price and assured electricity", "Free midday meals at a government school", "Cheaper bottled water"],
+          "answer": "A higher Minimum Support Price and assured electricity",
+          "explanation": "A prosperous farmer already has food security. His development goals are better crop prices, irrigation, and reliable power for tube-wells."
+        },
+        {
+          "id": "T-D-3",
+          "type": "fill",
+          "question": "Development goals are ____ for different people because their lives are different.",
+          "answer": "different",
+          "explanation": "The chapter emphasises that there is no single definition of development — it depends on who is being asked."
+        },
+        {
+          "id": "T-D-4",
+          "type": "tf",
+          "question": "All people in a country always have the same development goals.",
+          "answer": "False",
+          "explanation": "Different people in different positions — a farmer, a labourer, an urban slum dweller, a tribal youth — have very different goals. Development must respect these differences."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-5",
+          "type": "short",
+          "question": "Give three examples of how development goals can conflict between different groups of people.",
+          "answer": "(1) A dam on a river brings electricity and irrigation to one region but drowns villages and displaces tribal families in another. (2) A highway cuts travel time for commuters and trucks but destroys wildlife corridors and pushes wild animals into village boundaries. (3) A shopping mall makes the mall owner and brand shops rich but wipes out 80 small vendors who used to operate from the same spot.",
+          "explanation": "These conflicts force us to ask: whose development, and at whose cost?"
+        },
+        {
+          "id": "T-D-6",
+          "type": "short",
+          "question": "Why is development not a single number that goes up for everyone at once?",
+          "answer": "Development is a set of changes that benefit some groups while imposing costs on others. The forest loses when a highway is built. The tribal family loses when a dam is built. The vendor loses when a mall opens. A single national number like GDP cannot capture these gains and losses simultaneously. Development must be measured by asking whose life improves and whose life gets worse.",
+          "explanation": "This is why economists insist on multiple indicators rather than relying on GDP alone."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-7",
+          "type": "long",
+          "question": "Explain with examples why different categories of people may have different development goals. Why is it important for policymakers to recognise this diversity?",
+          "answer": "A landless labourer's primary need is steady employment and adequate wages so his family can eat — for him, development is more workdays and higher pay. A prosperous farmer already has food security; his development needs are higher Minimum Support Prices, dependable electricity for tube-wells, and access to good markets. A young tribal woman from Jharkhand may define development as the right to continue her education beyond Class 8, freedom to choose her marriage partner, and a government job that respects her qualifications — for her, dignity matters as much as money. A boy from an urban Mumbai slum sees development as functioning toilets, reliable water supply for more than a few hours, and a school where teachers actually teach. None of these answers is wrong. Each describes development from where the person stands. Policymakers must recognise this diversity because a policy that delivers what a rich farmer wants may do nothing for a landless labourer or a tribal girl. A development policy that ignores the poorest, or treats women's needs as secondary, fails the very people it claims to help. Honest development planning therefore requires listening to the goals of multiple groups, especially the weakest, before designing schemes.",
+          "explanation": "A complete answer should give multiple examples and explain why policy must reflect that diversity."
+        }
+      ]
+    },
+    {
+      "topic": "National Income, Per Capita Income, and World Bank Classification",
+      "easy": [
+        {
+          "id": "T-D-8",
+          "type": "mcq",
+          "question": "Per capita income is calculated as:",
+          "options": ["National income × population", "National income ÷ total population", "Total exports ÷ population", "GDP ÷ number of workers"],
+          "answer": "National income ÷ total population",
+          "explanation": "Per capita income is the national income divided by the total population, giving the average income per person per year."
+        },
+        {
+          "id": "T-D-9",
+          "type": "mcq",
+          "question": "According to the World Development Report 2019, countries with per capita income of US $49,300 or above per year are classified as:",
+          "options": ["Low-income", "Middle-income", "High-income", "Developing"],
+          "answer": "High-income",
+          "explanation": "The World Bank uses per capita income to classify countries: high-income (about $49,300 or above), low-income (about $2,500 or less), and middle-income in between."
+        },
+        {
+          "id": "T-D-10",
+          "type": "mcq",
+          "question": "According to the World Development Report 2019, India is classified as a:",
+          "options": ["High-income country", "Low-middle-income country", "Low-income country", "Newly developed country"],
+          "answer": "Low-middle-income country",
+          "explanation": "With a per capita income of about US $6,700, India falls into the low-middle-income category in the World Bank classification."
+        },
+        {
+          "id": "T-D-11",
+          "type": "fill",
+          "question": "The total value of all final goods and services produced within a country during a year is called the ____ ____.",
+          "answer": "national income",
+          "explanation": "National income, often measured as Gross Domestic Product (GDP), is the total monetary value of goods and services produced inside a country in a year."
+        },
+        {
+          "id": "T-D-12",
+          "type": "tf",
+          "question": "Per capita income is a good way to compare the size of two economies.",
+          "answer": "False",
+          "explanation": "Per capita income compares average wellbeing per person, not the total size of an economy. National income (GDP) is the measure of an economy's overall size."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-13",
+          "type": "short",
+          "question": "Why is average income a useful but limited measure of development?",
+          "answer": "Average income — calculated as national income divided by total population — is useful because it gives a single number to compare countries and track progress over time. But it is limited because averages hide inequality. If two friends each earn ₹50,000, the average is ₹50,000. If one earns ₹1,00,000 and the other earns nothing, the average is still ₹50,000. The number does not show that one person has comfort and the other has hunger. Per capita income therefore cannot reveal how income is distributed across society.",
+          "explanation": "The example of Anu and Bina shows why averages can mislead policymakers."
+        },
+        {
+          "id": "T-D-14",
+          "type": "short",
+          "question": "Explain how the World Bank classifies countries and where India fits.",
+          "answer": "The World Bank publishes the World Development Report each year and uses per capita income to classify countries into three groups: high-income countries with per capita income of about US $49,300 or above per year, low-income countries with per capita income of about US $2,500 or less, and middle-income countries in between. India, with a per capita income of around US $6,700 (2019), falls into the low-middle-income category. This classification helps compare countries but does not tell us about distribution, public goods, or human wellbeing.",
+          "explanation": "Use the figures from the World Development Report 2019 as given in the chapter."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-15",
+          "type": "long",
+          "question": "Compare per capita income and average income as measures of development. Why might both fail to reflect the wellbeing of the poorest section of society?",
+          "answer": "Per capita income and average income are essentially the same — they divide the national income by the total population to give an average figure per person. They are useful because they allow comparison between countries and across time, and the World Bank uses per capita income to classify countries as high-income, middle-income, or low-income. However, both measures fail in the same way: they ignore the distribution of income. If a country's national income rises mainly because the top 10% have become much richer, the average will rise too — but the bottom 50% may be no better off, or even worse off. Imagine two friends Anu and Bina each earning ₹50,000 a month — the average is ₹50,000. If next month Anu earns ₹1,00,000 and Bina earns nothing, the average is still ₹50,000. The number lies. In India, recent inequality data shows that the top 10% of households now hold a disproportionate share of national income. So per capita income may rise without the poorest tasting that rise. For this reason, true development assessment requires looking at distribution — not just the average — and at non-income indicators like life expectancy, literacy, IMR, and public services that capture how the poorest are actually living.",
+          "explanation": "Strong answers should explicitly use the Anu-Bina example or a similar one and link it to inequality in India."
+        }
+      ]
+    },
+    {
+      "topic": "Beyond Income — Public Facilities, Equity, and Wellbeing",
+      "easy": [
+        {
+          "id": "T-D-16",
+          "type": "mcq",
+          "question": "Which of the following is the BEST example of a public good?",
+          "options": ["A branded car", "A government hospital", "A private gym membership", "A foreign vacation"],
+          "answer": "A government hospital",
+          "explanation": "Public goods are services that the government provides to all citizens. A government hospital serves everyone, not only those who can pay."
+        },
+        {
+          "id": "T-D-17",
+          "type": "mcq",
+          "question": "Which of these is NOT something money can easily buy for an individual?",
+          "options": ["A new mobile phone", "Branded clothes", "Clean air and a pollution-free environment", "A private school admission"],
+          "answer": "Clean air and a pollution-free environment",
+          "explanation": "An individual's income cannot easily buy clean air. Environmental quality depends on collective public action — laws, regulation, and government policy."
+        },
+        {
+          "id": "T-D-18",
+          "type": "fill",
+          "question": "Schools, hospitals, roads, water, and public transport are all examples of ____ ____.",
+          "answer": "public goods",
+          "explanation": "Public goods are services provided by the state for all citizens and shape the quality of life beyond what private income can buy."
+        },
+        {
+          "id": "T-D-19",
+          "type": "tf",
+          "question": "A country with a high per capita income is automatically a country with good public services for all its citizens.",
+          "answer": "False",
+          "explanation": "A high per capita income tells us nothing about distribution. Even rich countries can have poor public services for marginalised groups, and rich Indian cities can have failing public schools and hospitals."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-20",
+          "type": "short",
+          "question": "Why is it said that 'money cannot buy a pollution-free environment'? Give an example.",
+          "answer": "Some things essential to wellbeing — like clean air, safe water at the source, and a stable climate — cannot be bought individually because they depend on collective action. A businessman in Delhi may earn ₹5 lakh a month but he and his children must still breathe the same hazardous winter air as everyone else. His income cannot replace lungs damaged by years of smog. Bhutan, with about one-third of India's per capita income, has clean air, 70% forest cover, and pristine rivers because its government has prioritised the environment. By GDP it is poor; by things money cannot buy, it is rich.",
+          "explanation": "Use the Delhi-Bhutan contrast or a similar example to bring out why income has limits."
+        },
+        {
+          "id": "T-D-21",
+          "type": "short",
+          "question": "Explain why equity and social justice are essential parts of development.",
+          "answer": "Development cannot be measured only in average income because averages hide injustice. If a Dalit student with the same marks as an upper-caste student is denied a job, his income remains low not for lack of effort but because of discrimination. If a girl in a rural household is married off at 16 because her family thinks education is wasted on girls, rising per capita income will not reach her. Real development requires equality before the law, freedom from caste, gender, religious, and disability-based discrimination, and the ability of every citizen — Dalit, Adivasi, woman, minority, disabled — to lead a life of dignity. Without these, GDP growth is hollow.",
+          "explanation": "Equity and social justice are central to the modern definition of development."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-22",
+          "type": "long",
+          "question": "'Beyond income, public facilities and equity are essential to development.' Discuss with examples from the Indian context.",
+          "answer": "Development cannot be reduced to per capita income because human wellbeing depends on much more than personal earnings. Public facilities such as schools, hospitals, water supply, electricity, public transport, and ration shops shape daily life for every citizen. A rich man in a city with bad public goods is poorer in real terms than a moderately-off man in a city with good ones. Consider Delhi — a businessman may earn ₹5 lakh a month but still breathes hazardous winter air; his income cannot buy lungs. Or consider Mumbai's slums — a child may have parents in steady jobs but if the school he attends has no teachers and the toilets do not work, his future is constrained. Equity is equally vital. India's per capita income has risen sharply, but caste discrimination still excludes Dalit graduates from jobs they deserve. Gender bias still pulls Indian girls out of school in rural Bihar and UP. The child sex ratio in some prosperous states like Punjab and Haryana has been among the lowest in the country — proving that wealth does not buy gender justice. The Kerala-Punjab comparison makes the same point: Kerala invested in public schools, primary health centres, and women's literacy, and now has lower infant mortality, higher literacy, and longer life expectancy than richer Punjab. Real development thus requires three things together — adequate income, strong public facilities for all, and equity that protects the dignity of every citizen regardless of caste, gender, or religion. A country that ignores any of these cannot honestly claim to be developing.",
+          "explanation": "Strong answers should weave the public goods argument, the equity argument, and at least one Indian example like Kerala-Punjab or Delhi pollution."
+        }
+      ]
+    },
+    {
+      "topic": "Human Development Index (HDI) and UNDP Human Development Report",
+      "easy": [
+        {
+          "id": "T-D-23",
+          "type": "mcq",
+          "question": "The Human Development Index (HDI) is published every year by:",
+          "options": ["The World Bank", "The IMF", "The UNDP (United Nations Development Programme)", "The WTO"],
+          "answer": "The UNDP (United Nations Development Programme)",
+          "explanation": "The UNDP publishes the Human Development Report annually, in which it ranks countries by HDI."
+        },
+        {
+          "id": "T-D-24",
+          "type": "mcq",
+          "question": "Which of the following is NOT a component of HDI?",
+          "options": ["Life expectancy at birth", "Mean years of schooling", "Per capita income (PPP)", "Total exports"],
+          "answer": "Total exports",
+          "explanation": "HDI combines life expectancy, education (mean and expected years of schooling), and per capita income (PPP). Exports are not part of HDI."
+        },
+        {
+          "id": "T-D-25",
+          "type": "mcq",
+          "question": "The HDI score is a number between:",
+          "options": ["0 and 10", "0 and 100", "0 and 1", "1 and 1000"],
+          "answer": "0 and 1",
+          "explanation": "HDI scores range from 0 to 1, with values closer to 1 indicating higher human development."
+        },
+        {
+          "id": "T-D-26",
+          "type": "fill",
+          "question": "The economist ____ ____ along with Amartya Sen designed the Human Development Index in 1990.",
+          "answer": "Mahbub ul Haq",
+          "explanation": "The Pakistani economist Mahbub ul Haq, along with Indian Nobel laureate Amartya Sen, conceptualised the HDI in 1990 for the first Human Development Report."
+        },
+        {
+          "id": "T-D-27",
+          "type": "tf",
+          "question": "India's HDI rank (HDR 2020) is higher than Bangladesh and Sri Lanka.",
+          "answer": "False",
+          "explanation": "India ranked 131, Bangladesh 133, but in earlier reports Bangladesh sometimes ranked above India. Sri Lanka ranks much higher (72), well above India."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-28",
+          "type": "short",
+          "question": "Name the three components of the Human Development Index and explain why each was chosen.",
+          "answer": "The three components of HDI are: (1) Life expectancy at birth — chosen because it captures the joint quality of health, nutrition, water, sanitation, and public safety; a society that lets its people live longer is doing something right. (2) Education — measured as mean years of schooling of adults plus expected years of schooling of children — chosen because an educated population can earn better, take charge of its rights, and pass opportunity to the next generation. (3) Per capita income adjusted for Purchasing Power Parity (PPP) — chosen because it captures the material standard of living, adjusted for what the income can actually buy locally. These three together give a more complete picture than GDP alone.",
+          "explanation": "Each component captures a different dimension of human wellbeing: health, knowledge, and material standard of living."
+        },
+        {
+          "id": "T-D-29",
+          "type": "short",
+          "question": "Why was the HDI introduced in 1990 even though per capita income was already being measured?",
+          "answer": "By the 1980s, economists realised that per capita income alone gave a misleading picture of development. Countries with similar incomes had very different life expectancies and literacy rates, and rich countries could still have huge inequalities and weak public services. Mahbub ul Haq and Amartya Sen argued that development should be defined by the expansion of human freedoms and capabilities — to live long, healthy, educated lives — and not by income alone. In 1990, the UNDP launched the first Human Development Report introducing the HDI as a composite measure that combined health (life expectancy), education (years of schooling), and income (PPP) into a single number. The aim was to give policymakers a measure that put people, not money, at the centre.",
+          "explanation": "The HDI was a deliberate intellectual challenge to GDP-centred development thinking."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-30",
+          "type": "long",
+          "question": "Why does Sri Lanka rank higher than India on HDI despite having a smaller economy? What does this teach us about development?",
+          "answer": "In the Human Development Report 2020, Sri Lanka ranked 72 with an HDI of 0.782, well above India which ranked 131 with an HDI of 0.645. Sri Lanka's per capita income is roughly twice India's, but the bigger story is the human indicators. Sri Lanka's life expectancy is about 77 years against India's 69.7 years. Its literacy is over 92% against India's 77%. Its infant mortality rate is far lower than India's 28 per 1,000. Why? Sri Lanka has invested heavily in public health and free education for decades. Every Sri Lankan child has access to free public schooling up to university, and the state provides comprehensive primary health care across the island. India, despite a much larger economy, spends only about 1.5-1.8% of GDP on public health, while Sri Lanka spends a much higher share and runs a stronger public health system. The lesson is that development is not the size of the economy but the use of public resources for human ends. A smaller country that spends its budget on schools, primary health centres, immunisation, and nutrition can deliver longer, healthier, more educated lives than a larger country that lets these services decay. Bangladesh's recent rise in HDI tells the same story — improvements in maternal health, female education, and rural employment have lifted human development faster than income growth alone. Development, in short, is about choosing people over showpieces.",
+          "explanation": "Strong answers should explicitly mention Sri Lanka's investment in public health and education and contrast with India's low public spending."
+        }
+      ]
+    },
+    {
+      "topic": "Kerala-Punjab Puzzle and Indian Indicators",
+      "easy": [
+        {
+          "id": "T-D-31",
+          "type": "mcq",
+          "question": "Which Indian state has the lowest Infant Mortality Rate?",
+          "options": ["Bihar", "Punjab", "Kerala", "Uttar Pradesh"],
+          "answer": "Kerala",
+          "explanation": "Kerala's IMR is around 6 per 1,000 live births, the lowest in India, while Punjab's is around 21 and Bihar's around 32."
+        },
+        {
+          "id": "T-D-32",
+          "type": "mcq",
+          "question": "Infant Mortality Rate (IMR) is defined as:",
+          "options": ["Deaths of babies before age 5 per 1000", "Deaths of babies before their first birthday per 1000 live births", "Total deaths in a year", "Total live births per 1000 women"],
+          "answer": "Deaths of babies before their first birthday per 1000 live births",
+          "explanation": "IMR measures how many infants die before completing one year of age per 1,000 live births in a given year."
+        },
+        {
+          "id": "T-D-33",
+          "type": "mcq",
+          "question": "Net Attendance Ratio differs from enrolment ratio because:",
+          "options": ["It includes private school students", "It measures children who actually attend school, not just those on the register", "It only counts boys", "It excludes Class 12 students"],
+          "answer": "It measures children who actually attend school, not just those on the register",
+          "explanation": "Net Attendance Ratio is the share of school-age children actually attending school, while enrolment ratio only counts names on the register, which can be inflated."
+        },
+        {
+          "id": "T-D-34",
+          "type": "fill",
+          "question": "Body Mass Index (BMI) is calculated as weight in kg divided by ____ in metres squared.",
+          "answer": "height",
+          "explanation": "BMI = weight (kg) ÷ height² (m²). A BMI below 18.5 in adults indicates undernourishment."
+        },
+        {
+          "id": "T-D-35",
+          "type": "tf",
+          "question": "Kerala has a higher per capita income but lower literacy rate than Punjab.",
+          "answer": "False",
+          "explanation": "Kerala has both a slightly higher per capita income and a much higher literacy rate (94%) than Punjab (76%)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-36",
+          "type": "short",
+          "question": "Why does Kerala perform better than Punjab on most human development indicators despite roughly similar per capita incomes?",
+          "answer": "Kerala has chosen for decades to invest its public revenues in schools, primary health centres, ration shops, drinking water, and women's education, even when it was a poorer state. It paid teachers and ASHA workers reliably, ensured midday meals in schools, and built a dense network of government hospitals. Punjab, by contrast, spent more on private wealth-creating inputs like tractors, tube-wells, and fertilisers — which made farmers richer but did not build a comparable public health and education system. The result: Kerala has an IMR of about 6 against Punjab's 21, literacy of 94% against 76%, and a higher net attendance ratio. The lesson is that public investment in human capital — schools and health — shapes wellbeing more directly than private wealth does.",
+          "explanation": "The Kerala Model is studied across the world precisely for this reason."
+        },
+        {
+          "id": "T-D-37",
+          "type": "short",
+          "question": "Why is Public Health Spending a critical indicator of development? Compare India with other countries.",
+          "answer": "Public health spending — the share of GDP a government spends on public healthcare — directly shapes infant mortality, maternal mortality, life expectancy, and resilience to epidemics. When the state pays for primary health centres, vaccines, ASHA workers, and government hospitals, even the poorest citizen can access care. India spends only about 1.5-1.8% of its GDP on public health, far below Norway's 9% and Cuba's 10%. The result shows in our high IMR (around 28) and high stunting rates among children (35.5% in NFHS-5). Countries that prioritise public health — like Sri Lanka, Cuba, and Costa Rica — achieve life expectancies close to rich nations at a fraction of the per capita income. Low public health spending means children die who did not have to, and that is a development failure.",
+          "explanation": "Public health spending is a direct lever of human development."
+        },
+        {
+          "id": "T-D-38",
+          "type": "short",
+          "question": "What is the significance of the child sex ratio as a development indicator?",
+          "answer": "The child sex ratio — the number of girls per 1,000 boys aged 0-6 — measures whether a society values its girls equally. A falling child sex ratio indicates that girls are being aborted before birth (female foeticide) or neglected after birth (poor nutrition, less healthcare). India's child sex ratio fell from 945 in 1991 to 919 in 2011 — a warning that economic growth alone does not buy gender justice. Tellingly, some of India's most prosperous states like Punjab and Haryana have had among the worst child sex ratios. This shows that rising income can coexist with worsening gender bias, and that development must explicitly include the dignity and survival of girls, not just the rise of average income.",
+          "explanation": "Sex ratio reveals a dimension of injustice that GDP completely misses."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-39",
+          "type": "long",
+          "question": "Compare Kerala, Punjab, and Bihar across the major human development indicators (IMR, literacy, life expectancy, NAR) and explain what drives the differences.",
+          "answer": "Kerala stands at the top of Indian states across nearly every human development indicator. Its Infant Mortality Rate is around 6 per 1,000 live births, against Punjab's 21 and Bihar's 32. Its literacy rate is 94%, against Punjab's 76% and Bihar's 62%. Its net attendance ratio in Classes 9-12 is about 83%, against Punjab's 68% and Bihar's 43%. Its life expectancy is around 75 years, several years ahead of Punjab and Bihar. The cause of these gaps lies less in per capita income — Kerala's income is only slightly higher than Punjab's — and more in policy choices. Kerala invested early and consistently in public schools, primary health centres, women's literacy, and decentralised governance. Its ASHA workers and panchayat-led health drives reach even the poorest household. Punjab grew rich through Green Revolution agriculture and channelled wealth into private tube-wells, tractors, and inputs, but did not build comparable public health systems; the result is a richer but sicker population, with low female literacy and poor sex ratios in many districts. Bihar lagged in both income and public services for decades, hit by weak governance, agrarian distress, and migration, leaving it with India's highest IMR and lowest literacy. The big lesson: public investment in education and health is the most powerful predictor of human development. Kerala proves a state can leapfrog richer states by prioritising its people; Bihar shows what happens when both growth and public services lag.",
+          "explanation": "A complete answer compares specific numbers across the three states and links the differences to public investment choices."
+        },
+        {
+          "id": "T-D-40",
+          "type": "long",
+          "question": "Why are non-income indicators like IMR, literacy, BMI, sex ratio, and net attendance ratio essential to measuring development? Use Indian examples.",
+          "answer": "Per capita income tells us how much the average citizen earns, but it cannot tell us whether children are surviving, learning, growing, or being treated as equals. Each non-income indicator illuminates a different dimension of human reality that income hides. The Infant Mortality Rate (IMR) measures the joint health of mothers and babies, capturing nutrition, water quality, vaccination coverage, and the strength of primary health care. India's IMR has fallen from 57 (2005) to 28 (2020) thanks largely to ASHAs and immunisation drives — none of which shows up in GDP. The literacy rate measures whether the next generation can read its rights, understand instructions, and earn more — Kerala's 94% literacy against Bihar's 62% maps onto vastly different futures for their children. Body Mass Index reveals undernourishment: NFHS-5 (2019-21) showed 19% of Indian women are undernourished and 35.5% of children are stunted, even as the economy grows — proving that hunger is a development failure, not just a poverty problem. The Net Attendance Ratio replaces inflated enrolment numbers with the honest count of children who actually walk into school. The sex ratio exposes gender injustice — India's child sex ratio of 919 (2011) warns that rising income has not stopped female foeticide. Each indicator captures one organ of the development body. Together they form a check-up. A country that obsesses only over per capita income is like a doctor who weighs the patient but never checks the blood pressure, the eyesight, or the heart. Honest development requires all the readings, with special attention to the worst-off groups.",
+          "explanation": "Strong answers should explain each indicator's purpose and link it to Indian data."
+        }
+      ]
+    },
+    {
+      "topic": "Sustainable Development",
+      "easy": [
+        {
+          "id": "T-D-41",
+          "type": "mcq",
+          "question": "Which commission gave the famous definition of sustainable development as 'meeting the needs of the present without compromising the ability of future generations to meet their own needs'?",
+          "options": ["The Planning Commission", "The Brundtland Commission, 1987", "The Mahbub ul Haq Commission, 1990", "The Kyoto Commission, 1997"],
+          "answer": "The Brundtland Commission, 1987",
+          "explanation": "The Brundtland Commission's report, Our Common Future (1987), gave this still-quoted definition of sustainable development."
+        },
+        {
+          "id": "T-D-42",
+          "type": "mcq",
+          "question": "Which of the following is a non-renewable resource?",
+          "options": ["Sunlight", "Wind", "Coal", "Forest grown sustainably"],
+          "answer": "Coal",
+          "explanation": "Coal, oil, and natural gas are fossil fuels and non-renewable. Sunlight, wind, and sustainably managed forests are renewable."
+        },
+        {
+          "id": "T-D-43",
+          "type": "fill",
+          "question": "India has set a target of generating ____ ____ of renewable energy by 2030.",
+          "answer": "500 GW",
+          "explanation": "India has committed to one of the world's most ambitious renewable energy targets — 500 gigawatts by 2030."
+        },
+        {
+          "id": "T-D-44",
+          "type": "tf",
+          "question": "Groundwater is an unlimited resource that cannot run out.",
+          "answer": "False",
+          "explanation": "Groundwater is a finite resource. India's groundwater tables have fallen 4-10 metres in many districts since 1980 because extraction exceeds recharge."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-D-45",
+          "type": "short",
+          "question": "What are the three main principles of sustainable development?",
+          "answer": "(1) Use renewable resources at a rate that allows them to replenish — a forest growing 1,000 cubic metres of wood a year should not be cut at 2,000 cubic metres; a groundwater aquifer recharged at 50 cm a year should not be pumped at 100 cm. (2) Shift away from non-renewable resources by replacing coal, oil, and gas with solar, wind, and hydro power. (3) Reduce, reuse, and recycle — operate a circular economy in which materials are kept in use rather than discarded as waste. Together these principles ensure that development today does not become destruction tomorrow.",
+          "explanation": "These three steps together make development sustainable rather than extractive."
+        },
+        {
+          "id": "T-D-46",
+          "type": "short",
+          "question": "Give two examples of how unsustainable development is harming India today.",
+          "answer": "(1) Groundwater depletion: India's groundwater tables have fallen 4-10 metres across many districts since 1980. In Punjab, farmers are now sinking tube-wells more than 100 metres deep because the Green Revolution model of irrigation drew water faster than nature could replenish it; many of these aquifers may run dry within a generation. (2) Air pollution: northern India's cities — Delhi, Lucknow, Kanpur, Patna — record hazardous winter air quality every year as a result of vehicle exhaust, coal-based power, crop stubble burning, and dust. Children breathing this air develop lifelong respiratory problems. These two examples show that economic growth that ignores ecological limits eventually undermines the very lives it claims to improve.",
+          "explanation": "Real-world examples make the abstract idea of sustainability concrete."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-D-47",
+          "type": "long",
+          "question": "'Sustainable development is the only honest definition of development today.' Discuss with reference to renewable and non-renewable resources, and the Brundtland definition.",
+          "answer": "Development for most of the twentieth century was measured by how fast countries could produce more goods, use more energy, and raise per capita income — with little thought for the planet that supplied the raw materials and absorbed the waste. By the late twentieth century, the cost of that thinking was visible: shrinking forests, falling groundwater tables, polluted rivers, hazardous air, dying coral reefs, and a warming climate. In 1987, the UN-appointed Brundtland Commission defined sustainable development as 'development that meets the needs of the present without compromising the ability of future generations to meet their own needs.' This definition forces a moral question into economics: do we have the right to use up the planet's resources so completely that our grandchildren inherit dry rivers, salty soils, dead forests, and unbearable summers? The honest answer is no. Sustainability therefore requires three changes. First, renewable resources — forests, groundwater, fisheries — must be used at the rate they replenish; cutting forests at twice their growth rate is theft from the future. Second, non-renewable resources like coal, oil, and gas must be replaced by renewable sources like solar, wind, and hydro power; India has committed to 500 GW of renewable energy by 2030, among the world's most ambitious targets. Third, waste must be designed out of the economy through recycling, reuse, and reduction — the plastic bottle that floats in the Indian Ocean for 400 years is a development failure. India's groundwater crisis, where Punjab now sinks tube-wells 100 metres deep, and the loss of 17% of the Amazon rainforest in 50 years, are warnings that the present model is borrowing against the planet. Sustainable development is not an environmentalist's hobby — it is the only honest definition of development today, because any development that destroys the foundation of future life is not development. It is just delayed loss.",
+          "explanation": "Strong answers should weave together the Brundtland definition, examples of renewable vs non-renewable use, and an Indian example like groundwater or air pollution."
+        }
+      ]
+    }
+  ]
+}

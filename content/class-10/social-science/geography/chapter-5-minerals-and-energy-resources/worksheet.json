@@ -1,0 +1,363 @@
+{
+  "topics": [
+    {
+      "topic": "What is a Mineral and How It Occurs",
+      "easy": [
+        {
+          "id": "1-1-1",
+          "type": "mcq",
+          "question": "Which of the following is the correct definition of a mineral?",
+          "options": ["Any rock that contains iron", "A naturally occurring homogeneous substance with a definable internal structure", "Any substance found inside a volcano", "Any artificially manufactured chemical compound"],
+          "answer": "A naturally occurring homogeneous substance with a definable internal structure",
+          "explanation": "Geologists define a mineral as a naturally occurring homogeneous substance with a definable internal structure. Most rocks are made up of minerals."
+        },
+        {
+          "id": "1-1-2",
+          "type": "mcq",
+          "question": "Smaller occurrences of minerals in cracks of igneous and metamorphic rocks are called:",
+          "options": ["Beds", "Veins", "Placer deposits", "Residual masses"],
+          "answer": "Veins",
+          "explanation": "Smaller cracks where minerals crystallise are called veins; larger ones are called lodes. Tin, copper, zinc, and lead are usually found this way."
+        },
+        {
+          "id": "1-1-3",
+          "type": "fill",
+          "question": "Coal, iron ore, gypsum, and potash are typically found in horizontal layers in ___ rocks.",
+          "answer": "sedimentary",
+          "explanation": "Sedimentary rocks form in horizontal beds, and many important minerals (including coal, iron ore, gypsum, potash, and sodium salt) accumulate as such beds."
+        },
+        {
+          "id": "1-1-4",
+          "type": "mcq",
+          "question": "Gold, silver, and platinum found in valley-floor sands are called:",
+          "options": ["Vein deposits", "Bedded deposits", "Placer deposits", "Lode deposits"],
+          "answer": "Placer deposits",
+          "explanation": "Placer deposits are minerals found as alluvial deposits in valley-floor sands. They are usually minerals not corroded by water — gold, silver, tin, and platinum."
+        }
+      ],
+      "medium": [
+        {
+          "id": "1-1-6",
+          "type": "short",
+          "question": "Distinguish between an 'ore' and a 'mineral'.",
+          "answer": "A mineral is a naturally occurring homogeneous substance with a definable internal structure found inside rocks. An ore is an accumulation of any mineral mixed with other elements in such a quantity that it becomes economically worth mining and extracting. In short, every ore is a mineral, but not every mineral is an ore — a mineral becomes an ore only when its extraction is commercially viable.",
+          "explanation": "This is a frequent definition question. Focus on the economic viability test that separates the two."
+        },
+        {
+          "id": "1-1-7",
+          "type": "short",
+          "question": "Explain three different modes in which minerals occur in nature, with one example of each.",
+          "answer": "First, in veins and lodes — small cracks (veins) or large fissures (lodes) in igneous and metamorphic rocks where minerals crystallise; for example, copper, tin, and zinc. Second, in beds and layers in sedimentary rocks formed by long deposition and accumulation; for example, coal, iron ore, and gypsum. Third, as placer deposits — alluvial sands in valleys and the base of hills containing minerals not corroded by water; for example, gold, silver, and platinum.",
+          "explanation": "The chapter lists five modes — veins/lodes, beds, residual decomposition, placer, and ocean — pick any three with clear examples."
+        }
+      ],
+      "hard": [
+        {
+          "id": "1-1-8",
+          "type": "long",
+          "question": "Explain how the geology of an area determines which minerals are found there. Give Indian examples to support your answer.",
+          "answer": "Each mineral is created by very specific geological processes — volcanic activity, sedimentation, weathering, or evaporation — and these processes leave their products in distinct rock formations. Therefore, the geology of an area decides which minerals it can offer. The Chota Nagpur plateau (covering Jharkhand, parts of Odisha, Chhattisgarh, and West Bengal) is part of the ancient Indian Shield, which went through long periods of volcanic activity and sedimentation. It now holds rich reserves of iron ore, coal, copper, mica, and bauxite. In contrast, Punjab and the Gangetic plains are made of recent alluvial soil deposited by the rivers over the last ten thousand years — wonderful for farming but with no metallic minerals at all. The Kerala coast has yet another geological story — its beach sands contain Monazite, rich in thorium, a strategic nuclear mineral, but no coal or iron. Rajasthan's thrust belt and Singhbhum host uranium deposits because of their specific igneous formations. Even within one state, mineral wealth can be uneven — Bihar's hills (the Chota Nagpur plateau, now Jharkhand) hold the minerals while Bihar's plains hold the farms. This is why geography decides the natural endowment of a state, and politics only decides what is done with that endowment.",
+          "explanation": "A good answer connects the *kind* of geological process to the *kind* of mineral and uses at least three contrasting Indian regions."
+        }
+      ]
+    },
+    {
+      "topic": "Ferrous Minerals — Iron Ore and Manganese",
+      "easy": [
+        {
+          "id": "2-1-1",
+          "type": "mcq",
+          "question": "Which of the following is the most important industrial iron ore due to its high iron content (up to 70%)?",
+          "options": ["Magnetite", "Haematite", "Limonite", "Siderite"],
+          "answer": "Haematite",
+          "explanation": "Haematite is the most important industrial iron ore, with iron content of up to 70 per cent. Magnetite has the highest iron content but is rarer."
+        },
+        {
+          "id": "2-1-2",
+          "type": "mcq",
+          "question": "The Bailadila iron ore range is located in:",
+          "options": ["Odisha", "Karnataka", "Chhattisgarh", "Jharkhand"],
+          "answer": "Chhattisgarh",
+          "explanation": "Bailadila is located in Bastar district of Chhattisgarh and is part of the Durg-Bastar-Chandrapur iron ore belt. Its high-grade haematite is exported to Japan and South Korea."
+        },
+        {
+          "id": "2-1-3",
+          "type": "fill",
+          "question": "About ___ kg of manganese is required to manufacture one tonne of steel.",
+          "answer": "10",
+          "explanation": "Nearly 10 kg of manganese is needed for every tonne of steel, since manganese makes steel harder and more corrosion-resistant."
+        },
+        {
+          "id": "2-1-4",
+          "type": "mcq",
+          "question": "Which state is the largest producer of manganese ore in India?",
+          "options": ["Madhya Pradesh", "Karnataka", "Odisha", "Maharashtra"],
+          "answer": "Odisha",
+          "explanation": "Odisha is the largest producer of manganese ore, accounting for roughly one-third of India's total manganese production."
+        }
+      ],
+      "medium": [
+        {
+          "id": "2-1-6",
+          "type": "short",
+          "question": "Name the four major iron-ore belts of India.",
+          "answer": "The four major iron-ore belts of India are: (1) the Odisha-Jharkhand belt, with the Badampahar mines of Mayurbhanj-Kendujhar in Odisha and the Gua-Noamundi mines of Singhbhum in Jharkhand; (2) the Durg-Bastar-Chandrapur belt running across Chhattisgarh and Maharashtra, with the Bailadila range supplying high-grade haematite for export through Visakhapatnam; (3) the Ballari-Chitradurga-Chikkamagaluru-Tumakuru belt in Karnataka, including the Kudremukh mines that exported through Mangaluru; and (4) the Maharashtra-Goa belt, including the Ratnagiri deposits of Maharashtra and the Goa mining belt that exports through Marmagao port.",
+          "explanation": "Memorise these four belt names along with one signature mine and one export port in each — a frequent map and short-answer question."
+        },
+        {
+          "id": "2-1-7",
+          "type": "short",
+          "question": "Distinguish between haematite and magnetite as types of iron ore.",
+          "answer": "Haematite is reddish-brown in colour, has an iron content of up to 70 per cent, and is the most important industrial iron ore — it forms the bulk of India's iron ore production. Magnetite, on the other hand, has the very highest iron content of all iron ores and excellent magnetic qualities, which makes it especially valuable in the electrical industry. Haematite is more widely used; magnetite is rarer but higher in quality.",
+          "explanation": "Cover three points each: colour/appearance, iron percentage, and main industrial use."
+        }
+      ],
+      "hard": [
+        {
+          "id": "2-1-8",
+          "type": "long",
+          "question": "Describe the importance of iron ore for India's industrial development. Discuss the regional distribution of iron ore in India and the link between iron ore belts and steel-producing regions.",
+          "answer": "Iron ore is the backbone of modern industry — it is the raw material for steel, and steel is the cement of every other industrial activity from construction to railways to defence. India is fortunate to have some of the finest iron ore reserves in the world, particularly of haematite and magnetite. These reserves are concentrated in four belts. The first is the Odisha-Jharkhand belt, where the Badampahar mines of Mayurbhanj-Kendujhar and the Gua-Noamundi mines of Singhbhum produce high-grade haematite. This belt feeds the steel plants of Tata Steel at Jamshedpur and the Steel Authority of India plants at Rourkela and Bokaro. The second is the Durg-Bastar-Chandrapur belt, where the famous Bailadila range in Bastar holds fourteen deposits of high-grade haematite. Much of this is exported to Japan and South Korea through Visakhapatnam port, but the belt also feeds the SAIL plant at Bhilai. The third is the Ballari-Chitradurga-Chikkamagaluru-Tumakuru belt in Karnataka. The Kudremukh mines were once the largest single iron ore producer in the country and supplied the JSW Steel plant at Vijayanagara. The fourth is the Maharashtra-Goa belt, with the Ratnagiri deposits of Maharashtra and the Goa mining belt — somewhat lower grade but cheap to extract — exported through Marmagao port. The geography of iron ore therefore directly shapes the geography of Indian steel — the major plants cluster along this diagonal belt because moving iron ore over long distances is expensive. The belt also explains why states like Jharkhand, Odisha, and Chhattisgarh became the heart of Indian heavy industry.",
+          "explanation": "A complete answer should name all four belts, link each to specific mines, and connect the mining belts to the steel-producing centres."
+        }
+      ]
+    },
+    {
+      "topic": "Non-Ferrous and Non-Metallic Minerals",
+      "easy": [
+        {
+          "id": "3-1-1",
+          "type": "mcq",
+          "question": "Which of these is NOT a non-ferrous mineral?",
+          "options": ["Copper", "Bauxite", "Tin", "Manganese"],
+          "answer": "Manganese",
+          "explanation": "Manganese is a ferrous mineral because it contains iron. Copper, bauxite, tin, and zinc are all non-ferrous (do not contain iron)."
+        },
+        {
+          "id": "3-1-2",
+          "type": "mcq",
+          "question": "The Khetri Copper Complex is located in:",
+          "options": ["Madhya Pradesh", "Rajasthan", "Jharkhand", "Andhra Pradesh"],
+          "answer": "Rajasthan",
+          "explanation": "Khetri is in Rajasthan and is operated by Hindustan Copper Limited. The other copper centres are Singhbhum (Jharkhand) and Balaghat (Madhya Pradesh)."
+        },
+        {
+          "id": "3-1-3",
+          "type": "mcq",
+          "question": "Bauxite is the chief ore of which metal?",
+          "options": ["Iron", "Copper", "Aluminium", "Tin"],
+          "answer": "Aluminium",
+          "explanation": "Bauxite is the residual ore from which aluminium is extracted. Aluminium combines the strength of metals with the lightness of plastic."
+        },
+        {
+          "id": "3-1-4",
+          "type": "mcq",
+          "question": "The best quality mica in the world is produced in which Indian mica belt?",
+          "options": ["Koderma belt, Jharkhand", "Ajmer area, Rajasthan", "Nellore mica belt, Andhra Pradesh", "Hazaribagh belt, Jharkhand"],
+          "answer": "Nellore mica belt, Andhra Pradesh",
+          "explanation": "The Nellore mica belt of Andhra Pradesh produces the best quality mica in the world. The largest *quantity*, however, comes from the Koderma-Gaya-Hazaribagh belt of Jharkhand."
+        }
+      ],
+      "medium": [
+        {
+          "id": "3-1-6",
+          "type": "short",
+          "question": "Why is copper important and where are India's main copper-producing regions?",
+          "answer": "Copper is malleable, ductile, and a good conductor of electricity, which makes it indispensable for electrical wiring, electronics, and electrical equipment. India has limited copper reserves and is largely dependent on imports. The three main producing regions are the Balaghat mines in Madhya Pradesh (currently the leading producer), the Khetri belt in Rajasthan (operated by Hindustan Copper Limited), and the Singhbhum district of Jharkhand (with major smelting at Ghatsila since the 1920s).",
+          "explanation": "Cover both the *uses* of copper and the *three main producing regions* with state names."
+        },
+        {
+          "id": "3-1-7",
+          "type": "short",
+          "question": "Explain the importance of mica and identify its main producing regions.",
+          "answer": "Mica is a non-metallic mineral made of plates or leaves that split easily into very thin, transparent sheets. It is highly resistant to high voltage and has low power loss, which makes it indispensable for the electrical and electronics industry — used in capacitors, insulators, and electronic chips. India's main mica belts are: the Koderma-Gaya-Hazaribagh belt in Jharkhand (the leading producer by quantity), the Ajmer area in Rajasthan, and the Nellore mica belt in Andhra Pradesh, which produces the best quality mica in the world.",
+          "explanation": "Mention the special electrical properties that make mica unique, and remember the *three* belts — Jharkhand, Rajasthan, Andhra."
+        }
+      ],
+      "hard": [
+        {
+          "id": "3-1-8",
+          "type": "long",
+          "question": "Compare the distribution and uses of copper, bauxite, and mica in India. Why is the location of these minerals important for India's industrial planning?",
+          "answer": "Copper, bauxite, and mica are three of India's most important non-ferrous and non-metallic minerals, each linked to a different industrial sector. Copper is used in electrical wiring, electronics, and electrical equipment because of its excellent conductivity. India's copper reserves are limited and concentrated in three pockets — the Balaghat mines of Madhya Pradesh (currently the leading producer), the Khetri belt in Rajasthan, and the Singhbhum district of Jharkhand with smelting at Ghatsila. Bauxite is the ore of aluminium, which combines strength with lightness and is essential for aviation, railways, electrical transmission, and packaging. Bauxite is concentrated in the Amarkantak plateau, the Maikal hills, and the Bilaspur-Katni plateau region, with Odisha as the leading state and the Panchpatmali deposits in Koraput as the country's largest. Mica is a non-metallic mineral indispensable for the electrical and electronics industry because of its transparency, resistance to high voltage, and low power loss. The leading mica belt is in Jharkhand (Koderma-Gaya-Hazaribagh), followed by Rajasthan (Ajmer) and Andhra Pradesh (Nellore, which produces the world's best mica). Knowing the location of these minerals matters for industrial planning for several reasons. First, transport of bulk ore is expensive, so industries that use them are best located close to mines — Bhilai, Rourkela, and Korba are examples. Second, the same belt — Chota Nagpur plateau and the eastern Indian states — holds many of these minerals, which is why heavy industry naturally clusters there. Third, mineral location decides which states get royalty income and which states must import the metal. Fourth, mineral location determines which tribal communities pay the environmental and social cost of mining — and this raises questions about benefit-sharing and the rights of indigenous peoples, as the Niyamgiri case shows.",
+          "explanation": "Cover use, distribution, leading state for each, and the planning implications. Bonus marks for mentioning the social and environmental dimensions."
+        }
+      ]
+    },
+    {
+      "topic": "Conventional Energy — Coal, Petroleum, and Natural Gas",
+      "easy": [
+        {
+          "id": "4-1-1",
+          "type": "mcq",
+          "question": "Which type of coal has the highest carbon content?",
+          "options": ["Peat", "Lignite", "Bituminous", "Anthracite"],
+          "answer": "Anthracite",
+          "explanation": "Anthracite is the highest-quality coal with the maximum carbon content. It is found in very small quantities in India (J&K)."
+        },
+        {
+          "id": "4-1-2",
+          "type": "mcq",
+          "question": "Neyveli in Tamil Nadu is famous for producing which type of coal?",
+          "options": ["Anthracite", "Bituminous", "Lignite", "Peat"],
+          "answer": "Lignite",
+          "explanation": "Neyveli is India's main lignite-producing site. Lignite is low-grade brown coal with high moisture content and is used in a thermal power station nearby."
+        },
+        {
+          "id": "4-1-3",
+          "type": "fill",
+          "question": "About ___ per cent of India's petroleum production comes from offshore fields, primarily Mumbai High.",
+          "answer": "63",
+          "explanation": "About 63 per cent of India's petroleum comes from offshore fields, with the Mumbai High complex in the Arabian Sea as the most important."
+        },
+        {
+          "id": "4-1-4",
+          "type": "mcq",
+          "question": "The HVJ pipeline carries which fuel across India?",
+          "options": ["Crude petroleum", "Diesel", "Natural gas", "Liquid hydrogen"],
+          "answer": "Natural gas",
+          "explanation": "The Hazira-Vijaipur-Jagdishpur (HVJ) pipeline is a 1,750-km cross-country pipeline that carries natural gas from the western fields to the fertiliser and industrial centres of central India."
+        }
+      ],
+      "medium": [
+        {
+          "id": "4-1-6",
+          "type": "short",
+          "question": "Name the four types of coal and arrange them in increasing order of carbon content. Where is each found in India?",
+          "answer": "The four types of coal in increasing order of carbon content are: peat (lowest carbon, highest moisture — found only in small quantities); lignite (low grade, brown coal, high moisture — found mainly at Neyveli, Tamil Nadu); bituminous (medium grade, the most used for commercial purposes — Jharia, Raniganj, and Bokaro in the Damodar valley); and anthracite (highest carbon, lowest moisture — found in very small quantities in Jammu & Kashmir). Bituminous is the workhorse of Indian coal, supplying both power plants and metallurgical coke for the steel industry.",
+          "explanation": "Remember the order (peat → lignite → bituminous → anthracite) and one Indian location for each."
+        },
+        {
+          "id": "4-1-7",
+          "type": "short",
+          "question": "Why is natural gas considered a cleaner fuel than coal? Name three major natural gas reserves in India.",
+          "answer": "Natural gas is the cleanest of the fossil fuels because it releases roughly half the carbon dioxide that burning coal does, and very little particulate matter or sulphur compounds. It is therefore a useful 'bridge' fuel during the transition from coal to renewables. India's three major natural gas reserves are: the Krishna-Godavari basin off the coast of Andhra Pradesh, the Mumbai High and adjoining offshore fields on the western coast, and the Gulf of Khambhat in Gujarat. (The Andaman and Nicobar Islands are another producing area.)",
+          "explanation": "Mention both the lower CO2 emissions and the lower air pollution. Three reserve locations are enough."
+        }
+      ],
+      "hard": [
+        {
+          "id": "4-1-8",
+          "type": "long",
+          "question": "Discuss the importance of coal for India's energy security. Describe the main coal-producing regions and explain why India still depends heavily on coal despite the rise of renewable energy.",
+          "answer": "Coal is the most abundantly available fossil fuel in India. It supplies roughly 55 per cent of India's commercial energy — feeding thermal power plants, the steel industry (as metallurgical coke), the cement industry, and many domestic uses. Without coal, much of India's electricity grid would shut down overnight. India's coal is found in rock formations of two geological ages — the Gondwana coal (about 200 million years old) and tertiary coal (about 55 million years old). The most important coal-producing region is the Damodar valley, which holds the Jharia, Raniganj, and Bokaro coalfields and supplies the country's best metallurgical coal. Other major Gondwana fields include the Godavari, Mahanadi, Son, and Wardha valleys; Talcher in Odisha and Korba in Chhattisgarh are giant open-cast operations; and Singrauli (MP), Karanpura (Jharkhand), and Singareni (Telangana) are important regional fields. Tertiary coal occurs in the North-East — Assam, Arunachal Pradesh, Meghalaya, and Nagaland — but in smaller quantities, mostly as lignite. Neyveli in Tamil Nadu is the main lignite producer. India still depends heavily on coal for several reasons. First, coal is abundant and domestically available — about 300 billion tonnes of total reserves — which makes it cheap and reduces import dependence. Second, India already has more than 200 GW of installed coal-fired thermal power capacity; this infrastructure cannot be replaced overnight. Third, coal-fired plants provide reliable base-load power, unlike solar and wind which depend on weather. Until cheap large-scale storage (batteries, pumped hydro, green hydrogen) becomes available, coal will continue to back up renewables at night and during cloudy weeks. Fourth, the transition costs — to retrain workers, pension coal miners, and rebuild grids — are enormous, and a sudden exit from coal would devastate states like Jharkhand and Chhattisgarh that depend on mining royalties. The shift is happening, but it will take three to four decades to complete.",
+          "explanation": "Cover (a) the share of coal in energy, (b) the main coalfields by name and state, and (c) at least three reasons why coal cannot be abandoned overnight. Top answers will discuss the role of storage and the political-economic transition costs."
+        }
+      ]
+    },
+    {
+      "topic": "Non-Conventional Energy — Solar, Wind, Nuclear, and More",
+      "easy": [
+        {
+          "id": "5-1-1",
+          "type": "mcq",
+          "question": "Which Indian state currently leads in wind power generation?",
+          "options": ["Gujarat", "Karnataka", "Tamil Nadu", "Maharashtra"],
+          "answer": "Tamil Nadu",
+          "explanation": "Tamil Nadu is the leading wind power-producing state in India, with the largest wind farm cluster located between Nagercoil and Madurai."
+        },
+        {
+          "id": "5-1-2",
+          "type": "mcq",
+          "question": "The Pavagada Solar Park is located in:",
+          "options": ["Rajasthan", "Karnataka", "Andhra Pradesh", "Gujarat"],
+          "answer": "Karnataka",
+          "explanation": "Pavagada (Shakti Sthala) Solar Park is in Tumakuru district of Karnataka, spread over 13,000 acres, and generates 2,050 MW — among the largest single-site solar parks in the world."
+        },
+        {
+          "id": "5-1-3",
+          "type": "fill",
+          "question": "Uranium deposits in India are mainly found in the Singhbhum district of Jharkhand and in the ___ thrust belt.",
+          "answer": "Rajasthan",
+          "explanation": "Uranium is mainly mined in the Singhbhum district of Jharkhand and in the Rajasthan thrust belt. Thorium, used in advanced reactors, is found in the Monazite sands of Kerala."
+        },
+        {
+          "id": "5-1-4",
+          "type": "mcq",
+          "question": "Which of these is the most suitable site in India for tidal energy?",
+          "options": ["Bay of Bengal off Kolkata", "Gulf of Kachchh in Gujarat", "Arabian Sea off Goa", "Lakshadweep islands"],
+          "answer": "Gulf of Kachchh in Gujarat",
+          "explanation": "The Gulf of Kachchh in Gujarat provides ideal conditions for tidal energy generation. The Sundarbans and the Gulf of Khambhat are other potential sites."
+        }
+      ],
+      "medium": [
+        {
+          "id": "5-1-6",
+          "type": "short",
+          "question": "What is biogas and why is it especially suited to rural India?",
+          "answer": "Biogas is a mixture of methane and carbon dioxide produced when organic matter — shrubs, farm waste, animal dung, human waste — is decomposed in oxygen-free conditions in a biogas plant. In rural India, biogas plants typically use cattle dung and are popularly called gobar gas plants. They are especially suited to rural India for three reasons: cattle dung is widely available; they give two benefits at once — clean cooking fuel and improved-quality manure for the fields; and biogas burns far more efficiently than burning cow-dung cakes directly, which wastes about 70 per cent of the energy.",
+          "explanation": "Mention the inputs (cattle dung, agricultural waste), the outputs (gas plus manure), and the rural fit (cattle availability, dual benefit)."
+        },
+        {
+          "id": "5-1-7",
+          "type": "short",
+          "question": "Why is India well placed to develop solar energy on a large scale?",
+          "answer": "India is well placed to develop solar energy for three main reasons. First, geography — India lies in the tropical belt, between roughly 8 degrees and 36 degrees north, and receives over 300 sunny days a year across most of the country, with the Thar desert in Rajasthan receiving among the highest solar radiation in the world. Second, economics — solar panel prices have fallen by about 90 per cent in fifteen years, and a unit of solar electricity is now cheaper than a unit of coal electricity in many parts of India. Third, energy security — India imports about 80 per cent of its petroleum, so growing solar reduces dependence on volatile global oil markets. India has built several of the world's largest solar parks at Bhadla (Rajasthan), Pavagada (Karnataka), and Kurnool (Andhra Pradesh), and the International Solar Alliance is headquartered in Gurugram.",
+          "explanation": "Three factors — geography, economics, security — are the standard frame. Add at least two named solar parks for full marks."
+        }
+      ],
+      "hard": [
+        {
+          "id": "5-1-8",
+          "type": "long",
+          "question": "Discuss the main non-conventional sources of energy available in India. Explain their advantages over conventional sources and the challenges they face.",
+          "answer": "India's main non-conventional energy sources are solar, wind, biogas, nuclear, geothermal, and tidal energy. Solar energy is the largest and fastest-growing — India lies in the tropical belt and receives over 300 sunny days a year, with massive solar parks at Bhadla (Rajasthan), Pavagada (Karnataka), and Kurnool (Andhra Pradesh). Wind energy is the second-largest, with Tamil Nadu leading and the Nagercoil-Madurai cluster being the country's largest; Gujarat, Karnataka, Andhra Pradesh, and Maharashtra are also major contributors. Biogas — popularly called gobar gas in rural India — is produced by decomposing cattle dung and agricultural waste, giving both clean cooking fuel and improved-quality manure. Nuclear energy is small but strategic, with six main plants (Kalpakkam, Tarapur, Rawatbhata, Narora, Kakrapar, Kaiga) using uranium from Singhbhum and Rajasthan, and India holds large thorium reserves in the Monazite sands of Kerala for future advanced reactors. Geothermal energy is being tested at Manikaran (Himachal Pradesh) and Puga valley (Ladakh). Tidal energy has potential in the Gulf of Kachchh, the Gulf of Khambhat, and the Sundarbans. These sources have key advantages over conventional sources. First, they are renewable — the sunlight, wind, water, and biomass do not run out the way coal and petroleum do. Second, they are far less polluting — solar and wind release no CO2 during operation, biogas reduces methane that would otherwise escape from dung. Third, they improve energy security by reducing dependence on imported oil. Fourth, they can be deployed at the household and village scale (rooftop solar, biogas), bringing electricity to off-grid areas. However, the challenges are real. Solar and wind are intermittent — the sun does not shine at night, the wind does not always blow — and require expensive battery or hydro storage to provide reliable power. Initial capital costs are still high for some technologies. Land acquisition for large solar and wind farms can conflict with local communities. Nuclear faces safety and waste-disposal questions and slow public acceptance. Geothermal and tidal are still at the experimental stage. The Indian government has set ambitious renewable targets (500 GW non-fossil capacity by 2030), and the price competitiveness of solar and wind is finally driving rapid adoption. The transition will not be overnight, but the direction is clear.",
+          "explanation": "Discuss at least four non-conventional sources by name with Indian locations, then balance their advantages with at least three challenges. Bonus for mentioning the storage problem and the policy ambition."
+        }
+      ]
+    },
+    {
+      "topic": "Conservation, Sustainability, and the Resource Curse",
+      "easy": [
+        {
+          "id": "6-1-1",
+          "type": "mcq",
+          "question": "Which of the following is the best example of conservation of mineral resources?",
+          "options": ["Mining more aggressively to extract every ounce", "Recycling scrap metal and using it again", "Exporting all minerals to earn foreign exchange", "Banning all use of metals"],
+          "answer": "Recycling scrap metal and using it again",
+          "explanation": "Recycling reduces the need for fresh mining. About two-thirds of the world's aluminium today is produced from recycled scrap at a tiny fraction of the energy cost of mining new bauxite."
+        },
+        {
+          "id": "6-1-2",
+          "type": "mcq",
+          "question": "Which of the following is a non-renewable resource?",
+          "options": ["Solar energy", "Wind energy", "Coal", "Geothermal energy"],
+          "answer": "Coal",
+          "explanation": "Coal is non-renewable — it takes millions of years to form. Solar, wind, and geothermal energy are renewable on human timescales."
+        },
+        {
+          "id": "6-1-3",
+          "type": "fill",
+          "question": "The supreme court banned iron ore mining in the state of ___ in 2011 after a major illegal mining scandal.",
+          "answer": "Karnataka",
+          "explanation": "Between 2006 and 2010, illegal mining in Ballari, Tumakuru, and Chitradurga districts of Karnataka led to a ban by the Supreme Court in 2011, lifted later in stages with strict quotas."
+        }
+      ],
+      "medium": [
+        {
+          "id": "6-1-4",
+          "type": "short",
+          "question": "Why is conservation of mineral resources necessary? Suggest any three measures for conservation.",
+          "answer": "Conservation of mineral resources is necessary because minerals are finite and non-renewable — they take millions of years to form but are being extracted in years. The richest ores are usually mined first, leaving lower-grade and more polluting deposits for future generations. Mining also damages forests, soil, water, and tribal livelihoods. Three measures for conservation are: (1) recycling — about two-thirds of the world's aluminium is now produced from scrap at a fraction of the energy cost of new bauxite mining; (2) substituting expensive or scarce minerals with more abundant ones, for example using fibre-reinforced plastic in place of steel where structural strength is not critical; and (3) improving mining technology to reduce wastage — Indian iron ore mines still waste around 60 per cent of the ore, which much better-engineered mines elsewhere avoid.",
+          "explanation": "Cover why (finite, non-renewable, environmental cost) and three concrete measures (recycle, substitute, better technology)."
+        },
+        {
+          "id": "6-1-5",
+          "type": "short",
+          "question": "What is meant by the 'resource curse'? Why are some mineral-rich states in India still poor?",
+          "answer": "The 'resource curse' is the paradox that countries and regions rich in natural resources often grow slower and become more unequal than regions with no resources. States like Jharkhand and Odisha hold large reserves of coal, iron ore, mica, and bauxite, but remain among the poorest in India for three main reasons. First, the wealth often leaves the place where it is mined — ore is shipped to distant smelters or exported, while the hole in the ground stays behind. Second, royalty payments to the state and to local communities are often too low or are lost to corruption. Third, easy mineral income reduces the pressure on governments to build schools, hospitals, and diversified industries — the state becomes lazy about long-term development. Tribal communities, who often live on top of the minerals, bear the environmental and displacement costs while receiving little of the gain — the Dongria Kondh of Niyamgiri are a striking example.",
+          "explanation": "Define the resource curse, then give the three structural reasons it operates inside India. Bonus marks for a real example like Jharkhand or Niyamgiri."
+        }
+      ],
+      "hard": [
+        {
+          "id": "6-1-6",
+          "type": "long",
+          "question": "Why is sustainable use of energy resources a national priority for India? Suggest measures for the conservation of energy at the household, industrial, and national level.",
+          "answer": "Sustainable use of energy is a national priority for India for at least four reasons. First, energy resources like coal and petroleum are finite — India holds roughly 100 years of proven coal reserves at current consumption rates, but only about a fifth of our petroleum demand is met domestically. Second, energy security — India spends a large share of its foreign-exchange earnings on petroleum imports, leaving the economy exposed to oil price shocks during global crises like the Russia-Ukraine war. Third, climate change — burning fossil fuels is the largest source of greenhouse gases, and India, with its large population and growing economy, has both a responsibility and a vulnerability. Fourth, public health — coal-fired power plants and vehicle exhaust are major causes of urban air pollution that kills roughly a million Indians prematurely each year. At the household level, measures include using LED bulbs, BEE 5-star rated appliances, solar water heaters and rooftop panels, switching off devices not in use, and using public transport instead of individual vehicles. At the industrial level, measures include energy audits to identify wastage, replacing old machinery with more efficient versions, recovering and using waste heat, and shifting from coal-fired boilers to gas or solar where possible. At the national level, measures include investing in non-conventional energy sources (the goal of 500 GW of non-fossil capacity by 2030), building large solar and wind parks like Bhadla and Pavagada, developing battery and pumped-hydro storage to balance intermittent renewables, expanding the electric vehicle market, modernising the electricity grid, encouraging green hydrogen, and pricing energy fairly so that conservation is rewarded. The cheapest energy is the energy we don't use — and conservation is the single largest 'energy source' available to India today.",
+          "explanation": "Structure the answer with (a) why sustainability matters — finite reserves, security, climate, health; (b) three levels of action — household, industry, national; and (c) at least two specific Indian examples (Bhadla, Pavagada, EVs, green hydrogen)."
+        }
+      ]
+    }
+  ]
+}

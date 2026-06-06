@@ -1,0 +1,413 @@
+{
+  "chapterRef": "class-10/social-science/economics/chapter-4-globalisation-and-the-indian-economy/worksheet",
+  "topics": [
+    {
+      "topic": "What Globalisation Means",
+      "easy": [
+        {
+          "id": "c1-e1",
+          "type": "mcq",
+          "question": "Globalisation is best defined as:",
+          "options": [
+            "Any trade between two countries",
+            "The rapid integration of economies through freer movement of goods, services, capital, technology, and people across borders",
+            "Indians migrating abroad for work",
+            "Foreigners visiting India for tourism"
+          ],
+          "answer": "The rapid integration of economies through freer movement of goods, services, capital, technology, and people across borders",
+          "explanation": "Globalisation is more than just trade. It is the rapid integration of countries' economies through the freer movement of goods, services, capital, technology, ideas, and (sometimes) people across borders. Trade between countries is at least 5,000 years old; what is new about modern globalisation is the speed, scale, and the fact that production itself crosses borders — one product is made across many countries."
+        },
+        {
+          "id": "c1-e2",
+          "type": "mcq",
+          "question": "Which of these is the BEST modern example of globalisation?",
+          "options": [
+            "A farmer growing wheat for the local market",
+            "An iPhone designed in California, with chips from Taiwan, screen from South Korea, and assembly in Tamil Nadu",
+            "A village kirana shop buying from a Delhi wholesaler",
+            "A Mumbai college student moving to Pune for studies"
+          ],
+          "answer": "An iPhone designed in California, with chips from Taiwan, screen from South Korea, and assembly in Tamil Nadu",
+          "explanation": "The iPhone example shows the defining feature of modern globalisation — production itself crossing borders. A single product is designed, sourced, manufactured, and assembled across multiple countries, each step placed where it can be done best or cheapest. This kind of split-up global production was rare before about 1980."
+        },
+        {
+          "id": "c1-e3",
+          "type": "fill",
+          "question": "When goods can move easily between countries, prices in different countries tend to come closer together. This is called the _______ of markets.",
+          "answer": "integration",
+          "explanation": "When goods flow across borders cheaply and reliably, markets become integrated. A drought in Spain pushes up olive oil prices in Bengaluru; a bumper apple crop in Washington State lowers prices Kashmiri apple farmers can charge in Delhi. Integration of markets means there is roughly one global price for tradeable goods, and local prices follow it."
+        },
+        {
+          "id": "c1-e4",
+          "type": "tf",
+          "question": "Globalisation began only in the 1990s.",
+          "answer": "False",
+          "explanation": "Trade between countries is at least 5,000 years old — Indus Valley traders sold beads to Mesopotamia in 3000 BCE. What is new about modern globalisation (post-1980) is the SPEED, SCALE, and the fact that production itself crosses borders. The forces themselves — traders, merchants, migrants, ships — are ancient."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c1-m1",
+          "type": "short",
+          "question": "Explain what is genuinely new about modern globalisation compared to older forms of trade.",
+          "answer": "Trade between countries is at least 5,000 years old, so simple cross-border buying and selling is not new. Two things are genuinely new about modern globalisation. FIRST, production itself crosses borders. A single product — a shirt, a smartphone, a car — is now made by combining steps from many countries. The cotton may come from America, the cloth woven in China, the design done in Italy, the stitching done in Bangladesh, and the final shirt sold in Bengaluru. No single country can claim to have 'made' it. This split-up production was rare even in 1980 and would have been unimaginable in 1880. SECOND, the speed and scale are vastly greater. A factory in Vietnam can change tomorrow's order because a buyer in Berlin clicked a button at midnight. Container ships, fibre-optic cables, satellite communications, and cheap aviation have collapsed both distance and time. A pair of jeans can move from Bangladesh to Mumbai for a few rupees in days. A 22-year-old in Coimbatore can take a call from a customer in Chicago in real time. These two changes — production splitting across countries, and the speed/scale of flows — together define modern globalisation. They are mostly driven by multinational corporations using cheap shipping, cheap data, and freer trade rules.",
+          "explanation": "Tests understanding of what makes modern globalisation different from historical trade."
+        },
+        {
+          "id": "c1-m2",
+          "type": "short",
+          "question": "Give one example of how a global event affects ordinary Indian consumers, using market integration.",
+          "answer": "An example: the Russia-Ukraine war that began in 2022. Russia is one of the world's largest exporters of crude oil and natural gas; Ukraine is a major exporter of wheat and sunflower oil. When the war disrupted these exports, global oil prices shot up, and so did global wheat prices. In India, this showed up almost immediately at the petrol pump — petrol prices rose in cities from Mumbai to Madurai. Cooking gas (LPG) cylinders became costlier. Edible oil prices spiked because sunflower oil became scarcer and palm oil was used as a substitute, raising its price too. The chapatti on a middle-class family's dinner plate in Bhopal cost more because of a war thousands of kilometres away. This is what economists mean by integration of markets — when markets are globally connected, an event in one part of the world affects prices everywhere. The Indian government had to respond — through fuel-tax adjustments, subsidies for cooking gas, and import policies. The lesson: in a globalised world, no national economy is fully isolated from global events. This brings benefits (cheaper imports when global prices fall) and risks (sudden price shocks when global supply is disrupted).",
+          "explanation": "Tests understanding of market integration with a real example."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c1-h1",
+          "type": "long",
+          "question": "Trace how a single mass-market product (your choice) is produced and consumed across multiple countries. Use your example to explain what globalisation actually means in practice.",
+          "answer": "Let's take a Samsung smartphone sold in India. CONCEPT AND DESIGN: The phone is designed primarily in South Korea (Samsung's headquarters in Suwon), with input from designers in California, India, and Britain. Software design happens partly in Bengaluru, where Samsung has one of its largest R&D centres outside Korea. CHIPS AND COMPONENTS: The processor chip is designed in Korea but manufactured at semiconductor fabs in Taiwan (TSMC) or Korea itself. Memory chips often come from Korean or Japanese factories. The display panel may be made in Korea or Vietnam. Camera modules typically come from Japan or Vietnam. Wireless chips, sensors, and small components come from a web of suppliers across China, Taiwan, Malaysia, and Vietnam. ASSEMBLY: The final assembly of the Samsung phone sold in India happens at Samsung's massive Noida plant — the largest single mobile phone factory in the world by some measures. Indian workers, mostly young, do the assembly. Some quality testing happens there too. PACKAGING AND BRANDING: Packaging materials, manuals, retail boxes are partly made in India, partly imported. The brand and marketing are managed globally by Samsung's marketing teams in Seoul, with adaptation in Mumbai for the Indian market. DISTRIBUTION: The phone reaches retail through Samsung's Indian distribution network, e-commerce platforms (Flipkart, Amazon, owned partly by Walmart and the American company Amazon), and offline retail chains. SUPPORT: When you call customer support, you may end up speaking to a BPO operator in Hyderabad or Pune working for an outsourced contractor. PAYMENT AND PROFIT: When you buy the phone, the payment may use UPI (an Indian-built system used globally now), but the profits flow partly back to Samsung in Korea, partly stay in India as taxes, wages, and Indian shareholders' dividends. NOW SEE WHAT THIS ACTUALLY SHOWS ABOUT GLOBALISATION: (1) PRODUCTION HAS CROSSED BORDERS. No single country 'makes' the Samsung phone — it is genuinely a global product. (2) EACH STEP IS PLACED STRATEGICALLY. Design in Korea (engineering talent + brand), chips in Taiwan (semiconductor specialisation), display in Korea/Vietnam, assembly in India (large market + government incentives + labour cost). (3) MNCs ARE THE ENGINE. Samsung, an MNC headquartered in Korea, decides the whole jigsaw. (4) TECHNOLOGY MAKES IT POSSIBLE. The speed and reliability of container shipping, the ability to coordinate factories in 6 countries through software, the daily monitoring of production via cheap internet — none of this existed in 1980. (5) RULES MATTER. Lower Indian tariffs after 1991, India's WTO membership, FTAs with Korea, the Production-Linked Incentive scheme for mobile manufacturing — all these policy choices enabled Samsung to set up at Noida. (6) WINNERS AND LOSERS. Indian consumers win — they get a phone that costs less than the same phone in many countries. Indian workers at the Noida plant win — well-paid jobs. The Indian government wins — taxes, jobs, technology transfer. But Indian-owned phone brands (Micromax, Lava, Karbonn) which once dominated the budget market were largely crushed by competition from Samsung, Xiaomi, Vivo, Oppo and others. Indian small component suppliers struggle to break into the global supply chain dominated by Asian giants. THE BIG LESSON: Globalisation in practice means that an ordinary product — the phone in your pocket — quietly stitches together work, capital, technology, and people from a dozen countries. The chapter's textbook definitions become concrete when you trace one product. And the question of whether globalisation has been good or bad cannot be answered in general; it has to be answered case by case, sector by sector, by looking honestly at the winners and the losers in each story.",
+          "explanation": "Capstone question that tests integrated understanding of globalisation through a concrete traced example."
+        }
+      ]
+    },
+    {
+      "topic": "Multinational Corporations (MNCs)",
+      "easy": [
+        {
+          "id": "c2-e1",
+          "type": "mcq",
+          "question": "A multinational corporation (MNC) is a company that:",
+          "options": [
+            "Exports goods to other countries",
+            "Owns or controls production in more than one country",
+            "Is owned by foreigners",
+            "Has employees from many nationalities"
+          ],
+          "answer": "Owns or controls production in more than one country",
+          "explanation": "An MNC is defined as a company that owns or controls production (factories, offices, services) in more than one country. Coca-Cola is American but bottles in 200 countries. Samsung is South Korean but makes phones in Noida. Tata Motors is Indian but owns Jaguar Land Rover in Britain. Mere exporting is not enough — actual production or ownership across borders is what makes a company multinational."
+        },
+        {
+          "id": "c2-e2",
+          "type": "mcq",
+          "question": "Which of the following is an Indian-owned MNC?",
+          "options": [
+            "Coca-Cola",
+            "Samsung",
+            "Tata Motors",
+            "Walmart"
+          ],
+          "answer": "Tata Motors",
+          "explanation": "Tata Motors is Indian-owned but operates globally — it acquired Jaguar Land Rover (a British luxury carmaker) in 2008, and has operations in many countries. Coca-Cola is American, Samsung is South Korean, and Walmart is American. Indian-owned MNCs that operate globally include Tata Group, Reliance, Mahindra, Bharti Airtel, Sun Pharma, Infosys, TCS, and Wipro."
+        },
+        {
+          "id": "c2-e3",
+          "type": "fill",
+          "question": "When a foreign company puts money into setting up factories or buying control of firms in another country, it is called Foreign _______ Investment.",
+          "answer": "Direct",
+          "explanation": "Foreign Direct Investment (FDI) is when a foreign company invests in setting up production (factories, offices) or buying control of firms in another country. Examples include Suzuki investing in Maruti, Foxconn investing in iPhone assembly in Tamil Nadu, and Samsung's Noida phone plant. FDI is different from portfolio investment, where foreigners buy shares but don't control operations."
+        },
+        {
+          "id": "c2-e4",
+          "type": "mcq",
+          "question": "Which is NOT a common way for an MNC to enter a foreign market?",
+          "options": [
+            "Buying an existing local firm",
+            "Setting up production jointly with a local company (joint venture)",
+            "Placing orders with local producers",
+            "Forcing the local government to ban competitors"
+          ],
+          "answer": "Forcing the local government to ban competitors",
+          "explanation": "There are four common ways MNCs enter foreign markets: (1) buying an existing local firm (Cadbury bought by Mondelez), (2) joint ventures (Maruti-Suzuki, Hero-Honda), (3) placing orders with local producers (Walmart and Zara ordering from Indian factories), and (4) building new factories from scratch (Foxconn's iPhone plants, Samsung Noida). Forcing governments to ban competitors is not a standard route — though MNCs do sometimes lobby for favourable policies, that's different."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c2-m1",
+          "type": "short",
+          "question": "How does a multinational corporation decide where in the world to place each part of its production?",
+          "answer": "An MNC looks at the world like a giant jigsaw puzzle and places each step of production where it gets the best combination of cost, speed, skill, and market access. The decisions follow a few logical patterns. (1) HIGH-TECH RESEARCH AND CORE DESIGN tend to happen where the best engineers and scientists live — usually in rich countries like the USA, South Korea, Germany, Japan, and increasingly in India (Bengaluru, Hyderabad). Talent matters more than wages here. (2) MANUFACTURING OF CHIPS, DISPLAYS, AND HIGH-VALUE COMPONENTS goes to countries with specialised infrastructure built over decades — Taiwan (TSMC for semiconductors), South Korea (memory, displays), Japan (precision components). (3) LABOUR-INTENSIVE ASSEMBLY (putting parts together) goes to countries where wages are low but workers are reasonably skilled — historically China, increasingly Vietnam, India, Bangladesh. India is now a major assembly hub for mobile phones at Sriperumbudur (iPhones) and Noida (Samsung). (4) BACK-OFFICE WORK (customer support, billing, accounting, payroll processing) goes to countries with cheap English-speaking graduates — India is the world leader, with smaller flows to the Philippines and Eastern Europe. (5) HEADQUARTERS, MARKETING, AND PROFIT BOOKING often stay in the company's home country, but sometimes get placed in low-tax countries (Ireland, Singapore, Mauritius) for tax purposes. (6) MARKET-FACING OPERATIONS — sales, distribution, after-sales service — usually go to large consumer markets like India, the USA, EU, China. THE LOGIC: MNCs balance cost, quality, speed, distance to market, tax rules, government policy (incentives, tariffs, FTAs), and political stability. Each part of the jigsaw goes to the country where the combination is best. THE RESULT: One product — a phone, a car, a piece of clothing — is the joint work of many countries, with each country playing its own assigned role.",
+          "explanation": "Tests understanding of MNC production geography."
+        },
+        {
+          "id": "c2-m2",
+          "type": "short",
+          "question": "Give three examples of major MNCs operating in India and describe what each does here.",
+          "answer": "Three good examples that show different patterns of MNC activity in India. (1) SAMSUNG (South Korean MNC). Samsung operates one of the world's largest single mobile phone factories at Noida, Uttar Pradesh. It assembles phones for the Indian market and exports to many other countries. Samsung also has one of its largest R&D centres outside Korea in Bengaluru, where Indian engineers work on software, AI, and design. So Samsung gives India both factory jobs (assembly) and high-skill jobs (R&D). (2) FOXCONN (Taiwanese MNC, official name Hon Hai Precision). Foxconn is the world's largest electronics contract manufacturer. It assembles iPhones for Apple at huge plants near Chennai (Sriperumbudur) and is expanding rapidly under India's Production-Linked Incentive scheme. Foxconn doesn't own a famous consumer brand itself — it makes products for others. By 2024, a significant share of iPhones sold worldwide are assembled in India by Foxconn, transforming the local economy around Chennai. (3) UNILEVER (Anglo-Dutch MNC) operating in India as HINDUSTAN UNILEVER LIMITED (HUL). Many products you see in Indian shops — Surf, Lifebuoy, Lux, Vim, Wheel, Pond's, Lakmé, Brooke Bond, Bru, Knorr — are HUL brands. HUL has factories across India and serves both urban and rural markets. It's an interesting case because it 'feels' Indian — it employs hundreds of thousands of Indians and has been in India for over 90 years — but the parent company sits in London/Rotterdam, and significant profits flow back. OTHER STRONG EXAMPLES TO KNOW: Coca-Cola (American, drinks); Nestlé (Swiss, foods like Maggi, KitKat, Nescafé); Maruti-Suzuki (Japanese-controlled, the largest carmaker in India); Toyota, Hyundai, Honda, Volkswagen (foreign carmakers with Indian plants); Microsoft, Google, Meta, Amazon (American tech firms with massive Indian operations); McDonald's, KFC, Domino's (American fast-food chains operating through Indian franchisees); Walmart (which acquired Flipkart for $16 billion in 2018).",
+          "explanation": "Tests knowledge of real-world MNC examples in India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c2-h1",
+          "type": "long",
+          "question": "What are the benefits and the costs to India of MNCs operating here? Use specific examples to argue for a balanced view.",
+          "answer": "MNCs are neither heroes nor villains in India — they bring real benefits and real costs, and a balanced citizen must hold both pictures at once. BENEFITS TO INDIA: (1) JOBS, INCLUDING WELL-PAID ONES. The IT industry alone (much of it serving MNC clients or run by Indian-MNC partnerships) employs over 5 million people directly, with tens of millions of indirect jobs. Samsung's Noida factory, Foxconn's Tamil Nadu plants, Maruti-Suzuki's Manesar — these employ hundreds of thousands directly. (2) TECHNOLOGY TRANSFER AND SKILLS. When Suzuki set up Maruti in the 1980s, Japanese engineers trained Indian workers in modern manufacturing methods. Those workers later trained others. Today the Indian auto industry is world-class. The same pattern repeats in pharma, electronics, IT. (3) FOREIGN EXCHANGE EARNINGS. MNC operations in India generate dollars (through exports and through global earnings repatriated to India), which strengthen the rupee and help India pay for imports. (4) CONSUMER BENEFITS. Indian consumers get access to better-quality goods at lower real prices than would otherwise be possible. Compare cars, phones, two-wheelers, refrigerators of today versus 1990. (5) TAX REVENUE. MNC operations pay GST, income tax, customs duties, and corporate tax — significant additions to government revenue, which funds schools, hospitals, roads. (6) ECOSYSTEM BUILDING. When Apple sets up assembly in Tamil Nadu, dozens of Indian suppliers grow to feed it components. The whole local economy is lifted. (7) BRAND-INDIA EFFECT. India's emergence as a major MNC hub raises its global profile and credibility, encouraging more investment. COSTS TO INDIA: (1) PROFITS REPATRIATED. Much of the profit earned by MNCs in India eventually flows back to the parent country's shareholders. This is not 'theft' — they invested capital — but it means India captures only part of the value created. (2) DOMINANCE OVER INDIAN COMPETITORS. Many small Indian companies cannot compete with MNCs' scale, technology, marketing, and capital. Indian-owned phone brands (Micromax, Lava, Karbonn) once dominated the budget market and were largely crushed by Samsung, Xiaomi, Vivo, Oppo. Traditional Indian retailers have struggled with Walmart-Flipkart and Amazon. (3) PRESSURE ON SUPPLIERS AND WORKERS. MNCs and their large suppliers often squeeze smaller Indian suppliers ruthlessly on price. The squeeze gets passed down to informal workers — garment workers in Tirupur stitching shirts for global brands often work long hours at low pay. (4) ENVIRONMENTAL AND HEALTH ISSUES. Some MNCs have a poor record on environment (Coca-Cola's groundwater controversies in Plachimada, Kerala in the 2000s) or product safety (Maggi-Nestlé lead contamination issue 2015). (5) TAX AVOIDANCE. MNCs route profits through low-tax countries (Ireland, Singapore, Mauritius), reducing the tax they pay in India. India has been part of global efforts (the OECD minimum tax) to address this. (6) DEPENDENCE AND VULNERABILITY. If India becomes too dependent on a few MNCs for critical supplies (semiconductors, medicines, defence equipment), a crisis abroad (war, pandemic, sanctions) can hurt India badly. COVID-19 exposed these supply chain risks. (7) CULTURAL AND COMMERCIAL HOMOGENISATION. Critics argue that MNC dominance squeezes out local diversity — Indian handicrafts, regional brands, traditional industries. THE BALANCED VIEW: MNCs are powerful actors whose logic is profit. They are neither saviours nor enemies of India. The right framing is not 'should MNCs be here?' (answer obviously yes) but 'on what terms?' India's job through policy is to: (a) Attract MNC investment that creates Indian jobs and transfers technology, (b) Protect Indian workers' rights and small producers from being crushed, (c) Build Indian-owned companies that can compete with foreign MNCs and even become MNCs themselves (Tata, Reliance, Mahindra, Infosys are doing this), (d) Strengthen domestic manufacturing through Make in India and PLI schemes so India captures more of the value chain. (e) Maintain strategic autonomy by not becoming too dependent on any single foreign source. The Indian government's recent policies — Make in India, PLI, FTAs, scrutiny of Chinese FDI, push for self-reliance in defence and electronics — try to do exactly this. The work is unfinished, but the direction is sensible: be globally connected but stay strategically Indian. As future citizens and voters, you will need to judge whether your government is getting this balance right.",
+          "explanation": "Capstone question on the political economy of MNCs in India."
+        }
+      ]
+    },
+    {
+      "topic": "What Made Globalisation Possible",
+      "easy": [
+        {
+          "id": "c3-e1",
+          "type": "mcq",
+          "question": "Which technology is often considered the boring but world-changing invention that made cheap global shipping possible?",
+          "options": [
+            "The smartphone",
+            "The shipping container",
+            "The airplane",
+            "The diesel engine"
+          ],
+          "answer": "The shipping container",
+          "explanation": "The shipping container — a standardised steel box, about 20 or 40 feet long — sounds boring but transformed world trade. Before containers (introduced in the 1950s, widespread by the 1970s), each crate had to be loaded by hand; theft was rampant; loading took weeks; shipping was expensive. After containers, loading takes hours, theft is rare, and costs collapsed. A pair of jeans can now be shipped from Bangladesh to Mumbai for a few rupees."
+        },
+        {
+          "id": "c3-e2",
+          "type": "mcq",
+          "question": "Which event in 2016 dramatically reduced the cost of mobile data in India and accelerated digital globalisation for ordinary Indians?",
+          "options": [
+            "The launch of Aadhaar",
+            "The launch of UPI",
+            "The launch of Reliance Jio",
+            "Demonetisation"
+          ],
+          "answer": "The launch of Reliance Jio",
+          "explanation": "When Reliance Jio launched in 2016 with free data and near-free voice, the cost of being online for an Indian collapsed almost overnight. By 2024, India had over 800 million internet users, most on smartphones. A farmer in Bilaspur could check today's mandi prices, a tailor in Murshidabad could take orders by WhatsApp, and college students anywhere could learn from free YouTube videos. Jio's launch is one of the biggest digital events in Indian history."
+        },
+        {
+          "id": "c3-e3",
+          "type": "fill",
+          "question": "The pre-1991 Indian economic strategy of making goods at home rather than importing them was called import _______ .",
+          "answer": "substitution",
+          "explanation": "Import substitution was India's economic strategy from independence until 1991. The idea was to protect Indian industry by placing high tariffs on imports, restricting foreign investment, and requiring licences for almost everything. This 'licence-permit raj' protected Indian industry but also made it complacent and inefficient. Cars, phones, and consumer goods were of poor quality compared to global standards."
+        },
+        {
+          "id": "c3-e4",
+          "type": "tf",
+          "question": "Before 1991, getting a telephone connection in India could take many years.",
+          "answer": "True",
+          "explanation": "Before the 1991 reforms, the Indian state-owned telecom system was so backlogged that getting a residential telephone connection could take 5 to 10 years. There was a long waiting list, and even basic services were rationed. Liberalisation, including the opening of telecom to private (and later foreign) competition, transformed this — today an Indian can get a new mobile connection in minutes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c3-m1",
+          "type": "short",
+          "question": "How did technology — containers, the internet, and cheap mobile data — make modern globalisation possible?",
+          "answer": "Three waves of technology came together to make modern globalisation possible. (1) THE SHIPPING CONTAINER (1950s-70s). The container is a standardised steel box that ships, trucks, and trains can all carry. Before containers, goods were loaded onto ships in mixed crates by hundreds of dockworkers — loading took weeks, theft was rampant, and costs were high. After containers, the same goods could be loaded in hours, theft fell sharply, and shipping costs collapsed by 90% or more. The container is the most important boring invention of the 20th century. It made it economical to ship low-value goods (T-shirts, plastic toys, basic electronics) across oceans. Without containers, much of modern globalisation would still be too expensive. (2) THE INTERNET AND COMPUTING (1990s onwards). By 1995, a designer in New York could send a complete clothing design — pattern, fabric specs, colours — by email to Tirupur in the time it takes to make a cup of chai. By 2010, video conferencing meant an Indian engineer could attend a daily meeting with a Boston team without leaving Bengaluru. The internet collapsed the cost of moving INFORMATION across borders — and information is what coordinates global production. Without cheap internet, you cannot run a 6-country supply chain. (3) MOBILE TELEPHONY AND CHEAP DATA. Mobile phones reached rural India in the 2000s; smartphones reached the masses after 2010. When Reliance Jio launched in 2016 with free data and near-free voice, the cost of being online for an ordinary Indian collapsed. By 2024, India had over 800 million internet users, most on smartphones. This is what brought globalisation to the village. A farmer in Bilaspur can check today's mandi prices on his phone. A tailor in Murshidabad can take orders by WhatsApp. A college student in Aurangabad can learn coding from a free YouTube course in Hindi. Together these three waves did three things: they made it cheap to MOVE GOODS (containers), cheap to MOVE INFORMATION (internet), and cheap to BE CONNECTED EVERYWHERE (mobile data). Without all three, the modern global economy could not exist as we know it.",
+          "explanation": "Tests understanding of how technology enabled globalisation."
+        },
+        {
+          "id": "c3-m2",
+          "type": "short",
+          "question": "Why did pre-1991 India's strategy of import substitution eventually fail, even though it began with good intentions?",
+          "answer": "Pre-1991 India followed a strategy called import substitution — making things at home rather than importing them. The intentions were genuinely good. After 200 years of British colonialism that destroyed Indian handlooms and drained Indian wealth, Nehru and his planners said: never again. India would build its own steel, its own cars, its own everything. Self-reliance was the goal. For some sectors, this worked — India built its own steel plants, its own dams, its own space programme. But over decades, the strategy developed serious problems. (1) PROTECTION TURNED INTO COMPLACENCY. When Indian companies didn't have to compete with the world, they didn't bother to improve. The Ambassador car of 1985 looked exactly like the Ambassador of 1960. Scooters, phones, soaps, shoes — everything was of poor quality compared to global standards. (2) THE LICENCE-PERMIT RAJ CREATED CORRUPTION. To start a factory, expand it, or import a machine, you needed permission from Delhi. The permissions came slowly and often only if you 'knew' the right official. This produced a corrupt, politicised industrial system rather than a productive one. (3) HIDDEN COSTS TO CONSUMERS. Indian consumers paid more for worse-quality goods. A telephone connection took years. A scooter required a 5-year waiting list. Imports of even basic items (Yardley powder, foreign chocolates) became luxury items. (4) NO INNOVATION INCENTIVE. Companies that don't face competition don't invest in research or new products. Indian industry fell further behind global standards each decade. (5) FOREIGN EXCHANGE CRISIS. India had limited foreign exchange (we exported little of value). When the 1990 Gulf War spiked oil prices and remittances collapsed, India was left with about two weeks of imports. The country was on the verge of default. THE LESSON: Protection is sometimes useful but rarely a long-term answer. A country that walls itself off from the world for too long stops improving. The 1991 reforms — cutting tariffs, dismantling licences, opening to FDI — were the painful but necessary correction. They did not solve all problems, but they made it possible for India to become the world's 5th largest economy by 2024 instead of remaining a slow-growing closed system.",
+          "explanation": "Tests understanding of pre-1991 economic policy and its problems."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c3-h1",
+          "type": "long",
+          "question": "Describe the 1991 economic reforms in detail. What triggered them, what changes did Narasimha Rao and Manmohan Singh make, and why was 1991 a turning point for the Indian economy?",
+          "answer": "The 1991 reforms are the most important economic event in modern Indian history. They mark the moment when India shifted from a closed, planned, license-driven economy to an open, market-oriented one. THE BACKGROUND: After Independence in 1947, India followed a model of import substitution. The government heavily controlled industry through licences, restricted foreign investment, set high tariffs on imports, and kept the rupee artificially valued. For 30-40 years this produced modest growth (the so-called 'Hindu rate of growth' of about 3.5% per year) and built some basic industries. But by the late 1980s the system was clearly failing — Indian industry was uncompetitive, consumer goods were poor quality, telephone connections took years, and innovation was rare. THE TRIGGER — THE 1991 CRISIS: A combination of events brought matters to a head. (1) The Gulf War (1990-91) spiked oil prices dramatically — and India imported most of its oil. (2) Lakhs of Indians working in the Gulf were evacuated as the war broke out, and their remittances (money sent home) collapsed overnight. (3) India's exports were not growing fast enough to pay for the rising import bill. (4) The fiscal deficit was high and rising. THE RESULT: India's foreign exchange reserves fell to a level where the country had about TWO WEEKS of imports left. This is the kind of crisis where a country defaults on its loans and faces collapse. India literally had to airlift gold reserves to London as collateral for an emergency loan from the International Monetary Fund (IMF). It was a moment of national humiliation and danger. THE NEW GOVERNMENT: In June 1991, a new Congress government came to power, with P.V. Narasimha Rao as Prime Minister. Rao made a brilliant choice: he picked Dr Manmohan Singh, a quiet and respected economist, as Finance Minister. Manmohan Singh had served as RBI Governor and Planning Commission Deputy Chairman. He understood both the depth of the crisis and the medicine needed. THE REFORMS — WHAT CHANGED: (1) DEVALUATION OF THE RUPEE. The rupee was sharply devalued (from about 17 to 25 per dollar over weeks) to make Indian exports cheaper and imports more expensive — correcting the trade imbalance. (2) DISMANTLING THE LICENCE-PERMIT RAJ. Most industries no longer needed government permission to expand or set up new factories. The pre-1991 list of reserved or restricted industries was dramatically pruned. (3) TARIFF CUTS. Import tariffs were cut sharply, making imports cheaper and forcing Indian industry to compete. (4) FDI LIBERALISATION. Foreign companies could now invest in many sectors of the Indian economy, often up to 51% or more. This brought in capital, technology, and management skills. (5) CAPITAL MARKETS OPENED. Foreign Institutional Investors (FIIs) could buy Indian shares — bringing dollar inflows. (6) TAX REFORMS. The complicated tax system was simplified (a process that continued for decades, culminating in the 2017 GST). (7) BANKING REFORMS. New private banks (HDFC, ICICI, Axis) were allowed; foreign banks expanded. (8) IT AND TELECOM. Software exports were given special encouragement (the STPI scheme); telecom was opened to private competition. WHY 1991 WAS A TURNING POINT: (1) GROWTH ACCELERATED. India's growth rate rose from about 3.5% (1947-80) and 5.5% (1980-91) to 6-7% post-1991. By 2024, India was the world's 5th largest economy. (2) POVERTY FELL DRAMATICALLY. From over 50% in the 1970s to about 10% in 2024. Hundreds of millions of Indians moved out of poverty. (3) MNCs ENTERED INDIA. Suzuki, Samsung, Coca-Cola, Pepsi, Unilever's expansion, MacDonalds, KFC, and dozens of others set up operations. Consumers benefited from new products and choices. (4) IT REVOLUTION BECAME POSSIBLE. Without 1991, the Bengaluru IT industry could not have grown as it did. Y2K work in 1999 needed India to be open to global business. (5) INDIAN COMPANIES TRANSFORMED. Tata, Reliance, Mahindra, Infosys, Wipro, Bharti Airtel — all grew into world-class companies because they had to compete and adapt. Some bought foreign companies (Tata-Corus, Tata-JLR). (6) MIDDLE CLASS EXPANDED MASSIVELY. From perhaps 10-15% of the population to 30-40%. A whole new India of consumers, workers, and aspirers emerged. (7) GLOBAL INTEGRATION DEEPENED. India joined the WTO in 1995, signed FTAs with many countries, became a regular participant in G20, BRICS, and global summits. (8) DIGITAL INDIA BECAME POSSIBLE. UPI, Aadhaar, ONDC — none of these would exist if India had remained closed. THE COSTS THE REFORMS DIDN'T FIX: 1991 wasn't a magic wand. Inequality has worsened. Inflation periodically hits the poor hardest. Farmers continue to face crises. Public services (school, hospitals, roads) have improved unevenly. Informal sector workers gained less than skilled urban workers. CONCLUSION: 1991 was India's most important economic moment. A crisis forced a transformation that should have happened years earlier. Rao and Manmohan Singh deserve enormous credit for handling it courageously and intelligently. The country we live in today — global, fast-growing, ambitious, with all its problems — is largely a product of 1991. Understanding 1991 is understanding modern India.",
+          "explanation": "Capstone question on the 1991 reforms as turning point."
+        }
+      ]
+    },
+    {
+      "topic": "The WTO and Fair Trade",
+      "easy": [
+        {
+          "id": "c4-e1",
+          "type": "mcq",
+          "question": "The World Trade Organization (WTO) was established in:",
+          "options": ["1945", "1985", "1991", "1995"],
+          "answer": "1995",
+          "explanation": "The WTO was established in 1995, replacing an older trade body called GATT (General Agreement on Tariffs and Trade). The WTO has about 165 member countries today. Its job is to set rules for international trade — what tariffs are allowed, what subsidies are allowed, and how disputes between countries are settled. India was a founding member of the WTO."
+        },
+        {
+          "id": "c4-e2",
+          "type": "mcq",
+          "question": "Which of the following is the MAIN purpose of the WTO?",
+          "options": [
+            "To give military aid to poor countries",
+            "To frame rules for global trade and resolve trade disputes",
+            "To set global oil prices",
+            "To control immigration between countries"
+          ],
+          "answer": "To frame rules for global trade and resolve trade disputes",
+          "explanation": "The WTO's main job is to set the rules for international trade — what tariffs are allowed, what subsidies are allowed, how foreign companies should be treated — and to resolve disputes between countries when one accuses the other of breaking the rules. The basic idea is that fewer barriers and freer trade lead to more growth for all. In practice, critics argue the rules favour rich countries."
+        },
+        {
+          "id": "c4-e3",
+          "type": "fill",
+          "question": "The United States pays its farmers roughly $40 billion a year in farm _______ , a fact that Indian negotiators have argued makes WTO rules unfair to Indian farmers.",
+          "answer": "subsidies",
+          "explanation": "Farm subsidies — money the government pays to farmers — are central to debates about fair trade. The US pays roughly $40 billion a year; the EU pays even more. This lets American and European farm goods sell cheaply on world markets, competing unfairly with Indian farmers whose government subsidies are much smaller. India has often led developing countries in pushing for fairer WTO rules on farm subsidies."
+        },
+        {
+          "id": "c4-e4",
+          "type": "tf",
+          "question": "Every member country of the WTO has equal voting power, so the rules are always fair to small countries.",
+          "answer": "False",
+          "explanation": "Officially, each WTO member country has one vote, regardless of size. But in practice, the rules tend to favour rich countries. Rich countries have larger negotiating teams, more economic leverage, and have historically shaped the trade agenda. Many critics — and India itself — argue that real fairness requires not just equal votes but rules that take into account the very different starting positions of rich and poor countries."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c4-m1",
+          "type": "short",
+          "question": "Why have Indian farmers and trade negotiators called WTO rules unfair? Use the example of farm subsidies.",
+          "answer": "Indian negotiators have argued for two decades that WTO rules are tilted in favour of rich countries, particularly on agricultural subsidies. Here is the core of the argument. THE PROBLEM — FARM SUBSIDIES. The United States pays its farmers about $40 billion a year. The European Union pays even more. These subsidies cover everything from direct payments to crop insurance to price supports. When American cotton, European dairy, or US-subsidised soya bean reaches India, the foreign producer can sell at a price below their actual cost of production, because their government has already paid part of the bill. This is sometimes called 'dumping' — selling goods abroad at below-cost prices. Indian farmers, who produce the same crops without comparable subsidies, find their goods undercut on the world market and even in their own domestic markets when imports flood in. THE INDIAN COUNTERPART. India also subsidises its farmers — through cheap fertiliser, subsidised electricity for irrigation pumps, Minimum Support Prices (MSP) for wheat and rice, and the Public Distribution System that buys grain from farmers for the food security system. But Indian subsidies are much smaller in dollar terms (typically $25-50 billion total, but for 600+ million people in agriculture vs much fewer in the US/EU). Yet the WTO frequently challenges Indian subsidies as 'trade-distorting'. THE IRONY THAT NEGOTIATORS POINT TO. As one Indian negotiator put it: 'The American farmer earning $5,000 a month is told he can keep his subsidy. The Indian farmer earning ₹5,000 a month is told his is too generous.' That captures the unfairness. WHY THE RULES DEVELOPED THIS WAY. The original trade rules were largely written by rich countries (the USA, Europe, Japan) in the GATT and early WTO years, when developing countries had less negotiating power. The rules were designed to be 'equal' on paper — but equal rules between unequal players produce unequal outcomes. A 100-rupee tariff cut means very different things to a rich economy and a poor one. WHAT INDIA HAS DONE. India has, along with other developing countries, blocked WTO deals that it considered unfair. The Doha Round of trade talks, launched in 2001, has stalled largely because India and others insist on rebalancing the rules — particularly on agricultural subsidies and on protections for poor-country food security. India has signed bilateral and regional FTAs (with Japan, ASEAN, UAE, Australia, etc.) where it can negotiate terms more directly, rather than relying only on the WTO. WHY THIS MATTERS. India has about 600+ million people connected to agriculture, many of them small farmers earning meagre incomes. Trade rules that allow subsidised foreign farm goods to flood Indian markets can destroy livelihoods on a massive scale. Fair trade rules are not a luxury for India — they are a matter of survival for tens of millions of families. The chapter's basic message: rules-based trade is better than no rules. But the right rules must take into account the very different starting positions of countries. That fight is ongoing.",
+          "explanation": "Tests understanding of WTO fairness debates with the subsidy example."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c4-h1",
+          "type": "long",
+          "question": "Should India continue to engage with the WTO, or should it focus instead on bilateral and regional trade deals (FTAs)? Argue both sides and reach a conclusion.",
+          "answer": "This is a genuine policy debate that affects India's economic future. Let me lay out both sides honestly and then conclude. THE CASE FOR STAYING WITH THE WTO: (1) RULES-BASED TRADE IS BETTER THAN A JUNGLE. Without the WTO, big countries can bully smaller ones openly. The WTO at least gives India a forum to formally challenge unfair practices (US tariffs on Indian steel, EU restrictions on Indian medicines, etc.). India has won and lost WTO disputes — but the forum exists. (2) MULTILATERAL TRADE MEANS BETTER ACCESS. WTO rules apply to all 165 members. If India relies only on FTAs, it would have to negotiate separate deals with every major economy — slower and harder. (3) STRENGTH IN COALITIONS. At the WTO, India has been a leader of developing countries — pushing back together against rich countries' demands. This collective voice matters. India alone can be pressured; India plus Brazil plus China plus South Africa plus African nations cannot be easily pushed around. (4) DISPUTE RESOLUTION. The WTO has an Appellate Body and dispute resolution mechanism. When countries break trade rules, others can complain. Even if imperfect, this is a system India needs as both an exporter and importer. (5) GLOBAL CREDIBILITY. WTO membership signals India is a responsible global economic actor — important for FDI, for global capital markets, for India's seat at the world's economic table. THE CASE FOR FOCUSING ON FTAs (Free Trade Agreements): (1) WTO PROGRESS HAS STALLED. The Doha Round has been stuck for 20+ years. Rich countries won't compromise on farm subsidies; poor countries won't compromise on market access. Real new trade liberalisation through the WTO has nearly stopped. (2) FTAs CAN BE TAILORED TO INDIAN INTERESTS. In an FTA with Japan or the UAE, India can negotiate exactly what it wants — protections for its farmers, opening of markets for its software exports, special terms for Indian professionals working abroad. This flexibility is hard to get in WTO talks. (3) RICH COUNTRIES ARE ALREADY DOING IT. The USA, EU, China — all have signed massive bilateral and regional FTAs. India risks being left out of major trade networks if it doesn't sign more FTAs. (4) FTAs ARE FASTER. A bilateral FTA can be negotiated in 2-5 years; the WTO Doha Round has been stuck for 20+. (5) STRATEGIC PARTNERS. FTAs with allies (Japan, Australia, UAE) build economic links that reinforce strategic ties — important in an era of geopolitical competition. INDIA'S CURRENT APPROACH (which I believe is right): India is doing BOTH. It remains a member of the WTO and uses its forum, while aggressively signing FTAs: with Japan (CEPA, 2011), with ASEAN, with UAE (CEPA, 2022), with Australia (ECTA, 2022), with the European Free Trade Association (TEPA, 2024). India has stayed out of the China-led RCEP (2020) because the terms were unfavourable — a sensible refusal. Negotiations with the UK and EU continue. THE BALANCED CONCLUSION: India should NOT choose between the WTO and FTAs. It should use both intelligently. AT THE WTO: keep pushing for fairer rules on farm subsidies, on protections for developing countries, on intellectual property (especially for generic medicines, where India is a global leader). Use the dispute settlement to challenge unfair practices. Build coalitions with other developing countries. THROUGH FTAs: sign deals with countries where the terms benefit India — better access for Indian goods and services, protection for sensitive sectors, mobility for Indian professionals. Avoid deals that hurt Indian farmers or strategically important sectors (which is why India stayed out of RCEP). India's approach should be neither purely multilateral nor purely bilateral, but pragmatic and strategic. The WTO is the safety net; FTAs are the targeted tools. Both are needed. A FUTURE-LOOKING NOTE: As India's economy grows (projected 3rd largest by 2030), India will have more negotiating power. The trade-offs will shift in India's favour. The challenge is to use that growing power wisely — to push for trade rules that lift all Indians, especially the small farmer in Vidarbha and the garment worker in Tirupur, not just the IT engineer in Bengaluru. That balance — between national interest, international responsibility, and domestic equity — is what good trade policy is about. As future citizens and voters, you will need to judge whether the policy is being done well.",
+          "explanation": "Capstone question on India's WTO and FTA strategy."
+        }
+      ]
+    },
+    {
+      "topic": "Winners and Losers of Globalisation",
+      "easy": [
+        {
+          "id": "c5-e1",
+          "type": "mcq",
+          "question": "Which group has been a CLEAR WINNER of globalisation in India?",
+          "options": [
+            "Vidarbha cotton farmers",
+            "Traditional handloom weavers competing with power looms",
+            "Skilled IT professionals in Bengaluru",
+            "Small electronics workshop owners hit by Chinese imports"
+          ],
+          "answer": "Skilled IT professionals in Bengaluru",
+          "explanation": "Skilled IT and BPO professionals — concentrated in Bengaluru, Hyderabad, Pune, Chennai, and Gurugram — have been clear winners of globalisation. The IT industry alone employs over 5 million directly. Cotton farmers in Vidarbha, handloom weavers, and small electronics makers have generally been squeezed or hurt by globalisation."
+        },
+        {
+          "id": "c5-e2",
+          "type": "mcq",
+          "question": "In 2024, Indians abroad sent home over $125 billion in:",
+          "options": [
+            "Foreign direct investment",
+            "Tax revenue",
+            "Remittances",
+            "Tourism spending"
+          ],
+          "answer": "Remittances",
+          "explanation": "Remittances are money that people working abroad send back to their families at home. In 2024, Indians abroad sent home over $125 billion in remittances — the highest of any country in the world. Whole districts in Kerala, Punjab, and parts of Tamil Nadu live on these flows. This is a major positive consequence of globalisation for India."
+        },
+        {
+          "id": "c5-e3",
+          "type": "fill",
+          "question": "Tata Steel acquired the British steelmaker _______ in 2007, showing that Indian companies could become globally competitive MNCs themselves.",
+          "answer": "Corus",
+          "explanation": "Tata Steel's acquisition of Corus (a British-Dutch steel giant) in 2007 for about $12 billion was one of the largest Indian foreign acquisitions ever. It showed that Indian companies were no longer just employees or partners of foreign MNCs — they could become major MNCs themselves. Tata Motors similarly acquired Jaguar Land Rover in 2008."
+        },
+        {
+          "id": "c5-e4",
+          "type": "mcq",
+          "question": "Which of the following has commonly been a NEGATIVE consequence of globalisation for India?",
+          "options": [
+            "Increase in mobile phone choices",
+            "Crushing of small toy and basic electronics makers by cheap Chinese imports",
+            "Growth of Bengaluru as an IT city",
+            "Increase in remittances from abroad"
+          ],
+          "answer": "Crushing of small toy and basic electronics makers by cheap Chinese imports",
+          "explanation": "One of the most documented negative consequences of globalisation in India has been the closure of thousands of small workshops — toy makers, basic electronics assemblers, plastic moulders — after cheap Chinese imports flooded the market in the 2000s. Many small producers simply couldn't compete on price. Other examples include handloom weavers crushed by power looms and traditional artisans displaced by mass-produced goods."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c5-m1",
+          "type": "short",
+          "question": "Describe the three or four main groups of WINNERS from globalisation in India, with specific examples.",
+          "answer": "Globalisation has created clear winners in India. Let's identify them carefully with real examples. (1) SKILLED, ENGLISH-SPEAKING URBAN INDIANS. The biggest single group of winners. The IT industry directly employs over 5 million people, with tens of millions of indirect jobs. Companies like Tata Consultancy Services, Infosys, Wipro, HCL, Tech Mahindra, Cognizant, and Capgemini employ hundreds of thousands of Indian engineers, designers, project managers, and analysts. The BPO sector — call centres, accounting, payroll processing, medical transcription — adds millions more. Whole cities have been transformed: Bengaluru, Hyderabad, Gurugram, Pune, Chennai. A family that was lower-middle-class in 1990 with a father earning ₹5,000-10,000 a month may now have children earning ₹50,000-2,00,000 a month. Real consumption patterns have changed — flats, cars, foreign holidays, children studying abroad. (2) INDIAN CONSUMERS (ALMOST ALL OF THEM). Pretty much every Indian benefits to some extent from globalisation as a consumer. Variety, quality, and (often) prices have improved across nearly every product category. A two-wheeler is more reliable; a refrigerator runs better; mobile data is dirt cheap thanks to Reliance Jio. Even small-town and rural India have access to goods and services unimaginable in 1990 — smartphones, OTT entertainment, online shopping, payments through UPI. (3) LARGE INDIAN COMPANIES THAT ADAPTED. Several Indian companies didn't just survive globalisation — they became global MNCs themselves. Tata Steel bought Corus (Britain) in 2007. Tata Motors bought Jaguar Land Rover (Britain) in 2008. Bharti Airtel expanded across Africa. Sun Pharma is among the world's largest generic drug makers. Reliance Jio has changed global telecom thinking. Infosys, TCS, Wipro are huge global IT firms employing many non-Indians abroad. Adani has built ports across countries. Mahindra makes vehicles globally. (4) MIGRANT INDIANS AND REMITTANCE-RECEIVING FAMILIES. Indians abroad — software engineers in California, nurses in the Gulf, doctors in Britain, construction workers in Saudi Arabia, taxi drivers in New York — sent home over $125 billion in 2024. This is the highest remittance flow of any country in the world. It supports families across India, especially in Kerala, Punjab, Tamil Nadu, Andhra Pradesh, and other states with strong migration traditions. (5) DIGITAL ENTREPRENEURS AND STARTUPS. India now has 100+ unicorns (startups valued at over $1 billion) — Flipkart, Zomato, Swiggy, Paytm, BYJU'S (now troubled), Ola, OYO, Razorpay, and many others. These wouldn't exist without globalisation, both because they raised foreign capital and because they serve a digitally-globalised Indian consumer. THE COMMON THREAD: These winners are people, families, and companies that could plug into the global economy — either by selling skills, capital, or products globally, or by serving the globally-connected Indian consumer. The advantage of globalisation flows toward those who can participate in it.",
+          "explanation": "Tests understanding of who has gained from globalisation in India."
+        },
+        {
+          "id": "c5-m2",
+          "type": "short",
+          "question": "Describe the three or four main groups of LOSERS or SQUEEZED groups from globalisation in India, with specific examples.",
+          "answer": "Globalisation has also produced losers and squeezed groups in India. An honest assessment must hold both sides. (1) SMALL PRODUCERS CRUSHED BY CHEAP IMPORTS, ESPECIALLY FROM CHINA. After China joined the WTO in 2001, cheap Chinese goods flooded India. Thousands of small workshops closed — toy makers, plastic moulders, basic electronics assemblers, leather goods makers, certain types of textile factories. The Indian toy industry, once flourishing in places like Channapatna (Karnataka) and parts of Uttar Pradesh, was largely wiped out by Chinese imports. The same happened to many small Diwali decoration makers, basic switch and plug manufacturers, and simple electronics workshops. These were typically small businesses employing dozens or hundreds of people in towns and small cities. Their closure displaced hundreds of thousands of workers. (2) FARMERS EXPOSED TO GLOBAL PRICE SWINGS. Globalisation has tied Indian agricultural prices to global markets — sometimes brutally. When edible-oil tariffs were cut, Indian groundnut, mustard, and soya farmers struggled against subsidised American soya and Malaysian palm oil. When global cotton prices crashed in the mid-2000s, Vidarbha cotton farmers — already loaded with debt — were pushed into a deep crisis. Thousands of farmer suicides were recorded. Sugar farmers, dairy farmers, and others have faced similar shocks. The basic problem: Indian farmers face global price competition without comparable subsidies, modern technology, or risk insurance. (3) INFORMAL-SECTOR WORKERS. About 80% of Indian workers are in the informal sector — without contracts, paid leave, health insurance, or pensions. As MNCs and their large suppliers push their Indian subcontractors to deliver cheaper and faster, the squeeze gets passed down to these workers. A garment worker in Tirupur stitching shirts for Zara, H&M, or Walmart often works 10-12 hour shifts at low wages because the brand has set a ruthless price. Same for workers in shoe factories supplying Nike or Adidas, in mining operations supplying global commodity buyers, in construction supplying real estate developers. (4) TRADITIONAL ARTISANS AND HANDICRAFT WORKERS. Power looms have crushed handloom weavers — once a major industry in places like Varanasi, Pochampally, Maheshwar, and across the country. Mass-produced plastic and electronic toys have crushed traditional wood-and-clay craftsmen in places like Kondapalli (Andhra), Channapatna (Karnataka), Saharanpur (UP). Synthetic fabric replacing khadi, machine pottery replacing village pottery, factory-made jewellery replacing handcrafted ornaments — the pattern repeats across crafts. (5) MID-SIZED INDIAN COMPANIES IN PROTECTED INDUSTRIES. Many Indian phone brands like Micromax, Lava, Karbonn dominated the budget mobile market in 2010-2014 but were largely crushed when Chinese brands (Xiaomi, Vivo, Oppo, Realme) and Samsung scaled their Indian operations. Similar fates befell some Indian PC makers, certain consumer electronics brands, and traditional retailers facing Walmart-Flipkart and Amazon. (6) URBAN INFORMAL WORKERS AND MIGRANT LABOURERS. The growth that globalisation produces has also driven massive urbanisation. Millions of migrants from poor rural areas live in slums in Mumbai, Delhi, Bengaluru without proper housing, sanitation, schools, or healthcare. They work as construction workers, security guards, delivery riders, domestic helps, factory workers. They participate in the globalised economy at its hardest, most invisible end. THE COMMON THREAD: The losers are typically those who CANNOT plug into the global economy — they have skills that competition has devalued, they produce goods that cheaper foreign goods replace, they work in industries where global pricing pressure squeezes everyone down. THE POLICY CHALLENGE: A good government tries to cushion the losers — through retraining, social safety nets, support for traditional industries, protection for small producers where appropriate, minimum wage and labour rights enforcement. India has done some of this with mixed results. The job is unfinished.",
+          "explanation": "Tests understanding of who has been hurt by globalisation in India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c5-h1",
+          "type": "long",
+          "question": "If you were Finance Minister of India tomorrow, what FIVE policies would you put in place to make globalisation fairer — keeping the gains for India's growing middle class while protecting workers, small farmers, and small producers? Explain your reasoning.",
+          "answer": "This is the kind of question every thoughtful Indian voter and policymaker should think about. Let me put forward five concrete policies, with reasoning. POLICY 1: MASSIVE INVESTMENT IN BASIC EDUCATION AND VOCATIONAL TRAINING. The biggest divider between winners and losers in globalisation is skills. A skilled Indian can ride the global wave; an unskilled one is pushed under. India spends only about 3% of GDP on education (target should be 6% as the National Education Policy recommends). I would push for: (a) Quality primary and secondary education in government schools — not just attendance but actual learning outcomes. (b) Strong vocational training (ITIs) tied to industry needs — welding, plumbing, electronics, healthcare, hospitality, construction. (c) Easier access to higher education with affordable fees. (d) Bridges into IT and digital skills for students from non-elite backgrounds. (e) Reskilling programmes for workers in industries hit by globalisation. RATIONALE: This is the most important single intervention. Globalisation rewards skills. Without massive investment in human capital, India cannot share the gains widely. POLICY 2: STRENGTHEN MINIMUM WAGES, LABOUR RIGHTS, AND SOCIAL SECURITY — ESPECIALLY FOR INFORMAL WORKERS. About 80% of Indian workers are in the informal sector — without contracts, paid leave, health insurance, or pensions. As MNC supply chains squeeze prices, informal workers bear the pain. I would push for: (a) Strict enforcement of minimum wages, especially in MNC supply chains (Tirupur garments, electronics assembly, construction). (b) Mandatory portable social security — health insurance, pension, accident cover — that follows the worker even when they change employers. (c) Stronger health and safety regulation in factories. (d) Mandatory written contracts for workers above a certain wage level. (e) Stronger protection for gig workers (food delivery, ride-hailing, e-commerce). RATIONALE: Globalisation's benefits flow to capital and skilled labour by default. Without labour protections, the bottom 50% gets crushed. POLICY 3: TARGETED PROTECTION AND SUPPORT FOR SMALL FARMERS AND SMALL PRODUCERS. Not blanket protectionism — that doesn't work. But targeted help where it's needed. I would push for: (a) Higher MSP for key crops, paid promptly, with better procurement. (b) Investment in agricultural research, storage, cold chains, and transportation to reduce post-harvest losses. (c) Crop insurance that actually pays out when needed (current insurance often fails farmers). (d) Affordable credit at fair rates (not loan sharks). (e) Support for value-added farming — branded local foods, organic products, exports. (f) Modernisation help for small producers in industries we want to keep — handicrafts, handlooms, certain traditional industries. (g) Selective protection for industries critical to mass employment (textiles, footwear, certain electronics) while pushing them to upgrade. RATIONALE: 600+ million Indians depend on agriculture or small-scale production. They cannot be ignored. Their voice must be heard in trade policy. POLICY 4: BUILD INDIAN GLOBAL CHAMPIONS THROUGH PLI AND STRATEGIC INDUSTRIAL POLICY. India should not just attract MNCs — it should build Indian MNCs in critical sectors. I would push for: (a) Continued Production-Linked Incentives for sectors like semiconductors, electric vehicles, electronics, pharmaceuticals, defence, renewable energy. (b) Public investment in research and development — currently India spends only 0.7% of GDP on R&D vs South Korea's 4.5% or Israel's 5%. (c) Better policies for Indian startups — easier regulation, simpler taxation, more equity-style funding. (d) Support for Indian companies expanding abroad through trade financing, diplomatic backing, market intelligence. (e) Strategic public-private partnerships in sectors where private investment alone won't deliver scale. RATIONALE: India needs to capture more of the value chain, not just provide cheap assembly labour. Without strong domestic firms, India will always be a junior partner in globalisation. POLICY 5: FIGHT FOR FAIRER GLOBAL RULES, AND BUILD STRATEGIC ALLIANCES. India's voice matters because India is huge. I would use that voice to: (a) Push hard at the WTO for cuts in rich-country farm subsidies and for fairer rules on intellectual property (especially for affordable medicines). (b) Build coalitions with other developing countries (Brazil, South Africa, Indonesia, ASEAN) to negotiate as a bloc. (c) Sign smart FTAs with strategic partners (Japan, UK, EU, Australia, Africa) — protecting Indian interests while expanding markets. (d) Stay out of trade deals that disadvantage India (rightly stayed out of RCEP). (e) Use India's diplomatic and economic weight to make globalisation work for the Global South, not just for the rich West. RATIONALE: India cannot fix global trade rules alone, but it can lead coalitions that push back against unfair rules. THE BIGGER POINT: Globalisation is a powerful force. It cannot be reversed, and trying to reverse it (autarky, isolation) would impoverish India. But it can be SHAPED. Smart industrial policy + better human capital + stronger labour rights + targeted agricultural support + fairer global rules — together these can make globalisation work for far more Indians, not just the lucky 20% at the top. India's economy is projected to be the world's third-largest by 2030. The question is whether that growth will lift the bottom half too, or just enrich the top. The policies I've outlined — none of them radical, all of them practical — would help ensure it lifts everyone. As future citizens and possibly future policymakers, you will need to keep pushing for this fairer version of globalisation. Don't accept the easy version that helps only the comfortable. Demand the harder version that lifts everyone.",
+          "explanation": "Capstone policy question requiring integration of all chapter themes."
+        }
+      ]
+    },
+    {
+      "topic": "India's Globalisation Story: Examples and Stories",
+      "easy": [
+        {
+          "id": "c6-e1",
+          "type": "mcq",
+          "question": "Which Indian city is often called 'the Silicon Valley of India' because of its huge IT industry?",
+          "options": ["Mumbai", "Bengaluru", "Kolkata", "Jaipur"],
+          "answer": "Bengaluru",
+          "explanation": "Bengaluru (formerly Bangalore) is called India's Silicon Valley because it is the country's largest IT hub. Major companies like Infosys, Wipro, and many MNC R&D centres (Texas Instruments, Microsoft, Google, Samsung, etc.) are based there. Bengaluru emerged as the IT capital because of its engineering colleges, public-sector tech (HAL, ISRO), early risk-takers, and the snowball effect of having talent available."
+        },
+        {
+          "id": "c6-e2",
+          "type": "mcq",
+          "question": "The Indian government's 2014 initiative to make India a global manufacturing hub is called:",
+          "options": [
+            "Digital India",
+            "Skill India",
+            "Make in India",
+            "Atmanirbhar Bharat"
+          ],
+          "answer": "Make in India",
+          "explanation": "Make in India, launched in 2014, is the Indian government's initiative to encourage manufacturing in India. The idea is that India's growth so far has been driven mostly by services (IT, finance); to create enough jobs for its young population, India needs to manufacture too. Mobile phones, defence electronics, semiconductors, electric vehicles have seen significant progress under this initiative."
+        },
+        {
+          "id": "c6-e3",
+          "type": "fill",
+          "question": "The Indian-built digital payment system that is now studied by countries around the world is called _______ (Unified Payments Interface).",
+          "answer": "UPI",
+          "explanation": "UPI (Unified Payments Interface), launched in 2016, allows anyone with an Indian bank account to make instant payments through their smartphone. By 2024, India was running over 100 billion UPI transactions per year — the world's largest digital payment system by volume. Several other countries (Singapore, France, UAE, Sri Lanka, Bhutan) have linked up with UPI or built UPI-like systems."
+        },
+        {
+          "id": "c6-e4",
+          "type": "tf",
+          "question": "By 2024, India had become the world's second-largest mobile phone manufacturer after China.",
+          "answer": "True",
+          "explanation": "India's mobile phone manufacturing has grown dramatically since the launch of Make in India and the Production-Linked Incentive (PLI) scheme. By 2024, India was the world's second-largest mobile phone manufacturer after China. Foxconn (which assembles iPhones for Apple) has huge plants near Chennai. Samsung operates one of its largest single phone factories at Noida. India both meets its domestic demand and exports significant volumes."
+        }
+      ],
+      "medium": [
+        {
+          "id": "c6-m1",
+          "type": "short",
+          "question": "How did Bengaluru become India's IT capital? What three factors helped it succeed?",
+          "answer": "Bengaluru becoming India's IT capital was partly luck and partly planning. Three threads came together to make it happen. (1) ENGINEERING EDUCATION TRADITION. Bengaluru and Karnataka had a strong tradition of technical education going back decades. The Indian Institute of Science (IISc) was set up in Bengaluru in 1909, courtesy of Jamsetji Tata and the Maharaja of Mysore. Karnataka invested heavily in engineering colleges from the 1960s onwards. By the 1980s, dozens of engineering colleges in Karnataka were producing tens of thousands of graduates each year. The raw material — talented, English-speaking engineers — was already there before globalisation arrived. (2) PUBLIC-SECTOR TECH ECOSYSTEM. Bengaluru hosted major government-owned technology organisations from early Independence: Hindustan Aeronautics Limited (HAL, aircraft), Indian Space Research Organisation (ISRO, space), Bharat Electronics Limited (BEL, defence electronics), Indian Telephone Industries (ITI, telecommunications), and others. Generations of engineers worked there, and many of their children grew up in an engineering culture. The city had a 'mind for technology' long before software became a global business. (3) EARLY RISK-TAKERS WHO PLACED BIG BETS. A few entrepreneurs and companies took early bets that paid off enormously. Infosys was founded in 1981 by N.R. Narayana Murthy and six co-founders with a tiny capital — they later moved their headquarters to Bengaluru. Wipro pivoted from cooking oil and lighting to computers in the late 1970s. Most importantly, Texas Instruments became the first major foreign MNC to set up an R&D centre in Bengaluru in 1985 — testing whether Indian engineers could do world-class chip design work. They could. Once these early entries existed, a SNOWBALL EFFECT kicked in. More engineers stayed in Bengaluru because companies were there. More companies came to Bengaluru because engineers were available. More engineering colleges opened because companies were hiring. More restaurants, housing, and amenities developed because professionals lived there. By the late 1990s, when Y2K work flooded into India, Bengaluru was the obvious place. By 2010, it had earned the nickname 'the Silicon Valley of India.' THE PHYSICAL FACE OF GLOBALISATION. Today Bengaluru is the most visible physical expression of India's connection to the global economy. Glass towers along the Outer Ring Road, traffic that doesn't move, rents that crush middle-class families, weather that is still pleasant, a generation of young Indians earning what their parents could not have imagined. Companies like Infosys, Wipro, TCS, Cognizant, Capgemini, plus the R&D centres of Microsoft, Google, Samsung, Amazon, Intel, Texas Instruments, Cisco, and dozens of others — all are there. Bengaluru shows both the bright side (jobs, prosperity, talent) and the chaos side (traffic, housing pressure, water shortages) of rapid globalisation, often visible from the same flyover.",
+          "explanation": "Tests understanding of how Bengaluru became an IT hub through specific factors."
+        }
+      ],
+      "hard": [
+        {
+          "id": "c6-h1",
+          "type": "long",
+          "question": "Using specific Indian examples (Tata-Corus, Maruti-Suzuki, Foxconn-Apple, Reliance Jio, Walmart-Flipkart, Indian remittances, Infosys/TCS), tell the complete story of how India has engaged with globalisation from 1980 to today. What pattern do you see?",
+          "answer": "India's engagement with globalisation tells a remarkable story when we look at it through real examples. Let me trace the arc. PHASE ONE: CAUTIOUS BEGINNINGS (1980-1991). Even before the 1991 reforms, India was beginning to open up cautiously. MARUTI-SUZUKI (1981-1983). Maruti Suzuki was set up as a joint venture between the Indian government and Suzuki Motors of Japan. The first Maruti 800 rolled out in 1983 — a small, affordable, modern car that transformed Indian motoring. This was a major test case: could a foreign MNC successfully operate in India? Could Indian workers learn modern manufacturing? The answer turned out to be yes — Maruti became the dominant Indian carmaker, training thousands of workers and showing the way. INFOSYS FOUNDING (1981). N.R. Narayana Murthy and six others founded Infosys in 1981 with very little capital. They focused on software services for foreign clients. In a still-closed economy, software was one of the few sectors with global potential — it didn't require physical imports or exports, just engineers and a telephone line. PHASE TWO: THE BIG OPENING (1991 ONWARDS). After the 1991 reforms, the floodgates opened. INFOSYS, WIPRO, TCS EXPLODED. Software exports became one of India's biggest success stories. By 2000, Indian IT was earning serious foreign exchange. The Y2K problem in 1999 brought Indian engineers global recognition — companies worldwide needed help fixing legacy code, and India delivered. CALL CENTRES AND BPO. From 2000 onwards, Indian cities (especially Bengaluru, Hyderabad, Gurugram) became the world's back-office. Companies from American Express to British Airways to Citibank set up huge BPO operations. Millions of jobs. INDIAN MNCs EMERGED. By 2007-2010, Indian companies were no longer just employees — they were buying foreign giants. TATA STEEL BOUGHT CORUS (2007) — paying about $12 billion for the British-Dutch steelmaker. This was Tata becoming a global steel MNC, employing British and Dutch workers. TATA MOTORS BOUGHT JAGUAR LAND ROVER (2008) — for about $2.3 billion. JLR is now a successful luxury car company, owned by an Indian group. Similar acquisitions by Birla, Mahindra, Bharti Airtel and others. PHASE THREE: DEEPENING AND COMPLEXITY (2010-2020). The story became more complex. RELIANCE JIO LAUNCHED (2016) — offering free data and near-free voice. This collapsed the cost of being online in India. From about 200 million internet users in 2015, India crossed 800 million by 2024. Jio is now studied by global telecom companies. WALMART ACQUIRED FLIPKART (2018) — paying about $16 billion for the Indian e-commerce leader. One of the largest foreign acquisitions of an Indian company. Some worried about American big-box retail crushing Indian retailers; others saw it as foreign capital validating Indian startups. AMAZON BECAME HUGE IN INDIA — competing with Flipkart, transforming retail, investing billions. APPLE IPHONE ASSEMBLY MOVED TO INDIA. Foxconn (Apple's main contract manufacturer) began assembling iPhones near Chennai in 2017, expanding rapidly. By 2024, India was making a significant share of global iPhones. PRODUCTION-LINKED INCENTIVES (2020 ONWARDS) — the government paid cash to companies (Indian and foreign) that made certain goods in India. Samsung, Foxconn, Tata Electronics expanded production. PHASE FOUR: INDIA AS GLOBAL PLAYER (2020 ONWARDS). India increasingly shapes globalisation rather than just receiving it. INDIAN REMITTANCES (>$125 BILLION IN 2024) — the highest in the world. Indians abroad — IT workers in California, nurses in the Gulf, doctors in Britain, construction workers in Saudi Arabia — sent home staggering amounts. UPI WENT GLOBAL. India's payment system spread to Singapore, France, UAE, Sri Lanka, Bhutan. ATMANIRBHAR BHARAT (Self-reliant India) — a policy push for strategic industries, particularly after COVID-19 exposed supply chain risks. STRATEGIC CAUTION ON CHINA. After 2020 border tensions, India banned several Chinese apps, tightened FDI scrutiny from China, and pushed for alternatives. FTAs WITH STRATEGIC PARTNERS — UAE (2022), Australia (2022), EFTA (2024), with UK and EU in negotiation. ELECTRIC VEHICLES, RENEWABLES, SEMICONDUCTORS — India is positioning itself as a major player in the green and digital economy of the future. THE PATTERN — WHAT THE STORY SHOWS: (1) FROM CAUTIOUS RECEIVER TO ACTIVE SHAPER. In the 1980s, India hesitantly let in a Japanese carmaker. By the 2020s, Indian companies were buying foreign giants and Indian apps were going global. (2) THE BIG STORY IS SERVICES, BUT MANUFACTURING IS CATCHING UP. IT/BPO gave India its initial global standing. Now manufacturing (phones, electronics, EVs) is the next wave. (3) BOTH FOREIGN MNCs AND INDIAN MNCs MATTER. Samsung makes phones in India; Tata makes steel in Britain. The relationship is bidirectional now. (4) GOVERNMENT POLICY HAS MATTERED ENORMOUSLY. 1991 reforms, IT industry support, BPO friendly policies, Make in India, PLI, FTAs, digital infrastructure — each policy choice shaped the story. (5) WINNERS AND LOSERS HAVE BEEN UNEVEN. The IT engineer in Bengaluru has done very well. The Vidarbha cotton farmer or the displaced toy maker in UP has not. The wealth created is real; so is the inequality. (6) THE STORY IS UNFINISHED. India is on track to be the world's 3rd largest economy by 2030. The next two decades will probably reshape global economics as much as China's rise did in the previous two. How fairly India distributes the gains depends on choices being made now — by governments, by companies, and by citizens. THE BIGGER LESSON: India in 2025 is unrecognisable from India in 1980 in economic terms. The change was driven by reform (1991), technology (containers, internet, mobile), policy (PLI, Make in India), entrepreneurship (Infosys, Reliance, Tata's transformation), and the patient effort of millions of Indians who built skills and seized opportunities. The story is not all good news — inequality, agricultural distress, informal worker pressures remain serious. But the overall arc is upward, and India is now a major global economic power rather than a marginal one. As future citizens, your job is to push that arc in directions that lift everyone, not just the lucky urban middle class. The work of making globalisation fair to India and within India continues. Yours is the generation that will largely complete it.",
+          "explanation": "Capstone integrative question requiring synthesis of all the chapter's themes and examples."
+        }
+      ]
+    }
+  ]
+}

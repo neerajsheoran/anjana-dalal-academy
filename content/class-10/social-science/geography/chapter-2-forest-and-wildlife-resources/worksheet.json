@@ -1,0 +1,408 @@
+{
+  "topics": [
+    {
+      "topic": "India's Biodiversity and Flora-Fauna",
+      "easy": [
+        {
+          "id": "1-1-1",
+          "type": "mcq",
+          "question": "Approximately what percentage of the world's known plant and animal species does India hold?",
+          "options": ["2.4%", "5%", "8%", "12%"],
+          "answer": "8%",
+          "explanation": "India occupies only 2.4% of the world's land area but is home to roughly 8% of all known plant and animal species — making it one of the most biodiverse countries on Earth."
+        },
+        {
+          "id": "1-1-2",
+          "type": "mcq",
+          "question": "The Asiatic lion is found in the wild only in:",
+          "options": ["Kaziranga National Park", "Gir National Park", "Bandipur National Park", "Sundarbans National Park"],
+          "answer": "Gir National Park",
+          "explanation": "The Asiatic lion survives in the wild only in Gir National Park in Gujarat — one of India's most famous endemic conservation success stories."
+        },
+        {
+          "id": "1-1-3",
+          "type": "fill",
+          "question": "Species that are found only in one particular geographic area are called ___ species.",
+          "answer": "endemic",
+          "explanation": "Endemic species are restricted to a specific region — for example, the lion-tailed macaque is endemic to the Western Ghats."
+        },
+        {
+          "id": "1-1-4",
+          "type": "mcq",
+          "question": "Which of these is an endemic species of the Western Ghats?",
+          "options": ["Snow leopard", "Lion-tailed macaque", "One-horned rhinoceros", "Sangai deer"],
+          "answer": "Lion-tailed macaque",
+          "explanation": "The lion-tailed macaque is found only in the rainforests of the Western Ghats, making it endemic to that region."
+        },
+        {
+          "id": "1-1-5",
+          "type": "mcq",
+          "question": "The one-horned rhinoceros is primarily found in which Indian state?",
+          "options": ["Gujarat", "Assam", "Madhya Pradesh", "Tamil Nadu"],
+          "answer": "Assam",
+          "explanation": "The Indian one-horned rhinoceros lives mainly in the grasslands of Kaziranga and Manas National Parks in Assam."
+        }
+      ],
+      "medium": [
+        {
+          "id": "1-2-1",
+          "type": "short",
+          "question": "Why is India considered one of the world's mega-biodiverse countries?",
+          "answer": "India holds about 8% of the world's known species on just 2.4% of its land area — including roughly 47,000 plant species and 89,000 animal species. It sits at the meeting point of three biogeographic realms (Palearctic, Ethiopian, Indo-Malayan), spans an enormous range of altitudes and climates, and has cultures that have lived alongside wildlife for millennia. Around 15,000 flowering plants and a large number of animals are endemic to India.",
+          "explanation": "The combination of geography, climate, and cultural tolerance has made India one of the great living museums of the world."
+        },
+        {
+          "id": "1-2-2",
+          "type": "short",
+          "question": "Name three endemic Indian species and the region each is found in.",
+          "answer": "The Asiatic lion (Gir National Park, Gujarat); the lion-tailed macaque (Western Ghats rainforests); the Nilgiri tahr (Western Ghats high ridges); the sangai or brow-antlered deer (Loktak Lake, Manipur); the Andaman teal (Andaman Islands). Any three are acceptable.",
+          "explanation": "Endemic species exist nowhere else in the world, which makes their survival doubly important."
+        }
+      ],
+      "hard": [
+        {
+          "id": "1-3-1",
+          "type": "long",
+          "question": "Explain why India has such high biodiversity, and discuss what is at stake when even one endemic species goes extinct.",
+          "answer": "India's biodiversity is the result of three overlapping factors. First, geographic position — India sits at the junction of the Palearctic, Ethiopian, and Indo-Malayan biogeographic realms, allowing species from each to colonise it. Second, climatic and altitudinal range — from the deserts of the Thar to the wettest places on Earth in Meghalaya, and from sea-level mangroves to the world's highest peaks, India offers nearly every habitat a species could need. Third, cultural history — Indian societies have for millennia treated forests, rivers, and many animal species as sacred, allowing wildlife to coexist with dense human populations. When an endemic species like the Asiatic cheetah (extinct in India in 1952) or the pink-headed duck is lost, the loss is permanent and total — the species existed nowhere else, so its extinction in India is its extinction on Earth. Beyond the moral loss, endemic species often play unique ecological roles — pollinators, seed dispersers, predators — that no introduced species can fully replace. Their loss also erases centuries of cultural and medicinal knowledge held by the communities who lived alongside them.",
+          "explanation": "The answer should cover geography, climate, culture, and the irreversible nature of endemic extinction."
+        }
+      ]
+    },
+    {
+      "topic": "IUCN Categories and the Red Data Book",
+      "easy": [
+        {
+          "id": "2-1-1",
+          "type": "mcq",
+          "question": "The Red Data Book is maintained by:",
+          "options": ["United Nations Environment Programme", "International Union for Conservation of Nature (IUCN)", "World Wildlife Fund", "Government of India"],
+          "answer": "International Union for Conservation of Nature (IUCN)",
+          "explanation": "The IUCN maintains the Red Data Book, a global list of species classified by their conservation status."
+        },
+        {
+          "id": "2-1-2",
+          "type": "mcq",
+          "question": "Which of the following is an endangered species in India?",
+          "options": ["Cattle", "Blackbuck", "Crow", "Common pigeon"],
+          "answer": "Blackbuck",
+          "explanation": "The blackbuck is classified as endangered. Cattle, crows, and pigeons are normal species with healthy populations."
+        },
+        {
+          "id": "2-1-3",
+          "type": "fill",
+          "question": "A species that has completely disappeared from the planet is called ___.",
+          "answer": "extinct",
+          "explanation": "Extinct species no longer exist anywhere on Earth (or in a specific region) — e.g., the Asiatic cheetah was declared extinct in India in 1952."
+        },
+        {
+          "id": "2-1-4",
+          "type": "mcq",
+          "question": "The Gangetic dolphin and the Asiatic elephant are usually classified as:",
+          "options": ["Endangered", "Vulnerable", "Endemic", "Extinct"],
+          "answer": "Vulnerable",
+          "explanation": "Vulnerable species have declining populations that, if pressures continue, will become endangered."
+        }
+      ],
+      "medium": [
+        {
+          "id": "2-2-1",
+          "type": "short",
+          "question": "Briefly explain the difference between endangered, vulnerable, and rare species, giving one Indian example of each.",
+          "answer": "Endangered species are in immediate danger of extinction unless conditions improve (e.g., Indian rhino). Vulnerable species have declining populations and may become endangered if pressures continue (e.g., Asiatic elephant). Rare species have small populations that could slip into vulnerable or endangered status if conditions worsen (e.g., Himalayan brown bear).",
+          "explanation": "The three categories represent progressively less severe but still serious conservation concerns."
+        },
+        {
+          "id": "2-2-2",
+          "type": "short",
+          "question": "Why is the extinction of the Asiatic cheetah in India considered a particularly painful conservation loss?",
+          "answer": "The Asiatic cheetah was once widespread across India's grasslands and was an apex predator that played a unique ecological role. The last three were shot in 1947 by the Maharaja of Korea, and the species was declared extinct in India in 1952. Even the 2022 reintroduction of African cheetahs at Kuno National Park can only attempt to fill the niche — it cannot bring back the genetically distinct Asiatic subspecies, which still survives only in Iran in critically endangered numbers.",
+          "explanation": "The cheetah's loss illustrates that hunting can erase a species faster than any law can restore it."
+        }
+      ],
+      "hard": [
+        {
+          "id": "2-3-1",
+          "type": "long",
+          "question": "Describe the six IUCN classification categories with one Indian example of each. Why is such classification useful for conservation?",
+          "answer": "The six categories are: (1) Normal species — populations that are stable and healthy; e.g., cattle and the sal tree. (2) Endangered species — those in immediate danger of extinction; e.g., the Indian one-horned rhinoceros, the blackbuck, the sangai of Manipur. (3) Vulnerable species — declining populations that may become endangered if threats continue; e.g., the Gangetic dolphin and the Asiatic elephant. (4) Rare species — small populations that could become vulnerable or endangered; e.g., the Himalayan brown bear and the desert fox. (5) Endemic species — found only in one geographic area; e.g., the lion-tailed macaque of the Western Ghats and the Andaman teal. (6) Extinct species — gone from a region or from the Earth; e.g., the Asiatic cheetah in India (1952). The classification is useful because it allows scientists, governments, and citizens to prioritise — knowing which species need the most urgent legal protection, which need habitat restoration, and which need ongoing monitoring. Without such a chart, conservation effort would scatter randomly across thousands of species.",
+          "explanation": "Good answers should cover all six categories with India-specific examples and connect the classification to its policy use."
+        }
+      ]
+    },
+    {
+      "topic": "Drivers of Depletion",
+      "easy": [
+        {
+          "id": "3-1-1",
+          "type": "mcq",
+          "question": "Which of the following is NOT a major cause of biodiversity loss in India?",
+          "options": ["Mining", "Big dam projects", "Setting up sacred groves", "Poaching"],
+          "answer": "Setting up sacred groves",
+          "explanation": "Sacred groves are protected by local communities and actually conserve biodiversity. Mining, dams, and poaching are major drivers of depletion."
+        },
+        {
+          "id": "3-1-2",
+          "type": "mcq",
+          "question": "Which large dam project submerged about 40,000 hectares of forest?",
+          "options": ["Tehri Dam", "Bhakra Dam", "Narmada Sagar Project", "Hirakud Dam"],
+          "answer": "Narmada Sagar Project",
+          "explanation": "The Narmada Sagar Project in Madhya Pradesh submerged approximately 40,000 hectares of forest, illustrating how big dam projects destroy habitat."
+        },
+        {
+          "id": "3-1-3",
+          "type": "fill",
+          "question": "The colonial ___ Act of 1865 declared most Indian forests state property and pushed tribal communities off their traditional lands.",
+          "answer": "Forest",
+          "explanation": "The Indian Forest Act of 1865 was the colonial law that gave the British control over India's forests for timber and revenue, displacing tribal communities."
+        },
+        {
+          "id": "3-1-4",
+          "type": "mcq",
+          "question": "The invasive plant species that has aggressively choked native forest floors in India is:",
+          "options": ["Neem", "Lantana camara", "Banyan", "Mahua"],
+          "answer": "Lantana camara",
+          "explanation": "Lantana camara, introduced as an ornamental plant during colonial times, has become a serious invasive species across Indian forests."
+        }
+      ],
+      "medium": [
+        {
+          "id": "3-2-1",
+          "type": "short",
+          "question": "How did colonial-era policies contribute to the destruction of Indian forests?",
+          "answer": "The British treated Indian forests primarily as a source of timber for shipbuilding and railway sleepers, and as a revenue source. Trees that took 200 years to grow, like sal, teak, and deodar, were felled on an industrial scale. The Indian Forest Act of 1865 declared most forests state property and excluded tribal communities who had lived in and conserved them for generations. Forests were also cleared to extend cultivation and to make way for plantation crops like tea, coffee, and rubber.",
+          "explanation": "Colonial forestry replaced traditional community management with commercial exploitation, the effects of which India is still recovering from."
+        },
+        {
+          "id": "3-2-2",
+          "type": "short",
+          "question": "Why does the chapter argue that blaming the poor for forest destruction is unfair?",
+          "answer": "Rich and urban Indians consume far more wood, paper, fuel, and energy per person than poor villagers, but the destruction is often blamed on poor people collecting firewood or grazing cattle in the forest. In reality, the largest drivers of forest loss are commercial logging, mining, dams, plantations, and urban consumption. Blaming the poor lets the powerful escape responsibility and produces policies that punish the very communities whose traditional knowledge has historically protected the forest.",
+          "explanation": "Unequal consumption is a key argument the chapter makes — conservation that ignores inequality will fail."
+        },
+        {
+          "id": "3-2-3",
+          "type": "short",
+          "question": "How does the loss of forests affect rural women in particular?",
+          "answer": "Rural women in India often have the daily responsibility of collecting fuelwood, fodder, water, and forest foods. When forests are destroyed, women have to walk much longer distances to gather these necessities, losing hours of productive time. They also lose access to medicinal plants and traditional food sources, which affects family health. Their accumulated knowledge of plant species — held mostly through women — is lost too. This is why the Chipko Movement of 1973 was led so heavily by Garhwali women.",
+          "explanation": "The chapter highlights that environmental destruction always hits the most dependent first — and that is women, in rural India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "3-3-1",
+          "type": "long",
+          "question": "Discuss at least five major causes of biodiversity depletion in India. In your answer, explain why simply blaming any single cause is misleading.",
+          "answer": "The major causes are: (1) Habitat destruction — agricultural expansion converted over 26,200 sq km of forest into farmland between 1951 and 1980, leaving wild species with no place to live. (2) Colonial and industrial logging — sal, teak, and deodar were felled at industrial scale for shipbuilding, railway sleepers, and revenue, with monoculture plantations replacing biodiverse forests. (3) Mining — iron ore, dolomite, and limestone extraction in Jharkhand, Chhattisgarh, and Odisha has destroyed entire elephant corridors and threatens reserves like Buxa. (4) Big dam projects — the Narmada Sagar submerged 40,000 hectares of forest, and the Tehri Dam drowned deodar valleys. (5) Poaching — tiger skin, rhino horn, ivory, and musk-deer pod trade kills hundreds of animals each year; over 40,000 tigers were lost in the colonial era. (6) Pollution and invasive species — pesticides, industrial waste, and aggressive invaders like Lantana camara degrade habitat. (7) Unequal consumption — rich and urban Indians have a far larger ecological footprint than the rural poor who are often blamed. Blaming any single cause is misleading because these forces work together. Mining roads bring poachers. Dams displace villagers who then clear nearby forest. Population alone is not the villain — wealthy consumption per person matters more. Conservation that targets only one cause without seeing the system will fail.",
+          "explanation": "Strong answers should cover at least five causes, link them, and recognise that biodiversity loss is a system-wide problem, not the fault of any one group."
+        }
+      ]
+    },
+    {
+      "topic": "Government Conservation: Acts and Projects",
+      "easy": [
+        {
+          "id": "4-1-1",
+          "type": "mcq",
+          "question": "The Indian Wildlife (Protection) Act was passed in:",
+          "options": ["1965", "1972", "1985", "1991"],
+          "answer": "1972",
+          "explanation": "The Indian Wildlife Protection Act of 1972 was India's foundational law banning hunting of listed species and creating protected areas."
+        },
+        {
+          "id": "4-1-2",
+          "type": "mcq",
+          "question": "Project Tiger was launched in:",
+          "options": ["1969", "1972", "1973", "1980"],
+          "answer": "1973",
+          "explanation": "Project Tiger was launched on 1 April 1973 to save the wild tiger, whose population had collapsed to about 1,827."
+        },
+        {
+          "id": "4-1-3",
+          "type": "fill",
+          "question": "According to the 2022 census, India has approximately ___ wild tigers.",
+          "answer": "3,167",
+          "explanation": "The 2022 tiger census counted 3,167 wild tigers — the largest population in the world, up from 1,827 in 1973."
+        },
+        {
+          "id": "4-1-4",
+          "type": "mcq",
+          "question": "In 2005, which tiger reserve was found to have lost all its tigers to poachers?",
+          "options": ["Corbett", "Ranthambore", "Sariska", "Bandipur"],
+          "answer": "Sariska",
+          "explanation": "Sariska Tiger Reserve in Rajasthan was famously discovered in 2005 to have zero tigers, exposing serious failures in monitoring and protection."
+        },
+        {
+          "id": "4-1-5",
+          "type": "mcq",
+          "question": "Project Crocodile was launched in:",
+          "options": ["1973", "1975", "1985", "1991"],
+          "answer": "1975",
+          "explanation": "Project Crocodile (1975) helped restore populations of the gharial, mugger, and saltwater crocodile in Indian rivers and coasts."
+        }
+      ],
+      "medium": [
+        {
+          "id": "4-2-1",
+          "type": "short",
+          "question": "What is the difference between a national park, a wildlife sanctuary, and a biosphere reserve?",
+          "answer": "A wildlife sanctuary is the gentlest form of protection — private rights of grazing and firewood collection may be partly allowed, and its boundaries can be changed by the state government. A national park is stricter — no private rights are permitted inside, and its boundaries can be altered only by an Act of Parliament. A biosphere reserve is the largest, covering whole ecosystems with three zones: a core zone (no human activity), a buffer zone (limited use), and a transition zone (sustainable human settlements). India has about 560 sanctuaries, 104 national parks, and 18 biosphere reserves.",
+          "explanation": "The categories represent increasing strictness and size of protection."
+        },
+        {
+          "id": "4-2-2",
+          "type": "short",
+          "question": "Briefly describe Project Tiger and assess whether it has succeeded.",
+          "answer": "Project Tiger was launched on 1 April 1973 by the Government of India to save the wild tiger, whose population had collapsed from about 55,000 in 1900 to 1,827 in 1973. It began with 9 tiger reserves including Corbett, Sariska, Ranthambore, Manas, and Sunderbans, and has expanded to more than 50 reserves covering over 75,000 sq km. By the 2022 census, India had 3,167 tigers — the world's largest wild population. So the project succeeded in halting and reversing decline. But the 2005 Sariska scandal, in which all tigers had been poached while official records claimed otherwise, and the collapse of Panna's tiger population in 2009, show that success has been uneven and depends on honest monitoring and community involvement.",
+          "explanation": "A balanced answer should cover both the recovery in numbers and the persistent failures of management in specific reserves."
+        }
+      ],
+      "hard": [
+        {
+          "id": "4-3-1",
+          "type": "long",
+          "question": "Describe India's main government-led conservation initiatives and explain both their successes and their limitations.",
+          "answer": "India's foundational conservation initiative is the Indian Wildlife (Protection) Act of 1972, which banned hunting of listed species, created national parks and wildlife sanctuaries, and authorised state wildlife wings. This was followed by Project Tiger (1973), Project Crocodile (1975), Project Elephant (1992), Project Hangul, Project Snow Leopard (2009), and Indian Rhino Vision 2020. India now has about 104 national parks, 560 wildlife sanctuaries, and 18 biosphere reserves including Nilgiri, Nanda Devi, Sundarbans, and Gulf of Mannar. The 1991 amendment to the Wildlife Act added protection for plants and a wide range of invertebrates. Successes are real: tigers recovered from 1,827 in 1973 to 3,167 in 2022; the one-horned rhino at Kaziranga rose from about 600 to 2,613; gharial populations stabilised; even the Asiatic cheetah was reintroduced in 2022 at Kuno National Park. But the limitations are equally real: Sariska lost all its tigers in 2005, Panna collapsed in 2009, vulture populations crashed due to the drug diclofenac, mining inside protected areas continues, and habitat fragmentation breaks elephant corridors. The deeper limitation is that government conservation has often treated local communities as enemies rather than partners — leading to enforcement gaps where corrupt officials and poachers can operate. The lesson is that legal protection without community ownership is fragile.",
+          "explanation": "Strong answers should cover specific laws and projects, give recovery numbers, and honestly assess failures, especially the Sariska and Panna cases."
+        }
+      ]
+    },
+    {
+      "topic": "Forest Types and Legal Classification",
+      "easy": [
+        {
+          "id": "5-1-1",
+          "type": "mcq",
+          "question": "About half of India's total forest area falls under which legal category?",
+          "options": ["Reserved forests", "Protected forests", "Unclassed forests", "Sacred groves"],
+          "answer": "Reserved forests",
+          "explanation": "Reserved forests are the most strictly protected category and make up about half of India's forest area."
+        },
+        {
+          "id": "5-1-2",
+          "type": "mcq",
+          "question": "Which Indian states have a high proportion of reserved forests?",
+          "options": ["Punjab and Haryana", "Madhya Pradesh and Odisha", "Bihar and West Bengal", "Kerala and Tamil Nadu"],
+          "answer": "Madhya Pradesh and Odisha",
+          "explanation": "Madhya Pradesh, Andhra Pradesh, Maharashtra, Odisha, and Jharkhand have a high share of reserved forests."
+        },
+        {
+          "id": "5-1-3",
+          "type": "fill",
+          "question": "The National Forest Policy of 1988 set a target of ___% forest cover in the plains.",
+          "answer": "33",
+          "explanation": "The 1988 policy set a target of 33% forest cover in the plains and 67% in the hills — India is still well short, at about 24.6%."
+        },
+        {
+          "id": "5-1-4",
+          "type": "mcq",
+          "question": "In which kind of forests are local communities generally allowed some grazing and firewood collection?",
+          "options": ["Reserved forests", "Protected forests", "Both reserved and unclassed", "None"],
+          "answer": "Protected forests",
+          "explanation": "Protected forests allow certain rights of local communities (grazing, firewood) while still preventing further destruction."
+        }
+      ],
+      "medium": [
+        {
+          "id": "5-2-1",
+          "type": "short",
+          "question": "Distinguish between reserved forests, protected forests, and unclassed forests.",
+          "answer": "Reserved forests are the most strictly protected — about half of India's forest area — where felling, grazing, and entry are tightly controlled by the Forest Department; they are considered most valuable for biodiversity and timber. Protected forests cover about a third of the total, where the forest is protected from destruction but local communities have certain rights of grazing and firewood collection. Unclassed forests are the rest — including forests on private land and community-owned land — and may be managed by governments, individuals, or village councils. In states like Assam, Manipur, and Nagaland, large portions of forest are unclassed and managed by tribal village councils.",
+          "explanation": "The three categories reflect a sliding scale of state control and community access."
+        },
+        {
+          "id": "5-2-2",
+          "type": "short",
+          "question": "Why is the gap between the 1988 National Forest Policy target and India's actual forest cover significant?",
+          "answer": "The 1988 policy committed India to maintaining 33% forest cover in the plains and 67% in the hills, for a national average of about 33%. India's actual forest cover today is around 24.6% — meaning we are 8–9 percentage points short of our own promise after almost four decades. The gap matters because every percentage point represents thousands of square kilometres of habitat lost to mining, agriculture, dams, and urbanisation. It also shows that having a target on paper is not the same as enforcing it, and that future governments will need much stronger political will to close the gap.",
+          "explanation": "The answer should connect policy targets to ground reality and the political will needed to bridge them."
+        }
+      ],
+      "hard": [
+        {
+          "id": "5-3-1",
+          "type": "long",
+          "question": "Explain how India classifies its forests, why the classification matters, and discuss how the Joint Forest Management programme has tried to bridge the gap between the state and the community.",
+          "answer": "India classifies its forests legally into three categories. Reserved forests are the most strictly protected — about half of India's forest area — where felling, grazing, and entry are tightly controlled, and which are seen as most valuable for conservation and timber. Protected forests, about a third of the total, allow some rights of grazing and firewood collection to local people. Unclassed forests include private and community forests, especially significant in the North-East where tribal village councils manage large areas. This classification matters because it determines who decides what happens in a forest — the state, the community, or both — and how strictly violations can be prosecuted. However, decades of state-only management produced two failures: forests around villages were degraded because villagers had no incentive to protect them, and forest officers often saw communities as enemies. To bridge this gap, Odisha launched the Joint Forest Management (JFM) Programme in 1988. Village Forest Committees of 10–15 members partner with the Forest Department to protect a degraded forest patch — planting trees, preventing fires and felling — and in return receive a share of non-timber produce (fruits, honey, leaves, medicinal plants) and eventually of timber. By the early 2000s, JFM operated in 27 states and covered over 17 million hectares. The programme works best where the government honours its share of the partnership; it falters where officials retain real power and communities are treated as labour. JFM is, despite its flaws, a recognition that the forest is a shared trust between the state and the people who live with it.",
+          "explanation": "Strong answers should explain the three forest categories with numbers, then connect to JFM as the experiment in shared management."
+        }
+      ]
+    },
+    {
+      "topic": "Community Conservation and JFM",
+      "easy": [
+        {
+          "id": "6-1-1",
+          "type": "mcq",
+          "question": "The Chipko Movement began in which year and region?",
+          "options": ["1965, Kashmir", "1973, Garhwal", "1985, Karnataka", "1991, Madhya Pradesh"],
+          "answer": "1973, Garhwal",
+          "explanation": "The Chipko Movement began in March 1973 in the village of Mandal in Garhwal, when villagers hugged trees to prevent felling."
+        },
+        {
+          "id": "6-1-2",
+          "type": "mcq",
+          "question": "The Bishnois of Rajasthan are particularly known for protecting:",
+          "options": ["Lions and rhinos", "Khejri trees and blackbucks", "Snow leopards and gharials", "Olive Ridley turtles"],
+          "answer": "Khejri trees and blackbucks",
+          "explanation": "The Bishnois follow 29 rules laid down by Guru Jambheshwar in 1485, including protecting khejri trees and blackbucks, considered sacred in their tradition."
+        },
+        {
+          "id": "6-1-3",
+          "type": "fill",
+          "question": "The Joint Forest Management Programme was first launched by the state of ___ in 1988.",
+          "answer": "Odisha",
+          "explanation": "Odisha pioneered the JFM model in 1988, formally inviting local communities into the management and restoration of degraded forests."
+        },
+        {
+          "id": "6-1-4",
+          "type": "mcq",
+          "question": "The community-protected sanctuary called Bhairodev Dakav 'Sonchuri' is located in:",
+          "options": ["Garhwal, Uttarakhand", "Kanha, Madhya Pradesh", "Alwar district, Rajasthan", "Wayanad, Kerala"],
+          "answer": "Alwar district, Rajasthan",
+          "explanation": "Five villages in Alwar district of Rajasthan declared 1,200 hectares of forest as their own community sanctuary — without official government recognition."
+        },
+        {
+          "id": "6-1-5",
+          "type": "mcq",
+          "question": "Who led the women of Reni village during the famous 1974 Chipko protest?",
+          "options": ["Medha Patkar", "Gaura Devi", "Vandana Shiva", "Amrita Devi"],
+          "answer": "Gaura Devi",
+          "explanation": "Gaura Devi led 27 women into the Reni forest in March 1974 to stop contractors from felling 2,500 trees, in one of the most famous moments of the Chipko Movement."
+        }
+      ],
+      "medium": [
+        {
+          "id": "6-2-1",
+          "type": "short",
+          "question": "What was the Chipko Movement and why was it significant for Indian environmentalism?",
+          "answer": "The Chipko Movement began in March 1973 in the village of Mandal in Garhwal, when villagers — many of them women — hugged trees to prevent contractors from cutting them. The word 'chipko' comes from chipakna, to embrace. The movement spread across Garhwal under the leadership of Gaura Devi, Sunderlal Bahuguna, and Chandi Prasad Bhatt. Its significance is threefold: it transformed Indian environmental thinking by linking forest protection with daily livelihood; it placed rural women at the centre of environmental activism; and it produced the slogan 'What do the forests bear? Soil, water, and pure air' — a summary of the ecological argument for forests beyond just timber value.",
+          "explanation": "Chipko was the moment Indian environmentalism became a popular, women-led, grassroots movement."
+        },
+        {
+          "id": "6-2-2",
+          "type": "short",
+          "question": "How does the Joint Forest Management Programme work, and what makes it different from earlier government-only forest management?",
+          "answer": "Under JFM, launched in Odisha in 1988, the Forest Department formally hands over the management of a degraded forest patch to a Village Forest Committee of 10–15 members. The committee plants trees, prevents felling, fights fires, and protects the patch. In return, the community is allowed to collect non-timber forest produce — fruits, honey, leaves, medicinal plants — and receives a share of the timber once the forest matures. This is fundamentally different from the older system, in which the state alone managed forests and treated villagers as trespassers. JFM treats the forest as a shared trust between the state and the people who live with it.",
+          "explanation": "The key shift is from villagers-as-criminals to villagers-as-partners."
+        },
+        {
+          "id": "6-2-3",
+          "type": "short",
+          "question": "What are sacred groves and why are they important for biodiversity conservation?",
+          "answer": "Sacred groves are small forest patches preserved by local communities for religious reasons — never cut, never disturbed. Examples include the Mawphlang sacred grove in Meghalaya, the Devarakadu in Karnataka, the Sarna groves of Jharkhand, the Kavus of Kerala, and the Orans of Rajasthan. They are important because they are India's oldest unwritten protected areas, often preserving rare or endemic species long extinct from surrounding forests. They also illustrate that religion and conservation can reinforce each other — local traditions can be more durable than legal categories.",
+          "explanation": "Sacred groves represent a model of long-lasting community conservation rooted in faith rather than state law."
+        }
+      ],
+      "hard": [
+        {
+          "id": "6-3-1",
+          "type": "long",
+          "question": "Describe at least three examples of community-led conservation in India and discuss why communities sometimes succeed where the government fails.",
+          "answer": "Three major examples are: (1) The Bishnois of Rajasthan, founded by Guru Jambheshwar in 1485, follow 29 rules including the prohibition on cutting green trees and harming animals. In 1730 at Khejarli, 363 Bishnois — led by Amrita Devi and her daughters — gave their lives defending khejri trees from the Maharaja of Jodhpur's woodcutters. To this day blackbuck and chinkara walk freely into Bishnoi courtyards. (2) The Chipko Movement of 1973–74 in Garhwal, when villagers — especially women like Gaura Devi — physically embraced trees to stop loggers from cutting ash and deodar. Chipko inspired a wider Indian environmental movement and produced the slogan 'What do the forests bear? Soil, water, and pure air.' (3) The Bhairodev Dakav Sonchuri in Alwar district of Rajasthan, where five villages declared 1,200 hectares of forest a community sanctuary without official recognition, wrote their own rules against hunting, and successfully restored wildlife. Other examples include the Sariska Tiger Watch led by villagers like Bhairon Singh, the sacred groves of Mawphlang and Mawkyrwat in Meghalaya, and the Sarna groves of Jharkhand. Communities often succeed where government fails for several reasons: they are present in the forest every day, not just during inspections; they have a direct stake in its survival because their livelihoods depend on it; they hold inter-generational knowledge of species, seasons, and threats; and they are not subject to the corruption and political pressure that affect forest officers. Their weakness is that they cannot easily resist powerful outside forces — mining companies, contractors, or politicians — without national legal backing. So the strongest conservation is a partnership: community vigilance under a legal umbrella, as JFM tries to achieve.",
+          "explanation": "Strong answers should cover at least three specific community efforts with details, and explain the structural reasons communities can outperform the state at the daily level — without ignoring why they need state backing for the larger fights."
+        }
+      ]
+    }
+  ]
+}

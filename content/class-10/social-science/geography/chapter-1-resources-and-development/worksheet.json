@@ -1,0 +1,392 @@
+{
+  "topics": [
+    {
+      "topic": "What is a Resource and How Are Resources Classified",
+      "easy": [
+        {
+          "id": "T1-E-1",
+          "type": "mcq",
+          "question": "Which of the following is NOT a condition for something to qualify as a 'resource'?",
+          "options": ["It satisfies a human need", "Technology is available to use it", "It is acceptable to society", "It is owned by the government"],
+          "answer": "It is owned by the government",
+          "explanation": "A resource is defined by human need, available technology, and cultural/social acceptability. Government ownership is not a defining condition."
+        },
+        {
+          "id": "T1-E-2",
+          "type": "mcq",
+          "question": "Which of these is a biotic resource?",
+          "options": ["Iron ore", "Coal", "Fish", "Granite"],
+          "answer": "Fish",
+          "explanation": "Biotic resources come from the living world. Fish, forests, livestock, and humans are biotic. Iron ore, coal, and granite are abiotic."
+        },
+        {
+          "id": "T1-E-3",
+          "type": "fill",
+          "question": "Resources that take millions of years to form and cannot be replaced within a human lifetime are called ___ resources.",
+          "answer": "non-renewable",
+          "explanation": "Non-renewable resources include coal, petroleum, natural gas, and most metallic minerals."
+        },
+        {
+          "id": "T1-E-4",
+          "type": "mcq",
+          "question": "The famous geographer who said 'resources are not, they become' was:",
+          "options": ["P. C. Mahalanobis", "Erich Zimmermann", "Gro Harlem Brundtland", "Sundarlal Bahuguna"],
+          "answer": "Erich Zimmermann",
+          "explanation": "Erich Zimmermann emphasised that things become resources only when human need, technology, and social acceptability come together."
+        },
+        {
+          "id": "T1-E-5",
+          "type": "short",
+          "question": "Give one example each of a stock resource and a reserve resource.",
+          "answer": "Stock resource example: hydrogen in seawater (exists in plenty but no economical technology to harvest yet). Reserve resource example: water in a dam above the dead storage line, or a forest under official protection — usable, but kept aside for future need.",
+          "explanation": "Stock resources lack the technology of use; reserve resources have the technology but are deliberately kept aside."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T1-M-1",
+          "type": "short",
+          "question": "Distinguish between renewable and non-renewable resources, with two Indian examples of each.",
+          "answer": "Renewable resources can be replenished by natural processes within a human timescale — Indian examples include solar energy (abundant in Rajasthan and Gujarat) and wind energy (Tamil Nadu and Gujarat coast). Non-renewable resources take millions of years to form and cannot be regenerated in our lifetime — Indian examples include coal (mostly Jharkhand and Odisha) and petroleum (Mumbai High and Assam).",
+          "explanation": "Renewability is about regeneration timescales relative to a human lifetime."
+        },
+        {
+          "id": "T1-M-2",
+          "type": "short",
+          "question": "Explain the four-fold classification of resources on the basis of ownership.",
+          "answer": "Resources are classified by ownership into four kinds: (1) Individual resources — privately owned, such as a farmer's land or a family's house. (2) Community resources — owned and used by the community, such as the village pond, the grazing ground, the cremation ground. (3) National resources — owned by the country, such as minerals, major rivers, roads, and territorial waters up to 12 nautical miles from the coast. (4) International resources — beyond any single country's control, such as ocean waters beyond 200 nautical miles, Antarctica, and the deep seabed, governed by international agreements.",
+          "explanation": "Ownership classification helps decide who is responsible for managing and protecting the resource."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T1-H-1",
+          "type": "long",
+          "question": "Using examples, explain how something can become a 'resource' over time. What does Erich Zimmermann mean when he says 'resources are not, they become'?",
+          "answer": "Zimmermann means that nothing in the environment is automatically a resource. A thing becomes a resource only when three conditions line up: a human need exists for it, technology is available to access it, and society finds it acceptable to use. Three examples illustrate the idea. First, petroleum existed under West Asian deserts for millions of years as a smelly liquid that nobody wanted; only after the internal combustion engine was invented in the nineteenth century did it become a resource — and one of the most valuable in history. Second, uranium was just another silvery metal until physicists discovered atomic fission in the 1940s; only then did it become a critical resource for nuclear power and weapons. Third, the wind has blown across Gujarat for thousands of years and was treated as mere weather; only with the invention of modern turbines did it become a renewable energy resource fuelling India's wind farms in Kutch and Tamil Nadu. Conversely, things can stop being resources too: coal was once a prized fuel but is being phased out for climate reasons. So a resource is best understood not as a thing but as a relationship between humans, their tools, and their values.",
+          "explanation": "The answer should cover the definition, the three conditions, and at least two examples showing technology changing what is and isn't a resource."
+        }
+      ]
+    },
+    {
+      "topic": "Resource Planning in India",
+      "easy": [
+        {
+          "id": "T2-E-1",
+          "type": "mcq",
+          "question": "Resource planning in India became central to development starting from which year?",
+          "options": ["1947", "1951", "1962", "1991"],
+          "answer": "1951",
+          "explanation": "Resource planning became central from the First Five Year Plan, which began in 1951."
+        },
+        {
+          "id": "T2-E-2",
+          "type": "mcq",
+          "question": "Which of these is a stage in India's resource planning process?",
+          "options": ["Identification and inventory of resources", "Privatisation of all resources", "Restriction of foreign trade", "Encouraging only agriculture"],
+          "answer": "Identification and inventory of resources",
+          "explanation": "The first stage of resource planning is surveying, mapping, and quantifying resources nationwide."
+        },
+        {
+          "id": "T2-E-3",
+          "type": "fill",
+          "question": "Jharkhand is rich in ___ , ___ , and mica, while Rajasthan has enormous ___ energy potential.",
+          "answer": "coal, iron ore, solar",
+          "explanation": "India's mineral wealth is unevenly distributed — Jharkhand has metallic and energy minerals; Rajasthan has renewable energy potential."
+        },
+        {
+          "id": "T2-E-4",
+          "type": "mcq",
+          "question": "Which organisation surveys India's groundwater?",
+          "options": ["Geological Survey of India", "Central Ground Water Board", "Forest Survey of India", "Indian Meteorological Department"],
+          "answer": "Central Ground Water Board",
+          "explanation": "The CGWB is responsible for groundwater surveys and reports across India."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T2-M-1",
+          "type": "short",
+          "question": "What are the three stages of resource planning in India?",
+          "answer": "(1) Identification and inventory of resources across the country through surveying, mapping, and quantitative measurement of quality. Agencies like the Geological Survey of India, Forest Survey of India, and Central Ground Water Board do this. (2) Building a planning structure — creating institutions, laws, technology, and skilled human resources, with adequate financial backing, to actually use the resources. (3) Aligning resource development with national development plans, so that resource use supports goals like equity, sustainability, and self-reliance.",
+          "explanation": "The three stages move from knowing what we have, to building the capacity to use it, to using it wisely."
+        },
+        {
+          "id": "T2-M-2",
+          "type": "short",
+          "question": "Why is resource planning especially necessary in a country like India?",
+          "answer": "India's resources are very unequally distributed across the country. Jharkhand and Chhattisgarh have abundant minerals; Rajasthan has solar and wind potential but is dry; the Indo-Gangetic plain has fertile soil but few minerals; the Himalayan states have water but limited cropland. Without planning, regions with rich resources would over-exploit them while resource-poor regions would lag, deepening inequality. Planning also helps avoid waste, over-extraction, and environmental damage, ensures fair distribution between states, links resource use to broader development goals, and prepares for future generations through sustainable practices.",
+          "explanation": "Resource planning addresses unequal distribution, ensures sustainability, and links resource use to wider development."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T2-H-1",
+          "type": "long",
+          "question": "What are the major problems faced by India in implementing resource planning? Suggest measures to address them.",
+          "answer": "India has faced several problems in resource planning. First, **unequal distribution** of resources across states means rich states do not always cooperate with poor ones — Jharkhand's mineral wealth historically did not translate into local development. Second, **over-exploitation** of groundwater in Punjab and Haryana through the Green Revolution years has dropped the water table by half a metre per year in some districts. Third, **mining-driven displacement** of tribal communities in Jharkhand, Odisha, and Chhattisgarh has caused social conflict and inadequate rehabilitation. Fourth, India's **80%-plus dependence on imported crude oil** has made the economy vulnerable to global price shocks. Fifth, **environmental degradation** — soil erosion, deforestation, salinity, water-logging — has damaged about 130 million hectares of land. Sixth, **weak local institutions** mean that even good national policies fail at the village level. Measures to address these include: strengthening the role of gram panchayats and Joint Forest Management committees, enforcing strict EIA (environmental impact assessment) before mining, providing fair compensation and rehabilitation for displaced people, encouraging crop diversification in over-stressed regions, scaling up renewable energy to reduce oil dependence, and reclaiming degraded land through afforestation and contour farming.",
+          "explanation": "The answer should identify problems (distribution, over-exploitation, displacement, import dependence, degradation, weak institutions) and pair each with a remedy."
+        }
+      ]
+    },
+    {
+      "topic": "Land Resources and Land Use",
+      "easy": [
+        {
+          "id": "T3-E-1",
+          "type": "mcq",
+          "question": "India's total geographical area is approximately:",
+          "options": ["228 million hectares", "328.7 million hectares", "428 million hectares", "528 million hectares"],
+          "answer": "328.7 million hectares",
+          "explanation": "India's total geographical area is 328.7 million hectares, with land-use data available for about 93% of it."
+        },
+        {
+          "id": "T3-E-2",
+          "type": "mcq",
+          "question": "The National Forest Policy of 1952 set what target for India's forest cover?",
+          "options": ["22%", "25%", "33%", "50%"],
+          "answer": "33%",
+          "explanation": "The 1952 Forest Policy set a 33% target. India's actual forest cover is around 22-24%, well below the target."
+        },
+        {
+          "id": "T3-E-3",
+          "type": "fill",
+          "question": "India's net sown area is approximately ___ percent of the total reporting area.",
+          "answer": "46",
+          "explanation": "About 46% of India's reporting area is under cultivation — one of the highest figures globally."
+        },
+        {
+          "id": "T3-E-4",
+          "type": "mcq",
+          "question": "Which state has the highest percentage of land under cultivation?",
+          "options": ["Mizoram", "Madhya Pradesh", "Punjab", "Arunachal Pradesh"],
+          "answer": "Punjab",
+          "explanation": "Punjab and Haryana have over 80% of their land under cultivation. Mizoram and Arunachal Pradesh have under 10%."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T3-M-1",
+          "type": "short",
+          "question": "What is land degradation? List three major causes in India.",
+          "answer": "Land degradation is the decline in the quality and productivity of land through over-use, contamination, or destructive practices. About 130 million hectares of Indian land are affected. Three major causes are: (1) over-cultivation and chemical-intensive farming that depletes soil nutrients; (2) over-grazing by cattle and goats that strips vegetation cover; (3) water-logging and salinity from over-irrigation, especially in canal-irrigated areas of Punjab, Haryana, and Rajasthan. Deforestation, mining, and industrial effluents also contribute.",
+          "explanation": "Land degradation is the cumulative result of unsustainable land-use practices over decades."
+        },
+        {
+          "id": "T3-M-2",
+          "type": "short",
+          "question": "Why is India's forest cover below the target set in the National Forest Policy of 1952?",
+          "answer": "India's forest cover is around 22-24%, well below the 33% target of the National Forest Policy of 1952. Reasons include: deforestation for agriculture and human settlement as population grew rapidly; commercial logging and the timber trade; mining and quarrying in forest belts; infrastructure projects like dams, roads, and railways; encroachment by villages and growing towns; forest fires; and over-grazing by cattle. Despite afforestation and Joint Forest Management programs, the gap remains because population pressure on land has continued to outpace replanting.",
+          "explanation": "The shortfall has structural causes — population pressure, land conversion, and weak enforcement — that single afforestation drives cannot fully reverse."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T3-H-1",
+          "type": "long",
+          "question": "Describe the major problems of land degradation in India and outline how each can be addressed.",
+          "answer": "Land degradation affects about 130 million hectares of Indian land. The main forms are: (1) **Gully erosion** in regions like the Chambal ravines of Madhya Pradesh and Rajasthan, where running water cuts deep ravines — addressed by contour bunds, afforestation, and gully plugging. (2) **Sheet erosion** across wide farm areas where rainfall washes away thin layers of topsoil — addressed by contour ploughing, terrace farming, strip cropping, and increased vegetation cover. (3) **Wind erosion** in arid Rajasthan and the Thar, where dust storms strip topsoil — addressed through shelter belts of trees, sand-dune stabilisation, and grass cover. (4) **Salinity and alkalinity** in canal-irrigated tracts of Punjab, Haryana, and western Rajasthan, where rising water tables bring up dissolved salts — addressed by improved drainage, gypsum application, and switching to salt-tolerant crops. (5) **Water-logging** in over-irrigated lands — addressed by efficient micro-irrigation (drip and sprinkler), regulated canal flows, and tile drainage. (6) **Mining-degraded land** in Jharkhand and Odisha — addressed through mandatory rehabilitation, ecological restoration, and strict EIA enforcement. (7) **Industrial pollution and chemical contamination** — addressed through pollution-control laws, effluent treatment, and organic farming. Common across all remedies are afforestation, community ownership, and stricter regulation.",
+          "explanation": "Each form of degradation has both a geographic cause and a specific remedy; the answer should pair them."
+        }
+      ]
+    },
+    {
+      "topic": "Indian Soils — Types, Features, and Crops",
+      "easy": [
+        {
+          "id": "T4-E-1",
+          "type": "mcq",
+          "question": "Which soil covers about 40% of India and supports about 60% of its population?",
+          "options": ["Black soil", "Alluvial soil", "Red soil", "Laterite soil"],
+          "answer": "Alluvial soil",
+          "explanation": "Alluvial soil dominates the Indo-Gangetic plain and the river deltas, supporting India's biggest agricultural population."
+        },
+        {
+          "id": "T4-E-2",
+          "type": "mcq",
+          "question": "Which soil is also called regur and is best suited for cotton?",
+          "options": ["Alluvial", "Black soil", "Red", "Arid"],
+          "answer": "Black soil",
+          "explanation": "Regur — the black soil of the Deccan trap — retains moisture and is famous for growing cotton."
+        },
+        {
+          "id": "T4-E-3",
+          "type": "fill",
+          "question": "Alluvial soil is sub-classified into ___ (the new alluvium) and ___ (the older alluvium).",
+          "answer": "khadar, bhangar",
+          "explanation": "Khadar is the new alluvium on annually-flooded plains; bhangar is older alluvium on higher ground, with kankar (lime) nodules."
+        },
+        {
+          "id": "T4-E-4",
+          "type": "mcq",
+          "question": "Laterite soil derives its name from a Latin word meaning:",
+          "options": ["Red", "Brick", "Soft", "Heavy"],
+          "answer": "Brick",
+          "explanation": "*Later* in Latin means brick — laterite was originally cut into bricks for construction."
+        },
+        {
+          "id": "T4-E-5",
+          "type": "mcq",
+          "question": "The black soil of the Deccan was formed from:",
+          "options": ["River silt", "Volcanic basalt", "Coral reefs", "Glacial debris"],
+          "answer": "Volcanic basalt",
+          "explanation": "Black soil formed from weathered basalt lava that erupted from the Deccan Trap about 65 million years ago."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T4-M-1",
+          "type": "short",
+          "question": "Distinguish between khadar and bhangar.",
+          "answer": "Khadar is the new alluvium deposited annually by river floods in the lower floodplains. It is finer in texture, more fertile, and renewed every year. Bhangar is the older alluvium found on higher ground above the flood plain. It contains kankar (calcium carbonate) nodules and is generally less fertile than khadar, though still productive when properly cultivated.",
+          "explanation": "The age and location of the deposit determine fertility and structure."
+        },
+        {
+          "id": "T4-M-2",
+          "type": "short",
+          "question": "Why does black soil retain moisture so well, and why is it ideal for cotton?",
+          "answer": "Black soil is clayey and rich in iron, lime, magnesia, alumina, and humus. In summer, it dries and develops deep cracks that aerate the soil from below. When the monsoon arrives, the cracks close as the clay swells and the soil holds water tightly. This 'self-ploughing' behaviour conserves moisture for months — ideal for the long growing season of cotton, which needs steady moisture but cannot tolerate water-logging. That is why the cotton industries of Mumbai, Surat, and Ahmedabad developed on regur land.",
+          "explanation": "The chemistry and physical structure of regur together create perfect cotton-growing conditions."
+        },
+        {
+          "id": "T4-M-3",
+          "type": "short",
+          "question": "Where is laterite soil found in India, and what crops does it support?",
+          "answer": "Laterite soil is found in regions of high temperature and heavy rainfall: the Western Ghats hills (Karnataka, Kerala, Goa), parts of the Eastern Ghats in Odisha and Andhra Pradesh, the hilly tracts of Tamil Nadu and Madhya Pradesh, and small patches of Assam. Though low in humus and nutrients, when manured and irrigated it supports cash crops like cashew (Kerala, Karnataka), tea and coffee (Western Ghats hill stations), rubber (Kerala), and areca nut (coastal Karnataka).",
+          "explanation": "Laterite is poor in itself but supports high-value plantation agriculture with fertilisation."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T4-H-1",
+          "type": "long",
+          "question": "Compare and contrast alluvial soil and black soil with reference to formation, location, properties, and crops grown.",
+          "answer": "**Alluvial soil** is formed by the deposition of silt brought down by the Himalayan rivers — the Ganga, Yamuna, Brahmaputra, Indus, and their tributaries — over millions of years. It covers the entire Indo-Gangetic plain — Punjab, Haryana, Uttar Pradesh, Bihar, West Bengal, and Assam — about 40% of India's area. It is rich in potash, phosphoric acid, and lime; it is fine to medium-textured, well-drained, and varies from sandy-loam to clayey. It is sub-classified into khadar (new, annual flood deposits, finer and more fertile) and bhangar (older, higher ground, with kankar nodules of lime). Major crops: wheat, rice, sugarcane, jute, pulses, oilseeds. **Black soil (regur)** is formed from the weathering of basalt lava that erupted from the Deccan Trap 65 million years ago. It covers Maharashtra, Gujarat, western Madhya Pradesh, northern Karnataka, and Andhra Pradesh — the Deccan plateau. It is dark, deep (1-2 metres), clayey, and highly moisture-retentive, containing lime, iron, magnesia, alumina, potash, and humus. It cracks in summer and swells in the rains — a self-aerating, self-conserving structure. Major crops: cotton (its signature crop), jowar, bajra, sugarcane, oilseeds, tobacco, citrus fruits. **Comparison**: Alluvial is *river-deposited and renewable* through annual flooding; black is *volcanic and ancient* with no renewal. Alluvial is naturally fertile and supports more diverse crops on flatter land; black is specialised for moisture-loving crops on the Deccan plateau. Alluvial feeds north India's wheat-rice belt; black feeds central India's cotton-jowar belt. Together they form the agricultural backbone of India.",
+          "explanation": "The answer should cover origin (sedimentary vs volcanic), location, chemistry, structure, and crop suitability for both soils."
+        }
+      ]
+    },
+    {
+      "topic": "Soil Erosion and Conservation",
+      "easy": [
+        {
+          "id": "T5-E-1",
+          "type": "mcq",
+          "question": "Approximately how long does nature take to form one centimetre of soil?",
+          "options": ["10 to 50 years", "50 to 100 years", "200 to 1000 years", "10,000 years"],
+          "answer": "200 to 1000 years",
+          "explanation": "Soil formation is extremely slow — between 200 and 1,000 years per centimetre."
+        },
+        {
+          "id": "T5-E-2",
+          "type": "mcq",
+          "question": "The Chambal region of Madhya Pradesh and Rajasthan is famous for which type of erosion?",
+          "options": ["Wind erosion", "Sheet erosion", "Gully erosion", "Salinity"],
+          "answer": "Gully erosion",
+          "explanation": "The Chambal ravines are the largest example of gully erosion in India — deep channels carved by running water over centuries."
+        },
+        {
+          "id": "T5-E-3",
+          "type": "fill",
+          "question": "Cutting flat steps into a steep hillside so each step catches the rain is called ___ farming.",
+          "answer": "terrace",
+          "explanation": "Terrace farming is widely practised in Sikkim, Uttarakhand, Himachal Pradesh, and Meghalaya."
+        },
+        {
+          "id": "T5-E-4",
+          "type": "mcq",
+          "question": "Strip cropping involves:",
+          "options": ["Planting only one crop per field", "Alternating strips of grass and grain crops", "Removing all vegetation between fields", "Burning crop residues each season"],
+          "answer": "Alternating strips of grass and grain crops",
+          "explanation": "Dense grass strips slow wind and water flow, protecting the grain strips between them from erosion."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T5-M-1",
+          "type": "short",
+          "question": "Distinguish between gully erosion, sheet erosion, and wind erosion.",
+          "answer": "Gully erosion occurs when running water cuts deep ravines into the land, turning fertile fields into badlands — the Chambal ravines are India's largest example. Sheet erosion happens when a thin film of soil is washed away across a wide area by rain — quieter and slower than gully erosion but cumulatively more damaging. Wind erosion dominates in arid regions like the Thar desert, where strong winds and dust storms lift away the topsoil, especially when vegetation cover has been removed by over-grazing or deforestation.",
+          "explanation": "Each form of erosion has a different agent (running water for gully and sheet, wind for the third) and different geographic settings."
+        },
+        {
+          "id": "T5-M-2",
+          "type": "short",
+          "question": "List five methods of soil conservation practised in India and where each is most useful.",
+          "answer": "(1) Contour ploughing — ploughing along the natural contour of a slope, each furrow acting as a small barrier. Useful in the Western Ghats and central Indian hilly tracts. (2) Terrace farming — cutting flat steps into steep hillsides. Common in Sikkim, Uttarakhand, Himachal Pradesh, and Meghalaya. (3) Strip cropping — alternating strips of grass and grain to slow wind and water. Useful in semi-arid plains. (4) Shelter belts — rows of trees that break the wind. Used along the Indira Gandhi Canal in Rajasthan. (5) Afforestation and Joint Forest Management — replanting degraded forests with local community involvement. Practised in Odisha, West Bengal, and other forested states.",
+          "explanation": "Each method matches a specific kind of erosion and a specific kind of land."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T5-H-1",
+          "type": "long",
+          "question": "What are the main causes of soil erosion in India, and what specific conservation measures can be taken to address each?",
+          "answer": "The major causes of soil erosion in India and their conservation measures are: (1) **Deforestation** removes tree roots that hold soil — the remedy is afforestation, Joint Forest Management, and bans on commercial logging in vulnerable areas. (2) **Over-grazing** by cattle and goats strips grass cover and compacts the soil — remedies include rotational grazing, fodder cultivation, and ban-on-grazing periods in degraded zones. (3) **Faulty farming methods** like ploughing up and down slopes turn furrows into water channels — remedies include contour ploughing along natural slope lines, terrace farming on steep hills, and strip cropping with alternating grass and grain. (4) **Mining**, especially open-cast mining in Jharkhand, Odisha, and Chhattisgarh, removes entire hillsides — remedies include strict environmental impact assessments, mandatory rehabilitation of mined land, and ecological restoration. (5) **Industrial effluents and chemical fertiliser overuse** degrade soil structure and contaminate groundwater — remedies are pollution-control regulations, organic farming, and reduced agro-chemical use. (6) **Wind in arid regions** strips topsoil from the Thar and arid Rajasthan — remedies include shelter belts of trees, sand-dune stabilisation, and grass cover. (7) **Salinity and water-logging in canal-irrigated areas** — remedies are micro-irrigation (drip and sprinkler), improved drainage, gypsum treatment, and salt-tolerant crops. Soil conservation in India is essentially a thousand small village-level projects, dependent on local participation rather than dramatic central schemes.",
+          "explanation": "Each cause requires a specific, locally-suited intervention. There is no single nationwide solution."
+        }
+      ]
+    },
+    {
+      "topic": "Sustainable Development and the Way Forward",
+      "easy": [
+        {
+          "id": "T6-E-1",
+          "type": "mcq",
+          "question": "The Brundtland Commission's definition of sustainable development was given in which year?",
+          "options": ["1972", "1987", "1992", "2015"],
+          "answer": "1987",
+          "explanation": "The Brundtland Commission's report *Our Common Future* in 1987 introduced the now-classic definition."
+        },
+        {
+          "id": "T6-E-2",
+          "type": "mcq",
+          "question": "The 1992 Earth Summit was held in:",
+          "options": ["New York", "Stockholm", "Rio de Janeiro", "Kyoto"],
+          "answer": "Rio de Janeiro",
+          "explanation": "The UN Conference on Environment and Development was held in Rio de Janeiro, Brazil, in June 1992."
+        },
+        {
+          "id": "T6-E-3",
+          "type": "fill",
+          "question": "The blueprint produced at the Rio Earth Summit to guide global sustainable development is called ___ .",
+          "answer": "Agenda 21",
+          "explanation": "Agenda 21 was signed by over 170 countries; Local Agenda 21 asks every local government to make its own plan."
+        },
+        {
+          "id": "T6-E-4",
+          "type": "mcq",
+          "question": "Who said, 'There is enough for everybody's need but not for everybody's greed'?",
+          "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Sundarlal Bahuguna", "Sardar Patel"],
+          "answer": "Mahatma Gandhi",
+          "explanation": "This quote is at the heart of the Gandhian conservation ethic and Indian sustainable development thinking."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T6-M-1",
+          "type": "short",
+          "question": "Define sustainable development and explain why it matters for India.",
+          "answer": "Sustainable development is development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs (Brundtland Commission, 1987). It matters specially for India because we are a populous, fast-growing economy with intense pressure on limited resources — groundwater is falling in Punjab, forests are below the 33% target, soil is degrading on 130 million hectares, and air pollution chokes our cities. If our development continues as it is, the next generation will inherit an economy without the natural base to sustain it. Sustainable development demands that India use renewable energy, conserve water, replant forests, recharge soil, and grow more equally — so that growth and ecology rise together.",
+          "explanation": "Sustainable development is a generational promise; for India it is an immediate practical necessity, not a distant ideal."
+        },
+        {
+          "id": "T6-M-2",
+          "type": "short",
+          "question": "What was the significance of the Rio Earth Summit of 1992?",
+          "answer": "The Rio Earth Summit, formally the United Nations Conference on Environment and Development, brought together over 170 countries — including India — in June 1992. It produced (1) the Convention on Climate Change to limit greenhouse gas emissions; (2) the Convention on Biological Diversity to protect species and habitats; (3) Agenda 21, a comprehensive blueprint for global sustainable development covering environment, economy, and social equity; and (4) the principle of Local Agenda 21, asking every local government to develop its own sustainability plan with citizen participation. Rio established sustainable development as a binding global agenda and led to follow-up agreements like the Kyoto Protocol (1997) and the Paris Agreement (2015).",
+          "explanation": "Rio shifted sustainable development from being a slogan to being signed international commitments."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T6-H-1",
+          "type": "long",
+          "question": "Discuss the Indian tradition of conservation, from Mahatma Gandhi to contemporary movements. How does it compare with the international sustainable development framework?",
+          "answer": "India has a rich indigenous conservation tradition that predates international frameworks. Mahatma Gandhi articulated the core principle in plain language: 'There is enough for everybody's need but not for everybody's greed.' His ethic of frugality, local self-reliance, and respect for the land was a refusal of the consumerist model of progress. This Gandhian thread runs through several modern Indian movements. The **Chipko Movement** of the 1970s, led by Sundarlal Bahuguna and Gaura Devi in Uttarakhand, saw village women literally hugging trees to stop commercial logging in the Himalayas. **Anna Hazare's work at Ralegan Siddhi** in Maharashtra turned a drought-stricken village into a model of watershed management through community participation in tree planting, percolation tanks, and water harvesting. **Sundarlal Bahuguna's campaign against the Tehri Dam** raised the question of whether massive infrastructure was worth the displacement of communities and ecosystems. **Medha Patkar's Narmada Bachao Andolan** asked similar questions of the Sardar Sarovar project. **Sikkim's complete transition to organic farming by 2016** is a state-level example of the same ethic — refusing chemical pesticides as part of long-term ecological commitment. The international sustainable development framework — the Brundtland Commission (1987), the Rio Earth Summit (1992) with Agenda 21, and the Paris Agreement (2015) — translates these principles into legal commitments, measurable targets, and global cooperation. The Indian tradition emphasises **community, frugality, and moral responsibility**; the international framework emphasises **measurement, targets, and treaties**. Both are needed. Gandhi gives us the *why*; Rio gives us the *how*. Together they make sustainable development both an ethical promise and a practical plan.",
+          "explanation": "The answer should connect Indian voices (Gandhi, Chipko, Anna Hazare, Bahuguna, Sikkim) with the international framework (Brundtland, Rio, Agenda 21, Paris) and show how they complement each other."
+        }
+      ]
+    }
+  ]
+}

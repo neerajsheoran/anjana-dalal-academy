@@ -1,0 +1,439 @@
+{
+  "topics": [
+    {
+      "topic": "Roadways and Road Classification",
+      "easy": [
+        {
+          "id": "1-1-1",
+          "type": "mcq",
+          "question": "India has the ___ largest road network in the world.",
+          "options": ["First", "Second", "Third", "Fifth"],
+          "answer": "Second",
+          "explanation": "With about 62.16 lakh km of roads (2020-21), India has the world's second-largest road network, after the United States."
+        },
+        {
+          "id": "1-1-2",
+          "type": "mcq",
+          "question": "Which two extreme locations are connected by the East-West Corridor?",
+          "options": ["Mumbai and Nagpur", "Silchar and Porbandar", "Mumbai and Kolkata", "Nagpur and Siliguri"],
+          "answer": "Silchar and Porbandar",
+          "explanation": "The East-West Corridor runs from Silchar in Assam to Porbandar in Gujarat, complementing the North-South Corridor and the Golden Quadrilateral."
+        },
+        {
+          "id": "1-1-3",
+          "type": "fill",
+          "question": "The Golden Quadrilateral Super Highways are being implemented by the ___ (NHAI).",
+          "answer": "National Highways Authority of India",
+          "explanation": "The NHAI was established in 1988 and is the central agency that builds and maintains national highways and corridor projects."
+        },
+        {
+          "id": "1-1-4",
+          "type": "mcq",
+          "question": "Border Roads Organisation (BRO) was established in:",
+          "options": ["1947", "1950", "1960", "1972"],
+          "answer": "1960",
+          "explanation": "The BRO was set up in 1960 to develop roads of strategic importance in India's northern and north-eastern frontier regions."
+        },
+        {
+          "id": "1-1-5",
+          "type": "mcq",
+          "question": "All-weather roads made of cement, concrete, or bitumen are called:",
+          "options": ["Unmetalled roads", "Metalled roads", "Rural roads", "Border roads"],
+          "answer": "Metalled roads",
+          "explanation": "Metalled roads have a hard surface that survives rain and is usable all year, unlike unmetalled (mud or gravel) roads."
+        }
+      ],
+      "medium": [
+        {
+          "id": "1-2-1",
+          "type": "short",
+          "question": "List any three advantages of roadways over railways.",
+          "answer": "(1) Construction cost of roads is much lower than that of railway lines. (2) Roads can traverse dissected and undulating topography and climb higher gradients, including mountains. (3) Roads provide door-to-door service, so loading and unloading costs are lower. (4) Roads are economical for short distances and small loads. (5) They act as feeders connecting railway stations, airports, and seaports. Any three are acceptable.",
+          "explanation": "Roads and railways complement each other; roads excel at short hauls and last-mile connectivity."
+        },
+        {
+          "id": "1-2-2",
+          "type": "short",
+          "question": "Name the six categories of roads in India based on capacity.",
+          "answer": "Golden Quadrilateral Super Highways, National Highways, State Highways, District Roads, Other Roads (including rural roads under PMGSY), and Border Roads.",
+          "explanation": "The classification proceeds from the highest-capacity inter-metro highways to the strategic frontier roads built by the BRO."
+        }
+      ],
+      "hard": [
+        {
+          "id": "1-3-1",
+          "type": "long",
+          "question": "Explain the significance of the Golden Quadrilateral, the North-South Corridor, and the East-West Corridor for India's economic development.",
+          "answer": "The Golden Quadrilateral is a six-lane super-highway network linking the four metro cities of Delhi, Mumbai, Chennai, and Kolkata, cutting intercity travel time roughly in half. The North-South Corridor runs about 4,000 km from Srinagar in Jammu and Kashmir to Kanniyakumari in Tamil Nadu, while the East-West Corridor runs about 3,300 km from Silchar in Assam to Porbandar in Gujarat. Together, these projects, implemented by the NHAI, reduce time and distance between mega-cities, enable faster movement of freight (cutting Delhi-Chennai truck transit from four days to two), spur industrial growth along the corridors, create employment, boost real estate and trade in once-isolated towns, and integrate previously disconnected regions (particularly the north-east) into the national economy. They are a backbone of India's logistics revolution.",
+          "explanation": "The answer should mention which cities/regions each project connects, the NHAI's role, and the economic effects."
+        }
+      ]
+    },
+    {
+      "topic": "Indian Railways",
+      "easy": [
+        {
+          "id": "2-1-1",
+          "type": "mcq",
+          "question": "The first train in India ran from Mumbai to Thane in:",
+          "options": ["1853", "1857", "1947", "1950"],
+          "answer": "1853",
+          "explanation": "On 16 April 1853, India's first train steamed off from Mumbai to Thane, covering 34 km."
+        },
+        {
+          "id": "2-1-2",
+          "type": "mcq",
+          "question": "Indian Railways is currently organised into ___ zones.",
+          "options": ["9", "12", "17", "21"],
+          "answer": "17",
+          "explanation": "The Indian Railways system is divided into 17 zones, each with its own headquarters."
+        },
+        {
+          "id": "2-1-3",
+          "type": "fill",
+          "question": "The track width of broad gauge is ___ metres.",
+          "answer": "1.676",
+          "explanation": "Broad gauge measures 1.676 m and accounts for about 63,950 km of India's 67,956 km railway network."
+        },
+        {
+          "id": "2-1-4",
+          "type": "mcq",
+          "question": "The total route length of Indian Railways is approximately:",
+          "options": ["34,000 km", "67,956 km", "100,000 km", "1,20,000 km"],
+          "answer": "67,956 km",
+          "explanation": "Indian Railways operates 67,956 route kilometres across broad, metre, and narrow gauge tracks."
+        },
+        {
+          "id": "2-1-5",
+          "type": "mcq",
+          "question": "Which recent railway line opened along the west coast facing landslide and track-sinking issues?",
+          "options": ["Kashmir Railway", "Konkan Railway", "Nilgiri Mountain Railway", "Darjeeling Himalayan Railway"],
+          "answer": "Konkan Railway",
+          "explanation": "The Konkan Railway threads the narrow strip between the Sahyadri and the Arabian Sea, with 92 tunnels and 2,000 bridges, and struggles with monsoon landslides."
+        }
+      ],
+      "medium": [
+        {
+          "id": "2-2-1",
+          "type": "short",
+          "question": "Why did the northern plains develop the densest railway network in India?",
+          "answer": "The northern plains offered the most favourable conditions: vast level land that was cheap and easy to lay track on, high population density that ensured plenty of passengers, and rich agricultural resources (wheat, sugarcane, rice) that generated freight traffic. The only obstacle was building bridges across the wide river beds of the Ganga, Yamuna, and their tributaries.",
+          "explanation": "Geography, demographics, and economic activity together explain India's uneven rail coverage."
+        },
+        {
+          "id": "2-2-2",
+          "type": "short",
+          "question": "Describe three problems that affect the working of Indian Railways today.",
+          "answer": "(1) Many passengers travel without tickets, depriving the railways of revenue. (2) Theft of cabling and damage to railway property remain ongoing problems. (3) Unnecessary chain-pulling by passengers stops trains and ripples delays across the network. (4) Encroachments and unauthorised crossings cause accidents. (5) Heavy passenger subsidies make freight costs uncompetitive. Any three are acceptable.",
+          "explanation": "The textbook frames these as both technical and civic issues — the system depends on the public's cooperation as much as on engineering."
+        }
+      ],
+      "hard": [
+        {
+          "id": "2-3-1",
+          "type": "long",
+          "question": "Where and why is rail transport the most convenient means of transportation in India? Discuss with examples.",
+          "answer": "Rail transport is most convenient in the northern plains, the peninsular interior (over level land between the rivers), and on long-distance corridors between mega-cities. It is preferred because (1) it can carry very large volumes — a single goods train can pull more than 3,000 tonnes, far more than any truck convoy; (2) it is fuel-efficient over long distances, with cost per tonne-kilometre much lower than road; (3) it is reliable in all weather once tracks are laid; (4) it can integrate freight and passenger movement on the same routes; and (5) it has been a great social integrator for 172 years, allowing pilgrimage, business travel, and migration on a continent-sized scale. For example, coal from Jharkhand to thermal power plants in Maharashtra, wheat from Punjab to Kerala, and iron ore from Odisha to Visakhapatnam Port all move by rail. The Indian Railways carries about 23 million passengers and 3 million tonnes of freight every day — a scale only railways can manage.",
+          "explanation": "The answer should combine geographical reasoning with specific cargo and passenger examples."
+        }
+      ]
+    },
+    {
+      "topic": "Pipelines",
+      "easy": [
+        {
+          "id": "3-1-1",
+          "type": "mcq",
+          "question": "Pipelines in India are used primarily to transport:",
+          "options": ["Coal and iron ore", "Wheat and rice", "Crude oil, petroleum, and natural gas", "Cement and steel"],
+          "answer": "Crude oil, petroleum, and natural gas",
+          "explanation": "Pipelines move liquid and gaseous fuels from oil and gas fields to refineries, fertiliser plants, and thermal power plants."
+        },
+        {
+          "id": "3-1-2",
+          "type": "mcq",
+          "question": "The HVJ pipeline carries:",
+          "options": ["Crude oil", "Natural gas", "Diesel", "Drinking water"],
+          "answer": "Natural gas",
+          "explanation": "The Hazira-Vijaipur-Jagdishpur pipeline was India's first long-distance cross-country natural gas pipeline."
+        },
+        {
+          "id": "3-1-3",
+          "type": "fill",
+          "question": "The first long-distance gas pipeline in India, ___-Vijaipur-Jagdishpur (HVJ), was originally 1,700 km long.",
+          "answer": "Hazira",
+          "explanation": "The pipeline runs from Hazira in Gujarat to Jagdishpur in Uttar Pradesh, with Vijaipur in Madhya Pradesh as a key node."
+        },
+        {
+          "id": "3-1-4",
+          "type": "mcq",
+          "question": "Which of these states is NOT connected by the HVJ pipeline?",
+          "options": ["Gujarat", "Madhya Pradesh", "Uttar Pradesh", "Maharashtra"],
+          "answer": "Maharashtra",
+          "explanation": "HVJ links Mumbai High and Bassein gas fields to fertiliser and power plants in Gujarat, MP, Rajasthan, and UP — but the pipeline itself does not pass through Maharashtra."
+        }
+      ],
+      "medium": [
+        {
+          "id": "3-2-1",
+          "type": "short",
+          "question": "Why are pipelines preferred over trucks or trains for moving petroleum products?",
+          "answer": "Pipelines have high initial cost but very low running costs. They eliminate transhipment losses and delays, run continuously 24 hours a day, do not depend on weather or road traffic, are safer than tanker trucks (no road accidents), and have a much smaller carbon footprint per tonne moved. They make distant inland refineries like Barauni, Mathura, and Panipat viable, and feed gas-based fertiliser plants without diesel-driven logistics.",
+          "explanation": "The cost structure (high CapEx, low OpEx) and zero-transhipment property are pipelines' two killer advantages."
+        },
+        {
+          "id": "3-2-2",
+          "type": "short",
+          "question": "Name the three important pipeline networks of India and the regions they serve.",
+          "answer": "(1) Upper Assam to Kanpur in UP, via Guwahati, Barauni, and Prayagraj, with branches to Haldia and Siliguri. (2) Salaya in Gujarat to Jalandhar in Punjab, via Viramgam, Mathura, Delhi, and Sonipat, with a branch to Koyali. (3) The Hazira-Vijaipur-Jagdishpur (HVJ) cross-country gas pipeline linking Mumbai High and Bassein gas fields to fertiliser, power, and industrial complexes in western and northern India.",
+          "explanation": "These three together connect India's oil and gas sources to its inland consumption centres."
+        }
+      ],
+      "hard": [
+        {
+          "id": "3-3-1",
+          "type": "long",
+          "question": "Explain how the development of pipelines has changed the geography of India's refining and fertiliser industries.",
+          "answer": "Before pipelines, refineries had to be built near ports — Mumbai, Visakhapatnam, Kochi — because crude oil arrives by ship. This concentrated India's refining capacity on the coast and forced expensive trucking of finished fuels to the interior. The arrival of pipelines changed this map. The Barauni refinery in Bihar, the Mathura refinery in Uttar Pradesh, and the Panipat refinery in Haryana could all be built far inland because crude could be pumped to them at low cost. Similarly, gas-based fertiliser plants — which need huge volumes of natural gas — could be located in agricultural heartlands rather than on the coast. The HVJ pipeline supported plants across Gujarat, Madhya Pradesh, Rajasthan, and Uttar Pradesh, taking fertiliser production closer to the wheat and sugarcane fields it serves. Pipelines thus shifted heavy industry inland, reduced fuel logistics costs, and allowed the geography of refining to better match the geography of consumption — a quiet structural change that few people see, but everyone benefits from.",
+          "explanation": "The answer should connect pipeline economics to the location of inland refineries and fertiliser plants."
+        }
+      ]
+    },
+    {
+      "topic": "Waterways and Major Ports",
+      "easy": [
+        {
+          "id": "4-1-1",
+          "type": "mcq",
+          "question": "National Waterway No. 1 lies on the:",
+          "options": ["Brahmaputra river", "Ganga river between Prayagraj and Haldia", "West Coast Canal in Kerala", "Godavari and Krishna rivers"],
+          "answer": "Ganga river between Prayagraj and Haldia",
+          "explanation": "NW-1 is the 1,620-km stretch of the Ganga from Prayagraj to Haldia — India's longest and busiest inland waterway."
+        },
+        {
+          "id": "4-1-2",
+          "type": "mcq",
+          "question": "Which port was developed soon after Independence to replace Karachi, which India lost to Pakistan?",
+          "options": ["Mumbai", "Mormugao", "Deendayal (Kandla)", "Cochin"],
+          "answer": "Deendayal (Kandla)",
+          "explanation": "Kandla, in Kachchh district of Gujarat, was developed right after Partition to serve the granary states of northern India after Karachi was lost."
+        },
+        {
+          "id": "4-1-3",
+          "type": "fill",
+          "question": "Approximately ___ per cent of India's foreign trade by volume is moved by sea.",
+          "answer": "95",
+          "explanation": "Around 95% of India's foreign trade by volume (and 68% by value) goes through its ports."
+        },
+        {
+          "id": "4-1-4",
+          "type": "mcq",
+          "question": "Which port is the deepest land-locked and well-protected port on India's east coast?",
+          "options": ["Chennai", "Paradip", "Visakhapatnam", "V. O. Chidambaranar (Tuticorin)"],
+          "answer": "Visakhapatnam",
+          "explanation": "Visakhapatnam's natural cliffs make it the deepest and most sheltered port on the east coast; it was originally built to export iron ore."
+        },
+        {
+          "id": "4-1-5",
+          "type": "mcq",
+          "question": "Which port is an inland riverine port on the Hooghly that requires constant dredging?",
+          "options": ["Mumbai", "Cochin", "Shyama Prasad Mookerjee (Kolkata)", "Mormugao"],
+          "answer": "Shyama Prasad Mookerjee (Kolkata)",
+          "explanation": "Kolkata is a tidal riverine port on the Hooghly, and silting forces constant dredging to keep it open to large ships."
+        },
+        {
+          "id": "4-1-6",
+          "type": "mcq",
+          "question": "Mormugao Port, located in Goa, is famous as India's premier exporter of:",
+          "options": ["Petroleum", "Iron ore", "Tea", "Container cargo"],
+          "answer": "Iron ore",
+          "explanation": "Mormugao handles about 50% of India's iron ore exports."
+        }
+      ],
+      "medium": [
+        {
+          "id": "4-2-1",
+          "type": "short",
+          "question": "Name India's five major National Waterways and the rivers or canals they cover.",
+          "answer": "NW-1 — Ganga between Prayagraj and Haldia (1,620 km). NW-2 — Brahmaputra between Sadiya and Dhubri (891 km). NW-3 — West Coast Canal in Kerala including Kottapuram-Kollam, Udyogamandal, and Champakkara canals (205 km). NW-4 — specified stretches of the Godavari and Krishna rivers along with the Kakinada-Puducherry canal (1,078 km). NW-5 — specified stretches of the Brahmani, Matai, delta channels of the Mahanadi, and the East Coast Canal (588 km).",
+          "explanation": "Under the National Waterways Act 2016, 111 routes are now declared; NW-1 to NW-5 are the most important historically."
+        },
+        {
+          "id": "4-2-2",
+          "type": "short",
+          "question": "Why is JNPT (Jawaharlal Nehru Port) located near Mumbai?",
+          "answer": "JNPT was planned and built to decongest the older, increasingly crowded Mumbai port and to serve as a modern hub port for India's busiest trading region — the Mumbai-Pune industrial belt and western India. It now handles the bulk of India's container traffic and complements Mumbai port rather than replacing it.",
+          "explanation": "Mumbai's natural harbour is excellent but its docks are constrained by the dense old city around them; JNPT solved the space problem."
+        },
+        {
+          "id": "4-2-3",
+          "type": "short",
+          "question": "List four advantages of waterways over road or rail transport.",
+          "answer": "(1) Waterways are the cheapest mode of transport per tonne-kilometre. (2) They are most suitable for carrying heavy and bulky goods such as iron ore, coal, and grain. (3) They are fuel-efficient and environment-friendly, with low carbon emissions per tonne moved. (4) They use a natural infrastructure (rivers, canals), reducing the need for heavy land construction. (5) Inland waterways relieve pressure on already crowded roads and railways.",
+          "explanation": "Waterways are underused in India relative to other countries; the National Waterways Act 2016 is trying to change that."
+        }
+      ],
+      "hard": [
+        {
+          "id": "4-3-1",
+          "type": "long",
+          "question": "Compare and contrast any four of India's major ports in terms of their location, type, and main cargo.",
+          "answer": "Mumbai is on the west coast with a spacious natural and well-sheltered harbour; it is India's biggest port by tradition and handles general cargo and containers. Deendayal (Kandla) is a tidal port in Kachchh, Gujarat, built after Independence to replace Karachi; it serves the granary and industrial belt of Punjab, Haryana, Rajasthan, Himachal, and Gujarat. Mormugao in Goa is a natural harbour and India's premier iron-ore exporter, handling roughly half of all iron-ore exports. Visakhapatnam on the east coast in Andhra Pradesh is the deepest land-locked and well-protected port, originally built for iron-ore exports and now handling general bulk cargo. Paradip in Odisha specialises in iron-ore exports from the Odisha-Jharkhand mines. Shyama Prasad Mookerjee (Kolkata) is the only major riverine port, sitting on the tidal Hooghly and requiring constant dredging; it serves the Ganga-Brahmaputra basin. Cochin in Kerala is a lagoon-mouth port with a natural harbour, important for southwest India. Any four well-described are acceptable.",
+          "explanation": "A good answer covers coast, port type (natural/artificial, tidal/non-tidal, riverine/coastal), and characteristic cargo or hinterland."
+        },
+        {
+          "id": "4-3-2",
+          "type": "long",
+          "question": "What is the difference between major ports and non-major (minor/intermediate) ports? Why does India have so many of each?",
+          "answer": "Major ports are large ports designated and administered by the central government (currently 12) — they handle the heaviest international cargo and roughly 95% of India's foreign trade by volume. Non-major ports (about 200 notified ones) are administered by state governments or private operators and handle the remaining 5% of foreign trade plus a large share of coastal shipping between Indian ports. India has many of both because its 11,098-km coastline is long and varied — different regions need different scales of port. Major ports concentrate big container ships, deep-water bulk carriers, and tankers in a few high-capacity hubs (Mumbai, JNPT, Chennai). Non-major ports like Mundra, Pipavav, Krishnapatnam, and dozens of fishing harbours serve specific local needs — regional industry, fishing fleets, coastal trade between states. Some private non-major ports (Mundra, Pipavav) now rival the smaller major ports in throughput, which has shifted the balance over the last two decades.",
+          "explanation": "The answer should explain governance differences and economic/regional role rather than just listing numbers."
+        }
+      ]
+    },
+    {
+      "topic": "Airways and Communication",
+      "easy": [
+        {
+          "id": "5-1-1",
+          "type": "mcq",
+          "question": "Why is air transport especially important in the north-eastern states?",
+          "options": ["Because it is the cheapest", "Because the terrain (rivers, forests, hills, floods) makes other modes difficult", "Because there is no demand for road or rail", "Because tourists prefer flying"],
+          "answer": "Because the terrain (rivers, forests, hills, floods) makes other modes difficult",
+          "explanation": "Big rivers, dissected relief, dense forests, frequent floods, and international borders make air transport often the only fast option in the north-east."
+        },
+        {
+          "id": "5-1-2",
+          "type": "fill",
+          "question": "The Indian postal network is the ___ in the world.",
+          "answer": "largest",
+          "explanation": "India's postal network, with more than 1.5 lakh post offices, is the largest national postal system in the world."
+        },
+        {
+          "id": "5-1-3",
+          "type": "mcq",
+          "question": "UDAN stands for:",
+          "options": ["Universal Domestic Air Network", "Ude Desh ka Aam Nagrik", "United Domestic Aviation Network", "Urban Domestic Air Network"],
+          "answer": "Ude Desh ka Aam Nagrik",
+          "explanation": "UDAN is a regional connectivity scheme by the Ministry of Civil Aviation to make air travel affordable on small regional routes."
+        },
+        {
+          "id": "5-1-4",
+          "type": "mcq",
+          "question": "Which company provides helicopter services to ONGC's offshore operations and to remote hill regions?",
+          "options": ["Air India", "Pawan Hans Helicopters Ltd.", "IndiGo", "SpiceJet"],
+          "answer": "Pawan Hans Helicopters Ltd.",
+          "explanation": "Pawan Hans serves the offshore oil rigs of ONGC and connects inaccessible hill regions in the north-east, J&K, Himachal Pradesh, and Uttarakhand."
+        },
+        {
+          "id": "5-1-5",
+          "type": "mcq",
+          "question": "The national television channel of India is:",
+          "options": ["All India Radio", "Doordarshan", "BharatNet", "CBFC"],
+          "answer": "Doordarshan",
+          "explanation": "Doordarshan is one of the largest terrestrial television networks in the world, broadcasting in many languages."
+        }
+      ],
+      "medium": [
+        {
+          "id": "5-2-1",
+          "type": "short",
+          "question": "How are cards/envelopes treated differently from book packets and periodicals in the Indian postal system?",
+          "answer": "Cards and envelopes are classified as first-class mail and are airlifted between stations, covering both land and air for quick delivery. Book packets, registered newspapers, and periodicals are classified as second-class mail and are carried by surface mail using land and water transport. First-class mail therefore moves faster but costs more; second-class moves cheaper but slower.",
+          "explanation": "Speed and cost differ by mail class, allowing India Post to balance urgency against economy."
+        },
+        {
+          "id": "5-2-2",
+          "type": "short",
+          "question": "Name the six mail channels introduced for faster delivery in large towns and cities.",
+          "answer": "Rajdhani Channel, Metro Channel, Green Channel, Business Channel, Bulk Mail Channel, and Periodical Channel.",
+          "explanation": "Each channel is designed for a specific kind of urban mail flow — from inter-metro routes to bulk periodicals."
+        },
+        {
+          "id": "5-2-3",
+          "type": "short",
+          "question": "What is Digital India, and why is it important?",
+          "answer": "Digital India is the central government's umbrella programme launched in 2015 to make India a knowledge-based economy through digital infrastructure and services. Its focus is on transforming India by connecting every village with broadband (through BharatNet), pushing government services online, expanding e-Governance, and using Indian talent in information technology. Its tagline is IT (Indian Talent) + IT (Information Technology) = IT (India Tomorrow). It matters because it tries to reduce the rural-urban digital divide, brings government services to the citizen's doorstep, and prepares India for a service-led economy.",
+          "explanation": "Digital India is the communication-side counterpart of the transport corridors — both stitch the country together."
+        }
+      ],
+      "hard": [
+        {
+          "id": "5-3-1",
+          "type": "long",
+          "question": "Discuss how communication networks — postal, telecom, mass media, and Digital India — together act as lifelines for a country of India's size and diversity.",
+          "answer": "Communication networks act as lifelines by collapsing distance and connecting people, markets, and the state across a vast and diverse country. The Indian postal network, the world's largest, reaches more than 1.4 lakh villages and delivers government scheme letters, bank documents, exam admit cards, and increasingly e-commerce parcels — keeping rural India connected to the formal economy. The telecom network, one of Asia's largest, brings 24-hour STD service and mobile coverage to virtually every village at uniform rates, made possible by integrating space technology (INSAT) with fibre and mobile infrastructure. Mass media — All India Radio in over 20 languages, Doordarshan's terrestrial reach, newspapers in about 100 languages (Hindi largest, followed by English and Urdu), and the world's largest film industry — create a shared national imagination while preserving regional voices. Digital India ties it all together, rolling out BharatNet broadband to every gram panchayat, pushing services like Aadhaar, DigiLocker, and UPI, and turning the smartphone into a portable government office. Together these networks let a farmer in Bihar check mandi prices, a parent in Manipur talk to a child studying in Delhi, a student in a remote village watch a NEET coaching lecture, and a citizen receive direct benefit transfers — services that would have been impossible a generation ago.",
+          "explanation": "The answer should bring out connection, integration, and inclusion as the three deep functions of communication networks."
+        }
+      ]
+    },
+    {
+      "topic": "International Trade and Tourism",
+      "easy": [
+        {
+          "id": "6-1-1",
+          "type": "mcq",
+          "question": "Trade between two countries is called:",
+          "options": ["Internal trade", "Local trade", "International trade", "State trade"],
+          "answer": "International trade",
+          "explanation": "International trade is the exchange of goods and services across national borders, by sea, air, or land."
+        },
+        {
+          "id": "6-1-2",
+          "type": "mcq",
+          "question": "When the value of a country's exports exceeds its imports, it is called a:",
+          "options": ["Unfavourable balance of trade", "Trade deficit", "Favourable balance of trade", "Trade barrier"],
+          "answer": "Favourable balance of trade",
+          "explanation": "A favourable (positive) balance means the country earns more from exports than it spends on imports."
+        },
+        {
+          "id": "6-1-3",
+          "type": "fill",
+          "question": "International trade is considered the ___ for a country's economy.",
+          "answer": "economic barometer",
+          "explanation": "Because it reflects competitiveness, productivity, and external demand, trade is treated as a sensitive indicator of economic health."
+        },
+        {
+          "id": "6-1-4",
+          "type": "mcq",
+          "question": "Which of these is a major import of India?",
+          "options": ["Software services", "Petroleum crude", "Gems and jewellery (only exports)", "Agriculture and allied products (only exports)"],
+          "answer": "Petroleum crude",
+          "explanation": "India imports more than 80% of its crude oil, making petroleum its single largest import."
+        },
+        {
+          "id": "6-1-5",
+          "type": "mcq",
+          "question": "Foreign tourists who come to India for treatment at hospitals are part of which type of tourism?",
+          "options": ["Heritage tourism", "Eco tourism", "Medical tourism", "Adventure tourism"],
+          "answer": "Medical tourism",
+          "explanation": "Medical tourism is one of the fastest-growing segments — India offers world-class healthcare at low prices."
+        }
+      ],
+      "medium": [
+        {
+          "id": "6-2-1",
+          "type": "short",
+          "question": "List four important items India exports and four it imports.",
+          "answer": "Exports include gems and jewellery, chemicals and related products, agricultural and allied products, engineering goods, textiles, and software/IT services. Imports include petroleum crude and products, gems and jewellery (for re-cutting and re-export), chemicals, base metals, electronic items, machinery, and edible oils and pulses. Any four of each are acceptable.",
+          "explanation": "India's trade mix reflects an oil-dependent industrial economy with a strong service-export sector."
+        },
+        {
+          "id": "6-2-2",
+          "type": "short",
+          "question": "How does tourism help India economically beyond just earning foreign exchange?",
+          "answer": "Tourism earns large foreign exchange but also supports local handicrafts and small artisans, creates jobs in hotels, transport, and guiding, promotes national integration as Indians travel to other states, develops international understanding of Indian culture, and encourages investment in conservation of heritage sites. Schemes like Swadesh Darshan 2.0, PRASHAD, and Paryatan Mitra extend these benefits to lesser-known destinations.",
+          "explanation": "Tourism is both an economic and a cultural activity; its benefits ripple beyond the obvious tourist rupee."
+        }
+      ],
+      "hard": [
+        {
+          "id": "6-3-1",
+          "type": "long",
+          "question": "Write a note on the changing nature of India's international trade in the last fifteen years.",
+          "answer": "Over the last fifteen years, India's international trade has shifted in several important ways. First, services — especially software and IT-enabled services — have become a giant export category. Indian IT companies in Bengaluru, Hyderabad, Pune, and Chennai now earn tens of billions of dollars annually, often offsetting a chunk of the goods trade deficit. Second, the composition of goods exports has moved up the value chain — engineering goods, pharmaceuticals, and electronics have risen, while traditional exports like tea and cotton have shrunk in share. Third, imports remain dominated by petroleum crude, but base metals, electronics, and machinery have grown sharply as India industrialises and as smartphone use has exploded. Fourth, India's trading partners have diversified: the United States, United Arab Emirates, China, Singapore, Saudi Arabia, and the European Union are among the largest. Fifth, India has joined or negotiated free-trade agreements with several blocs and bilateral partners, while remaining cautious about commitments under the RCEP. Sixth, tourism and remittances have grown as invisible trade items, with Indian workers abroad sending home some of the world's largest remittance flows. Despite this growth, India's overall balance of trade in goods remains unfavourable because of the crude oil bill, though the services surplus narrows the gap. The country has clearly emerged as a major node in global trade rather than a peripheral one — a dramatic change from the 1990s.",
+          "explanation": "A strong answer covers services, composition shifts, partner diversification, FTAs, and the structural deficit caused by oil."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "chapterRef": "class-10/social-science/geography/chapter-4-agriculture/worksheet",
+  "topics": [
+    {
+      "topic": "Types of Farming in India",
+      "easy": [
+        {
+          "id": "t1-e1",
+          "type": "mcq",
+          "question": "Which one of the following describes a system of agriculture where a single crop is grown on a large area?",
+          "options": [
+            "Shifting agriculture",
+            "Plantation agriculture",
+            "Horticulture",
+            "Intensive agriculture"
+          ],
+          "answer": "Plantation agriculture",
+          "explanation": "Plantation agriculture grows a single crop (tea, coffee, rubber, sugarcane, banana) on a very large area, uses capital-intensive inputs and migrant labour, and processes the produce nearby for the market. The other systems differ — shifting agriculture moves between small patches, horticulture grows mixed fruits and vegetables, and intensive agriculture grows multiple crops on small plots."
+        },
+        {
+          "id": "t1-e2",
+          "type": "fill",
+          "question": "The 'slash and burn' system of farming practised in the north-east is locally called _______.",
+          "answer": "jhumming",
+          "explanation": "Jhumming is the north-eastern name for slash-and-burn or shifting cultivation, practised in Assam, Meghalaya, Mizoram and Nagaland. It is called by many other regional names too — bewar in MP, podu in Andhra, kumari in the Western Ghats, kuruwa in Jharkhand, khil in the Himalayan belt."
+        },
+        {
+          "id": "t1-e3",
+          "type": "mcq",
+          "question": "Which type of farming relies on high doses of biochemical inputs and irrigation on small holdings driven by population pressure?",
+          "options": [
+            "Primitive subsistence farming",
+            "Intensive subsistence farming",
+            "Plantation agriculture",
+            "Commercial farming"
+          ],
+          "answer": "Intensive subsistence farming",
+          "explanation": "Intensive subsistence farming is practised where population pressure is high and land holdings are small. Farmers squeeze maximum output from limited land using fertilisers, irrigation and family labour. The right of inheritance, which divides land among generations, has made holdings even smaller."
+        },
+        {
+          "id": "t1-e4",
+          "type": "truefalse",
+          "question": "Rice is a commercial crop in Punjab and a subsistence crop in Odisha.",
+          "answer": "True",
+          "explanation": "The textbook gives this as the clearest example that the same crop can be 'commercial' or 'subsistence' depending on the region. In Punjab and Haryana, almost all the rice grown is sold (mostly to the FCI at MSP). In Odisha, most of the rice grown stays in the village and feeds the family."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t1-m1",
+          "type": "short",
+          "question": "Why is primitive subsistence farming slowly disappearing from India?",
+          "answer": "Primitive subsistence farming (jhumming or slash-and-burn) is practised on small patches of cleared forest land. After a few seasons, when soil fertility drops, the farmer shifts to a fresh patch and the old one is left for nature to rebuild. This system needs ONE THING above all else — plenty of land per family, so that each cleared patch can rest for many years before being cut again. As populations have grown and forests have shrunk, the rest cycle has been squeezed from twenty or thirty years down to two or three. Soils never really recover. Yields fall. Families struggle to feed themselves. Additionally, governments now actively discourage jhumming to protect forests from degradation. Many families have shifted to settled farming, plantation labour or urban work. So the disappearance is being driven by population pressure, shrinking forests, soil exhaustion, government policy, and the simple fact that primitive subsistence farming cannot feed a growing population on shrinking land.",
+          "explanation": "Tests understanding that the viability of jhumming depends on an abundance of land — the moment that ends, the system collapses."
+        },
+        {
+          "id": "t1-m2",
+          "type": "short",
+          "question": "What three things must be in place for plantation agriculture to work?",
+          "answer": "PLANTATION AGRICULTURE needs three pillars without which it cannot survive: (1) CAPITAL — plantations cover huge tracts of land, need expensive long-term investment in clearing, planting bushes/trees that take years to mature, building processing factories on site, and providing housing for migrant labour. This is far more money than a small farmer commands. (2) MIGRANT LABOUR — plantations are usually in remote hill regions where the local population is small. Labour has to be brought in — historically from poorer regions — to do the picking, pruning, processing. Tea estates in Assam, for example, were settled by labour from central India. (3) EXCELLENT TRANSPORT AND COMMUNICATION — the produce is grown for distant markets, often overseas. Without good roads, rail and ports, the tea or rubber or coffee cannot reach buyers in time. The plantations also depend on quick communication of prices, demand, weather. These three together explain why plantations grew up where they did — in colonial hill regions with British capital, migrant labour, and rail lines to the ports of Kolkata, Chennai and Cochin.",
+          "explanation": "Tests the textbook's claim that plantations sit at the 'interface of agriculture and industry' — they cannot run without capital, labour and transport."
+        },
+        {
+          "id": "t1-m3",
+          "type": "short",
+          "question": "Explain the difference between intensive subsistence farming and commercial farming, with one example of each.",
+          "answer": "INTENSIVE SUBSISTENCE FARMING is farming whose main purpose is to feed the farmer's own family. The holding is usually small, sometimes less than a hectare. The farmer uses family labour, organic manures along with some chemical fertilisers and irrigation, and grows two or three crops a year to squeeze maximum output. Whatever is left after the family eats might be sold in the local market, but most of it is consumed at home. EXAMPLE: A small rice farmer in eastern UP or Bihar with one acre — he eats most of his harvest, sells a little for cash. COMMERCIAL FARMING is farming primarily for the market. The whole crop is meant to be sold, often through MSP procurement or wholesale traders. The inputs are modern and large — HYV seeds, chemical fertilisers, pesticides, tractors, harvesters, tubewell irrigation. The farmer himself usually does not eat his own produce; he buys his food from the market. EXAMPLE: A Punjab farmer with ten hectares growing wheat in winter and rice in summer, both sold to the Food Corporation of India at MSP. KEY DIFFERENCE: it is not the crop that decides — it is the PURPOSE. Rice can be either. Wheat can be either. The same field becomes intensive subsistence or commercial depending on whether the farmer is feeding himself or selling to the market.",
+          "explanation": "Tests the conceptual distinction — purpose and scale, not crop type."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t1-h1",
+          "type": "long",
+          "question": "India has farmers using bullock-drawn ploughs, farmers burning forests, farmers running tractor harvesters, and farmers managing tea estates with thousands of workers — all in the same country. Why does India have such a wide variety of farming systems? What does this tell us about Indian agriculture as a whole?",
+          "answer": "India is one country geographically, but agriculturally it contains many different worlds inside it. The variety of farming systems is not a problem to be solved — it is a direct reflection of how varied India itself is. We can identify FIVE FORCES that produce the variety: (1) GEOGRAPHY AND CLIMATE: India runs from the deserts of Rajasthan to the rainforests of the north-east, from the snow line of Kashmir to the coastal deltas of Tamil Nadu. Rainfall ranges from less than 10 cm a year in parts of Rajasthan to over 1100 cm in Mawsynram. Soils range from black cotton soil in the Deccan to alluvial in the Ganga plain to laterite in the south-west. No single farming system can fit all of these — each landscape grows its own crops in its own way. (2) POPULATION PRESSURE: Where population is sparse (hill regions of the north-east, parts of the Western Ghats), shifting cultivation can still survive because there is land to spare. Where population is dense (Ganga plains, Bengal, Tamil Nadu), every inch of land is squeezed — intensive subsistence becomes the only viable system. (3) HISTORY AND COLONIALISM: Plantations grew up under British colonial rule, when European capital and labour migration produced large tea, coffee and rubber estates. These exist today as a colonial inheritance, not as something Indian farmers organised themselves. (4) IRRIGATION AND TECHNOLOGY: Where canals and tubewells reached (Punjab, Haryana, western UP), farming could be commercialised with HYV seeds and machines. Where they did not reach (most of the rain-fed Deccan, eastern India, the dry zones of central India), farmers remained dependent on the monsoon and could not absorb the same package. The Green Revolution was therefore very uneven. (5) ECONOMIC OPPORTUNITY: Farmers near cities or with road and rail access can grow high-value commercial crops (grapes, flowers, vegetables for export). Farmers in remote areas have no choice but to grow what they can eat. WHAT THIS TELLS US ABOUT INDIAN AGRICULTURE: (a) There is NO SINGLE INDIAN FARMER. The Punjab wheat farmer and the Nagaland jhum cultivator are doing such different work that lumping them together hides more than it reveals. Policy must be tuned to the kind of farmer it is meant to help. (b) A policy that works in one region can damage another. MSP for wheat and rice helped Punjab tremendously but also distorted cropping patterns nationwide, pushed millets and pulses to the margins, and drew water from areas that did not have enough to spare. (c) Indian agriculture changes from north to south, east to west, plains to hills. Any honest understanding of farming in India has to be REGIONAL FIRST. National averages — yields per hectare, fertiliser use per acre, income per farmer — disguise enormous gaps. (d) The variety also reveals INEQUALITY. The plantation labourer earning daily wages in a tea garden, the Punjab farmer with ten hectares, the Bihar smallholder with one acre, the Nagaland jhum cultivator — they all eat very differently and are in very different economic positions even though they all 'work in agriculture'. CONCLUSION: The wide variety of farming systems is India's reality, India's burden, and in some ways India's opportunity. It is a reality because geography and history made it so. It is a burden because uniform policy cannot serve such diverse needs. It is an opportunity because India can grow tropical and temperate crops, monsoon and irrigation crops, cereal and plantation crops — almost anything. Reading Indian agriculture as 'one thing' will always mislead. Reading it as many things, region by region, is the honest way.",
+          "explanation": "Capstone question that tests whether the student can put together geography, history, population, technology and economics to explain regional variation — and draw a policy lesson from it."
+        }
+      ]
+    },
+    {
+      "topic": "Cropping Seasons",
+      "easy": [
+        {
+          "id": "t2-e1",
+          "type": "mcq",
+          "question": "Which of the following is a rabi crop?",
+          "options": [
+            "Rice",
+            "Gram",
+            "Millets",
+            "Cotton"
+          ],
+          "answer": "Gram",
+          "explanation": "Gram is a rabi crop, sown in October-December and harvested in April-June. Rice, millets and cotton are all kharif crops grown with the monsoon. Other typical rabi crops include wheat, barley, peas and mustard."
+        },
+        {
+          "id": "t2-e2",
+          "type": "fill",
+          "question": "Watermelon, muskmelon, cucumber and fodder crops are grown in the short summer season called _______.",
+          "answer": "zaid",
+          "explanation": "Zaid is the short season between rabi (harvested April-June) and the next kharif sowing. It runs through the summer months and supports quick-growing crops like watermelon, muskmelon, cucumber, vegetables, and fodder. Sugarcane is the exception — it takes almost a year to mature."
+        },
+        {
+          "id": "t2-e3",
+          "type": "mcq",
+          "question": "Kharif crops are sown with the onset of the monsoon in:",
+          "options": [
+            "March-April",
+            "June-July",
+            "October-November",
+            "December-January"
+          ],
+          "answer": "June-July",
+          "explanation": "Kharif crops are sown with the onset of the south-west monsoon in June-July and harvested in September-October. Important kharif crops include paddy, maize, jowar, bajra, tur (arhar), moong, urad, cotton, jute, groundnut and soyabean."
+        },
+        {
+          "id": "t2-e4",
+          "type": "truefalse",
+          "question": "In Assam, West Bengal and Odisha, three crops of paddy — Aus, Aman and Boro — are grown in a year.",
+          "answer": "True",
+          "explanation": "The warm and wet climate of Assam, West Bengal and Odisha allows three crops of paddy to be grown annually: Aus (sown in spring, harvested in summer), Aman (the main monsoon crop) and Boro (winter crop). This shows how rich tropical climate, when combined with water, allows multiple harvests in a single year."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t2-m1",
+          "type": "short",
+          "question": "Why are most rabi crops grown in the north and north-western states of India?",
+          "answer": "Rabi crops (wheat, barley, gram, peas, mustard) need a cool growing season and bright sunshine for ripening — exactly what the north and north-western states (Punjab, Haryana, Himachal Pradesh, Uttarakhand, Jammu and Kashmir, Uttar Pradesh, Rajasthan) provide in their winter from October to March. Two further advantages help these states: (1) the WESTERN TEMPERATE CYCLONES that move across north India in winter bring useful rain during the rabi growing season — gentle showers that wheat in particular needs. (2) the SUCCESS OF THE GREEN REVOLUTION concentrated in Punjab, Haryana, western UP and parts of Rajasthan brought irrigation canals, tubewells, HYV seeds and assured procurement at MSP for wheat and other rabi crops, making it extremely profitable to grow them in these states. Southern and eastern India, by contrast, has a hot dry winter unsuitable for wheat, and the Green Revolution package did not reach there in the same way. So rabi is essentially the winter crop of the cooler north and north-west — geography and policy together.",
+          "explanation": "Tests knowledge of two reasons — climatic suitability (cool winter + temperate cyclones) and policy (Green Revolution support)."
+        },
+        {
+          "id": "t2-m2",
+          "type": "short",
+          "question": "Distinguish between kharif, rabi and zaid crops with examples.",
+          "answer": "INDIA HAS THREE CROPPING SEASONS, each driven by the monsoon calendar. KHARIF (June-October): These are the MONSOON CROPS, sown with the onset of the south-west monsoon in June-July and harvested in September-October. They need a lot of water and warm temperatures. EXAMPLES: paddy, maize, jowar, bajra, tur (arhar), moong, urad, cotton, jute, groundnut, soyabean. The major rice-growing states for kharif paddy are Assam, West Bengal, Odisha, Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Maharashtra (Konkan), UP and Bihar. RABI (October-March): These are the WINTER CROPS, sown after the monsoon ends from October to December and harvested in April to June. They need cool growing weather and benefit from the gentle rain brought by western temperate cyclones. EXAMPLES: wheat, barley, peas, gram, mustard. Main rabi states: Punjab, Haryana, Himachal Pradesh, J&K, Uttarakhand, UP. ZAID (April-June): This is a SHORT SUMMER SEASON between rabi harvest and the next kharif sowing. The crops are quick-growing and need irrigation. EXAMPLES: watermelon, muskmelon, cucumber, vegetables, fodder crops. SUGARCANE IS THE EXCEPTION — it takes almost a full year to mature and does not fit any single season. KEY POINT: The three seasons together give India three chances to grow food in a year, but this only works where water and warmth are available. In dry regions with no irrigation, only one season is possible.",
+          "explanation": "Tests systematic knowledge of all three seasons with crops and example regions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t2-h1",
+          "type": "long",
+          "question": "The Indian cropping calendar with its three seasons (kharif, rabi, zaid) seems to fit the country's geography perfectly. But climate change, falling groundwater, and shifting monsoons are now threatening this calendar. Explain how the cropping seasons depend on the monsoon, and discuss what could happen to Indian agriculture if the monsoon becomes more unpredictable.",
+          "answer": "THE INDIAN CROPPING CALENDAR HAS BEEN BUILT AROUND THE MONSOON FOR THOUSANDS OF YEARS. The three seasons map directly onto the monsoon's annual rhythm. (1) KHARIF (June-October): Begins with the arrival of the south-west monsoon in June. Farmers sow paddy, cotton, maize, jowar, bajra, pulses, oilseeds with the first rains. Through July and August the heavy rain fills the fields. By September the rain retreats, the harvest is gathered in October. ENTIRE KHARIF SEASON DEPENDS on the monsoon arriving on time and lasting long enough. (2) RABI (October-March): Begins after the monsoon retreats. Farmers sow wheat, gram, peas, mustard on the moisture left behind by the rains. In December-February, western temperate cyclones bring light winter showers that nourish the growing crop. By April-June the harvest is ready. RABI DEPENDS PARTLY on soil moisture left by the monsoon, partly on western disturbances, partly on irrigation. (3) ZAID (April-June): The short summer season needs irrigation entirely. The cropping calendar is therefore monsoon-anchored at every step. If the monsoon misbehaves, every season is disturbed. WHAT COULD GO WRONG WITH CLIMATE CHANGE: (a) LATE OR EARLY ARRIVAL: If the monsoon arrives two weeks late, kharif sowing is delayed. The crop matures into autumn cold or runs into the next planting season for rabi. Yields fall. (b) ERRATIC RAINFALL: Instead of evenly spread monsoon rain, we are seeing 'cloudburst' events — six months' rain in three days, then nothing. This destroys standing crops and floods fields without recharging groundwater. (c) WEAK OR FAILED MONSOON: A drought year can devastate kharif. We saw this in 2002 and 2009. Without kharif, the soil moisture for rabi also disappears, and the calendar breaks down across both seasons. (d) FALLING GROUNDWATER: In states like Punjab and Haryana, paddy and wheat have been grown only because of tubewell irrigation. Groundwater tables have crashed from 40 feet to over 250 feet in many places. If they fall further, paddy in dry zones simply will not be possible. (e) WARMING: Wheat needs cool weather at ripening. If north India's winters keep warming, wheat yields fall. Rice also stresses at temperatures above 35°C. POSSIBLE CONSEQUENCES FOR INDIAN AGRICULTURE: (a) CROP SHIFT: Farmers may have to abandon water-thirsty crops in dry regions. Paddy in Punjab might give way to maize, millets, vegetables. This is already being recommended by agricultural scientists. (b) SEASON SHIFT: Kharif sowing dates may slide later, and rabi may begin sooner. The cropping calendar that has been steady for centuries will need to be rewritten. (c) RISE OF MILLETS: Millets need very little water and tolerate heat well. The Indian and global push to revive millets (the UN declared 2023 the International Year of Millets) is partly a response to exactly this climate threat. (d) IRRIGATION PRESSURE: Falling groundwater plus erratic monsoon will increase the demand for canal irrigation, rainwater harvesting, drip irrigation. Where farmers cannot afford it, they will suffer. (e) FOOD SECURITY RISK: India's food security system was built on assuming a reasonably predictable monsoon. If the monsoon becomes unreliable, buffer stocks have to be larger, the PDS has to be more robust, and import dependence may grow again. (f) FARMER DISTRESS: Already-stressed small farmers, especially in rain-fed regions, will be hit hardest. Climate-induced crop failure could worsen the suicide crisis. WHAT NEEDS TO BE DONE: (a) Crop diversification away from paddy-wheat to millets, pulses, oilseeds. (b) Water reform — drip irrigation, restoration of tanks, rainwater harvesting. (c) Climate-resilient seeds — varieties that tolerate drought, heat and floods. (d) Better weather forecasting at the village level. (e) Reliable crop insurance that pays out quickly when harvests fail. (f) Income support that is not dependent on a single crop or season. CONCLUSION: The Indian cropping calendar is one of the world's most elegant adaptations to monsoon climate — three seasons that catch the rain, the cool, and the heat one after the other. But it was built for a stable monsoon. Climate change is making the monsoon less stable. Indian agriculture in the next thirty years will have to be redesigned: the same fields, very different crops, very different timings. This is not science fiction. It is the work already beginning in agricultural universities, FPOs and progressive farms across the country.",
+          "explanation": "Capstone question that puts the cropping calendar into climate context — both descriptive (how it works) and forward-looking (how it might fail)."
+        }
+      ]
+    },
+    {
+      "topic": "Major Crops — Rice, Wheat, Millets, Pulses",
+      "easy": [
+        {
+          "id": "t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is the staple food crop of a majority of people in India?",
+          "options": [
+            "Wheat",
+            "Rice",
+            "Bajra",
+            "Maize"
+          ],
+          "answer": "Rice",
+          "explanation": "Rice is the staple food crop of a majority of Indians and India is the second-largest producer in the world after China. It needs high temperature (above 25°C), high humidity, and over 100 cm of annual rainfall — which is why it dominates eastern and southern India and, with irrigation, parts of Punjab and Haryana."
+        },
+        {
+          "id": "t3-e2",
+          "type": "mcq",
+          "question": "Which one of the following is a leguminous crop?",
+          "options": [
+            "Pulses",
+            "Jowar",
+            "Millets",
+            "Sesamum"
+          ],
+          "answer": "Pulses",
+          "explanation": "Pulses (tur, urad, moong, masur, gram, peas) are leguminous crops. Leguminous plants fix nitrogen from the air into the soil through bacteria in their root nodules, leaving the soil richer than they found it. Most pulses (except arhar) have this property, which is why they are grown in rotation with cereals to restore soil fertility."
+        },
+        {
+          "id": "t3-e3",
+          "type": "fill",
+          "question": "India is the world's largest producer and consumer of _______, which are the main vegetarian source of protein.",
+          "answer": "pulses",
+          "explanation": "India is both the world's largest producer and largest consumer of pulses. They are vital because they are the major source of protein in a vegetarian diet. Major pulse-producing states are Madhya Pradesh, Rajasthan, Maharashtra, UP and Karnataka."
+        },
+        {
+          "id": "t3-e4",
+          "type": "mcq",
+          "question": "The two main wheat-growing zones in India are:",
+          "options": [
+            "Konkan coast and the Eastern Ghats",
+            "The Ganga-Satluj plains and the black soil region of the Deccan",
+            "Western Ghats and the Brahmaputra valley",
+            "Coastal Tamil Nadu and Kerala"
+          ],
+          "answer": "The Ganga-Satluj plains and the black soil region of the Deccan",
+          "explanation": "Wheat needs cool growing weather and bright sunshine for ripening, with about 50-75 cm of evenly distributed rainfall. India's two great wheat zones are the Ganga-Satluj plains in the north-west (Punjab, Haryana, UP) and the black soil region of the Deccan (parts of MP and Maharashtra). Major producers: Punjab, Haryana, UP, MP, Bihar and Rajasthan."
+        },
+        {
+          "id": "t3-e5",
+          "type": "truefalse",
+          "question": "Ragi is rich in iron, calcium, micro-nutrients and roughage.",
+          "answer": "True",
+          "explanation": "Ragi (a millet) is exceptionally nutritious — it is very rich in iron, calcium, other micro-nutrients and roughage. Millets like ragi, jowar and bajra are now called 'nutri-cereals' in recognition of this. They were pushed to the margins by wheat-rice MSP for decades but are being actively revived today."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t3-m1",
+          "type": "short",
+          "question": "Describe the geographical conditions required for the growth of rice.",
+          "answer": "RICE is a KHARIF CROP that needs four geographical conditions: (1) HIGH TEMPERATURE: above 25°C throughout the growing season. Rice does not tolerate cold. (2) HIGH HUMIDITY: rice plants need a moist, humid atmosphere to grow well — this is why it flourishes in coastal and deltaic regions and in the wet monsoon belt. (3) HEAVY RAINFALL: at least 100 cm of annual rainfall. Where rainfall is less (Punjab, Haryana, western UP, parts of Rajasthan), rice is grown only because canal irrigation and tubewells provide assured water. (4) STANDING WATER: rice paddies are flooded — the plant grows in shallow standing water, which suppresses weeds and supplies the moisture rice needs. SUITABLE REGIONS: The main rice-growing regions follow these conditions exactly — Assam, West Bengal, the coastal regions of Odisha, Andhra Pradesh, Telangana, Tamil Nadu, Kerala, the Konkan coast of Maharashtra, eastern UP, and Bihar. With the spread of canal and tubewell irrigation, rice is now also a major crop in Punjab, Haryana, western UP and parts of Rajasthan. In Assam, West Bengal and Odisha, the warm wet climate allows three crops of paddy in a year — Aus, Aman and Boro. SOIL: Rice grows best on clayey or loamy alluvial soils that hold water well — exactly what the deltas and flood plains provide.",
+          "explanation": "Tests the textbook's exam-favourite question on rice geography — temperature, humidity, rainfall, water, and suitable regions."
+        },
+        {
+          "id": "t3-m2",
+          "type": "short",
+          "question": "Why are pulses important to Indian agriculture, and where are they grown?",
+          "answer": "PULSES MATTER FOR THREE REASONS: (1) PROTEIN FOR A VEGETARIAN COUNTRY: India is largely vegetarian, and pulses (tur/arhar, urad, moong, masur, gram, peas) are the main source of protein. Without them, the vegetarian Indian diet would be seriously deficient. India is the world's LARGEST PRODUCER AND LARGEST CONSUMER of pulses. (2) SOIL HEALTH: Pulses are leguminous crops, meaning they FIX NITROGEN FROM THE AIR into the soil through bacteria in their root nodules. Almost all pulses (except arhar) leave the soil richer in nitrogen than they found it. This is why farmers traditionally grew them IN ROTATION WITH CEREALS — wheat or paddy this season, then gram or moong the next season — to naturally restore fertility without chemical fertilisers. (3) HARDINESS: Pulses need less moisture than cereals and survive even in dry conditions. They are therefore suited to rain-fed, semi-arid regions where wheat or rice would fail. WHERE THEY ARE GROWN: Major pulse-producing states are MADHYA PRADESH, RAJASTHAN, MAHARASHTRA, UTTAR PRADESH and KARNATAKA. Different pulses fit different seasons — gram and peas are rabi crops; tur, urad and moong are kharif crops. CONCERN: Despite being the largest producer, India still IMPORTS pulses because demand outstrips supply — a sign that pulse production has not kept up with population growth. The Green Revolution's bias toward wheat and rice pushed pulses to less fertile lands. Reviving pulse production is now a national priority, both for nutrition and for soil health.",
+          "explanation": "Tests not just where pulses grow but why they matter — protein, nitrogen fixation, drought tolerance."
+        },
+        {
+          "id": "t3-m3",
+          "type": "short",
+          "question": "Compare jowar, bajra and ragi as millet crops grown in India.",
+          "answer": "JOWAR, BAJRA AND RAGI are India's three major millets. All are KHARIF crops (mainly), all are coarse grains, all are highly nutritious. But they differ in their growing conditions and regions. JOWAR: India's third-most-important food crop by area and production. It is largely RAIN-FED, growing in moist areas without irrigation. Major producers: MAHARASHTRA, KARNATAKA, ANDHRA PRADESH and MADHYA PRADESH. BAJRA: Grows well on SANDY SOILS AND SHALLOW BLACK SOIL — the dry semi-arid belts of the north-west and west. Major producers: RAJASTHAN, UTTAR PRADESH, MAHARASHTRA, GUJARAT and HARYANA. Bajra rotis are a Rajasthani and Gujarati staple. RAGI: A crop of DRY REGIONS, growing well on red, black, sandy, loamy and shallow black soils. Major producers: KARNATAKA (the biggest), TAMIL NADU, HIMACHAL PRADESH, UTTARAKHAND, SIKKIM, JHARKHAND and ARUNACHAL PRADESH. Ragi is exceptionally rich in iron, calcium, micro-nutrients and roughage — one of the most nutritious cereals available. WHY MILLETS MATTER TODAY: Although they are called 'coarse grains', they are nutrition powerhouses. They need very little water (much less than rice or wheat), tolerate heat and drought, and grow on poor soils where wheat and rice would fail. As climate change makes water scarcer and the monsoon less reliable, millets are being actively revived as climate-resilient food. The UN declared 2023 the International Year of Millets. India's government has been pushing millets into the PDS, school midday meals and urban markets.",
+          "explanation": "Tests detailed knowledge of all three millets — soil conditions, regions, and significance."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t3-h1",
+          "type": "long",
+          "question": "Wheat and rice dominate Indian agriculture today, while millets and pulses have been pushed to the margins. Explain how this happened, what its costs have been, and what is being done to bring millets and pulses back.",
+          "answer": "Indian food has not always been wheat-and-rice. For most of history, MILLETS WERE THE STAPLES of central India, the Deccan, Rajasthan, and parts of the south. Bajra rotis, jowar bhakris, ragi mudde — these were everyday food. Pulses provided protein. Wheat and rice were one of many cereals. The shift to wheat-rice dominance has happened largely in the last 60 years. HOW IT HAPPENED: (1) THE GREEN REVOLUTION (1960s-70s) targeted wheat and rice specifically. Norman Borlaug's high-yielding wheat varieties from Mexico were introduced in Punjab, Haryana and UP. HYV rice followed. Millets and pulses had no equivalent breeding programme of that scale. (2) MSP AND PROCUREMENT: The Food Corporation of India guaranteed minimum support prices and bought wheat and rice in unlimited quantities from farmers. No such large-scale guarantee was given for millets or pulses. A farmer growing bajra had to find his own buyer; a farmer growing wheat had a guaranteed sale. The economics tilted overwhelmingly toward wheat-rice. (3) THE PUBLIC DISTRIBUTION SYSTEM (PDS) bought and distributed wheat and rice through ration shops at subsidised prices. Millets and pulses were left out. This made wheat and rice the cheap urban staple — and changed urban tastes. (4) IRRIGATION INFRASTRUCTURE: Canals and tubewells were built to support wheat and rice, not millets. Once a region had assured water, the rational choice was to grow the crop with the biggest market — wheat or rice. (5) URBAN PREFERENCE: City families came to prefer polished white rice and refined wheat. Millets came to be seen as 'food of the poor' — even in regions where they had been everyday food. THE COSTS: (a) NUTRITIONAL: India developed a paradox — it has more food than ever but also serious malnutrition. Polished rice and refined wheat are calorie-rich but nutritionally narrow. Millets and pulses (which provide iron, calcium, protein, fibre) were displaced. Iron deficiency, in particular, is a national epidemic. (b) ENVIRONMENTAL: Rice and wheat are water-hungry. Punjab grew water-thirsty paddy in a dry zone using tubewells. Groundwater tables have crashed. Soils have been overworked. Pesticide use is among the highest in India. (c) CROP DIVERSITY: India's once-diverse agricultural mosaic narrowed to two crops in many regions. Genetic diversity of seed has shrunk. Millets in particular were grown in dozens of local varieties; many have been lost. (d) CLIMATE RISK: Concentrating on water-thirsty crops in a country with unreliable monsoon is a risky bet. Climate change makes it riskier. (e) FARMER DEPENDENCE: When the whole region grows the same two crops, the farmer is locked into a market that he doesn't control. WHAT IS BEING DONE: (1) MILLET REVIVAL: 2023 was declared the UN International Year of Millets, largely at India's request. The Indian government has rebranded millets as 'Shree Anna' (auspicious grains) and made them part of the official food security narrative. (2) MILLETS IN THE PDS: Some state governments (Karnataka, Odisha, Andhra Pradesh) have started distributing millets through ration shops and school midday meals. (3) URBAN PUSH: Cafés and packaged-food brands now market millet-based products — ragi cookies, jowar pasta, bajra noodles, foxtail-millet idlis. Urban demand is rising. (4) MSP FOR MILLETS: The government has expanded MSP coverage to include some millets and pulses, though the procurement infrastructure is still patchy. (5) ORGANIC AND NATURAL FARMING: A small but growing movement to revive pulses-in-rotation and millet-based farming systems, partly led by FPOs and NGOs. (6) PULSE IMPORTS AND DOMESTIC PUSH: India is the world's largest pulse importer despite also being the world's largest producer — a sign of unmet demand. Recent policies have promoted pulse cultivation, with some success. WHAT STILL NEEDS TO HAPPEN: A real comeback for millets and pulses will need (a) urban demand to keep rising so farmers see profit, (b) MSP and procurement infrastructure to match what wheat-rice get, (c) breeding programmes to develop higher-yielding millet varieties, (d) inclusion in PDS at scale, and (e) educational rebranding so that millets are seen as superior food, not poor people's food. CONCLUSION: The wheat-rice dominance of Indian agriculture was not natural — it was the result of specific policy choices over 60 years that made these two crops the most profitable to grow. The result fed India and ended famine but narrowed our food basket and damaged the environment. Reviving millets and pulses is now both a nutrition mission and a climate mission. The story of Indian agriculture in the next 30 years may well be the story of bringing them back.",
+          "explanation": "Capstone question that links the Green Revolution, MSP policy, the PDS, urban food preferences, and climate change into one argument about why millets were lost and how they might return."
+        }
+      ]
+    },
+    {
+      "topic": "Plantation and Industrial Crops",
+      "easy": [
+        {
+          "id": "t4-e1",
+          "type": "mcq",
+          "question": "The Arabica variety of coffee was originally brought to India from:",
+          "options": [
+            "Brazil",
+            "Yemen",
+            "Ethiopia",
+            "Sri Lanka"
+          ],
+          "answer": "Yemen",
+          "explanation": "The Arabica variety of coffee was originally brought from Yemen and is grown today mainly in the Nilgiri hills — particularly Karnataka, Kerala and Tamil Nadu. The legend is that Baba Budan, a Sufi saint, smuggled coffee beans back from Yemen in his beard, and the first plants were grown on the Baba Budan Hills in Karnataka."
+        },
+        {
+          "id": "t4-e2",
+          "type": "fill",
+          "question": "Jute is known as the _______ fibre.",
+          "answer": "golden",
+          "explanation": "Jute is known as the 'golden fibre' because of its colour and value. It grows on well-drained fertile flood-plain soils that are renewed every year and needs high temperatures during growth. Major producers are West Bengal, Bihar, Assam, Odisha and Meghalaya."
+        },
+        {
+          "id": "t4-e3",
+          "type": "mcq",
+          "question": "Which state is the largest producer of rubber in India?",
+          "options": [
+            "Tamil Nadu",
+            "Karnataka",
+            "Kerala",
+            "Maharashtra"
+          ],
+          "answer": "Kerala",
+          "explanation": "Rubber is an equatorial crop that grows in the hot, humid south of India. Kerala is by far the largest producer, with Tamil Nadu, Karnataka, Andaman and Nicobar Islands, and the Garo Hills of Meghalaya also producing rubber. It needs over 200 cm of rainfall and temperatures above 25°C."
+        },
+        {
+          "id": "t4-e4",
+          "type": "truefalse",
+          "question": "India is the second-largest producer of sugarcane in the world after Brazil.",
+          "answer": "True",
+          "explanation": "Brazil is the world's largest sugarcane producer; India is second. India's major sugarcane states are Uttar Pradesh, Maharashtra, Karnataka, Tamil Nadu, Andhra Pradesh, Telangana, Bihar, Punjab and Haryana. Sugarcane is the main source of sugar, gur (jaggery), khandsari and molasses."
+        },
+        {
+          "id": "t4-e5",
+          "type": "mcq",
+          "question": "Cotton grows best in which type of soil?",
+          "options": [
+            "Red soil",
+            "Laterite soil",
+            "Black (cotton) soil",
+            "Alluvial soil"
+          ],
+          "answer": "Black (cotton) soil",
+          "explanation": "Cotton grows well in the drier parts of the BLACK COTTON SOIL of the Deccan plateau. It needs high temperature, light rainfall or irrigation, 210 frost-free days and bright sunshine. India is the second-largest producer of cotton after China. Major producers: Maharashtra, Gujarat, MP, Karnataka, Andhra Pradesh, Telangana, Tamil Nadu, Punjab, Haryana and UP."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t4-m1",
+          "type": "short",
+          "question": "Name one important beverage crop of India and specify the geographical conditions required for its growth.",
+          "answer": "TEA is India's most important beverage crop and an example of plantation agriculture. It was originally introduced by the British in the 19th century, but today most tea plantations are owned by Indians. GEOGRAPHICAL CONDITIONS REQUIRED: (1) CLIMATE: Tea grows in tropical and sub-tropical climates. It needs a WARM, MOIST, FROST-FREE CLIMATE all through the year. Sudden frost can damage tea bushes. (2) RAINFALL: Tea bushes need FREQUENT SHOWERS EVENLY DISTRIBUTED OVER THE YEAR to ensure continuous growth of tender leaves. Long dry spells stop new leaf growth and damage yields. (3) SOIL: DEEP, FERTILE, WELL-DRAINED SOIL rich in humus and organic matter is required. Tea does not grow in waterlogged soils — the slopes of the Eastern Himalayas, Western Ghats, and other hills provide the perfect drainage. (4) LABOUR: Tea is a labour-intensive industry. It requires ABUNDANT, CHEAP AND SKILLED LABOUR for plucking the tender top leaves by hand. (5) PROCESSING ON SITE: Tea is processed within the garden itself to keep the leaves fresh. So a tea estate is both a plantation and a small factory. MAJOR PRODUCING REGIONS: Assam (the largest producer), hills of Darjeeling and Jalpaiguri districts of West Bengal, Tamil Nadu (Nilgiri hills), Kerala, and to a smaller extent Himachal Pradesh, Uttarakhand, Meghalaya, Andhra Pradesh and Tripura. In 2020 India was the world's SECOND-LARGEST PRODUCER of tea after China.",
+          "explanation": "Tests the textbook's exam-favourite question on the geographical conditions for tea."
+        },
+        {
+          "id": "t4-m2",
+          "type": "short",
+          "question": "Why is cotton grown in the Deccan plateau? Describe the geographical conditions needed for cotton.",
+          "answer": "COTTON GROWS BEST IN THE DECCAN PLATEAU because the plateau provides almost every condition the plant needs. GEOGRAPHICAL CONDITIONS: (1) SOIL: Cotton needs BLACK COTTON SOIL (regur). This soil is fine-grained, retains moisture extremely well, and is found across the Deccan plateau — Maharashtra, Gujarat, parts of MP, Karnataka, Andhra Pradesh and Telangana. Cotton is even named after this soil. (2) TEMPERATURE: Cotton needs HIGH TEMPERATURES throughout the growing season. The Deccan's tropical climate provides this. (3) RAINFALL: Cotton needs LIGHT RAINFALL or assured IRRIGATION — about 50-100 cm. Too much rain damages cotton bolls. The drier parts of the Deccan suit cotton perfectly. (4) SUNSHINE: Cotton needs BRIGHT SUNSHINE for ripening, which the Deccan provides abundantly. (5) FROST-FREE DAYS: Cotton needs at least 210 FROST-FREE DAYS. The Deccan and southern plains never frost. (6) DURATION: Cotton is a KHARIF CROP that takes 6 to 8 MONTHS to mature. The long warm monsoon season fits. MAJOR PRODUCERS: Maharashtra, Gujarat, Madhya Pradesh, Karnataka, Andhra Pradesh, Telangana, Tamil Nadu, Punjab, Haryana and Uttar Pradesh. India is the second-largest producer of cotton in the world after China. India is also believed to be the ORIGINAL HOME of the cotton plant. CONCLUSION: Soil, temperature, rainfall and sunshine all push cotton toward the Deccan. Cotton is one of those crops where geography seems to have made a perfect match between plant and place.",
+          "explanation": "Tests knowledge of cotton conditions plus the textbook's claim that India is the original home of cotton."
+        },
+        {
+          "id": "t4-m3",
+          "type": "short",
+          "question": "What is plantation agriculture, and what are India's major plantation crops?",
+          "answer": "PLANTATION AGRICULTURE is a form of COMMERCIAL FARMING in which a SINGLE CROP IS GROWN ON A LARGE AREA. It sits at the INTERFACE OF AGRICULTURE AND INDUSTRY — the crop is grown in the field but processed nearby in a factory, often the same plantation's own factory. KEY FEATURES: (1) Single crop grown on large tracts of land. (2) Capital-intensive — large investment in clearing, planting, factory, housing. (3) Migrant labour — usually brought from poorer regions to do labour-intensive work like plucking and processing. (4) Produce is meant for distant markets, often overseas. (5) Requires excellent transport and communication links to ports and cities. (6) Processing is usually done on-site to preserve freshness (especially for tea). INDIA'S MAJOR PLANTATION CROPS: TEA: Assam (largest), hills of Darjeeling and Jalpaiguri in West Bengal, Tamil Nadu (Nilgiri hills), Kerala, plus smaller production in Himachal Pradesh, Uttarakhand, Meghalaya, Andhra Pradesh and Tripura. COFFEE: Karnataka (mainly), Kerala and Tamil Nadu — the Nilgiris and adjoining hills. Arabica variety originally from Yemen. RUBBER: Kerala (mainly), Tamil Nadu, Karnataka, Andaman and Nicobar Islands, Garo Hills of Meghalaya. SUGARCANE: A plantation in scale in places like Maharashtra and UP though it is also grown by smaller farmers. BANANAS: Plantations in Kerala, Tamil Nadu, Maharashtra. HISTORICAL NOTE: Most of India's plantations were started under British colonial rule — tea by Assam Company, coffee by British planters in Karnataka, rubber in Kerala. After independence, most plantations were taken over by Indian owners but the basic structure — large estate, migrant labour, processing factory — has stayed.",
+          "explanation": "Tests definition of plantation agriculture plus naming and locating all the major plantation crops."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t4-h1",
+          "type": "long",
+          "question": "Tea, coffee, rubber, and cotton plantations in India were started under British rule. How did colonialism shape India's plantation agriculture, and what aspects of that colonial structure still survive today?",
+          "answer": "INDIAN PLANTATION AGRICULTURE is largely a colonial creation. The basic geography (tea in Assam, coffee in Karnataka, rubber in Kerala) and the basic structure (large estate, migrant labour, on-site processing, export orientation) were all set up by British capital between roughly 1830 and 1900. Understanding how this happened explains why the sector still looks the way it does. HOW COLONIALISM SHAPED PLANTATIONS: (1) BRITISH DEMAND DROVE INDIAN SUPPLY: The British wanted tea, coffee, rubber and cotton for their own markets and for global trade. China was the world's tea source, but Britain wanted its own colonial supply. Assam tea was the answer. Indian cotton, after the American Civil War cut off the Confederate supply, became essential to Lancashire mills. Indian rubber went into the rapidly industrialising British economy. (2) LAND ACQUIRED CHEAPLY: The British took over huge tracts of forest land in the north-east, the Western Ghats, the Nilgiris and Kerala — sometimes legally, sometimes through ambiguous treaties with local rulers and tribes. Tea estates in Assam covered thousands of acres each. The original inhabitants were often pushed aside. (3) MIGRANT LABOUR FROM POORER REGIONS: Local populations in remote tea and coffee zones were too small to supply the labour needed. The British brought in workers from Bihar, Jharkhand, Odisha, Andhra and Tamil Nadu — often through indentured labour systems that were close to bondage. Workers were transported far from home, housed on the estate, paid low wages, and could not easily leave. Some labour conditions were so harsh that escape was punished. (4) MONOCULTURE PLANTING: Estates were planted with a single crop in straight rows, replacing the biodiversity of tropical forest with row after row of tea or rubber. This was efficient for harvesting but ecologically destructive. Many tropical hillsides were permanently transformed. (5) PROCESSING ON-SITE: Tea factories, rubber-curing sheds, coffee-curing yards were built within the estate to process the produce quickly. This made the plantation a self-contained industrial-agricultural unit, with its own electricity, transport and housing. (6) RAIL AND PORT INFRASTRUCTURE BUILT FOR EXPORT: The British laid railways from tea districts to ports (Assam to Calcutta, Nilgiris to Chennai/Cochin) specifically to move plantation produce to overseas markets. The economic logic was extractive — produce in India, profit in London. (7) WORLD-MARKET ORIENTATION: Plantation crops were not for Indian consumers. Tea Indians grew, Indians didn't drink — most was exported. Rubber went to Britain. Coffee went to Europe. (Tea drinking among Indians only became widespread in the 20th century, partly because the British tea industry deliberately promoted it in India to absorb leftover stock.) WHAT SURVIVES TODAY: (a) THE SAME GEOGRAPHY: Assam is still tea country. Karnataka is still coffee country. Kerala is still rubber country. The geographical concentration set up in colonial times has barely shifted. (b) THE PLANTATION STRUCTURE: Most tea, coffee and rubber are still grown on LARGE ESTATES — not on smallholder farms (with some exceptions). The estate-with-factory model has persisted. (c) MIGRANT LABOUR PATTERNS: Tea workers in Assam are still largely descendants of the labour brought from Jharkhand and Odisha generations ago. Many still live on the estates, in colonies that look very similar to colonial-era housing. Wages have improved but remain low. Some labour rights issues — child labour, low pay, poor housing — persist. (d) EXPORT ORIENTATION: Much of India's plantation produce — Darjeeling tea, Indian coffee, Indian rubber — is still oriented to world markets and follows global commodity prices. (e) OWNERSHIP TRANSITION: Most plantations have moved from British to Indian ownership after independence, but the corporate-estate model remains dominant. (f) FACTORY AT THE ESTATE: Tea is still processed within the garden. The integration of agriculture and small-scale industry on the estate continues. WHAT HAS CHANGED: (a) Labour laws have improved formally, though enforcement is uneven. (b) Indian companies, cooperatives and government bodies now own most estates. (c) Domestic markets matter more — Indians drink an enormous amount of tea today. (d) Some smallholder tea farming has emerged in the Nilgiris and in parts of Assam, though it remains a minority. (e) Climate change is forcing replanting and crop trials. (f) Branding has changed — Darjeeling tea is now a GI (geographical indication) and Indian coffee has its own global identity. WHAT THE COLONIAL INHERITANCE TELLS US: (1) Indian plantation agriculture cannot be understood without colonialism. Its very existence was a colonial decision. (2) The colonial structure — large estate, migrant labour, export crop — is hard to undo. Once huge tracts of land are under monoculture, they cannot easily go back to forest or to smallholder farming. (3) The labour question is still unresolved. The descendants of indentured workers still form much of the plantation workforce, and their lives, while better than in colonial times, remain difficult. (4) The export orientation creates VULNERABILITY to global commodity prices — when world tea prices fell in the 2000s, Indian tea estates struggled. (5) The plantation model is now being slowly questioned. Some smallholder tea, organic coffee, agroforestry-style rubber are showing alternative paths. CONCLUSION: India's plantation agriculture is a colonial inheritance that has been partly Indianised but not fundamentally restructured. Its location, scale, labour patterns and export orientation all bear the marks of British capital and British markets. Understanding this is important not as a historical complaint but as a way of understanding why plantations look the way they do, why labour conditions remain a concern, and why the sector struggles when world prices fall. The next chapter in Indian plantation agriculture — if there is to be one — will be about diversifying the model, improving worker rights, adding value through processing and branding, and making the sector more resilient to climate and price shocks.",
+          "explanation": "Capstone question that puts plantation agriculture into colonial history — geography, ownership, labour, infrastructure — and asks what survives. Tests historical thinking applied to current geography."
+        }
+      ]
+    },
+    {
+      "topic": "Green Revolution and Reforms",
+      "easy": [
+        {
+          "id": "t5-e1",
+          "type": "mcq",
+          "question": "The Green Revolution was based on:",
+          "options": [
+            "Organic farming methods",
+            "HYV seeds, fertilisers and irrigation",
+            "Shifting cultivation",
+            "Plantation agriculture"
+          ],
+          "answer": "HYV seeds, fertilisers and irrigation",
+          "explanation": "The Green Revolution of the late 1960s and 1970s was based on a package of three things: HIGH-YIELDING VARIETY (HYV) SEEDS (especially of wheat and rice), CHEMICAL FERTILISERS and PESTICIDES, and ASSURED IRRIGATION (through canals and tubewells). To this package were added government support through MSP and procurement."
+        },
+        {
+          "id": "t5-e2",
+          "type": "fill",
+          "question": "The Bhoodan-Gramdan movement, which encouraged landowners to donate land voluntarily to the landless, was led by _______.",
+          "answer": "Vinoba Bhave",
+          "explanation": "Vinoba Bhave, Mahatma Gandhi's spiritual heir, led the Bhoodan-Gramdan movement. In 1951 at Pochampally in Telangana, Shri Ram Chandra Reddy donated 80 acres to 80 landless families — the first act of Bhoodan. The movement spread across India and was called the 'Blood-less Revolution'."
+        },
+        {
+          "id": "t5-e3",
+          "type": "mcq",
+          "question": "Which of the following was a key institutional reform in Indian agriculture after independence?",
+          "options": [
+            "Abolition of zamindari",
+            "Introduction of plantation farming",
+            "Banning of cooperatives",
+            "Abolition of MSP"
+          ],
+          "answer": "Abolition of zamindari",
+          "explanation": "Abolition of zamindari was one of the most important institutional reforms after independence. Along with consolidation of holdings, cooperation among farmers, and collectivisation, it was meant to transfer land from absentee landlords to the actual cultivators. 'Land reform' was the focus of the First Five-Year Plan."
+        },
+        {
+          "id": "t5-e4",
+          "type": "truefalse",
+          "question": "Minimum Support Price (MSP) is announced by the government to protect farmers from being exploited by speculators and middlemen.",
+          "answer": "True",
+          "explanation": "Minimum Support Price (MSP) is the floor price the government guarantees for major crops. It is announced before sowing so that farmers know in advance what they will earn. If market prices fall below MSP, the government (through the FCI) buys the crop directly. This protects farmers from being squeezed by middlemen during a price crash."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t5-m1",
+          "type": "short",
+          "question": "Enlist the various institutional reform programmes introduced by the government in the interest of farmers.",
+          "answer": "The Government of India has introduced many INSTITUTIONAL REFORMS to support farmers, starting from the First Five-Year Plan. The major ones include: (1) ABOLITION OF ZAMINDARI: ending the system of absentee landlordism so that the actual tiller of the land became its owner. (2) CONSOLIDATION OF HOLDINGS: stitching together fragmented strips of land caused by inheritance, so that mechanisation and irrigation became possible. (3) COLLECTIVISATION: encouraging farmers to work together on common land. (4) COOPERATIVES: setting up cooperative societies for credit, marketing and processing. (5) LAND CEILING ACTS: limiting the maximum land any family could own and redistributing surplus to the landless. (6) BHOODAN-GRAMDAN: Vinoba Bhave's voluntary land-donation movement which complemented government reforms. (7) CROP INSURANCE: against drought, flood, cyclone, fire and disease. (8) GRAMEEN BANKS, COOPERATIVE SOCIETIES AND BANKS: providing credit at lower interest rates than moneylenders. (9) KISAN CREDIT CARD (KCC): short-term credit to farmers at reasonable interest. (10) PERSONAL ACCIDENT INSURANCE SCHEME (PAIS): insurance cover for farmers. (11) WEATHER BULLETINS AND AGRICULTURAL PROGRAMMES on radio and television. (12) MINIMUM SUPPORT PRICE (MSP), REMUNERATIVE PRICES AND PROCUREMENT PRICES: announced for major crops to protect farmers from speculators and middlemen. (13) GREEN REVOLUTION PACKAGE: HYV seeds, fertilisers, irrigation. (14) WHITE REVOLUTION (OPERATION FLOOD): organising milk cooperatives. (15) FARMERS' PORTAL WEBSITE: providing information on agriculture, schemes and horticulture. Implementation has been uneven — some reforms (like zamindari abolition) succeeded, others (like consolidation) worked in some states but not others. But the institutional safety net is now wide, even if the strands are sometimes thin.",
+          "explanation": "Tests the textbook's exam-favourite question on institutional reforms — a long list with brief explanation of each."
+        },
+        {
+          "id": "t5-m2",
+          "type": "short",
+          "question": "What was the Bhoodan-Gramdan movement and why was it called the 'Blood-less Revolution'?",
+          "answer": "The BHOODAN-GRAMDAN MOVEMENT was a voluntary land-redistribution movement led by VINOBA BHAVE, whom Mahatma Gandhi had declared his spiritual heir. After Gandhi's martyrdom, Vinoba Bhave undertook a PADYATRA (walking journey) across India to spread Gandhiji's message. HOW IT BEGAN: In 1951 at POCHAMPALLY in Telangana, Vinoba Bhave was giving a lecture when some POOR LANDLESS VILLAGERS asked him for land for their economic well-being. Bhave could not promise it himself but said he would speak to the government if they agreed to undertake cooperative farming. Suddenly, SHRI RAM CHANDRA REDDY stood up and offered EIGHTY ACRES of his own land to be distributed among 80 landless villagers. This single act became known as BHOODAN — 'land gift'. HOW IT SPREAD: Bhave then walked across India for years, asking landowners and zamindars to voluntarily donate land for the landless. Many responded. Some zamindars went further and offered whole villages — this became known as GRAMDAN ('village gift'). Some donations were inspired by genuine Gandhian sentiment; others were motivated by the fear of land-ceiling acts that the government was passing — donating land voluntarily was better than having it taken under the ceiling. WHY 'BLOOD-LESS REVOLUTION': It was called the Blood-less Revolution because it achieved land redistribution WITHOUT VIOLENCE — no peasant uprisings, no expropriation, no class war. Compare it with the violent revolutions in Russia, China and elsewhere, where land redistribution came through bloodshed. India did it through padyatra and persuasion. SCALE AND LIMITATIONS: The movement collected millions of acres on paper, though much less actually reached the landless and much of the donated land was of poor quality. Still, it is remembered as a profoundly Gandhian achievement and as proof that voluntary action can change a country's land structure.",
+          "explanation": "Tests the textbook's Vinoba Bhave story in full — origin at Pochampally, the donation by Reddy, the spread, and why it is called bloodless."
+        },
+        {
+          "id": "t5-m3",
+          "type": "short",
+          "question": "Suggest the initiatives taken by the government to ensure the increase in agricultural production.",
+          "answer": "Since INDEPENDENCE, the Government of India has taken many initiatives to increase agricultural production. The major ones are: (1) LAND REFORMS: abolition of zamindari, consolidation of holdings, land ceiling acts — to give the tiller secure ownership and make farming economically viable. (2) IRRIGATION DEVELOPMENT: building large dams (Bhakra-Nangal, Hirakud, Damodar), canals, and supporting tubewell installation. Irrigation was a precondition for the Green Revolution. (3) GREEN REVOLUTION PACKAGE (1960s-70s): introduction of HIGH-YIELDING VARIETY (HYV) seeds (especially wheat from Mexico and rice), chemical fertilisers, pesticides — particularly in Punjab, Haryana and western UP. India moved from food import dependence to surplus production within 15 years. (4) WHITE REVOLUTION (Operation Flood): cooperative dairy movement led by Verghese Kurien through Amul. Made India the world's largest milk producer. (5) MINIMUM SUPPORT PRICE (MSP) AND PROCUREMENT: the FCI buys wheat, rice and some other crops at guaranteed prices, protecting farmers from market crashes and ensuring stable income. (6) CROP INSURANCE: schemes like Pradhan Mantri Fasal Bima Yojana cover crops against drought, flood, cyclone, fire and disease. (7) KISAN CREDIT CARD (KCC): short-term credit to farmers at low interest, replacing exploitative moneylenders. (8) PERSONAL ACCIDENT INSURANCE SCHEME (PAIS): cover for farmers. (9) GRAMEEN BANKS AND COOPERATIVES: providing rural credit at reasonable rates. (10) AGRICULTURAL UNIVERSITIES AND EXTENSION SERVICES: research institutions and extension officers spreading new techniques to farmers. (11) FARMERS' PORTAL AND DIGITAL SERVICES: information on schemes, prices, weather. (12) WEATHER BULLETINS AND FARM RADIO/TV: forecasts and farming advice. (13) E-NAM (NATIONAL AGRICULTURE MARKET): online platform to connect farmers with buyers across the country. (14) PM-KISAN: direct income transfer of Rs 6,000 per year to small farmers. (15) PROMOTION OF MILLETS, ORGANIC FARMING, AND HORTICULTURE: diversifying away from wheat-rice toward more nutritious and climate-resilient crops. RESULT: India is today a NET EXPORTER of food. Rice, wheat, sugar, spices, cotton, tea, coffee are all surplus. But the farmer himself has not benefited equally — incomes remain low, distress remains real. So the next phase of policy must focus less on production and more on FARMER INCOME.",
+          "explanation": "Tests the textbook's exam-favourite question on government initiatives to increase agricultural production, with both the textbook list and current additions."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t5-h1",
+          "type": "long",
+          "question": "The Green Revolution is often described as both India's greatest agricultural success and one of its biggest long-term problems. Explain what the Green Revolution achieved, what it cost, and what lessons it offers for Indian agriculture today.",
+          "answer": "THE GREEN REVOLUTION IS THE SINGLE MOST IMPORTANT EVENT in independent India's agricultural history. It is also the most argued-over. To understand why both 'success' and 'problem' are accurate, we have to look at three time periods: before, during, and after. BEFORE THE GREEN REVOLUTION (1947-1965): At independence, India was a food-deficit country. Yields per acre were low. The population was growing fast. In 1965 and 1966, two failed monsoons in a row brought the country to the edge of famine. India was importing wheat from the United States under a programme called PL-480. The humiliation was severe. Lal Bahadur Shastri famously asked Indians to skip a meal once a week to reduce demand. Something had to change. THE GREEN REVOLUTION (1965-1980): The government, advised by scientists like M.S. SWAMINATHAN and using HIGH-YIELDING VARIETIES developed by NORMAN BORLAUG in Mexico (for wheat) and IRRI in the Philippines (for rice), introduced a PACKAGE: (1) HYV seeds of wheat and rice. (2) Heavy use of CHEMICAL FERTILISERS (urea, DAP). (3) Pesticides and weedicides. (4) Assured IRRIGATION through canals and tubewells. (5) MSP and procurement through the FCI. (6) Government-supported credit through cooperatives. (7) Agricultural research universities and extension services. The package was concentrated in PUNJAB, HARYANA, WESTERN UTTAR PRADESH, and parts of Rajasthan — places that already had irrigation and could absorb the inputs. WHAT IT ACHIEVED: (a) FOOD SELF-SUFFICIENCY: By the early 1980s, India was producing surplus wheat and rice. The FCI was running out of warehouse space. The country never again had to beg for wheat. (b) END OF FAMINE: Modern India has not had a famine since the Green Revolution. Considering that famine had been a recurring tragedy throughout colonial history, this is a profound achievement. (c) RURAL TRANSFORMATION IN PUNJAB-HARYANA: These states moved from poverty to prosperity. The Punjab farmer became a symbol of agricultural success. Land values rose. Education and migration to cities both expanded. (d) EXPORT POTENTIAL: From an importer, India became a major exporter of rice. (e) BUFFER STOCKS AND PDS: Surplus production allowed the government to build buffer stocks and run the Public Distribution System feeding hundreds of millions of poor Indians. WHAT IT COST: (a) GROUNDWATER COLLAPSE: Paddy is a water-thirsty crop never meant to grow in semi-arid Punjab. The aquifers under Punjab and Haryana have been mined relentlessly. Water tables that were at 40 feet in the 1960s are now below 250 feet in many places. Farmers now spend 8-10 lakh rupees to deepen tubewells. The Punjab water crisis is one of India's most serious environmental disasters. (b) SOIL DEGRADATION: Decades of urea and DAP have left soils nutritionally imbalanced — high nitrogen but deficient in micronutrients, organic matter and microbial life. Productivity is plateauing. (c) PESTICIDE POISONING: Punjab has cancer rates among the highest in India. The 'cancer train' from Bathinda to Bikaner ferries patients to a low-cost cancer hospital — an horrific symptom of pesticide contamination. (d) CROP NARROWING: MSP focused on wheat and rice. Millets, pulses, oilseeds, vegetables were neglected. India's food basket narrowed. Nutritional outcomes (iron deficiency, protein deficiency) actually worsened in many regions. (e) REGIONAL IMBALANCE: Punjab, Haryana, western UP benefited enormously. Bihar, eastern UP, the rain-fed Deccan, and tribal regions were left out. The gap between the irrigated north-west and rain-fed elsewhere has widened. (f) FARMER INCOME PARADOX: Despite producing surplus, the AVERAGE FARMER REMAINS POOR. Production rose but incomes did not — input costs (seeds, fertiliser, electricity, water, labour) rose alongside output. Many small farmers are now in chronic debt. (g) LOSS OF SEED DIVERSITY: Hundreds of traditional rice and wheat varieties — adapted over centuries to local conditions — have disappeared because farmers all grow the same few hybrids. (h) MONOCULTURE VULNERABILITY: When one crop is grown on a vast scale, a single pest or disease can be catastrophic. The 2009 wheat rust scare was a reminder. LESSONS FOR INDIAN AGRICULTURE TODAY: (1) PRODUCTION ALONE IS NOT THE GOAL: The Green Revolution proved India can produce food. The next challenge is income, nutrition, and sustainability. (2) ONE PACKAGE DOES NOT FIT ALL: Punjab-style farming cannot be transplanted to all of India. Each region needs its own package — drought-tolerant millets for the Deccan, flood-resilient rice for Bengal, mixed farming for tribal belts. (3) WATER IS THE BINDING CONSTRAINT: India must shift away from water-thirsty crops in dry regions. Drip irrigation, rainwater harvesting, restoration of tanks must replace flood irrigation. (4) SOIL HEALTH MATTERS: Organic manures, crop rotation with legumes, reduced chemical use are essential to long-term productivity. (5) CROP DIVERSITY IS RESILIENCE: A diverse food basket — millets, pulses, oilseeds, vegetables alongside cereals — protects against climate shocks, market crashes, and nutritional crises. (6) INSTITUTIONS MUST CATCH UP: The MSP-FCI-PDS system was built for wheat and rice. It must now expand to cover millets, pulses, oilseeds — or replace itself with direct income support, FPO procurement, and other mechanisms. (7) THE FARMER MUST BE AT THE CENTRE: Production for production's sake helped the country but not the cultivator. Future agriculture must put farmer welfare — income, health, dignity, security — at the centre of policy, not as an afterthought. CONCLUSION: The Green Revolution was both an extraordinary achievement and a costly bet. It ended hunger but created environmental and social problems we are still managing. Calling it 'good' or 'bad' is too simple. The honest reading is that it solved one urgent problem (food shortage) and created others (water, soil, equity) that the country must now solve. The next agricultural revolution India needs will look very different — diverse crops, less water, healthier soil, fairer prices, climate resilience, and the farmer as a real beneficiary, not just a producer of cheap food.",
+          "explanation": "Capstone question that tests the ability to hold both sides of an argument — achievement and cost — without simplifying, and to draw forward-looking lessons. This is the textbook's hardest theme."
+        }
+      ]
+    },
+    {
+      "topic": "Globalisation, Food Security and the Farmer",
+      "easy": [
+        {
+          "id": "t6-e1",
+          "type": "mcq",
+          "question": "Approximately what percentage of India's population is engaged in agricultural activities?",
+          "options": [
+            "About 20%",
+            "About 35%",
+            "About 50%",
+            "About 80%"
+          ],
+          "answer": "About 50%",
+          "explanation": "Roughly half (about 50%) of India's working population is engaged in agriculture or allied activities, even though agriculture's share of GDP has fallen to around 15-18%. The textbook notes that agriculture provides livelihood for more than 60% of the population when families and dependents are counted."
+        },
+        {
+          "id": "t6-e2",
+          "type": "fill",
+          "question": "Indian agriculture has been under pressure since the post-1991 _______ of the economy, which opened Indian markets to world prices and competition.",
+          "answer": "liberalisation",
+          "explanation": "Liberalisation in 1991, followed by India joining the World Trade Organisation (WTO) in 1995, opened Indian agriculture to global competition. Subsidised crops from the US and EU flooded into world markets, and Indian farmers had to compete with prices over which they had no control."
+        },
+        {
+          "id": "t6-e3",
+          "type": "mcq",
+          "question": "Which of the following is NOT an example of a non-food crop?",
+          "options": [
+            "Cotton",
+            "Jute",
+            "Rubber",
+            "Wheat"
+          ],
+          "answer": "Wheat",
+          "explanation": "Wheat is a food crop. Cotton, jute and rubber are all non-food crops (fibre or industrial raw materials). The textbook classifies crops into food grains (rice, wheat, millets, pulses, maize), food crops other than grains (sugarcane, oilseeds, tea, coffee, horticulture), and non-food crops (rubber, fibre crops like cotton and jute)."
+        },
+        {
+          "id": "t6-e4",
+          "type": "truefalse",
+          "question": "FPO stands for Farmer Producer Organisation — a group that pools small farmers' produce to sell at better prices.",
+          "answer": "True",
+          "explanation": "FPO (Farmer Producer Organisation) is a collective body of small farmers. By pooling produce, FPOs can bargain better with buyers, set up their own processing, and even sell directly to retailers. They are one of the most promising recent innovations in Indian agriculture, especially for groundnut, vegetable, fruit and millet farmers."
+        }
+      ],
+      "medium": [
+        {
+          "id": "t6-m1",
+          "type": "short",
+          "question": "How has globalisation affected Indian agriculture? Discuss both positive and negative effects.",
+          "answer": "GLOBALISATION IN INDIAN AGRICULTURE BEGAN WITH the 1991 economic liberalisation and accelerated when India joined the World Trade Organisation (WTO) in 1995. POSITIVE EFFECTS: (1) EXPORT OPPORTUNITIES: Indian rice (especially basmati), wheat, sugar, cotton, tea, coffee, spices and processed foods now reach global markets. India is a major agricultural exporter. (2) HIGH-VALUE CROPS: Farmers near cities and with good road/rail access have moved into high-value crops — grapes, exotic vegetables, flowers, fruits — for export and urban supermarkets. Profits per acre are far higher than for paddy. (3) NEW TECHNOLOGY: Modern seed varieties, drip irrigation, precision farming, digital weather forecasts and farm machinery have come into India through global partnerships. (4) FARMER PRODUCER ORGANISATIONS (FPOs): Inspired partly by global models, small farmers are pooling produce, building brands, and selling directly to retailers — getting much better prices than they did through middlemen. (5) HORTICULTURE BOOM: India is now the world's second-largest producer of fruits and vegetables, partly because globalisation opened up demand and markets. (6) DAIRY EXPORTS: Indian dairy products are increasingly exported. NEGATIVE EFFECTS: (1) PRICE PRESSURE: Subsidised wheat, rice, dairy and cotton from the US and EU enter world markets cheaply. Indian farmers cannot match these prices. India's own MSP has been under constant pressure. (2) INPUT COSTS RISING: Multinational seed and pesticide companies now dominate the seed market. Hybrid seeds must be bought every season (cannot be saved). Pesticide and fertiliser prices are tied to global oil and chemical markets. (3) DEBT TRAP: Small farmers borrowed to buy these expensive inputs. When the crop failed or prices crashed, they could not repay. The result has been chronic indebtedness and, in extreme cases, FARMER SUICIDES — especially in Maharashtra, Karnataka, Telangana and Andhra Pradesh. (4) CONTRACT FARMING RISKS: Some farmers signed contracts with foreign or domestic agribusiness companies for specified crops. Some contracts have benefited farmers; others have squeezed them. (5) LOSS OF TRADITIONAL SEEDS: Farmers stopped saving and exchanging traditional seed varieties as they moved to commercial hybrids. Hundreds of indigenous varieties have been lost. (6) WTO RULES LIMIT SUBSIDIES: India's ability to support its farmers through subsidies is constrained by WTO agreements. The PDS and MSP system has been under repeated international challenge. (7) VULNERABILITY TO PRICE SHOCKS: When the world price of cotton or wheat or rice crashes, Indian farmers feel it within weeks. They have little protection. CONCLUSION: Globalisation is a door that swings both ways. For farmers with land, capital, education and market access, it has opened new opportunities. For small farmers without these advantages, it has often meant pressure, debt, and despair. The unfinished political argument of modern Indian agriculture is essentially about how to manage globalisation without breaking the small farmer.",
+          "explanation": "Tests balanced understanding of globalisation in agriculture — exports and opportunities on one side, price pressure and debt on the other."
+        },
+        {
+          "id": "t6-m2",
+          "type": "short",
+          "question": "What is the Public Distribution System (PDS) and how does it relate to MSP and the FCI?",
+          "answer": "INDIA'S FOOD SECURITY SYSTEM has three interlocking parts: MSP, FCI, and PDS. They work together to ensure that food is grown reliably and reaches the poor. (1) MSP (MINIMUM SUPPORT PRICE): The government announces a guaranteed price for major crops (wheat, rice, and many others) BEFORE the sowing season. This means farmers know in advance what they will earn. If the open market price falls below MSP, the government will buy the crop at MSP. (2) FCI (FOOD CORPORATION OF INDIA): The FCI is the central government agency that actually BUYS the grain from farmers at MSP. It operates procurement centres in major producing states (especially Punjab, Haryana, MP, UP). The FCI stores the grain in warehouses across the country, building BUFFER STOCKS to handle bad monsoon years and emergencies. (3) PDS (PUBLIC DISTRIBUTION SYSTEM): The FCI releases grain from its stocks at heavily subsidised prices to STATE GOVERNMENTS, which then distribute it through FAIR PRICE SHOPS (ration shops) to poor households. The NATIONAL FOOD SECURITY ACT, 2013 entitles about two-thirds of India's population to subsidised grain — 5 kg per person per month at Rs 1-3 per kg. HOW IT WORKS TOGETHER: (a) Farmer grows wheat in Punjab. (b) FCI buys it at MSP. (c) Grain goes to warehouses. (d) State governments draw grain at subsidised prices. (e) Ration shops sell it to poor families for a fraction of the market price. (f) The DIFFERENCE between what the FCI paid the farmer and what the ration shop charges is the FOOD SUBSIDY — one of the biggest items in the Union Budget. PROBLEMS: (a) LEAKAGE: Some grain is diverted from ration shops to the open market for profit. (b) TARGETING: Some genuinely poor households don't get cards while wealthier households do. (c) BIAS TOWARD WHEAT-RICE: The system buys mainly wheat and rice, not millets or pulses, narrowing nutrition. (d) STORAGE LOSSES: Grain in FCI warehouses sometimes rots due to inadequate storage. (e) COST: The food subsidy bill is huge — over Rs 2 lakh crore annually. (f) MSP COVERAGE: MSP is announced for many crops but effective procurement happens only for wheat, rice and a few others — leaving most farmers outside its protection. REFORM DIRECTIONS: Some economists propose replacing PDS with DIRECT CASH TRANSFERS (giving poor families money instead of grain). Others want PDS to include millets and pulses for better nutrition. Some propose digital ration cards and Aadhaar linkage to reduce leakage. Still, despite all problems, the MSP-FCI-PDS system feeds hundreds of millions of Indians and remains one of the world's largest food security programmes.",
+          "explanation": "Tests the system-level understanding of how India's food security works — the three institutions and how they connect."
+        }
+      ],
+      "hard": [
+        {
+          "id": "t6-h1",
+          "type": "long",
+          "question": "Why are Indian farmers protesting and even taking their own lives in some states? Explain the structural reasons behind farmer distress, and discuss what changes could improve the farmer's deal.",
+          "answer": "INDIAN FARMER DISTRESS IS NOT A NEW CRISIS, but it has become more visible in the last two decades. Mass protests at Delhi's borders in 2020-21, recurring suicide waves in Maharashtra, Karnataka, Telangana and Andhra Pradesh, and chronic indebtedness across the country are the surface symptoms. The structural causes are deeper. STRUCTURAL CAUSES OF FARMER DISTRESS: (1) SMALL HOLDINGS: The average Indian farm is about ONE HECTARE — barely big enough to feed a family, let alone generate cash for inputs, schooling, healthcare. Inheritance keeps dividing holdings further. Small farms cannot afford machinery, cannot get good credit terms, and have weak bargaining power. (2) RISING INPUT COSTS: Hybrid seeds (Bt cotton, GM cotton), chemical fertilisers, pesticides, electricity, fuel, labour — all have risen sharply. Many of these are tied to global oil and chemical prices. Indian farmers face costs benchmarked to the world but earn incomes benchmarked to the village. (3) UNCERTAIN PRICES: For most crops, there is no effective MSP — the government announces it but does not actually procure. Farmers are at the mercy of mandi traders and middlemen who set the price. Cotton or onion prices can crash 70% in a season. (4) UNRELIABLE MONSOON: Climate change is making rainfall more erratic — too much, too little, too early, too late. Crop failure is increasingly common. Rain-fed agriculture (60% of Indian farming) is hit hardest. (5) GROUNDWATER DEPLETION: In irrigated regions, falling water tables force farmers to drill deeper, spending lakhs on tubewells. Some have to abandon farming altogether when water runs out. (6) DEBT: To afford inputs and tubewells, farmers borrow — from banks, cooperatives, microfinance institutions, and most expensively, moneylenders. Interest rates compound rapidly. When the crop fails, debt becomes unpayable. (7) NO INCOME ALTERNATIVE: When farming fails, the farmer has no other skill. Migration to cities is brutal and unstable. There are very few rural non-farm jobs. (8) HEALTH AND EDUCATION COSTS: One serious illness or one child's wedding can push a debt-strained family over the edge. Healthcare and education in rural India are expensive and patchy. (9) SOCIAL HUMILIATION: When the moneylender comes to collect, when the family cannot pay the daughter's wedding expenses, when the son fails the exam — the shame is intense. Suicide is sometimes seen as the last way to protect family honour and trigger government relief. (10) GLOBALISATION PRESSURE: Subsidised farm output from the US and EU floods world markets. WTO rules limit India's ability to subsidise its own farmers. Indian agriculture has to play by global rules without the global support. (11) MIDDLEMEN: Most farmers cannot sell directly to consumers or processors. A long chain of middlemen — local trader, commission agent, wholesaler, retailer — captures the bulk of the final price. The farmer often gets 25-30% of what the consumer pays. (12) INSURANCE FAILURES: Crop insurance schemes exist but pay-outs are slow, partial, and often inadequate. Farmers don't trust them. WHY SUICIDES SPECIFICALLY: A farmer who has borrowed Rs 2 lakhs to plant cotton, then loses the crop to pink bollworm or to a price crash, suddenly owes Rs 2 lakhs and cannot pay. The lender threatens. The wife is humiliated. The children's school fees go unpaid. In that despair, the farmer sometimes drinks the very pesticide bought on credit. The bitter symbolism is that the chemical meant to grow the crop ends his life. WHAT COULD CHANGE THE FARMER'S DEAL: (1) GUARANTEED MSP FOR MORE CROPS: Expanding MSP and actual procurement to include millets, pulses, oilseeds, vegetables — not just wheat and rice — would give farmers more security and diversify production. (2) DIRECT INCOME SUPPORT: PM-KISAN gives Rs 6,000 per year. Many propose raising it substantially, especially for small farmers. Cash in hand reduces dependence on speculative crop prices. (3) FARMER PRODUCER ORGANISATIONS (FPOs): Pooling small farmers into FPOs lets them bypass middlemen, build brands, process locally, and access better credit. Government has supported 10,000+ FPOs. This needs to scale. (4) REFORM OF MANDIS: The agricultural marketing system is monopolised by a few licensed traders in each mandi. Electronic National Agriculture Market (e-NAM) tries to allow farmers to sell across mandis online. This needs to grow. (5) CONTRACT FARMING WITH PROTECTION: Carefully regulated contract farming with food companies and retailers can give farmers price certainty before sowing. But the protections must be strong. (6) IRRIGATION REFORM: Drip irrigation, rainwater harvesting, tank restoration, micro-irrigation. Punjab paddy must be replaced with less water-intensive crops. (7) CLIMATE-RESILIENT SEEDS AND TECHNIQUES: Public-sector breeding of drought-tolerant, heat-tolerant varieties. Promotion of millets and pulses. (8) CROP INSURANCE THAT ACTUALLY PAYS: Faster claim settlement, weather-based triggers, satellite monitoring of fields. (9) DEBT RELIEF AND CREDIT REFORM: Periodic loan waivers help in crisis but are not a long-term solution. Long-term, structural credit reform — affordable interest, reasonable terms, protection from moneylenders — is essential. (10) RURAL NON-FARM EMPLOYMENT: MNREGA gives rural employment but only 100 days a year. Real rural industries — food processing, textiles, small manufacturing, services — can absorb labour from farming and reduce pressure on land. (11) HEALTH AND EDUCATION INVESTMENT: Free quality healthcare and education in rural India would dramatically reduce the financial shocks that push families over the edge. (12) RESPECT AND RECOGNITION: Beyond economics, the Indian farmer's social dignity matters. Stories of farmer success, fair political representation, urban awareness of rural reality — all are part of the deal. CONCLUSION: Indian farmer distress is not a problem of individual failure or of bad weather. It is the structural problem of small holdings, rising costs, uncertain prices, climate stress, and a market that does not work for the small producer. Improving the deal requires multiple, simultaneous reforms — agricultural policy, market design, climate adaptation, social protection, and rural development. None of these is glamorous; together, they could transform what farming feels like in India. Until they happen, the farmer's struggle will continue to be the country's quiet, persistent moral failure.",
+          "explanation": "Capstone question that tests the ability to diagnose a complex social problem at structural level — small holdings, costs, prices, climate, globalisation — and to propose a multi-pronged response. This is the chapter's most adult question."
+        }
+      ]
+    }
+  ]
+}
