@@ -1,0 +1,407 @@
+{
+  "topics": [
+    {
+      "topic": "French Revolution and the Idea of the Nation",
+      "easy": [
+        {
+          "id": "1-1-1",
+          "type": "mcq",
+          "question": "Who painted 'The Dream of Worldwide Democratic and Social Republics' in 1848?",
+          "options": ["Eugène Delacroix", "Frédéric Sorrieu", "Philip Veit", "Karl Kaspar Fritz"],
+          "answer": "Frédéric Sorrieu",
+          "explanation": "Sorrieu was a French artist who in 1848 produced a series of four prints visualising a utopia in which the peoples of the world would be grouped as free, equal nations."
+        },
+        {
+          "id": "1-1-2",
+          "type": "mcq",
+          "question": "In what year did the French Revolution begin?",
+          "options": ["1776", "1789", "1815", "1848"],
+          "answer": "1789",
+          "explanation": "The French Revolution began in 1789 and was the first clear political expression of nationalism in Europe."
+        },
+        {
+          "id": "1-1-3",
+          "type": "fill",
+          "question": "The French revolutionary terms ___ ___ meant 'the fatherland' and emphasised the idea of a united community of citizens.",
+          "answer": "la patrie",
+          "explanation": "*La patrie* (the fatherland) and *le citoyen* (the citizen) were central revolutionary ideas that bound Frenchmen together as a single nation."
+        },
+        {
+          "id": "1-1-4",
+          "type": "mcq",
+          "question": "Which of these was NOT a measure taken by the French revolutionaries to create a sense of collective identity?",
+          "options": ["Adopting the tricolour flag", "Standardising weights and measures", "Promoting Parisian French as the national language", "Restoring the privileges of the nobility"],
+          "answer": "Restoring the privileges of the nobility",
+          "explanation": "The French Revolution abolished hereditary privileges. The other three measures — flag, uniform measures, and common language — were all used to build national identity."
+        }
+      ],
+      "medium": [
+        {
+          "id": "1-1-5",
+          "type": "short",
+          "question": "What steps did the French revolutionaries take to create a sense of collective identity among the French people?",
+          "answer": "They adopted a tricolour flag, renamed the Estates General as the National Assembly, composed new hymns, took oaths and commemorated martyrs in the name of the nation, created a centralised administrative system with uniform laws, abolished internal customs duties, standardised weights and measures, and promoted Parisian French as the common national language.",
+          "explanation": "These measures together transformed France from a kingdom of subjects into a nation of citizens with a shared identity."
+        },
+        {
+          "id": "1-1-6",
+          "type": "short",
+          "question": "What were Jacobin clubs and how did they spread the revolution beyond France?",
+          "answer": "Jacobin clubs were political associations set up by students and educated middle classes across Europe — in Holland, Belgium, Switzerland, Italy, and the German states — when news of the French Revolution reached them. They campaigned for revolutionary ideas and helped pave the way for French armies that carried nationalism abroad in the 1790s.",
+          "explanation": "Jacobin clubs show how nationalism spread through ideas and sympathisers before it spread through armies."
+        }
+      ],
+      "hard": [
+        {
+          "id": "1-1-7",
+          "type": "long",
+          "question": "Explain how the French Revolution introduced the modern idea of the nation. Use specific examples from the chapter.",
+          "answer": "Before 1789, France was a kingdom under an absolute monarch — sovereignty belonged to the king. The French Revolution transferred sovereignty from the monarchy to the body of French citizens, proclaiming that the people themselves constituted the nation and would shape its destiny. The revolutionaries built this identity through deliberate measures: the new tricolour replaced the royal standard; the elected National Assembly replaced the Estates General; new hymns, oaths, and martyr-cults were created in the nation's name; uniform laws, weights, measures, and currency replaced regional variations; internal customs duties were abolished; and Parisian French was promoted as the national language. The revolutionaries went further and declared it the mission of the French nation to liberate other peoples of Europe from despotism. When French armies marched into Holland, Belgium, Switzerland, and parts of Italy in the 1790s, they carried this idea with them. Across Europe, educated middle classes formed Jacobin clubs to support the cause. Thus the French Revolution did not just overthrow a monarchy — it invented a new political language of citizenship, sovereignty, and nation that would reshape the next century.",
+          "explanation": "The answer should cover both the conceptual shift (sovereignty from king to people) and the concrete measures used to make the new identity real."
+        }
+      ]
+    },
+    {
+      "topic": "Napoleon and the Conservative Reaction",
+      "easy": [
+        {
+          "id": "2-1-1",
+          "type": "mcq",
+          "question": "The Napoleonic Code (Civil Code of 1804) did all of the following EXCEPT:",
+          "options": ["Established equality before the law", "Abolished privileges based on birth", "Secured the right to property", "Granted universal suffrage to women"],
+          "answer": "Granted universal suffrage to women",
+          "explanation": "The Napoleonic Code reduced women to the status of minors subject to fathers and husbands. It abolished birth privileges but did not grant women political rights."
+        },
+        {
+          "id": "2-1-2",
+          "type": "mcq",
+          "question": "Who hosted the Congress of Vienna in 1815?",
+          "options": ["Otto von Bismarck", "Camillo de Cavour", "Duke Metternich", "King Louis Philippe"],
+          "answer": "Duke Metternich",
+          "explanation": "The Austrian Chancellor Duke Metternich hosted the Congress of Vienna, which produced the Treaty of Vienna of 1815 and aimed to restore the conservative European order."
+        },
+        {
+          "id": "2-1-3",
+          "type": "fill",
+          "question": "After Napoleon's defeat in 1815, the ___ dynasty was restored to the French throne.",
+          "answer": "Bourbon",
+          "explanation": "The Treaty of Vienna restored the Bourbon dynasty, which had been deposed during the French Revolution."
+        },
+        {
+          "id": "2-1-4",
+          "type": "mcq",
+          "question": "What was the main aim of conservatism after 1815?",
+          "options": ["To return Europe to the pre-revolutionary order without any change", "To preserve traditional institutions like monarchy and Church while modernising the state", "To overthrow all kings and establish republics", "To unify Italy and Germany"],
+          "answer": "To preserve traditional institutions like monarchy and Church while modernising the state",
+          "explanation": "Conservatives realised from Napoleon's reforms that modernisation could actually strengthen traditional institutions, so they combined old hierarchies with modern bureaucracy and armies."
+        }
+      ],
+      "medium": [
+        {
+          "id": "2-1-5",
+          "type": "short",
+          "question": "What changes did Napoleon introduce to make the administrative system more efficient in the territories he ruled?",
+          "answer": "Napoleon introduced the Civil Code of 1804, which abolished privileges based on birth, established equality before the law, and secured the right to property. He abolished feudalism, freed peasants from serfdom and manorial dues, removed guild restrictions in towns, simplified administrative divisions, and improved transport and communication. He also standardised weights, measures, and currency, which made trade easier for businessmen and small producers.",
+          "explanation": "These reforms made the territories under French control more rational and efficient, even as Napoleon himself ruled as an emperor."
+        },
+        {
+          "id": "2-1-6",
+          "type": "short",
+          "question": "Why did the initial enthusiasm for Napoleon's rule in conquered territories turn into hostility?",
+          "answer": "Although Napoleon's administrative reforms — abolition of feudalism, uniform laws, free movement of goods — were welcomed, the new arrangements did not bring political freedom. Increased taxation, censorship, and forced conscription of local people into French armies fighting wars across Europe came to outweigh the benefits, and the French began to be seen as oppressors rather than liberators.",
+          "explanation": "The arc from welcome to resentment is a recurring pattern in foreign rule — including the British in India."
+        }
+      ],
+      "hard": [
+        {
+          "id": "2-1-7",
+          "type": "long",
+          "question": "Describe the Treaty of Vienna of 1815 and explain how it tried to undo the changes of the Napoleonic era. How successful was it?",
+          "answer": "The Treaty of Vienna of 1815 was the conservative peace settlement drawn up at the Congress of Vienna, hosted by the Austrian Chancellor Duke Metternich. Representatives of Britain, Russia, Prussia, and Austria — who had collectively defeated Napoleon — met to undo the political changes of the Napoleonic era and restore the monarchies that had been overthrown. The Bourbon dynasty was restored in France, which lost the territories annexed under Napoleon. To prevent future French expansion, buffer states were created on her borders: the Kingdom of the Netherlands (including Belgium) in the north, Genoa added to Piedmont in the south, Prussia given new territories on its western frontiers, and Austria given control of northern Italy. Russia got part of Poland; Prussia got part of Saxony. The German confederation of 39 states set up by Napoleon was left untouched. The conservative regimes were autocratic — they imposed censorship laws on the press, books, plays, and songs, and would not tolerate dissent. However, the Treaty was only partly successful. The memory of the French Revolution continued to inspire liberals and revolutionaries who went underground in secret societies. The revolutions of 1830 and 1848 showed that the conservative order could not contain the demand for constitutions, nation-states, and popular sovereignty. By the late nineteenth century, much of the political map of Europe — particularly Germany and Italy — had been redrawn against the spirit of 1815.",
+          "explanation": "The answer should cover specific territorial provisions, the conservative philosophy behind them, and the long-term failure to suppress nationalism."
+        }
+      ]
+    },
+    {
+      "topic": "Revolutionaries, 1848, and Romantic Nationalism",
+      "easy": [
+        {
+          "id": "3-1-1",
+          "type": "mcq",
+          "question": "Giuseppe Mazzini founded which two secret societies?",
+          "options": ["Carbonari and Red Shirts", "Young Italy and Young Europe", "Junkers and Jacobins", "Risorgimento and Sardinia League"],
+          "answer": "Young Italy and Young Europe",
+          "explanation": "Mazzini was a member of the Carbonari but later founded Young Italy in Marseilles and Young Europe in Berne to spread the cause of nationalism."
+        },
+        {
+          "id": "3-1-2",
+          "type": "mcq",
+          "question": "The Greek War of Independence began in:",
+          "options": ["1815", "1821", "1832", "1848"],
+          "answer": "1821",
+          "explanation": "The Greek struggle for independence from the Ottoman Empire began in 1821 and was recognised by the Treaty of Constantinople in 1832."
+        },
+        {
+          "id": "3-1-3",
+          "type": "fill",
+          "question": "The Grimm brothers from Germany collected ___ as part of building national identity.",
+          "answer": "folktales",
+          "explanation": "Jacob and Wilhelm Grimm travelled village to village collecting folktales, which they saw as expressions of the authentic German spirit."
+        },
+        {
+          "id": "3-1-4",
+          "type": "mcq",
+          "question": "Which English poet died of fever in 1824 while supporting the Greek cause?",
+          "options": ["William Wordsworth", "Lord Byron", "Percy Shelley", "John Keats"],
+          "answer": "Lord Byron",
+          "explanation": "Lord Byron organised funds for the Greek struggle and travelled to fight there, where he died of fever in 1824."
+        },
+        {
+          "id": "3-1-5",
+          "type": "mcq",
+          "question": "The Frankfurt Parliament met in 1848 in:",
+          "options": ["The Palace of Versailles", "The Church of St Paul", "The Hall of Mirrors", "The Sorbonne"],
+          "answer": "The Church of St Paul",
+          "explanation": "On 18 May 1848, 831 elected representatives convened the all-German National Assembly in the Church of St Paul in Frankfurt."
+        }
+      ],
+      "medium": [
+        {
+          "id": "3-1-6",
+          "type": "short",
+          "question": "What was the role of language in Polish nationalism in the nineteenth century?",
+          "answer": "After Poland was partitioned by Russia, Prussia, and Austria, the Russian language was imposed in schools and Polish was forced out. Following the failed 1831 rebellion, members of the Polish clergy used Polish for Church gatherings and religious instruction. Many priests and bishops were jailed or sent to Siberia for refusing to preach in Russian. The use of Polish became a symbol of resistance against Russian domination.",
+          "explanation": "Language can become a weapon of national resistance when other forms of political life are denied."
+        },
+        {
+          "id": "3-1-7",
+          "type": "short",
+          "question": "Why did the Frankfurt Parliament of 1848 fail?",
+          "answer": "The parliament drafted a constitution for a German nation under a monarchy answerable to parliament and offered the crown to Friedrich Wilhelm IV of Prussia, who rejected it and joined other monarchs against the assembly. The opposition of the aristocracy and military grew stronger; meanwhile the middle-class parliament resisted the demands of workers and artisans and lost popular support. Eventually troops were called in and the assembly was forced to disband.",
+          "explanation": "The failure shows the tension between middle-class liberalism and the demands of working people in 1848."
+        },
+        {
+          "id": "3-1-8",
+          "type": "short",
+          "question": "What was Romanticism's contribution to the growth of nationalism?",
+          "answer": "Romanticism was a cultural movement that criticised the worship of reason and science and instead emphasised emotion, intuition, and a shared collective heritage. Romantic artists, poets, and philosophers like Herder argued that the true national spirit lived in the common people — in their folk songs, folk poetry, and folk dances. Collecting and recording folk traditions, using vernacular languages, and celebrating local cultures became a way of building national identity, especially in regions like Germany and Poland where the population was largely illiterate.",
+          "explanation": "Culture often did the deeper work of building nations that politics could not do alone."
+        }
+      ],
+      "hard": [
+        {
+          "id": "3-1-9",
+          "type": "long",
+          "question": "Choose three examples to show the contribution of culture to the growth of nationalism in Europe.",
+          "answer": "First, the Grimm brothers in Germany collected folktales from villages and published them from 1812, seeing folktales as the authentic spirit of the German people and a defence against French cultural domination. They also published a 33-volume German dictionary. Second, in Poland, after partition by Russia, Prussia, and Austria, the composer Karol Kurpinski celebrated national struggle through operas and turned folk dances like the polonaise and mazurka into nationalist symbols; the Polish language was used in Church as a symbol of resistance against Russian rule. Third, in Greece, the war of independence (1821-32) drew the support of artists and poets across Europe — Lord Byron raised funds and went to fight (dying in 1824) and Delacroix's huge painting *The Massacre at Chios* (1824) used vivid colour and emotional drama to portray Greek suffering and win European sympathy for the Greek cause. In each case, songs, dictionaries, paintings, and poems built a sense of belonging that ordinary people could feel — and made the political project of the nation possible.",
+          "explanation": "A good answer picks examples from different countries and explains how the culture *worked* — what it actually did for nationalism."
+        }
+      ]
+    },
+    {
+      "topic": "Unification of Germany and Italy",
+      "easy": [
+        {
+          "id": "4-1-1",
+          "type": "mcq",
+          "question": "Otto von Bismarck unified Germany using a policy famously known as:",
+          "options": ["Diplomacy and dialogue", "Folk songs and folktales", "Blood and iron", "Liberty and equality"],
+          "answer": "Blood and iron",
+          "explanation": "Bismarck's strategy of unification through war and military power is known as 'blood and iron.'"
+        },
+        {
+          "id": "4-1-2",
+          "type": "mcq",
+          "question": "In which year was the German Empire proclaimed?",
+          "options": ["1861", "1866", "1871", "1905"],
+          "answer": "1871",
+          "explanation": "On 18 January 1871, in the Hall of Mirrors at Versailles, Wilhelm I of Prussia was proclaimed German Emperor."
+        },
+        {
+          "id": "4-1-3",
+          "type": "fill",
+          "question": "The 1834 customs union of German states that abolished tariff barriers was called the ___.",
+          "answer": "Zollverein",
+          "explanation": "The Zollverein, formed at Prussian initiative, reduced the number of currencies from over thirty to two and stimulated economic nationalism."
+        },
+        {
+          "id": "4-1-4",
+          "type": "mcq",
+          "question": "Garibaldi's volunteer army of 1860 was popularly known as the:",
+          "options": ["Blue Shirts", "Red Shirts", "Brown Shirts", "Young Italy"],
+          "answer": "Red Shirts",
+          "explanation": "Garibaldi's Expedition of the Thousand to South Italy in 1860 was joined by volunteers wearing red shirts; their numbers grew to about 30,000."
+        },
+        {
+          "id": "4-1-5",
+          "type": "mcq",
+          "question": "Victor Emmanuel II was proclaimed king of united Italy in:",
+          "options": ["1848", "1859", "1861", "1870"],
+          "answer": "1861",
+          "explanation": "After Garibaldi's conquest of the south and its handover to Sardinia-Piedmont, Victor Emmanuel II was proclaimed king of united Italy in 1861. Rome was added in 1870."
+        }
+      ],
+      "medium": [
+        {
+          "id": "4-1-6",
+          "type": "short",
+          "question": "Briefly trace the process of German unification.",
+          "answer": "After 1848, when the liberal middle-class attempt at unification through the Frankfurt Parliament failed, Prussia took the lead under its chief minister Otto von Bismarck. Bismarck used 'blood and iron' — the Prussian army and bureaucracy. He fought three wars in seven years: against Denmark (1864), against Austria (1866) — which drove Austria out of German affairs — and against France (1870-71). After defeating France, on 18 January 1871, the Prussian king Wilhelm I was proclaimed German Emperor in the Hall of Mirrors at Versailles. The new Germany emphasised modernising currency, banking, and judicial systems, with Prussian practices becoming the model.",
+          "explanation": "Cover the failure of 1848, the rise of Prussia under Bismarck, the three wars, and the proclamation at Versailles."
+        },
+        {
+          "id": "4-1-7",
+          "type": "short",
+          "question": "Who was Count Camillo de Cavour and what was his role in Italian unification?",
+          "answer": "Cavour was the Chief Minister of Sardinia-Piedmont and led the movement to unify Italy. He was neither a revolutionary nor a democrat but a careful diplomat who, like many of the Italian elite, spoke French better than Italian. Through a tactful diplomatic alliance with France, Sardinia-Piedmont defeated the Austrian forces in 1859. Cavour's diplomacy, combined with the military efforts of regular troops and the volunteer army of Garibaldi, made the unification of Italy possible by 1861.",
+          "explanation": "Cavour is the diplomat's half of unification; Garibaldi is the soldier's half. Both were needed."
+        },
+        {
+          "id": "4-1-8",
+          "type": "short",
+          "question": "Why did Garibaldi hand over the conquered south of Italy to King Victor Emmanuel II instead of declaring a republic?",
+          "answer": "Although Garibaldi was a Mazzinian republican, he believed that a united Italy under a monarchy was better than a divided Italy. If he had declared a republic in the south while Sardinia-Piedmont and the king ruled the north, Italy would have been permanently split. To complete unification, he accepted the king and handed over the conquered territories — a famous 1859 English cartoon shows him holding the boot of 'Italy' steady while the king pulls it on.",
+          "explanation": "This is one of the most striking examples of compromise in nation-building."
+        }
+      ],
+      "hard": [
+        {
+          "id": "4-1-9",
+          "type": "long",
+          "question": "Trace the unification of Italy from Mazzini to King Victor Emmanuel II.",
+          "answer": "In the early nineteenth century Italy was divided into seven states. Only Sardinia-Piedmont was ruled by an Italian princely house; the north was under the Austrian Habsburgs, the centre under the Pope, and the south under the Bourbon kings of Spain. Even the Italian language had no common form. In the 1830s, Giuseppe Mazzini formed the secret society Young Italy to put together a programme for a unitary Italian Republic. His uprisings in 1831 and 1848 failed, but his ideas inspired a generation. After 1848 the mantle passed to King Victor Emmanuel II of Sardinia-Piedmont and his Chief Minister Count Camillo de Cavour. Through a diplomatic alliance with France, Cavour engineered the defeat of Austria in 1859. Then Giuseppe Garibaldi led the Expedition of the Thousand into South Italy in 1860 — joined by armed volunteers until his force grew to nearly 30,000 Red Shirts — and won the support of local peasants to drive out the Spanish Bourbons from the Kingdom of the Two Sicilies. Garibaldi then handed over the south to Victor Emmanuel II, sacrificing his republican preference for the sake of unity. In 1861 Victor Emmanuel II was proclaimed king of united Italy. Rome was added in 1870, when France withdrew her troops from the Papal States during the Franco-Prussian War. Although the political unification was complete, much of the population — largely illiterate — was unaware of liberal-nationalist ideology; some peasants in the south even believed that 'La Talia' was Victor Emmanuel's wife.",
+          "explanation": "A complete answer should show all three figures (Mazzini the dreamer, Cavour the diplomat, Garibaldi the soldier) and the key dates 1859, 1860, 1861, 1870."
+        },
+        {
+          "id": "4-1-10",
+          "type": "long",
+          "question": "Compare the unifications of Germany and Italy. What did they have in common, and how did they differ?",
+          "answer": "Both Germany and Italy began the nineteenth century as patchworks of small states without a single ruler, language, or law. Both saw the failure of liberal middle-class movements in 1848, after which conservative leaders took over the project of unification. In both cases, one strong kingdom (Prussia in Germany, Sardinia-Piedmont in Italy) became the engine of unity, led by a powerful chief minister (Bismarck in Germany, Cavour in Italy). Both processes involved wars, and in both the king of the leading state became the king of the new nation (Wilhelm I in 1871, Victor Emmanuel II in 1861). The differences are also clear. Germany's unification was mainly the work of one man, Bismarck, using the Prussian army in three short, decisive wars (against Denmark, Austria, France). Italy's unification was a partnership of three very different figures — Mazzini the revolutionary dreamer, Cavour the careful diplomat, and Garibaldi the volunteer soldier — and depended both on diplomacy with France and on the popular Expedition of the Thousand. Germany emerged a strong, centralised, military empire. Italy emerged politically united but still culturally and economically divided, with most peasants barely aware of the new nation. Both stories show that even where the goal is similar, the route to a nation-state depends on the leaders, the geography, and the moment of history.",
+          "explanation": "Pick at least three points of similarity and three of contrast; this is a comparison question, not a simple narration."
+        }
+      ]
+    },
+    {
+      "topic": "Britain, Marianne, and Germania",
+      "easy": [
+        {
+          "id": "5-1-1",
+          "type": "mcq",
+          "question": "The Act of Union of 1707 united:",
+          "options": ["England and France", "England and Ireland", "England and Scotland", "England and Wales"],
+          "answer": "England and Scotland",
+          "explanation": "The Act of Union of 1707 between England and Scotland resulted in the formation of the 'United Kingdom of Great Britain.'"
+        },
+        {
+          "id": "5-1-2",
+          "type": "mcq",
+          "question": "Marianne and Germania were:",
+          "options": ["Queens who unified France and Germany", "Female allegories of the French and German nations", "Cities where parliaments met", "Revolutionary leaders from 1848"],
+          "answer": "Female allegories of the French and German nations",
+          "explanation": "Marianne represented the French Republic and Germania the German nation; they were artistic personifications, not real women."
+        },
+        {
+          "id": "5-1-3",
+          "type": "fill",
+          "question": "Germania wore a crown of ___ leaves, symbolising heroism.",
+          "answer": "oak",
+          "explanation": "The German oak stood for heroism in nationalist symbolism; Germania's crown was made of oak leaves."
+        },
+        {
+          "id": "5-1-4",
+          "type": "mcq",
+          "question": "Ireland was forcibly incorporated into the United Kingdom in:",
+          "options": ["1707", "1798", "1801", "1815"],
+          "answer": "1801",
+          "explanation": "After the failed 1798 revolt led by Wolfe Tone and his United Irishmen, Ireland was forcibly incorporated into the United Kingdom in 1801."
+        }
+      ],
+      "medium": [
+        {
+          "id": "5-1-5",
+          "type": "short",
+          "question": "How was the history of nationalism in Britain unlike the rest of Europe?",
+          "answer": "Britain's nation-state was not formed by a sudden revolution or upheaval but through a long process of absorption. There was no 'British' nation before the eighteenth century — people were English, Welsh, Scot, or Irish. As England grew in wealth and power, the English parliament (after seizing power from the monarchy in 1688) extended English influence over the rest of the islands through the Act of Union with Scotland (1707) and the forced incorporation of Ireland (1801). Scottish Gaelic and Highland dress were suppressed; Catholic Ireland was held down by a Protestant ruling class. A British identity — Union Jack, God Save the King, English language — was promoted while older nations survived as junior partners.",
+          "explanation": "Britain shows the model of slow absorption rather than revolution — and not always a kind one."
+        },
+        {
+          "id": "5-1-6",
+          "type": "short",
+          "question": "Who were Marianne and Germania? What was the importance of the way in which they were portrayed?",
+          "answer": "Marianne and Germania were female allegories of the French and German nations — artistic figures that gave an abstract idea of the nation a human face. Marianne, given a popular Christian name to suggest a 'people's nation,' carried symbols of Liberty and the Republic (red cap, tricolour, cockade), and her statues stood in public squares while her image appeared on coins and stamps. Germania wore a crown of oak leaves (heroism), broken chains (being freed), a breastplate with an eagle (German imperial strength), a sword wrapped with an olive branch (ready to fight, willing to make peace), the black-red-gold tricolour (the banned 1848 liberal flag), and rays of the rising sun (new era). These images were important because they made the abstract idea of the nation visible and emotional — people could feel loyalty to a face they recognised everywhere.",
+          "explanation": "The point is not just identification but the *symbolic work* the images did."
+        }
+      ],
+      "hard": [
+        {
+          "id": "5-1-7",
+          "type": "long",
+          "question": "Why have some scholars described Britain as the 'model' nation-state, and what are the limits of this description?",
+          "answer": "Some scholars argue that Britain is the model nation-state because, unlike France, Germany, or Italy, it was not formed in a single revolutionary moment but through a long, gradual process of consolidation — making it look stable, organic, and successful. The 1688 'Glorious Revolution' established parliamentary power over the monarchy, the Act of Union of 1707 joined Scotland to England, and Ireland was incorporated by 1801. A common British identity was built around the Union Jack, the national anthem, the English language, and the dominance of the English parliament. However, this 'model' has serious limits. The unification was not voluntary or peaceful for everyone: Scottish Highlanders were forbidden to speak Gaelic or wear their national dress; Catholic clans that resisted were brutally suppressed and many were forcibly driven from their homes. Ireland was deeply divided between Catholics and Protestants, with Catholic revolts crushed and Ireland eventually annexed by force after the failed Wolfe Tone uprising. The older nations — Welsh, Scottish, Irish — survived only as subordinate partners in a union dominated by English culture and English MPs. So calling Britain the 'model' nation-state hides as much as it reveals: a successful nation-state on the surface, built on suppression of smaller identities beneath.",
+          "explanation": "A good answer accepts the appeal of the 'model' label and then challenges it with specific evidence of suppression."
+        }
+      ]
+    },
+    {
+      "topic": "Nationalism, Imperialism, and the Balkans",
+      "easy": [
+        {
+          "id": "6-1-1",
+          "type": "mcq",
+          "question": "The Balkan region included all of the following EXCEPT:",
+          "options": ["Romania", "Bulgaria", "Serbia", "Sardinia"],
+          "answer": "Sardinia",
+          "explanation": "Sardinia was an Italian state. The Balkans included Romania, Bulgaria, Albania, Greece, Macedonia, Croatia, Bosnia-Herzegovina, Slovenia, Serbia, and Montenegro."
+        },
+        {
+          "id": "6-1-2",
+          "type": "mcq",
+          "question": "Most inhabitants of the Balkans were broadly known as:",
+          "options": ["Magyars", "Slavs", "Saxons", "Junkers"],
+          "answer": "Slavs",
+          "explanation": "The Balkan peoples were broadly known as Slavs and lived under the disintegrating Ottoman Empire."
+        },
+        {
+          "id": "6-1-3",
+          "type": "fill",
+          "question": "The intense rivalry over the Balkans among European powers eventually led to the outbreak of the ___ ___ ___ in 1914.",
+          "answer": "First World War",
+          "explanation": "Big-power competition over the Balkans escalated into a series of wars that culminated in the First World War in 1914."
+        },
+        {
+          "id": "6-1-4",
+          "type": "mcq",
+          "question": "By the late nineteenth century, nationalism in Europe had become:",
+          "options": ["A liberal-democratic force of brotherhood", "A narrow creed allied with imperialism", "A Romantic cultural movement", "A demand for women's suffrage"],
+          "answer": "A narrow creed allied with imperialism",
+          "explanation": "Nationalism lost its earlier liberal-democratic spirit and became a narrow, intolerant force that fed European imperialism in Africa and Asia."
+        }
+      ],
+      "medium": [
+        {
+          "id": "6-1-5",
+          "type": "short",
+          "question": "Why did nationalist tensions emerge in the Balkans?",
+          "answer": "The Balkans was a region of great geographic and ethnic variety, much of it under the slowly disintegrating Ottoman Empire. The spread of Romantic nationalism inspired Slavic peoples — Serbs, Bulgarians, Croats, and others — to break away one by one, each using history to claim it had once been independent and had been subjugated by foreigners. But the new Balkan states were bitterly jealous of one another, each hoping to gain territory at the expense of its neighbours. Worse, the great European powers — Russia, Germany, England, Austro-Hungary — competed to extend their own control over the region. This rivalry produced a series of wars and finally the First World War of 1914.",
+          "explanation": "The Balkans show both forms of nationalism: the liberating Slavic struggle, and the destructive rivalry between newly formed nations."
+        },
+        {
+          "id": "6-1-6",
+          "type": "short",
+          "question": "How did anti-imperial movements in colonised countries use the idea of the nation-state?",
+          "answer": "Colonised peoples in Asia, Africa, and elsewhere built anti-imperial nationalist movements that demanded independent nation-states of their own. They drew on a sense of collective national unity forged in the struggle against European imperial rule. European ideas of nationalism were not simply copied — every people developed its own variety. But the central idea that societies should be organised into 'nation-states' came to be accepted as natural and universal, including in India, where it shaped the freedom movement against the British.",
+          "explanation": "The same idea Europe exported through conquest came back to dismantle European empires."
+        }
+      ],
+      "hard": [
+        {
+          "id": "6-1-7",
+          "type": "long",
+          "question": "Explain how nationalism in Europe changed character between the early nineteenth century and 1914.",
+          "answer": "In the early nineteenth century, European nationalism was closely allied with liberalism and democracy. Inspired by the French Revolution, revolutionaries like Mazzini dreamed of a brotherhood of free nations — a vision captured in Sorrieu's 1848 painting of peoples of the world marching together past the statue of Liberty. Romantic poets, philosophers, and folk collectors built nationalist sentiment through language and culture. The struggles of 1830 and 1848, the Greek war of independence, and the demands of the Frankfurt parliament were all about constitutions, freedom of the press, and self-government. After 1848, however, nationalism changed direction. Liberal middle-class movements failed, and conservative leaders like Bismarck took control of the nationalist project, using it to expand state power. Germany was unified by 'blood and iron' rather than by parliamentary vote. By the last quarter of the century nationalism had become a narrow, intolerant creed. European nations competed for colonies in Africa and Asia, manipulating the nationalism of subject peoples in other empires to serve their own imperial ambitions. The Balkan crisis showed this in its most explosive form: Slavic nationalisms broke from the Ottomans, fought one another, and were used by Russia, Germany, England, and Austria-Hungary to extend their own influence. Big-power rivalry over the Balkans finally detonated the First World War in 1914. Even so, the same nationalist idea — that peoples should govern themselves in their own nation-states — inspired anti-imperial movements in India and other colonies, who used the idea to throw out the very European powers that had first developed it. Nationalism, by 1914, had become a double-edged force: still capable of liberating peoples, but also of pushing them into world war.",
+          "explanation": "A strong answer captures the shift from liberal-democratic to conservative-imperialist nationalism and then ends with the anti-colonial twist."
+        }
+      ]
+    }
+  ]
+}
