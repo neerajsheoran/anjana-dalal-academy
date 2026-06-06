@@ -1,0 +1,176 @@
+{
+  "topics": [
+    {
+      "topic": "The Four Spheres of Earth",
+      "easy": [
+        {
+          "id": "ch13-t1-e1",
+          "type": "mcq",
+          "question": "The solid Earth — rocks, soil, mountains, and the interior — is called the:",
+          "options": ["Hydrosphere", "Atmosphere", "Geosphere", "Biosphere"],
+          "answer": "Geosphere",
+          "explanation": "The geosphere is the solid Earth: crust, mantle, outer core (liquid iron/nickel), and inner core (solid iron/nickel)."
+        },
+        {
+          "id": "ch13-t1-e2",
+          "type": "fill",
+          "question": "All of Earth's water — oceans, rivers, lakes, glaciers, groundwater — together make up the ______.",
+          "answer": "hydrosphere",
+          "explanation": "The hydrosphere includes all water on Earth in any form: liquid, ice, or vapour."
+        },
+        {
+          "id": "ch13-t1-e3",
+          "type": "mcq",
+          "question": "The most abundant gas in Earth's atmosphere is:",
+          "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+          "answer": "Nitrogen",
+          "explanation": "Earth's atmosphere is about 78% nitrogen (N₂), 21% oxygen (O₂), with much smaller amounts of other gases."
+        },
+        {
+          "id": "ch13-t1-e4",
+          "type": "mcq",
+          "question": "Most of Earth's water (about 97%) is found in:",
+          "options": ["Ice caps", "Rivers and lakes", "Oceans", "Groundwater"],
+          "answer": "Oceans",
+          "explanation": "Oceans hold about 97% of Earth's water. Most of the remaining 3% is in ice caps and glaciers. Only a small fraction is usable freshwater."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t1-m1",
+          "type": "short",
+          "question": "Describe the four major spheres of Earth and one example of how two of them interact.",
+          "answer": "The four spheres are: (1) GEOSPHERE — the solid Earth (crust, mantle, core). (2) HYDROSPHERE — all of Earth's water (oceans, rivers, ice). (3) ATMOSPHERE — the layer of gases surrounding Earth. (4) BIOSPHERE — the thin zone where life exists. INTERACTION EXAMPLE — water cycle: water evaporates from the OCEAN (hydrosphere) into the AIR (atmosphere), travels as clouds, and falls as rain onto LAND (geosphere). On land, the water is taken up by PLANTS (biosphere), used by ANIMALS, and eventually returns to rivers and the ocean. Every drop of rainwater touches all four spheres in its journey.",
+          "explanation": "The four spheres are constantly interconnected by flows of matter and energy."
+        },
+        {
+          "id": "ch13-t1-m2",
+          "type": "short",
+          "question": "Briefly describe the carbon cycle and identify one way humans have changed it.",
+          "answer": "The CARBON CYCLE moves carbon between the four spheres. CO₂ in the ATMOSPHERE is absorbed by PLANTS (biosphere) during photosynthesis. Plants build carbon into their tissues. Animals eat plants and incorporate the carbon into their own tissues; they release some CO₂ back to the atmosphere through respiration. When organisms die and decompose, carbon returns to the atmosphere or is buried in soil. Over millions of years, some buried carbon becomes coal, oil, and natural gas (fossil fuels — locked in the geosphere). Volcanic eruptions release CO₂ from deep Earth back to the atmosphere. Oceans absorb and release CO₂. HUMAN IMPACT: By burning fossil fuels (coal, oil, gas), humans release in a few centuries the carbon that nature locked up over hundreds of millions of years. This has raised atmospheric CO₂ from 280 ppm in 1750 to over 420 ppm today — the highest level in at least 800,000 years.",
+          "explanation": "The carbon cycle is dramatically disturbed by human burning of fossil fuels."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t1-h1",
+          "type": "long",
+          "question": "A child in Mumbai drinks a glass of water. Trace where that water might have been over a span of millions of years, mentioning at least three of the four spheres.",
+          "answer": "Same water molecules have cycled through Earth's systems for billions of years. The water molecules in that Mumbai glass have, at various times, been in many places: (1) ATMOSPHERE — at some point in the past, they were water vapour in a cloud, perhaps over the Indian Ocean, the Pacific, or even Antarctica. (2) HYDROSPHERE — they have been seawater in the Arabian Sea, in the Ganges River, in the Bay of Bengal; in a glacier in the Himalayas; in groundwater under Maharashtra. (3) BIOSPHERE — they have been inside countless organisms: in the bloodstream of a Mughal-era courtier; in the sap of a mango tree; in the bodies of fish in the Bay of Bengal; in the cells of bacteria living in the soil under a Maratha fort. (4) GEOSPHERE — they may have been chemically bonded into rocks or minerals at various times, only later released through weathering or volcanic activity. The water cycle is so persistent that the molecules in any drop you drink have cycled through Earth's systems for billions of years and have been part of essentially every form of life and every ocean. Indian civilisation — Indus, Vedic, Maurya, Mughal, modern — has drunk the same water. So has every species that ever lived. That single glass connects you to every era of Earth's history.",
+          "explanation": "Water cycling is so persistent that any drop has been to all corners of the Earth system over geological time."
+        }
+      ]
+    },
+    {
+      "topic": "Greenhouse Effect and Climate Change",
+      "easy": [
+        {
+          "id": "ch13-t2-e1",
+          "type": "mcq",
+          "question": "The natural greenhouse effect keeps Earth's average temperature at about:",
+          "options": ["-18°C", "0°C", "15°C", "30°C"],
+          "answer": "15°C",
+          "explanation": "Without the natural greenhouse effect, Earth's average temperature would be -18°C. With it, the average is about 15°C — warm enough for liquid water and life."
+        },
+        {
+          "id": "ch13-t2-e2",
+          "type": "fill",
+          "question": "The main greenhouse gas added to the atmosphere by human activity is ______ (the chemical formula is CO₂).",
+          "answer": "carbon dioxide",
+          "explanation": "CO₂ is the largest contributor to human-driven climate change. Other greenhouse gases include methane (CH₄), nitrous oxide (N₂O), and water vapour."
+        },
+        {
+          "id": "ch13-t2-e3",
+          "type": "mcq",
+          "question": "Which of these is NOT a major source of CO₂ from human activity?",
+          "options": [
+            "Burning coal in power plants",
+            "Petrol and diesel vehicles",
+            "Deforestation",
+            "Photosynthesis by plants"
+          ],
+          "answer": "Photosynthesis by plants",
+          "explanation": "Photosynthesis ABSORBS CO₂ from the atmosphere; it is the OPPOSITE of a source. The other options are all major sources of CO₂ emissions."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t2-m1",
+          "type": "short",
+          "question": "Explain how the greenhouse effect keeps Earth warm. Is the greenhouse effect a problem in itself?",
+          "answer": "How it works: Sunlight (mostly visible light) reaches Earth's surface and warms it. Earth then emits some of that energy back outward as INFRARED RADIATION (heat). Certain atmospheric gases — water vapour, carbon dioxide, methane, and others — absorb this infrared radiation rather than letting it escape directly to space. These gases then re-emit the energy in all directions, including back toward Earth's surface. The result is that Earth retains more heat than it would otherwise, keeping the planet at a comfortable average of about 15°C instead of a frozen -18°C. IS IT A PROBLEM? No, the natural greenhouse effect is essential — without it Earth would be uninhabitable. The PROBLEM is the ENHANCED greenhouse effect caused by humans adding extra CO₂, methane, and other gases. The extra gases trap MORE heat than the natural greenhouse effect, warming the planet beyond its normal range. The natural greenhouse effect is the thermostat; the enhanced greenhouse effect is the thermostat being pushed up too far.",
+          "explanation": "The greenhouse effect itself is essential; the enhancement by human-emitted CO₂ is the problem."
+        },
+        {
+          "id": "ch13-t2-m2",
+          "type": "short",
+          "question": "List at least four observable effects of climate change that are already being seen in India.",
+          "answer": "(1) HIMALAYAN GLACIERS MELTING — the 9,500 glaciers of the Indian Himalayas are losing ice rapidly, which will eventually reduce flows in the Ganges, Brahmaputra, and other rivers that depend on them. (2) RISING SEA LEVELS — coastal Indian cities like Mumbai, Chennai, Kolkata, and Kochi face increasing flood risk. The 2018 Kerala floods and 2023 Sikkim flash floods are examples of more extreme weather events. (3) SHIFTING MONSOON PATTERNS — Indian summers are getting more extreme, with more intense but also more erratic monsoon rains. Some regions get torrential rain; others face drought. (4) INCREASING HEAT WAVES — north Indian heat waves are getting longer and more severe; a Delhi heat wave in 2024 killed dozens. (5) AGRICULTURAL DISRUPTION — wheat yields are affected by hotter spring temperatures; rice cropping seasons are shifting. (6) BIODIVERSITY STRESS — many species cannot adapt fast enough to changing conditions, affecting ecosystems from forests to coral reefs.",
+          "explanation": "Climate change effects are already visible across India in multiple sectors."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t2-h1",
+          "type": "long",
+          "question": "Discuss the dilemma India faces with regard to climate change — including both responsibilities and rights — and describe two specific Indian actions to address climate change.",
+          "answer": "INDIA'S DILEMMA: India is the world's third-largest emitter of CO₂ in absolute terms, due to its large population (1.4 billion people). However, India's per-capita emissions are only about 1.9 tonnes per year — much lower than the US (15 tonnes), China (8 tonnes), or the global average (5 tonnes). Most of the CO₂ already in the atmosphere driving today's climate change was put there over the past 150 years by industrialised countries during their own industrialisation. India industrialised much later. RIGHTS: India argues that it has the right to continue developing and providing energy, jobs, and a better standard of living for its 1.4 billion people. Doing so requires increased energy use. It is unfair to expect India to constrain its development to fix a problem caused by others' historical emissions. RESPONSIBILITIES: India also faces severe vulnerability to climate change — coastal cities, monsoon-dependent agriculture, Himalayan glaciers — and has both moral and practical reasons to act. As a major emitter, India's choices affect global climate. INDIAN ACTIONS: (1) INTERNATIONAL SOLAR ALLIANCE — founded by India and France in 2015. Brings together over 100 sun-rich countries to expand solar power globally. (2) NATIONAL SOLAR MISSION AND NATIONAL TARGET — India aims to install 500 GW of non-fossil-fuel-based energy capacity by 2030, with a long-term goal of net-zero emissions by 2070. India is one of the largest installers of solar power in the world. Other actions: massive afforestation projects, expansion of electric vehicles, energy efficiency standards (BEE star ratings on appliances), and the UJALA programme that distributed millions of LED bulbs.",
+          "explanation": "The climate change challenge requires India to balance development with sustainability — a difficult but essential task."
+        }
+      ]
+    },
+    {
+      "topic": "Energy, Matter Cycles, and Earth's Future",
+      "easy": [
+        {
+          "id": "ch13-t3-e1",
+          "type": "mcq",
+          "question": "The primary source of energy that drives most of Earth's systems is:",
+          "options": ["Earth's interior heat", "The Sun", "The Moon", "Wind"],
+          "answer": "The Sun",
+          "explanation": "Solar energy drives the water cycle, photosynthesis, atmospheric circulation, ocean currents, and most other Earth processes. Earth's interior heat also contributes (volcanoes, plate tectonics)."
+        },
+        {
+          "id": "ch13-t3-e2",
+          "type": "fill",
+          "question": "Bacteria that convert atmospheric nitrogen into compounds plants can use are called nitrogen-______ bacteria.",
+          "answer": "fixing",
+          "explanation": "Nitrogen-fixing bacteria live in soil and in special root nodules of legume plants. They convert N₂ gas into compounds plants can absorb."
+        },
+        {
+          "id": "ch13-t3-e3",
+          "type": "mcq",
+          "question": "Which of these is a renewable source of energy?",
+          "options": ["Coal", "Petrol", "Solar power", "Natural gas"],
+          "answer": "Solar power",
+          "explanation": "Solar power, wind, hydro, geothermal, and biomass are renewable energy sources. Coal, petrol, and natural gas are fossil fuels and non-renewable."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch13-t3-m1",
+          "type": "short",
+          "question": "Why is the water cycle so important for life on Earth?",
+          "answer": "The water cycle is fundamental to life on Earth for several reasons. (1) IT DISTRIBUTES FRESHWATER — although 97% of Earth's water is salty ocean water, the water cycle constantly evaporates water (leaving the salt behind), forms clouds, and falls as freshwater rain across land. This is the only way most living things on land get freshwater. (2) IT TRANSPORTS NUTRIENTS — rivers carry minerals and nutrients from rocks and soil to plants and into oceans. (3) IT REGULATES TEMPERATURE — water has enormous heat capacity; oceans absorb solar heat in summer and release it in winter, moderating Earth's climate. (4) IT CONNECTS THE FOUR SPHERES — water evaporates from oceans (hydrosphere) into air (atmosphere), falls onto land (geosphere), is used by plants (biosphere), and returns to oceans. Disrupting the water cycle, through deforestation, climate change, or river pollution, has cascading effects on all Earth's systems.",
+          "explanation": "The water cycle is the primary mover of freshwater, nutrients, and heat across Earth."
+        },
+        {
+          "id": "ch13-t3-m2",
+          "type": "short",
+          "question": "Why is India investing heavily in solar energy? What are two challenges of doing so on a large scale?",
+          "answer": "WHY: (1) India is sunny — it receives about 300 sunny days a year, making solar a natural energy resource. (2) Solar reduces dependence on coal and imported fossil fuels, improving energy security. (3) Solar produces NO CO₂ emissions during operation, helping India meet its climate goals and reduce air pollution. (4) Solar projects can be built quickly and provide rural electrification. (5) The cost of solar panels has fallen dramatically — solar electricity is now often cheaper than coal-fired electricity. CHALLENGES: (1) INTERMITTENCY — solar produces electricity only during daylight hours. Grid managers need to balance supply with battery storage or other backup. (2) LAND USE — large solar farms require significant land, sometimes competing with agriculture or forests. (3) MANUFACTURING — most solar panels are currently imported (largely from China); India is working to build its own manufacturing capacity. (4) GRID UPGRADES — moving electricity from solar-rich states to demand centres requires expanded transmission infrastructure. (5) END-OF-LIFE — solar panels last about 25 years; recycling and waste management need to scale up.",
+          "explanation": "Solar is a major opportunity for India but requires careful planning to address its specific challenges."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch13-t3-h1",
+          "type": "long",
+          "question": "Estimate, with reasoning, the monthly CO₂ emissions of a typical Indian middle-class family of four. Use the following data: average electricity use 250 kWh per month (1 kWh = 0.7 kg CO₂ in India); two-wheeler runs 30 km per day at 35 km/litre (1 L petrol = 2.3 kg CO₂); 1 LPG cylinder per month (cylinder = 42 kg CO₂). Then suggest one realistic change that could reduce these emissions by at least 20%.",
+          "answer": "CALCULATIONS: ELECTRICITY: 250 kWh/month × 0.7 kg CO₂/kWh = 175 kg CO₂/month. PETROL: 30 km/day × 30 days/month × (1 L / 35 km) = 25.7 L/month. 25.7 × 2.3 kg CO₂/L ≈ 59 kg CO₂/month. LPG: 1 × 42 = 42 kg CO₂/month. TOTAL = 175 + 59 + 42 = 276 kg CO₂/month, or about 3,300 kg CO₂/year. (Note: this excludes air travel, public transport, embedded emissions of food and goods, which can multiply the total 2-3 fold.) ONE REALISTIC CHANGE: SWITCH ALL LIGHTING TO LED BULBS. A typical incandescent or CFL home uses about 30% of its electricity on lighting. Switching to LEDs can cut lighting electricity by 80%, reducing total monthly electricity by about 24% — which translates to ~42 kg CO₂/month saved (about 500 kg/year). India's UJALA programme distributed millions of LED bulbs precisely because this simple change is one of the most cost-effective ways to reduce home emissions. Other valid changes (with reasonable estimates): installing a solar water heater (saves ~10% of monthly electricity), replacing an old fridge with a 5-star-rated one (saves ~5%), shifting more trips to public transport or cycling (saves on petrol). Combinations of changes can easily reduce family emissions by 20-30% with little lifestyle impact.",
+          "explanation": "Real-world carbon footprint calculations show how lifestyle choices add up — and how relatively small changes (like switching to LEDs) can produce significant reductions."
+        }
+      ]
+    }
+  ]
+}
