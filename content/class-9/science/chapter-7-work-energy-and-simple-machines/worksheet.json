@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "topic": "Work and Energy",
+      "easy": [
+        {
+          "id": "ch7-t1-e1",
+          "type": "mcq",
+          "question": "The SI unit of work is the:",
+          "options": ["Newton", "Joule", "Watt", "Kilogram"],
+          "answer": "Joule",
+          "explanation": "1 joule = 1 newton × 1 metre. The joule is the SI unit of work and energy."
+        },
+        {
+          "id": "ch7-t1-e2",
+          "type": "fill",
+          "question": "If a force of 20 N moves an object 3 m in the direction of the force, the work done is ______ joules.",
+          "answer": "60",
+          "explanation": "W = F × s = 20 × 3 = 60 J."
+        },
+        {
+          "id": "ch7-t1-e3",
+          "type": "mcq",
+          "question": "Which of these situations involves zero work being done in the physics sense?",
+          "options": [
+            "Pushing a wall that does not move",
+            "Pushing a trolley across a floor",
+            "Lifting a book off the floor",
+            "Pulling a sled up a hill"
+          ],
+          "answer": "Pushing a wall that does not move",
+          "explanation": "Work in physics requires displacement. If the wall does not move, no work is done — no matter how hard you push."
+        },
+        {
+          "id": "ch7-t1-e4",
+          "type": "mcq",
+          "question": "The kinetic energy of an object of mass m moving with velocity v is:",
+          "options": ["m × v", "½ × m × v", "½ × m × v²", "m × v²"],
+          "answer": "½ × m × v²",
+          "explanation": "KE = ½ × m × v². Note the v² — doubling speed quadruples kinetic energy."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t1-m1",
+          "type": "short",
+          "question": "Calculate the kinetic energy of a 1500 kg car moving at 20 m/s.",
+          "answer": "KE = ½ × m × v² = ½ × 1500 × 20² = ½ × 1500 × 400 = 300,000 J = 300 kJ. So the car has 300 kilojoules of kinetic energy.",
+          "explanation": "Use ½mv² with mass in kg and velocity in m/s; result in joules."
+        },
+        {
+          "id": "ch7-t1-m2",
+          "type": "short",
+          "question": "A 2 kg book is lifted from the floor onto a shelf 1.5 m high. (Take g = 10 m/s².) Calculate the gravitational potential energy gained.",
+          "answer": "PE gained = mgh = 2 × 10 × 1.5 = 30 J. So the book gains 30 joules of gravitational potential energy.",
+          "explanation": "Gravitational PE = mgh with mass in kg, g ≈ 10 m/s², and height in m."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t1-h1",
+          "type": "long",
+          "question": "A 50 kg crate is dragged 10 m along a horizontal floor by a force of 100 N applied at an angle of 0° (parallel to the floor). The coefficient of friction is 0.2. Calculate (a) the work done by the applied force, (b) the work done by friction (g = 10 m/s²).",
+          "answer": "(a) Work done by the applied force: W = F × s = 100 × 10 = 1000 J. (b) Work done by friction: The friction force equals coefficient × normal force = 0.2 × (50 × 10) = 100 N opposing the motion. Work done by friction = friction force × distance = 100 × 10 = 1000 J. But because friction opposes the motion, it does NEGATIVE work, so the work done by friction is -1000 J. Net work on the crate = 1000 + (-1000) = 0 J, meaning the crate's kinetic energy does not change (it moves at constant velocity).",
+          "explanation": "Friction does negative work because it opposes motion. Net work = applied work + friction work."
+        }
+      ]
+    },
+    {
+      "topic": "Conservation of Energy and Power",
+      "easy": [
+        {
+          "id": "ch7-t2-e1",
+          "type": "mcq",
+          "question": "The law of conservation of energy states that:",
+          "options": [
+            "Energy can be created if needed",
+            "Energy can be destroyed in friction",
+            "Energy can be transformed but not created or destroyed",
+            "Energy is the same as power"
+          ],
+          "answer": "Energy can be transformed but not created or destroyed",
+          "explanation": "In a closed system, the total energy remains constant. It can change forms (PE to KE, KE to heat, etc.) but the total never changes."
+        },
+        {
+          "id": "ch7-t2-e2",
+          "type": "fill",
+          "question": "The SI unit of power is the ______.",
+          "answer": "watt",
+          "explanation": "1 watt = 1 joule per second. Named after James Watt, the Scottish engineer who improved the steam engine."
+        },
+        {
+          "id": "ch7-t2-e3",
+          "type": "mcq",
+          "question": "An appliance rated at 1000 watts runs for 2 hours. The energy consumed is:",
+          "options": ["500 Wh", "1000 Wh", "2000 Wh", "1000 J"],
+          "answer": "2000 Wh",
+          "explanation": "Energy = Power × time = 1000 W × 2 h = 2000 Wh = 2 kWh (= 2 units of electricity)."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t2-m1",
+          "type": "short",
+          "question": "A 5 kg ball is dropped from a height of 20 m. Just before hitting the ground, what is its kinetic energy? (Take g = 10 m/s², ignore air resistance.)",
+          "answer": "Using conservation of energy: the gravitational PE at the start equals the KE just before hitting the ground. PE at start = mgh = 5 × 10 × 20 = 1000 J. So KE just before impact = 1000 J. (Alternatively, find the velocity from v² = u² + 2as with u = 0, a = g = 10, s = 20: v² = 400, v = 20 m/s. Then KE = ½ × 5 × 20² = ½ × 5 × 400 = 1000 J — same answer.)",
+          "explanation": "Conservation of energy lets you solve for KE directly without computing velocity first."
+        },
+        {
+          "id": "ch7-t2-m2",
+          "type": "short",
+          "question": "A pump lifts 100 kg of water to a height of 10 m in 5 seconds. Calculate the power of the pump (g = 10 m/s²).",
+          "answer": "Work done = mgh = 100 × 10 × 10 = 10,000 J = 10 kJ. Power = Work / time = 10,000 / 5 = 2000 W = 2 kW. So the pump has a power of 2 kilowatts.",
+          "explanation": "Power = work done per unit time."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t2-h1",
+          "type": "long",
+          "question": "A household runs a 200 W refrigerator 24 hours a day, a 60 W ceiling fan 12 hours a day, a 1500 W water heater for 30 minutes a day, and a 9 W LED bulb 6 hours a day. Calculate (a) the total energy consumption in kWh per day, (b) the cost per day at ₹6 per unit (kWh).",
+          "answer": "(a) Refrigerator: 200 W × 24 h = 4800 Wh = 4.8 kWh. Ceiling fan: 60 W × 12 h = 720 Wh = 0.72 kWh. Water heater: 1500 W × 0.5 h = 750 Wh = 0.75 kWh. LED bulb: 9 W × 6 h = 54 Wh = 0.054 kWh. Total = 4.8 + 0.72 + 0.75 + 0.054 = 6.324 kWh per day, approximately 6.3 units. (b) Cost = 6.3 × 6 = ₹37.8 per day. Over a month (30 days), this is about ₹1134.",
+          "explanation": "Real-world electricity-bill calculations multiply the power of each appliance by its daily usage time, sum them, and apply the unit rate."
+        }
+      ]
+    },
+    {
+      "topic": "Simple Machines",
+      "easy": [
+        {
+          "id": "ch7-t3-e1",
+          "type": "mcq",
+          "question": "Which of the following is NOT a simple machine?",
+          "options": ["Lever", "Pulley", "Inclined plane", "Watch"],
+          "answer": "Watch",
+          "explanation": "The six simple machines are lever, pulley, inclined plane, wheel & axle, wedge, and screw. A watch is a complex machine built from many simple-machine components."
+        },
+        {
+          "id": "ch7-t3-e2",
+          "type": "fill",
+          "question": "The point about which a lever rotates is called the ______.",
+          "answer": "fulcrum",
+          "explanation": "The fulcrum is the fixed pivot point of a lever. A see-saw's middle support is its fulcrum."
+        },
+        {
+          "id": "ch7-t3-e3",
+          "type": "mcq",
+          "question": "Why is a long ramp easier to use than a short steep one to lift a heavy object?",
+          "options": [
+            "A long ramp reduces total work",
+            "A long ramp requires more force",
+            "A long ramp reduces the force needed, even though distance increases",
+            "A long ramp eliminates friction completely"
+          ],
+          "answer": "A long ramp reduces the force needed, even though distance increases",
+          "explanation": "A simple machine like an inclined plane trades force for distance — same work, but spread over a longer path so less force is needed at any moment."
+        }
+      ],
+      "medium": [
+        {
+          "id": "ch7-t3-m1",
+          "type": "short",
+          "question": "Why is it said that a simple machine does NOT reduce the work required to do a task?",
+          "answer": "A simple machine reduces the FORCE you need to apply, but it requires you to apply that force over a LONGER distance. The total work (force × distance) stays approximately the same. For example, lifting a 100 kg load 1 m straight up requires 1000 N over 1 m = 1000 J. Using a 4 m ramp to raise the same load 1 m vertically requires only 250 N over 4 m = 1000 J — same total work. In a real situation, friction means the machine requires SLIGHTLY MORE work than the bare minimum, never less. So a simple machine makes work easier to perform, but cannot magically reduce the total energy needed.",
+          "explanation": "Force × distance = work; simple machines trade smaller force for longer distance."
+        },
+        {
+          "id": "ch7-t3-m2",
+          "type": "short",
+          "question": "Give one practical example of each: lever, inclined plane, pulley, wheel and axle.",
+          "answer": "Lever: a see-saw, scissors, crowbar, or claw of a hammer. Inclined plane: the ramp at a building entrance, a winding road climbing a hill, a slope for loading goods into a truck. Pulley: the rope-and-pulley system at the village well for drawing water, a flagpole, a gym weight machine. Wheel and axle: a door handle, a screwdriver, a steering wheel, a water tap.",
+          "explanation": "Each simple machine appears in many everyday objects."
+        }
+      ],
+      "hard": [
+        {
+          "id": "ch7-t3-h1",
+          "type": "long",
+          "question": "A 60 kg person needs to lift a 200 kg gas cylinder onto the back of a truck that is 1.2 m off the ground. Lifting straight up is impossible. Design a solution using an inclined plane: (a) Suggest a reasonable ramp length, (b) Calculate the force the person would need to apply (ignoring friction), (c) Calculate the work done. (Take g = 10 m/s².)",
+          "answer": "(a) The person can comfortably push with a force less than their own weight (60 × 10 = 600 N). Suggest a ramp 4 m long, giving a 1.2 m / 4 m = 0.3 slope (30% grade). (b) Force needed up the ramp: Use the trade-off — force × length of ramp = weight × height lifted. So F × 4 = 2000 × 1.2 → F = 2400 / 4 = 600 N. With the 4 m ramp, the person needs 600 N — just within their lifting capacity. (c) Work done = F × s = 600 × 4 = 2400 J. Same as the work to lift the cylinder straight up: 2000 N × 1.2 m = 2400 J. The ramp made the task possible by reducing force at the cost of longer distance, but did not change the total work required.",
+          "explanation": "Real engineering decisions use the inclined plane to convert an impossible direct lift into a feasible push along a slope."
+        }
+      ]
+    }
+  ]
+}
