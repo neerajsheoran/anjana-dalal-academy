@@ -48,6 +48,14 @@ export default async function ChapterPage({
   // giving up. Note that we only do flat-subject lookups here — nested
   // chapters are served by the [subchapter] route.
   let chapterMeta = getChapter(chapter);
+
+  // If the chapter belongs to a multi-book subject (meta.book is set)
+  // but the URL didn't include the book, bounce to the canonical nested
+  // URL. Old bookmarks and subject-first redirects land here.
+  if (chapterMeta?.book) {
+    redirect(`/class/${classId}/${subject}/${chapterMeta.book}/${chapter}`);
+  }
+
   if (!chapterMeta) {
     const newSlug = findRedirect(classId, subject, chapter);
     if (newSlug) {

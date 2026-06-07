@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { getClassesForSubject, SUBJECTS, getSubjectLabel, getChapters } from "@/lib/content";
 import { SubjectId } from "@/lib/types";
 import Breadcrumb from "@/components/layout/Breadcrumb";
@@ -9,6 +10,12 @@ export default async function SubjectPage({
   params: Promise<{ subjectId: SubjectId }>;
 }) {
   const { subjectId } = await params;
+
+  // Political Science is now a book under Social Science. Bounce old
+  // subject-first bookmarks to the new umbrella.
+  if ((subjectId as string) === "political-science") {
+    redirect("/subject/social-science");
+  }
   const subjectLabel = getSubjectLabel(subjectId);
   const subjectInfo = SUBJECTS.find((s) => s.id === subjectId);
   const classes = getClassesForSubject(subjectId);
