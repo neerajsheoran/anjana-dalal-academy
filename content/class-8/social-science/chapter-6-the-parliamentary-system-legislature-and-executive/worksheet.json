@@ -1,0 +1,369 @@
+{
+  "chapterRef": "class-8/social-science/chapter-6-the-parliamentary-system-legislature-and-executive/worksheet",
+  "topics": [
+    {
+      "topic": "The Composition of Parliament",
+      "easy": [
+        {
+          "id": "T-1-1",
+          "type": "mcq",
+          "question": "The Parliament of India consists of:",
+          "options": [
+            "Only the Lok Sabha",
+            "The Lok Sabha and the Rajya Sabha",
+            "The President, the Lok Sabha, and the Rajya Sabha",
+            "The Prime Minister, the Cabinet, and the Lok Sabha"
+          ],
+          "answer": "The President, the Lok Sabha, and the Rajya Sabha",
+          "explanation": "The Indian Parliament is made up of three parts: the President of India, the Lok Sabha (House of the People / Lower House), and the Rajya Sabha (Council of States / Upper House)."
+        },
+        {
+          "id": "T-1-2",
+          "type": "mcq",
+          "question": "A legislature with two houses is called:",
+          "options": ["Unicameral", "Bicameral", "Tricameral", "Multilateral"],
+          "answer": "Bicameral",
+          "explanation": "'Bi' means two and 'cameral' means chamber/house. India's Union Parliament is bicameral."
+        },
+        {
+          "id": "T-1-3",
+          "type": "fill",
+          "question": "The Lok Sabha currently has _______ elected seats, while the maximum envisaged by the Constitution is 550.",
+          "answer": "543",
+          "explanation": "The current Lok Sabha has 543 elected seats. The Constitution allows for a maximum of 550 members."
+        },
+        {
+          "id": "T-1-4",
+          "type": "true-false",
+          "question": "The Rajya Sabha can have up to 245 members, including 12 who are nominated by the President.",
+          "answer": "True",
+          "explanation": "The Rajya Sabha has up to 245 members — 233 elected by State Legislative Assemblies and Union Territories, and 12 nominated by the President for distinction in fields like literature, science, art, and social service."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-1-5",
+          "type": "short",
+          "question": "Explain the key difference between how members of the Lok Sabha and the Rajya Sabha are chosen.",
+          "answer": "Members of the Lok Sabha are elected DIRECTLY by the people of India. Every adult citizen aged 18 and above votes in their constituency for an MP. There are 543 such elected Lok Sabha MPs serving a five-year term. Members of the Rajya Sabha, on the other hand, are elected INDIRECTLY. The elected members of each state's Legislative Assembly (MLAs) vote for Rajya Sabha members through a proportional system. In addition, 12 Rajya Sabha members are nominated by the President for distinction in literature, science, art, or social service. So the Lok Sabha represents the people, while the Rajya Sabha represents the states.",
+          "explanation": "Tests the core distinction between direct (Lok Sabha) and indirect (Rajya Sabha) election."
+        },
+        {
+          "id": "T-1-6",
+          "type": "short",
+          "question": "Why is the Rajya Sabha sometimes called a 'permanent body'?",
+          "answer": "The Rajya Sabha is called a permanent body because, unlike the Lok Sabha, it is never fully dissolved. One-third of its members retire every two years, and fresh members are elected to take their place. So at any given moment, there are always Rajya Sabha members in office. Each member serves a six-year term. This continuity is one reason it acts as a steadier, more deliberative house compared to the Lok Sabha, which can be dissolved before its full term and entirely re-elected.",
+          "explanation": "Tests understanding of the permanent-rotation feature of the Rajya Sabha."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-1-7",
+          "type": "long",
+          "question": "Why did India's Constituent Assembly decide to have a bicameral Parliament rather than just one house? Give at least four reasons.",
+          "answer": "The Constituent Assembly debated bicameralism extensively in 1947-49 and decided on two houses for several powerful reasons. (1) States need a voice: India is a federation made up of distinct states with their own identities and interests. The Lok Sabha represents people based on population (so Uttar Pradesh sends 80 MPs and Sikkim sends 1), but every state — regardless of size — needs a steadier separate voice. The Rajya Sabha — the Council of States — provides this. (2) A second look at every bill: When the Lok Sabha passes a bill in the heat of a political moment, the Rajya Sabha can examine it more calmly, suggest amendments, and force more debate. Two houses give every bill two chances to be refined. (3) Continuity: The Lok Sabha can be dissolved before its full five-year term — there have been many early elections in Indian history. The Rajya Sabha is a permanent body — only one-third retires every two years. This ensures the legislative process never grinds to a complete halt. (4) Expertise: The President can nominate 12 Rajya Sabha members for distinction in literature, science, art, or social service. So experts like Lata Mangeshkar, Sachin Tendulkar, and M.S. Subbulakshmi could enter Parliament without fighting an election, bringing specialist knowledge. (5) Lessons from other federations: Most large federal democracies — the United States (Senate + House), Britain (Lords + Commons), Germany (Bundesrat + Bundestag) — have two houses. The Constituent Assembly saw bicameralism as the global norm for federal countries. The trade-off is that lawmaking becomes slower — but slowness is precisely the point when laws affect over a billion people.",
+          "explanation": "A comprehensive question that synthesises the historical, federal, and functional arguments for bicameralism."
+        }
+      ]
+    },
+    {
+      "topic": "The Speaker, Chairperson, and Presiding Officers",
+      "easy": [
+        {
+          "id": "T-2-1",
+          "type": "mcq",
+          "question": "Who presides over the Lok Sabha?",
+          "options": ["The Prime Minister", "The President", "The Speaker", "The Vice President"],
+          "answer": "The Speaker",
+          "explanation": "The Speaker, elected by Lok Sabha members from among themselves, conducts sessions, allows members to speak, maintains discipline, and ensures rules are followed."
+        },
+        {
+          "id": "T-2-2",
+          "type": "mcq",
+          "question": "Who is the ex-officio Chairperson of the Rajya Sabha?",
+          "options": ["The President", "The Vice President", "The Prime Minister", "The Chief Justice of India"],
+          "answer": "The Vice President",
+          "explanation": "The Constitution makes the Vice President of India the ex-officio Chairperson of the Rajya Sabha."
+        },
+        {
+          "id": "T-2-3",
+          "type": "fill",
+          "question": "Translation services in Parliament were originally available in 12 Indian languages and now include _______ additional languages (Bodo, Dogri, Maithili, Manipuri, Urdu, and Sanskrit).",
+          "answer": "six",
+          "explanation": "Six languages — Bodo, Dogri, Maithili, Manipuri, Urdu, and Sanskrit — have recently been added to the previous 12, bringing the total to 18, with more expected in the future."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-2-4",
+          "type": "short",
+          "question": "What is the Sengol, and why is it placed near the Speaker's chair in the new Lok Sabha?",
+          "answer": "The Sengol is a gold-plated, silver sceptre dating back to the Chola period of South Indian history. It was traditionally handed to new rulers as a reminder that power must be guided by dharma and righteousness. At the top of the Sengol sits Nandi, symbolising justice. On 14 August 1947, on the eve of Indian Independence, the Sengol was symbolically handed over to Pandit Jawaharlal Nehru, India's first Prime Minister, to mark the transfer of power from the British. When the new Parliament Building was inaugurated in May 2023, the Sengol was placed near the Speaker's chair in the new Lok Sabha as a symbol of righteous and just rule — reminding all who pass laws that power must always be guided by dharma.",
+          "explanation": "Tests cultural-historical knowledge about a key symbol in the new Parliament."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-2-5",
+          "type": "long",
+          "question": "Discuss the role of the Speaker of the Lok Sabha. Why is it said that a good Speaker rises above party loyalty once elected?",
+          "answer": "The Speaker of the Lok Sabha is one of the most powerful constitutional officers in India. The Speaker is elected by Lok Sabha members from among themselves, usually at the start of a new Lok Sabha. The role includes: (1) Conducting daily sittings — opening proceedings, calling speakers, putting motions to vote, announcing results. (2) Maintaining discipline — keeping order in a House of 543 elected representatives who often disagree intensely; the Speaker can name and even temporarily expel members who refuse to follow the rules. (3) Deciding points of order — when MPs raise procedural objections, the Speaker rules on them, and the ruling is generally final. (4) Certifying bills — most importantly, the Speaker certifies whether a bill is a Money Bill, a decision that has major procedural consequences. (5) Allotting time for debates — within Parliament's overall calendar, the Speaker decides how much time each bill and each party gets. (6) Representing the Lok Sabha — when interacting with the Rajya Sabha, the President, or foreign legislators. Why must a good Speaker rise above party loyalty? The Speaker is elected by majority — typically a member of the ruling party. But once in the chair, the Speaker is meant to be neutral. They must give the Opposition fair time, allow critical questions of the government, protect MPs' right to speak, and rule on procedural matters without favour. If the Speaker visibly takes sides, the Lok Sabha loses its legitimacy as a deliberative body. Historically, some Speakers have been praised for impartiality and some criticised for partisanship. By convention in the British tradition (which India followed), the Speaker resigns from their political party once elected. India has not always followed this convention, but the spirit — that the Speaker belongs to the whole House, not just one party — remains a core principle of parliamentary democracy.",
+          "explanation": "Synthesis question on the powers, daily functioning, and constitutional ethics of the Speaker."
+        }
+      ]
+    },
+    {
+      "topic": "How a Bill Becomes a Law",
+      "easy": [
+        {
+          "id": "T-3-1",
+          "type": "mcq",
+          "question": "A draft of a proposed law is called:",
+          "options": ["An Act", "A Gazette", "A Bill", "A Motion"],
+          "answer": "A Bill",
+          "explanation": "A bill is a draft of a proposed law that needs to be approved by Parliament before it can be enacted into law as an Act."
+        },
+        {
+          "id": "T-3-2",
+          "type": "mcq",
+          "question": "After a bill is passed by both houses of Parliament, what is the next step before it becomes an Act?",
+          "options": [
+            "Approval by the Supreme Court",
+            "Assent by the President of India",
+            "Approval by half the state legislatures",
+            "Publication in newspapers"
+          ],
+          "answer": "Assent by the President of India",
+          "explanation": "Once both houses pass a bill, it goes to the President for assent. Only after the President signs does the bill become an Act."
+        },
+        {
+          "id": "T-3-3",
+          "type": "fill",
+          "question": "After receiving the President's assent, an Act is published in the official _______ before coming into force.",
+          "answer": "Gazette",
+          "explanation": "The Gazette is the official government publication that announces legal documents and official information, including newly passed Acts."
+        },
+        {
+          "id": "T-3-4",
+          "type": "true-false",
+          "question": "Every bill in Parliament must be referred to a Standing Committee before being voted on.",
+          "answer": "False",
+          "explanation": "Many important bills are referred to Standing Committees, but the Constitution does not require every bill to be. Some are passed without committee referral, though this is generally considered less ideal."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-3-5",
+          "type": "short",
+          "question": "What is a Standing Committee, and why is referring a bill to one usually a good idea?",
+          "answer": "A Standing Committee is a permanent committee of Members of Parliament that scrutinises the work of the government, examines proposed bills, and asks questions about ministerial actions. Although the specific MPs may change over time, the committee as a structure remains. Standing Committees typically include MPs from different political parties, which gives them a multi-partisan view of issues. Referring a bill to a Standing Committee is usually a good idea because: (1) the committee can study the bill in depth without the time pressure of the full House; (2) it can call experts, citizens, and affected groups to give their views; (3) it can suggest amendments that improve the bill before it is debated in the full House; (4) the multi-party composition means the bill is examined from different political angles before voting. The result is a more thoughtful, better-refined law.",
+          "explanation": "Tests both definition and the purpose of committee review."
+        },
+        {
+          "id": "T-3-6",
+          "type": "short",
+          "question": "Trace the main steps in the journey of the Right to Education (RTE) Act, 2009, from idea to law.",
+          "answer": "The RTE Act has its roots in the Directive Principles of State Policy in the Indian Constitution (1950), which called for free and compulsory education for children up to age 14. Despite the Constitution's vision, this was not implemented within the first decade. In the early 1990s, someone argued in court that the right to education was inherently part of the Right to Life under the Fundamental Rights. Parliamentary action began with the 86th Constitutional Amendment Act, 2002, which inserted Article 21A — making free and compulsory education for children aged 6-14 a Fundamental Right. Six years later, the RTE Bill was tabled in the Rajya Sabha. A Standing Committee studied it and suggested modifications. The major debate concerned funding — new schools, infrastructure, and teachers for millions of children would be costly. By 2008, MPs determined that the time had come. After the 2009 general elections, the new government pursued the matter, the bill was passed in the Lok Sabha in August 2009, received the President's assent, and was published in the Gazette — becoming the RTE Act, 2009. Today it has enabled the construction of new schools, provided free books and uniforms, and given millions of Indian children a legal pathway to school education.",
+          "explanation": "Walks through a real-world case to demonstrate the full lawmaking journey."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-3-7",
+          "type": "long",
+          "question": "What is a Money Bill, and how does its journey through Parliament differ from that of an ordinary bill?",
+          "answer": "A Money Bill is a special type of bill that deals exclusively with financial matters such as taxation, government borrowing, custody of the Consolidated Fund of India, government expenditure, and similar issues. The Constitution defines Money Bills strictly under Article 110 — not every bill with financial implications counts. The Speaker of the Lok Sabha certifies whether a bill is a Money Bill, and this certification is final. Money Bills are treated differently from ordinary bills in important ways: (1) Origin in Lok Sabha only — a Money Bill can be introduced ONLY in the Lok Sabha; it cannot start in the Rajya Sabha. This reflects the principle that money powers belong to the directly elected representatives of the people. (2) Requires Presidential recommendation — even introducing a Money Bill in the Lok Sabha needs the prior recommendation of the President. (3) Rajya Sabha cannot reject — once the Lok Sabha passes a Money Bill and sends it to the Rajya Sabha, the Rajya Sabha can only suggest changes; it cannot reject or substantially amend the bill. The Lok Sabha is free to accept or reject those suggestions. (4) Time limit — the Rajya Sabha must return a Money Bill within 14 days; otherwise it is deemed passed. (5) President cannot return — while the President can ask Parliament to reconsider an ordinary bill, this is not possible with a Money Bill. By contrast, an ordinary bill can originate in either house, can be substantively amended or rejected by both, and the President has somewhat more flexibility. Why this special treatment? The framers believed that the power to tax and spend public money is the most fundamental democratic power and should rest unambiguously with the directly elected Lok Sabha — the chamber most accountable to the people. Giving the Rajya Sabha (which is indirectly elected) equal power over money could weaken popular accountability over the most sensitive area of governance.",
+          "explanation": "Tests the nuanced differences between ordinary bills and Money Bills, and the constitutional reasoning behind them."
+        }
+      ]
+    },
+    {
+      "topic": "The Executive — President, PM, and Council of Ministers",
+      "easy": [
+        {
+          "id": "T-4-1",
+          "type": "mcq",
+          "question": "The Union Executive in India consists of:",
+          "options": [
+            "Only the Prime Minister",
+            "The Lok Sabha and Rajya Sabha",
+            "The President, the Vice President, and the Council of Ministers headed by the PM",
+            "The Supreme Court and the Council of Ministers"
+          ],
+          "answer": "The President, the Vice President, and the Council of Ministers headed by the PM",
+          "explanation": "The Union Executive includes the President, the Vice President, and the Council of Ministers led by the Prime Minister."
+        },
+        {
+          "id": "T-4-2",
+          "type": "mcq",
+          "question": "Who is the de facto (real, working) executive authority in India?",
+          "options": [
+            "The President",
+            "The Vice President",
+            "The Prime Minister",
+            "The Chief Justice of India"
+          ],
+          "answer": "The Prime Minister",
+          "explanation": "The President is the nominal head of the executive, but the Prime Minister and the Council of Ministers actually run the government. The PM is the de facto executive authority."
+        },
+        {
+          "id": "T-4-3",
+          "type": "fill",
+          "question": "The Council of Ministers is collectively responsible to the _______ ",
+          "answer": "Lok Sabha",
+          "explanation": "Collective responsibility means the entire Council of Ministers stands or falls together; they are all accountable to the Lok Sabha."
+        },
+        {
+          "id": "T-4-4",
+          "type": "true-false",
+          "question": "The President appoints the Prime Minister, who is usually the leader of the majority party or coalition in the Lok Sabha.",
+          "answer": "True",
+          "explanation": "The President formally appoints the PM, but by convention the leader of the majority party or coalition in the Lok Sabha must be invited. This is the parliamentary principle."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-4-5",
+          "type": "short",
+          "question": "Explain the role of civil servants (bureaucrats) in running the government.",
+          "answer": "Civil servants — also called administrators or bureaucrats — are permanent government officers selected through tough national exams like the UPSC. The IAS, IPS, IFS, and IRS are among the most famous services. While ministers come and go after each election, civil servants stay in office regardless of which party rules. Their job is to: (1) implement the policies and laws made by ministers and Parliament; (2) run the day-to-day work of ministries and government departments; (3) ensure that schemes reach the people on the ground — for example, an IAS officer might be the District Collector responsible for implementing PM Awas Yojana in a district; (4) provide ministers with expert advice based on their long experience. This balance gives India both democratic accountability (through elected ministers) and administrative continuity (through permanent officers). Civil servants work UNDER the direction of ministers — they do not set policy, but they make policy work.",
+          "explanation": "Tests understanding of the role of permanent bureaucracy alongside elected ministers."
+        },
+        {
+          "id": "T-4-6",
+          "type": "short",
+          "question": "Why is the story of Lal Bahadur Shastri's 1956 resignation often cited as an example of moral responsibility in parliamentary democracy?",
+          "answer": "In 1956, Lal Bahadur Shastri was the Railway Minister in Jawaharlal Nehru's government. A serious train accident took many lives. Shastri was not personally to blame for the accident — no minister can be at the controls of every train. But Shastri believed deeply that a minister must take MORAL responsibility for whatever happens in their ministry, even if they had no direct role in it. He offered his resignation to PM Nehru. Nehru declined it at first, but Shastri insisted, and his resignation was finally accepted. This act is celebrated because it embodies a high standard of ministerial accountability — the idea that holding power means accepting responsibility for the consequences of that power, not just the achievements. It contrasts with the modern trend of ministers refusing to resign even after major failures in their ministries. Shastri's example is remembered every time accountability is debated in India. Within a few years he became Prime Minister himself, partly because the country remembered his integrity.",
+          "explanation": "A case study testing the ethical dimension of ministerial accountability."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-4-7",
+          "type": "long",
+          "question": "Compare and contrast the roles of the President and the Prime Minister of India. Why does India have both?",
+          "answer": "The President and the Prime Minister are both at the top of India's executive, but they play very different roles. THE PRESIDENT — Head of State. The President is the constitutional and ceremonial head of India. The President's main functions are: appointing the Prime Minister and other ministers; summoning, proroguing, and dissolving Parliament; giving assent to bills passed by Parliament; serving as Supreme Commander of the Armed Forces; receiving ambassadors and foreign heads of state; and exercising discretionary powers in unusual situations (such as when no party has a clear majority). The President is INDIRECTLY elected by an electoral college of elected MPs and MLAs for a 5-year term. The President acts on the ADVICE of the Council of Ministers in almost all cases. The current President is Smt. Droupadi Murmu, India's second woman President and the first tribal President. THE PRIME MINISTER — Head of Government. The PM is the de facto executive authority. The PM leads the Council of Ministers, chairs Cabinet meetings, decides ministerial portfolios, advises the President on major decisions, coordinates work across ministries, shapes national policy (Make in India, Digital India, etc.), and represents India abroad in working terms. The PM is the leader of the majority party or coalition in the Lok Sabha and serves with its support. WHY HAVE BOTH? Three reasons. (1) Head of State vs Head of Government: A modern parliamentary democracy needs a head of state who stands above party politics and represents the entire nation — this is the President. It also needs a head of government who actually runs things and is answerable to the legislature — this is the PM. (2) Stability and continuity: The President's 5-year term is fixed regardless of which government wins which election. Even if a Lok Sabha is dissolved, the President is still there. This provides continuity. (3) Crisis management: In moments like a hung Parliament, somebody must decide whom to invite to form a government. The President does this with constitutional impartiality, in a way a party-bound PM never could. The British system follows the same logic: the King is head of state, the PM is head of government. The two work as a team — the President symbolises the nation's continuity and constitutional values, while the PM does the actual work of governing. They are not rivals; they are complementary roles in a single executive.",
+          "explanation": "Comprehensive comparison of the two top executive offices, testing both factual knowledge and conceptual understanding."
+        }
+      ]
+    },
+    {
+      "topic": "Executive Accountability — Question Hour, Committees, and the No-Confidence Motion",
+      "easy": [
+        {
+          "id": "T-5-1",
+          "type": "mcq",
+          "question": "Question Hour in Parliament refers to:",
+          "options": [
+            "A daily debate where the Prime Minister answers questions",
+            "The first hour of a parliamentary sitting when MPs question ministers about government actions",
+            "A weekly TV programme on Sansad TV",
+            "The time when journalists question MPs outside Parliament"
+          ],
+          "answer": "The first hour of a parliamentary sitting when MPs question ministers about government actions",
+          "explanation": "Question Hour is typically the first hour of a parliamentary sitting, when MPs ask ministers questions about their ministries and government policies."
+        },
+        {
+          "id": "T-5-2",
+          "type": "mcq",
+          "question": "Zero Hour begins at:",
+          "options": ["10 am", "11 am", "12 noon", "1 pm"],
+          "answer": "12 noon",
+          "explanation": "Zero Hour comes right after Question Hour and begins at 12 noon ('zero' hour). MPs can raise urgent matters without prior notice."
+        },
+        {
+          "id": "T-5-3",
+          "type": "fill",
+          "question": "The committee that examines whether the government has spent public money in the way Parliament authorised is called the _______ Committee.",
+          "answer": "Public Accounts",
+          "explanation": "The Public Accounts Committee (PAC), traditionally chaired by an Opposition MP, examines government expenditure based on the CAG's reports."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-5-4",
+          "type": "short",
+          "question": "What is a no-confidence motion, and why is it called the 'ultimate' tool of executive accountability?",
+          "answer": "A no-confidence motion is a formal motion moved in the Lok Sabha stating that the House no longer has confidence in the Council of Ministers (the government). If a majority of Lok Sabha MPs vote in favour of the motion, the government must resign. The Prime Minister and the entire Cabinet step down — this is the principle of collective responsibility. It is called the 'ultimate' tool because while Question Hour, Standing Committees, and debates can EMBARRASS the government, only a no-confidence motion can ACTUALLY REMOVE it. The threat of a no-confidence motion is what keeps every government careful, especially when its majority is thin. A few governments in Indian history have fallen this way — for example, Atal Bihari Vajpayee's first government lost a no-confidence vote by just one vote in 1999, leading to fresh elections.",
+          "explanation": "Tests understanding of the most powerful instrument of parliamentary accountability."
+        },
+        {
+          "id": "T-5-5",
+          "type": "short",
+          "question": "How do Standing Committees keep the executive accountable? Give an example.",
+          "answer": "Standing Committees are permanent committees of MPs from different parties that scrutinise government work in specific areas. There are committees for Health, Defence, External Affairs, Education, Home Affairs, and many other ministries. These committees: (1) examine bills before they are debated in the full House and suggest improvements; (2) call ministers and senior officials to explain their decisions; (3) review the implementation of government schemes; (4) publish reports that put government performance in the public record. For example, the Standing Committee on Health and Family Welfare has reviewed how the Ministry of Health is implementing the National AYUSH Mission (NAM). It noted that some states had not created separate Ayush departments and recommended that the Ministry persuade them to do so. The Ministry then had to respond with an Action Taken Report. This is the kind of detailed, multi-party scrutiny that the full House cannot do — Standing Committees fill that crucial gap.",
+          "explanation": "Tests with a concrete example drawn from the chapter."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-5-6",
+          "type": "long",
+          "question": "Discuss the various tools by which Parliament holds the executive accountable. Why is this accountability central to parliamentary democracy?",
+          "answer": "Executive accountability — the principle that the government must justify its actions to elected representatives — is the beating heart of parliamentary democracy. Parliament has several tools to enforce it. (1) QUESTION HOUR. Typically the first hour of every sitting, when MPs ask ministers detailed questions about their ministries. Questions can be Starred (oral, with supplementary follow-ups) or Unstarred (written). Ministers must answer truthfully. This is the daily, public test of every minister's work. (2) ZERO HOUR. Right after Question Hour (12 noon onwards), MPs can raise urgent matters of public importance without prior notice. This is where breaking issues — riots, accidents, scandals — get raised first. (3) DEBATES. General discussions on government policy, calling-attention motions, adjournment motions, and special debates on issues of national importance. Ministers must defend their decisions in public. (4) STANDING COMMITTEES. Permanent multi-party committees that examine bills, review ministry work, call officials, and publish reports. These give detailed scrutiny that the full House cannot. (5) PUBLIC ACCOUNTS COMMITTEE (PAC). One of the most powerful committees, traditionally chaired by an Opposition MP. It examines whether government money was spent the way Parliament authorised, based on the CAG's audit reports. The PAC has exposed many financial irregularities over the decades. (6) NO-CONFIDENCE MOTION. The ultimate weapon. If passed, the government falls. Even the THREAT of a no-confidence vote keeps governments cautious, especially when majorities are thin. (7) IMPEACHMENT. For grave misconduct, the President and judges can be impeached. (8) BUDGET APPROVAL. The government cannot spend money without Parliament's approval, giving Parliament financial leverage. WHY IS ACCOUNTABILITY CENTRAL? Because of the basic principle of parliamentary democracy: government power flows from the people, through their elected representatives. If the government can act without being questioned, then power flows only DOWNWARD — that is dictatorship. When the government must justify itself daily to elected MPs, power flows BOTH WAYS — that is democracy. The Indian Constitution borrowed this idea from the British parliamentary tradition but built it into our own institutions. Accountability also serves practical purposes: it catches corruption, exposes incompetence, lets the Opposition do its job, and gives citizens reliable information about how they are being governed. When Parliament's accountability tools break down — for example, when Question Hour is regularly disrupted, as has happened in recent years — democracy weakens. That is why we must value, protect, and strengthen these tools.",
+          "explanation": "Major synthesis question covering the complete accountability toolkit and its deep purpose."
+        }
+      ]
+    },
+    {
+      "topic": "Parliament at the State Level and Checks and Balances",
+      "easy": [
+        {
+          "id": "T-6-1",
+          "type": "mcq",
+          "question": "The lower house of a state legislature is called:",
+          "options": ["Vidhan Sabha", "Vidhan Parishad", "Lok Sabha", "Rajya Sabha"],
+          "answer": "Vidhan Sabha",
+          "explanation": "The Vidhan Sabha (Legislative Assembly) is the directly elected lower house of a state legislature. Its members are MLAs."
+        },
+        {
+          "id": "T-6-2",
+          "type": "mcq",
+          "question": "Which of the following states has a bicameral legislature?",
+          "options": ["Tamil Nadu", "Kerala", "Maharashtra", "Punjab"],
+          "answer": "Maharashtra",
+          "explanation": "Of the listed states, only Maharashtra has both a Vidhan Sabha and a Vidhan Parishad. The six bicameral states are Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, and Uttar Pradesh."
+        },
+        {
+          "id": "T-6-3",
+          "type": "fill",
+          "question": "Subjects on which both the Union and State governments can legislate are listed in the _______ List.",
+          "answer": "Concurrent",
+          "explanation": "The Concurrent List contains subjects like education, criminal law, and marriage on which both the Union and the states can make laws. If they conflict, the Union law prevails."
+        },
+        {
+          "id": "T-6-4",
+          "type": "true-false",
+          "question": "The Governor of a state is appointed by the President of India.",
+          "answer": "True",
+          "explanation": "The Governor is appointed by the President and serves as the constitutional head of the state, parallel to the President at the Union level."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T-6-5",
+          "type": "short",
+          "question": "What is meant by 'checks and balances' in the Indian constitutional system?",
+          "answer": "Checks and balances refers to the system by which India's three organs of government — the Legislature, the Executive, and the Judiciary — keep each other within constitutional limits, so that no single organ becomes too powerful. The Legislature checks the Executive by passing or rejecting laws, approving the budget, holding Question Hour, running Standing Committees, and moving no-confidence motions. The Executive has some checks on the Legislature — it can recommend dissolving the Lok Sabha, the President can send back a bill once for reconsideration. The Judiciary — through judicial review — checks both: it can strike down laws that violate the Constitution and strike down executive orders that violate fundamental rights. The Judiciary itself has some checks on it — judges are appointed through a process involving the executive, can be impeached by the Legislature, and Parliament can amend laws that have been interpreted in unintended ways. The result is a balance: no organ is supreme; only the Constitution is supreme.",
+          "explanation": "Tests definition and basic mechanics of the checks and balances doctrine."
+        },
+        {
+          "id": "T-6-6",
+          "type": "short",
+          "question": "Why has falling productivity of Parliament become a serious concern in recent decades?",
+          "answer": "Parliamentary productivity is measured by the number of hours the Lok Sabha or Rajya Sabha actually functioned against the time it was scheduled to. Over the decades, the trend has been worrying. The 1st Lok Sabha (1952-57) met for 677 sittings; the 13th Lok Sabha (1999-2004) met for only 356 sittings — almost half. Former Rajya Sabha Chairman M. Venkaiah Naidu noted that Rajya Sabha productivity was about 78% during 2004-14 but fell to about 65% afterwards, and in 2018 hit a record low of 35.75%. Falling productivity is serious because: (1) Important bills get postponed or get pushed through without proper debate. (2) Question Hour — the main accountability tool — is disrupted, letting ministers escape scrutiny. (3) Public money is wasted — every Parliament sitting costs lakhs of rupees per hour. (4) Citizens lose faith in the institution; they see only shouting and adjournments, not lawmaking. (5) The country's policy direction gets delayed or muddled. Strengthening Parliament's working time, having serious debates, and keeping Question Hour protected are essential to a healthy democracy.",
+          "explanation": "Tests the data and the deeper concerns about declining productivity."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T-6-7",
+          "type": "long",
+          "question": "Describe the parallel structure of government at the Union and State levels in India. How are responsibilities divided between them?",
+          "answer": "India's Constitution creates a remarkable parallel structure: the way power is organised at the Union level is largely mirrored at the State level. PARALLEL OFFICES. At the Union level, the President is the constitutional head, indirectly elected for a 5-year term; at the State level, the Governor plays this role, appointed by the President for a 5-year term. At the Union level, the Prime Minister is the de facto executive authority, leader of the majority in the Lok Sabha; at the State level, the Chief Minister plays this role, leader of the majority in the Vidhan Sabha. At the Union level, the Council of Ministers is selected by the PM and is collectively responsible to the Lok Sabha; at the State level, the same is true with the Chief Minister and the Vidhan Sabha. PARALLEL LEGISLATURES. The Union has a bicameral Parliament: Lok Sabha (directly elected, lower house) and Rajya Sabha (indirectly elected, upper house). States can be unicameral (Vidhan Sabha only) or bicameral (Vidhan Sabha + Vidhan Parishad). Only six states are bicameral: Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, and Uttar Pradesh. PARALLEL PROCESSES. Money Bills can only originate in the Lok Sabha at the Union level and in the Vidhan Sabha at the State level. Both legislatures have Speakers, Question Hours, Standing Committees, and similar accountability tools. DIVISION OF RESPONSIBILITIES. The Constitution's Seventh Schedule divides law-making subjects into three lists. (1) Union List: only Parliament can legislate (defence, foreign affairs, currency, atomic energy, railways, banking, posts and telegraphs). These are matters of national-level concern that need uniform policy across India. (2) State List: only state legislatures can legislate (police, public health, agriculture, local government, public order, land). These are local matters where state-specific approaches make sense. (3) Concurrent List: both Parliament and state legislatures can legislate (education, criminal law, marriage and divorce, forests, electricity). If a Union law and a state law conflict on a Concurrent subject, the Union law prevails. The RTE Act is an example — education is on the Concurrent List, but the Union Act applies across all states. This division reflects India's character as a federal democracy with a strong centre. The parallel structure ensures that the rhythms of governance — elections, lawmaking, accountability — feel familiar whether you live in Delhi or Dhanbad, Mumbai or Manipur. India is one country with many states; the parallel parliamentary structure binds them in a single democratic framework.",
+          "explanation": "Capstone question on federalism and the Union-State parallel structure, testing synthesis across multiple chapter themes."
+        }
+      ]
+    }
+  ]
+}

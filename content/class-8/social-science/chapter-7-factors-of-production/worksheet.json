@@ -1,0 +1,419 @@
+{
+  "chapterRef": "class-8/social-science/chapter-7-factors-of-production/worksheet",
+  "topics": [
+    {
+      "topic": "The Four Factors of Production",
+      "easy": [
+        {
+          "id": "T1-E-1",
+          "type": "mcq",
+          "question": "How many factors of production are there in economics?",
+          "options": ["Two", "Three", "Four", "Five"],
+          "answer": "Four",
+          "explanation": "The four factors are land, labour, capital, and entrepreneurship. Technology is treated separately as a facilitator, not a fifth factor."
+        },
+        {
+          "id": "T1-E-2",
+          "type": "mcq",
+          "question": "Which of the following is NOT one of the four factors of production?",
+          "options": ["Land", "Labour", "Capital", "Profit"],
+          "answer": "Profit",
+          "explanation": "Profit is the reward an entrepreneur earns, not a factor of production. The four factors are land, labour, capital, and entrepreneurship."
+        },
+        {
+          "id": "T1-E-3",
+          "type": "fill",
+          "question": "The resources or inputs used in producing goods and services are called _______ of production.",
+          "answer": "factors",
+          "explanation": "By definition, the resources used in production are called factors of production."
+        },
+        {
+          "id": "T1-E-4",
+          "type": "truefalse",
+          "question": "True or False: Every product around us goes through a production process before reaching us.",
+          "answer": "True",
+          "explanation": "Nothing arrives ready-made. Every product — from a roti to a smartphone — passes through some production process."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T1-M-1",
+          "type": "short",
+          "question": "List the four factors of production and give one example of each from a school tiffin shop.",
+          "answer": "(1) Land — the small room or space where the shop runs, gas connection, water. (2) Labour — the cook and helper preparing and serving the food. (3) Capital — the chulha, utensils, fridge, plates, the money used to buy ingredients. (4) Entrepreneurship — the shop owner who started the tiffin business, decides the menu, prices, hours.",
+          "explanation": "Tests whether the student can map the four abstract factors onto a concrete local business."
+        },
+        {
+          "id": "T1-M-2",
+          "type": "mcq",
+          "question": "Ratna's restaurant 'Pause Point' best illustrates which of the following?",
+          "options": ["A government department", "A small business combining all four factors of production", "A cooperative", "A multinational company"],
+          "answer": "A small business combining all four factors of production",
+          "explanation": "The NCERT chapter uses Ratna's restaurant precisely because it shows all four factors in a small, easy-to-see business — location (land), helpers (labour), equipment and loan (capital), and Ratna herself (entrepreneur)."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T1-H-1",
+          "type": "long",
+          "question": "Imagine you want to start a business that produces steel water bottles. Identify what each of the four factors of production would look like for your business. Then explain what happens if any one of them is missing.",
+          "answer": "Land: A small factory shed with land, water supply, and electricity; plus access to raw steel (a natural resource). Labour: Workers to operate the cutting and shaping machines, an engineer to supervise the production line, a designer to create the bottle's shape, packers and quality checkers. Capital: Money to start; cutting machines, presses, polishing machines, lacquering equipment; raw steel sheets; the factory building; vans for delivery. Entrepreneurship: Me, the founder — deciding what kind of bottle to make (insulated? wide-mouth?), what to charge, who to sell to, where to source steel, what brand name to use, taking the loan from the bank. If any one is missing the business halts: with no land, there is nowhere to set up; with no labour, the machines sit idle; with no capital, no machines can be bought and no salaries can be paid; with no entrepreneur, no one decides anything and the other three resources are wasted. The four factors are like four legs of a chair — remove one and the whole thing falls.",
+          "explanation": "The standard NCERT-style application question, asking the student to construct a four-factor analysis for a hypothetical business and reason about interdependence."
+        }
+      ]
+    },
+    {
+      "topic": "Land and Labour",
+      "easy": [
+        {
+          "id": "T2-E-1",
+          "type": "mcq",
+          "question": "In economics, the word 'land' includes:",
+          "options": ["Only farmland", "Only city plots", "All natural resources like soil, forests, water, minerals, sunlight", "Only the building you own"],
+          "answer": "All natural resources like soil, forests, water, minerals, sunlight",
+          "explanation": "In economics 'land' is much broader than geographical land — it covers all gifts of nature."
+        },
+        {
+          "id": "T2-E-2",
+          "type": "mcq",
+          "question": "Labour means:",
+          "options": ["Only physical work like construction", "Only mental work like teaching", "Both physical and mental effort used in production", "Only paid factory work"],
+          "answer": "Both physical and mental effort used in production",
+          "explanation": "Labour includes both physical effort (carpenter, farmer, construction worker) and mental effort (teacher, doctor, scientist)."
+        },
+        {
+          "id": "T2-E-3",
+          "type": "fill",
+          "question": "A business that does not own land can use it by paying _______.",
+          "answer": "rent",
+          "explanation": "Rent is the payment made for using land that someone else owns."
+        },
+        {
+          "id": "T2-E-4",
+          "type": "truefalse",
+          "question": "True or False: Sunlight, air, and minerals all count as 'land' in economics.",
+          "answer": "True",
+          "explanation": "Yes — natural resources of all kinds count as 'land' in economic terminology."
+        },
+        {
+          "id": "T2-E-5",
+          "type": "mcq",
+          "question": "Which of the following is an example of labour?",
+          "options": ["A river flowing", "A carpenter making a chair", "A pile of bricks", "A bank balance"],
+          "answer": "A carpenter making a chair",
+          "explanation": "Labour is human effort. The river is land, bricks are capital, money is also capital. Only the carpenter's work is labour."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T2-M-1",
+          "type": "short",
+          "question": "Give three Indian examples of businesses or industries that depend heavily on 'land' (natural resources).",
+          "answer": "(1) Tea plantations in Assam and Munnar — depend on hill slopes, monsoon rain, and a specific climate. (2) Coal mining in Jharkhand's Chhota Nagpur plateau — depends on coal deposits under the earth. (3) Salt farming in the Rann of Kutch — depends on flat coastal land and strong sunlight to evaporate seawater. Other valid examples: petroleum and natural gas extraction in Gujarat and Mumbai High, solar farms in Rajasthan, fishing along the Kerala coast.",
+          "explanation": "Tests whether the student can pull concrete Indian examples to match the abstract concept of land as natural resources."
+        },
+        {
+          "id": "T2-M-2",
+          "type": "short",
+          "question": "Why is labour considered different from machine work, even though both produce things?",
+          "answer": "Labour is human effort — physical or mental. Machines are part of capital (human-made tools). Labour brings something machines cannot: judgement, creativity, care, the ability to learn from mistakes, and the ability to decide what should be made. Machines need to be designed, operated, repaired, and improved by humans. Without labour, machines do nothing.",
+          "explanation": "Pushes students to articulate why human effort is distinct from automated work."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T2-H-1",
+          "type": "long",
+          "question": "Shivay, a student of Class 8, had to drop out of school two years back because his father lost his job. How might this loss of schooling affect Shivay when he grows up? Explain in terms of human capital.",
+          "answer": "Shivay's dropping out at Class 6 means a serious loss to his human capital. (1) Foundational skills — at Class 6 and 7 students consolidate reading, writing, mathematics, and the discipline of learning. Without these, even informal jobs become harder. (2) Future skill ladder — to learn modern skills (computers, accounting, electrical work, plumbing, even modern farming techniques), some literacy and basic maths are needed. Without them, Shivay is shut out of higher-skill, higher-paying jobs. (3) Limited income — research shows that each extra year of schooling adds significantly to lifetime income. Shivay will likely earn far less than a classmate who completed school. (4) Hard to re-enter — once he begins informal manual work, returning to school becomes very difficult. The pattern often becomes generational, with his children also under-educated. (5) Lost demographic dividend — India's young population becomes an asset only if educated. Each Shivay who drops out is a small piece of that dividend lost. This is why government schemes like mid-day meals, scholarships, free textbooks, and skilling programmes matter so much — they try to keep students in school even when families face hardship.",
+          "explanation": "Connects the abstract idea of human capital to a real life situation and to national policy."
+        }
+      ]
+    },
+    {
+      "topic": "Human Capital and Its Facilitators",
+      "easy": [
+        {
+          "id": "T3-E-1",
+          "type": "mcq",
+          "question": "Human capital refers to:",
+          "options": ["Money saved in a bank", "Machines used in factories", "The skills, knowledge, and abilities of people", "The natural resources in a country"],
+          "answer": "The skills, knowledge, and abilities of people",
+          "explanation": "Human capital is the specialised knowledge, skills, and expertise that workers bring to their work."
+        },
+        {
+          "id": "T3-E-2",
+          "type": "mcq",
+          "question": "Which of these is a facilitator of human capital?",
+          "options": ["Pollution", "Education", "Inflation", "Recession"],
+          "answer": "Education",
+          "explanation": "Education is one of the three main facilitators of human capital, along with healthcare and social/cultural influences."
+        },
+        {
+          "id": "T3-E-3",
+          "type": "fill",
+          "question": "The Japanese concept of '_______' means continuous improvement.",
+          "answer": "kaizen",
+          "explanation": "Kaizen, applied in Japan since the mid-1940s, has helped Japanese industry achieve world-class quality."
+        },
+        {
+          "id": "T3-E-4",
+          "type": "truefalse",
+          "question": "True or False: Good health is a facilitator of human capital.",
+          "answer": "True",
+          "explanation": "Healthy workers can work longer, learn faster, and be more creative. Healthy children attend school regularly and learn better."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T3-M-1",
+          "type": "short",
+          "question": "Explain the difference between labour and human capital, with one example.",
+          "answer": "Labour is the basic physical and mental effort a person puts into work — measured in hours, hands, attention. Human capital is the skill, knowledge, and ability behind that labour that makes it productive. Example: Two workers each spend eight hours in a furniture workshop. One is a trained, experienced carpenter who builds three perfect chairs. The other is untrained and produces one wobbly chair. Same hours of labour, very different human capital, very different output.",
+          "explanation": "Tests whether the student can articulate the labour vs. human capital distinction with a clear example."
+        },
+        {
+          "id": "T3-M-2",
+          "type": "short",
+          "question": "What is meant by India's 'demographic dividend'? What is needed to turn it into actual growth?",
+          "answer": "Demographic dividend means the economic benefit a country enjoys when most of its population is young and of working age, with few people too young or too old to work. According to the Economic Survey 2024, 65% of Indians are below 35, so India is in this stage. To turn this dividend into real growth, the young population needs access to quality education, healthcare, training, and skilling. Without those investments, the young population becomes wasted potential rather than productive workers. With them, India can grow businesses, raise incomes, and improve living standards.",
+          "explanation": "Tests understanding of an important macro concept introduced in the chapter."
+        },
+        {
+          "id": "T3-M-3",
+          "type": "mcq",
+          "question": "Per the World Bank, the adult literacy rate in India for males as of 2023 is approximately:",
+          "options": ["55%", "65%", "85%", "95%"],
+          "answer": "85%",
+          "explanation": "The chapter states the male adult literacy rate in India is 85% and the female rate is 70% as of 2023."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T3-H-1",
+          "type": "long",
+          "question": "How do education, training, healthcare, and social culture together build human capital? Use examples from any Indian or global context.",
+          "answer": "These four facilitators work together to shape human capital. (1) EDUCATION — provides foundational knowledge: reading, writing, mathematics, science, history. A civil engineering student learns design principles and materials science that no on-the-job exposure alone could teach. Quality schooling is the base for everything that follows. (2) TRAINING — turns knowledge into practical skill. The same civil engineering student must visit construction sites, test materials, apply safety procedures. Without training, education stays theoretical. India's ITIs, polytechnics, and skill development programmes (like Skill India) try to bridge this gap. (3) HEALTHCARE — keeps the body and mind functioning. A sick child cannot attend school regularly. A sick worker is absent often, slower when present, and less creative. A country's public health system — hospitals, primary health centres, vaccinations, nutrition programmes — directly builds human capital. (4) SOCIAL AND CULTURAL INFLUENCES — shape attitude and work ethic. Japan's kaizen culture of continuous improvement raised manufacturing quality after the 1940s. Germany's industrial culture prizes punctuality, attention to detail, and quality. India has its own deep heritage — the Shilpa Shastras gave precise design rules for sculpture and architecture; skill was passed across generations of families. The four together explain why some countries with the same population have very different economies — they have invested differently in the human capital of their people.",
+          "explanation": "A synthesis question that ties together the three NCERT facilitators (education, healthcare, social/cultural) and the underlying education-training distinction."
+        },
+        {
+          "id": "T3-H-2",
+          "type": "long",
+          "question": "Do education and skill training substitute for each other, or do they complement each other? Argue your view.",
+          "answer": "They complement each other; one cannot replace the other. Education builds general knowledge — language, reasoning, mathematics, science, history, the habit of learning itself. It opens many possible paths because the student does not yet know which trade or profession they will choose. Training builds specific skill for a specific job — wiring a house, operating a CNC lathe, performing surgery, writing software. It produces immediate productivity but in a narrow area. A person with only general education but no training may know a lot but cannot do many jobs; a person with only training but no education can do one job but cannot easily learn a new one when technology changes. Best results come when both work together: school followed by college followed by on-the-job training; literacy followed by a vocational course followed by apprenticeship. Even the NCERT example of a civil engineering student shows this — classroom principles plus site training combine to produce a useful engineer. So the right answer is COMPLEMENTARY, not substitutable.",
+          "explanation": "A reasoning question taken almost directly from the NCERT end-of-chapter questions."
+        }
+      ]
+    },
+    {
+      "topic": "Capital and Sources of Finance",
+      "easy": [
+        {
+          "id": "T4-E-1",
+          "type": "mcq",
+          "question": "In economics, capital includes:",
+          "options": ["Only money", "Only machines", "Money plus human-made things used in production", "Only buildings"],
+          "answer": "Money plus human-made things used in production",
+          "explanation": "Capital is broader than money. It includes both financial capital (money) and physical capital (machines, tools, buildings, vehicles)."
+        },
+        {
+          "id": "T4-E-2",
+          "type": "mcq",
+          "question": "What is interest?",
+          "options": ["A payment a borrower makes to the lender for using their money", "A free gift from a bank", "A government tax", "A share in a company"],
+          "answer": "A payment a borrower makes to the lender for using their money",
+          "explanation": "Interest is the cost of borrowing money — what a borrower pays to a lender for the use of the lender's money over time."
+        },
+        {
+          "id": "T4-E-3",
+          "type": "fill",
+          "question": "An amount of money paid by a company to its shareholders from its profits is called a _______.",
+          "answer": "dividend",
+          "explanation": "Dividends are payments a company makes to its shareholders from profits."
+        },
+        {
+          "id": "T4-E-4",
+          "type": "truefalse",
+          "question": "True or False: A stock market is a place where shares of large companies are bought and sold.",
+          "answer": "True",
+          "explanation": "Large companies raise financial capital by selling shares on the stock market, where the public can buy and sell them."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T4-M-1",
+          "type": "short",
+          "question": "List three common sources of capital for a new small business.",
+          "answer": "(1) Personal savings — money the founder has saved over time. (2) Family and friends — informal loans or gifts from people who trust the founder. (3) Bank loans — formal borrowing from a bank, with interest paid back over time. For larger businesses, an additional source is the stock market, where shares of the company are sold to the public.",
+          "explanation": "Tests recall of the chapter's discussion of capital sources."
+        },
+        {
+          "id": "T4-M-2",
+          "type": "short",
+          "question": "How is human capital different from physical capital?",
+          "answer": "Physical capital refers to human-made things used in production — machines, tools, buildings, vehicles, computers. They can be touched and counted. Human capital refers to the skills, knowledge, abilities, and dedication of people. It cannot be touched but resides in the minds and hands of workers. Physical capital wears out and needs to be replaced; human capital generally grows with experience and learning. Both are essential, but they behave very differently.",
+          "explanation": "A direct comparison question from the NCERT end-of-chapter list."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T4-H-1",
+          "type": "long",
+          "question": "Ratna's monthly rent for her restaurant suddenly doubles. Discuss what choices she has, the consequences of each, and what you would do if you were her.",
+          "answer": "Ratna has at least four options, each with consequences. (1) RAISE PRICES TO COVER COSTS — Pros: keeps the restaurant in the same location, preserves goodwill. Cons: may lose customers who feel the prices have become too high, especially since highway travellers often have choices. Has to be done carefully — perhaps a small rise spread across many items. (2) LOOK FOR A CHEAPER LOCATION — Pros: protects margins, may bring lower long-term costs. Cons: a new location means losing the customer base she built up; the new spot may have less traffic; she has to spend on relocation, signage, repairs. Often a bad idea if the current location is what made the business work. (3) CUT COSTS ELSEWHERE — Pros: keeps prices and location stable. Cons: cutting on ingredient quality damages reputation; cutting on staff means lower service. (4) NEGOTIATE WITH THE LANDLORD — Try to get the increase reduced or staggered over time. Pros: cheapest if it works. Cons: may not succeed; landlord may insist on the new rate. WHAT I WOULD DO: First negotiate with the landlord, offering a longer lease commitment in return for a smaller increase. If that fails, I would raise menu prices by a small amount across the most-ordered items, while looking for small cost savings elsewhere (better supplier deals, energy efficiency). Relocation only as a last resort, because customer loyalty took five years to build. This question shows how a sudden change in one factor of production (land rent) forces an entrepreneur to make active decisions across all the others.",
+          "explanation": "A scenario-based reasoning question — taken from the NCERT end-of-chapter activities."
+        }
+      ]
+    },
+    {
+      "topic": "Entrepreneurship and Technology",
+      "easy": [
+        {
+          "id": "T5-E-1",
+          "type": "mcq",
+          "question": "An entrepreneur is a person who:",
+          "options": ["Only buys shares in the stock market", "Identifies a problem, takes risk, and combines factors of production to start a business", "Only works in a government office", "Has a fixed salary at a company"],
+          "answer": "Identifies a problem, takes risk, and combines factors of production to start a business",
+          "explanation": "Entrepreneurship is the act of starting a venture to solve a problem, taking risks, and combining the other factors of production."
+        },
+        {
+          "id": "T5-E-2",
+          "type": "mcq",
+          "question": "J.R.D. Tata is best known for:",
+          "options": ["Founding the Indian National Congress", "Building modern Indian industry and starting Tata Airlines (later Air India)", "Inventing the telephone", "Composing the national anthem"],
+          "answer": "Building modern Indian industry and starting Tata Airlines (later Air India)",
+          "explanation": "J.R.D. Tata took over the Tata Group, expanded it into many areas (steel, cars, power, chemicals), and started Tata Airlines in 1932, which later became Air India. He received the Bharat Ratna in 1992."
+        },
+        {
+          "id": "T5-E-3",
+          "type": "fill",
+          "question": "A _______ is an entrepreneurial venture with limited resources that aims at rapid growth while leveraging technology.",
+          "answer": "startup",
+          "explanation": "Startups are technology-leveraged, fast-growth ventures, often founded by young entrepreneurs."
+        },
+        {
+          "id": "T5-E-4",
+          "type": "truefalse",
+          "question": "True or False: Technology is considered the fifth factor of production.",
+          "answer": "False",
+          "explanation": "Technology is a facilitator that helps the four factors produce more — it is not classified as a fifth factor."
+        },
+        {
+          "id": "T5-E-5",
+          "type": "mcq",
+          "question": "SWAYAM is:",
+          "options": ["A private cinema chain", "A government online learning platform offering free courses", "A bank for entrepreneurs", "A mobile phone company"],
+          "answer": "A government online learning platform offering free courses",
+          "explanation": "SWAYAM (Study Webs of Active Learning for Young Aspiring Minds) is a government platform offering free online courses for Grade 9 onwards on subjects like robotics, aquaculture, and textile printing."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T5-M-1",
+          "type": "short",
+          "question": "Name five activities of a successful entrepreneur as described in the chapter.",
+          "answer": "(1) Identifies a problem and is resolute to solve it with an innovative solution. (2) Takes risks by investing money and time. (3) Combines various factors of production (land, labour, capital). (4) Makes key decisions regarding the operation and functioning of the business. (5) Contributes to the welfare of society through their innovation.",
+          "explanation": "Direct recall from the NCERT diagram (Fig. 7.16) listing entrepreneur tasks."
+        },
+        {
+          "id": "T5-M-2",
+          "type": "short",
+          "question": "Give three examples of how modern technology is changing production in India.",
+          "answer": "(1) UPI allows even small vendors to accept digital payments instantly without card machines. (2) Farmers receive advance weather updates and crop advisories on their phones, helping them plan sowing and harvesting. (3) GPS helps truck drivers find shortest delivery routes, reducing fuel and time. Other valid examples: drones spraying fertiliser, robots assisting in surgical processes, online learning through SWAYAM, the National Career Service portal for jobs.",
+          "explanation": "Tests recall and understanding of technology examples from the chapter."
+        },
+        {
+          "id": "T5-M-3",
+          "type": "mcq",
+          "question": "India is currently the world's _____ largest mobile phone manufacturer.",
+          "options": ["First", "Second", "Fifth", "Tenth"],
+          "answer": "Second",
+          "explanation": "As of 2025, India is the world's second-largest mobile phone manufacturer after China."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T5-H-1",
+          "type": "long",
+          "question": "Is profit the only motivation for an entrepreneur? Use the example of J.R.D. Tata to argue your case.",
+          "answer": "No, profit is not the only motivation for an entrepreneur — though it is necessary to keep a business alive. J.R.D. Tata's life shows clearly that the deepest entrepreneurs are driven by purpose beyond money. (1) PURPOSE OVER PROFIT — J.R.D. believed business should not only earn money but also help society. He started Tata Airlines in 1932 not because aviation was profitable then (it was not) but because India needed a national carrier. He expanded into steel, cars, power, and chemicals because India needed modern industry. (2) CARE FOR WORKERS — He was known for caring about his employees and pioneering worker welfare. Many of the Tata Group's worker benefits — provident fund, pension, gratuity — were introduced before they were required by law. (3) RECOGNITION FOR SERVICE — In 1992 he received the Bharat Ratna, India's highest civilian honour, not for being rich but for his service to the nation. (4) THE DEEPER POINT — Profit is the fuel that keeps a business alive, but for great entrepreneurs it is rarely the engine. The engine is usually a problem they want to solve or a service they want to provide. (5) MODERN EXAMPLES — Verghese Kurien of Amul wanted to free dairy farmers from middlemen. Falguni Nayar of Nykaa wanted Indian women to access authentic beauty products. None of them entered their fields purely for money. So the lesson is — profit is necessary, but purpose is what gives entrepreneurship its meaning.",
+          "explanation": "A reflection question taken from the NCERT chapter's 'Think About It' on J.R.D. Tata."
+        },
+        {
+          "id": "T5-H-2",
+          "type": "long",
+          "question": "Can technology completely replace human labour? Argue both sides and give your view.",
+          "answer": "ARGUMENT FOR — Technology can replace labour in many ways. Robots assemble cars faster than humans. Automated checkout machines replace cashiers. Chatbots answer customer queries. Self-driving vehicles may one day replace drivers. Each new wave of technology removes the need for some kinds of human work — a single tractor replaces many bullocks and farm-hands. ARGUMENT AGAINST — Technology does not eliminate labour; it changes what labour does. Someone has to design, build, install, maintain, repair, and improve every machine. New technologies create new jobs that did not exist before — software developer, data analyst, drone pilot, EV technician. The labour required shifts from manual to mental, from routine to creative. IS THIS GOOD OR BAD? Both. Good — workers do safer, more interesting jobs; the economy produces more with less. Bad — workers whose skills become outdated suffer if they cannot retrain. This is why reskilling and continuous learning matter. EXAMPLE — When ATMs arrived in the 1990s, many predicted bank clerks would disappear. Some clerk roles did disappear, but the banking industry employed more people overall — in customer service, IT, sales, loans, compliance. Technology shifted what the labour did rather than ending it. MY VIEW — Technology should complement labour, not crush it. Public investment in skilling (like the Skill India mission, SWAYAM, ITIs) is essential so workers can move up the skill ladder as technology rises. The right answer is not 'stop technology'; it is 'keep human capital ahead of it.'",
+          "explanation": "A balanced argument question taken from the NCERT end-of-chapter list."
+        }
+      ]
+    },
+    {
+      "topic": "Amul, Supply Chains, and Responsibilities",
+      "easy": [
+        {
+          "id": "T6-E-1",
+          "type": "mcq",
+          "question": "Amul is best described as:",
+          "options": ["A government department", "A private multinational company", "A dairy cooperative owned by farmer-members", "A foreign company"],
+          "answer": "A dairy cooperative owned by farmer-members",
+          "explanation": "Amul (Anand Milk Union Limited) is a cooperative owned by lakhs of dairy farmer-members across Gujarat. Profits flow back to the farmers."
+        },
+        {
+          "id": "T6-E-2",
+          "type": "mcq",
+          "question": "A supply chain is:",
+          "options": ["A type of rope used in factories", "The network of people, organisations, resources, activities, and technology involved in producing and selling goods", "Only the road that connects two cities", "A government office"],
+          "answer": "The network of people, organisations, resources, activities, and technology involved in producing and selling goods",
+          "explanation": "A supply chain links all the people, places, and processes needed to take a product from raw material to consumer."
+        },
+        {
+          "id": "T6-E-3",
+          "type": "fill",
+          "question": "India was the first country in the world to make _______ Social Responsibility a legal requirement, in 2014.",
+          "answer": "Corporate",
+          "explanation": "India's 2014 CSR law requires companies above a certain size to spend 2% of their average profits of the last three years on CSR."
+        },
+        {
+          "id": "T6-E-4",
+          "type": "truefalse",
+          "question": "True or False: The COVID-19 pandemic disrupted many global supply chains and halted production.",
+          "answer": "True",
+          "explanation": "The pandemic showed how heavily modern production depends on smooth global supply chains."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T6-M-1",
+          "type": "short",
+          "question": "Explain how Amul combines all four factors of production.",
+          "answer": "LAND — village fields and sheds where cattle graze and are kept, plus the climate and water. LABOUR — lakhs of dairy farmers, plus veterinarians, dairy scientists, marketing teams, drivers, and managers. CAPITAL — milk-collection vans, chilling centres, pasteurising plants, tetra-pack machines, refrigerated trucks, retail cold storage, and the funds that built them. ENTREPRENEURSHIP — Sardar Patel's vision, Verghese Kurien's leadership, the cooperative board's ongoing decisions about new products and markets. Amul also uses technology heavily — pasteurisation, cold-chain transport, tetra-pack, computerised milk testing, mobile apps for paying farmers — to let all four factors produce more.",
+          "explanation": "Synthesises the chapter's central case study with the framework of the four factors."
+        },
+        {
+          "id": "T6-M-2",
+          "type": "short",
+          "question": "Name three responsibilities a producer has toward workers.",
+          "answer": "(1) Fair compensation and working conditions — workers must be paid fairly and work in a safe environment. (2) Skill development and training — businesses must invest in training so workers stay competitive. (3) Workplace rights and protections — laws on fair treatment, no discrimination, healthcare, paid leave must be followed.",
+          "explanation": "Direct recall of the three NCERT responsibilities toward labour."
+        },
+        {
+          "id": "T6-M-3",
+          "type": "short",
+          "question": "Why must producers use natural resources responsibly?",
+          "answer": "Natural resources (land, water, minerals, forests) are limited. If they are misused they can be damaged or destroyed — for example, leather tannery waste in Tamil Nadu can pollute rivers and soil; old smartphones thrown away can leak lead and mercury into water and ground. This pollution harms people, animals, and plants, and reduces the resources available to future generations. Sustainable practices (reducing waste, treating wastewater, recycling) let producers meet today's needs without making it harder for the future.",
+          "explanation": "Tests understanding of sustainability and intergenerational responsibility."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T6-H-1",
+          "type": "long",
+          "question": "Trace the journey of a mobile phone in India from raw materials to your hand, showing where each factor of production is used and where the supply chain operates.",
+          "answer": "Stage 1 — RESEARCH AND DESIGN: An R&D team (LABOUR with very high human capital) at a phone company conceptualises new features. They work in a designed office (CAPITAL — building, computers, software). Stage 2 — SETTING UP THE FACTORY: The entrepreneur and company acquire LAND for the assembly plant (often in industrial zones near Sriperumbudur in Tamil Nadu or in Noida). They invest CAPITAL in building it and installing machinery. Stage 3 — SUPPLY CHAIN OF RAW MATERIALS: Components come from many countries — chips from Taiwan, glass from Korea, battery from China, plastic casing perhaps made in India. Each component itself was made using its own factors of production. The supply chain links them all. Stage 4 — ASSEMBLY: Skilled workers (LABOUR with training) assemble components and install software using sophisticated CAPITAL (precision machines, robotic arms, testing equipment). Stage 5 — QUALITY TESTING: Quality control teams (LABOUR) use machines (CAPITAL) to test functionality, quality, and performance. Stage 6 — MASS PRODUCTION AND PACKAGING: Automated lines (CAPITAL) plus operators (LABOUR) produce phones at scale. Stage 7 — DISTRIBUTION: Trucks (CAPITAL), drivers (LABOUR), and logistics networks (supply chain) move phones from factory to wholesale to retail. Stage 8 — RETAIL SALE: Shopkeepers (LABOUR) in stores (LAND + CAPITAL) sell the phones to consumers. ENTREPRENEURSHIP ties it all together — the company's founders and managers planned each stage, took the risk of investment, and decided which models to make and where to sell them. SUPPLY CHAIN RISK: If even one supplier — say of camera modules — has a problem (as during COVID-19), the whole assembly halts. This is why India is now investing in manufacturing more components within the country, so more of the supply chain runs on Indian soil. India is now the world's second-largest mobile phone manufacturer.",
+          "explanation": "A long synthesis question that ties together factors of production, supply chains, and India's growing electronics industry."
+        }
+      ]
+    }
+  ]
+}

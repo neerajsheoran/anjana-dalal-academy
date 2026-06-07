@@ -1,0 +1,430 @@
+{
+  "chapterRef": "class-8/social-science/chapter-1-natural-resources-and-their-use/worksheet",
+  "topics": [
+    {
+      "topic": "When Nature Becomes a Resource",
+      "easy": [
+        {
+          "id": "T1-E-1",
+          "type": "mcq",
+          "question": "When does something in Nature become a 'resource'?",
+          "options": [
+            "When it is found in a forest",
+            "When humans can reach it, afford to use it, and find it culturally acceptable to use",
+            "When the government declares it so",
+            "When it is over a thousand years old"
+          ],
+          "answer": "When humans can reach it, afford to use it, and find it culturally acceptable to use",
+          "explanation": "For Nature to become a resource it must be technologically accessible, economically feasible to extract, and culturally acceptable to use."
+        },
+        {
+          "id": "T1-E-2",
+          "type": "fill",
+          "question": "In this chapter, the word 'exploitation' is used to mean the _______, utilisation and consumption of natural resources.",
+          "answer": "extraction",
+          "explanation": "The chapter clarifies that 'exploitation' here is a neutral term, not negative — it just means extracting, utilising and consuming resources."
+        },
+        {
+          "id": "T1-E-3",
+          "type": "mcq",
+          "question": "Which of these is an example of something culturally unacceptable to use as a resource in many parts of India?",
+          "options": ["Coal", "Trees in a sacred grove", "Marble from Rajasthan", "Cotton from Maharashtra"],
+          "answer": "Trees in a sacred grove",
+          "explanation": "Sacred groves such as Kerala's *kavus* or Rajasthan's *orans* are culturally protected — the wood is there, but communities don't cut it."
+        },
+        {
+          "id": "T1-E-4",
+          "type": "short",
+          "question": "Give one simple definition of 'natural resource'.",
+          "answer": "Any material or substance found in Nature that is valuable to humans and that we can reach, afford and feel right about using.",
+          "explanation": "A resource is a piece of Nature that humans have figured out how to use within technological, economic and cultural limits."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T1-M-1",
+          "type": "short",
+          "question": "A village has thick forests, but the community considers the entire forest sacred and never cuts trees from it. Is the timber in that forest a 'resource'? Explain.",
+          "answer": "No. Even though the wood is technologically reachable and economically valuable, it is culturally unacceptable to cut. For Nature to become a resource, the cultural condition must also be met, so this wood remains part of Nature, not a resource.",
+          "explanation": "All three conditions — technological, economic and cultural — must be satisfied for something to be a resource."
+        },
+        {
+          "id": "T1-M-2",
+          "type": "short",
+          "question": "Petroleum exists deep below the ocean floor. Why might it still not count as a 'resource' in some cases?",
+          "answer": "If the technology to drill that deep doesn't exist, or if drilling would cost more than the petroleum is worth, then it fails the technological or economic test. In that case it remains part of Nature rather than a usable resource.",
+          "explanation": "Resources require accessibility and feasibility — being valuable in principle isn't enough."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T1-H-1",
+          "type": "long",
+          "question": "A new technology lowers the cost of extracting lithium from old phone batteries by 90%. Earlier, recycled lithium wasn't economical. Explain how this could change which materials count as a 'resource' in India.",
+          "answer": "Earlier, used lithium batteries were waste — culturally and technologically they were thrown away, and economically it wasn't worth recovering the metal. The new technology changes the economic condition: it now becomes cheap enough to recover lithium from waste. Combined with rising demand for lithium in electric vehicles and phones, this means old batteries shift from being waste to being a 'resource'. This example shows that the status of being a resource is not fixed — it depends on changing technology, cost, and society's view. Many things humans threw away in the past (like plastic or paper) have become resources because recycling technology improved.",
+          "explanation": "The three conditions for something to be a resource — accessibility, economic feasibility, cultural acceptance — can change with technology, making yesterday's waste tomorrow's resource."
+        }
+      ]
+    },
+    {
+      "topic": "Categories of Natural Resources",
+      "easy": [
+        {
+          "id": "T2-E-1",
+          "type": "mcq",
+          "question": "Which of these is an 'essential for life' resource?",
+          "options": ["Marble", "Air", "Petroleum", "Iron ore"],
+          "answer": "Air",
+          "explanation": "Air, water and soil are life-essential resources. Marble and iron are material resources; petroleum is an energy resource."
+        },
+        {
+          "id": "T2-E-2",
+          "type": "fill",
+          "question": "Coal, petroleum, sunlight and wind are all examples of resources for _______.",
+          "answer": "energy",
+          "explanation": "These are all sources of energy — some renewable (sun, wind), some non-renewable (coal, oil)."
+        },
+        {
+          "id": "T2-E-3",
+          "type": "mcq",
+          "question": "Which of these is a 'material' natural resource?",
+          "options": ["Sunlight", "Wood (timber)", "Air", "Wind"],
+          "answer": "Wood (timber)",
+          "explanation": "Wood is a material resource — humans turn it into furniture, houses and tools. Sunlight, air and wind are energy or life-essential resources."
+        },
+        {
+          "id": "T2-E-4",
+          "type": "short",
+          "question": "Name the three categories of resources sorted by how we use them.",
+          "answer": "Resources essential for life (air, water, soil), resources for materials (wood, stone, metal), and resources for energy (coal, sun, wind, water).",
+          "explanation": "This is one common way of sorting resources — by what they do for us."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T2-M-1",
+          "type": "short",
+          "question": "Why is sorting resources into categories useful at all?",
+          "answer": "Categorisation lets us talk about a whole group of things in one word instead of describing each member. When categories are shared across people, they make communication clearer and faster. For example, the word 'renewable' captures a whole idea without needing to list every resource that fits.",
+          "explanation": "Categories are a tool for clearer thinking and communication."
+        },
+        {
+          "id": "T2-M-2",
+          "type": "short",
+          "question": "Cotton fabric — which category does it belong to: life-essential, material, or energy? Justify.",
+          "answer": "Cotton is a material resource — we turn it into clothing, sheets and other fabrics. The cotton plant itself depends on life-essential resources (soil, water, sunlight) to grow, but the resource we use the fibre for is 'materials'.",
+          "explanation": "Categories sometimes overlap, but the use category is decided by what the human-made product is."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T2-H-1",
+          "type": "long",
+          "question": "A single tree might be used for timber (material), for fruit (life-essential food), and as firewood (energy). Does this mean the three categories of resources are not really useful?",
+          "answer": "Not at all — it shows that the same physical thing can be a different kind of resource depending on how it is used. The category describes the *use*, not the object. A tree used for furniture is a material resource; the same tree's fruits feeding people are a life-essential resource; its dead wood burnt for heat is an energy resource. The category system is still useful because it helps us think about *what role* a resource is playing in human life. It also helps us reason about substitutes — if firewood is the energy use, can solar or LPG replace it without losing the material or food uses?",
+          "explanation": "Categories describe relationships between humans and Nature, not fixed labels on objects."
+        }
+      ]
+    },
+    {
+      "topic": "Renewable and Non-Renewable Resources",
+      "easy": [
+        {
+          "id": "T3-E-1",
+          "type": "mcq",
+          "question": "Which of these is a non-renewable resource?",
+          "options": ["Sunlight", "Wind", "Coal", "Flowing river water"],
+          "answer": "Coal",
+          "explanation": "Coal forms over millions of years and cannot be replaced at the rate we use it. Sunlight, wind and river water are renewable."
+        },
+        {
+          "id": "T3-E-2",
+          "type": "fill",
+          "question": "India's coal reserves are estimated to last about _______ more years at current rates of extraction.",
+          "answer": "50",
+          "explanation": "The chapter mentions about 50 more years — sounding long, but short on the scale of a human life."
+        },
+        {
+          "id": "T3-E-3",
+          "type": "mcq",
+          "question": "What does 'restoration' mean in Nature?",
+          "options": [
+            "Building new dams",
+            "Returning something to its original healthy state after damage",
+            "Pumping more groundwater",
+            "Cutting trees"
+          ],
+          "answer": "Returning something to its original healthy state after damage",
+          "explanation": "Restoration is Nature's ability to heal — a cut healing, a forest recovering from fire."
+        },
+        {
+          "id": "T3-E-4",
+          "type": "short",
+          "question": "Give two examples each of renewable and non-renewable resources.",
+          "answer": "Renewable: sunlight, wind, river water, sustainably managed forests. Non-renewable: coal, petroleum, natural gas, iron ore, gold.",
+          "explanation": "Renewable resources are replaced by Nature at roughly human-use rates; non-renewables take millions of years."
+        },
+        {
+          "id": "T3-E-5",
+          "type": "mcq",
+          "question": "Sunlight is renewable because:",
+          "options": [
+            "Humans can manufacture it",
+            "The sun keeps shining day after day at no extra cost from us",
+            "It is stored in batteries",
+            "Forests produce it"
+          ],
+          "answer": "The sun keeps shining day after day at no extra cost from us",
+          "explanation": "A renewable resource is one Nature keeps providing as long as her natural rhythm is undisturbed."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T3-M-1",
+          "type": "short",
+          "question": "If forests are renewable, why are India's forests in trouble?",
+          "answer": "Renewable does not mean unlimited. A forest is renewable only if we cut from it slower than it can grow back. When timber is taken faster than the trees can regenerate, or when land is cleared for farming, building or mining, the forest cannot replace itself in time and is degraded.",
+          "explanation": "Renewability depends on the rate of human use versus Nature's rate of regeneration."
+        },
+        {
+          "id": "T3-M-2",
+          "type": "short",
+          "question": "How can the Himalayan glaciers go from being a renewable resource to becoming non-renewable?",
+          "answer": "Glaciers are normally renewable — fresh snow each year replaces the ice that melts. But rising global temperatures, caused partly by burning fossil fuels and clearing forests, are melting glaciers faster than fresh snowfall can replace them. If this continues, the glaciers will shrink and eventually disappear, becoming effectively non-renewable on human timescales.",
+          "explanation": "Human activity can disturb Nature's cycle enough to push a renewable resource toward non-renewability."
+        },
+        {
+          "id": "T3-M-3",
+          "type": "mcq",
+          "question": "Which of the following is the BEST description of how Nature handles waste in a forest?",
+          "options": [
+            "Waste is collected and buried",
+            "There is no waste — everything is broken down and recycled by other living things",
+            "Humans clean it up",
+            "Rain washes it away"
+          ],
+          "answer": "There is no waste — everything is broken down and recycled by other living things",
+          "explanation": "In Nature's cycles, every 'leftover' becomes food for another creature — bacteria, fungi, insects."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T3-H-1",
+          "type": "long",
+          "question": "Explain the difference between 'restoration' and 'regeneration' in Nature, with one example of each from your surroundings.",
+          "answer": "Restoration is Nature's ability to return something to its original healthy state after damage. For example, a cut on my skin healing in a week, or grass growing back on a patch of garden that was bare for a season — Nature is restoring what was lost. Regeneration goes further: it is Nature's ability to create new life and the conditions for life to thrive. For example, when a tree falls in a forest and rots, new seedlings sprout from the rich soil it has become, sometimes a different species takes its place — this is regeneration, the creation of new life from old. Both are essential to renewable resources: restoration brings them back after stress, regeneration ensures new generations of plants, soils and creatures keep arising.",
+          "explanation": "Restoration = return to a healthy state; regeneration = creation of new life."
+        }
+      ]
+    },
+    {
+      "topic": "Distribution of Resources Across India",
+      "easy": [
+        {
+          "id": "T4-E-1",
+          "type": "mcq",
+          "question": "Which Indian state is famous for iron ore from Bailadila?",
+          "options": ["Karnataka", "Chhattisgarh", "Odisha", "Jharkhand"],
+          "answer": "Chhattisgarh",
+          "explanation": "Bailadila in Chhattisgarh is one of India's largest iron ore mining areas."
+        },
+        {
+          "id": "T4-E-2",
+          "type": "fill",
+          "question": "Mumbai High, off the coast of Maharashtra, is famous for the extraction of _______.",
+          "answer": "petroleum",
+          "explanation": "Mumbai High is India's largest offshore oilfield."
+        },
+        {
+          "id": "T4-E-3",
+          "type": "mcq",
+          "question": "Which of these rivers is shared by Karnataka, Tamil Nadu, Kerala and Puducherry?",
+          "options": ["Yamuna", "Brahmaputra", "Kaveri", "Mahanadi"],
+          "answer": "Kaveri",
+          "explanation": "The Kaveri waters dispute among these four has been negotiated for decades."
+        },
+        {
+          "id": "T4-E-4",
+          "type": "short",
+          "question": "Why are resources not spread evenly across India?",
+          "answer": "Because resources are formed by geological and natural processes that depend on the rocks, climate and history of each region. Coal forms in old swampy lands, iron ore in certain rock formations, oil under particular sediments. So different regions inherit different resources.",
+          "explanation": "Geology and natural history shape where resources end up."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T4-M-1",
+          "type": "short",
+          "question": "How does the location of natural resources affect the location of cities and industries in India? Give two examples.",
+          "answer": "Industries tend to grow near the resources they need. Jamshedpur and Bokaro grew around iron ore and coal for steel making. Digboi in Assam grew around petroleum extraction. Townships, schools, hospitals and roads then form around the industry, turning a small village into a city.",
+          "explanation": "Resource maps and city maps are often closely connected."
+        },
+        {
+          "id": "T4-M-2",
+          "type": "short",
+          "question": "Give one example each of how shared resources between Indian states, and between countries, can lead to disputes.",
+          "answer": "Between Indian states: the Kaveri river is shared by Karnataka, Tamil Nadu, Kerala and Puducherry, and water-sharing has led to long negotiations. Between countries: the Brahmaputra (called Yarlung Tsangpo in Tibet/China and Jamuna in Bangladesh) crosses three countries, making decisions about dams and water flow politically sensitive.",
+          "explanation": "Nature ignores political boundaries, so shared resources demand cooperation."
+        },
+        {
+          "id": "T4-M-3",
+          "type": "short",
+          "question": "When a coal mine opens in a forest area, what are some of the costs that local people may face?",
+          "answer": "Local people may be displaced from their homes and farms. Sacred groves and shrines may come under threat. Forests are cleared. Air, water and soil pollution may follow. Even when new jobs are created, those most affected by displacement may not be the ones who benefit from the new factories.",
+          "explanation": "Resource extraction has costs that often fall unevenly on the people closest to the resource."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T4-H-1",
+          "type": "long",
+          "question": "Suppose your district had a large gold deposit discovered tomorrow. List three benefits and three costs that could follow.",
+          "answer": "Benefits: (1) New jobs in mining, transport, refining and shops, raising local incomes. (2) Better roads, schools and hospitals built to support the workforce. (3) Government revenue that can be used for development across the state. Costs: (1) Some families may be displaced from their homes or farms when land is acquired for the mine. (2) Forests, rivers and soil near the mine may be damaged by waste, dust and chemicals. (3) Inequality may grow — outsiders and skilled workers may benefit while local people get the noise, pollution and loss of access to land. (4) Sacred or culturally important places may be threatened. A wise approach would be to plan extraction with strict pollution rules, fair compensation, training local people for mine jobs, and turning some of the wealth into long-term assets like schools and hospitals.",
+          "explanation": "Resource extraction creates both opportunities and costs; how a government plans and regulates makes the difference."
+        }
+      ]
+    },
+    {
+      "topic": "The Resource Curse and Sustainable Use",
+      "easy": [
+        {
+          "id": "T5-E-1",
+          "type": "mcq",
+          "question": "What does the 'resource curse' or 'paradox of plenty' mean?",
+          "options": [
+            "Having lots of natural resources guarantees wealth",
+            "Countries rich in raw natural resources sometimes still grow slowly",
+            "Resources curse the people who use them",
+            "Resources are limited to certain countries only"
+          ],
+          "answer": "Countries rich in raw natural resources sometimes still grow slowly",
+          "explanation": "Mineral wealth alone doesn't make a country rich — without industries to add value, it can even slow growth."
+        },
+        {
+          "id": "T5-E-2",
+          "type": "fill",
+          "question": "Almost _______ percent of Punjab's area is now classified as 'overexploited' for groundwater.",
+          "answer": "80",
+          "explanation": "About 80% of Punjab is overexploited — water is drawn out faster than rain can refill it."
+        },
+        {
+          "id": "T5-E-3",
+          "type": "mcq",
+          "question": "In which year did Sikkim become India's first 100% organic farming state?",
+          "options": ["2010", "2014", "2016", "2020"],
+          "answer": "2016",
+          "explanation": "Sikkim achieved 100% organic certification in 2016."
+        },
+        {
+          "id": "T5-E-4",
+          "type": "short",
+          "question": "Name two pollution problems caused by cement production.",
+          "answer": "Fine dust that damages lungs of humans and animals, settles on leaves and reduces crop yields, and pollutes soil and water nearby.",
+          "explanation": "Cement is one of the most polluting industries — the chapter describes the Central Pollution Control Board's role in regulating it."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T5-M-1",
+          "type": "short",
+          "question": "How did Punjab's Green Revolution help India but also cause a long-term problem?",
+          "answer": "The Green Revolution introduced high-yielding wheat and rice that needed much more water and chemical fertilisers. It made India food-secure and ended dependence on imports. But the heavy pumping of groundwater and use of chemicals over decades has left 80% of Punjab's groundwater overexploited and contaminated with fertiliser and pesticide residues, creating health hazards and a long-term water crisis.",
+          "explanation": "A short-term solution can create a long-term problem if Nature's rhythm is ignored."
+        },
+        {
+          "id": "T5-M-2",
+          "type": "short",
+          "question": "Why has India largely avoided the 'resource curse', according to the chapter?",
+          "answer": "India has invested in industries and technologies that turn raw materials into higher-value products — steel from iron ore, petrochemicals from oil, aluminium from bauxite. Building such industries, along with developing skills and good governance, turns resource wealth into lasting prosperity rather than a short-lived export windfall.",
+          "explanation": "Avoiding the curse requires industries, knowledge and good governance — not just resources."
+        },
+        {
+          "id": "T5-M-3",
+          "type": "short",
+          "question": "What is the International Solar Alliance and what does it do?",
+          "answer": "It is a coalition launched by India and France in 2015 of countries with abundant sunlight. It channels investment, technology and affordable financing into solar power projects in member countries, helping developing nations transition from fossil fuels to renewable energy.",
+          "explanation": "The ISA is India's flagship example of international leadership in renewable energy."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T5-H-1",
+          "type": "long",
+          "question": "Compare the cement industry's pollution problem with the Punjab groundwater problem. What is the common pattern between them? What kinds of solutions are being tried for each?",
+          "answer": "Both are examples of using a resource faster or more carelessly than Nature can compensate. Cement production releases dust, polluting air, soil and water; Punjab's farming over-pumps groundwater and over-uses chemicals, polluting and depleting the water table. The common pattern is short-term gain (housing, food security) at long-term cost (pollution, water scarcity, ill health). Solutions for cement: stricter pollution rules from the Central Pollution Control Board, plus reviving traditional materials like mud and stone (Auroville Earth Institute, Jaisalmer Fort) and using new recycled materials. Solutions for groundwater: rainwater harvesting, restoring village ponds, drip irrigation, less wasteful crop choices, treating and reusing water. In both cases, the answer involves a mix of tradition (Vrikshayurveda, mud building, water harvesting), regulation (pollution boards, free-electricity reform) and new technology (alternative cement, drip irrigation, treated water reuse).",
+          "explanation": "Different problems but the same root cause — taking faster than Nature can restore — and similar mixed solutions of tradition, regulation and innovation."
+        },
+        {
+          "id": "T5-H-2",
+          "type": "long",
+          "question": "The chapter ends with the Bhagavad Gita's idea of 'lokasangraha'. Explain what this means and how it applies to natural resource use today.",
+          "answer": "'Lokasangraha' is a Sanskrit term from the Bhagavad Gita meaning acting for the welfare of all — transcending personal desires and serving the larger good. Applied to natural resources, it means using water, energy, food and materials not only for our own convenience but with the welfare of our community, future generations and other species in mind. A person practising lokasangraha would close the tap not just to save their own money but because water is shared. They would buy a more efficient fridge because the air is shared. They would support policies that protect forests because biodiversity is shared. They would think about poorer neighbourhoods that get less clean water. The chapter is suggesting that this old Indian idea is exactly the mindset modern stewardship of natural resources needs — one that respects the rhythm of Nature and the welfare of everyone affected by our choices, including those not yet born.",
+          "explanation": "Lokasangraha links traditional Indian ethics directly to modern environmental responsibility."
+        }
+      ]
+    },
+    {
+      "topic": "Stewardship and Traditional Wisdom",
+      "easy": [
+        {
+          "id": "T6-E-1",
+          "type": "mcq",
+          "question": "Vrikshayurveda is an ancient Indian science focused on:",
+          "options": [
+            "Healing animals",
+            "The study and care of plants and trees",
+            "Building temples",
+            "Cooking with spices"
+          ],
+          "answer": "The study and care of plants and trees",
+          "explanation": "Vriksha = tree, ayurveda = science of life. Vrikshayurveda gives detailed instructions for sustainable agriculture."
+        },
+        {
+          "id": "T6-E-2",
+          "type": "fill",
+          "question": "The Bhadla Solar Park, one of the largest in the world, is located in the state of _______.",
+          "answer": "Rajasthan",
+          "explanation": "Bhadla Solar Park can generate enough electricity to power about 15% of Rajasthan's current needs."
+        },
+        {
+          "id": "T6-E-3",
+          "type": "mcq",
+          "question": "Auroville Earth Institute is famous for:",
+          "options": [
+            "Producing chemical fertilisers",
+            "Building modern structures using earth and traditional techniques",
+            "Mining bauxite",
+            "Manufacturing cement"
+          ],
+          "answer": "Building modern structures using earth and traditional techniques",
+          "explanation": "Auroville Earth Institute holds the UNESCO Chair for Earthen Architecture and builds with mud using modern techniques."
+        }
+      ],
+      "medium": [
+        {
+          "id": "T6-M-1",
+          "type": "short",
+          "question": "What practices did Pema's family adopt in Sikkim to switch to organic farming, and what were the results?",
+          "answer": "They switched to compost, prepared natural pest repellents from neem and garlic, and grew multiple crops across the year. After about five years, yields recovered and biodiversity returned. Their cardamom, ginger and traditional vegetables sold at premium prices. By 2016, Sikkim became a 100% organic state, farmer incomes rose by about 20% on average, and tourism grew.",
+          "explanation": "Sikkim shows that a region-wide shift to traditional sustainable practices is possible and economically rewarding."
+        },
+        {
+          "id": "T6-M-2",
+          "type": "short",
+          "question": "Name three traditional Indian practices mentioned in the chapter that helped manage soil and water sustainably.",
+          "answer": "Use of cow dung and other natural fertilisers, mulching, multi-cropping, rainwater harvesting, rejuvenation of village ponds and tanks, and Vrikshayurveda's recommendations for ploughing soil to retain moisture.",
+          "explanation": "These practices reflect a centuries-old understanding of working with Nature's rhythm rather than against it."
+        }
+      ],
+      "hard": [
+        {
+          "id": "T6-H-1",
+          "type": "long",
+          "question": "Imagine you have been asked to suggest five concrete actions a Class 8 student can take this year to live as a 'steward' of natural resources. List your five actions and explain how each one connects to ideas in this chapter.",
+          "answer": "(1) Turn off the tap while brushing teeth and report any leaking taps at home — this connects to the chapter's point that renewables like water become non-renewable if used faster than Nature replaces them, and that small habits add up. (2) Carry a steel water bottle instead of buying single-use plastic — this reduces demand for petroleum (a non-renewable) and for plastic waste that breaks Nature's no-waste cycle. (3) Plant and care for one tree in the school or colony — supporting the regeneration the chapter describes; trees provide ecosystem services like oxygen, shade and erosion control. (4) Walk or cycle short distances instead of asking for a car ride — reducing fossil fuel use and air pollution, both highlighted in the chapter as harming common resources. (5) Run a 'daadi interview' to learn what was reused or composted in the previous generation, and apply one practice at home — this connects to the chapter's call to learn from traditional practices like Vrikshayurveda and indigenous wisdom about Nature.",
+          "explanation": "Stewardship at the student level is mostly small, repeated habits, plus learning from traditional knowledge."
+        }
+      ]
+    }
+  ]
+}
