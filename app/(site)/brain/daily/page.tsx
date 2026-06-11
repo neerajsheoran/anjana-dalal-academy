@@ -124,7 +124,9 @@ function DailyCard({
   const activityKey = DEMO_GAME_PER_PILLAR[pillar];
   const activity = BRAIN_ACTIVITIES[activityKey];
   if (!activity) notFound();
-  const href = `/brain/${pillar}/${activityKey}`;
+  // ?from=daily tells the activity to send Exit back here, not to the
+  // module landing — see [module]/[activity]/page.tsx exitHref logic.
+  const href = `/brain/${pillar}/${activityKey}?from=daily`;
   const baseCls =
     "block bg-white rounded-2xl border p-5 transition-all";
   const ringCls = done

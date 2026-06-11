@@ -176,6 +176,8 @@ export default function MemoryMatchActivity({
   adaptiveSource,
   previousLevel,
   tier = 'junior',
+  exitHref,
+  exitLabel,
 }: {
   moduleKey: ModuleKey;
   childName: string;
@@ -183,7 +185,12 @@ export default function MemoryMatchActivity({
   adaptiveSource?: AdaptiveSource;
   previousLevel?: Difficulty;
   tier?: TrainingTier;
+  // Where Exit + summary "Back" should return to. Defaults to module landing.
+  // Daily flow passes /brain/daily so the kid returns to their session.
+  exitHref?: string;
+  exitLabel?: string;
 }) {
+  const resolvedExitHref = exitHref ?? `/brain/${moduleKey}`;
   const config = MEMORY_MATCH_CONFIG[difficulty];
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('instruction');
@@ -449,9 +456,12 @@ export default function MemoryMatchActivity({
       <div className="max-w-md mx-auto">
 
         <div className="flex items-center justify-between mb-4">
-          <Link href={`/brain/${moduleKey}`} className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700">
+          <Link
+            href={resolvedExitHref}
+            className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700"
+          >
             <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2} />
-            Exit
+            {exitLabel ? `Back to ${exitLabel}` : "Exit"}
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (
             <p className="text-xs font-semibold text-purple-600 uppercase tracking-widest">
@@ -618,7 +628,9 @@ export default function MemoryMatchActivity({
             </div>
             <div className="space-y-2">
               <button onClick={handleRestart} className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-sm transition-colors">Play again</button>
-              <button onClick={() => router.push(`/brain/${moduleKey}`)} className="w-full text-purple-600 hover:bg-purple-50 font-semibold py-2 rounded-xl text-sm transition-colors">Back to Memory module</button>
+              <button onClick={() => router.push(resolvedExitHref)} className="w-full text-purple-600 hover:bg-purple-50 font-semibold py-2 rounded-xl text-sm transition-colors">
+                {exitLabel ? `Back to ${exitLabel}` : `Back to ${moduleKey === "memory" ? "Memory" : moduleKey === "focus" ? "Focus" : "Thinking"} module`}
+              </button>
               <button onClick={() => router.push('/brain')} className="inline-flex items-center justify-center gap-1 w-full text-gray-500 hover:text-gray-700 text-xs py-1 transition-colors">
                 <ChevronLeft className="w-3 h-3" strokeWidth={2} />
                 Back to Brain

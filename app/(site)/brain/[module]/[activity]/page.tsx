@@ -32,12 +32,21 @@ const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
 export default async function ActivityPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ module: string; activity: string }>;
+  searchParams: Promise<{ from?: string }>;
 }) {
   const { module: moduleParam, activity: activityKey } = await params;
+  const { from } = await searchParams;
   if (!VALID_MODULES.includes(moduleParam as ModuleKey)) notFound();
   const moduleKey = moduleParam as ModuleKey;
+
+  // When the kid entered from Daily, Exit + Back should return them
+  // there — not to the module's chapter list. Same idea will extend to
+  // other entry contexts (badges, etc.) by adding cases here.
+  const exitHref = from === "daily" ? "/brain/daily" : `/brain/${moduleKey}`;
+  const exitLabel = from === "daily" ? "Daily" : moduleKey === "memory" ? "Memory" : moduleKey === "focus" ? "Focus" : "Thinking";
 
   const activeChild = await getActiveChild();
   if (!activeChild) redirect("/kids");
@@ -239,6 +248,8 @@ export default async function ActivityPage({
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
         tier={tier}
+        exitHref={exitHref}
+        exitLabel={exitLabel}
       />
     );
   }
