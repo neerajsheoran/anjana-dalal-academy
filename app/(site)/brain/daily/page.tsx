@@ -17,13 +17,14 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ChevronLeft, ChevronRight, Check, Flame, Lock } from "lucide-react";
+import { ChevronRight, Check, Flame, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import { getBrainStats } from "@/lib/brain-stats";
 import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
 import { BRAIN_ACTIVITIES, type ModuleKey } from "@/lib/brain-modules";
+import BackLink from "@/components/brain/BackLink";
 
 const PILLAR_ORDER: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -58,15 +59,9 @@ export default async function BrainDailyPage() {
   const nextPillar = PILLAR_ORDER.find((p) => !done[p]) ?? null;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-md mx-auto">
-        <Link
-          href="/brain"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
-        >
-          <ChevronLeft className="w-4 h-4" strokeWidth={2} />
-          Brain
-        </Link>
+        <BackLink href="/brain" label="Brain" />
 
         <div className="mb-5">
           <h1 className="text-2xl font-bold text-gray-800">Today&apos;s Activity</h1>

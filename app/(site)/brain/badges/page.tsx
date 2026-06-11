@@ -5,13 +5,14 @@
 
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import { getBrainStats } from "@/lib/brain-stats";
 import { BRAIN_TIERS } from "@/lib/brain-tiers";
 import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
+import BackLink from "@/components/brain/BackLink";
 import type { ModuleKey } from "@/lib/brain-modules";
 
 const PILLAR_THEME: Record<
@@ -36,15 +37,9 @@ export default async function BadgesPage() {
     : null;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-amber-50 py-8 px-4">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-amber-50 py-8 px-4">
       <div className="max-w-md mx-auto">
-        <Link
-          href="/brain"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
-        >
-          <ChevronLeft className="w-4 h-4" strokeWidth={2} />
-          Brain
-        </Link>
+        <BackLink href="/brain" label="Brain" />
 
         <h1 className="text-2xl font-bold text-gray-800 mb-1">Badges</h1>
         <p className="text-sm text-gray-500 mb-5">

@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ChevronLeft, ChevronRight, Lock } from "lucide-react";
+import { ChevronRight, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
@@ -17,6 +17,7 @@ import {
 import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
 import ActivityPreview from "@/components/brain/ActivityPreview";
 import LockedGameTile from "@/components/brain/LockedGameTile";
+import BackLink from "@/components/brain/BackLink";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -43,17 +44,10 @@ export default async function ModulePage({
   const demoActivityKey = DEMO_GAME_PER_PILLAR[moduleKey];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-md mx-auto">
 
-        {/* Back to brain */}
-        <Link
-          href="/brain"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-4"
-        >
-          <ChevronLeft className="w-4 h-4" strokeWidth={2} />
-          Brain
-        </Link>
+        <BackLink href="/brain" label="Brain" />
 
         {/* Module header */}
         <div className={`${ZONE_BG_SOFT[mod.zoneColor]} rounded-2xl p-6 mb-6 text-center`}>
