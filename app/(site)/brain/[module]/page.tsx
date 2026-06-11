@@ -3,9 +3,10 @@
 
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
+import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import {
   BRAIN_MODULES,
   getActivitiesForModule,
@@ -13,7 +14,9 @@ import {
   ZONE_TEXT,
   type ModuleKey,
 } from "@/lib/brain-modules";
+import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
 import ActivityPreview from "@/components/brain/ActivityPreview";
+import LockedGameTile from "@/components/brain/LockedGameTile";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -35,6 +38,9 @@ export default async function ModulePage({
 
   const mod = BRAIN_MODULES[moduleKey];
   const activities = getActivitiesForModule(moduleKey);
+  const accessLevel = await getContentAccessLevel(activeChild.parentUid);
+  const isPaid = hasFullAccess(accessLevel);
+  const demoActivityKey = DEMO_GAME_PER_PILLAR[moduleKey];
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
@@ -76,28 +82,48 @@ export default async function ModulePage({
                 activeChild.age >= activity.minAge &&
                 activeChild.age <= activity.maxAge,
             )
-            .map((activity) => (
-              <ActivityCard
-                key={activity.key}
-                href={
-                  activity.available
-                    ? `/brain/${moduleKey}/${activity.key}`
-                    : undefined
-                }
-                activityKey={activity.key}
-                name={activity.name}
-                skill={activity.skill}
-                ageRange={`Age ${activity.minAge}–${activity.maxAge}`}
-                ageOk={true}
-                available={activity.available}
-                color={mod.zoneColor}
-              />
-            ))}
+            .map((activity) => {
+              const lockedForFree =
+                !isPaid && activity.available && activity.key !== demoActivityKey;
+              if (lockedForFree) {
+                return (
+                  <LockedGameTile
+                    key={activity.key}
+                    activityName={activity.name}
+                    activitySkill={activity.skill}
+                    ageRange={`Age ${activity.minAge}–${activity.maxAge}`}
+                  />
+                );
+              }
+              return (
+                <ActivityCard
+                  key={activity.key}
+                  href={
+                    activity.available
+                      ? `/brain/${moduleKey}/${activity.key}`
+                      : undefined
+                  }
+                  activityKey={activity.key}
+                  name={activity.name}
+                  skill={activity.skill}
+                  ageRange={`Age ${activity.minAge}–${activity.maxAge}`}
+                  ageOk={true}
+                  available={activity.available}
+                  color={mod.zoneColor}
+                />
+              );
+            })}
         </div>
 
         {/* Footer note */}
-        <p className="text-xs text-gray-400 text-center mt-6">
-          More activities coming soon. Train one daily for best results.
+        {!isPaid && (
+          <p className="text-[11px] text-fuchsia-700 text-center mt-5 inline-flex items-center justify-center gap-1 w-full">
+            <Lock className="w-3 h-3" strokeWidth={2.5} />
+            Subscribe to unlock all activities + save progress
+          </p>
+        )}
+        <p className="text-xs text-gray-400 text-center mt-4">
+          Train one pillar daily for best results.
         </p>
       </div>
     </main>
