@@ -44,8 +44,8 @@ export default function LockedGameTile({
             <p className="text-sm font-bold text-gray-700">{activityName}</p>
             <p className="text-[11px] text-gray-500">{activitySkill} · {ageRange}</p>
           </div>
-          <span className="text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-500 px-2 py-1 rounded-full">
-            Locked
+          <span className="text-[10px] font-bold uppercase tracking-wider bg-fuchsia-100 text-fuchsia-700 px-2 py-1 rounded-full">
+            Sign up to play
           </span>
         </div>
       </button>
@@ -117,10 +117,10 @@ function UnlockModal({
         </div>
 
         <Link
-          href="/pricing"
+          href="/login?intent=signup"
           className="w-full bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 text-white font-bold py-3 rounded-xl text-sm transition-colors inline-flex items-center justify-center gap-1"
         >
-          Start free trial
+          Sign up free
           <ChevronRight className="w-4 h-4" strokeWidth={3} />
         </Link>
 

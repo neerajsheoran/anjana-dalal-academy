@@ -9,7 +9,11 @@ import { redirect } from "next/navigation";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
 import { getBrainStats } from "@/lib/brain-stats";
-import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
+import {
+  getContentAccessLevel,
+  getPlatformConfig,
+  hasFullAccess,
+} from "@/lib/subscription";
 import BrainHome from "./BrainHome";
 
 // Anonymous-friendly: visitors with no profile see the same layout in
@@ -24,12 +28,17 @@ export default async function BrainPage() {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
 
+  const config = await getPlatformConfig();
+  const trialDays = config.trialDays;
+
   if (!activeChild) {
     return (
       <BrainHome
         childName="there"
         stats={emptyStats()}
         isPaid={false}
+        isAnonymous={true}
+        trialDays={trialDays}
         dailyComplete={false}
         dailyDoneCount={0}
       />
@@ -51,6 +60,8 @@ export default async function BrainPage() {
       childName={activeChild.name}
       stats={stats}
       isPaid={isPaid}
+      isAnonymous={false}
+      trialDays={trialDays}
       dailyComplete={doneCount === 3}
       dailyDoneCount={doneCount}
     />

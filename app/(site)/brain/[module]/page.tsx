@@ -79,6 +79,15 @@ export default async function ModulePage({
                 (activeChild.age >= activity.minAge &&
                   activeChild.age <= activity.maxAge),
             )
+            // Free users see the demo game first so the playable card
+            // is what their eye lands on; locked tiles sit below.
+            // Paid users keep the original ordering.
+            .sort((a, b) => {
+              if (isPaid) return 0;
+              const aIsDemo = a.key === demoActivityKey ? -1 : 0;
+              const bIsDemo = b.key === demoActivityKey ? -1 : 0;
+              return aIsDemo - bIsDemo;
+            })
             .map((activity) => {
               const lockedForFree =
                 !isPaid && activity.available && activity.key !== demoActivityKey;

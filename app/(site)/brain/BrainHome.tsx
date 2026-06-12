@@ -11,6 +11,13 @@ interface BrainHomeProps {
   childName: string;
   stats: BrainStats;
   isPaid: boolean;
+  // Distinguishes "not logged in" (push to signup) from "logged-in but
+  // expired" (push to payment). At product stage today we only nudge
+  // signup; pricing is a later phase.
+  isAnonymous: boolean;
+  // Read from PlatformConfig.trialDays — currently 30 by default,
+  // editable by admins. Drives the "Start N-day free trial" copy.
+  trialDays: number;
   dailyComplete: boolean;
   dailyDoneCount: number;
 }
@@ -19,6 +26,8 @@ export default function BrainHome({
   childName,
   stats,
   isPaid,
+  isAnonymous,
+  trialDays,
   dailyComplete,
   dailyDoneCount,
 }: BrainHomeProps) {
@@ -46,7 +55,9 @@ export default function BrainHome({
           <ExploreCard isPaid={isPaid} />
         </div>
 
-        {!isPaid && <UpgradeCta />}
+        {!isPaid && (
+          <UpgradeCta isAnonymous={isAnonymous} trialDays={trialDays} />
+        )}
       </div>
     </main>
   );
@@ -96,13 +107,6 @@ function DailyCard({
 }) {
   const dots = ["○", "○", "○"];
   for (let i = 0; i < dailyDoneCount && i < 3; i++) dots[i] = "●";
-  const ctaLabel = !isPaid
-    ? "Try now"
-    : dailyComplete
-      ? "Replay"
-      : dailyDoneCount > 0
-        ? "Continue"
-        : "Start";
   return (
     <Link
       href="/brain/daily"
@@ -136,12 +140,7 @@ function DailyCard({
             </p>
           )}
         </div>
-        <div className="flex flex-col items-end gap-2 shrink-0 self-center">
-          <ChevronRight className="w-8 h-8 text-white" strokeWidth={3} />
-          <span className="text-[11px] font-bold bg-white/25 px-2.5 py-1 rounded-full">
-            {ctaLabel}
-          </span>
-        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
       </div>
     </Link>
   );
@@ -238,10 +237,23 @@ function ExploreCard({ isPaid }: { isPaid: boolean }) {
   );
 }
 
-function UpgradeCta() {
+function UpgradeCta({
+  isAnonymous,
+  trialDays,
+}: {
+  isAnonymous: boolean;
+  trialDays: number;
+}) {
+  // At product stage today we only push signup — money comes later.
+  // Anonymous → free signup. Expired logged-in users still see /pricing
+  // because they already have an account.
+  const href = isAnonymous ? "/login?intent=signup" : "/pricing";
+  const buttonLabel = isAnonymous
+    ? "Sign up free →"
+    : `Start ${trialDays}-day free trial →`;
   return (
     <Link
-      href="/pricing"
+      href={href}
       className="mt-5 block rounded-2xl p-4 bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white shadow-[0_8px_24px_rgba(217,70,239,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-transform"
     >
       <p className="text-sm font-bold leading-tight">✨ Unlock all 14 games</p>
@@ -249,7 +261,7 @@ function UpgradeCta() {
         Track progress · Win badges · Save streaks
       </p>
       <span className="inline-block mt-2 text-[11px] font-bold bg-white/25 px-2.5 py-1 rounded-full">
-        Start 3-day free trial →
+        {buttonLabel}
       </span>
     </Link>
   );

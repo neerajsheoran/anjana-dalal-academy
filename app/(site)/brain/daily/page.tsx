@@ -20,7 +20,11 @@ import { redirect, notFound } from "next/navigation";
 import { ChevronRight, Check, Flame, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
-import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
+import {
+  getContentAccessLevel,
+  getPlatformConfig,
+  hasFullAccess,
+} from "@/lib/subscription";
 import { getBrainStats } from "@/lib/brain-stats";
 import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
 import { BRAIN_ACTIVITIES, type ModuleKey } from "@/lib/brain-modules";
@@ -40,13 +44,16 @@ export default async function BrainDailyPage() {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
 
-  const [stats, accessLevel] = activeChild
+  const [stats, accessLevel, config] = activeChild
     ? await Promise.all([
         getBrainStats(activeChild.parentUid, activeChild.id),
         getContentAccessLevel(activeChild.parentUid),
+        getPlatformConfig(),
       ])
-    : [null, "anonymous" as const];
+    : [null, "anonymous" as const, await getPlatformConfig()];
   const isPaid = hasFullAccess(accessLevel);
+  const isAnonymous = !activeChild;
+  const trialDays = config.trialDays;
 
   const done = {
     memory:   stats?.memory.doneToday ?? false,
@@ -100,10 +107,12 @@ export default async function BrainDailyPage() {
               Free preview — progress won&apos;t be saved
             </p>
             <Link
-              href="/pricing"
+              href={isAnonymous ? "/login?intent=signup" : "/pricing"}
               className="inline-block mt-2 text-xs font-bold bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-3 py-1.5 rounded-full"
             >
-              Start 3-day free trial →
+              {isAnonymous
+                ? "Sign up free →"
+                : `Start ${trialDays}-day free trial →`}
             </Link>
           </div>
         )}
@@ -167,20 +176,16 @@ function DailyCard({
             <span className="text-gray-400"> · ~5 mins</span>
           </p>
         </div>
-        <div className="flex items-center self-center">
-          {!done && (
-            <span className={`inline-flex items-center gap-1 text-sm font-bold ${isNext ? "text-gray-800" : "text-gray-500"}`}>
-              {isNext ? "Play" : "Open"}
-              <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
-            </span>
-          )}
-          {done && (
-            <span className="text-xs text-gray-400 inline-flex items-center gap-1">
-              Replay
-              <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
-            </span>
-          )}
-        </div>
+        <ChevronRight
+          className={`w-8 h-8 shrink-0 self-center ${
+            done
+              ? "text-gray-400"
+              : isNext
+                ? "text-gray-800"
+                : "text-gray-500"
+          }`}
+          strokeWidth={3}
+        />
       </div>
     </Link>
   );
