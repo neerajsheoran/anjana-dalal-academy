@@ -15,7 +15,7 @@ import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
 import ChildrenSection from "@/components/profile/ChildrenSection";
 import PinSection from "@/components/profile/PinSection";
-import { redirectIfInKidMode } from "@/lib/active-child";
+import { hasChildren, redirectIfInKidMode } from "@/lib/active-child";
 
 
 async function getUser() {
@@ -155,11 +155,12 @@ export default async function ProfilePage() {
   // be able to land on parent settings by typing /profile in the URL.
   await redirectIfInKidMode();
   const user = await getUser();
-  const [quizHistory, progressStats, quizStats, bookmarks] = await Promise.all([
+  const [quizHistory, progressStats, quizStats, bookmarks, parentHasChildren] = await Promise.all([
     getQuizHistory(user.uid),
     getProgressStats(user.uid),
     getQuizStats(user.uid),
     getBookmarks(user.uid),
+    hasChildren(),
   ]);
 
   const name = (user.profile?.name as string) || user.name || "";
@@ -225,8 +226,14 @@ export default async function ProfilePage() {
           </div>
         </div>
 
-        {/* Parent PIN management */}
-        <PinSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
+        {/* Parent PIN — only shown once the parent has at least one child.
+            Before the first child exists the PIN is meaningless (nothing
+            to switch into), and showing it here would feel like a second,
+            unrelated setup task. The "Add child profile" form below
+            collects the PIN inline on first add. */}
+        {parentHasChildren && (
+          <PinSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
+        )}
 
         {/* Brain training: child profiles */}
         <ChildrenSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />

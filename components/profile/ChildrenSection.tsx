@@ -15,6 +15,7 @@ import {
   CheckCircle2,
   X,
   Pencil,
+  Lock,
 } from 'lucide-react';
 import {
   CLASS_OPTIONS,
@@ -428,16 +429,16 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
           <div className="w-14 h-14 rounded-xl bg-cream border border-warm-line flex items-center justify-center mx-auto mb-3">
             <BrainIcon className="w-6 h-6 text-brand" strokeWidth={2} />
           </div>
-          <p className="text-sm text-ink mb-1">No children added yet</p>
+          <p className="text-sm text-ink mb-1">No child profiles yet</p>
           <p className="text-xs text-ink-light mb-4">
-            Add your first child to start brain training
+            Add your first child profile to start brain training
           </p>
           <button
             onClick={() => setShowAdd(true)}
             className="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
           >
             <UserPlus className="w-4 h-4" strokeWidth={2.5} />
-            Add your first child
+            Add your child profile
           </button>
         </div>
       )}
@@ -588,7 +589,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               className="w-full inline-flex items-center justify-center gap-2 text-brand hover:bg-cream font-medium text-sm py-2 rounded-lg transition-colors border border-dashed border-warm-line"
             >
               <UserPlus className="w-4 h-4" strokeWidth={2.25} />
-              Add another child
+              Add another child profile
             </button>
           )}
         </>
@@ -655,36 +656,45 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
           </div>
 
           {!hasPin && (
-            <div className="bg-white p-3 rounded-lg border border-warm-line space-y-2">
-              <p className="text-xs font-semibold text-brand">
-                Set a 4-digit Parent PIN
+            <div className="bg-blue-50/60 border border-blue-200 rounded-xl p-4 space-y-3">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                  <Lock className="w-4 h-4 text-blue-700" strokeWidth={2.5} />
+                </div>
+                <p className="text-sm font-bold text-blue-900">
+                  Set your parent PIN
+                </p>
+              </div>
+              <p className="text-[12px] text-blue-800/90 leading-relaxed">
+                <strong>Different from your password.</strong> The PIN locks
+                parent-only screens (subscription, dashboard, settings) while
+                your child is playing — so they can&apos;t see them by accident.
+                You&apos;ll enter it to switch back into parent mode.
               </p>
-              <p className="text-[11px] text-ink-soft leading-relaxed">
-                Used when switching to a child profile. Prevents your child from
-                changing settings or accessing payment screens.
-              </p>
-              <input
-                type="password"
-                inputMode="numeric"
-                pattern="\d{4}"
-                value={pin}
-                onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
-                placeholder="4-digit PIN"
-                required
-                maxLength={4}
-              />
-              <input
-                type="password"
-                inputMode="numeric"
-                pattern="\d{4}"
-                value={pinConfirm}
-                onChange={(e) => setPinConfirm(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand"
-                placeholder="Confirm PIN"
-                required
-                maxLength={4}
-              />
+              <div className="grid grid-cols-2 gap-2 pt-1">
+                <input
+                  type="password"
+                  inputMode="numeric"
+                  pattern="\d{4}"
+                  value={pin}
+                  onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                  className="w-full border border-blue-200 bg-white rounded-lg px-3 py-2.5 text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="4-digit PIN"
+                  required
+                  maxLength={4}
+                />
+                <input
+                  type="password"
+                  inputMode="numeric"
+                  pattern="\d{4}"
+                  value={pinConfirm}
+                  onChange={(e) => setPinConfirm(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                  className="w-full border border-blue-200 bg-white rounded-lg px-3 py-2.5 text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Confirm"
+                  required
+                  maxLength={4}
+                />
+              </div>
             </div>
           )}
 

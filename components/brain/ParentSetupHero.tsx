@@ -53,11 +53,11 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
           <div className="text-center mb-7">
             <h1 className="text-2xl sm:text-3xl font-extrabold text-ink mb-2 leading-tight">
               {firstName
-                ? `Hi ${firstName}, let’s add your first child`
-                : 'Let’s add your first child'}
+                ? `Hi ${firstName}, let’s add your child’s profile`
+                : 'Let’s add your child’s profile'}
             </h1>
             <p className="text-ink-soft text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
-              Takes 30 seconds. You can add more later, or edit anything.
+              Just their name, age, and a 4-digit parent PIN. Takes 30 seconds.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
               className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
             >
               <span className="text-xl leading-none">🧒</span>
-              <span>Add your child</span>
+              <span>Add your child profile</span>
               <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
             </Link>
           </div>
