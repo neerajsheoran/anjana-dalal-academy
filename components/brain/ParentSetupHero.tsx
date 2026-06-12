@@ -1,9 +1,14 @@
-// Replaces the marketing hero on `/` when the parent is logged in but has
-// no child profiles yet. Treats the empty state as the primary job-to-be-done:
-// add a child to start training.
+// Replaces the marketing hero on `/` when the parent is logged in but
+// has no child profiles yet. Treats the empty state as Step 1 of a
+// quick onboarding — "add a child" is the one job-to-be-done and we
+// make that crystal clear.
 //
-// The marketing sections (How it works, sample insights, etc.) still render
-// below this — for parents who want to scroll and learn more before adding.
+// Redesigned 2026-06-13 per user feedback:
+//   - Step 1 of 3 badge so it reads as the START of a flow
+//   - Big friendly kid emoji as the visual anchor
+//   - 3 benefit cards reframed as "what unlocks AFTER" (a reward,
+//     not a list of random benefits)
+//   - Bigger primary CTA with the same kid icon repeated inside
 
 import Link from 'next/link';
 import {
@@ -18,62 +23,59 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
   return (
     <section className="bg-white py-12 px-6 border-b border-cool-line">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-cream border border-warm-line rounded-3xl p-6 sm:p-8 shadow-sm">
+        <div className="bg-cream border border-warm-line rounded-3xl p-6 sm:p-10 shadow-sm">
 
-          {/* Greeting */}
-          <p className="text-brand text-xs font-bold uppercase tracking-widest mb-2">
-            Welcome to CogniLift
-          </p>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-ink mb-3 leading-tight">
-            {firstName ? `Hi ${firstName}, ready to start?` : 'Ready to start?'}
-          </h1>
-          <p className="text-ink-soft text-sm sm:text-base max-w-2xl mb-6 leading-relaxed">
-            Add your child&rsquo;s profile to track their daily progress, get
-            personalized insights, and unlock games matched to their age.
-          </p>
+          {/* Step badge — communicates this is the start of a flow */}
+          <div className="flex items-center justify-center mb-5">
+            <span className="inline-flex items-center gap-1.5 bg-brand/10 text-brand text-[11px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
+              <span className="w-5 h-5 rounded-full bg-brand text-white text-[10px] font-bold flex items-center justify-center">
+                1
+              </span>
+              Step 1 of 3 · Quick setup
+            </span>
+          </div>
 
-          {/* 3 benefit chips */}
-          <div className="grid sm:grid-cols-3 gap-3 mb-6">
-            <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
-              <BarChart3 className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
-              <div className="min-w-0 sm:min-w-full">
-                <p className="text-sm font-bold text-ink">Daily progress</p>
-                <p className="text-[11px] text-ink-soft leading-snug">
-                  See what they trained, when, and how well
-                </p>
+          {/* Friendly kid icon — the visual anchor that says
+              "this page is about adding a child". Large emoji on a
+              soft pastel halo: fast, mobile-safe, instantly readable. */}
+          <div className="flex items-center justify-center mb-5">
+            <div className="relative">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-6xl sm:text-7xl shadow-inner">
+                🧒
               </div>
-            </div>
-            <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
-              <Brain className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
-              <div className="min-w-0 sm:min-w-full">
-                <p className="text-sm font-bold text-ink">Personal insights</p>
-                <p className="text-[11px] text-ink-soft leading-snug">
-                  Spot patterns: rushing, guessing, growing confidence
-                </p>
-              </div>
-            </div>
-            <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
-              <Target className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
-              <div className="min-w-0 sm:min-w-full">
-                <p className="text-sm font-bold text-ink">Age-fit games</p>
-                <p className="text-[11px] text-ink-soft leading-snug">
-                  Auto-tunes difficulty to match each child
-                </p>
+              <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-brand text-white flex items-center justify-center text-xl font-bold shadow-md">
+                +
               </div>
             </div>
           </div>
 
-          {/* Primary CTA */}
-          <Link
-            href="/profile#children"
-            className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-7 py-3.5 rounded-full text-base shadow-md hover:shadow-lg transition-all"
-          >
-            Add your child
-            <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
-          </Link>
+          {/* Greeting + ask */}
+          <div className="text-center mb-7">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-ink mb-2 leading-tight">
+              {firstName
+                ? `Hi ${firstName}, let’s add your first child`
+                : 'Let’s add your first child'}
+            </h1>
+            <p className="text-ink-soft text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+              Takes 30 seconds. You can add more later, or edit anything.
+            </p>
+          </div>
 
-          {/* Secondary "just exploring" link */}
-          <p className="text-ink-light text-xs mt-4">
+          {/* Primary CTA — big, centered, with the same icon repeated
+              inside so the eye connects icon → action */}
+          <div className="flex items-center justify-center mb-7">
+            <Link
+              href="/profile#children"
+              className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
+            >
+              <span className="text-xl leading-none">🧒</span>
+              <span>Add your child</span>
+              <ChevronRight className="w-5 h-5" strokeWidth={2.5} />
+            </Link>
+          </div>
+
+          {/* "Just exploring" escape hatch */}
+          <p className="text-ink-light text-xs text-center mb-7">
             Just exploring?{' '}
             <a
               href="#how-it-works"
@@ -83,6 +85,44 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
               <ChevronDown className="w-3 h-3" strokeWidth={2.5} />
             </a>
           </p>
+
+          {/* Divider + "what unlocks next" — reframes the 3 cards as
+              a reward for completing Step 1 */}
+          <div className="border-t border-warm-line pt-6">
+            <p className="text-ink-soft text-[11px] font-bold uppercase tracking-widest text-center mb-4">
+              What unlocks after you add a child
+            </p>
+            <div className="grid sm:grid-cols-3 gap-3">
+              <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
+                <BarChart3 className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
+                <div className="min-w-0 sm:min-w-full">
+                  <p className="text-sm font-bold text-ink">Daily progress</p>
+                  <p className="text-[11px] text-ink-soft leading-snug">
+                    See what they trained, when, and how well
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
+                <Brain className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
+                <div className="min-w-0 sm:min-w-full">
+                  <p className="text-sm font-bold text-ink">Personal insights</p>
+                  <p className="text-[11px] text-ink-soft leading-snug">
+                    Spot patterns: rushing, guessing, growing confidence
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border border-cool-line rounded-xl p-4 flex items-start gap-3 sm:flex-col sm:items-start">
+                <Target className="w-5 h-5 text-brand shrink-0" strokeWidth={2} />
+                <div className="min-w-0 sm:min-w-full">
+                  <p className="text-sm font-bold text-ink">Age-fit games</p>
+                  <p className="text-[11px] text-ink-soft leading-snug">
+                    Auto-tunes difficulty to match each child
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
