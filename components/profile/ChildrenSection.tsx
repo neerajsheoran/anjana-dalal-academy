@@ -10,7 +10,6 @@ import {
   UserPlus,
   RotateCcw,
   Trash2,
-  Brain as BrainIcon,
   LogIn,
   CheckCircle2,
   X,
@@ -325,7 +324,10 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   }
 
   return (
-    <div className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6">
+    <div
+      id="children"
+      className="bg-white border border-cool-line rounded-2xl shadow-sm p-6 mb-6 scroll-mt-24"
+    >
       <div className="flex items-center gap-2 mb-4">
         <Users className="w-4 h-4 text-brand" strokeWidth={2} />
         <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
@@ -426,8 +428,11 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
       {!loading && children !== null && children.length === 0 && !showAdd && (
         <div className="text-center py-6">
-          <div className="w-14 h-14 rounded-xl bg-cream border border-warm-line flex items-center justify-center mx-auto mb-3">
-            <BrainIcon className="w-6 h-6 text-brand" strokeWidth={2} />
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center mx-auto mb-4 text-5xl sm:text-6xl shadow-inner">
+            🧒
+            <div className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-base font-bold shadow-md">
+              +
+            </div>
           </div>
           <p className="text-sm text-ink mb-1">No child profiles yet</p>
           <p className="text-xs text-ink-light mb-4">
