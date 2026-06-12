@@ -28,11 +28,12 @@ const PILLAR_ORDER: ModuleKey[] = ["memory", "focus", "thinking"];
 
 export default async function BrainExplorePage() {
   const activeChild = await getActiveChild();
-  if (!activeChild) redirect("/kids");
-  if (!isTrainEligible(activeChild.classId)) {
+  if (activeChild && !isTrainEligible(activeChild.classId)) {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
-  const accessLevel = await getContentAccessLevel(activeChild.parentUid);
+  const accessLevel = activeChild
+    ? await getContentAccessLevel(activeChild.parentUid)
+    : "anonymous" as const;
   const isPaid = hasFullAccess(accessLevel);
 
   return (

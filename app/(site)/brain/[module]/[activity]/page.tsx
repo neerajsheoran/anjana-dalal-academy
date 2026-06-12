@@ -12,6 +12,7 @@ import {
   type ModuleKey,
 } from "@/lib/brain-modules";
 import { getAdaptiveDifficulty, type AdaptiveSource } from "@/lib/adaptive";
+import { DEMO_GAME_PER_PILLAR as DEMO_GAME_PER_PILLAR_ANON } from "@/lib/brain-demo-games";
 import type { Difficulty } from "@/lib/difficulty";
 import PatternRecallActivity from "@/components/brain/PatternRecallActivity";
 import FindTheObjectActivity from "@/components/brain/FindTheObjectActivity";
@@ -49,9 +50,9 @@ export default async function ActivityPage({
   const exitLabel = from === "daily" ? "Daily" : moduleKey === "memory" ? "Memory" : moduleKey === "focus" ? "Focus" : "Thinking";
 
   const activeChild = await getActiveChild();
-  if (!activeChild) redirect("/kids");
-  // Class 9+ is in board-prep mode (cognilift-three-pillar-roadmap.md).
-  if (!isTrainEligible(activeChild.classId)) {
+  // Class 9+ kids with a profile go back to school work. Anonymous
+  // visitors are allowed through to demo games only.
+  if (activeChild && !isTrainEligible(activeChild.classId)) {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
 
@@ -60,17 +61,29 @@ export default async function ActivityPage({
 
   const mod = BRAIN_MODULES[moduleKey];
 
-  // Age gate
-  const ageOk =
-    activeChild.age >= activity.minAge && activeChild.age <= activity.maxAge;
-  if (!ageOk) {
-    return (
-      <NotAvailable
-        backHref={`/brain/${moduleKey}`}
-        title="Different age range"
-        message={`This activity is designed for kids age ${activity.minAge}–${activity.maxAge}. ${activeChild.name} is ${activeChild.age}.`}
-      />
-    );
+  // Anonymous visitor: only the per-pillar demo game is playable. Any
+  // other activity bounces to login to set up a profile.
+  if (!activeChild) {
+    const isDemo =
+      DEMO_GAME_PER_PILLAR_ANON[moduleKey] === activityKey;
+    if (!isDemo) {
+      redirect("/login");
+    }
+  }
+
+  // Age gate (only when we know the kid's age — anonymous always allowed)
+  if (activeChild) {
+    const ageOk =
+      activeChild.age >= activity.minAge && activeChild.age <= activity.maxAge;
+    if (!ageOk) {
+      return (
+        <NotAvailable
+          backHref={`/brain/${moduleKey}`}
+          title="Different age range"
+          message={`This activity is designed for kids age ${activity.minAge}–${activity.maxAge}. ${activeChild.name} is ${activeChild.age}.`}
+        />
+      );
+    }
   }
 
   // Coming-soon stub
@@ -84,23 +97,27 @@ export default async function ActivityPage({
     );
   }
 
-  const adaptive = await getAdaptiveDifficulty(
-    activeChild.parentUid,
-    activeChild.id,
-    activityKey,
-    activeChild.age,
-  );
+  const adaptive = activeChild
+    ? await getAdaptiveDifficulty(
+        activeChild.parentUid,
+        activeChild.id,
+        activityKey,
+        activeChild.age,
+      )
+    : { difficulty: "easy" as Difficulty, source: undefined as AdaptiveSource | undefined, previousLevel: undefined as Difficulty | undefined };
   const difficulty: Difficulty = adaptive.difficulty;
-  const adaptiveSource: AdaptiveSource = adaptive.source;
+  const adaptiveSource: AdaptiveSource | undefined = adaptive.source;
   const previousLevel: Difficulty | undefined = adaptive.previousLevel;
-  const tier = getTrainingTier(activeChild.classId);
+  const tier = activeChild ? getTrainingTier(activeChild.classId) : "junior";
+  const childName = activeChild?.name ?? "friend";
+  const skipSave = !activeChild;
 
   // Route to the right activity component
   if (activityKey === "pattern-recall") {
     return (
       <PatternRecallActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -111,7 +128,7 @@ export default async function ActivityPage({
     return (
       <FindTheObjectActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -122,7 +139,7 @@ export default async function ActivityPage({
     return (
       <PatternLogicActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -133,7 +150,7 @@ export default async function ActivityPage({
     return (
       <NumberRecallActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -144,7 +161,7 @@ export default async function ActivityPage({
     return (
       <NumberSequenceActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -155,7 +172,7 @@ export default async function ActivityPage({
     return (
       <SpotTheDifferenceActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -166,7 +183,7 @@ export default async function ActivityPage({
     return (
       <StroopActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -177,7 +194,7 @@ export default async function ActivityPage({
     return (
       <ColorSequenceActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -188,7 +205,7 @@ export default async function ActivityPage({
     return (
       <TapBackActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -199,7 +216,7 @@ export default async function ActivityPage({
     return (
       <OddOneOutActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -210,7 +227,7 @@ export default async function ActivityPage({
     return (
       <AnalogiesActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -221,7 +238,7 @@ export default async function ActivityPage({
     return (
       <WhackTargetActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -232,7 +249,7 @@ export default async function ActivityPage({
     return (
       <MiniSudokuActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
@@ -243,13 +260,14 @@ export default async function ActivityPage({
     return (
       <MemoryMatchActivity
         moduleKey={moduleKey}
-        childName={activeChild.name}
+        childName={childName}
         difficulty={difficulty}
         adaptiveSource={adaptiveSource}
         previousLevel={previousLevel}
         tier={tier}
         exitHref={exitHref}
         exitLabel={exitLabel}
+        skipSave={skipSave}
       />
     );
   }

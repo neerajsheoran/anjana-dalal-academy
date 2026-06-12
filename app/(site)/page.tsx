@@ -92,7 +92,7 @@ export default async function HomePage() {
           <div className="grid sm:grid-cols-3 gap-4 max-w-5xl mx-auto mb-10">
             {/* Learn */}
             <Link
-              href="/class/class-6/science/chapter-1-the-wonderful-world-of-science"
+              href="/classes"
               className="group bg-gradient-to-br from-blue-500 to-indigo-700 text-white rounded-3xl p-6 shadow-[0_12px_28px_rgba(59,130,246,0.30)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all flex flex-col"
             >
               <div className="flex items-center justify-between mb-3">
@@ -100,23 +100,23 @@ export default async function HomePage() {
                   <BookOpen className="w-6 h-6" strokeWidth={2} />
                 </div>
                 <span className="text-[10px] font-bold uppercase tracking-widest bg-white/20 px-2 py-1 rounded-full">
-                  Free preview
+                  Browse free
                 </span>
               </div>
               <h2 className="text-xl font-bold mb-1">Learn</h2>
               <p className="text-sm text-white/85 flex-1">
                 200+ chapters across Maths, Science, Social Science — Class 1 to 10.
-                Sample Chapter 1 free.
+                First two chapters of every subject are free.
               </p>
               <span className="inline-flex items-center gap-1 mt-4 text-sm font-semibold">
-                Read a chapter
+                Browse classes
                 <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
               </span>
             </Link>
 
             {/* Train */}
             <Link
-              href="/try"
+              href="/brain"
               className="group bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-3xl p-6 shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all flex flex-col"
             >
               <div className="flex items-center justify-between mb-3">
@@ -129,11 +129,11 @@ export default async function HomePage() {
               </div>
               <h2 className="text-xl font-bold mb-1">Train</h2>
               <p className="text-sm text-white/85 flex-1">
-                14 brain games for Memory, Focus, Thinking. Play one now —
-                3 rounds, ~3 minutes.
+                14 brain games for Memory, Focus, Thinking. Three free to
+                play — sign up to unlock the rest and save progress.
               </p>
               <span className="inline-flex items-center gap-1 mt-4 text-sm font-semibold">
-                Play a brain game
+                See all games
                 <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
               </span>
             </Link>
@@ -163,15 +163,16 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          {/* Live Train demo — keeps the existing AHA-moment widget */}
-          <div className="max-w-2xl mx-auto">
+          {/* Live Train demo — kept as the AHA moment, narrower and
+              centered so the 3 pillar cards above stay hero. */}
+          <div className="max-w-md mx-auto">
             <div className="flex items-center justify-center gap-2 mb-3">
               <span className="inline-flex items-center gap-1.5 bg-cream border border-warm-line rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-ink-soft">
                 <Eye className="w-3.5 h-3.5 text-brand" strokeWidth={2.25} />
                 <span>Live preview · Pattern Recall</span>
               </span>
             </div>
-            <div className="bg-gradient-to-br from-blue-700 to-purple-700 rounded-3xl p-6 shadow-lg">
+            <div className="bg-gradient-to-br from-blue-700 to-purple-700 rounded-3xl p-6 shadow-lg flex items-center justify-center">
               <PatternRecallDemo />
             </div>
             <p className="text-center text-ink-light text-xs mt-4">

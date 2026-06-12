@@ -178,6 +178,7 @@ export default function MemoryMatchActivity({
   tier = 'junior',
   exitHref,
   exitLabel,
+  skipSave = false,
 }: {
   moduleKey: ModuleKey;
   childName: string;
@@ -189,6 +190,10 @@ export default function MemoryMatchActivity({
   // Daily flow passes /brain/daily so the kid returns to their session.
   exitHref?: string;
   exitLabel?: string;
+  // True for anonymous visitors playing the demo: skip /api/attempts
+  // (would 401), show local-only results so the loop still feels
+  // complete. Hooks signup at the end.
+  skipSave?: boolean;
 }) {
   const resolvedExitHref = exitHref ?? `/brain/${moduleKey}`;
   const config = MEMORY_MATCH_CONFIG[difficulty];
@@ -312,6 +317,26 @@ export default function MemoryMatchActivity({
     setSubmitting(true);
     setError('');
     setPhase('submitting');
+
+    // Anonymous preview: skip /api/attempts entirely (would 401),
+    // compute a local-only score per round so the summary still
+    // appears. Hooks signup at the end.
+    if (skipSave) {
+      setResults(
+        roundData.map((r) => ({
+          isCorrect: r.isCorrect,
+          finalScore: r.efficiencyPercent,
+          insightTitle: r.isCorrect ? "Sharp memory!" : "Solid round",
+          insightMessage: r.isCorrect
+            ? "Good recognition. Sign up to track your streak."
+            : "You found them all. Sign up to keep score across days.",
+        })),
+      );
+      setPhase('summary');
+      setSubmitting(false);
+      return;
+    }
+
     try {
       const responses = await Promise.all(
         roundData.map((r) =>

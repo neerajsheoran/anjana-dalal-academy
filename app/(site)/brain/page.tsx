@@ -12,14 +12,28 @@ import { getBrainStats } from "@/lib/brain-stats";
 import { getContentAccessLevel, hasFullAccess } from "@/lib/subscription";
 import BrainHome from "./BrainHome";
 
+// Anonymous-friendly: visitors with no profile see the same layout in
+// "preview" mode — 3 cards, demos playable from the pillar pages,
+// progress shown as zero, badges padlocked. Hooks signup at the moment
+// they try to save something.
 export default async function BrainPage() {
   const activeChild = await getActiveChild();
-  if (!activeChild) {
-    redirect("/kids");
-  }
-  // Class 9+ kids are in board-prep mode (cognilift-three-pillar-roadmap.md).
-  if (!isTrainEligible(activeChild.classId)) {
+
+  // Class 9+ kids who do have a profile are bounced to school work.
+  if (activeChild && !isTrainEligible(activeChild.classId)) {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
+  }
+
+  if (!activeChild) {
+    return (
+      <BrainHome
+        childName="there"
+        stats={emptyStats()}
+        isPaid={false}
+        dailyComplete={false}
+        dailyDoneCount={0}
+      />
+    );
   }
 
   const [stats, accessLevel] = await Promise.all([
@@ -41,4 +55,26 @@ export default async function BrainPage() {
       dailyDoneCount={doneCount}
     />
   );
+}
+
+// Default zeroed-out stats for anonymous visitors. Keeps the shape that
+// BrainHome expects without round-tripping to Firestore.
+function emptyStats() {
+  const t = {
+    setsCount: 0,
+    tier: { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 },
+    next: { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 10 },
+    setsToNext: 10,
+    percentToNext: 0,
+    doneToday: false,
+  } as const;
+  return {
+    memory:   { ...t },
+    focus:    { ...t },
+    thinking: { ...t },
+    totalSets: 0,
+    bestTier: t.tier,
+    streakDays: 0,
+    lastActiveIstDay: null,
+  };
 }

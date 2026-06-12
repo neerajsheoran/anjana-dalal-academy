@@ -36,21 +36,22 @@ const PILLAR_THEME: Record<ModuleKey, { emoji: string; label: string; ring: stri
 
 export default async function BrainDailyPage() {
   const activeChild = await getActiveChild();
-  if (!activeChild) redirect("/kids");
-  if (!isTrainEligible(activeChild.classId)) {
+  if (activeChild && !isTrainEligible(activeChild.classId)) {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
 
-  const [stats, accessLevel] = await Promise.all([
-    getBrainStats(activeChild.parentUid, activeChild.id),
-    getContentAccessLevel(activeChild.parentUid),
-  ]);
+  const [stats, accessLevel] = activeChild
+    ? await Promise.all([
+        getBrainStats(activeChild.parentUid, activeChild.id),
+        getContentAccessLevel(activeChild.parentUid),
+      ])
+    : [null, "anonymous" as const];
   const isPaid = hasFullAccess(accessLevel);
 
   const done = {
-    memory:   stats.memory.doneToday,
-    focus:    stats.focus.doneToday,
-    thinking: stats.thinking.doneToday,
+    memory:   stats?.memory.doneToday ?? false,
+    focus:    stats?.focus.doneToday  ?? false,
+    thinking: stats?.thinking.doneToday ?? false,
   };
   const doneCount = Number(done.memory) + Number(done.focus) + Number(done.thinking);
   const dots = PILLAR_ORDER.map((p) => (done[p] ? "●" : "○")).join(" ");
@@ -67,7 +68,7 @@ export default async function BrainDailyPage() {
           <h1 className="text-2xl font-bold text-gray-800">Today&apos;s Activity</h1>
           <div className="flex items-center justify-between mt-2">
             <span className="text-lg tracking-widest text-gray-600 font-bold">{dots}</span>
-            {isPaid && stats.streakDays > 0 && (
+            {isPaid && stats && stats.streakDays > 0 && (
               <span className="inline-flex items-center gap-1 text-xs font-semibold text-orange-600 bg-orange-50 px-2 py-1 rounded-full">
                 <Flame className="w-3.5 h-3.5" strokeWidth={2.5} />
                 Day {stats.streakDays}

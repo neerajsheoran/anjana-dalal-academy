@@ -31,15 +31,17 @@ export default async function ModulePage({
   const moduleKey = moduleParam as ModuleKey;
 
   const activeChild = await getActiveChild();
-  if (!activeChild) redirect("/kids");
-  // Class 9+ is in board-prep mode (cognilift-three-pillar-roadmap.md).
-  if (!isTrainEligible(activeChild.classId)) {
+  // Class 9+ kids with a profile go back to school work. Anonymous
+  // visitors fall through to a preview view (no signin required).
+  if (activeChild && !isTrainEligible(activeChild.classId)) {
     redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
   }
 
   const mod = BRAIN_MODULES[moduleKey];
   const activities = getActivitiesForModule(moduleKey);
-  const accessLevel = await getContentAccessLevel(activeChild.parentUid);
+  const accessLevel = activeChild
+    ? await getContentAccessLevel(activeChild.parentUid)
+    : "anonymous" as const;
   const isPaid = hasFullAccess(accessLevel);
   const demoActivityKey = DEMO_GAME_PER_PILLAR[moduleKey];
 
@@ -62,7 +64,7 @@ export default async function ModulePage({
 
         {/* Activity list */}
         <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3 px-1">
-          Activities for {activeChild.name}
+          Activities {activeChild ? `for ${activeChild.name}` : "(preview)"}
         </h2>
 
         {/* Filter out activities the child can't play (age-gated).
@@ -73,8 +75,9 @@ export default async function ModulePage({
           {activities
             .filter(
               (activity) =>
-                activeChild.age >= activity.minAge &&
-                activeChild.age <= activity.maxAge,
+                !activeChild ||
+                (activeChild.age >= activity.minAge &&
+                  activeChild.age <= activity.maxAge),
             )
             .map((activity) => {
               const lockedForFree =
