@@ -1,161 +1,251 @@
-// Personalized homepage shown when an active child profile is selected.
-// Replaces the public marketing hero with a kid-focused dashboard:
-// greeting, 3 pillar cards, optional class shortcut.
+// Kid-mode landing — shown on `/` when an active child profile is set.
+// Designed 2026-06-13 to match the new light-mode 3-pillar pattern used
+// in the rest of the app (anonymous hero, /brain home, etc.).
 //
-// Rendered from app/(site)/page.tsx based on getActiveChild().
+// Layout:
+//   • Header — kid name + crest (best brain tier + streak)
+//   • Continue card — last chapter the kid visited (highest-value real estate)
+//   • 3 pillar cards: Learn / Train / Apply
+//   • Helper line on switching profiles
+//
+// Train pillar is hidden for Class 9-10 (board-prep mode).
 
-import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
-import type { ActiveChild } from '@/lib/active-child';
-import { isTrainEligible } from '@/lib/train-eligibility';
+import Link from "next/link";
+import {
+  BookOpen,
+  Brain,
+  ChevronRight,
+  Flame,
+  Hammer,
+  PlayCircle,
+} from "lucide-react";
+import type { ActiveChild } from "@/lib/active-child";
+import type { BrainTier } from "@/lib/brain-tiers";
+import { isTrainEligible } from "@/lib/train-eligibility";
 
 const CLASS_LABEL: Record<string, string> = {
-  'class-1': 'Class 1',
-  'class-2': 'Class 2',
-  'class-3': 'Class 3',
-  'class-4': 'Class 4',
-  'class-5': 'Class 5',
-  'class-6': 'Class 6',
-  'class-7': 'Class 7',
-  'class-8': 'Class 8',
-  'class-9': 'Class 9',
-  'class-10': 'Class 10',
+  "class-1": "Class 1", "class-2": "Class 2", "class-3": "Class 3",
+  "class-4": "Class 4", "class-5": "Class 5", "class-6": "Class 6",
+  "class-7": "Class 7", "class-8": "Class 8", "class-9": "Class 9",
+  "class-10": "Class 10",
 };
 
-export default function KidHomepage({ child }: { child: ActiveChild }) {
-  // Class 9+ kids are in board-prep mode — Train surfaces are hidden so
-  // school work is the visible default. See cognilift-three-pillar-roadmap.md.
+const SUBJECT_LABEL: Record<string, string> = {
+  maths: "Maths",
+  science: "Science",
+  "social-science": "Social Science",
+};
+
+export interface RecentChapter {
+  classId: string;
+  subject: string;
+  chapterId: string;
+  chapterTitle: string;
+  lastVisitedAt: string | null;
+}
+
+interface KidHomepageProps {
+  child: ActiveChild;
+  bestTier: BrainTier | null;     // null if no brain attempts yet
+  streakDays: number;
+  recent: RecentChapter | null;   // null if no progress yet
+}
+
+export default function KidHomepage({
+  child,
+  bestTier,
+  streakDays,
+  recent,
+}: KidHomepageProps) {
   const showTrain = isTrainEligible(child.classId);
+  const classLabel = child.classId ? CLASS_LABEL[child.classId] : null;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white">
-      <section className="max-w-md mx-auto px-5 pt-10 pb-12">
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
+      <div className="max-w-md mx-auto">
+        <Header
+          name={child.name}
+          bestTier={bestTier}
+          streakDays={streakDays}
+          showTrain={showTrain}
+        />
 
-        {/* Greeting */}
-        <div className="text-center mb-8">
-          <p className="text-purple-200 text-xs font-semibold uppercase tracking-widest mb-2">
-            Welcome back
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold mb-2">
-            Hi {child.name}! 👋
-          </h1>
-          <p className="text-blue-200 text-sm">
-            {showTrain ? 'What do you want to train today?' : 'Ready to study?'}
-          </p>
+        {recent && <ContinueCard recent={recent} />}
+
+        <div className="space-y-4 mt-5">
+          <LearnCard classId={child.classId} classLabel={classLabel} />
+          {showTrain && (
+            <TrainCard bestTier={bestTier} streakDays={streakDays} />
+          )}
+          <ApplyCard classLabel={classLabel} />
         </div>
 
-        {/* Big primary CTA: Train your brain (hidden Class 9+) */}
-        {showTrain && (
-          <Link
-            href="/brain"
-            className="block bg-gradient-to-br from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:scale-[0.98] rounded-3xl p-6 mb-4 shadow-xl transition-all"
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-4xl shrink-0">
-                🧠
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-0.5">
-                  Brain training
-                </p>
-                <h2 className="text-xl font-bold mb-0.5">Train your brain</h2>
-                <p className="text-white/80 text-xs">
-                  Memory · Focus · Thinking — pick a part to play
-                </p>
-              </div>
-              <ChevronRight className="w-6 h-6 text-white/70" strokeWidth={2.5} />
-            </div>
-          </Link>
-        )}
-
-        {/* 3 pillar quick-tap cards (hidden Class 9+) */}
-        {showTrain && (
-          <div className="grid grid-cols-3 gap-2.5 mb-6">
-            <Link
-              href="/brain/memory"
-              className="bg-purple-500/20 hover:bg-purple-500/30 active:scale-95 border border-purple-300/40 rounded-2xl p-3 text-center transition-all"
-            >
-              <div className="text-3xl mb-1">🧠</div>
-              <p className="text-purple-100 text-xs font-bold">Memory</p>
-            </Link>
-            <Link
-              href="/brain/focus"
-              className="bg-green-500/20 hover:bg-green-500/30 active:scale-95 border border-green-300/40 rounded-2xl p-3 text-center transition-all"
-            >
-              <div className="text-3xl mb-1">🎯</div>
-              <p className="text-green-100 text-xs font-bold">Focus</p>
-            </Link>
-            <Link
-              href="/brain/thinking"
-              className="bg-orange-500/20 hover:bg-orange-500/30 active:scale-95 border border-orange-300/40 rounded-2xl p-3 text-center transition-all"
-            >
-              <div className="text-3xl mb-1">💡</div>
-              <p className="text-orange-100 text-xs font-bold">Thinking</p>
-            </Link>
-          </div>
-        )}
-
-        {/* School cards. When the kid has a classId we surface BOTH:
-              1. Their class (primary, 90% case)
-              2. Explore all classes & subjects (browsing, 10% case)
-            When no classId is set, only the Explore card shows. */}
-        {child.classId && (
-          <Link
-            href={`/class/${child.classId}`}
-            className="block bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-5 mb-3 transition-colors"
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-400/20 flex items-center justify-center text-2xl shrink-0">
-                📚
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-blue-200 text-[11px] font-semibold uppercase tracking-wider mb-0.5">
-                  Your School Work
-                </p>
-                <h3 className="text-base font-bold">
-                  {CLASS_LABEL[child.classId] || child.classId} practice
-                </h3>
-                <p className="text-blue-100/70 text-xs">
-                  Maths and Science from your class
-                </p>
-              </div>
-              <ChevronRight className="w-5 h-5 text-white/60" strokeWidth={2.5} />
-            </div>
-          </Link>
-        )}
-
-        {/* Explore card — always shown. Same visual weight as the School
-            card above, distinct accent color so the two are easy to tell
-            apart at a glance. Tappable for curiosity-driven browsing. */}
-        <Link
-          href="/learn"
-          className="block bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-5 mb-4 transition-colors"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-emerald-400/20 flex items-center justify-center text-2xl shrink-0">
-              🧭
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-emerald-200 text-[11px] font-semibold uppercase tracking-wider mb-0.5">
-                Explore
-              </p>
-              <h3 className="text-base font-bold">
-                {child.classId
-                  ? 'See other classes & subjects'
-                  : 'Browse all classes & subjects'}
-              </h3>
-              <p className="text-emerald-100/70 text-xs">
-                Peek at Maths and Science from any class, 1 to 10
-              </p>
-            </div>
-            <ChevronRight className="w-5 h-5 text-white/60" strokeWidth={2.5} />
-          </div>
-        </Link>
-
-        <p className="text-center text-[11px] text-blue-200/50 mt-6">
-          Use the avatar at the top right to switch profiles
+        <p className="text-center text-[11px] text-gray-400 mt-8">
+          Tap the avatar at the top right to switch profiles
         </p>
-      </section>
+      </div>
     </main>
+  );
+}
+
+function Header({
+  name,
+  bestTier,
+  streakDays,
+  showTrain,
+}: {
+  name: string;
+  bestTier: BrainTier | null;
+  streakDays: number;
+  showTrain: boolean;
+}) {
+  return (
+    <div className="text-center">
+      <p className="text-purple-600 text-xs font-bold uppercase tracking-widest mb-1">
+        Welcome back
+      </p>
+      <h1 className="text-3xl font-bold text-gray-900 mb-3">
+        Hi {name}! <span className="inline-block animate-wiggle">👋</span>
+      </h1>
+      {showTrain && (bestTier || streakDays > 0) && (
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm text-sm">
+          {bestTier && (
+            <>
+              <span className="text-lg">{bestTier.emoji}</span>
+              <span className="font-bold text-gray-800">{bestTier.name}</span>
+            </>
+          )}
+          {streakDays > 0 && (
+            <>
+              {bestTier && <span className="text-gray-300">·</span>}
+              <span className="inline-flex items-center gap-1 text-orange-600">
+                <Flame className="w-3.5 h-3.5" strokeWidth={2.5} />
+                <span className="font-bold">{streakDays}</span>
+                <span className="text-orange-500/80">
+                  day{streakDays === 1 ? "" : "s"}
+                </span>
+              </span>
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ContinueCard({ recent }: { recent: RecentChapter }) {
+  const subject = SUBJECT_LABEL[recent.subject] || recent.subject;
+  const classLabel = CLASS_LABEL[recent.classId] || recent.classId;
+  const href = `/class/${recent.classId}/${recent.subject}/${recent.chapterId}`;
+  return (
+    <div className="mt-6">
+      <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
+        Continue where you left off
+      </p>
+      <Link
+        href={href}
+        className="group block rounded-2xl p-4 bg-white border border-blue-200 hover:border-blue-400 hover:shadow-md transition-all"
+      >
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+            <PlayCircle className="w-7 h-7 text-blue-600" strokeWidth={2} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-[11px] text-gray-500 font-semibold">
+              {classLabel} · {subject}
+            </p>
+            <p className="text-sm font-bold text-gray-800 leading-snug truncate">
+              {recent.chapterTitle}
+            </p>
+          </div>
+          <ChevronRight className="w-6 h-6 text-blue-600 shrink-0" strokeWidth={3} />
+        </div>
+      </Link>
+    </div>
+  );
+}
+
+function LearnCard({
+  classId,
+  classLabel,
+}: {
+  classId: string | null;
+  classLabel: string | null;
+}) {
+  const href = classId ? `/class/${classId}` : "/classes";
+  const body = classLabel
+    ? `${classLabel} · Maths, Science, Social Science`
+    : "Browse classes and subjects, Class 1 to 10";
+  return (
+    <Link
+      href={href}
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-blue-500 to-indigo-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.30)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <BookOpen className="w-8 h-8" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">Learn</h3>
+          <p className="text-sm text-white/85 mt-0.5">{body}</p>
+        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+      </div>
+    </Link>
+  );
+}
+
+function TrainCard({
+  bestTier,
+  streakDays,
+}: {
+  bestTier: BrainTier | null;
+  streakDays: number;
+}) {
+  const body =
+    streakDays > 0
+      ? `14 brain games · 🔥 ${streakDays}-day streak`
+      : bestTier
+        ? `14 brain games · ${bestTier.emoji} ${bestTier.name}`
+        : "Memory · Focus · Thinking — pick a game";
+  return (
+    <Link
+      href="/brain"
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <Brain className="w-8 h-8" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">Train</h3>
+          <p className="text-sm text-white/85 mt-0.5">{body}</p>
+        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+      </div>
+    </Link>
+  );
+}
+
+function ApplyCard({ classLabel }: { classLabel: string | null }) {
+  const body = classLabel
+    ? `Hands-on projects + DIYs for ${classLabel}`
+    : "Hands-on science projects from the kitchen";
+  return (
+    <Link
+      href="/apply"
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-[0_12px_28px_rgba(251,146,60,0.30)] hover:shadow-[0_16px_32px_rgba(251,146,60,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <Hammer className="w-8 h-8" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">Apply</h3>
+          <p className="text-sm text-white/85 mt-0.5">{body}</p>
+        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+      </div>
+    </Link>
   );
 }

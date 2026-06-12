@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { BookOpen, Brain, ChevronRight, Eye, Hammer, Sparkles, Users } from 'lucide-react';
 import ContinueLearning from '@/components/progress/ContinueLearning';
 import { getActiveChild, getParent, hasChildren } from '@/lib/active-child';
+import { adminDb } from '@/lib/firebase-admin';
+import { getBrainStats } from '@/lib/brain-stats';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
-import KidHomepage from '@/components/brain/KidHomepage';
+import KidHomepage, { type RecentChapter } from '@/components/brain/KidHomepage';
 import ParentSetupHero from '@/components/brain/ParentSetupHero';
 import ParentChooser from '@/components/brain/ParentChooser';
 
@@ -14,18 +16,37 @@ export default async function HomePage() {
     hasChildren(),
   ]);
 
-  // Kid mode → personalized dashboard, no marketing copy
+  // Kid mode → personalized dashboard. Fetch brain stats + most-recent
+  // chapter to power the crest header and Continue card.
   if (activeChild) {
-    return <KidHomepage child={activeChild} />;
+    const [stats, recent] = await Promise.all([
+      getBrainStats(activeChild.parentUid, activeChild.id),
+      getMostRecentChapter(activeChild.parentUid),
+    ]);
+    return (
+      <KidHomepage
+        child={activeChild}
+        bestTier={stats.totalSets > 0 ? stats.bestTier : null}
+        streakDays={stats.streakDays}
+        recent={recent}
+      />
+    );
   }
 
-  // Activated parent (logged in + has kids, not in kid mode) → chooser view
-  // replaces the marketing hero. Cold prospects still see the marketing hero.
+  // Activated parent (logged in + has kids, not in kid mode) → chooser view.
+  // Cold prospects still see the marketing hero.
   const showChooser = parentHasChildren;
   // Logged-in parent with no kids → setup hero replaces the marketing hero
   const showSetupHero = parent && !parentHasChildren;
   // Cold prospect → keep the existing marketing hero + bridge card
   const showMarketingHero = !showSetupHero && !showChooser;
+
+  // For the parent chooser we need the list of kids with light stats so
+  // each kid card shows their tier + streak (decision-relevant for the
+  // parent before they tap in).
+  const parentKidsForChooser = showChooser && parent
+    ? await getKidsWithStats(parent.uid)
+    : [];
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -52,7 +73,12 @@ export default async function HomePage() {
 
       {/* ── Parent chooser: state-aware utility view for activated parents.
             "How would you like to start?" + Brain / School / Dashboard cards. */}
-      {showChooser && <ParentChooser firstName={parent?.firstName || ''} />}
+      {showChooser && (
+        <ParentChooser
+          firstName={parent?.firstName || ''}
+          kids={parentKidsForChooser}
+        />
+      )}
 
       {/* ── HERO — Three-pillar anonymous landing (cold prospects only).
             Decided 2026-06-12 with user: surface Learn / Train / Apply
@@ -285,4 +311,74 @@ export default async function HomePage() {
       <ContinueLearning />
     </main>
   );
+}
+
+// Fetch the most recently visited chapter for a parent across all their
+// progress docs. Powers the Continue card on the kid home. Note: progress
+// is stored per parent UID (the kid plays under the parent's account),
+// keyed by chapterId. We sort by lastVisitedAt and pick one.
+async function getMostRecentChapter(parentUid: string): Promise<RecentChapter | null> {
+  try {
+    const snap = await adminDb
+      .collection('users')
+      .doc(parentUid)
+      .collection('progress')
+      .orderBy('lastVisitedAt', 'desc')
+      .limit(1)
+      .get();
+    if (snap.empty) return null;
+    const doc = snap.docs[0];
+    const d = doc.data();
+    return {
+      classId: (d.classId as string) || '',
+      subject: (d.subject as string) || '',
+      chapterId: doc.id,
+      chapterTitle: (d.chapterTitle as string) || doc.id,
+      lastVisitedAt: d.lastVisitedAt?.toDate?.()?.toISOString?.() ?? null,
+    };
+  } catch {
+    return null;
+  }
+}
+
+// Fetch all kids for a parent with their crest (best brain tier) and
+// current streak. Used by the parent chooser to surface decision-relevant
+// progress on each kid card.
+async function getKidsWithStats(parentUid: string): Promise<
+  Array<{
+    id: string;
+    name: string;
+    classId: string | null;
+    bestTier: { name: string; emoji: string } | null;
+    streakDays: number;
+  }>
+> {
+  try {
+    const snap = await adminDb
+      .collection('users')
+      .doc(parentUid)
+      .collection('children')
+      .get();
+    if (snap.empty) return [];
+
+    const kids = await Promise.all(
+      snap.docs.map(async (doc) => {
+        const d = doc.data();
+        const stats = await getBrainStats(parentUid, doc.id);
+        return {
+          id: doc.id,
+          name: (d.name as string) || '',
+          classId: (d.classId as string) || null,
+          bestTier:
+            stats.totalSets > 0
+              ? { name: stats.bestTier.name, emoji: stats.bestTier.emoji }
+              : null,
+          streakDays: stats.streakDays,
+        };
+      }),
+    );
+    return kids;
+  } catch {
+    return [];
+  }
 }

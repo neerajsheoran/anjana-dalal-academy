@@ -1,5 +1,10 @@
-// POST   /api/children/active  — enter kid mode (set activeChild cookie). Requires PIN if set.
-// DELETE /api/children/active  — exit kid mode (clear activeChild cookie).
+// POST   /api/children/active  — enter kid mode (set activeChild cookie). No PIN.
+// DELETE /api/children/active  — exit kid mode (clear activeChild cookie). PIN required.
+//
+// PIN model (decided 2026-06-13 with user): entering kid mode is free
+// because the parent is already authenticated and stepping INTO a more
+// restricted surface. Exiting back to parent mode is the protected
+// direction — that's where the PIN lives.
 
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
 import { verifyPin } from "@/lib/pin";
@@ -20,7 +25,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid session" }, { status: 401 });
   }
 
-  let body: { childId?: unknown; pin?: unknown };
+  let body: { childId?: unknown };
   try {
     body = await req.json();
   } catch {
@@ -28,19 +33,12 @@ export async function POST(req: Request) {
   }
 
   const childId = typeof body.childId === "string" ? body.childId : "";
-  const pin = typeof body.pin === "string" ? body.pin : "";
   if (!childId) {
     return NextResponse.json({ error: "Missing childId" }, { status: 400 });
   }
 
-  // PIN is required only at the kid/parent boundary (parent → kid).
-  // Switching between two kid profiles (kid → kid) is free, since both sides
-  // are already inside kid mode and the PIN's purpose is to gate the
-  // PARENT layer, not sibling-vs-sibling privacy on a shared device.
-  const alreadyInKidMode = !!cookieStore.get(ACTIVE_CHILD_COOKIE)?.value;
-
   try {
-    // 1. Verify the child belongs to this parent
+    // Verify the child belongs to this parent
     const childDoc = await adminDb
       .collection("users")
       .doc(uid)
@@ -51,18 +49,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Child not found" }, { status: 404 });
     }
 
-    // 2. Verify the parent's PIN — only when entering kid mode from parent mode
-    if (!alreadyInKidMode) {
-      const userDoc = await adminDb.collection("users").doc(uid).get();
-      const expectedHash = userDoc.data()?.childPinHash as string | undefined;
-      if (expectedHash) {
-        if (!pin || !verifyPin(pin, uid, expectedHash)) {
-          return NextResponse.json({ error: "Incorrect PIN" }, { status: 401 });
-        }
-      }
-    }
-
-    // 3. Set the activeChild cookie (session-scoped, httpOnly, secure in prod)
+    // Set the activeChild cookie (httpOnly, secure in prod)
     cookieStore.set(ACTIVE_CHILD_COOKIE, childId, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
