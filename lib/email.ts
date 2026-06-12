@@ -28,7 +28,7 @@ export async function sendWelcomeEmail(to: string, name: string, trialDays: numb
             Your account has been created and your <strong>${trialDays}-day free trial</strong> has started.
           </p>
           <p style="color: #475569; line-height: 1.6;">
-            Explore all CBSE learning resources during your trial period. Subscribe anytime to continue after your trial ends.
+            Explore all learning resources during your trial period. Subscribe anytime to continue after your trial ends.
           </p>
           <div style="margin: 24px 0;">
             <a href="https://cognilift.in" style="background: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">
@@ -75,7 +75,7 @@ export async function sendSubscriptionConfirmedEmail(
             </p>
           </div>
           <p style="color: #475569; line-height: 1.6;">
-            You now have full access to all CBSE resources. Happy learning!
+            You now have full access to all resources. Happy learning!
           </p>
           <div style="margin: 24px 0;">
             <a href="https://cognilift.in" style="background: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">

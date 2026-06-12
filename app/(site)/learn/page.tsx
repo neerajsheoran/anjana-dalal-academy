@@ -1,5 +1,5 @@
 // Academic chooser page. Reachable from the homepage Bridge card.
-// Gives users 3 paths into the existing CBSE academic content:
+// Gives users 3 paths into the existing academic content:
 // Class / Subject / Quiz.
 
 import Link from 'next/link';

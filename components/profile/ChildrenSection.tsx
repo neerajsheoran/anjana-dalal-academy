@@ -16,10 +16,22 @@ import {
   Pencil,
   Lock,
 } from 'lucide-react';
-import {
-  CLASS_OPTIONS,
-  suggestClassFromAge,
-} from '@/lib/age-group';
+import { CLASS_OPTIONS } from '@/lib/age-group';
+
+// Indian convention: Class N maps to roughly age N+5 (Class 1 ≈ 6,
+// Class 10 ≈ 15). The parent only enters class now; the form computes
+// the kid's age for the existing age-gated activity logic and the
+// adaptive engine. Decided 2026-06-13 to drop the explicit Age field
+// at signup — it was duplicate friction (parent has to think about
+// both class and age) and every consumer of `age` works fine with the
+// derived value.
+function ageFromClass(classId: string | null | undefined): number {
+  if (!classId) return 6; // safe default — Class 1 / age 6
+  const m = /^class-(\d+)$/.exec(classId);
+  if (!m) return 6;
+  const n = parseInt(m[1], 10);
+  return Number.isFinite(n) ? n + 5 : 6;
+}
 
 interface Child {
   id: string;
@@ -61,16 +73,13 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   // inline edit form instead of the normal display.
   const [editingChildId, setEditingChildId] = useState<string | null>(null);
   const [editName, setEditName] = useState('');
-  const [editAge, setEditAge] = useState('');
   const [editClassId, setEditClassId] = useState('');
   const [editSubmitting, setEditSubmitting] = useState(false);
   const [editError, setEditError] = useState('');
 
   // Add-form state
   const [name, setName] = useState('');
-  const [age, setAge] = useState('');
   const [classId, setClassId] = useState('');
-  const [classManuallyChanged, setClassManuallyChanged] = useState(false);
   const [consent, setConsent] = useState(false);
   const [pin, setPin] = useState('');
   const [pinConfirm, setPinConfirm] = useState('');
@@ -109,9 +118,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
   function resetForm() {
     setName('');
-    setAge('');
     setClassId('');
-    setClassManuallyChanged(false);
     setConsent(false);
     setPin('');
     setPinConfirm('');
@@ -119,27 +126,13 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     setShowAdd(false);
   }
 
-  function handleAgeChange(value: string) {
-    setAge(value);
-    // Auto-suggest class from age unless the parent has already picked one
-    if (!classManuallyChanged) {
-      const ageNum = parseInt(value, 10);
-      if (Number.isInteger(ageNum)) {
-        const suggested = suggestClassFromAge(ageNum);
-        setClassId(suggested);
-      }
-    }
-  }
-
   async function handleAdd(e: React.FormEvent) {
     e.preventDefault();
     setError('');
 
-    const ageNum = parseInt(age, 10);
     if (!name.trim()) return setError('Please enter a first name.');
-    if (!Number.isInteger(ageNum) || ageNum < 5 || ageNum > 15) {
-      return setError('Age must be a whole number between 5 and 15.');
-    }
+    if (!classId) return setError('Please select your child’s class.');
+    const ageNum = ageFromClass(classId);
     if (!consent) return setError('Please confirm parental consent.');
 
     // PIN setup is required only when no PIN exists yet
@@ -168,7 +161,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
         body: JSON.stringify({
           name: name.trim(),
           age: ageNum,
-          classId: classId || null,
+          classId,
           consent,
         }),
       });
@@ -233,15 +226,18 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   function startEdit(child: Child) {
     setEditingChildId(child.id);
     setEditName(child.name);
-    setEditAge(String(child.age));
-    setEditClassId(child.classId || '');
+    // Prefer the stored class. If a legacy child only has age, infer
+    // class from age so the dropdown lands on something sensible.
+    const inferredClass =
+      child.classId ||
+      (child.age >= 6 && child.age <= 15 ? `class-${child.age - 5}` : '');
+    setEditClassId(inferredClass);
     setEditError('');
   }
 
   function cancelEdit() {
     setEditingChildId(null);
     setEditName('');
-    setEditAge('');
     setEditClassId('');
     setEditError('');
   }
@@ -251,11 +247,9 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     if (!editingChildId) return;
     setEditError('');
 
-    const ageNum = parseInt(editAge, 10);
     if (!editName.trim()) return setEditError('Name is required.');
-    if (!Number.isInteger(ageNum) || ageNum < 5 || ageNum > 15) {
-      return setEditError('Age must be a whole number between 5 and 15.');
-    }
+    if (!editClassId) return setEditError('Please select a class.');
+    const ageNum = ageFromClass(editClassId);
 
     setEditSubmitting(true);
     try {
@@ -265,7 +259,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
         body: JSON.stringify({
           name: editName.trim(),
           age: ageNum,
-          classId: editClassId || null,
+          classId: editClassId,
         }),
       });
       if (!res.ok) {
@@ -474,31 +468,15 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-ink mb-1">
-                      Age
-                    </label>
-                    <input
-                      type="number"
-                      value={editAge}
-                      onChange={(e) => setEditAge(e.target.value)}
-                      min={5}
-                      max={15}
-                      className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
-                      required
-                    />
-                    <p className="text-[11px] text-ink-light mt-1">
-                      Used to choose age-appropriate games.
-                    </p>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-ink mb-1">
-                      School class <span className="text-ink-light">(optional)</span>
+                      Class <span className="text-red-500">*</span>
                     </label>
                     <select
                       value={editClassId}
                       onChange={(e) => setEditClassId(e.target.value)}
                       className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+                      required
                     >
-                      <option value="">Not in CBSE / homeschooled</option>
+                      <option value="">Select class</option>
                       {CLASS_OPTIONS.map((o) => (
                         <option key={o.id} value={o.id}>
                           {o.label}
@@ -619,36 +597,15 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
           <div>
             <label className="block text-xs font-medium text-ink mb-1">
-              Age
-            </label>
-            <input
-              type="number"
-              value={age}
-              onChange={(e) => handleAgeChange(e.target.value)}
-              min={5}
-              max={15}
-              className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
-              placeholder="5–15"
-              required
-            />
-            <p className="text-[11px] text-ink-light mt-1">
-              Must be between 5 and 15. Used to choose age-appropriate games.
-            </p>
-          </div>
-
-          <div>
-            <label className="block text-xs font-medium text-ink mb-1">
-              School class <span className="text-ink-light">(optional)</span>
+              Class <span className="text-red-500">*</span>
             </label>
             <select
               value={classId}
-              onChange={(e) => {
-                setClassId(e.target.value);
-                setClassManuallyChanged(true);
-              }}
+              onChange={(e) => setClassId(e.target.value)}
               className="w-full border border-cool-line rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand bg-white"
+              required
             >
-              <option value="">Not in CBSE / homeschooled</option>
+              <option value="">Select class</option>
               {CLASS_OPTIONS.map((o) => (
                 <option key={o.id} value={o.id}>
                   {o.label}
@@ -656,7 +613,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               ))}
             </select>
             <p className="text-[11px] text-ink-light mt-1">
-              We&apos;ll suggest matching academic content for this class.
+              We use the class to match academic content and age-appropriate games.
             </p>
           </div>
 

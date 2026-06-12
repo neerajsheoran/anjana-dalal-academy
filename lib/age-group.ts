@@ -21,8 +21,9 @@ export function isValidAge(age: number): boolean {
   return Number.isInteger(age) && age >= 5 && age <= 15;
 }
 
-// CBSE class typically starts at age 6 (Class 1). Used as the default in the
-// add-child form; parent can always override.
+// School class typically starts at age 6 (Class 1). Used historically
+// as a default suggestion in the add-child form; the form now collects
+// class directly, so this remains as a helper for other callers.
 export function suggestClassFromAge(age: number): ClassId | "" {
   const cls = age - 5;
   if (cls < 1 || cls > 10) return "";
