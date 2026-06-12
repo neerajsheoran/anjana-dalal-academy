@@ -360,6 +360,23 @@ export default function MemoryMatchActivity({
           }),
         ),
       );
+      // If the first response is a 401, treat the whole session as
+      // anonymous (cookie expired between mount and reflection) — fall
+      // back to local results instead of dumping a raw error on the kid.
+      if (responses.some((r) => r.status === 401)) {
+        setResults(
+          roundData.map((r) => ({
+            isCorrect: r.isCorrect,
+            finalScore: r.efficiencyPercent,
+            insightTitle: r.isCorrect ? "Sharp memory!" : "Solid round",
+            insightMessage:
+              "Sign up free to save these scores and unlock all 14 games.",
+          })),
+        );
+        setPhase('summary');
+        setSubmitting(false);
+        return;
+      }
       const parsed = await Promise.all(
         responses.map(async (res, i) => {
           if (!res.ok) {
@@ -483,9 +500,9 @@ export default function MemoryMatchActivity({
         <div className="flex items-center justify-between mb-4">
           <Link
             href={resolvedExitHref}
-            className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700"
+            className="inline-flex items-center gap-1.5 bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 rounded-xl px-3 py-2 text-sm font-semibold text-gray-700 hover:text-gray-900 shadow-sm transition-all"
           >
-            <ChevronLeft className="w-3.5 h-3.5" strokeWidth={2} />
+            <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
             {exitLabel ? `Back to ${exitLabel}` : "Exit"}
           </Link>
           {phase !== 'instruction' && phase !== 'summary' && phase !== 'submitting' && (

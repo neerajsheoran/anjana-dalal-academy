@@ -4,7 +4,7 @@
 // white. Icons bumped to w-16/text-4xl per feedback.
 
 import Link from "next/link";
-import { ChevronRight, Flame, Lock } from "lucide-react";
+import { ChevronLeft, ChevronRight, Flame, Lock } from "lucide-react";
 import type { BrainStats } from "@/lib/brain-stats";
 
 interface BrainHomeProps {
@@ -25,6 +25,15 @@ export default function BrainHome({
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-md mx-auto">
+        {!isPaid && (
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1.5 bg-white hover:bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm font-semibold text-gray-700 shadow-sm mb-5"
+          >
+            <ChevronLeft className="w-5 h-5" strokeWidth={2.5} />
+            Home
+          </Link>
+        )}
         <Header childName={childName} stats={stats} isPaid={isPaid} />
 
         <div className="space-y-4 mt-6">
@@ -127,8 +136,8 @@ function DailyCard({
             </p>
           )}
         </div>
-        <div className="flex flex-col items-end gap-2 shrink-0">
-          <ChevronRight className="w-6 h-6 text-white/80" strokeWidth={2.5} />
+        <div className="flex flex-col items-end gap-2 shrink-0 self-center">
+          <ChevronRight className="w-8 h-8 text-white" strokeWidth={3} />
           <span className="text-[11px] font-bold bg-white/25 px-2.5 py-1 rounded-full">
             {ctaLabel}
           </span>
@@ -141,20 +150,27 @@ function DailyCard({
 function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
   if (!isPaid) {
     return (
-      <div className="block rounded-3xl p-5 bg-white border border-gray-200 shadow-sm">
+      <Link
+        href="/login"
+        className="group block rounded-3xl p-5 bg-white border border-gray-200 hover:border-fuchsia-300 hover:shadow-md transition-all"
+      >
         <div className="flex items-start gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center shrink-0 text-4xl grayscale opacity-80">
+          <div className="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center shrink-0 text-4xl grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
             🏅
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-lg font-bold text-gray-800 leading-tight">Badges</h3>
             <p className="text-sm text-gray-500 mt-0.5">
-              Subscribe to start earning badges
+              Sign up to start earning badges
+            </p>
+            <p className="text-xs text-fuchsia-700 font-semibold mt-1.5 inline-flex items-center gap-1">
+              <Lock className="w-3 h-3" strokeWidth={2.5} />
+              Sign up free →
             </p>
           </div>
-          <Lock className="w-5 h-5 text-gray-400 shrink-0" strokeWidth={2.5} />
+          <ChevronRight className="w-8 h-8 text-fuchsia-500 shrink-0 self-center" strokeWidth={3} />
         </div>
-      </div>
+      </Link>
     );
   }
 
@@ -194,7 +210,7 @@ function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
           </div>
           <p className="text-xs text-white/85 mt-1.5">{progressText}</p>
         </div>
-        <ChevronRight className="w-6 h-6 text-white/80 shrink-0" strokeWidth={2.5} />
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
       </div>
     </Link>
   );
@@ -216,7 +232,7 @@ function ExploreCard({ isPaid }: { isPaid: boolean }) {
             {isPaid ? "14 games · play any anytime" : "3 free games · 11 locked"}
           </p>
         </div>
-        <ChevronRight className="w-6 h-6 text-white/80 shrink-0" strokeWidth={2.5} />
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
       </div>
     </Link>
   );

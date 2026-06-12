@@ -158,12 +158,20 @@ export default function MobileMenu({ user }: { user: User }) {
             )}
           </div>
         ) : (
-          <Link
-            href="/login"
-            className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Sign Up Free
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/login?intent=signin"
+              className="hidden sm:inline-flex px-3 py-2 text-sm font-semibold text-blue-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg transition-colors"
+            >
+              Sign In
+            </Link>
+            <Link
+              href="/login?intent=signup"
+              className="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Sign Up Free
+            </Link>
+          </div>
         )}
       </div>
 
@@ -278,12 +286,20 @@ export default function MobileMenu({ user }: { user: User }) {
               {user ? (
                 <LogoutButton />
               ) : (
-                <Link
-                  href="/login"
-                  className="block w-full text-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Sign Up Free
-                </Link>
+                <div className="space-y-2">
+                  <Link
+                    href="/login?intent=signup"
+                    className="block w-full text-center px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Sign Up Free
+                  </Link>
+                  <Link
+                    href="/login?intent=signin"
+                    className="block w-full text-center px-4 py-2 border border-blue-200 text-blue-700 text-sm font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                  >
+                    Sign In
+                  </Link>
+                </div>
               )}
             </div>
           </div>
