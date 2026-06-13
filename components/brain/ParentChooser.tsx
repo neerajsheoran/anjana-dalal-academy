@@ -1,14 +1,12 @@
 "use client";
 
-// Parent landing — shown on `/` when the parent is logged in AND has
-// at least one child profile, but is NOT in kid mode.
-// Redesigned 2026-06-13 to match the new light-mode 3-pillar pattern:
-//   • Kid profile picker is the hero (each kid card shows tier + streak)
-//   • Tap a kid → enter that kid's mode (no PIN; PIN gates the way back)
-//   • Parent Tools below: Dashboard, Subscription, Add another child
+// Parent landing — shown on `/` whenever the parent is logged in but
+// NOT in kid mode. Handles both states with one component:
+//   • 0 kids   → dotted "Add child" tile + Parent Tools (no ParentSetupHero)
+//   • 1+ kids  → kid tiles + dotted Add tile + Parent Tools
 //
-// Visual symmetry with KidHomepage so switching between them feels like
-// two sides of the same coin.
+// Decided 2026-06-13 with user: collapse the old ParentSetupHero into
+// this component for a single, consistent landing pattern.
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -19,6 +17,7 @@ import {
   CreditCard,
   UserPlus,
   Flame,
+  ChevronDown,
 } from "lucide-react";
 
 interface Kid {
@@ -46,6 +45,7 @@ export default function ParentChooser({
   const router = useRouter();
   const [switchingId, setSwitchingId] = useState<string | null>(null);
   const [error, setError] = useState("");
+  const hasKids = kids.length > 0;
 
   useEffect(() => {
     if (!error) return;
@@ -85,68 +85,39 @@ export default function ParentChooser({
             Hi {firstName || "there"}!{" "}
             <span className="inline-block animate-wiggle">👋</span>
           </h1>
-          <p className="text-sm text-gray-500">Pick a child to train</p>
+          <p className="text-sm text-gray-500">
+            {hasKids ? "Pick a child to train" : "Add your first child to start"}
+          </p>
         </div>
 
-        {/* Kid picker */}
-        <div className="grid grid-cols-2 gap-3 mb-8">
-          {kids.map((kid) => (
-            <button
-              key={kid.id}
-              type="button"
-              onClick={() => enterKidMode(kid.id)}
-              disabled={switchingId !== null}
-              className="group relative bg-white border border-gray-200 hover:border-purple-400 hover:shadow-md disabled:opacity-60 disabled:cursor-wait rounded-2xl p-4 text-center transition-all"
-            >
-              <div className="w-20 h-20 mx-auto mb-2 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-4xl shadow-inner">
-                🧒
-              </div>
-              <p className="text-base font-bold text-gray-800 truncate">{kid.name}</p>
-              <p className="text-[11px] text-gray-500">
-                {kid.classId ? CLASS_LABEL[kid.classId] || kid.classId : "Class not set"}
-              </p>
-              {(kid.bestTier || (kid.streakDays && kid.streakDays > 0)) && (
-                <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold">
-                  {kid.bestTier && (
-                    <span className="inline-flex items-center gap-0.5 text-gray-700">
-                      <span>{kid.bestTier.emoji}</span>
-                      <span>{kid.bestTier.name}</span>
-                    </span>
-                  )}
-                  {kid.streakDays && kid.streakDays > 0 ? (
-                    <span className="inline-flex items-center gap-0.5 text-orange-600 ml-1">
-                      <Flame className="w-3 h-3" strokeWidth={2.5} />
-                      <span>{kid.streakDays}</span>
-                    </span>
-                  ) : null}
-                </div>
-              )}
-              {switchingId === kid.id && (
-                <span className="absolute inset-0 rounded-2xl bg-white/70 flex items-center justify-center text-xs font-semibold text-purple-700">
-                  Switching…
-                </span>
-              )}
-            </button>
-          ))}
-
-          {/* Add another child */}
-          <Link
-            href="/family"
-            className="group bg-white border-2 border-dashed border-gray-300 hover:border-purple-400 rounded-2xl p-4 text-center transition-all flex flex-col items-center justify-center"
-          >
-            <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-purple-50 flex items-center justify-center">
-              <UserPlus className="w-6 h-6 text-purple-600" strokeWidth={2.25} />
-            </div>
-            <p className="text-sm font-semibold text-gray-700">Add child</p>
-            <p className="text-[11px] text-gray-500">Another profile</p>
-          </Link>
-        </div>
+        {/* Kid picker — empty state shows just the dotted Add tile, larger.
+            Populated state lays out kids in 2 cols with the dotted Add tile
+            next to them. */}
+        {hasKids ? (
+          <div className="grid grid-cols-2 gap-3 mb-8">
+            {kids.map((kid) => (
+              <KidCard
+                key={kid.id}
+                kid={kid}
+                disabled={switchingId !== null}
+                switching={switchingId === kid.id}
+                onClick={() => enterKidMode(kid.id)}
+              />
+            ))}
+            <AddChildTile />
+          </div>
+        ) : (
+          <div className="mb-8">
+            <AddChildTile size="large" />
+          </div>
+        )}
 
         {error && (
           <p className="text-red-600 text-xs text-center mb-4">{error}</p>
         )}
 
-        {/* Parent tools */}
+        {/* Parent tools — always visible so the parent never feels
+            stranded when they have no kids set up yet. */}
         <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
           Parent tools
         </p>
@@ -187,7 +158,114 @@ export default function ParentChooser({
             <ChevronRight className="w-6 h-6 text-gray-400" strokeWidth={2.5} />
           </Link>
         </div>
+
+        {/* Just-exploring escape hatch — only shown on the empty state,
+            since once kids exist the parent has clearly committed. */}
+        {!hasKids && (
+          <p className="text-center text-xs text-gray-400 mt-6">
+            Just exploring?{" "}
+            <a
+              href="#how-it-works"
+              className="inline-flex items-center gap-1 underline hover:text-purple-600 transition-colors"
+            >
+              See how it works
+              <ChevronDown className="w-3 h-3" strokeWidth={2.5} />
+            </a>
+          </p>
+        )}
       </div>
     </main>
+  );
+}
+
+function KidCard({
+  kid,
+  disabled,
+  switching,
+  onClick,
+}: {
+  kid: Kid;
+  disabled: boolean;
+  switching: boolean;
+  onClick: () => void;
+}) {
+  // Boolean coercion is deliberate — without it `0 && <jsx>` evaluates
+  // to the number 0 which React renders as the literal "0" on screen.
+  // Fixed a real bug reported 2026-06-13.
+  const hasCrest = Boolean(kid.bestTier);
+  const hasStreak = (kid.streakDays ?? 0) > 0;
+  const showFooter = hasCrest || hasStreak;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className="group relative bg-white border border-gray-200 hover:border-purple-400 hover:shadow-md disabled:opacity-60 disabled:cursor-wait rounded-2xl p-4 text-center transition-all"
+    >
+      <div className="w-20 h-20 mx-auto mb-2 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-4xl shadow-inner">
+        🧒
+      </div>
+      <p className="text-base font-bold text-gray-800 truncate">{kid.name}</p>
+      <p className="text-[11px] text-gray-500">
+        {kid.classId
+          ? CLASS_LABEL[kid.classId] || kid.classId
+          : "Class not set"}
+      </p>
+      {showFooter && (
+        <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold">
+          {hasCrest && (
+            <span className="inline-flex items-center gap-0.5 text-gray-700">
+              <span>{kid.bestTier!.emoji}</span>
+              <span>{kid.bestTier!.name}</span>
+            </span>
+          )}
+          {hasStreak && (
+            <span className="inline-flex items-center gap-0.5 text-orange-600 ml-1">
+              <Flame className="w-3 h-3" strokeWidth={2.5} />
+              <span>{kid.streakDays}</span>
+            </span>
+          )}
+        </div>
+      )}
+      {switching && (
+        <span className="absolute inset-0 rounded-2xl bg-white/70 flex items-center justify-center text-xs font-semibold text-purple-700">
+          Switching…
+        </span>
+      )}
+    </button>
+  );
+}
+
+// Dotted "Add child" tile — single visual element used in both empty
+// and populated states. The `size` prop just bumps the inner padding
+// and circle size when it's the only tile on the row.
+function AddChildTile({ size = "default" }: { size?: "default" | "large" }) {
+  const large = size === "large";
+  return (
+    <Link
+      href="/family"
+      className={`group bg-white border-2 border-dashed border-gray-300 hover:border-purple-400 rounded-2xl text-center transition-all flex flex-col items-center justify-center ${
+        large ? "p-8 sm:p-10" : "p-4"
+      }`}
+    >
+      <div
+        className={`mx-auto mb-2 rounded-full bg-purple-50 flex items-center justify-center ${
+          large ? "w-20 h-20" : "w-12 h-12"
+        }`}
+      >
+        <UserPlus
+          className={large ? "w-9 h-9 text-purple-600" : "w-6 h-6 text-purple-600"}
+          strokeWidth={2.25}
+        />
+      </div>
+      <p
+        className={`font-semibold text-gray-700 ${large ? "text-lg" : "text-sm"}`}
+      >
+        Add child
+      </p>
+      <p className={`text-gray-500 ${large ? "text-xs mt-1" : "text-[11px]"}`}>
+        {large ? "Start with your first profile" : "Another profile"}
+      </p>
+    </Link>
   );
 }

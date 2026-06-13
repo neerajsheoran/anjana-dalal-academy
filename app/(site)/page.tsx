@@ -1,19 +1,17 @@
 import Link from 'next/link';
-import { BookOpen, Brain, ChevronRight, Eye, Hammer, Sparkles, Users } from 'lucide-react';
+import { BookOpen, Brain, ChevronRight, Eye, Hammer, Sparkles } from 'lucide-react';
 import ContinueLearning from '@/components/progress/ContinueLearning';
-import { getActiveChild, getParent, hasChildren } from '@/lib/active-child';
+import { getActiveChild, getParent } from '@/lib/active-child';
 import { adminDb } from '@/lib/firebase-admin';
 import { getBrainStats } from '@/lib/brain-stats';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
 import KidHomepage, { type RecentChapter } from '@/components/brain/KidHomepage';
-import ParentSetupHero from '@/components/brain/ParentSetupHero';
 import ParentChooser from '@/components/brain/ParentChooser';
 
 export default async function HomePage() {
-  const [parent, activeChild, parentHasChildren] = await Promise.all([
+  const [parent, activeChild] = await Promise.all([
     getParent(),
     getActiveChild(),
-    hasChildren(),
   ]);
 
   // Kid mode → personalized dashboard. Fetch brain stats + most-recent
@@ -40,17 +38,14 @@ export default async function HomePage() {
     );
   }
 
-  // Activated parent (logged in + has kids, not in kid mode) → chooser view.
-  // Cold prospects still see the marketing hero.
-  const showChooser = parentHasChildren;
-  // Logged-in parent with no kids → setup hero replaces the marketing hero
-  const showSetupHero = parent && !parentHasChildren;
-  // Cold prospect → keep the existing marketing hero + bridge card
-  const showMarketingHero = !showSetupHero && !showChooser;
+  // Any logged-in parent (not in kid mode) → ParentChooser handles both
+  // empty and populated kid states with a single component. Cold prospects
+  // (no session) still get the marketing hero.
+  const showChooser = !!parent;
+  const showMarketingHero = !showChooser;
 
-  // For the parent chooser we need the list of kids with light stats so
-  // each kid card shows their tier + streak (decision-relevant for the
-  // parent before they tap in).
+  // For the parent chooser we always need the kids list (possibly empty)
+  // so each kid card shows their tier + streak before the parent taps in.
   const parentKidsForChooser = showChooser && parent
     ? await getKidsWithStats(parent.uid)
     : [];
@@ -58,25 +53,8 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50">
 
-      {/* ── Picker prompt: thin reminder shown to activated parents only.
-            Kept lightweight since the chooser below is the primary CTA. */}
-      {showChooser && (
-        <Link
-          href="/kids"
-          className="block bg-cream hover:bg-cream-section border-b border-warm-line transition-colors"
-        >
-          <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-center gap-3 text-center">
-            <Users className="w-4 h-4 text-brand shrink-0" strokeWidth={2.25} />
-            <span className="text-sm font-medium text-ink">
-              {parent?.firstName ? `Welcome back, ${parent.firstName} — pick` : 'Pick'} a profile to start training
-            </span>
-            <ChevronRight className="w-3.5 h-3.5 text-ink-light hidden sm:inline-block" strokeWidth={2.5} />
-          </div>
-        </Link>
-      )}
-
-      {/* ── Parent setup hero: replaces marketing hero when logged in + no kids ── */}
-      {showSetupHero && <ParentSetupHero firstName={parent.firstName} />}
+      {/* Picker pill + ParentSetupHero removed 2026-06-13 — ParentChooser
+          now handles both empty and populated parent states. */}
 
       {/* ── Parent chooser: state-aware utility view for activated parents.
             "How would you like to start?" + Brain / School / Dashboard cards. */}
