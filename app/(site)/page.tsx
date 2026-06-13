@@ -17,18 +17,25 @@ export default async function HomePage() {
   ]);
 
   // Kid mode → personalized dashboard. Fetch brain stats + most-recent
-  // chapter to power the crest header and Continue card.
+  // chapter to power the crest header, Today's Activity hero, and
+  // Continue card.
   if (activeChild) {
     const [stats, recent] = await Promise.all([
       getBrainStats(activeChild.parentUid, activeChild.id),
       getMostRecentChapter(activeChild.parentUid),
     ]);
+    const dailyDoneCount =
+      (stats.memory.doneToday ? 1 : 0) +
+      (stats.focus.doneToday ? 1 : 0) +
+      (stats.thinking.doneToday ? 1 : 0);
     return (
       <KidHomepage
         child={activeChild}
         bestTier={stats.totalSets > 0 ? stats.bestTier : null}
         streakDays={stats.streakDays}
         recent={recent}
+        dailyDoneCount={dailyDoneCount}
+        dailyComplete={dailyDoneCount === 3}
       />
     );
   }

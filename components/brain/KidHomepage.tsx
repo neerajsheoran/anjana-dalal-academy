@@ -14,10 +14,12 @@ import Link from "next/link";
 import {
   BookOpen,
   Brain,
+  CheckCircle2,
   ChevronRight,
   Flame,
   Hammer,
   PlayCircle,
+  Target,
 } from "lucide-react";
 import type { ActiveChild } from "@/lib/active-child";
 import type { BrainTier } from "@/lib/brain-tiers";
@@ -49,6 +51,11 @@ interface KidHomepageProps {
   bestTier: BrainTier | null;     // null if no brain attempts yet
   streakDays: number;
   recent: RecentChapter | null;   // null if no progress yet
+  // Daily Activity progress (Memory / Focus / Thinking done today).
+  // Drives the "Today's Activity" hero card so the kid sees their
+  // daily job front and center — one tap to start.
+  dailyDoneCount: number;        // 0..3
+  dailyComplete: boolean;        // all 3 pillars done today
 }
 
 export default function KidHomepage({
@@ -56,6 +63,8 @@ export default function KidHomepage({
   bestTier,
   streakDays,
   recent,
+  dailyDoneCount,
+  dailyComplete,
 }: KidHomepageProps) {
   const showTrain = isTrainEligible(child.classId);
   const classLabel = child.classId ? CLASS_LABEL[child.classId] : null;
@@ -70,14 +79,37 @@ export default function KidHomepage({
           showTrain={showTrain}
         />
 
-        {recent && <ContinueCard recent={recent} />}
+        {/* TODAY — hero block. Daily Activity first (the kid's "job"),
+            then Continue chapter for the day they'd rather read. */}
+        {(showTrain || recent) && (
+          <div className="mt-6 mb-2">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
+              Today
+            </p>
+            <div className="space-y-3">
+              {showTrain && (
+                <TodayActivityCard
+                  dailyDoneCount={dailyDoneCount}
+                  dailyComplete={dailyComplete}
+                />
+              )}
+              {recent && <ContinueCard recent={recent} />}
+            </div>
+          </div>
+        )}
 
-        <div className="space-y-4 mt-5">
-          <LearnCard classId={child.classId} classLabel={classLabel} />
-          {showTrain && (
-            <TrainCard bestTier={bestTier} streakDays={streakDays} />
-          )}
-          <ApplyCard classLabel={classLabel} />
+        {/* BROWSE — nav cards for the rest of the platform */}
+        <div className="mt-6">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
+            Browse
+          </p>
+          <div className="space-y-3">
+            <LearnCard classId={child.classId} classLabel={classLabel} />
+            {showTrain && (
+              <TrainCard bestTier={bestTier} streakDays={streakDays} />
+            )}
+            <ApplyCard classLabel={classLabel} />
+          </div>
         </div>
 
         <p className="text-center text-[11px] text-gray-400 mt-8">
@@ -85,6 +117,78 @@ export default function KidHomepage({
         </p>
       </div>
     </main>
+  );
+}
+
+// The kid's daily mission — surfaced as the hero so habit-forming
+// stays one tap from the home. Three dots track Memory / Focus /
+// Thinking touched today. When all three are done the card shrinks
+// to a celebration so it doesn't nag.
+function TodayActivityCard({
+  dailyDoneCount,
+  dailyComplete,
+}: {
+  dailyDoneCount: number;
+  dailyComplete: boolean;
+}) {
+  const dots = ["○", "○", "○"];
+  for (let i = 0; i < dailyDoneCount && i < 3; i++) dots[i] = "●";
+  const remaining = 3 - dailyDoneCount;
+
+  if (dailyComplete) {
+    return (
+      <Link
+        href="/brain/daily"
+        className="group block rounded-3xl p-4 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 hover:shadow-md transition-all"
+      >
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center shrink-0">
+            <CheckCircle2 className="w-7 h-7 text-emerald-600" strokeWidth={2.25} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-bold text-emerald-900">
+              All done today! 🎉
+            </p>
+            <p className="text-[11px] text-emerald-700/90">
+              Come back tomorrow to keep your streak going.
+            </p>
+          </div>
+          <span className="text-xs font-semibold text-emerald-700 group-hover:underline">
+            Replay
+          </span>
+        </div>
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      href="/brain/daily"
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.35)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <Target className="w-8 h-8" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">
+            Today&rsquo;s Activity
+          </h3>
+          <p className="text-sm text-white/85 mt-0.5">
+            Memory · Focus · Thinking
+          </p>
+          <p className="text-xs text-white/80 mt-2">
+            <span className="tracking-widest text-base">{dots.join(" ")}</span>
+            <span className="ml-2 font-semibold">
+              {dailyDoneCount === 0
+                ? "~10 mins"
+                : `${remaining} left`}
+            </span>
+          </p>
+        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+      </div>
+    </Link>
   );
 }
 
@@ -138,30 +242,25 @@ function ContinueCard({ recent }: { recent: RecentChapter }) {
   const classLabel = CLASS_LABEL[recent.classId] || recent.classId;
   const href = `/class/${recent.classId}/${recent.subject}/${recent.chapterId}`;
   return (
-    <div className="mt-6">
-      <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
-        Continue where you left off
-      </p>
-      <Link
-        href={href}
-        className="group block rounded-2xl p-4 bg-white border border-blue-200 hover:border-blue-400 hover:shadow-md transition-all"
-      >
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
-            <PlayCircle className="w-7 h-7 text-blue-600" strokeWidth={2} />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-[11px] text-gray-500 font-semibold">
-              {classLabel} · {subject}
-            </p>
-            <p className="text-sm font-bold text-gray-800 leading-snug truncate">
-              {recent.chapterTitle}
-            </p>
-          </div>
-          <ChevronRight className="w-6 h-6 text-blue-600 shrink-0" strokeWidth={3} />
+    <Link
+      href={href}
+      className="group block rounded-2xl p-4 bg-white border border-blue-200 hover:border-blue-400 hover:shadow-md transition-all"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+          <PlayCircle className="w-7 h-7 text-blue-600" strokeWidth={2} />
         </div>
-      </Link>
-    </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[11px] text-gray-500 font-semibold">
+            Continue reading · {classLabel} · {subject}
+          </p>
+          <p className="text-sm font-bold text-gray-800 leading-snug truncate">
+            {recent.chapterTitle}
+          </p>
+        </div>
+        <ChevronRight className="w-6 h-6 text-blue-600 shrink-0" strokeWidth={3} />
+      </div>
+    </Link>
   );
 }
 
