@@ -79,9 +79,9 @@ export default function LearnPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/icons/quiz-icon.svg" alt="" className="w-24 h-24 animate-heartbeat" />
             </div>
-            <h3 className="text-white text-xl font-bold mb-2">Test Yourself</h3>
+            <h3 className="text-white text-xl font-bold mb-2">Exam Readiness</h3>
             <p className="text-purple-100 text-sm leading-relaxed flex-1">
-              Quizzes, worksheets &amp; revision
+              Mock tests, worksheets &amp; revision
             </p>
             <span className="mt-auto inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
               Get Started

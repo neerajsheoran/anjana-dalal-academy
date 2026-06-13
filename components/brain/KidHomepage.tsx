@@ -16,6 +16,7 @@ import {
   Brain,
   CheckCircle2,
   ChevronRight,
+  ClipboardCheck,
   Flame,
   Hammer,
   PlayCircle,
@@ -23,7 +24,23 @@ import {
 } from "lucide-react";
 import type { ActiveChild } from "@/lib/active-child";
 import type { BrainTier } from "@/lib/brain-tiers";
-import { isTrainEligible } from "@/lib/train-eligibility";
+import { classNumber, isTrainEligible } from "@/lib/train-eligibility";
+
+// Class band → whether to surface Exam Readiness on the kid home, and
+// how prominently. Decided 2026-06-13 with user:
+//   1-4   : no Exam card. Too young; exam pressure is wrong here.
+//   5-8   : small secondary card under Continue. Soft prep nudge.
+//   9-10  : HERO card replacing Today's Activity (Train is hidden in
+//           board-prep mode anyway, so Exam Readiness takes its slot).
+type ExamPromoLevel = "none" | "secondary" | "hero";
+
+function examPromoFor(classId: string | null | undefined): ExamPromoLevel {
+  const n = classNumber(classId);
+  if (n === null) return "none";
+  if (n >= 9) return "hero";
+  if (n >= 5) return "secondary";
+  return "none";
+}
 
 const CLASS_LABEL: Record<string, string> = {
   "class-1": "Class 1", "class-2": "Class 2", "class-3": "Class 3",
@@ -68,6 +85,8 @@ export default function KidHomepage({
 }: KidHomepageProps) {
   const showTrain = isTrainEligible(child.classId);
   const classLabel = child.classId ? CLASS_LABEL[child.classId] : null;
+  const examPromo = examPromoFor(child.classId);
+  const showTodayBlock = showTrain || recent || examPromo !== "none";
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
@@ -79,14 +98,17 @@ export default function KidHomepage({
           showTrain={showTrain}
         />
 
-        {/* TODAY — hero block. Daily Activity first (the kid's "job"),
-            then Continue chapter for the day they'd rather read. */}
-        {(showTrain || recent) && (
+        {/* TODAY — hero block. Order depends on class band:
+              · Class 1-4: Daily Activity (hero) → Continue
+              · Class 5-8: Daily Activity (hero) → Continue → small Exam card
+              · Class 9-10: Exam Readiness (hero) → Continue (Train is hidden) */}
+        {showTodayBlock && (
           <div className="mt-6 mb-2">
             <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
               Today
             </p>
             <div className="space-y-3">
+              {examPromo === "hero" && <ExamReadinessHero classId={child.classId} />}
               {showTrain && (
                 <TodayActivityCard
                   dailyDoneCount={dailyDoneCount}
@@ -94,6 +116,9 @@ export default function KidHomepage({
                 />
               )}
               {recent && <ContinueCard recent={recent} />}
+              {examPromo === "secondary" && (
+                <ExamReadinessSecondary classId={child.classId} />
+              )}
             </div>
           </div>
         )}
@@ -234,6 +259,63 @@ function Header({
         </div>
       )}
     </div>
+  );
+}
+
+// Hero variant — shown to Class 9-10 (board year). Replaces Today's
+// Activity since Train is hidden for those classes. Frames the chapter
+// quizzes as exam prep, the language parents care about.
+function ExamReadinessHero({ classId }: { classId: string | null }) {
+  const href = classId ? `/quiz-start?class=${classId}` : "/quiz-start";
+  return (
+    <Link
+      href={href}
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-rose-600 to-fuchsia-700 text-white shadow-[0_12px_28px_rgba(244,63,94,0.35)] hover:shadow-[0_16px_32px_rgba(244,63,94,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <ClipboardCheck className="w-8 h-8" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">Exam Readiness</h3>
+          <p className="text-sm text-white/90 mt-0.5">
+            Mock test from your latest chapters
+          </p>
+          <p className="text-xs text-white/80 mt-1.5 font-semibold">
+            ~10 questions · 15 mins
+          </p>
+        </div>
+        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+      </div>
+    </Link>
+  );
+}
+
+// Secondary variant — shown to Class 5-8. Soft prep nudge sitting
+// under Daily Activity + Continue, so the kid sees it but it isn't
+// the loudest thing on the page.
+function ExamReadinessSecondary({ classId }: { classId: string | null }) {
+  const href = classId ? `/quiz-start?class=${classId}` : "/quiz-start";
+  return (
+    <Link
+      href={href}
+      className="group block rounded-2xl p-4 bg-white border border-fuchsia-200 hover:border-fuchsia-400 hover:shadow-md transition-all"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-12 h-12 rounded-xl bg-fuchsia-50 flex items-center justify-center shrink-0">
+          <ClipboardCheck className="w-7 h-7 text-fuchsia-600" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[11px] text-gray-500 font-semibold uppercase tracking-wider">
+            Exam Readiness
+          </p>
+          <p className="text-sm font-bold text-gray-800 leading-snug">
+            Quick mock test · ~10 questions
+          </p>
+        </div>
+        <ChevronRight className="w-6 h-6 text-fuchsia-600 shrink-0" strokeWidth={3} />
+      </div>
+    </Link>
   );
 }
 

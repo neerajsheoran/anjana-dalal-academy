@@ -37,6 +37,25 @@ export interface ActivityProgress {
   ageGated: boolean;
 }
 
+// School work (academic) summary — added 2026-06-13 alongside brain
+// training so a single dashboard tells the full story.
+export interface SubjectProgress {
+  subject: string;          // "maths" | "science" | "social-science"
+  label: string;            // "Maths" / "Science" / "Social Science"
+  chaptersVisited: number;  // distinct chapters with a progress doc
+  chaptersCompleted: number;// completed=true count
+  quizAttempts: number;
+  avgQuizPercentage: number | null;
+}
+
+export interface SchoolWorkSummary {
+  totalChaptersVisited: number;
+  totalChaptersCompleted: number;
+  totalQuizAttempts: number;
+  overallAvgPercentage: number | null;
+  bySubject: SubjectProgress[];   // sorted by quiz performance desc
+}
+
 export interface ChildDashboard {
   child: DashboardChild;
   totalAttempts: number;
@@ -57,6 +76,7 @@ export interface ChildDashboard {
   pillars: PillarSummary[];
   activities: ActivityProgress[];
   insights: ProgressInsight[];
+  schoolWork: SchoolWorkSummary;
 }
 
 export const PILLAR_META: Record<

@@ -1,4 +1,5 @@
 import { adminAuth, adminDb } from '@/lib/firebase-admin';
+import { ACTIVE_CHILD_COOKIE } from '@/lib/active-child';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { FieldValue } from 'firebase-admin/firestore';
@@ -25,21 +26,29 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid payload' }, { status: 400 });
   }
 
+  // Record which child profile is actively reading. When parent mode
+  // (no active child) the field is "parent" so the Continue card on
+  // the kid home doesn't pull in the parent's own browsing. Decided
+  // 2026-06-13: kid Continue must be per-profile, not per-account.
+  const activeChildId = cookieStore.get(ACTIVE_CHILD_COOKIE)?.value || 'parent';
+
   try {
-    // Doc ID stays as chapterId (slug) for now to avoid disrupting
-    // existing progress lookups. The chapterKey is added as a field so
-    // future migrations can re-key by chapterKey when ready. See the
-    // memory file `chapter-key-architecture.md` for the rollout plan.
+    // Doc ID encodes (childId, chapterId) so two kids on the same
+    // family account each get their own progress row for the same
+    // chapter. Old single-key docs (chapterId only) stay readable
+    // through merge; new writes always use the prefixed key.
+    const docId = `${activeChildId}__${chapterId}`;
     await adminDb
       .collection('users')
       .doc(uid)
       .collection('progress')
-      .doc(chapterId)
+      .doc(docId)
       .set(
         {
           classId,
           subject,
           chapterId,
+          childId: activeChildId,
           ...(chapterKey ? { chapterKey } : {}),
           chapterTitle,
           lastVisitedAt: FieldValue.serverTimestamp(),

@@ -22,7 +22,7 @@ export default async function HomePage() {
   if (activeChild) {
     const [stats, recent] = await Promise.all([
       getBrainStats(activeChild.parentUid, activeChild.id),
-      getMostRecentChapter(activeChild.parentUid),
+      getMostRecentChapter(activeChild.parentUid, activeChild.id),
     ]);
     const dailyDoneCount =
       (stats.memory.doneToday ? 1 : 0) +
@@ -320,16 +320,20 @@ export default async function HomePage() {
   );
 }
 
-// Fetch the most recently visited chapter for a parent across all their
-// progress docs. Powers the Continue card on the kid home. Note: progress
-// is stored per parent UID (the kid plays under the parent's account),
-// keyed by chapterId. We sort by lastVisitedAt and pick one.
-async function getMostRecentChapter(parentUid: string): Promise<RecentChapter | null> {
+// Fetch the most recently visited chapter for ONE child profile. Powers
+// the Continue card on the kid home. Filtered by the childId field that
+// /api/progress/track stamps on every write — so kid A doesn't see kid B's
+// progress, and neither sees the parent's own browsing.
+async function getMostRecentChapter(
+  parentUid: string,
+  childId: string,
+): Promise<RecentChapter | null> {
   try {
     const snap = await adminDb
       .collection('users')
       .doc(parentUid)
       .collection('progress')
+      .where('childId', '==', childId)
       .orderBy('lastVisitedAt', 'desc')
       .limit(1)
       .get();
@@ -339,7 +343,7 @@ async function getMostRecentChapter(parentUid: string): Promise<RecentChapter | 
     return {
       classId: (d.classId as string) || '',
       subject: (d.subject as string) || '',
-      chapterId: doc.id,
+      chapterId: (d.chapterId as string) || doc.id,
       chapterTitle: (d.chapterTitle as string) || doc.id,
       lastVisitedAt: d.lastVisitedAt?.toDate?.()?.toISOString?.() ?? null,
     };

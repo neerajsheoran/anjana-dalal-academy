@@ -231,7 +231,7 @@ export default function QuizController({
         {/* Header */}
         <div className="text-center mb-10">
           <span className="text-4xl mb-3 block">🧠</span>
-          <h1 className="text-2xl font-bold text-gray-800 mb-1">Ready to Test Yourself?</h1>
+          <h1 className="text-2xl font-bold text-gray-800 mb-1">Ready for Exam Readiness?</h1>
           <p className="text-sm text-gray-500">
             {classLabel} · {subjectLabel} · {chapterTitles.length === 1
               ? chapterTitles[0]

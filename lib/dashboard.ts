@@ -22,6 +22,8 @@ import type {
   ChildDashboard,
   DashboardChild,
   PillarSummary,
+  SchoolWorkSummary,
+  SubjectProgress,
 } from "./dashboard-types";
 
 // Re-export types so callers can import from either location during refactors.
@@ -30,7 +32,15 @@ export type {
   PillarSummary,
   ActivityProgress,
   ChildDashboard,
+  SchoolWorkSummary,
+  SubjectProgress,
 } from "./dashboard-types";
+
+const SUBJECT_LABELS: Record<string, string> = {
+  maths: "Maths",
+  science: "Science",
+  "social-science": "Social Science",
+};
 
 const PILLARS: ModuleKey[] = ["memory", "focus", "thinking"];
 
@@ -81,6 +91,119 @@ function isModuleKey(v: unknown): v is ModuleKey {
 }
 function isDifficulty(v: unknown): v is Difficulty {
   return v === "easy" || v === "medium" || v === "hard";
+}
+
+// Aggregate this kid's academic activity: chapter visits + quiz attempts,
+// grouped by subject and ordered by quiz performance. Reads from the
+// parent's progress + quizAttempts collections filtered by childId
+// (stamped on writes by /api/progress/track and /api/quiz/save).
+export async function loadSchoolWork(
+  parentUid: string,
+  childId: string,
+): Promise<SchoolWorkSummary> {
+  const subjectStats = new Map<
+    string,
+    {
+      chaptersVisited: Set<string>;
+      chaptersCompleted: Set<string>;
+      quizPercentages: number[];
+    }
+  >();
+
+  function bucket(subject: string) {
+    if (!subjectStats.has(subject)) {
+      subjectStats.set(subject, {
+        chaptersVisited: new Set(),
+        chaptersCompleted: new Set(),
+        quizPercentages: [],
+      });
+    }
+    return subjectStats.get(subject)!;
+  }
+
+  try {
+    // Chapter progress (visits + completions)
+    const progressSnap = await adminDb
+      .collection("users")
+      .doc(parentUid)
+      .collection("progress")
+      .where("childId", "==", childId)
+      .get();
+    for (const doc of progressSnap.docs) {
+      const d = doc.data();
+      const subject = (d.subject as string) || "";
+      const chapterId = (d.chapterId as string) || doc.id;
+      if (!subject) continue;
+      const b = bucket(subject);
+      b.chaptersVisited.add(chapterId);
+      if (d.completed === true) b.chaptersCompleted.add(chapterId);
+    }
+
+    // Quiz attempts
+    const quizSnap = await adminDb
+      .collection("users")
+      .doc(parentUid)
+      .collection("quizAttempts")
+      .where("childId", "==", childId)
+      .get();
+    for (const doc of quizSnap.docs) {
+      const d = doc.data();
+      const subject = (d.subject as string) || "";
+      const pct = typeof d.percentage === "number" ? d.percentage : null;
+      if (!subject || pct === null) continue;
+      bucket(subject).quizPercentages.push(pct);
+    }
+  } catch {
+    // Firestore unavailable — fall through to empty summary.
+  }
+
+  const bySubject: SubjectProgress[] = [];
+  for (const [subject, s] of subjectStats) {
+    const avg =
+      s.quizPercentages.length > 0
+        ? Math.round(
+            s.quizPercentages.reduce((sum, p) => sum + p, 0) /
+              s.quizPercentages.length,
+          )
+        : null;
+    bySubject.push({
+      subject,
+      label: SUBJECT_LABELS[subject] || subject,
+      chaptersVisited: s.chaptersVisited.size,
+      chaptersCompleted: s.chaptersCompleted.size,
+      quizAttempts: s.quizPercentages.length,
+      avgQuizPercentage: avg,
+    });
+  }
+
+  // Sort: strongest subject first (highest quiz avg), unattempted at the end.
+  bySubject.sort((a, b) => {
+    if (a.avgQuizPercentage === null && b.avgQuizPercentage === null) return 0;
+    if (a.avgQuizPercentage === null) return 1;
+    if (b.avgQuizPercentage === null) return -1;
+    return b.avgQuizPercentage - a.avgQuizPercentage;
+  });
+
+  const allQuizPcts = bySubject.flatMap(() => []) as number[];
+  let totalQuizAttempts = 0;
+  for (const s of subjectStats.values()) {
+    for (const p of s.quizPercentages) {
+      allQuizPcts.push(p);
+      totalQuizAttempts++;
+    }
+  }
+  const overallAvg =
+    allQuizPcts.length > 0
+      ? Math.round(allQuizPcts.reduce((sum, p) => sum + p, 0) / allQuizPcts.length)
+      : null;
+
+  return {
+    totalChaptersVisited: bySubject.reduce((sum, s) => sum + s.chaptersVisited, 0),
+    totalChaptersCompleted: bySubject.reduce((sum, s) => sum + s.chaptersCompleted, 0),
+    totalQuizAttempts,
+    overallAvgPercentage: overallAvg,
+    bySubject,
+  };
 }
 
 export async function loadChildDashboard(
@@ -227,6 +350,7 @@ export async function loadChildDashboard(
   );
 
   const insights = summarizeProgress(rawAttempts);
+  const schoolWork = await loadSchoolWork(parentUid, child.id);
 
   return {
     child,
@@ -240,5 +364,6 @@ export async function loadChildDashboard(
     pillars,
     activities,
     insights,
+    schoolWork,
   };
 }

@@ -11,6 +11,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Activity,
+  BookOpen,
   Clock,
   Flame,
   Lock,
@@ -23,6 +24,7 @@ import {
 import {
   PILLAR_META,
   type ChildDashboard,
+  type SchoolWorkSummary,
 } from '@/lib/dashboard-types';
 import {
   DIFFICULTY_LABEL,
@@ -274,6 +276,10 @@ export default function DashboardClient({
                 })}
               </div>
             </section>
+
+            {/* School work — academic progress per subject. Added 2026-06-13
+                so a single dashboard tells the whole story (brain + school). */}
+            <SchoolWorkSection schoolWork={data.schoolWork} childName={data.child.name} />
 
             {/* Activity progression */}
             <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
@@ -624,6 +630,113 @@ function FirstSessionEmptyState({ childName }: { childName: string }) {
           Or try a game yourself first (no signup)
         </Link>
       </div>
+    </div>
+  );
+}
+
+// School work summary — chapters visited, completions, quiz averages
+// per subject. Renders an empty state when the kid hasn't read or
+// quizzed anything yet, with a CTA into /classes.
+function SchoolWorkSection({
+  schoolWork,
+  childName,
+}: {
+  schoolWork: SchoolWorkSummary;
+  childName: string;
+}) {
+  const hasAny =
+    schoolWork.totalChaptersVisited > 0 || schoolWork.totalQuizAttempts > 0;
+  return (
+    <section className="bg-white border border-cool-line rounded-2xl shadow-sm p-5 mb-5">
+      <div className="flex items-center gap-2 mb-2">
+        <BookOpen className="w-4 h-4 text-brand" strokeWidth={2} />
+        <h2 className="text-xs font-bold text-ink-soft uppercase tracking-widest">
+          School Work
+        </h2>
+      </div>
+      <p className="text-xs text-ink-light mb-4 leading-relaxed">
+        {hasAny
+          ? `Chapters ${childName} has opened and exam-readiness quiz scores by subject.`
+          : `${childName} hasn’t opened any chapters yet.`}
+      </p>
+
+      {hasAny ? (
+        <>
+          {/* Three quick totals */}
+          <div className="grid grid-cols-3 gap-2 mb-4">
+            <StatTile
+              value={schoolWork.totalChaptersVisited}
+              label="chapters opened"
+            />
+            <StatTile
+              value={schoolWork.totalChaptersCompleted}
+              label="completed"
+            />
+            <StatTile
+              value={
+                schoolWork.overallAvgPercentage !== null
+                  ? `${schoolWork.overallAvgPercentage}%`
+                  : "—"
+              }
+              label="avg quiz"
+            />
+          </div>
+
+          {/* Per-subject rows */}
+          <div className="space-y-2">
+            {schoolWork.bySubject.map((s) => (
+              <div
+                key={s.subject}
+                className="flex items-center gap-3 bg-cream border border-warm-line rounded-xl p-3"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-bold text-ink leading-tight">
+                    {s.label}
+                  </p>
+                  <p className="text-[11px] text-ink-soft mt-0.5">
+                    {s.chaptersVisited} chapter{s.chaptersVisited === 1 ? "" : "s"} opened
+                    {s.chaptersCompleted > 0 && ` · ${s.chaptersCompleted} completed`}
+                    {s.quizAttempts > 0 && ` · ${s.quizAttempts} quiz${s.quizAttempts === 1 ? "" : "zes"}`}
+                  </p>
+                </div>
+                {s.avgQuizPercentage !== null ? (
+                  <div className="text-right shrink-0">
+                    <p className="text-base font-bold text-ink">
+                      {s.avgQuizPercentage}%
+                    </p>
+                    <p className="text-[10px] text-ink-light uppercase tracking-widest">
+                      avg quiz
+                    </p>
+                  </div>
+                ) : (
+                  <span className="text-[10px] font-semibold text-ink-light uppercase tracking-widest bg-white border border-cool-line px-2 py-1 rounded-full shrink-0">
+                    No quiz yet
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <Link
+          href="/classes"
+          className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-semibold px-4 py-2.5 rounded-lg text-sm transition-colors"
+        >
+          Browse classes
+          <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
+        </Link>
+      )}
+    </section>
+  );
+}
+
+function StatTile({ value, label }: { value: number | string; label: string }) {
+  return (
+    <div className="bg-cream border border-warm-line rounded-xl p-3 text-center">
+      <p className="text-xl font-bold text-ink leading-tight">{value}</p>
+      <p className="text-[10px] text-ink-light uppercase tracking-widest mt-1 leading-snug">
+        {label}
+      </p>
     </div>
   );
 }

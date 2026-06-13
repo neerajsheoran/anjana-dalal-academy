@@ -92,7 +92,7 @@ export default function ChapterTabs({ children, worksheet, reviewContent, discus
               : "text-gray-500 hover:text-gray-700"
           }`}
         >
-          Practice
+          Exam Readiness
         </button>
       </div>
 
