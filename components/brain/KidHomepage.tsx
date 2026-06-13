@@ -42,6 +42,13 @@ function examPromoFor(classId: string | null | undefined): ExamPromoLevel {
   return "none";
 }
 
+// Class 5+ get the "Explore other classes & subjects" escape hatch
+// under the Learn card. Younger kids don't — fewer reasons to wander.
+function showExploreLink(classId: string | null | undefined): boolean {
+  const n = classNumber(classId);
+  return n !== null && n >= 5;
+}
+
 const CLASS_LABEL: Record<string, string> = {
   "class-1": "Class 1", "class-2": "Class 2", "class-3": "Class 3",
   "class-4": "Class 4", "class-5": "Class 5", "class-6": "Class 6",
@@ -130,6 +137,19 @@ export default function KidHomepage({
           </p>
           <div className="space-y-3">
             <LearnCard classId={child.classId} classLabel={classLabel} />
+            {/* Small escape hatch for curious Class 5+ kids who want to
+                peek at other classes / browse by subject. Younger kids
+                don't see it (less likely to want to wander, less visual
+                noise on their home). Decided 2026-06-13. */}
+            {showExploreLink(child.classId) && (
+              <Link
+                href="/learn"
+                className="inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 hover:underline ml-1 -mt-1"
+              >
+                Explore other classes & subjects
+                <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
+              </Link>
+            )}
             {showTrain && (
               <TrainCard bestTier={bestTier} streakDays={streakDays} />
             )}
