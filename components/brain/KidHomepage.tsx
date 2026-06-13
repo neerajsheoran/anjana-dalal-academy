@@ -144,10 +144,10 @@ export default function KidHomepage({
             {showExploreLink(child.classId) && (
               <Link
                 href="/learn"
-                className="inline-flex items-center gap-1 text-xs text-blue-700 hover:text-blue-900 hover:underline ml-1 -mt-1"
+                className="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-900 font-semibold text-sm rounded-full px-4 py-2 ml-1 transition-colors"
               >
                 Explore other classes & subjects
-                <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
+                <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
               </Link>
             )}
             {showTrain && (
@@ -231,7 +231,7 @@ function TodayActivityCard({
             </span>
           </p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -305,7 +305,7 @@ function ExamReadinessHero({ classId }: { classId: string | null }) {
             ~10 questions · 15 mins
           </p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -390,7 +390,7 @@ function LearnCard({
           <h3 className="text-lg font-bold leading-tight">Learn</h3>
           <p className="text-sm text-white/85 mt-0.5">{body}</p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -422,7 +422,7 @@ function TrainCard({
           <h3 className="text-lg font-bold leading-tight">Train</h3>
           <p className="text-sm text-white/85 mt-0.5">{body}</p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -445,7 +445,7 @@ function ApplyCard({ classLabel }: { classLabel: string | null }) {
           <h3 className="text-lg font-bold leading-tight">Apply</h3>
           <p className="text-sm text-white/85 mt-0.5">{body}</p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
