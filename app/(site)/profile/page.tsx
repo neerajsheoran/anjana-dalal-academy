@@ -13,8 +13,6 @@ import {
 } from "lucide-react";
 import EditableName from "@/components/profile/EditableName";
 import PasswordReset from "@/components/profile/PasswordReset";
-import ChildrenSection from "@/components/profile/ChildrenSection";
-import PinSection from "@/components/profile/PinSection";
 import { hasChildren, redirectIfInKidMode } from "@/lib/active-child";
 
 
@@ -226,17 +224,32 @@ export default async function ProfilePage() {
           </div>
         </div>
 
-        {/* Parent PIN — only shown once the parent has at least one child.
-            Before the first child exists the PIN is meaningless (nothing
-            to switch into), and showing it here would feel like a second,
-            unrelated setup task. The "Add child profile" form below
-            collects the PIN inline on first add. */}
-        {parentHasChildren && (
-          <PinSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
-        )}
-
-        {/* Brain training: child profiles */}
-        <ChildrenSection hasPinInitial={typeof user.profile?.childPinHash === "string" && user.profile.childPinHash.length > 0} />
+        {/* PIN + Children moved to /family (2026-06-13). Profile keeps
+            its account/password/subscription scope; family-setup
+            (PIN + kids) lives on its own page so the PIN is always
+            editable, even with zero kids. */}
+        <Link
+          href="/family"
+          className="block bg-white border border-cool-line hover:border-brand hover:shadow-sm rounded-2xl p-5 mb-6 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center shrink-0">
+              <span className="text-2xl">🧒</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold text-purple-700 uppercase tracking-widest mb-0.5">
+                Family
+              </p>
+              <p className="text-base font-bold text-ink leading-snug">
+                {parentHasChildren ? "Manage PIN + children" : "Set PIN + add a child"}
+              </p>
+              <p className="text-xs text-ink-soft mt-0.5">
+                Parent PIN and your children&rsquo;s profiles.
+              </p>
+            </div>
+            <ChevronRight className="w-5 h-5 text-ink-soft shrink-0" strokeWidth={2.5} />
+          </div>
+        </Link>
 
         {/* Subscription */}
         <SubscriptionSection profile={user.profile} role={role} />

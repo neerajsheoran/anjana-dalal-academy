@@ -81,8 +81,6 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
   const [name, setName] = useState('');
   const [classId, setClassId] = useState('');
   const [consent, setConsent] = useState(false);
-  const [pin, setPin] = useState('');
-  const [pinConfirm, setPinConfirm] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
 
@@ -120,8 +118,6 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     setName('');
     setClassId('');
     setConsent(false);
-    setPin('');
-    setPinConfirm('');
     setError('');
     setShowAdd(false);
   }
@@ -130,31 +126,14 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
     e.preventDefault();
     setError('');
 
+    if (!hasPin) return setError('Set your parent PIN above before adding a child.');
     if (!name.trim()) return setError('Please enter a first name.');
     if (!classId) return setError('Please select your child’s class.');
     const ageNum = ageFromClass(classId);
     if (!consent) return setError('Please confirm parental consent.');
 
-    // PIN setup is required only when no PIN exists yet
-    const needsPin = !hasPin;
-    if (needsPin) {
-      if (!/^\d{4}$/.test(pin)) return setError('PIN must be exactly 4 digits.');
-      if (pin !== pinConfirm) return setError('PINs do not match.');
-    }
-
     setSubmitting(true);
     try {
-      // Set PIN first so child creation can't succeed without a PIN on first run
-      if (needsPin) {
-        const pinRes = await fetch('/api/children/pin', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ pin }),
-        });
-        if (!pinRes.ok) throw new Error('Failed to set PIN');
-        setHasPin(true);
-      }
-
       const res = await fetch('/api/children', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -424,21 +403,30 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
         <div className="text-center py-6">
           <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center mx-auto mb-4 text-5xl sm:text-6xl shadow-inner">
             🧒
-            <div className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-base font-bold shadow-md">
-              +
+            <div className={`absolute -bottom-1 -right-1 w-7 h-7 rounded-full ${hasPin ? "bg-brand" : "bg-gray-400"} text-white flex items-center justify-center text-base font-bold shadow-md`}>
+              {hasPin ? "+" : <Lock className="w-3.5 h-3.5" strokeWidth={2.5} />}
             </div>
           </div>
           <p className="text-sm text-ink mb-1">No child profiles yet</p>
-          <p className="text-xs text-ink-light mb-4">
-            Add your first child profile to start brain training
-          </p>
-          <button
-            onClick={() => setShowAdd(true)}
-            className="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
-          >
-            <UserPlus className="w-4 h-4" strokeWidth={2.5} />
-            Add your child profile
-          </button>
+          {hasPin ? (
+            <>
+              <p className="text-xs text-ink-light mb-4">
+                Add your first child profile to start brain training
+              </p>
+              <button
+                onClick={() => setShowAdd(true)}
+                className="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
+              >
+                <UserPlus className="w-4 h-4" strokeWidth={2.5} />
+                Add your child profile
+              </button>
+            </>
+          ) : (
+            <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 inline-block px-3 py-2 rounded-lg mt-1">
+              <Lock className="inline w-3 h-3 mr-1 -mt-0.5" strokeWidth={2.5} />
+              Set your parent PIN above first
+            </p>
+          )}
         </div>
       )}
 
@@ -616,49 +604,6 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
               We use the class to match academic content and age-appropriate games.
             </p>
           </div>
-
-          {!hasPin && (
-            <div className="bg-blue-50/60 border border-blue-200 rounded-xl p-4 space-y-3">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                  <Lock className="w-4 h-4 text-blue-700" strokeWidth={2.5} />
-                </div>
-                <p className="text-sm font-bold text-blue-900">
-                  Set your parent PIN
-                </p>
-              </div>
-              <p className="text-[12px] text-blue-800/90 leading-relaxed">
-                <strong>Different from your password.</strong> The PIN locks
-                parent-only screens (subscription, dashboard, settings) while
-                your child is playing — so they can&apos;t see them by accident.
-                You&apos;ll enter it to switch back into parent mode.
-              </p>
-              <div className="grid grid-cols-2 gap-2 pt-1">
-                <input
-                  type="password"
-                  inputMode="numeric"
-                  pattern="\d{4}"
-                  value={pin}
-                  onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                  className="w-full border border-blue-200 bg-white rounded-lg px-3 py-2.5 text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="4-digit PIN"
-                  required
-                  maxLength={4}
-                />
-                <input
-                  type="password"
-                  inputMode="numeric"
-                  pattern="\d{4}"
-                  value={pinConfirm}
-                  onChange={(e) => setPinConfirm(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                  className="w-full border border-blue-200 bg-white rounded-lg px-3 py-2.5 text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Confirm"
-                  required
-                  maxLength={4}
-                />
-              </div>
-            </div>
-          )}
 
           <label className="flex items-start gap-2 cursor-pointer">
             <input

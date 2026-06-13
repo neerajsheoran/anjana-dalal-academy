@@ -61,18 +61,21 @@ function NoChildrenState() {
   return (
     <main className="min-h-screen bg-white py-12 px-6">
       <div className="max-w-md mx-auto bg-cream border border-warm-line rounded-2xl shadow-sm p-8 text-center">
-        <div className="w-16 h-16 rounded-xl bg-white border border-warm-line flex items-center justify-center text-3xl mx-auto mb-4">
-          🧠
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center mx-auto mb-4 text-5xl sm:text-6xl shadow-inner">
+          🧒
+          <div className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-base font-bold shadow-md">
+            +
+          </div>
         </div>
         <h1 className="text-xl font-bold text-ink mb-2">
-          No children added yet
+          No child profiles yet
         </h1>
         <p className="text-sm text-ink-soft mb-6 leading-relaxed">
           Add a child profile first — once they start training, this dashboard
           will show their progress, scores, and personalised insights.
         </p>
         <a
-          href="/profile#children"
+          href="/family"
           className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
         >
           Add a child profile

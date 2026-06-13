@@ -16,6 +16,7 @@ import {
   BarChart3,
   Brain,
   ChevronDown,
+  Sparkles,
   Target,
 } from 'lucide-react';
 
@@ -25,13 +26,12 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
       <div className="max-w-3xl mx-auto">
         <div className="bg-cream border border-warm-line rounded-3xl p-6 sm:p-10 shadow-sm">
 
-          {/* Step badge — communicates this is the start of a flow */}
+          {/* Badge — frames the screen as the start of setup without
+              implying a multi-step counter we don't actually have. */}
           <div className="flex items-center justify-center mb-5">
             <span className="inline-flex items-center gap-1.5 bg-brand/10 text-brand text-[11px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
-              <span className="w-5 h-5 rounded-full bg-brand text-white text-[10px] font-bold flex items-center justify-center">
-                1
-              </span>
-              Step 1 of 3 · Quick setup
+              <Sparkles className="w-3.5 h-3.5" strokeWidth={2.5} />
+              Quick setup
             </span>
           </div>
 
@@ -65,7 +65,7 @@ export default function ParentSetupHero({ firstName }: { firstName: string }) {
               inside so the eye connects icon → action */}
           <div className="flex items-center justify-center mb-7">
             <Link
-              href="/profile#children"
+              href="/family"
               className="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
             >
               <span className="text-xl leading-none">🧒</span>

@@ -131,7 +131,7 @@ export default function ParentChooser({
 
           {/* Add another child */}
           <Link
-            href="/profile#children"
+            href="/family"
             className="group bg-white border-2 border-dashed border-gray-300 hover:border-purple-400 rounded-2xl p-4 text-center transition-all flex flex-col items-center justify-center"
           >
             <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-purple-50 flex items-center justify-center">
