@@ -266,7 +266,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
   async function handleDelete(child: Child) {
     const confirmed = window.confirm(
-      `Permanently delete ${child.name}'s profile and all training history? This cannot be undone.`
+      `Permanently delete ${child.name}'s profile?\n\nThis removes their brain training history, chapter progress, and quiz results. This cannot be undone.`
     );
     if (!confirmed) return;
 
@@ -281,7 +281,7 @@ export default function ChildrenSection({ hasPinInitial }: { hasPinInitial: bool
 
   async function handleReset(child: Child) {
     const confirmed = window.confirm(
-      `Clear all training history for ${child.name}? Their profile stays — progress just starts fresh.`
+      `Clear ALL history for ${child.name} — brain games, chapter progress, and quiz results?\n\nThe profile stays (same name, class, PIN), but everything starts fresh. This cannot be undone.`
     );
     if (!confirmed) return;
 

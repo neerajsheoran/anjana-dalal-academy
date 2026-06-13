@@ -1,9 +1,11 @@
 // DELETE /api/children/[childId]/attempts
-//   — wipe a single child's training history (the `attempts` subcollection)
-//   without touching the profile itself. Lets parents give a kid a "fresh start"
-//   without losing name, age, class, or PIN setup.
+//   — wipe a single child's full history without removing the profile.
+//   Brain attempts + chapter progress + quiz attempts all go. Profile stays
+//   so the parent can hand the kid back a fresh-start account with the same
+//   name, age, class, and PIN setup intact.
 
 import { adminAuth, adminDb } from "@/lib/firebase-admin";
+import { deleteChildData } from "@/lib/child-data";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
@@ -37,23 +39,12 @@ export async function DELETE(
       .collection("children")
       .doc(childId);
 
-    // Confirm the child belongs to the authenticated parent
     const childDoc = await childRef.get();
     if (!childDoc.exists) {
       return NextResponse.json({ error: "Child not found" }, { status: 404 });
     }
 
-    // Wipe the attempts subcollection. Capped batch — assumes < 500 attempts
-    // (matches the existing assumption in app/api/children/[childId]/route.ts).
-    const attemptsSnap = await childRef.collection("attempts").get();
-    let deleted = 0;
-    if (!attemptsSnap.empty) {
-      const batch = adminDb.batch();
-      attemptsSnap.docs.forEach((d) => batch.delete(d.ref));
-      await batch.commit();
-      deleted = attemptsSnap.size;
-    }
-
+    const deleted = await deleteChildData(uid, childId);
     return NextResponse.json({ ok: true, deleted });
   } catch (err) {
     console.error("Failed to reset child progress:", err);

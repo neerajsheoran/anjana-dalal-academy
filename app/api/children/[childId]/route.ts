@@ -1,8 +1,9 @@
 // DELETE /api/children/[childId]  — remove a child profile (parent right to delete per DPDP)
 // PATCH  /api/children/[childId]  — edit name / age / classId of an existing child
 //
-// DELETE also deletes the child's `attempts` subcollection (Phase 2
-// brain-training data) when present, to honour the parent's right-to-delete.
+// DELETE wipes ALL of the child's data — brain attempts, chapter progress,
+// and quiz history — via the shared `deleteChildData` helper, then deletes
+// the profile doc itself. Fulfils parent right-to-delete under DPDP.
 //
 // PATCH enforces case-insensitive name uniqueness among the parent's OTHER
 // children — two profiles named "Aanya" would make the kid picker ambiguous.
@@ -13,6 +14,7 @@ import {
   isValidAge,
   isValidClassId,
 } from "@/lib/age-group";
+import { deleteChildData } from "@/lib/child-data";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
@@ -55,22 +57,11 @@ export async function DELETE(
       return NextResponse.json({ error: "Child not found" }, { status: 404 });
     }
 
-    // Delete attempts subcollection if present (Phase 2 brain-training data).
-    // Capped batch deletion — assumes a single child has < 500 attempts at delete time.
-    try {
-      const attemptsSnap = await childRef.collection("attempts").get();
-      if (!attemptsSnap.empty) {
-        const batch = adminDb.batch();
-        attemptsSnap.docs.forEach((d) => batch.delete(d.ref));
-        await batch.commit();
-      }
-    } catch {
-      // If subcollection cleanup fails, proceed with deleting the parent doc;
-      // orphaned subdocs aren't billable and admin can clean up manually.
-    }
+    // Wipe brain attempts + chapter progress + quiz history.
+    const deleted = await deleteChildData(uid, childId);
 
     await childRef.delete();
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, deleted });
   } catch (err) {
     console.error("Failed to delete child profile:", err);
     return NextResponse.json({ error: "Failed to delete profile" }, { status: 500 });
