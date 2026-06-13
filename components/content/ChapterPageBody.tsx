@@ -302,7 +302,6 @@ export default async function ChapterPageBody({
           accessLevel={accessLevel}
           currentPath={currentPath}
           headings={headings}
-          worksheetTopics={worksheet?.topics.map((t) => t.topic) ?? []}
           chapterOrder={chapterMeta?.order}
           classId={classId}
           reviewContent={

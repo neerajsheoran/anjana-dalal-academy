@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { WorksheetData, TopicWorksheet, Question, DifficultyLevel, ContentAccessLevel } from "@/lib/types";
 import { matchAnswer } from "@/lib/answer-matcher";
 import ContentBlur from "./ContentBlur";
@@ -407,27 +407,17 @@ export default function WorksheetView({
   worksheet,
   accessLevel = 'subscribed',
   currentPath = '/',
-  initialTopicIndex = null,
   classId,
 }: {
   worksheet: WorksheetData | null;
   accessLevel?: ContentAccessLevel;
   currentPath?: string;
-  initialTopicIndex?: number | null;
   classId?: string;
 }) {
   // Hide difficulty tabs for Class 1-5
   const classNum = classId ? parseInt(classId.replace('class-', ''), 10) : 0;
   const hideDifficulty = classNum >= 1 && classNum <= 5;
-  const [activeTopicIndex, setActiveTopicIndex] = useState<number | null>(null);
-
   const context = parseChapterContext(currentPath, classId);
-
-  useEffect(() => {
-    if (initialTopicIndex !== null && initialTopicIndex !== undefined) {
-      setActiveTopicIndex(initialTopicIndex);
-    }
-  }, [initialTopicIndex]);
 
   if (!worksheet) {
     return (
@@ -438,57 +428,66 @@ export default function WorksheetView({
   }
 
   const topics = worksheet.topics;
-  const displayedTopics = activeTopicIndex === null ? topics : [topics[activeTopicIndex]];
+  const totalQuestions = topics.reduce(
+    (sum, t) => sum + t.easy.length + t.medium.length + t.hard.length,
+    0,
+  );
+  const estimatedMinutes = Math.max(5, Math.round(totalQuestions * 0.75));
 
-  // For anonymous/expired users viewing all topics: show first topic, blur the rest
-  const hasAccess = accessLevel === 'trial' || accessLevel === 'subscribed' || accessLevel === 'admin';
-  const shouldBlurRest = !hasAccess && activeTopicIndex === null && displayedTopics.length > 1;
-  const visibleTopics = shouldBlurRest ? displayedTopics.slice(0, 1) : displayedTopics;
-  const blurredTopics = shouldBlurRest ? displayedTopics.slice(1) : [];
+  // Per-topic blur for unpaid users — first topic visible, rest behind
+  // the upsell. Same gating as before, just without the topic picker.
+  const hasAccess =
+    accessLevel === 'trial' ||
+    accessLevel === 'subscribed' ||
+    accessLevel === 'admin';
+  const shouldBlurRest = !hasAccess && topics.length > 1;
+  const visibleTopics = shouldBlurRest ? topics.slice(0, 1) : topics;
+  const blurredTopics = shouldBlurRest ? topics.slice(1) : [];
 
   return (
     <div>
-      {/* Topic Filter */}
-      <div className="mb-6">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2 px-1">Choose TOPICS</p>
-        <div className="flex flex-col gap-1 bg-gray-50 rounded-xl p-3">
-          <button
-            onClick={() => setActiveTopicIndex(null)}
-            className={`text-left px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-              activeTopicIndex === null
-                ? "bg-gray-800 text-white"
-                : "text-gray-600 hover:bg-gray-100"
-            }`}
-          >
-            All {topics.length} Topics
-          </button>
-          {topics.map((topic, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTopicIndex(index)}
-              className={`text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-baseline gap-2 ${
-                activeTopicIndex === index
-                  ? "bg-gray-800 text-white font-semibold"
-                  : "text-gray-600 hover:bg-gray-100"
-              }`}
-            >
-              <span className={`text-xs font-bold min-w-[1.25rem] ${activeTopicIndex === index ? "text-gray-400" : "text-gray-300"}`}>{index + 1}.</span>
-              {topic.topic}
-            </button>
-          ))}
+      {/* Summary header — replaces the old Choose Topics picker.
+          Decided 2026-06-13: drop the filter, show all questions
+          inline so the kid moves straight into answering. */}
+      <div className="bg-gradient-to-r from-purple-50 to-fuchsia-50 border border-purple-200 rounded-xl p-4 mb-6 flex items-center justify-between gap-3">
+        <div>
+          <p className="text-xs font-bold text-purple-700 uppercase tracking-widest">
+            Exam Readiness
+          </p>
+          <p className="text-sm text-gray-700 mt-0.5">
+            <span className="font-bold">{totalQuestions} questions</span>
+            <span className="text-gray-500"> · {topics.length} topic{topics.length === 1 ? '' : 's'} · ~{estimatedMinutes} mins</span>
+          </p>
         </div>
+        <span className="text-2xl shrink-0">📝</span>
       </div>
 
-      {/* Visible Topics */}
+      {/* Visible Topics — every topic renders inline. TopicSection
+          already shows its own header (topic name + question count),
+          so each section reads as a structural divider. */}
       {visibleTopics.map((topic, index) => (
-        <TopicSection key={index} topic={topic} hideDifficulty={hideDifficulty} context={context} />
+        <TopicSection
+          key={index}
+          topic={topic}
+          hideDifficulty={hideDifficulty}
+          context={context}
+        />
       ))}
 
-      {/* Blurred Topics (anonymous only) */}
+      {/* Blurred Topics (unpaid users only) */}
       {blurredTopics.length > 0 && (
-        <ContentBlur accessLevel={accessLevel} currentPath={currentPath} maxHeight="300px">
+        <ContentBlur
+          accessLevel={accessLevel}
+          currentPath={currentPath}
+          maxHeight="300px"
+        >
           {blurredTopics.map((topic, index) => (
-            <TopicSection key={visibleTopics.length + index} topic={topic} hideDifficulty={hideDifficulty} context={context} />
+            <TopicSection
+              key={visibleTopics.length + index}
+              topic={topic}
+              hideDifficulty={hideDifficulty}
+              context={context}
+            />
           ))}
         </ContentBlur>
       )}

@@ -21,28 +21,12 @@ interface ChapterTabsProps {
   accessLevel: ContentAccessLevel;
   currentPath: string;
   headings?: Heading[];
-  worksheetTopics?: string[];
   chapterOrder?: number;
   classId?: string;
 }
 
-function findMatchingTopicIndex(heading: string, topics: string[]): number {
-  const h = heading.toLowerCase().replace(/[^a-z0-9 ]/g, "").trim();
-  for (let i = 0; i < topics.length; i++) {
-    const t = topics[i].toLowerCase().replace(/[^a-z0-9 ]/g, "").trim();
-    if (h === t || h.includes(t) || t.includes(h)) return i;
-    // Check if most words match
-    const hWords = h.split(/\s+/);
-    const tWords = t.split(/\s+/);
-    const overlap = hWords.filter((w) => tWords.includes(w)).length;
-    if (overlap >= Math.min(2, Math.min(hWords.length, tWords.length))) return i;
-  }
-  return -1;
-}
-
-export default function ChapterTabs({ children, worksheet, reviewContent, discussionContent, discussionSource, accessLevel, currentPath, headings = [], worksheetTopics = [], chapterOrder, classId }: ChapterTabsProps) {
+export default function ChapterTabs({ children, worksheet, reviewContent, discussionContent, discussionSource, accessLevel, currentPath, headings = [], chapterOrder, classId }: ChapterTabsProps) {
   const [activeTab, setActiveTab] = useState<"notes" | "review" | "discussion" | "worksheet">("notes");
-  const [jumpToTopic, setJumpToTopic] = useState<number | null>(null);
   const notesRef = useRef<HTMLDivElement>(null);
   const discussionRef = useRef<HTMLDivElement>(null);
 
@@ -159,7 +143,7 @@ export default function ChapterTabs({ children, worksheet, reviewContent, discus
       )}
 
       {activeTab === "worksheet" && (
-        <WorksheetView worksheet={worksheet} accessLevel={accessLevel} currentPath={currentPath} initialTopicIndex={jumpToTopic} classId={classId} />
+        <WorksheetView worksheet={worksheet} accessLevel={accessLevel} currentPath={currentPath} classId={classId} />
       )}
     </div>
   );
