@@ -1,11 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
 import { ChapterMeta, ClassInfo, SubjectInfo } from '@/lib/types';
 import { CLASSES, SUBJECTS } from '@/lib/content-static';
+import BackLink from '@/components/brain/BackLink';
 
 export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] }) {
   const [selectedClass, setSelectedClass] = useState<string | null>(null);
@@ -84,13 +84,14 @@ export default function QuizStartClient({ chapters }: { chapters: ChapterMeta[] 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
 
+      <div className="max-w-5xl mx-auto px-6 pt-5">
+        <BackLink href="/" label="Home" />
+      </div>
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-purple-600 via-violet-700 to-indigo-800 text-white py-14 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_60%)]" />
         <div className="max-w-5xl mx-auto text-center relative">
-          <Link href="/" className="inline-flex items-center gap-1.5 text-purple-200 hover:text-white text-sm mb-6 transition-colors group">
-            <span className="group-hover:-translate-x-0.5 transition-transform">&larr;</span> Back to Home
-          </Link>
           <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-5xl mx-auto mb-5 shadow-lg">
             🧠
           </div>
