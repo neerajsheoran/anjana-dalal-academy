@@ -25,9 +25,9 @@ export default async function KidModeStrip() {
           <span className="text-sm text-white flex-1 min-w-0 truncate">
             Training as <strong>{activeChild.name}</strong>
           </span>
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 bg-white/15 hover:bg-white/25 px-3 py-1 rounded-full shrink-0 transition-colors">
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white bg-white/20 hover:bg-white/30 px-4 py-1.5 rounded-full shrink-0 transition-colors">
             Switch
-            <ChevronRight className="w-3.5 h-3.5" strokeWidth={2.5} />
+            <ChevronRight className="w-4 h-4" strokeWidth={3} />
           </span>
         </div>
       </Link>

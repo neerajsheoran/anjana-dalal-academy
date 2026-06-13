@@ -333,7 +333,7 @@ function ExamReadinessSecondary({ classId }: { classId: string | null }) {
             Quick mock test · ~10 questions
           </p>
         </div>
-        <ChevronRight className="w-6 h-6 text-fuchsia-600 shrink-0" strokeWidth={3} />
+        <ChevronRight className="w-8 h-8 text-fuchsia-600 shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -360,7 +360,7 @@ function ContinueCard({ recent }: { recent: RecentChapter }) {
             {recent.chapterTitle}
           </p>
         </div>
-        <ChevronRight className="w-6 h-6 text-blue-600 shrink-0" strokeWidth={3} />
+        <ChevronRight className="w-8 h-8 text-blue-600 shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );

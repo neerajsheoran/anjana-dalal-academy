@@ -140,7 +140,7 @@ function DailyCard({
             </p>
           )}
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -167,7 +167,7 @@ function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
               Sign up free →
             </p>
           </div>
-          <ChevronRight className="w-8 h-8 text-fuchsia-500 shrink-0 self-center" strokeWidth={3} />
+          <ChevronRight className="w-10 h-10 text-fuchsia-500 shrink-0 self-center" strokeWidth={3.5} />
         </div>
       </Link>
     );
@@ -209,7 +209,7 @@ function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
           </div>
           <p className="text-xs text-white/85 mt-1.5">{progressText}</p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
@@ -231,7 +231,7 @@ function ExploreCard({ isPaid }: { isPaid: boolean }) {
             {isPaid ? "14 games · play any anytime" : "3 free games · 11 locked"}
           </p>
         </div>
-        <ChevronRight className="w-8 h-8 text-white shrink-0 self-center" strokeWidth={3} />
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );

@@ -75,7 +75,7 @@ export default async function BrainExplorePage() {
                       {isPaid ? `${totalGames} games` : "1 game free · others locked"}
                     </p>
                   </div>
-                  <ChevronRight className="w-6 h-6 text-white/80 shrink-0" strokeWidth={2.5} />
+                  <ChevronRight className="w-10 h-10 text-white/90 shrink-0 self-center" strokeWidth={3.5} />
                 </div>
               </Link>
             );
