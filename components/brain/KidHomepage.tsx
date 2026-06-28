@@ -114,11 +114,11 @@ export default function KidHomepage({
               · Class 5-8: Daily Activity (hero) → Continue → small Exam card
               · Class 9-10: Exam Readiness (hero) → Continue (Train is hidden) */}
         {showTodayBlock && (
-          <section className="mt-8">
+          <section>
             <SectionHeader
               icon={Sparkles}
               label="Today"
-              accent="bg-purple-100 text-purple-700"
+              accent="text-purple-700"
             />
             <div className="space-y-3">
               {examPromo === "hero" && <ExamReadinessHero classId={child.classId} />}
@@ -136,14 +136,12 @@ export default function KidHomepage({
           </section>
         )}
 
-        {showTodayBlock && <SectionDivider />}
-
         {/* BROWSE — nav cards for the rest of the platform */}
-        <section className="mt-8">
+        <section>
           <SectionHeader
             icon={Compass}
             label="Explore"
-            accent="bg-indigo-100 text-indigo-700"
+            accent="text-indigo-700"
           />
           <div className="space-y-3">
             <LearnCard classId={child.classId} classLabel={classLabel} />
@@ -154,17 +152,15 @@ export default function KidHomepage({
           </div>
         </section>
 
-        {showTrain && <SectionDivider />}
-
         {/* ACHIEVEMENTS — dedicated shelf so badges + streak have a
             home, not just a header crest. Hidden in board-prep mode
             since Train is also hidden there. */}
         {showTrain && (
-          <section className="mt-8">
+          <section>
             <SectionHeader
               icon={Trophy}
               label="Achievements"
-              accent="bg-amber-100 text-amber-700"
+              accent="text-amber-700"
             />
             <AchievementsCard bestTier={bestTier} streakDays={streakDays} />
           </section>
@@ -473,17 +469,12 @@ function ApplyCard({ classLabel }: { classLabel: string | null }) {
   );
 }
 
-// Soft hairline between shelves. A center-fade gradient feels gentler
-// than a hard 1px rule and reads as decorative rather than structural.
-function SectionDivider() {
-  return (
-    <div className="my-8 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-  );
-}
-
-// Chunky pill header used to label each shelf on the kid home. Replaces
-// the previous tiny grey caps text — kids (and parents skimming) couldn't
-// tell where one section ended and the next began. Decided 2026-06-29.
+// Section header rendered as a divider with the label sitting on it:
+//   ─────── ✨ TODAY ───────
+// Replaces the older pill-chip + separate gray hairline. The line is
+// the divider, the label is what the line is labelling. One element,
+// not two. Line is gray-300 + 2px to read clearly against the white
+// background; text color carries each section's brand accent.
 function SectionHeader({
   icon: Icon,
   label,
@@ -494,9 +485,15 @@ function SectionHeader({
   accent: string;
 }) {
   return (
-    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full ${accent} mb-3 ml-1`}>
-      <Icon className="w-4 h-4" strokeWidth={2.5} />
-      <span className="text-xs font-bold uppercase tracking-wider">{label}</span>
+    <div className="flex items-center gap-3 my-7">
+      <div className="flex-1 h-[2px] bg-gray-300 rounded-full" />
+      <span
+        className={`flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest ${accent}`}
+      >
+        <Icon className="w-4 h-4" strokeWidth={2.75} />
+        {label}
+      </span>
+      <div className="flex-1 h-[2px] bg-gray-300 rounded-full" />
     </div>
   );
 }
