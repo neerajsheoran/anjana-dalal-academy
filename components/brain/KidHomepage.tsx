@@ -136,8 +136,10 @@ export default function KidHomepage({
           </section>
         )}
 
+        {showTodayBlock && <SectionDivider />}
+
         {/* BROWSE — nav cards for the rest of the platform */}
-        <section className="mt-10">
+        <section className="mt-8">
           <SectionHeader
             icon={Compass}
             label="Explore"
@@ -145,19 +147,6 @@ export default function KidHomepage({
           />
           <div className="space-y-3">
             <LearnCard classId={child.classId} classLabel={classLabel} />
-            {/* Small escape hatch for curious Class 5+ kids who want to
-                peek at other classes / browse by subject. Younger kids
-                don't see it (less likely to want to wander, less visual
-                noise on their home). Decided 2026-06-13. */}
-            {showExploreLink(child.classId) && (
-              <Link
-                href="/learn"
-                className="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-900 font-semibold text-sm rounded-full px-4 py-2 ml-1 transition-colors"
-              >
-                Explore other classes & subjects
-                <ChevronRight className="w-4 h-4" strokeWidth={2.5} />
-              </Link>
-            )}
             {showTrain && (
               <TrainCard bestTier={bestTier} streakDays={streakDays} />
             )}
@@ -165,11 +154,13 @@ export default function KidHomepage({
           </div>
         </section>
 
+        {showTrain && <SectionDivider />}
+
         {/* ACHIEVEMENTS — dedicated shelf so badges + streak have a
             home, not just a header crest. Hidden in board-prep mode
             since Train is also hidden there. */}
         {showTrain && (
-          <section className="mt-10">
+          <section className="mt-8">
             <SectionHeader
               icon={Trophy}
               label="Achievements"
@@ -395,10 +386,19 @@ function LearnCard({
   classId: string | null;
   classLabel: string | null;
 }) {
-  const href = classId ? `/class/${classId}` : "/classes";
-  const body = classLabel
-    ? `${classLabel} · Maths, Science, Social Science`
-    : "Browse classes and subjects, Class 1 to 10";
+  // Class 5+ kids now go to /learn (the browse page) on a Learn tap —
+  // collapses the previous Learn-card + Explore-link pair into one card.
+  // Class 1-4 keep the fast-path to their own class so they don't bounce
+  // through a class picker every day. Decided 2026-06-29.
+  const useExplore = showExploreLink(classId);
+  const href = useExplore ? "/learn" : classId ? `/class/${classId}` : "/classes";
+  const body = useExplore
+    ? classLabel
+      ? `${classLabel} + all other classes & subjects`
+      : "Browse classes and subjects, Class 1 to 10"
+    : classLabel
+      ? `${classLabel} · Maths, Science, Social Science`
+      : "Browse classes and subjects, Class 1 to 10";
   return (
     <Link
       href={href}
@@ -433,7 +433,7 @@ function TrainCard({
         : "Memory · Focus · Thinking — pick a game";
   return (
     <Link
-      href="/brain"
+      href="/brain/explore"
       className="group block rounded-3xl p-5 bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
     >
       <div className="flex items-start gap-4">
@@ -470,6 +470,14 @@ function ApplyCard({ classLabel }: { classLabel: string | null }) {
         <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
+  );
+}
+
+// Soft hairline between shelves. A center-fade gradient feels gentler
+// than a hard 1px rule and reads as decorative rather than structural.
+function SectionDivider() {
+  return (
+    <div className="my-8 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
   );
 }
 
