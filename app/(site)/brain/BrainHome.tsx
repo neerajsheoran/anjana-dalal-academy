@@ -51,7 +51,7 @@ export default function BrainHome({
             dailyDoneCount={dailyDoneCount}
             dailyComplete={dailyComplete}
           />
-          <BadgesCard isPaid={isPaid} stats={stats} />
+          <BadgesCard isPaid={isPaid} isAnonymous={isAnonymous} stats={stats} />
           <ExploreCard isPaid={isPaid} />
         </div>
 
@@ -146,11 +146,26 @@ function DailyCard({
   );
 }
 
-function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
+function BadgesCard({
+  isPaid,
+  isAnonymous,
+  stats,
+}: {
+  isPaid: boolean;
+  isAnonymous: boolean;
+  stats: BrainStats;
+}) {
   if (!isPaid) {
+    // Logged-out → push signup. Logged-in-but-unsubscribed → push trial,
+    // not "Sign up free" (they already have an account).
+    const href = isAnonymous ? "/login" : "/pricing";
+    const subhead = isAnonymous
+      ? "Sign up to start earning badges"
+      : "Start trial to start earning badges";
+    const cta = isAnonymous ? "Sign up free →" : "Start free trial →";
     return (
       <Link
-        href="/login"
+        href={href}
         className="group block rounded-3xl p-5 bg-white border border-gray-200 hover:border-fuchsia-300 hover:shadow-md transition-all"
       >
         <div className="flex items-start gap-4">
@@ -159,12 +174,10 @@ function BadgesCard({ isPaid, stats }: { isPaid: boolean; stats: BrainStats }) {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-lg font-bold text-gray-800 leading-tight">Badges</h3>
-            <p className="text-sm text-gray-500 mt-0.5">
-              Sign up to start earning badges
-            </p>
+            <p className="text-sm text-gray-500 mt-0.5">{subhead}</p>
             <p className="text-xs text-fuchsia-700 font-semibold mt-1.5 inline-flex items-center gap-1">
               <Lock className="w-3 h-3" strokeWidth={2.5} />
-              Sign up free →
+              {cta}
             </p>
           </div>
           <ChevronRight className="w-10 h-10 text-fuchsia-500 shrink-0 self-center" strokeWidth={3.5} />
