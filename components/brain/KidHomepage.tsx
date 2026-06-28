@@ -17,11 +17,15 @@ import {
   CheckCircle2,
   ChevronRight,
   ClipboardCheck,
+  Compass,
   Flame,
   Hammer,
   PlayCircle,
+  Sparkles,
   Target,
+  Trophy,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import type { ActiveChild } from "@/lib/active-child";
 import type { BrainTier } from "@/lib/brain-tiers";
 import { classNumber, isTrainEligible } from "@/lib/train-eligibility";
@@ -110,10 +114,12 @@ export default function KidHomepage({
               · Class 5-8: Daily Activity (hero) → Continue → small Exam card
               · Class 9-10: Exam Readiness (hero) → Continue (Train is hidden) */}
         {showTodayBlock && (
-          <div className="mt-6 mb-2">
-            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
-              Today
-            </p>
+          <section className="mt-8">
+            <SectionHeader
+              icon={Sparkles}
+              label="Today"
+              accent="bg-purple-100 text-purple-700"
+            />
             <div className="space-y-3">
               {examPromo === "hero" && <ExamReadinessHero classId={child.classId} />}
               {showTrain && (
@@ -127,14 +133,16 @@ export default function KidHomepage({
                 <ExamReadinessSecondary classId={child.classId} />
               )}
             </div>
-          </div>
+          </section>
         )}
 
         {/* BROWSE — nav cards for the rest of the platform */}
-        <div className="mt-6">
-          <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-2 ml-1">
-            Browse
-          </p>
+        <section className="mt-10">
+          <SectionHeader
+            icon={Compass}
+            label="Explore"
+            accent="bg-indigo-100 text-indigo-700"
+          />
           <div className="space-y-3">
             <LearnCard classId={child.classId} classLabel={classLabel} />
             {/* Small escape hatch for curious Class 5+ kids who want to
@@ -155,9 +163,23 @@ export default function KidHomepage({
             )}
             <ApplyCard classLabel={classLabel} />
           </div>
-        </div>
+        </section>
 
-        <p className="text-center text-[11px] text-gray-400 mt-8">
+        {/* ACHIEVEMENTS — dedicated shelf so badges + streak have a
+            home, not just a header crest. Hidden in board-prep mode
+            since Train is also hidden there. */}
+        {showTrain && (
+          <section className="mt-10">
+            <SectionHeader
+              icon={Trophy}
+              label="Achievements"
+              accent="bg-amber-100 text-amber-700"
+            />
+            <AchievementsCard bestTier={bestTier} streakDays={streakDays} />
+          </section>
+        )}
+
+        <p className="text-center text-[11px] text-gray-400 mt-10">
           Tap the avatar at the top right to switch profiles
         </p>
       </div>
@@ -444,6 +466,71 @@ function ApplyCard({ classLabel }: { classLabel: string | null }) {
         <div className="flex-1 min-w-0">
           <h3 className="text-lg font-bold leading-tight">Apply</h3>
           <p className="text-sm text-white/85 mt-0.5">{body}</p>
+        </div>
+        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      </div>
+    </Link>
+  );
+}
+
+// Chunky pill header used to label each shelf on the kid home. Replaces
+// the previous tiny grey caps text — kids (and parents skimming) couldn't
+// tell where one section ended and the next began. Decided 2026-06-29.
+function SectionHeader({
+  icon: Icon,
+  label,
+  accent,
+}: {
+  icon: LucideIcon;
+  label: string;
+  accent: string;
+}) {
+  return (
+    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full ${accent} mb-3 ml-1`}>
+      <Icon className="w-4 h-4" strokeWidth={2.5} />
+      <span className="text-xs font-bold uppercase tracking-wider">{label}</span>
+    </div>
+  );
+}
+
+// Achievements shelf — surfaces the kid's current crest + streak as its
+// own card so the badge progression has a home outside the brain header.
+// Links to /brain/badges where the full ladder lives.
+function AchievementsCard({
+  bestTier,
+  streakDays,
+}: {
+  bestTier: BrainTier | null;
+  streakDays: number;
+}) {
+  const hasAnything = bestTier !== null || streakDays > 0;
+  return (
+    <Link
+      href="/brain/badges"
+      className="group block rounded-3xl p-5 bg-gradient-to-br from-amber-400 to-yellow-500 text-white shadow-[0_12px_28px_rgba(234,179,8,0.30)] hover:shadow-[0_16px_32px_rgba(234,179,8,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0 text-4xl">
+          {bestTier?.emoji ?? "🏅"}
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold leading-tight">My Achievements</h3>
+          {hasAnything ? (
+            <p className="text-sm text-white/90 mt-0.5">
+              {bestTier && <>Best: <span className="font-bold">{bestTier.name}</span></>}
+              {bestTier && streakDays > 0 && " · "}
+              {streakDays > 0 && (
+                <>
+                  <Flame className="inline w-3.5 h-3.5 -mt-0.5" strokeWidth={2.5} />{" "}
+                  {streakDays}-day streak
+                </>
+              )}
+            </p>
+          ) : (
+            <p className="text-sm text-white/90 mt-0.5">
+              Play to start earning badges
+            </p>
+          )}
         </div>
         <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
