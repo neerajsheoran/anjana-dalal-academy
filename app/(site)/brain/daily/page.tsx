@@ -9,7 +9,7 @@
 
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { ChevronRight, Check, Flame, Lock } from "lucide-react";
+import { ChevronRight, Flame, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
 import {
@@ -24,28 +24,22 @@ import BackLink from "@/components/brain/BackLink";
 
 const PILLAR_THEME: Record<
   ModuleKey,
-  { emoji: string; label: string; chip: string; gradient: string; ring: string }
+  { emoji: string; label: string; gradient: string }
 > = {
   memory: {
     emoji: "🧠",
     label: "Memory",
-    chip: "bg-purple-100 text-purple-700",
     gradient: "from-purple-600 to-pink-600",
-    ring: "ring-purple-400",
   },
   focus: {
     emoji: "🎯",
     label: "Focus",
-    chip: "bg-emerald-100 text-emerald-700",
     gradient: "from-emerald-600 to-teal-600",
-    ring: "ring-emerald-400",
   },
   thinking: {
     emoji: "💡",
     label: "Thinking",
-    chip: "bg-orange-100 text-orange-700",
     gradient: "from-orange-500 to-amber-600",
-    ring: "ring-amber-400",
   },
 };
 
@@ -114,29 +108,15 @@ export default async function BrainDailyPage() {
           </div>
         </div>
 
-        {/* Big next-game CTA */}
+        {/* Big next-game CTA — the only thing the kid needs to see. The
+            ordered lineup that used to sit below was removed 2026-06-30
+            after user feedback that it added noise without helping kids
+            decide what to do. */}
         {mission.nextGame ? (
           <NextGameHero game={mission.nextGame} index={mission.doneCount} total={mission.total} />
         ) : (
           <AllDoneHero />
         )}
-
-        {/* Queue preview */}
-        <section className="mt-8">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3 ml-1">
-            Today&rsquo;s Lineup
-          </h2>
-          <ol className="space-y-2">
-            {mission.games.map((g, i) => (
-              <QueueItem
-                key={`${g.activityKey}-${i}`}
-                game={g}
-                index={i}
-                isNext={!mission.isComplete && g.activityKey === mission.nextGame?.activityKey && !g.done && i === mission.games.findIndex((x) => !x.done)}
-              />
-            ))}
-          </ol>
-        </section>
 
         {!isPaid && (
           <div className="mt-6 bg-fuchsia-50 border border-fuchsia-200 rounded-2xl p-4 text-center">
@@ -214,68 +194,3 @@ function AllDoneHero() {
   );
 }
 
-function QueueItem({
-  game,
-  index,
-  isNext,
-}: {
-  game: DailyMissionGame;
-  index: number;
-  isNext: boolean;
-}) {
-  const theme = PILLAR_THEME[game.module];
-  const href = `/brain/${game.module}/${game.activityKey}?from=daily`;
-  return (
-    <li>
-      <Link
-        href={href}
-        className={`flex items-center gap-3 bg-white rounded-xl p-3 border transition-all ${
-          game.done
-            ? "border-emerald-200"
-            : isNext
-              ? `border-transparent ring-2 ${theme.ring} shadow-md`
-              : "border-gray-200 hover:border-gray-300"
-        }`}
-      >
-        <span className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-500 shrink-0">
-          {index + 1}
-        </span>
-        <span className="text-2xl shrink-0">
-          {game.done ? (
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100">
-              <Check className="w-5 h-5 text-emerald-600" strokeWidth={3} />
-            </span>
-          ) : (
-            theme.emoji
-          )}
-        </span>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <p className="text-sm font-bold text-gray-800 truncate">
-              {game.name}
-            </p>
-            <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${theme.chip} shrink-0`}>
-              {theme.label}
-            </span>
-          </div>
-          {game.done && (
-            <p className="text-[11px] text-emerald-700 font-semibold">Done</p>
-          )}
-          {isNext && (
-            <p className="text-[11px] text-gray-600 font-semibold">Next ↓</p>
-          )}
-        </div>
-        <ChevronRight
-          className={`w-5 h-5 shrink-0 ${
-            game.done
-              ? "text-gray-300"
-              : isNext
-                ? "text-gray-800"
-                : "text-gray-400"
-          }`}
-          strokeWidth={2.5}
-        />
-      </Link>
-    </li>
-  );
-}
