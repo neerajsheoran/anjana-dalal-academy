@@ -77,11 +77,13 @@ interface KidHomepageProps {
   bestTier: BrainTier | null;     // null if no brain attempts yet
   streakDays: number;
   recent: RecentChapter | null;   // null if no progress yet
-  // Daily Activity progress (Memory / Focus / Thinking done today).
-  // Drives the "Today's Activity" hero card so the kid sees their
-  // daily job front and center — one tap to start.
-  dailyDoneCount: number;        // 0..3
-  dailyComplete: boolean;        // all 3 pillars done today
+  // Daily mission progress — how many of today's 9 picked games the
+  // kid has played at least once. Drives the "Today's Activity" hero
+  // card. Refactored 2026-06-30 from a 0..3 per-pillar count to a
+  // 0..total mixed-session count.
+  dailyDoneCount: number;        // 0..total
+  dailyTotal: number;            // usually 9 (3 per pillar)
+  dailyComplete: boolean;        // all 9 done today
 }
 
 export default function KidHomepage({
@@ -90,6 +92,7 @@ export default function KidHomepage({
   streakDays,
   recent,
   dailyDoneCount,
+  dailyTotal,
   dailyComplete,
 }: KidHomepageProps) {
   const showTrain = isTrainEligible(child.classId);
@@ -131,6 +134,7 @@ export default function KidHomepage({
               {showTrain && (
                 <TodayActivityCard
                   dailyDoneCount={dailyDoneCount}
+                  dailyTotal={dailyTotal}
                   dailyComplete={dailyComplete}
                 />
               )}
@@ -185,21 +189,22 @@ export default function KidHomepage({
   );
 }
 
-// The kid's daily mission. Square-ish vertical tile matching the
-// /learn page hero pattern so the whole site reads as one design
-// language. Three dots track Memory / Focus / Thinking touched today;
-// when all three are done the card flips to a green celebration with
-// a Replay CTA instead of nagging.
+// The kid's daily mission. Square vertical tile matching the /learn
+// hero pattern. Shows mixed-session progress as N of total games done.
+// Refactored 2026-06-30 from the 3-pillar-dot framing.
 function TodayActivityCard({
   dailyDoneCount,
+  dailyTotal,
   dailyComplete,
 }: {
   dailyDoneCount: number;
+  dailyTotal: number;
   dailyComplete: boolean;
 }) {
-  const dots = ["○", "○", "○"];
-  for (let i = 0; i < dailyDoneCount && i < 3; i++) dots[i] = "●";
-  const remaining = 3 - dailyDoneCount;
+  const remaining = Math.max(0, dailyTotal - dailyDoneCount);
+  const percent = dailyTotal > 0
+    ? Math.round((dailyDoneCount / dailyTotal) * 100)
+    : 0;
 
   if (dailyComplete) {
     return (
@@ -212,7 +217,7 @@ function TodayActivityCard({
         </div>
         <h3 className="text-white text-xl font-bold mb-2">All Done Today!</h3>
         <p className="text-emerald-100 text-sm leading-relaxed flex-1">
-          Come back tomorrow to keep your streak going.
+          {dailyTotal} games complete · come back tomorrow for a fresh mix.
         </p>
         <span className="mt-auto inline-block bg-white text-emerald-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
           Replay
@@ -229,17 +234,23 @@ function TodayActivityCard({
       <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
         <span className="text-5xl animate-bounce">🎯</span>
       </div>
-      <h3 className="text-white text-xl font-bold mb-2">Today&rsquo;s Activity</h3>
+      <h3 className="text-white text-xl font-bold mb-2">Today&rsquo;s Mission</h3>
       <p className="text-blue-100 text-sm leading-relaxed">
-        Memory · Focus · Thinking
+        Memory · Focus · Thinking mix · ~12 mins
       </p>
-      <p className="text-white/90 text-sm mt-2 flex-1">
-        <span className="tracking-widest text-base">{dots.join(" ")}</span>
-        <span className="ml-2 font-semibold">
-          {dailyDoneCount === 0 ? "~10 mins" : `${remaining} left`}
-        </span>
-      </p>
-      <span className="mt-auto inline-block bg-white text-indigo-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+      <div className="w-full mt-3 flex-1">
+        <div className="flex justify-between text-xs text-white/90 mb-1.5 font-semibold">
+          <span>{dailyDoneCount} of {dailyTotal} done</span>
+          <span>{remaining} left</span>
+        </div>
+        <div className="h-2 w-full bg-white/25 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-white rounded-full transition-all"
+            style={{ width: `${percent}%` }}
+          />
+        </div>
+      </div>
+      <span className="mt-4 inline-block bg-white text-indigo-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
         {dailyDoneCount === 0 ? "Get Started" : "Continue"}
       </span>
     </Link>

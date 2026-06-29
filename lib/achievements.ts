@@ -141,6 +141,7 @@ function emptyData(): AchievementsData {
       percentToNext: 0,
       streakDays: 0,
       lastActiveIstDay: null,
+      playedTodayKeys: [],
     },
     totalDaysActive: 0,
     longestStreak: 0,

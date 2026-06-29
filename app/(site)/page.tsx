@@ -4,6 +4,7 @@ import ContinueLearning from '@/components/progress/ContinueLearning';
 import { getActiveChild, getParent } from '@/lib/active-child';
 import { adminDb } from '@/lib/firebase-admin';
 import { getBrainStats } from '@/lib/brain-stats';
+import { getDailyMissionProgress } from '@/lib/daily-mission';
 import PatternRecallDemo from '@/components/brain/PatternRecallDemo';
 import KidHomepage, { type RecentChapter } from '@/components/brain/KidHomepage';
 import ParentChooser from '@/components/brain/ParentChooser';
@@ -22,18 +23,24 @@ export default async function HomePage() {
       getBrainStats(activeChild.parentUid, activeChild.id),
       getMostRecentChapter(activeChild.parentUid, activeChild.id),
     ]);
-    const dailyDoneCount =
-      (stats.memory.doneToday ? 1 : 0) +
-      (stats.focus.doneToday ? 1 : 0) +
-      (stats.thinking.doneToday ? 1 : 0);
+    // Daily mission progress — N of 9 games done today. Computed
+    // deterministically per (childId, IST date) by getDailyMission so
+    // both this hero and /brain/daily see the same pick list and the
+    // same done-count.
+    const mission = getDailyMissionProgress({
+      childId: activeChild.id,
+      age: activeChild.age,
+      playedTodayKeys: stats.playedTodayKeys,
+    });
     return (
       <KidHomepage
         child={activeChild}
         bestTier={stats.totalSets > 0 ? stats.bestTier : null}
         streakDays={stats.streakDays}
         recent={recent}
-        dailyDoneCount={dailyDoneCount}
-        dailyComplete={dailyDoneCount === 3}
+        dailyDoneCount={mission.doneCount}
+        dailyTotal={mission.total}
+        dailyComplete={mission.isComplete}
       />
     );
   }

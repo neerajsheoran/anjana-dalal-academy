@@ -59,6 +59,10 @@ export interface BrainStats {
   percentToNext: number;
   streakDays: number;
   lastActiveIstDay: string | null;
+  // Unique activityKeys the kid has played at least once today (IST).
+  // Lets the daily-mission helper decide which of today's 9 picks have
+  // been satisfied without re-reading attempts.
+  playedTodayKeys: string[];
 }
 
 function emptyStats(): BrainStats {
@@ -75,6 +79,7 @@ function emptyStats(): BrainStats {
     percentToNext: t.percentToNext,
     streakDays: 0,
     lastActiveIstDay: null,
+    playedTodayKeys: [],
   };
 }
 
@@ -106,6 +111,8 @@ export async function getBrainStats(
   // (moduleKey, activityKey, minute-bucket). Within a session we keep
   // the earliest createdAt for IST-day classification.
   const sessions = new Map<string, { moduleKey: ModuleKey; istDay: string }>();
+  const today = istDayKey(new Date());
+  const playedTodayKeys = new Set<string>();
   for (const doc of snapshot.docs) {
     const d = doc.data();
     const mod = d.moduleKey as ModuleKey | undefined;
@@ -113,13 +120,16 @@ export async function getBrainStats(
     const ts: Date = d.createdAt?.toDate?.() ?? new Date();
     const bucket = minuteBucket(ts);
     const sessionKey = `${mod}::${d.activityKey}::${bucket}`;
+    const dayKey = istDayKey(ts);
+    if (dayKey === today && d.activityKey) {
+      playedTodayKeys.add(String(d.activityKey));
+    }
     if (sessions.has(sessionKey)) continue;
-    sessions.set(sessionKey, { moduleKey: mod, istDay: istDayKey(ts) });
+    sessions.set(sessionKey, { moduleKey: mod, istDay: dayKey });
   }
 
   // Per-pillar set counts + per-pillar daily-touched-today set.
   const counts: Record<ModuleKey, number> = { memory: 0, focus: 0, thinking: 0 };
-  const today = istDayKey(new Date());
   const todaysModules = new Set<ModuleKey>();
   const activeIstDays = new Set<string>();
   for (const s of sessions.values()) {
@@ -160,6 +170,7 @@ export async function getBrainStats(
     percentToNext: progress.percentToNext,
     streakDays: streak,
     lastActiveIstDay: lastActive,
+    playedTodayKeys: [...playedTodayKeys],
   };
 }
 

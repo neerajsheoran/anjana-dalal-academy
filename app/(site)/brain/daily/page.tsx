@@ -1,22 +1,14 @@
-// /brain/daily — the kid's Daily Activity flow (Screens 3 + 4 of the
-// 2026-06-12 design). Shows 3 stacked cards (Memory / Focus / Thinking),
-// each linking to one preselected game per pillar. The kid plays them
-// in any order; the day counts as "complete" once all 3 are touched.
+// /brain/daily — single mixed-game session of 9 activities, 3 per
+// pillar, interleaved M-F-T-M-F-T-M-F-T. Refactored 2026-06-30 from
+// the old 3-pillar-block layout because varied practice keeps kid
+// attention higher than blocked practice (Bjork interleaving effect).
 //
-// Pillar → preselected game:
-//   Memory   → Memory Match
-//   Focus    → Find the Object
-//   Thinking → Pattern Logic
-//
-// (Same as the free-tier demo games — keeps Daily simple and ensures
-// the path is always playable by anyone with a profile, free or paid.)
-//
-// "Next pillar" highlight: the first not-yet-done card pulses with the
-// Continue CTA. Auto-progression itself (the post-game countdown) lives
-// inside each activity's summary screen — out of scope here.
+// Loose-finish policy: any of the 9 played counts. The kid sees their
+// progress as N of 9. There's no penalty for stopping after fewer.
+// The kid home hero reflects the same progress.
 
 import Link from "next/link";
-import { redirect, notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { ChevronRight, Check, Flame, Lock } from "lucide-react";
 import { getActiveChild } from "@/lib/active-child";
 import { isTrainEligible } from "@/lib/train-eligibility";
@@ -26,16 +18,35 @@ import {
   hasFullAccess,
 } from "@/lib/subscription";
 import { getBrainStats } from "@/lib/brain-stats";
-import { DEMO_GAME_PER_PILLAR } from "@/lib/brain-demo-games";
-import { BRAIN_ACTIVITIES, type ModuleKey } from "@/lib/brain-modules";
+import { getDailyMission, type DailyMissionGame } from "@/lib/daily-mission";
+import { type ModuleKey } from "@/lib/brain-modules";
 import BackLink from "@/components/brain/BackLink";
 
-const PILLAR_ORDER: ModuleKey[] = ["memory", "focus", "thinking"];
-
-const PILLAR_THEME: Record<ModuleKey, { emoji: string; label: string; ring: string; chip: string }> = {
-  memory:   { emoji: "🧠", label: "Memory",   ring: "ring-purple-400",  chip: "bg-purple-100 text-purple-700" },
-  focus:    { emoji: "🎯", label: "Focus",    ring: "ring-green-400",   chip: "bg-green-100 text-green-700" },
-  thinking: { emoji: "🧩", label: "Thinking", ring: "ring-orange-400",  chip: "bg-orange-100 text-orange-700" },
+const PILLAR_THEME: Record<
+  ModuleKey,
+  { emoji: string; label: string; chip: string; gradient: string; ring: string }
+> = {
+  memory: {
+    emoji: "🧠",
+    label: "Memory",
+    chip: "bg-purple-100 text-purple-700",
+    gradient: "from-purple-600 to-pink-600",
+    ring: "ring-purple-400",
+  },
+  focus: {
+    emoji: "🎯",
+    label: "Focus",
+    chip: "bg-emerald-100 text-emerald-700",
+    gradient: "from-emerald-600 to-teal-600",
+    ring: "ring-emerald-400",
+  },
+  thinking: {
+    emoji: "💡",
+    label: "Thinking",
+    chip: "bg-orange-100 text-orange-700",
+    gradient: "from-orange-500 to-amber-600",
+    ring: "ring-amber-400",
+  },
 };
 
 export default async function BrainDailyPage() {
@@ -55,50 +66,77 @@ export default async function BrainDailyPage() {
   const isAnonymous = !activeChild;
   const trialDays = config.trialDays;
 
-  const done = {
-    memory:   stats?.memory.doneToday ?? false,
-    focus:    stats?.focus.doneToday  ?? false,
-    thinking: stats?.thinking.doneToday ?? false,
-  };
-  const doneCount = Number(done.memory) + Number(done.focus) + Number(done.thinking);
-  const dots = PILLAR_ORDER.map((p) => (done[p] ? "●" : "○")).join(" ");
+  const mission = getDailyMission({
+    childId: activeChild?.id ?? null,
+    age: activeChild?.age ?? 12,
+    playedTodayKeys: stats?.playedTodayKeys ?? [],
+  });
 
-  // The first pillar the kid hasn't done today gets the highlighted CTA.
-  const nextPillar = PILLAR_ORDER.find((p) => !done[p]) ?? null;
+  const percent = mission.total > 0
+    ? Math.round((mission.doneCount / mission.total) * 100)
+    : 0;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
-      <div className="max-w-md mx-auto">
+      <div className="max-w-2xl mx-auto">
         <BackLink href="/brain" label="Brain" />
 
-        <div className="mb-5">
-          <h1 className="text-2xl font-bold text-gray-800">Today&apos;s Activity</h1>
-          <div className="flex items-center justify-between mt-2">
-            <span className="text-lg tracking-widest text-gray-600 font-bold">{dots}</span>
-            {isPaid && stats && stats.streakDays > 0 && (
-              <span className="inline-flex items-center gap-1 text-xs font-semibold text-orange-600 bg-orange-50 px-2 py-1 rounded-full">
-                <Flame className="w-3.5 h-3.5" strokeWidth={2.5} />
-                Day {stats.streakDays}
-              </span>
-            )}
-          </div>
-          {doneCount === 3 && (
-            <p className="text-sm text-emerald-700 font-medium mt-2">
-              All done for today! Come back tomorrow to keep your streak.
-            </p>
+        <div className="mb-6 text-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            Today&rsquo;s Mission
+          </h1>
+          <p className="text-sm text-gray-500">
+            {mission.isComplete
+              ? "Nice work — all 9 games done!"
+              : `9 mixed games · ~12 mins · ${mission.doneCount} of ${mission.total} done`}
+          </p>
+          {isPaid && stats && stats.streakDays > 0 && (
+            <span className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full">
+              <Flame className="w-3.5 h-3.5" strokeWidth={2.5} />
+              Day {stats.streakDays} streak
+            </span>
           )}
         </div>
 
-        <div className="space-y-3">
-          {PILLAR_ORDER.map((pillar) => (
-            <DailyCard
-              key={pillar}
-              pillar={pillar}
-              done={done[pillar]}
-              isNext={pillar === nextPillar}
+        {/* Progress bar */}
+        <div className="mb-6 bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+          <div className="flex items-center justify-between mb-2 text-sm">
+            <span className="font-bold text-gray-800">
+              {mission.doneCount} of {mission.total}
+            </span>
+            <span className="font-semibold text-gray-500">{percent}%</span>
+          </div>
+          <div className="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full transition-all"
+              style={{ width: `${percent}%` }}
             />
-          ))}
+          </div>
         </div>
+
+        {/* Big next-game CTA */}
+        {mission.nextGame ? (
+          <NextGameHero game={mission.nextGame} index={mission.doneCount} total={mission.total} />
+        ) : (
+          <AllDoneHero />
+        )}
+
+        {/* Queue preview */}
+        <section className="mt-8">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3 ml-1">
+            Today&rsquo;s Lineup
+          </h2>
+          <ol className="space-y-2">
+            {mission.games.map((g, i) => (
+              <QueueItem
+                key={`${g.activityKey}-${i}`}
+                game={g}
+                index={i}
+                isNext={!mission.isComplete && g.activityKey === mission.nextGame?.activityKey && !g.done && i === mission.games.findIndex((x) => !x.done)}
+              />
+            ))}
+          </ol>
+        </section>
 
         {!isPaid && (
           <div className="mt-6 bg-fuchsia-50 border border-fuchsia-200 rounded-2xl p-4 text-center">
@@ -121,72 +159,123 @@ export default async function BrainDailyPage() {
   );
 }
 
-function DailyCard({
-  pillar,
-  done,
+function NextGameHero({
+  game,
+  index,
+  total,
+}: {
+  game: DailyMissionGame;
+  index: number;
+  total: number;
+}) {
+  const theme = PILLAR_THEME[game.module];
+  const href = `/brain/${game.module}/${game.activityKey}?from=daily`;
+  return (
+    <Link
+      href={href}
+      className={`group block bg-gradient-to-br ${theme.gradient} rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200`}
+    >
+      <div className="flex items-center gap-5">
+        <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
+          <span className="text-5xl animate-bounce">{theme.emoji}</span>
+        </div>
+        <div className="flex-1 min-w-0 text-white">
+          <p className="text-xs font-bold uppercase tracking-widest text-white/80">
+            {index === 0 ? "Start with" : "Next up"} · {index + 1} of {total}
+          </p>
+          <h2 className="text-2xl font-bold leading-tight mt-1">{game.name}</h2>
+          <p className="text-sm text-white/85 mt-1">{theme.label} · ~1 min</p>
+        </div>
+        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white text-gray-800 shrink-0 self-center">
+          <ChevronRight className="w-7 h-7" strokeWidth={3} />
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function AllDoneHero() {
+  return (
+    <div className="bg-gradient-to-br from-emerald-500 to-teal-700 rounded-2xl p-8 shadow-lg text-white text-center">
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mx-auto mb-4">
+        <span className="text-5xl animate-bounce">🎉</span>
+      </div>
+      <h2 className="text-2xl font-bold mb-2">All 9 games done today!</h2>
+      <p className="text-emerald-100 text-sm">
+        Come back tomorrow for a fresh mix of games.
+      </p>
+      <Link
+        href="/brain/explore"
+        className="inline-block mt-5 bg-white text-emerald-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition-shadow"
+      >
+        Play more for fun
+      </Link>
+    </div>
+  );
+}
+
+function QueueItem({
+  game,
+  index,
   isNext,
 }: {
-  pillar: ModuleKey;
-  done: boolean;
+  game: DailyMissionGame;
+  index: number;
   isNext: boolean;
 }) {
-  const theme = PILLAR_THEME[pillar];
-  const activityKey = DEMO_GAME_PER_PILLAR[pillar];
-  const activity = BRAIN_ACTIVITIES[activityKey];
-  if (!activity) notFound();
-  // ?from=daily tells the activity to send Exit back here, not to the
-  // module landing — see [module]/[activity]/page.tsx exitHref logic.
-  const href = `/brain/${pillar}/${activityKey}?from=daily`;
-  const baseCls =
-    "block bg-white rounded-2xl border p-5 transition-all";
-  const ringCls = done
-    ? "border-emerald-200"
-    : isNext
-      ? `border-transparent ring-2 ${theme.ring} shadow-md`
-      : "border-gray-200 hover:border-gray-300";
-
+  const theme = PILLAR_THEME[game.module];
+  const href = `/brain/${game.module}/${game.activityKey}?from=daily`;
   return (
-    <Link href={href} className={`${baseCls} ${ringCls}`}>
-      <div className="flex items-start gap-4">
-        <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0 text-3xl border border-gray-100">
-          {done ? (
+    <li>
+      <Link
+        href={href}
+        className={`flex items-center gap-3 bg-white rounded-xl p-3 border transition-all ${
+          game.done
+            ? "border-emerald-200"
+            : isNext
+              ? `border-transparent ring-2 ${theme.ring} shadow-md`
+              : "border-gray-200 hover:border-gray-300"
+        }`}
+      >
+        <span className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-500 shrink-0">
+          {index + 1}
+        </span>
+        <span className="text-2xl shrink-0">
+          {game.done ? (
             <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100">
               <Check className="w-5 h-5 text-emerald-600" strokeWidth={3} />
             </span>
           ) : (
-            <span>{theme.emoji}</span>
+            theme.emoji
           )}
-        </div>
+        </span>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
-            <p className="text-lg font-bold text-gray-800">{theme.label}</p>
-            {done && (
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">
-                Done
-              </span>
-            )}
-            {isNext && !done && (
-              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${theme.chip}`}>
-                Next
-              </span>
-            )}
+            <p className="text-sm font-bold text-gray-800 truncate">
+              {game.name}
+            </p>
+            <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${theme.chip} shrink-0`}>
+              {theme.label}
+            </span>
           </div>
-          <p className="text-sm text-gray-500 mt-0.5">
-            {activity.name}
-            <span className="text-gray-400"> · ~5 mins</span>
-          </p>
+          {game.done && (
+            <p className="text-[11px] text-emerald-700 font-semibold">Done</p>
+          )}
+          {isNext && (
+            <p className="text-[11px] text-gray-600 font-semibold">Next ↓</p>
+          )}
         </div>
         <ChevronRight
-          className={`w-8 h-8 shrink-0 self-center ${
-            done
-              ? "text-gray-400"
+          className={`w-5 h-5 shrink-0 ${
+            game.done
+              ? "text-gray-300"
               : isNext
                 ? "text-gray-800"
-                : "text-gray-500"
+                : "text-gray-400"
           }`}
-          strokeWidth={3}
+          strokeWidth={2.5}
         />
-      </div>
-    </Link>
+      </Link>
+    </li>
   );
 }

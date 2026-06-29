@@ -78,5 +78,6 @@ function emptyStats() {
     percentToNext: 0,
     streakDays: 0,
     lastActiveIstDay: null,
+    playedTodayKeys: [],
   };
 }
