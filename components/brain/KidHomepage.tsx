@@ -99,9 +99,22 @@ export default function KidHomepage({
   const examPromo = examPromoFor(child.classId);
   const showTodayBlock = showTrain || recent || examPromo !== "none";
 
+  // Desktop layout (md+): asymmetric 3-2 grid the user designed —
+  //   Row 1: Today | Quick Mock      (2 tiles)
+  //   Row 2: Games                   (full-width hero)
+  //   Row 3: Learn | Train Yourself  (2 tiles)
+  //   Row 4: Achievements            (full-width tile)
+  // Mobile: everything stacks single-col automatically via responsive grid.
+  // ContinueCard + ApplyCard are intentionally not rendered for now — the
+  // components stay defined so we can add them back when ready.
+  const todayCount = (showTrain ? 1 : 0) + (examPromo !== "none" ? 1 : 0);
+  const learnCount = 1 + (showTrain ? 1 : 0);
+  const pairedGrid = "grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 items-stretch";
+  const singleGrid = "grid grid-cols-1 gap-3";
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
-      <div className="max-w-md mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Header
           name={child.name}
           bestTier={bestTier}
@@ -109,10 +122,6 @@ export default function KidHomepage({
           showTrain={showTrain}
         />
 
-        {/* TODAY — hero block. Order depends on class band:
-              · Class 1-4: Daily Activity (hero) → Continue
-              · Class 5-8: Daily Activity (hero) → Continue → small Exam card
-              · Class 9-10: Exam Readiness (hero) → Continue (Train is hidden) */}
         {showTodayBlock && (
           <section>
             <SectionHeader
@@ -120,41 +129,45 @@ export default function KidHomepage({
               label="Today"
               accent="text-purple-700"
             />
-            <div className="space-y-3">
-              {examPromo === "hero" && <ExamReadinessHero classId={child.classId} />}
+            <div className={todayCount === 2 ? pairedGrid : singleGrid}>
               {showTrain && (
                 <TodayActivityCard
                   dailyDoneCount={dailyDoneCount}
                   dailyComplete={dailyComplete}
                 />
               )}
-              {recent && <ContinueCard recent={recent} />}
-              {examPromo === "secondary" && (
-                <ExamReadinessSecondary classId={child.classId} />
+              {examPromo !== "none" && (
+                <ExamReadinessHero classId={child.classId} />
               )}
             </div>
           </section>
         )}
 
-        {/* BROWSE — nav cards for the rest of the platform */}
+        {showTrain && (
+          <section>
+            <SectionHeader
+              icon={Brain}
+              label="Games"
+              accent="text-pink-700"
+            />
+            <GamesCard bestTier={bestTier} streakDays={streakDays} />
+          </section>
+        )}
+
         <section>
           <SectionHeader
-            icon={Compass}
-            label="Explore"
-            accent="text-indigo-700"
+            icon={BookOpen}
+            label="Learn"
+            accent="text-blue-700"
           />
-          <div className="space-y-3">
+          <div className={learnCount === 2 ? pairedGrid : singleGrid}>
             <LearnCard classId={child.classId} classLabel={classLabel} />
             {showTrain && (
               <TrainCard bestTier={bestTier} streakDays={streakDays} />
             )}
-            <ApplyCard classLabel={classLabel} />
           </div>
         </section>
 
-        {/* ACHIEVEMENTS — dedicated shelf so badges + streak have a
-            home, not just a header crest. Hidden in board-prep mode
-            since Train is also hidden there. */}
         {showTrain && (
           <section>
             <SectionHeader
@@ -193,7 +206,7 @@ function TodayActivityCard({
     return (
       <Link
         href="/brain/daily"
-        className="group block rounded-3xl p-4 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 hover:shadow-md transition-all"
+        className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 hover:shadow-md transition-all"
       >
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center shrink-0">
@@ -218,7 +231,7 @@ function TodayActivityCard({
   return (
     <Link
       href="/brain/daily"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.35)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.35)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
     >
       <div className="flex items-start gap-4">
         <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
@@ -299,7 +312,7 @@ function ExamReadinessHero({ classId }: { classId: string | null }) {
   return (
     <Link
       href={href}
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-rose-600 to-fuchsia-700 text-white shadow-[0_12px_28px_rgba(244,63,94,0.35)] hover:shadow-[0_16px_32px_rgba(244,63,94,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-rose-600 to-fuchsia-700 text-white shadow-[0_12px_28px_rgba(244,63,94,0.35)] hover:shadow-[0_16px_32px_rgba(244,63,94,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
     >
       <div className="flex items-start gap-4">
         <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
@@ -398,7 +411,7 @@ function LearnCard({
   return (
     <Link
       href={href}
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-blue-500 to-indigo-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.30)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-blue-500 to-indigo-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.30)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
     >
       <div className="flex items-start gap-4">
         <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
@@ -430,7 +443,7 @@ function TrainCard({
   return (
     <Link
       href="/brain/explore"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
     >
       <div className="flex items-start gap-4">
         <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
@@ -464,6 +477,59 @@ function ApplyCard({ classLabel }: { classLabel: string | null }) {
           <p className="text-sm text-white/85 mt-0.5">{body}</p>
         </div>
         <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      </div>
+    </Link>
+  );
+}
+
+// Full-width brain games hero used as Row 2 of the kid home grid.
+// Bigger and more prominent than TrainCard (which sits in Row 3 as a
+// regular tile). Both link to the same /brain/explore picker — Row 2
+// shouts "here are the 14 games", Row 3 is the quieter discovery path.
+function GamesCard({
+  bestTier,
+  streakDays,
+}: {
+  bestTier: BrainTier | null;
+  streakDays: number;
+}) {
+  return (
+    <Link
+      href="/brain/explore"
+      className="group block rounded-3xl p-5 md:p-6 bg-gradient-to-br from-fuchsia-600 via-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.01] active:scale-[0.99] transition-all"
+    >
+      <div className="flex items-center gap-4 md:gap-5">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+          <Brain className="w-9 h-9 md:w-10 md:h-10" strokeWidth={2} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-xl md:text-2xl font-bold leading-tight">
+            14 Brain Games
+          </h3>
+          <p className="text-sm md:text-base text-white/90 mt-1">
+            Memory · Focus · Thinking — pick any, anytime
+          </p>
+          {(bestTier || streakDays > 0) && (
+            <p className="text-xs md:text-sm text-white/85 mt-2 flex items-center gap-2 flex-wrap">
+              {bestTier && (
+                <span className="inline-flex items-center gap-1">
+                  <span className="text-base">{bestTier.emoji}</span>
+                  <span className="font-semibold">{bestTier.name}</span>
+                </span>
+              )}
+              {bestTier && streakDays > 0 && (
+                <span className="text-white/60">·</span>
+              )}
+              {streakDays > 0 && (
+                <span className="inline-flex items-center gap-1">
+                  <Flame className="w-3.5 h-3.5" strokeWidth={2.5} />
+                  <span className="font-semibold">{streakDays}-day streak</span>
+                </span>
+              )}
+            </p>
+          )}
+        </div>
+        <ChevronRight className="w-10 h-10 md:w-12 md:h-12 text-white shrink-0 self-center" strokeWidth={3.5} />
       </div>
     </Link>
   );
