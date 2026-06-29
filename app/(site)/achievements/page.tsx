@@ -206,12 +206,47 @@ export default async function AchievementsPage() {
                   </p>
                 </div>
               </div>
-              <div className="h-3 w-full bg-white/25 rounded-full overflow-hidden">
+              {/* Swimming-toward-next-tier visualization:
+                  - flat readable bar with shimmer scrolling inside the
+                    filled portion (suggests current/water flowing)
+                  - current tier emoji marker bobbing at the front of
+                    the fill ("you're here, mid-swim")
+                  - decorative wavy line below the bar (ocean line)
+                  Decided 2026-06-30 — kept the bar straight for
+                  readability instead of a fully wavy bar. */}
+              <div className="relative mt-4 mb-1">
+                <div className="h-3 w-full bg-white/25 rounded-full overflow-hidden">
+                  <div
+                    className="relative h-full bg-white rounded-full overflow-hidden transition-all"
+                    style={{ width: `${brainStats.percentToNext}%` }}
+                  >
+                    <div className="absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-purple-200/80 to-transparent animate-shimmer" />
+                  </div>
+                </div>
                 <div
-                  className="h-full bg-white rounded-full transition-all"
-                  style={{ width: `${brainStats.percentToNext}%` }}
-                />
+                  className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                  style={{ left: `${Math.max(3, Math.min(97, brainStats.percentToNext))}%` }}
+                  aria-label="You are here"
+                >
+                  <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md animate-bounce">
+                    <span className="text-lg">{brainStats.bestTier.emoji}</span>
+                  </div>
+                </div>
               </div>
+              <svg
+                className="w-full h-2 mt-1 opacity-50"
+                viewBox="0 0 100 4"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M 0,2 Q 5,0 10,2 T 20,2 T 30,2 T 40,2 T 50,2 T 60,2 T 70,2 T 80,2 T 90,2 T 100,2"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="0.8"
+                  strokeLinecap="round"
+                />
+              </svg>
             </div>
           </div>
         ) : (

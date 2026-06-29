@@ -45,6 +45,13 @@ body {
   0%, 100% { transform: scale(1); }
   50%      { transform: scale(1.025); }
 }
+/* Soft sliding highlight inside a progress bar — used on the Next Tier
+   card on /achievements to imply "current" without competing with the
+   bouncing emoji marker that sits on top. */
+@keyframes shimmer {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(220%); }
+}
 
 @utility animate-wiggle {
   animation: wiggle 1.8s ease-in-out infinite;
@@ -56,6 +63,9 @@ body {
 }
 @utility animate-breathe {
   animation: breathe 5s ease-in-out infinite;
+}
+@utility animate-shimmer {
+  animation: shimmer 2.4s ease-in-out infinite;
 }
 
 @media print {
