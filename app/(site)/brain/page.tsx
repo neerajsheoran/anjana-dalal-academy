@@ -61,22 +61,21 @@ export default async function BrainPage() {
 }
 
 // Default zeroed-out stats for anonymous visitors. Keeps the shape that
-// BrainHome expects without round-tripping to Firestore.
+// BrainHome expects without round-tripping to Firestore. Mirrors the
+// shape getBrainStats returns for a kid with zero attempts.
 function emptyStats() {
-  const t = {
-    setsCount: 0,
-    tier: { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 },
-    next: { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 10 },
-    setsToNext: 10,
-    percentToNext: 0,
-    doneToday: false,
-  } as const;
+  const tadpole = { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 };
+  const goldfish = { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 30 };
+  const emptyPillar = { setsCount: 0, doneToday: false };
   return {
-    memory:   { ...t },
-    focus:    { ...t },
-    thinking: { ...t },
+    memory:   { ...emptyPillar },
+    focus:    { ...emptyPillar },
+    thinking: { ...emptyPillar },
     totalSets: 0,
-    bestTier: t.tier,
+    bestTier: tadpole,
+    nextTier: goldfish,
+    setsToNext: 30,
+    percentToNext: 0,
     streakDays: 0,
     lastActiveIstDay: null,
   };

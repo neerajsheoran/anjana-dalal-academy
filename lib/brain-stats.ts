@@ -1,11 +1,14 @@
 // Server-side aggregation over a child's brain-training attempts.
 //
 // Reads users/{parentUid}/children/{childId}/attempts and computes:
-//   - sets per pillar (Memory / Focus / Thinking)
-//   - current + next tier per pillar
-//   - "best" tier across pillars (the crest the kid shows off)
-//   - daily progress (which pillars touched TODAY)
-//   - streak (consecutive days with at least one attempt, IST day boundary)
+//   - sets per pillar (Memory / Focus / Thinking) — used for the
+//     training-mix breakdown on /brain/badges and /achievements
+//   - cumulative tier (single master ladder, see brain-tiers.ts) plus
+//     next-tier + progress
+//   - "doneToday" flag per pillar — used by the / hero to mark daily
+//     mission dots
+//   - streak (consecutive days with at least one attempt, IST day
+//     boundary)
 //
 // "1 set" = 1 game session. A session may write multiple attempt
 // documents (Memory Match writes 3 rounds = 3 attempts). We collapse
@@ -15,10 +18,8 @@
 import { adminDb } from "./firebase-admin";
 import type { ModuleKey } from "./brain-modules";
 import {
-  bestTier,
   tierForSets,
   type BrainTier,
-  type TierProgress,
 } from "./brain-tiers";
 
 const VALID_MODULES: ModuleKey[] = ["memory", "focus", "thinking"];
@@ -40,10 +41,6 @@ function minuteBucket(date: Date): string {
 
 export interface PillarStats {
   setsCount: number;
-  tier: BrainTier;
-  next: BrainTier | null;
-  setsToNext: number;
-  percentToNext: number;
   doneToday: boolean;
 }
 
@@ -52,27 +49,30 @@ export interface BrainStats {
   focus: PillarStats;
   thinking: PillarStats;
   totalSets: number;
-  bestTier: BrainTier;          // for the home crest
-  streakDays: number;           // current streak
+  // Cumulative tier — single master ladder, not per-pillar (refactored
+  // 2026-06-29). `bestTier` retained the old name so callers don't all
+  // need to change, but it now means "current cumulative tier" instead
+  // of "max tier across pillars."
+  bestTier: BrainTier;
+  nextTier: BrainTier | null;
+  setsToNext: number;
+  percentToNext: number;
+  streakDays: number;
   lastActiveIstDay: string | null;
 }
 
 function emptyStats(): BrainStats {
-  const t0 = tierForSets(0);
-  const emptyPillar: PillarStats = {
-    setsCount: 0,
-    tier: t0.current,
-    next: t0.next,
-    setsToNext: t0.setsToNext,
-    percentToNext: t0.percentToNext,
-    doneToday: false,
-  };
+  const t = tierForSets(0);
+  const emptyPillar: PillarStats = { setsCount: 0, doneToday: false };
   return {
     memory:   { ...emptyPillar },
     focus:    { ...emptyPillar },
     thinking: { ...emptyPillar },
     totalSets: 0,
-    bestTier: t0.current,
+    bestTier: t.current,
+    nextTier: t.next,
+    setsToNext: t.setsToNext,
+    percentToNext: t.percentToNext,
     streakDays: 0,
     lastActiveIstDay: null,
   };
@@ -141,9 +141,8 @@ export async function getBrainStats(
     }
   }
 
-  const memProg = tierForSets(counts.memory);
-  const focProg = tierForSets(counts.focus);
-  const thiProg = tierForSets(counts.thinking);
+  const totalSets = counts.memory + counts.focus + counts.thinking;
+  const progress = tierForSets(totalSets);
 
   const lastActive =
     activeIstDays.size === 0
@@ -151,24 +150,16 @@ export async function getBrainStats(
       : [...activeIstDays].sort().pop() ?? null;
 
   return {
-    memory:   asPillarStats(memProg, counts.memory, todaysModules.has("memory")),
-    focus:    asPillarStats(focProg, counts.focus, todaysModules.has("focus")),
-    thinking: asPillarStats(thiProg, counts.thinking, todaysModules.has("thinking")),
-    totalSets: counts.memory + counts.focus + counts.thinking,
-    bestTier: bestTier(counts.memory, counts.focus, counts.thinking),
+    memory:   { setsCount: counts.memory,   doneToday: todaysModules.has("memory")   },
+    focus:    { setsCount: counts.focus,    doneToday: todaysModules.has("focus")    },
+    thinking: { setsCount: counts.thinking, doneToday: todaysModules.has("thinking") },
+    totalSets,
+    bestTier: progress.current,
+    nextTier: progress.next,
+    setsToNext: progress.setsToNext,
+    percentToNext: progress.percentToNext,
     streakDays: streak,
     lastActiveIstDay: lastActive,
-  };
-}
-
-function asPillarStats(p: TierProgress, count: number, doneToday: boolean): PillarStats {
-  return {
-    setsCount: count,
-    tier: p.current,
-    next: p.next,
-    setsToNext: p.setsToNext,
-    percentToNext: p.percentToNext,
-    doneToday,
   };
 }
 

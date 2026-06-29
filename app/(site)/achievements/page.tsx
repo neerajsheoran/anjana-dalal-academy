@@ -154,13 +154,22 @@ export default async function AchievementsPage() {
           </div>
         </section>
 
-        {/* Per-pillar best */}
+        {/* Training mix — pillar set counts, all feeding the same master
+            ladder. Width is relative to the largest pillar (or 10, whichever
+            is bigger) so a 2-set pillar doesn't fill the whole row. */}
         <section className="mb-10">
-          <SectionLabel>Your Best In Each Pillar</SectionLabel>
+          <SectionLabel>Your Training Mix</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {PILLAR_ORDER.map((key) => {
               const mod = BRAIN_MODULES[key];
               const pillar = brainStats[key];
+              const max = Math.max(
+                brainStats.memory.setsCount,
+                brainStats.focus.setsCount,
+                brainStats.thinking.setsCount,
+                10,
+              );
+              const widthPct = Math.round((pillar.setsCount / max) * 100);
               return (
                 <div
                   key={key}
@@ -170,32 +179,25 @@ export default async function AchievementsPage() {
                     <span className="text-3xl">{mod.emoji}</span>
                     <h3 className="font-bold text-lg">{mod.name}</h3>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{pillar.tier.emoji}</span>
-                    <div>
-                      <p className="font-bold">{pillar.tier.name}</p>
-                      <p className="text-xs text-white/85">
-                        {pillar.setsCount} {pillar.setsCount === 1 ? "set" : "sets"}
-                      </p>
-                    </div>
+                  <p className="text-3xl font-extrabold leading-none">
+                    {pillar.setsCount}
+                  </p>
+                  <p className="text-xs text-white/85 mt-1 uppercase tracking-wider font-semibold">
+                    {pillar.setsCount === 1 ? "set played" : "sets played"}
+                  </p>
+                  <div className="mt-3 h-1.5 w-full bg-white/25 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-white rounded-full transition-all"
+                      style={{ width: `${widthPct}%` }}
+                    />
                   </div>
-                  {pillar.next && (
-                    <div className="mt-4">
-                      <div className="h-1.5 w-full bg-white/25 rounded-full overflow-hidden">
-                        <div
-                          className="h-full bg-white rounded-full transition-all"
-                          style={{ width: `${pillar.percentToNext}%` }}
-                        />
-                      </div>
-                      <p className="text-[11px] text-white/85 mt-1.5">
-                        {pillar.setsToNext} more to {pillar.next.emoji} {pillar.next.name}
-                      </p>
-                    </div>
-                  )}
                 </div>
               );
             })}
           </div>
+          <p className="text-[11px] text-gray-400 text-center mt-3">
+            Any pillar counts toward the badge ladder · play a balanced mix to climb faster
+          </p>
         </section>
 
         {/* Footer nudge */}

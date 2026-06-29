@@ -126,13 +126,19 @@ async function getChapterCounts(
 }
 
 function emptyData(): AchievementsData {
+  const tadpole = { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 };
+  const goldfish = { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 30 };
+  const emptyPillar = { setsCount: 0, doneToday: false };
   return {
     brainStats: {
-      memory:   emptyPillar(),
-      focus:    emptyPillar(),
-      thinking: emptyPillar(),
+      memory:   { ...emptyPillar },
+      focus:    { ...emptyPillar },
+      thinking: { ...emptyPillar },
       totalSets: 0,
-      bestTier: { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 },
+      bestTier: tadpole,
+      nextTier: goldfish,
+      setsToNext: 30,
+      percentToNext: 0,
       streakDays: 0,
       lastActiveIstDay: null,
     },
@@ -140,16 +146,5 @@ function emptyData(): AchievementsData {
     longestStreak: 0,
     chaptersRead: 0,
     chaptersCompleted: 0,
-  };
-}
-
-function emptyPillar() {
-  return {
-    setsCount: 0,
-    tier: { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 },
-    next: { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 10 },
-    setsToNext: 10,
-    percentToNext: 0,
-    doneToday: false,
   };
 }

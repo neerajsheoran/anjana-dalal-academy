@@ -125,21 +125,13 @@ function BadgesCard({
     );
   }
 
-  const pillars: Array<{ name: string; pillar: BrainStats["memory"] }> = [
-    { name: "Memory",   pillar: stats.memory },
-    { name: "Focus",    pillar: stats.focus },
-    { name: "Thinking", pillar: stats.thinking },
-  ];
-  const closestNext = pillars
-    .filter((p) => p.pillar.next !== null)
-    .sort((a, b) => b.pillar.percentToNext - a.pillar.percentToNext)[0];
-  const headline = closestNext
-    ? `${closestNext.pillar.next!.emoji} ${closestNext.pillar.next!.name}`
+  const headline = stats.nextTier
+    ? `${stats.nextTier.emoji} ${stats.nextTier.name}`
     : "All Whales! 🐳";
-  const progressText = closestNext
-    ? `${closestNext.pillar.setsToNext} more in ${closestNext.name.toLowerCase()}`
-    : "All pillars maxed";
-  const percent = closestNext ? closestNext.pillar.percentToNext : 100;
+  const progressText = stats.nextTier
+    ? `${stats.setsToNext} more ${stats.setsToNext === 1 ? "game" : "games"}`
+    : "Top of the ladder";
+  const percent = stats.nextTier ? stats.percentToNext : 100;
 
   return (
     <Link
