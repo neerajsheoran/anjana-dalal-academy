@@ -14,7 +14,6 @@ import Link from "next/link";
 import {
   BookOpen,
   Brain,
-  CheckCircle2,
   ChevronRight,
   ClipboardCheck,
   Compass,
@@ -22,7 +21,6 @@ import {
   Hammer,
   PlayCircle,
   Sparkles,
-  Target,
   Trophy,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -210,9 +208,9 @@ function TodayActivityCard({
         className="group h-full bg-gradient-to-br from-emerald-500 to-teal-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
       >
         <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-          <CheckCircle2 className="w-12 h-12 text-white" strokeWidth={2.25} />
+          <span className="text-5xl animate-bounce">🎉</span>
         </div>
-        <h3 className="text-white text-xl font-bold mb-2">All Done Today! 🎉</h3>
+        <h3 className="text-white text-xl font-bold mb-2">All Done Today!</h3>
         <p className="text-emerald-100 text-sm leading-relaxed flex-1">
           Come back tomorrow to keep your streak going.
         </p>
@@ -229,7 +227,7 @@ function TodayActivityCard({
       className="group h-full bg-gradient-to-br from-indigo-600 to-blue-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
       <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-        <Target className="w-12 h-12 text-white" strokeWidth={2} />
+        <span className="text-5xl animate-bounce">🎯</span>
       </div>
       <h3 className="text-white text-xl font-bold mb-2">Today&rsquo;s Activity</h3>
       <p className="text-blue-100 text-sm leading-relaxed">
@@ -302,8 +300,13 @@ function ExamReadinessHero({ classId }: { classId: string | null }) {
       href={href}
       className="group h-full bg-gradient-to-br from-rose-600 to-fuchsia-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-        <ClipboardCheck className="w-12 h-12 text-white" strokeWidth={2} />
+      <div className="mb-5 group-hover:scale-110 transition-transform duration-200">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/icons/quiz-icon.svg"
+          alt=""
+          className="w-24 h-24 animate-heartbeat"
+        />
       </div>
       <h3 className="text-white text-xl font-bold mb-2">Quick Mock Test</h3>
       <p className="text-rose-100 text-sm leading-relaxed flex-1">
@@ -394,8 +397,13 @@ function LearnCard({
       href={href}
       className="group h-full bg-gradient-to-br from-blue-500 to-indigo-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-        <BookOpen className="w-12 h-12 text-white" strokeWidth={2} />
+      <div className="mb-5 group-hover:scale-110 transition-transform duration-200">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/icons/subjects-icon.svg"
+          alt=""
+          className="w-24 h-24 animate-wiggle"
+        />
       </div>
       <h3 className="text-white text-xl font-bold mb-2">Learn</h3>
       <p className="text-blue-100 text-sm leading-relaxed flex-1">{body}</p>
@@ -425,7 +433,7 @@ function TrainCard({
       className="group h-full bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
       <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-        <Brain className="w-12 h-12 text-white" strokeWidth={2} />
+        <span className="text-5xl animate-bounce">🎮</span>
       </div>
       <h3 className="text-white text-xl font-bold mb-2">Train</h3>
       <p className="text-purple-100 text-sm leading-relaxed flex-1">{body}</p>
@@ -477,7 +485,7 @@ function GamesCard({
     >
       <div className="flex items-center gap-5 md:gap-6">
         <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
-          <Brain className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={2} />
+          <span className="text-4xl md:text-5xl animate-heartbeat">🧠</span>
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-xl md:text-2xl font-bold leading-tight text-white">
@@ -560,8 +568,10 @@ function AchievementsCard({
       className="group block bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
     >
       <div className="flex items-center gap-5 md:gap-6">
-        <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 text-5xl md:text-6xl group-hover:scale-110 transition-transform duration-200">
-          {bestTier?.emoji ?? "🏅"}
+        <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
+          <span className="text-5xl md:text-6xl animate-wiggle">
+            {bestTier?.emoji ?? "🏅"}
+          </span>
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-xl md:text-2xl font-bold leading-tight text-white">
