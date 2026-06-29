@@ -1,10 +1,11 @@
 // Kid-facing Brain home. Reached from the Games card on /. Today's
 // Activity used to sit at the top here, but / now hosts it as the hero;
 // having it here too was redundant, so /brain shows just Badges +
-// Explore (decided 2026-06-29).
+// Explore (decided 2026-06-29). Layout matches /learn so the whole
+// site reads as one design.
 
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, Flame, Lock } from "lucide-react";
+import { ChevronLeft, Flame, Lock } from "lucide-react";
 import type { BrainStats } from "@/lib/brain-stats";
 
 interface BrainHomeProps {
@@ -29,7 +30,7 @@ export default function BrainHome({
 }: BrainHomeProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
-      <div className="max-w-md mx-auto">
+      <div className="max-w-4xl mx-auto">
         {!isPaid && (
           <Link
             href="/"
@@ -41,13 +42,15 @@ export default function BrainHome({
         )}
         <Header childName={childName} stats={stats} isPaid={isPaid} />
 
-        <div className="space-y-4 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           <BadgesCard isPaid={isPaid} isAnonymous={isAnonymous} stats={stats} />
           <ExploreCard isPaid={isPaid} />
         </div>
 
         {!isPaid && (
-          <UpgradeCta isAnonymous={isAnonymous} trialDays={trialDays} />
+          <div className="max-w-2xl mx-auto">
+            <UpgradeCta isAnonymous={isAnonymous} trialDays={trialDays} />
+          </div>
         )}
       </div>
     </main>
@@ -103,26 +106,21 @@ function BadgesCard({
     const subhead = isAnonymous
       ? "Sign up to start earning badges"
       : "Start trial to start earning badges";
-    const cta = isAnonymous ? "Sign up free →" : "Start free trial →";
+    const cta = isAnonymous ? "Sign up free" : "Start Free Trial";
     return (
       <Link
         href={href}
-        className="group block rounded-3xl p-5 bg-white border border-gray-200 hover:border-fuchsia-300 hover:shadow-md transition-all"
+        className="group h-full bg-white border border-gray-200 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] hover:border-fuchsia-300 transition-all duration-200"
       >
-        <div className="flex items-start gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center shrink-0 text-4xl grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
-            🏅
-          </div>
-          <div className="flex-1 min-w-0">
-            <h3 className="text-lg font-bold text-gray-800 leading-tight">Badges</h3>
-            <p className="text-sm text-gray-500 mt-0.5">{subhead}</p>
-            <p className="text-xs text-fuchsia-700 font-semibold mt-1.5 inline-flex items-center gap-1">
-              <Lock className="w-3 h-3" strokeWidth={2.5} />
-              {cta}
-            </p>
-          </div>
-          <ChevronRight className="w-10 h-10 text-fuchsia-500 shrink-0 self-center" strokeWidth={3.5} />
+        <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-5 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
+          <span className="text-5xl animate-heartbeat">🏅</span>
         </div>
+        <h3 className="text-gray-800 text-xl font-bold mb-2">Badges</h3>
+        <p className="text-gray-500 text-sm leading-relaxed flex-1">{subhead}</p>
+        <span className="mt-auto inline-flex items-center gap-1.5 bg-fuchsia-600 text-white font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+          <Lock className="w-3.5 h-3.5" strokeWidth={2.5} />
+          {cta}
+        </span>
       </Link>
     );
   }
@@ -146,25 +144,23 @@ function BadgesCard({
   return (
     <Link
       href="/brain/badges"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-[0_12px_28px_rgba(251,146,60,0.35)] hover:shadow-[0_16px_32px_rgba(251,146,60,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0 text-4xl">
-          🏅
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">Badges</h3>
-          <p className="text-sm text-white/90 mt-0.5">Next: {headline}</p>
-          <div className="mt-2 h-2 w-full bg-white/25 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-white rounded-full transition-all"
-              style={{ width: `${percent}%` }}
-            />
-          </div>
-          <p className="text-xs text-white/85 mt-1.5">{progressText}</p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <span className="text-5xl animate-heartbeat">🏅</span>
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Badges</h3>
+      <p className="text-amber-50 text-sm leading-relaxed">Next: {headline}</p>
+      <div className="mt-3 mb-2 h-2 w-full bg-white/25 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-white rounded-full transition-all"
+          style={{ width: `${percent}%` }}
+        />
+      </div>
+      <p className="text-xs text-white/85 flex-1">{progressText}</p>
+      <span className="mt-auto inline-block bg-white text-amber-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        View
+      </span>
     </Link>
   );
 }
@@ -173,20 +169,18 @@ function ExploreCard({ isPaid }: { isPaid: boolean }) {
   return (
     <Link
       href="/brain/explore"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-emerald-600 to-teal-700 text-white shadow-[0_12px_28px_rgba(16,185,129,0.35)] hover:shadow-[0_16px_32px_rgba(16,185,129,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0 text-4xl">
-          🎮
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">Explore</h3>
-          <p className="text-sm text-white/90 mt-0.5">
-            {isPaid ? "14 games · play any anytime" : "3 free games · 11 locked"}
-          </p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <span className="text-5xl animate-bounce">🎮</span>
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Explore</h3>
+      <p className="text-emerald-50 text-sm leading-relaxed flex-1">
+        {isPaid ? "14 games · play any one anytime" : "3 free games · 11 locked"}
+      </p>
+      <span className="mt-auto inline-block bg-white text-emerald-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        Browse
+      </span>
     </Link>
   );
 }
@@ -208,7 +202,7 @@ function UpgradeCta({
   return (
     <Link
       href={href}
-      className="mt-5 block rounded-2xl p-4 bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white shadow-[0_8px_24px_rgba(217,70,239,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-transform"
+      className="mt-6 block rounded-2xl p-4 bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white shadow-[0_8px_24px_rgba(217,70,239,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-transform"
     >
       <p className="text-sm font-bold leading-tight">✨ Unlock all 14 games</p>
       <p className="text-xs text-white/85 mt-1">
