@@ -105,8 +105,21 @@ export default async function AchievementsPage() {
           </section>
         )}
 
+        {/* Badge Progress group — Tier Ladder + Next Tier + Training Mix
+            are all one story (the kid's badge journey). Wrapping them in
+            a soft amber container with a single header makes that
+            relationship visible instead of letting them read as 3 unrelated
+            sections sitting next to Stats and Streak. Decided 2026-06-30. */}
+        <section className="mb-10 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 rounded-3xl p-5 md:p-7 border border-amber-200/60 shadow-sm">
+          <div className="text-center mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest">
+              <span className="text-base">🏆</span>
+              Badge Progress
+            </span>
+          </div>
+
         {/* Tier ladder */}
-        <section className="mb-10">
+        <div className="mb-6">
           <SectionLabel>Your Tier Ladder</SectionLabel>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
@@ -155,13 +168,13 @@ export default async function AchievementsPage() {
               })}
             </div>
           </div>
-        </section>
+        </div>
 
         {/* Next tier — focal card that used to live on /brain/badges
             before that page was collapsed into here. Shows the upcoming
             badge prominently so the kid knows what they're working toward. */}
         {brainStats.nextTier ? (
-          <section className="mb-10">
+          <div className="mb-6">
             <SectionLabel>Next Tier</SectionLabel>
             <div className="bg-gradient-to-br from-purple-600 to-fuchsia-700 rounded-2xl p-6 md:p-8 shadow-lg text-white">
               <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
@@ -178,8 +191,18 @@ export default async function AchievementsPage() {
                   <p className="text-2xl font-bold leading-none">
                     {brainStats.nextTier.name}
                   </p>
+                  {/* Show both halves of the journey: what's already done +
+                      what's remaining. Effort gets visible credit. The span
+                      is (next.threshold - current.threshold), the done part
+                      is (totalSets - current.threshold). */}
                   <p className="text-sm text-purple-100 mt-1">
-                    {brainStats.setsToNext} more {brainStats.setsToNext === 1 ? "game" : "games"} to unlock
+                    {brainStats.totalSets - brainStats.bestTier.threshold}
+                    {" of "}
+                    {brainStats.nextTier.threshold - brainStats.bestTier.threshold}
+                    {" games done · "}
+                    <span className="font-semibold text-white">
+                      {brainStats.setsToNext} to go
+                    </span>
                   </p>
                 </div>
               </div>
@@ -190,9 +213,9 @@ export default async function AchievementsPage() {
                 />
               </div>
             </div>
-          </section>
+          </div>
         ) : (
-          <section className="mb-10">
+          <div className="mb-6">
             <div className="bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl p-6 md:p-8 shadow-lg text-white text-center">
               <p className="text-5xl mb-2">{brainStats.bestTier.emoji}</p>
               <p className="text-xl font-bold">All tiers unlocked!</p>
@@ -200,13 +223,13 @@ export default async function AchievementsPage() {
                 You&rsquo;re a {brainStats.bestTier.name}. Keep playing for fun. 🎉
               </p>
             </div>
-          </section>
+          </div>
         )}
 
         {/* Training mix — pillar set counts, all feeding the same master
             ladder. Width is relative to the largest pillar (or 10, whichever
             is bigger) so a 2-set pillar doesn't fill the whole row. */}
-        <section className="mb-10">
+        <div>
           <SectionLabel>Your Training Mix</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {PILLAR_ORDER.map((key) => {
@@ -244,9 +267,10 @@ export default async function AchievementsPage() {
               );
             })}
           </div>
-          <p className="text-[11px] text-gray-400 text-center mt-3">
+          <p className="text-[11px] text-gray-600 text-center mt-3">
             Any pillar counts toward the badge ladder · play a balanced mix to climb faster
           </p>
+        </div>
         </section>
 
         {/* Footer nudge */}
