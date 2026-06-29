@@ -187,10 +187,11 @@ export default function KidHomepage({
   );
 }
 
-// The kid's daily mission — surfaced as the hero so habit-forming
-// stays one tap from the home. Three dots track Memory / Focus /
-// Thinking touched today. When all three are done the card shrinks
-// to a celebration so it doesn't nag.
+// The kid's daily mission. Square-ish vertical tile matching the
+// /learn page hero pattern so the whole site reads as one design
+// language. Three dots track Memory / Focus / Thinking touched today;
+// when all three are done the card flips to a green celebration with
+// a Replay CTA instead of nagging.
 function TodayActivityCard({
   dailyDoneCount,
   dailyComplete,
@@ -206,24 +207,18 @@ function TodayActivityCard({
     return (
       <Link
         href="/brain/daily"
-        className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 hover:shadow-md transition-all"
+        className="group h-full bg-gradient-to-br from-emerald-500 to-teal-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
       >
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center shrink-0">
-            <CheckCircle2 className="w-7 h-7 text-emerald-600" strokeWidth={2.25} />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-bold text-emerald-900">
-              All done today! 🎉
-            </p>
-            <p className="text-[11px] text-emerald-700/90">
-              Come back tomorrow to keep your streak going.
-            </p>
-          </div>
-          <span className="text-xs font-semibold text-emerald-700 group-hover:underline">
-            Replay
-          </span>
+        <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+          <CheckCircle2 className="w-12 h-12 text-white" strokeWidth={2.25} />
         </div>
+        <h3 className="text-white text-xl font-bold mb-2">All Done Today! 🎉</h3>
+        <p className="text-emerald-100 text-sm leading-relaxed flex-1">
+          Come back tomorrow to keep your streak going.
+        </p>
+        <span className="mt-auto inline-block bg-white text-emerald-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+          Replay
+        </span>
       </Link>
     );
   }
@@ -231,30 +226,24 @@ function TodayActivityCard({
   return (
     <Link
       href="/brain/daily"
-      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.35)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-indigo-600 to-blue-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-          <Target className="w-8 h-8" strokeWidth={2} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">
-            Today&rsquo;s Activity
-          </h3>
-          <p className="text-sm text-white/85 mt-0.5">
-            Memory · Focus · Thinking
-          </p>
-          <p className="text-xs text-white/80 mt-2">
-            <span className="tracking-widest text-base">{dots.join(" ")}</span>
-            <span className="ml-2 font-semibold">
-              {dailyDoneCount === 0
-                ? "~10 mins"
-                : `${remaining} left`}
-            </span>
-          </p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <Target className="w-12 h-12 text-white" strokeWidth={2} />
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Today&rsquo;s Activity</h3>
+      <p className="text-blue-100 text-sm leading-relaxed">
+        Memory · Focus · Thinking
+      </p>
+      <p className="text-white/90 text-sm mt-2 flex-1">
+        <span className="tracking-widest text-base">{dots.join(" ")}</span>
+        <span className="ml-2 font-semibold">
+          {dailyDoneCount === 0 ? "~10 mins" : `${remaining} left`}
+        </span>
+      </p>
+      <span className="mt-auto inline-block bg-white text-indigo-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        {dailyDoneCount === 0 ? "Get Started" : "Continue"}
+      </span>
     </Link>
   );
 }
@@ -304,31 +293,25 @@ function Header({
   );
 }
 
-// Hero variant — shown to Class 9-10 (board year). Replaces Today's
-// Activity since Train is hidden for those classes. Frames the chapter
-// quizzes as exam prep, the language parents care about.
+// Quick Mock Test tile — paired with Today Activity in Row 1.
+// Vertical layout matches /learn so the look stays consistent.
 function ExamReadinessHero({ classId }: { classId: string | null }) {
   const href = classId ? `/quiz-start?class=${classId}` : "/quiz-start";
   return (
     <Link
       href={href}
-      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-rose-600 to-fuchsia-700 text-white shadow-[0_12px_28px_rgba(244,63,94,0.35)] hover:shadow-[0_16px_32px_rgba(244,63,94,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-rose-600 to-fuchsia-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-          <ClipboardCheck className="w-8 h-8" strokeWidth={2} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">Exam Readiness</h3>
-          <p className="text-sm text-white/90 mt-0.5">
-            Mock test from your latest chapters
-          </p>
-          <p className="text-xs text-white/80 mt-1.5 font-semibold">
-            ~10 questions · 15 mins
-          </p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <ClipboardCheck className="w-12 h-12 text-white" strokeWidth={2} />
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Quick Mock Test</h3>
+      <p className="text-rose-100 text-sm leading-relaxed flex-1">
+        ~10 questions from your latest chapters · ~15 mins
+      </p>
+      <span className="mt-auto inline-block bg-white text-rose-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        Start Test
+      </span>
     </Link>
   );
 }
@@ -395,10 +378,8 @@ function LearnCard({
   classId: string | null;
   classLabel: string | null;
 }) {
-  // Class 5+ kids now go to /learn (the browse page) on a Learn tap —
-  // collapses the previous Learn-card + Explore-link pair into one card.
-  // Class 1-4 keep the fast-path to their own class so they don't bounce
-  // through a class picker every day. Decided 2026-06-29.
+  // Class 5+ kids go to /learn (browse page); Class 1-4 keep fast-path
+  // to their own class so they don't bounce through a picker daily.
   const useExplore = showExploreLink(classId);
   const href = useExplore ? "/learn" : classId ? `/class/${classId}` : "/classes";
   const body = useExplore
@@ -411,18 +392,16 @@ function LearnCard({
   return (
     <Link
       href={href}
-      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-blue-500 to-indigo-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.30)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-blue-500 to-indigo-700 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-          <BookOpen className="w-8 h-8" strokeWidth={2} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">Learn</h3>
-          <p className="text-sm text-white/85 mt-0.5">{body}</p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <BookOpen className="w-12 h-12 text-white" strokeWidth={2} />
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Learn</h3>
+      <p className="text-blue-100 text-sm leading-relaxed flex-1">{body}</p>
+      <span className="mt-auto inline-block bg-white text-blue-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        Browse
+      </span>
     </Link>
   );
 }
@@ -443,18 +422,16 @@ function TrainCard({
   return (
     <Link
       href="/brain/explore"
-      className="group block h-full rounded-3xl p-5 bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group h-full bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-          <Brain className="w-8 h-8" strokeWidth={2} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">Train</h3>
-          <p className="text-sm text-white/85 mt-0.5">{body}</p>
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+      <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+        <Brain className="w-12 h-12 text-white" strokeWidth={2} />
       </div>
+      <h3 className="text-white text-xl font-bold mb-2">Train</h3>
+      <p className="text-purple-100 text-sm leading-relaxed flex-1">{body}</p>
+      <span className="mt-auto inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
+        Play
+      </span>
     </Link>
   );
 }
@@ -496,17 +473,17 @@ function GamesCard({
   return (
     <Link
       href="/brain/explore"
-      className="group block rounded-3xl p-5 md:p-6 bg-gradient-to-br from-fuchsia-600 via-purple-600 to-pink-600 text-white shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.01] active:scale-[0.99] transition-all"
+      className="group block bg-gradient-to-br from-fuchsia-600 via-purple-600 to-pink-600 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
     >
-      <div className="flex items-center gap-4 md:gap-5">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-          <Brain className="w-9 h-9 md:w-10 md:h-10" strokeWidth={2} />
+      <div className="flex items-center gap-5 md:gap-6">
+        <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
+          <Brain className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={2} />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-xl md:text-2xl font-bold leading-tight">
+          <h3 className="text-xl md:text-2xl font-bold leading-tight text-white">
             14 Brain Games
           </h3>
-          <p className="text-sm md:text-base text-white/90 mt-1">
+          <p className="text-sm md:text-base text-purple-100 mt-1">
             Memory · Focus · Thinking — pick any, anytime
           </p>
           {(bestTier || streakDays > 0) && (
@@ -529,7 +506,9 @@ function GamesCard({
             </p>
           )}
         </div>
-        <ChevronRight className="w-10 h-10 md:w-12 md:h-12 text-white shrink-0 self-center" strokeWidth={3.5} />
+        <span className="inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow shrink-0">
+          Play
+        </span>
       </div>
     </Link>
   );
@@ -578,16 +557,18 @@ function AchievementsCard({
   return (
     <Link
       href="/brain/badges"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-amber-400 to-yellow-500 text-white shadow-[0_12px_28px_rgba(234,179,8,0.30)] hover:shadow-[0_16px_32px_rgba(234,179,8,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all"
+      className="group block bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
     >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0 text-4xl">
+      <div className="flex items-center gap-5 md:gap-6">
+        <div className="w-20 h-20 md:w-24 md:h-24 bg-white/25 rounded-full flex items-center justify-center shrink-0 text-5xl md:text-6xl group-hover:scale-110 transition-transform duration-200">
           {bestTier?.emoji ?? "🏅"}
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">My Achievements</h3>
+          <h3 className="text-xl md:text-2xl font-bold leading-tight text-white">
+            My Achievements
+          </h3>
           {hasAnything ? (
-            <p className="text-sm text-white/90 mt-0.5">
+            <p className="text-sm md:text-base text-amber-50 mt-1">
               {bestTier && <>Best: <span className="font-bold">{bestTier.name}</span></>}
               {bestTier && streakDays > 0 && " · "}
               {streakDays > 0 && (
@@ -598,12 +579,14 @@ function AchievementsCard({
               )}
             </p>
           ) : (
-            <p className="text-sm text-white/90 mt-0.5">
+            <p className="text-sm md:text-base text-amber-50 mt-1">
               Play to start earning badges
             </p>
           )}
         </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
+        <span className="inline-block bg-white text-amber-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow shrink-0">
+          View
+        </span>
       </div>
     </Link>
   );
