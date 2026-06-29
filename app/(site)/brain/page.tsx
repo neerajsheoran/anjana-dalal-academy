@@ -39,8 +39,6 @@ export default async function BrainPage() {
         isPaid={false}
         isAnonymous={true}
         trialDays={trialDays}
-        dailyComplete={false}
-        dailyDoneCount={0}
       />
     );
   }
@@ -50,10 +48,6 @@ export default async function BrainPage() {
     getContentAccessLevel(activeChild.parentUid),
   ]);
   const isPaid = hasFullAccess(accessLevel);
-  const doneCount =
-    (stats.memory.doneToday ? 1 : 0) +
-    (stats.focus.doneToday ? 1 : 0) +
-    (stats.thinking.doneToday ? 1 : 0);
 
   return (
     <BrainHome
@@ -62,8 +56,6 @@ export default async function BrainPage() {
       isPaid={isPaid}
       isAnonymous={false}
       trialDays={trialDays}
-      dailyComplete={doneCount === 3}
-      dailyDoneCount={doneCount}
     />
   );
 }

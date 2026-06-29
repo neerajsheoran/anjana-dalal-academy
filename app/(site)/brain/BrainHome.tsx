@@ -1,7 +1,7 @@
-// Kid-facing Brain home — light/white-bg version (decided 2026-06-12
-// after user feedback on the dark purple gradient feeling dull). The
-// 3-card layout stays. Cards keep their gradients so they pop against
-// white. Icons bumped to w-16/text-4xl per feedback.
+// Kid-facing Brain home. Reached from the Games card on /. Today's
+// Activity used to sit at the top here, but / now hosts it as the hero;
+// having it here too was redundant, so /brain shows just Badges +
+// Explore (decided 2026-06-29).
 
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, Flame, Lock } from "lucide-react";
@@ -18,8 +18,6 @@ interface BrainHomeProps {
   // Read from PlatformConfig.trialDays — currently 30 by default,
   // editable by admins. Drives the "Start N-day free trial" copy.
   trialDays: number;
-  dailyComplete: boolean;
-  dailyDoneCount: number;
 }
 
 export default function BrainHome({
@@ -28,8 +26,6 @@ export default function BrainHome({
   isPaid,
   isAnonymous,
   trialDays,
-  dailyComplete,
-  dailyDoneCount,
 }: BrainHomeProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
@@ -46,11 +42,6 @@ export default function BrainHome({
         <Header childName={childName} stats={stats} isPaid={isPaid} />
 
         <div className="space-y-4 mt-6">
-          <DailyCard
-            isPaid={isPaid}
-            dailyDoneCount={dailyDoneCount}
-            dailyComplete={dailyComplete}
-          />
           <BadgesCard isPaid={isPaid} isAnonymous={isAnonymous} stats={stats} />
           <ExploreCard isPaid={isPaid} />
         </div>
@@ -93,56 +84,6 @@ function Header({
         </div>
       )}
     </div>
-  );
-}
-
-function DailyCard({
-  isPaid,
-  dailyDoneCount,
-  dailyComplete,
-}: {
-  isPaid: boolean;
-  dailyDoneCount: number;
-  dailyComplete: boolean;
-}) {
-  const dots = ["○", "○", "○"];
-  for (let i = 0; i < dailyDoneCount && i < 3; i++) dots[i] = "●";
-  return (
-    <Link
-      href="/brain/daily"
-      className="group block rounded-3xl p-5 bg-gradient-to-br from-indigo-600 to-blue-700 text-white shadow-[0_12px_28px_rgba(59,130,246,0.35)] hover:shadow-[0_16px_32px_rgba(59,130,246,0.45)] hover:scale-[1.02] active:scale-[0.99] transition-all"
-    >
-      <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-white/25 flex items-center justify-center shrink-0 text-4xl">
-          🎯
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold leading-tight">
-            Today&apos;s Activity
-          </h3>
-          <p className="text-sm text-white/85 mt-0.5">
-            Memory · Focus · Thinking
-          </p>
-          <p className="text-xs text-white/75 mt-1.5">
-            <span className="tracking-widest text-base">{dots.join(" ")}</span>
-            <span className="ml-2">
-              {isPaid
-                ? dailyComplete
-                  ? "All done today!"
-                  : `${3 - dailyDoneCount} left`
-                : "3 sample games · 15 mins"}
-            </span>
-          </p>
-          {!isPaid && (
-            <p className="text-[11px] text-white/65 mt-1.5 inline-flex items-center gap-1">
-              <Lock className="w-3 h-3" strokeWidth={2.5} />
-              Subscribe to save progress + earn badges
-            </p>
-          )}
-        </div>
-        <ChevronRight className="w-10 h-10 text-white shrink-0 self-center" strokeWidth={3.5} />
-      </div>
-    </Link>
   );
 }
 

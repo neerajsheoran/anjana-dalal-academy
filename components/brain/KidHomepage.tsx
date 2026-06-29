@@ -480,7 +480,7 @@ function GamesCard({
 }) {
   return (
     <Link
-      href="/brain/explore"
+      href="/brain"
       className="group block bg-gradient-to-br from-fuchsia-600 via-purple-600 to-pink-600 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
     >
       <div className="flex items-center gap-5 md:gap-6">
