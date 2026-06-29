@@ -19,6 +19,14 @@ const PILLAR_GRADIENT: Record<ModuleKey, string> = {
   thinking: "from-orange-500 to-amber-600",
 };
 
+// Pill text color matched to each pillar's gradient so the white CTA
+// pill inherits the right brand-ish accent inside its card.
+const PILLAR_PILL_TEXT: Record<ModuleKey, string> = {
+  memory:   "text-purple-700",
+  focus:    "text-emerald-700",
+  thinking: "text-orange-700",
+};
+
 const PILLAR_ORDER: ModuleKey[] = ["memory", "focus", "thinking"];
 
 export default async function AchievementsPage() {
@@ -277,10 +285,15 @@ export default async function AchievementsPage() {
                 10,
               );
               const widthPct = Math.round((pillar.setsCount / max) * 100);
+              // 0-set pillars get "Start" (more inviting for a fresh
+              // pillar); pillars already touched get "Play". Decided
+              // 2026-06-30.
+              const ctaLabel = pillar.setsCount === 0 ? "Start" : "Play";
               return (
-                <div
+                <Link
                   key={key}
-                  className={`bg-gradient-to-br ${PILLAR_GRADIENT[key]} rounded-2xl p-6 shadow-lg text-white`}
+                  href={`/brain/${key}`}
+                  className={`group block bg-gradient-to-br ${PILLAR_GRADIENT[key]} rounded-2xl p-6 shadow-lg text-white hover:shadow-xl hover:scale-[1.02] active:scale-[0.99] transition-all duration-200`}
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-3xl">{mod.emoji}</span>
@@ -298,7 +311,14 @@ export default async function AchievementsPage() {
                       style={{ width: `${widthPct}%` }}
                     />
                   </div>
-                </div>
+                  <div className="mt-4 flex justify-end">
+                    <span
+                      className={`inline-block bg-white ${PILLAR_PILL_TEXT[key]} font-semibold px-5 py-1.5 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow`}
+                    >
+                      {ctaLabel} →
+                    </span>
+                  </div>
+                </Link>
               );
             })}
           </div>
@@ -308,14 +328,17 @@ export default async function AchievementsPage() {
         </div>
         </section>
 
-        {/* Footer nudge */}
+        {/* Footer CTA — Today's Mission. Per-pillar play paths are now
+            on the training-mix cards above, so this CTA covers the
+            "I don't know what to play, just give me something"
+            case by sending the kid to their daily mixed 9-game session. */}
         <div className="text-center mt-8">
           <Link
-            href="/brain/explore"
+            href="/brain/daily"
             className="inline-flex items-center gap-2 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all"
           >
-            <span className="text-lg">🎮</span>
-            Play more to earn more
+            <span className="text-lg">🎯</span>
+            Today&rsquo;s Mission
           </Link>
         </div>
       </div>
