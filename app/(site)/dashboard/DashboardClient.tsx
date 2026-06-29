@@ -428,18 +428,20 @@ function WeekHeatmap({
   const daysTrained = cells.filter((c) => c.trained).length;
   const trainedToday = weekOffset === 0 && cells[6].trained;
 
-  // Header label: "This Week" / "Last Week" / date range for older windows.
+  // Header label: "This Week · 24 – 30 Jun" / "Last Week · ..." / date
+  // range alone for older windows. Added the inline date range to the
+  // current and previous week labels 2026-06-30 so parents see precise
+  // dates everywhere, not just on older windows.
+  const fmt = (d: Date) =>
+    d.toLocaleDateString('en', { day: 'numeric', month: 'short' });
+  const dateRange = `${fmt(cells[0].date)} – ${fmt(cells[6].date)}`;
   let weekLabel: string;
   if (weekOffset === 0) {
-    weekLabel = 'This Week';
+    weekLabel = `This Week · ${dateRange}`;
   } else if (weekOffset === 1) {
-    weekLabel = 'Last Week';
+    weekLabel = `Last Week · ${dateRange}`;
   } else {
-    const first = cells[0].date;
-    const last = cells[6].date;
-    const fmt = (d: Date) =>
-      d.toLocaleDateString('en', { day: 'numeric', month: 'short' });
-    weekLabel = `${fmt(first)} – ${fmt(last)}`;
+    weekLabel = dateRange;
   }
 
   const canPrev = weekOffset < MAX_WEEKS_BACK;
@@ -497,6 +499,16 @@ function WeekHeatmap({
               }`}
             >
               {c.label}
+            </span>
+            {/* Day-of-month label below the weekday. Disambiguates the
+                T/S letters (Tue vs Thu, Sat vs Sun) and gives parents a
+                precise calendar reference. Decided 2026-06-30. */}
+            <span
+              className={`text-[9px] leading-none -mt-0.5 ${
+                c.isToday ? 'font-bold text-brand' : 'text-ink-light/70'
+              }`}
+            >
+              {c.dayNum}
             </span>
           </div>
         ))}
