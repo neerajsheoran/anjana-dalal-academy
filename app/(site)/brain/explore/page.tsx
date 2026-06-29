@@ -44,7 +44,7 @@ export default async function BrainExplorePage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-5xl mx-auto">
-        <BackLink href="/brain" label="Brain" />
+        <BackLink href="/" label="Home" />
 
         <div className="text-center mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">

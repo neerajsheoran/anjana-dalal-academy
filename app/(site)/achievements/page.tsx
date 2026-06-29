@@ -142,6 +142,9 @@ export default async function AchievementsPage() {
                     >
                       {tier.name}
                     </p>
+                    <p className="text-[10px] text-gray-400 mt-0.5">
+                      {tier.threshold}
+                    </p>
                     {isCurrent && (
                       <p className="text-[10px] font-semibold text-amber-600 mt-0.5">
                         you&rsquo;re here!
@@ -153,6 +156,52 @@ export default async function AchievementsPage() {
             </div>
           </div>
         </section>
+
+        {/* Next tier — focal card that used to live on /brain/badges
+            before that page was collapsed into here. Shows the upcoming
+            badge prominently so the kid knows what they're working toward. */}
+        {brainStats.nextTier ? (
+          <section className="mb-10">
+            <SectionLabel>Next Tier</SectionLabel>
+            <div className="bg-gradient-to-br from-purple-600 to-fuchsia-700 rounded-2xl p-6 md:p-8 shadow-lg text-white">
+              <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+                <p className="text-sm font-semibold text-purple-100 uppercase tracking-wider">
+                  Coming up
+                </p>
+                <p className="text-sm font-bold text-white">
+                  {brainStats.percentToNext}%
+                </p>
+              </div>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="text-5xl">{brainStats.nextTier.emoji}</span>
+                <div>
+                  <p className="text-2xl font-bold leading-none">
+                    {brainStats.nextTier.name}
+                  </p>
+                  <p className="text-sm text-purple-100 mt-1">
+                    {brainStats.setsToNext} more {brainStats.setsToNext === 1 ? "game" : "games"} to unlock
+                  </p>
+                </div>
+              </div>
+              <div className="h-3 w-full bg-white/25 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-white rounded-full transition-all"
+                  style={{ width: `${brainStats.percentToNext}%` }}
+                />
+              </div>
+            </div>
+          </section>
+        ) : (
+          <section className="mb-10">
+            <div className="bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl p-6 md:p-8 shadow-lg text-white text-center">
+              <p className="text-5xl mb-2">{brainStats.bestTier.emoji}</p>
+              <p className="text-xl font-bold">All tiers unlocked!</p>
+              <p className="text-sm text-amber-50 mt-1">
+                You&rsquo;re a {brainStats.bestTier.name}. Keep playing for fun. 🎉
+              </p>
+            </div>
+          </section>
+        )}
 
         {/* Training mix — pillar set counts, all feeding the same master
             ladder. Width is relative to the largest pillar (or 10, whichever

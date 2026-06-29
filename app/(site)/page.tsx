@@ -134,7 +134,7 @@ export default async function HomePage() {
 
             {/* Train */}
             <Link
-              href="/brain"
+              href="/brain/explore"
               className="group bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-3xl p-6 shadow-[0_12px_28px_rgba(168,85,247,0.30)] hover:shadow-[0_16px_32px_rgba(168,85,247,0.40)] hover:scale-[1.02] active:scale-[0.99] transition-all flex flex-col"
             >
               <div className="flex items-center justify-between mb-3">

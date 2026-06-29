@@ -165,7 +165,7 @@ export default function KidHomepage({
           <div className={learnCount === 2 ? pairedGrid : singleGrid}>
             <LearnCard classId={child.classId} classLabel={classLabel} />
             {showTrain && (
-              <TrainCard bestTier={bestTier} streakDays={streakDays} />
+              <TrainCard classLabel={classLabel} />
             )}
           </div>
         </section>
@@ -425,31 +425,26 @@ function LearnCard({
   );
 }
 
-function TrainCard({
-  bestTier,
-  streakDays,
-}: {
-  bestTier: BrainTier | null;
-  streakDays: number;
-}) {
-  const body =
-    streakDays > 0
-      ? `14 brain games · 🔥 ${streakDays}-day streak`
-      : bestTier
-        ? `14 brain games · ${bestTier.emoji} ${bestTier.name}`
-        : "Memory · Focus · Thinking — pick a game";
+// Train is academic exam-practice (NOT brain games). Lands the kid on
+// /quiz-start so they can build a custom practice quiz. Distinct from
+// the Quick Mock Test tile in TODAY which is a single-tap auto-quiz —
+// Train is the "build your own practice" path.
+function TrainCard({ classLabel }: { classLabel: string | null }) {
+  const body = classLabel
+    ? `Practice quizzes for ${classLabel}`
+    : "Build your own practice quiz";
   return (
     <Link
-      href="/brain/explore"
+      href="/quiz-start"
       className="group h-full bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-8 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
     >
       <div className="w-24 h-24 bg-white/25 rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
-        <span className="text-5xl animate-bounce">🎮</span>
+        <span className="text-5xl animate-wiggle">🎓</span>
       </div>
       <h3 className="text-white text-xl font-bold mb-2">Train</h3>
       <p className="text-purple-100 text-sm leading-relaxed flex-1">{body}</p>
       <span className="mt-auto inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full text-sm shadow-md group-hover:shadow-lg transition-shadow">
-        Play
+        Practice
       </span>
     </Link>
   );
@@ -491,7 +486,7 @@ function GamesCard({
 }) {
   return (
     <Link
-      href="/brain"
+      href="/brain/explore"
       className="group block bg-gradient-to-br from-fuchsia-600 via-purple-600 to-pink-600 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
     >
       <div className="flex items-center gap-5 md:gap-6">
@@ -563,8 +558,8 @@ function SectionHeader({
 }
 
 // Achievements shelf — surfaces the kid's current crest + streak as its
-// own card so the badge progression has a home outside the brain header.
-// Links to /brain/badges where the full ladder lives.
+// own card. Links to /achievements where the full trophy room lives
+// (stats trio, streak, tier ladder, next-tier card, training mix).
 function AchievementsCard({
   bestTier,
   streakDays,

@@ -1,83 +1,10 @@
-// The Brain Screen — post-login, post-profile-switch landing.
-// Requires an active child profile (redirects to /kids if not set).
-//
-// Renders the new 3-card home (Today / Badges / Explore). Decided
-// 2026-06-12 with user — replaced the old brain-image lobe picker;
-// that layout lives on at /brain/explore now.
+// /brain used to be a 2-card hub (Badges + Explore). Collapsed
+// 2026-06-30 — its content moved to /achievements (Badges info) and
+// /brain/explore (pillar picker). Kept as a redirect so any old
+// bookmarks, email links, or share URLs still work silently.
 
 import { redirect } from "next/navigation";
-import { getActiveChild } from "@/lib/active-child";
-import { isTrainEligible } from "@/lib/train-eligibility";
-import { getBrainStats } from "@/lib/brain-stats";
-import {
-  getContentAccessLevel,
-  getPlatformConfig,
-  hasFullAccess,
-} from "@/lib/subscription";
-import BrainHome from "./BrainHome";
 
-// Anonymous-friendly: visitors with no profile see the same layout in
-// "preview" mode — 3 cards, demos playable from the pillar pages,
-// progress shown as zero, badges padlocked. Hooks signup at the moment
-// they try to save something.
-export default async function BrainPage() {
-  const activeChild = await getActiveChild();
-
-  // Class 9+ kids who do have a profile are bounced to school work.
-  if (activeChild && !isTrainEligible(activeChild.classId)) {
-    redirect(activeChild.classId ? `/class/${activeChild.classId}` : "/");
-  }
-
-  const config = await getPlatformConfig();
-  const trialDays = config.trialDays;
-
-  if (!activeChild) {
-    return (
-      <BrainHome
-        childName="there"
-        stats={emptyStats()}
-        isPaid={false}
-        isAnonymous={true}
-        trialDays={trialDays}
-      />
-    );
-  }
-
-  const [stats, accessLevel] = await Promise.all([
-    getBrainStats(activeChild.parentUid, activeChild.id),
-    getContentAccessLevel(activeChild.parentUid),
-  ]);
-  const isPaid = hasFullAccess(accessLevel);
-
-  return (
-    <BrainHome
-      childName={activeChild.name}
-      stats={stats}
-      isPaid={isPaid}
-      isAnonymous={false}
-      trialDays={trialDays}
-    />
-  );
-}
-
-// Default zeroed-out stats for anonymous visitors. Keeps the shape that
-// BrainHome expects without round-tripping to Firestore. Mirrors the
-// shape getBrainStats returns for a kid with zero attempts.
-function emptyStats() {
-  const tadpole = { key: "tadpole", name: "Tadpole", emoji: "🐸", threshold: 0 };
-  const goldfish = { key: "goldfish", name: "Goldfish", emoji: "🐠", threshold: 30 };
-  const emptyPillar = { setsCount: 0, doneToday: false };
-  return {
-    memory:   { ...emptyPillar },
-    focus:    { ...emptyPillar },
-    thinking: { ...emptyPillar },
-    totalSets: 0,
-    bestTier: tadpole,
-    nextTier: goldfish,
-    setsToNext: 30,
-    percentToNext: 0,
-    streakDays: 0,
-    lastActiveIstDay: null,
-    playedTodayKeys: [],
-  };
+export default function BrainPage(): never {
+  redirect("/brain/explore");
 }

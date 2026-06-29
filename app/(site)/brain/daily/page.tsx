@@ -73,7 +73,7 @@ export default async function BrainDailyPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-2xl mx-auto">
-        <BackLink href="/brain" label="Brain" />
+        <BackLink href="/" label="Home" />
 
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">

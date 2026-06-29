@@ -49,7 +49,7 @@ export default async function ModulePage({
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 py-8 px-4">
       <div className="max-w-md mx-auto">
 
-        <BackLink href="/brain" label="Brain" />
+        <BackLink href="/brain/explore" label="Games" />
 
         {/* Module header */}
         <div className={`${ZONE_BG_SOFT[mod.zoneColor]} rounded-2xl p-6 mb-6 text-center`}>
