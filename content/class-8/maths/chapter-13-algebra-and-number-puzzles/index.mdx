@@ -1,0 +1,237 @@
+---
+title: "Chapter 13 — Algebra and Number Puzzles"
+chapterKey: "6bb483f4-775e-4e7a-8692-ca3ab66841d5"
+description: "Use algebra to model scenarios, investigate number tricks, and solve puzzles."
+order: 13
+---
+## 6.1 Introduction
+
+Algebra is far more than a tool for solving textbook equations -- it can unravel the secrets behind magic tricks, decode puzzles, and model real-world situations. In this chapter, we discover the playful and surprising side of algebra.
+
+---
+
+## 6.2 "Think of a Number" Tricks
+
+### A Classic Trick
+
+1. Pick any number in your head: **n**
+2. Triple it: **3n**
+3. Add nine: **3n + 9**
+4. Divide by 3: **n + 3**
+5. Subtract the number you started with: **(n + 3) - n = 3**
+
+No matter which number you began with, you always land on **3**!
+
+Want the final answer to be 7 instead? Change step 3 to "Add twenty-one" (since 21/3 = 7). For a final answer of 10, add 30.
+
+> **Key idea:** These tricks work because the algebra is designed so that the unknown variable cancels out completely, leaving behind a fixed number regardless of the starting value.
+
+---
+
+### The Birthday Trick
+
+Ask a friend to think of their birthday (for instance, 15th August = 15/08):
+
+1. Multiply the month by 5: **5M**
+2. Add 7: **5M + 7**
+3. Multiply by 4: **20M + 28**
+4. Add 13: **20M + 41**
+5. Multiply by 5: **100M + 205**
+6. Add the day: **100M + 205 + D**
+
+When they announce the result, subtract 205. The last two digits reveal the day, and the digits before that reveal the month!
+
+**Illustration:** If the result is 1020:
+- 1020 - 205 = 815
+- Month = 8 (August), Day = 15
+- The birthday is **15th August** (Independence Day!)
+
+**Illustration:** If the result is 331:
+- 331 - 205 = 126
+- Month = 1 (January), Day = 26
+- The birthday is **26th January** (Republic Day!)
+
+---
+
+## 6.3 Number Pyramids
+
+In a **number pyramid**, every cell holds the **sum** of the two cells directly beneath it.
+
+```
+    30
+   /  \
+  13   17
+ /  \
+4    9    8
+```
+
+### Building Pyramids
+
+If the bottom row contains p, q, r, the pyramid unfolds as:
+
+```
+   p + 2q + r
+    /      \
+  p+q     q+r
+  / \     / \
+ p    q  r
+```
+
+The summit equals **p + 2q + r** (the middle entry of the base row gets counted twice!).
+
+### A Four-Row Pyramid
+
+If the base row holds p, q, r, s, the summit value is:
+
+**p + 3q + 3r + s**
+
+Observe the coefficients 1, 3, 3, 1 -- these are the numbers from the third row of **Pascal's Triangle** (known in India as the Meru Prastara)!
+
+### Working Backwards
+
+**Illustration:** A pyramid has 70 at the summit, and the base row is 15, ?, 9.
+
+Let the unknown be m. From the pyramid rule:
+- Second row: 15 + m and m + 9
+- Summit = (15 + m) + (m + 9) = 24 + 2m = 70
+- 2m = 46, so **m = 23**
+
+The complete base row is 15, 23, 9.
+
+### Link to Virahanka-Fibonacci Numbers
+
+If you populate a pyramid's base row with the first n Virahanka-Fibonacci numbers (1, 2, 3, 5, 8, 13, ...), every number inside the pyramid also turns out to be a Virahanka-Fibonacci number, and the summit equals the (2n-1)th term!
+
+---
+
+## 6.4 Fun with Grids
+
+### Calendar Magic
+
+Select any **2 x 2 block** from a calendar page. If the top-left date is d:
+
+| d | d+1 |
+|---|---|
+| d+7 | d+8 |
+
+Sum = d + (d+1) + (d+7) + (d+8) = **4d + 16**
+
+So given the sum, you can instantly find d:
+- **d = (sum - 16) / 4**
+
+**Illustration:** If the sum is 60:
+- d = (60 - 16)/4 = 44/4 = 11
+- The block is: 11, 12 / 18, 19
+
+Extend the idea to 3x3 blocks, L-shaped selections, or diagonal strips for more puzzles!
+
+### Algebra Grids
+
+In these puzzles, different shapes stand for unknown numbers, and each row's total is given.
+
+**Illustration:**
+- Star + Star + Star = 36, so Star = 12
+- Diamond + Diamond + Star = 28, so 2 x Diamond + 12 = 28, Diamond = 8
+
+> **Key idea:** Algebra grids are really systems of equations wearing a costume. Solve them by substitution -- pin down one unknown first, then use it to uncover the rest.
+
+---
+
+## 6.5 The Largest Product
+
+**Challenge:** Arrange the digits 4, 6, and 7 in __ __ x __ to produce the largest possible product.
+
+The six possibilities:
+- 46 x 7 = 322
+- 47 x 6 = 282
+- 64 x 7 = **448** (the winner!)
+- 67 x 4 = 268
+- 74 x 6 = 444
+- 76 x 4 = 304
+
+### The General Principle
+
+For three digits p &lt; q &lt; r, the maximum product comes from **qp x r** -- assign the **largest digit as the single-digit multiplier** and arrange the remaining two in **descending order** as the two-digit number.
+
+**Algebraic reasoning:** Compare qp x r with rp x q:
+- qp x r = (10q + p)r = 10qr + pr
+- rp x q = (10r + p)q = 10rq + pq
+
+Since r > q, we have pr > pq, so qp x r wins!
+
+---
+
+## 6.6 Decoding Divisibility Tricks
+
+### Reversing a 2-Digit Number
+
+**Trick:** Take any 2-digit number whose digits differ. Reverse the digits and subtract the smaller from the larger. The result is always a multiple of 9!
+
+**Proof:** Write the number as 10a + b (a is the tens digit, b is the units digit).
+
+Reversed number = 10b + a
+
+Difference = (10a + b) - (10b + a) = 9a - 9b = **9(a - b)**
+
+Since 9 is a factor, the difference is guaranteed to be divisible by 9!
+
+### Reversing a 3-Digit Number
+
+**Trick:** Take any 3-digit number, reverse its digits, and subtract the smaller from the larger. The result is always a multiple of **99**.
+
+**Proof:** Let the number be 100a + 10b + c.
+
+Reversed = 100c + 10b + a
+
+Difference = 99a - 99c = **99(a - c)**
+
+Notice that the middle digit b vanishes entirely, and 99 is always a factor!
+
+### Sum of a Number and Its Reverse
+
+For a 2-digit number 10a + b:
+- Sum with its reverse = (10a + b) + (10b + a) = 11a + 11b = **11(a + b)**
+
+The sum is always divisible by **11**!
+
+> **Key idea:** Expressing numbers using place value (10a + b or 100a + 10b + c) and then applying algebra reveals the hidden structure behind many number tricks and divisibility patterns.
+
+---
+
+## 6.7 Solving Equations
+
+### Illustration: Discovering Two Numbers
+
+The sum of two numbers is 56 and their difference is 18. What are they?
+
+Let the numbers be x and y (with x > y).
+- x + y = 56
+- x - y = 18
+
+Adding both equations: 2x = 74, so x = 37.
+Subtracting: 2y = 38, so y = 19.
+
+The numbers are **37 and 19**.
+
+### Illustration: An Age Puzzle
+
+Sunita is 4 times as old as her daughter. Six years ago, Sunita was 7 times her daughter's age. Find their present ages.
+
+Let the daughter's age = d. Sunita's age = 4d.
+- Six years ago: (4d - 6) = 7(d - 6)
+- 4d - 6 = 7d - 42
+- 36 = 3d
+- d = 12
+
+The daughter is **12 years old** and Sunita is **48 years old**.
+
+---
+
+## Summary
+
+- Algebra reveals why "think of a number" tricks always produce the same result -- the variable cancels out.
+- **Number pyramids** follow the rule that each cell equals the sum of the two below it. The summit value involves binomial coefficients from Pascal's Triangle.
+- **Calendar grids** can be decoded algebraically: express every date in terms of one variable and solve.
+- To find the **largest product** from given digits, use the biggest digit as the single-digit multiplier.
+- **Divisibility tricks** for reversed numbers are demystified by place value: 10a + b reversed gives 10b + a, and their difference is 9(a-b).
+- Algebra transforms mysterious tricks into transparent, logical explanations!

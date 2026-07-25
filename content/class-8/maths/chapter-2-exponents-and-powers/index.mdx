@@ -1,0 +1,281 @@
+---
+title: "Chapter 2 — Exponents and Powers"
+chapterKey: "0a6c745a-bf67-4ee1-b11d-2e8f94538f5c"
+description: "Learn exponents and powers — express very large numbers in compact form."
+order: 2
+---
+## 2.1 Witnessing the Power of Doubling
+
+### The Rice and Chessboard Legend
+
+An ancient Indian legend tells of a wise minister who presented the king with the game of chess. Pleased, the king offered any reward. The minister asked for rice grains placed on the chessboard: **1 grain on the first square, 2 on the second, 4 on the third, 8 on the fourth** — doubling each time for all 64 squares.
+
+The king laughed at this seemingly modest request. But let us see what happens:
+
+| Square | Grains | Square | Grains |
+|---|---|---|---|
+| 1 | 1 | 10 | 512 |
+| 2 | 2 | 16 | 32,768 |
+| 3 | 4 | 20 | about 5.24 lakh |
+| 5 | 16 | 30 | about 107 crore |
+| 8 | 128 | 40 | about 1.1 kharab |
+
+By the 64th square, the total grains needed would be about **1.84 x 10¹⁹** — more than all the rice ever produced in human history!
+
+> **Key idea:** This is the power of **exponential growth**. When a quantity doubles again and again, it grows at a staggering pace. Each set of 10 doublings multiplies the amount by about 1024 times!
+
+---
+
+## 2.2 Exponential Notation and Operations
+
+### Writing Powers
+
+The rice problem involves repeated multiplication by 2. After n doublings, the grain count is:
+
+**1 x 2 x 2 x 2 x ... (n times) = 2^n**
+
+We use a shorthand called **exponential notation**:
+
+- n x n = **n²** (n squared, or n raised to the power 2)
+- n x n x n = **n³** (n cubed, or n raised to the power 3)
+- n x n x n x n = **n⁴** (n raised to the power 4)
+- In general, n multiplied by itself **a** times = **n^a**
+
+In the expression **4³ = 64**:
+- **4** is the **base**
+- **3** is the **exponent** (or power)
+- **4³** is the **exponential form** of 64
+
+### Examples
+
+- 6 x 6 x 6 = 6³ = 216
+- (-3) x (-3) x (-3) = (-3)³ = -27
+- p x p x q x q x q = p²q³ (read as "p squared q cubed")
+- 3 x 3 x 3 x 3 x 3 x 3 x 3 x 3 = 3⁸ = 6561
+
+### Prime Factorisation in Exponential Form
+
+**Example:** Express 48600 as a product of prime factors in exponential form.
+
+48600 = 2 x 2 x 2 x 3 x 3 x 3 x 3 x 5 x 5 x ... wait, let us verify:
+48600 = 2³ x 3⁵ x 5² ... no.
+
+Let us factor correctly:
+48600 ÷ 2 = 24300, ÷ 2 = 12150, ÷ 2 = 6075, ÷ 3 = 2025, ÷ 3 = 675, ÷ 3 = 225, ÷ 3 = 75, ÷ 3 = 25, ÷ 5 = 5, ÷ 5 = 1
+
+48600 = **2³ x 3⁵ x 5²**
+
+---
+
+## Laws of Exponents
+
+### Law 1: Multiplying Powers with the Same Base
+
+When multiplying powers that share the same base, **add the exponents**:
+
+**n^a x n^b = n^(a+b)**
+
+**Example:** 5³ x 5⁴ = 5⁷ = 78125
+
+This follows because:
+- 5³ x 5⁴ = (5 x 5 x 5) x (5 x 5 x 5 x 5) = 5⁷
+
+### Law 2: Power of a Power
+
+When a power itself is raised to another power, **multiply the exponents**:
+
+**(n^a)^b = n^(a x b)**
+
+**Example:**
+- 3⁶ = (3²)³ = 9³ = 729
+- 3⁶ = (3³)² = 27² = 729
+- 2¹² = (2³)⁴ = (2⁴)³ = 16³ = 4096
+
+### Law 3: Multiplying Powers with the Same Exponent
+
+When different bases are raised to the same exponent, **combine the bases**:
+
+**m^a x n^a = (m x n)^a**
+
+**Example:**
+- 4³ x 5³ = (4 x 5)³ = 20³ = 8000
+- 2⁴ x 3⁴ = (2 x 3)⁴ = 6⁴ = 1296
+
+### Law 4: Dividing Powers with the Same Base
+
+When dividing powers with the same base, **subtract the exponents**:
+
+**n^a / n^b = n^(a-b)** (where n is not 0)
+
+**Example:**
+- 7⁵⁰ / 7²⁰ = 7³⁰
+- 3⁵ / 3² = 3³ = 27
+
+---
+
+## Zero and Negative Exponents
+
+### Zero as an Exponent
+
+Applying the division law when dividing a power by itself:
+
+5³ / 5³ = 5⁰
+
+But any number divided by itself equals 1. Therefore:
+
+**n⁰ = 1** (for any non-zero number n)
+
+> **Key idea:** Any non-zero number raised to the power 0 equals 1. So 8⁰ = 1, 250⁰ = 1, and (-3)⁰ = 1.
+
+### Negative Exponents
+
+What happens when the subtraction gives a negative exponent?
+
+Consider dividing 3² by 3⁵:
+- 3² / 3⁵ = 3^(-3) = 9/243 = 1/27
+
+This reveals:
+
+**n^(-a) = 1/n^a**
+
+**Examples:**
+- 5^(-1) = 1/5
+- 10^(-4) = 1/10⁴ = 1/10000
+- 2^(-3) = 1/2³ = 1/8
+
+And conversely:
+- n^a = 1/n^(-a)
+
+> **Key idea:** A negative exponent means "take the reciprocal." So 10^(-2) equals 1/100, not a negative number.
+
+---
+
+## Power Lines
+
+Arrange all powers of a number — positive, zero, and negative — along a number line. For powers of 3:
+
+... 3^(-3) = 1/27 ... 3^(-2) = 1/9 ... 3^(-1) = 1/3 ... 3⁰ = 1 ... 3¹ = 3 ... 3² = 9 ... 3³ = 27 ...
+
+Moving right: each step **multiplies** by 3.
+Moving left: each step **divides** by 3.
+
+All the laws of exponents apply to **any integer exponents** (positive, negative, or zero):
+
+- **n^a x n^b = n^(a+b)**
+- **(n^a)^b = n^(a x b)**
+- **n^a / n^b = n^(a-b)**
+- **m^a x n^a = (mn)^a**
+
+---
+
+## 2.4 Powers of 10
+
+### Expanded Form Using Powers of 10
+
+Any number can be written using powers of 10:
+
+83042 = (8 x 10⁴) + (3 x 10³) + (0 x 10²) + (4 x 10¹) + (2 x 10⁰)
+
+For decimals, negative powers of 10 are used:
+
+742.305 = (7 x 10²) + (4 x 10¹) + (2 x 10⁰) + (3 x 10^(-1)) + (0 x 10^(-2)) + (5 x 10^(-3))
+
+### Scientific Notation (Standard Form)
+
+Very large numbers become hard to read and compare. For example:
+- Distance from the Sun to the nearest star (Proxima Centauri): 4,01,50,00,00,00,000 m
+
+**Scientific notation** writes any number as **x x 10^y**, where 1 ≤ x < 10.
+
+**Examples:**
+- 7200 = 7.2 x 10³
+- 34500 = 3.45 x 10⁴
+- 60,00,000 = 6 x 10⁶
+- Population of Delhi (about 2 crore) = 2 x 10⁷
+
+> **Key idea:** In scientific notation, the **exponent** reveals the scale of the number (how many digits it has), which is often more useful than the exact value. Changing the exponent by 1 means a **10 times** change!
+
+### Why Scientific Notation Matters
+
+The population of Shillong is about 3,54,759.
+- Writing it as **3.55 x 10⁵** tells us it is "about 3 lakh 55 thousand."
+- Writing it as **3.5 x 10⁵** tells us it is "about 3 lakh 50 thousand."
+
+The number of digits in the coefficient shows how precisely we know the number. For everyday use, an approximate value is perfectly adequate.
+
+---
+
+## 2.5 Developing Intuition for Large Numbers
+
+### Powers of 10 in the Natural World
+
+Different powers of 10 appear throughout nature:
+
+| Power of 10 | Example |
+|---|---|
+| 10⁰ = 1 | Only 2 northern white rhinos survive on Earth |
+| 10¹ | About 42 Hainan gibbons exist |
+| 10² | About 242 Kakapo (a rare parrot) remain alive |
+| 10³ | Fewer than 3000 Komodo dragons survive |
+| 10⁵ | About 4.15 lakh African elephants |
+| 10⁶ | About 50 lakh (5 million) American alligators |
+| 10⁷ | About 3.5 crore (35 million) camels worldwide |
+| 10⁹ | 8.2 arab (8.2 billion) humans on Earth |
+| 10¹⁰ | About 33 billion chickens in the world |
+| 10¹² | About 3 trillion trees on Earth |
+| 10¹⁶ | About 20 quadrillion ants worldwide |
+| 10²¹ | Estimated grains of sand on all beaches and deserts |
+| 10²³ | Estimated number of stars in the observable universe |
+
+> **Key idea:** Ants alone (about 2 x 10¹⁶) outweigh all wild birds and wild mammals combined! That works out to roughly 2500 ants for every single human being.
+
+---
+
+## Linear Growth vs. Exponential Growth
+
+Consider earning money in two ways:
+- **Option A:** You earn ₹100 more each day (₹100, ₹200, ₹300, ...).
+- **Option B:** You start with ₹1 and it doubles each day (₹1, ₹2, ₹4, ₹8, ...).
+
+After 10 days: Option A gives ₹5,500 total. Option B gives ₹1,023 total. Option A looks better!
+
+But after 20 days: Option A gives ₹21,000 total. Option B gives ₹10,48,575. Now Option B has overtaken Option A by 50 times!
+
+After 30 days: Option A gives ₹46,500. Option B gives over ₹107 crore!
+
+- **Linear growth** adds the same amount each step: 100 + 100 + 100 + ...
+- **Exponential growth** multiplies by the same factor each step: 1 x 2 x 2 x 2 x ...
+
+> **Key idea:** Linear growth adds a fixed amount each step. Exponential growth multiplies by a fixed factor each step. Exponential growth may start slowly but eventually dwarfs linear growth by unimaginable amounts.
+
+---
+
+## Time in Powers of 10
+
+| Seconds | Approximate Time | Real-World Example |
+|---|---|---|
+| 10⁰ = 1 | 1 second | A ball thrown up and falling back |
+| 10¹ = 10 | 10 seconds | Blood completing one full circulation |
+| 10² = 100 | 1.6 minutes | Light reaching Earth from the Sun (about 8 min) |
+| 10³ | 16.6 minutes | A satellite completing one orbit (about 90 min) |
+| 10⁴ | 2.7 hours | Digesting a meal |
+| 10⁷ | 3.8 months | Mangalyaan reaching Mars (298 days) |
+| 10⁸ | 3.17 years | Typical lifespan of a dog |
+| 10⁹ | 31.7 years | Halley's comet orbital period (75-79 years) |
+| 10¹⁰ | 317 years | The Chola dynasty ruled for 900+ years |
+| 10¹² | 31,700 years | Early Homo sapiens appeared 2-3 lakh years ago |
+
+---
+
+## Summary
+
+- **Exponential notation:** n^a means n multiplied by itself a times. Here n is the **base** and a is the **exponent**.
+- **Laws of exponents:**
+  - n^a x n^b = n^(a+b)
+  - n^a / n^b = n^(a-b)
+  - (n^a)^b = n^(a x b)
+  - m^a x n^a = (mn)^a
+- **n⁰ = 1** for any non-zero n.
+- **n^(-a) = 1/n^a** — negative exponents give reciprocals.
+- **Scientific notation** writes numbers as x x 10^y (where 1 ≤ x < 10) for easier reading and comparison.
+- **Exponential growth** (doubling, tripling, etc.) is far faster than **linear growth** (adding a fixed amount).

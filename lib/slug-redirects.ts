@@ -211,6 +211,45 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 8 Maths + Science + Social Science — content-based rename pass 2026-07-25.
+  "class-8": {
+    "maths": {
+      "chapter-1-a-square-and-a-cube": "chapter-1-squares-and-cubes",
+      "chapter-2-power-play": "chapter-2-exponents-and-powers",
+      "chapter-3-a-story-of-numbers": "chapter-3-history-of-number-systems",
+      "chapter-5-number-play": "chapter-5-properties-of-numbers",
+      "chapter-6-we-distribute-yet-things-multiply": "chapter-6-distributive-law-and-algebra",
+      "chapter-7-proportional-reasoning-1": "chapter-7-ratios-and-proportions",
+      "chapter-8-fractions-in-disguise": "chapter-8-percentages",
+      "chapter-9-the-baudhayana-pythagoras-theorem": "chapter-9-pythagoras-theorem",
+      "chapter-10-proportional-reasoning-2": "chapter-10-pie-charts-and-inverse-proportion",
+      "chapter-11-exploring-some-geometric-themes": "chapter-11-3d-geometry-and-fractals",
+      "chapter-12-tales-by-dots-and-lines": "chapter-12-arithmetic-mean-and-line-graphs",
+      "chapter-13-algebra-play": "chapter-13-algebra-and-number-puzzles",
+      "chapter-14-area": "chapter-14-area-of-triangles-and-quadrilaterals",
+    },
+    "science": {
+      "chapter-1-exploring-the-investigative-world-of-science": "chapter-1-scientific-method",
+      "chapter-2-the-invisible-living-world-beyond-our-naked-eye": "chapter-2-microorganisms",
+      "chapter-3-health-the-ultimate-treasure": "chapter-3-health-and-well-being",
+      "chapter-4-electricity-magnetic-and-heating-effects": "chapter-4-electromagnets-and-electricity",
+      "chapter-5-exploring-forces": "chapter-5-forces-and-motion",
+      "chapter-8-nature-of-matter-elements-compounds-and-mixtures": "chapter-8-elements-compounds-and-mixtures",
+      "chapter-9-the-amazing-world-of-solutes-solvents-and-solutions": "chapter-9-solutions-and-solubility",
+      "chapter-11-keeping-time-with-the-skies": "chapter-11-moon-phases-and-lunar-calendars",
+      "chapter-12-how-nature-works-in-harmony": "chapter-12-ecosystems-and-food-chains",
+      "chapter-13-our-home-earth-a-unique-life-sustaining-planet": "chapter-13-earth-life-and-biodiversity",
+    },
+    "social-science": {
+      "chapter-1-natural-resources-and-their-use": "chapter-1-natural-resources-of-india",
+      "chapter-2-reshaping-indias-political-map": "chapter-2-medieval-indian-dynasties",
+      "chapter-3-the-rise-of-the-marathas": "chapter-3-the-maratha-empire",
+      "chapter-4-the-colonial-era-in-india": "chapter-4-british-colonial-rule-and-freedom-struggle",
+      "chapter-5-universal-franchise-and-indias-electoral-system": "chapter-5-indias-electoral-system",
+      "chapter-6-the-parliamentary-system-legislature-and-executive": "chapter-6-the-indian-parliamentary-system",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest

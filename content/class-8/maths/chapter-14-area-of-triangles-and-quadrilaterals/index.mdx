@@ -1,0 +1,165 @@
+---
+title: "Chapter 14 — Area of Triangles and Quadrilaterals"
+chapterKey: "731b4723-0598-4344-817e-e04f9eea3b3e"
+description: "Delve deeper into areas of triangles and quadrilaterals using creative approaches."
+order: 14
+---
+## 7.1 Rectangles and Squares
+
+### What is Area?
+
+Area tells us how much flat space a region occupies. We measure it by counting how many **unit squares** (squares with side length 1) can tile the region completely.
+
+**Area of a rectangle = length x width**
+
+**Illustration:** A rectangular plot measures 9 m by 6 m. It can hold 9 x 6 = **54 unit squares**, so its area is **54 sq. m** (or 54 m²).
+
+**Area of a square = side x side = side²**
+
+**Illustration:** A square tile with side 8 cm has area = 8² = **64 cm²**.
+
+---
+
+### Why Perimeter Does Not Determine Area
+
+The perimeter (total boundary length) tells us nothing definite about the area because:
+- Two shapes can share the **same perimeter yet enclose different areas**.
+- A shape with a **longer perimeter** may actually contain **less area** than another shape.
+
+**Illustration:** A rectangle of 9 cm x 3 cm has perimeter = 24 cm and area = 27 cm². A rectangle of 7 cm x 5 cm also has perimeter = 24 cm but area = 35 cm². Same boundary length, different enclosed spaces!
+
+> **Key idea:** Area and perimeter are independent quantities. Knowing one does not fix the other without further information.
+
+---
+
+## Triangles
+
+### Area of a Triangle
+
+A diagonal slices a rectangle into **two identical (congruent) triangles**. Therefore, each triangle covers half the rectangle's area.
+
+**Area of a triangle = (1/2) x base x height**
+
+![Triangle with base and height marked, showing the triangle as half of a rectangle with the same base and height](triangle-area-half-rectangle.png)
+
+The **base** may be any side of the triangle. The **height** (altitude) is the perpendicular distance from the vertex opposite the chosen base down to the line containing that base.
+
+### Why This Formula Holds for Every Triangle
+
+**Scenario 1: Right triangle or acute triangle** -- The altitude lands inside the triangle. The triangle fills exactly half of a rectangle sharing its base and height.
+
+**Scenario 2: Obtuse triangle** -- The altitude lands outside the triangle. Using a subtraction approach:
+
+Area(PQR) = Area(PSR) - Area(PSQ)
+= (1/2) x h x SR - (1/2) x h x SQ
+= (1/2) x h x (SR - SQ)
+= **(1/2) x h x QR**
+
+The formula holds regardless of triangle type!
+
+---
+
+### Worked Problems
+
+**Problem 1:** Determine the area of a triangle with base 8 units and height 5 units.
+
+Area = (1/2) x 8 x 5 = **20 sq. units**
+
+**Problem 2:** A triangle has area 21 sq. units and base PQ = 6 units. Determine the altitude from R to PQ.
+
+Area = (1/2) x base x height
+21 = (1/2) x 6 x h
+21 = 3 x h
+h = 21/3 = **7 units**
+
+---
+
+### Diagonals of a Rectangle Produce Equal Triangles
+
+Drawing both diagonals of a rectangle creates 4 triangles. Are all four equal in area?
+
+Yes! The diagonals of a rectangle bisect each other. Any two adjacent triangles share the same height, and their bases are equal (half-diagonals). Consequently, all 4 triangles have **equal areas**.
+
+> **Key idea:** A segment from any vertex of a triangle to the **midpoint** of the opposite side splits the triangle into two triangles with **equal area**.
+
+---
+
+## Triangles Between Parallel Lines
+
+Suppose line m runs parallel to a base EF. Every triangle with base EF and its third vertex somewhere on line m has the **same height** (the gap between the parallel lines).
+
+Therefore, **all such triangles share the same area**, no matter where the third vertex sits on line m!
+
+**Finding the triangle with the smallest perimeter:** Among all triangles with base EF and third vertex on a parallel line m:
+- All share the **same area** (identical base, identical height)
+- The one with the **smallest perimeter** is located using the **reflection trick**: reflect one endpoint (say E) across line m to get E', then the point G on m where the straight line E'F meets m yields the shortest total path, hence the minimum perimeter.
+
+---
+
+## Area of Parallelograms
+
+A parallelogram can be converted into a rectangle of matching base and height by slicing a right triangle from one end and attaching it to the other end.
+
+![Parallelogram transformed into a rectangle by cutting a triangle from one side and moving it to the other, showing base and height](parallelogram-area-rectangle-transform.png)
+
+**Area of a parallelogram = base x height**
+
+Remember: the height is the **perpendicular gap** between the two parallel sides, not the length of the slanting side.
+
+**Illustration:** A parallelogram-shaped field has base 12 m and perpendicular height 7 m. Its area = 12 x 7 = **84 m²**.
+
+---
+
+## Area of a Trapezium
+
+A trapezium has one pair of parallel sides (called the **parallel sides** or bases, a and b) separated by a perpendicular height h.
+
+**Area of a trapezium = (1/2) x (a + b) x h**
+
+![Trapezium with parallel sides a and b and height h, showing two identical trapeziums joined to form a parallelogram](trapezium-area-derivation.png)
+
+**Why?** Place two identical trapeziums together (one flipped) to form a parallelogram with base (a + b) and height h. Since the trapezium is half of this parallelogram, its area is half of (a + b) x h.
+
+**Illustration:** A trapezoidal plot has parallel sides of 8 m and 14 m with a perpendicular distance of 5 m between them:
+- Area = (1/2) x (8 + 14) x 5 = (1/2) x 22 x 5 = **55 m²**
+
+---
+
+## Area of Any Polygon
+
+Any polygon can be broken into **triangles** by drawing diagonals from a single vertex to all non-adjacent vertices. The polygon's area equals the sum of these triangle areas.
+
+### Area of a General Quadrilateral
+
+Draw one diagonal to split it into two triangles. If the diagonal has length d, and the perpendicular distances from the other two vertices to this diagonal are h1 and h2:
+
+**Area = (1/2) x d x (h1 + h2)**
+
+**Illustration:** Quadrilateral PQRS has diagonal PR = 18 cm, and the perpendicular distances from Q and S to PR are 5 cm and 4 cm:
+- Area = (1/2) x 18 x (5 + 4) = (1/2) x 18 x 9 = **81 cm²**
+
+---
+
+## Historical Connection
+
+The **Shulba-Sutras**, ancient Indian geometrical texts concerned with altar construction, contain numerous problems about reshaping one figure into another of equal area. For example:
+- **Rectangle to triangle of equal area:** Construct a triangle whose base equals the rectangle's length and whose height is twice the rectangle's width. Since (1/2) x l x 2w = l x w, the areas match.
+- **Triangle to rectangle of equal area:** Construct a rectangle whose base equals the triangle's base and whose height is half the triangle's height.
+
+Parallel problems were explored in **Euclid's Elements** in ancient Greece.
+
+---
+
+## Summary of Area Formulas
+
+| Shape | Formula |
+|---|---|
+| **Rectangle** | length x width |
+| **Square** | side x side |
+| **Triangle** | (1/2) x base x height |
+| **Parallelogram** | base x height |
+| **Trapezium** | (1/2) x (sum of parallel sides) x height |
+| **Rhombus** | (1/2) x product of diagonals |
+| **Any quadrilateral** | (1/2) x diagonal x (sum of perpendicular distances) |
+
+> **Key idea:** The triangle area formula underpins every other area calculation, because any polygon can be decomposed into triangles. Every formula in the table above traces back to the fundamental relationship: Area of a triangle = (1/2) x base x height.

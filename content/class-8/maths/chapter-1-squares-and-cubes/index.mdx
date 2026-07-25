@@ -1,0 +1,353 @@
+---
+title: "Chapter 1 — Squares and Cubes"
+chapterKey: "784be9bb-caf8-4918-8d1a-8408c8d7b420"
+description: "Explore square numbers, cube numbers, and their properties through engaging puzzles."
+order: 1
+---
+## The Rangoli Puzzle
+
+Imagine Priya is decorating her courtyard for Diwali. She has small square tiles and wants to arrange them into larger square patterns:
+
+- With **1 tile**, she makes a 1x1 square.
+- With **4 tiles**, she makes a 2x2 square.
+- With **9 tiles**, she makes a 3x3 square.
+- With **16 tiles**, she makes a 4x4 square.
+
+But when she has **12 tiles**, can she form a perfect square? She tries arranging them — 3 rows of 4 is a rectangle, not a square. No matter how she arranges 12 tiles, she cannot form a perfect square!
+
+> **Key idea:** Only certain special numbers of tiles can be arranged into a perfect square shape. These numbers — 1, 4, 9, 16, 25, ... — are called **perfect squares**. They are the result of multiplying a whole number by itself.
+
+---
+
+## 1.1 Square Numbers
+
+A **square number** (or **perfect square**) is the product of a number multiplied by itself.
+
+| Side length | Tiles needed |
+|---|---|
+| 1 | 1 x 1 = **1** |
+| 2 | 2 x 2 = **4** |
+| 3 | 3 x 3 = **9** |
+| 4 | 4 x 4 = **16** |
+| 5 | 5 x 5 = **25** |
+| 10 | 10 x 10 = **100** |
+
+![Square numbers visualised as dots arranged in square grids for 1, 4, 9, 16, and 25](square-numbers-dot-grids.png)
+
+We write n x n as **n²**, read as "n squared."
+
+For instance:
+- 7² = 7 x 7 = 49
+- 11² = 11 x 11 = 121
+
+Fractions and decimals can also be squared:
+- (2/7)² = (2/7) x (2/7) = 4/49
+- (1.5)² = 1.5 x 1.5 = 2.25
+
+> **Key idea:** The squares of natural numbers (1, 4, 9, 16, 25, ...) are called **perfect squares**.
+
+---
+
+## Patterns and Properties of Perfect Squares
+
+Here are the squares of the first 20 natural numbers:
+
+| n | n² | n | n² |
+|---|---|---|---|
+| 1 | 1 | 11 | 121 |
+| 2 | 4 | 12 | 144 |
+| 3 | 9 | 13 | 169 |
+| 4 | 16 | 14 | 196 |
+| 5 | 25 | 15 | 225 |
+| 6 | 36 | 16 | 256 |
+| 7 | 49 | 17 | 289 |
+| 8 | 64 | 18 | 324 |
+| 9 | 81 | 19 | 361 |
+| 10 | 100 | 20 | 400 |
+
+### Last digit pattern
+
+Observe the last digit of each perfect square carefully. A perfect square can only end in **0, 1, 4, 5, 6, or 9**. No perfect square ever ends in 2, 3, 7, or 8.
+
+- Numbers ending in **1 or 9** produce squares ending in **1**.
+- Numbers ending in **2 or 8** produce squares ending in **4**.
+- Numbers ending in **3 or 7** produce squares ending in **9**.
+- Numbers ending in **4 or 6** produce squares ending in **6**.
+- Numbers ending in **5** produce squares ending in **5**.
+- Numbers ending in **0** produce squares ending in **0**.
+
+> **Key idea:** If a number ends in 2, 3, 7, or 8, it cannot be a perfect square. However, ending in 0, 1, 4, 5, 6, or 9 does not guarantee it is a perfect square — for example, 33 ends in 3 (so it is ruled out), while 35 ends in 5 but is not a perfect square either.
+
+### Trailing zeros
+
+- 10² = 100 (one zero becomes two zeros)
+- 100² = 10000 (two zeros become four zeros)
+- 300² = 90000 (two zeros become four zeros)
+
+**When you square a number, the count of trailing zeros always doubles.** Therefore, perfect squares can only have an **even** number of trailing zeros.
+
+### Squares preserve even-odd nature
+
+- The square of an **even** number is always **even**.
+- The square of an **odd** number is always **odd**.
+
+---
+
+## The Bond Between Perfect Squares and Odd Numbers
+
+Study the gaps between consecutive squares:
+
+- 4 - 1 = **3**
+- 9 - 4 = **5**
+- 16 - 9 = **7**
+- 25 - 16 = **9**
+
+The gaps form the sequence of consecutive odd numbers! This gives us a stunning pattern:
+
+- 1 = **1**
+- 1 + 3 = **4**
+- 1 + 3 + 5 = **9**
+- 1 + 3 + 5 + 7 = **16**
+- 1 + 3 + 5 + 7 + 9 = **25**
+- 1 + 3 + 5 + 7 + 9 + 11 = **36**
+
+> **Key idea:** Adding the first n odd numbers always gives n². Every perfect square equals a sum of consecutive odd numbers beginning from 1.
+
+### Testing whether a number is a perfect square
+
+Pick a number like 36 and keep subtracting consecutive odd numbers from 1:
+
+- 36 - 1 = 35
+- 35 - 3 = 32
+- 32 - 5 = 27
+- 27 - 7 = 20
+- 20 - 9 = 11
+- 11 - 11 = **0**
+
+We hit 0 at the 6th step, so 36 = 6² (a perfect square).
+
+Now try 30:
+
+- 30 - 1 = 29
+- 29 - 3 = 26
+- 26 - 5 = 21
+- 21 - 7 = 14
+- 14 - 9 = 5
+- 5 - 11 = -6
+
+We went below zero without reaching it, so 30 is **not** a perfect square.
+
+### Computing the next square from a known one
+
+Suppose you know that 27² = 729. To get 28²:
+- The 28th odd number is 2(28) - 1 = 55
+- So 28² = 729 + 55 = **784**
+
+In general, the **nth odd number** is **2n - 1**.
+
+---
+
+## Perfect Squares and Triangular Numbers
+
+**Triangular numbers** are: 1, 3, 6, 10, 15, 21, ...
+
+A lovely connection links triangular numbers to square numbers:
+
+- 1 + 3 = **4** = 2²
+- 3 + 6 = **9** = 3²
+- 6 + 10 = **16** = 4²
+- 10 + 15 = **25** = 5²
+
+> **Key idea:** Adding two consecutive triangular numbers always produces a perfect square.
+
+---
+
+## Square Roots
+
+If a square garden has area 81 sq. metres, what is its side length? Since 9 x 9 = 81, the side is **9 m**. We call 9 the **square root** of 81.
+
+In general, if y = x², then x is the square root of y.
+
+The square root symbol is **√**:
+- √49 = ±7 (since both 7² = 49 and (-7)² = 49)
+- √144 = ±12
+- √16 = ±4
+
+> **Key idea:** Every perfect square has two integer square roots — one positive and one negative. Typically, we work with the positive square root.
+
+### Techniques for Finding Square Roots
+
+**Technique 1: Listing squares**
+
+To check if 625 is a perfect square, list squares near it:
+- 23² = 529, 24² = 576, 25² = 625
+
+So √625 = 25. This approach works but slows down for large numbers.
+
+**Technique 2: Repeated subtraction of odd numbers**
+
+Subtract 1, 3, 5, 7, ... from the number until you hit 0. Reaching 0 at step n means the square root is n.
+
+For instance, √49: subtract 1, 3, 5, 7, 9, 11, 13 from 49 to reach 0 at the 7th step. So √49 = 7.
+
+**Technique 3: Prime factorisation**
+
+This is the most reliable method.
+
+**Example:** Is 576 a perfect square?
+- 576 = 2 x 2 x 2 x 2 x 2 x 2 x 3 x 3
+- Pair them up: (2 x 2) x (2 x 2) x (2 x 2) x (3 x 3)
+- Every factor pairs up, so 576 is a perfect square.
+- √576 = 2 x 2 x 2 x 3 = **24**
+
+**Example:** Is 180 a perfect square?
+- 180 = 2 x 2 x 3 x 3 x 5
+- The factor 5 has no pair.
+- So 180 is **not** a perfect square.
+
+> **Key idea:** A number is a perfect square when every prime factor in its factorisation appears an **even** number of times. To get the square root, take one factor from each pair.
+
+### Estimating Square Roots
+
+**Example:** Find √2025.
+
+1. 2025 lies between 1600 (40²) and 2500 (50²), so 40 < √2025 < 50.
+2. The last digit is 5, so the square root must end in 5. Possible answer: 45.
+3. Verify: 45² = 2025. Correct!
+
+**Example:** Estimate √200.
+- 14² = 196 and 15² = 225
+- So 14 < √200 < 15
+- Since 200 is very close to 196, √200 is approximately 14 (slightly more).
+
+---
+
+## 1.2 Cubic Numbers
+
+![Unit cubes arranged to form cubes of side 1, 2, and 3 showing 1, 8, and 27 unit cubes respectively](cube-numbers-unit-cubes.png)
+
+A **cube** is a solid shape where every edge has the same length and every corner forms a right angle.
+
+- A cube with edge 2 cm contains **2 x 2 x 2 = 8** unit cubes.
+- A cube with edge 3 cm contains **3 x 3 x 3 = 27** unit cubes.
+- A cube with edge 4 cm contains **4 x 4 x 4 = 64** unit cubes.
+
+We write n x n x n as **n³**, read as "n cubed."
+
+The numbers 1, 8, 27, 64, 125, ... are called **perfect cubes**.
+
+### Table of Cubes
+
+| n | n³ | n | n³ |
+|---|---|---|---|
+| 1 | 1 | 11 | 1331 |
+| 2 | 8 | 12 | 1728 |
+| 3 | 27 | 13 | 2197 |
+| 4 | 64 | 14 | 2744 |
+| 5 | 125 | 15 | 3375 |
+| 6 | 216 | 16 | 4096 |
+| 7 | 343 | 17 | 4913 |
+| 8 | 512 | 18 | 5832 |
+| 9 | 729 | 19 | 6859 |
+| 10 | 1000 | 20 | 8000 |
+
+### Properties of Cubes
+
+- Unlike squares, cubes can end in **any digit** from 0 to 9.
+- If a number has trailing zeros, its cube has exactly **three times** as many trailing zeros (e.g., 10³ = 1000 has three zeros, 100³ = 1000000 has six zeros). A cube **cannot** have just two trailing zeros.
+- Fractions and decimals can also be cubed:
+  - (3/5)³ = (3/5) x (3/5) x (3/5) = 27/125
+  - (−4)³ = −4 x −4 x −4 = −64
+
+> **Key idea:** Cubing a negative number always gives a negative result, unlike squaring which always gives a positive result.
+
+---
+
+## The Hardy-Ramanujan Number: A Legendary Tale
+
+The brilliant Indian mathematician **Srinivasa Ramanujan** was once visited by his colleague G. H. Hardy at Cambridge. Hardy mentioned that his taxi had the number **1729**, calling it "a rather uninteresting number."
+
+Ramanujan responded instantly: "Not at all! It is a remarkable number. It is the smallest number expressible as the sum of two cubes in two distinct ways."
+
+- 1729 = 1³ + 12³ = 1 + 1728
+- 1729 = 9³ + 10³ = 729 + 1000
+
+This story made 1729 famous as the **Hardy-Ramanujan Number**. Numbers with this property of being expressible as two different sums of two cubes are known as **taxicab numbers**.
+
+The next two taxicab numbers are **4104** and **13832**.
+
+---
+
+## Perfect Cubes and Consecutive Odd Numbers
+
+Like squares, cubes also share a deep connection with odd numbers:
+
+- 1 = **1** = 1³
+- 3 + 5 = **8** = 2³
+- 7 + 9 + 11 = **27** = 3³
+- 13 + 15 + 17 + 19 = **64** = 4³
+- 21 + 23 + 25 + 27 + 29 = **125** = 5³
+- 31 + 33 + 35 + 37 + 39 + 41 = **216** = 6³
+
+Every perfect cube can be expressed as a sum of consecutive odd numbers!
+
+---
+
+## Cube Roots
+
+If y = x³, then x is the **cube root** of y, written as **∛y**.
+
+- ∛8 = 2 (because 2³ = 8)
+- ∛27 = 3 (because 3³ = 27)
+- ∛1000 = 10 (because 10³ = 1000)
+
+### Finding Cube Roots Using Prime Factorisation
+
+**Example:** Is 2744 a perfect cube?
+- 2744 = 2 x 2 x 2 x 7 x 7 x 7
+- Group into triplets: (2 x 2 x 2) x (7 x 7 x 7)
+- All factors form complete triplets, so 2744 is a perfect cube.
+- ∛2744 = 2 x 7 = **14**
+
+**Example:** Is 360 a perfect cube?
+- 360 = 2 x 2 x 2 x 3 x 3 x 5
+- The factors 3 (appears twice) and 5 (appears once) do not form complete triplets.
+- So 360 is **not** a perfect cube.
+
+> **Key idea:** A number is a perfect cube when every prime factor in its factorisation appears exactly **three times** (or a multiple of three times). To find the cube root, take one factor from each triplet.
+
+### Successive Differences of Cubes
+
+For perfect squares, the second level of successive differences gives a constant value (2). For perfect cubes, the **third level** of successive differences produces a constant:
+
+| Perfect cubes | 1 | 8 | 27 | 64 | 125 | 216 |
+|---|---|---|---|---|---|---|
+| Level 1 | 7 | 19 | 37 | 61 | 91 | |
+| Level 2 | 12 | 18 | 24 | 30 | | |
+| Level 3 | 6 | 6 | 6 | | | |
+
+At the third level, every difference equals **6**.
+
+---
+
+## 1.3 Historical Roots
+
+- The earliest recorded tables of squares and cubes were inscribed on **Babylonian** clay tablets around **1700 BCE**.
+- In ancient **Sanskrit** mathematical texts, the word **varga** denoted both the square shape and the square of a number. The word **ghana** meant cube. The fourth power was called **varga-varga**.
+- **Aryabhata** (499 CE) described varga as "a square figure with four equal sides and the number representing its area."
+- The English word **"root"** in mathematics (square root, cube root) traces back to the Sanskrit word **mula**, meaning the root of a plant, a foundation, or an origin. **Varga-mula** meant square root and **ghana-mula** meant cube root.
+- This Sanskrit terminology was later translated into **Arabic** (jidhr) and **Latin** (radix), both meaning "root of a plant."
+
+---
+
+## Summary
+
+- A **square number** is obtained by multiplying a number by itself: n² = n x n.
+- Perfect squares can only end in **0, 1, 4, 5, 6, or 9** and have an even number of trailing zeros.
+- The **square root** (√) reverses squaring. Every perfect square has two integer square roots (positive and negative).
+- A **cube number** is obtained by multiplying a number by itself three times: n³ = n x n x n.
+- A number is a **perfect square** when every prime factor appears an even number of times.
+- A number is a **perfect cube** when every prime factor appears a multiple of three times.
+- The **cube root** (∛) reverses cubing.
+- The sum of the first n odd numbers equals n².
+- Perfect cubes can also be expressed as sums of consecutive odd numbers.
