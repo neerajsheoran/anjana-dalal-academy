@@ -62,6 +62,32 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 3 Maths + Science — content-based rename pass 2026-07-25.
+  "class-3": {
+    "maths": {
+      "chapter-1-whats-in-a-name": "chapter-1-number-names-and-counting",
+      "chapter-2-toy-joy": "chapter-2-compare-and-order-numbers",
+      "chapter-3-double-century": "chapter-3-numbers-to-200",
+      "chapter-4-vacation-with-my-nani-maa": "chapter-4-add-subtract-2-digit",
+      "chapter-5-fun-with-shapes": "chapter-5-2d-shapes",
+      "chapter-6-house-of-hundreds-i": "chapter-6-numbers-to-999",
+      "chapter-7-raksha-bandhan": "chapter-7-introduction-to-multiplication",
+      "chapter-8-fair-share": "chapter-8-introduction-to-division",
+      "chapter-9-house-of-hundreds-ii": "chapter-9-add-subtract-3-digit",
+      "chapter-10-fun-at-class-party": "chapter-10-measurement-length",
+      "chapter-11-filling-and-lifting": "chapter-11-measurement-capacity-and-weight",
+      "chapter-12-give-and-take": "chapter-12-money-in-daily-life",
+      "chapter-13-time-goes-on": "chapter-13-time-clocks-and-calendar",
+      "chapter-14-the-surajkund-fair": "chapter-14-symmetry-patterns-and-maps",
+    },
+    "science": {
+      "chapter-2-going-to-the-mela": "chapter-2-community-and-cooperation",
+      "chapter-6-living-in-harmony": "chapter-6-kindness-to-living-things",
+      "chapter-10-this-world-of-things": "chapter-10-materials-around-us",
+      "chapter-11-making-things": "chapter-11-how-things-are-made",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest
