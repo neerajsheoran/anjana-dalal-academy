@@ -140,6 +140,37 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 6 Maths + Science + Social Science — content-based rename pass 2026-07-25.
+  "class-6": {
+    "maths": {
+      "chapter-3-number-play": "chapter-3-number-tricks-and-divisibility",
+      "chapter-5-prime-time": "chapter-5-primes-factors-and-multiples",
+      "chapter-8-playing-with-constructions": "chapter-8-geometric-constructions",
+      "chapter-10-the-other-side-of-zero": "chapter-10-integers-and-negative-numbers",
+    },
+    "science": {
+      "chapter-1-the-wonderful-world-of-science": "chapter-1-what-is-science",
+      "chapter-3-mindful-eating-a-path-to-a-healthy-body": "chapter-3-nutrition-and-balanced-diet",
+      "chapter-8-a-journey-through-states-of-water": "chapter-8-states-of-water",
+      "chapter-10-living-creatures-exploring-their-characteristics": "chapter-10-characteristics-of-living-things",
+      "chapter-11-natures-treasures": "chapter-11-natural-resources",
+      "chapter-12-beyond-earth": "chapter-12-solar-system-and-universe",
+    },
+    "social-science": {
+      "chapter-1-finding-our-place-on-earth": "chapter-1-maps-latitudes-and-longitudes",
+      "chapter-3-landforms-mountains-to-plains": "chapter-3-landforms-of-earth",
+      "chapter-4-reading-the-past": "chapter-4-studying-history-sources-and-timelines",
+      "chapter-5-the-land-we-call-india": "chapter-5-names-and-identity-of-india",
+      "chapter-6-where-it-all-began": "chapter-6-indus-valley-civilisation",
+      "chapter-7-roots-of-our-culture": "chapter-7-vedic-traditions-and-early-religions",
+      "chapter-8-one-country-many-cultures": "chapter-8-diversity-and-unity-of-india",
+      "chapter-9-living-together": "chapter-9-family-and-community",
+      "chapter-10-how-we-govern-ourselves": "chapter-10-government-and-democracy",
+      "chapter-11-village-government": "chapter-11-panchayati-raj",
+      "chapter-13-why-work-matters": "chapter-13-kinds-of-work",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest

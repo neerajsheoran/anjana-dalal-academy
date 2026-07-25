@@ -1,0 +1,200 @@
+---
+title: "Chapter 3 — Number Tricks and Divisibility"
+chapterKey: "98ed2fd3-974e-44a9-b2bb-47c9b4c46096"
+description: "Play with numbers — divisibility, Kaprekar's constant, Collatz conjecture, and more surprising number tricks."
+order: 3
+---
+## Digits, Numbers, and Hidden Secrets
+
+Every number is built from just ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. With these ten building blocks, we create every number imaginable — from the price of a samosa to the distance between stars. But numbers do far more than count and measure. They carry hidden tricks, astonishing patterns, and riddles that have captivated thinkers for centuries.
+
+This chapter is an invitation to **play**. We will flip numbers around, hunt for secret constants, test divisibility without dividing, and sharpen our estimation instincts — all while discovering that mathematics is full of delightful surprises.
+
+---
+
+## The Secret Life of Everyday Numbers
+
+Numbers surround us in daily Indian life, and each one serves a distinct purpose:
+
+- **Pin codes** — 110001 tells a post office exactly where in Delhi a letter should go. The first digit (1) represents the postal region.
+- **Auto rickshaw permits** — the number painted on the side (say, MH-12-AB-4037) identifies one specific vehicle in Pune.
+- **Train numbers** — Rajdhani Express 12951 runs from Mumbai to New Delhi. Change even one digit, and you board a completely different train.
+- **Phone numbers** — your ten-digit mobile number out of over a billion possibilities.
+- **Jersey numbers** — when Virat Kohli wears 18, the number names him on the field but does not measure or count anything.
+
+These examples show three roles a number can play:
+
+| Role | What it does | Example |
+|------|-------------|---------|
+| **Naming** (nominal) | Labels or identifies | Pin code 400001, bus route 56 |
+| **Counting** (cardinal) | Tells "how many" | 47 students in a class |
+| **Measuring** (ordinal / metric) | Tells position or size | 3rd floor, 42 kg, 28 °C |
+
+> **Think:** Your Aadhaar number is 12 digits long. Is it naming, counting, or measuring?
+
+---
+
+## Flipping and Reversing — Palindromic Numbers
+
+Write the number 1,265. Now reverse its digits — you get 5,621. These two are usually different. But some special numbers read the same both ways. We call them **palindromic numbers** (or simply **palindromes**).
+
+**Everyday palindromes:**
+- The odometer of an auto rickshaw might read **12921** km — a palindrome!
+- House number **252** on MG Road.
+- The year **2002** was palindromic. The next palindromic year is **2112**.
+
+**Generating palindromes — the Reverse-and-Add method:**
+Pick a number, reverse it, and add the two. Repeat if the sum is not yet a palindrome.
+
+*Starting with 56:*
+> 56 + 65 = **121** — palindrome in one step!
+
+*Starting with 87:*
+> 87 + 78 = **165**
+> 165 + 561 = **726**
+> 726 + 627 = **1,353**
+> 1,353 + 3,531 = **4,884** — palindrome in four steps!
+
+Most numbers reach a palindrome within a few steps, though some stubborn ones (like 196) have never been shown to produce one — even after millions of steps on a computer!
+
+**The repunit palindrome pattern:**
+```
+1 × 1         =         1
+11 × 11        =       121
+111 × 111       =     12321
+1111 × 1111      =   1234321
+11111 × 11111     = 123454321
+```
+
+Each product is a palindrome that counts up to a peak and then counts back down. The pattern holds until nine 1s multiplied together.
+
+---
+
+## Surprising Number Tricks
+
+### The 1089 Trick
+
+Follow these steps with any 3-digit number whose first and last digits differ by at least 2:
+
+1. Pick a 3-digit number, say **741**.
+2. Reverse its digits: **147**.
+3. Subtract the smaller from the larger: 741 − 147 = **594**.
+4. Now reverse this result: **495**.
+5. Add the result and its reverse: 594 + 495 = **1,089**.
+
+Try another — start with **832**:
+> 832 − 238 = 594 → 594 + 495 = **1,089** again!
+
+No matter which valid 3-digit number you choose, the answer is always **1,089**. This is sometimes called the "1089 trick."
+
+> **Why does it work?** If the original number is written as 100a + 10b + c (where a > c), the subtraction always yields 99(a − c). Since a − c is between 2 and 9, the result is always one of these: 198, 297, 396, 495, 594, 693, 792, or 891. Each of these, when added to its own reverse, gives 1,089.
+
+### Kaprekar's Constant — 6174
+
+The Indian mathematician **D. R. Kaprekar** (1905–1986), a school teacher from Devlali in Maharashtra, discovered something astonishing about 4-digit numbers.
+
+**The Kaprekar process:**
+1. Choose any 4-digit number that has at least two different digits. For example: **4,713**.
+2. Arrange its digits from largest to smallest: **7,431**.
+3. Arrange its digits from smallest to largest: **1,347**.
+4. Subtract: 7,431 − 1,347 = **6,084**.
+5. Repeat the process with the result.
+
+| Step | Descending | Ascending | Difference |
+|------|-----------|-----------|------------|
+| 1 | 7431 | 1347 | 6084 |
+| 2 | 8640 | 0468 | 8172 |
+| 3 | 8721 | 1278 | 7443 |
+| 4 | 7443 | 3447 | 3996 |
+| 5 | 9963 | 3699 | 6264 |
+| 6 | 6642 | 2466 | 4176 |
+| 7 | 7641 | 1467 | **6174** |
+
+Once you reach 6174, the process loops: 7641 − 1467 = 6174 forever!
+
+**Every valid 4-digit number reaches 6174 — usually in 7 or fewer steps.** This remarkable number is called **Kaprekar's Constant**. Kaprekar was not at a grand research university; he was a humble school teacher driven by pure curiosity. His discovery reminds us that great mathematics can come from anyone, anywhere.
+
+---
+
+## Divisibility Rules — Quick Tests Without Dividing
+
+Imagine you are distributing 738 sweets equally among 3 children at a birthday party. Do you need to perform long division to know if it works out evenly? Not at all — divisibility rules give you instant answers.
+
+| Divisor | Rule | Example |
+|---------|------|---------|
+| **2** | Last digit is even (0, 2, 4, 6, 8) | 516: last digit 6 (even) — divisible |
+| **3** | Sum of all digits is divisible by 3 | 738: 7+3+8 = 18, 18 ÷ 3 = 6 — divisible |
+| **4** | Last two digits form a number divisible by 4 | 2,316: last two digits 16, 16 ÷ 4 = 4 — divisible |
+| **5** | Last digit is 0 or 5 | 1,085: last digit 5 — divisible |
+| **6** | Divisible by both 2 and 3 | 738: even? 8 is even, yes. Digit sum 18, divisible by 3, yes. Both pass — divisible by 6 |
+| **8** | Last three digits form a number divisible by 8 | 5,128: last three digits 128, 128 ÷ 8 = 16 — divisible |
+| **9** | Sum of all digits is divisible by 9 | 738: 7+3+8 = 18, 18 ÷ 9 = 2 — divisible |
+| **10** | Last digit is 0 | 4,370: last digit 0 — divisible |
+| **11** | Alternating sum of digits (subtract and add from right) is 0 or divisible by 11 | 9,163: (3 − 6 + 1 − 9) = −11, divisible by 11 — divisible |
+
+### Worked Examples
+
+**Is 5,346 divisible by 4?**
+> Look at the last two digits: 46. Is 46 divisible by 4? 46 ÷ 4 = 11.5. **No**, so 5,346 is not divisible by 4.
+
+**Is 2,178 divisible by 11?**
+> Digits from right: 8, 7, 1, 2. Alternating sum: 8 − 7 + 1 − 2 = 0. Since 0 is divisible by 11, **yes**, 2,178 is divisible by 11. (Check: 2,178 ÷ 11 = 198.)
+
+**Is 4,230 divisible by 6?**
+> Test for 2: last digit 0 (even) — yes. Test for 3: 4+2+3+0 = 9, and 9 ÷ 3 = 3 — yes. Passes both — **yes**, 4,230 is divisible by 6.
+
+---
+
+## Estimation and Rounding — The Art of Sensible Guessing
+
+Not every situation demands an exact answer. When a chai stall owner quickly totals a customer's order of 3 teas at 15 rupees each and 2 biscuit packets at 12 rupees each, a mental estimate is faster and perfectly adequate.
+
+### Rounding Rules
+
+To **round** a number to the nearest ten, hundred, or thousand:
+- Look at the digit immediately to the right of the rounding place.
+- If it is **5 or more**, round up.
+- If it is **less than 5**, round down.
+
+| Number | Rounded to nearest 10 | Rounded to nearest 100 | Rounded to nearest 1,000 |
+|--------|----------------------|------------------------|--------------------------|
+| 3,847 | 3,850 | 3,800 | 4,000 |
+| 6,251 | 6,250 | 6,300 | 6,000 |
+| 9,465 | 9,470 | 9,500 | 9,000 |
+
+### Estimation Strategies
+
+**Strategy 1 — Rounding both numbers:**
+Estimate 2,876 + 4,138.
+> 2,876 ≈ 3,000 and 4,138 ≈ 4,000. Estimate: **7,000**. (Actual: 7,014 — only 14 off!)
+
+**Strategy 2 — Front-end estimation (use the leading digits only):**
+Estimate 6,439 × 3.
+> Use 6,000 × 3 = **18,000**. (Actual: 19,317. The estimate is in the right ballpark for a quick check.)
+
+**Strategy 3 — Compatible numbers (pick nearby numbers that are easy to work with):**
+Estimate 497 × 8.
+> Use 500 × 8 = **4,000**. (Actual: 3,976 — very close.)
+
+### When Estimation Matters in Real Life
+
+- A vegetable vendor in a mandi needs to estimate whether 23 crates of tomatoes at roughly 480 rupees each will exceed his 10,000-rupee budget.
+- A family booking train tickets for 5 members at 1,245 rupees each estimates the total: 1,245 ≈ 1,250, so 1,250 × 5 = 6,250 rupees approximately.
+- An architect estimates cement bags needed: a wall requires about 0.3 bags per square foot, and the wall is approximately 120 square feet, so roughly 36 bags.
+
+> **Key insight:** A good estimator knows **when** an exact answer matters (bank transactions, medical doses) and **when** an approximation is perfectly fine (grocery shopping, travel planning).
+
+---
+
+## Key Terms at a Glance
+
+| Term | Meaning |
+|------|---------|
+| **Palindromic number** | A number that reads identically forwards and backwards (e.g., 14641) |
+| **1089 trick** | Any qualifying 3-digit number, through reversal and subtraction then addition, yields 1,089 |
+| **Kaprekar's Constant** | 6174 — the fixed point of the Kaprekar process for 4-digit numbers |
+| **Divisibility rule** | A shortcut to determine whether one number divides another without performing division |
+| **Digit sum** | The result of repeatedly adding a number's digits until a single digit remains |
+| **Estimation** | Finding a value close enough to the exact answer for practical purposes |
+| **Rounding** | Replacing a number with a nearby "rounder" number (ending in 0, 00, etc.) |
+| **Nominal number** | A number used as a label or name, not for counting or measuring |
