@@ -1,0 +1,228 @@
+---
+title: "Chapter 11 — HCF, LCM, and Prime Factorisation"
+chapterKey: "ef29d015-821f-4dcc-98ad-f51906580468"
+description: "Common factors, common multiples, prime factorisation, HCF and LCM."
+order: 11
+---
+What do two different numbers have in common? Sometimes they share factors, sometimes they share multiples. In this chapter, we discover how to find the **Highest Common Factor (HCF)** and the **Lowest Common Multiple (LCM)** -- two essential tools that help us uncover the hidden connections between numbers. We use **prime factorisation** as our go-to technique for computing these efficiently.
+
+## Sharing Equally: The HCF
+
+### A Gift-Packing Puzzle
+
+Meera has 36 chocolates and 48 toffees. She wants to make gift packs for a birthday party, where every pack has the **same number** of chocolates and the **same number** of toffees, with nothing left over. She also wants to make as many packs as possible.
+
+For this to work:
+- The number of packs must be a **factor of 36** (to divide the chocolates evenly)
+- The number of packs must also be a **factor of 48** (to divide the toffees evenly)
+
+| Factors of 36 | 1, 2, 3, 4, 6, 9, 12, 18, 36 |
+|---|---|
+| Factors of 48 | 1, 2, 3, 4, 6, 8, 12, 16, 24, 48 |
+| **Common factors** | **1, 2, 3, 4, 6, 12** |
+
+The largest common factor is **12**. So Meera can make **12 packs**, each containing 3 chocolates and 4 toffees.
+
+### Defining HCF
+
+The **Highest Common Factor (HCF)** of two or more numbers is the **greatest** number that divides all of them without leaving a remainder. It is also called the **Greatest Common Divisor (GCD)**.
+
+**Example:** A gardener has 60 rose plants and 84 marigold plants. He wants to plant them in rows, with each row having only one type of flower, and every row having the same number of plants. What is the greatest number of plants he can put in each row?
+
+| Factors of 60 | 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60 |
+|---|---|
+| Factors of 84 | 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84 |
+| **Common factors** | **1, 2, 3, 4, 6, 12** |
+
+HCF = **12**. So each row should have 12 plants (giving 5 rows of roses and 7 rows of marigolds).
+
+## Prime Numbers and Prime Factorisation
+
+### What Makes a Number Prime?
+
+A **prime number** is a number greater than 1 whose only factors are 1 and itself. It cannot be broken down further.
+
+First few primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, ...
+
+### Breaking Numbers into Primes
+
+Every number can be expressed as a **product of prime numbers**. This breakdown is called its **prime factorisation**, and remarkably, it is unique for every number (regardless of the order you write the factors).
+
+**Example:** 72 = 2 x 2 x 2 x 3 x 3
+
+### The Step-by-Step Division Method
+
+A neat way to find the prime factorisation is to keep dividing by the smallest possible prime:
+
+```
+2 | 540
+2 | 270
+3 | 135
+3 |  45
+3 |  15
+5 |   5
+      1
+```
+
+So: 540 = 2 x 2 x 3 x 3 x 3 x 5
+
+At every stage, divide by the smallest prime that goes in evenly. Continue until you reach 1.
+
+### Discovering All Factors from Prime Factorisation
+
+Every factor of a number is formed by picking some (or none, or all) of its prime factors.
+
+**Example:** 180 = 2 x 2 x 3 x 3 x 5
+
+By selecting different combinations, we get all factors: 1, 2, 3, 4, 5, 6, 9, 10, 12, 15, 18, 20, 30, 36, 45, 60, 90, 180.
+
+## Finding HCF Through Prime Factorisation
+
+Instead of writing out every factor, we can jump straight to the HCF using prime factorisations.
+
+### The Technique
+
+1. Write the prime factorisation of each number
+2. Spot the **common prime factors**
+3. For each common prime, pick the **smaller** count (the minimum number of times it appears)
+4. Multiply these together
+
+**Example:** Find the HCF of 54 and 90.
+
+54 = 2 x 3 x 3 x 3
+90 = 2 x 3 x 3 x 5
+
+Common primes: 2 (minimum 1 time) and 3 (minimum 2 times)
+
+**HCF = 2 x 3 x 3 = 18**
+
+**Example:** Find the HCF of 126 and 72.
+
+126 = 2 x 3 x 3 x 7
+72 = 2 x 2 x 2 x 3 x 3
+
+Common primes: 2 (minimum 1 time) and 3 (minimum 2 times)
+
+**HCF = 2 x 3 x 3 = 18**
+
+**Example:** HCF of 64 and 125.
+
+64 = 2 x 2 x 2 x 2 x 2 x 2
+125 = 5 x 5 x 5
+
+No common primes at all! **HCF = 1** (such numbers are called **co-prime**).
+
+## The Smallest Meeting Point: LCM
+
+### A Bell-Ringing Puzzle
+
+At a temple in Varanasi, one bell rings every 9 minutes and another rings every 12 minutes. Both bells ring together at 6:00 AM. When will they ring together again?
+
+- Bell 1 rings at minutes: 9, 18, 27, 36, **36**, 45, 54, 63, **72**, ...
+- Bell 2 rings at minutes: 12, 24, **36**, 48, 60, **72**, 84, ...
+- Common times: **36**, 72, 108, ...
+
+They will ring together after **36 minutes**, at 6:36 AM.
+
+### Defining LCM
+
+The **Lowest Common Multiple (LCM)** of two or more numbers is the **smallest** positive number that is a multiple of all of them.
+
+**Example:** Priya goes to the library every 8 days. Her friend Kavita goes every 6 days. They meet at the library today. After how many days will they next visit the library on the same day?
+
+- Priya's visits (in days): 8, 16, **24**, 32, 40, **48**, ...
+- Kavita's visits (in days): 6, 12, 18, **24**, 30, 36, 42, **48**, ...
+
+LCM of 8 and 6 = **24 days**
+
+## Finding LCM Through Prime Factorisation
+
+### The Technique
+
+1. Write the prime factorisation of each number
+2. List **every** prime factor that appears in either number
+3. For each prime, pick the **larger** count (the maximum number of times it appears)
+4. Multiply these together
+
+**Example:** Find the LCM of 18 and 24.
+
+18 = 2 x 3 x 3
+24 = 2 x 2 x 2 x 3
+
+All primes: 2 (max 3 times) and 3 (max 2 times)
+
+**LCM = 2 x 2 x 2 x 3 x 3 = 72**
+
+**Example:** Find the LCM of 75 and 120.
+
+75 = 3 x 5 x 5
+120 = 2 x 2 x 2 x 3 x 5
+
+All primes: 2 (max 3), 3 (max 1), 5 (max 2)
+
+**LCM = 2 x 2 x 2 x 3 x 5 x 5 = 600**
+
+> **Quick Comparison of the Two Methods:**
+> - For **HCF**: pick common primes with **minimum** counts
+> - For **LCM**: pick all primes with **maximum** counts
+
+## Patterns Worth Knowing
+
+### HCF Patterns
+
+| Number Pair Type | HCF |
+|-----------------|-----|
+| A number and its multiple (e.g., n and 4n) | The smaller number (n) |
+| Two consecutive numbers (e.g., 20, 21) | Always **1** |
+| Two consecutive even numbers (e.g., 14, 16) | Always **2** |
+| Two co-prime numbers | Always **1** |
+
+### LCM Patterns
+
+| Number Pair Type | LCM |
+|-----------------|-----|
+| A number and its multiple (e.g., n and 4n) | The larger number (4n) |
+| Two consecutive numbers (e.g., 20, 21) | Their product (20 x 21 = 420) |
+| Two co-prime numbers | Their product |
+
+### The Golden Link Between HCF and LCM
+
+For any two positive numbers **a** and **b**:
+
+> **HCF(a, b) x LCM(a, b) = a x b**
+
+**Example:** For 15 and 20:
+- HCF = 5, LCM = 60
+- HCF x LCM = 5 x 60 = 300
+- a x b = 15 x 20 = 300
+
+This relationship gives us a handy shortcut: if you already know the HCF, you can calculate the LCM without doing a full prime factorisation again:
+
+**LCM = (a x b) / HCF**
+
+### Doubling Both Numbers
+
+If you double both numbers, both the HCF and the LCM also double.
+
+**Example:** HCF(36, 90) = 18. Then HCF(72, 180) = 36.
+
+## Where Do We Use These?
+
+- **Packing gifts or supplies** into equal groups (HCF)
+- **Planning events** that repeat at different intervals (LCM)
+- **Cutting fabric or rope** into equal-length pieces (HCF)
+- **Synchronising schedules** -- when will two recurring events happen at the same time? (LCM)
+
+## Key Words to Remember
+
+| Word | Meaning |
+|------|---------|
+| **Factor** | A number that divides another number exactly |
+| **Multiple** | The result of multiplying a number by a positive integer |
+| **Prime number** | A number greater than 1 with no factors other than 1 and itself |
+| **Prime factorisation** | Writing a number as a product of its prime factors |
+| **HCF (Highest Common Factor)** | The largest number that divides two or more numbers exactly; also called GCD |
+| **LCM (Lowest Common Multiple)** | The smallest number that is a multiple of two or more numbers |
+| **Co-prime** | Two numbers whose only common factor is 1 (HCF = 1) |
+| **Conjecture** | A mathematical statement believed to be true but not yet proved |
+| **Counterexample** | An example that disproves a conjecture |

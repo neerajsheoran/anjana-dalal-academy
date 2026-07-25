@@ -171,6 +171,46 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 7 Maths + Science + Social Science — content-based rename pass 2026-07-25.
+  "class-7": {
+    "maths": {
+      "chapter-3-a-peek-beyond-the-point": "chapter-3-introduction-to-decimals",
+      "chapter-4-expressions-using-letter-numbers": "chapter-4-introduction-to-algebra",
+      "chapter-6-number-play": "chapter-6-number-puzzles-and-sequences",
+      "chapter-7-a-tale-of-three-intersecting-lines": "chapter-7-triangles-and-their-properties",
+      "chapter-8-working-with-fractions": "chapter-8-multiplying-and-dividing-fractions",
+      "chapter-9-geometric-twins": "chapter-9-congruence-of-shapes",
+      "chapter-11-finding-common-ground": "chapter-11-hcf-lcm-and-factorisation",
+      "chapter-13-connecting-the-dots": "chapter-13-mean-median-mode",
+      "chapter-15-finding-the-unknown": "chapter-15-simple-equations",
+    },
+    "science": {
+      "chapter-1-the-ever-evolving-world-of-science": "chapter-1-introduction-to-science",
+      "chapter-2-exploring-substances-acidic-basic-and-neutral": "chapter-2-acids-bases-and-neutrals",
+      "chapter-3-electricity-circuits-and-their-components": "chapter-3-electric-circuits",
+      "chapter-4-the-world-of-metals-and-non-metals": "chapter-4-metals-and-non-metals",
+      "chapter-5-changes-around-us-physical-and-chemical": "chapter-5-physical-and-chemical-changes",
+      "chapter-6-adolescence-a-stage-of-growth-and-change": "chapter-6-adolescence-and-puberty",
+      "chapter-7-heat-transfer-in-nature": "chapter-7-heat-transfer",
+    },
+    "social-science": {
+      "chapter-1-many-lands-within-india": "chapter-1-geographical-diversity-of-india",
+      "chapter-2-what-is-weather": "chapter-2-weather-and-its-elements",
+      "chapter-4-when-cities-first-rose": "chapter-4-second-urbanisation-of-india",
+      "chapter-6-a-time-of-renewal": "chapter-6-post-mauryan-india",
+      "chapter-8-sacred-land": "chapter-8-sacred-geography-of-india",
+      "chapter-9-different-ways-to-govern": "chapter-9-forms-of-government",
+      "chapter-10-meeting-our-constitution": "chapter-10-the-indian-constitution",
+      "chapter-11-how-money-came-to-be": "chapter-11-history-of-money-and-coinage",
+      "chapter-12-the-market": "chapter-12-markets-and-the-economy",
+      "chapter-13-how-india-farms": "chapter-13-agriculture-in-india",
+      "chapter-16-centuries-of-change": "chapter-16-medieval-india-invasions-and-change",
+      "chapter-17-india-home-to-many": "chapter-17-india-a-land-of-refuge",
+      "chapter-18-the-government-and-you": "chapter-18-how-the-indian-government-works",
+      "chapter-20-how-banks-work": "chapter-20-banking-and-the-rbi",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest
