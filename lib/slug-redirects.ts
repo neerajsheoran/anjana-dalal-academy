@@ -26,6 +26,26 @@ export interface SlugRedirectMap {
 }
 
 export const SLUG_REDIRECTS: SlugRedirectMap = {
+  // Class 1 Maths — content-based rename pass 2026-07-25.
+  // Story-based AI-rephrased slugs replaced with descriptive topic
+  // slugs. Voice: warm + topic for Class 1 age band.
+  "class-1": {
+    "maths": {
+      "chapter-1-finding-the-furry-cat": "chapter-1-position-play",
+      "chapter-2-what-is-long-what-is-round": "chapter-2-shape-fun",
+      "chapter-3-mango-treat": "chapter-3-counting-to-9",
+      "chapter-5-how-many": "chapter-5-counting-to-20",
+      "chapter-6-vegetable-farm": "chapter-6-first-addition-and-subtraction",
+      "chapter-7-linas-family": "chapter-7-numbers-in-daily-life",
+      "chapter-8-fun-with-numbers": "chapter-8-place-value-beyond-10",
+      "chapter-9-utsav": "chapter-9-festival-shapes-and-patterns",
+      "chapter-10-how-do-i-spend-my-day": "chapter-10-parts-of-the-day",
+      "chapter-11-how-many-times": "chapter-11-counting-in-groups",
+      "chapter-12-how-much-can-we-spend": "chapter-12-money-coins-and-notes",
+      "chapter-13-so-many-toys": "chapter-13-sorting-and-counting-groups",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest
