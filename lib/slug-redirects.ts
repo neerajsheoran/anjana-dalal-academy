@@ -111,6 +111,35 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 5 Maths + Science — content-based rename pass 2026-07-25.
+  "class-5": {
+    "maths": {
+      "chapter-1-we-the-travellers-i": "chapter-1-large-numbers-to-5-digits",
+      "chapter-3-angles-as-turns": "chapter-3-angles-and-rotations",
+      "chapter-4-we-the-travellers-ii": "chapter-4-large-numbers-to-lakhs",
+      "chapter-5-far-and-near": "chapter-5-length-and-distance",
+      "chapter-6-the-dairy-farm": "chapter-6-multiplication-division-larger-numbers",
+      "chapter-9-coconut-farm": "chapter-9-multi-step-arithmetic",
+      "chapter-10-symmetrical-designs": "chapter-10-symmetry-and-mirror-reflection",
+      "chapter-11-grandmothers-quilt": "chapter-11-area-and-perimeter",
+      "chapter-12-racing-seconds": "chapter-12-time-hours-minutes-seconds",
+      "chapter-13-animal-jumps": "chapter-13-multiples-and-skip-counting",
+      "chapter-15-data-through-pictures": "chapter-15-data-handling-graphs",
+    },
+    "science": {
+      "chapter-1-water-the-essence-of-life": "chapter-1-water-cycle-and-conservation",
+      "chapter-2-journey-of-a-river": "chapter-2-rivers-and-water-systems",
+      "chapter-3-the-mystery-of-food": "chapter-3-food-spoilage-and-preservation",
+      "chapter-4-our-school-a-happy-place": "chapter-4-green-schools-and-sustainability",
+      "chapter-5-our-vibrant-country": "chapter-5-india-diversity-and-culture",
+      "chapter-6-some-unique-places": "chapter-6-indias-ecological-regions",
+      "chapter-7-energy-how-things-work": "chapter-7-forms-and-uses-of-energy",
+      "chapter-8-clothes-how-things-are-made": "chapter-8-clothes-fabric-and-weaving",
+      "chapter-9-rhythms-of-nature": "chapter-9-natural-cycles-day-night-seasons",
+      "chapter-10-earth-our-shared-home": "chapter-10-earth-a-connected-planet",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest
