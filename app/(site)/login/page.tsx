@@ -2,6 +2,7 @@
 
 import { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { Eye, EyeOff } from 'lucide-react';
 import {
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -35,6 +36,7 @@ function LoginForm() {
   const [verificationSent, setVerificationSent] = useState(false);
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [confirmedAdult, setConfirmedAdult] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -259,14 +261,24 @@ function LoginForm() {
             required
             className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <input
-            type="password"
-            placeholder="Password (min 6 characters)"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-            className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Password (min 6 characters)"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              required
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 pr-11 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(v => !v)}
+              aria-label={showPassword ? 'Hide password' : 'Show password'}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 p-1"
+            >
+              {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+            </button>
+          </div>
 
           {mode === 'login' && (
             <div className="text-right -mt-2">
