@@ -2,7 +2,7 @@
 
 import { Suspense, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, Loader2 } from 'lucide-react';
 import {
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -37,6 +37,10 @@ function LoginForm() {
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [confirmedAdult, setConfirmedAdult] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  // Descriptive label for the full-page overlay so the user knows exactly
+  // what is in progress. Defaults to a neutral phrase; each handler sets a
+  // specific message before flipping `loading` to true.
+  const [loadingLabel, setLoadingLabel] = useState('Please wait…');
 
   async function createSession(idToken: string) {
     const res = await fetch('/api/auth/session', {
@@ -50,6 +54,7 @@ function LoginForm() {
   async function handleEmailAuth(e: React.FormEvent) {
     e.preventDefault();
     setError('');
+    setLoadingLabel(mode === 'signup' ? 'Creating your account…' : 'Signing you in…');
     setLoading(true);
     try {
       if (mode === 'signup') {
@@ -76,7 +81,10 @@ function LoginForm() {
       }
       const idToken = await credential.user.getIdToken();
       await createSession(idToken);
+      // Leave `loading` true through the redirect so the overlay stays up
+      // instead of flashing the enabled form for a split second.
       window.location.href = from;
+      return;
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Something went wrong';
       if (msg.includes('user-not-found') || msg.includes('wrong-password') || msg.includes('invalid-credential')) {
@@ -108,25 +116,26 @@ function LoginForm() {
       } else {
         setError('Something went wrong. Please try again.');
       }
-    } finally {
       setLoading(false);
     }
   }
 
   async function handleGoogle() {
     setError('');
+    setLoadingLabel('Signing in with Google…');
     setLoading(true);
     try {
       const credential = await signInWithPopup(auth, googleProvider);
       const idToken = await credential.user.getIdToken();
       await createSession(idToken);
+      // Overlay stays up during redirect (see handleEmailAuth comment).
       window.location.href = from;
+      return;
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : '';
       if (!msg.includes('popup-closed-by-user')) {
         setError('Google sign-in failed. Please try again.');
       }
-    } finally {
       setLoading(false);
     }
   }
@@ -136,6 +145,7 @@ function LoginForm() {
       setError('Enter your email address first.');
       return;
     }
+    setLoadingLabel('Sending reset link…');
     setLoading(true);
     setError('');
     setResetSent(false);
@@ -158,6 +168,7 @@ function LoginForm() {
 
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      {loading && <LoadingOverlay label={loadingLabel} />}
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
 
         {/* Logo */}
@@ -343,5 +354,27 @@ function LoginForm() {
         </>}
       </div>
     </main>
+  );
+}
+
+// Full-viewport processing overlay. Shown from the moment a submit or
+// Google-sign-in starts until either an error surfaces (loading flips
+// back to false) or the browser navigates to the destination. Kept
+// visible through the redirect so users don't see a flash of the
+// re-enabled form between auth success and page navigation.
+function LoadingOverlay({ label }: { label: string }) {
+  return (
+    <div
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+      className="fixed inset-0 z-50 bg-gray-900/40 backdrop-blur-sm flex items-center justify-center"
+    >
+      <div className="bg-white rounded-2xl shadow-xl px-8 py-7 flex flex-col items-center gap-3 max-w-xs">
+        <Loader2 className="w-10 h-10 text-blue-600 animate-spin" strokeWidth={2.25} />
+        <p className="text-sm font-semibold text-gray-800">{label}</p>
+        <p className="text-xs text-gray-500">This will only take a moment.</p>
+      </div>
+    </div>
   );
 }
