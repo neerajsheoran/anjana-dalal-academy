@@ -118,11 +118,12 @@ export default function TechnicalDecisions() {
           { option: "External image CDN", reason: "Cost, vendor dependency; Git-stored images get free Vercel CDN" },
         ]}
         details={[
-          "Keystatic saves images alongside MDX: content/[class]/[subject]/[chapter]/content/image.png",
+          "MDX files live in content/[class]/[subject]/[chapter]/index.mdx",
+          "Image files live in public/content-images/[class]/[subject]/[chapter]/image.png",
           "MDX references images as relative paths: ![alt](filename.png)",
-          "Custom MdxImage component resolves relative paths to API route",
-          "API route: /api/content-image/[classId]/[subject]/[chapter]/content/[filename]",
-          "Serves images with Cache-Control headers for browser + CDN caching",
+          "MdxImage component rewrites the ref to /content-images/[class]/[subject]/[chapter]/[filename]",
+          "Served directly by Vercel CDN — no API route, no serverless invocation",
+          "Automatic long-lived Cache-Control (immutable) via Next.js static asset handling",
           "Missing images are silently hidden (returns null) — allows placeholder references in content",
           "URL-encoded filenames (spaces → %20) are decoded for filesystem lookup",
         ]}

@@ -55,9 +55,10 @@ const SUBJECT_BANNER: Record<string, { bg: string; text: string; badge: string }
   },
 };
 
-// Build a chapter-aware <img> component. Image files live under the
-// chapter folder's `content/` subdirectory; this maps relative URLs to
-// the API route that serves them.
+// Build a chapter-aware <img> component. Image files live under
+// public/content-images/{class}/{subject}[/{book}]/{chapter}/ and are
+// served directly by Vercel's CDN — no API route, no serverless
+// invocation, no function bundle bloat.
 function makeMdxImage(
   classId: string,
   subject: string,
@@ -67,24 +68,31 @@ function makeMdxImage(
   return function MdxImage({ src, alt }: { src?: string; alt?: string }) {
     if (!src) return null;
     const decoded = decodeURIComponent(src);
-    if (!decoded.startsWith("/") && !decoded.startsWith("http")) {
-      const segments = book
-        ? [classId, subject, book, chapter, "content", decoded]
-        : [classId, subject, chapter, "content", decoded];
-      const filePath = path.join(process.cwd(), "content", ...segments);
-      if (!fs.existsSync(filePath)) return null;
+    // Absolute URLs and site-rooted paths pass through unchanged.
+    if (decoded.startsWith("/") || decoded.startsWith("http")) {
+      return (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={decoded}
+          alt={alt ?? ""}
+          className="block mx-auto my-4 max-w-full rounded-lg"
+        />
+      );
     }
-    const apiSegments = book
-      ? `${classId}/${subject}/${book}/${chapter}/content/${encodeURIComponent(decoded)}`
-      : `${classId}/${subject}/${chapter}/content/${encodeURIComponent(decoded)}`;
-    const resolved =
-      !decoded.startsWith("/") && !decoded.startsWith("http")
-        ? `/api/content-image/${apiSegments}`
-        : decoded;
+    // Verify the file exists on disk at build time so a broken ref
+    // renders nothing (matches old behaviour) instead of a broken tile.
+    const segments = book
+      ? [classId, subject, book, chapter, decoded]
+      : [classId, subject, chapter, decoded];
+    const filePath = path.join(process.cwd(), "public", "content-images", ...segments);
+    if (!fs.existsSync(filePath)) return null;
+    const staticPath = book
+      ? `/content-images/${classId}/${subject}/${book}/${chapter}/${encodeURIComponent(decoded)}`
+      : `/content-images/${classId}/${subject}/${chapter}/${encodeURIComponent(decoded)}`;
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={resolved}
+        src={staticPath}
         alt={alt ?? ""}
         className="block mx-auto my-4 max-w-full rounded-lg"
       />
