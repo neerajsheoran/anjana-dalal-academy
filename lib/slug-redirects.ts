@@ -88,6 +88,29 @@ export const SLUG_REDIRECTS: SlugRedirectMap = {
     },
   },
 
+  // Class 4 Maths + Science — content-based rename pass 2026-07-25.
+  "class-4": {
+    "maths": {
+      "chapter-2-hide-and-seek": "chapter-2-number-puzzles-and-estimation",
+      "chapter-4-thousands-around-us": "chapter-4-numbers-to-9999",
+      "chapter-5-sharing-and-measuring": "chapter-5-introduction-to-fractions",
+      "chapter-7-the-cleanest-village": "chapter-7-adding-subtracting-larger-numbers",
+      "chapter-8-weigh-it-pour-it": "chapter-8-weight-and-capacity",
+      "chapter-9-equal-groups": "chapter-9-multiplication-and-division-strategies",
+      "chapter-10-elephants-tigers-and-leopards": "chapter-10-reading-data-tables-and-pictographs",
+      "chapter-11-fun-with-symmetry": "chapter-11-symmetry-and-mirror-reflection",
+      "chapter-12-ticking-clocks-and-turning-calendar": "chapter-12-time-and-calendar",
+      "chapter-13-the-transport-museum": "chapter-13-multiplication-division-word-problems",
+    },
+    "science": {
+      "chapter-1-living-together": "chapter-1-community-and-caring-for-nature",
+      "chapter-3-the-amazing-world-of-plants": "chapter-3-diversity-of-plants",
+      "chapter-4-growing-up-with-nature": "chapter-4-habitats-and-food-chains",
+      "chapter-7-how-things-work": "chapter-7-forces-motion-and-patterns",
+      "chapter-10-our-sky": "chapter-10-sun-moon-and-stars",
+    },
+  },
+
   // Class 9 Science — NCERT new edition 2026-06.
   // Old book had 12 chapters; new book has 13 with reorganised topics.
   // Where the old topic doesn't map 1:1 to a new chapter, the closest
