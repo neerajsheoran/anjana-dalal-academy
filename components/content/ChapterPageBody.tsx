@@ -57,8 +57,13 @@ const SUBJECT_BANNER: Record<string, { bg: string; text: string; badge: string }
 
 // Build a chapter-aware <img> component. Image files live under
 // public/content-images/{class}/{subject}[/{book}]/{chapter}/ and are
-// served directly by Vercel's CDN — no API route, no serverless
-// invocation, no function bundle bloat.
+// served directly by Vercel's CDN. We deliberately DO NOT fs.existsSync
+// the file here — such a check under process.cwd() + dynamic segments
+// makes Turbopack trace every file in public/content-images/ into the
+// serverless function bundle (~360 MB, breaks Vercel deploys). Broken
+// refs simply render as broken images in the browser, which is fine
+// because the ref list is authored content and any missing files show
+// up visually to whoever's reviewing the page.
 function makeMdxImage(
   classId: string,
   subject: string,
@@ -69,30 +74,16 @@ function makeMdxImage(
     if (!src) return null;
     const decoded = decodeURIComponent(src);
     // Absolute URLs and site-rooted paths pass through unchanged.
-    if (decoded.startsWith("/") || decoded.startsWith("http")) {
-      return (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={decoded}
-          alt={alt ?? ""}
-          className="block mx-auto my-4 max-w-full rounded-lg"
-        />
-      );
-    }
-    // Verify the file exists on disk at build time so a broken ref
-    // renders nothing (matches old behaviour) instead of a broken tile.
-    const segments = book
-      ? [classId, subject, book, chapter, decoded]
-      : [classId, subject, chapter, decoded];
-    const filePath = path.join(process.cwd(), "public", "content-images", ...segments);
-    if (!fs.existsSync(filePath)) return null;
-    const staticPath = book
-      ? `/content-images/${classId}/${subject}/${book}/${chapter}/${encodeURIComponent(decoded)}`
-      : `/content-images/${classId}/${subject}/${chapter}/${encodeURIComponent(decoded)}`;
+    const isAbsolute = decoded.startsWith("/") || decoded.startsWith("http");
+    const resolved = isAbsolute
+      ? decoded
+      : book
+        ? `/content-images/${classId}/${subject}/${book}/${chapter}/${encodeURIComponent(decoded)}`
+        : `/content-images/${classId}/${subject}/${chapter}/${encodeURIComponent(decoded)}`;
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={staticPath}
+        src={resolved}
         alt={alt ?? ""}
         className="block mx-auto my-4 max-w-full rounded-lg"
       />
