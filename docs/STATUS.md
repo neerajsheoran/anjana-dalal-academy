@@ -146,10 +146,12 @@ emails silently fail.
 - `.env.example` — documents `NEXT_PUBLIC_SITE_URL`.
 
 ### External dashboards — NOT done, must be done by hand
-1. **Vercel → Settings → Domains** — add `cognilift.in`. Prefer A/CNAME records
-   over moving nameservers, so MX records stay under your control at GoDaddy.
-   GoDaddy: `A @ → 76.76.21.21`, `CNAME www → cname.vercel-dns.com`.
-   Confirm Vercel's current values rather than trusting these verbatim.
+1. **Vercel → Settings → Domains** — ✅ DONE 2026-09-07. `cognilift.in` is added to
+   the `anjana-dalal-academy` project and shows *Invalid Configuration* pending DNS.
+   Vercel asks for a single **`A` / `@` / `216.198.79.1`** record (its newer IP
+   range — supersedes the legacy `76.76.21.21`, which still works but should not
+   be used for new setups). Keep DNS at GoDaddy; do **not** Transfer In or move
+   nameservers, so Resend's DKIM/SPF and any future MX records stay in one zone.
 2. **Firebase → Authentication → Settings → Authorized domains** — add
    `cognilift.in`. **Login breaks entirely without this.** Keep the
    `Cross-Origin-Opener-Policy: same-origin-allow-popups` header in
@@ -158,3 +160,72 @@ emails silently fail.
 4. **Razorpay → Webhooks** — repoint at `https://cognilift.in/...`.
 5. **Vercel env** — set `NEXT_PUBLIC_SITE_URL=https://cognilift.in` in Production.
 6. **Google Search Console** — verify the domain, submit `/sitemap.xml`.
+
+---
+
+## ▶ RESUME HERE — 2026-09-08 morning
+
+Stopped mid-way through the `cognilift.in` domain cutover. Read this section
+first; it is the live state.
+
+### Where things actually stand
+
+| Thing | State |
+|---|---|
+| Code (metadataBase, sitemap, robots, `lib/site.ts`) | ✅ committed **and pushed** — `7ba9347` on `master` |
+| `anjana-dalal-academy.vercel.app` | ✅ Valid Configuration, auto-deployed from that push |
+| `cognilift.in` in Vercel | ⚠️ Added, but **Invalid Configuration** — waiting on DNS |
+| GoDaddy DNS | ❌ **Not touched yet — this is the next action** |
+| Firebase authorized domains | ❌ Not done |
+| Resend domain verification | ❌ Not done / unverified |
+| Razorpay webhook URL | ❌ Not done |
+| `NEXT_PUBLIC_SITE_URL` in Vercel | ❌ Not set |
+| Google Search Console | ❌ Not done |
+
+### NEXT ACTION — fix GoDaddy DNS
+
+Verified by `nslookup` on 2026-09-07, `cognilift.in` resolves to:
+
+    3.33.130.190, 15.197.148.33
+
+Those are **GoDaddy parking IPs** — two `A @` records pointing at the parked page.
+
+At **GoDaddy → My Products → cognilift.in → DNS → Manage Zones**:
+
+1. **Turn off Domain Forwarding first.** Those two AWS IPs are GoDaddy's
+   forwarding/parking infrastructure. If forwarding stays enabled, GoDaddy
+   silently recreates the parking A records after you edit them and the domain
+   never verifies. This is the trap — do it before touching any record.
+2. Edit the first `A` / `@` row → value `216.198.79.1`, TTL 1 hour.
+3. **Delete the second `A` / `@` row.** Two A records on `@` round-robin between
+   Vercel and the parking page: the site would work intermittently and Vercel's
+   verification would flip in and out.
+4. Back in Vercel, hit **Refresh** on the `cognilift.in` row. SSL is issued
+   automatically once it goes green. Propagation: usually 10-30 min.
+
+Check progress without waiting on Vercel's UI:
+
+    nslookup -type=A cognilift.in 8.8.8.8
+
+Done when it returns `216.198.79.1` and nothing else.
+
+### After the apex goes green
+- Add `www.cognilift.in` in Vercel (**Add Existing**), default it to redirect to
+  the apex, and use whatever CNAME Vercel then asks for. `www` is currently an
+  alias of the apex, so it would 404 until `www` is registered on the project.
+- **Firebase → Authentication → Settings → Authorized domains** → add
+  `cognilift.in` + `www.cognilift.in`. Independent of DNS — can be done any time,
+  and **every login fails with `auth/unauthorized-domain` without it.**
+- Set `NEXT_PUBLIC_SITE_URL=https://cognilift.in` in Vercel, Production only, then
+  redeploy. `NEXT_PUBLIC_` vars are baked in at build time, so it has no effect
+  until the next build.
+- Verify Resend has `cognilift.in` verified — `lib/email.ts:7` has been sending
+  from `noreply@cognilift.in` all along, so welcome emails may be failing silently
+  today. Worth checking the Resend dashboard regardless of the domain move.
+- Repoint the Razorpay webhook.
+- Google Search Console: verify the domain, submit `https://cognilift.in/sitemap.xml`.
+
+### Still parked, unrelated to the domain
+- The **landing page fixes** in the section above — the hardcoded "3-day free
+  trial" bug is the highest-priority one and is a genuine correctness fix.
+- The **cream + blue palette** decision.
