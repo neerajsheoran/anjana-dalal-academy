@@ -147,6 +147,10 @@ To add an activity: register it in `BRAIN_ACTIVITIES`, add the component in
   non-trivial; go straight to code only for pre-approved or one-line changes.
 - **Never `git push` without explicit confirmation.** Committing locally is fine — pushing
   deploys to production via Vercel.
+- **Read `docs/STATUS.md` at the start of a session.** This file holds the durable *rules*;
+  `STATUS.md` holds the current *state* — what is half-finished, what is stale, and which
+  decisions are still open. Update it at the end of a session. Chat transcripts are not
+  storage: anything not written to a file is lost when the conversation ends.
 
 ## Known content gaps
 
