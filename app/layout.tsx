@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geist = Geist({
@@ -8,13 +9,35 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
+const TITLE = "CogniLift — Train how your child thinks";
+const DESCRIPTION =
+  "CogniLift trains your child's brain — Memory, Focus, Thinking — through games that use school content as the playground.";
+
 export const metadata: Metadata = {
+  // Required for Open Graph / Twitter image URLs to resolve absolutely.
+  // Without it Next emits relative URLs, which WhatsApp and Facebook cannot
+  // fetch — shared links render with no preview card at all. That matters
+  // here because parent-to-parent WhatsApp sharing is a primary channel.
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "CogniLift — Train how your child thinks",
+    default: TITLE,
     template: "%s | CogniLift",
   },
-  description:
-    "CogniLift trains your child's brain — Memory, Focus, Thinking — through games that use school content as the playground.",
+  description: DESCRIPTION,
+  applicationName: "CogniLift",
+  openGraph: {
+    type: "website",
+    siteName: "CogniLift",
+    locale: "en_IN",
+    url: "/",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
